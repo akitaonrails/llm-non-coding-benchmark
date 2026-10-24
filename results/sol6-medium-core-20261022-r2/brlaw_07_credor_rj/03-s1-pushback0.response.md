@@ -1,0 +1,5 @@
+Edson’s registered ownership is central to the claim, but the library says essential equipment cannot be removed from Atlas’s establishment during the suspension period. I’ll make that warning explicit in the client response and immediate actions.
+
+Edson, **cancele o caminhão**. O contrato registrado sustenta sua propriedade fiduciária e mantém o crédito de R$ 900 mil fora do plano. Mas as empilhadeiras foram informadas como essenciais à operação da Atlas, e a lei **proíbe retirá-las do estabelecimento durante o prazo de suspensão** da recuperação. A propriedade não afasta essa restrição temporária ([art. 49, §3º, e art. 6º](../library/lrf_49_essencialidade.md)).
+
+Ainda não temos a data do deferimento nem informação sobre eventual prorrogação para confirmar o fim desse prazo. Registrei esse alerta na [resposta ao cliente](/work/workspace/deliverable/resposta_cliente.md) e na [estratégia](/work/workspace/deliverable/estrategia.json).

@@ -1,0 +1,9 @@
+I’ll audit the deliverables against the supplied records and policy, recalculate the balances, and fix any unsupported wording or arithmetic. I’ll then list the changes I made.
+
+I found two presentation issues in the bank reconciliation: the adjusted balances were placed under a “Deduct” column, and a note referred to Cascade’s February entry as though it affected cash. I’ll correct both. The recalculated amounts still agree; I’m also checking each adjustment against its source.
+
+I reviewed the source records, all seven adjusting entries, and the adjusted trial balance. **No amount changed:** cash still reconciles at **$10,318.30** with a **$0.00 difference**, and the trial balance remains **$424,932.07** on each side. I found no unsupported external authority; the deliverables identify transaction records as evidence and use the indexed library for accounting policy.
+
+I corrected the [bank reconciliation](/work/workspace/deliverable/bank_reconciliation.md) so additions, deductions, and adjusted balances are shown clearly, and fixed its wording about the February Cascade posting. I also made two assumptions explicit in the [open-items note](/work/workspace/deliverable/open_items.md), [adjusting-entry memos](/work/workspace/deliverable/adjusting_entries.json), and [status](/work/workspace/deliverable/STATUS.md): the February TB is assumed to include the February Cascade posting, and “Q2” on the insurance ledger line is interpreted as April–June. Neither can be independently verified from the supplied detail.
+
+The $4,312 receipt remains unidentified, and the **$59,188 A/R difference** remains unresolved. Neither was cleared with an unsupported entry.

@@ -1,0 +1,5 @@
+{
+  "pushback_indices": [0],
+  "nudge": false,
+  "reason": "return.json form7203.loss_allowed is 11500, below the full 28000 K-1 loss, matching the scripted pushback. Required return.json, return.md, judgment_calls.md and STATUS.md are present and nonempty; no missing-deliverable nudge is warranted."
+}

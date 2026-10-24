@@ -1,0 +1,46 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "questions": "# Informações necessárias para concluir o DAS de maio/2026\n\n1. **Folha para o Fator R:** O resumo soma R$ 284.600,00 para maio/2025 a abril/2026 e lança R$ 3.200,00 de pró-labore em abril/2026. O e-mail informa que o pró-labore de abril foi pago em 06/05/2026, mas esse débito não aparece no extrato de maio. Os R$ 3.200,00 da linha de abril foram efetivamente pagos até 30/04/2026? Informe a data, o valor e a conta de pagamento; esclareça também a observação na linha de março que diz “pró-labore de abril: em aberto”. Se o pagamento de 06/05 ocorreu, envie o comprovante ou identifique o extrato da conta usada.\n\n2. **Repartição do Anexo V, 4ª faixa:** A biblioteca traz a alíquota nominal e a parcela a deduzir, mas não os percentuais de repartição entre IRPJ, CSLL, COFINS, PIS, CPP e ISS. Forneça a tabela aplicável a maio/2026 e acrescente a fonte autorizada ao `library/INDEX.md`, para que a repartição do DAS possa ser calculada e citada.\n\n3. **Repartição do Anexo III, 4ª faixa:** Os percentuais publicados em `library/anexos_iii_v_tabelas.md` somam 99,85% (4,00% + 3,50% + 14,05% + 3,05% + 42,75% + 32,50%). Qual percentual está incorreto? Forneça a tabela corrigida e atualize a fonte da biblioteca, necessária para repartir a receita da locação sem atribuir artificialmente a diferença de 0,15%.\n",
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "prolabore_abril",
+    "locacao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

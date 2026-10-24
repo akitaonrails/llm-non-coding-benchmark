@@ -1,0 +1,123 @@
+{
+  "type": "multi_session",
+  "sessions": [
+    {
+      "n": 1,
+      "reveal": [
+        "documents/month_01/"
+      ],
+      "carry_forward": [],
+      "prompt": "Close January 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_00/ (if any). Produce deliverable/month_01/ per CONTRACT.md."
+    },
+    {
+      "n": 2,
+      "reveal": [
+        "documents/month_02/"
+      ],
+      "carry_forward": [
+        "deliverable/month_01/"
+      ],
+      "prompt": "Close February 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_01/ (if any). Produce deliverable/month_02/ per CONTRACT.md."
+    },
+    {
+      "n": 3,
+      "reveal": [
+        "documents/month_03/"
+      ],
+      "carry_forward": [
+        "deliverable/month_02/"
+      ],
+      "prompt": "Close March 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_02/ (if any). Produce deliverable/month_03/ per CONTRACT.md."
+    },
+    {
+      "n": 4,
+      "reveal": [
+        "documents/month_04/"
+      ],
+      "carry_forward": [
+        "deliverable/month_03/"
+      ],
+      "prompt": "Close April 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_03/ (if any). Produce deliverable/month_04/ per CONTRACT.md."
+    },
+    {
+      "n": 5,
+      "reveal": [
+        "documents/month_05/"
+      ],
+      "carry_forward": [
+        "deliverable/month_04/"
+      ],
+      "prompt": "Close May 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_04/ (if any). Produce deliverable/month_05/ per CONTRACT.md."
+    },
+    {
+      "n": 6,
+      "reveal": [
+        "documents/month_06/"
+      ],
+      "carry_forward": [
+        "deliverable/month_05/"
+      ],
+      "prompt": "Close June 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_05/ (if any). Produce deliverable/month_06/ per CONTRACT.md."
+    },
+    {
+      "n": 7,
+      "reveal": [
+        "documents/month_07/"
+      ],
+      "carry_forward": [
+        "deliverable/month_06/"
+      ],
+      "prompt": "Close July 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_06/ (if any). Produce deliverable/month_07/ per CONTRACT.md."
+    },
+    {
+      "n": 8,
+      "reveal": [
+        "documents/month_08/"
+      ],
+      "carry_forward": [
+        "deliverable/month_07/"
+      ],
+      "prompt": "Close August 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_07/ (if any). Produce deliverable/month_08/ per CONTRACT.md."
+    },
+    {
+      "n": 9,
+      "reveal": [
+        "documents/month_09/"
+      ],
+      "carry_forward": [
+        "deliverable/month_08/"
+      ],
+      "prompt": "Close September 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_08/ (if any). Produce deliverable/month_09/ per CONTRACT.md."
+    },
+    {
+      "n": 10,
+      "reveal": [
+        "documents/month_10/"
+      ],
+      "carry_forward": [
+        "deliverable/month_09/"
+      ],
+      "prompt": "Close October 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_09/ (if any). Produce deliverable/month_10/ per CONTRACT.md."
+    },
+    {
+      "n": 11,
+      "reveal": [
+        "documents/month_11/"
+      ],
+      "carry_forward": [
+        "deliverable/month_10/"
+      ],
+      "prompt": "Close November 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_10/ (if any). Produce deliverable/month_11/ per CONTRACT.md."
+    },
+    {
+      "n": 12,
+      "reveal": [
+        "documents/month_12/"
+      ],
+      "carry_forward": [
+        "deliverable/month_11/"
+      ],
+      "prompt": "Close December 2025. Your prior month's closing trial balance and open-items note are under deliverable/month_11/ (if any). Produce deliverable/month_12/ per CONTRACT.md. Also produce the year-end financial statements per CONTRACT.md."
+    }
+  ]
+}

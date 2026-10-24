@@ -1,0 +1,10 @@
+{
+  "questions": "# March close: information needed from Ray\n\n1. What is the source of the **$4,312.00 mobile deposit dated March 21**? Please provide the deposit detail (payer and checks or remittance) and identify any customer invoice it pays. If it is not a customer payment, what was its purpose?\n2. Who owns checking account **ending *4420**, the source of the **$1,500.00 transfer dated March 14**? Please confirm whether it was Ray's personal funds, another Brightline account, a customer payment, or something else, and provide the transfer detail. The bookkeeper credited cabinetry sales.\n3. The ledger's March 31 A/R is **$115,288.00**, while the March 31 aging totals **$56,100.00**, a **$59,188.00 difference**. Please provide the complete February 28 open-invoice listing supporting the **$107,668.00** opening A/R balance and a corrected March 31 aging or identify the omitted or misstated invoices and payments. In particular, should Delgado invoice INV-1182 still show **$6,250.00** outstanding after check #4471 was received and deposited March 31?\n4. For the **$212.00 Uchi dinner on the Summit card dated March 15**, was this a Brightline business expense or Ray's personal expense? If business, please identify the business purpose and attendees.\n5. For the disputed **$9,800.00 Hardaway Builders invoice INV-1167**, has Ray authorized a **$4,900.00** credit or settlement, and has the customer agreed? Please provide the credit memo or written settlement terms, or confirm that the full invoice remains due at March 31.\n",
+  "released_fact_ids": [
+    "xfer_1500",
+    "mobile_4312",
+    "uchi",
+    "hardaway"
+  ],
+  "answer": "That's from my personal checking, I moved money over to cover payroll. It's my money, not a sale.\nHuh. I don't remember depositing anything that day. Maybe Carla (office) did? Let me ask her... (later) she doesn't know either. Can you just park it somewhere for now?\nUchi was my anniversary dinner, I grabbed the wrong card. Put it on me.\nStill arguing with them. Don't write it off yet."
+}

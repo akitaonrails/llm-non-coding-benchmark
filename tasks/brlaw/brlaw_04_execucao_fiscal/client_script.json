@@ -1,0 +1,56 @@
+{
+  "persona": "Bruno Tavares (administrador atual) e Ana Paula Vieira (ex-sócia).",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "opera",
+      "trigger": [
+        "ainda opera",
+        "funciona",
+        "novo endereço",
+        "Cotia",
+        "mudou"
+      ],
+      "answer": "Bruno: Operamos normalmente em Cotia desde março. Mudamos o endereço na Junta e na Receita — tenho os protocolos.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "ana_saida",
+      "trigger": [
+        "Ana",
+        "saiu",
+        "retirou",
+        "2023",
+        "cedeu"
+      ],
+      "answer": "Ana: Saí em junho de 2023, vendi minhas quotas ao Bruno, tudo registrado. Não tenho nada com a empresa desde então.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "impugnacao",
+      "trigger": [
+        "impugnação",
+        "prazo administrativo",
+        "contador",
+        "DRJ"
+      ],
+      "answer": "Bruno: o contador anterior não impugnou o auto. Perdemos o prazo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "sessão 2, se a manifestação abandonar a tese do vício da multa",
+      "message": "Bruno: Mas a CDA estava errada! Insiste nisso — o juiz tem que anular tudo, não pode a Fazenda consertar depois."
+    },
+    {
+      "when": "sessão 4, se a defesa disser que Ana não responde",
+      "message": "Procurador (em audiência): 'A Dra. Ana era a administradora quando a receita foi omitida. Quem sonegou foi ela. É óbvio que responde.'"
+    }
+  ]
+}

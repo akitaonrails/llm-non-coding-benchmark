@@ -1,0 +1,18 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 254.91804578599977,
+  "controller_wait_seconds": 26.004006621999906,
+  "model_turn_seconds": 228.8903024239994,
+  "turns": 3,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 447121,
+    "cached_input_tokens": 416384,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 14918,
+    "reasoning_output_tokens": 4469
+  },
+  "api_equivalent_usd": 0.2939308
+}

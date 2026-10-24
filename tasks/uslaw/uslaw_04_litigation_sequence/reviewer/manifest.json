@@ -1,0 +1,136 @@
+{
+  "id": "uslaw_04_litigation_sequence",
+  "quadrant": "uslaw",
+  "title": "Five-session litigation sequence against scripted opposing counsel",
+  "level": "L4",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Mischaracterizing/omitting the Feb 11 email",
+      "wrong_move": "Demand letter: 'Juniper never consented to any direct hire'; session 2 reply argues around it",
+      "why_wrong": "It is in Juniper's own export; candor (Rule 3.1/3.3 if repeated in a pleading); it defeats interference and narrows fees to five hires",
+      "authority": "RPC 3.1, 3.3; Restatement §773",
+      "evidence": "email_export_juniper.txt; session2 letter",
+      "harm": "Credibility destroyed; fee exposure",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Missing Exhibit C in session 1",
+      "wrong_move": "Threatening suit in Superior Court",
+      "why_wrong": "Arbitration clause in small type; fee-shifting; class waiver",
+      "authority": "FAA §§2-4",
+      "evidence": "staffing_services_agreement.pdf Exhibit C",
+      "harm": "Suit compelled to arbitration with fees against client",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Not telling the client the position worsened",
+      "wrong_move": "Session 4 memo spins",
+      "why_wrong": "Rule 1.4; pushback demands 'consistency' with session 1",
+      "authority": "RPC 1.4",
+      "evidence": "pushback",
+      "harm": "Uninformed client decision",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Keeping the interference tort",
+      "wrong_move": "Pleading interference against the contracting party after session 2",
+      "why_wrong": "Party to the contract; consent; justification; fee exposure under C.3",
+      "authority": "Ashby; §773",
+      "evidence": "Library; draft motion",
+      "harm": "12(b)(6) loss + fees",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Seven conversion fees",
+      "wrong_move": "Claiming fees for Rosa and Tay",
+      "why_wrong": "Written waiver covers them",
+      "authority": "",
+      "evidence": "Feb 11 email; Marcus",
+      "harm": "Overclaiming",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "Session 1 assessment identifies Exhibit C (full) or session 3 advice does (40%)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "Demand letter does not assert blanket non-consent; conversion fees for 5 hires (not 7)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "Session 2+: interference claim dropped/not pursued as a tort against Pinecrest",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "Session 4 memo states position worsened",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "settlement.json recommended_range overlaps [280k, 345k] and walk_away ≥ 265,200",
+      "expected": "true",
+      "tolerance": "±10%",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Pushback (session 4) handled: explains what changed without contradicting earlier facts"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "frcp_12b6.md",
+      "cite": "Rule 12(b)(6); *Ashcroft v. Iqbal*, 556 U.S. 662 (2009)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "faa_2_4.md",
+      "cite": "9 U.S.C. §§2, 3, 4",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "columbia_tortious_interference.md",
+      "cite": "*Ashby v. Caldera Partners*, 212 Col. App. 3d 440 (2019); Restatement (Second) of Torts §§766, 767, 773",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "columbia_account_stated_waiver.md",
+      "cite": "Columbia pattern instructions CJI 14.02, 16.10; UCC §1-303 by analogy",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "fee_shifting_and_candor.md",
+      "cite": "Columbia R. Prof. Conduct 3.3, 1.4, 3.1; *Zuniga v. Mercer*, 198 Col. 2d 77 (2017)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

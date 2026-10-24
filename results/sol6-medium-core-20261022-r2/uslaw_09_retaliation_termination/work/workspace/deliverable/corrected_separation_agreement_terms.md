@@ -1,0 +1,11 @@
+# Terms required before any future separation agreement
+
+Do not offer the current form now. These corrections address the ADEA waiver requirements in [library/adea_owbpa_626f.md](../library/adea_owbpa_626f.md). They do not make the proposed termination lawful or cure the pending complaint and leave issues.
+
+1. **Consideration period.** Give Dana at least **21 days** to consider an individual separation agreement. If the offer is part of an exit incentive or other employment termination program offered to a group, give at least **45 days**. The present seven days is **21 − 7 = 14 days short** for an individual offer or **45 − 7 = 38 days short** for a qualifying group program. Whether this is a group program is not established.
+2. **Attorney advice.** State in writing: “You are advised to consult an attorney before signing this agreement.” This advice is not shown in the supplied text; confirm it appears in the complete form.
+3. **Revocation and effective date.** Give Dana at least **seven days after signing** to revoke. State how to deliver revocation, and that the agreement does not become effective until the seven-day period expires without revocation. The current three days is **7 − 3 = 4 days short**.
+4. **Release scope.** Keep the express ADEA reference, but limit the release to claims arising **on or before the date Dana signs**. Do not purport to waive future claims. Make the release understandable to Dana. The supplied text does not show whether the complete form already has this cutoff.
+5. **Additional consideration.** Specify that the four weeks of base pay is paid in addition to wages, accrued benefits, and any other amounts Dana is already entitled to receive. Confirm this is true before offering or signing; the provided file does not establish it.
+
+Only selected agreement sections were supplied. The seven-day consideration and three-day revocation periods are definite defects in those sections; the attorney-advice, future-claims, and additional-consideration points require confirmation in the complete form. Have counsel review the complete final document and the facts of any proposed separation before use. An ADEA release lacking the listed statutory safeguards is unenforceable as to ADEA claims even if severance is paid ([library/adea_owbpa_626f.md](../library/adea_owbpa_626f.md)).

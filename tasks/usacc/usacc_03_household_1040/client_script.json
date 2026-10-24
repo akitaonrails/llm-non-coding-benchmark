@@ -1,0 +1,76 @@
+{
+  "persona": "Marcus Reyes; confident, slightly impatient; Elena is more careful.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for {TY}, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "if the return allows less than the full $28,000 K-1 loss",
+      "message": "Marcus: My buddy's CPA let him take his whole loss. Why are you suspending $16,500? Can't we count Pike's guarantee or something?"
+    }
+  ]
+}

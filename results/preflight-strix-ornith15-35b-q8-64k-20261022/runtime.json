@@ -1,0 +1,22 @@
+[
+  {
+    "name": "noncoding-ornith15-35b-q8-64k:20261022",
+    "model": "noncoding-ornith15-35b-q8-64k:20261022",
+    "size": 37651197459,
+    "digest": "10693eb098fd65843a1b44deb88942943c42654d0da6bc5c22901f39699974b7",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen35moe",
+      "families": [
+        "qwen35moe"
+      ],
+      "parameter_size": "35.5B",
+      "quantization_level": "unknown"
+    },
+    "expires_at": "2026-10-22T20:24:00.392176363Z",
+    "size_vram": 37651197459,
+    "context_length": 65536,
+    "runner": "llamacpp"
+  }
+]

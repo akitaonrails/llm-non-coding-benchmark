@@ -1,0 +1,147 @@
+{
+  "id": "bracc_07_holding_patrimonial",
+  "quadrant": "bracc",
+  "title": "Holding patrimonial: ITBI, aluguéis PF × PJ, sucessão e legítima",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Imunidade de ITBI",
+      "wrong_move": "Holding de locação 'sem ITBI'",
+      "why_wrong": "Atividade preponderante = locação → ITBI devido ≈ R$ 492.900,00; Tema 796 no excedente",
+      "authority": "CF 156 §2º I; CTN 37",
+      "evidence": "Relação de imóveis (todos locados); CF/CTN",
+      "harm": "Autuação em 11 imóveis",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Excluir Marcos",
+      "wrong_move": "Doar quotas só a dois filhos",
+      "why_wrong": "Legítima 50% (CC 1.846); doação inoficiosa nula no excesso (CC 549); colação (CC 544); cláusulas sobre legítima só com justa causa (CC 1.848); pushback 'se eu doar tudo em vida não sobra nada' é exatamente a doação inoficiosa",
+      "authority": "CC 549, 1.846, 1.848",
+      "evidence": "familia.md; script; pushback",
+      "harm": "Plano anulado judicialmente após a morte; litígio entre irmãos",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "'Aluguel a 11%'",
+      "wrong_move": "Repetir o número da palestra",
+      "why_wrong": "PJ 12.17% antes da distribuição; com IRRF 10% (2026) 20.96%; PF tem deduções (adm 8%, IPTU) — comparar líquido; LC 214 muda a locação no regime definitivo",
+      "authority": "Lei 15.270; Lei 9.249 art. 15",
+      "evidence": "Biblioteca",
+      "harm": "Promessa falsa; decisão errada",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Integralizar a valor de mercado",
+      "wrong_move": "Imóveis pela avaliação",
+      "why_wrong": "Art. 23 Lei 9.249: pelo valor da declaração evita GCAP de ≈ R$ 1.756.500,00",
+      "authority": "Lei 9.249 art. 23",
+      "evidence": "Relação (valor declaração)",
+      "harm": "IR desnecessário",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "ITCMD sobre valor contábil",
+      "wrong_move": "4% sobre valor histórico",
+      "why_wrong": "SP exige valor de mercado dos bens; usufruto 2/3–1/3; progressividade obrigatória pendente",
+      "authority": "Lei 10.705",
+      "evidence": "Biblioteca",
+      "harm": "Autuação ITCMD",
+      "severity": "M",
+      "reviewer_confidence": "medium — verificar base"
+    },
+    {
+      "n": 6,
+      "title": "Imóveis de uso próprio na holding",
+      "wrong_move": "Integralizar Campos do Jordão e Cotia",
+      "why_wrong": "Sem receita; uso pela família gera DDL/aluguel ficto e complica; manter fora",
+      "authority": "",
+      "evidence": "Script",
+      "harm": "Complexidade e risco fiscal",
+      "severity": "L",
+      "reviewer_confidence": "medium"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "itbi.devido",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "numeros.json"
+    },
+    {
+      "item": "legitima.marcos_pode_ser_excluido",
+      "expected": "false",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "integralizacao.valor_recomendado",
+      "expected": "4720000",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "pj_presumido.total inclui IRRF 2026 ≈",
+      "expected": "213508.48",
+      "tolerance": "±3%",
+      "how": ""
+    },
+    {
+      "item": "Parecer classifica as 5 afirmações",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "parecer.md"
+    }
+  ],
+  "rubric": [
+    "Pushback: explica doação inoficiosa/colação em linguagem simples"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "cf156_ctn37_tema796.md",
+      "cite": "CF art. 156, §2º, I; CTN art. 37; STF RE 796.376 (Tema 796, 2020)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei9249_art23.md",
+      "cite": "Lei 9.249/95, art. 23",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cc_legitima_doacao.md",
+      "cite": "CC arts. 544, 549, 1.789, 1.845, 1.846, 1.848, 2.002-2.012",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "itcmd_sp_lei10705.md",
+      "cite": "Lei estadual 10.705/2000, arts. 2º, 9º, 13, 16; EC 132/2023, art. 155 §1º VI CF",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar base de cálculo e regra 2/3–1/3 na legislação paulista vigente."
+    },
+    {
+      "file": "locacao_pf_vs_pj.md",
+      "cite": "Lei 9.250/95 (tabela progressiva); Lei 9.249/95 art. 15 §1º III c; Lei 15.270/2025; LC 214/2025 art. 251 ss. (locação)",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar redutor e condições da LC 214 para locação."
+    }
+  ]
+}

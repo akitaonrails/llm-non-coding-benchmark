@@ -1,0 +1,46 @@
+{
+  "persona": "Renato Lima, sócio-administrador; prático; quer pagar o DAS logo.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": []
+}

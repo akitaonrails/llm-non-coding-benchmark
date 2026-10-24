@@ -1,0 +1,53 @@
+{
+  "persona": "Edson Lima, sócio da Fornecedor Sul; prático; preocupado com a fiança.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "essencial",
+      "trigger": [
+        "essenciais",
+        "empilhadeira",
+        "operação da Atlas",
+        "retirar",
+        "retomar"
+      ],
+      "answer": "As empilhadeiras e o sistema de separação são o coração do galpão deles. Sem isso a Atlas para.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "epp",
+      "trigger": [
+        "EPP",
+        "porte",
+        "faturamento",
+        "Simples",
+        "classe IV"
+      ],
+      "answer": "Somos EPP, faturamos uns R$ 3,9 mi. Estamos no Lucro Presumido, não no Simples.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "banco",
+      "trigger": [
+        "banco",
+        "Horizonte",
+        "fiança",
+        "anuiu",
+        "aprovou"
+      ],
+      "answer": "O banco não concordou com nada; já me mandou notificação como fiador.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se estrategia.json disser que não pode retomar os bens agora",
+      "message": "Edson: A propriedade é MINHA, está no contrato e registrado. Como assim não posso pegar o que é meu? Vou mandar o caminhão buscar."
+    }
+  ]
+}

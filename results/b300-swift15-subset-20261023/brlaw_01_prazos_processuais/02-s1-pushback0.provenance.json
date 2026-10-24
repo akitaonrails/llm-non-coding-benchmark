@@ -1,0 +1,8 @@
+{
+  "model": "swift-1.5-27b",
+  "harness": "opencode 2.1.2",
+  "network": "unshare-all; allowlisted model-only Unix gateway",
+  "usage_source": "provider SSE usage",
+  "requests": 7,
+  "http_errors": 0
+}

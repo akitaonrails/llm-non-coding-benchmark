@@ -1,0 +1,3 @@
+I can’t book the $4,312 as misc income or your contribution without evidence of its source. You and Carla could not identify the deposit, and your [close policy](/work/workspace/library/close_policy.md) requires unidentified receipts to stay in suspense.
+
+The [reconciliation](/work/workspace/deliverable/bank_reconciliation.md) ties with the deposit recorded in account 2100. The [lender note](/work/workspace/deliverable/open_items.md) discloses that its source is still unknown. A deposit image or remittance detail would let us reclassify it correctly.

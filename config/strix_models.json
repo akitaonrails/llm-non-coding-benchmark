@@ -1,0 +1,14 @@
+{
+  "endpoint": "http://192.168.0.90:11434",
+  "context": 65536,
+  "models": [
+    {"slug": "qwen38-27b-q4", "source": "qwen38-27b-strix-q4:latest", "quant": "Q4_K_M"},
+    {"slug": "qwen38-27b-q8", "source": "qwen38-27b-strix-q8:latest", "quant": "Q8_0"},
+    {"slug": "swift15-27b-q4", "source": "swift15-27b-strix-q4:latest", "quant": "Q4_K_M"},
+    {"slug": "swift15-27b-q8", "source": "hf.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF:Q8_0", "quant": "Q8_0"},
+    {"slug": "thinkingcap38-27b-q4", "source": "thinkingcap38-27b-strix-q4:latest", "quant": "Q4_K_M"},
+    {"slug": "ornith15-35b-q8", "source": "hf.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF:Q8_0", "quant": "Q8_0"},
+    {"slug": "muse-glimmer-30b-q8", "source": "hf.co/ggml-org/Muse-Glimmer-30B-GGUF:Q8_0", "quant": "Q8_0",
+     "alias": "noncoding-muse-glimmer-30b-q8-64k-atem:20261022", "parameters": {"stop": ["<|eot|>"]}}
+  ]
+}

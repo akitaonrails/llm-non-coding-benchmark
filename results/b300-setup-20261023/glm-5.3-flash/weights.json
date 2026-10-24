@@ -1,0 +1,91 @@
+{
+  "repo": "RedHatAI/GLM-5.3-Flash-NVFP4",
+  "revision": "18d55bfd5a2194887738da73753975c9d3842f46",
+  "resolved_at": 1792724674.637297,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 1635
+    },
+    {
+      "path": "README.md",
+      "size": 3469
+    },
+    {
+      "path": "chat_template.jinja",
+      "size": 10950
+    },
+    {
+      "path": "config.json",
+      "size": 53876
+    },
+    {
+      "path": "generation_config.json",
+      "size": 177
+    },
+    {
+      "path": "model-00001-of-00010.safetensors",
+      "size": 20002894272
+    },
+    {
+      "path": "model-00002-of-00010.safetensors",
+      "size": 20002803476
+    },
+    {
+      "path": "model-00003-of-00010.safetensors",
+      "size": 20000726256
+    },
+    {
+      "path": "model-00004-of-00010.safetensors",
+      "size": 20000334356
+    },
+    {
+      "path": "model-00005-of-00010.safetensors",
+      "size": 20000724512
+    },
+    {
+      "path": "model-00006-of-00010.safetensors",
+      "size": 20000331556
+    },
+    {
+      "path": "model-00007-of-00010.safetensors",
+      "size": 20000725168
+    },
+    {
+      "path": "model-00008-of-00010.safetensors",
+      "size": 20000332348
+    },
+    {
+      "path": "model-00009-of-00010.safetensors",
+      "size": 20000722232
+    },
+    {
+      "path": "model-00010-of-00010.safetensors",
+      "size": 10215657876
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size": 17055736
+    },
+    {
+      "path": "model_mtp.safetensors",
+      "size": 7618560424
+    },
+    {
+      "path": "processor_config.json",
+      "size": 909
+    },
+    {
+      "path": "recipe.yaml",
+      "size": 1200
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 20217541
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 790
+    }
+  ]
+}

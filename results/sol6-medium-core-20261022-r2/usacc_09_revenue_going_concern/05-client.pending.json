@@ -1,0 +1,43 @@
+{
+  "case": "usacc_09_revenue_going_concern",
+  "questions": "# Information request and client response — Q4 2025 close\n\nThe client was asked for the Ironvale lease/service fee allocation and its basis, a supportable discount rate and convention, payment dates, and any prepayments, incentives, or initial direct costs. These are needed to quantify the December 31 right-of-use asset, lease liability, and Q4 expense effect.\n\nThe client was also asked whether any financing commitments or management plans beyond the non-binding Crestline term sheet could cover the projected cash shortfall.\n\n**Client response:** For questions not otherwise answered, the client has no additional information. No additional Ironvale measurement inputs or other mitigating financing plan were supplied. These items remain open; this file is a record of the request, not a new request.\n",
+  "facts": [
+    {
+      "id": "side_letter_signed",
+      "trigger": [
+        "side letter",
+        "countersigned",
+        "return right",
+        "refund"
+      ],
+      "answer": "Yes, Alvarado countersigned it. Saltline insisted. It's just a comfort letter.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "kits_tagged",
+      "trigger": [
+        "segregated",
+        "tagged",
+        "identified",
+        "which kits",
+        "general stock"
+      ],
+      "answer": "They're on the shelf with everything else. Same SKU, no point tagging.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "halvorsen_status",
+      "trigger": [
+        "Halvorsen",
+        "definitive",
+        "MSA signed",
+        "procurement committee"
+      ],
+      "answer": "Procurement meets Jan 20. Security review is 'in progress'. They're committed, trust me.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

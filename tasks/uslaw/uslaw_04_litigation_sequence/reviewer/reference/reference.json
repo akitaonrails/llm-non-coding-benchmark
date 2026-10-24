@@ -1,0 +1,37 @@
+{
+  "session1": {
+    "must_find": "Exhibit C arbitration + class waiver + prevailing-party fees (full credit if found now; 40% credit if only after session 3 reveal)",
+    "interference_weakness": "Pinecrest is a party → cannot interfere with its own contract; interference with at-will nurse relationships requires improper means; Feb 11 email in Juniper's own export shows consent for two hires and a loose course of dealing",
+    "realistic_claims": "contract: invoices $340k (less ~$3.1k on J-4533 if padded) + conversion fees on 5 hires (not 7): 5 × 25% × 64k = $80k; interest 1%/mo",
+    "demand_letter_must_not": "assert 'never consented to any direct hire'"
+  },
+  "session2": {
+    "candor": "acknowledge the Feb 11 email; narrow conversion-fee claim to five hires; drop or do not plead interference as a tort against a contracting party",
+    "consistency": "do not contradict session-1 factual assertions; correct them if wrong"
+  },
+  "session3": {
+    "arbitration": "Exhibit C mandates AAA arbitration; court suit would be stayed/compelled (FAA §§3-4); C.3 prevailing-party fees cut both ways — a weak interference claim creates fee exposure; C.4 allows provisional relief only; C.6 small-claims carve-out irrelevant (> $25k)"
+  },
+  "session4": {
+    "position_worsened": true,
+    "why": "consent email; party-to-contract bar; arbitration forum; fee exposure; waiver/course-of-dealing fact issue on five hires",
+    "path": "arbitrate contract claims (invoices + 5 conversion fees) or settle; drop interference"
+  },
+  "session5": {
+    "recommended_range": [
+      280000,
+      345000
+    ],
+    "logic": "undisputed invoices $265,200 + J-4533 less padding (~$71,700) + some conversion-fee value (5 hires, discounted for waiver/course-of-dealing risk ~30–60%) + interest, less fee risk",
+    "walk_away": 265200,
+    "fee_exposure_if_arbitrated": "~$60–120k if Juniper loses on interference/conversion fees under C.3",
+    "term_sheet": [
+      "payment schedule with acceleration on default",
+      "mutual release",
+      "confidentiality/non-disparagement",
+      "each side bears own fees",
+      "withdrawal of interference claim",
+      "no admission"
+    ]
+  }
+}

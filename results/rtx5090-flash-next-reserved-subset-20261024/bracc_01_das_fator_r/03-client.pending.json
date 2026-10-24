@@ -1,0 +1,48 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "questions": "# Perguntas ao cliente — DAS maio/2026 (Lumen Soluções Digitais ME)\n\n**Versão 2.** As perguntas abaixo já foram respondidas e **não serão repetidas**; este arquivo passa a\nregistrar o histórico e a sinalizar os desconhecidos que permanecem. O cliente informou não dispor de\nmais informação sobre os itens sinalizados como abertos.\n\n## Respondidas (encerradas)\n\n- **Q1 — Pró-labore (março/abril de 2026).** RESPONDIDA: o cliente esclareceu que o pró-labore de\n  abril (R$ 3.200,00) foi **“pago em 30 de abril”**; o resumo o mostrava **“em aberto”** porque o PIX\n  foi lançado no sistema só em maio; e anunciou “**Te mando o comprovante de 30/04**”.\n  → Folha paga 12m = 287.800 → Fator R 28,22% ≥ 28% → **serviços no Anexo III**.\n  ⚠ O **comprovante de 30/04 anunciado ainda não chegou** a `documents/`. Sem ele, o resultado fica\n  sustentado na palavra do cliente contra o e-mail do sócio (“paguei atrasado, dia 6 de maio”), que\n  levaria ao Anexo V (DAS 15.188,84 em vez de 10.261,08). **Aguardando o comprovante — item material.**\n- **Q3 — Estorno da NFS-e 1184/1188.** RESPONDIDA (paráfrase): glosa de escopo acordada com o cliente\n  final — a Lumen emitiu a NFS-e 1188 estornando R$ 4.000 e devolveu o valor via PIX → cancelamento de\n  receita; reduz serviços de maio (82.000 → 78.000). Confirma-se no extrato (PIX ENVIADO ESTORNO GLOSA,\n  29/05/2026).\n\n## Desconhecidos que permanecem (sinalizados, não re-perguntados)\n\n1. **Comprovante de pagamento do pró-labore de 30/04/2026** — anunciado, pendente de envio. Define\n   Anexo III (DAS 10.261,08) × Anexo V (DAS 15.188,84). (Vem com a resposta da Q1; não é nova pergunta.)\n2. **Segregação do faturamento dos 12 meses (mai/2025–abr/2026) por atividade** — cliente não dispõe.\n   Usamos o total agregado (leitura literal de “receita bruta” na biblioteca). Materialidade: RBT12 e\n   Fator R permaneceriam os mesmos; a segregação importaria apenas se houvesse atividade fora de TI/\n   locação nos 12 meses.\n3. **Escopo de “TI” (LC 123/2006 art. 18 §5º-J) para as NFS-e 1183 (consultoria de arquitetura) e\n   1186 (treinamento)** — cliente não dispõe de mais informação; biblioteca não traz Anexo I/II/IV\n   para um enquadramento alternativo. Mantida a premissa de que são serviços de TI do mesmo negócio.\n4. **Comprovantes individuais de folha/encargos da janela mai/2025–abr/2026** — não fornecidos; o\n   resumo + padrão de pagamentos do extrato (folha no próprio mês; DARF/GPS/FGTS com 1 mês de\n   defasagem) sustentaram a reconstrução. Premissa remanescente: encargo patronal de abr/2025 =\n   R$ 4.700,00 (mês não documentado; valor constante nas 12 linhas do resumo).\n5. **DAS de abril/2026 (R$ 10.480,22)** — não reconcilia de forma fechada (RBT12 de abril não\n   documentada). É compatível com Anexo III e incompatível com Anexo V; recomendação (não verificada,\n   por ausência de regras de retificação na biblioteca): revisar com o contador as guias de 2026.\n\n## Efeito no resultado\n\nCom as respostas recebidas, o resultado **mudou** em relação à versão 1: serviços migraram do\nAnexo V para o **Anexo III** (Fator R 28,22%) e o DAS de maio/2026 passou de 15.188,84 para\n**10.261,08** — condicionado ao comprovante de 30/04 (item 1).\n",
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "estorno",
+    "prolabore_abril"
+  ],
+  "literal_suggestions": [
+    "locacao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

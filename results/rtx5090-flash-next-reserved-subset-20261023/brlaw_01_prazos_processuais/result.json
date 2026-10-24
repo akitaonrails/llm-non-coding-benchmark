@@ -1,0 +1,20 @@
+{
+  "case": "brlaw_01_prazos_processuais",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-reserved-subset-20261023/brlaw_01_prazos_processuais/01-s1-work",
+  "elapsed_seconds": 124.4858494479995,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 124.08418307000102,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 45535,
+    "cached_input_tokens": 40657,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1972,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

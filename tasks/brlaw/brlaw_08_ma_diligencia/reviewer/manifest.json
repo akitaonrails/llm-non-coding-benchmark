@@ -1,0 +1,150 @@
+{
+  "id": "brlaw_08_ma_diligencia",
+  "quadrant": "brlaw",
+  "title": "Venda de controle: achados de diligência e redline do contrato de compra e venda de quotas",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Anexo 3.2 'não aplicável'",
+      "wrong_move": "Aceitar",
+      "why_wrong": "Cláusula 19 Horizonte Azul (31% da receita): mudança de controle sem anuência = rescisão + multa",
+      "authority": "",
+      "evidence": "Data room 1.1",
+      "harm": "Perda do maior cliente após o fechamento; indenização",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Declarações limpas + sandbagging + teto = preço",
+      "wrong_move": "Assinar 5.7, 5.9 e 8.4 como estão",
+      "why_wrong": "PJs e CND positiva foram revelados; o comprador indeniza-se por risco conhecido até o preço total por 5 anos; pushback chama de 'padrão'",
+      "authority": "Prática de M&A",
+      "evidence": "Data room 2.2, 3.1; minuta 8.4(b)(c); script 'revelado'",
+      "harm": "Vendedores devolvem boa parte do preço",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "CADE",
+      "wrong_move": "Notificar ou aceitar como condição precedente",
+      "why_wrong": "Limiares não atingidos (art. 88)",
+      "authority": "Lei 12.529 art. 88",
+      "evidence": "Data room 4.2; biblioteca",
+      "harm": "Atraso de meses; custo",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Earn-out",
+      "wrong_move": "Deixar a definição de EBITDA do comprador",
+      "why_wrong": "Pode zerar o earn-out",
+      "authority": "",
+      "evidence": "2.3",
+      "harm": "R$ 1,5 mi em risco",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Não ver a CND positiva como problema de contrato público",
+      "wrong_move": "Tratar o débito só como passivo",
+      "why_wrong": "Regularidade fiscal exigida na execução de contratos administrativos; CPEN via parcelamento/garantia",
+      "authority": "Lei 14.133 art. 92 XVI",
+      "evidence": "3.1; Lei 14.133",
+      "harm": "Retenção de pagamentos/sanção",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "achados inclui Horizonte Azul cl. 19 (anuência)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "achados.json"
+    },
+    {
+      "item": "achados inclui PJs (pejotização) e CND positiva como exceções às declarações",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "redline: 8.4(c) limitada quanto a matérias reveladas; 5.7 e 5.9 qualificadas; limites/prazos reduzidos",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "CADE: não notificável (resposta ao comprador)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "earn-out: definição de EBITDA corrigida",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "nota_socios.md: três itens de dinheiro; pushback respondido"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "ctn_133_sucessao.md",
+      "cite": "CTN arts. 132, 133; Lei 11.101 art. 141",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "clt_10_448_sucessao_trabalhista.md",
+      "cite": "CLT arts. 10, 448, 448-A",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cade_limiares.md",
+      "cite": "Lei 12.529/2011, art. 88; Portaria Interministerial 994/2012",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei14133_alteracao_societaria.md",
+      "cite": "Lei 14.133/2021, arts. 92 XVI, 124 II, 137 VI; art. 91 (habilitação mantida)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cc_1147_nao_concorrencia.md",
+      "cite": "CC art. 1.147",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "sandbagging_franquia_mercado.md",
+      "cite": "Doutrina de M&A; precedentes arbitrais (CAM-CCBC); pesquisa de mercado",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "earnout_pratica.md",
+      "cite": "Prática de M&A; precedentes arbitrais",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

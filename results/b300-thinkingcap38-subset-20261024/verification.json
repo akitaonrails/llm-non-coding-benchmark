@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "failures": [
+    "usacc_03_household_1040: execution did not finish",
+    "usacc_03_household_1040: missing/empty return.json",
+    "usacc_03_household_1040: missing/empty return.md",
+    "usacc_03_household_1040: missing/empty judgment_calls.md",
+    "usacc_03_household_1040: missing/empty STATUS.md"
+  ],
+  "cases": 3,
+  "nonempty_required_artifacts": 6,
+  "checked_context_records_including_repeats": 9,
+  "frozen_files_checked": 786,
+  "scope": "Execution provenance, artifact presence/JSON syntax, frozen inputs and usage accounting only. No correctness score."
+}

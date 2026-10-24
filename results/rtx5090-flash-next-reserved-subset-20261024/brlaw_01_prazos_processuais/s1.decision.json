@@ -1,0 +1,5 @@
+{
+  "pushback_indices": [0],
+  "nudge": false,
+  "reason": "prazos.json explicitly sets citacao.prazo_em_dobro to false, matching the sole scripted pushback. All three required deliverables are present and nonempty."
+}

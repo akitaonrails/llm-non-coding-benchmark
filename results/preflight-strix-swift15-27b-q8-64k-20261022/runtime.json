@@ -1,0 +1,22 @@
+[
+  {
+    "name": "noncoding-swift15-27b-q8-64k:20261022",
+    "model": "noncoding-swift15-27b-q8-64k:20261022",
+    "size": 30373366988,
+    "digest": "579322b6f46a7ddaf8bc7ee5593488ce458ba71bb1ae9c0bc6614c3b3559d025",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "27.3B",
+      "quantization_level": "unknown"
+    },
+    "expires_at": "2026-10-22T20:22:45.701299908Z",
+    "size_vram": 30373366988,
+    "context_length": 65536,
+    "runner": "llamacpp"
+  }
+]

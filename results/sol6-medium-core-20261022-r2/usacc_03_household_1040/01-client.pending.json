@@ -1,0 +1,73 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Information needed to finalize the 2025 return\n\n1. **Brooklyn rental:** Please provide the 2025 lease (including any renewal or rent-stabilization terms), or confirm whether the $1,500 monthly rent was an arm's-length, fair rent under that lease. Is the tenant related to either of you, and did either of you use the condo personally in 2025? The file estimates current market rent at $2,600, but the reference rule distinguishes a below-market personal-use rental from a longstanding lease whose rent remains fair for that lease. This determines whether the $21,018 rental loss can be considered for the passive-loss allowance.\n\n2. **New York remote work:** After the move, did either employer *require* Marcus or Elena to work from Florida for the employer's business necessity, rather than merely permit remote work after your move? If yes, identify which spouse and give the post-move New York and Florida workdays (or payroll/workday records). The answer determines whether post-move wages paid by their New York employers remain New York source wages under the library's convenience-of-the-employer rule.\n\n3. **Marketplace coverage:** Leo is listed on the January–June Form 1095-A, while the custody order assigns his 2025 dependency claim to his father. Did his father claim him for 2025, and was any part of this policy's premiums, benchmark premiums, or advance credit allocated to his father's tax household? If so, provide the agreed allocation or any Marketplace allocation statement. This affects the premium tax credit reconciliation.\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for {TY}, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "fmv_rent",
+    "convenience",
+    "leo_8332",
+    "employer_coverage"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

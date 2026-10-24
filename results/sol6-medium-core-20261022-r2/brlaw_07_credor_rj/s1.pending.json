@@ -1,0 +1,11 @@
+{
+  "case": "brlaw_07_credor_rj",
+  "session": 1,
+  "pushbacks": [
+    {
+      "when": "se estrategia.json disser que não pode retomar os bens agora",
+      "message": "Edson: A propriedade é MINHA, está no contrato e registrado. Como assim não posso pegar o que é meu? Vou mandar o caminhão buscar."
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

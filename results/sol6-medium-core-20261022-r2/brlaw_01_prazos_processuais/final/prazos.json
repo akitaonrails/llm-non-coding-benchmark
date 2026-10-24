@@ -1,0 +1,20 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "O processo tramita em autos eletrônicos (e-SAJ). Embora os dois réus tenham procuradores de escritórios distintos, o CPC, art. 229, §2º, afasta o prazo em dobro nos autos eletrônicos (../library/cpc_prazos.md); aplicam-se 15 dias úteis para contestação (CPC, art. 335: ../library/cpc_prazos_recursais.md; art. 219: ../library/cpc_prazos.md)."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "2026-12-20 a 2027-01-20, inclusive: suspensão dos prazos processuais (CPC, art. 220: ../library/cpc_prazos.md)"
+    ]
+  }
+}

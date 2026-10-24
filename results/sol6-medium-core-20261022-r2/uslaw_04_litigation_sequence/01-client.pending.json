@@ -1,0 +1,46 @@
+{
+  "case": "uslaw_04_litigation_sequence",
+  "questions": "# Client questions — Session 1\n\n1. For each of Priya S., Luis F., Keisha B., Anne O., and Victor H., what were the hire date and first-year annualized compensation? Please provide any offer, payroll, or other records showing the figure, and confirm how and when Juniper introduced each person to Pinecrest.\n2. Do you have delivery or receipt dates, time sheets, shift approvals, credits, or payment records for invoices J-4411, J-4452, J-4490, J-4533, and J-4571? Please provide them, especially the backup for J-4533.\n3. What was said on Bell's six-minute call with Lindqvist after the May 14 text, and did Bell make any oral or written agreement concerning fees for Priya, Luis, Keisha, Anne, or Victor? Please provide any notes or follow-up messages.\n4. Did Pinecrest send any termination notice beyond its May 2 email, or give Juniper the results of its June invoice audit? If so, please provide them.\n",
+  "facts": [
+    {
+      "id": "feb11",
+      "trigger": [
+        "February 11",
+        "waived",
+        "one-off",
+        "Rosa",
+        "Tay",
+        "did anyone consent"
+      ],
+      "answer": "Marcus: Yeah… I waived the fee for Rosa and Tay in February. Just those two. I didn't think it was a big deal. I never agreed to the other five.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "exhibit_c",
+      "trigger": [
+        "Exhibit C",
+        "arbitration",
+        "dispute resolution",
+        "AAA"
+      ],
+      "answer": "Dolapo: There's an arbitration exhibit? Our old lawyer used a template. Nobody read it. Does that kill us?",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "padded",
+      "trigger": [
+        "padded",
+        "J-4533",
+        "audit",
+        "hours"
+      ],
+      "answer": "Dolapo: Two shifts were double-entered in June, about $3,100. The rest is legit.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "padded"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

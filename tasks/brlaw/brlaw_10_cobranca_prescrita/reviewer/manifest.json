@@ -1,0 +1,129 @@
+{
+  "id": "brlaw_10_cobranca_prescrita",
+  "quadrant": "brlaw",
+  "title": "Cobrança de dívida antiga: via processual, prescrição parcela a parcela, negativação",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Execução",
+      "wrong_move": "Ajuizar execução de título extrajudicial",
+      "why_wrong": "Contrato sem 2 testemunhas; boleto não é título → monitória/cobrança",
+      "authority": "CPC 784 III; 700",
+      "evidence": "Contrato (sem testemunhas); CPC 784 III",
+      "harm": "Extinção da execução; sucumbência",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "'Nada prescreveu'",
+      "wrong_move": "Cobrar as 6 parcelas",
+      "why_wrong": "Reconhecimento de 15/09/2022 alcança só as parcelas 1-4 (interrupção única; recomeça); parcelas 5-6 contestadas prescreveram em 10/02/2026 e 10/03/2026; pagamento de 2023 não interrompe de novo (pushback)",
+      "authority": "CC 202 caput e VI; 206 §5º I",
+      "evidence": "E-mails; CC 202",
+      "harm": "Cobrança de dívida prescrita → improcedência parcial, reconvenção",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Negativação pelo total",
+      "wrong_move": "Manter R$ 180 mil no Serasa",
+      "why_wrong": "Indevida quanto a R$ 60.000,00; retificar; Súmula 385 mitiga dano moral mas não a irregularidade",
+      "authority": "Súmula 385; STJ",
+      "evidence": "Negativação; consulta",
+      "harm": "Dano moral (mitigado) + cancelamento",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Protestar tudo",
+      "wrong_move": "Protesto das 6 parcelas",
+      "why_wrong": "Protesto de dívida prescrita gera responsabilidade",
+      "authority": "",
+      "evidence": "Lei 9.492",
+      "harm": "Indenização",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Ignorar a Súmula 385 (ou superestimar o risco)",
+      "wrong_move": "Dizer que há dano moral certo / ou que não há risco algum",
+      "why_wrong": "3 inscrições legítimas preexistentes → sem dano moral, mas cancelamento devido",
+      "authority": "Súmula 385",
+      "evidence": "Consulta Serasa",
+      "harm": "Risco mal calibrado",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "via_processual = monitoria ou cobranca (não execução)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "analise.json"
+    },
+    {
+      "item": "prescricao: parcelas 5 e 6 prescritas; 1-4 não (novo termo 2027-09-15)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "valor_principal_exigivel",
+      "expected": "110000",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "negativacao.indevida_quanto_a",
+      "expected": "60000",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "protesto: não para as prescritas",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Memorando explica interrupção única (CC 202) no pushback"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "cc_prescricao_202_206.md",
+      "cite": "CC arts. 189, 202 (caput e inc. VI, parágrafo único), 206 §5º I",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cpc_titulo_executivo_monitoria.md",
+      "cite": "CPC arts. 700, 784 III; STJ Súmula 299, 503; REsp 1.438.263 (contrato sem testemunhas)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "negativacao_prescrita_sumula385.md",
+      "cite": "STJ Súmula 385; REsp 1.792.700; Lei 9.492/97; CDC art. 43 §5º (por analogia); STJ Tema 1.264 (dívida prescrita e cadastros)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "juros_correcao.md",
+      "cite": "CC arts. 389, 406 (Lei 14.905/2024); contrato",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

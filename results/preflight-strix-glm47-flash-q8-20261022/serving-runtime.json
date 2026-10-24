@@ -1,0 +1,8 @@
+{
+  "source": "http://192.168.0.90:11435/upstream/glm-4.7-flash:q8/props",
+  "model_path": "/hf/zai-org_GLM-4.7-Flash-Q8_0.gguf",
+  "total_slots": 4,
+  "context": 202752,
+  "agent_context_limit": 65536,
+  "note": "Existing llama-swap server settings were not changed. Agent runs remain serial."
+}

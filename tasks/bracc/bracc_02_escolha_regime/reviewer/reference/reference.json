@@ -1,0 +1,34 @@
+{
+  "simples": {
+    "das": "738000.00",
+    "iss_fora": "210000.00",
+    "inss_patronal": 0,
+    "total": "948000.00",
+    "aliquota_efetiva_pct": "17.57"
+  },
+  "presumido": {
+    "irpj": "274200.00",
+    "csll": "109620.00",
+    "pis_cofins": "153300.00",
+    "iss": "210000.00",
+    "inss_patronal": "364000.00",
+    "total": "1111120.00"
+  },
+  "real": {
+    "irpj": "165000.00",
+    "csll": "68040.00",
+    "pis_cofins_debito": "388500.00",
+    "creditos": "83250.00",
+    "iss": "210000.00",
+    "inss_patronal": "364000.00",
+    "total": "1112290.00"
+  },
+  "caminho_errado": {
+    "real_creditando_tudo_e_sem_inss": "702040.00",
+    "simples_sem_iss_fora": "738000.00"
+  },
+  "recomendacao": "simples",
+  "mudanca_em_dezembro": "impossivel",
+  "prazo_opcao": "2026-01-30 (último dia útil de janeiro; verificar calendário)",
+  "nova_empresa_dezembro": "fraude/simulação (segregação artificial de receitas; grupo econômico) — recusar"
+}

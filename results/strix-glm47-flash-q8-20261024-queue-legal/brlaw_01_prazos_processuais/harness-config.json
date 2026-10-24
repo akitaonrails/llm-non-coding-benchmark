@@ -1,0 +1,42 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "strix/glm-4.7-flash:q8",
+  "small_model": "strix/glm-4.7-flash:q8",
+  "enabled_providers": [
+    "strix"
+  ],
+  "share": "disabled",
+  "autoupdate": false,
+  "permission": {
+    "*": "allow",
+    "task": "deny",
+    "webfetch": "deny",
+    "websearch": "deny"
+  },
+  "provider": {
+    "strix": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Strix benchmark",
+      "options": {
+        "baseURL": "http://127.0.0.1:18080/v1",
+        "apiKey": "local",
+        "timeout": 7200000
+      },
+      "models": {
+        "glm-4.7-flash:q8": {
+          "name": "glm-4.7-flash:q8",
+          "tool_call": true,
+          "reasoning": false,
+          "limit": {
+            "context": 65536,
+            "output": 16384
+          },
+          "cost": {
+            "input": 0,
+            "output": 0
+          }
+        }
+      }
+    }
+  }
+}

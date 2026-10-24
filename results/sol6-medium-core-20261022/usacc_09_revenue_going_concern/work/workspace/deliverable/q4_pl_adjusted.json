@@ -1,0 +1,19 @@
+{
+  "revenue_as_drafted": 1540000,
+  "adjustments": {
+    "Halvorsen LOI": -480000,
+    "Saltline kits": -210000,
+    "Ironvale hosting": 0
+  },
+  "revenue_corrected": 850000,
+  "hosting": {
+    "treatment": "Embedded lease for identified dedicated equipment; power, cooling, and network are services. Q4 drafted hosting expense is $54,000 (3 x $18,000). Lease and service payment allocation, discount rate, commencement facts, and asset/liability adjustments were not supplied; measurement and Q4 expense reclassification remain open. Null means unknown, not zero.",
+    "rou_asset": null,
+    "lease_liability": null
+  },
+  "going_concern": {
+    "substantial_doubt": true,
+    "plans_probable": false,
+    "disclosure": "Disclose substantial doubt: 13-week cash forecast falls from $612,000 to negative $105,000 in the week ending February 20, 2026 and negative $509,000 by March 27, 2026. The $3,000,000 Crestline term sheet is non-binding and conditioned on Q4 revenue of at least $1,500,000 and no going-concern qualification; corrected Q4 revenue is $850,000. No other mitigating plan was supplied. Refresh the assessment through the actual financial-statement issuance date."
+  }
+}

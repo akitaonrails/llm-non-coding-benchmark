@@ -1,0 +1,189 @@
+{
+  "id": "bracc_05_abertura_empresa",
+  "quadrant": "bracc",
+  "title": "Abertura de empresa: estrutura societária, ITBI, pró-labore e distribuição",
+  "level": "L2",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Imunidade de ITBI 'automática'",
+      "wrong_move": "Integralizar o imóvel sem ITBI",
+      "why_wrong": "Exceção da atividade preponderante (locação de 40% da sala + CNAE 6810); Tema 796; pushback repete o senso comum",
+      "authority": "CF 156 §2º I; CTN 37",
+      "evidence": "Questionário; matrícula; script",
+      "harm": "Autuação ITBI (3% sobre 900k em SP ≈ R$ 27 mil + multa); e o CNAE de locação veda o Simples",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Cônjuges em comunhão universal como sócios",
+      "wrong_move": "Registrar Marina e Felipe como sócios",
+      "why_wrong": "CC 977 veda",
+      "authority": "CC 977",
+      "evidence": "Matrícula (regime); script",
+      "harm": "Indeferimento na Junta / nulidade",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Sócia de serviço",
+      "wrong_move": "Luana com 20% integralizados em trabalho",
+      "why_wrong": "CC 1.055 §2º veda na LTDA",
+      "authority": "CC 1.055 §2º",
+      "evidence": "Minuta cl. 3ª",
+      "harm": "Registro indeferido; estrutura nula",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Servidora administradora",
+      "wrong_move": "Marina na administração",
+      "why_wrong": "Lei 8.112 art. 117 X: sócia sim, administradora não",
+      "authority": "Lei 8.112 art. 117 X",
+      "evidence": "Questionário",
+      "harm": "PAD; demissão",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Pró-labore zero",
+      "wrong_move": "Só distribuição de lucros",
+      "why_wrong": "Sócios que trabalham: pró-labore obrigatório; recaracterização integral (SC 120/2016)",
+      "authority": "Lei 8.212",
+      "evidence": "Biblioteca",
+      "harm": "Autuação previdenciária",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 6,
+      "title": "'Lucros isentos' sem olhar 2026 e o lucro contábil",
+      "wrong_move": "Ignorar Lei 15.270 e a necessidade de lucro apurado",
+      "why_wrong": "Retenção de 10% acima de R$ 50 mil/mês; distribuição exige lucro contábil",
+      "authority": "Lei 15.270/2025",
+      "evidence": "Biblioteca",
+      "harm": "Planejamento com lei revogada",
+      "severity": "M",
+      "reviewer_confidence": "medium — verificar texto"
+    },
+    {
+      "n": 7,
+      "title": "CNAE de locação no Simples",
+      "wrong_move": "Manter 6810-2/02",
+      "why_wrong": "Vedado (LC 123 art. 17 XV)",
+      "authority": "LC 123 art. 17",
+      "evidence": "Questionário",
+      "harm": "Exclusão do Simples",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 8,
+      "title": "Não concorrência perpétua e integralização a valor de mercado",
+      "wrong_move": "Aceitar cláusula 9ª; integralizar por 900k",
+      "why_wrong": "Prazo/território razoáveis; art. 23 Lei 9.249 (valor da declaração evita GCAP)",
+      "authority": "",
+      "evidence": "Minuta; biblioteca",
+      "harm": "Cláusula inválida; IR desnecessário",
+      "severity": "L",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "itbi.devido",
+      "expected": "true (ou: imunidade só se o imóvel ficar fora da clínica / locação não preponderante — análise exigida)",
+      "tolerance": "exact",
+      "how": "numeros.json"
+    },
+    {
+      "item": "CC 977 identificado (cônjuges comunhão universal)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "parecer.md"
+    },
+    {
+      "item": "CC 1.055 §2º identificado (sócia de serviço) com alternativa",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "Marina não administradora",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "simples_possivel = false com CNAE de locação; true sem",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "integralizacao valor_recomendado",
+      "expected": "420000",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Pushback sobre ITBI respondido com a exceção constitucional e a alternativa estrutural"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "cf156_ctn37_itbi.md",
+      "cite": "CF art. 156, §2º, I; CTN arts. 36 e 37; STF RE 796.376 (Tema 796)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cc_sociedade_limitada.md",
+      "cite": "CC arts. 977, 997 V, 1.010, 1.052, 1.053, 1.055 §§1º-2º, 1.060, 1.061",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei8112_art117.md",
+      "cite": "Lei 8.112/90, art. 117, X",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lc123_vedacoes.md",
+      "cite": "LC 123/2006, art. 17; Res. CGSN 140, Anexos VI e VII",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "pro_labore_inss.md",
+      "cite": "Lei 8.212/91, art. 12, V, f e art. 21; IN RFB 2.110/2022, art. 29; Solução de Consulta COSIT 120/2016",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei15270_dividendos_2026.md",
+      "cite": "Lei 15.270/2025, arts. 6º-A, 6º-B (Lei 9.250) e correlatos",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar artigos e condições de transição no texto oficial da Lei 15.270/2025."
+    },
+    {
+      "file": "lei9249_art23.md",
+      "cite": "Lei 9.249/95, art. 23",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

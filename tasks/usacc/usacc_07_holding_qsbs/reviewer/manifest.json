@@ -1,0 +1,130 @@
+{
+  "id": "usacc_07_holding_qsbs",
+  "quadrant": "usacc",
+  "title": "Holding company restructuring that would destroy QSBS",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Contributing the Helio founder stock to the holding",
+      "wrong_move": "Executing Step 2 as written",
+      "why_wrong": "§1202(c) original-issuance requirement; §1202(h) lists gift/death/partnership-to-partner, not partner-to-partnership; exclusion of ~$9.4M of gain lost; pushback repeats the advisor's false 'gain lands in the LLC' claim",
+      "authority": "§1202(c), (g), (h)",
+      "evidence": "SPA excerpt (original issue, <$1M gross assets, Feb 2020); org chart (30%, $9.4M); client script (exit in 12–18 months)",
+      "harm": "~$1.9–2.2M of avoidable tax (20% + 3.8% NIIT on $9.4M)",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Interest-free intercompany loans",
+      "wrong_move": "Keeping 'one bank account, no notes'",
+      "why_wrong": "§7872 imputed interest ($22,660.00/yr at mid-term AFR); commingling undermines the liability protection that is the stated purpose",
+      "authority": "§7872; practice",
+      "evidence": "Intercompany CSV (no documentation)",
+      "harm": "Phantom income; veil piercing",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "'No tax event, it's all §721'",
+      "wrong_move": "Asserting no gain on contributing Properties without analysis",
+      "why_wrong": "§752(b)/§731: liability shift vs. basis must be computed (here no gain, but it must be shown); negative tax capital is a red flag that requires the computation",
+      "authority": "§721; §752; §731",
+      "evidence": "Properties balance sheet",
+      "harm": "Unexpected gain if facts differ",
+      "severity": "H",
+      "reviewer_confidence": "medium — numeric conclusion is 0 but analysis is required"
+    },
+    {
+      "n": 4,
+      "title": "Two-partner fiction",
+      "wrong_move": "Treating a 99% / 1%-revocable-trust LLC as a partnership",
+      "why_wrong": "Grantor trust is disregarded → single owner for tax → the holding is a disregarded entity, not a partnership; the advisor's structure doesn't do what it claims",
+      "authority": "Treas. Reg. §301.7701-3 (not in library — model must flag as unverified or ask)",
+      "evidence": "Client script 'trust'",
+      "harm": "Wrong filing posture",
+      "severity": "M",
+      "reviewer_confidence": "medium"
+    },
+    {
+      "n": 5,
+      "title": "State nexus",
+      "wrong_move": "Assuming Wyoming formation avoids Colorado",
+      "why_wrong": "Commercial domicile in Colorado",
+      "authority": "Nexus summary",
+      "evidence": "Nexus summary",
+      "harm": "Non-filing penalties",
+      "severity": "L",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "Helio Grid stock excluded from the contribution",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "opinion.md"
+    },
+    {
+      "item": "qsbs_exclusion_at_risk",
+      "expected": "9388000",
+      "tolerance": "±$500k",
+      "how": "numbers.json"
+    },
+    {
+      "item": "imputed interest computed at mid-term AFR on both loans",
+      "expected": "22660.00",
+      "tolerance": "±$2,000",
+      "how": "numbers.json"
+    },
+    {
+      "item": "§752/§731 analysis present for Properties",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "opinion.md"
+    }
+  ],
+  "rubric": [
+    "Pushback answered: pass-through means gain is taxed to Nadia anyway; contribution forfeits §1202; post-sale cash can be contributed"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "irc_1202_excerpt.md",
+      "cite": "26 U.S.C. §1202(a), (c), (g), (h) (as amended through P.L. 119-21)",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verify post-OBBBA amounts; the contribution-to-partnership point is settled practice (not a listed §1202(h) transfer)."
+    },
+    {
+      "file": "irc_721_and_752.md",
+      "cite": "26 U.S.C. §721(a); §752(b); §731(a)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_7872_afr.md",
+      "cite": "26 U.S.C. §7872; Rev. Rul. 2026-4 (AFR table, excerpt)",
+      "verbatim": false,
+      "planted": null,
+      "note": "Replace with the actual AFR for the month of the engagement."
+    },
+    {
+      "file": "state_nexus_summary.md",
+      "cite": "Practitioner summary",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "step_transaction.md",
+      "cite": "*Commissioner v. Court Holding Co.*, 324 U.S. 331 (1945); *Gregory v. Helvering*, 293 U.S. 465 (1935)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

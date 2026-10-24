@@ -1,0 +1,38 @@
+{
+  "recommendation": "LLC taxed as a partnership (or a C corporation if they prioritize retained earnings/foreign-owner simplicity). NOT an S corporation while Tomás is a nonresident alien. Tomás receives a vested capital interest for his $20,000 cash plus a vesting PROFITS interest (Rev. Proc. 93-27) for services, with a protective 83(b) within 30 days. Priya contributes PriceLab under §721 (carryover basis $31,000; no gain). Form in California or register the Delaware LLC in California as a foreign LLC (CA tax applies either way).",
+  "substantial_presence_days_weighted": 161.0,
+  "tomas_status": "nonresident alien for 2026 (161 < 183, no green card)",
+  "s_election_consequence": "Election invalid from inception (§1361(b)(1)(C)); entity is a C corporation by default; 'distributions' are dividends — double taxation; Form 2553 late-relief unavailable because a shareholder was ineligible.",
+  "capital_interest_for_services": "If Tomás took 50% of a $140,000 capital account for services, ~$50,000 is compensation income at vesting (§83) — avoided with a profits interest.",
+  "year1_estimate": {
+    "founders_plan_if_it_worked": {
+      "note": "shown only to expose the comparison the friend made",
+      "payroll_taxes_on_80k": "12240.00",
+      "but": "invalid election"
+    },
+    "recommended_partnership": {
+      "self_employment_tax_both": "36736.84",
+      "entity_level_tax": "0 (CA LLC $800 + fee $2,500)",
+      "assumptions": "guaranteed payments $130k each; §199A SSTB — below threshold year 1, so partially available"
+    },
+    "c_corp": {
+      "entity_level_tax": "12600.00",
+      "payroll_taxes_on_200k": "30600.00",
+      "assumptions": "salaries $100k each"
+    }
+  },
+  "deadlines": {
+    "form_2553_if_ever_eligible": "2 months 15 days after start of tax year",
+    "83b": "30 days after grant of the profits interest — no extension",
+    "CA_LLC_annual_tax": "15th day of 4th month",
+    "estimated_taxes": "Apr 15 / Jun 15 / Sep 15 / Jan 15"
+  },
+  "term_sheet_required": [
+    "3-year vesting, 1-year cliff, repurchase of unvested at cost",
+    "buy-sell on death/disability/divorce/departure with valuation method",
+    "spousal consent (Tomás, community property)",
+    "deadlock mechanism for 50/50",
+    "transfer restrictions",
+    "IP assignment of PriceLab to the entity"
+  ]
+}

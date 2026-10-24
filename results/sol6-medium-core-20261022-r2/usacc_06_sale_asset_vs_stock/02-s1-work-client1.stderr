@@ -1,0 +1,2 @@
+2026-10-22T18:51:55.108380Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find expected lines in /work/workspace/deliverable/memo.md:
+The figures in [`comparison.json`](comparison.json) are *nominal lifetime principal proceeds*, not present values or guaranteed collections.

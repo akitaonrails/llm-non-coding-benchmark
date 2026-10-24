@@ -1,0 +1,48 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "questions": "# Perguntas ao cliente — DAS maio/2026 (Lumen Soluções Digitais ME)\n\n**Rodada 1 respondida.** A pergunta 2 foi esclarecida; para as demais o cliente declarou **não ter\ninformação adicional**. Elas não serão repetidas — os pontos desconhecidos ficam abaixo como\n**desconhecidos sinalizados** (impacto quantificado no `memoria.md` e listados no `STATUS.md`).\n\n---\n\n## Respondida\n\n- **Q2 — Pró-labore abr/2026 (R$ 3.200,00).** **Resposta do cliente:** foi **pago em 30/04/2026**\n  (R$ 1.600,00 por sócio); o resumo saiu com a obs. \"em aberto\" porque o PIX foi lançado no sistema\n  apenas em maio. O e-mail anterior (\"paguei dia 6 de maio\") estava equivocado — de fato o extrato de\n  maio não tem esse débito, corroborando pagamento em abril.\n  **Efeito:** pró-labore incluído na folha da janela → folha 284.600,00, Fator R 27,90% < 28% →\n  **Anexo V** (mesma conclusão se o pagamento fosse posterior: 281.400,00 → 27,59% → Anexo V).\n  **Pendente:** comprovante de 30/04 prometido e ainda não recebido; conferi-lo quando chegar.\n\n## Desconhecidos sinalizados (cliente sem informação adicional — não re-perguntar)\n\n- **U1 — Pró-labore mar/2026** (ex-Q1). Linha 2026-03 do resumo: pró-labore 0,00. Adotado 0,00.\n  **Único fato que pode inverter o enquadramento:** se houver ~3.200,00 pago dentro da janela,\n  folha → 287.800,00, Fator R 28,22% ≥ 28% → **Anexo III**, DAS total 10.261,08 (vs. 15.188,84).\n  Verificável no extrato bancário de mar/2026 (documento não fornecido).\n- **U2 — Timing dos encargos patronais** (ex-Q3). Assumida equivalência de caixa (pagos sempre no mês\n  seguinte; 4.700 fixos/mês → folha unchanged 56.400,00). Inferência, não fato; o extrato de maio\n  confirma apenas abr/2026 → pago em 07/05/2026. Sem efeito no DAS adotado fora dela\n  (cenário C da sensibilidade: 279.900,00 → 27,44% → continua Anexo V).\n- **U3 — Cotas de repartição do Anexo V** (ex-Q4). Não constam da biblioteca fechada. Valores do\n  quadro de repartição dos serviços marcados **NÃO VERIFICADO**; o **total do DAS não depende deles**.\n- **U4 — Base do `faturamento_12_meses.csv`** (ex-Q5). Presumido líquido de estornos e sem locação.\n  Se a base for outra, o RBT12 (1.020.000,00), a faixa e as alíquotas efetivas mudam.\n- **U5 — DAS abr/2026 (R$ 10.480,22 pago em 20/05)** (ex-Q6). Não reproduzível com os documentos\n  (Anexo V cheio: 16.240,47; Anexo III cheio: 10.596,66). Sem efeito no DAS de maio/2026; deixa\n  aberta a hipótese de premissas diferentes em abril.\n",
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "prolabore_abril"
+  ],
+  "literal_suggestions": [
+    "estorno",
+    "locacao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

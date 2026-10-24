@@ -1,0 +1,149 @@
+{
+  "id": "uslaw_07_chapter11_creditor",
+  "quadrant": "uslaw",
+  "title": "Trade creditor in Chapter 11: stay, priority, preference exposure, bar date",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Continuing collection",
+      "wrong_move": "Keep dunning; 'file something to get paid first'",
+      "why_wrong": "§362(a)(6); sanctions; the legitimate 'paid first' route is the critical-vendor motion (pending, hearing 4/2) — which Mesa is jeopardizing by refusing trade terms",
+      "authority": "§362(a)(6), (k); Kmart",
+      "evidence": "Collection log; notice; script",
+      "harm": "Sanctions, fees, loss of critical-vendor status",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Preference exposure ignored",
+      "wrong_move": "Analyzing only what Redwood owes Mesa",
+      "why_wrong": "$180,000.00 paid in 90 days; Feb payments outside ordinary course (terms cut, wire on demand); new value offsets much; §502(d) can disallow Mesa's claim until resolved; pushback denies the concept",
+      "authority": "§547(b), (c)(2), (c)(4); §502(d)",
+      "evidence": "Payment history; terms email; script",
+      "harm": "Blindsided by a preference suit; claim disallowed",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "503(b)(9) on services/freight",
+      "wrong_move": "Claiming admin priority on MS-7802 and MS-7819",
+      "why_wrong": "Goods only; freight and on-site services excluded",
+      "authority": "§503(b)(9)",
+      "evidence": "Invoice descriptions",
+      "harm": "Objection; credibility",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Bar date",
+      "wrong_move": "Missing 2026-06-11 or filing a lump-sum claim",
+      "why_wrong": "Rule 3003; 503(b)(9) asserted separately",
+      "authority": "Rule 3003(c)",
+      "evidence": "Notice",
+      "harm": "Claim barred",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Mesa's own conduct hurts its defenses",
+      "wrong_move": "Not recognizing that the January terms change defeats ordinary course for later payments",
+      "why_wrong": "(c)(2)(A) compares to the parties' history",
+      "authority": "§547(c)(2)",
+      "evidence": "Terms email; payment history",
+      "harm": "Wrong exposure estimate",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "admin_503b9.amount",
+      "expected": "78100",
+      "tolerance": "exact",
+      "how": "claim_analysis.json"
+    },
+    {
+      "item": "admin_503b9 excludes MS-7802 and MS-7819",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "bar_date",
+      "expected": "2026-06-11",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "preference.transfers_in_90_days",
+      "expected": "180000",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "ordinary_course exposed includes Feb 10 and Feb 27 payments",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "stay_violations non-empty; immediate_actions includes stopping collection",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Pushback answered: explains preference and new value in plain English; recommends cooperating on critical-vendor terms"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "bc_362.md",
+      "cite": "11 U.S.C. §362(a)(1), (a)(6), (k)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "bc_503b9_546c.md",
+      "cite": "11 U.S.C. §503(b)(9); §546(c)(1)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "bc_547.md",
+      "cite": "11 U.S.C. §547",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "frbp_3002_3003.md",
+      "cite": "Fed. R. Bankr. P. 3003(c)(2)-(3); 3002(c)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "bc_502d_setoff.md",
+      "cite": "11 U.S.C. §502(d); §553",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "critical_vendor_practice.md",
+      "cite": "*In re Kmart Corp.*, 359 F.3d 866 (7th Cir. 2004); Dkt. 44 in this case",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

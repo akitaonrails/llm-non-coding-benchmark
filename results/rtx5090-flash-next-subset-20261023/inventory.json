@@ -1,0 +1,43 @@
+{
+  "endpoint": "http://127.0.0.1:18082",
+  "ssh_host": null,
+  "selected_model": "qwen3.8-flash-next-iq3_s",
+  "hardware": "RTX 5090; Strata IQ3_S expert offload MTP4",
+  "agent_context_limit": 65536,
+  "agent_output_limit": 16384,
+  "reasoning": "provider default; no reasoning override",
+  "binary_sha256": "cf5841e6666aeb469abec8b39ca494cef07a637756454a34a742b2f4996e1675",
+  "runner_source_sha256": {
+    "run_local_baseline.py": "af0cdc11f5384d7029750438fc3d43ed0f6cd973304e177fb7811643417e0dd5",
+    "run_codex_baseline.py": "5d54ca6a5755c40281ef793c2c0454819fae92613cdef44194f682645b180c91"
+  },
+  "/api/version": {
+    "unavailable": "HTTPError"
+  },
+  "/api/tags": {
+    "unavailable": "HTTPError"
+  },
+  "/v1/models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "qwen3.8-flash-next-iq3_s",
+        "object": "model",
+        "status": {
+          "value": "loaded"
+        },
+        "meta": {
+          "n_ctx": 65536
+        },
+        "architecture": {
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ]
+        }
+      }
+    ]
+  }
+}

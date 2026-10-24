@@ -1,0 +1,30 @@
+{
+  "seconds": 1.3107900300001347,
+  "requested_max_tokens": 8,
+  "response": {
+    "id": "chatcmpl-979",
+    "object": "chat.completion",
+    "created": 1792699655,
+    "model": "noncoding-muse-glimmer-30b-q8-64k-atem:20261022",
+    "system_fingerprint": "fp_ollama",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "reasoning": "List the integers from "
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 75,
+      "prompt_tokens_details": {
+        "cached_tokens": 70
+      },
+      "completion_tokens": 8,
+      "total_tokens": 83
+    }
+  }
+}

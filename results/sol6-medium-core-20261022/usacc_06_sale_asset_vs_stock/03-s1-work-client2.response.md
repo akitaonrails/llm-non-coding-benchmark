@@ -1,0 +1,5 @@
+I’ll record that the client has no further information and mark the remaining figures as unresolved assumptions, without asking those questions again.
+
+The engagement is complete with open items. I updated [STATUS.md](/work/workspace/deliverable/STATUS.md) and [memo.md](/work/workspace/deliverable/memo.md) to state that the client has no further information and to identify each unresolved assumption. [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md) records that no further client questions are pending.
+
+The estimated proceeds in [comparison.json](/work/workspace/deliverable/comparison.json) remain **conditional**, particularly because closing tax bases, assumed payables, the built-in gains tax loss effect, and Buyer B’s note collectibility are unresolved. The recommendation remains to **avoid signing Buyer A’s allocation as drafted** and preserve both offers while negotiating the supported [counterallocation](/work/workspace/deliverable/form_8594_counter.md).

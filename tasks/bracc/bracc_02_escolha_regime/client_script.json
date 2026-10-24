@@ -1,0 +1,51 @@
+{
+  "persona": "Hélio Vértice, engenheiro, sócio-administrador; confia no amigo contador.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "obra_pct",
+      "trigger": [
+        "obra",
+        "empreitada",
+        "materiais",
+        "EPC",
+        "percentual"
+      ],
+      "answer": "Uns 15% do faturamento é obra pequena com material; o resto é consultoria.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "creditos",
+      "trigger": [
+        "uso e consumo",
+        "creditável",
+        "mobiliário",
+        "veículos",
+        "administrativo"
+      ],
+      "answer": "Dos R$ 1,4 mi, uns R$ 500 mil são móveis, carros e papelaria. O resto é insumo de obra e software.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "lucro",
+      "trigger": [
+        "lucro contábil",
+        "margem",
+        "lucro real projetado"
+      ],
+      "answer": "Margem antes de imposto uns 18%.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se o memorando disser que não é possível mudar em dezembro",
+      "message": "Hélio: Meu amigo disse que basta pedir a exclusão no portal em dezembro. Tem certeza? E se eu abrir outra empresa no Lucro Real e faturar dezembro por ela?"
+    }
+  ]
+}

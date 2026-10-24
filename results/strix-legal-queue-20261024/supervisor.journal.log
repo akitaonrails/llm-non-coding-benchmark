@@ -1,0 +1,168 @@
+Oct 23 23:49:37 hal9000 systemd[1379]: Started [systemd-run] /usr/bin/python3 -u scripts/run_strix_legal_queue.py --config config/strix_legal_queue.json --state-dir results/strix-legal-queue-20261024.
+Oct 24 01:48:04 hal9000 python3[1778821]: {
+Oct 24 01:48:04 hal9000 python3[1778821]:   "passed": false,
+Oct 24 01:48:04 hal9000 python3[1778821]:   "failures": [
+Oct 24 01:48:04 hal9000 python3[1778821]:     "brlaw_01_prazos_processuais: execution did not finish",
+Oct 24 01:48:04 hal9000 python3[1778821]:     "brlaw_01_prazos_processuais: missing/empty prazos.json",
+Oct 24 01:48:04 hal9000 python3[1778821]:     "brlaw_01_prazos_processuais: missing/empty memoria.md",
+Oct 24 01:48:04 hal9000 python3[1778821]:     "brlaw_01_prazos_processuais: missing/empty STATUS.md",
+Oct 24 01:48:04 hal9000 python3[1778821]:     "brlaw_01_prazos_processuais: incomplete provider request accounting or HTTP errors"
+Oct 24 01:48:04 hal9000 python3[1778821]:   ],
+Oct 24 01:48:04 hal9000 python3[1778821]:   "cases": 1,
+Oct 24 01:48:04 hal9000 python3[1778821]:   "nonempty_required_artifacts": 0,
+Oct 24 01:48:04 hal9000 python3[1778821]:   "checked_context_records_including_repeats": 3,
+Oct 24 01:48:04 hal9000 python3[1778821]:   "frozen_files_checked": 786,
+Oct 24 01:48:04 hal9000 python3[1778821]:   "scope": "Execution provenance, artifact presence/JSON syntax, frozen inputs and usage accounting only. No correctness score."
+Oct 24 01:48:04 hal9000 python3[1778821]: }
+Oct 24 01:48:04 hal9000 python3[1778822]: # noncoding-qwen38-27b-q4-64k:20261022 — Strix Halo; Q4_K_M; Ollama 0.40.10 diagnostic run
+Oct 24 01:48:04 hal9000 python3[1778822]: Execution and timing only; task correctness is not graded.
+Oct 24 01:48:04 hal9000 python3[1778822]: - Harness: opencode 2.1.2; 1 worker.
+Oct 24 01:48:04 hal9000 python3[1778822]: - Wall time: 195.42 minutes.
+Oct 24 01:48:04 hal9000 python3[1778822]: - Active agent time: 194.38 minutes.
+Oct 24 01:48:04 hal9000 python3[1778822]: - Controller waits: 1.03 minutes.
+Oct 24 01:48:04 hal9000 python3[1778822]: - API charge: $0. Electricity, hardware and pod rental cost: not included.
+Oct 24 01:48:04 hal9000 python3[1778822]: - Different agent harness from Sol; not a model-only controlled comparison.
+Oct 24 01:48:04 hal9000 python3[1778822]: | Case | Agent min | Turns | Input tokens | Cached input | Output tokens | Status |
+Oct 24 01:48:04 hal9000 python3[1778822]: |---|---:|---:|---:|---:|---:|---|
+Oct 24 01:48:04 hal9000 python3[1778822]: | brlaw_01_prazos_processuais | 194.38 | 3 | 1,426,429 | 1,307,776 | 112,009 | infrastructure_failed |
+Oct 24 01:48:04 hal9000 python3[1778822]: Input includes cached input. Output/reasoning accounting is limited to provider-reported fields.
+Oct 24 01:48:04 hal9000 python3[1778822]: Provider request logs include background title generation and are retained per case.
+Oct 24 03:49:12 hal9000 python3[1933080]: {
+Oct 24 03:49:12 hal9000 python3[1933080]:   "passed": false,
+Oct 24 03:49:12 hal9000 python3[1933080]:   "failures": [
+Oct 24 03:49:12 hal9000 python3[1933080]:     "brlaw_01_prazos_processuais: execution did not finish",
+Oct 24 03:49:12 hal9000 python3[1933080]:     "brlaw_01_prazos_processuais: missing/empty prazos.json",
+Oct 24 03:49:12 hal9000 python3[1933080]:     "brlaw_01_prazos_processuais: missing/empty memoria.md",
+Oct 24 03:49:12 hal9000 python3[1933080]:     "brlaw_01_prazos_processuais: missing/empty STATUS.md",
+Oct 24 03:49:12 hal9000 python3[1933080]:     "brlaw_01_prazos_processuais: incomplete provider request accounting or HTTP errors"
+Oct 24 03:49:12 hal9000 python3[1933080]:   ],
+Oct 24 03:49:12 hal9000 python3[1933080]:   "cases": 1,
+Oct 24 03:49:12 hal9000 python3[1933080]:   "nonempty_required_artifacts": 0,
+Oct 24 03:49:12 hal9000 python3[1933080]:   "checked_context_records_including_repeats": 1,
+Oct 24 03:49:12 hal9000 python3[1933080]:   "frozen_files_checked": 786,
+Oct 24 03:49:12 hal9000 python3[1933080]:   "scope": "Execution provenance, artifact presence/JSON syntax, frozen inputs and usage accounting only. No correctness score."
+Oct 24 03:49:12 hal9000 python3[1933080]: }
+Oct 24 03:49:12 hal9000 python3[1933108]: # noncoding-qwen38-27b-q8-64k:20261022 — Strix Halo; Q8_0; Ollama 0.40.10 diagnostic run
+Oct 24 03:49:12 hal9000 python3[1933108]: Execution and timing only; task correctness is not graded.
+Oct 24 03:49:12 hal9000 python3[1933108]: - Harness: opencode 2.1.2; 1 worker.
+Oct 24 03:49:12 hal9000 python3[1933108]: - Wall time: 120.01 minutes.
+Oct 24 03:49:12 hal9000 python3[1933108]: - Active agent time: 120.00 minutes.
+Oct 24 03:49:12 hal9000 python3[1933108]: - Controller waits: 0.00 minutes.
+Oct 24 03:49:12 hal9000 python3[1933108]: - API charge: $0. Electricity, hardware and pod rental cost: not included.
+Oct 24 03:49:12 hal9000 python3[1933108]: - Different agent harness from Sol; not a model-only controlled comparison.
+Oct 24 03:49:12 hal9000 python3[1933108]: | Case | Agent min | Turns | Input tokens | Cached input | Output tokens | Status |
+Oct 24 03:49:12 hal9000 python3[1933108]: |---|---:|---:|---:|---:|---:|---|
+Oct 24 03:49:12 hal9000 python3[1933108]: | brlaw_01_prazos_processuais | 120.00 | 1 | 148,784 | 133,268 | 50,476 | infrastructure_failed |
+Oct 24 03:49:12 hal9000 python3[1933108]: Input includes cached input. Output/reasoning accounting is limited to provider-reported fields.
+Oct 24 03:49:12 hal9000 python3[1933108]: Provider request logs include background title generation and are retained per case.
+Oct 24 06:11:44 hal9000 python3[2058303]: {
+Oct 24 06:11:44 hal9000 python3[2058303]:   "passed": true,
+Oct 24 06:11:44 hal9000 python3[2058303]:   "failures": [],
+Oct 24 06:11:44 hal9000 python3[2058303]:   "cases": 1,
+Oct 24 06:11:44 hal9000 python3[2058303]:   "nonempty_required_artifacts": 3,
+Oct 24 06:11:44 hal9000 python3[2058303]:   "checked_context_records_including_repeats": 3,
+Oct 24 06:11:44 hal9000 python3[2058303]:   "frozen_files_checked": 786,
+Oct 24 06:11:44 hal9000 python3[2058303]:   "scope": "Execution provenance, artifact presence/JSON syntax, frozen inputs and usage accounting only. No correctness score."
+Oct 24 06:11:44 hal9000 python3[2058303]: }
+Oct 24 06:11:44 hal9000 python3[2058313]: # noncoding-swift15-27b-q4-64k:20261022 — Strix Halo; Q4_K_M; Ollama 0.40.10 diagnostic run
+Oct 24 06:11:44 hal9000 python3[2058313]: Execution and timing only; task correctness is not graded.
+Oct 24 06:11:44 hal9000 python3[2058313]: - Harness: opencode 2.1.2; 1 worker.
+Oct 24 06:11:44 hal9000 python3[2058313]: - Wall time: 141.64 minutes.
+Oct 24 06:11:44 hal9000 python3[2058313]: - Active agent time: 141.62 minutes.
+Oct 24 06:11:44 hal9000 python3[2058313]: - Controller waits: 0.02 minutes.
+Oct 24 06:11:44 hal9000 python3[2058313]: - API charge: $0. Electricity, hardware and pod rental cost: not included.
+Oct 24 06:11:44 hal9000 python3[2058313]: - Different agent harness from Sol; not a model-only controlled comparison.
+Oct 24 06:11:44 hal9000 python3[2058313]: | Case | Agent min | Turns | Input tokens | Cached input | Output tokens | Status |
+Oct 24 06:11:44 hal9000 python3[2058313]: |---|---:|---:|---:|---:|---:|---|
+Oct 24 06:11:44 hal9000 python3[2058313]: | brlaw_01_prazos_processuais | 141.62 | 3 | 1,770,800 | 1,644,876 | 78,199 | completed_ungraded |
+Oct 24 06:11:44 hal9000 python3[2058313]: Input includes cached input. Output/reasoning accounting is limited to provider-reported fields.
+Oct 24 06:11:44 hal9000 python3[2058313]: Provider request logs include background title generation and are retained per case.
+Oct 24 08:07:33 hal9000 python3[2145642]: {
+Oct 24 08:07:33 hal9000 python3[2145642]:   "passed": true,
+Oct 24 08:07:33 hal9000 python3[2145642]:   "failures": [],
+Oct 24 08:07:33 hal9000 python3[2145642]:   "cases": 1,
+Oct 24 08:07:33 hal9000 python3[2145642]:   "nonempty_required_artifacts": 3,
+Oct 24 08:07:33 hal9000 python3[2145642]:   "checked_context_records_including_repeats": 3,
+Oct 24 08:07:33 hal9000 python3[2145642]:   "frozen_files_checked": 786,
+Oct 24 08:07:33 hal9000 python3[2145642]:   "scope": "Execution provenance, artifact presence/JSON syntax, frozen inputs and usage accounting only. No correctness score."
+Oct 24 08:07:33 hal9000 python3[2145642]: }
+Oct 24 08:07:33 hal9000 python3[2145643]: # noncoding-swift15-27b-q8-64k:20261022 — Strix Halo; Q8_0; Ollama 0.40.10 diagnostic run
+Oct 24 08:07:33 hal9000 python3[2145643]: Execution and timing only; task correctness is not graded.
+Oct 24 08:07:33 hal9000 python3[2145643]: - Harness: opencode 2.1.2; 1 worker.
+Oct 24 08:07:33 hal9000 python3[2145643]: - Wall time: 114.76 minutes.
+Oct 24 08:07:33 hal9000 python3[2145643]: - Active agent time: 114.72 minutes.
+Oct 24 08:07:33 hal9000 python3[2145643]: - Controller waits: 0.03 minutes.
+Oct 24 08:07:33 hal9000 python3[2145643]: - API charge: $0. Electricity, hardware and pod rental cost: not included.
+Oct 24 08:07:33 hal9000 python3[2145643]: - Different agent harness from Sol; not a model-only controlled comparison.
+Oct 24 08:07:33 hal9000 python3[2145643]: | Case | Agent min | Turns | Input tokens | Cached input | Output tokens | Status |
+Oct 24 08:07:33 hal9000 python3[2145643]: |---|---:|---:|---:|---:|---:|---|
+Oct 24 08:07:33 hal9000 python3[2145643]: | brlaw_01_prazos_processuais | 114.72 | 3 | 645,120 | 609,218 | 47,364 | completed_ungraded |
+Oct 24 08:07:33 hal9000 python3[2145643]: Input includes cached input. Output/reasoning accounting is limited to provider-reported fields.
+Oct 24 08:07:33 hal9000 python3[2145643]: Provider request logs include background title generation and are retained per case.
+Oct 24 10:05:33 hal9000 python3[2238843]: {
+Oct 24 10:05:33 hal9000 python3[2238843]:   "passed": true,
+Oct 24 10:05:33 hal9000 python3[2238843]:   "failures": [],
+Oct 24 10:05:33 hal9000 python3[2238843]:   "cases": 1,
+Oct 24 10:05:33 hal9000 python3[2238843]:   "nonempty_required_artifacts": 3,
+Oct 24 10:05:33 hal9000 python3[2238843]:   "checked_context_records_including_repeats": 3,
+Oct 24 10:05:33 hal9000 python3[2238843]:   "frozen_files_checked": 786,
+Oct 24 10:05:33 hal9000 python3[2238843]:   "scope": "Execution provenance, artifact presence/JSON syntax, frozen inputs and usage accounting only. No correctness score."
+Oct 24 10:05:33 hal9000 python3[2238843]: }
+Oct 24 10:05:33 hal9000 python3[2238844]: # noncoding-thinkingcap38-27b-q4-64k:20261022 — Strix Halo; Q4_K_M; Ollama 0.40.10 diagnostic run
+Oct 24 10:05:33 hal9000 python3[2238844]: Execution and timing only; task correctness is not graded.
+Oct 24 10:05:33 hal9000 python3[2238844]: - Harness: opencode 2.1.2; 1 worker.
+Oct 24 10:05:33 hal9000 python3[2238844]: - Wall time: 117.36 minutes.
+Oct 24 10:05:33 hal9000 python3[2238844]: - Active agent time: 117.33 minutes.
+Oct 24 10:05:33 hal9000 python3[2238844]: - Controller waits: 0.02 minutes.
+Oct 24 10:05:33 hal9000 python3[2238844]: - API charge: $0. Electricity, hardware and pod rental cost: not included.
+Oct 24 10:05:33 hal9000 python3[2238844]: - Different agent harness from Sol; not a model-only controlled comparison.
+Oct 24 10:05:33 hal9000 python3[2238844]: | Case | Agent min | Turns | Input tokens | Cached input | Output tokens | Status |
+Oct 24 10:05:33 hal9000 python3[2238844]: |---|---:|---:|---:|---:|---:|---|
+Oct 24 10:05:33 hal9000 python3[2238844]: | brlaw_01_prazos_processuais | 117.33 | 3 | 948,324 | 907,622 | 69,132 | completed_ungraded |
+Oct 24 10:05:33 hal9000 python3[2238844]: Input includes cached input. Output/reasoning accounting is limited to provider-reported fields.
+Oct 24 10:05:33 hal9000 python3[2238844]: Provider request logs include background title generation and are retained per case.
+Oct 24 12:15:06 hal9000 python3[2337623]: {
+Oct 24 12:15:06 hal9000 python3[2337623]:   "passed": true,
+Oct 24 12:15:06 hal9000 python3[2337623]:   "failures": [],
+Oct 24 12:15:06 hal9000 python3[2337623]:   "cases": 1,
+Oct 24 12:15:06 hal9000 python3[2337623]:   "nonempty_required_artifacts": 3,
+Oct 24 12:15:06 hal9000 python3[2337623]:   "checked_context_records_including_repeats": 3,
+Oct 24 12:15:06 hal9000 python3[2337623]:   "frozen_files_checked": 786,
+Oct 24 12:15:06 hal9000 python3[2337623]:   "scope": "Execution provenance, artifact presence/JSON syntax, frozen inputs and usage accounting only. No correctness score."
+Oct 24 12:15:06 hal9000 python3[2337623]: }
+Oct 24 12:15:07 hal9000 python3[2337624]: # noncoding-muse-glimmer-30b-q8-64k-atem:20261022 — Strix Halo; Q8_0; Ollama 0.40.10 diagnostic run
+Oct 24 12:15:07 hal9000 python3[2337624]: Execution and timing only; task correctness is not graded.
+Oct 24 12:15:07 hal9000 python3[2337624]: - Harness: opencode 2.1.2; 1 worker.
+Oct 24 12:15:07 hal9000 python3[2337624]: - Wall time: 128.05 minutes.
+Oct 24 12:15:07 hal9000 python3[2337624]: - Active agent time: 128.03 minutes.
+Oct 24 12:15:07 hal9000 python3[2337624]: - Controller waits: 0.02 minutes.
+Oct 24 12:15:07 hal9000 python3[2337624]: - API charge: $0. Electricity, hardware and pod rental cost: not included.
+Oct 24 12:15:07 hal9000 python3[2337624]: - Different agent harness from Sol; not a model-only controlled comparison.
+Oct 24 12:15:07 hal9000 python3[2337624]: | Case | Agent min | Turns | Input tokens | Cached input | Output tokens | Status |
+Oct 24 12:15:07 hal9000 python3[2337624]: |---|---:|---:|---:|---:|---:|---|
+Oct 24 12:15:07 hal9000 python3[2337624]: | brlaw_01_prazos_processuais | 128.03 | 3 | 1,333,303 | 1,309,054 | 55,763 | completed_ungraded |
+Oct 24 12:15:07 hal9000 python3[2337624]: Input includes cached input. Output/reasoning accounting is limited to provider-reported fields.
+Oct 24 12:15:07 hal9000 python3[2337624]: Provider request logs include background title generation and are retained per case.
+Oct 24 12:50:01 hal9000 python3[2381255]: {
+Oct 24 12:50:01 hal9000 python3[2381255]:   "passed": true,
+Oct 24 12:50:01 hal9000 python3[2381255]:   "failures": [],
+Oct 24 12:50:01 hal9000 python3[2381255]:   "cases": 1,
+Oct 24 12:50:01 hal9000 python3[2381255]:   "nonempty_required_artifacts": 3,
+Oct 24 12:50:01 hal9000 python3[2381255]:   "checked_context_records_including_repeats": 3,
+Oct 24 12:50:01 hal9000 python3[2381255]:   "frozen_files_checked": 786,
+Oct 24 12:50:01 hal9000 python3[2381255]:   "scope": "Execution provenance, artifact presence/JSON syntax, frozen inputs and usage accounting only. No correctness score."
+Oct 24 12:50:01 hal9000 python3[2381255]: }
+Oct 24 12:50:01 hal9000 python3[2381256]: # glm-4.7-flash:q8 — Strix Halo; GLM4.7 Flash Q8; llama-swap diagnostic run
+Oct 24 12:50:01 hal9000 python3[2381256]: Execution and timing only; task correctness is not graded.
+Oct 24 12:50:01 hal9000 python3[2381256]: - Harness: opencode 2.1.2; 1 worker.
+Oct 24 12:50:01 hal9000 python3[2381256]: - Wall time: 34.24 minutes.
+Oct 24 12:50:01 hal9000 python3[2381256]: - Active agent time: 32.30 minutes.
+Oct 24 12:50:01 hal9000 python3[2381256]: - Controller waits: 1.93 minutes.
+Oct 24 12:50:01 hal9000 python3[2381256]: - API charge: $0. Electricity, hardware and pod rental cost: not included.
+Oct 24 12:50:01 hal9000 python3[2381256]: - Different agent harness from Sol; not a model-only controlled comparison.
+Oct 24 12:50:01 hal9000 python3[2381256]: | Case | Agent min | Turns | Input tokens | Cached input | Output tokens | Status |
+Oct 24 12:50:01 hal9000 python3[2381256]: |---|---:|---:|---:|---:|---:|---|
+Oct 24 12:50:01 hal9000 python3[2381256]: | brlaw_01_prazos_processuais | 32.30 | 3 | 1,293,366 | 1,239,038 | 32,267 | completed_ungraded |
+Oct 24 12:50:01 hal9000 python3[2381256]: Input includes cached input. Output/reasoning accounting is limited to provider-reported fields.
+Oct 24 12:50:01 hal9000 python3[2381256]: Provider request logs include background title generation and are retained per case.
+Oct 24 12:50:01 hal9000 systemd[1379]: noncoding-strix-legal-queue-20261024.service: Consumed 11min 22.333s CPU time over 13h 24.489s wall clock time, 426.9M memory peak, 94.6M memory swap peak.

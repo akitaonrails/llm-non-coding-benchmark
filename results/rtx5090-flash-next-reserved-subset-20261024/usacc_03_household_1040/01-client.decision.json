@@ -1,0 +1,4 @@
+{
+  "fact_ids": ["fmv_rent", "contrib", "convenience", "leo_8332"],
+  "reason": "Q1 asks directly about Leo's Form 8332; Q2 asks why both spouses worked remotely; Q3 asks for confirmation of historical shareholder loans/advances and basis; Q4 asks to substantiate the below-market rental arrangement, triggering its scripted clarification. Release those facts verbatim, retaining the existing {TY} fixture text. Q5 concerns Leo's household membership, not the reason marketplace coverage ended or employer-plan eligibility, so employer_coverage is not triggered. Other requested documents and completeness facts are unavailable."
+}

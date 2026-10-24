@@ -1,0 +1,5 @@
+I understand the concern. I’ll revisit where judgment is available, keep the year-end classifications tied to the supplied evidence, and make the letter clearer about the distinction between contractual acceleration and an actual inability to pay.
+
+Entendo a gravidade. **A quebra do covenant antecipa as debêntures conforme a escritura; ela não prova, por si só, que a empresa esteja insolvente.** Faltam o saldo das debêntures e uma projeção de caixa para avaliar esse risco.
+
+Revisei a [carta à diretoria](/work/workspace/deliverable/carta_diretoria.md) e a [nota explicativa](/work/workspace/deliverable/nota_explicativa.md) para deixar essa distinção clara e indicar as medidas imediatas: apurar a liquidez, buscar o waiver e formalizar a decisão sobre o AFAC. O julgamento favorável à empresa precisa ter suporte nos fatos de 31/12/2025; com a carta dos advogados, o vencimento da CCB e a ausência de capitalização do AFAC, o índice permanece **2,9694**, acima de **2,75**.

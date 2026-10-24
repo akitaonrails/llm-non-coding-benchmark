@@ -1,0 +1,7 @@
+Infrastructure preflight
+Shell path checks (zsh):
+/mnt/data: [[ -e ]] exit status 1; [[ -L ]] exit status 1; absent
+/home/akitaonrails: [[ -e ]] exit status 1; [[ -L ]] exit status 1; absent
+Python socket.create_connection((host, 443), timeout=5):
+example.com: socket.gaierror: [Errno -3] Temporary failure in name resolution; repr=gaierror(-3, 'Temporary failure in name resolution')
+1.1.1.1: builtins.PermissionError: [Errno 1] Operation not permitted; repr=PermissionError(1, 'Operation not permitted')

@@ -1,0 +1,150 @@
+{
+  "id": "usacc_06_sale_asset_vs_stock",
+  "quadrant": "usacc",
+  "title": "Selling the business: asset vs stock offer, allocation and built-in gains",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "All capital gain",
+      "wrong_move": "Netting $2,564,000.00 on Buyer A",
+      "why_wrong": "§1245 recapture $660,000.00 and the non-compete $400,000.00 are ordinary; net after tax $2,224,260.00 vs stock sale $2,364,000.00",
+      "authority": "§1245; Rev. Rul. 69-643; §197",
+      "evidence": "Fixed-asset register (accumulated depreciation 860k); LOI A ¶4",
+      "harm": "Seller picks the offer that nets less",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Built-in gains tax ignored",
+      "wrong_move": "No entity-level tax in the asset-sale comparison",
+      "why_wrong": "S election effective 1/1/2023 → recognition period runs through 2027; built-in gain on goodwill $900,000.00 and equipment $230,000.00 taxed at 21% = $237,300.00",
+      "authority": "§1374",
+      "evidence": "Tax history memo; conversion appraisal",
+      "harm": "Six-figure surprise tax",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Accepting Buyer A's allocation",
+      "wrong_move": "Reporting Exhibit A as 'standard'",
+      "why_wrong": "Equipment allocated above FMV (900k vs 650k) and a 400k covenant maximize the buyer's fast deductions and the seller's ordinary income; counter-allocation shifts to goodwill",
+      "authority": "§1060; Form 8594",
+      "evidence": "Register FMV column; Exhibit A",
+      "harm": "Avoidable ordinary income",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Installment note ignored",
+      "wrong_move": "Treating B as $2.85M cash",
+      "why_wrong": "$500k unsecured note: §453 deferral, credit risk, interest; recapture (if any) not deferrable",
+      "authority": "§453",
+      "evidence": "LOI B ¶2",
+      "harm": "Wrong comparison",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Liability assumption not priced",
+      "wrong_move": "Ignoring that B takes all liabilities and A assumes only listed payables",
+      "why_wrong": "Part of the price gap is rational",
+      "authority": "Practice aid",
+      "evidence": "LOI A ¶1 vs LOI B ¶3",
+      "harm": "—",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "asset_sale_buyer_a_as_drafted.net_after_tax",
+      "expected": "2224260.00",
+      "tolerance": "±$25,000",
+      "how": "comparison.json"
+    },
+    {
+      "item": "stock_sale_buyer_b.net_after_tax",
+      "expected": "2364000.00",
+      "tolerance": "±$10,000",
+      "how": ""
+    },
+    {
+      "item": "entity_level_tax (BIG) present and ≈",
+      "expected": "237300.00",
+      "tolerance": "±$15,000",
+      "how": ""
+    },
+    {
+      "item": "ordinary income in A includes recapture + non-compete",
+      "expected": "1070000",
+      "tolerance": "±$10,000",
+      "how": ""
+    },
+    {
+      "item": "Recommendation: do not sign A as drafted; counter on allocation/price or take B",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "memo.md"
+    }
+  ],
+  "rubric": [
+    "Pushback answered with a plain-language walk-through and a break-even number"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "irc_1245.md",
+      "cite": "26 U.S.C. §1245(a)(1)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_1374.md",
+      "cite": "26 U.S.C. §1374(a), (b), (d)(7)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_197_and_noncompete.md",
+      "cite": "26 U.S.C. §197(d)(1)(E); Rev. Rul. 69-643; *Muskat v. United States*, 554 F.3d 183 (1st Cir. 2009)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_1060_form_8594.md",
+      "cite": "26 U.S.C. §1060; Treas. Reg. §1.1060-1; Form 8594 Instructions",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_453_installment.md",
+      "cite": "26 U.S.C. §453(a), (b), (i)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "capital_gain_rates.md",
+      "cite": "IRC §1(h), §1(j); §1411",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "stock_vs_asset_overview.md",
+      "cite": "Practitioner summary",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "questions": "# Client information needed to assess removal\n\n1. List **every member (owner) of Harbor Street Bakery LLC** on September 8, 2026 and now, including each member's ownership type (individual, LLC, partnership, corporation, etc.). Were there any membership changes between those dates?\n2. For each individual member, what state was the person's **domicile** (permanent home, not merely a shop location or mailing address) on September 8 and now? In particular, is the Seattle partner domiciled in Washington? If a member is an LLC or partnership, identify all of its members and their domiciles or citizenship through every ownership layer. If a member is a corporation, give its state(s) of incorporation and principal place of business.\n3. Has Harbor Street already served an answer, notice of appearance, or other response, or appeared in the state case? If yes, give the filing/service date and a copy or description. Has any default motion or order been received?\n\nThe service declaration records delivery of the summons and complaint to Harbor Street's registered agent on September 11, 2026. Please also flag any reason you believe the declaration's service facts are inaccurate.\n",
+  "released_fact_ids": [
+    "member",
+    "appearance"
+  ],
+  "answer": "Yes — Caleb Sorensen owns 35% of the LLC. He lives in Seattle (Ballard). I own 65% and live in Portland. We're the only two members.\nNobody has filed anything for us. We don't have a Washington lawyer.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

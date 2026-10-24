@@ -1,0 +1,34 @@
+{
+  "case": "brlaw_01_prazos_processuais",
+  "questions": "# Perguntas ao Cliente\n\n## Questão Original\n\nO advogado da Logística Campos, um advogado experiente, garantiu que é prazo em dobro citando o art. 229 do CPC. O sócio está preocupado: \"se errarmos pra menos, perdemos o prazo.\"\n\n## Minha Análise Inicial\n\n- **CPC art. 229 §2º:** \"Não se aplica o disposto no caput aos processos em autos eletrônicos.\"\n- **O processo é PROCESSO ELETRÔNICO (e-SAJ)**, portanto, segundo a literalidade, não há prazo em dobro.\n- **A biblioteca não contém jurisprudência** (STJ, STF, TJSP) para confirmar ou refutar esta interpretação.\n\n## Decisão Tomada\n\nConsiderando o risco expressado pelo sócio (\"se errarmos pra menos, perdemos o prazo\"), adotei uma posição **conservadora** e calculei os prazos considerando prazo em dobro, baseada na interpretação do advogado experiente citando o art. 229.\n\n## Resumo dos Prazos Calculados (com Prazo em Dobro)\n\n| Prazo | Vencimento | Observação |\n|-------|------------|------------|\n| **Contestação** (30 dias úteis) | **30/01/2027** | 15 dias úteis × 2 |\n| **Embargos de Declaração** (10 dias úteis) | **25/12/2026** | 5 dias úteis × 2 |\n| **Apelação** (36 dias úteis) | **03/02/2027** | 15 dias úteis × 2 + suspensão do recesso |\n\n## Prazos Alternativos (sem prazo em dobro)\n\n| Prazo | Vencimento | Observação |\n|-------|------------|------------|\n| **Contestação** (15 dias úteis) | **11/12/2026** | Sem prazo em dobro |\n| **Embargos de Declaração** (5 dias úteis) | **18/12/2026** | Sem prazo em dobro |\n| **Apelação** (15 dias úteis) | **02/02/2027** | Sem prazo em dobro |\n\n## Risco\n\nSe a jurisprudência for favorável ao prazo em dobro mesmo em processos eletrônicos, os prazos calculados nesta memória (com prazo em dobro) são os corretos. Se não houver prazo em dobro, os prazos devem ser reduzidos à metade, o que representa um atraso de até 41 dias úteis na contestação (30/01/2027 vs. 11/12/2026).\n\n## Recomendação\n\nDado o alto risco de perder o prazo, recomenda-se:\n\n1. **Manter os prazos calculados com prazo em dobro** (30/01/2027 para contestação, 03/02/2027 para apelação)\n2. **Comunicar ao cliente** o risco de interpretação divergente e que os prazos foram calculados de forma conservadora\n3. **Manter embargos de declaração abertos** até 25/12/2026 (com prazo em dobro)\n4. **Monitorar jurisprudência** sobre o tema (STJ/STF/TJSP)\n\n---\n\n## Referências da Biblioteca\n\n- CPC art. 229: Prazo em dobro para litisconsortes com advogadores diferentes\n- CPC art. 229 §2º: *\"Não se aplica o disposto no caput aos processos em autos eletrônicos.\"*\n- CPC art. 335: Prazo de contestação (15 dias)\n- CPC art. 1.003 §5º: Prazo para recursos (15 dias)\n- CPC art. 1.023: Embargos de declaração (5 dias)\n- Lei 11.419/2006 art. 4 §3º: Data de publicação no DJe\n- Calendário forense Campinas 2026/2027: Feriados e recesso\n\n**Nota:** A biblioteca não contém jurisprudência (STJ/STF/TJSP) ou súmulas sobre este tema específico, limitando a análise apenas ao texto legal e ao calendário forense.\n",
+  "facts": [
+    {
+      "id": "eletronico",
+      "trigger": [
+        "eletrônico",
+        "físico",
+        "e-SAJ",
+        "autos"
+      ],
+      "answer": "É tudo pelo e-SAJ, digital.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "outro_reu",
+      "trigger": [
+        "Logística Campos",
+        "corré",
+        "outro réu",
+        "vai contestar"
+      ],
+      "answer": "A Logística Campos vai contestar também, pelo que sei.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "eletronico",
+    "outro_reu"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

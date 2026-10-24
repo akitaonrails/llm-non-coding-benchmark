@@ -1,0 +1,22 @@
+[
+  {
+    "case": "brlaw_01_prazos_processuais",
+    "status": "infrastructure_failed",
+    "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/strix-qwen38-q4-legal-20261024-r2/brlaw_01_prazos_processuais/03-review",
+    "elapsed_seconds": 11725.404797999989,
+    "controller_wait_seconds": 62.00627671000257,
+    "model_turn_seconds": 11662.96970486299,
+    "turns": 3,
+    "released_facts": [],
+    "usage": {
+      "input_tokens": 1426429,
+      "cached_input_tokens": 1307776,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 112009,
+      "reasoning_output_tokens": 0
+    },
+    "api_equivalent_usd": null,
+    "api_charge_usd": 0,
+    "electricity_cost_usd": null
+  }
+]

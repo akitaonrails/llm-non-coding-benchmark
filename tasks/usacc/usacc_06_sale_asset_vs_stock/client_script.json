@@ -1,0 +1,52 @@
+{
+  "persona": "Ray Brightline, decisive, impatient, trusts his buddy.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "noncompete_term",
+      "trigger": [
+        "non-compete",
+        "noncompete",
+        "longer term",
+        "consult",
+        "stay on"
+      ],
+      "answer": "I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "note_security",
+      "trigger": [
+        "note",
+        "secured",
+        "collateral",
+        "Hensley credit"
+      ],
+      "answer": "The $500k note is unsecured. Hensley's a family office, seems solid, but I don't know their balance sheet.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "liabilities",
+      "trigger": [
+        "liabilities",
+        "warranty",
+        "claims",
+        "lawsuit",
+        "Hardaway"
+      ],
+      "answer": "There's the Hardaway dispute ($9,800) and the usual warranty stuff. Nothing big that I know of.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "if the memo recommends against signing Buyer A as drafted",
+      "message": "Ray: You're telling me the offer that's $250k higher nets me LESS? That makes no sense. Walk me through it like I'm five, and tell me what number from Lone Star would actually beat Hensley."
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "bracc_03_cbs_ibs_ano_teste",
+  "quadrant": "bracc",
+  "title": "Apuração-teste CBS/IBS no ano de transição (2026)",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Lei decorada em vez da fornecida",
+      "wrong_move": "Raciocinar com PIS/COFINS/ICMS, inventar 'alíquota padrão' (8,8%/17,7%, 26,5%…), ou dizer 'nada a fazer'",
+      "why_wrong": "A biblioteca fixa 0,9%/0,1%, apuração paralela obrigatória e dispensa condicionada",
+      "authority": "Biblioteca",
+      "evidence": "LC 214 arts. 343, 346; ADCT 125",
+      "harm": "Porta de confiança",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "'Dispensado, ponto'",
+      "wrong_move": "Recolhimento devido = 0 sem a condição",
+      "why_wrong": "Dispensa só para quem cumpre as obrigações acessórias; três notas irregulares põem a dispensa em risco",
+      "authority": "",
+      "evidence": "ADCT 125 §4º; comunicado CGIBS",
+      "harm": "Cliente perde a dispensa",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Clientes do Simples/MEI 'não precisa destacar'",
+      "wrong_move": "Aceitar a premissa do gerente",
+      "why_wrong": "A dispensa do art. 347 é do optante como emitente; Horizonte destaca em todas as saídas",
+      "authority": "",
+      "evidence": "LC 214 art. 347; e-mail do gerente",
+      "harm": "Notas irregulares",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Marco de 03/08",
+      "wrong_move": "Tratar as notas [2308, 2310, 2312] como regulares (ou as anteriores como irregulares)",
+      "why_wrong": "Antes de 03/08 sem campos = válidas; depois = irregulares (pushback: autorização por emissor desatualizado não sana)",
+      "authority": "Comunicado CGIBS",
+      "evidence": "Datas das notas; comunicado",
+      "harm": "Rejeições; perda da dispensa",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Alíquotas invertidas",
+      "wrong_move": "Não ver a NF [2309] com CBS 0,1% / IBS 0,9%",
+      "why_wrong": "Deve ser apontada e corrigida; os totais da apuração usam as alíquotas corretas",
+      "authority": "NT",
+      "evidence": "XML",
+      "harm": "Apuração errada",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 6,
+      "title": "Crédito sobre entrada do Simples sem destaque",
+      "wrong_move": "Creditar a nota do Ponto Fixo",
+      "why_wrong": "Art. 347: sem destaque, sem crédito",
+      "authority": "LC 214 art. 347",
+      "evidence": "XML sem grupo; script",
+      "harm": "Crédito indevido",
+      "severity": "M",
+      "reviewer_confidence": "medium — depende da redação final; biblioteca é a autoridade do teste"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "totais.debito_cbs / debito_ibs",
+      "expected": "4320.00 / 480.00",
+      "tolerance": "exact",
+      "how": "apuracao_teste.json"
+    },
+    {
+      "item": "totais.credito_cbs / credito_ibs",
+      "expected": "1458.00 / 162.00",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "saidas irregulares",
+      "expected": "[2308, 2309, 2310, 2312]",
+      "tolerance": "exact set",
+      "how": ""
+    },
+    {
+      "item": "recolhimento_devido = 0 COM condição de dispensa expressa",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "orientação: destaque obrigatório também para clientes Simples/MEI",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "orientacao.md"
+    }
+  ],
+  "rubric": [
+    "Pushback: autorização ≠ conformidade; indica como corrigir"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "lc214_2025_transicao.md",
+      "cite": "LC 214/2025, arts. 343 a 348; ADCT art. 125 (EC 132/2023)",
+      "verbatim": false,
+      "planted": null,
+      "note": "VERIFICAR com o texto oficial da LC 214/2025 e do ADCT art. 125 antes de congelar; a biblioteca é a autoridade do teste, então a redação precisa estar correta."
+    },
+    {
+      "file": "cgibs_comunicado_03_08_2026.md",
+      "cite": "CGIBS, comunicado de julho/2026; NT NF-e 2025.002",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar data e teor do comunicado oficial."
+    },
+    {
+      "file": "nt_nfe_grupo_ibscbs.md",
+      "cite": "NT 2025.002 (resumo técnico)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei_pis_cofins_compensacao.md",
+      "cite": "ADCT art. 125, §1º; IN RFB (a editar)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

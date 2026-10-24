@@ -1,0 +1,149 @@
+{
+  "id": "brlaw_04_execucao_fiscal",
+  "quadrant": "brlaw",
+  "title": "Defesa em execução fiscal: decadência por período, emenda da CDA, redirecionamento e garantia",
+  "level": "L4",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Decadência com uma regra só",
+      "wrong_move": "Aplicar 173 I a todos (tese da Fazenda) ou 150 §4º a todos",
+      "why_wrong": "Tema 163/Súmula 555: com pagamento parcial, 150 §4º; sem, 173 I → 3T/2020 e 4T/2020 decaídos (R$ 509.000,00); 1T/2021 e 2T/2021 válidos",
+      "authority": "CTN 150 §4º, 173 I; Súmula 555",
+      "evidence": "PAF (pagamentos); CTN",
+      "harm": "Perde-se a decadência do 4T/2020 (ou alega-se decadência inexistente do 1T/2021)",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Insistir no vício sanado",
+      "wrong_move": "Após a emenda, continuar pedindo nulidade total pela multa",
+      "why_wrong": "LEF 2º §8º; Súmula 392; pushback do cliente",
+      "authority": "Súmula 392",
+      "evidence": "Sessão 2",
+      "harm": "Litigância temerária; credibilidade",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Redirecionamento ao sócio errado / presunção não afastada",
+      "wrong_move": "Aceitar o redirecionamento contra Ana, ou defender só 'Ana não era mais sócia' sem atacar a própria dissolução irregular",
+      "why_wrong": "Mudança de endereço registrada antes da certidão afasta a Súmula 435; Tema 962 protege Ana; Tema 981 apontaria Bruno; Súmula 430",
+      "authority": "Súmulas 430, 435; Temas 962, 981",
+      "evidence": "Alterações contratuais; certidão; script",
+      "harm": "Sócia errada responde; ou administrador atual exposto sem necessidade",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Veículo errado",
+      "wrong_move": "Embargos sem garantia / EPE para discutir mérito da omissão",
+      "why_wrong": "Súmula 393: EPE para decadência e vícios de ordem pública; mérito → embargos com garantia",
+      "authority": "Súmula 393",
+      "evidence": "LEF 16; Súmula 393",
+      "harm": "Rejeição liminar",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Transacionar débito decaído",
+      "wrong_move": "Aderir à transação sobre o total",
+      "why_wrong": "Confissão irrevogável; excluir primeiro os períodos nulos",
+      "authority": "Lei 13.988",
+      "evidence": "Biblioteca transação",
+      "harm": "Pagar o que não é devido",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "sessao1 analise: 3T/2020 e 4T/2020 decaídos; 1T/2021 e 2T/2021 válidos; regras corretas por período",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "valor_decaido",
+      "expected": "509000",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "veiculo = exceção de pré-executividade",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "sessao2: reconhece a validade da emenda (não insiste) e rebate a tese 173-para-todos",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "manifestacao.md"
+    },
+    {
+      "item": "sessao3/4: dissolucao_irregular_configurada = false; Ana não responde (Tema 962); se configurada, Bruno (Tema 981)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "sessao5: garantia sobre remanescente +30%; transação só após exclusão dos decaídos",
+      "expected": "true",
+      "tolerance": "±2% nos valores",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Carta aos sócios em linguagem simples; pushbacks respondidos com fundamento"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "ctn_decadencia_prescricao.md",
+      "cite": "CTN arts. 150 §4º, 173, I, 174; STJ Súmula 555; REsp 973.733/SC (Tema 163)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lef_e_sumulas_cda.md",
+      "cite": "Lei 6.830/80; STJ Súmulas 392, 393",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "redirecionamento_sumulas_temas.md",
+      "cite": "CTN art. 135, III; STJ Súmulas 430, 435; REsp 1.377.019 (Tema 962); REsp 1.645.333 (Tema 981)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei9430_art44_multa.md",
+      "cite": "Lei 9.430/96, art. 44, I e §1º",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "transacao_pgfn.md",
+      "cite": "Lei 13.988/2020; Portaria PGFN 6.757/2022; edital vigente (fixture)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "selic_e_garantia.md",
+      "cite": "Lei 9.430 art. 61 §3º; Portaria PGFN 164/2014; LEF art. 9º §3º",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "id": "usacc_03_household_1040",
+  "quadrant": "usacc",
+  "title": "Household Form 1040 with four interacting limits",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Full K-1 loss",
+      "wrong_move": "Deducting $28,000.00",
+      "why_wrong": "§1366(d): basis $11,500.00 limits the loss; $16,500.00 suspended on Form 7203; a guarantee creates no debt basis",
+      "authority": "Form 7203 instr.; §1366(d)",
+      "evidence": "Basis note (10,000 −2,100 +6,400 +9,800 −12,000 +4,600 −5,200 = 11,500); pushback invokes the guarantee",
+      "harm": "Underpayment, penalties, amended return",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Full rental loss",
+      "wrong_move": "Deducting $21,018.00",
+      "why_wrong": "§469(i) allowance $19,550.00 at MAGI $110,900.00; allowed $19,550.00, carryforward $1,468.00. Note the interaction: deducting the full K-1 loss drops MAGI below $100k and 'unlocks' the full rental loss — one wrong answer manufactures another",
+      "authority": "Form 8582 instr.; §469(i)",
+      "evidence": "W-2s; Form 8582 instr.",
+      "harm": "Underpayment",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Bracket arithmetic instead of the tax table",
+      "wrong_move": "Tax $6,705.00",
+      "why_wrong": "Table required under $100k: $6,708.00",
+      "authority": "1040 instr.",
+      "evidence": "Library tax table",
+      "harm": "Strict line fail (TaxCalcBench failure mode)",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "PTC repayment uncapped or credit unadjusted",
+      "wrong_move": "Repaying the full excess $2,368.80",
+      "why_wrong": "Household income 292.79% FPL → limitation $1,900.00",
+      "authority": "Form 8962 instr.",
+      "evidence": "1095-A; Form 8962 instr.",
+      "harm": "Overpayment of {money(excess - repayment)}",
+      "severity": "H",
+      "reviewer_confidence": "medium — verify TY2025 cap amounts"
+    },
+    {
+      "n": 5,
+      "title": "Claiming Leo",
+      "wrong_move": "Two dependents / two CTCs",
+      "why_wrong": "Custody order: father claims Leo in odd years; Elena signed 8332",
+      "authority": "1040 instr.",
+      "evidence": "Custody excerpt ¶9; client script",
+      "harm": "Disallowed dependent; CTC clawback; notice",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 6,
+      "title": "NY allocation by withholding",
+      "wrong_move": "Treating full-year NY withholding as correct, or allocating by days without addressing the convenience-of-the-employer rule",
+      "why_wrong": "Part-year: resident-period wages are NY; post-move remote wages for NY employers raise the convenience rule (client script: remote was for the employees' convenience) — must be analyzed, not ignored; either defended conclusion accepted",
+      "authority": "IT-203-I",
+      "evidence": "Move email; IT-203 excerpt",
+      "harm": "Lost refund or unexpected NY assessment",
+      "severity": "M",
+      "reviewer_confidence": "medium — judgment item; graded on analysis, not one number"
+    },
+    {
+      "n": 7,
+      "title": "Below-market rent",
+      "wrong_move": "Ignoring the note that rent is below market",
+      "why_wrong": "§280A(d)(2)(C) if below fair rental; here unrelated tenant at a stale lease → fair rental for that lease, loss allowed, but must be asked/flagged",
+      "authority": "Form 8582 instr. note",
+      "evidence": "Rental summary note; client script",
+      "harm": "—",
+      "severity": "M",
+      "reviewer_confidence": "medium"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "form1040.1a_wages",
+      "expected": "122000",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.2b_interest",
+      "expected": "400",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.8_other_income_sch1",
+      "expected": "-31050",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.11_agi",
+      "expected": "91350",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.12_deduction",
+      "expected": "31500",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.15_taxable_income",
+      "expected": "59850",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.16_tax",
+      "expected": "6708",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.19_ctc",
+      "expected": "2200",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.17_sch2_excess_aptc",
+      "expected": "1900",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.24_total_tax",
+      "expected": "6408",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.25d_withholding",
+      "expected": "8730",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form1040.34_refund_or_37_owed",
+      "expected": "2322",
+      "tolerance": "exact (±$1 for 16/24/34)",
+      "how": "return.json"
+    },
+    {
+      "item": "form7203.loss_allowed / loss_suspended",
+      "expected": "11500 / 16500",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "form8582.loss_allowed / carryforward",
+      "expected": "19550 / 1468",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "form8962.repayment",
+      "expected": "1900",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "dependents",
+      "expected": "Sofia only",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "judgment_calls.md discusses the convenience-of-the-employer rule for NY and the below-market rent question",
+    "Pushback answered: guarantee ≠ debt basis, with authority"
+  ],
+  "notes": [
+    "Chain of interaction: K-1 allowed 11500 → MAGI 110900 → allowance 19550 → rental allowed 19550 → AGI 91350 → FPL 292.79% → cap 1900. Reviewer verifies by recomputing with the module."
+  ],
+  "library_verification": [
+    {
+      "file": "1040_instructions_tax_computation.md",
+      "cite": "IRS 2025 Form 1040 Instructions",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verify TY2025 standard deduction and CTC under OBBBA (P.L. 119-21)."
+    },
+    {
+      "file": "tax_table_2025_excerpt.md",
+      "cite": "IRS 2025 Tax Table",
+      "verbatim": false,
+      "planted": null,
+      "note": "Regenerated from the bracket midpoints; verify against the published table."
+    },
+    {
+      "file": "form7203_instructions_excerpt.md",
+      "cite": "IRS Form 7203 Instructions 2025",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "form8582_instructions_excerpt.md",
+      "cite": "IRS Form 8582 Instructions 2025; IRC §469(i)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "form8962_instructions_excerpt.md",
+      "cite": "IRS Form 8962 Instructions 2025; Rev. Proc. 2024-35; Rev. Proc. 2024-40",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verify the TY2025 repayment limitation amounts."
+    },
+    {
+      "file": "ny_it203_part_year_excerpt.md",
+      "cite": "NYS Dept. of Taxation and Finance, IT-203-I (2025)",
+      "verbatim": false,
+      "planted": null,
+      "note": "The convenience-of-the-employer rule is REAL and makes the NY allocation a genuine judgment: see trap 6."
+    }
+  ]
+}

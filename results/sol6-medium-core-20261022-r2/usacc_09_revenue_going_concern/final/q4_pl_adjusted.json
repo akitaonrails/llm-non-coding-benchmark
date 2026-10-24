@@ -1,0 +1,19 @@
+{
+  "revenue_as_drafted": 1540000,
+  "adjustments": {
+    "Halvorsen LOI": -480000,
+    "Saltline kits": -210000,
+    "Ironvale hosting": 0
+  },
+  "revenue_corrected": 850000,
+  "hosting": {
+    "treatment": "Dedicated equipment is an embedded lease; power, cooling, and network are nonlease services. Recognize a right-of-use asset and lease liability. December 31 amounts and Q4 expense reclassification cannot be measured from the supplied lease allocation, discount rate, and payment data; null means unknown, not zero.",
+    "rou_asset": null,
+    "lease_liability": null
+  },
+  "going_concern": {
+    "substantial_doubt": true,
+    "plans_probable": false,
+    "disclosure": "On the supplied draft, revenue after the two reversals is $850,000, assuming the unverified base subscription line is valid. Disclose substantial doubt and the projected cash shortfall: negative $105,000 on February 20, 2026 and negative $509,000 on March 27, 2026. Crestline's non-binding $3,000,000 proposal does not meet its $1,500,000 Q4 revenue condition on the supplied figures; no other probable mitigating plan was supplied."
+  }
+}

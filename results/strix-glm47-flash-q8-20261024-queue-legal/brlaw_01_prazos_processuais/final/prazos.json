@@ -1,0 +1,21 @@
+{
+  "citacao": {
+    "disponibilizacao": "19/11/2026",
+    "publicacao": "23/11/2026",
+    "inicio_contagem": "23/11/2026",
+    "contestacao_vencimento": "2027-01-29",
+    "prazo_em_dobro": true,
+    "fundamento": "Interpretação jurisprudencial (não confirmada na biblioteca): CPC art. 229 não se aplica a processos em autos eletrônicos, mas a prática forense e jurisprudência podem conceder prazo em dobro mesmo em processos eletrônicos quando há litisconsortes com advogados diferentes. O advogado da outra ré, experiente, cita o art. 229 como fundamento para prazo em dobro."
+  },
+  "sentenca": {
+    "disponibilizacao": "10/12/2026",
+    "publicacao": "11/12/2026",
+    "inicio_contagem": "11/12/2026",
+    "embargos_vencimento": "2027-01-28",
+    "apelacao_vencimento": "03/02/2027",
+    "dias_suspensos_ou_feriados_considerados": [
+      "02/12/2026 (feriado municipal de Campinas)",
+      "20/12/2026 a 20/01/2027 (recesso forense CPC art. 220)"
+    ]
+  }
+}

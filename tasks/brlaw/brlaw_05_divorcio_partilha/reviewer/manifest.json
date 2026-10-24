@@ -1,0 +1,147 @@
+{
+  "id": "brlaw_05_divorcio_partilha",
+  "quadrant": "brlaw",
+  "title": "Divórcio em comunhão parcial: partilha, bens particulares, FGTS, quotas, alimentos",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Partilhar a casa herdada",
+      "wrong_move": "Metade de Atibaia",
+      "why_wrong": "1.659 I: particular; só as benfeitorias com dinheiro comum (R$ 120 mil) se comunicam — item que exige PERGUNTAR",
+      "authority": "CC 1.659 I",
+      "evidence": "Formal de partilha; script 'atibaia_reforma'",
+      "harm": "Cliente perde R$ 400 mil / ou Fernanda perde R$ 60 mil",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Quotas: tudo ou nada",
+      "wrong_move": "Partilhar 100% das quotas, ou negar qualquer meação ('bem particular, ponto final')",
+      "why_wrong": "Quotas particulares; valorização/lucros reinvestidos (R$ 1,1 mi) comunicam-se via apuração de haveres — com controvérsia declarada; pushback",
+      "authority": "CC 1.659 I, 1.660 V, 1.027; STJ",
+      "evidence": "Resumo; script 'lucros_reinvestidos'",
+      "harm": "Acordo anulável ou cliente paga o que não deve",
+      "severity": "H",
+      "reviewer_confidence": "medium — controvérsia; graded on analysis + number with method"
+    },
+    {
+      "n": 3,
+      "title": "FGTS 'é dele'",
+      "wrong_move": "Excluir o FGTS",
+      "why_wrong": "STJ 2017: partilhável; a proposta adversa erra contra Fernanda — o parecer deve registrar (lealdade/precisão), e isso é moeda de negociação",
+      "authority": "REsp 1.399.199",
+      "evidence": "Biblioteca",
+      "harm": "Partilha errada",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Alimentos sobre bruto/FGTS/rescisórias",
+      "wrong_move": "Aceitar 30% do bruto incluindo FGTS",
+      "why_wrong": "Base líquida; FGTS e indenizatórias fora; 13º/férias dentro",
+      "authority": "STJ",
+      "evidence": "Biblioteca",
+      "harm": "Base errada",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Dívida do carro 'é dela'",
+      "wrong_move": "Excluir a dívida",
+      "why_wrong": "1.664: em proveito da família → comum",
+      "authority": "CC 1.664",
+      "evidence": "Script",
+      "harm": "Partilha errada",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 6,
+      "title": "Excesso de meação / ganho de capital",
+      "wrong_move": "Partilha desigual sem tratar tributo",
+      "why_wrong": "ITCMD/ITBI; IN 84/2001",
+      "authority": "",
+      "evidence": "Biblioteca",
+      "harm": "Tributo surpresa",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "Atibaia: particular; partilhável apenas benfeitorias (120.000) se perguntado, senão PERGUNTAS.md",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "partilha.json"
+    },
+    {
+      "item": "FGTS: comum, meação 70.000",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "Quotas: valor_partilhavel = valorização (1.100.000) com método declarado e controvérsia registrada",
+      "expected": "true",
+      "tolerance": "±10%",
+      "how": ""
+    },
+    {
+      "item": "Carro: dívida tratada como comum",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "alimentos: base líquida; nao_incide_sobre inclui FGTS e verbas indenizatórias; guarda compartilhada",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "alimentos.json"
+    }
+  ],
+  "rubric": [
+    "proposta_acordo.md trata do excesso de meação e responde ao pushback com fundamento"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "cc_comunhao_parcial.md",
+      "cite": "CC arts. 1.658, 1.659, 1.660, 1.661, 1.662",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "stj_fgts_quotas_previdencia.md",
+      "cite": "STJ REsp 1.399.199/RS (2ª Seção, 2017 — FGTS); REsp 1.595.775/AP (quotas — apuração de haveres); REsp 1.698.774/RS (2020 — PGBL/VGBL); EREsp 1.623.858 (2018)",
+      "verbatim": false,
+      "planted": null,
+      "note": "Controvérsias declaradas: quotas (valorização) e PGBL — itens de rubrica, não de porta."
+    },
+    {
+      "file": "alimentos_base_calculo.md",
+      "cite": "CC arts. 1.694, 1.695, 1.699; STJ: REsp 1.332.808 (13º e férias), AgInt no AREsp (FGTS/verbas rescisórias); Súmula 358",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "guarda_compartilhada.md",
+      "cite": "CC art. 1.584, §2º (Lei 13.058/2014); art. 1.583",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "tributos_partilha.md",
+      "cite": "IN RFB 84/2001, art. 3º §3º e art. 20; Lei 10.705/2000 (SP), art. 2º §5º; CTN 35",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

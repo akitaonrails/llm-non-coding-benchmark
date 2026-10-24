@@ -1,0 +1,7 @@
+The client has no further records, so I’ll complete a provisional return using clearly labeled assumptions and show how the open items could change it. I’m calculating the federal amounts from the supplied library now, then I’ll document the New York allocation and judgment calls.
+
+The provisional federal calculation is $2,322 refunded, with the S corporation loss limited to $11,500 by basis and the rental loss limited to $19,550 by the passive-loss allowance. I’m finishing the judgment-call record and checking that the numeric file matches the arithmetic.
+
+The engagement deliverables are complete under [deliverable](/work/workspace/deliverable/STATUS.md). The **provisional federal result is a $2,322 refund**; the New York allocation provisionally treats both spouses’ full wages as New York source.
+
+The client could not resolve several material facts, including the rental lease terms, Leo’s marketplace policy allocation, and the residence and remote-work details. [STATUS.md](/work/workspace/deliverable/STATUS.md) marks the work **COMPLETE WITH OPEN ITEMS**; [return.md](/work/workspace/deliverable/return.md) shows the arithmetic and [judgment_calls.md](/work/workspace/deliverable/judgment_calls.md) records the assumptions and alternatives.

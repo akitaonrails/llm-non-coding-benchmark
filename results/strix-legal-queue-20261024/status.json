@@ -1,0 +1,38 @@
+{
+  "source_sha256": "16535f37899288a0667032bd088b37930d1f2f86219bdc262c563cb4579cd720",
+  "started_at": 1792810177.1574717,
+  "outcomes": [
+    {
+      "run": "/mnt/data/Projects/llm-non-coding-benchmark/results/strix-qwen38-q4-legal-20261024-r2",
+      "case_status": "infrastructure_failed"
+    },
+    {
+      "run": "/mnt/data/Projects/llm-non-coding-benchmark/results/strix-qwen38-q8-20261024-queue-legal",
+      "case_status": "infrastructure_failed"
+    },
+    {
+      "run": "/mnt/data/Projects/llm-non-coding-benchmark/results/strix-swift15-q4-20261024-queue-legal",
+      "case_status": "completed_ungraded"
+    },
+    {
+      "run": "/mnt/data/Projects/llm-non-coding-benchmark/results/strix-swift15-q8-20261024-queue-legal",
+      "case_status": "completed_ungraded"
+    },
+    {
+      "run": "/mnt/data/Projects/llm-non-coding-benchmark/results/strix-thinkingcap38-q4-20261024-queue-legal",
+      "case_status": "completed_ungraded"
+    },
+    {
+      "run": "/mnt/data/Projects/llm-non-coding-benchmark/results/strix-muse-glimmer-q8-20261024-queue-legal",
+      "case_status": "completed_ungraded"
+    },
+    {
+      "run": "/mnt/data/Projects/llm-non-coding-benchmark/results/strix-glm47-flash-q8-20261024-queue-legal",
+      "case_status": "completed_ungraded"
+    }
+  ],
+  "stage": "complete",
+  "run": "/mnt/data/Projects/llm-non-coding-benchmark/results/strix-glm47-flash-q8-20261024-queue-legal",
+  "manual_pending": [],
+  "updated_at": 1792857001.553709
+}

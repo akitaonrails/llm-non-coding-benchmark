@@ -1,0 +1,64 @@
+{
+  "persona": "Marina Costa (organizada, gestora) e Felipe Costa; Dra. Luana participa das reuniões.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "aluguel_pct",
+      "trigger": [
+        "alugar",
+        "locação",
+        "40%",
+        "terceiros",
+        "receita de aluguel"
+      ],
+      "answer": "Felipe: uns 40% da sala ficam vagos; vamos alugar para um dentista. Deve dar uns R$ 8 mil/mês.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "regime_bens",
+      "trigger": [
+        "regime de bens",
+        "comunhão",
+        "casados",
+        "pacto"
+      ],
+      "answer": "Marina: comunhão universal, casamos em 2010, sem pacto.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "luana_trabalho",
+      "trigger": [
+        "Luana",
+        "serviços",
+        "trabalho",
+        "integraliz",
+        "quotas por trabalho"
+      ],
+      "answer": "Luana: eu não tenho dinheiro pra aportar; a ideia é que meu trabalho vale 20%.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "marina_cargo",
+      "trigger": [
+        "servidora",
+        "administrar",
+        "Lei 8.112",
+        "cargo público",
+        "dedicação"
+      ],
+      "answer": "Marina: sou analista federal, 40h. Posso ser sócia, né? Administrar eu faria fora do expediente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se o parecer disser que o ITBI é devido",
+      "message": "Felipe: Mas todo mundo diz que integralizar imóvel não paga ITBI, é a tal imunidade constitucional. Por que conosco seria diferente?"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "justa_causa_cabivel": false,
+  "motivos": [
+    "imediatidade quebrada: gerente soube em 21/08 (e-mail), punição em 11/10 — ~50 dias → perdão tácito",
+    "gravidade insuficiente: crítica genérica às condições de trabalho, sem ofensa pessoal; fato verdadeiro (banco de horas não pago)",
+    "proporcionalidade: sem advertência prévia em 5 anos de bons registros",
+    "alínea k exige ato lesivo da honra — não configurado"
+  ],
+  "estabilidades": [
+    {
+      "tipo": "gestante",
+      "fundamento": "ADCT 10 II b; Súmula 244 I (desconhecimento irrelevante)",
+      "ate": "5 meses após o parto (~set/2027)"
+    },
+    {
+      "tipo": "CIPA (suplente)",
+      "fundamento": "ADCT 10 II a; Súmula 339; CLT 165 (motivo disciplinar/técnico/econômico provado)",
+      "ate": "1 ano após o mandato (~jun/2028)"
+    }
+  ],
+  "exposicao_se_reverter": {
+    "verbas_rescisorias": "39242.52",
+    "indenizacao_estabilidade": "111535.45",
+    "dano_moral_estimado": "39000.00",
+    "total": "189777.97",
+    "nota": "reintegração provável se ajuizado no período; indenização substitutiva se não"
+  },
+  "alternativas": [
+    "não dispensar; advertência escrita (se insistirem) com fundamento proporcional — risco baixo",
+    "tratar a causa do post: pagar/compensar o banco de horas conforme a lei",
+    "dispensa sem justa causa NÃO é alternativa durante as estabilidades (pushback): gestante e CIPA exigem motivo provado; a dispensa seria nula → reintegração",
+    "se houver real intenção de desligamento, só após o fim das estabilidades ou por acordo (PDV/acordo CLT 484-A) com assistência e homologação, ciente de que a estabilidade gestante é irrenunciável em acordo de rescisão (nulidade)"
+  ],
+  "recomendacao": "não dispensar; documentar; orientar a gerente"
+}

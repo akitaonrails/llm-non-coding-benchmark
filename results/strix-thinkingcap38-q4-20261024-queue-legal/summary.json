@@ -1,0 +1,27 @@
+{
+  "wall_seconds": 7041.3538610370015,
+  "cases": [
+    {
+      "case": "brlaw_01_prazos_processuais",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 7041.3530280849955,
+      "controller_wait_seconds": 1.0001855999871623,
+      "model_turn_seconds": 7040.039434922015,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 948324,
+        "cached_input_tokens": 907622,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 69132,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": null,
+      "api_charge_usd": 0,
+      "electricity_cost_usd": null
+    }
+  ],
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

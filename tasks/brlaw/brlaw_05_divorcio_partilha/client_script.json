@@ -1,0 +1,62 @@
+{
+  "persona": "Marcelo Andrade; quer rapidez; magoado mas razoável.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "carro_uso",
+      "trigger": [
+        "carro",
+        "dívida do carro",
+        "financiamento do carro",
+        "uso",
+        "família"
+      ],
+      "answer": "O carro era da família, levava as crianças. Está no nome dela e o financiamento também.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "lucros_reinvestidos",
+      "trigger": [
+        "lucros",
+        "reinvest",
+        "distribuiu",
+        "pró-labore",
+        "empresa valoriz"
+      ],
+      "answer": "Nunca distribuí lucro; reinvesti tudo. A empresa valia uns 400 mil quando casei e hoje 1,5 mi. Meu pró-labore é 15 mil, fora o salário de 24 mil de um emprego CLT.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "atibaia_reforma",
+      "trigger": [
+        "Atibaia",
+        "reforma",
+        "benfeitoria",
+        "dinheiro do casal"
+      ],
+      "answer": "Reformei a casa de Atibaia em 2021 com uns 120 mil do nosso dinheiro.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "guarda",
+      "trigger": [
+        "guarda",
+        "convivência",
+        "compartilhada"
+      ],
+      "answer": "Quero compartilhada, com as crianças morando com ela e comigo em semanas alternadas se der.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se a partilha incluir meação do FGTS ou da valorização das quotas",
+      "message": "Marcelo: FGTS é meu salário, e a empresa é de antes do casamento — por que ela teria direito? Meu primo advogado disse que isso é 'bem particular, ponto final'."
+    }
+  ]
+}

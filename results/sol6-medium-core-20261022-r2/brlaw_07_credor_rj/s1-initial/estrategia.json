@@ -1,0 +1,37 @@
+{
+  "prazo_habilitacao_divergencia": "2026-04-27",
+  "contagem": "corridos",
+  "credito_fiduciario": {
+    "valor": 900000,
+    "sujeito_ao_plano": false,
+    "retomada_dos_bens_agora": false,
+    "fundamento": "Propriedade fiduciária registrada: crédito fora dos efeitos da RJ. As duas empilhadeiras e o sistema de separação constam como essenciais; a retirada do estabelecimento é vedada durante o stay. Data do deferimento e fim do stay não informados. Fonte: ../library/lrf_49_essencialidade.md. Valor informado na ficha, ainda sem confirmação de atualização até a data do pedido."
+  },
+  "credito_quirografario": {
+    "valor": 1200000,
+    "classe": "IV",
+    "fundamento": "Duplicatas sem garantia, pertencentes a credora identificada como EPP; a parcela sujeita à RJ vota na classe IV. Fonte: ../library/lrf_classes_voto.md. Valor informado na ficha, ainda sem confirmação de atualização até a data do pedido."
+  },
+  "divergencia_de_valor": {
+    "listado": 1600000,
+    "correto": 2100000
+  },
+  "fianca_do_socio": {
+    "extinta_pela_homologacao": false,
+    "fundamento": "Edson é fiador pessoal da CCB da Atlas. O banco informou que não concordou com a supressão e já notificou o fiador; a homologação isolada não extingue a fiança. Fonte: ../library/sumula_581_coobrigados.md."
+  },
+  "voto": {
+    "classe": "IV",
+    "criterio": "Somente a parcela sujeita de R$ 1.200.000,00, sob ressalva de atualização; na classe IV a aprovação é por maioria simples dos credores presentes, por cabeça. A parcela fiduciária de R$ 900.000,00 não vota. Fonte: ../library/lrf_classes_voto.md."
+  },
+  "objecao_ao_plano_prazo": "30 dias corridos da publicação da relação de credores pelo AJ (art. 7º §2º), ainda sem data conhecida; não se conta do edital de 10/04/2026. Fontes: ../library/lrf_classes_voto.md e ../library/lrf_habilitacao_prazos.md.",
+  "acoes_imediatas": [
+    "Preparar a divergência ao AJ até 27/04/2026: 10/04 não entra; 11/04 é o dia 1; 25/04 é o dia 15 (sábado); vencimento no primeiro dia útil seguinte, 27/04, conforme ../library/lrf_habilitacao_prazos.md.",
+    "Obter data do pedido de RJ e memória de cálculo das duas parcelas nessa data; R$ 900.000,00 + R$ 1.200.000,00 = R$ 2.100.000,00 informados, mas atualização legal ainda não verificada.",
+    "Obter endereço/CNPJ, títulos, registro fiduciário, identificação dos bens, comprovantes e canal do AJ antes do protocolo, conforme ../library/divergencia_habilitacao_forma.md.",
+    "Pedir exclusão dos R$ 900.000,00 fiduciários do concurso e retificação da parcela sujeita para classe IV de R$ 1.200.000,00. O total listado de R$ 1.600.000,00 é R$ 500.000,00 inferior ao total informado, mas sua composição é desconhecida; não atribuir automaticamente a diferença a uma parcela.",
+    "Não retirar os bens essenciais durante o stay; acompanhar a decisão de deferimento e eventual prorrogação para saber quando cessa a restrição, conforme ../library/lrf_49_essencialidade.md.",
+    "Acompanhar a publicação da relação do AJ: impugnação em 10 dias se a divergência não for acolhida, conforme ../library/lrf_habilitacao_prazos.md; objeção ao plano em 30 dias por suas cláusulas, conforme ../library/lrf_classes_voto.md.",
+    "Preservar a notificação do Banco Horizonte e avaliar defesa específica da cobrança contra Edson; a ausência de anuência do banco afasta extinção automática da fiança, conforme ../library/sumula_581_coobrigados.md."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "model": "thinkingcap-3.8-27b",
+  "runs": [
+    {
+      "seconds": 5.808748437004397,
+      "ttft_seconds": 0.6661183719988912,
+      "decode_tokens_per_second": 198.92811878687485,
+      "usage": {
+        "prompt_tokens": 68,
+        "total_tokens": 1092,
+        "completion_tokens": 1024,
+        "completion_tokens_details": {
+          "reasoning_tokens": 96
+        }
+      },
+      "finish_reason": "length"
+    },
+    {
+      "seconds": 5.902715055999579,
+      "ttft_seconds": 0.9068270389980171,
+      "decode_tokens_per_second": 204.77122994788007,
+      "usage": {
+        "prompt_tokens": 68,
+        "total_tokens": 1092,
+        "completion_tokens": 1024,
+        "completion_tokens_details": {
+          "reasoning_tokens": 175
+        }
+      },
+      "finish_reason": "length"
+    }
+  ],
+  "passed": true,
+  "minimum_decode_tokens_per_second": 100,
+  "scope": "Stream-observed decode throughput; includes SSH transport jitter."
+}

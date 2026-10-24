@@ -1,0 +1,26 @@
+{
+  "asset_sale_buyer_a_as_drafted": {
+    "ordinary_income": 1070000,
+    "capital_gain": 1450000,
+    "entity_level_tax": 237300,
+    "total_tax": 923200,
+    "net_after_tax": 2176800
+  },
+  "stock_sale_buyer_b": {
+    "ordinary_income": 0,
+    "capital_gain": 2430000,
+    "entity_level_tax": 0,
+    "total_tax": 486000,
+    "net_after_tax": 2364000
+  },
+  "asset_sale_counter_allocation": {
+    "ordinary_income": 420000,
+    "capital_gain": 2100000,
+    "entity_level_tax": 237300,
+    "total_tax": 812700,
+    "net_after_tax": 2287300
+  },
+  "ray_naive_estimate": {
+    "net_after_tax": 2480000
+  }
+}

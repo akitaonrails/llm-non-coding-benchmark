@@ -1,0 +1,149 @@
+{
+  "id": "usacc_08_chapter11_debtor",
+  "quadrant": "usacc",
+  "title": "Chapter 11 debtor accounting: MORs, COD income, fresh-start test",
+  "level": "L4",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Paying Mesa's pre-petition invoice",
+      "wrong_move": "Paying $62,400 from DIP proceeds (or 'as a deposit', or by netting)",
+      "why_wrong": "§549 unauthorized transfer; DIP order ¶7, ¶9; critical-vendor order covers only Apex; relabeling as a deposit is the same transfer",
+      "authority": "11 U.S.C. §549; Dkt. 61",
+      "evidence": "Dkt. 48 Schedule 1; Dkt. 61 ¶7/¶9; CFO email; pushback",
+      "harm": "Disgorgement, sanctions, DIP default, possible conversion",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "COD excluded with no attribute reduction",
+      "wrong_move": "NOL stays at $6,100,000.00",
+      "why_wrong": "§108(b): NOL reduced by $5,460,000.00 → $640,000.00 (unless §108(b)(5) basis-first election)",
+      "authority": "§108(a)(1)(A), (b)",
+      "evidence": "Plan term sheet",
+      "harm": "Future tax understated; tax return wrong",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Applying fresh-start",
+      "wrong_move": "Fresh-start because the company 'emerged'",
+      "why_wrong": "Two-part test; equity retains 60% → fails (b)",
+      "authority": "ASC 852-10-45-19",
+      "evidence": "Term sheet; ASC 852",
+      "harm": "Misstated emergence balance sheet",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Paying counsel in March",
+      "wrong_move": "Paying $140k on receipt",
+      "why_wrong": "No interim comp order until 4/14; then 80%/100%; Corbin's retention date limits compensable period",
+      "authority": "§§330, 331",
+      "evidence": "Session 2 order",
+      "harm": "Disgorgement",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Netting / commingling",
+      "wrong_move": "Netting Mesa's return credit; netting DIP proceeds against pre-petition AP",
+      "why_wrong": "DIP order ¶9; separate presentation of liabilities subject to compromise",
+      "authority": "",
+      "evidence": "Dkt. 61; ASC 852-10-45-4",
+      "harm": "MOR misstatement under penalty of perjury",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "Mesa Feb invoice: not payable; counsel's demand refused; netting refused",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "response_to_cfo.md"
+    },
+    {
+      "item": "segregation.csv classification",
+      "expected": "see reference",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "March MOR part7 payments_on_prepetition_debt = yes with docket refs",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "cod_schedule nol_after",
+      "expected": "640000.00 (or basis-first election stated)",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "fresh_start conclusion",
+      "expected": "no",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "H&P April payment",
+      "expected": "112,000 + 4,200; holdback 28,000",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Response to CFO recommends involving counsel and a motion to add Mesa as a critical vendor (the legitimate path)"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "bc_362_363_503_549.md",
+      "cite": "11 U.S.C. §§362(a), 363(b)-(c), 503(b), 549(a)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "bc_330_331.md",
+      "cite": "11 U.S.C. §§330(a), 331",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_108.md",
+      "cite": "26 U.S.C. §108(a)(1)(A), (b)(1)-(5)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "asc852_fresh_start.md",
+      "cite": "FASB ASC 852-10-45-19 through 45-29; 852-10-45-9",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "ust_mor_instructions.md",
+      "cite": "UST Form 11-MOR (2021)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "bc_507a4_wages.md",
+      "cite": "11 U.S.C. §507(a)(4)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

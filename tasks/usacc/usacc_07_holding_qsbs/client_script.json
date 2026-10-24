@@ -1,0 +1,61 @@
+{
+  "persona": "Nadia Oakline, engineer-founder; trusts the advisor; wants simplicity.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "helio_exit",
+      "trigger": [
+        "exit",
+        "sale of Helio",
+        "liquidity",
+        "when do you expect"
+      ],
+      "answer": "Helio is talking to acquirers; a sale in 12–18 months is realistic. My stake would be about $9–10M.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "basis_holdings",
+      "trigger": [
+        "basis",
+        "Properties",
+        "negative capital",
+        "mortgage recourse"
+      ],
+      "answer": "The mortgage is nonrecourse to me personally. The refinancing cash went into my brokerage account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trust",
+      "trigger": [
+        "trust",
+        "1%",
+        "revocable",
+        "who is the other partner"
+      ],
+      "answer": "The 1% is my revocable living trust — the advisor said we need two partners.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "loans_terms",
+      "trigger": [
+        "loan terms",
+        "promissory",
+        "interest rate",
+        "repay"
+      ],
+      "answer": "No paperwork. I just move money where it's needed.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "if the opinion carves Helio Grid out of the holding",
+      "message": "Nadia: The advisor specifically said the holding is how I avoid tax when Helio sells — 'the gain lands in the LLC'. You're saying the opposite. Who's right, and can the holding at least own it after the sale?"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "itbi": {
+    "devido": true,
+    "base": "900000",
+    "fundamento": "CF 156 §2º I in fine + CTN 37: parte da receita será locação de imóvel próprio (40% da sala); empresa nova → apuração nos 3 anos seguintes; se a locação não for preponderante (>50% da receita), a imunidade pode ser mantida — mas a estrutura pretendida (CNAE 6810 na clínica) cria o risco e inviabiliza o Simples. Solução: NÃO integralizar o imóvel na clínica; manter na PF (ou holding separada) e alugar à clínica; ou integralizar só a fração usada pela clínica. Tema 796: valor acima do capital integralizado tributado de qualquer forma."
+  },
+  "integralizacao_imovel": {
+    "valor_recomendado": 420000,
+    "ganho_capital_pf": 0,
+    "nota": "Lei 9.249 art. 23 — valor da declaração evita GCAP de R$ 480 mil agora"
+  },
+  "quadro_societario": {
+    "marina_e_felipe": "casados em comunhão universal → NÃO podem ser sócios entre si (CC 977): alterar regime (autorização judicial) ou apenas UM deles ser sócio",
+    "marina_administradora": "servidora federal: pode ser quotista, NÃO administradora (Lei 8.112 art. 117 X)",
+    "luana": "contribuição em serviços é VEDADA na LTDA (CC 1.055 §2º): alternativa = opção de compra de quotas com vesting / quotas adquiridas a prazo / participação nos lucros contratual (não societária) / sociedade simples (admite sócio de serviço, CC 1.006) se a natureza permitir"
+  },
+  "pro_labore": {
+    "regra": "quem trabalha/administra recebe pró-labore; 'zero' expõe a recaracterização integral (SC COSIT 120/2016)",
+    "minimo_recomendado": "ao menos o salário mínimo; defensável valor de mercado da função"
+  },
+  "distribuicao_2026": {
+    "irrf_10pct_mensal_sobre_25k_cada": 0,
+    "nota": "R$ 25 mil/mês por sócio fica ABAIXO de R$ 50 mil/mês/PJ/PF → sem retenção mensal; mas o IRPFM anual pode alcançar conforme renda total; e a distribuição só é isenta se houver lucro contábil (escrituração)"
+  },
+  "simples_possivel": false,
+  "simples_nota": "com CNAE 6810-2/02 (locação de imóveis próprios) a opção é VEDADA (LC 123 art. 17 XV); retirando a locação (imóvel fora da clínica) → Simples possível, Anexo III (estética) com Fator R"
+}

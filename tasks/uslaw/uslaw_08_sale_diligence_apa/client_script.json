@@ -1,0 +1,52 @@
+{
+  "persona": "Ray Brightline (seller); impatient; honest.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "hensley_relationship",
+      "trigger": [
+        "Hensley",
+        "consent",
+        "talked to",
+        "relationship",
+        "38%"
+      ],
+      "answer": "Hensley's owner is a friend. I haven't told him I'm selling. He won't love a corporate buyer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "installers_hours",
+      "trigger": [
+        "installers",
+        "hours",
+        "overtime",
+        "how many hours",
+        "1099"
+      ],
+      "answer": "The installers do 45–50 hours a week in busy season. Paid straight hourly. They like it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "disclosed",
+      "trigger": [
+        "disclose",
+        "told the buyer",
+        "schedule",
+        "did Lone Star know"
+      ],
+      "answer": "The buyer's people saw the census and asked about the 1099s. I said it's industry standard. They didn't push back.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "if the redline changes §7.4(c) or §4.12",
+      "message": "Buyer's counsel (relayed): 7.4(c) is market, every deal has it. And 4.12 is a plain-vanilla compliance rep — if Ray's contractors are fine, what's the concern? Ray: can we just sign?"
+    }
+  ]
+}

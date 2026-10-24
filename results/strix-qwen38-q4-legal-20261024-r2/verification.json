@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "failures": [
+    "brlaw_01_prazos_processuais: execution did not finish",
+    "brlaw_01_prazos_processuais: missing/empty prazos.json",
+    "brlaw_01_prazos_processuais: missing/empty memoria.md",
+    "brlaw_01_prazos_processuais: missing/empty STATUS.md",
+    "brlaw_01_prazos_processuais: incomplete provider request accounting or HTTP errors"
+  ],
+  "cases": 1,
+  "nonempty_required_artifacts": 0,
+  "checked_context_records_including_repeats": 3,
+  "frozen_files_checked": 786,
+  "scope": "Execution provenance, artifact presence/JSON syntax, frozen inputs and usage accounting only. No correctness score."
+}

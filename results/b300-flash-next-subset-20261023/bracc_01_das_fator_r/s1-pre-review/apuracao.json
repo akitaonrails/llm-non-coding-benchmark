@@ -1,0 +1,18 @@
+{
+  "faturacao_bruta_12m": 1020000.00,
+  "faixa": 4,
+  "anexo": "ANEXO_V",
+  "aliquota_nominal": 0.2050,
+  "parcela_a_deduzir": 17100.00,
+  "aliquota_efetiva": 0.18823529,
+  "fator_r": 0.279020,
+  "das_a_pagar": 15188.84,
+  "reparticao_das": {
+    "irpj": 793.49,
+    "csll": 694.31,
+    "cofins": 2784.95,
+    "pis": 605.78,
+    "cpp": 8483.83,
+    "iss": 1826.48
+  }
+}

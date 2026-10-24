@@ -1,0 +1,63 @@
+{
+  "persona": "Imani Reyes-Okafor; angry; cash-constrained; sophisticated enough to understand trade-offs.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "notice",
+      "trigger": [
+        "certified mail",
+        "how did you receive",
+        "notice",
+        "text",
+        "email address"
+      ],
+      "answer": "He texted me a PDF on August 20. No letter. My email on file is from 2019 and dead. I saw the text but assumed it wasn't real notice.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "knowledge_fees",
+      "trigger": [
+        "when did you learn",
+        "fees",
+        "asset management",
+        "disclosed",
+        "financials"
+      ],
+      "answer": "I only saw the affiliate fees in 2026 when I finally got the bank statements through a books-and-records demand. Before that I got one-page summaries with 'management expenses'.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "fund",
+      "trigger": [
+        "fund",
+        "$270",
+        "raise the money",
+        "loan"
+      ],
+      "answer": "I can't raise $270k. Maybe $60k.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "offer_timing",
+      "trigger": [
+        "offer",
+        "30 days",
+        "deadline",
+        "expire"
+      ],
+      "answer": "The $189,100 offer expires October 31.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "if the memo says fiduciary-duty claims are waived",
+      "message": "Imani: He's self-dealing and you're telling me there's no fiduciary duty? Every article I read says managers owe loyalty. Are you sure? I want to plead it anyway to scare him."
+    }
+  ]
+}

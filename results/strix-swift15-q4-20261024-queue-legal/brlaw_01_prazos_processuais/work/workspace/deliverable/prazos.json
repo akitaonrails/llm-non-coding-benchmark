@@ -1,0 +1,21 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "Prazo em dobro NÃO se aplica: CPC art. 229, §2º — não há contagem em dobro em processos em autos eletrônicos; estes são Processo Digital (e-SAJ), embora os corréus tenham advogados de escritórios distintos (arts. 229 caput; documentos: procurações fls. 61 e fls. 70). Data de publicação no DJe: primeiro dia útil seguinte à disponibilização — Lei 11.419/2006, art. 4º, §3º e CPC art. 224, §2º (20/11/2026 é feriado — Dia Nacional de Zumbi e da Consciência Negra; 21 e 22/11 s.f.). Início da contagem: primeiro dia útil após a publicação — CPC art. 224, §3º, c/c art. 231, VII, e Lei 11.419/2006, art. 4º, §4º. Prazo de 15 dias úteis — CPC arts. 335 e 219; excluídos fins de semana e o feriado 08/12/2026 (N. Sra. da Conceição, feriado municipal de Campinas), que cai no interior da contagem."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "2026-12-20 a 2027-01-20 — recesso forense (CPC art. 220; 32 dias suspensos; inclui 24/12, 25/12, 31/12, 01/01 sem expediente forense)",
+      "25/01/2027 NÃO excluído — feriado municipal apenas em São Paulo/SP, não em Campinas (calendário forense da biblioteca)"
+    ]
+  }
+}

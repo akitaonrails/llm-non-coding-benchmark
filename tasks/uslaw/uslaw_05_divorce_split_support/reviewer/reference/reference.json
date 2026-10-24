@@ -1,0 +1,35 @@
+{
+  "proposal_nominal": {
+    "wife": "770000",
+    "husband": "770000"
+  },
+  "proposal_after_tax": {
+    "wife": "613008.00",
+    "husband": "662000.00",
+    "wife_house_component": "543008.00",
+    "assumptions": "house sold within 2 yrs by wife (single, $250k exclusion), 6% costs, 15%+3.8%; 401(k) at 24%; brokerage gain 15%"
+  },
+  "undisclosed_income": {
+    "found": true,
+    "amount": "45000",
+    "source": "HR letter 2026-03-02 + YTD pay stub vs affidavit 'none expected'"
+  },
+  "child_support": {
+    "husband_gross_used": "213000",
+    "wife_gross_used": "72000",
+    "combined_monthly_net": "18525.00",
+    "basic_obligation": "3050",
+    "husband_share_monthly": "2279.47",
+    "WRONG_salary_only": "2135.00",
+    "maintenance_adjustment_note": "if $2,000/mo maintenance is ordered, add to wife's income and subtract from husband's before computing"
+  },
+  "maintenance": "post-2018 instrument: NOT deductible to husband, NOT taxable to wife — the proposal's statement is wrong (and if believed, wife would under-value it or over-report income)",
+  "dependents": "wife is custodial (255 nights) → she is HOH and keeps HOH/EITC/dependent care regardless; CTC can be released via Form 8332 in alternating years if negotiated; filing status for the divorce year depends on decree date (Dec 31)",
+  "instruments": [
+    "QDRO for any 401(k) share to wife",
+    "Form 8332 if alternating CTC",
+    "deed + refinance or sale provisions with §121 planning",
+    "disclosure sanction/reopening motion re bonus"
+  ],
+  "alternative_example": "wife takes house + QDRO share of 401(k) sufficient to equalize after-tax, or house sold and proceeds split with each party's §121 ($500k joint if sold before decree) — selling before the decree while still married can double the exclusion"
+}

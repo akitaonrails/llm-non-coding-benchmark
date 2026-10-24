@@ -1,0 +1,6 @@
+# Information needed to complete the Q4 close
+
+1. For the Ironvale agreement, what are the standalone prices (or another supportable allocation) for the dedicated equipment lease and for power, cooling, and network services within the $18,000 monthly fee? Please provide the lease payment amount allocated to each month if already calculated.
+2. What discount rate should Northwind use for the Ironvale lease at commencement on October 1, 2025 (the rate implicit in the lease if readily determinable, otherwise Northwind's incremental borrowing rate)? Please provide the rate and its compounding convention.
+3. Were the specified servers and arrays available for Northwind's use on October 1, 2025? Were there any lease payments made before commencement, lease incentives, or initial direct costs? If so, provide amounts and dates.
+4. Beyond the non-binding Crestline term sheet, does management have any financing or other cash-preservation plan that was committed or otherwise supportably probable of both implementation and mitigating the forecast cash shortfall? If so, provide the executed terms, conditions, timing, and cash effect.

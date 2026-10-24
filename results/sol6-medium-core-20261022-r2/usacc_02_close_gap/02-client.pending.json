@@ -1,0 +1,72 @@
+{
+  "case": "usacc_02_close_gap",
+  "questions": "# Client response record — March 2026 close\n\nRay confirmed that the $1,500 March 14 transfer came from his personal checking to cover payroll, that the Cascade email and mailed copies are the same invoice and were paid once, and that the $212 Uchi charge was his anniversary dinner. He directed that the disputed Hardaway invoice not be written off while negotiations continue.\n\nNeither Ray nor Carla could identify the $4,312 March 21 mobile deposit. Ray requested that it be parked pending identification. It is recorded in account 2100, Unidentified receipts / suspense.\n\nNo additional information is available for the A/R control-to-aging difference, the March 31 open-bills report, or the opening prepaid balance. These remain open in `open_items.md`. No further client response is pending for this engagement.\n",
+  "facts": [
+    {
+      "id": "xfer_1500",
+      "trigger": [
+        "1,500",
+        "1500",
+        "transfer from *4420",
+        "4420",
+        "online transfer"
+      ],
+      "answer": "That's from my personal checking, I moved money over to cover payroll. It's my money, not a sale.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "mobile_4312",
+      "trigger": [
+        "4,312",
+        "4312",
+        "mobile deposit",
+        "March 21",
+        "3/21"
+      ],
+      "answer": "Huh. I don't remember depositing anything that day. Maybe Carla (office) did? Let me ask her... (later) she doesn't know either. Can you just park it somewhere for now?",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "cascade_dup",
+      "trigger": [
+        "Cascade",
+        "CH-7731",
+        "duplicate",
+        "twice",
+        "same invoice"
+      ],
+      "answer": "Cascade emails invoices and then mails a paper copy a couple of weeks later. Same invoice. We paid it once.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uchi",
+      "trigger": [
+        "Uchi",
+        "dinner",
+        "212"
+      ],
+      "answer": "Uchi was my anniversary dinner, I grabbed the wrong card. Put it on me.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "hardaway",
+      "trigger": [
+        "Hardaway",
+        "9,800",
+        "dispute",
+        "warped"
+      ],
+      "answer": "Still arguing with them. Don't write it off yet.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "cascade_dup",
+    "hardaway",
+    "mobile_4312",
+    "uchi",
+    "xfer_1500"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

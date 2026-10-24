@@ -1,0 +1,65 @@
+[
+  {
+    "ref": "AJE-1",
+    "date": "2026-03-31",
+    "memo": "Reverse March duplicate of Cascade Hardwoods invoice CH-7731; February email copy was booked February 26 and March mailed copy carries the same invoice number and amount.",
+    "lines": [
+      {"account": "2000", "debit": 4860.00, "credit": 0.00},
+      {"account": "5000", "debit": 0.00, "credit": 4860.00}
+    ]
+  },
+  {
+    "ref": "AJE-2",
+    "date": "2026-03-31",
+    "memo": "Reclassify March 14 transfer from Ray's personal checking, confirmed by Ray, from sales to owner's contributions.",
+    "lines": [
+      {"account": "4000", "debit": 1500.00, "credit": 0.00},
+      {"account": "3100", "debit": 0.00, "credit": 1500.00}
+    ]
+  },
+  {
+    "ref": "AJE-3",
+    "date": "2026-03-31",
+    "memo": "Record March 21 bank mobile deposit; payer and purpose remain unidentified after Ray and Carla checked. Hold in unidentified receipts pending identification.",
+    "lines": [
+      {"account": "1000", "debit": 4312.00, "credit": 0.00},
+      {"account": "2100", "debit": 0.00, "credit": 4312.00}
+    ]
+  },
+  {
+    "ref": "AJE-4",
+    "date": "2026-03-31",
+    "memo": "Record March 31 monthly service fee shown on bank statement but absent from ledger.",
+    "lines": [
+      {"account": "6700", "debit": 35.00, "credit": 0.00},
+      {"account": "1000", "debit": 0.00, "credit": 35.00}
+    ]
+  },
+  {
+    "ref": "AJE-5",
+    "date": "2026-03-31",
+    "memo": "Capitalize CabinetVision annual license for April 2026 through March 2027; no March amortization.",
+    "lines": [
+      {"account": "1300", "debit": 1188.00, "credit": 0.00},
+      {"account": "6400", "debit": 0.00, "credit": 1188.00}
+    ]
+  },
+  {
+    "ref": "AJE-6",
+    "date": "2026-03-31",
+    "memo": "Capitalize Allied Insurance Q2 coverage booked as March expense; coverage is April through June 2026.",
+    "lines": [
+      {"account": "1300", "debit": 1150.00, "credit": 0.00},
+      {"account": "6300", "debit": 0.00, "credit": 1150.00}
+    ]
+  },
+  {
+    "ref": "AJE-7",
+    "date": "2026-03-31",
+    "memo": "Reclassify March 15 Uchi anniversary dinner on company card to owner's draws, confirmed by Ray.",
+    "lines": [
+      {"account": "3200", "debit": 212.00, "credit": 0.00},
+      {"account": "6500", "debit": 0.00, "credit": 212.00}
+    ]
+  }
+]

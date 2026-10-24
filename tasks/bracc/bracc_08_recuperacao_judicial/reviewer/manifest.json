@@ -1,0 +1,129 @@
+{
+  "id": "bracc_08_recuperacao_judicial",
+  "quadrant": "bracc",
+  "title": "Recuperação judicial: créditos concursais, deságio, tributos e relatórios",
+  "level": "L4",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Pagar credor concursal fora do plano",
+      "wrong_move": "Pagar 'metade' ou 'adiantamento' ao Norte",
+      "why_wrong": "Crédito de 15/01 é concursal (art. 49); pagamento fora do plano = favorecimento (art. 172), afastamento (art. 64), risco de falência; o disfarce de 'adiantamento' não muda a natureza",
+      "authority": "LRF arts. 49, 64, 172",
+      "evidence": "Relação de credores (data); script; pushback",
+      "harm": "Convolação em falência; crime",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Trava de 30% sobre o ganho do deságio",
+      "wrong_move": "IRPJ/CSLL ≈ R$ 923.916,00",
+      "why_wrong": "Art. 50-A II: sem trava → base R$ 482.000,00 → IRPJ/CSLL ≈ R$ 163.880,00; e sem PIS/COFINS (50-A I)",
+      "authority": "LRF art. 50-A",
+      "evidence": "Biblioteca; e-mail do diretor",
+      "harm": "Caixa destruído em RJ",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "União no plano",
+      "wrong_move": "Deságio e parcelamento da União via plano",
+      "why_wrong": "CTN 187; art. 68; via própria: 10-A/transação; necessária para a CND do art. 57",
+      "authority": "CTN 187, 191-A",
+      "evidence": "Minuta; CTN",
+      "harm": "Plano ilegal; concessão barrada",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Fiduciário sujeito ao plano",
+      "wrong_move": "Deságio de 40% ao Banco Beta",
+      "why_wrong": "49 §3º: não sujeito; mas bens essenciais ficam no stay",
+      "authority": "LRF 49 §3º",
+      "evidence": "Minuta",
+      "harm": "Cláusula nula",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Trabalhistas em 18 meses",
+      "wrong_move": "Aceitar o prazo",
+      "why_wrong": "Art. 54: máximo 1 ano (2 só nas condições do §2º)",
+      "authority": "LRF 54",
+      "evidence": "Minuta",
+      "harm": "Plano rejeitado",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "classificacao: Norte 15/01 concursal; Norte 20/03 extraconcursal; Beta fiduciário não sujeito; União não sujeita",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "classificacao_creditos.json"
+    },
+    {
+      "item": "resposta_diretor: recusa pagamento fora do plano, inclusive como 'adiantamento'",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "efeito_tributario.trava_30_aplicavel",
+      "expected": "false",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "efeito_tributario.base_irpj_csll",
+      "expected": "482000.00",
+      "tolerance": "±1%",
+      "how": ""
+    },
+    {
+      "item": "analise_plano: três cláusulas ilegais identificadas",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Demonstrativo ao AJ separa pós-pedido de concursal; solução fiscal cita 10-A/transação e art. 57"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "lei11101_excertos.md",
+      "cite": "Lei 11.101/2005, arts. 6º, 6º-B, 49, 50-A, 52, 54, 57, 58, 67, 68",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar redação dos arts. 50-A, 54 §2º e 6º §7º-B."
+    },
+    {
+      "file": "ctn_187_191a.md",
+      "cite": "CTN arts. 187, 191-A",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei10522_parcelamento_rj.md",
+      "cite": "Lei 10.522/2002, arts. 10-A, 10-B, 10-C (Lei 14.112/2020); Lei 13.988/2020; Portaria PGFN 2.382/2021",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cpc_contabil_rj.md",
+      "cite": "CPC 48 (IFRS 9) — baixa de passivo financeiro; CPC 25; OCPC/CFC orientações",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

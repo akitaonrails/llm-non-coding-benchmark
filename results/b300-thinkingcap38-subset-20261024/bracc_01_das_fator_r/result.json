@@ -1,0 +1,20 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 308.42533704098605,
+  "controller_wait_seconds": 32.00309454400849,
+  "model_turn_seconds": 276.01912841298326,
+  "turns": 2,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 759788,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 56473,
+    "reasoning_output_tokens": 37079
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

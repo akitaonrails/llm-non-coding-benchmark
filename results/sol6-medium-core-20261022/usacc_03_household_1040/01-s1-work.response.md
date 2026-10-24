@@ -1,0 +1,5 @@
+I’ll read the contract and workspace files, then produce the requested deliverables. If the work depends on missing client facts, I’ll put specific questions in `QUESTIONS.md` as instructed.
+
+The file supports a provisional federal calculation, but two facts could change the return: whether the below-market rent was fair under the tenant’s lease, and whether either employer required the Florida work arrangement. I’ll ask for those details and the exact New York departure date before finalizing the figures.
+
+I reviewed the client file and the supplied library. The rental-loss treatment and New York wage allocation depend on facts the file does not establish, so I wrote the specific questions in [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). [STATUS.md](/work/workspace/deliverable/STATUS.md) records the engagement as blocked pending the client’s reply.

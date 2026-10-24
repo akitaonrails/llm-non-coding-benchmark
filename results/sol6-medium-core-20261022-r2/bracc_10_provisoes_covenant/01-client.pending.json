@@ -1,0 +1,60 @@
+{
+  "case": "bracc_10_provisoes_covenant",
+  "questions": "# Informações necessárias para fechar 31/12/2025\n\n1. **Waiver do covenant:** até **31/12/2025**, os titulares de pelo menos 75% das debêntures haviam aprovado formalmente um waiver para o índice Dívida Líquida/EBITDA de 2025? Se sim, enviar a data, o documento e o prazo concedido. Informar também qualquer aprovação posterior, com sua data.\n2. **AFAC de R$ 2 milhões:** enviar o instrumento firmado quando do recebimento em março de 2022 e eventuais aditivos. Ele torna o adiantamento irrevogável e irretratável? Estipula data certa de capitalização ou direito dos sócios de exigir devolução? Houve alguma AGE ou alteração societária posterior ao recebimento, ainda que sem aprovação do aumento?\n3. **Dívida sujeita ao vencimento antecipado:** qual é o saldo das debêntures da 1ª emissão em 31/12/2025, e qual a composição dos R$ 31,2 milhões de empréstimos e financiamentos entre debêntures e outras operações? Isso permite quantificar o montante cuja apresentação como circulante pode mudar com a quebra do covenant.\n\nCom os dados recebidos, o índice já excede 2,75 antes da inclusão do AFAC na dívida: (R$ 31,2 milhões − R$ 4,1 milhões) ÷ R$ 9,8 milhões = 2,7653. As respostas são necessárias para fechar a classificação e as consequências sem supor documentos ou saldos não fornecidos.\n",
+  "facts": [
+    {
+      "id": "advogado_remoto",
+      "trigger": [
+        "remoto",
+        "advogado disse",
+        "carta",
+        "prognóstico",
+        "Pinheiro"
+      ],
+      "answer": "CEO: ele me disse por telefone que agora acha remoto. A carta formal é a que vocês têm — ele não vai colocar 'remoto' por escrito, advogado é assim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "renovacao",
+      "trigger": [
+        "renov",
+        "aditivo",
+        "banco confirmou",
+        "Horizonte",
+        "compromisso"
+      ],
+      "answer": "CEO: o gerente do banco disse informalmente que renova. Não tem nada assinado; eles só assinam perto do vencimento.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "afac_delib",
+      "trigger": [
+        "AFAC",
+        "aumento de capital",
+        "AGE",
+        "deliberação",
+        "capitalizar"
+      ],
+      "answer": "CEO: os sócios nunca formalizaram o aumento. Podemos fazer a AGE agora em janeiro, se ajudar.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "waiver",
+      "trigger": [
+        "waiver",
+        "debenturistas",
+        "assembleia",
+        "perdão"
+      ],
+      "answer": "CEO: ainda não falamos com os debenturistas. Se precisar, pedimos waiver em fevereiro.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "renovacao",
+    "afac_delib",
+    "waiver"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

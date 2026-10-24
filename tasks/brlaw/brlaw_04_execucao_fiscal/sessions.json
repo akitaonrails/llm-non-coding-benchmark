@@ -1,0 +1,38 @@
+{
+  "type": "multi_session",
+  "sessions": [
+    {
+      "n": 1,
+      "reveal": [
+        "documents/ (exceto sessao*)"
+      ],
+      "prompt": "Sess\u00e3o 1 \u2014 cita\u00e7\u00e3o em 2026-09-14. Analise a CDA e o PAF; identifique nulidades e defesas; escolha o ve\u00edculo e redija a pe\u00e7a (deliverable/sessao1/)."
+    },
+    {
+      "n": 2,
+      "reveal": [
+        "documents/sessao2/"
+      ],
+      "prompt": "Sess\u00e3o 2 \u2014 a Fazenda respondeu e emendou a CDA. Manifeste-se (deliverable/sessao2/)."
+    },
+    {
+      "n": 3,
+      "reveal": [
+        "documents/sessao3/"
+      ],
+      "prompt": "Sess\u00e3o 3 \u2014 pedido de redirecionamento. Analise (deliverable/sessao3/)."
+    },
+    {
+      "n": 4,
+      "reveal": [],
+      "prompt": "Sess\u00e3o 4 \u2014 aconselhe Ana Paula Vieira e Bruno Tavares por escrito; redija a defesa ao redirecionamento (deliverable/sessao4/)."
+    },
+    {
+      "n": 5,
+      "reveal": [
+        "documents/sessao5/"
+      ],
+      "prompt": "Sess\u00e3o 5 \u2014 garantia do ju\u00edzo \u00d7 transa\u00e7\u00e3o: valores e recomenda\u00e7\u00e3o (deliverable/sessao5/)."
+    }
+  ]
+}

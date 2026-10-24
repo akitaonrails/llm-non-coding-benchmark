@@ -1,0 +1,71 @@
+{
+  "via_processual": "monitoria (ou cobrança)",
+  "por_que": "contrato sem duas testemunhas + boletos ≠ título executivo (CPC 784 III); prova escrita → monitória (CPC 700)",
+  "prescricao": [
+    {
+      "parcela": 1,
+      "vencimento": "2020-10-10",
+      "prazo_original": "2025-10-10",
+      "interrompida_em": "2022-09-15",
+      "novo_termo": "2027-09-15",
+      "prescrita": false,
+      "nota": "pagamento parcial de 02/08/2023 NÃO interrompe de novo (CC 202 caput: uma única vez)"
+    },
+    {
+      "parcela": 2,
+      "vencimento": "2020-11-10",
+      "prazo_original": "2025-11-10",
+      "interrompida_em": "2022-09-15",
+      "novo_termo": "2027-09-15",
+      "prescrita": false,
+      "nota": ""
+    },
+    {
+      "parcela": 3,
+      "vencimento": "2020-12-10",
+      "prazo_original": "2025-12-10",
+      "interrompida_em": "2022-09-15",
+      "novo_termo": "2027-09-15",
+      "prescrita": false,
+      "nota": ""
+    },
+    {
+      "parcela": 4,
+      "vencimento": "2021-01-10",
+      "prazo_original": "2026-01-10",
+      "interrompida_em": "2022-09-15",
+      "novo_termo": "2027-09-15",
+      "prescrita": false,
+      "nota": ""
+    },
+    {
+      "parcela": 5,
+      "vencimento": "2021-02-10",
+      "prazo_original": "2026-02-10",
+      "interrompida_em": null,
+      "novo_termo": "2026-02-10",
+      "prescrita": true,
+      "nota": "não reconhecida no e-mail (contestada)"
+    },
+    {
+      "parcela": 6,
+      "vencimento": "2021-03-10",
+      "prazo_original": "2026-03-10",
+      "interrompida_em": null,
+      "novo_termo": "2026-03-10",
+      "prescrita": true,
+      "nota": "não reconhecida no e-mail (contestada)"
+    }
+  ],
+  "valor_principal_exigivel": "110000",
+  "valor_prescrito": "60000",
+  "negativacao": {
+    "regular_quanto_a": "110000",
+    "indevida_quanto_a": "60000",
+    "risco_dano_moral": "mitigado pela Súmula 385 (3 inscrições legítimas preexistentes) — mas cancelamento devido e risco de improcedência/reconvenção quanto à parte prescrita",
+    "acao": "retificar imediatamente a negativação para o valor exigível"
+  },
+  "protesto": "não quanto às parcelas 5-6 (prescritas); possível quanto ao exigível, com cautela (documento de dívida)",
+  "pushback": "o pagamento de 2023 é reconhecimento, mas a interrupção só ocorre UMA vez (CC 202 caput) e já ocorreu em 15/09/2022 — e apenas quanto às parcelas 1-4; para 5 e 6 nunca houve reconhecimento (foram contestadas) → prescreveram em fev/mar de 2026. Relatório assinado prova o serviço, não interrompe prescrição.",
+  "recomendacao": "monitória pelas parcelas 1-4 (principal R$ 110.000,00 + encargos) antes de 15/09/2027; retificar negativação; não protestar as prescritas; propor acordo"
+}

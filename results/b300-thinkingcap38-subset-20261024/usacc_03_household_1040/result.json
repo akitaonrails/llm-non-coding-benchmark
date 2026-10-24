@@ -1,0 +1,20 @@
+{
+  "case": "usacc_03_household_1040",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-thinkingcap38-subset-20261024/usacc_03_household_1040/04-review",
+  "elapsed_seconds": 365.03015235099883,
+  "controller_wait_seconds": 100.00922568599344,
+  "model_turn_seconds": 264.8850691760017,
+  "turns": 4,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 913907,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 50648,
+    "reasoning_output_tokens": 33993
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

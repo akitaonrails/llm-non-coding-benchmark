@@ -1,0 +1,30 @@
+{
+  "empresa": "Lumen Solucoes Digitais ME",
+  "competencia": "2026-05",
+  "rbt12": 1020000.00,
+  "folha_12m": 281400.00,
+  "fator_r": 0.275882,
+  "anexo": "V",
+  "faixa": 4,
+  "aliquota_nominal": 20.5,
+  "parcela_deduzir": 17100.00,
+  "aliquota_efetiva": 18.823529,
+  "receitas": {
+    "servicos": 78000.00,
+    "locacao": 6000.00
+  },
+  "das": {
+    "servicos": 14682.35,
+    "locacao": 506.49,
+    "total": 15188.84
+  },
+  "reparticao": {
+    "IRPJ": 30.01,
+    "CSLL": 26.26,
+    "COFINS": 105.42,
+    "PIS": 22.89,
+    "CPP": 320.78,
+    "ISS": null
+  },
+  "reparticao_observacao": "Valores em R$ e referentes APENAS a parcela da locacao (R$ 750,35 brutos pelo Anexo III, 4a faixa), unica com reparticao prevista na biblioteca (IRPJ 4,00% | CSLL 3,50% | COFINS 14,05% | PIS 3,05% | CPP 42,75% | ISS 32,50% aplicados sobre R$ 750,35). ISS recolhido na locacao = R$ 0,00 (parcela de R$ 243,86 deduzida, per art. 18, §5o-A e Sumula Vinculante 31). A parcela dos servicos (Anexo V, R$ 14.682,35) NAO pode ser decomposta por tributo: a biblioteca nao traz a reparticao do Anexo V -> item aberto, tributos nao calculados por ausencia de fonte (ISS null pelo mesmo motivo). Alem disso, as percentagens do Anexo III da biblioteca somam 99,85% (nao 100%): diferenca de R$ 1,13 na locacao nao alocada (30.01+26.26+105.42+22.89+320.78 = 505,36 vs 506,49 recolhidos)."
+}

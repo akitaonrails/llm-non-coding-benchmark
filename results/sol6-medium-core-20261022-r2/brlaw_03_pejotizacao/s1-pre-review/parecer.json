@@ -1,0 +1,39 @@
+{
+  "probabilidade_vinculo": "alta (70%–85%; juízo de risco, não frequência estatística)",
+  "fundamentos": [
+    "Pessoa física identificada e disponibilizada como sócio único; contrato e mensagens tratam Rafael como executor. A prova de substituição efetiva está ausente. Requisitos: biblioteca clt_requisitos_vinculo.md.",
+    "Atividade contínua de outubro/2019 a setembro/2026, 84 notas mensais e remuneração fixa de R$ 18.000 por mês, independente de entregas. Requisitos: biblioteca clt_requisitos_vinculo.md.",
+    "Horário contratual 9h–18h, reporte a gerente, cobrança de ponto, ordem para ficar até 20h, ausência sujeita a gestor e RH e avaliação como empregados indicam subordinação. A exclusividade, isoladamente, não prova vínculo. Requisitos: biblioteca clt_requisitos_vinculo.md.",
+    "O Tema 725 permite divisão do trabalho entre pessoas jurídicas, mas não imuniza fraude com os requisitos do art. 3º. Autoridade: biblioteca stf_tema_725_adc48_adpf324.md.",
+    "O Tema 1.389 permanece pendente e com suspensão nacional na biblioteca; pode alterar critérios de julgamento. Autoridade: biblioteca stf_tema_1389_pejotizacao.md."
+  ],
+  "prescricao": {
+    "data_ajuizamento": "2026-11-16 (prevista; hipótese de cálculo)",
+    "corte_quinquenal": "2021-11-16",
+    "meses_exigiveis": 59,
+    "meses_prescritos": 25
+  },
+  "exposicao": {
+    "remuneracao_base": 18000.00,
+    "decimo_terceiro": 88500.00,
+    "ferias_terco": 118000.00,
+    "fgts": 101480.00,
+    "multa_40": 40592.00,
+    "aviso_previo": 30600.00,
+    "inss_patronal": 355180.00,
+    "horas_extras": "R$ 16.568,18 pelos 135 h registrados de jan–jun/2025 (50%, divisor 220); restante a apurar",
+    "total": 750920.18
+  },
+  "tema_1389": {
+    "efeito_processual": "Ajuizada a demanda, provável sobrestamento sob a suspensão nacional; momento depende da prática do TRT. Mérito pendente na biblioteca.",
+    "efeito_na_exposicao": "Não extingue o passivo; resultado do STF pode mudar mérito e ônus da prova. Valor nominal exclui atualização e juros durante a espera."
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 750920.18
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [250000.00, 350000.00]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "session1": {
+    "mesa_feb_invoice": "pre-petition unsecured claim; NOT payable (no critical-vendor coverage; Dkt. 48 lists only Apex); paying it = unauthorized post-petition transfer (§549) and DIP order ¶7 violation; 'call it a deposit' is the same transfer relabeled; netting against the $11k return credit is prohibited (DIP order ¶9; setoff of pre-petition mutual debts requires stay relief)",
+    "counsel_140k": "not payable in March: no interim compensation order yet; §§330/331",
+    "march_mor_part7": "payments on pre-petition debt: YES — Apex $31,200 (Dkt. 48), pre-petition wages (Dkt. 9), utilities deposit (Dkt. 31); outside ordinary course without approval: NO",
+    "segregation": {
+      "pre": [
+        "Mesa 62,400",
+        "Apex 31,200 (paid under order)",
+        "Front Range 7,400",
+        "Grainger 4,310"
+      ],
+      "post": [
+        "Mesa 18,900",
+        "Apex 9,800",
+        "Front Range 7,650",
+        "Grainger 2,120",
+        "H&P 140,000 (fee app)",
+        "Corbin 45,000 (fee app)"
+      ]
+    }
+  },
+  "session2": {
+    "holland_pierce": "80% of $140,000 = $112,000 + 100% expenses $4,200 payable after 4/29; holdback $28,000",
+    "corbin": "retention effective 3/20 → only fees for 3/20–3/31 are compensable; 80% of that portion; the 3/10–3/19 portion is not payable absent an order"
+  },
+  "session3": {
+    "debt_discharged": "5460000.00",
+    "cod_income": "5460000.00",
+    "excluded_under_108a": "5460000.00",
+    "nol_before": "6100000",
+    "nol_reduction": "5460000.00",
+    "nol_after": "640000.00",
+    "election_108b5": "optional; if elected, reduce depreciable basis ($3.2M) first to preserve NOL — either answer accepted if reasoned",
+    "fresh_start": {
+      "test_a": "14000000 < 16200000: PASS",
+      "test_b": "old equity retains 60% ≥ 50%: FAIL",
+      "conclusion": "NO fresh-start; gain on discharge reported as reorganization item; liabilities at PV of plan payments"
+    },
+    "fresh_start_bool": false
+  }
+}

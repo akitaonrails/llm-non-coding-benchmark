@@ -1,0 +1,42 @@
+{
+  "rbt12": 1020000,
+  "folha_12m": 287800,
+  "fator_r": 0.282157,
+  "anexo": "III",
+  "faixa": 4,
+  "aliquota_nominal": 0.16,
+  "parcela_deduzir": 35640,
+  "aliquota_efetiva": 0.125059,
+  "receitas": {
+    "servicos": 78000.00,
+    "locacao": 6000.00
+  },
+  "das": {
+    "servicos": 9754.59,
+    "locacao": 506.49,
+    "total": 10261.08
+  },
+  "reparticao": {
+    "IRPJ": 420.20,
+    "CSLL": 367.67,
+    "COFINS": 1475.94,
+    "PIS": 320.40,
+    "CPP": 4490.86,
+    "ISS": 3170.24
+  },
+  "_unidades": {
+    "valores": "R$ (BRL)",
+    "aliquota_nominal, aliquota_efetiva, fator_r": "fração decimal (ex.: 0.16 = 16%; fator_r 0.282157 = 28,22%; limiar legal 0,28)"
+  },
+  "_notas": [
+    "rbt12 = soma da receita bruta de mai/2025 a abr/2026 (faturamento_12_meses.csv), conforme LC 123/2006 art. 18 §1º [library/lc123_art18_fator_r.md]. Assume-se que o CSV é a receita bruta total de todas as atividades (segregação dos 12 meses não fornecida — item aberto, ver STATUS.md).",
+    "anexo 'III' aplica-se aos SERVIÇOS de TI porque o Fator R apurado em regime de PAGAMENTO (193.000 salários + 38.400 pró-labore + 56.400 CPP/FGTS = 287.800; Res. CGSN 140 art. 26 §§1º-2º [library/lc123_art18_fator_r.md]) é 287.800/1.020.000 = 28,22% >= 28% (LC 123/2006 art. 18 §§5º-J/5º-M [library/lc123_art18_fator_r.md]). A LOCAÇÃO de bens móveis é segregada (art. 18 §4º) e tributada pelo mesmo Anexo III, 4ª faixa, SEM a parcela de ISS (LC 123/2006 art. 18 §5º-A; Súmula Vinculante 31; Res. CGSN 140 art. 25 §1º V [library/locacao_bens_moveis_iss.md]).",
+    "DEPENDÊNCIA CRÍTICA: o pró-labore de abr/2026 (R$ 3.200) foi incluído na folha paga porque o cliente esclareceu que foi PAGO EM 30/04/2026 (dentro da janela mai/2025-abr/2026), embora o resumo o mostrasse 'em aberto' (PIX lançado só em maio). O comprovante de 30/04 anunciado pelo cliente AINDA NÃO está em documents/. Se o pagamento fosse em 06/05/2026 (versão do e-mail do sócio), a folha paga cairia para 284.600 -> Fator R 27,90% < 28% -> Anexo V, DAS total 15.188,84 (serviços 14.682,35). Diferença entre os dois enquadramentos: R$ 4.927,76. Ver memoria.md §5.",
+    "receitas.servicos = 82.000,00 brutos menos estorno parcial de 4.000,00 da NFS-e 1184 (glosa de escopo confirmada pelo cliente; NFS-e 1188 + devolução por PIX em 29/05/2026 no extrato), que reduz a receita do mês em que ocorre [library/lc123_art18_fator_r.md, 'Devoluções/cancelamentos'].",
+    "folha_12m = 287.800 em regime de PAGAMENTO (janela mai/2025-abr/2026): salários 193.000 (coluna do resumo; extrato mostra folha paga no próprio mês da competência — 'FOLHA MAIO' em 07/05) + pró-labore 38.400 = 12 x 3.200 (11 lançados no resumo, incluindo o de março pago atrasado e lançado na linha 2026-04, + o de abril pago em 30/04 e não lançado) + CPP/FGTS 56.400 = 12 x 4.700 (constantes no resumo; pagos com defasagem de 1 mês — DARF/GPS/FGTS ABR em 07/05 — o que apenas desloca a janela para as competências abr/2025-mar/2026, mantendo a soma por serem constantes; assume-se abr/2025 = 4.700, mês não documentado).",
+    "aliquota_efetiva (serviços e locação, Anexo III 4ª faixa) = (1.020.000 x 0,16 − 35.640) / 1.020.000 = 127.560 / 1.020.000 = 0,1250588235 (LC 123/2006 art. 18 §1º-A [library/lc123_art18_fator_r.md]; tabela: library/anexos_iii_v_tabelas.md).",
+    "das.locacao = 6.000,00 x 0,1250588235 x (1 − 0,325): deduzida a parcela de ISS (32,50% da repartição do Anexo III, 4ª faixa [library/anexos_iii_v_tabelas.md]), pois locação de bens móveis não sofre ISS [library/locacao_bens_moveis_iss.md].",
+    "reparticao: agora INTEIRAMENTE verificável na biblioteca — ambos os componentes são Anexo III, 4ª faixa (tabela de repartição em anexos_iii_v_tabelas.md); a linha ISS é zerada na parcela da locação (SV 31). DIVERGÊNCIA NÃO BALANCEADA: as percentagens da tabela da biblioteca somam 99,85%, não 100%; a repartição consolidada (10.245,31) fica 15,77 abaixo do DAS total (10.261,08). Não normalizamos nem forçamos o balanço.",
+    "Cálculo em memória detalhado em memoria.md; itens abertos listados em STATUS.md (não se re-pergunta o que o cliente já respondeu)."
+  ]
+}

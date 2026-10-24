@@ -1,0 +1,8 @@
+{
+  "model": "noncoding-muse-glimmer-30b-q8-64k-atem:20261022",
+  "harness": "opencode 2.1.2",
+  "network": "unshare-all; allowlisted model-only Unix gateway",
+  "usage_source": "provider SSE usage",
+  "requests": 2,
+  "http_errors": 0
+}

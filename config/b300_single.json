@@ -1,0 +1,8 @@
+{
+  "models": [
+    {"id": "glm-5.3-flash", "repo": "RedHatAI/GLM-5.3-Flash-NVFP4", "args": ["--tool-call-parser", "glm47", "--reasoning-parser", "glm47", "--kv-cache-dtype", "fp8"]},
+    {"id": "qwen3.8-flash-next", "repo": "nvidia/Qwen3.8-Flash-Next-NVFP4", "args": ["--quantization", "modelopt", "--tool-call-parser", "qwen3_coder", "--reasoning-parser", "qwen3"]},
+    {"id": "swift-1.5-27b", "repo": "ukisai/Swift-1.5-Qwen3.8-27b", "args": ["--dtype", "bfloat16", "--tool-call-parser", "qwen3_coder", "--reasoning-parser", "qwen3", "--language-model-only", "--speculative-config", "{\"method\":\"mtp\",\"num_speculative_tokens\":3}"]},
+    {"id": "thinkingcap-3.8-27b", "repo": "bottlecapai/ThinkingCap-Qwen3.8-27B", "args": ["--dtype", "bfloat16", "--tool-call-parser", "qwen3_xml", "--reasoning-parser", "qwen3", "--language-model-only", "--speculative-config", "{\"method\":\"mtp\",\"num_speculative_tokens\":3,\"draft_sample_method\":\"probabilistic\"}"]}
+  ]
+}

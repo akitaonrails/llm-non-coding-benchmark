@@ -1,0 +1,75 @@
+{
+  "name": "core-v1",
+  "date": "2026-10-22",
+  "budget": "≤ 2 h wall-clock for Fable/Astra at 4 concurrent sessions, 1 run",
+  "rule": "one pack per trust-gate type, all four quadrants, L1 floor in each jurisdiction, one adversarial multi-session, no parallel duplicates",
+  "core": {
+    "usacc": [
+      "usacc_02_close_gap",
+      "usacc_03_household_1040",
+      "usacc_06_sale_asset_vs_stock",
+      "usacc_09_revenue_going_concern"
+    ],
+    "bracc": [
+      "bracc_01_das_fator_r",
+      "bracc_03_cbs_ibs_ano_teste",
+      "bracc_06_venda_quotas_vs_ativos",
+      "bracc_10_provisoes_covenant"
+    ],
+    "uslaw": [
+      "uslaw_01_deadlines_removal",
+      "uslaw_03_noncompete_memo",
+      "uslaw_04_litigation_sequence",
+      "uslaw_09_retaliation_termination"
+    ],
+    "brlaw": [
+      "brlaw_01_prazos_processuais",
+      "brlaw_03_pejotizacao",
+      "brlaw_07_credor_rj",
+      "brlaw_10_cobranca_prescrita"
+    ]
+  },
+  "session_units": 20,
+  "reserve": {
+    "note": "built and validated; run only if the core shows a gap worth probing",
+    "long_horizon": [
+      "usacc_04_twelve_closes"
+    ],
+    "insolvency_debtor": [
+      "usacc_08_chapter11_debtor",
+      "bracc_08_recuperacao_judicial"
+    ],
+    "formation_structuring": [
+      "usacc_05_entity_choice",
+      "usacc_07_holding_qsbs",
+      "bracc_05_abertura_empresa",
+      "bracc_07_holding_patrimonial"
+    ],
+    "family": [
+      "uslaw_05_divorce_split_support",
+      "brlaw_05_divorcio_partilha"
+    ],
+    "m_and_a_legal": [
+      "uslaw_08_sale_diligence_apa",
+      "brlaw_08_ma_diligencia"
+    ],
+    "other": [
+      "usacc_01_schedule_c",
+      "usacc_10_fraud_indicators",
+      "bracc_02_escolha_regime",
+      "bracc_04_lucro_real_trimestre",
+      "bracc_09_distribuicao_lucros",
+      "uslaw_02_msa_playbook",
+      "uslaw_07_chapter11_creditor",
+      "uslaw_10_llc_squeeze_out",
+      "brlaw_02_contrato_lgpd",
+      "brlaw_04_execucao_fiscal",
+      "brlaw_09_justa_causa_estabilidade"
+    ]
+  },
+  "strix_numeric_subset": [
+    "bracc_01_das_fator_r",
+    "usacc_03_household_1040",
+    "brlaw_01_prazos_processuais"
+  ]
+}

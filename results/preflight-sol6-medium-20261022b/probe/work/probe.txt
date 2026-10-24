@@ -1,0 +1,5 @@
+Infrastructure preflight (2026-10-22 UTC)
+/mnt/data: absent ([ -e /mnt/data ] returned false)
+/home/akitaonrails: absent ([ -e /home/akitaonrails ] returned false)
+Python socket.create_connection(('example.com', 443), timeout=5): failed with gaierror [Errno -3] Temporary failure in name resolution. No TCP connection was established; hostname resolution failed before a connection could be attempted.
+Model: GPT-6 (exact model identifier unavailable)

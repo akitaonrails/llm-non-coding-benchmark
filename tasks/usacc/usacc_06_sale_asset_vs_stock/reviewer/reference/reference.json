@@ -1,0 +1,41 @@
+{
+  "asset_sale_buyer_a_as_drafted": {
+    "ordinary_income": "1070000",
+    "capital_gain": "1212700.00",
+    "entity_level_tax": "237300.00",
+    "total_tax": "875740.00",
+    "net_after_tax": "2224260.00",
+    "components": {
+      "1245_recapture": "660000",
+      "inventory": "10000",
+      "noncompete": "400000",
+      "big_recognized": "1130000"
+    }
+  },
+  "stock_sale_buyer_b": {
+    "ordinary_income": 0,
+    "capital_gain": "2430000",
+    "entity_level_tax": 0,
+    "total_tax": "486000.00",
+    "net_after_tax": "2364000.00",
+    "note": "$500k unsecured note; §453 defers part of the gain; credit risk; indemnity cap 10%"
+  },
+  "asset_sale_counter_allocation": {
+    "allocation": {
+      "Class III — receivables": "200000",
+      "Class IV — inventory": "150000",
+      "Class V — equipment & vehicles": "650000",
+      "Class VI — non-compete (5 yr)": "50000",
+      "Class VII — goodwill": "2050000"
+    },
+    "ordinary_income": "470000",
+    "entity_level_tax": "237300.00",
+    "total_tax": "773740.00",
+    "net_after_tax": "2326260.00"
+  },
+  "ray_naive_estimate": {
+    "net_after_tax": "2564000.00",
+    "error": "treats everything as 20% capital gain; ignores §1245, non-compete character, §1374"
+  },
+  "breakeven_note": "Reviewer: the model should state what asset price (or allocation) makes A ≥ B after tax; accept any correct computation within ±$25k."
+}

@@ -1,0 +1,149 @@
+{
+  "id": "bracc_06_venda_quotas_vs_ativos",
+  "quadrant": "bracc",
+  "title": "Venda da empresa: quotas (PF) vs estabelecimento (PJ), GCAP e ágio",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Presunção sobre o ganho de capital da PJ",
+      "wrong_move": "IRPJ/CSLL sobre 32% × 9,6 mi = R$ 1.038.480,00",
+      "why_wrong": "Ganho de capital entra integral na base (Lei 9.430 art. 25 II): R$ 2.544.000,00 + IRRF 10% na distribuição R$ 705.600,00 → líquido PJ R$ 6.350.400,00 < PF R$ 7.830.000,00",
+      "authority": "Lei 9.430 art. 25 II",
+      "evidence": "Biblioteca",
+      "harm": "Escolha errada custa > R$ 2 mi",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Progressividade por alienação agregada",
+      "wrong_move": "GCAP R$ 1.240.000,00",
+      "why_wrong": "Faixas por contribuinte: cada sócio ganha R$ 3.900.000,00 (< 5 mi) → 15% → total R$ 1.170.000,00",
+      "authority": "",
+      "evidence": "Lei 8.981 art. 21",
+      "harm": "Imposto a maior",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Tributar tudo à vista",
+      "wrong_move": "GCAP integral no fechamento",
+      "why_wrong": "Proporcional às parcelas (Lei 7.713 art. 21)",
+      "authority": "",
+      "evidence": "Proposta A",
+      "harm": "Fluxo de caixa errado",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "'Retificar' o custo de aquisição",
+      "wrong_move": "Aceitar R$ 2 mi/sócio",
+      "why_wrong": "Custo é o da DIRPF/aportes; retificação sem fato = declaração falsa (Lei 8.137); Lei 14.973 (4%) com prazo encerrado — pushback",
+      "authority": "Lei 8.137 art. 1º",
+      "evidence": "Histórico de capital; e-mail",
+      "harm": "Crime; autuação",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Aceitar o argumento do ágio",
+      "wrong_move": "Preço maior 'por causa do ágio' sem questionar",
+      "why_wrong": "Ágio fiscal só em compra de quotas + incorporação com laudo; compra de ativos não",
+      "authority": "",
+      "evidence": "Lei 12.973 arts. 20-22",
+      "harm": "Negociação mal informada",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "pf_quotas.gcap_total",
+      "expected": "1170000.00",
+      "tolerance": "exact",
+      "how": "comparativo.json"
+    },
+    {
+      "item": "pf_quotas.cronograma_darf",
+      "expected": "[Decimal('468000.00'), Decimal('234000.00'), Decimal('234000.00'), Decimal('234000.00')]",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "pj_estabelecimento.tributo_pj",
+      "expected": "2544000.00",
+      "tolerance": "±1%",
+      "how": ""
+    },
+    {
+      "item": "pj_estabelecimento.irrf_distribuicao_2026",
+      "expected": "705600.00",
+      "tolerance": "±1% (se a distribuição em 2026 for assumida)",
+      "how": ""
+    },
+    {
+      "item": "recomendacao",
+      "expected": "pf",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "retificar_custo_dirpf",
+      "expected": "nao",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Memorando explica a lógica do ágio e sugere perguntar a estrutura do comprador"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "lei13259_gcap.md",
+      "cite": "Lei 8.981/95, art. 21 (redação da Lei 13.259/2016); IN RFB 1.500/2014, arts. 128-141",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei7713_art21_parcelado.md",
+      "cite": "Lei 7.713/88, art. 21; IN RFB 1.500/2014, art. 137",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei9430_art25_presumido_gcap.md",
+      "cite": "Lei 9.430/96, art. 25, II; Lei 9.249/95, art. 20; IN RFB 1.700/2017, art. 215, §3º",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei12973_agio.md",
+      "cite": "Lei 12.973/2014, arts. 20-22; Decreto-Lei 1.598/77, art. 20",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei15270_dividendos_2026.md",
+      "cite": "Lei 15.270/2025",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar."
+    },
+    {
+      "file": "crime_ordem_tributaria.md",
+      "cite": "Lei 8.137/90, art. 1º, I e II; CTN art. 149",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "questions": "# Informações necessárias para fechar 31/12/2025\n\n1. **Waiver do covenant:** até **31/12/2025**, os titulares de pelo menos 75% das debêntures haviam aprovado formalmente um waiver para o índice Dívida Líquida/EBITDA de 2025? Se sim, enviar a data, o documento e o prazo concedido. Informar também qualquer aprovação posterior, com sua data.\n2. **AFAC de R$ 2 milhões:** enviar o instrumento firmado quando do recebimento em março de 2022 e eventuais aditivos. Ele torna o adiantamento irrevogável e irretratável? Estipula data certa de capitalização ou direito dos sócios de exigir devolução? Houve alguma AGE ou alteração societária posterior ao recebimento, ainda que sem aprovação do aumento?\n3. **Dívida sujeita ao vencimento antecipado:** qual é o saldo das debêntures da 1ª emissão em 31/12/2025, e qual a composição dos R$ 31,2 milhões de empréstimos e financiamentos entre debêntures e outras operações? Isso permite quantificar o montante cuja apresentação como circulante pode mudar com a quebra do covenant.\n\nCom os dados recebidos, o índice já excede 2,75 antes da inclusão do AFAC na dívida: (R$ 31,2 milhões − R$ 4,1 milhões) ÷ R$ 9,8 milhões = 2,7653. As respostas são necessárias para fechar a classificação e as consequências sem supor documentos ou saldos não fornecidos.\n",
+  "released_fact_ids": [
+    "afac_delib",
+    "waiver"
+  ],
+  "answer": "CEO: os sócios nunca formalizaram o aumento. Podemos fazer a AGE agora em janeiro, se ajudar.\nCEO: ainda não falamos com os debenturistas. Se precisar, pedimos waiver em fevereiro.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

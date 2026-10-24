@@ -1,0 +1,22 @@
+[
+  {
+    "case": "brlaw_01_prazos_processuais",
+    "status": "infrastructure_failed",
+    "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/strix-ornith15-q8-legal-20261022/brlaw_01_prazos_processuais/01-s1-work",
+    "elapsed_seconds": 7200.315348107,
+    "controller_wait_seconds": 0,
+    "model_turn_seconds": 7200.014290444,
+    "turns": 1,
+    "released_facts": [],
+    "usage": {
+      "input_tokens": 3756659,
+      "cached_input_tokens": 3433008,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 238877,
+      "reasoning_output_tokens": 0
+    },
+    "api_equivalent_usd": null,
+    "api_charge_usd": 0,
+    "electricity_cost_usd": null
+  }
+]

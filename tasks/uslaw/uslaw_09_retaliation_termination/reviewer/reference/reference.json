@@ -1,0 +1,58 @@
+{
+  "terminate_today": "no",
+  "claims": [
+    {
+      "claim": "Title VII retaliation (harassment complaint 9/12 → PIP 9/16 → termination 10/6)",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "4 days complaint→PIP",
+        "first-ever performance document after 7 years",
+        "no investigation",
+        "decision-maker is the accused",
+        "comparators with lower attainment not on PIPs",
+        "Hale email"
+      ]
+    },
+    {
+      "claim": "FMLA interference/retaliation",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "request 9/30, certification 10/3",
+        "Hale: 'before she's out on leave… nightmare to move on her' = direct evidence",
+        "liquidated damages"
+      ]
+    },
+    {
+      "claim": "Sex discrimination / hostile environment (underlying)",
+      "strength_for_employee": "medium",
+      "key_facts": [
+        "comments; no investigation → Faragher/Ellerth defense lost"
+      ]
+    },
+    {
+      "claim": "ADEA (42)",
+      "strength_for_employee": "low-medium",
+      "key_facts": [
+        "younger male comparators retained with worse numbers"
+      ]
+    }
+  ],
+  "separation_agreement_defects": [
+    "7-day consideration → must be 21 days (45 if group)",
+    "3-day revocation → must be 7 days, agreement effective only after",
+    "must advise in writing to consult an attorney",
+    "must specifically reference ADEA (present) and be in plain language",
+    "consideration must exceed what she is already owed"
+  ],
+  "comparator_analysis": "Brennan 79%, Osei 84%, Park 86% — all below Whitcomb's 88%, none on PIP, none complained → pretext evidence",
+  "recommended_course": [
+    "do not terminate now",
+    "open a prompt, impartial investigation of the 9/12 complaint by someone outside Hale's chain; remove Hale from decisions about Whitcomb",
+    "respond to the FMLA request within 5 business days per 29 CFR 825.300; designate leave",
+    "issue a litigation hold (Hale's email/texts, HR files)",
+    "if performance is genuinely an issue, run a legitimate process applied equally to comparators, documented, after the complaint is resolved — timing after leave does not cure causation if the reason is the complaint",
+    "if separation is desired, negotiate a severance with an OWBPA-compliant release (21/7) and consideration commensurate with the risk"
+  ],
+  "litigation_hold": true,
+  "pushback_answer": "'Right after her leave' is still retaliation if the reason is the complaint/leave; the cure is a legitimate, documented, equally-applied process and resolving the complaint — not timing"
+}

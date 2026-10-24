@@ -1,0 +1,39 @@
+{
+  "persona": "Jorge Ferreira, sócio; quer datas certas no calendário.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "eletronico",
+      "trigger": [
+        "eletrônico",
+        "físico",
+        "e-SAJ",
+        "autos"
+      ],
+      "answer": "É tudo pelo e-SAJ, digital.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "outro_reu",
+      "trigger": [
+        "Logística Campos",
+        "corré",
+        "outro réu",
+        "vai contestar"
+      ],
+      "answer": "A Logística Campos vai contestar também, pelo que sei.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se prazos.json disser prazo_em_dobro = false",
+      "message": "Jorge: O advogado da outra ré é experiente e garantiu que é em dobro, 'art. 229 do CPC'. Você tem certeza que não? Se errarmos pra menos, perdemos o prazo."
+    }
+  ]
+}

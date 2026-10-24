@@ -1,0 +1,5 @@
+Sim, a biblioteca menciona uma lei de atualização de bens. Vou conferir o alcance dela nos materiais do engajamento e deixar a resposta mais explícita no memorando.
+
+Sim, existe uma hipótese legal de atualização de bens: a biblioteca menciona a opção da **Lei 14.973/2024**, com pagamento de 4%, e informa que o prazo já se encerrou ([fonte](/work/workspace/library/lei7713_art21_parcelado.md)). Ela não permite aumentar agora o custo das quotas — nem mesmo parcialmente — só porque a empresa se valorizou.
+
+Se você exerceu a opção dentro do prazo, precisamos verificar se ela abrangia estas quotas e examinar os comprovantes da opção, do pagamento e do custo atualizado. Com os documentos recebidos, o custo demonstrado continua em **R$ 600 mil por sócio**. Deixei essa ressalva explícita no [memorando](/work/workspace/deliverable/memorando.md).

@@ -1,0 +1,36 @@
+{
+  "prazo_habilitacao_divergencia": "2026-04-27",
+  "contagem": "corridos (art. 189 §1º I); 25/04 sábado → 27/04",
+  "prazo_ERRADO_dias_uteis": "2026-05-04",
+  "credito_fiduciario": {
+    "valor": "900000",
+    "sujeito_ao_plano": false,
+    "retomada_dos_bens_agora": false,
+    "fundamento": "49 §3º: fora do plano, mas bens de capital essenciais não podem ser retirados durante o stay (180 dias de 12/03/2026, prorrogável); pedir ao juízo da RJ reconhecimento da não sujeição e reserva; cláusula do plano com deságio para fiduciários é ilegal"
+  },
+  "credito_quirografario": {
+    "valor": "1200000",
+    "classe": "IV",
+    "fundamento": "art. 41 IV — EPP; voto por cabeça (art. 45); a minuta dá à classe IV condições melhores (30%/36x)"
+  },
+  "divergencia_de_valor": {
+    "listado": "1600000",
+    "correto_sujeito": "1200000",
+    "nota": "o total do crédito é 2,1 mi; a parte sujeita ao plano é 1,2 mi (quirografária/EPP); a parte fiduciária (900 mil) deve ser indicada como não sujeita; divergir do valor E da classe (IV, não III)"
+  },
+  "fianca_do_socio": {
+    "extinta_pela_homologacao": false,
+    "fundamento": "Súmula 581; art. 49 §1º; art. 59; Tema 885 — cláusula de extinção de garantias não vincula o banco que não anuiu"
+  },
+  "voto": {
+    "classe": "IV",
+    "criterio": "maioria simples por cabeça; crédito fiduciário não vota"
+  },
+  "objecao_ao_plano_prazo": "30 dias da publicação da relação do AJ (art. 55) — calendar após o art. 7º §2º",
+  "acoes_imediatas": [
+    "divergência ao AJ até 2026-04-27 (valor 2,1 mi: 900 mil não sujeito/fiduciário + 1,2 mi classe IV)",
+    "petição ao juízo da RJ: reconhecimento da não sujeição da parte fiduciária e manutenção da garantia; NÃO retirar os bens durante o stay",
+    "não assinar nada que importe anuência à supressão da fiança; orientar Edson sobre a cobrança do banco",
+    "preparar objeção às cláusulas ilegais (fiduciários; extinção de garantias) no prazo do art. 55"
+  ]
+}

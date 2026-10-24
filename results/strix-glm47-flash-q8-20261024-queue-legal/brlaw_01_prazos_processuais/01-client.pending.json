@@ -1,0 +1,34 @@
+{
+  "case": "brlaw_01_prazos_processuais",
+  "questions": "# Perguntas ao Cliente\n\nNenhuma pergunta foi necessária. Todas as informações para o cálculo dos prazos estavam disponíveis na documentação fornecida.\n\n---\n\n## Resumo da Resposta à Questão do Sócio\n\n**Questão:** O advogado da Logística Campos disse que, como são dois réus com advogados diferentes, têm prazo em dobro para tudo.\n\n**Resposta:** Não há prazo em dobro.\n\n**Fundamento:** O processo é processual digital/e-SAJ (CPC art. 229 §2º), e esta disposição da lei **não se aplica aos processos em autos eletrônicos**.\n",
+  "facts": [
+    {
+      "id": "eletronico",
+      "trigger": [
+        "eletrônico",
+        "físico",
+        "e-SAJ",
+        "autos"
+      ],
+      "answer": "É tudo pelo e-SAJ, digital.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "outro_reu",
+      "trigger": [
+        "Logística Campos",
+        "corré",
+        "outro réu",
+        "vai contestar"
+      ],
+      "answer": "A Logística Campos vai contestar também, pelo que sei.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "eletronico",
+    "outro_reu"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

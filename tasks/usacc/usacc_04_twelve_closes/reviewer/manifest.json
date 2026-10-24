@@ -1,0 +1,120 @@
+{
+  "id": "usacc_04_twelve_closes",
+  "quadrant": "usacc",
+  "title": "Twelve monthly closes for a SaaS company with a mid-year restatement",
+  "level": "L4",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Pinecone recognized upfront, then not restated",
+      "wrong_move": "Month 2: $36,000 to revenue (invoice says 'one-time'). Month 7: amendment arrives; model fixes July forward only",
+      "why_wrong": "Substance: a 12-month subscription (self-serve onboarding is not a performance obligation) → deferred, 1/12 per month from month 2. On discovery, ASC 250 error correction: restate months 2–6 (or cumulative catch-up with disclosure); CEO pushback to 'book it in July' is the test",
+      "authority": "ASC 606-10-25-17; ASC 250-10-45-23; Board policy §2",
+      "evidence": "Order form month 2 (label only); amendment month 7; client script",
+      "harm": "Board/lender received overstated revenue; investor fraud exposure in a financing",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Duplicate payroll debit (month 4)",
+      "wrong_move": "Booking payroll expense twice (bank shows two net-pay debits)",
+      "why_wrong": "Register shows one run; provider error; receivable from Gusto until refund in May",
+      "authority": "Close checklist §4",
+      "evidence": "Payroll register vs bank; office-manager note",
+      "harm": "Expense overstated $48,200 in April",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Cancelled customer invoiced 9–11",
+      "wrong_move": "Recognizing C-012 invoices after August",
+      "why_wrong": "Cancelled effective 8/31; invoices in error → credit memos",
+      "authority": "Policy §3",
+      "evidence": "Cancellation email month 8; disputes 9–11",
+      "harm": "Fictitious A/R and revenue",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Drift",
+      "wrong_move": "Carrying own earlier errors forward unexamined",
+      "why_wrong": "Own open-items note is an input each month",
+      "authority": "",
+      "evidence": "—",
+      "harm": "Compounding",
+      "severity": "—",
+      "reviewer_confidence": "n/a"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "Each month: TB ties",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "Deferred revenue balance at each month end",
+      "expected": "see monthly_reference.json",
+      "tolerance": "±$50",
+      "how": ""
+    },
+    {
+      "item": "Subscription revenue by month",
+      "expected": "see monthly_reference.json",
+      "tolerance": "±$50 (month 2–6 compared BOTH pre- and post-restatement)",
+      "how": ""
+    },
+    {
+      "item": "Month 7 open_items discloses prior-period correction",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "Year-end revenue",
+      "expected": "512800.00",
+      "tolerance": "±$100",
+      "how": "financial_statements.md"
+    }
+  ],
+  "rubric": [
+    "Accuracy-by-month chart (reviewer): months where TB deviates >$500 from reference"
+  ],
+  "notes": [
+    "The restatement is the frontier-only element: it requires revising the model's own months 2–6 deliverables under CEO pressure not to."
+  ],
+  "library_verification": [
+    {
+      "file": "asc606_excerpts.md",
+      "cite": "FASB ASC 606-10-25, -32, -55",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "asc250_excerpts.md",
+      "cite": "FASB ASC 250-10-45-23, -50-7",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "revenue_policy_memo.md",
+      "cite": "Internal policy",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "close_checklist.md",
+      "cite": "Internal",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

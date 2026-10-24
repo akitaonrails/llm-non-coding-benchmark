@@ -1,0 +1,142 @@
+{
+  "id": "bracc_02_escolha_regime",
+  "quadrant": "bracc",
+  "title": "Escolha de regime tributário: Simples × Presumido × Real",
+  "level": "L2",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Mudar de regime em dezembro",
+      "wrong_move": "Pedir exclusão em dezembro com efeito imediato",
+      "why_wrong": "Opção/exclusão produz efeitos a partir de 1º de janeiro; irretratável no ano; pushback propõe empresa nova (simulação)",
+      "authority": "LC 123 art. 16 §2º",
+      "evidence": "LC 123 art. 16; Lei 9.430 art. 26",
+      "harm": "Planejamento inviável; se executado, autuação",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Ignorar o sublimite",
+      "wrong_move": "Carga do Simples = só o DAS",
+      "why_wrong": "Acima de R$ 3,6 mi o ISS (5% = R$ 210.000,00) é recolhido por fora",
+      "authority": "LC 123 art. 13-A",
+      "evidence": "Art. 13-A; Anexo III faixa 6",
+      "harm": "Simples subestimado",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Creditar tudo no Lucro Real",
+      "wrong_move": "Crédito R$ 129.500,00",
+      "why_wrong": "Uso e consumo/mobiliário/veículos admin não geram crédito: R$ 83.250,00",
+      "authority": "Leis 10.637/10.833 art. 3º",
+      "evidence": "compras_icms_st.csv coluna 'uso'",
+      "harm": "Lucro Real superestimado como vantajoso",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Esquecer o INSS patronal fora do Simples",
+      "wrong_move": "Comparar Simples (CPP dentro) com Presumido/Real sem os 28% da folha",
+      "why_wrong": "INSS patronal R$ 364.000,00 — é o que decide a comparação com folha alta",
+      "authority": "",
+      "evidence": "Lei 8.212 art. 22; LC 123 art. 13 VI",
+      "harm": "Recomendação errada",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Presunção/adicional",
+      "wrong_move": "32% sobre tudo; sem adicional",
+      "why_wrong": "Obra com material 8%/12%; adicional de 10% acima de R$ 240 mil/ano",
+      "authority": "Lei 9.249 art. 15; Lei 9.430",
+      "evidence": "Balancete (15% obra)",
+      "harm": "Presumido errado",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "simples.total",
+      "expected": "948000.00",
+      "tolerance": "±1%",
+      "how": "comparativo.json"
+    },
+    {
+      "item": "presumido.total",
+      "expected": "1111120.00",
+      "tolerance": "±1%",
+      "how": ""
+    },
+    {
+      "item": "real.total",
+      "expected": "1112290.00",
+      "tolerance": "±1%",
+      "how": ""
+    },
+    {
+      "item": "recomendacao",
+      "expected": "simples",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "mudanca_em_dezembro",
+      "expected": "impossivel",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "prazo_opcao",
+      "expected": "último dia útil de janeiro",
+      "tolerance": "exact (data)",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Pushback: recusa a 'empresa nova para faturar dezembro' como simulação"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "lc123_sublimite_opcao.md",
+      "cite": "LC 123/2006, arts. 3º, §§ 1º e 9º; 13-A; 16; 20; 30",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar redação atual do art. 13-A e §2º-A do art. 16."
+    },
+    {
+      "file": "lei9249_9430_presumido.md",
+      "cite": "Lei 9.249/95, arts. 15 e 20; Lei 9.430/96, arts. 1º a 4º, 25; Lei 9.718/98",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "pis_cofins_nao_cumulativo.md",
+      "cite": "Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, arts. 175-176",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "inss_patronal.md",
+      "cite": "Lei 8.212/91, art. 22; LC 123, art. 13, VI e §3º",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "anexo_iii_faixa6.md",
+      "cite": "LC 123/2006, Anexo III; Res. CGSN 140, arts. 9º-12",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

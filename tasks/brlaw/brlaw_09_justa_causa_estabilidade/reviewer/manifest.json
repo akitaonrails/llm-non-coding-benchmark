@@ -1,0 +1,129 @@
+{
+  "id": "brlaw_09_justa_causa_estabilidade",
+  "quadrant": "brlaw",
+  "title": "Dispensa por justa causa com imediatidade quebrada e estabilidades (gestante, CIPA)",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Justa causa cabível (482 k)",
+      "wrong_move": "Autorizar",
+      "why_wrong": "Imediatidade quebrada (ciência em 21/08 pelo e-mail — conhecimento do preposto é do empregador), proporcionalidade, gravidade, fato verdadeiro",
+      "authority": "CLT 482 k, 493; jurisprudência",
+      "evidence": "emails_gerente.txt; prontuário; print",
+      "harm": "Reversão + estabilidades + dano moral",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "'Grávida com justa causa perde a estabilidade'",
+      "wrong_move": "Usar a justa causa para contornar a estabilidade",
+      "why_wrong": "Só justa causa VÁLIDA afasta; revertida, a estabilidade volta com indenização (Súmula 244); desconhecimento irrelevante",
+      "authority": "ADCT 10 II b; Súmula 244",
+      "evidence": "Atestado; pushback",
+      "harm": "Reintegração/indenização ~11 meses",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "CIPA ignorada",
+      "wrong_move": "Não ver a ata",
+      "why_wrong": "Suplente tem estabilidade (Súmula 339); dispensa só por motivo provado (CLT 165)",
+      "authority": "ADCT 10 II a",
+      "evidence": "ata_cipa.md",
+      "harm": "Reintegração",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "'Então sem justa causa'",
+      "wrong_move": "Recomendar dispensa imotivada",
+      "why_wrong": "Nula durante as estabilidades; não resolve",
+      "authority": "",
+      "evidence": "pushback",
+      "harm": "Mesma exposição",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Exposição subestimada",
+      "wrong_move": "Só verbas rescisórias",
+      "why_wrong": "Inclui indenização do período de estabilidade (~R$ 111.535,45) e dano moral",
+      "authority": "",
+      "evidence": "Biblioteca",
+      "harm": "Decisão mal informada",
+      "severity": "M",
+      "reviewer_confidence": "medium — estimativa"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "justa_causa_cabivel = false",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "parecer.json"
+    },
+    {
+      "item": "estabilidades: gestante E CIPA identificadas",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "motivos inclui imediatidade (ciência 21/08)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "exposicao total",
+      "expected": "189777.97",
+      "tolerance": "±20% (estimativa com método declarado)",
+      "how": ""
+    },
+    {
+      "item": "alternativas: dispensa sem justa causa rejeitada durante estabilidades",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "parecer.md trata o banco de horas como causa do problema e responde ao pushback"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "clt_482_493_proporcionalidade.md",
+      "cite": "CLT arts. 482, 493; jurisprudência consolidada do TST sobre imediatidade, proporcionalidade e non bis in idem",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "estabilidade_gestante.md",
+      "cite": "ADCT art. 10, II, b; TST Súmula 244, I-III; Lei 9.029/95",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "estabilidade_cipa.md",
+      "cite": "ADCT art. 10, II, a; CLT art. 165; TST Súmula 339",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "verbas_reversao.md",
+      "cite": "CLT arts. 477, 487; Lei 8.036 art. 18; Súmula 244; jurisprudência sobre dano moral por justa causa indevida",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

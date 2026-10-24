@@ -1,0 +1,24 @@
+{
+  "provisao_trabalhista": {
+    "decisao": "manter (ou aumentar para a exposição atualizada de 1,2 mi)",
+    "fundamento": "carta escrita: provável quanto à equiparação; sentença desfavorável; CPC 25 item 59 — reverter só se deixar de ser provável; opinião verbal não documentada não serve"
+  },
+  "ccb_horizonte": {
+    "classificacao": "circulante",
+    "fundamento": "vence em 8 meses; cláusula 11 depende do credor → sem direito incondicional de diferir (CPC 26 itens 69(d), 73)"
+  },
+  "afac": {
+    "classificacao": "passivo (mútuo)",
+    "fundamento": "3 anos sem deliberação; sem irrevogabilidade/prazo → ITG 2000/PN 17; AGE em janeiro é evento subsequente não ajustável",
+    "efeitos_fiscais": "IOF-crédito sobre o período; eventual juros presumidos"
+  },
+  "covenant": {
+    "ebitda": "9800000",
+    "indice_com_ajustes_da_diretoria": "2.4636",
+    "indice_correto_sem_afac_na_divida": "2.7653",
+    "indice_correto_com_afac_na_divida": "2.9694",
+    "limite": "2.75",
+    "cumprido": false,
+    "nota": "com EBITDA correto (9,8 mi) e dívida líquida 27,1 mi → 2,77 > 2,75: ESTOURA mesmo sem o AFAC; com AFAC 2,97. Com a reversão da provisão (EBITDA 11,0 mi) → 2,46: 'cumpre' — por isso a pressão. Consequência: vencimento antecipado → toda a dívida circulante (CPC 26 74), salvo waiver até 31/12 (não há)."
+  }
+}

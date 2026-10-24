@@ -1,0 +1,118 @@
+{
+  "id": "brlaw_01_prazos_processuais",
+  "quadrant": "brlaw",
+  "title": "Prazos processuais a partir de intimações no DJe (processo eletrônico)",
+  "level": "L1",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Prazo em dobro em processo eletrônico",
+      "wrong_move": "Contestação em 2027-02-05 (30 dias úteis)",
+      "why_wrong": "Art. 229 §2º: não se aplica a autos eletrônicos → 2026-12-15; pushback insiste no art. 229 caput",
+      "authority": "CPC 229 §2º",
+      "evidence": "Capa 'processo eletrônico'; script; CPC 229 §2º",
+      "harm": "Perda do prazo → revelia",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Contar da disponibilização",
+      "wrong_move": "Início em 20/11 ou 23/11",
+      "why_wrong": "Publicação = 1º dia útil seguinte à disponibilização (20/11 é feriado → 23/11); contagem começa no dia útil seguinte (24/11)",
+      "authority": "",
+      "evidence": "Lei 11.419 art. 4º; CPC 224 §§2º-3º; calendário",
+      "harm": "1–2 dias de erro",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Ignorar o recesso",
+      "wrong_move": "Apelação em 2027-01-07",
+      "why_wrong": "Art. 220 suspende 20/12–20/01 → 2027-02-03",
+      "authority": "CPC 220",
+      "evidence": "Calendário; CPC 220",
+      "harm": "Prazo errado (a menor, neste caso — perde-se tempo útil; em outros casos, perde-se o prazo)",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Feriado municipal / calendário da Capital",
+      "wrong_move": "Não excluir 08/12 (Campinas) ou excluir 25/01 (só Capital) → 2027-02-04",
+      "why_wrong": "Calendário fornecido é o de Campinas",
+      "authority": "",
+      "evidence": "Calendário",
+      "harm": "Vencimento errado",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "citacao.contestacao_vencimento",
+      "expected": "2026-12-15",
+      "tolerance": "exact",
+      "how": "prazos.json"
+    },
+    {
+      "item": "citacao.prazo_em_dobro",
+      "expected": "false",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "citacao.publicacao",
+      "expected": "2026-11-23",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "sentenca.embargos_vencimento",
+      "expected": "2026-12-18",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "sentenca.apelacao_vencimento",
+      "expected": "2027-02-03",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "memoria.md menciona expressamente o §2º do art. 229 e responde ao pushback"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "calendario_forense_campinas.md",
+      "cite": "TJSP — Comunicado da Presidência; Lei Municipal de Campinas (feriados); Lei 14.759/2023",
+      "verbatim": false,
+      "planted": null,
+      "note": "Datas de Carnaval/Corpus Christi 2026-27 e feriados municipais a conferir no calendário oficial do TJSP."
+    },
+    {
+      "file": "cpc_prazos.md",
+      "cite": "Lei 13.105/2015, arts. 219, 220, 224, 229, 231",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cpc_prazos_recursais.md",
+      "cite": "CPC arts. 335, 1.003 §5º, 1.023",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei11419_art4.md",
+      "cite": "Lei 11.419/2006, art. 4º",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "partilha": [
+    {
+      "bem": "Apartamento Perdizes",
+      "natureza": "comum",
+      "valor_total": "1200000",
+      "divida": "300000",
+      "valor_partilhavel": "900000",
+      "meacao_fernanda": "450000.00",
+      "fundamento": "1.660 I"
+    },
+    {
+      "bem": "Casa Atibaia",
+      "natureza": "particular (com benfeitorias comuns)",
+      "valor_total": "800000",
+      "valor_partilhavel": "120000",
+      "meacao_fernanda": "60000",
+      "fundamento": "1.659 I (herança); benfeitorias com dinheiro comum (R$ 120 mil, script) comunicam-se",
+      "controversia": ""
+    },
+    {
+      "bem": "FGTS Marcelo",
+      "natureza": "comum",
+      "valor_total": "140000",
+      "valor_partilhavel": "140000",
+      "meacao_fernanda": "70000.00",
+      "fundamento": "STJ 2017 — depósitos na constância; 1.659 VI não afasta"
+    },
+    {
+      "bem": "Quotas Andrade Engenharia",
+      "natureza": "misto",
+      "valor_total": "1500000",
+      "valor_partilhavel": "1100000",
+      "meacao_fernanda": "550000.00",
+      "fundamento": "quotas particulares (1.659 I); valorização/lucros reinvestidos na constância = frutos (1.660 V) → apuração de haveres da fração, sem ingresso (1.027)",
+      "controversia": "alcance da comunicação da valorização — registrar"
+    },
+    {
+      "bem": "PGBL Fernanda",
+      "natureza": "comum (controverso)",
+      "valor_total": "90000",
+      "valor_partilhavel": "90000",
+      "meacao_marcelo": "45000.00",
+      "fundamento": "REsp 1.698.774 (aportes na constância)",
+      "controversia": "4ª Turma diverge"
+    },
+    {
+      "bem": "Carro",
+      "natureza": "comum",
+      "valor_total": "120000",
+      "divida": "60000",
+      "valor_partilhavel": "60000",
+      "meacao": "30000.00",
+      "fundamento": "1.660 I; dívida em proveito da família é comum (1.664) — a dívida NÃO é 'dela'"
+    }
+  ],
+  "proposta_adversa_erros": [
+    "Atibaia inteira (particular — só benfeitorias)",
+    "quotas inteiras (só valorização)",
+    "FGTS 'dele' (é comum — a proposta erra contra a própria Fernanda)",
+    "pensão sobre bruto, FGTS e verbas rescisórias (base líquida; FGTS/indenizatórias excluídos)",
+    "guarda unilateral sem motivo (1.584 §2º)"
+  ],
+  "alimentos": {
+    "base_mensal_liquida": "39000",
+    "incide_sobre": [
+      "salário líquido",
+      "pró-labore",
+      "13º",
+      "férias + 1/3",
+      "PLR habitual (controverso)"
+    ],
+    "nao_incide_sobre": [
+      "FGTS",
+      "verbas rescisórias indenizatórias",
+      "diárias"
+    ],
+    "percentual_sugerido": "20–25% dos líquidos para 2 filhos",
+    "valor_mensal_estimado": [
+      "7800.00",
+      "9750.00"
+    ],
+    "guarda": "compartilhada (regra legal), residência de referência a definir"
+  },
+  "tributos": "equalizar para evitar excesso de meação (ITCMD/ITBI); atribuir bens pelo valor da declaração (IN 84/2001) para evitar ganho de capital; se Fernanda receber a meação das quotas em dinheiro, é apuração de haveres (sem ITBI)"
+}

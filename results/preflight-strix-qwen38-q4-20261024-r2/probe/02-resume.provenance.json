@@ -1,0 +1,8 @@
+{
+  "model": "noncoding-qwen38-27b-q4-64k:20261022",
+  "harness": "opencode 2.1.2",
+  "network": "unshare-all; allowlisted model-only Unix gateway",
+  "usage_source": "provider SSE usage",
+  "requests": 2,
+  "http_errors": 0
+}

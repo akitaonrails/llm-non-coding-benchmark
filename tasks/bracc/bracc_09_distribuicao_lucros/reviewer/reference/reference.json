@@ -1,0 +1,20 @@
+{
+  "limite_presumido_liquido_teorico": "1142080.00",
+  "lucro_contabil_2025": "-310000",
+  "prejuizos_acumulados": "-1120000",
+  "lucro_distribuivel": 0,
+  "distribuicao_recomendada": 0,
+  "irrf_10pct_se_distribuir_800k": "80000.00",
+  "multa_art32_risco": "400000.00",
+  "mutuo": {
+    "recomendado": false,
+    "condicoes": "só com contrato escrito, juros de mercado, prazo, IOF, capacidade de pagamento — e mesmo assim desaconselhável com prejuízo e débito fiscal (DDL/recaracterização)"
+  },
+  "pontos": [
+    "Com prejuízo no exercício e prejuízos acumulados, NÃO há lucro a distribuir; o 'limite presumido' pressupõe lucro",
+    "'Antecipação de lucros futuros' = retirada sem lucro → recaracterização como rendimento tributável/pró-labore + CC 1.009",
+    "Art. 32 Lei 4.357: risco de multa de 50% com débito não garantido — controvérsia quanto à exigibilidade suspensa; expor o risco e recomendar garantia/parcelamento antes de qualquer distribuição futura",
+    "2026: IRRF 10% acima de R$ 50 mil/mês; sem ata até 31/12/2025, sem transição",
+    "Alternativa lícita: pró-labore (tributado) e/ou redução de capital (formalidades, credores, CC 1.082-1.084) — não 'lucros'"
+  ]
+}

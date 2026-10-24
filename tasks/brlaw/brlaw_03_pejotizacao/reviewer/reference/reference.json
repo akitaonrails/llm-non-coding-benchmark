@@ -1,0 +1,55 @@
+{
+  "probabilidade_vinculo": "alta (70–85%)",
+  "fundamentos": [
+    "subordinação: horário controlado, ponto, aprovação de ausências pelo RH, avaliação de desempenho com formulário de CLT",
+    "pessoalidade: sócio único, dedicado",
+    "não eventualidade: 7 anos",
+    "onerosidade: valor fixo mensal independente de entregas",
+    "exclusividade (indício, não decisivo — 442-B)",
+    "fraude (art. 9º)"
+  ],
+  "prescricao": {
+    "data_ajuizamento": "2026-11-16",
+    "corte_quinquenal": "2021-11-16",
+    "meses_total": 84,
+    "meses_prescritos": 25,
+    "meses_exigiveis": 59,
+    "bienal": "ok — ajuizamento dentro de 2 anos do término"
+  },
+  "exposicao": {
+    "remuneracao_base": "18000",
+    "decimo_terceiro": "88500.00",
+    "ferias_terco": "118000.00",
+    "fgts": "101480.00",
+    "multa_40": "40592.00",
+    "aviso_previo": "30600.00",
+    "inss_patronal": "355180.00",
+    "total": "734352.00",
+    "nota": "horas extras adicionais conforme planilha (≈ 20h/mês) a apurar; juros/correção; honorários"
+  },
+  "caminho_errado": {
+    "84_meses_sem_prescricao": "1045518.10",
+    "fgts_sem_13_ferias": "84960.00"
+  },
+  "tema_1389": {
+    "efeito_processual": "sobrestamento provável após instrução; não extingue nem reduz o passivo",
+    "efeito_na_exposicao": "mantém-se; correção/juros correm (Lei 14.905/2024)"
+  },
+  "provisao": {
+    "classificacao_cpc25": "provavel",
+    "valor": "734352.00",
+    "nota": "CPC 25: provável → provisionar; o sobrestamento não altera a probabilidade de perda"
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [
+      "257023.20",
+      "403893.60"
+    ],
+    "argumentos_de_defesa": [
+      "remuneração-base: R$ 12 mil (CLT equivalente) em vez de R$ 18 mil — reduz ~1/3",
+      "exclusividade não decisiva (442-B)",
+      "Tema 1389 pode fixar ônus da prova favorável"
+    ]
+  }
+}

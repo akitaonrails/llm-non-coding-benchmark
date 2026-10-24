@@ -1,0 +1,25 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "Publicação no DJe: primeiro dia útil seguinte à disponibilização de 19/11/2026 (qui); 20/11/2026 (sex) é feriado (Lei 14.759/2023) e 21-22/11 são fim de semana, logo publicação em 23/11/2026 (seg) — Lei 11.419/2006, art. 4º, §3º e CPC, art. 224, §2º. Início no primeiro dia útil seguinte à publicação (24/11/2026, ter) — Lei 11.419/2006, art. 4º, §4º e CPC, arts. 224, §3º, 231, VII; prazo de 15 dias (CPC, art. 335, III), contados em dias úteis (CPC, art. 219), excluindo o dia do começo e incluindo o do vencimento (CPC, art. 224). Prazo SIMPLES, e não em dobro: o art. 229, caput, do CPC prevê dobro para litisconsortes com procuradores de escritórios distintos (fls. 61 e 70), mas o §2º determina que o caput NÃO se aplica a processos em autos eletrônicos — estes autos são eletrônicos (e-SAJ, conforme cabeçalho das duas intimações no DJe). Subsidiariamente, o §1º faria cessar o dobro havendo apenas 2 réus se defesa oferecida por apenas um deles. Feriados/fins de semana ignorados na contagem: 28-29/11, 05-06/12, feriado municipal de 08/12/2026 (N.Sra. da Conceição, Campinas) e 12-13/12; o recesso de 20/12 a 20/01 não alcança o vencimento (15/12)."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "Fins de semana durante a contagem da apelação: 19-20/12/2026, 26-27/12/2026, 02-03/01/2027, 09-10/01/2027, 16-17/01/2027, 23-24/01/2027, 30-31/01/2027",
+      "Recesso forense (suspensão do curso do prazo): 20/12/2026 a 20/01/2027, inclusive (CPC, art. 220) — a contagem da apelação, parada em 18/12/2026 com 5 dias corridos, retoma em 21/01/2027 (qui), primeiro dia útil após o recesso",
+      "Dias sem expediente forense e feriados dentro do recesso (já abrangidos pela suspensão): 24/12/2026 e 31/12/2026 (sem expediente forense), 25/12/2026 (Natal), 01/01/2027 (Confraternização Universal)",
+      "25/01/2027 NÃO considerado feriado: Aniversário de São Paulo é feriado municipal apenas na Capital, não em Campinas — contado como dia útil (dia 8 da apelação)",
+      "Carnaval 2027 (08-09/02/2027) não chegou a ser considerado: posterior ao vencimento da apelação (03/02/2027)",
+      "Embargos de declaração: os 5 dias úteis (14 a 18/12/2026) decorrem antes de 20/12/2026, sem suspensão; nenhum feriado no período"
+    ]
+  }
+}

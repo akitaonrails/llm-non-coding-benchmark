@@ -1,0 +1,7 @@
+{
+  "model": "qwen38-27b-strix-q4:latest",
+  "harness": "opencode 2.1.2",
+  "network": "unshare-all; allowlisted model-only Unix gateway",
+  "usage_source": "provider SSE usage",
+  "requests": 3
+}

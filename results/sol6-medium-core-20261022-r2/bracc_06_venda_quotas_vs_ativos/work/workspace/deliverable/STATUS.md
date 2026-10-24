@@ -1,0 +1,5 @@
+COMPLETE WITH OPEN ITEMS
+
+- O `comparativo.json` usa uma simulação condicionada de distribuição integral, em um mês de 2026, do caixa líquido da venda pela PJ como dividendos. Não está demonstrado que todo esse caixa seja distribuível como dividendo; os R$ 7.056.000 pertencem inicialmente à PJ. A composição jurídica e contábil do caixa, a disponibilidade para distribuição, eventual aprovação até 2025 de lucros anteriores e a carga final de IRPFM precisam ser confirmadas. A preferência nominal pelas quotas já existe antes de tributar a saída do caixa da PJ.
+- Faltam datas de recebimento para converter o cronograma proporcional de DARFs em vencimentos de calendário; faltam ainda resultados do trimestre da PJ e dados para comparar valor presente e risco das parcelas.
+- Caso Beatriz alegue ter exercido a opção de atualização da Lei 14.973/2024 dentro do prazo, faltam a verificação da elegibilidade das quotas e os comprovantes da opção, do pagamento e do custo atualizado; sem eles, permanece o custo declarado de R$ 600.000 por sócio.

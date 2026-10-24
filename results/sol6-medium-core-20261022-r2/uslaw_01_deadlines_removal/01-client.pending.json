@@ -1,0 +1,61 @@
+{
+  "case": "uslaw_01_deadlines_removal",
+  "questions": "# Client information needed to assess removal\n\n1. List **every member (owner) of Harbor Street Bakery LLC** on September 8, 2026 and now, including each member's ownership type (individual, LLC, partnership, corporation, etc.). Were there any membership changes between those dates?\n2. For each individual member, what state was the person's **domicile** (permanent home, not merely a shop location or mailing address) on September 8 and now? In particular, is the Seattle partner domiciled in Washington? If a member is an LLC or partnership, identify all of its members and their domiciles or citizenship through every ownership layer. If a member is a corporation, give its state(s) of incorporation and principal place of business.\n3. Has Harbor Street already served an answer, notice of appearance, or other response, or appeared in the state case? If yes, give the filing/service date and a copy or description. Has any default motion or order been received?\n\nThe service declaration records delivery of the summons and complaint to Harbor Street's registered agent on September 11, 2026. Please also flag any reason you believe the declaration's service facts are inaccurate.\n",
+  "facts": [
+    {
+      "id": "member",
+      "trigger": [
+        "member",
+        "partner",
+        "owner",
+        "equity",
+        "who owns",
+        "Seattle"
+      ],
+      "answer": "Yes — Caleb Sorensen owns 35% of the LLC. He lives in Seattle (Ballard). I own 65% and live in Portland. We're the only two members.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "registered_agent",
+      "trigger": [
+        "registered agent",
+        "CSC",
+        "how did you get",
+        "email",
+        "old address"
+      ],
+      "answer": "CSC emailed the scans on the 11th to our old Gmail. Nobody checks it. I found them Sunday night.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "appearance",
+      "trigger": [
+        "appearance",
+        "lawyer in Washington",
+        "already filed",
+        "anyone responded"
+      ],
+      "answer": "Nobody has filed anything for us. We don't have a Washington lawyer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "defense",
+      "trigger": [
+        "short deliveries",
+        "spoiled",
+        "photos",
+        "setoff",
+        "counterclaim"
+      ],
+      "answer": "Three deliveries in March–April were short or spoiled, about $26k worth. I have photos and emails. I never paid those invoices.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "member",
+    "registered_agent",
+    "appearance"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

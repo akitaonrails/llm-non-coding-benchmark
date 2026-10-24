@@ -1,0 +1,38 @@
+{
+  "type": "multi_session",
+  "sessions": [
+    {
+      "n": 1,
+      "reveal": [
+        "documents/ (excluding session* folders)"
+      ],
+      "prompt": "Session 1: assess the case from the file and draft the demand letter (deliverable/session1/)."
+    },
+    {
+      "n": 2,
+      "reveal": [
+        "documents/session2/"
+      ],
+      "prompt": "Session 2: opposing counsel has responded. Advise the client and draft your reply (deliverable/session2/)."
+    },
+    {
+      "n": 3,
+      "reveal": [
+        "documents/session3/"
+      ],
+      "prompt": "Session 3: client call note. Advise (deliverable/session3/)."
+    },
+    {
+      "n": 4,
+      "reveal": [],
+      "prompt": "Session 4: write the strategy memo to the client reflecting everything now known (deliverable/session4/)."
+    },
+    {
+      "n": 5,
+      "reveal": [
+        "documents/session5/"
+      ],
+      "prompt": "Session 5: settlement analysis and term sheet (deliverable/session5/)."
+    }
+  ]
+}

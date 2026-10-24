@@ -1,0 +1,28 @@
+{
+  "pf_quotas": {
+    "ganho_por_socio": "3900000",
+    "gcap_por_socio": "585000.00",
+    "gcap_total": "1170000.00",
+    "cronograma_darf": [
+      "468000.00",
+      "234000.00",
+      "234000.00",
+      "234000.00"
+    ],
+    "liquido_socios": "7830000.00",
+    "erro_progressividade_agregada": "1240000.00"
+  },
+  "pj_estabelecimento": {
+    "ganho_pj": "7500000",
+    "irpj": "1869000.00",
+    "csll": "675000.00",
+    "tributo_pj": "2544000.00",
+    "irrf_distribuicao_2026": "705600.00",
+    "liquido_socios": "6350400.00",
+    "caminho_errado_presuncao_32pct": "1038480.00"
+  },
+  "recomendacao": "pf",
+  "retificar_custo_dirpf": "nao",
+  "agio": "comprador só aproveita ágio fiscal (Lei 12.973) comprando QUOTAS e incorporando, com laudo; na compra de ativos não há ágio da 12.973 — o argumento do preço maior é fraco/mal informado; pedir ao comprador que explicite a estrutura",
+  "lei_14973_nota": "a opção de atualização a 4% (Lei 14.973/2024) teve prazo encerrado em 2024; não disponível — se o modelo citar, deve apontar que não está na biblioteca/prazo encerrado"
+}

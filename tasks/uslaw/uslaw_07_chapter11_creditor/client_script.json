@@ -1,0 +1,52 @@
+{
+  "persona": "Mesa Steel CEO (Frank Delgado) and the credit manager (Lori Kemp).",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "if advice says Mesa may owe money back (preference)",
+      "message": "Frank: We OWE THEM? They owe us $210,000 and you're telling me we might have to pay back money they already paid us for steel we delivered? That can't be right."
+    }
+  ]
+}

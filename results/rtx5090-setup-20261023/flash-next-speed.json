@@ -1,0 +1,36 @@
+{
+  "model": "qwen3.8-flash-next-iq3_s",
+  "runs": [
+    {
+      "seconds": 5.910372250000364,
+      "ttft_seconds": 0.3253109300057986,
+      "decode_tokens_per_second": 183.17794764954587,
+      "usage": {
+        "prompt_tokens": 68,
+        "completion_tokens": 1024,
+        "total_tokens": 1092,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "length"
+    },
+    {
+      "seconds": 5.002373463001277,
+      "ttft_seconds": 0.031895516003714874,
+      "decode_tokens_per_second": 205.82879030350108,
+      "usage": {
+        "prompt_tokens": 68,
+        "completion_tokens": 1024,
+        "total_tokens": 1092,
+        "prompt_tokens_details": {
+          "cached_tokens": 63
+        }
+      },
+      "finish_reason": "length"
+    }
+  ],
+  "passed": true,
+  "minimum_decode_tokens_per_second": 40.0,
+  "scope": "Stream-observed decode throughput; includes SSH transport jitter."
+}

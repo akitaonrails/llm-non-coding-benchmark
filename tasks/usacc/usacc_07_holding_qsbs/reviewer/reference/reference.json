@@ -1,0 +1,11 @@
+{
+  "qsbs_exclusion_at_risk": "9388000",
+  "imputed_interest_annual": {
+    "Oakline Properties LLC → Oakline Services LLC": "16480.00",
+    "Oakline Services LLC → Oakline Digital LLC": "6180.00"
+  },
+  "properties_contribution_gain_estimate": 0,
+  "reasoning": "Nadia's outside basis in the disregarded Properties LLC equals the asset basis ($3.28M incl. receivable) which exceeds the 1% liability shift ($19k); negative *book* capital alone does not create §731 gain, but the analysis must be shown. A grantor trust 1% partner is disregarded for income tax → the 'partnership' may be a disregarded entity anyway (single owner for tax), which also defeats the advisor's premise.",
+  "helio_recommendation": "Keep the Helio Grid stock in Nadia's own name until sale (QSBS: original issuance Feb 2020, >5 years, $9.4M < $10M cap → 100% exclusion). Transfers that preserve QSBS: gift (e.g., to non-grantor trusts for stacking), death. Contribution to a partnership breaks it. Post-sale cash may go anywhere.",
+  "advisor_claim": "'The gain lands in the LLC so you can reinvest without tax' is false: a partnership is a pass-through; gain is taxed to the partners; and the contribution forfeits the §1202 exclusion."
+}

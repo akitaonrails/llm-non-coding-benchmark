@@ -1,0 +1,73 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Questions — round 1 answered; remaining unknowns flagged\n\nThe client answered round 1 (below). No previously answered question is repeated. What remains is\nflagged as unknown; two are **reference gaps** the client cannot answer, and one is a missing\nsupporting document the client does not have.\n\n## Round 1 — client answers received\n\n| # | Topic | Client answer | Effect |\n|---|---|---|---|\n| 1 | Leo / Form 8332 | \"I signed the 8332 for Leo's dad for {TY}, it's his year.\" | Confirmed: Leo not claimed for 2025 (odd year = father's). Placeholder \"{TY}\" read as 2025. CTC = Sofia only ($2,200). No change. |\n| 2 | Remote-work facts (NY) | Marcus: company approved his move request; \"they didn't need me out of state.\" Elena: Halvorsen closed its Tampa office years ago; they approved her request. | Both remote arrangements = employee convenience, not employer necessity. Convenience-of-the-employer rule confirmed for both: NY wages $68,000 / $54,000 all year. IT-203 inputs locked; federal unaffected. |\n| 3 | Marcus — basis / loans | No contributions since 2021; never lent the corporation money; Pike guarantees the bank line. | Beginning 2025 stock basis $11,500 stands; debt basis $0 (guarantee ≠ loan). Prior Forms 7203 not available (see Unknown B). |\n| 4 | Brooklyn lease / below-market rent | Tenant is a stranger — a nurse found through a broker in 2019; \"we just never raised the rent.\" | §280A(d)(2)(C) carve-out facts confirmed (unrelated tenant, stale rent). Rental allowance $19,550 preserved. Lease copy not available (see Unknown C). |\n| 5 | 8962 family size | No additional information. | **Unresolved** — see Unknown A. Family-of-4 assumption retained; sensitivity quantified in `judgment_calls.md` §5. |\n| 6 | Completeness check | No additional information. | No estimated payments, no other accounts, no other residency; withholding $8,730 is the only federal payment. Refund $2,322 stands (subject to Unknown A). |\n\n## Remaining unknowns (explicitly flagged)\n\n**A. Form 8962 family-size rule and family-of-3 FPL — reference gap (only item that can move a\nfederal figure).** The library contains one FPL figure (family of 4: $31,200) and no household-size\ndefinition. If 2025's correct family count is 3, the repayment can rise from $1,900 to as much as\n$3,642.38 (no cap at ≥400% FPL), lowering the refund from $2,322 to as low as $579.62. Any\nfamily-of-3 FPL amount is **outside the library and therefore not stated or cited**. Resolution\nrequires reference material outside the closed library (2025 HHS poverty guidelines + §36B\nhousehold rules).\n\n**B. Prior-year Forms 7203 (2021–2024) — document unavailable.** Beginning basis $11,500 rests on\nMarcus's rollforward note, now corroborated by his confirmation of no loans and no post-2021\ncontributions, and by the 2025 K-1. Prior-year losses are assumed fully allowed (each ≤ available\nbasis). No known contradiction; cannot be verified against filed returns.\n\n**C. 2019 Brooklyn lease — document unavailable.** The §280A carve-out rests on the client's\nconfirmed facts (unrelated tenant since 2019, rent never raised). A lease copy would support\n\"fair rental for that lease\" on audit but is not in the file and the client has none.\n\n**D. NY tax amount — reference gap (IT-203 only).** The library has no NY rate schedule, so the\nIT-203 tax/refund is not computed. The allocation inputs are final: resident period Jan 1–Jun 30\n(181 days), NY-source wages $68,000 + $54,000, NY withholding $6,752. Jan–Jun rental income is\ntaxable as resident-period income; the Jul–Dec rental's NY-source status rests on the general rule\nthat NY real-property income is NY source, which is **not in the library** — labeled unverified\ncontext, not cited. Federal return unaffected.\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for {TY}, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "contrib",
+    "convenience",
+    "fmv_rent",
+    "leo_8332"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

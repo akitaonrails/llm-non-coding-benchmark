@@ -1,0 +1,5 @@
+Yes—**if Caleb is domiciled in Washington**, the supplied authorities rule out diversity removal. Your friend’s incorporation test applies to corporations. For an LLC, citizenship follows **every member’s citizenship**. Caleb’s 35% stake counts, even though Harbor Street is a separate company. [LLC citizenship authorities](/work/workspace/library/llc_citizenship_cases.md)
+
+Sound Cascade is a Washington citizen. If Caleb’s Seattle home is his domicile, Harbor Street is also a Washington citizen, so the parties lack complete diversity. Harbor Street’s service also brings the [forum defendant rule](/work/workspace/library/28usc_1332_1441_1446_1447.md) into play. Delaware organization does not change either result.
+
+The qualification is **domicile**: living in Seattle is evidence of it, but does not prove it conclusively. With no facts showing Caleb is domiciled elsewhere, I would not assert that removal is available. The immediate deadline remains the **state court response on October 1**.

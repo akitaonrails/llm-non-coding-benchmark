@@ -1,0 +1,32 @@
+{
+  "debito_cbs": "4320.00",
+  "debito_ibs": "480.00",
+  "credito_cbs": "1458.00",
+  "credito_ibs": "162.00",
+  "saldo_cbs": "2862.00",
+  "saldo_ibs": "318.00",
+  "recolhimento_devido": 0,
+  "condicao": "dispensa condicionada ao cumprimento das obrigações acessórias (destaque + apuração); perda da dispensa se descumprir",
+  "saidas_irregulares": [
+    2308,
+    2309,
+    2310,
+    2312
+  ],
+  "detalhe": {
+    "sem_campos_apos_marco": [
+      2308,
+      2310,
+      2312
+    ],
+    "aliquotas_invertidas": [
+      2309
+    ]
+  },
+  "entradas_sem_credito": [
+    2313,
+    2315
+  ],
+  "clientes_simples_mei": "Horizonte (regime regular) DEVE destacar nas suas saídas para qualquer destinatário, inclusive Simples/MEI; o que é dispensado é a obrigação do próprio optante como EMITENTE",
+  "pushback": "autorização da SEFAZ via emissor desatualizado não torna o documento conforme à NT; irregular quanto à obrigação acessória → risco de perda da dispensa; corrigir por carta de correção/nota complementar conforme a NT"
+}

@@ -1,0 +1,18 @@
+{
+  "revenue_as_drafted": "1540000",
+  "adjustments": {
+    "halvorsen_loi": "-480000",
+    "saltline_bill_and_hold": "-210000"
+  },
+  "revenue_corrected": "850000",
+  "hosting": {
+    "treatment": "embedded lease (ASC 842); non-lease hosting services separated if allocable; operating lease → straight-line expense but ROU asset and liability on balance sheet",
+    "pv_36x18000_at_8pct": "574412.50"
+  },
+  "going_concern": {
+    "substantial_doubt": true,
+    "plans_probable": false,
+    "reason": "13-week cash flow negative in week 8 without the bridge; bridge is non-binding with conditions precedent that the corrected revenue fails"
+  },
+  "response": "Decline both items and the omission; document; escalate to the board/audit committee if the CEO insists; prior-year acceptance was on different facts (segregated, no return right) per the auditors' own letter"
+}

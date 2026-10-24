@@ -1,0 +1,51 @@
+{
+  "persona": "Dra. Beatriz Lemos, sócia-administradora; prática; confia na colega.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "operadoras",
+      "trigger": [
+        "operadora",
+        "Unimed",
+        "Bradesco",
+        "TISS",
+        "compartilh"
+      ],
+      "answer": "Sim, o sistema vai enviar guias e dados de atendimento para as operadoras para faturamento. É essencial.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "exterior",
+      "trigger": [
+        "exterior",
+        "servidor",
+        "nuvem",
+        "onde ficam"
+      ],
+      "answer": "A Nexa disse que usa AWS, 'provavelmente' nos EUA.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "investimento",
+      "trigger": [
+        "implantação",
+        "investimento",
+        "migração",
+        "quanto custa sair"
+      ],
+      "answer": "Migrar 22 mil prontuários é um projeto de meses. Sair no meio seria caótico.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se clausulas.json marcar o foro (cl. 14) como aceitável",
+      "message": "Dra. Beatriz: Minha colega advogada insiste que foro em Florianópolis é abusivo e que o juiz anula. Por que você está aceitando?"
+    }
+  ]
+}

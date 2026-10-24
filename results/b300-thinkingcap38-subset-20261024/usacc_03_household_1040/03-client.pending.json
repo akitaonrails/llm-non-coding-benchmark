@@ -1,0 +1,70 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Questions for Client (Reyes 2025)\n\n**Q1 — S-corp debt-basis option (Marcus's question about the $16,500 suspension).**\nThe only basis lever available under the library's rules is a **direct loan from Marcus to Reyes & Pike Consulting Inc.** during 2025 (a shareholder guarantee — Pike's or his own — does not create debt basis). Each dollar loaned creates debt basis and can release up to $16,500 of the currently suspended loss in 2025.\n\nQuestion asked: (1) does Marcus want to make a direct loan to the company to create debt basis? (2) If yes: the loan amount (up to $16,500 releases the full suspension) and the loan date (must fall in tax year 2025).\n\n**Answer (client, next turn): no additional information provided.** → Not elected. The return stands as prepared: **$11,500 deducted, $16,500 suspended** (carried forward indefinitely), refund **$2,322**.\n\nThe option remains available **if Marcus actually makes the loan before filing** (real cash, 2025 date): recompute with the loan amount — estimated impact at the full $16,500 was a refund rise to roughly $8,480 (estimate only; the Tax Table rows for the resulting lower taxable-income bracket are not in the library, so the exact tax must be verified against the full table before filing). Flagged as open in `STATUS.md`.\n\nNo other questions were outstanding.\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for {TY}, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "contrib"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

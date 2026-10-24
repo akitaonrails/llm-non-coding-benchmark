@@ -1,0 +1,271 @@
+{
+  "periodo_apuracao": "2026-05",
+  "atualizacao": "rodada 3 - revisao da entrega (22/10/2026). Valor apurado inalterado: DAS 15.188,84. O que mudou na revisao e por que esta em REVISAO.md.",
+  "rbt12": 1020000.0,
+  "rbt12_janela": "2025-05 a 2026-04 (12 meses anteriores ao periodo de apuracao) - documents/faturamento_12_meses.csv, soma conferida",
+  "rbt12_premissa": "receita bruta acumulada, incluida a locacao e liquida de cancelamentos (PREMISSA P1 - nao confirmada pelo cliente; ver QUESTIONS.md U2)",
+  "folha_12m": 284600.0,
+  "folha_12m_base": "documents/resumo_folha_12_meses.csv, coluna total_folha, competencias 2025-05 a 2026-04: salarios 193.000,00 + pro-labore 35.200,00 (11 prestacoes x 3.200,00) + INSS patronal e FGTS 56.400,00 (12 x 4.700,00) = 284.600,00",
+  "folha_12m_criterio": "base de competencia (resumo) e base de pagamento convergem para 284.600,00: o pro-labore de abr/2026 foi pago em 30/04/2026, dentro da janela mai/25-abr/26, segundo o cliente. O e-mail do socio dizia 'pago em 6 de maio' (documents/email_socio.txt); o extrato de mai/2026 nao traz PIX de pro-labore em 06/05, o que e compativel com pagamento em 30/04. Comprovante de 30/04 NAO consta de documents/ - a data e alegacao do cliente.",
+  "fator_r": 0.27902,
+  "fator_r_calculo": "284.600,00 / 1.020.000,00 = 0,2790196 = 27,90%",
+  "fator_r_limite": 0.28,
+  "fator_r_folha_necessaria": 285600.0,
+  "fator_r_margem": 1000.0,
+  "fator_r_conclusao": "27,90% < 28% -> servicos no ANEXO V (library/lc123_art18_fator_r.md, art. 18, 5º-J e 5º-M). Faltam R$ 1.000,00 de folha para migrar ao Anexo III.",
+  "anexo": "V",
+  "anexo_locacao": "III (com a parcela correspondente ao ISS deduzida)",
+  "anexo_locacao_fundamento": "library/locacao_bens_moveis_iss.md: locacao de bens moveis tributada 'na forma do Anexo III, deduzida a parcela correspondente ao ISS' (Sv. Vinculante 31; LC 123/2006 art. 18, 5º-A). INFERENCIA (premissa P7): o texto nao fixa o percentual a deduzir; o percentual de 32,50% foi lido da reparticao do Anexo III, 4a faixa (library/anexos_iii_v_tabelas.md) -> fator remanescente 67,50%. documents/nfe_000512_locacao.xml nao destaca ISS.",
+  "faixa": 4,
+  "faixa_base_apuracao": "RBT12 GLOBAL do contribuinte (1.020.000,00) aplicado aos dois blocos de receita (premissa P6). A biblioteca manda segregar receitas e 'aplicar a cada uma o anexo e a aliquota correspondentes' (art. 18, 4º) e define a aliquota efetiva pelo RBT12 do contribuinte (1º-A), mas NAO disciplina se a faixa de cada bloco vem do RBT12 global ou do RBT12 da propria atividade. Alternativa (RBT12 proprio da locacao) NAO adotada - ver cenarios e QUESTIONS.md U9.",
+  "aliquota_nominal": 0.205,
+  "parcela_deduzir": 17100.0,
+  "aliquota_efetiva": 0.188235,
+  "aliquota_efetiva_calculo": "(1.020.000,00 x 20,50% - 17.100,00) / 1.020.000,00 = (209.100,00 - 17.100,00) / 1.020.000,00 = 192.000,00 / 1.020.000,00 = 18,8235% (art. 18, 1º-A)",
+  "aliquota_nominal_anexo_iii": 0.16,
+  "parcela_deduzir_anexo_iii": 35640.0,
+  "aliquota_efetiva_anexo_iii": 0.125059,
+  "aliquota_efetiva_anexo_iii_calculo": "(1.020.000,00 x 16,00% - 35.640,00) / 1.020.000,00 = 127.560,00 / 1.020.000,00 = 12,5059%",
+  "aliquota_efetiva_locacao_sem_iss": 0.084415,
+  "aliquota_efetiva_locacao_calculo": "12,5059% x (100% - 32,50% ISS) = 12,5059% x 67,50% = 8,4415%",
+  "convensao_arredondamento": "cada bloco de receita e arredondado ao centavo (ROUND_HALF_UP) e depois somado, porque o valor a recolcher e apurado por anexo; as conferencias exatas sem arredondar a aliquota sao mostradas em cada campo *_calculo e na memoria §6.2. Efeito da convensao: cenario do treinamento = 14.904,54 (e nao 14.904,55).",
+  "receitas": {
+    "servicos": 78000.0,
+    "locacao": 6000.0,
+    "total": 84000.0,
+    "servicos_bruto": 82000.0,
+    "estorno": -4000.0,
+    "estorno_tratamento": "NFS-e 1188 estorna 4.000,00 da NFS-e 1184 (glosa de escopo). Resposta do cliente: cancelamento definitivo, com devolucao via PIX - confirmada em documents/extrato_maio_2026.csv (29/05/2026 'PIX ENVIADO ESTORNO GLOSA - CLIENTE 1184' -4.000,00). Estorno reduz a receita do mes em que ocorre (library/lc123_art18_fator_r.md). Nao houve nota substitutiva.",
+    "estorno_efeito_fator_r": "nenhum: mai/2026 nao integra a janela 12 meses (mai/25-abr/26) que serve de base ao RBT12 e ao fator R desta apuracao. O estorno altera apenas a receita tributavel do mes. Em janelas futuras o RBT12 fica 4.000,00 menor (jun/2026 ~ 1.026.000,00 - ainda 4a faixa)."
+  },
+  "das": {
+    "servicos": 14682.35,
+    "servicos_calculo": "78.000,00 x 18,8235% = 14.682,35 (conferencia exata: 192.000,00 x 78.000,00 / 1.020.000,00 = 14.682,3529)",
+    "locacao": 506.49,
+    "locacao_calculo": "6.000,00 x 8,4415% = 506,49 (conferencia exata: 127.560,00 x 6.000,00 / 1.020.000,00 x 0,675 = 506,4882)",
+    "total": 15188.84,
+    "total_calculo": "14.682,35 + 506,49 = 15.188,84 (conferencia exata: 14.682,3529 + 506,4882 = 15.188,8412)",
+    "carga_efetiva_mes": 0.18082,
+    "carga_efetiva_mes_calculo": "15.188,84 / 84.000,00 = 0,1808195 -> 0,180820 (18,08%)"
+  },
+  "reparticao": {
+    "_escopo": "refere-se EXCLUSIVAMENTE a receita de LOCACAO (unica reparticao disponivel na biblioteca: Anexo III, 4a faixa). A reparticao dos servicos do Anexo V NAO foi apurada: a tabela do Anexo V nao consta da biblioteca - ver 'nao_verificado' e QUESTIONS.md U5.",
+    "_base_reparticao": 750.35,
+    "_base_reparticao_calculo": "6.000,00 x 12,5059% = 750,35 (parcela do DAS anterior a deducao da parcela de ISS); valor exato 750,3529",
+    "IRPJ": 30.01,
+    "IRPJ_percentual": 0.04,
+    "CSLL": 26.26,
+    "CSLL_percentual": 0.035,
+    "COFINS": 105.42,
+    "COFINS_percentual": 0.1405,
+    "PIS": 22.89,
+    "PIS_percentual": 0.0305,
+    "CPP": 320.78,
+    "CPP_percentual": 0.4275,
+    "ISS": 0.0,
+    "ISS_observacao": "parcela de 32,50% (= 243,86 sobre 750,35) EXCLUIDA: locacao de bens moveis nao e servico para ISS (Sv. Vinculante 31); NF-e 512 nao destaca ISS",
+    "soma_componentes": 505.36,
+    "soma_percentuais_tabela": 0.9985,
+    "divergencia_registrada": "a tabela de reparticao do Anexo III, 4a faixa soma 99,85% (nao 100%). Soma dos componentes 505,36 contra DAS locacao 506,49: diferenca de 1,13 = 0,15% de 750,35 (750,3529 x 0,0015 = 1,1255). Nao foi criado ajuste para forcar o fechamento.",
+    "leitura_alternativa_nao_adotada": "se a lacuna de 0,15% pertencer ao ISS (32,65%), o redutor passa a 67,35% -> locacao 505,36 (casa com a soma dos componentes) e DAS total 15.187,71 (delta -1,13). Registrada em QUESTIONS.md U6 e no bloco de cenarios."
+  },
+  "cenarios": [
+    {
+      "nome": "ADOTADO - folha 284.600,00 (pro-labore abr/2026 pago em 30/04/2026, dentro da janela)",
+      "folha_12m": 284600.0,
+      "fator_r": 0.27902,
+      "anexo_servicos": "V",
+      "das_servicos": 14682.35,
+      "das_locacao": 506.49,
+      "das_total": 15188.84,
+      "delta": 0.0,
+      "status": "adotado"
+    },
+    {
+      "nome": "12a prestacao de pro-labore paga na janela (lacuna da competencia 2026-03, em branco no resumo)",
+      "folha_12m": 287800.0,
+      "fator_r": 0.282157,
+      "anexo_servicos": "III",
+      "das_servicos": 9754.59,
+      "das_locacao": 506.49,
+      "das_total": 10261.08,
+      "delta": -4927.76,
+      "status": "RISCO MATERIAL UNICO - sinalizado; exigiria documento ausente do pacote (extratos mar/abr-2026, folha de pagamento ou DIRF). Limiar: folha >= 285.600,00. Conta: 127.560,00 x 78.000,00 / 1.020.000,00 = 9.754,59 + 506,49"
+    },
+    {
+      "nome": "pro-labore abr/2026 fora da janela (e-mail: pago 06/05/2026)",
+      "folha_12m": 281400.0,
+      "fator_r": 0.275882,
+      "anexo_servicos": "V",
+      "das_total": 15188.84,
+      "delta": 0.0,
+      "status": "ELIMINADO pela resposta do cliente (pago em 30/04/2026); mantido apenas como registro da leitura anterior"
+    },
+    {
+      "nome": "treinamento (NFS-e 1186, 4.500,00) classificado no Anexo III",
+      "folha_12m": 284600.0,
+      "fator_r": 0.27902,
+      "anexo_servicos": "V (73.500,00) + III (4.500,00)",
+      "das_servicos": 14398.05,
+      "das_locacao": 506.49,
+      "das_total": 14904.54,
+      "delta": -284.3,
+      "status": "NAO APLICAVEL - listas de atividades dos anexos ausentes da biblioteca (classificacao nao verificavel). Conta: 73.500,00 x 18,8235% = 13.835,29 + 4.500,00 x 12,5059% = 562,76"
+    },
+    {
+      "nome": "sem o estorno da NFS-e 1188 (servicos 82.000,00; folha e RBT12 inalterados)",
+      "folha_12m": 284600.0,
+      "fator_r": 0.27902,
+      "anexo_servicos": "V",
+      "das_servicos": 15435.29,
+      "das_locacao": 506.49,
+      "das_total": 15941.78,
+      "delta": 752.94,
+      "status": "ELIMINADO pela resposta do cliente (glosa com devolucao via PIX, sem reemissao). O estorno NAO altera o fator R: mai/2026 esta fora da janela de 12 meses"
+    },
+    {
+      "nome": "lacuna de 0,15% da tabela de reparticao imputada ao ISS (redutor 67,35%)",
+      "folha_12m": 284600.0,
+      "fator_r": 0.27902,
+      "anexo_servicos": "V",
+      "das_servicos": 14682.35,
+      "das_locacao": 505.36,
+      "das_total": 15187.71,
+      "delta": -1.13,
+      "status": "NAO ADOTADO - mantermos a tabela literal da biblioteca (ISS 32,50%); divergencia de 1,13 registrada sem forcar fechamento (QUESTIONS.md U6)"
+    },
+    {
+      "nome": "faixa da locacao apurada pelo RBT12 proprio da atividade (alternativa a premissa P6), ilustrativa: locacao 6.000,00/mes x 12 = 72.000,00 -> 1a faixa do Anexo III",
+      "anexo_servicos": "V",
+      "anexo_locacao": "III 1a faixa (nominal 6,00%, PD 0) com redutor de ISS 67,50% -> efetiva 4,05%",
+      "das_servicos": 14682.35,
+      "das_locacao": 243.0,
+      "das_total": 14925.35,
+      "delta": -263.49,
+      "status": "NAO ADOTADO - contraria a literalidade do art. 18, 1º-A (RBT12 do contribuinte) e pressupoe dado inexistente no pacote (locacao das 12 competencias). QUESTIONS.md U9"
+    },
+    {
+      "nome": "metodo do socio: aliquota nominal 20,50% sobre todas as receitas do mes",
+      "das_servicos": 15990.0,
+      "das_locacao": 1230.0,
+      "das_total": 17220.0,
+      "delta": 2031.16,
+      "status": "RECUSADO - a lei define aliquota efetiva (art. 18, 1º-A); sobre a locacao isolada a 20,50% a efetiva seria negativa (6.000,00 x 20,50% - 17.100,00 = -15.870,00)"
+    }
+  ],
+  "conciliacao_extrato": {
+    "status": "100% conciliado com as notas emitidas",
+    "creditos": 88000.0,
+    "debitos": 43180.22,
+    "saldo_abertura": 41280.55,
+    "saldo_final": 86100.33,
+    "debitos_componentes": "folha mai/26 16.600,00 + DARF/GPS/FGTS abr/26 4.700,00 + aluguel 4.200,00 + pro-labore mai/26 1.600,00 x 2 + DAS abr/26 10.480,22 + estorno 4.000,00 = 43.180,22",
+    "conferencia_saldos": "41.280,55 + 88.000,00 - 43.180,22 = 86.100,33; os 15 saldos intermediarios do CSV sao consistentes linha a linha (cada saldo = saldo anterior + montante da linha)",
+    "pdf_vs_csv": "sem divergencia. O PDF (documents/extrato_maio_2026.pdf, lido com pdftotext) traz o mesmo cabecalho (41.280,55 / 43.180,22 / 88.000,00 / 86.100,33) e as mesmas 15 transacoes, na mesma ordem, com os mesmos valores e saldos. Diferencas apenas de forma: o PDF qualifica o emissor (Banco Meridional S.A., periodo 01/05/2026-31/05/2026, conta final 3302-7) e quebra em duas linhas a descricao do estorno. O rodape do PDF declara que a instituicao e ficticia (material de benchmark) - registrado como qualificacao do documento.",
+    "correcao_rodada_3": "a versao anterior desta entrega afirmava que o PDF traria um debito 'OUTBACK STEAK 120,00' e saldo final 100,00 menor e que a coluna saldo teria inconsistencia em 28-29/05. NENHUM desses fatos existe nos arquivos; as alegacoes foram retiradas e a conferencia refeita sobre o texto integral do PDF."
+  },
+  "anomalia_periodo_anterior": {
+    "status": "FORA DO ESCOPO DE MAIO/2026 - calculo INDICATIVO, nao apuracao",
+    "das_abr_2026_pago": 10480.22,
+    "data_pagamento": "2026-05-20",
+    "receita_abr_2026": 87000.0,
+    "carga_efetiva_aparente": 0.120462,
+    "carga_efetiva_aparente_calculo": "10.480,22 / 87.000,00 = 12,05%",
+    "conflito": "incompativel com Anexo V (87.000,00 x 18,8235% = 16.376,47) e compativel com Anexo III (87.000,00 x 12,5059% = 10.880,12; com locacao segregada 81.000,00 x 12,5059% + 6.000,00 x 8,4415% = 10.636,25). Os tres valores usam as aliquotas efetivas da janela desta apuracao, porque o RBT12 de abr/2025-mar/2026 NAO consta do pacote - por isso sao INDICATIVOS. Indica folha >= 28% em janelas anteriores, o que torna a folha informada de 284.600,00 suspeita de subestimacao (QUESTIONS.md U1/U4). A apuracao de abr/2026 nao pode ser refeita: faltam as receitas de abr/2025-mar/2026 para o RBT12 daquele mes."
+  },
+  "indicativo_junho_2026": {
+    "status": "FORA DO ESCOPO - apenas alerta operacional, calculo indicativo",
+    "rbt12_aproximado": 1026000.0,
+    "rbt12_calculo": "1.020.000,00 - 78.000,00 (mai/25) + 84.000,00 (mai/26, ja com o estorno)",
+    "folha_janela_base": 284600.0,
+    "folha_janela_base_competencias": "05/2025-04/2026 (resumo_folha_12_meses.csv, por competencia)",
+    "folha_saida_competencia_2025_05": -23400.0,
+    "folha_entrada_competencia_2026_05_estimada": 24500.0,
+    "folha_entrada_competencia_2026_05_componentes": "salarios 16.600,00 (extrato 07/05 'FOLHA MAIO - SALARIOS') + pro-labore 3.200,00 (1.600,00 x 2, extrato 16/05) + INSS patronal/FGTS 4.700,00 (valor recorrente nas 12 competencias; o DARF/GPS/FGTS pago em 07/05 e da competencia abr/26, ja contada em 284.600,00)",
+    "folha_leitura_base": 285700.0,
+    "folha_leitura_base_calculo": "284.600,00 - 23.400,00 + 24.500,00 = 285.700,00",
+    "fator_r_leitura_base": 0.27846,
+    "conclusao_leitura_base": "27,85% < 28% -> junho/2026 MANTEMA o Anexo V; margem de 1.580,00 para o limiar de 287.280,00",
+    "folha_variante_U1": 288900.0,
+    "folha_variante_U1_calculo": "285.700,00 + 3.200,00 (eventual pro-labore devido na competencia 2026-03, linha com 0,00 no resumo - QUESTIONS.md U1)",
+    "fator_r_variante_U1": 0.281579,
+    "conclusao_variante_U1": "28,16% > 28% -> junho/2026 no Anexo III; limiar excedido em 1.620,00",
+    "limite_folha": 287280.0,
+    "faixa": "4a faixa (limite 1.800.000,00) - sem efeito de aliquota",
+    "observacao": "Tudo neste bloco e INDICATIVO: nao ha extratos de jun/2025-abr/2026 no pacote e a folha de mai/26 aparece so como lancamento do extrato ('FOLHA MAIO - SALARIOS'), sem folha de pagamento anexa. Nao afirmar o anexo de junho/2026 sem esses documentos.",
+    "correcao_rodada_3": "A versao anterior escrevia '284.600,00 - 23.400,00 + 16.600,00 + 4.700,00 = 285.700,00' e concluia que junho/2026 tenderia ao ANEXO III. Esses quatro termos dao 282.500,00 (faltava o pro-labore de mai/26). Conta refeita: leitura-base 285.700,00 -> fator R 27,85% -> Anexo V; o Anexo III so aparece na variante com a lacuna de U1 (288.900,00 -> 28,16%)."
+  },
+  "premissas": [
+    "P1 - RBT12 de 1.020.000,00 e receita bruta acumulada, inclui locacao e esta liquida de cancelamentos (cliente nao respondeu). QUESTIONS.md U2.",
+    "P2 - todas as NFS-e 1181-1187 (incl. consultoria de arquitetura e treinamento) sao do mesmo bloco de servicos de TI sujeito a Fator R (listas de anexos ausentes da biblioteca). QUESTIONS.md U3.",
+    "P3 - locacao de notebooks sem ISS destacado e sem retencao/substituicao de ISS (NF-e 512 sem ISS; lista de servicos do municipio ausente do pacote). QUESTIONS.md U8.",
+    "P4 - pro-labore de abr/2026 pago em 30/04/2026 (alegacao do cliente; comprovante nao enviado) -> dentro da janela mai/25-abr/26.",
+    "P5 - folha da janela = 284.600,00 tanto pela competencia (resumo) quanto pelo pagamento (informado pelo cliente).",
+    "P6 - faixa e aliquota efetiva de CADA bloco apuradas sobre o RBT12 GLOBAL do contribuinte (1.020.000,00 -> 4a faixa nos dois blocos). A biblioteca nao disciplina a apuracao por atividade; leitura alternativa (RBT12 proprio da locacao) nao adotada. QUESTIONS.md U9.",
+    "P7 - redutor de ISS da locacao = 67,50% (100% - 32,50%), inferido da reparticao do Anexo III, 4a faixa; o texto da biblioteca manda deduzir 'a parcela correspondente ao ISS' sem fixar percentual, e a tabela soma 99,85% -> sensibilidade de -1,13 no redutor 67,35%. QUESTIONS.md U6."
+  ],
+  "unknowns": [
+    {
+      "id": "U1",
+      "item": "folha de PAGAMENTO da janela mai/25-abr/26 (so ha resumo por competencia; linha 2026-03 com pro-labore = 0 sem explicacao)",
+      "efeito_se_confirmado": "folha >= 285.600,00 -> Anexo III -> DAS 10.261,08 (delta -4.927,76). UNICO RISCO MATERIAL"
+    },
+    {
+      "id": "U2",
+      "item": "composicao do RBT12 (bruto / liquido de cancelamentos / inclui locacao / outras receitas)",
+      "efeito_se_confirmado": "muda faixa e aliquota efetiva (ex.: <= 720.000,00 -> 3a faixa do Anexo V: nominal 19,50%, PD 9.900,00)"
+    },
+    {
+      "id": "U3",
+      "item": "classificacao de consultoria de arquitetura (1183) e treinamento (1186) - listas de atividades dos anexos ausentes da biblioteca",
+      "efeito_se_confirmado": "treinamento no Anexo III: delta -284,30 (DAS 14.904,54)"
+    },
+    {
+      "id": "U4",
+      "item": "anexo efetivamente usado em periodos anteriores (DAS abr/2026 = 10.480,22 = 12,05% da receita de abril)",
+      "efeito_se_confirmado": "retificacao de apuracoes anteriores (fora do escopo) e indicio de folha subestimada (U1)"
+    },
+    {
+      "id": "U5",
+      "item": "tabela de reparticao do Anexo V (ausente da biblioteca)",
+      "efeito_se_confirmado": "reparticao dos servicos (14.682,35) permanece NAO APURADA"
+    },
+    {
+      "id": "U6",
+      "item": "tabela de reparticao do Anexo III, 4a faixa soma 99,85% (nao 100%)",
+      "efeito_se_confirmado": "se a lacuna de 0,15% for do ISS: locacao 505,36 e DAS 15.187,71 (delta -1,13)"
+    },
+    {
+      "id": "U7",
+      "item": "NF-e 512 destaca PIS 39,00 e COFINS 180,00 (219,00); a vedacao aplicavel nao esta na biblioteca",
+      "efeito_se_confirmado": "nenhum sobre o DAS: as contribuicoes ja estao no DAS (na reparticao da locacao, PIS 22,89 + COFINS 105,42 = 128,31); inconsistencia documental a corrigir pelo emissor"
+    },
+    {
+      "id": "U8",
+      "item": "locacao de bens moveis no CNAE/PGDAS-D e possiveis retencoes de ISS na fonte",
+      "efeito_se_confirmado": "condicao pratica para a segregacao no Anexo III sem ISS"
+    },
+    {
+      "id": "U9",
+      "item": "base de apuracao da faixa/aliquota efetiva por bloco segregado (RBT12 global x RBT12 da atividade) - a biblioteca nao disciplina",
+      "efeito_se_confirmado": "alternativa ilustrativa: locacao na 1a faixa do Anexo III -> 243,00 e DAS 14.925,35 (delta -263,49). NAO adotado (premissa P6)"
+    }
+  ],
+  "nao_verificado": [
+    "listas de atividades dos Anexos III e V (classificacao de consultoria de arquitetura e treinamento)",
+    "tabela de reparticao do Anexo V -> reparticao dos servicos (14.682,35) NAO APURADA",
+    "limite de receita / sublimite / enquadramento ME e regras do art. 3º da LC 123",
+    "vedacao de destaque de PIS/COFINS por optante do Simples (NF-e 512 destaca PIS 39,00 e COFINS 180,00)",
+    "obrigacoes acessorias: PGDAS-D, comunicacao ao fisco municipal, emissao de NF-e x NFS-e para locacao",
+    "prazo de vencimento do DAS (usado apenas como referencia operacional do cliente)",
+    "folha de PAGAMENTOS da janela mai/25-abr/26 (so ha resumo por competencia)",
+    "como apurar faixa e parcela a deduzir de cada bloco segregado (RBT12 global x RBT12 da atividade) - a biblioteca nao traz a regra"
+  ],
+  "respostas_cliente_aplicadas": {
+    "data_respostas": "2026-10-22",
+    "folha_pro_labore_abr_2026": "pago em 30/04/2026; 'em aberto' no resumo por lancamento tardio do PIX em maio -> cenario 281.400,00 eliminado",
+    "estorno_nfs_e_1188": "glosa de escopo com devolucao via PIX, sem nota substitutiva -> receita de servicos 78.000,00; cenario +752,94 eliminado",
+    "demais_perguntas": "cliente sem informacao adicional -> convertidas em unknowns sinalizados em QUESTIONS.md, nao reapresentadas como perguntas novas"
+  },
+  "resultado_final": 15188.84
+}

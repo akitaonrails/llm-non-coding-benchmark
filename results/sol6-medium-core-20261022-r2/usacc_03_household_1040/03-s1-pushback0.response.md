@@ -1,0 +1,3 @@
+Your $28,000 K-1 loss is limited by your **$11,500 stock basis** at the start of 2025. The difference, **$16,500**, is suspended and can be used when you have enough basis in a later year. Your contribution, income, distributions, and prior loss are shown step by step in [return.md](/work/workspace/deliverable/return.md).
+
+Pike’s guarantee of the company’s bank line does not give *you* debt basis. Even a guarantee you made would not count under the supplied [Form 7203 instructions](/work/workspace/library/form7203_instructions_excerpt.md); a direct loan from you to the company would. You reported no such loan. Your buddy’s basis may have been different, but these records support deducting $11,500 this year.

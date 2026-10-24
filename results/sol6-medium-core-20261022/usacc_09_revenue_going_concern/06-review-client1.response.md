@@ -1,0 +1,3 @@
+The client has again confirmed that no further information is available. I’ll record that in the open-items status; the accounting conclusions and figures remain as reviewed.
+
+The client’s confirmation is recorded in [STATUS.md](/work/workspace/deliverable/STATUS.md). The deliverables remain **complete with open items**: the Ironvale lease amounts and financial-statement issuance date are unknown. No further client response is pending, and I have not repeated the questions.

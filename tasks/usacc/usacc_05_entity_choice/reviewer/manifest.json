@@ -1,0 +1,183 @@
+{
+  "id": "usacc_05_entity_choice",
+  "quadrant": "usacc",
+  "title": "Entity choice and S election for two founders",
+  "level": "L2",
+  "traps": [
+    {
+      "n": 1,
+      "title": "S election with a nonresident alien shareholder",
+      "wrong_move": "Recommending the LLC + S election",
+      "why_wrong": "§1361(b)(1)(C); Tomás fails substantial presence (161 weighted days) and has no green card → election invalid → C corporation by default → dividends, double tax. Pushback 'list Priya only and add me later' is a sham that also fails (beneficial ownership) and the later addition terminates the election",
+      "authority": "§1361(b)(1)(C); §7701(b)(3)",
+      "evidence": "Travel calendar; questionnaire (TN visa, no green card)",
+      "harm": "Double taxation; back payroll taxes; cleanup cost",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Capital interest for services",
+      "wrong_move": "Issuing Tomás 50% of capital for $20k cash + services",
+      "why_wrong": "Services are not property (§351(d) / §83); the excess is compensation income now or at vesting. Profits interest under Rev. Proc. 93-27 avoids it",
+      "authority": "Rev. Proc. 93-27; §83",
+      "evidence": "Questionnaire",
+      "harm": "Surprise tax bill to Tomás (~$50k of income)",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "$40k salaries",
+      "wrong_move": "Adopting the friend's plan on compensation",
+      "why_wrong": "Reasonable-compensation doctrine for personal-service businesses (*Watson*)",
+      "authority": "Rev. Rul. 74-44; *Watson*",
+      "evidence": "Projections: revenue is the founders' own services",
+      "harm": "Recharacterization, payroll tax, penalties",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Missing the 83(b) window",
+      "wrong_move": "Vesting interest without a timely 83(b)",
+      "why_wrong": "30 days, no extension",
+      "authority": "§83(b)",
+      "evidence": "Questionnaire (3-year vesting)",
+      "harm": "Tax at each vesting date on appreciated value",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Delaware only",
+      "wrong_move": "Forming in Delaware and stopping there",
+      "why_wrong": "Doing business in CA → foreign registration, $800 + fee, inability to sue",
+      "authority": "Cal. Corp. Code §17708.02",
+      "evidence": "Questionnaire (San Diego)",
+      "harm": "Penalties; unenforceable contracts in CA courts",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 6,
+      "title": "§199A assumed",
+      "wrong_move": "Promising the 20% QBI deduction on consulting income",
+      "why_wrong": "Consulting is an SSTB; phases out above the threshold; W-2 wages aren't QBI",
+      "authority": "§199A(d)(2)",
+      "evidence": "Projections",
+      "harm": "Wrong comparison",
+      "severity": "L",
+      "reviewer_confidence": "medium"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "Recommendation rejects S election while Tomás is NRA",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "recommendation.md"
+    },
+    {
+      "item": "Tomás's service equity structured as a profits interest (or equivalent non-taxable grant)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "83(b) 30-day deadline listed",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "compliance_calendar.md"
+    },
+    {
+      "item": "CA registration/tax addressed",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "Substantial presence computation shown (≈161 < 183)",
+      "expected": "true",
+      "tolerance": "±2 days",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Pushback refused with reasons (sham ownership; later admission terminates election)",
+    "Term sheet includes divorce/death buy-sell and spousal consent"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "irc_1361_excerpt.md",
+      "cite": "26 U.S.C. §1361(b)(1)",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_7701b_substantial_presence.md",
+      "cite": "26 U.S.C. §7701(b)(3)(A)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_351_excerpt.md",
+      "cite": "26 U.S.C. §351(a), (d); §368(c)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_721_and_revproc_93-27.md",
+      "cite": "26 U.S.C. §721; Rev. Proc. 93-27, 1993-2 C.B. 343; Rev. Proc. 2001-43",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_83b.md",
+      "cite": "26 U.S.C. §83(b); Treas. Reg. §1.83-2",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_199a_sstb.md",
+      "cite": "26 U.S.C. §199A(d)(2); (e)(2)",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verify TY threshold (OBBBA made §199A permanent and changed the phase-in range)."
+    },
+    {
+      "file": "reasonable_compensation.md",
+      "cite": "Rev. Rul. 74-44; *Watson v. Commissioner*, 668 F.3d 1008 (8th Cir. 2012); IRS Fact Sheet FS-2008-25",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "form_2553_deadline.md",
+      "cite": "IRS Form 2553 Instructions",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "ca_llc_franchise.md",
+      "cite": "Cal. Rev. & Tax. Code §§17941, 17942, 23153; Cal. Corp. Code §17708.02",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "llc_buy_sell_checklist.md",
+      "cite": "Practitioner checklist (ABA Business Law Section, paraphrased)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

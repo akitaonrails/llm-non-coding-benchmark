@@ -1,0 +1,76 @@
+{
+  "wall_seconds": 9672.083539295001,
+  "cases": [
+    {
+      "case": "brlaw_01_prazos_processuais",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 1094.287396111,
+      "controller_wait_seconds": 30.003236512000512,
+      "model_turn_seconds": 1064.0847601150017,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 651152,
+        "cached_input_tokens": 599849,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 43545,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": null,
+      "api_charge_usd": 0,
+      "electricity_cost_usd": null
+    },
+    {
+      "case": "bracc_01_das_fator_r",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 5877.004254235999,
+      "controller_wait_seconds": 81.00928662399747,
+      "model_turn_seconds": 5795.617620124,
+      "turns": 3,
+      "released_facts": [
+        "estorno",
+        "prolabore_abril"
+      ],
+      "usage": {
+        "input_tokens": 5961141,
+        "cached_input_tokens": 5547795,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 224945,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": null,
+      "api_charge_usd": 0,
+      "electricity_cost_usd": null
+    },
+    {
+      "case": "usacc_03_household_1040",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 2700.787951569,
+      "controller_wait_seconds": 99.01425863599616,
+      "model_turn_seconds": 2601.2752118539993,
+      "turns": 5,
+      "released_facts": [
+        "contrib",
+        "convenience",
+        "employer_coverage",
+        "fmv_rent",
+        "leo_8332"
+      ],
+      "usage": {
+        "input_tokens": 3103909,
+        "cached_input_tokens": 2953393,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 102165,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": null,
+      "api_charge_usd": 0,
+      "electricity_cost_usd": null
+    }
+  ],
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

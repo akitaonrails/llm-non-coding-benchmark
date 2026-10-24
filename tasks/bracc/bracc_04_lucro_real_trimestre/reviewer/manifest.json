@@ -1,0 +1,135 @@
+{
+  "id": "bracc_04_lucro_real_trimestre",
+  "quadrant": "bracc",
+  "title": "Três fechamentos mensais no Lucro Real e apuração trimestral com LALUR",
+  "level": "L4",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Brindes e doação dedutíveis",
+      "wrong_move": "Sem adições",
+      "why_wrong": "Art. 13 VII (brindes) e VI (doação a entidade não qualificada) — adições de R$ 78.000",
+      "authority": "Lei 9.249 art. 13",
+      "evidence": "NF 4410; recibo (sem OSCIP/UPF); auditoria",
+      "harm": "Autuação IRPJ/CSLL + multa 75%",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Crédito de PIS/COFINS sobre uso e consumo",
+      "wrong_move": "Manter os R$ 11.100",
+      "why_wrong": "Uso e consumo administrativo não é insumo; estornar e retificar janeiro — inclusive quando descoberto em março",
+      "authority": "Leis 10.637/10.833 art. 3º",
+      "evidence": "NF 8812 (CFOP 1556)",
+      "harm": "Autuação PIS/COFINS",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Compensar 100% do prejuízo",
+      "wrong_move": "Lucro real = lucro ajustado − 900.000",
+      "why_wrong": "Trava de 30%: compensação R$ 204.644,70; saldo remanescente R$ 695.355,30",
+      "authority": "Lei 9.065 art. 15",
+      "evidence": "Lei 9.065 art. 15; pushback",
+      "harm": "IRPJ a menor; autuação",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Adicional esquecido",
+      "wrong_move": "IRPJ 15% apenas",
+      "why_wrong": "Adicional 10% sobre o que excede R$ 60 mil/trimestre = R$ 41.750,43",
+      "authority": "Lei 9.249 art. 3º",
+      "evidence": "Biblioteca",
+      "harm": "IRPJ a menor",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Alterar a contabilidade societária para 'resolver' o fiscal",
+      "wrong_move": "Reclassificar brindes para conta 'não dedutível' e reduzir o lucro contábil",
+      "why_wrong": "Adições são na Parte A; a contabilidade societária permanece",
+      "authority": "",
+      "evidence": "IN 1.700",
+      "harm": "ECD/ECF inconsistentes",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "lalur.lucro_real",
+      "expected": "477504.30",
+      "tolerance": "±R$ 500",
+      "how": "lalur.json"
+    },
+    {
+      "item": "lalur.compensacao_prejuizo",
+      "expected": "204644.70",
+      "tolerance": "±R$ 500",
+      "how": ""
+    },
+    {
+      "item": "lalur.adicoes total",
+      "expected": "78000",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "lalur.irpj_15 + adicional_10",
+      "expected": "113376.08",
+      "tolerance": "±R$ 200",
+      "how": ""
+    },
+    {
+      "item": "lalur.csll",
+      "expected": "42975.39",
+      "tolerance": "±R$ 100",
+      "how": ""
+    },
+    {
+      "item": "pis_cofins mes_03 (ou anterior) registra estorno de 11.100 com retificação de janeiro",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Pushback recusado com Lei 9.065 art. 15 e Tema 117 STF"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "lei9249_art13.md",
+      "cite": "Lei 9.249/95, art. 13, VI e VII; §2º",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei9065_art15_trava.md",
+      "cite": "Lei 9.065/95, arts. 15 e 16; Lei 8.981/95, arts. 42 e 58",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "pis_cofins_uso_consumo.md",
+      "cite": "Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irpj_csll_trimestral.md",
+      "cite": "Lei 9.430/96, arts. 1º-2º; Lei 9.249/95, art. 3º; IN RFB 1.700/2017, arts. 29, 310; ECF (IN RFB 2.004/2021)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

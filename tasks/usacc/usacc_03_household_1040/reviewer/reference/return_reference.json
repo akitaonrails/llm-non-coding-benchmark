@@ -1,0 +1,51 @@
+{
+  "form1040": {
+    "1a_wages": "122000",
+    "2b_interest": "400",
+    "8_other_income_sch1": "-31050",
+    "11_agi": "91350",
+    "12_deduction": "31500",
+    "15_taxable_income": "59850",
+    "16_tax": "6708",
+    "16_tax_bracket_math_WRONG": "6705.00",
+    "19_ctc": "2200",
+    "17_sch2_excess_aptc": "1900",
+    "24_total_tax": "6408",
+    "25d_withholding": "8730",
+    "34_refund_or_37_owed": "2322"
+  },
+  "form7203": {
+    "stock_basis_begin": "11500",
+    "loss_allowed": "11500",
+    "loss_suspended": "16500"
+  },
+  "form8582": {
+    "rental_loss": "-21018",
+    "magi": "110900",
+    "special_allowance": "19550",
+    "loss_allowed": "19550",
+    "carryforward": "1468"
+  },
+  "form8962": {
+    "household_income": "91350",
+    "fpl_pct": "292.79",
+    "applicable_figure_pct": "5.71",
+    "annual_ptc": "7531.20",
+    "aptc": "9900",
+    "excess": "2368.80",
+    "repayment_limitation": "1900",
+    "repayment": "1900"
+  },
+  "dependents": [
+    "Sofia Reyes (CTC)"
+  ],
+  "ny": {
+    "resident_days": 181,
+    "marcus_ny_wages": "33720.55",
+    "elena_ny_wages": "26778.08",
+    "method": "resident-period days; convenience rule discussed — employers approved remote for employee convenience, so post-move wages are arguably NY-source; accepted answers: (a) days allocation with the convenience-rule risk disclosed, or (b) full-year NY source with the argument stated"
+  },
+  "wrong_path": {
+    "agi_if_full_losses": "73382"
+  }
+}

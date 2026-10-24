@@ -1,0 +1,3 @@
+COMPLETE WITH OPEN ITEMS
+
+The federal return and New York wage allocation in `return.json` and `return.md` are provisional. Open items: (1) whether $1,500 was fair rent under the Brooklyn tenant's 2025 lease and whether there was any personal use; (2) Form 8962 family size and allocation of the marketplace policy that covered Leo, whom his father claims; (3) exact New York residence-change date and workdays; (4) whether either New York employer required Florida work; (5) New York allocation of nonwage items and state tax/refund, for which the closed library does not provide enough authority. The client has no further information. Assumptions and rejected alternatives are in `judgment_calls.md`.

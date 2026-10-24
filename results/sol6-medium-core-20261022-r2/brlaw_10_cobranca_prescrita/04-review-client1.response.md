@@ -1,0 +1,5 @@
+Sérgio confirmed the strike and the signed reports, but could not provide their dates or text. I’ll finish on that record, keep the conclusion for parcels 5–6 qualified, and flag the remaining unknowns in the deliverables without asking again.
+
+I completed the engagement using the client’s reply and updated [analise.json](/work/workspace/deliverable/analise.json), [memorando.md](/work/workspace/deliverable/memorando.md), and [STATUS.md](/work/workspace/deliverable/STATUS.md). I removed `QUESTIONS.md` because the client has no further information.
+
+The recommendation remains a **monitória for parcels 1–4**. On the dated evidence available, parcels 5–6 are treated as prescribed and should be left out of collection, protest, and the Serasa amount. That conclusion is qualified: the reports’ dates and full text are unavailable, so a later acknowledgment cannot be ruled out definitively. The memo also flags the unknown PIX allocation, missing IPCA figures, and unverified legitimacy of the earlier Serasa entries. I validated the JSON, arithmetic, and library citations.

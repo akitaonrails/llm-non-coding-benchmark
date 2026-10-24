@@ -1,0 +1,150 @@
+{
+  "id": "uslaw_08_sale_diligence_apa",
+  "quadrant": "uslaw",
+  "title": "Sell-side diligence and purchase-agreement redline for Brightline Cabinetry",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Missing Hensley §18",
+      "wrong_move": "Accepting Schedule 3.3 'None'",
+      "why_wrong": "Anti-assignment covers sale of assets/change of control; 38% of revenue; sole-discretion consent",
+      "authority": "Library anti-assignment",
+      "evidence": "Data room 1.1; buyer email",
+      "harm": "Deal collapses or is repriced at closing",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Clean §4.12 with pro-sandbagging and full-price cap",
+      "wrong_move": "Signing 7.4(c) 'market' language and 4.12 as drafted",
+      "why_wrong": "Buyer saw the 1099s in diligence; the combination makes Ray indemnify a known issue up to the purchase price; pushback calls it market",
+      "authority": "Sandbagging practice note",
+      "evidence": "Data room 2.2; 7.4(b),(c); script 'disclosed'",
+      "harm": "Post-closing claim of several hundred thousand dollars",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Not recognizing the misclassification itself",
+      "wrong_move": "'Industry standard' accepted",
+      "why_wrong": "Control test; FLSA overtime at 45–50 hrs; must be disclosed and priced",
+      "authority": "Rev. Rul. 87-41; FLSA",
+      "evidence": "Census 2.2; script",
+      "harm": "Indemnity claim; successor FLSA",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Earn-out definition",
+      "wrong_move": "Leaving 'EBITDA as determined by Buyer'",
+      "why_wrong": "Buyer can zero it",
+      "authority": "Earn-out practice",
+      "evidence": "§2.4",
+      "harm": "$400k at risk",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "WARN false positive",
+      "wrong_move": "Demanding WARN notices or conditioning closing on them",
+      "why_wrong": "14 employees < 100",
+      "authority": "29 U.S.C. §2101",
+      "evidence": "Census; WARN entry",
+      "harm": "Delay; credibility",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "findings include Hensley §18 consent",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "diligence_findings.json"
+    },
+    {
+      "item": "findings include installer misclassification with FLSA/payroll exposure",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "apa_redline rejects/limits 7.4(c) as to disclosed matters AND qualifies 4.12 or converts to special indemnity",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "apa_redline fixes 2.4 EBITDA definition",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "reply: WARN not applicable",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "reply_to_buyer_counsel.md"
+    }
+  ],
+  "rubric": [
+    "note_to_ray: three money items in plain English; pushback answered"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "anti_assignment_change_of_control.md",
+      "cite": "*SQL Solutions v. Oracle*, 1991 WL 626458 (N.D. Cal.); Restatement (Second) of Contracts §317, §322; Texas cases on 'operation of law'",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "worker_classification_tx_irs.md",
+      "cite": "IRS Rev. Rul. 87-41 (20 factors); Treas. Reg. §31.3121(d)-1; IRC §3509; Tex. Lab. Code §201.041; 40 TAC §815.134",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "sandbagging.md",
+      "cite": "Delaware/Texas practice; *Akorn v. Fresenius* (Del. Ch. 2018) (dicta); ABA Private Target Deal Points Study",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "baskets_caps.md",
+      "cite": "ABA Deal Points Study (private targets); market summary",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "earnout_definitions.md",
+      "cite": "Practice note; *Lazard Technology Partners v. Qinetiq*, 114 A.3d 193 (Del. 2015)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "warn_act.md",
+      "cite": "29 U.S.C. §2101(a)(1); 20 C.F.R. §639.3",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "tx_noncompete_sale_of_business.md",
+      "cite": "Tex. Bus. & Com. Code §15.50; *Marsh USA v. Cook*, 354 S.W.3d 764 (Tex. 2011); sale-of-business cases",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

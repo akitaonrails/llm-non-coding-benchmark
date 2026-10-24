@@ -1,0 +1,21 @@
+{
+  "citacao": {
+    "disponibilizacao": "19/11/2026",
+    "publicacao": "23/11/2026",
+    "inicio_contagem": "23/11/2026",
+    "contestacao_vencimento": "16/12/2026",
+    "prazo_em_dobro": false,
+    "fundamento": "CPC art. 229 §2º: 'Não se aplica o disposto no caput aos processos em autos eletrônicos'. O processo é processual digital (e-SAJ), portanto não há prazo em dobro para litisconsortes com advogados distintos."
+  },
+  "sentenca": {
+    "disponibilizacao": "10/12/2026",
+    "publicacao": "11/12/2026",
+    "inicio_contagem": "11/12/2026",
+    "embargos_vencimento": "15/12/2026",
+    "apelacao_vencimento": "18/01/2027",
+    "dias_suspensos_ou_feriados_considerados": [
+      "02/12/2026 (sem expediente forense: feriado municipal de Campinas)",
+      "20/12/2026 (início do recesso forense CPC art. 220, até 20/01/2027 inclusive)"
+    ]
+  }
+}

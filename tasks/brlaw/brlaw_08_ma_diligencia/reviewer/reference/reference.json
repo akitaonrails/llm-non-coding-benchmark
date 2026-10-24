@@ -1,0 +1,56 @@
+{
+  "achados": [
+    {
+      "achado": "Cláusula 19 do contrato Horizonte Azul — mudança de controle sem anuência = rescisão + multa 20%",
+      "efeito": "anuencia",
+      "solucao": "Anexo 3.2 deve listar a Horizonte Azul; condição precedente ou ajuste de preço; abordar o cliente antes da assinatura"
+    },
+    {
+      "achado": "11 engenheiros PJ com subordinação — risco de vínculo (pejotização); provisão insuficiente",
+      "efeito": "indenizacao/preco",
+      "solucao": "anexo de exceções à 5.7; indenização específica com teto dimensionado e escrow dedicado; não dar declaração limpa"
+    },
+    {
+      "achado": "CND federal positiva (IRPJ 2023, R$ 310 mil) — declaração 5.9 falsa se assinada; risco em contrato público (regularidade fiscal)",
+      "efeito": "indenizacao/prazo",
+      "solucao": "exceção à 5.9; parcelamento/garantia antes do fechamento para obter CPEN; indenização específica"
+    },
+    {
+      "achado": "8.4(c) pro-sandbagging + 5.7/5.9 limpas + limite = preço total + 5 anos = vendedor indeniza risco conhecido integralmente",
+      "efeito": "indenizacao",
+      "solucao": "anti-sandbagging quanto a matérias reveladas; limites 10–20%; prazo 2–3 anos; franquia dedutível"
+    },
+    {
+      "achado": "CADE — não notificável (390 mi < 750 mi; 4,2 mi < 75 mi)",
+      "efeito": "nenhum",
+      "solucao": "retirar a condição precedente; responder ao advogado do comprador que a notificação é indevida e atrasaria 45–90 dias sem necessidade"
+    },
+    {
+      "achado": "Contrato público Sorocaba — alteração societária admitida com comunicação; responsável técnico sai → substituir no CREA/Administração",
+      "efeito": "prazo",
+      "solucao": "plano de transição do RT"
+    },
+    {
+      "achado": "2.3 earn-out: EBITDA apurado pelo comprador com rateios do grupo",
+      "efeito": "preco",
+      "solucao": "práticas históricas; excluir rateios/integração; covenant de curso normal; perito"
+    },
+    {
+      "achado": "9.1 não concorrência 10 anos / nacional",
+      "efeito": "nenhum para quem se aposenta, mas desproporcional (CC 1.147: 5 anos)",
+      "solucao": "5 anos, área de atuação"
+    },
+    {
+      "achado": "Preferência dos sócios (30 dias) no contrato social",
+      "efeito": "prazo",
+      "solucao": "renúncia formal pelos sócios no fechamento"
+    },
+    {
+      "achado": "Sucessão: na compra de quotas não há sucessão (CTN 133 / CLT 448-A são sobre a mesma PJ) — o passivo fica na sociedade e por isso o comprador exige indenização; vendedor precisa de limites",
+      "efeito": "indenizacao",
+      "solucao": "dimensionar tetos por matéria"
+    }
+  ],
+  "falso_positivo": "CADE — não exigir/aceitar notificação",
+  "resposta_ao_comprador": "Anexo 3.2 não é 'não aplicável' (Horizonte Azul); CADE não se aplica; 8.4(c) recusada quanto a matérias reveladas; 5.7/5.9 qualificadas por anexo"
+}

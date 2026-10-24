@@ -1,0 +1,42 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "strix/noncoding-qwen38-27b-q8-64k:20261022",
+  "small_model": "strix/noncoding-qwen38-27b-q8-64k:20261022",
+  "enabled_providers": [
+    "strix"
+  ],
+  "share": "disabled",
+  "autoupdate": false,
+  "permission": {
+    "*": "allow",
+    "task": "deny",
+    "webfetch": "deny",
+    "websearch": "deny"
+  },
+  "provider": {
+    "strix": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Strix benchmark",
+      "options": {
+        "baseURL": "http://127.0.0.1:18080/v1",
+        "apiKey": "local",
+        "timeout": 7200000
+      },
+      "models": {
+        "noncoding-qwen38-27b-q8-64k:20261022": {
+          "name": "noncoding-qwen38-27b-q8-64k:20261022",
+          "tool_call": true,
+          "reasoning": false,
+          "limit": {
+            "context": 65536,
+            "output": 16384
+          },
+          "cost": {
+            "input": 0,
+            "output": 0
+          }
+        }
+      }
+    }
+  }
+}

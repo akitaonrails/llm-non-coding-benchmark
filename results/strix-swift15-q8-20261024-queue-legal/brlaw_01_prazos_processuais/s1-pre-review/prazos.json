@@ -1,0 +1,24 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "Prazo NÃO em dobro: CPC art. 229 §2º — a contagem em dobro (caput, litisconsortes com procuradores de escritórios distintos) NÃO se aplica aos processos em autos eletrônicos; este é Processo Digital (e-SAJ), 7ª Vara Cível de Campinas. Prazo de 15 dias úteis (CPC arts. 335 e 219), contando do dia 24/11/2026 (1º dia útil após a publicação de 23/11/2026, que por sua vez é o 1º dia útil após a disponibilização de 19/11/2026, por força do art. 4º §3º da Lei 11.419/2006 c/c CPC art. 224 §2º): 20/11/2026 é feriado (Zumbi e da Consciência Negra, Lei 14.759/2023) e 21-22/11 são sáb/dom; a contagem pula 28-29/11 (fim de semana), 05-06/12 (fim de semana) e 08/12 (feriado municipal de Campinas). Vencimento: 15/12/2026 (terça-feira). Cit.: cpc_prazos.md; cpc_prazos_recursais.md; lei11419_art4.md; calendario_forense_campinas.md (library/INDEX.md)."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "2026-12-19 (sábado — fim de semana)",
+      "2026-12-20 a 2027-01-20 (inclusive — recesso forense, CPC art. 220; compreende 24/12, 25/12, 31/12/2026 e 01/01/2027)",
+      "2027-01-23 (sábado) e 2027-01-24 (domingo) — fim de semana",
+      "2027-01-30 (sábado) e 2027-01-31 (domingo) — fim de semana",
+      "2027-01-25 NÃO é feriado em Campinas (aniversário de São Paulo vale só para a Capital) — dia útil"
+    ]
+  }
+}

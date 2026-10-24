@@ -1,0 +1,26 @@
+{
+  "type": "multi_session",
+  "sessions": [
+    {
+      "n": 1,
+      "reveal": [
+        "documents/"
+      ],
+      "prompt": "Session 1 \u2014 petition month (March). Respond to the CFO's email in writing, prepare the March MOR and the pre-/post-petition segregation per CONTRACT.md."
+    },
+    {
+      "n": 2,
+      "reveal": [
+        "documents/session2/"
+      ],
+      "prompt": "Session 2 \u2014 April. Interim compensation order entered; see documents/session2. Prepare the April MOR; address professional fees."
+    },
+    {
+      "n": 3,
+      "reveal": [
+        "documents/session3/"
+      ],
+      "prompt": "Session 3 \u2014 emergence. Plan confirmed; see documents/session3. Prepare the COD/attribute-reduction schedule, the fresh-start determination and the emergence balance sheet."
+    }
+  ]
+}

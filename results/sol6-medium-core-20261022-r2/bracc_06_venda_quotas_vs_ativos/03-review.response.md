@@ -1,0 +1,9 @@
+Vou revisar os números, as premissas e cada referência do memorando contra a biblioteca fechada. Depois corrijo o que não estiver sustentado ou reconciliado e resumo as alterações.
+
+Encontrei um ponto a corrigir: o comparativo tratava R$ 7,056 milhões de caixa na PJ como se todo esse valor pudesse sair como dividendo, embora os documentos não demonstrem isso. Vou marcar a retenção e o líquido correspondentes como simulação condicionada. A conclusão nominal continua: o caixa da PJ após IRPJ e CSLL já é R$ 774 mil menor que o líquido da venda das quotas, antes de qualquer retenção na distribuição.
+
+Revisei os cálculos e as referências. **O JSON reconcilia, e todas as citações do memorando apontam para arquivos do índice da biblioteca.**
+
+Corrigi o ponto material no [memorando](/work/workspace/deliverable/memorando.md): os R$ 7,056 milhões após IRPJ e CSLL são **caixa da PJ**; os documentos não demonstram que todo esse valor possa ser distribuído como dividendos. Por isso, os R$ 705.600 de IRRF e os R$ 6,3504 milhões líquidos do [comparativo.json](/work/workspace/deliverable/comparativo.json) estão agora identificados claramente como **simulação condicionada**.
+
+Também acrescentei a ressalva da biblioteca sobre lucros anteriores a 2026 com distribuição aprovada até 31/12/2025 e recalculei os preços de empate da negociação. A conclusão nominal permanece: mesmo antes de tributar a saída do caixa da PJ, a venda das quotas supera a proposta do estabelecimento em **R$ 774 mil**. Os dados ainda necessários para fechar a distribuição efetiva constam em [STATUS.md](/work/workspace/deliverable/STATUS.md).

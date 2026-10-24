@@ -1,0 +1,22 @@
+[
+  {
+    "name": "noncoding-muse-glimmer-30b-q8-64k-atem:20261022",
+    "model": "noncoding-muse-glimmer-30b-q8-64k-atem:20261022",
+    "size": 29029920929,
+    "digest": "78f363d75ff4af2d92db8e9632b1e666005f8e68e1cf7c3189ec2348e0a1e25a",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "muse-glimmer",
+      "families": [
+        "muse-glimmer"
+      ],
+      "parameter_size": "27.9B",
+      "quantization_level": "unknown"
+    },
+    "expires_at": "2026-10-24T13:26:18.862185084Z",
+    "size_vram": 29029920929,
+    "context_length": 65536,
+    "runner": "llamacpp"
+  }
+]

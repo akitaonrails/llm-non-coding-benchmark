@@ -1,0 +1,7 @@
+{
+  "questions": "# QUESTIONS.md — Lumen ME — DAS maio/2026\n\nPerguntas **não bloqueantes** para o fechamento de maio/2026 (a apuração está completa; estas servem para o próximo período):\n\n1. **Pró-labore de abril (R$ 3.200,00):** o email de Renato diz que foi pago em 06/05/2026, mas o extrato de maio (`extrato_maio_2026.csv`) não exibe esse débito (o saldo de 07/05 fecha sem ele). Pode confirmar a data/conta do pagamento? Não afeta o DAS de maio/2026 (em qualquer cenário ele fica fora dos 12 meses anteriores), mas **afeta o DAS de junho/2026** (período jun/2025–mai/2026): se pago em 06/05, entra na folha de junho; caso contrário, sai.\n\n2. **Repartição do Anexo V:** a biblioteca não traz a repartição IRPJ/CSLL/COFINS/PIS/CPP/ISS da faixa 4 do Anexo V, então a fatia de serviços (R$ 14.682,35) ficou sem detalhamento em `apuracao.json`. Há versão autorizada dessa tabela na biblioteca? Se não, o campo fica assim (apenas a fatia da locação alocada).\n",
+  "released_fact_ids": [
+    "prolabore_abril"
+  ],
+  "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

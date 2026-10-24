@@ -1,0 +1,46 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "questions": "# Informações necessárias para concluir a análise\n\n1. Envie as cópias integrais dos relatórios de serviço assinados pelo encarregado da Boa Vista referentes às parcelas 5 (fevereiro/2021) e 6 (março/2021), inclusive as datas das assinaturas. Se não houver cópias, informe a data de assinatura de cada relatório e transcreva qualquer trecho que reconheça valor devido, aceite da cobrança ou obrigação de pagar.\n2. Existe algum outro documento ou pagamento **posterior aos vencimentos de 10/02/2021 e 10/03/2021** que reconheça especificamente a dívida das parcelas 5 ou 6? Se sim, envie o documento com sua data.\n",
+  "facts": [
+    {
+      "id": "testemunhas",
+      "trigger": [
+        "testemunha",
+        "assinatura",
+        "título executivo",
+        "quem assinou"
+      ],
+      "answer": "O contrato foi assinado só pelos dois representantes, sem testemunhas. Foi tudo meio informal.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pagamento",
+      "trigger": [
+        "pagamento parcial",
+        "10 mil",
+        "2023",
+        "PIX"
+      ],
+      "answer": "Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "greve",
+      "trigger": [
+        "greve",
+        "parcelas 5 e 6",
+        "serviço concluído",
+        "fevereiro",
+        "março"
+      ],
+      "answer": "Teve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "testemunhas",
+    "greve"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

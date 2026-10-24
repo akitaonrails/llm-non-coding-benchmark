@@ -1,0 +1,34 @@
+{
+  "rbt12": "1020000",
+  "folha_resumo": "284600",
+  "folha_correta_pagamentos_12m": "287800",
+  "fator_r_resumo": "27.90",
+  "fator_r_correto": "28.22",
+  "anexo": "III",
+  "faixa": 4,
+  "aliquota_nominal": "0.16",
+  "parcela_deduzir": "35640",
+  "aliquota_efetiva_pct": "12.505882",
+  "receitas": {
+    "servicos": "78000",
+    "locacao": "6000"
+  },
+  "das": {
+    "servicos": "9754.59",
+    "locacao": "506.49",
+    "total": "10261.08"
+  },
+  "reparticao": {
+    "IRPJ": "420.19",
+    "CSLL": "367.67",
+    "COFINS": "1475.94",
+    "PIS": "320.40",
+    "CPP": "4490.87",
+    "ISS": "3170.24"
+  },
+  "caminho_errado": {
+    "anexo_v_nominal_sem_estorno": "18040.00",
+    "anexo_v_efetiva": "15811.76"
+  },
+  "nota": "Fator R: o resumo omite o pró-labore de abril pago em 06/05 (está no extrato). A regra é por pagamento nos 12 meses anteriores (mai/25–abr/26)? ATENÇÃO reviewer: pagamento em 06/05/2026 cai FORA da janela mai/25–abr/26 se a janela é de pagamentos; se o pró-labore de abril foi pago em maio, pela regra de caixa ele entra na janela do mês SEGUINTE. Ver trap 2."
+}

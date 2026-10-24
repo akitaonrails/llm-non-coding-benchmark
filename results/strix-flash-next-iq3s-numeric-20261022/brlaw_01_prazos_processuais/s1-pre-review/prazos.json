@@ -1,0 +1,25 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "Publicação = 1º dia útil seguinte à disponibilização (Lei 11.419/2006, art. 4º, §3º; CPC art. 224, §2º): 20/11/2026 é feriado (Dia de Zumbi/Consciência Negra, Lei 14.759/2023, no calendário), 21-22/11 fim de semana → publicação 23/11/2026 (seg). Contagem inicia no 1º dia útil após a publicação (Lei 11.419/2006, art. 4º, §4º; CPC art. 224, §3º) → 24/11/2026 (ter). Contestação: 15 dias (CPC arts. 335, III e 231, VII — citação feita pelo DJe, na pessoa do advogado constituído, fls. 61), contados excluindo o dia do começo e incluindo o do vencimento (CPC art. 224, caput), somente em dias úteis (CPC art. 219); pulados os finais de semana 28-29/11, 05-06/12 e 12-13/12 e o feriado municipal de Campinas 08/12/2026 (N. Sra. da Conceição, calendário). Prazo em dobro NÃO se aplica: CPC art. 229, §2º — o dobro dos arts. litisconsortes com procuradores de escritórios distintos (procurações fls. 61 e 70) é afastado em processos em autos eletrônicos, e o processo é eletrônico (e-SAJ, conforme as intimações). Vencimento: 15/12/2026 (ter)."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "2026-12-12 e 2026-12-13 (fim de semana — entre a publicação e o início da contagem)",
+      "2026-12-19 (sáb) e 2026-12-20 (dom) (fim de semana; o dia 20 também abre a suspensão)",
+      "Suspensão dos prazos processuais de 20/12/2026 a 20/01/2027, inclusive (CPC art. 220; recesso do calendário forense), incluindo 24/12 e 31/12 (sem expediente forense), 25/12 (Natal) e 01/01/2027 (Confraternização Universal)",
+      "Finais de semana de janeiro/2027: 02-03, 09-10, 16-17, 23-24 e 30-31/01/2027",
+      "25/01/2027 (Aniversário de São Paulo) NÃO foi pulado: feriado municipal apenas na Capital, dia útil em Campinas (calendário)",
+      "Carnaval 08-09/02/2027 (calendário) não chegou a ser considerado: cai após o vencimento da apelação"
+    ]
+  }
+}

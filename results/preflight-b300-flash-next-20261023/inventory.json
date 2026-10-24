@@ -1,0 +1,50 @@
+{
+  "endpoint": "http://127.0.0.1:19081",
+  "ssh_host": null,
+  "selected_model": "qwen3.8-flash-next",
+  "hardware": "RunPod 1xB300; default CPU PLE table",
+  "agent_context_limit": 65536,
+  "agent_output_limit": 16384,
+  "reasoning": "provider default; no reasoning override",
+  "binary_sha256": "cf5841e6666aeb469abec8b39ca494cef07a637756454a34a742b2f4996e1675",
+  "runner_source_sha256": {
+    "run_local_baseline.py": "af0cdc11f5384d7029750438fc3d43ed0f6cd973304e177fb7811643417e0dd5",
+    "run_codex_baseline.py": "5d54ca6a5755c40281ef793c2c0454819fae92613cdef44194f682645b180c91"
+  },
+  "/api/version": {
+    "unavailable": "HTTPError"
+  },
+  "/api/tags": {
+    "unavailable": "HTTPError"
+  },
+  "/v1/models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "qwen3.8-flash-next",
+        "object": "model",
+        "created": 1792728139,
+        "owned_by": "vllm",
+        "root": "/workspace/noncoding-benchmark/weights/qwen3.8-flash-next",
+        "parent": null,
+        "max_model_len": 65536,
+        "permission": [
+          {
+            "id": "modelperm-94e1249eed9dd91e",
+            "object": "model_permission",
+            "created": 1792728139,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  }
+}

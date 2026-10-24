@@ -1,0 +1,56 @@
+{
+  "contexts": [
+    {
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "approval_policy": "never",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      }
+    },
+    {
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "approval_policy": "never",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      }
+    },
+    {
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "approval_policy": "never",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      }
+    },
+    {
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "approval_policy": "never",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      }
+    }
+  ],
+  "cumulative_usage": {
+    "input_tokens": 475507,
+    "cached_input_tokens": 444928,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 19157,
+    "reasoning_output_tokens": 4900,
+    "total_tokens": 494664
+  }
+}

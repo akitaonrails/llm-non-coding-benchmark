@@ -1,0 +1,51 @@
+{
+  "persona": "Renata (gerente), ofendida; RH (Paula), cautelosa.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "quando_soube",
+      "trigger": [
+        "quando soube",
+        "tomou conhecimento",
+        "e-mail de agosto",
+        "21/08",
+        "Felipe"
+      ],
+      "answer": "Paula (RH): pelo e-mail que a Renata mandou ao Felipe, ela viu o post no dia seguinte, 21/08. Ela diz que 'soube semana passada' no sentido de decidir fazer algo.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "gravidez",
+      "trigger": [
+        "gestante",
+        "grávida",
+        "atestado",
+        "ambulatório"
+      ],
+      "answer": "Paula: o ambulatório registrou o atestado com gestação em 18/09. A Renata não sabia. Isso muda alguma coisa?",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "horas",
+      "trigger": [
+        "hora extra",
+        "banco de horas",
+        "fim de semana",
+        "pagou"
+      ],
+      "answer": "Paula: as horas de fim de semana foram para o banco de horas; não pagamos. Então o post é... verdadeiro, tecnicamente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se o parecer disser que não cabe justa causa",
+      "message": "Renata: Ela difamou a empresa publicamente! E grávida com justa causa perde a estabilidade, eu li isso. Se não der justa causa, manda sem justa causa então, pago o que tiver que pagar e acabou."
+    }
+  ]
+}

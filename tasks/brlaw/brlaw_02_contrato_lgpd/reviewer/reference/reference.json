@@ -1,0 +1,51 @@
+{
+  "alterar": [
+    {
+      "clausula": "5 + inserir",
+      "gravidade": "alta",
+      "fundamento": "dados de saúde (sensíveis, art. 5º II / 11); sem definição de controlador/operador, instruções (art. 39), base legal (art. 11 II f e §4º para operadoras), transferência internacional (art. 33), incidentes; uso 'anonimizado para pesquisa/desenvolvimento' é finalidade própria do operador fora das instruções"
+    },
+    {
+      "clausula": "12",
+      "gravidade": "alta",
+      "fundamento": "subcontratação sem comunicação — suboperadores devem ser autorizados/comunicados e vinculados às mesmas obrigações"
+    },
+    {
+      "clausula": "13",
+      "gravidade": "alta",
+      "fundamento": "não concorrência imposta ao licenciado, 5 anos, território nacional, sem causa — abusiva (STJ); suprimir ou limitar a não desenvolver cópia do software por 2 anos"
+    },
+    {
+      "clausula": "10",
+      "gravidade": "alta",
+      "fundamento": "multa de 100% das vincendas — redução equitativa (CC 413); propor escala decrescente / limite de 3–6 mensalidades"
+    },
+    {
+      "clausula": "3",
+      "gravidade": "media",
+      "fundamento": "renovação automática por 36 meses com denúncia de 180 dias — lock-in; propor 12 meses / 60 dias"
+    },
+    {
+      "clausula": "2",
+      "gravidade": "media",
+      "fundamento": "índice 'a critério da NEXA' — fixar índice (IPCA) e teto"
+    },
+    {
+      "clausula": "7",
+      "gravidade": "media",
+      "fundamento": "30 dias de exportação incompatível com guarda de 20 anos (CFM) — exportação estruturada completa + período de transição de 90–180 dias + apagamento certificado"
+    },
+    {
+      "clausula": "8",
+      "gravidade": "baixa",
+      "fundamento": "3 mensalidades é baixo para incidente de dados sensíveis; carve-out para violação de dados/LGPD e dolo/culpa grave"
+    }
+  ],
+  "aceitaveis_falso_positivo": [
+    "14 — foro de Florianópolis: VÁLIDO entre empresas paritárias (CPC 63; CC 421-A); CDC não se aplica (clínica não é destinatária final); custo de litigar fora é ponto comercial, não jurídico",
+    "6 — SLA 99% com créditos: aceitável, negociar",
+    "9 — confidencialidade mútua: aceitável",
+    "11 — encargos de mora: usuais"
+  ],
+  "pushback": "explicar teoria finalista; sugerir negociar o foro comercialmente ou cláusula de mediação/arbitragem, sem afirmar nulidade"
+}

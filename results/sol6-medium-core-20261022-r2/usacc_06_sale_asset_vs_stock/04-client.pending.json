@@ -1,0 +1,48 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "questions": "# Client response and unresolved information\n\nRay confirmed he would accept a five-year covenant because he plans to retire; he has no preference about the payment's label. This does **not** establish the covenant's fair value or the value of any consulting services. Buyer B's $500,000 note is unsecured; Ray has no financial statements for Hensley. Ray identified a $9,800 Hardaway dispute and ordinary warranty exposure but no other material claim known to him.\n\nThe client has no additional information about closing stock basis or balance sheet, asset and covenant valuations, post-conversion goodwill basis or equipment disposals, Buyer B's escrow funding and release, or an item-by-item breakdown of Buyer A's equipment allocation. These remain open assumptions in `memo.md` and `STATUS.md`. No further response is requested here.\n",
+  "facts": [
+    {
+      "id": "noncompete_term",
+      "trigger": [
+        "non-compete",
+        "noncompete",
+        "longer term",
+        "consult",
+        "stay on"
+      ],
+      "answer": "I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "note_security",
+      "trigger": [
+        "note",
+        "secured",
+        "collateral",
+        "Hensley credit"
+      ],
+      "answer": "The $500k note is unsecured. Hensley's a family office, seems solid, but I don't know their balance sheet.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "liabilities",
+      "trigger": [
+        "liabilities",
+        "warranty",
+        "claims",
+        "lawsuit",
+        "Hardaway"
+      ],
+      "answer": "There's the Hardaway dispute ($9,800) and the usual warranty stuff. Nothing big that I know of.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "liabilities",
+    "noncompete_term",
+    "note_security"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

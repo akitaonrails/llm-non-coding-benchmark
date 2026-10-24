@@ -1,0 +1,7 @@
+A autorização confirma que a SEFAZ aceitou o envio, mas preciso conferir se ela também resolve a falta dos campos exigidos pela biblioteca. Vou ajustar os entregáveis para incorporar seu relato sobre a volta da versão antiga e separar o status de autorização da conformidade da nota.
+
+Paulo, **autorizada não significa regular para CBS/IBS**. A autorização mostra que a SEFAZ aceitou o envio. Ela não preenche os campos que faltam: nas notas 2308, 2310 e 2312, emitidas após 03/08, não há o grupo `IBSCBS` exigido pela biblioteca. Por isso, a autorização relatada não basta para assegurar a dispensa de recolhimento. [Comunicado do CGIBS](../library/cgibs_comunicado_03_08_2026.md) · [LC 214/2025](../library/lc214_2025_transicao.md)
+
+O retorno à versão antiga explica como vocês voltaram a emitir, mas há uma divergência a apurar: o comunicado prevê rejeição dessas notas, enquanto você relata que foram autorizadas. Corrijam a configuração do emissor, verifiquem os protocolos de produção e regularizem os documentos. Os XMLs que recebi são de homologação (`tpAmb=2`), então não confirmam por si só a autorização em produção.
+
+Atualizei a [orientação](/work/workspace/deliverable/orientacao.md) e a [apuração-teste](/work/workspace/deliverable/apuracao_teste.json) com seu relato.

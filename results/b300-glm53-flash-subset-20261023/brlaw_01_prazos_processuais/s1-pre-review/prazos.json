@@ -1,0 +1,26 @@
+{
+  "processo": "1044712-38.2026.8.26.0114 — 7ª Vara Cível de Campinas (autos eletrônicos, e-SAJ)",
+  "cliente": "Ferreira & Lima Transportes Ltda.",
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-16",
+    "prazo_em_dobro": false,
+    "fundamento": "Autos eletrônicos (e-SAJ): o prazo contado em dobro do art. 229, caput, NÃO se aplica — art. 229, §2º, CPC [library/cpc_prazos.md], embora os 2 réus tenham procuradores de escritórios distintos (fls. 61 e 70). Contagem de contestação: 15 dias úteis (art. 335, III, c/c art. 231, VII — [library/cpc_prazos_recursais.md]; art. 219 — [library/cpc_prazos.md]), excluindo o dia do começo e incluindo o do vencimento (art. 224), a partir do 1º dia útil seguinte ao da disponibilização considerado como publicação (art. 224, §2º [library/cpc_prazos.md]; Lei 11.419/2006, art. 4º, §3º [library/lei11419_art4.md]) e iniciando no 1º dia útil seguinte à publicação (art. 224, §3º; Lei 11.419/2006, art. 4º, §4º). Disponibilização 19/11/2026 (5ª-feira) → publicação 23/11/2026 (segunda, pois 20/11/2026 é feriado — Lei 14.759/2023 — e 21/22/11 é fim de semana) [library/calendario_forense_campinas.md] → início 24/11/2026; 15 dias úteis saltando o feriado municipal de Campinas de 08/12/2026 → vencimento 16/12/2026."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2027-01-21",
+    "apelacao_vencimento": "2027-02-04",
+    "dias_suspensos_ou_feriados_considerados": [
+      "20/11/2026 (sex) — Dia Nacional de Zumbi e da Consciência Negra, feriado (Lei 14.759/2023 [library/calendario_forense_campinas.md]): deslocou a publicação da intimação de citação de 20/11 para 23/11/2026",
+      "08/12/2026 (ter) — N. Sra. da Conceição, feriado municipal de Campinas [library/calendario_forense_campinas.md]: não contado; encaixa 1 dia útil no prazo de contestação (vencimento 16/12/2026 em vez de 15/12/2026)",
+      "20/12/2026 a 20/01/2027, inclusive — suspensão do curso do prazo, CPC art. 220 [library/cpc_prazos.md]: nenhum dia do intervalo conta; suspendeu os dias 5 e 6+ dos prazos de embargos/apelação; contagem retomou em 21/01/2027",
+      "24/12/2026, 25/12/2026, 31/12/2026, 01/01/2027 — sem expediente forense / feriados [library/calendario_forense_campinas.md]: já absorvidos pela suspensão do art. 220",
+      "25/01/2027 (seg) — Aniversário de São Paulo: feriado municipal APENAS na Capital; dia útil em Campinas → CONTADO no prazo de apelação"
+    ]
+  }
+}

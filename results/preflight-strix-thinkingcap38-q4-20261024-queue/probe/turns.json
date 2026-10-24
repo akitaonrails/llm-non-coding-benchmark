@@ -1,0 +1,30 @@
+[
+  {
+    "label": "probe",
+    "seconds": 21.63789889702457,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 8990,
+      "cached_input_tokens": 4459,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 105,
+      "reasoning_output_tokens": 0
+    },
+    "thread_id": "ses_e9267b5d8ffeK1ORwC0E2gI5Ey"
+  },
+  {
+    "label": "resume",
+    "seconds": 7.822504434996517,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 9182,
+      "cached_input_tokens": 9078,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 77,
+      "reasoning_output_tokens": 0
+    },
+    "thread_id": "ses_e9267b5d8ffeK1ORwC0E2gI5Ey"
+  }
+]

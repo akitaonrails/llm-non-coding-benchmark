@@ -1,0 +1,51 @@
+{
+  "persona": "Priya Raman, GC. Busy; values signal over noise.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "affiliates",
+      "trigger": [
+        "affiliate",
+        "Cobalt Freight Europe",
+        "Brokerage",
+        "who will use",
+        "entities"
+      ],
+      "answer": "Both affiliates will use it — Europe for Rotterdam/Hamburg, Brokerage for carrier routing. Holdings signs.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "eu_data",
+      "trigger": [
+        "EU",
+        "GDPR",
+        "personal data",
+        "driver data",
+        "Rotterdam"
+      ],
+      "answer": "Yes — driver names, locations, hours, and customer addresses from the EU ops. Real GDPR scope.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "chronic",
+      "trigger": [
+        "chronic",
+        "termination for SLA",
+        "repeated outages"
+      ],
+      "answer": "There is no chronic-failure termination right in their paper. Add one if you think it matters.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "if issues.json flags §9.3 (the gross negligence carve-out) as a problem",
+      "message": "Priya: Why is the gross-negligence carve-out on your list? That's our own preferred position in B1. Did you read the playbook?"
+    }
+  ]
+}

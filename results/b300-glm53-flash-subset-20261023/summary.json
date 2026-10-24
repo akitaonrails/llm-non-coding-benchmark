@@ -1,0 +1,67 @@
+{
+  "wall_seconds": 1548.1523534280059,
+  "cases": [
+    {
+      "case": "brlaw_01_prazos_processuais",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 485.08348763999675,
+      "controller_wait_seconds": 41.00417665900022,
+      "model_turn_seconds": 443.6870102219982,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 1205784,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53384,
+        "reasoning_output_tokens": 32715
+      },
+      "api_equivalent_usd": null,
+      "api_charge_usd": 0,
+      "electricity_cost_usd": null
+    },
+    {
+      "case": "bracc_01_das_fator_r",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 548.2530602499974,
+      "controller_wait_seconds": 42.00486679199821,
+      "model_turn_seconds": 505.8600852630043,
+      "turns": 2,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 1179751,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63740,
+        "reasoning_output_tokens": 48917
+      },
+      "api_equivalent_usd": null,
+      "api_charge_usd": 0,
+      "electricity_cost_usd": null
+    },
+    {
+      "case": "usacc_03_household_1040",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 514.8133155169999,
+      "controller_wait_seconds": 18.002091506001307,
+      "model_turn_seconds": 496.6420384689918,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 1229340,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 61927,
+        "reasoning_output_tokens": 40558
+      },
+      "api_equivalent_usd": null,
+      "api_charge_usd": 0,
+      "electricity_cost_usd": null
+    }
+  ],
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

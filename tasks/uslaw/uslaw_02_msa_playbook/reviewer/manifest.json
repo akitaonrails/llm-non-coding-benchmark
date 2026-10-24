@@ -1,0 +1,112 @@
+{
+  "id": "uslaw_02_msa_playbook",
+  "quadrant": "uslaw",
+  "title": "SaaS master services agreement review against the client's playbook",
+  "level": "L2",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Missing that §9.1 swallows §10.1",
+      "wrong_move": "Reading §10.1 'uncapped' and ticking A1 as satisfied",
+      "why_wrong": "'Notwithstanding anything to the contrary' in §9.1 + §9.3 carve-outs omit §10.1 → the IP indemnity is capped at $222k",
+      "authority": "Playbook A1; Restatement §203",
+      "evidence": "§9.1, §9.3, §10.1; playbook C2; interpretation entry",
+      "harm": "Client believes it has uncapped IP protection; a real infringement claim could cost millions",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Accepting 'DPA to be attached'",
+      "wrong_move": "Treating §5.3 as compliant",
+      "why_wrong": "No Art. 28 contract at signing; EU data flows immediately",
+      "authority": "Playbook A2; GDPR Art. 28(3)",
+      "evidence": "§5.3; Exhibit C; GC email",
+      "harm": "GDPR breach from day one",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Missing the price-change right in the order form",
+      "wrong_move": "Reviewing only the MSA body",
+      "why_wrong": "Order form §4 + §14.1 precedence → mid-term increase",
+      "authority": "Playbook A3",
+      "evidence": "Exhibit A §4; §14.1; playbook C1",
+      "harm": "Budget risk ~$17.8k+/yr",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Flagging the gross-negligence carve-out",
+      "wrong_move": "Listing §9.3 as a problem",
+      "why_wrong": "Playbook B1 says accept it; pushback tests whether the model read the playbook",
+      "authority": "Playbook B1",
+      "evidence": "Playbook B1",
+      "harm": "Credibility; wasted negotiation",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Auto-renewal / affiliates",
+      "wrong_move": "Missing §3.3 (24/90) or §2.2 (affiliates excluded)",
+      "why_wrong": "A4 and A5 hard rules; affiliates confirmed by client",
+      "authority": "Playbook A4, A5",
+      "evidence": "§3.3; §2.2; script",
+      "harm": "Lock-in; unlicensed affiliate use",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "issues.json contains A1 (§9.1 vs §10.1 interaction), A2, A3 (order form), A4, A5",
+      "expected": "all five present",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "issues.json does NOT flag §9.3 carve-out, Delaware law, jury waiver, 15-day suspension or 30-day export as issues",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "A1 redline carves §10.1 out of §9.1/9.2",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "redlines.md"
+    }
+  ],
+  "rubric": [
+    "COO one-pager names the capped-indemnity problem in plain English"
+  ],
+  "notes": [
+    "MSA is ~5 rendered pages rather than the 28 of the design doc; sufficient for the cross-clause trap. Modeled on EDGAR-style SaaS MSAs; names invented."
+  ],
+  "library_verification": [
+    {
+      "file": "gdpr_art28.md",
+      "cite": "Regulation (EU) 2016/679, Art. 28(3)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "ucc_2_distractor.md",
+      "cite": "U.C.C. §2-102; §2-316",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "contract_interpretation_notwithstanding.md",
+      "cite": "Restatement (Second) of Contracts §203; Delaware cases on 'notwithstanding anything to the contrary'",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

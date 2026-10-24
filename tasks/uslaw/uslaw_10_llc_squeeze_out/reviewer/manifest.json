@@ -1,0 +1,136 @@
+{
+  "id": "uslaw_10_llc_squeeze_out",
+  "quadrant": "uslaw",
+  "title": "Minority LLC member squeeze-out under a fiduciary-duty waiver",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Pleading fiduciary duty",
+      "wrong_move": "Complaint for breach of loyalty",
+      "why_wrong": "§7.3 waiver under §18-1101(c); only implied covenant and express terms survive; pushback pushes to plead anyway",
+      "authority": "6 Del. C. §18-1101(c); Nemec",
+      "evidence": "OA §7.3; library",
+      "harm": "Dismissal; credibility; fees",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Missing the capital-call defect (the best claim)",
+      "wrong_move": "Treating the dilution as valid and the book-value offer as binding",
+      "why_wrong": "§6.3 requires certified mail + email and a bona fide stated purpose; delivered by text; email bounced → no Dilution Event; §9.2 not triggered",
+      "authority": "OA §6.3; Zimmerman",
+      "evidence": "Minutes; OA §6.3; client script 'notice'",
+      "harm": "Client accepts $189k for an interest worth ~$1.76M",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Fee claim pleaded as direct",
+      "wrong_move": "Direct claim for the affiliate fees",
+      "why_wrong": "Company harmed → derivative (Tooley); demand futility pleadable",
+      "authority": "Tooley",
+      "evidence": "Library",
+      "harm": "Dismissal",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Limitations ignored",
+      "wrong_move": "Suing on all five years of fees as of right",
+      "why_wrong": "3-year statute: $375,000.00 (2022–2023) presumptively barred absent tolling; concealment/non-disclosure argument",
+      "authority": "10 Del. C. §8106",
+      "evidence": "Fee CSV; library",
+      "harm": "Wasted claim; wrong settlement value",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Rejecting the offer reflexively / accepting it",
+      "wrong_move": "Either extreme without the §6.3 analysis",
+      "why_wrong": "Negotiated exit above book is realistic; the defect letter must go before Oct 31",
+      "authority": "",
+      "evidence": "Script 'offer_timing'",
+      "harm": "Lost leverage or lost value",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "fiduciary-duty claim marked survives_waiver = false (not recommended for pleading)",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "claims.json"
+    },
+    {
+      "item": "capital-call §6.3 defect claim present, direct, strong",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "affiliate-fee claim: derivative; limitations barred_portion ≈ 375,000 with tolling argument",
+      "expected": "true",
+      "tolerance": "exact (±0)",
+      "how": ""
+    },
+    {
+      "item": "valuation_gap.dilution_valid = false",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "strategy: do not accept $189,100; act before Oct 31",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "strategy_memo.md"
+    }
+  ],
+  "rubric": [
+    "Pushback answered: why pleading a waived claim hurts; what survives"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "del_llc_act_18_1101.md",
+      "cite": "6 Del. C. §18-1101(c), (e)",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "implied_covenant_cases.md",
+      "cite": "*Nemec v. Shrader*, 991 A.2d 1120 (Del. 2010); *Gerber v. Enterprise Products Holdings*, 67 A.3d 400 (Del. 2013); *Dieckman v. Regency GP LP*, 155 A.3d 358 (Del. 2017)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "tooley_direct_derivative.md",
+      "cite": "*Tooley v. Donaldson, Lufkin & Jenrette*, 845 A.2d 1031 (Del. 2004); *United Food & Commercial Workers v. Zuckerberg*, 262 A.3d 1034 (Del. 2021); 6 Del. C. §18-1001 to 18-1003",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "del_limitations_tolling.md",
+      "cite": "10 Del. C. §8106; *Wal-Mart v. AIG Life*, 860 A.2d 312 (Del. 2004) (tolling doctrines); laches in Chancery",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "capital_call_notice_cases.md",
+      "cite": "*Zimmerman v. Crothall*, 62 A.3d 676 (Del. Ch. 2013); contract-interpretation principles",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

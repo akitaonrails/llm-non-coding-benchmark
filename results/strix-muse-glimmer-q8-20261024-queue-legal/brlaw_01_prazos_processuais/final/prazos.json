@@ -1,0 +1,42 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "CPC art. 335 (cpc_prazos_recursais.md) - prazo de 15 dias para contestação; Lei 11.419/2006 art. 4º §§3º e 4º (lei11419_art4.md) e CPC art. 224 §§2º e 3º (cpc_prazos.md) - publicação no primeiro dia útil seguinte à disponibilização e início no primeiro dia útil seguinte à publicação; CPC art. 219 (cpc_prazos.md) - contagem em dias úteis; CPC art. 229 §2º (cpc_prazos.md) - prazo em dobro não se aplica aos processos em autos eletrônicos. Processo eletrônico e-SAJ conforme intimação_citacao_dje.pdf."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "2026-12-21",
+      "2026-12-22",
+      "2026-12-23",
+      "2026-12-24",
+      "2026-12-25",
+      "2026-12-28",
+      "2026-12-29",
+      "2026-12-30",
+      "2026-12-31",
+      "2027-01-01",
+      "2027-01-04",
+      "2027-01-05",
+      "2027-01-06",
+      "2027-01-07",
+      "2027-01-08",
+      "2027-01-11",
+      "2027-01-12",
+      "2027-01-13",
+      "2027-01-14",
+      "2027-01-15",
+      "2027-01-18",
+      "2027-01-19",
+      "2027-01-20"
+    ]
+  }
+}

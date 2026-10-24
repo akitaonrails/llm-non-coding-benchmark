@@ -1,0 +1,20 @@
+{
+  "case": "usacc_03_household_1040",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-reserved-subset-20261023/usacc_03_household_1040/01-s1-work",
+  "elapsed_seconds": 85.69824319100007,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 85.25155899300444,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

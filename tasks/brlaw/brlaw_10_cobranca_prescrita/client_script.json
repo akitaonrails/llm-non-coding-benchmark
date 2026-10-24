@@ -1,0 +1,51 @@
+{
+  "persona": "Sérgio, sócio da Técnica Forte; irritado; quer agir.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "testemunhas",
+      "trigger": [
+        "testemunha",
+        "assinatura",
+        "título executivo",
+        "quem assinou"
+      ],
+      "answer": "O contrato foi assinado só pelos dois representantes, sem testemunhas. Foi tudo meio informal.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pagamento",
+      "trigger": [
+        "pagamento parcial",
+        "10 mil",
+        "2023",
+        "PIX"
+      ],
+      "answer": "Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "greve",
+      "trigger": [
+        "greve",
+        "parcelas 5 e 6",
+        "serviço concluído",
+        "fevereiro",
+        "março"
+      ],
+      "answer": "Teve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se analise.json disser que as parcelas 5 e 6 prescreveram",
+      "message": "Sérgio: Mas eles pagaram em 2023! Pagamento interrompe a prescrição, qualquer um sabe. E eu tenho relatório assinado das parcelas 5 e 6. Como pode ter prescrito?"
+    }
+  ]
+}

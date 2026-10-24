@@ -1,0 +1,45 @@
+{
+  "form1040": {
+    "1a_wages": 122000,
+    "2b_interest": 400,
+    "8_other_income_sch1": -31050,
+    "11_agi": 91350,
+    "12_deduction": 31500,
+    "15_taxable_income": 59850,
+    "16_tax": 6708,
+    "19_ctc": 2200,
+    "17_sch2_excess_aptc": 1900,
+    "24_total_tax": 6408,
+    "25d_withholding": 8730,
+    "34_refund_or_37_owed": 2322
+  },
+  "form7203": {
+    "stock_basis_begin": 11500,
+    "loss_allowed": 11500,
+    "loss_suspended": 16500
+  },
+  "form8582": {
+    "rental_loss": 21018,
+    "magi": 110900,
+    "special_allowance": 19550,
+    "loss_allowed": 19550,
+    "carryforward": 1468
+  },
+  "form8962": {
+    "household_income": 91350,
+    "fpl_pct": 292.79,
+    "applicable_figure_pct": 5.71,
+    "annual_ptc": 4922.51,
+    "aptc": 9900,
+    "excess": 4977.49,
+    "repayment_limitation": 1900,
+    "repayment": 1900
+  },
+  "dependents": ["Sofia Reyes (age 15)"],
+  "ny": {
+    "resident_days": 181,
+    "marcus_ny_wages": 68000,
+    "elena_ny_wages": 26778,
+    "method": "IT-203 part-year method: all income received during the resident period (Jan 1 - Jun 30, 181 days) plus New York source income during the nonresident period (Jul 1 - Dec 31, 184 days). Marcus's post-move wages are NY source under the convenience-of-the-employer rule (NY employer; remote work for his own convenience after the family's voluntary move to Tampa). Elena's post-move wages are not NY source because her employer permitted her to work fully remote (not at her own convenience), so only the resident-period portion of her wages is NY source: $54,000 x 181/365 = $26,778."
+  }
+}

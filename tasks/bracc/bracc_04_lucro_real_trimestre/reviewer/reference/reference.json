@@ -1,0 +1,27 @@
+{
+  "lucro_contabil_razao": "615249.00",
+  "estorno_credito_indevido": "11100 (NF 8812, CFOP 1556 — uso e consumo não gera crédito; retificar EFD-Contribuições de janeiro)",
+  "lucro_contabil_corrigido": "604149.00",
+  "adicoes": {
+    "brindes": 48000,
+    "doacao_entidade_nao_qualificada": 30000
+  },
+  "lucro_antes_compensacao": "682149.00",
+  "compensacao_30pct": "204644.70",
+  "prejuizo_fiscal_restante": "695355.30",
+  "lucro_real": "477504.30",
+  "irpj_15": "71625.65",
+  "adicional_10": "41750.43",
+  "irpj_total": "113376.08",
+  "csll": "42975.39",
+  "caminho_errado": {
+    "compensar_tudo": {
+      "lucro_real": "0",
+      "nota": "trava de 30% ignorada"
+    },
+    "sem_adicoes_sem_estorno": {
+      "lucro_antes_comp": "615249.00",
+      "irpj": "101668.58"
+    }
+  }
+}

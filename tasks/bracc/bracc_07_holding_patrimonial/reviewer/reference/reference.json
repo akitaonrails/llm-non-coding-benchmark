@@ -1,0 +1,39 @@
+{
+  "itbi": {
+    "devido": true,
+    "estimativa": "492900.00",
+    "fundamento": "atividade preponderante = locação (todas as receitas); exceção do art. 156 §2º I; Tema 796 para o excedente"
+  },
+  "aluguel_anual": "1018800",
+  "pf": {
+    "ir_anual_aprox": "269737.68",
+    "nota": "bruto; deduções (IPTU/condomínio/administração 8%) reduzem"
+  },
+  "pj_presumido": {
+    "irpj_csll_pis_cofins": "124031.64",
+    "irrf_distribuicao_2026": "89476.84",
+    "total": "213508.48",
+    "carga_pct_sem_irrf": "12.17",
+    "carga_pct_com_irrf": "20.96"
+  },
+  "integralizacao": {
+    "valor_recomendado": "4720000",
+    "gcap_evitado": "1756500.00"
+  },
+  "itcmd_doacao_quotas": {
+    "estimativa_4pct_valor_declaracao": "188800.00",
+    "base": "SEFAZ/SP tende a exigir valor de mercado dos bens → 657200.00"
+  },
+  "legitima": {
+    "parcela_indisponivel_pct": 50,
+    "marcos_pode_ser_excluido": false,
+    "nota": "doação só a Ricardo e Paula é adiantamento de legítima (colação) e inoficiosa no que exceder a parte disponível; Marcos pode pedir redução; cláusulas restritivas sobre a legítima exigem justa causa em testamento (CC 1.848)"
+  },
+  "afirmacoes": {
+    "1_sem_itbi": "FALSA (atividade preponderante locação)",
+    "2_11pct": "PARCIAL: ~11,3–14,5% na PJ antes da distribuição; +10% IRRF em 2026 na distribuição > 50k/mês; PF tem deduções — comparar líquido",
+    "3_itcmd_valor_contabil": "FALSA/ARRISCADA: SP exige valor de mercado; usufruto 2/3-1/3",
+    "4_excluir_filho": "FALSA: legítima de 50%; deserdação só com causa legal",
+    "5_clausulas": "PARCIAL: válidas sobre a parte disponível; sobre a legítima só com justa causa (CC 1.848)"
+  }
+}

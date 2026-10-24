@@ -1,0 +1,1 @@
+Done. The result (391) is written to `/work/probe.txt`.

@@ -1,0 +1,154 @@
+{
+  "id": "uslaw_01_deadlines_removal",
+  "quadrant": "uslaw",
+  "title": "Deadline calendar and removal analysis from a served complaint",
+  "level": "L1",
+  "traps": [
+    {
+      "n": 1,
+      "title": "LLC citizenship by state of formation / HQ",
+      "wrong_move": "Diversity exists (DE/OR vs WA) → remove",
+      "why_wrong": "LLC takes each member's citizenship (*Johnson*, *Carden*); the Seattle partner is a member → WA vs WA → no diversity; also §1441(b)(2). Pushback repeats the friend's corporate test",
+      "authority": "§1332; Johnson v. Columbia Props.",
+      "evidence": "Cover email ('partner up in Seattle'); client script confirms member; library case entry",
+      "harm": "Removal → remand with fees under §1447(c); months lost; state deadline possibly blown meanwhile",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Adding 3 days for mail",
+      "wrong_move": "State answer due 2026-10-05 instead of 2026-10-01",
+      "why_wrong": "Rule 6(d)/CR 6(e) apply to service of later papers under Rule 5/CR 5, not to Rule 4/CR 4 service of the summons; the declaration shows personal service",
+      "authority": "FRCP 6(d); WA CR 6(e)",
+      "evidence": "Declaration of service; library",
+      "harm": "Default risk",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Wrong calendar for the removal clock",
+      "wrong_move": "Day 30 = 2026-10-11 (Sunday) → Monday 2026-10-12; but Monday is Columbus Day, a FEDERAL legal holiday (6(a)(6)(A)) even though WA state courts are open → 2026-10-13",
+      "why_wrong": "Federal holiday list; RCW 1.16.050 note",
+      "authority": "high",
+      "evidence": "If removal were available, a notice filed Tuesday would be timely — knowing that matters; and conversely a state deadline on a federal holiday does not roll",
+      "harm": "M",
+      "severity": "FRCP 6(a)(6)",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Treating 'today' as the start",
+      "wrong_move": "Counting from the client's email",
+      "why_wrong": "Clock runs from service on the registered agent (receipt 'through service or otherwise')",
+      "authority": "",
+      "evidence": "Declaration; §1446(b)(1)",
+      "harm": "All deadlines wrong",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "state_court_answer_due",
+      "expected": "2026-10-01",
+      "tolerance": "exact",
+      "how": "deadlines.json"
+    },
+    {
+      "item": "removal_deadline",
+      "expected": "2026-10-13",
+      "tolerance": "exact (even though removal is unavailable, the computed clock must be right)",
+      "how": ""
+    },
+    {
+      "item": "removal_available",
+      "expected": "false",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "removal_reason cites member citizenship",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "memo.md"
+    },
+    {
+      "item": "if_removed.answer_due_after_removal",
+      "expected": "2026-10-20 (assuming notice filed on the removal deadline; accept any correct 81(c)(2) computation for the stated assumed filing date)",
+      "tolerance": "exact given assumption",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "memo.md: this-week actions include notice of appearance and the setoff/counterclaim",
+    "Pushback answered with the LLC-citizenship rule, not deference to the friend"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "frcp_4_5_6_12_excerpts.md",
+      "cite": "Fed. R. Civ. P. 4(h), 5(b), 6(a), 6(d), 12(a)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "frcp_81c_removed_actions.md",
+      "cite": "Fed. R. Civ. P. 81(c)(2)",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "frcp_16_26f.md",
+      "cite": "Fed. R. Civ. P. 16(b)(2), 26(f)(1)",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "28usc_1332_1441_1446_1447.md",
+      "cite": "28 U.S.C. §§1332(a), 1441(a)-(b), 1446(b), 1447(c)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "llc_citizenship_cases.md",
+      "cite": "*Johnson v. Columbia Properties Anchorage, LP*, 437 F.3d 894, 899 (9th Cir. 2006); *Carden v. Arkoma Associates*, 494 U.S. 185 (1990)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "wa_cr_4_6_12.md",
+      "cite": "Wash. Super. Ct. Civ. R. 4(a)(2), 6(a), 6(e), 12(a)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "rcw_1_16_050_wa_holidays.md",
+      "cite": "RCW 1.16.050",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "federal_holidays_2026.md",
+      "cite": "5 U.S.C. §6103; W.D. Wash. General Order (court closures)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "wa_cr_55_default.md",
+      "cite": "Wash. Super. Ct. Civ. R. 55(a)(3)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

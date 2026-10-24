@@ -1,0 +1,20 @@
+{
+  "case": "usacc_03_household_1040",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 514.8133155169999,
+  "controller_wait_seconds": 18.002091506001307,
+  "model_turn_seconds": 496.6420384689918,
+  "turns": 3,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 1229340,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 61927,
+    "reasoning_output_tokens": 40558
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

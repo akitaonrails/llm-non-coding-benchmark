@@ -1,0 +1,98 @@
+{
+  "sessao1": {
+    "periodos": [
+      {
+        "periodo": "3T/2020",
+        "fato_gerador": "2020-09-30",
+        "pagamento_parcial": false,
+        "regra": "CTN 173 I",
+        "limite_decadencial": "2025-12-31",
+        "notificacao": "2026-02-10",
+        "decaido": true,
+        "valor": "268000",
+        "se_aplicasse_173_a_todos": {
+          "limite": "2025-12-31",
+          "decaido": true
+        }
+      },
+      {
+        "periodo": "4T/2020",
+        "fato_gerador": "2020-12-31",
+        "pagamento_parcial": true,
+        "regra": "CTN 150 §4º",
+        "limite_decadencial": "2025-12-31",
+        "notificacao": "2026-02-10",
+        "decaido": true,
+        "valor": "241000",
+        "se_aplicasse_173_a_todos": {
+          "limite": "2026-12-31",
+          "decaido": false
+        }
+      },
+      {
+        "periodo": "1T/2021",
+        "fato_gerador": "2021-03-31",
+        "pagamento_parcial": true,
+        "regra": "CTN 150 §4º",
+        "limite_decadencial": "2026-03-31",
+        "notificacao": "2026-02-10",
+        "decaido": false,
+        "valor": "302000",
+        "se_aplicasse_173_a_todos": {
+          "limite": "2026-12-31",
+          "decaido": false
+        }
+      },
+      {
+        "periodo": "2T/2021",
+        "fato_gerador": "2021-06-30",
+        "pagamento_parcial": false,
+        "regra": "CTN 173 I",
+        "limite_decadencial": "2026-12-31",
+        "notificacao": "2026-02-10",
+        "decaido": false,
+        "valor": "289000",
+        "se_aplicasse_173_a_todos": {
+          "limite": "2026-12-31",
+          "decaido": false
+        }
+      }
+    ],
+    "valor_decaido": "509000",
+    "valor_remanescente": "591000",
+    "vicios_formais": [
+      "ausência do fundamento legal da multa de ofício (LEF 2º §5º III) — sanável por emenda (§8º; Súmula 392)"
+    ],
+    "veiculo": "exceção de pré-executividade (Súmula 393): decadência e vício formal são de ordem pública, sem dilação probatória; a mérito da omissão de receitas exigiria embargos (garantia)"
+  },
+  "sessao2": {
+    "emenda": "válida (erro formal; Súmula 392) — não insistir; pedir devolução de prazo (§8º)",
+    "decadencia": "Tema 163/Súmula 555: 4T/2020 e 1T/2021 tiveram pagamento parcial → art. 150 §4º → 4T/2020 decaído em 31/12/2025; 1T/2021 válido (31/03/2026); 3T/2020 sem pagamento → 173 I → 31/12/2025 → decaído; 2T/2021 → 31/12/2026 → válido. A tese da Fazenda ('173 I para todos') salvaria o 4T/2020 — é exatamente o ponto a rebater"
+  },
+  "sessao3_4": {
+    "socio_pedido": "Ana Paula Vieira",
+    "dissolucao_irregular_configurada": false,
+    "por_que": "mudança de endereço registrada na JUCESP (12/03/2026) e RFB (20/03/2026) ANTES da diligência (28/09/2026) → comunicação aos órgãos competentes → Súmula 435 afastada; empresa operando em Cotia",
+    "tema_962": "Ana retirou-se regularmente em 06/2023 e não deu causa a dissolução posterior → não pode ser redirecionada, ainda que administradora ao tempo do FG; Súmula 430 (mero inadimplemento)",
+    "tema_981": "se houvesse dissolução irregular, responderia o administrador à época dela (Bruno), não Ana",
+    "socio_que_responderia_se_configurada": "Bruno Tavares",
+    "pushback": "'quem sonegou foi ela' exigiria prova de infração à lei (135 III) em incidente próprio, não presunção; a omissão de receitas por si não é dolo pessoal provado"
+  },
+  "sessao5": {
+    "valor_remanescente_atualizado": "614049.00",
+    "seguro_garantia": {
+      "valor_garantido": "798263.70",
+      "custo_anual": "9579.16"
+    },
+    "fianca": {
+      "valor_garantido": "798263.70",
+      "custo_anual": "19956.59"
+    },
+    "transacao": {
+      "base": "614049.00",
+      "desconto_estimado": "até 65% de multa+juros sobre os períodos VÁLIDOS somente",
+      "observacao": "nunca incluir os períodos decaídos (confissão irrevogável); primeiro obter a exclusão, depois transacionar o remanescente"
+    },
+    "recomendacao": "seguro-garantia sobre o remanescente (+30%) para embargar o mérito dos períodos válidos, em paralelo avaliar transação do remanescente; penhora de faturamento só se as outras falharem"
+  }
+}

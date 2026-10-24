@@ -1,0 +1,1435 @@
+{
+  "month_01": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "384900.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "23110.78"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "54800.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "40650.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "9920.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "54404.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "5076.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "7200.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "1460.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "3250.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "1777.78",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "240.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "54800.00",
+    "subscription_revenue_month": "40650.00"
+  },
+  "month_02": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "369630.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "24888.56"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "77600.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "84300.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "19960.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "108808.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "10152.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "14400.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "2920.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "6550.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "3555.56",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "480.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "77600.00",
+    "subscription_revenue_month": "43650.00"
+  },
+  "month_03": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "333690.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "26666.34"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "80900.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "129450.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "30120.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "163212.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "15228.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "21600.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "4380.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "2500.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "9900.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "5333.34",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "720.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "80900.00",
+    "subscription_revenue_month": "45150.00"
+  },
+  "month_04": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "282080.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "28444.12"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "66200.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "174600.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "40400.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "217616.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "20304.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "28800.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "5840.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "2500.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "13300.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "7111.12",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "960.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "66200.00",
+    "subscription_revenue_month": "45150.00"
+  },
+  "month_05": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "260300.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "30221.90"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "79000.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "222250.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "50800.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "272020.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "25380.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "36000.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "7300.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "2500.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "16750.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "8888.90",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "1200.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "79000.00",
+    "subscription_revenue_month": "47650.00"
+  },
+  "month_06": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "227450.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "31999.68"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "89800.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "263500.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "61320.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "326424.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "30456.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "43200.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "8760.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "5000.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "20250.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "10666.68",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "1440.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "89800.00",
+    "subscription_revenue_month": "41250.00"
+  },
+  "month_07": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "175330.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "33777.46"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "79000.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "304750.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "71960.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "380828.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "35532.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "50400.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "10220.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "5000.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "23800.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "12444.46",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "1680.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "79000.00",
+    "subscription_revenue_month": "41250.00"
+  },
+  "month_08": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "123040.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "35555.24"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "68200.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "346000.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "82720.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "435232.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "40608.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "57600.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "11680.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "5000.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "27400.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "14222.24",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "1920.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "68200.00",
+    "subscription_revenue_month": "41250.00"
+  },
+  "month_09": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "93280.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "37333.02"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "82150.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "387700.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "93600.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "489636.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "45684.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "64800.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "13140.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "7500.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "31050.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "16000.02",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "2160.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "82150.00",
+    "subscription_revenue_month": "41700.00"
+  },
+  "month_10": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "38850.00",
+        "0"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "39110.80"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "69100.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "429400.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "104600.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "544040.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "50760.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "72000.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "14600.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "7500.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "34750.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "17777.80",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "2400.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "69100.00",
+    "subscription_revenue_month": "41700.00"
+  },
+  "month_11": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "0",
+        "15750.00"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "40888.58"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "56050.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "471100.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "115720.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "598444.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "55836.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "79200.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "16060.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "7500.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "38500.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "19555.58",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "2640.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "56050.00",
+    "subscription_revenue_month": "41700.00"
+  },
+  "month_12": {
+    "trial_balance": [
+      [
+        "1000",
+        "Cash — Operating",
+        "0",
+        "73020.00"
+      ],
+      [
+        "1100",
+        "Accounts receivable",
+        "38200.00",
+        "0"
+      ],
+      [
+        "1300",
+        "Prepaid expenses",
+        "9600.00",
+        "0"
+      ],
+      [
+        "1500",
+        "Computer equipment",
+        "64000.00",
+        "0"
+      ],
+      [
+        "1510",
+        "Accumulated depreciation",
+        "0",
+        "42666.36"
+      ],
+      [
+        "2000",
+        "Accounts payable",
+        "0",
+        "17420.00"
+      ],
+      [
+        "2200",
+        "Deferred revenue — current",
+        "0",
+        "43000.00"
+      ],
+      [
+        "3000",
+        "Common stock & APIC",
+        "0",
+        "650000.00"
+      ],
+      [
+        "3900",
+        "Retained earnings",
+        "205953.00",
+        "0"
+      ],
+      [
+        "4000",
+        "Subscription revenue",
+        "0",
+        "512800.00"
+      ],
+      [
+        "5000",
+        "Hosting & infrastructure",
+        "126960.00",
+        "0"
+      ],
+      [
+        "6000",
+        "Salaries & wages",
+        "652848.00",
+        "0"
+      ],
+      [
+        "6050",
+        "Payroll taxes & benefits",
+        "60912.00",
+        "0"
+      ],
+      [
+        "6100",
+        "Rent",
+        "86400.00",
+        "0"
+      ],
+      [
+        "6200",
+        "Software & tools",
+        "17520.00",
+        "0"
+      ],
+      [
+        "6300",
+        "Professional fees",
+        "10000.00",
+        "0"
+      ],
+      [
+        "6400",
+        "Marketing",
+        "42300.00",
+        "0"
+      ],
+      [
+        "6500",
+        "Depreciation",
+        "21333.36",
+        "0"
+      ],
+      [
+        "6900",
+        "G&A other",
+        "2880.00",
+        "0"
+      ]
+    ],
+    "deferred_revenue_end": "43000.00",
+    "subscription_revenue_month": "41700.00"
+  },
+  "pinecone_wrong_path": {
+    "month_2_revenue_overstatement": "33000.00 (36,000 recognized vs 3,000 earned)",
+    "months_2_6_cumulative_overstatement": "21000",
+    "correct_treatment_on_discovery_month_7": "ASC 250: restate months 2–6 (preferred when prior monthly reports were issued to the board) OR cumulative catch-up in month 7 with disclosure; silence/prospective-only = fail"
+  }
+}

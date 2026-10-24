@@ -1,0 +1,5 @@
+I’ll read the contract and workspace files, then complete the deliverables using only those materials. I’ll use shell or Python for any calculations.
+
+The bank reconciliation can be tied from the available records: the statement shows a $4,312 mobile deposit absent from the ledger, a $35 fee, a $6,250 deposit in transit, and two outstanding checks. I also found decisions the records cannot settle, including the source of a $1,500 transfer and a large A/R difference. I’ll put specific questions in `QUESTIONS.md` for the client.
+
+I wrote the client questions in [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). They cover the unidentified deposit, transfer, A/R discrepancy, disputed invoice, card charge, and A/P records needed to finish the close. I’ll complete the deliverables when the client replies.

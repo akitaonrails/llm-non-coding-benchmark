@@ -1,0 +1,153 @@
+{
+  "id": "brlaw_07_credor_rj",
+  "quadrant": "brlaw",
+  "title": "Credor na recuperação judicial: habilitação, crédito fiduciário, classe, voto e fiador",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "'Fiduciário não se habilita'",
+      "wrong_move": "Não apresentar divergência no prazo",
+      "why_wrong": "A parte quirografária (R$ 1,2 mi) exige divergência (valor E classe) até 2026-04-27; retardatário não vota (art. 10 §1º)",
+      "authority": "LRF 7º §1º, 10",
+      "evidence": "Edital; ficha; LRF 7º §1º, 10",
+      "harm": "Sem voto na AGC; crédito a menor",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Prazo em dias úteis",
+      "wrong_move": "Vencimento 2026-05-04",
+      "why_wrong": "Art. 189 §1º I: dias corridos → 2026-04-27",
+      "authority": "LRF 189 §1º",
+      "evidence": "LRF 189 §1º",
+      "harm": "Habilitação retardatária",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Retomar os bens essenciais no stay",
+      "wrong_move": "Mandar buscar as empilhadeiras",
+      "why_wrong": "49 §3º in fine; 6º §7º-A; Tema 1.051; pushback 'a propriedade é minha'",
+      "authority": "LRF 49 §3º",
+      "evidence": "Script 'essencial'; biblioteca",
+      "harm": "Multa, busca e apreensão revertida, responsabilidade",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Classe errada",
+      "wrong_move": "Classe III",
+      "why_wrong": "EPP → classe IV (voto por cabeça; condições melhores na minuta)",
+      "authority": "LRF 41 IV; 45",
+      "evidence": "Ficha (EPP)",
+      "harm": "Voto e recebimento errados",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "'A homologação extingue a fiança'",
+      "wrong_move": "Tranquilizar o sócio",
+      "why_wrong": "Súmula 581; 49 §1º; 59; Tema 885 — a cláusula não vincula o banco",
+      "authority": "Súmula 581",
+      "evidence": "Minuta; script 'banco'",
+      "harm": "Sócio surpreendido pela execução da fiança",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 6,
+      "title": "Deságio para fiduciários aceito",
+      "wrong_move": "Não objetar a cláusula",
+      "why_wrong": "Ilegal (49 §3º); objeção no prazo do art. 55",
+      "authority": "LRF 55",
+      "evidence": "Minuta",
+      "harm": "Perda de direito por inércia",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "prazo_habilitacao_divergencia",
+      "expected": "2026-04-27",
+      "tolerance": "exact",
+      "how": "estrategia.json"
+    },
+    {
+      "item": "contagem = corridos",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "credito_fiduciario: sujeito=false, retomada_agora=false",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "credito_quirografario.classe = IV",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "fianca_do_socio.extinta = false",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "habilitacao_divergencia.md: valor total 2,1 mi com split 900k não sujeito / 1,2 mi classe IV; endereçada ao AJ",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "resposta_cliente.md responde às três perguntas e ao pushback sem jargão"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "lrf_habilitacao_prazos.md",
+      "cite": "Lei 11.101/2005, arts. 7º §1º, 8º, 10, 52 §1º, 189 §1º (Lei 14.112/2020)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lrf_49_essencialidade.md",
+      "cite": "LRF art. 49 §3º; art. 6º §§4º e 7º-A; STJ, Tema 1.051 (REsp 1.871.201 e outros)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lrf_classes_voto.md",
+      "cite": "LRF arts. 41, 45, 55, 58 §1º",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "sumula_581_coobrigados.md",
+      "cite": "STJ Súmula 581; LRF art. 49 §1º; art. 59",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "divergencia_habilitacao_forma.md",
+      "cite": "LRF art. 9º",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+I’ve recorded that the tenant is unrelated and that marketplace coverage ended when Elena joined Halvorsen’s plan on July 1. The remaining questions are about the lease’s 2025 rent terms and the facts needed to allocate wages to New York. I’ll narrow `QUESTIONS.md` to those points.
+
+I recorded the client’s answers and narrowed [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md) to the facts still needed: the 2025 lease terms, the date Tampa became their permanent home, and each employer’s remote-work arrangement. The return remains blocked pending those answers, as recorded in [STATUS.md](/work/workspace/deliverable/STATUS.md).

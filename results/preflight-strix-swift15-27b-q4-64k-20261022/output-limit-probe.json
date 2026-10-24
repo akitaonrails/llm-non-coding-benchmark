@@ -1,0 +1,30 @@
+{
+  "seconds": 5.242254892999881,
+  "requested_max_tokens": 8,
+  "response": {
+    "id": "chatcmpl-665",
+    "object": "chat.completion",
+    "created": 1792699244,
+    "model": "noncoding-swift15-27b-q4-64k:20261022",
+    "system_fingerprint": "fp_ollama",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "reasoning": "We need answer user: \"List the"
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 73,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 8,
+      "total_tokens": 81
+    }
+  }
+}

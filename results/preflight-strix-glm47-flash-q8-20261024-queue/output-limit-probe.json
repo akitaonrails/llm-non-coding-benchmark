@@ -1,0 +1,40 @@
+{
+  "seconds": 20.668946991005214,
+  "requested_max_tokens": 8,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "<think>1.  **Analyze the Request"
+        }
+      }
+    ],
+    "created": 1792854884,
+    "model": "/hf/zai-org_GLM-4.7-Flash-Q8_0.gguf",
+    "system_fingerprint": "b1-b6b003d",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 8,
+      "prompt_tokens": 24,
+      "total_tokens": 32,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-pRA1vidBCftcnoZs2h98WcBr6ZCn3yZG",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 24,
+      "prompt_ms": 148.263,
+      "prompt_per_token_ms": 6.177625,
+      "prompt_per_second": 161.8745067886121,
+      "predicted_n": 8,
+      "predicted_ms": 181.526,
+      "predicted_per_token_ms": 25.932285714285715,
+      "predicted_per_second": 38.5619690843185
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "model": "glm-5.3-flash",
+  "runs": [
+    {
+      "seconds": 8.39989247399717,
+      "ttft_seconds": 1.540171251999709,
+      "decode_tokens_per_second": 149.1331724226368,
+      "usage": {
+        "prompt_tokens": 28,
+        "total_tokens": 1052,
+        "completion_tokens": 1024,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024
+        }
+      },
+      "finish_reason": "length"
+    },
+    {
+      "seconds": 7.805438066003262,
+      "ttft_seconds": 0.9143643679999514,
+      "decode_tokens_per_second": 148.45401542528413,
+      "usage": {
+        "prompt_tokens": 28,
+        "total_tokens": 1052,
+        "completion_tokens": 1024,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024
+        }
+      },
+      "finish_reason": "length"
+    }
+  ],
+  "passed": true,
+  "scope": "Stream-observed decode throughput; includes SSH transport jitter."
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "ref": "AJE-1",
+    "date": "2026-03-31",
+    "memo": "Reverse duplicate March posting of Cascade CH-7731; February copy already booked, paid once. Sources: general_ledger_2026-03.csv; both Cascade CH-7731 invoice copies; owner response.",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 4860.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5000",
+        "debit": 0.0,
+        "credit": 4860.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-2",
+    "date": "2026-03-31",
+    "memo": "Reclassify March 14 transfer from owner personal checking from sales to owner contributions. Sources: general_ledger_2026-03.csv; owner response.",
+    "lines": [
+      {
+        "account": "4000",
+        "debit": 1500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "3100",
+        "debit": 0.0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-3",
+    "date": "2026-03-31",
+    "memo": "Record March 21 unidentified mobile deposit in suspense pending identification. Sources: bank_statement_2026-03.pdf; owner response.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 4312.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2100",
+        "debit": 0.0,
+        "credit": 4312.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-4",
+    "date": "2026-03-31",
+    "memo": "Record March 31 bank service fee. Source: bank_statement_2026-03.pdf.",
+    "lines": [
+      {
+        "account": "6700",
+        "debit": 35.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 35.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-5",
+    "date": "2026-03-31",
+    "memo": "Reclassify owner anniversary dinner from meals to draws. Sources: credit_card_statement_summit_2026-03.pdf; owner response.",
+    "lines": [
+      {
+        "account": "3200",
+        "debit": 212.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6500",
+        "debit": 0.0,
+        "credit": 212.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-6",
+    "date": "2026-03-31",
+    "memo": "Capitalize CabinetVision annual license covering April 2026 through March 2027. Source: credit_card_statement_summit_2026-03.pdf.",
+    "lines": [
+      {
+        "account": "1300",
+        "debit": 1188.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6400",
+        "debit": 0.0,
+        "credit": 1188.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-7",
+    "date": "2026-03-31",
+    "memo": "Capitalize Allied Insurance Q2 coverage, April through June 2026. Source: general_ledger_2026-03.csv.",
+    "lines": [
+      {
+        "account": "1300",
+        "debit": 1150.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6300",
+        "debit": 0.0,
+        "credit": 1150.0
+      }
+    ]
+  }
+]

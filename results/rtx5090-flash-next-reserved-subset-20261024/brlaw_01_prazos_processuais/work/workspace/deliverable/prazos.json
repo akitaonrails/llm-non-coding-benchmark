@@ -1,0 +1,42 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "Disponibilização em 19/11/2026 (quinta-feira), impressa no PDF. Publicação no primeiro dia útil seguinte = 23/11/2026 (segunda-feira), pois 20/11/2026 é feriado nacional — Dia Nacional de Zumbi (Lei 14.759/2023) — conforme calendário da biblioteca: Lei 11.419/2006, art. 4º, § 3º (library/lei11419_art4.md) e CPC art. 224, § 2º (library/cpc_prazos.md). Contagem iniciada no primeiro dia útil seguinte à publicação = 24/11/2026 (Lei 11.419/2006, art. 4º, § 4º; CPC art. 224, § 3º), somente em dias úteis (CPC art. 219), excluindo o dia do começo e incluindo o do vencimento (CPC art. 224, caput). Prazo de contestação: 15 dias úteis (CPC art. 335, III, marco inicial do art. 231, VII — library/cpc_prazos_recursais.md e library/cpc_prazos.md). O feriado municipal de Campinas de 08/12/2026 não foi computado (library/calendario_forense_campinas.md); sem ele a contestação venceria 14/12/2026. 15º dia útil = 15/12/2026 (terça-feira). Prazo em dobro NÃO se aplica: há litisconsórcio com procuradores diversos (fls. 61 — Ribeiro & Castanho; fls. 70 — Sampaio Advocacia), o que preenchia o art. 229, caput, mas o art. 229, § 2º, do CPC diz 'Não se aplica o disposto no caput aos processos em autos eletrônicos', e o processo é eletrônico (e-SAJ), conforme o cabeçalho de ambas as intimações. A hipótese dos 30 dias úteis (vencimento 05/02/2027) foi calculada apenas como controle e está rejeitada. Premissa sinalizada (não confirmável — o cliente não dispõe de certidão/AR de citação, resposta de 24/10/2026): a intimação da citação na pessoa do advogado (despacho de fls. 88) equipara-se à citação efetivada para o art. 231, VII, único inciso na biblioteca. Incógnitas U1-U5 sinalizadas em QUESTIONS.md e memoria.md § 9.1; 15/12/2026 é a data de trabalho segura (data anterior só adiantaria o vencimento; posterior, se houver certidão, o empurraria para mais tarde)."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "2026-12-21",
+      "2026-12-22",
+      "2026-12-23",
+      "2026-12-24",
+      "2026-12-25",
+      "2026-12-28",
+      "2026-12-29",
+      "2026-12-30",
+      "2026-12-31",
+      "2027-01-01",
+      "2027-01-04",
+      "2027-01-05",
+      "2027-01-06",
+      "2027-01-07",
+      "2027-01-08",
+      "2027-01-11",
+      "2027-01-12",
+      "2027-01-13",
+      "2027-01-14",
+      "2027-01-15",
+      "2027-01-18",
+      "2027-01-19",
+      "2027-01-20"
+    ]
+  }
+}

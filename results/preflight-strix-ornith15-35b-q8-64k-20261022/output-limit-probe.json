@@ -1,0 +1,30 @@
+{
+  "seconds": 7.139105144000496,
+  "requested_max_tokens": 8,
+  "response": {
+    "id": "chatcmpl-473",
+    "object": "chat.completion",
+    "created": 1792699426,
+    "model": "noncoding-ornith15-35b-q8-64k:20261022",
+    "system_fingerprint": "fp_ollama",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "reasoning": "The user wants me to list all integers"
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 31,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 8,
+      "total_tokens": 39
+    }
+  }
+}

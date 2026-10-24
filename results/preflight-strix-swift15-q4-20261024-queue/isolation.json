@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "Host paths absent; network denied: OSError(101, 'Network is unreachable')\n",
+  "stderr": "2026/10/24 06:49:18 socat[3] W exiting on signal 15\n"
+}

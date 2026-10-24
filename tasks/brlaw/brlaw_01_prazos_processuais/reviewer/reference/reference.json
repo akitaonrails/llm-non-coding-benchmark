@@ -1,0 +1,26 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "nota_publicacao": "20/11 é feriado nacional (Consciência Negra) → publicação só na segunda 23/11",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "contestacao_DOBRO_ERRADA": "2027-02-05",
+    "prazo_em_dobro": false,
+    "fundamento": "CPC 229 §2º — processo eletrônico"
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "apelacao_SEM_RECESSO_ERRADA": "2027-01-07",
+    "apelacao_CALENDARIO_CAPITAL_ERRADA": "2027-02-04",
+    "notas": [
+      "08/12 feriado municipal de Campinas",
+      "recesso 20/12–20/01 suspende",
+      "25/01 NÃO é feriado em Campinas (só na Capital)"
+    ]
+  }
+}

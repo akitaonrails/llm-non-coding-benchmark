@@ -1,0 +1,323 @@
+{
+  "wall_seconds": 1335.3914183370002,
+  "cases": [
+    {
+      "case": "usacc_03_household_1040",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 257.20246326899996,
+      "controller_wait_seconds": 37.00358690799999,
+      "model_turn_seconds": 220.18466692400034,
+      "turns": 4,
+      "released_facts": [
+        "convenience",
+        "fmv_rent",
+        "leo_8332"
+      ],
+      "usage": {
+        "input_tokens": 525483,
+        "cached_input_tokens": 497280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13662,
+        "reasoning_output_tokens": 4581
+      },
+      "api_equivalent_usd": 0.292482
+    },
+    {
+      "case": "usacc_02_close_gap",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 319.316333387,
+      "controller_wait_seconds": 40.004093983000075,
+      "model_turn_seconds": 279.2949544790001,
+      "turns": 4,
+      "released_facts": [
+        "cascade_dup",
+        "hardaway",
+        "mobile_4312",
+        "uchi",
+        "xfer_1500"
+      ],
+      "usage": {
+        "input_tokens": 582806,
+        "cached_input_tokens": 549248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16610,
+        "reasoning_output_tokens": 6069
+      },
+      "api_equivalent_usd": 0.34306559999999997
+    },
+    {
+      "case": "usacc_09_revenue_going_concern",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 353.916533135,
+      "controller_wait_seconds": 108.0394222570003,
+      "model_turn_seconds": 245.86030378600026,
+      "turns": 5,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 472349,
+        "cached_input_tokens": 436352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15466,
+        "reasoning_output_tokens": 4499
+      },
+      "api_equivalent_usd": 0.31392440000000005
+    },
+    {
+      "case": "usacc_06_sale_asset_vs_stock",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 409.0472273810001,
+      "controller_wait_seconds": 67.00709427400011,
+      "model_turn_seconds": 342.02420090199985,
+      "turns": 4,
+      "released_facts": [
+        "liabilities",
+        "noncompete_term",
+        "note_security"
+      ],
+      "usage": {
+        "input_tokens": 596220,
+        "cached_input_tokens": 559616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20537,
+        "reasoning_output_tokens": 8255
+      },
+      "api_equivalent_usd": 0.3905012
+    },
+    {
+      "case": "bracc_03_cbs_ibs_ano_teste",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 196.63573066699996,
+      "controller_wait_seconds": 22.0047920410002,
+      "model_turn_seconds": 174.6033657380001,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 428857,
+        "cached_input_tokens": 384256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11404,
+        "reasoning_output_tokens": 4025
+      },
+      "api_equivalent_usd": 0.2800932
+    },
+    {
+      "case": "bracc_01_das_fator_r",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 331.36369314800004,
+      "controller_wait_seconds": 59.013444916000026,
+      "model_turn_seconds": 272.33831300299994,
+      "turns": 3,
+      "released_facts": [
+        "prolabore_abril"
+      ],
+      "usage": {
+        "input_tokens": 532931,
+        "cached_input_tokens": 500224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18479,
+        "reasoning_output_tokens": 6107
+      },
+      "api_equivalent_usd": 0.35024879999999997
+    },
+    {
+      "case": "bracc_06_venda_quotas_vs_ativos",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 256.3531654090002,
+      "controller_wait_seconds": 32.00512004799998,
+      "model_turn_seconds": 224.33682477999992,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 366809,
+        "cached_input_tokens": 343040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14438,
+        "reasoning_output_tokens": 5052
+      },
+      "api_equivalent_usd": 0.260526
+    },
+    {
+      "case": "bracc_10_provisoes_covenant",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 315.37502187300015,
+      "controller_wait_seconds": 46.00647743499985,
+      "model_turn_seconds": 269.3514152829998,
+      "turns": 4,
+      "released_facts": [
+        "afac_delib",
+        "waiver"
+      ],
+      "usage": {
+        "input_tokens": 475507,
+        "cached_input_tokens": 444928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19157,
+        "reasoning_output_tokens": 4900
+      },
+      "api_equivalent_usd": 0.34171359999999995
+    },
+    {
+      "case": "uslaw_01_deadlines_removal",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 237.03430658899993,
+      "controller_wait_seconds": 58.00960168999973,
+      "model_turn_seconds": 179.0142817479998,
+      "turns": 4,
+      "released_facts": [
+        "appearance",
+        "member"
+      ],
+      "usage": {
+        "input_tokens": 356914,
+        "cached_input_tokens": 332160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11433,
+        "reasoning_output_tokens": 3773
+      },
+      "api_equivalent_usd": 0.23027
+    },
+    {
+      "case": "uslaw_03_noncompete_memo",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 254.91804578599977,
+      "controller_wait_seconds": 26.004006621999906,
+      "model_turn_seconds": 228.8903024239994,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 447121,
+        "cached_input_tokens": 416384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14918,
+        "reasoning_output_tokens": 4469
+      },
+      "api_equivalent_usd": 0.2939308
+    },
+    {
+      "case": "uslaw_09_retaliation_termination",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 207.48456461800015,
+      "controller_wait_seconds": 9.000914667000416,
+      "model_turn_seconds": 198.47850284200013,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 321304,
+        "cached_input_tokens": 297984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13552,
+        "reasoning_output_tokens": 3242
+      },
+      "api_equivalent_usd": 0.2417568
+    },
+    {
+      "case": "brlaw_01_prazos_processuais",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 194.22114790500018,
+      "controller_wait_seconds": 46.004356301999906,
+      "model_turn_seconds": 148.2114295209999,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 372285,
+        "cached_input_tokens": 350208,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8445,
+        "reasoning_output_tokens": 2276
+      },
+      "api_equivalent_usd": 0.1986456
+    },
+    {
+      "case": "brlaw_03_pejotizacao",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 234.46802358600007,
+      "controller_wait_seconds": 22.002149786000246,
+      "model_turn_seconds": 212.46098888799952,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 339704,
+        "cached_input_tokens": 316160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13240,
+        "reasoning_output_tokens": 4309
+      },
+      "api_equivalent_usd": 0.24272
+    },
+    {
+      "case": "brlaw_07_credor_rj",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 269.28315152999994,
+      "controller_wait_seconds": 64.00617014900035,
+      "model_turn_seconds": 205.27174046799973,
+      "turns": 4,
+      "released_facts": [
+        "banco"
+      ],
+      "usage": {
+        "input_tokens": 408795,
+        "cached_input_tokens": 370304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12366,
+        "reasoning_output_tokens": 3805
+      },
+      "api_equivalent_usd": 0.27470279999999997
+    },
+    {
+      "case": "brlaw_10_cobranca_prescrita",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 323.3671748510001,
+      "controller_wait_seconds": 59.005659308999384,
+      "model_turn_seconds": 264.3560599809998,
+      "turns": 4,
+      "released_facts": [
+        "greve"
+      ],
+      "usage": {
+        "input_tokens": 529638,
+        "cached_input_tokens": 498176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19316,
+        "reasoning_output_tokens": 4539
+      },
+      "api_equivalent_usd": 0.3557192
+    },
+    {
+      "case": "uslaw_04_litigation_sequence",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 725.1167867200002,
+      "controller_wait_seconds": 150.0148578899998,
+      "model_turn_seconds": 575.0826027049993,
+      "turns": 9,
+      "released_facts": [
+        "feb11",
+        "padded"
+      ],
+      "usage": {
+        "input_tokens": 2101257,
+        "cached_input_tokens": 2031232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 36730,
+        "reasoning_output_tokens": 8170
+      },
+      "api_equivalent_usd": 0.9135964
+    }
+  ],
+  "api_equivalent_usd": 5.3238964
+}

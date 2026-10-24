@@ -1,0 +1,21 @@
+{
+  "endpoint": "http://127.0.0.1:18081",
+  "selected_model": "qwen3.8-flash-next-iq3_s",
+  "agent_context_limit": 65536,
+  "agent_output_limit": 16384,
+  "reasoning": "provider default; no reasoning override",
+  "binary_sha256": "cf5841e6666aeb469abec8b39ca494cef07a637756454a34a742b2f4996e1675",
+  "runner_source_sha256": {
+    "run_local_baseline.py": "f1c1bb55577c12db774ca438da4a60fa89285675b14f729fd7db4563e57909c0",
+    "run_codex_baseline.py": "5d54ca6a5755c40281ef793c2c0454819fae92613cdef44194f682645b180c91"
+  },
+  "/api/version": {
+    "unavailable": "ConnectionResetError"
+  },
+  "/api/tags": {
+    "unavailable": "ConnectionResetError"
+  },
+  "/v1/models": {
+    "unavailable": "ConnectionResetError"
+  }
+}

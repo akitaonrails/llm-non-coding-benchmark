@@ -1,0 +1,5 @@
+The client has no further information, so I’ll finish using the supported conclusions and flag the Ironvale amounts as unknown. I’ll also show the revenue and cash flow arithmetic without estimating a lease value.
+
+The engagement is **complete with open items**. Supported Q4 revenue is **$850,000**, which is $650,000 below the bridge condition. The cash forecast supports a substantial-doubt disclosure. Ironvale contains an embedded lease, but the client supplied no basis to calculate its asset or liability; those amounts are marked unknown.
+
+Deliverables: [accounting memo](/work/workspace/deliverable/revenue_memo.md), [adjusted P&L JSON](/work/workspace/deliverable/q4_pl_adjusted.json), [CEO response](/work/workspace/deliverable/response_to_ceo.md), and [status and open items](/work/workspace/deliverable/STATUS.md).

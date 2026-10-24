@@ -1,0 +1,60 @@
+{
+  "lines": {
+    "1": "50750.00",
+    "7": "50750.00",
+    "9": "2562.00",
+    "10": "1199.15",
+    "15": "480.00",
+    "20b": "2800.00",
+    "24a": "1030.00",
+    "24b": "95.00",
+    "25": "1116.00",
+    "27a": "4058.88",
+    "28": "13341.03",
+    "31": "37408.97"
+  },
+  "schedule_se": {
+    "net_earnings": "34547.18",
+    "se_tax": "5285.72",
+    "deductible_half": "2642.86"
+  },
+  "not_on_schedule_c": [
+    {
+      "item": "BCBS health premiums May–Dec",
+      "amount": 3040,
+      "where": "Schedule 1 line 17 (SE health insurance)"
+    },
+    {
+      "item": "Tessaro deposit 2024-12-27",
+      "amount": 3000,
+      "where": "prior year"
+    },
+    {
+      "item": "estimated tax payments",
+      "amount": 6500,
+      "where": "Form 1040 payments"
+    }
+  ],
+  "naive_gross_trap": "81450.00",
+  "k_gross": "41350.00",
+  "k_net_deposits": "40150.85",
+  "total_miles": 4860,
+  "commute_miles": 1200,
+  "line_alternates": {
+    "20b": [
+      "18",
+      "20b"
+    ],
+    "27a_components_may_move": {
+      "laptop 2149": [
+        "13",
+        "22",
+        "27a"
+      ],
+      "conference registration 650": [
+        "24a",
+        "27a"
+      ]
+    }
+  }
+}

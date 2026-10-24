@@ -1,0 +1,14 @@
+[
+  {
+    "label": "probe",
+    "seconds": 18.995770508000078,
+    "returncode": 1,
+    "complete": false,
+    "usage": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0
+    },
+    "thread_id": "01a164ea-9217-7fb3-a6ff-b4ffa58ddcfc"
+  }
+]

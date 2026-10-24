@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "claim": "Breach of fiduciary duty (loyalty) — affiliate fees and dilution",
+      "survives_waiver": false,
+      "why": "§7.3 eliminates fiduciary duties to the fullest extent permitted; §18-1101(c) permits; pleading it invites dismissal and fee/credibility cost; pushback wants it anyway"
+    },
+    {
+      "claim": "Breach of express contract — §5.4 (arm's-length terms; 30-day written disclosure of affiliate transactions)",
+      "theory": "express_contract",
+      "direct_or_derivative": "derivative as to excess fees (company harmed); direct as to the disclosure right",
+      "survives_waiver": true,
+      "limitations": {
+        "accrual": "each annual fee payment",
+        "barred_portion": "375000",
+        "within": "675000",
+        "tolling_argument": "fraudulent/contractual concealment — §5.4 disclosure never made; one-page summaries concealed; client learned 2026 → tolling for 2022–2023 fees is arguable but not assured"
+      },
+      "strength": "medium-high",
+      "remedy": "disgorgement of excess over market; derivative demand futility (sole interested manager)"
+    },
+    {
+      "claim": "Breach of express contract — §6.3 capital call defective",
+      "theory": "express_contract",
+      "direct_or_derivative": "direct",
+      "survives_waiver": true,
+      "limitations": {
+        "accrual": "2026",
+        "barred_portion": 0
+      },
+      "strength": "high",
+      "remedy": "declaration that no Dilution Event occurred (notice not by certified mail/email; 'working capital and opportunities' arguably not a bona fide stated purpose); restoration to 18%; §9.2 buyout right not triggered"
+    },
+    {
+      "claim": "Implied covenant — bad-faith exercise of discretion (fair-value determination of $7.2M vs $14.5M broker indication; call sized and timed to dilute)",
+      "theory": "implied_covenant",
+      "direct_or_derivative": "direct",
+      "survives_waiver": true,
+      "strength": "medium",
+      "remedy": "invalidation of dilution/valuation"
+    }
+  ],
+  "valuation_gap": {
+    "book_value_offer": 189100,
+    "independent_indication_18pct": 1764000,
+    "independent_indication_6_1pct": 597800,
+    "dilution_valid": false,
+    "why": "§6.3 notice mechanics not followed (text only; no certified mail; email bounced); purpose vague; Manager's 'fair value' $7.2M vs independent $9.8M equity → implied-covenant challenge"
+  },
+  "strategy": "Do not accept $189,100. Send a demand/§6.3 notice-defect letter before Oct 31 reserving rights; books-and-records (§18-305) to complete the fee record; file in Chancery: (1) declaratory relief on the capital call/dilution (direct, strong, cheap to plead); (2) §5.4 contract claim for fee disgorgement (derivative, futility pleaded), with tolling argued for 2022–23; (3) implied covenant as to the valuation. Do NOT plead fiduciary duty. Funding: contingency/litigation funding or a negotiated exit at a number anchored on the $1.76M indication; a negotiated buyout above book is a realistic outcome given limitations and litigation cost.",
+  "pushback": "pleading a waived claim 'to scare him' risks dismissal and undermines the strong contract claims; Delaware enforces §18-1101(c)"
+}

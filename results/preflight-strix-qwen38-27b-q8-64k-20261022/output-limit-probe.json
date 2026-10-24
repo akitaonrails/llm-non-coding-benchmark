@@ -1,0 +1,30 @@
+{
+  "seconds": 7.523048291000123,
+  "requested_max_tokens": 8,
+  "response": {
+    "id": "chatcmpl-548",
+    "object": "chat.completion",
+    "created": 1792699178,
+    "model": "noncoding-qwen38-27b-q8-64k:20261022",
+    "system_fingerprint": "fp_ollama",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "reasoning": "We need to respond to user: \""
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 73,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 8,
+      "total_tokens": 81
+    }
+  }
+}

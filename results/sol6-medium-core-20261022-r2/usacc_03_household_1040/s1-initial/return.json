@@ -1,0 +1,45 @@
+{
+  "form1040": {
+    "1a_wages": 122000,
+    "2b_interest": 400,
+    "8_other_income_sch1": -31050,
+    "11_agi": 91350,
+    "12_deduction": 31500,
+    "15_taxable_income": 59850,
+    "16_tax": 6702,
+    "19_ctc": 2200,
+    "17_sch2_excess_aptc": 1900,
+    "24_total_tax": 6402,
+    "25d_withholding": 8730,
+    "34_refund_or_37_owed": 2328
+  },
+  "form7203": {
+    "stock_basis_begin": 11500,
+    "loss_allowed": 11500,
+    "loss_suspended": 16500
+  },
+  "form8582": {
+    "rental_loss": -21018,
+    "magi": 110900,
+    "special_allowance": 19550,
+    "loss_allowed": 19550,
+    "carryforward": 1468
+  },
+  "form8962": {
+    "household_income": 91350,
+    "fpl_pct": 292.78846,
+    "applicable_figure_pct": 5.71154,
+    "annual_ptc": 7531,
+    "aptc": 9900,
+    "excess": 2369,
+    "repayment_limitation": 1900,
+    "repayment": 1900
+  },
+  "dependents": ["Sofia"],
+  "ny": {
+    "resident_days": 181,
+    "marcus_ny_wages": 68000,
+    "elena_ny_wages": 54000,
+    "method": "Resident January 1–June 30 (181 days); after the move, both employees worked remotely from Florida for their own convenience for New York employers. All reported wages are allocated to New York under the convenience-of-the-employer rule."
+  }
+}

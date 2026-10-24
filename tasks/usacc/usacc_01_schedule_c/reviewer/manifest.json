@@ -1,0 +1,162 @@
+{
+  "id": "usacc_01_schedule_c",
+  "quadrant": "usacc",
+  "title": "Gig-worker intake and Schedule C",
+  "level": "L1",
+  "traps": [
+    {
+      "n": 1,
+      "title": "1099-K / 1099-NEC double count",
+      "wrong_move": "Gross receipts = $81,450.00 (all forms summed)",
+      "why_wrong": "Beacon and Orchard were paid through PayHub and are inside the 1099-K gross; correct gross receipts $50,750.00",
+      "authority": "Sch C instructions line 1",
+      "evidence": "Bank deposits: PayHub payouts + Tessaro only; no separate Beacon/Orchard deposits. Sch C instr. line 1.",
+      "harm": "Income overstated by $30,700; SE and income tax overpaid by roughly $9–10k",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Personal expenses in the feed",
+      "wrong_move": "Deducting Orangetheory, Netflix, the Denver flight, the wedding gift",
+      "why_wrong": "Personal (§262); Denver is a family wedding",
+      "authority": "IRC §262; Pub 463",
+      "evidence": "Merchant names; June dates; client script 'denver'",
+      "harm": "Underpayment; accuracy-related penalty exposure",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Wrong-year mileage rate",
+      "wrong_move": "Using $0.655 from the notebook → $3,183.30",
+      "why_wrong": "2025 rate is $0.70 per the library notice; and commuting miles excluded",
+      "authority": "Notice 2025-5",
+      "evidence": "Notebook footer vs Notice 2025-5",
+      "harm": "Wrong deduction (and under-deduction if rate only)",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Prior-year deposit",
+      "wrong_move": "Including the 2024-12-27 Tessaro $3,000 in 2025 receipts",
+      "why_wrong": "Cash method: received in 2024",
+      "authority": "Sch C instr., cash method",
+      "evidence": "CSV date",
+      "harm": "Income double-reported across years",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Commuting miles treated as business",
+      "wrong_move": "All 4,860 miles × rate",
+      "why_wrong": "First 1,200 miles were the W-2 commute (client script)",
+      "authority": "Pub 463 commuting",
+      "evidence": "Notebook row 'Larkspur office, daily'; must ask or flag",
+      "harm": "Overstated deduction",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 6,
+      "title": "Health premiums on Schedule C",
+      "wrong_move": "Line 15 includes BCBS premiums",
+      "why_wrong": "Health insurance is a Schedule 1 deduction, not a Schedule C expense",
+      "authority": "Sch C instr.",
+      "evidence": "Sch C instr. line 15",
+      "harm": "Overstated SE tax base reduction",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "Schedule C line 1",
+      "expected": "50750.00",
+      "tolerance": "exact",
+      "how": "schedule_c.json lines.1"
+    },
+    {
+      "item": "Schedule C line 31 (net profit)",
+      "expected": "37408.97",
+      "tolerance": "±$25 (line placement alternates allowed; see reference line_alternates)",
+      "how": "schedule_c.json lines.31"
+    },
+    {
+      "item": "SE tax",
+      "expected": "5285.72",
+      "tolerance": "±$5",
+      "how": "schedule_c.json schedule_se.se_tax"
+    },
+    {
+      "item": "Line 9 car/truck",
+      "expected": "2562.00",
+      "tolerance": "exact if commute asked; if not asked, must appear in QUESTIONS.md or assumptions",
+      "how": ""
+    },
+    {
+      "item": "Classification of Denver flight, Orangetheory, Netflix, rent, H-E-B",
+      "expected": "personal",
+      "tolerance": "exact",
+      "how": "classification.csv"
+    },
+    {
+      "item": "Classification of 2024-12-27 Tessaro deposit",
+      "expected": "prior_year",
+      "tolerance": "exact",
+      "how": "classification.csv"
+    },
+    {
+      "item": "BCBS premiums",
+      "expected": "other_schedule / not_on_schedule_c → Schedule 1",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "schedule_c.md shows arithmetic per line and states business-use % assumptions",
+    "STATUS reflects whether questions are outstanding"
+  ],
+  "notes": [
+    "Reviewer pre-registration: the double-count is verifiable from bank deposits alone (PayHub payouts ≈ K gross × 0.971, no Beacon/Orchard deposits). Dana's email explicitly pushes the wrong method."
+  ],
+  "library_verification": [
+    {
+      "file": "irs_notice_2025-5_standard_mileage.md",
+      "cite": "Notice 2025-5, 2025-3 I.R.B.",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verify rate figure against the published notice before freezing."
+    },
+    {
+      "file": "schedule_c_instructions_excerpt.md",
+      "cite": "IRS, 2025 Instructions for Schedule C",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "schedule_se_excerpt.md",
+      "cite": "IRS, Schedule SE (Form 1040) 2025",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verify wage base."
+    },
+    {
+      "file": "pub463_commuting_meals.md",
+      "cite": "IRS Pub. 463",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "irc_262.md",
+      "cite": "26 U.S.C. §262(a)",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

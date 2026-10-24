@@ -1,0 +1,46 @@
+{
+  "seconds": 1.039488316004281,
+  "requested_max_tokens": 8,
+  "response": {
+    "id": "chatcmpl-85e9a9abe9687abc",
+    "object": "chat.completion",
+    "created": 1792802955,
+    "model": "thinkingcap-3.8-27b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": "We need answer user: \"List the"
+        },
+        "logprobs": null,
+        "finish_reason": "length",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.32.0-bbf6bfc6",
+    "usage": {
+      "prompt_tokens": 73,
+      "total_tokens": 81,
+      "completion_tokens": 8,
+      "prompt_tokens_details": null,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8
+      }
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  }
+}

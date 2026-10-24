@@ -1,0 +1,44 @@
+{
+  "hard_rule_issues": [
+    {
+      "clause": "§9.1 + §10.1",
+      "rule": "A1",
+      "issue": "§9.1 cap applies 'notwithstanding anything to the contrary' and §9.3 carves out only gross negligence/willful misconduct/fraud/payment — NOT the §10.1 IP indemnity. §10.1's 'uncapped' language is overridden by §9.1. The indemnity is effectively capped at 12 months' fees ($222,000).",
+      "redline": "Add to §9.3: '…or to Provider's obligations under Section 10.1 (IP Indemnification), which shall not be subject to the limitations in Section 9.1 or 9.2.'"
+    },
+    {
+      "clause": "§5.3 / Exhibit C",
+      "rule": "A2",
+      "issue": "DPA 'to be attached' — no Art. 28 contract at signing while EU driver/customer data flows from day one.",
+      "redline": "Attach executed DPA (incl. SCCs) as Exhibit C as a condition of effectiveness; add 'The DPA is incorporated and executed concurrently with this Agreement.'"
+    },
+    {
+      "clause": "Order Form §4 (+ MSA §14.1 precedence)",
+      "rule": "A3",
+      "issue": "Unilateral mid-term increase up to greater of 8% or CPI on 60 days' notice, hidden in the order form, which controls over the MSA.",
+      "redline": "Delete mid-term increase; renewal increases ≤ lesser of 5% or CPI with 90 days' notice."
+    },
+    {
+      "clause": "§3.3",
+      "rule": "A4",
+      "issue": "24-month auto-renewal with 90-day notice window.",
+      "redline": "12-month renewals; non-renewal notice 30 days."
+    },
+    {
+      "clause": "§2.2",
+      "rule": "A5",
+      "issue": "Affiliates excluded unless paid for separately.",
+      "redline": "License extends to Customer and its Affiliates at no additional fee; Holdings signs for affiliates."
+    }
+  ],
+  "false_positives": [
+    "§9.3 carve-out (playbook B1 — preferred position)",
+    "§13 Delaware law / jury waiver (B3 acceptable)",
+    "§8.1 15-day suspension notice (B4 acceptable)",
+    "§12.2 30-day export (B2 acceptable)"
+  ],
+  "notes_ok_to_mention": [
+    "SLA chronic-failure termination right (B5) — preferred, not hard",
+    "§5.4 aggregated data — negotiate definition"
+  ]
+}

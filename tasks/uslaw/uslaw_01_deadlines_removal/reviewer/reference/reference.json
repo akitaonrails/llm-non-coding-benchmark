@@ -1,0 +1,22 @@
+{
+  "service_date": "2026-09-11",
+  "service_method": "personal service on registered agent (Rule 4 / CR 4) — no 3-day mail extension",
+  "state_court_answer_due": "2026-10-01",
+  "state_court_answer_WRONG_plus3": "2026-10-05",
+  "removal_deadline_30d": "2026-10-13",
+  "removal_raw_day30": "2026-10-11",
+  "removal_WRONG_state_calendar": "2026-10-12",
+  "removal_available": false,
+  "removal_reason": "LLC citizenship = members' citizenship (Johnson; Carden): member Caleb Sorensen is a Washington citizen; plaintiff is a Washington corporation → no complete diversity under §1332(a)(1). Amount in controversy ($129,156 + fees) would otherwise suffice. Forum-defendant rule §1441(b)(2) would independently bar removal because a defendant (the LLC, via its WA member) is a citizen of the forum.",
+  "if_removed_hypothetical": {
+    "answer_due_after_removal": "2026-10-20",
+    "scheduling_order_due_by": "2026-12-10",
+    "rule_26f_conference_by": "2026-11-19"
+  },
+  "this_week": [
+    "file notice of appearance in King County immediately (entitles to notice before default, CR 55(a)(3))",
+    "serve answer with affirmative defenses and setoff/counterclaim by Thursday Oct 01",
+    "preserve photos/emails on short deliveries",
+    "do not file a notice of removal; if filed, remand with fee exposure under §1447(c)"
+  ]
+}

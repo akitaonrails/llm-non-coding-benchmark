@@ -1,0 +1,46 @@
+{
+  "findings": [
+    {
+      "issue": "Hensley MSA §18 anti-assignment incl. sale of assets/change of control, sole-discretion consent",
+      "deal_impact": "consent",
+      "fix": "Schedule 3.3 must list Hensley (and the landlord, §22; permit reapplication); make consent a closing condition or price adjustment; approach Hensley early"
+    },
+    {
+      "issue": "9 'independent installers' are employees under the control test; FLSA overtime exposure (45–50 hrs, straight time); payroll-tax exposure",
+      "deal_impact": "indemnity/price",
+      "fix": "disclose on a schedule as an exception to §4.12; special indemnity with a sized cap and escrow; do not give a clean classification rep"
+    },
+    {
+      "issue": "§7.4(c) pro-sandbagging + clean §4.12 + §4.12 carved out to a full-price cap = seller indemnifies a disclosed issue up to the whole price",
+      "deal_impact": "indemnity",
+      "fix": "anti-sandbagging or disclosure-schedule exception; §4.12 under the general 10% cap or a special indemnity capped at a sized amount"
+    },
+    {
+      "issue": "§7.4(a) deductible basket is fine; but survival for §4.12 'SOL + 60 days' is long",
+      "deal_impact": "indemnity",
+      "fix": "18–24 months"
+    },
+    {
+      "issue": "§2.4 earn-out: 'EBITDA as determined by Buyer under Buyer's policies'",
+      "deal_impact": "price",
+      "fix": "seller's historical accounting principles, exclude buyer overhead/integration/transaction costs, ordinary-course covenant, audit and dispute mechanism, acceleration on sale"
+    },
+    {
+      "issue": "§8.2 non-compete 7 yrs / 500 miles",
+      "deal_impact": "none for seller (retiring) but reformation risk/allocation",
+      "fix": "3–5 yrs, trade area; coordinate with the tax allocation"
+    },
+    {
+      "issue": "Spray-booth permit non-transferable; lease consent",
+      "deal_impact": "timing",
+      "fix": "closing timeline; interim operating arrangement"
+    },
+    {
+      "issue": "WARN",
+      "deal_impact": "none",
+      "fix": "confirm: 14 employees → not a covered employer; no notices (do NOT demand them)"
+    }
+  ],
+  "false_positive": "WARN — the model should answer 'not applicable', not insist on notices",
+  "reply_to_buyer": "Schedule 3.3 is not 'None': Hensley consent (and landlord); 7.4(c) rejected as to disclosed matters; 4.12 to be qualified by schedule or replaced by a special indemnity"
+}

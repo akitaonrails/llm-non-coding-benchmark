@@ -1,0 +1,154 @@
+{
+  "id": "uslaw_05_divorce_split_support",
+  "quadrant": "uslaw",
+  "title": "Divorce: after-tax property division, undisclosed income and child support",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Nominal equality",
+      "wrong_move": "Accepting $770,000.00 vs $770,000.00 as fair",
+      "why_wrong": "After tax and selling costs the wife's side ≈ $613,008.00 vs husband ≈ $662,000.00; plus the house is illiquid, carries a $400k mortgage she may not refinance, and a forced sale as a single owner halves the §121 exclusion; pushback 'biggest asset' is the trap",
+      "authority": "§1041; §121; Col. §113(1)(d)",
+      "evidence": "Asset schedule (basis); client script (refinance); library §121/§1041",
+      "harm": "Client materially poorer; forced sale",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Undisclosed bonus",
+      "wrong_move": "Support on salary $168,000.00",
+      "why_wrong": "HR letter + YTD stub show a $45,000.00 bonus; affidavit false → support $2,279.47 vs $2,135.00; sanction/reopening leverage",
+      "authority": "Guidelines; Rule 16.2(e)",
+      "evidence": "Discovery documents",
+      "harm": "Under-support for years",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Alimony tax treatment",
+      "wrong_move": "Accepting 'deductible to husband, taxable to wife'",
+      "why_wrong": "Post-2018: neither",
+      "authority": "TCJA §11051",
+      "evidence": "Library",
+      "harm": "Wife over-reports income / undervalues",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "401(k) without QDRO",
+      "wrong_move": "Any 401(k) share without a QDRO",
+      "why_wrong": "Taxable to participant + 10% penalty; QDRO exempts alternate payee",
+      "authority": "§414(p); §72(t)(2)(C)",
+      "evidence": "Library",
+      "harm": "Penalty/tax leak",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Dependents / HOH",
+      "wrong_move": "Letting husband 'claim both children' without analysis",
+      "why_wrong": "Custodial parent keeps HOH/EITC; only CTC moves via 8332",
+      "authority": "§152(e)",
+      "evidence": "Library; script (255 nights)",
+      "harm": "Wife loses HOH",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 6,
+      "title": "§121 timing",
+      "wrong_move": "Not noticing a pre-decree joint sale doubles the exclusion",
+      "why_wrong": "$500k joint vs $250k single",
+      "authority": "§121",
+      "evidence": "Library §121(b)",
+      "harm": "Avoidable tax",
+      "severity": "M",
+      "reviewer_confidence": "medium"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "undisclosed_income.found = true, amount ≈ 45,000",
+      "expected": "true",
+      "tolerance": "±5,000",
+      "how": "division.json"
+    },
+    {
+      "item": "child_support.husband_share_monthly",
+      "expected": "2279.47",
+      "tolerance": "±$50 (with bonus; without maintenance adjustment) — if maintenance adjustment applied, accept recomputed figure with stated method",
+      "how": ""
+    },
+    {
+      "item": "proposal_after_tax.wife < proposal_after_tax.husband",
+      "expected": "true",
+      "tolerance": "exact (magnitude ±15%)",
+      "how": ""
+    },
+    {
+      "item": "maintenance_tax_treatment = not deductible / not taxable",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "QDRO listed in instruments",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "advice.md addresses affordability/refinance and the pre-decree sale option"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "irc_1041_121_71.md",
+      "cite": "26 U.S.C. §1041; §121(b)(1), (d)(3); TCJA §11051 (P.L. 115-97)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "qdro_72t.md",
+      "cite": "26 U.S.C. §414(p); §72(t)(2)(C); ERISA §206(d)(3)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "filing_status_dependents.md",
+      "cite": "IRC §§2(b), 7703(a), 152(e); Form 8332",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "columbia_child_support_guidelines.md",
+      "cite": "Col. Rev. Stat. §14-10-115 (fictional); Worksheet A",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "columbia_equitable_distribution.md",
+      "cite": "Col. Rev. Stat. §14-10-113 (fictional); Col. R. Fam. P. 16.2",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "tax_rates_assumed.md",
+      "cite": "IRC §1(h); §1411; engagement convention",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

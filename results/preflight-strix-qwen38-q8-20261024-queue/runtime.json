@@ -1,0 +1,22 @@
+[
+  {
+    "name": "noncoding-qwen38-27b-q8-64k:20261022",
+    "model": "noncoding-qwen38-27b-q8-64k:20261022",
+    "size": 30373366988,
+    "digest": "f76d435d22ecdc376e3162556e9c88f89f004fe377742dadf3347512a47523c0",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "27.3B",
+      "quantization_level": "unknown"
+    },
+    "expires_at": "2026-10-24T05:08:26.514708741Z",
+    "size_vram": 30373366988,
+    "context_length": 65536,
+    "runner": "llamacpp"
+  }
+]

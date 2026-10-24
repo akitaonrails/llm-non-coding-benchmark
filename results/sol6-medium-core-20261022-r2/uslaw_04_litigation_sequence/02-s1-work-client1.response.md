@@ -1,0 +1,5 @@
+I’ll incorporate Marcus’s account and the $3,100 June billing correction, check for the next opposing counsel document, and update the deliverables for this session. I’ll flag the facts the client still cannot verify.
+
+I updated the [Session 1 assessment](/work/workspace/deliverable/session1/assessment.md) and [demand letter](/work/workspace/deliverable/session1/demand_letter.md). They acknowledge Marcus’s waiver of Rosa and Tay only and credit approximately $3,100 for the double-entered June shifts. The provisional contract claim is now **approximately $416,900**, with the arithmetic and remaining unknowns stated in the files.
+
+The client has no further information, so I closed the questions file and recorded the proof gaps in [STATUS.md](/work/workspace/deliverable/STATUS.md). No opposing counsel response is in `documents/session2/` yet; a Session 2 reply would require that response.

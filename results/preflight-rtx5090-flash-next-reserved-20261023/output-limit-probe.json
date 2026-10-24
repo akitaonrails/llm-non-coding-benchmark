@@ -1,0 +1,42 @@
+{
+  "seconds": 1.6929383159949793,
+  "requested_max_tokens": 8,
+  "response": {
+    "id": "chatcmpl-f6a473365cb64577a3791a28",
+    "object": "chat.completion",
+    "created": 1792732187,
+    "model": "qwen3.8-flash-next-iq3_s",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "reasoning_content": "We need to answer user: \"List"
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 73,
+      "completion_tokens": 8,
+      "total_tokens": 81,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 73,
+      "prompt_ms": 370.8,
+      "prompt_per_token_ms": 5.079,
+      "prompt_per_second": 196.9,
+      "predicted_n": 8,
+      "predicted_ms": 70.3,
+      "predicted_per_token_ms": 8.787,
+      "predicted_per_second": 113.8,
+      "draft_n": 6,
+      "draft_n_accepted": 4
+    }
+  }
+}

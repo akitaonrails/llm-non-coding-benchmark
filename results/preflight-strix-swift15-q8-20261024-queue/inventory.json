@@ -1,0 +1,182 @@
+{
+  "endpoint": "http://192.168.0.90:11434",
+  "ssh_host": null,
+  "selected_model": "noncoding-swift15-27b-q8-64k:20261022",
+  "hardware": "Strix Halo; Q8_0; Ollama 0.40.10",
+  "agent_context_limit": 65536,
+  "agent_output_limit": 16384,
+  "reasoning": "provider default; no reasoning override",
+  "binary_sha256": "cf5841e6666aeb469abec8b39ca494cef07a637756454a34a742b2f4996e1675",
+  "runner_source_sha256": {
+    "run_local_baseline.py": "af0cdc11f5384d7029750438fc3d43ed0f6cd973304e177fb7811643417e0dd5",
+    "run_codex_baseline.py": "5d54ca6a5755c40281ef793c2c0454819fae92613cdef44194f682645b180c91"
+  },
+  "/api/version": {
+    "version": "0.40.10"
+  },
+  "/api/tags": [
+    {
+      "name": "noncoding-swift15-27b-q8-64k:20261022",
+      "model": "noncoding-swift15-27b-q8-64k:20261022",
+      "modified_at": "2026-10-22T19:48:30.631912719Z",
+      "size": 29974704771,
+      "digest": "579322b6f46a7ddaf8bc7ee5593488ce458ba71bb1ae9c0bc6614c3b3559d025",
+      "details": {
+        "parent_model": "hf.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF:Q8_0",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "27.3B",
+        "quantization_level": "Q8_0",
+        "context_length": 262144,
+        "embedding_length": 5120,
+        "runner": "llamacpp"
+      },
+      "capabilities": [
+        "tools",
+        "thinking",
+        "completion",
+        "vision"
+      ]
+    }
+  ],
+  "/v1/models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "noncoding-muse-glimmer-30b-q8-64k-atem:20261022",
+        "object": "model",
+        "created": 1792699493,
+        "owned_by": "library"
+      },
+      {
+        "id": "noncoding-muse-glimmer-30b-q8-64k:20261022",
+        "object": "model",
+        "created": 1792698706,
+        "owned_by": "library"
+      },
+      {
+        "id": "hf.co/ggml-org/Muse-Glimmer-30B-GGUF:Q8_0",
+        "object": "model",
+        "created": 1792698685,
+        "owned_by": "ggml-org"
+      },
+      {
+        "id": "noncoding-ornith15-35b-q8-64k:20261022",
+        "object": "model",
+        "created": 1792698511,
+        "owned_by": "library"
+      },
+      {
+        "id": "noncoding-thinkingcap38-27b-q4-64k:20261022",
+        "object": "model",
+        "created": 1792698510,
+        "owned_by": "library"
+      },
+      {
+        "id": "noncoding-swift15-27b-q8-64k:20261022",
+        "object": "model",
+        "created": 1792698510,
+        "owned_by": "library"
+      },
+      {
+        "id": "noncoding-swift15-27b-q4-64k:20261022",
+        "object": "model",
+        "created": 1792698510,
+        "owned_by": "library"
+      },
+      {
+        "id": "noncoding-qwen38-27b-q8-64k:20261022",
+        "object": "model",
+        "created": 1792698509,
+        "owned_by": "library"
+      },
+      {
+        "id": "noncoding-qwen38-27b-q4-64k:20261022",
+        "object": "model",
+        "created": 1792698509,
+        "owned_by": "library"
+      },
+      {
+        "id": "hf.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF:Q8_0",
+        "object": "model",
+        "created": 1792698430,
+        "owned_by": "ornith-ai"
+      },
+      {
+        "id": "hf.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF:Q8_0",
+        "object": "model",
+        "created": 1792698368,
+        "owned_by": "ukisai"
+      },
+      {
+        "id": "thinkingcap38-27b-strix-q4:latest",
+        "object": "model",
+        "created": 1792452497,
+        "owned_by": "library"
+      },
+      {
+        "id": "swift15-27b-strix-q4:latest",
+        "object": "model",
+        "created": 1792452497,
+        "owned_by": "library"
+      },
+      {
+        "id": "qwen38-27b-strix-q8:latest",
+        "object": "model",
+        "created": 1792452497,
+        "owned_by": "library"
+      },
+      {
+        "id": "qwen38-27b-strix-q4:latest",
+        "object": "model",
+        "created": 1792452497,
+        "owned_by": "library"
+      },
+      {
+        "id": "hf.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF:Q4_K_M",
+        "object": "model",
+        "created": 1792452363,
+        "owned_by": "bottlecapai"
+      },
+      {
+        "id": "hf.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF:Q4_K_M",
+        "object": "model",
+        "created": 1792452086,
+        "owned_by": "ukisai"
+      },
+      {
+        "id": "hf.co/unsloth/Qwen3.8-27B-GGUF:UD-Q4_K_M",
+        "object": "model",
+        "created": 1792451824,
+        "owned_by": "unsloth"
+      },
+      {
+        "id": "hf.co/unsloth/Qwen3.8-27B-GGUF:Q8_0",
+        "object": "model",
+        "created": 1792433589,
+        "owned_by": "unsloth"
+      },
+      {
+        "id": "qwen3:14b",
+        "object": "model",
+        "created": 1791597596,
+        "owned_by": "library"
+      },
+      {
+        "id": "qwen3:32b",
+        "object": "model",
+        "created": 1779474492,
+        "owned_by": "library"
+      },
+      {
+        "id": "nomic-embed-text:latest",
+        "object": "model",
+        "created": 1779474201,
+        "owned_by": "library"
+      }
+    ]
+  }
+}

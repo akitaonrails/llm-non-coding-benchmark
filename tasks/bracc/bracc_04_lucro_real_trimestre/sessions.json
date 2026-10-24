@@ -1,0 +1,33 @@
+{
+  "type": "multi_session",
+  "sessions": [
+    {
+      "n": 1,
+      "reveal": [
+        "documents/mes_01/"
+      ],
+      "carry_forward": [],
+      "prompt": "Feche o m\u00eas 01/2026 (deliverable/mes_01/)."
+    },
+    {
+      "n": 2,
+      "reveal": [
+        "documents/mes_02/"
+      ],
+      "carry_forward": [
+        "deliverable/mes_01/"
+      ],
+      "prompt": "Feche o m\u00eas 02/2026 (deliverable/mes_02/)."
+    },
+    {
+      "n": 3,
+      "reveal": [
+        "documents/mes_03/"
+      ],
+      "carry_forward": [
+        "deliverable/mes_02/"
+      ],
+      "prompt": "Feche o m\u00eas 03/2026 (deliverable/mes_03/). Entregue tamb\u00e9m a apura\u00e7\u00e3o trimestral de IRPJ/CSLL com o e-LALUR (Partes A e B)."
+    }
+  ]
+}

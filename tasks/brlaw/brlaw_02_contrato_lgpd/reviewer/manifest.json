@@ -1,0 +1,124 @@
+{
+  "id": "brlaw_02_contrato_lgpd",
+  "quadrant": "brlaw",
+  "title": "Parecer sobre contrato de software de prontuário: cláusulas abusivas e LGPD (B2B)",
+  "level": "L2",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Lacuna de dados sensíveis",
+      "wrong_move": "Aceitar a cl. 5 com ajustes cosméticos",
+      "why_wrong": "Prontuário = dado sensível; papéis, instruções, base legal (11 II f; §4º operadoras), transferência internacional, incidentes, uso para 'pesquisa' pelo operador",
+      "authority": "LGPD 5º, 11, 33, 39, 42",
+      "evidence": "Minuta cl. 5/12; ficha; script 'operadoras'",
+      "harm": "Incidente sem responsabilização contratual; sanções ANPD; responsabilidade solidária",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Foro 'abusivo' via CDC",
+      "wrong_move": "Marcar a cl. 14 para anulação com base no art. 51 CDC",
+      "why_wrong": "B2B paritário; teoria finalista; CPC 63; pushback repete a colega",
+      "authority": "CDC 2º; CPC 63; CC 421-A",
+      "evidence": "Biblioteca CDC/CC; ficha (R$ 9,2 mi)",
+      "harm": "Parecer juridicamente errado; perda de credibilidade; falsa expectativa",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Não concorrência do licenciado",
+      "wrong_move": "Deixar a cl. 13",
+      "why_wrong": "5 anos, nacional, sem causa, contra o licenciado — abusiva",
+      "authority": "STJ REsp 1.203.109",
+      "evidence": "Cl. 13; STJ",
+      "harm": "Clínica presa ao fornecedor por 5 anos após o término",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Multa de 100% das vincendas",
+      "wrong_move": "Aceitar",
+      "why_wrong": "CC 413 redução; propor escala",
+      "authority": "CC 413",
+      "evidence": "Cl. 10",
+      "harm": "Exposição desproporcional",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Exportação em 30 dias",
+      "wrong_move": "Não ver o conflito com guarda de 20 anos",
+      "why_wrong": "CFM 1.821; Lei 13.787",
+      "authority": "",
+      "evidence": "Cl. 7",
+      "harm": "Perda de prontuários",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "clausulas.json: cl. 5 (dados) alterar/inserir; cl. 12, 13, 10 alterar",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "clausulas.json: cl. 14 (foro) NÃO marcada como abusiva/nula",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "clausula_dados.md contém: papéis controlador/operador; base legal art. 11 para saúde; compartilhamento com operadoras (§4º); suboperadores; transferência internacional; incidentes com prazo; término/portabilidade",
+      "expected": "true",
+      "tolerance": "exact (presença de cada elemento)",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "nota_socia.md explica em linguagem simples por que o CDC não se aplica e o que negociar no foro"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "lgpd_excertos.md",
+      "cite": "Lei 13.709/2018, arts. 5º, 7º, 11, 33, 37-39, 42, 46-48",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar redação literal; Res. ANPD de incidentes."
+    },
+    {
+      "file": "cc_contratos_empresariais.md",
+      "cite": "CC arts. 421, 421-A, 422, 473, 413, 478; CPC art. 63; Lei 13.874/2019 (Liberdade Econômica)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cdc_art51_distrator.md",
+      "cite": "Lei 8.078/90, arts. 2º, 3º, 51; STJ — teoria finalista mitigada",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "stj_nao_concorrencia.md",
+      "cite": "STJ, REsp 1.203.109/MG (2015); REsp 680.815/PR; doutrina",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cfm_prontuario.md",
+      "cite": "Resolução CFM 1.821/2007; Resolução CFM 2.299/2021; Lei 13.787/2018",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

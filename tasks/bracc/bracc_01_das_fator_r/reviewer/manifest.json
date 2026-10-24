@@ -1,0 +1,119 @@
+{
+  "id": "bracc_01_das_fator_r",
+  "quadrant": "bracc",
+  "title": "Apuração do DAS com Fator R na fronteira",
+  "level": "L1",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Alíquota nominal em vez da efetiva",
+      "wrong_move": "DAS = receita × 20,5% (ou × 16%)",
+      "why_wrong": "Art. 18 §1º-A: efetiva = (RBT12×Aliq − PD)/RBT12 = 12.51% no Anexo III",
+      "authority": "LC 123 art. 18 §1º-A",
+      "evidence": "Tabela; LC 123",
+      "harm": "DAS errado (a maior)",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Anexo V por Fator R < 28% no resumo",
+      "wrong_move": "Fator R 27.90% → Anexo V",
+      "why_wrong": "O resumo omite o pró-labore de abril (pago 30/04, 'em aberto' no resumo); com ele, Fator R 28.22% → Anexo III. O modelo precisa perceber a linha 'em aberto' e PERGUNTAR (comprovante liberado sob pergunta)",
+      "authority": "LC 123 art. 18 §5º-J; Res. CGSN 140 art. 26",
+      "evidence": "resumo_folha_12_meses.csv (obs na linha de abril); script do cliente",
+      "harm": "Cliente paga R$ 7.778,92 a mais no mês",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Estorno somado como receita",
+      "wrong_move": "Receita de serviços 78.000 ou 82.000",
+      "why_wrong": "Estorno/cancelamento reduz a receita do mês: 74.000",
+      "authority": "LC 123 art. 18 (receita bruta)",
+      "evidence": "NFS-e 1188; PIX de devolução",
+      "harm": "DAS a maior",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Locação tributada com ISS",
+      "wrong_move": "Locação no Anexo III cheio (ou no V)",
+      "why_wrong": "Anexo III deduzida a parcela do ISS (SV 31): 32,5% da alíquota efetiva na 4ª faixa",
+      "authority": "LC 123 art. 18 §5º-A; SV 31",
+      "evidence": "NF-e 512 (CFOP 5949, locação); biblioteca",
+      "harm": "ISS indevido",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "das.total",
+      "expected": "10261.08",
+      "tolerance": "exact (±R$ 1)",
+      "how": "apuracao.json"
+    },
+    {
+      "item": "anexo",
+      "expected": "III",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "aliquota_efetiva",
+      "expected": "12.51%",
+      "tolerance": "±0,01 p.p.",
+      "how": ""
+    },
+    {
+      "item": "receitas.servicos",
+      "expected": "78000",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "das.locacao",
+      "expected": "506.49",
+      "tolerance": "±R$ 1",
+      "how": ""
+    },
+    {
+      "item": "Se o pró-labore não foi perguntado: PERGUNTAS.md ou premissa explícita",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "memoria.md explica o Fator R com a folha corrigida e cita a Res. CGSN 140 art. 26"
+  ],
+  "notes": [
+    "DESIGN FIX APPLIED IN DOCS: the April pró-labore was paid 30/04 (within the window) but omitted from the summary 'em aberto'; the bank extrato shown is May so it cannot evidence a 30/04 payment — the model must ASK. Client script answer updated below."
+  ],
+  "library_verification": [
+    {
+      "file": "lc123_art18_fator_r.md",
+      "cite": "LC 123/2006, art. 18, §§1º, 1º-A, 5º-J, 5º-K, 5º-M; Resolução CGSN 140/2018, arts. 25, 26",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar redação exata; percentuais do Fator R e definição de folha conforme Res. CGSN 140."
+    },
+    {
+      "file": "anexos_iii_v_tabelas.md",
+      "cite": "LC 123/2006, Anexos III e V (redação LC 155/2016)",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "locacao_bens_moveis_iss.md",
+      "cite": "LC 123/2006, art. 18, §5º-A; Súmula Vinculante 31 (STF); Res. CGSN 140, art. 25, §1º, V",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

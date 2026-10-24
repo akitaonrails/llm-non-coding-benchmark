@@ -1,0 +1,26 @@
+{
+  "provisao_trabalhista": {
+    "manter|reverter|aumentar": "manter",
+    "valor": 1200000,
+    "fundamento": "A carta de 18/12/2025 não qualifica o processo como remoto: considera provável a manutenção da condenação por equiparação, há sentença desfavorável e a exposição informada é de R$ 1,2 milhão. Mantém-se a provisão existente na falta de base para reversão; a sentença estimada em R$ 1,18 milhão difere da exposição em R$ 20 mil, sem abertura suficiente para ajustar a estimativa. CPC 25 (IAS 37), itens 14-16, 23, 36 e 59 (../library/cpc25.md)."
+  },
+  "ccb_horizonte": {
+    "circulante|nao_circulante": "circulante",
+    "fundamento": "Os R$ 6,5 milhões vencem em 31/08/2026, oito meses após o balanço. A renovação depende de aditivo e do critério do banco; não havia direito de diferir a liquidação por pelo menos 12 meses em 31/12/2025. CPC 26 (IAS 1), itens 69-76 (../library/cpc26_classificacao.md)."
+  },
+  "afac": {
+    "pl|passivo": "passivo",
+    "fundamento": "Os R$ 2 milhões recebidos em março de 2022 continuam sem formalização de aumento de capital. Sem evidência de irrevogabilidade, irretratabilidade e capitalização em prazo determinado, devem sair do patrimônio líquido e ser tratados como mútuo. Uma AGE em janeiro de 2026 não altera a condição em 31/12/2025. Os termos originais e o vencimento do instrumento não foram fornecidos. Resolução CFC 1.159/2009 (ITG 2000) e Parecer Normativo CST 17/1984 (../library/afac_itg_rfb.md).",
+    "efeitos_fiscais": "A caracterização como mútuo traz exposição a IOF-crédito e possíveis juros presumidos; base, alíquota, datas e valor não são quantificáveis com os documentos recebidos. Parecer Normativo CST 17/1984; Solução de Consulta COSIT 20/2010; Decreto 6.306/2007, art. 3º, §3º (../library/afac_itg_rfb.md)."
+  },
+  "covenant": {
+    "ebitda": 9800000,
+    "divida_liquida_com_ajustes_da_diretoria": 27100000,
+    "indice_com_ajustes_da_diretoria": 2.4636363636,
+    "divida_liquida_correta": 29100000,
+    "indice_correto": 2.9693877551,
+    "limite": 2.75,
+    "cumprido": false,
+    "premissas_e_limitacoes": "Os índices numéricos presumem que as debêntures já estejam contidas nos R$ 31,2 milhões de empréstimos e financiamentos; isso não foi confirmado. Se houver saldo de debêntures fora desse total, a dívida líquida e os índices serão maiores. No cenário da diretoria, presume-se também que a reversão integral da provisão elevaria o EBITDA de 2025 em R$ 1,2 milhão. A quebra persiste mesmo sem acrescentar AFAC ou eventual saldo de debêntures: R$ 27,1 milhões / R$ 9,8 milhões = 2,7653."
+  }
+}

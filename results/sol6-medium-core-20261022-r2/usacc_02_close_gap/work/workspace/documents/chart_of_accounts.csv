@@ -1,0 +1,31 @@
+account,name,type
+1000,Cash — Operating (HCCB ...2210),A
+1100,Accounts receivable,A
+1200,Inventory — materials,A
+1300,Prepaid expenses,A
+1500,Equipment,A
+1510,Accumulated depreciation,A
+2000,Accounts payable,L
+2050,Credit card payable — Summit Visa,L
+2100,Unidentified receipts / suspense,L
+2200,Line of credit — HCCB,L
+2300,Sales tax payable,L
+3000,Owner's capital,E
+3100,Owner's contributions,E
+3200,Owner's draws,E
+3900,Retained earnings,E
+4000,Sales — custom cabinetry,R
+4100,Sales — installation,R
+5000,Materials — COGS,X
+5100,Subcontract labor,X
+6000,Wages,X
+6050,Payroll taxes,X
+6100,Rent — shop,X
+6200,Utilities,X
+6300,Insurance,X
+6400,Software & subscriptions,X
+6500,Meals,X
+6600,Vehicle & fuel,X
+6700,Bank charges,X
+6800,Interest expense,X
+6900,Office & misc,X

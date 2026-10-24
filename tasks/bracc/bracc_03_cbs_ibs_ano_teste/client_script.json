@@ -1,0 +1,40 @@
+{
+  "persona": "Paulo, gerente fiscal; prático; quer resposta objetiva.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "rejeicao",
+      "trigger": [
+        "rejeição",
+        "rejeitou",
+        "SEFAZ",
+        "cStat",
+        "mensagem"
+      ],
+      "answer": "A rejeição dizia: 'Rejeição: Grupo IBSCBS não informado para emitente do regime regular (NT 2025.002)'. O TI 'contornou' voltando a versão do emissor.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "ponto_fixo",
+      "trigger": [
+        "Ponto Fixo",
+        "Simples",
+        "crédito de entrada",
+        "fornecedor do Simples"
+      ],
+      "answer": "O Ponto Fixo é do Simples, a nota deles veio sem nada de IBS/CBS.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se a orientação disser que as notas após 03/08 sem campos são irregulares",
+      "message": "Paulo: Mas a SEFAZ autorizou essas notas (o TI voltou a versão antiga do emissor e passou). Se autorizou, está regular, não?"
+    }
+  ]
+}

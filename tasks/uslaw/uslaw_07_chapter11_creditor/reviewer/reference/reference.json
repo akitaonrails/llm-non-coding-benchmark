@@ -1,0 +1,39 @@
+{
+  "total_prepetition_claim": "210000",
+  "admin_503b9": {
+    "amount": "78100",
+    "invoices": [
+      "MS-7788",
+      "MS-7815"
+    ],
+    "excluded": "MS-7802 freight (not goods); MS-7819 on-site cutting services (not goods); MS-7701/7740 outside 20 days (and 7701 paid)"
+  },
+  "general_unsecured": "95100",
+  "note_7740_partial": "MS-7740 $62,400 less $36,800 paid → $25,600 open",
+  "reclamation": {
+    "available": "technically for goods received within 45 days (MS-7788, 7815) by written demand within 20 days after petition — i.e., by March 30; but subject to the DIP lender's prior lien → practically worthless; §503(b)(9) is the real remedy"
+  },
+  "bar_date": "2026-06-11",
+  "preference": {
+    "transfers_in_90_days": "180000",
+    "ordinary_course": {
+      "protected": "95000",
+      "exposed": "85000",
+      "reasoning": "12-month history: 43–47 days, ACH; Jan 20 terms cut to net-15 + 'oldest first' + wire on demand → Feb 10 and Feb 27 payments outside ordinary course"
+    },
+    "new_value_after_payments": "125000",
+    "net_exposure_estimate": "0",
+    "note": "new value (unpaid deliveries after the payments: MS-7740 balance 25,600 + 7788 + 7802 + 7815 + 7819) largely offsets; estimate range $0–$30k; §502(d) risk until resolved"
+  },
+  "stay_violations": [
+    "final notice letter 3/12",
+    "collection calls 3/15",
+    "email threatening credit-bureau report and shipment hold 3/18 — the hold itself is permissible for post-petition sales on new terms, the threat tied to the old debt is collection"
+  ],
+  "immediate_actions": [
+    "stop all collection on pre-petition debt today; written instruction to AR; consider a corrective letter",
+    "respond to debtor's counsel re critical-vendor designation (Dkt. 44, hearing 4/2) — agree to customary terms",
+    "calendar bar date; file proof of claim with 503(b)(9) stated separately; reclamation demand by 3/30 as belt-and-braces",
+    "assemble ordinary-course evidence; prepare for preference demand"
+  ]
+}

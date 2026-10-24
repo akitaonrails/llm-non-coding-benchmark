@@ -1,0 +1,42 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "strix/swift-1.5-27b",
+  "small_model": "strix/swift-1.5-27b",
+  "enabled_providers": [
+    "strix"
+  ],
+  "share": "disabled",
+  "autoupdate": false,
+  "permission": {
+    "*": "allow",
+    "task": "deny",
+    "webfetch": "deny",
+    "websearch": "deny"
+  },
+  "provider": {
+    "strix": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Strix benchmark",
+      "options": {
+        "baseURL": "http://127.0.0.1:18080/v1",
+        "apiKey": "local",
+        "timeout": 600000
+      },
+      "models": {
+        "swift-1.5-27b": {
+          "name": "swift-1.5-27b",
+          "tool_call": true,
+          "reasoning": false,
+          "limit": {
+            "context": 65536,
+            "output": 16384
+          },
+          "cost": {
+            "input": 0,
+            "output": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+The client confirmed the R$ 3.200,00 April pró-labore was paid on 30 April, so I’ll use the R$ 284.600,00 payroll total. I’ll finish the DAS calculation now and flag the tax allocation as unresolved, since the client has no further table information.
+
+A apuração de maio/2026 resultou em **DAS calculado de R$ 15.188,84**: R$ 14.682,35 sobre serviços e R$ 506,49 sobre locação. O Fator R foi 27,902%, portanto os serviços foram calculados pelo Anexo V.
+
+Entreguei a [apuração em JSON](/work/workspace/deliverable/apuracao.json) e a [memória de cálculo](/work/workspace/deliverable/memoria.md). O [status](/work/workspace/deliverable/STATUS.md) é **COMPLETE WITH OPEN ITEMS**: a repartição por tributo ficou como `null` porque faltam percentuais do Anexo V e os percentuais do Anexo III na biblioteca somam 99,85%. O cálculo também registra a premissa usada para classificar consultoria e treinamento e a pendência do comprovante do pró-labore.

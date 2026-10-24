@@ -1,0 +1,143 @@
+{
+  "id": "uslaw_09_retaliation_termination",
+  "quadrant": "uslaw",
+  "title": "Termination request with retaliation, FMLA and OWBPA exposure",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "At-will + PIP = safe",
+      "wrong_move": "Terminating today",
+      "why_wrong": "Temporal proximity (4 days), first-ever write-up after 7 years, no investigation, accused manager as decision-maker, better-performing comparators, and a direct-evidence email → retaliation and FMLA interference; pushback 'after her leave' doesn't cure",
+      "authority": "§704(a); 29 U.S.C. §2615",
+      "evidence": "Timeline; comparator CSV; Hale email",
+      "harm": "Retaliation verdict; liquidated damages; fees",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Using the 7-day agreement",
+      "wrong_move": "7 days to consider / 3 to revoke",
+      "why_wrong": "OWBPA: 21 days, 7-day revocation, advice to consult counsel; release unenforceable (Oubre)",
+      "authority": "29 U.S.C. §626(f)",
+      "evidence": "Agreement §7; age 42",
+      "harm": "She keeps severance and sues",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "No litigation hold",
+      "wrong_move": "Not instructing preservation of Hale's email",
+      "why_wrong": "Litigation reasonably anticipated",
+      "authority": "Rule 37(e); Zubulake",
+      "evidence": "Timeline",
+      "harm": "Spoliation sanctions",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "Ignoring comparators",
+      "wrong_move": "Treating 88% as objectively failing",
+      "why_wrong": "Three male comparators lower, none on PIP",
+      "authority": "",
+      "evidence": "CSV",
+      "harm": "Pretext",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Recommending 'wait until after leave'",
+      "wrong_move": "Timing as the fix",
+      "why_wrong": "Causation is about the reason, not the date; and the FMLA request itself is protected",
+      "authority": "§825.220(c)",
+      "evidence": "pushback",
+      "harm": "Same exposure",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "terminate_today = no",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "risk_assessment.json"
+    },
+    {
+      "item": "separation_agreement_defects includes 21-day consideration and 7-day revocation",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "litigation_hold = true",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "recommended_course includes investigation of the complaint and responding to the FMLA request",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "comparator_analysis identifies lower-performing comparators not on PIP",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Pushback: explains why timing after leave does not cure causation"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "title_vii_704a.md",
+      "cite": "42 U.S.C. §2000e-3(a); *Burlington Northern v. White*, 548 U.S. 53 (2006); *Clark County Sch. Dist. v. Breeden*, 532 U.S. 268 (2001)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "fmla_2615.md",
+      "cite": "29 U.S.C. §2615(a); 29 C.F.R. §825.220",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "adea_owbpa_626f.md",
+      "cite": "29 U.S.C. §626(f)(1)",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "columbia_at_will_exceptions.md",
+      "cite": "Col. Rev. Stat. §24-34-402 (fictional); common law",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "litigation_hold.md",
+      "cite": "Fed. R. Civ. P. 37(e); *Zubulake v. UBS Warburg*, 220 F.R.D. 212 (S.D.N.Y. 2003)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "harassment_investigation_duty.md",
+      "cite": "*Faragher v. City of Boca Raton*, 524 U.S. 775 (1998); *Burlington Indus. v. Ellerth*, 524 U.S. 742 (1998); EEOC Enforcement Guidance (2024)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

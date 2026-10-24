@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+ <NFe><infNFe Id="NFeBD0207336B47F628AE950952C15A3F9B68672360" versao="4.00">
+  <ide><cUF>35</cUF><natOp>Compra</natOp><mod>55</mod><serie>1</serie><nNF>2315</nNF><dhEmi>2026-08-09T10:00:00-03:00</dhEmi><tpNF>0</tpNF><tpAmb>2</tpAmb></ide>
+  <emit><CNPJ>44555666000177</CNPJ><xNome>PONTO FIXO COMERCIO ME</xNome><enderEmit><xMun>São Paulo</xMun><UF>SP</UF></enderEmit><CRT>1</CRT></emit>
+  <dest><CNPJ>27119804000130</CNPJ><xNome>HORIZONTE COMERCIO E SERVICOS LTDA</xNome><enderDest><xMun>São Paulo</xMun><UF>SP</UF></enderDest><indIEDest>9</indIEDest></dest>
+    <det nItem="1"><prod><cProd>0001</cProd><xProd>Compra de mercadorias</xProd><NCM>84713012</NCM><CFOP>1102</CFOP>
+      <uCom>UN</uCom><qCom>1</qCom><vUnCom>15000.00</vUnCom><vProd>15000.00</vProd></prod>
+      <imposto><PIS><PISAliq><CST>01</CST><vBC>15000.00</vBC><pPIS>0.65</pPIS><vPIS>97.50</vPIS></PISAliq></PIS>
+      <COFINS><COFINSAliq><CST>01</CST><vBC>15000.00</vBC><pCOFINS>3.00</pCOFINS><vCOFINS>450.00</vCOFINS></COFINSAliq></COFINS></imposto></det>
+  <total><ICMSTot><vProd>15000.00</vProd><vNF>15000.00</vNF></ICMSTot></total>
+  <infAdic><infCpl> Documento fictício gerado para benchmark; sem validade fiscal.</infCpl></infAdic>
+ </infNFe></NFe>
+ <protNFe><infProt><chNFe>BD0207336B47F628AE950952C15A3F9B68672360</chNFe><dhRecbto>2026-08-09T10:01:12-03:00</dhRecbto><nProt>135000000002315</nProt><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe>
+</nfeProc>

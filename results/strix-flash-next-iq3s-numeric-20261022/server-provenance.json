@@ -1,0 +1,17 @@
+{
+  "inference_host": "192.168.0.90",
+  "hostname": "marvin-server",
+  "gpu": "AMD Radeon 8060S Graphics (gfx1151)",
+  "engine": "Strata 0.1.45.3-linux-x86_64-hip-halo",
+  "serving_config": "config/strix_flash_next_resident.json",
+  "effective_expert_source": "mmap fallback; all 24576 experts in GPU cache",
+  "context": 65536,
+  "speculative_tokens": 4,
+  "expert_cache_gib": 46.84,
+  "transport": "Fixed HTTP operations via SSH exec; no TCP forwarding or firewall changes",
+  "listener": "127.0.0.1:18081 on Strix only",
+  "memory_watchdog": "Stop only the owned noncoding-flash-next-20261022-resident.scope below 8 GiB MemAvailable",
+  "memory_limit_caveat": "User scopes lack usable memory-controller files; MemoryMax was not relied upon. Resident-mode safety check fell back to mmap for the same reason.",
+  "available_ram_after_admission_gib": 44,
+  "limitations": ["Shared server has background workloads, including embeddings.", "Earlier invalid setup attempts increased swap occupancy; swap is not forcibly cleared.", "One diagnostic run per case; provider-default sampling."]
+}

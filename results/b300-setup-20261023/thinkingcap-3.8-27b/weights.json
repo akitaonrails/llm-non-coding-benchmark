@@ -1,0 +1,195 @@
+{
+  "repo": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+  "revision": "7891e03dbda2e9b63a5b9610f20e83ea441f8e2c",
+  "resolved_at": 1792725018.5805752,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 1936
+    },
+    {
+      "path": "LICENSE",
+      "size": 1260
+    },
+    {
+      "path": "LICENSE-Apache-2.0-Qwen.txt",
+      "size": 11343
+    },
+    {
+      "path": "LICENSE-PolyForm-Small-Business-1.0.0.txt",
+      "size": 4389
+    },
+    {
+      "path": "NOTICE",
+      "size": 757
+    },
+    {
+      "path": "README.md",
+      "size": 33838
+    },
+    {
+      "path": "bottlecap-logo.png",
+      "size": 34771
+    },
+    {
+      "path": "budget_aggregate.png",
+      "size": 90029
+    },
+    {
+      "path": "cap_header.png",
+      "size": 1058979
+    },
+    {
+      "path": "chat_template.jinja",
+      "size": 8952
+    },
+    {
+      "path": "config.json",
+      "size": 4312
+    },
+    {
+      "path": "effort-frontier-per-benchmark-dark.png",
+      "size": 998530
+    },
+    {
+      "path": "effort-frontier-per-benchmark-dark.svg",
+      "size": 41629
+    },
+    {
+      "path": "effort-frontier-per-benchmark-light.png",
+      "size": 1050539
+    },
+    {
+      "path": "effort-frontier-per-benchmark-light.svg",
+      "size": 41629
+    },
+    {
+      "path": "effort-frontier.svg",
+      "size": 6705
+    },
+    {
+      "path": "generation_config.json",
+      "size": 202
+    },
+    {
+      "path": "merges.txt",
+      "size": 3353259
+    },
+    {
+      "path": "model-00001-of-00018.safetensors",
+      "size": 3966730552
+    },
+    {
+      "path": "model-00002-of-00018.safetensors",
+      "size": 3043080328
+    },
+    {
+      "path": "model-00003-of-00018.safetensors",
+      "size": 2542796952
+    },
+    {
+      "path": "model-00004-of-00018.safetensors",
+      "size": 3988973152
+    },
+    {
+      "path": "model-00005-of-00018.safetensors",
+      "size": 2099339864
+    },
+    {
+      "path": "model-00006-of-00018.safetensors",
+      "size": 3979553696
+    },
+    {
+      "path": "model-00007-of-00018.safetensors",
+      "size": 2108759344
+    },
+    {
+      "path": "model-00008-of-00018.safetensors",
+      "size": 3979553696
+    },
+    {
+      "path": "model-00009-of-00018.safetensors",
+      "size": 2108759344
+    },
+    {
+      "path": "model-00010-of-00018.safetensors",
+      "size": 3979553696
+    },
+    {
+      "path": "model-00011-of-00018.safetensors",
+      "size": 2108759344
+    },
+    {
+      "path": "model-00012-of-00018.safetensors",
+      "size": 3979553696
+    },
+    {
+      "path": "model-00013-of-00018.safetensors",
+      "size": 2108759344
+    },
+    {
+      "path": "model-00014-of-00018.safetensors",
+      "size": 3979553696
+    },
+    {
+      "path": "model-00015-of-00018.safetensors",
+      "size": 2108759344
+    },
+    {
+      "path": "model-00016-of-00018.safetensors",
+      "size": 3979564040
+    },
+    {
+      "path": "model-00017-of-00018.safetensors",
+      "size": 2108759344
+    },
+    {
+      "path": "model-00018-of-00018.safetensors",
+      "size": 3392197344
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size": 112216
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size": 390
+    },
+    {
+      "path": "social-instagram.png",
+      "size": 7993
+    },
+    {
+      "path": "social-linkedin.png",
+      "size": 3141
+    },
+    {
+      "path": "social-web.png",
+      "size": 17746
+    },
+    {
+      "path": "social-x.png",
+      "size": 7905
+    },
+    {
+      "path": "thinkingcap_demo.mp4",
+      "size": 6826856
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 12809320
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 17928
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "size": 385
+    },
+    {
+      "path": "vocab.json",
+      "size": 6722759
+    }
+  ]
+}

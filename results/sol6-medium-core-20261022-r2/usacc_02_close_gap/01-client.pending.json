@@ -1,0 +1,72 @@
+{
+  "case": "usacc_02_close_gap",
+  "questions": "# March 2026 close — information needed from Ray\n\nPlease answer each item and attach the requested record where available. I will use the answers to finish the March close and identify any remaining exceptions for the lender.\n\n1. **$4,312 mobile deposit, March 21:** Who paid it, what was it for, and which invoice (if any) should it be applied to? Please provide the deposit image, remittance advice, or other identification. The bank statement shows the receipt, but the March ledger has no matching entry.\n2. **$1,500 transfer, March 14:** Is checking account ending **4420** your personal account, another Brightline account, or a third party's account? What was the purpose of the transfer? Please provide the transfer detail. The ledger currently credits cabinetry sales, but the bank calls it an online transfer.\n3. **A/R records:** Please provide the detailed February 28 A/R aging or subledger, the complete March 31 customer ledger, and the cash application for Delgado check **#4471**. The March 31 GL A/R balance is **$115,288**, while the March 31 aging totals **$56,100** (difference **$59,188**). The aging still shows Delgado's **$6,250** invoice open even though the GL records its collection on March 31. Which listing is complete and current?\n4. **Hardaway Builders invoice INV-1167:** You reportedly said Brightline would absorb half of the disputed **$9,800** invoice. Did you authorize a **$4,900** credit, and has a credit memo or other written agreement been issued? If so, please provide it and its effective date. Otherwise, what is the current agreed amount due?\n5. **Uchi card charge, March 15, $212:** Was this a business meal or a personal charge? If business, who attended and what was the business purpose? The card statement gives only a merchant, amount, and guest count.\n6. **Accounts payable:** Please provide the March 31 open-bills or vendor subledger report so I can agree it to the GL after removing the second posting of Cascade invoice **CH-7731**. The two copies show the same invoice number and **$4,860** total; the ledger records it in both February and March.\n",
+  "facts": [
+    {
+      "id": "xfer_1500",
+      "trigger": [
+        "1,500",
+        "1500",
+        "transfer from *4420",
+        "4420",
+        "online transfer"
+      ],
+      "answer": "That's from my personal checking, I moved money over to cover payroll. It's my money, not a sale.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "mobile_4312",
+      "trigger": [
+        "4,312",
+        "4312",
+        "mobile deposit",
+        "March 21",
+        "3/21"
+      ],
+      "answer": "Huh. I don't remember depositing anything that day. Maybe Carla (office) did? Let me ask her... (later) she doesn't know either. Can you just park it somewhere for now?",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "cascade_dup",
+      "trigger": [
+        "Cascade",
+        "CH-7731",
+        "duplicate",
+        "twice",
+        "same invoice"
+      ],
+      "answer": "Cascade emails invoices and then mails a paper copy a couple of weeks later. Same invoice. We paid it once.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uchi",
+      "trigger": [
+        "Uchi",
+        "dinner",
+        "212"
+      ],
+      "answer": "Uchi was my anniversary dinner, I grabbed the wrong card. Put it on me.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "hardaway",
+      "trigger": [
+        "Hardaway",
+        "9,800",
+        "dispute",
+        "warped"
+      ],
+      "answer": "Still arguing with them. Don't write it off yet.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "xfer_1500",
+    "mobile_4312",
+    "cascade_dup",
+    "uchi",
+    "hardaway"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

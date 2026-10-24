@@ -1,0 +1,30 @@
+{
+  "seconds": 5.243063045985764,
+  "requested_max_tokens": 8,
+  "response": {
+    "id": "chatcmpl-326",
+    "object": "chat.completion",
+    "created": 1792840015,
+    "model": "noncoding-thinkingcap38-27b-q4-64k:20261022",
+    "system_fingerprint": "fp_ollama",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "reasoning": "We need answer user asks list integers "
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 73,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 8,
+      "total_tokens": 81
+    }
+  }
+}

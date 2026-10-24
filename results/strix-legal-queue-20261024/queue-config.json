@@ -1,0 +1,12 @@
+{
+  "attach_unit": "noncoding-strix-qwen38-q4-20261024-r2.service",
+  "attach_run": "results/strix-qwen38-q4-legal-20261024-r2",
+  "models": [
+    {"slug":"qwen38-q8","model":"noncoding-qwen38-27b-q8-64k:20261022","endpoint":"http://192.168.0.90:11434","hardware":"Strix Halo; Q8_0; Ollama 0.40.10"},
+    {"slug":"swift15-q4","model":"noncoding-swift15-27b-q4-64k:20261022","endpoint":"http://192.168.0.90:11434","hardware":"Strix Halo; Q4_K_M; Ollama 0.40.10"},
+    {"slug":"swift15-q8","model":"noncoding-swift15-27b-q8-64k:20261022","endpoint":"http://192.168.0.90:11434","hardware":"Strix Halo; Q8_0; Ollama 0.40.10"},
+    {"slug":"thinkingcap38-q4","model":"noncoding-thinkingcap38-27b-q4-64k:20261022","endpoint":"http://192.168.0.90:11434","hardware":"Strix Halo; Q4_K_M; Ollama 0.40.10"},
+    {"slug":"muse-glimmer-q8","model":"noncoding-muse-glimmer-30b-q8-64k-atem:20261022","endpoint":"http://192.168.0.90:11434","hardware":"Strix Halo; Q8_0; Ollama 0.40.10"},
+    {"slug":"glm47-flash-q8","model":"glm-4.7-flash:q8","endpoint":"http://192.168.0.90:11435","hardware":"Strix Halo; GLM4.7 Flash Q8; llama-swap"}
+  ]
+}

@@ -1,0 +1,23 @@
+# Session 3 advice — arbitration and legal fees
+
+**To Dolapo Okonkwo | 22 October 2026**
+
+## Direct answer
+
+Yes, Exhibit C matters. The signed agreement says in Section 7 that Exhibits A–C are part of it. Exhibit C.1 requires **exclusive, binding AAA arbitration** before one arbitrator in Capital City, Columbia for any dispute arising out of or relating to the agreement, including breach and the arbitrability of a claim. Our invoice and conversion-fee claims plainly fall within that wording. Recasting the dispute as tortious interference would not give us a reliable route to court: the clause is broad, delegates arbitrability, and the tort theory is weak on its own merits. [FAA §§2–4](../../library/faa_2_4.md); [Tortious interference](../../library/columbia_tortious_interference.md).
+
+The fact that Juniper did not read the exhibits and that its former lawyer used a template does **not, on this record, give us a supported basis to disregard Exhibit C**. The closed library says a written arbitration provision is enforceable subject to ordinary contract-revocation grounds; we have no facts establishing such a ground. It does not supply a rule that an unread or template-drafted incorporated exhibit is unenforceable. We should not assert one. [FAA §§2–4](../../library/faa_2_4.md).
+
+## What happens if Juniper sues in court
+
+Pinecrest can seek a **stay** of arbitrable court proceedings and an order **compelling arbitration**. Exhibit C.1 expressly assigns arbitrability questions to the arbitrator, which the FAA reference says is enforceable if clear and unmistakable. This language is explicit. A court filing would likely add time and expense before the parties reach the merits; it could also expose Juniper to Pinecrest's reasonable fees and costs for a successful motion to compel under Exhibit C.3. [FAA §§2–4](../../library/faa_2_4.md); [Fee shifting and candor](../../library/fee_shifting_and_candor.md). This is a risk assessment, not a prediction that a particular fee award is certain.
+
+Exhibit C.4 permits court proceedings for **provisional injunctive relief in aid of arbitration**, but the file identifies no imminent harm or injunction need. Exhibit C.6 permits small-claims court only for a claim **solely** collecting an undisputed invoice of less than $25,000. Each listed invoice is at least $59,450; the four Pinecrest does not presently dispute total $265,200. That exception does not fit this matter. The arbitration clause survives termination under C.5. The call note's October 6 date precedes the October 22 Session 1 draft; it adds Dolapo's question, but it does not change the forum analysis already given.
+
+## Can Pinecrest be made to pay Juniper's legal fees?
+
+**Possibly, if Juniper prevails.** Exhibit C.3 gives the prevailing party in arbitration, or in an action to compel arbitration, reasonable attorneys' fees and costs. It does not promise reimbursement just because Juniper files a demand or wins some money. The arbitrator would need to decide who prevailed and what fees and costs are reasonable. The same clause is reciprocal: **Pinecrest can seek its reasonable fees and costs if it prevails**, including for a successful action to compel after an avoidable court suit. The library says contractual clauses of this kind are enforced as written. [Fee shifting and candor](../../library/fee_shifting_and_candor.md). The record has no budgets, time entries, or fee estimates, so no reliable dollar exposure can be calculated yet. Claims for fees should be stated as contractual and contingent, not added as a fixed number to the provisional damages total.
+
+## Recommended next step
+
+Press Pinecrest to pay the **$265,200** it has not disputed, reconcile the June invoice with the approximately **$3,100** known credit, and obtain actual compensation and hire data for the five personnel whose fees were not expressly waived. The corrected provisional contract figure remains **$265,200 + ($74,800 − about $3,100) + (5 × 25% × assumed $64,000) = about $416,900**, excluding interest and contingent fees. The five-person fee figure is only an estimate; receipt dates, billing support, actual compensation, and possible later-waiver defenses remain unresolved. If negotiation does not produce payment and records, commence AAA arbitration on supportable contract claims. Do not file a Superior Court damages suit or retain an interference claim to exert pressure. The seven hires matter to the contract claim, but the February 11 waiver removes Rosa and Tay, and the present record does not show improper means sufficient for an interference claim. [Tortious interference](../../library/columbia_tortious_interference.md); [Fee shifting and candor](../../library/fee_shifting_and_candor.md).

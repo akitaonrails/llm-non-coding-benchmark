@@ -1,0 +1,3 @@
+Sim, **para este processo eletrônico, o prazo não é em dobro**. O advogado citou o caput do art. 229, que prevê prazo em dobro para procuradores de escritórios distintos. Mas o **§2º do mesmo artigo exclui expressamente os processos em autos eletrônicos**. Os expedientes identificam o processo como e-SAJ. Veja o [texto do art. 229 na biblioteca](/work/workspace/library/cpc_prazos.md).
+
+Para evitar perda de prazo, use as datas sem dobra: **contestação em 15/12/2026**, **embargos em 18/12/2026** e **apelação em 03/02/2027**, esta última se não forem opostos embargos.

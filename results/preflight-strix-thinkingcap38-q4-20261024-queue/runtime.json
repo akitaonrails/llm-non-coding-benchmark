@@ -1,0 +1,22 @@
+[
+  {
+    "name": "noncoding-thinkingcap38-27b-q4-64k:20261022",
+    "model": "noncoding-thinkingcap38-27b-q4-64k:20261022",
+    "size": 19788694813,
+    "digest": "65a373d7a3ece666072166ca76b79e6e532702a38df88382e1a9742e9e34a222",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "27.3B",
+      "quantization_level": "unknown"
+    },
+    "expires_at": "2026-10-24T11:27:25.154452265Z",
+    "size_vram": 19788694813,
+    "context_length": 65536,
+    "runner": "llamacpp"
+  }
+]

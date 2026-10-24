@@ -1,0 +1,66 @@
+{
+  "terminate_today": "no",
+  "claims": [
+    {
+      "claim": "Title VII retaliation for the internal harassment complaint",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Dana complained on September 12; accused manager Tom Hale opened her first PIP September 16, four days later, and HR proposes termination October 6, 24 days after the complaint.",
+        "Three Account Managers with lower 2026 YTD quota attainment than Dana's 88% have no PIP; performance is a possible explanation but requires independent verification.",
+        "HR has not investigated the complaint. This high rating assumes the complaint's full text confirms opposition to sex-based harassment; only a summary is supplied. Protected opposition, close timing, and comparator evidence are addressed in library/title_vii_704a.md; the investigation duty is addressed in library/harassment_investigation_duty.md."
+      ]
+    },
+    {
+      "claim": "FMLA interference through termination to prevent requested leave",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Dana requested intermittent leave September 30 and supplied certification October 3; HR has not responded.",
+        "On October 2, two days after the request, Tom wrote: 'Let's get this done before she's out on leave. Once she's on FMLA it's a nightmare to move on her.'",
+        "Requested leave need not have started for the interference rule in library/fmla_2615.md to apply. This high rating assumes FMLA coverage and Dana's eligibility; neither is established in the file. The library does not supply the coverage or eligibility tests."
+      ]
+    },
+    {
+      "claim": "Sex discrimination or harassment arising from Tom's comments and the response",
+      "strength_for_employee": "medium",
+      "key_facts": [
+        "Dana reported repeated remarks about her appearance and whether she was too distracted at home to travel; the full remarks, context, and witnesses are unavailable.",
+        "HR acknowledged the complaint but opened no investigation; library/harassment_investigation_duty.md requires prompt, impartial investigation and corrective action.",
+        "Three men with lower quota attainment have no PIP, but the data cannot distinguish sex from complaint status or other performance factors. State protection is summarized in library/columbia_at_will_exceptions.md; a substantive harassment or sex-discrimination liability test is not supplied by this library and remains unverified."
+      ]
+    },
+    {
+      "claim": "State of Columbia retaliation or unlawful termination",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "At-will employment does not permit termination for retaliation or exercise of statutory rights under library/columbia_at_will_exceptions.md.",
+        "The complaint-to-PIP sequence, leave-related email, and pending termination supply substantial evidence of an unlawful motive."
+      ]
+    },
+    {
+      "claim": "Age discrimination",
+      "strength_for_employee": "low",
+      "key_facts": [
+        "Dana is 42, but the record contains no age-related remark or other direct age evidence.",
+        "A 47-year-old female Account Manager without a PIP had 103% attainment; the younger men without PIPs had lower attainment, but complaint status and other performance factors are unresolved.",
+        "This is an evidence assessment, not a conclusion that an age claim is legally unavailable. The library provides ADEA waiver rules in library/adea_owbpa_626f.md but no substantive age-discrimination standard."
+      ]
+    }
+  ],
+  "separation_agreement_defects": [
+    "Seven days to consider is 21-7=14 days short of the individual ADEA waiver minimum, or 45-7=38 days short if this is a covered group termination program (library/adea_owbpa_626f.md).",
+    "Three days to revoke is 7-3=4 days short of the required period, and the agreement must not become effective until the revocation period expires (library/adea_owbpa_626f.md).",
+    "The supplied agreement text does not show written advice to consult an attorney; confirm the complete form includes it, as required for an ADEA waiver (library/adea_owbpa_626f.md).",
+    "The supplied 'all claims' language does not show an express cutoff at signing; confirm that the complete form excludes future claims, which an ADEA waiver cannot cover (library/adea_owbpa_626f.md).",
+    "The form states four weeks of base pay but does not establish whether it is additional to amounts already owed; additional consideration is required for an ADEA waiver (library/adea_owbpa_626f.md)."
+  ],
+  "comparator_analysis": "Dana: 88% YTD, PIP yes, complaint yes. Brennan: 79%, no PIP, no complaint, 88-79=9 percentage points below Dana. Osei: 84%, no PIP, no complaint, 88-84=4 points below. Park: 86%, no PIP, no complaint, 88-86=2 points below. Lind: 103%, no PIP, no complaint, 103-88=15 points above Dana. Thus 3 of 4 comparators had lower YTD quota attainment and no PIP. All three are men and non-complainants, so this supports concern about different treatment but does not isolate sex or retaliation. The PIP also requires 100% of quarterly quota and CRM updates within 24 hours; YTD percentages alone cannot establish compliance with those terms. Territory, quota design, CRM hygiene, and decision makers are unknown.",
+  "recommended_course": [
+    "Do not terminate Dana on October 6 or present the current release.",
+    "Immediately place a preservation hold on relevant personnel, quota, CRM, complaint, leave, email, chat, and text records, including Tom's and HR's devices and accounts (library/litigation_hold.md).",
+    "Assign an impartial investigator outside Tom's chain to investigate Dana's complaint promptly, interview witnesses, and document findings and corrective action (library/harassment_investigation_duty.md).",
+    "Promptly process the September 30 FMLA request and October 3 certification; verify statutory coverage and eligibility, communicate the determination, and exclude requested leave from all performance and termination decisions (library/fmla_2615.md).",
+    "Have an independent decision maker audit the PIP's timing and terms against contemporaneous records and comparable employees, including CRM and territory data; keep Tom's leave-related email in the record and do not backdate or reconstruct rationale.",
+    "Reassess any future action only after the complaint and leave processes and independent review are complete. The calendar date, including a date just after leave, does not cure a decision influenced by complaint or leave. Use a corrected agreement only if a lawful separation is independently supported."
+  ],
+  "litigation_hold": true
+}

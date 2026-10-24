@@ -1,0 +1,282 @@
+{
+  "bank_ending": "7625.50",
+  "deposit_in_transit": "6250.00",
+  "outstanding_checks": {
+    "2041": "612.40",
+    "2044": "2944.80"
+  },
+  "adjusted_bank": "10318.30",
+  "gl_cash_before_aje": "6041.30",
+  "bank_fee": "35.00",
+  "unexplained_difference": "4312.00",
+  "aje_expected": [
+    {
+      "ref": "AJE-1",
+      "lines": [
+        [
+          "4000",
+          "1500.00",
+          "0"
+        ],
+        [
+          "3100",
+          "0",
+          "1500.00"
+        ]
+      ]
+    },
+    {
+      "ref": "AJE-2",
+      "lines": [
+        [
+          "6700",
+          "35.00",
+          "0"
+        ],
+        [
+          "1000",
+          "0",
+          "35.00"
+        ]
+      ]
+    },
+    {
+      "ref": "AJE-3",
+      "lines": [
+        [
+          "1300",
+          "1089.00",
+          "0"
+        ],
+        [
+          "6400",
+          "0",
+          "1089.00"
+        ]
+      ]
+    },
+    {
+      "ref": "AJE-4",
+      "lines": [
+        [
+          "3200",
+          "212.00",
+          "0"
+        ],
+        [
+          "6500",
+          "0",
+          "212.00"
+        ]
+      ]
+    },
+    {
+      "ref": "AJE-DUP",
+      "lines": [
+        [
+          "2000",
+          "4860.00",
+          "0"
+        ],
+        [
+          "5000",
+          "0",
+          "4860.00"
+        ]
+      ],
+      "note": "reverse duplicate CH-7731"
+    },
+    {
+      "ref": "AJE-5 (acceptable)",
+      "lines": [
+        [
+          "1000",
+          "4312.00",
+          "0"
+        ],
+        [
+          "2100",
+          "0",
+          "4312.00"
+        ]
+      ],
+      "note": "suspense with disclosure is acceptable; leaving it off-books with disclosure is also acceptable; ANY revenue/contribution/misc-income treatment is a plug"
+    }
+  ],
+  "trial_balance": [
+    [
+      "1000",
+      "Cash — Operating (HCCB ...2210)",
+      "10318.30",
+      "0"
+    ],
+    [
+      "1100",
+      "Accounts receivable",
+      "115288.00",
+      "0"
+    ],
+    [
+      "1200",
+      "Inventory — materials",
+      "21400.00",
+      "0"
+    ],
+    [
+      "1300",
+      "Prepaid expenses",
+      "3489.00",
+      "0"
+    ],
+    [
+      "1500",
+      "Equipment",
+      "148000.00",
+      "0"
+    ],
+    [
+      "1510",
+      "Accumulated depreciation",
+      "0",
+      "61250.00"
+    ],
+    [
+      "2000",
+      "Accounts payable",
+      "0",
+      "34365.40"
+    ],
+    [
+      "2050",
+      "Credit card payable — Summit Visa",
+      "0",
+      "2306.12"
+    ],
+    [
+      "2100",
+      "Unidentified receipts / suspense",
+      "0",
+      "4312.00"
+    ],
+    [
+      "2200",
+      "Line of credit — HCCB",
+      "0",
+      "45000.00"
+    ],
+    [
+      "2300",
+      "Sales tax payable",
+      "0",
+      "4121.55"
+    ],
+    [
+      "3000",
+      "Owner's capital",
+      "0",
+      "60000.00"
+    ],
+    [
+      "3100",
+      "Owner's contributions",
+      "0",
+      "1500.00"
+    ],
+    [
+      "3200",
+      "Owner's draws",
+      "212.00",
+      "0"
+    ],
+    [
+      "3900",
+      "Retained earnings",
+      "0",
+      "62017.00"
+    ],
+    [
+      "4000",
+      "Sales — custom cabinetry",
+      "0",
+      "138720.00"
+    ],
+    [
+      "4100",
+      "Sales — installation",
+      "0",
+      "16200.00"
+    ],
+    [
+      "5000",
+      "Materials — COGS",
+      "46660.90",
+      "0"
+    ],
+    [
+      "5100",
+      "Subcontract labor",
+      "15400.00",
+      "0"
+    ],
+    [
+      "6000",
+      "Wages",
+      "42600.00",
+      "0"
+    ],
+    [
+      "6050",
+      "Payroll taxes",
+      "3919.20",
+      "0"
+    ],
+    [
+      "6100",
+      "Rent — shop",
+      "13500.00",
+      "0"
+    ],
+    [
+      "6200",
+      "Utilities",
+      "2452.40",
+      "0"
+    ],
+    [
+      "6300",
+      "Insurance",
+      "2300.00",
+      "0"
+    ],
+    [
+      "6400",
+      "Software & subscriptions",
+      "495.00",
+      "0"
+    ],
+    [
+      "6600",
+      "Vehicle & fuel",
+      "1772.25",
+      "0"
+    ],
+    [
+      "6700",
+      "Bank charges",
+      "35.00",
+      "0"
+    ],
+    [
+      "6800",
+      "Interest expense",
+      "931.25",
+      "0"
+    ],
+    [
+      "6900",
+      "Office & misc",
+      "1018.77",
+      "0"
+    ]
+  ]
+}

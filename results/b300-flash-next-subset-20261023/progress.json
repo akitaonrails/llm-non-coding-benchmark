@@ -1,0 +1,64 @@
+[
+  {
+    "case": "brlaw_01_prazos_processuais",
+    "status": "completed_ungraded",
+    "error": null,
+    "elapsed_seconds": 234.80489059200045,
+    "controller_wait_seconds": 52.00553820699861,
+    "model_turn_seconds": 182.73814149700047,
+    "turns": 3,
+    "released_facts": [],
+    "usage": {
+      "input_tokens": 518854,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 30879,
+      "reasoning_output_tokens": 17403
+    },
+    "api_equivalent_usd": null,
+    "api_charge_usd": 0,
+    "electricity_cost_usd": null
+  },
+  {
+    "case": "bracc_01_das_fator_r",
+    "status": "completed_ungraded",
+    "error": null,
+    "elapsed_seconds": 595.9658754029952,
+    "controller_wait_seconds": 123.01166430900048,
+    "model_turn_seconds": 472.8249979540051,
+    "turns": 3,
+    "released_facts": [
+      "prolabore_abril"
+    ],
+    "usage": {
+      "input_tokens": 1496044,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 82452,
+      "reasoning_output_tokens": 53552
+    },
+    "api_equivalent_usd": null,
+    "api_charge_usd": 0,
+    "electricity_cost_usd": null
+  },
+  {
+    "case": "usacc_03_household_1040",
+    "status": "completed_ungraded",
+    "error": null,
+    "elapsed_seconds": 487.899719311994,
+    "controller_wait_seconds": 28.002932118994067,
+    "model_turn_seconds": 459.64025352700264,
+    "turns": 3,
+    "released_facts": [],
+    "usage": {
+      "input_tokens": 1170031,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 80974,
+      "reasoning_output_tokens": 57477
+    },
+    "api_equivalent_usd": null,
+    "api_charge_usd": 0,
+    "electricity_cost_usd": null
+  }
+]

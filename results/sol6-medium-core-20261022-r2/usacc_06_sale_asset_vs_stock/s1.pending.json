@@ -1,0 +1,11 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "session": 1,
+  "pushbacks": [
+    {
+      "when": "if the memo recommends against signing Buyer A as drafted",
+      "message": "Ray: You're telling me the offer that's $250k higher nets me LESS? That makes no sense. Walk me through it like I'm five, and tell me what number from Lone Star would actually beat Hensley."
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

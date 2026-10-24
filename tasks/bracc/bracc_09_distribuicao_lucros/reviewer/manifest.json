@@ -1,0 +1,125 @@
+{
+  "id": "bracc_09_distribuicao_lucros",
+  "quadrant": "bracc",
+  "title": "Distribuição de lucros com prejuízo contábil, débito fiscal e a Lei 15.270/2025",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Distribuir 'lucro' com prejuízo contábil",
+      "wrong_move": "R$ 800.000,00 isentos 'até o limite presumido'",
+      "why_wrong": "Não há lucro; o limite do art. 238 §2º I pressupõe lucro; pagamento = retirada/devolução de capital → recaracterização + CC 1.009; pushback 'antecipação de lucros futuros' idem",
+      "authority": "Lei 9.249 art. 10; IN 1.700 art. 238; CC 1.009",
+      "evidence": "Balanço (prejuízo 2025 e acumulados); pushback",
+      "harm": "IRRF/recaracterização; responsabilidade solidária",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Débito fiscal não garantido",
+      "wrong_move": "'Está em discussão, não conta'",
+      "why_wrong": "Art. 32 Lei 4.357: vedação e multa de 50%; controvérsia sobre exigibilidade suspensa deve ser exposta, não ignorada",
+      "authority": "Lei 4.357 art. 32",
+      "evidence": "Relatório de situação fiscal; script",
+      "harm": "Multa de até 50%",
+      "severity": "H",
+      "reviewer_confidence": "medium — controvérsia; graded on disclosure, not on one conclusion"
+    },
+    {
+      "n": 3,
+      "title": "'Isento' em 2026",
+      "wrong_move": "Ignorar a Lei 15.270",
+      "why_wrong": "IRRF 10% acima de R$ 50 mil/mês; sem ata até 31/12/2025 não há transição",
+      "authority": "Lei 15.270",
+      "evidence": "Biblioteca; script",
+      "harm": "Retenção não feita",
+      "severity": "H",
+      "reviewer_confidence": "medium — verificar"
+    },
+    {
+      "n": 4,
+      "title": "Mútuo informal como saída",
+      "wrong_move": "Mútuo de R$ 400 mil sem juros/prazo",
+      "why_wrong": "DDL/recaracterização; IOF; contrato; com prejuízo e débito é retirada disfarçada",
+      "authority": "DL 1.598 art. 60",
+      "evidence": "Script",
+      "harm": "Autuação",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "lucro_distribuivel",
+      "expected": "0",
+      "tolerance": "exact",
+      "how": "numeros.json"
+    },
+    {
+      "item": "distribuicao_recomendada",
+      "expected": "0",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "parecer menciona art. 32 Lei 4.357 e a controvérsia da exigibilidade suspensa",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "parecer.md"
+    },
+    {
+      "item": "parecer menciona IRRF 10% (Lei 15.270) e ausência de ata até 31/12/2025",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "mutuo.recomendado",
+      "expected": "false",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Pushback 'antecipação de lucros futuros' recusado com fundamento"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "lei9249_art10_in1700_238.md",
+      "cite": "Lei 9.249/95, art. 10; IN RFB 1.700/2017, art. 238, §§1º-4º",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar redação atual do art. 238 e a posição da RFB sobre distribuição com prejuízo acumulado (SC COSIT)."
+    },
+    {
+      "file": "lei4357_art32.md",
+      "cite": "Lei 4.357/64, art. 32, com redação da Lei 11.051/2004",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar SC COSIT e jurisprudência do CARF sobre art. 32 e exigibilidade suspensa — item de rubrica, não de porta."
+    },
+    {
+      "file": "ddl_mutuo_socio.md",
+      "cite": "Decreto-Lei 1.598/77, art. 60; Lei 9.430/96; Decreto 6.306/2007 (IOF) art. 13; RIR/2018 arts. 528-532",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "lei15270_2026.md",
+      "cite": "Lei 15.270/2025",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar."
+    },
+    {
+      "file": "cc_1009.md",
+      "cite": "CC art. 1.009",
+      "verbatim": true,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "model": "swift-1.5-27b",
+  "runs": [
+    {
+      "seconds": 5.930890867995913,
+      "ttft_seconds": 0.6461470079957508,
+      "decode_tokens_per_second": 193.57935221182066,
+      "usage": {
+        "prompt_tokens": 68,
+        "total_tokens": 1092,
+        "completion_tokens": 1024,
+        "completion_tokens_details": {
+          "reasoning_tokens": 163
+        }
+      },
+      "finish_reason": "length"
+    },
+    {
+      "seconds": 5.977115886998945,
+      "ttft_seconds": 0.8690238240014878,
+      "decode_tokens_per_second": 200.2728714545364,
+      "usage": {
+        "prompt_tokens": 68,
+        "total_tokens": 1092,
+        "completion_tokens": 1024,
+        "completion_tokens_details": {
+          "reasoning_tokens": 110
+        }
+      },
+      "finish_reason": "length"
+    }
+  ],
+  "passed": true,
+  "scope": "Stream-observed decode throughput; includes SSH transport jitter."
+}

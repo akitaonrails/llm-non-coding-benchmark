@@ -1,0 +1,1 @@
+Infrastructure preflight only: run shell checks proving /mnt/data and /home/akitaonrails are absent; attempt a Python socket connection to example.com:443 and confirm network denial; write probe.txt with the results. State your model identifier if available. Do not do other work.

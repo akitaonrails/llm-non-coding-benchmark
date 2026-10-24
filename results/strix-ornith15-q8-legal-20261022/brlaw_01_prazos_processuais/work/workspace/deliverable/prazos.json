@@ -1,0 +1,75 @@
+{
+  "processo": {
+    "numero": "1044712-38.2026.8.26.0114",
+    "varo": "7ª Vara Cível de Campinas",
+    "sistema": "e-SAJ (processo eletrônico)",
+    "autor": "Distribuidora Vale Verde Ltda.",
+    "res": [
+      {
+        "nome": "Ferreira & Lima Transportes Ltda.",
+        "adv": "Dr. Otávio Mendes Ribeiro (OAB/SP 212.880)",
+        "escritorio": "Ribeiro & Castanho Advogados",
+        "fls": 61
+      },
+      {
+        "nome": "Logística Campos Ltda.",
+        "adv": "Dra. Marília Sampaio (OAB/SP 318.004)",
+        "escritorio": "Sampaio Advocacia",
+        "fls": 70
+      }
+    ],
+    "escritorios_distintos": true
+  },
+  "citacao": {
+    "disponibilidade": "2026-11-19",
+    "publicacao": "2026-11-19",
+    "inicio_contagem": "2026-11-23",
+    "contestacao_vencimento": "2026-12-14",
+    "contestacao_dobro_vencimento": "2027-02-04",
+    "explicacao": "Disponibilidade da citação 19/11/2026 (quinta-feira), dia útil => publicação = 19/11/2026 (Lei 11.419/2006, art. 4º, §3º; CPC art. 224, §2º). Início da contagem = 1º útil seguinte á publicação: 20/11/2026 (sexta-feira) é Dia Nacional de Zumbi (Lei 14.759/2023) => protraito para 23/11/2026 (segunda-feira). Prazo = 15 dias úteis (CPC art. 335, III; contagem só em dias úteis, art. 219) => vencimento 14/12/2026 (2ª-feira). DOBRO (CPC art. 229 caput): 2 res + escritorios distintos => 30 dias uteis => vencimento 04/02/2027 (4ª-feira). Nota: o art. 229 §2º isenta os autos eletronicos => o dobro e questionavel; o prazo simples (15 dias uteis) vence 14/12/2026 e o dobro deve ser apreciado conforme o andamento processual.",
+    "sequencia_dias_uteis": [
+      "24/11/2026",
+      "25/11/2026",
+      "26/11/2026",
+      "27/11/2026",
+      "30/11/2026",
+      "01/12/2026",
+      "02/12/2026",
+      "03/12/2026",
+      "04/12/2026",
+      "07/12/2026",
+      "08/12/2026",
+      "09/12/2026",
+      "10/12/2026",
+      "11/12/2026",
+      "14/12/2026"
+    ]
+  },
+  "senteca": {
+    "disponibilidade": "2026-12-10",
+    "publicacao": "2026-12-10",
+    "inicio_contagem": "2026-12-11",
+    "embargos_vencimento": "2026-12-18",
+    "embargos_dobro_vencimento": null,
+    "apelacao_vencimento": "2027-02-03",
+    "apelacao_dobro_vencimento": "2027-02-24",
+    "explicacao": "Disponibilidade da sentenca 10/12/2026 (quinta-feira), dia util => publicacao = 10/12/2026. Inicio da contagem 11/12/2026 (1o util seguinte a publicacao). Embargos de declaracao: 5 dias uteis (CPC art. 1.023) => vencimento 18/12/2026 (6a-feira); o recessao ainda nao incide. Recurso/apelacao: 15 dias uteis (CPC art. 1.003, o5o) atravessa o recessao 20/12/2026 a 20/01/2027 (inclusive, art. 220 => dias uteis dentro da janela nao contam): 5 dias uteis antes de 20/12 + 10 apos o inicio do expediente pos-recesso => vencimento 03/02/2027 (quinta-feira). DOBRO sobre o recurso (art. 229 caput): 30 dias uteis => vencimento 24/02/2027; entretanto a duvida do §2o sobre autos electronicos e bastante e a questao e dubia.",
+    "dias_uteis_recurso": [
+      "14/12/2026",
+      "15/12/2026",
+      "16/12/2026",
+      "17/12/2026",
+      "18/12/2026",
+      "21/01/2027",
+      "22/01/2027",
+      "25/01/2027",
+      "26/01/2027",
+      "27/01/2027",
+      "28/01/2027",
+      "29/01/2027",
+      "01/02/2027",
+      "02/02/2027",
+      "03/02/2027"
+    ]
+  }
+}

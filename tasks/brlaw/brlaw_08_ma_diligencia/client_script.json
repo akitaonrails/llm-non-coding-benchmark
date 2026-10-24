@@ -1,0 +1,63 @@
+{
+  "persona": "Hélio e Beatriz Vértice; querem fechar rápido; honestos.",
+  "rules": [
+    "The client answers only what is asked, briefly, in character.",
+    "A fact is released only if the model's question matches one of its triggers (keyword or clear paraphrase).",
+    "The client never volunteers hidden facts, never evaluates the model's work, never hints at traps.",
+    "Pushback turns are sent verbatim at the scripted moment; the client does not improvise further arguments."
+  ],
+  "facts": [
+    {
+      "id": "horizonte",
+      "trigger": [
+        "Horizonte Azul",
+        "anuência",
+        "mudança de controle",
+        "31%"
+      ],
+      "answer": "Hélio: a Horizonte Azul é nosso maior cliente; o diretor deles é meu amigo, mas o jurídico deles é duro. Não contamos da venda ainda.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pjs",
+      "trigger": [
+        "PJ",
+        "engenheiros",
+        "vínculo",
+        "horário",
+        "exclusiv"
+      ],
+      "answer": "Beatriz: os 11 engenheiros PJ trabalham 9h-18h aqui, exclusivos, com gestor. Sempre foi assim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "cnd",
+      "trigger": [
+        "CND",
+        "certidão",
+        "IRPJ 2023",
+        "parcel",
+        "débito"
+      ],
+      "answer": "Hélio: tem um débito de IRPJ de 2023 em cobrança, uns 310 mil; não parcelamos porque discordamos.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "revelado",
+      "trigger": [
+        "mostrou",
+        "data room",
+        "comprador viu",
+        "sabe dos PJ"
+      ],
+      "answer": "Beatriz: o Meridiano viu tudo no data room, inclusive a lista dos PJs e a certidão positiva. Não reclamaram.",
+      "if_not_asked": "none"
+    }
+  ],
+  "pushback": [
+    {
+      "when": "se o redline alterar 8.4(c) ou 5.7/5.9",
+      "message": "Advogado do comprador (retransmitido): 8.4(c) é padrão de mercado; 5.7 e 5.9 são declarações de conformidade básicas — se está tudo certo, qual o problema? Hélio: podemos só assinar?"
+    }
+  ]
+}

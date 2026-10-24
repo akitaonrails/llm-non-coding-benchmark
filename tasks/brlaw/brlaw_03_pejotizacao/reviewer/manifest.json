@@ -1,0 +1,156 @@
+{
+  "id": "brlaw_03_pejotizacao",
+  "quadrant": "brlaw",
+  "title": "Parecer trabalhista: risco de vínculo (pejotização), exposição e prescrição",
+  "level": "L3",
+  "traps": [
+    {
+      "n": 1,
+      "title": "Tema 725 = risco zero",
+      "wrong_move": "Probabilidade baixa; sem provisão",
+      "why_wrong": "Tema 725 trata de terceirização entre PJs; com subordinação provada (ponto, aprovação de férias pelo RH, avaliação), art. 3º + art. 9º → vínculo provável; Tema 1389 pendente com suspensão NÃO reduz a exposição (pushback)",
+      "authority": "CLT 3º, 9º; Tema 725; Tema 1389",
+      "evidence": "Prints; e-mail RH; planilha; biblioteca",
+      "harm": "Passivo não provisionado; demonstrações erradas; acordo recusado",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 2,
+      "title": "Súmula/OJ cancelada",
+      "wrong_move": "Citar Súmula 256 ou OJ 191 como vigentes",
+      "why_wrong": "Status CANCELADA na biblioteca",
+      "authority": "",
+      "evidence": "tst_sumulas_ojs.md",
+      "harm": "Fundamento inexistente",
+      "severity": "C",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 3,
+      "title": "Exposição de 84 meses",
+      "wrong_move": "R$ 1.045.518,10",
+      "why_wrong": "Prescrição quinquenal da data do ajuizamento (2026-11-16) → corte 2021-11-16: 59 meses exigíveis → R$ 734.352,00",
+      "authority": "CF 7º XXIX; Súmula 308",
+      "evidence": "Notificação (data prevista)",
+      "harm": "Exposição superestimada; acordo mal calibrado",
+      "severity": "H",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 4,
+      "title": "FGTS só sobre salários",
+      "wrong_move": "R$ 84.960,00",
+      "why_wrong": "Incide também sobre 13º e férias: R$ 101.480,00",
+      "authority": "Lei 8.036",
+      "evidence": "Biblioteca (parâmetros)",
+      "harm": "Exposição a menor",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    },
+    {
+      "n": 5,
+      "title": "Exclusividade como prova decisiva",
+      "wrong_move": "Fundar o parecer na exclusividade",
+      "why_wrong": "442-B: exclusividade não caracteriza; o peso está na subordinação",
+      "authority": "",
+      "evidence": "CLT 442-B",
+      "harm": "Peso errado",
+      "severity": "M",
+      "reviewer_confidence": "high"
+    }
+  ],
+  "oracle": [
+    {
+      "item": "prescricao.meses_exigiveis",
+      "expected": "59",
+      "tolerance": "±1",
+      "how": "parecer.json"
+    },
+    {
+      "item": "exposicao.total",
+      "expected": "734352.00",
+      "tolerance": "±3% (com remuneração-base 18.000; se usar 12.000, aceitar recomputo com método declarado)",
+      "how": ""
+    },
+    {
+      "item": "probabilidade_vinculo = alta",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "provisao.classificacao_cpc25 = provavel",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    },
+    {
+      "item": "Nenhuma citação à Súmula 256 ou OJ 191 como vigentes",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": "parecer.md"
+    },
+    {
+      "item": "tema_1389 mencionado com efeito processual (suspensão) e sem redução de exposição",
+      "expected": "true",
+      "tolerance": "exact",
+      "how": ""
+    }
+  ],
+  "rubric": [
+    "Pushback respondido: suspensão ≠ ausência de risco; CPC 25"
+  ],
+  "notes": [],
+  "library_verification": [
+    {
+      "file": "clt_requisitos_vinculo.md",
+      "cite": "CLT arts. 2º, 3º, 9º, 442-B, 818",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "cf_art7_xxix_prescricao.md",
+      "cite": "CF art. 7º, XXIX; CLT art. 11; Súmula 308 TST",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "stf_tema_725_adc48_adpf324.md",
+      "cite": "STF RE 958.252 (Tema 725, 2018); ADPF 324; ADC 48 (2020)",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    },
+    {
+      "file": "stf_tema_1389_pejotizacao.md",
+      "cite": "STF, ARE 1.532.603/DF, rel. Min. Gilmar Mendes — repercussão geral reconhecida (abril/2025); decisão de **suspensão nacional** dos processos (14/04/2025)",
+      "verbatim": false,
+      "planted": null,
+      "note": "Verificar o estágio real do Tema 1.389 na data de congelamento; a biblioteca é a autoridade do teste."
+    },
+    {
+      "file": "tst_sumulas_ojs.md",
+      "cite": "Súmulas 331, 212, 338, 363; OJ SDI-1 nº 383; **OJ SDI-1 nº 191 (CANCELADA)**; **Súmula 256 (CANCELADA)**",
+      "verbatim": false,
+      "planted": "superseded",
+      "note": "Súmula 256 e OJ 191 constam com status CANCELADA; usá-las como fundamento é falha."
+    },
+    {
+      "file": "verbas_e_calculo.md",
+      "cite": "CLT arts. 457, 477, 487; Lei 8.036/90 arts. 15 e 18; Lei 8.212/91 art. 22; Lei 12.506/2011; Súmula 437 TST",
+      "verbatim": false,
+      "planted": null,
+      "note": "Simplificações declaradas: FGTS sobre férias+1/3; férias simples."
+    },
+    {
+      "file": "multa_477_e_honorarios.md",
+      "cite": "CLT arts. 467, 477 §8º, 791-A",
+      "verbatim": false,
+      "planted": null,
+      "note": ""
+    }
+  ]
+}
