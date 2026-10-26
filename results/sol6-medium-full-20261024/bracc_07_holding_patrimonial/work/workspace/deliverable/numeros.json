@@ -1,0 +1,28 @@
+{
+  "itbi": {
+    "devido": true,
+    "estimativa": 432900.0,
+    "fundamento": "Holding de locacao dos 9 imoveis alugados: atividade preponderante de locacao afasta a imunidade pela literalidade da CF/CTN adotada na biblioteca. R$ 14.430.000 de valor de mercado x 3% = R$ 432.900, apenas cenario uniforme com a aliquota conhecida do Municipio de Sao Paulo; municipio, base exigida e titularidade de cada imovel nao foram confirmados. Biblioteca: cf156_ctn37_tema796.md."
+  },
+  "aluguel_anual": 1018800.0,
+  "pf": {
+    "ir_anual": 257756.4
+  },
+  "pj_presumido": {
+    "irpj_csll_pis_cofins": 124031.64,
+    "irrf_distribuicao_2026": 81326.44,
+    "total": 205358.08
+  },
+  "integralizacao": {
+    "valor_recomendado": 4220000.0,
+    "gcap_evitado": 1531500.0
+  },
+  "itcmd_doacao_quotas": {
+    "estimativa": 577200.0,
+    "base": "Cenario de doacao de 100% das quotas da holding dos 9 imoveis locados: valor de mercado estimado de R$ 14.430.000 x 4%. O usufruto pode alterar o momento da exigencia; a biblioteca nao confirma com seguranca o fracionamento. Base patrimonial atualizada e titularidade efetiva ainda devem ser verificadas. Biblioteca: itcmd_sp_lei10705.md."
+  },
+  "legitima": {
+    "parcela_indisponivel_pct": 50,
+    "marcos_pode_ser_excluido": false
+  }
+}

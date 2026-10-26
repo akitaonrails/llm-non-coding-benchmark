@@ -1,0 +1,65 @@
+[
+  {
+    "ref": "AJE-1",
+    "date": "2026-03-31",
+    "memo": "Reclassify March 14 $1,500 transfer from owner's personal checking, confirmed by owner; original GL credit to sales was incorrect.",
+    "lines": [
+      {"account": "4000", "debit": 1500.00, "credit": 0.00},
+      {"account": "3100", "debit": 0.00, "credit": 1500.00}
+    ]
+  },
+  {
+    "ref": "AJE-2",
+    "date": "2026-03-31",
+    "memo": "Reverse duplicate March 9 Cascade CH-7731 bill; February 26 copy was already booked, and owner confirmed email and paper copies are the same invoice.",
+    "lines": [
+      {"account": "2000", "debit": 4860.00, "credit": 0.00},
+      {"account": "5000", "debit": 0.00, "credit": 4860.00}
+    ]
+  },
+  {
+    "ref": "AJE-3",
+    "date": "2026-03-31",
+    "memo": "Reclassify Allied Insurance Q2 general liability premium covering April-June from March expense to prepaid expenses.",
+    "lines": [
+      {"account": "1300", "debit": 1150.00, "credit": 0.00},
+      {"account": "6300", "debit": 0.00, "credit": 1150.00}
+    ]
+  },
+  {
+    "ref": "AJE-4",
+    "date": "2026-03-31",
+    "memo": "Reclassify CabinetVision annual license covering April 2026-March 2027 from March expense to prepaid expenses; no March amortization.",
+    "lines": [
+      {"account": "1300", "debit": 1188.00, "credit": 0.00},
+      {"account": "6400", "debit": 0.00, "credit": 1188.00}
+    ]
+  },
+  {
+    "ref": "AJE-5",
+    "date": "2026-03-31",
+    "memo": "Reclassify March 15 Uchi anniversary dinner to owner's draws, confirmed personal by owner.",
+    "lines": [
+      {"account": "3200", "debit": 212.00, "credit": 0.00},
+      {"account": "6500", "debit": 0.00, "credit": 212.00}
+    ]
+  },
+  {
+    "ref": "AJE-6",
+    "date": "2026-03-31",
+    "memo": "Record March 21 unidentified mobile deposit in suspense pending identification; bank statement shows deposit and owner requested it be parked.",
+    "lines": [
+      {"account": "1000", "debit": 4312.00, "credit": 0.00},
+      {"account": "2100", "debit": 0.00, "credit": 4312.00}
+    ]
+  },
+  {
+    "ref": "AJE-7",
+    "date": "2026-03-31",
+    "memo": "Record March 31 monthly bank service fee shown on bank statement and absent from GL.",
+    "lines": [
+      {"account": "6700", "debit": 35.00, "credit": 0.00},
+      {"account": "1000", "debit": 0.00, "credit": 35.00}
+    ]
+  }
+]

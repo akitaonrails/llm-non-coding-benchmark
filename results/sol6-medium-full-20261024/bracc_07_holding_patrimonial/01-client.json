@@ -1,0 +1,8 @@
+{
+  "questions": "# Perguntas à cliente\n\n1. Os 11 imóveis da relação pertencem hoje **100% a Helena**, com o inventário do marido falecido em 2019 encerrado e registrado? Se não, indique a fração de Helena em cada imóvel e quais ainda dependem de inventário.\n2. Em que **município** fica cada imóvel? A relação identifica expressamente Guarulhos, Campos do Jordão e Cotia, mas não confirma os demais; isso é necessário para delimitar a estimativa de ITBI, pois a biblioteca só informa a alíquota do Município de São Paulo.\n3. Quanto Helena efetivamente deduz **por mês** dos aluguéis no carnê-leão em IPTU, condomínio e administração pagos por ela? Há outras rendas tributáveis que entram no cálculo mensal do IR? Envie, se possível, o valor do IR sobre aluguéis efetivamente apurado em 2026.\n4. Na estrutura cogitada, Helena pretende manter **todas as quotas** e receber sozinha os lucros da holding por algum período, ou pretende doar quotas desde o início? Se pretende doar, qual divisão de quotas e de lucros entre Helena, Ricardo, Paula e Marcos, e em que data? Isso determina o IRRF de 2026 e o ITCMD da doação.\n5. Há custos ou despesas dedutíveis da futura holding, além dos tributos sobre a receita, que reduziriam o lucro disponível para distribuição? Se houver, informe uma estimativa mensal ou anual.\n",
+  "released_fact_ids": [
+    "marcos",
+    "deducoes"
+  ],
+  "answer": "Ele não fala comigo há seis anos. Não quero que receba nada. Se a lei obriga, quero o mínimo possível e com as cláusulas de proteção.\nA administradora cobra 8%; IPTU e condomínio dos vagos eu pago.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

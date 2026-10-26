@@ -1,0 +1,26 @@
+{
+  "mes": "2026-02",
+  "lancamentos": [],
+  "retificacoes_meses_anteriores": [
+    {
+      "mes_origem": "2026-01",
+      "referencia": "AJ-01-2026-001 — NF 8812 Papel & Cia",
+      "valor": 11100.00,
+      "situacao": "O balancete acumulado de fevereiro ainda mostra R$ 11.100,00 do crédito fiscal indevido de janeiro em Tributos a recuperar. Regularizar o estorno de janeiro uma única vez, conforme ajustes.json de mes_01. A contrapartida contábil segue provisória porque o total da NF 8812 não foi confirmado. Não lançar este item novamente como despesa de fevereiro."
+    }
+  ],
+  "ajustes_fiscais_para_apuracao_trimestral": [
+    {
+      "referencia": "NF 4410 Brindes Prime",
+      "natureza": "adicao de despesa com brindes",
+      "valor": 48000.00,
+      "sem_lancamento_contabil": true
+    },
+    {
+      "referencia": "Recibo Associação Beneficente Luz",
+      "natureza": "adicao de doacao indedutivel",
+      "valor": 30000.00,
+      "sem_lancamento_contabil": true
+    }
+  ]
+}

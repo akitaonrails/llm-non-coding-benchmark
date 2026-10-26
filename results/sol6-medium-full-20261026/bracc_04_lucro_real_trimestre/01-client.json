@@ -1,0 +1,7 @@
+{
+  "questions": "# Pergunta ao cliente — fechamento de janeiro/2026\n\nNa NF 8812 da Papel & Cia, o item exibido vale R$ 120.000,00, mas o razão registrou R$ 120.000,00 como despesa, R$ 11.100,00 como crédito de PIS/COFINS e R$ 131.100,00 como obrigação com o fornecedor. Qual é o **valor total da NF e o valor efetivamente devido ao fornecedor**: R$ 120.000,00 ou R$ 131.100,00? Se possível, informe o campo “valor total da NF” do documento completo. A resposta determina se o estorno do crédito indevido de R$ 11.100,00 reduz a obrigação com o fornecedor ou aumenta a despesa registrada.\n",
+  "released_fact_ids": [
+    "papel"
+  ],
+  "answer": "É papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

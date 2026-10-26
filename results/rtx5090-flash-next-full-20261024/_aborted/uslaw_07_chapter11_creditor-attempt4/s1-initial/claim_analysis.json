@@ -1,0 +1,39 @@
+{
+  "total_prepetition_claim": 125000,
+  "admin_503b9": {
+    "amount": 78100,
+    "invoices": ["MS-7788", "MS-7815"]
+  },
+  "general_unsecured": 46900,
+  "reclamation": {
+    "available": true,
+    "why": "Three goods invoices were received by Redwood while insolvent within 45 days before the 2026-03-10 petition (window opens 2026-01-24): MS-7740 (rec. 2026-02-04, unpaid balance 25,600), MS-7788 (rec. 2026-02-20, 41,300), MS-7815 (rec. 2026-03-04, 36,800) — 103,700 of goods on which nothing remains to be paid beyond that balance. §546(c)(1) requires WRITTEN demand no later than 45 days after receipt; for MS-7740 that date (2026-03-21) falls after commencement, so the later 20-days-after-petition rule governs: demand must be served on or before 2026-03-30 (11 days from today). No demand appears in the file. CAVEATS: (a) reclamation is subject to the DIP lender's blanket lien (library note to bc_546c) so the reclamation right is likely of little or no real value — assert it to preserve leverage; (b) insolvency at each receipt is assumed from the chapter 11 filing, not yet proven; (c) traceability of identifiable goods is assumed, not in the file. MS-7701 (rec. 2026-01-14) is outside the 45-day window and was paid in full."
+  },
+  "bar_date": "2026-06-11",
+  "preference": {
+    "transfers_in_90_days": 180000,
+    "ordinary_course_defense": {
+      "protected": 95000,
+      "exposed": 85000,
+      "reasoning": "90-day window opens 2025-12-10. Four payments: 2025-12-18 $51,000 (45 days after invoice, ACH) and 2026-01-22 $44,000 (43 days, ACH) match the parties' 12-month history (8 payments, 43-47 days, all ACH) — §547(c)(2)(A) protection (95,000); the Jan 22 payment came 2 days after the terms-change email but with unchanged speed and method, so it stays protected. 2026-02-10 $48,200 (29 days, ACH) and 2026-02-27 $36,800 (partial, WIRE) are EXPOSED (85,000): CLIENT ADMISSIONS (2026-03-19) confirm Mesa cut terms to net-15 in January, conditioned each new shipment on payment of the oldest open invoice, and made the 2/27 wire a shipping condition ('no steel until it hit our account') — the library states payments under shortened terms, pressure, or unusual methods (wire on demand) compared with the parties' history generally fall outside (c)(2)(A), and Mesa's own credit manager is the witness to the pressure. (c)(2)(B) 'ordinary business terms' (industry standard) untested — no industry evidence in file. Creditor bears the burden on (c) defenses, §547(g). Net effect: §547(c)(4) unpaid new value after the exposed payments (99,400 incl. freight/services; 78,100 goods after 2/10 and exactly 36,800 goods after 2/27) covers the full 85,000 — net exposure ~0; worst case ~36,800 under strict sequencing of new value (rule NOT in the library — labeled unverified)."
+    },
+    "new_value_defense": 85000,
+    "net_exposure_estimate": 0
+  },
+  "stay_violations": [
+    "2026-03-12: 'FINAL NOTICE — pay $210,000 within 5 days or we refer to collections' letter, mailed and emailed — an act to collect a pre-petition claim, §362(a)(6) (library bc_362.md: dunning letters after petition are acts to collect).",
+    "2026-03-15: collection call to Redwood AP after the petition; AP told Mesa 'we filed Chapter 11, talk to counsel'; Mesa's AR clerk replied 'that's not our problem, you owe us' — continued collection attempt, and from this date Mesa had actual knowledge, making later violations willful under §362(k).",
+    "2026-03-18: email to Redwood CFO threatening to 'hold all future shipments and report to credit bureaus' — threats to report to credit bureaus after the petition are acts to collect (library bc_362.md); §362(k) liability for willful violations includes actual damages, costs and attorneys' fees, and punitive damages in appropriate circumstances; courts also sanction creditors for willful violations under §105 (library bc_362.md). The shipment-withholding threat is not squarely addressed in the library — flagged unverified.",
+    "[DATE UNKNOWN — client could not say] When Redwood's counsel offered continued supply on normal terms, Mesa (Frank) answered 'pay first': conditioning post-petition dealings on payment of pre-petition debt is a likely act to collect under §362(a)(6) ('any act to collect... a claim that arose before the commencement' — library bc_362.md), though this exact pattern is not squarely addressed in the library, so the characterization is flagged unverified. Independently, the refusal destroys critical-vendor eligibility: the vendor must agree to customary trade terms (library critical_vendor_practice.md)."
+  ],
+  "immediate_actions": [
+    "STOP ALL COLLECTION TODAY (hard stop directive to AR dept, in writing): no more letters, calls, credit-bureau reports or threats — each is a §362(a)(6) violation and Mesa is already on notice of the case, so any further act is willful under §362(k).",
+    "Serve a WRITTEN reclamation demand under §546(c)(1) on or before 2026-03-30 covering MS-7740, MS-7788, MS-7815 goods (103,700 unpaid value); likely subordinated to the DIP blanket lien but preserves leverage.",
+    "URGENT COURSE CORRECTION before the 2026-04-02 critical-vendor hearing (Dkt. 44): debtor's counsel already offered to keep Mesa supplied on normal terms and Mesa (Frank) answered 'pay first' — that answer, repeated to the court, supports NOT designating Mesa, because the vendor must agree to customary trade terms (library critical_vendor_practice.md). Contact debtor's counsel this week, retract the 'pay first' position, and commit to continued supply on ordinary case terms; pair the request with the 78,100 §503(b)(9) priority claim so the package is value to the estate, not old-debt relief.",
+    "File Proof of Claim (Form 410) by the bar date 2026-06-11, 5:00 p.m. MT, via the claims agent's e-filing — file asserts 78,100 as §503(b)(9) administrative and 46,900 general unsecured (per library frbp_3002_3003.md, the 503(b)(9) portion must be asserted separately from the GUC claim by the procedure the bar-date order specifies).",
+    "Do NOT set off or withhold payments against Redwood without stay relief — setoff of pre-petition mutual debts requires relief from the automatic stay (library bc_502d_setoff.md).",
+    "Quantify and reserve for preference exposure: gross exposure up to 85,000 on the two non-ordinary-course payments (client admissions on 2026-03-19 confirm the pressure/shortened-terms facts); the unpaid new value shipped afterward (99,400; 78,100 goods after 2/10, 36,800 goods after 2/27) covers it fully — net estimate 0, worst case ~36,800 (see preference.ordinary_course_defense.reasoning) — under §502(d) the court can disallow Mesa's ENTIRE claim until any preference liability is paid, so resolve this with the estate before distribution.",
+    "Preserve all documents (emails, AR notes, shipment and lien records); lock down the timeline of who at Mesa knew of the filing and when (3/15 call is the first documented knowledge; Frank's 'pay first' call to debtor's counsel is undated — pin it down), because willfulness turns on it.",
+    "STOP conditioning supply on payment of old money — it already happened twice (Lori: 'no steel until the 2/27 wire hit our account'; Frank: 'pay first' to debtor's counsel). Never repeat it: conditioning new shipments on pre-petition payment risks a §362(a)(6) violation (pattern not squarely addressed in the library — characterization flagged unverified) and is exactly the conduct that disqualifies a critical-vendor request; continued ordinary-course shipments, by contrast, support both the critical-vendor case and the estate's value analysis."
+  ]
+}

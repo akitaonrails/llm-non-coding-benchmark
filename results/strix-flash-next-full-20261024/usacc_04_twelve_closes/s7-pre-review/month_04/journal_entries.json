@@ -1,0 +1,245 @@
+[
+  {
+    "ref": "JE-2504-001",
+    "date": "2025-04-01",
+    "memo": "April 2025 monthly subscription invoices INV-2276..INV-2299, 24 customers, total 30,450 (invoices.csv). Same cohort as Jan-Mar. SaaS access over time (ASC 606-10-25-14(b), 25-27; policy #1). Billed and earned in the same month. No new annual contracts in April.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-002",
+    "date": "2025-04-26",
+    "memo": "April customer receipts, 24 items (cash_receipts.csv; bank_statement.pdf): all 24 monthly ACH collections 04/20-04/26 totaling 30,450, tying INV-2276..INV-2299 in full. Every receipt applied to an April invoice; nothing applied to the opening A/R 92,650 (fourth month; U3).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-003",
+    "date": "2025-04-05",
+    "memo": "Vendor bill AWS 10,280, 04/05 (vendor_bills.csv, hosting & infrastructure).",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 10280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 10280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-004",
+    "date": "2025-04-06",
+    "memo": "Vendor bill WeWork 7,200, 04/06 (vendor_bills.csv, rent).",
+    "lines": [
+      {
+        "account": "6100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-005",
+    "date": "2025-04-07",
+    "memo": "Vendor bill Gusto fees 240, 04/07 (vendor_bills.csv, G&A other).",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-006",
+    "date": "2025-04-08",
+    "memo": "Vendor bill Notion/Slack/GitHub 1,460, 04/08 (vendor_bills.csv, software & tools).",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-007",
+    "date": "2025-04-09",
+    "memo": "Vendor bill Google Ads 3,400, 04/09 (vendor_bills.csv, marketing). No Harbor Law bill in April - the March 2,500 was a one-time item.",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 3400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 3400.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-008",
+    "date": "2025-04-10",
+    "memo": "Vendor ACH payments, 5 bills paid in-month per bank 04/05-04/09 (AWS 10,280 + WeWork 7,200 + Gusto fees 240 + software 1,460 + Google Ads 3,400 = 22,580). No payment against opening AP 17,420 for the fourth consecutive month (U9 observation).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 22580.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 22580.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-009",
+    "date": "2025-04-25",
+    "memo": "April payroll per payroll_register.json (04/25): gross 54,404, net 48,200, employer taxes 5,076, remitted 11,280, 9 employees. Register identical to Jan/Feb/Mar for the FOURTH consecutive month (U11 - flagged, not re-asked). Withholding derived: 54,404 - 48,200 = 6,204 (U7). One payroll run per the register and per the office manager's 4/27 note.",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-010",
+    "date": "2025-04-25",
+    "memo": "Employer payroll taxes & benefits per register, 5,076 (04/25).",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-011",
+    "date": "2025-04-25",
+    "memo": "Payroll tax remittance per register and bank GUSTO TAX 04/25, 11,280 = withholding 6,204 + employer 5,076. 2210 clears to zero for the month.",
+    "lines": [
+      {
+        "account": "2210",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-012",
+    "date": "2025-04-26",
+    "memo": "SECOND GUSTO NET PAY debit 48,200 at bank on 04/26 - duplicate. Bank statement shows two GUSTO NET PAY debits of 48,200 (04/25 and 04/26) but the payroll register shows ONE April payroll, and the office manager's note (documents/month_04/note_from_office_manager.txt, Gusto ticket GS-44812 opened 4/27) confirms: 'two net-pay debits hit our account, only one payroll was run.' Cash outflow is real and must be booked to agree books to bank, but it is NOT payroll expense - double-counting payroll expense would misstate P&L against the register. Booked as a recovery claim (asset) in NEW account 1200 Due from Gusto - duplicate net-pay debit. Recovery unconfirmed (U12); if not recovered it becomes a loss in a later period. No payroll expense recognized on this debit.",
+    "lines": [
+      {
+        "account": "1200",
+        "debit": 48200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-013",
+    "date": "2025-04-30",
+    "memo": "Depreciation 1,777.78 = 64,000 straight-line over 36 months per close checklist item 6 (U5 assumption carried).",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "JE-2504-014",
+    "date": "2025-04-30",
+    "memo": "April deferred-revenue release, 11,700: Trestle prior contract 8,200 (final service month before May is April; balance after = 8,200 for May) + Trestle renewal 2,000 + Marigold C-027 1,500 (policy #1, 18,000/12). Pinecone C-025 release 0.00 - term still unknown (U10; no new Pinecone documents in April).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 11700.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 11700.0
+      }
+    ]
+  }
+]

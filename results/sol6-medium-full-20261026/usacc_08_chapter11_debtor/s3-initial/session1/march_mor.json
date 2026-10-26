@@ -1,0 +1,25 @@
+{
+  "part1": {
+    "receipts": 2262400,
+    "disbursements": {
+      "payroll": 412000,
+      "post_petition_vendors": 19570,
+      "court_authorized_pre_petition_vendor_apex_conditional": 31200,
+      "utilities_deposit": 28000
+    },
+    "ending_cash": null
+  },
+  "part2": {
+    "post_petition_payables": null,
+    "pre_petition_liabilities_subject_to_compromise": null
+  },
+  "part5": {
+    "professional_fees_approved": null,
+    "paid": 0,
+    "holdback": null
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "yes — Apex Coatings $31,200 on March 24 (Dkt. 48; required written trade-terms agreement unverified); an unknown portion of March 13 payroll (Dkt. 9)",
+    "payments_outside_ordinary_course_without_approval": "unknown — Apex payment was conditional on a written trade-terms agreement that has not been verified; no other such payment identified in the supplied activity"
+  }
+}

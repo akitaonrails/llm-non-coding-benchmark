@@ -1,0 +1,74 @@
+[
+  {
+    "rank": 1,
+    "clause": "§5.3 / Exhibit C",
+    "playbook_rule": "A2",
+    "severity": "hard",
+    "issue": "The data processing addendum is an agreement to agree: §5.3 promises a DPA 'in the form to be attached as Exhibit C', and Exhibit C reads '[To be attached.]' — a blank. Client confirmed (2026-10-25) that EU driver names, locations, working hours and customer addresses from the Rotterdam/Hamburg operations will be processed — squarely GDPR-scoped personal data.",
+    "why": "Playbook A2 (hard rule) requires an executed DPA at signing whenever EU/UK personal data is processed and says expressly that 'to be attached' is not acceptable. Per GDPR Art. 28(3) (library: gdpr_art28.md), processing by a processor must be governed by a binding contract stipulating the (a)–(h) terms, and 'absent such a contract, the controller is in breach of Art. 28 from the first day of processing.' Cobalt — through whichever entity acts as the Art. 28 controller — is in breach from day one of processing, so this is the one issue that is certain on go-live, not contingent. It is also easily fixed by RouteWise. Remaining unknown, flagged: whether Holdings or Cobalt Freight Europe B.V. is the Art. 28 controller for the EU-ops data — the client could not confirm; the redline draft covers both cases, but any controller-to-controller mechanics sit outside this library and are flagged as unverified, not cited.",
+    "redline": "Replace §5.3: “Provider and Customer shall execute the Data Processing Addendum attached as Exhibit C concurrently with this Agreement. Exhibit C is incorporated into and forms part of this Agreement as of the Effective Date. Provider shall not process any personal data subject to the GDPR or UK GDPR on Customer's behalf until Exhibit C is in effect.” Attach an Exhibit C containing the Art. 28(3)(a)–(h) terms (skeleton in redlines.md §2)."
+  },
+  {
+    "rank": 2,
+    "clause": "§9.1/§10.1 (read with §9.3)",
+    "playbook_rule": "A1",
+    "severity": "hard",
+    "issue": "Provider's third-party IP-infringement indemnity in §10.1 says Provider's obligations are 'uncapped', but §9.1 caps each party's aggregate liability at 12 months' fees 'NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS AGREEMENT', and §9.3's carve-outs cover only gross negligence, willful misconduct, fraud and Customer's payment obligations — not the §10.1 indemnity. The cap swallows the 'uncapped' protection — playbook drafting note C2 squarely on point: a 'notwithstanding' clause swallowing a protection elsewhere in the document.",
+    "why": "The library (contract_interpretation_notwithstanding.md: Restatement (2d) §203; Delaware cases on 'notwithstanding anything to the contrary') states that such a cap controls over conflicting, even more specific, provisions, and that an 'uncapped' statement elsewhere does not override it unless the cap clause itself carves the obligation out — which §9.1/§9.3 do not. Delaware law governs (§13.1). Result: if a third party sues Cobalt over RouteWise's software, Cobalt's recovery from Provider is capped at roughly $222,000 (12 months' fees), and §9.2's consequential-damages exclusion also invites Provider to argue indemnity settlements are excluded. Playbook A1 (hard rule) requires the vendor IP indemnity to survive and to sit outside the liability cap.",
+    "redline": "Fix the cap clause itself (the only reliable fix per the library): §9.1 opening becomes “NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS AGREEMENT, AND EXCEPT AS PROVIDED IN SECTION 9.3, IN NO EVENT…”; §9.3 adds “(c) Provider's defense, payment and settlement obligations under Section 10.1, which are not subject to any limitation or exclusion in this Agreement”; §10.1's replaced final sentence makes those obligations “uncapped, are expressly excluded from the limitations and exclusions of Section 9 (including Sections 9.1 and 9.2) notwithstanding Section 9.1, survive termination of this Agreement” and makes amounts payable “deemed direct damages of the indemnified party”. Full replacement text in redlines.md §1."
+  },
+  {
+    "rank": 3,
+    "clause": "Exhibit A (Order Form No. 1), ¶4 'Pricing adjustments' (with §14.1)",
+    "playbook_rule": "A3",
+    "severity": "hard",
+    "issue": "The Order Form lets Provider (i) raise fees once during the 36-month Initial Subscription Term on 60 days' notice by up to the greater of 8% or CPI-U, and (ii) increase fees for any renewal term with no cap. Because §14.1 makes an Order Form control over the MSA on its subject matter (playbook drafting note C1), these terms override MSA §4's silence on increases.",
+    "why": "Playbook A3 (hard rule): no unilateral increases during an initial term, period; renewal increases capped at the LOWER of 5% or CPI with 90 days' notice. The Order Form inverts every axis: mid-term increase permitted (vs. forbidden), 'greater of 8% or CPI' (vs. lower of 5% or CPI), 60 days' notice (vs. 90), uncapped renewal increases. Arithmetic: 8% of $18,500/mo = +$1,480/mo = +$17,760/yr; if taken at month 13 it adds $35,520 over the term, and because only 60 days' notice is needed it could start as early as month 3, adding up to $50,320; renewal years reset at +8% or more (e.g., $222,000 → $239,760/yr).",
+    "redline": "Replace Exh A ¶4: “4. Pricing adjustments. Fees for the Initial Subscription Term are fixed, and Provider may not increase the fees during the Initial Subscription Term. For any renewal term, Provider may increase the monthly fee by no more than the lower of (a) five percent (5%) or (b) the trailing twelve-month change in CPI-U, and only upon at least ninety (90) days' prior written notice to Customer; absent timely notice, the fees remain unchanged for the renewal term.” Full text in redlines.md §3."
+  },
+  {
+    "rank": 4,
+    "clause": "§3.3",
+    "playbook_rule": "A4",
+    "severity": "hard",
+    "issue": "Each Subscription Term auto-renews for successive 24-month terms unless Cobalt gives written non-renewal notice at least 90 days before term end. Both the renewal length (24 > 12) and the notice period (90 > 30) exceed playbook limits, and the clock runs from the Service Start Date, which Provider sets (Exh A) — a calendar trap.",
+    "why": "Playbook A4 (hard rule): auto-renewal terms no longer than 12 months and non-renewal notice of 30 days or less. As drafted, missing the 90-day window once commits Cobalt to another 24 months: roughly $444,000 at current fees ($18,500 × 24), or $479,520 if a renewal increase of 8% applies first (2 × $222,000 × 1.08) — with no exit short of breach.",
+    "redline": "Replace §3.3: “Each Subscription Term shall automatically renew for successive renewal terms of twelve (12) months unless either party gives written notice of non-renewal at least thirty (30) days before the end of the then-current term.” Full text in redlines.md §4."
+  },
+  {
+    "rank": 5,
+    "clause": "§2.2",
+    "playbook_rule": "A5",
+    "severity": "hard",
+    "issue": "The license is granted to Cobalt Holdings only and expressly does not extend to Affiliates 'unless named on an Order Form at additional fees'. Client confirmed (2026-10-25) that both playbook-named affiliates will use RouteWise — Cobalt Freight Europe B.V. (Rotterdam/Hamburg) and Cobalt Brokerage LLC (carrier routing) — with Holdings signing. As drafted, their personnel are unlicensed users requiring an extra-fee Order Form. Knock-on: §1.6 'Users' covers only Customer's own employees/contractors, and §1.2 Customer Data only Customer's drivers/customers, so the fix must amend §1.2/§1.6 alongside §2.2.",
+    "why": "Playbook A5 (hard rule): those affiliates must be covered at no additional fee, or Holdings must sign on behalf of affiliates. With use confirmed and Holdings signing in its own name, the break is live from day one, not theoretical — and because Cobalt Freight Europe B.V. is the entity behind the Rotterdam/Hamburg EU data (see rank 1), affiliate personnel, drivers and customers must be pulled inside the license, 'Users' and the DPA scope together.",
+    "redline": "Replace §2.2 and amend §1.2/§1.6 as set out in redlines.md §5 (license extended to Customer and its Affiliates at no additional fees; 'Users' and Customer Data redefined to include Affiliate personnel, drivers and customers)."
+  },
+  {
+    "rank": 6,
+    "clause": "Exhibit B (SLA)",
+    "playbook_rule": "B5",
+    "severity": "preferred",
+    "issue": "Service credits are the sole remedy for availability failures, but the SLA contains no termination right for chronic failure, which is the playbook's stated condition for accepting credits-as-sole-remedy. The credit regime is also weak: up to 8 hrs/month of 'scheduled maintenance' (on 48 hours' notice) is excluded from availability (≈1.1% of a 720-hour month, so up to ~11.6 hrs/mo of downtime can occur before any credit accrues), credits cap at 25% of monthly fees (max $4,625/mo, reached at just 97% availability), and claims are forfeited if not made within 30 days.",
+    "why": "Playbook B5 accepts 99.5% with credits and even credits-as-sole-remedy — but only 'if termination right exists for chronic failure (3 months in any 6)'. That right is missing, so the condition fails: at $18,500/month billed annually in advance, Cobalt could endure a badly degraded platform with a maximum $4,625/month rebate and no way out. This is a preferred position (B-rule), so severity is preferred, not hard — but it should be asked for in the same redlining session.",
+    "redline": "Add to Exhibit B: “If monthly availability falls below the target in any three (3) calendar months during any rolling six (6) month period, Customer may terminate the affected Order Form on thirty (30) days' notice, and Provider shall refund all prepaid, unused fees for the terminated term; termination is in addition to credits accrued but not applied.”"
+  },
+  {
+    "rank": 7,
+    "clause": "§8.1",
+    "playbook_rule": "B4",
+    "severity": "note",
+    "issue": "Provider may suspend access for non-payment after 15 days' notice, with no express cure right and no exclusion for amounts disputed in good faith. Payment within the 15-day notice window arguably prevents the suspension, but the clause does not say so.",
+    "why": "Playbook B4: 30 days' notice preferred; '15 acceptable if cure is allowed'. The clause is silent on cure, so the acceptance condition is not clearly met. With annual-in-advance billing, a billing dispute could in theory be used to threaten suspension of routing operations. Low severity — a one-sentence clarification, not a fight.",
+    "redline": "Clarify §8.1: “…Provider may suspend access for undisputed past-due amounts upon fifteen (15) days' prior written notice, provided Provider shall not suspend, and shall promptly reinstate, if the undisputed past-due amount is paid before the suspension takes effect. Amounts disputed in good faith are not grounds for suspension.”"
+  },
+  {
+    "rank": 8,
+    "clause": "§5.4",
+    "playbook_rule": "none (supports A2)",
+    "severity": "note",
+    "issue": "Provider may use 'aggregated, de-identified usage data for any purpose', with no standard for what counts as de-identified and no definition of the terms.",
+    "why": "The playbook has no rule here, so this is a note, not a rule break — but it interacts with the A2 fix: under GDPR Art. 28(3)(a) (library: gdpr_art28.md) the processor must process only on documented instructions. Whether 'de-identified' usage data remains personal data turns on re-identifiability; the library does not contain the anonymization guidance, so the legal boundary is flagged as unverified rather than cited. Cheap drafting fix: define the term as irreversibly non-attributable and park it in the DPA.",
+    "redline": "none (address inside Exhibit C: limit §5.4 to data rendered irreversibly non-attributable to an identified or identifiable person — see redlines.md §2, clause 9)"
+  }
+]

@@ -1,0 +1,5 @@
+Vou conferir como a autorização (`cStat=100`) se relaciona com as exigências da biblioteca e ajustar a orientação para responder diretamente ao ponto levantado.
+
+Paulo, **não dá para concluir que estão regulares só porque passaram pelo autorizador**. O `cStat=100` indica autorização do arquivo; ele não corrige um grupo `IBSCBS` ausente nem uma alíquota errada. Pelos arquivos recebidos, as saídas 2308, 2310 e 2312 não têm o grupo exigido após 03/08, e a 2309 traz as alíquotas de CBS e IBS invertidas. A [biblioteca](</work/workspace/library/cgibs_comunicado_03_08_2026.md>) prevê rejeição das notas sem o grupo, mas não explica por que teriam passado após a reversão do emissor.
+
+Os XMLs que examinamos são de **homologação**. Ainda precisamos dos XMLs e protocolos de produção para verificar o que foi autorizado. Mesmo com autorização em produção, a dispensa de recolhimento exige destaque correto, escrituração e apuração-teste, conforme a [LC 214/2025 e o ADCT](</work/workspace/library/lc214_2025_transicao.md>). Acrescentei essa distinção à [orientação](/work/workspace/deliverable/orientacao.md).

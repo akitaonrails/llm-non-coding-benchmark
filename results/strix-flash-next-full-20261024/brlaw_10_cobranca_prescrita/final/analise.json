@@ -1,0 +1,22 @@
+{
+  "via_processual": "monitoria",
+  "por_que": "O contrato é particular assinado apenas pelos representantes das partes, SEM 2 (duas) testemunhas, e os boletos não são títulos executivos; logo não há título executivo extrajudicial (CPC art. 784 III; REsp 1.438.263; boleto não é título — library/cpc_titulo_executivo_monitoria.md) e a EXECUÇÃO direta pedida pelo cliente é incabível. A ação monitória (CPC art. 700) é a via adequada, pois há prova escrita sem eficácia de título executivo: contrato, boletos, relatórios de serviço assinados pelo encarregado da devedora e e-mails de reconhecimento da dívida. A ação de cobrança pelo procedimento comum é alternativa subsidiária.",
+  "prescricao": [
+    {"parcela": 1, "vencimento": "2020-10-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 2, "vencimento": "2020-11-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 3, "vencimento": "2020-12-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 4, "vencimento": "2021-01-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 5, "vencimento": "2021-02-10", "interrompida_em": null, "novo_termo": null, "prescrita": true},
+    {"parcela": 6, "vencimento": "2021-03-10", "interrompida_em": null, "novo_termo": null, "prescrita": true}
+  ],
+  "valor_principal_exigivel": 110000,
+  "valor_prescrito": 60000,
+  "negativacao": {
+    "regular_quanto_a": 110000,
+    "indevida_quanto_a": 70000,
+    "risco_dano_moral": "Baixo/mitigado, mas não zero. A inscrição abrange R$ 60.000 de parcelas 5–6 prescritas (em 12/08/2026 já prescritas desde 10/02/2026 e 10/03/2026) e R$ 10.000 já pagos via PIX em 02/08/2023 — manutenção indevida em tese ensejaria dano moral; porém há 3 negativações preexistentes legítimas (fornecedores, 2024–2025, não contestadas), o que pela Súmula 385/STJ afasta a indenização por dano moral, ressalvado o direito ao cancelamento (library/negativacao_prescrita_sumula385.md). DESCONHECIDO não resolvido: o cliente não sabe se as 3 inscrições preexistentes são legítimas — a proteção da Súmula 385 fica condicionada a esse fato não verificado.",
+    "acao": "Regularizar imediatamente junto ao Serasa: reduzir a inscrição para o crédito exigível atualizado (principal R$ 110.000 + encargos; na data da inscrição, 12/08/2026 e sem IPCA, isso já somava ≈ R$ 192.153 — juros 79.753 + multa 2.400) ou cancelar e reinscrever apenas quanto às parcelas 1–4 líquidas. Excluir R$ 60.000 (P5–P6 prescritas — inscrição de dívida prescrita é indevida, STJ Tema 1.264/CDC art. 43 §5º por analogia) e os R$ 10.000 já adimplidos."
+  },
+  "protesto": "recomendado",
+  "recomendacao": "Protestar apenas a dívida exigível: protesto de documento de dívida sem força executiva é admitido (Lei 9.492/97, art. 1º), mas NUNCA quanto a dívida prescrita — protestar as parcelas 5–6 seria indevido e geraria responsabilidade (library/negativacao_prescrita_sumula385.md). Ajuizar monitória limitada a P1–P4 (R$ 110.000 + multa 2% R$ 2.400 + juros 1% a.m. ~R$ 81.990 a 12/10/2026 + correção IPCA pendente), antes do novo termo prescricional 15/09/2027. Desistir de cobrar os R$ 60.000 prescritos (P5–P6) e abater os R$ 10.000 pagos. Estratégia de acordo: ancorar entre ~R$ 110 mil (piso = principal líquido) e ~R$ 194 mil + IPCA (total atualizado estimado em 12/10/2026, sem IPCA); o valor de face pleiteado de R$ 180 mil não é alcançável como principal (só R$ 110 mil são exigíveis)."
+}

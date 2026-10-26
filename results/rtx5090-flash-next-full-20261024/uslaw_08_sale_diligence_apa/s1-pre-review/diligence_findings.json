@@ -1,0 +1,93 @@
+[
+  {
+    "issue": "Hensley Homes Master Supply Agreement (largest customer, 38% of revenue = 0.38 x $4,600,000 = $1,748,000/yr) has a hard anti-assignment clause: no assignment 'by operation of law, merger, sale of assets, change of control or otherwise' without prior written consent, consent withholdable in sole discretion, and any purported assignment is void. An asset sale transfers this contract only with Hensley's consent; without it the transfer is void and itself a breach. A clause this specific is enforced according to its terms (library/anti_assignment_change_of_control.md: SQL Solutions v. Oracle; Restatement §§317, 322). Buyer's Schedule 3.3 says 'None' — it is wrong. CLIENT FACT (round 2): the Hensley owner is Ray's personal friend, has NOT yet been told about the sale, and 'won't love a corporate buyer.'",
+    "where": "Data room §1.1; APA §3.1/§3.3",
+    "why_it_matters": "This is the deal's single biggest gating item. 38% of revenue rides on a consent Hensley can refuse in its 'sole discretion', which gives it renegotiation leverage (library/anti_assignment_change_of_control.md). Signing with Schedule 3.3 blank also makes Seller's own no-other-consents representation false at signing. The friendship is an asset only if Ray tells Hensley first, personally; if Hensley learns of a corporate buyer from the buyer, its counsel, or a diligence visit, a friend's goodwill can flip into a exercised veto — and the APA as drafted has no plan for that outcome.",
+    "deal_impact": "consent",
+    "fix": "(1) Ray personally notifies Hensley this week, before signing and before any buyer/buyer's-counsel contact with Hensley; introduce Lone Star Millwork as relationship-preserving. (2) Correct Schedule 3.3 to list the Hensley consent and run the formal consent request after the personal conversation, targeting signed consent before signing. (3) Qualify consents reps by the schedule. (4) Negotiate the refusal branch in the APA now: outside date + defined remedy (revenue-linked price reduction vs. termination) rather than an open-ended efforts covenant behind a false 'None' schedule. (5) Add a buyer covenant not to contact Brightline customers about the sale without Seller's participation."
+  },
+  {
+    "issue": "Nine 'independent installers' paid on Form 1099 work exclusively for Brightline, on its schedule (scheduled daily by the shop foreman), with Brightline's trucks and tools, paid hourly at $34-41/hr, averaging 3.4 years — 2025 payments $612,000 (avg $612,000 / 9 = $68,000/installer/yr). No written contractor agreements. Under the IRS common-law control test these are employees regardless of label (library/worker_classification_tx_irs.md: Rev. Rul. 87-41 20 factors; Tex. Lab. Code §201.041). CLIENT FACT (round 2): they work 45-50 hours/week in busy season, paid STRAIGHT hourly — i.e., no overtime premium at all. 'They like it' is not a defense; whether employees can waive FLSA overtime by preference is outside the library — UNVERIFIED, but the library does state overtime liability attaches under the FLSA to hourly employees >40 hrs.",
+    "where": "Data room §2.2",
+    "why_it_matters": "Exposure: employer FICA/FUTA (IRC §3509 reduced rates if non-willful), state unemployment, FLSA overtime for hourly workers, benefits eligibility, workers' comp. In this asset sale the buyer generally does not inherit pre-closing payroll-tax liability but can inherit FLSA liability as a successor under substantial continuity, and must reclassify all nine going forward — which is why the buyer priced this and demanded the §4.12 uncapped carve-out in APA 7.4(b). Arithmetic (federal; §3509 percentage rates UNVERIFIED — library cites §3509 but does not reproduce its rates): reduced-rate tax ≈ 1.5% x $612,000 = $9,180 + 20% x (7.65% x $612,000 = $46,818) = $9,363.60 → ≈ $18,543.60/yr; ≈ $74,174 for ~4 open years. OVERTIME (now sized from client's hours): avg rate (34+41)/2 = $37.50/hr; straight time already paid, so FLSA gap = half-time premium 0.5 x $37.50 = $18.75/OT-hour. Low: 5 OT hrs/wk x 12 busy wks x $18.75 = $1,125/installer/yr → 9 installers = $10,125/yr; High: 10 hrs x 20 wks x $18.75 = $3,750/installer/yr → $33,750/yr. Over 4 open years: $40,500-$135,000 (busy-season length ASSUMED 12-20 weeks — see STATUS open items). Combined realistic tail: ≈ $115,000-$210,000 before state UI (rates not in library) and before any liquidated-damages doubling (2-3 yr limitations and doubling are outside the library — UNVERIFIED), which could push higher.",
+    "deal_impact": "indemnity",
+    "fix": "Do not give a clean §4.12 rep. Schedule the nine 1099 installers (and their 45-50 hr busy-season hours) as an exception to §4.12, and replace the full-price indemnity carve-out (APA 7.4(b)) with a sized special indemnity for pre-closing worker-classification taxes AND overtime: hold $150,000 (4.8% of implied price), go to $200,000 (6.5%) only if needed to close — the computed realistic band is $115k-$210k, so a $150-200k cap is defensible and far better than the drafted $3.1M. Backstop with a designated escrow tranche. Per library/baskets_caps.md a full-price carve-out for a specific operational rep (worker classification named expressly) is off-market and should be resisted or replaced with a sized special indemnity."
+  },
+  {
+    "issue": "Buyer's APA Schedule 3.3 is drafted 'None' and buyer's counsel asserts 'no consent issues', but the data room shows at least three touchpoints: Hensley MSA §18 (consent, sole discretion, void if violated), the shop-lease §22 (landlord consent, not unreasonably withheld), and Cascade Builders (assignment permitted only upon notice to a successor to substantially all assets).",
+    "where": "Data room §§1.1, 1.2, 3.1; APA §3.3",
+    "why_it_matters": "A blank schedule plus a no-consents rep converts fixable process items into signing-date misrepresentations, and the Hensley item is deal-gating in substance.",
+    "deal_impact": "consent",
+    "fix": "Repopulate Schedule 3.3 with: (i) Hensley consent; (ii) landlord consent for 7700 Burleson Rd lease; (iii) Cascade notice (and confirm the transaction is a transfer to a successor to substantially all assets, which the all-assets APA 3.1 supports). Reps must be qualified by the schedule."
+  },
+  {
+    "issue": "Shop lease for 7700 Burleson Rd (term through 2029) requires landlord consent for assignment, 'not unreasonably withheld'. UNKNOWN (client has no further information): whether Ray personally guaranteed the lease.",
+    "where": "Data room §3.1",
+    "why_it_matters": "Consent is required but obtainable; a refusal unreasonably withheld would be a breach by the landlord. Mainly a closing-timing item. IF a personal guaranty exists and is not released at assignment, Ray sells the business but keeps the rent obligation through 2029 — an open, unpriced tail. Carried as an assumption, not a fact.",
+    "deal_impact": "consent",
+    "fix": "List on Schedule 3.3; request landlord consent early; pull the lease guaranty language from the full lease (not in file) before closing and negotiate landlord release of any guaranty simultaneously with the assignment consent."
+  },
+  {
+    "issue": "City of Austin spray-booth permit is issued to 'Brightline Cabinetry LLC', is non-transferable, and the new owner must reapply with a stated 30-60 day processing window.",
+    "where": "Data room §4.1",
+    "why_it_matters": "Buyer cannot lawfully run spraying at the shop for 30-60 days post-closing unless reapplication starts before closing. A buyer that discovers this late can blame Seller and use it as a price stick; reapplying also puts the historical permit compliance record on display.",
+    "deal_impact": "timing",
+    "fix": "File the buyer's reapplication before signing/closing (with the city, using the new entity); disclose the non-transferability affirmatively; make pre-closing filing of the reapplication a covenant so the gap shrinks. Whether any shutdown of spraying without the permit violates city rules is outside the library — UNVERIFIED and should be checked with the city."
+  },
+  {
+    "issue": "Earn-out (APA 2.4) pays 40% of (TTM EBITDA − $700,000), max $400,000, with 'EBITDA... as determined by Buyer in accordance with Buyer's accounting policies'. To reach the $400,000 maximum, EBITDA must be $700,000 + ($400,000 / 0.40) = $1,700,000 — a 129.7% increase over reported 2025 EBITDA of $740,000. And the reported $740,000 rests on add-backs (owner salary $180,000 + 'one-time' legal $42,000 = $222,000); on a de-added-back run-rate of $740,000 − $222,000 = $518,000, the business misses the $700,000 threshold by $182,000 and the earn-out pays $0 before Buyer even allocates overhead.",
+    "where": "Data room §6.1; APA §2.4",
+    "why_it_matters": "Buyer-controlled EBITDA plus overhead/integration/purchase-accounting allocations can zero the earn-out entirely — the known pathology in library/earnout_definitions.md (Lazard v. Qinetiq). As drafted the earn-out is close to illusory: Ray may be trading real value for a payment that cannot mathematically arrive. Compounding factor from the new facts: the buyer will ALSO face new costs post-closing (paying the nine installers overtime going forward, ≈ $10,125-$33,750/yr at the same hours; plus payroll taxes), which depresses post-closing EBITDA relative to Ray's run-rate — making the earn-out even less reachable while the add-back fight continues.",
+    "deal_impact": "price",
+    "fix": "Define EBITDA as GAAP consistently applied consistent with Seller's historical practices (exhibit them), exclude Buyer overhead allocations, management fees, transaction/integration costs and purchase-accounting adjustments; add an ordinary-course covenant plus a not-with-the-purpose-of-avoiding covenant; monthly information and audit rights; independent-accountant dispute resolution; acceleration on Buyer's sale of the business; and price the deal as if the earn-out is worth near zero — push more to closing cash. Pre-agree the $222,000 add-backs in the exhibit. See apa_redline.md §2.4."
+  },
+  {
+    "issue": "APA 7.4(b) caps general indemnity at 10% of price but carves out §4.12 (worker classification) to a cap equal to the full Purchase Price (implied $3,100,000 — see open items), with §4.12 survival at statute of limitations + 60 days, and APA 7.4(c) is pro-sandbagging. Buyer already knows the classification facts from the data room, and the new hours facts raise the underlying exposure (overtime band $40,500-$135,000 over 4 open years, above).",
+    "where": "Data room §2.2; APA §§7.1, 7.4(b), 7.4(c), 7.4(d)",
+    "why_it_matters": "Per library/sandbagging.md: a seller who discloses a known issue, gives a clean rep, and accepts pro-sandbagging has effectively agreed to indemnify for the disclosed issue. Combined with 7.4(b), exposure on one disclosed operational rep runs to the whole price ($3,100,000) while escrow holds only $310,000 — an unbacked tail of $2,790,000 surviving 18+ months past escrow release. library/baskets_caps.md calls the full-price carve-out for worker classification off-market.",
+    "deal_impact": "indemnity",
+    "fix": "Three-part fix (any one suffices, all are better): (i) schedule exception to §4.12 (then the rep is not breached at all); (ii) replace the full-price §4.12 cap with a sized special indemnity ($150,000 target, $200,000 ceiling — the computed realistic band is ≈$115k-$210k), escrow-backed; (iii) flip 7.4(c) to anti-sandbagging or at least exclude matters disclosed in the data room. See apa_redline.md §7.4 and reply_to_buyer_counsel.md."
+  },
+  {
+    "issue": "WARN check requested by buyer's counsel: employee census is 14 W-2 (7 shop, 4 installers, 3 office) plus 9 long-standing 1099 installers = 23 workers total even if all were counted as employees. WARN covers employers of 100+ (excluding part-time) and events affecting 50+ at a single site; Texas has no mini-WARN (library/warn_act.md: 29 U.S.C. §2101(a)(1); 20 C.F.R. §639.3).",
+    "where": "Data room §2.1-§2.2",
+    "why_it_matters": "Seller can confirm: no WARN notice obligation on Seller even if Buyer does not hire every installer. This is a free confirmation — it costs nothing and buys credibility for the harder positions on Schedule 3.3 and 7.4(c).",
+    "deal_impact": "none",
+    "fix": "Confirm in writing (see reply_to_buyer_counsel.md), limited to Seller's obligations and current headcount; buyer's own post-closing layoff plans are its problem."
+  },
+  {
+    "issue": "APA 8.2 non-compete: 7 years, 500 miles of Austin, binding Ray personally, for a local custom-cabinetry shop; Ray says he will 'sign whatever'. UNKNOWN (client has no further information): whether Ray would ever work in the industry again.",
+    "where": "Data room (nature of business); APA §8.2; library/tx_noncompete_sale_of_business.md",
+    "why_it_matters": "Under Tex. Bus. & Com. Code §15.50 and Marsh USA v. Cook, a 7yr/500mi covenant for a local shop is likely overbroad in time and area; courts reform rather than void (§15.51(c), per library). Reformation risk mostly hurts the buyer, but the library also warns that an overbroad covenant with a large price allocation to it invites IRS scrutiny of the allocation — and no allocation is visible in the file. 'Sign whatever' is wrong even for a retiree: the covenant binds Ray personally for years after the money is spent.",
+    "deal_impact": "price",
+    "fix": "Counter at 3-5 years within the actual trade area (e.g., Travis and contiguous counties), carve out passive investments, add a reformation/severability savings clause, and confirm no oversized non-compete allocation in the purchase-price allocation (unanswered — carried as open item)."
+  },
+  {
+    "issue": "Small claims tail: Hardaway Builders dispute ($9,800, warped door) and 11 open warranty items (est. $23,000) = $32,800 aggregate, below the $75,000 deductible basket in APA 7.4(a).",
+    "where": "Data room §§5.1-5.2",
+    "why_it_matters": "With a deductible basket (seller pays only above the threshold — library/baskets_caps.md), these items cost Ray nothing unless aggregate losses exceed $75,000. They matter only because the basket could be changed to tipping, or these facts could be re-pitched as §4.12/financial-statement breaches which sit outside the basket.",
+    "deal_impact": "none",
+    "fix": "Keep 7.4(a) deductible. Disclose Hardaway and the warranty log affirmatively in the data room/schedules so they cannot later be styled as breaches of any 'no litigation / no undisclosed liabilities' rep (not in the excerpted sections — confirm the full APA; client has no further information — open item)."
+  },
+  {
+    "issue": "Twenty-two residential contracts (<$40k each) are silent on assignment. UNKNOWN (client has no further information): whether any name Ray personally or depend on his performance.",
+    "where": "Data room §1.3",
+    "why_it_matters": "Absent anti-assignment language, assignment of contract rights is generally permitted; obligations need consent only if performance is personal (library/anti_assignment_change_of_control.md: Restatement §§317, 322). Custom cabinetry install contracts carry a mild personal-services argument but each is small.",
+    "deal_impact": "none",
+    "fix": "Do not list on Schedule 3.3 as consent items (resist buyer padding); the sample of contracts is not in the file — reviewer to check any contract naming Ray personally before signing; carried as an open assumption."
+  },
+  {
+    "issue": "Cascade Builders framework agreement (11% of revenue = 0.11 x $4,600,000 = $506,000/yr) permits assignment to a successor to substantially all assets upon notice.",
+    "where": "Data room §1.2; APA §3.1",
+    "why_it_matters": "APA 3.1 transfers all assets of the Business, so the 'substantially all assets' condition appears met — but the notice is still required, so 'None' on Schedule 3.3 is wrong even here; missed notice hands a mid-sized customer a technical exit.",
+    "deal_impact": "consent",
+    "fix": "Add Cascade to Schedule 3.3 as a notice item (not a consent item); send the contractual notice before closing. Same customer-contact sequencing as Hensley: seller-led notice, buyer silence."
+  },
+  {
+    "issue": "Closed EEOC charge (2023, no cause) and no union — no live employment disputes found, but the reclassification issue increases the value of documentation.",
+    "where": "Data room §2.3",
+    "why_it_matters": "No current claim exposure; nothing to fix. Confirms the indemnity fight is about classification, not active litigation.",
+    "deal_impact": "none",
+    "fix": "Leave in the data room as-is; no schedule needed."
+  }
+]

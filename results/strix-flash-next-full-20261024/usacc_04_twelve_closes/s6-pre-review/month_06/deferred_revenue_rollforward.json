@@ -1,0 +1,63 @@
+{
+  "as_of": "2025-06-30",
+  "contracts": [
+    {
+      "contract": "Trestle renewal (C-026)",
+      "opening": 14000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 12000.0,
+      "note": "Renewal 24,000.00, documented term 2025-01-01..2025-12-31 (order_form_C-026.md). Release 2,000.00/month. After June, 12,000.00 covers Jul-Dec 2025 - fully current as of 2025-06-30."
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025 / INV-2250)",
+      "opening": 36000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 36000.0,
+      "note": "Fully deferred, 0.00 recognized for the sixth consecutive month - no contract term documented (U10), no new Pinecone documents in June. Cannot be classified current vs non-current (U6)."
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027 / INV-2275)",
+      "opening": 13500.0,
+      "billed": 0.0,
+      "recognized": 1500.0,
+      "closing": 12000.0,
+      "note": "18,000.00 billed upfront, documented term 12 months from service start 2025-03-01 (order_form_C-027.md). Release 1,500.00/month. After June, 12,000.00 covers Jul 2025-Feb 2026 - fully current as of 2025-06-30."
+    },
+    {
+      "contract": "Quarry Analytics Co (C-028 / INV-2324)",
+      "opening": 27500.0,
+      "billed": 0.0,
+      "recognized": 2500.0,
+      "closing": 25000.0,
+      "note": "30,000.00 billed 05/01/2025, documented term 12 months from service start 05/01/2025 (order_form_C-028.md). Release 2,500.00/month. After June, 25,000.00 covers Jul 2025-May 2026 - fully current."
+    },
+    {
+      "contract": "Saltline Hospitality (C-029 / INV-2349)",
+      "opening": 0.0,
+      "billed": 21600.0,
+      "recognized": 1800.0,
+      "closing": 19800.0,
+      "note": "New annual contract signed 06/01/2025: 21,600.00 billed upfront for 12 months, service start 06/01/2025, auto-renewing, MSA v3.2 (order_form_C-029.md). Term fully documented, so the release is computable: 21,600/12 = 1,800.00/month starting June. Billed via JE-2506-002, collected by wire 06/15 (JE-2506-004); 19,800.00 covers Jul-2025 through May-2026 - fully current."
+    }
+  ],
+  "total": {
+    "opening": 91000.0,
+    "billed": 21600.0,
+    "recognized": 7800.0,
+    "closing": 104800.0
+  },
+  "reconciliation_to_trial_balance": {
+    "2200 per trial balance (05/31/2025)": 91000.0,
+    "plus billed (JE-2506-002)": 21600.0,
+    "less recognized (JE-2506-016)": -7800.0,
+    "2200 per trial balance (06/30/2025)": 104800.0
+  },
+  "notes": [
+    "Monthly subscription customers (INV-2325..INV-2348) are billed and earned in the same month; no contract liability remains at month end, so they do not appear in this roll-forward.",
+    "Trestle prior-contract line remains CLOSED (0.00) since May - documented service period ended 05/31/2025; it no longer appears.",
+    "Pinecone C-025: release 0.00 - no stated term (U10); cannot be classified current vs non-current (U6).",
+    "Closing 104,800.00 equals account 2200 net in month_06/trial_balance.json (credits 194,600.00 less debits 89,800.00). Opening 91,000.00 equals the May roll-forward closing."
+  ]
+}

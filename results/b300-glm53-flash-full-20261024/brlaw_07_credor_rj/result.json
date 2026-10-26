@@ -1,0 +1,22 @@
+{
+  "case": "brlaw_07_credor_rj",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 812.8696150760225,
+  "controller_wait_seconds": 93.00895157101331,
+  "model_turn_seconds": 719.5930713390117,
+  "turns": 4,
+  "released_facts": [
+    "essencial"
+  ],
+  "usage": {
+    "input_tokens": 1606587,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 82149,
+    "reasoning_output_tokens": 49817
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,2 @@
+# TJSP — 2ª Vara de Falências e RJ — Atlas Distribuidora S.A. — EDITAL (art. 52, §1º, Lei 11.101/2005)
+**Publicado no DJe em 10/04/2026** (sexta-feira). Ficam os credores cientes do deferimento do processamento e da relação de credores, podendo apresentar ao administrador judicial **habilitações ou divergências no prazo de 15 (quinze) dias** (art. 7º, §1º). Administrador judicial: AJ Reorganiza Ltda. (e-mail e portal indicados).

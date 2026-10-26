@@ -1,0 +1,13 @@
+# Lei 11.101/2005 — excertos (redação Lei 14.112/2020)
+
+*Citation:* Lei 11.101/2005, arts. 6º, 6º-B, 49, 50-A, 52, 54, 57, 58, 67, 68  
+*Status in this library:* in force
+
+**Art. 49.** Estão sujeitos à recuperação judicial **todos os créditos existentes na data do pedido**, ainda que não vencidos. **§3º** O credor titular da posição de **proprietário fiduciário** de bens móveis ou imóveis, de arrendador mercantil, [...] **não se submete aos efeitos da recuperação judicial**, prevalecendo os direitos de propriedade; **não se permite, contudo, durante o prazo de suspensão do art. 6º §4º, a venda ou retirada do estabelecimento do devedor dos bens de capital essenciais** à sua atividade.
+**Art. 6º, §7º-B.** As execuções fiscais não se suspendem pelo deferimento da recuperação (ressalvada a competência do juízo da RJ sobre atos constritivos sobre bens de capital essenciais). **Art. 57 e CTN 191-A:** a concessão da recuperação exige apresentação de certidões negativas de débitos tributários (ou positivas com efeito de negativa — **parcelamento/transação**, Lei 10.522 arts. 10-A a 10-C; Lei 13.988/2020).
+**Art. 50-A.** Nas hipóteses de renegociação de dívidas no âmbito de processo de recuperação judicial: I – **a receita obtida pelo devedor não será computada na apuração da base de cálculo do PIS e da COFINS**; II – **o ganho obtido pelo devedor com a redução da dívida não se sujeita ao limite percentual de que tratam os arts. 42 e 58 da Lei 8.981/95 e 15 e 16 da Lei 9.065/95 (trava de 30%)** na apuração do IRPJ e da CSLL; III – as despesas correspondentes às obrigações assumidas no plano são dedutíveis. Parágrafo único: não se aplica a dívidas com pessoas ligadas.
+**Art. 6º-B.** Não se aplica a trava de 30% ao ganho de capital na alienação judicial de bens em RJ.
+**Art. 52, IV.** O devedor apresentará **contas demonstrativas mensais** enquanto perdurar a RJ, sob pena de destituição dos administradores.
+**Art. 54.** O plano **não poderá prever prazo superior a 1 ano** para pagamento dos créditos trabalhistas vencidos até a data do pedido (§2º permite até 2 anos em condições específicas: garantias, aprovação da classe, integralidade).
+**Art. 67.** Créditos decorrentes de obrigações contraídas **durante** a recuperação (fornecimentos pós-pedido) são **extraconcursais**. **Art. 68.** Fazendas Públicas e INSS poderão deferir parcelamento especial; **o crédito tributário não se sujeita ao plano** (CTN 187).
+**Pagamento de credor concursal fora do plano:** viola a par condicio creditorum e o art. 172 (favorecimento de credor — crime); enseja afastamento dos administradores (art. 64) e pode levar à convolação em falência.

@@ -1,0 +1,58 @@
+{
+  "case": "uslaw_09_retaliation_termination",
+  "questions": "# QUESTIONS for the client\n**Date:** 2026-10-06 · These are outstanding facts. None of them changes the bottom line in `risk_assessment.json` (do not terminate today); they refine quantification and the corrected form.\n\n1. **Base pay.** What is Dana Whitcomb's current base salary and any commission/bonus accrual? Needed to express the 4-week severance figure and to model FMLA liquidated (double) damages exposure (FMLA remedies at `fmla_2615.md`).\n2. **Severance policy.** Is any severance already payable to Dana under company policy (e.g., policy default of X weeks)? This determines whether the 4 weeks in the draft is valid \"consideration in addition to anything of value already entitled\" under 29 U.S.C. §626(f)(1)(D).\n3. **Who is \"the VP\"?** Is \"the VP\" who wants this done this week (a) Tom Hale himself, (b) Hale's direct supervisor, or (c) unconnected to Hale's chain? This determines how far up the 10/02 \"get this done before she's out on leave\" email the taint travels and who can lawfully be the decision-maker.\n4. **FMLA status.** Has HR any record of an eligibility determination of any kind on the 9/30 request / 10/03 certification (even verbally), and who at HR owns the FMLA process? (Library duty is to decide on the certification, not the termination timeline.)\n5. **Complaintdetail.** Beyond the summary in `timeline.md`, are there dates/quotations for Hale's alleged comments and any witnesses or contemporaneous notes from 9/12? Needed only if the company later contests the underlying harassment claim; the failure-to-investigate analysis stands without it.\n6. **Investigator.** Is there an HR/legal person at another site or division who is outside Tom Hale's chain of command and did not receive the 10/02 email, to run the 9/12 investigation? If not, external counsel/investigator is recommended.\n7. **Retention.** Confirm within the week that the litigation hold (Hale's and Ortiz's emails/texts, 9/12 complaint, PIP file, comparator files, CRM/quota records, FMLA request/certification) has been circulated in writing to IT and the custodians listed, including any auto-delete suspension.\n8. **Prior temp variances.** Were there any other Account Managers who left or were separated in 2024–2026 (not in the current headcount CSV)? Additional comparators could sharpen or soften the pattern.\n",
+  "facts": [
+    {
+      "id": "investigation",
+      "trigger": [
+        "investigat",
+        "complaint",
+        "September 12",
+        "what happened with"
+      ],
+      "answer": "Honestly, nothing. Tom's been traveling. I was going to get to it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pip_author",
+      "trigger": [
+        "who wrote the PIP",
+        "Tom",
+        "decision-maker",
+        "who decided"
+      ],
+      "answer": "Tom wrote the PIP and Tom wants her out. I'm just processing it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "fmla_status",
+      "trigger": [
+        "FMLA",
+        "leave request",
+        "certification",
+        "approved"
+      ],
+      "answer": "We haven't approved or denied it. Certification came in 10/3. Tom said to wait.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "group",
+      "trigger": [
+        "others",
+        "group",
+        "RIF",
+        "program",
+        "anyone else"
+      ],
+      "answer": "Just her. No RIF.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "investigation",
+    "pip_author",
+    "fmla_status"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

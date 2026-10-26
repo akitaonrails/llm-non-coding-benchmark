@@ -1,0 +1,262 @@
+[
+  {
+    "ref": "JE-2501-PC01",
+    "date": "2025-01-01",
+    "memo": "Prior-period error correction per ASC 250: opening 2200 of 65,000 (opening TB 12/31/2024) exceeds the supported contract liability of 41,000 (client note: Trestle prior contract Jun 2024-May 2025, 8,200/mo x 5 remaining months). The 24,000 difference has no contract behind it at 12/31/2024 - the Trestle renewal was ordered/signed 2025-01-01 (order form C-026), so no contract liability for it could exist earlier (ASC 606-10-25-1, 45-2). Restated opening balances: 2200 reduced 24,000, offset to opening retained earnings (3900). Disclosed in open_items.md.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 24000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "3900",
+        "debit": 0.0,
+        "credit": 24000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-001",
+    "date": "2025-01-01",
+    "memo": "January 2025 monthly subscription invoices INV-2201..INV-2224, 24 customers, total 30,450 (invoices.csv). SaaS access provided continuously over January; series satisfied over time (ASC 606-10-25-14(b), 25-27; policy #1).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-002",
+    "date": "2025-01-01",
+    "memo": "INV-2225 Trestle Freight LLC renewal: 24,000 billed upfront for 12 months from service start 2025-01-01 (order form C-026). Billed in advance = contract liability, not revenue (ASC 606-10-45-2; policy #1: annual upfront billings to deferred, release 1/12 per month).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 24000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2200",
+        "debit": 0.0,
+        "credit": 24000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-003",
+    "date": "2025-01-26",
+    "memo": "Customer cash receipts, 25 receipts totaling 54,450 (cash_receipts.csv), all applied to January invoices INV-2201..INV-2225. Every receipt matched one bank credit by date/amount/customer (bank 01/15 WIRE Trestle 24,000; ACH deposits 01/20-01/26 total 30,450). No receipt applied against opening A/R of 92,650 - flagged in open_items.md.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 54450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 54450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-004",
+    "date": "2025-01-05",
+    "memo": "AWS hosting & infrastructure bill 9,920 (vendor_bills.csv).",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 9920.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 9920.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-005",
+    "date": "2025-01-06",
+    "memo": "WeWork rent bill 7,200 (vendor_bills.csv).",
+    "lines": [
+      {
+        "account": "6100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-006",
+    "date": "2025-01-07",
+    "memo": "Gusto payroll processing fees 240 (vendor_bills.csv, category 'G&A other').",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-007",
+    "date": "2025-01-08",
+    "memo": "Notion/Slack/GitHub software & tools bill 1,460 (vendor_bills.csv).",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-008",
+    "date": "2025-01-09",
+    "memo": "Google Ads marketing bill 3,250 (vendor_bills.csv).",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 3250.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 3250.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-009",
+    "date": "2025-01-09",
+    "memo": "Payment of vendor bills JE-2501-004..008 by bank ACH 01/05-01/09: AWS 9,920 + WeWork 7,200 + Gusto fees 240 + Notion/Slack/GitHub 1,460 + Google Ads 3,250 = 22,070 (bank_statement.pdf).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 22070.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 22070.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-010",
+    "date": "2025-01-25",
+    "memo": "January payroll per Gusto register (9 employees): gross 54,404; net paid 48,200 (bank 01/25 ACH GUSTO NET PAY); employee withholding 6,204 = 54,404 - 48,200 credited to 2210 payroll taxes payable.",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-011",
+    "date": "2025-01-25",
+    "memo": "Employer payroll taxes & benefits per register: 5,076, credited to 2210.",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-012",
+    "date": "2025-01-25",
+    "memo": "Tax remittance via Gusto (bank 01/25 ACH GUSTO TAX 11,280; register taxes_remitted 11,280) = employee withholding 6,204 + employer taxes 5,076 = 11,280. Payroll agrees to register and bank; 2210 cleared to zero.",
+    "lines": [
+      {
+        "account": "2210",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-013",
+    "date": "2025-01-31",
+    "memo": "Monthly depreciation per close checklist item 6: 1,777.78 (equipment 64,000 over 36 months = 1,777.78; opening accumulated 21,333 = 12 months x 1,777.78, consistent).",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "JE-2501-014",
+    "date": "2025-01-31",
+    "memo": "Revenue earned from deferred revenue: Trestle prior contract (Jun 2024-May 2025) release 8,200 (41,000 / 5 remaining months per client note); Trestle renewal 24,000 x 1/12 = 2,000 (policy #1). Total 10,200. Monthly invoices were billed and earned in the same month and are in JE-2501-001; no month-end contract liability arises for them.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 10200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 10200.0
+      }
+    ]
+  }
+]

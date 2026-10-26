@@ -1,0 +1,12 @@
+I checked this against your own policy memo (`library/close_policy.md`) before answering, and I can't do either booking the way things stand:
+
+- **Misc income** — your policy, line 8: unidentified receipts go to 2100 suspense and "**not** revenue until matched to an invoice or a customer." A 4,312.00 income line I can't tie to any invoice or customer is exactly what that rule exists to prevent. If the bank pulls it, "misc income" invites "income from what?" — and I have no answer.
+- **Your contributions (3100)** — I could book this there **only if you tell me it's your money**, the same way you confirmed the 1,500.00 *4420 transfer ("my money, not a sale"). But you've told me you don't know who deposited it and Carla doesn't either. Booking it to contributions would be me asserting something you've said you can't confirm — and if it later turns out to be a customer payment, your equity is overstated and the customer's account is still open.
+
+On "the bank will ask about it" — the suspense line is actually the answer that survives the asking. One sentence, true and documented: *"A 3/21 deposit of 4,312.00 whose payer we haven't identified is held in a suspense account pending identification; the bank rec otherwise ties to zero."* Lenders see suspense for unidentified items all the time; what they can't accept is a labeled line that contradicts what the owner already told us. "We'll fix it later" doesn't work once the statement's delivered — your own checklist #3 ("unexplained items are reported, not cleared") is the rule I'm holding to.
+
+The choice is yours, and I'll book whichever you pick **except** income:
+
+Since I can't get a live confirmation from you in this exchange, the default stays policy-compliant: **the 4,312.00 remains in 2100 suspense** (AJE-1 unchanged, open item §2 as written). Nothing in the deliverables changes, and no income line appears anywhere.
+
+If you reply later with an explicit "that deposit was my money" (in writing, same as you did for the 1,500.00 transfer), I'll post **AJE-8: Dr 2100 4,312.00 / Cr 3100 Owner's contributions 4,312.00**, keep it flagged as based on your confirmation, and drop the suspense line — that's the clean way to get what you want, and the bank-proof version of it. What I won't do is book it to income or to contributions on a "we'll fix it later" basis, because those statements are going to your lender and your own policy and checklist both forbid it.

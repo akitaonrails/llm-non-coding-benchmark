@@ -1,0 +1,50 @@
+{
+  "periodos": [
+    {
+      "periodo": "3T/2020",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 268000
+    },
+    {
+      "periodo": "4T/2020",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 241000
+    },
+    {
+      "periodo": "1T/2021",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2026-03-31",
+      "decaido": false,
+      "valor": 302000
+    },
+    {
+      "periodo": "2T/2021",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2026-12-31",
+      "decaido": false,
+      "valor": 289000
+    }
+  ],
+  "valor_decaido": 509000,
+  "valor_remanescente": 591000,
+  "vicios_formais": [
+    "Multa de ofício de 75% lançada sem indicação do dispositivo legal específico que a fundamenta (campo 'fundamento da multa' em branco na CDA) — viola LEF art. 2º, §5º, III (a CDA deve conter a origem, a natureza e o fundamento legal da dívida); importância prática: o art. 44, I da Lei 9.430/96 (75%) e o art. 44, §1º (duplicação) têm pressupostos distintos e a Fazenda não declarou qual pressuposto alegou",
+    "Endereço do devedor na CDA (Rua das Pedras, 100) desatualizado: a sede foi alterada pela 4ª alteração contratual de 05/03/2026 (JUCESP 12/03/2026; RFB/CNPJ 20/03/2026), todas ANTES da inscrição em dívida ativa (10/07/2026) — o mandado de citação dirigido ao endereço da CDA foi devolvido negativo (certidão de 28/09/2026); pede-se emenda/substituição (LEF art. 2º, §8º; Súmula 392 STJ)",
+    "Observação não impugnada (liquidez aparente): a CDA não exibe a base de cálculo SELIC por período, mas indica a forma de cálculo (Lei 9.430, art. 61, §3º), o que supre a exigência do LEF art. 2º, §5º, IV quanto ao fundamento da atualização; a verificação dos índices SELIC usados fica para conferência posterior (verificação aritmética da multa e dos totais fechou corretamente: 75% do principal em cada período; soma dos 4 totais = R$ 1.100.000)"
+  ],
+  "veiculo": "exceção de pré-executividade",
+  "por_que": "A empresa ainda NÃO foi citada: o único mandado expedido foi devolvido NEGATIVO (certidão de 28/09/2026), pois a CDA traz endereço desatualizado — portanto ainda não existe citação, garantia ou penhora, e os embargos são inadmissíveis neste estado do processo (LEF art. 16, §1º — exigem garantia, após a citação). Todas as matérias hábeis agora são conhecíveis de ofício e não demandam dilação probatória: decadência parcial (exemplo expresso na Súmula 393 STJ), vício formal da CDA (LEF art. 2º, §5º, III) e emenda quanto ao endereço (LEF art. 2º, §8º; Súmula 392 STJ). A EPE pode ser peticionada sem citação e sem garantia, e preserva, para embargos posteriores (após citação e garantia), as matérias que exigirem instrução. A questão decadencial se resolve por mero cômputo de datas (fato gerador = fim do trimestre; data dos DARFs; data do AIF/ciência), todas extraídas de documentos já existentes nos autos/processo administrativo — não há prova pericial, depoimento ou terceiro a ouvir."
+  ,
+  "notas": [
+    "Hipótese declarada (não consta na biblioteca): o fato gerador do IRPJ/CSLL apurado trimestralmente é o ÚLTIMO DIA do período de apuração (o RIR/Decreto 9.580/2018, arts. 258-260, citado na CDA, não está no INDEX da biblioteca). Todos os limites decadenciais abaixo derivam dessa premissa; se ela mudar, muda o resultado.",
+    "Contagem dos limites: art. 173, I — contam-se 5 anos do PRIMEIRO DIA DO EXERCÍCIO SEGUINTE àquele em que o lançamento poderia ter sido efetuado (ex.: lançamento possível a partir de 2021 -> 01/01/2021 + 5 anos = 31/12/2025). Art. 150 §4º — 5 anos da OCORRÊNCIA do fato gerador (ex.: FG 31/12/2020 + 5 anos = 31/12/2025).",
+    "Escolha da regra por período (Súmula 555 STJ + Tema 163/REsp 973.733, ambos na biblioteca): período SEM pagamento e SEM declaração do débito (DCTF zerada) -> art. 173, I; período COM pagamento antecipado (mesmo parcial) -> art. 150 §4º do fato gerador, inclusive quanto à diferença não declarada.",
+    "Ponto em disputa previsível (levaremos em Sessão 2): a Fazenda pode sustentar que, nos períodos 'declarados a menor', a DIFERENÇA omitida não teve declaração, aplicando-se o art. 173, I (o que elevaria o limite do 4T/2020 a 31/12/2026 e o manteria vivo). Já impugnamos: Tema 163 diz 'havendo pagamento antecipado parcial, aplica-se o art. 150 §4º'. O 3T/2020 está decaído sob QUALQUER regra (173, I: até 31/12/2025; alternativamente 150 §4º: até 30/09/2025), logo R$ 268.000 é constatação robusta; o 4T/2020 decai pela regra aplicável ao TEMA (150 §4º).",
+    "Não há nos documentos qualquer lançamento/anotação administrativa ANTERIOR ao AIF de 03/02/2026 (ciência 10/02/2026) que pudesse restaurar prazos; se existir algo desse tipo (ex.: motor de suspensão tipo art. 150 §5º CTN ou intimações anteriores), informar ao cliente na Sessão 2 — dispositivos de suspensão/interrupção NÃO constam da biblioteca e não foram aplicados.",
+    "A CDA não indica corresponsáveis (só a empresa). Fato relevante para as Sessões 3-4 (redirecionamento), mas sem efeito prático agora."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "periodo": "2026-02",
+  "debito": 238650.00,
+  "creditos": 157509.00,
+  "estornos": 0.00,
+  "a_recolher": 81141.00,
+  "retificacoes": "Nenhum crédito indevido em fevereiro (única compra com crédito: mercadorias para revenda, permitida). O estorno de R$ 11.100,00 da NF 8812 PERTENCE à apuração de janeiro (já refletido em mes_01/pis_cofins.json, a recolher 79.883,00); como o balancete de fevereiro ainda carregava o crédito (1.1.04 = 323.676,00), o lançamento contábil de estorno foi refeito em mes_02/ajustes.json (AJ-2026-02-001). Se a EFD-Contribuicoes/DCTF de 01/2026 já tiverem sido entregues (status permanece DESCONHECIDO), a retificação documental e o recolhimento da diferença de 11.100,00 com acréscimos dizem respeito a janeiro; fevereiro não exige retificação.",
+  "memoria_de_calculo": {
+    "debito_sobre_receita": "2.580.000,00 x 9,25% = 238.650,00 (confere com o razão, ref. TRIB)",
+    "creditos_permitidos": "mercadorias para revenda: 1.702.800,00 x 9,25% = 157.509,00 (confere com o razão, ref. COMPRA)",
+    "creditos_indevidos_no_mes": "nenhum; brindes (NF 4410) e doação não geram crédito e não tiveram crédito tomado",
+    "a_recolher": "238.650,00 - 157.509,00 = 81.141,00",
+    "conferencia_saldo_1_1_04": "balancete fev 323.676,00 = 166.167,00 (jan sem estorno) + 157.509,00 (fev); após AJ-2026-02-001: 312.576,00 = 155.067,00 + 157.509,00"
+  }
+}

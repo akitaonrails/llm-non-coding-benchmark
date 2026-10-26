@@ -1,0 +1,25 @@
+{
+  "provisao_trabalhista": {
+    "manter|reverter|aumentar": "manter",
+    "valor": 1200000,
+    "fundamento": "A única manifestação escrita do especialista (carta Pinheiro & Sato, 18/12/2025) não diz 'remoto': sentença de procedência parcial (02/09/2025, R$ 1.180.000 estimados), recurso no TRT-2, prognóstico 'provável' de manutenção quanto à equiparação e 'possível' de reforma parcial quanto a horas extras. A diretoria esclareceu que o 'remoto' é apenas telefônico e que o advogado não o colocará por escrito. CPC 25 (IAS 37), itens 14-16, 23, 36, 59: a avaliação considera a opinião do especialista conforme efetivamente emitida — uma fala oral sem respaldo escrito não substitui a carta formal; a sentença de 1º grau é forte indicador de probabilidade e a reversão só cabe se a saída deixar de ser provável. Provisão de R$ 1.200.000 mantida (= exposição atualizada informada); eventual redução à melhor estimativa dependeria do detalhamento da condenação por rubrica, inexistente no arquivo. Reverter com base em opinião oral não documentada seria distorção material."
+  },
+  "ccb_horizonte": {
+    "circulante|nao_circulante": "circulante",
+    "fundamento": "Vencimento 31/08/2026 = 8 meses após a data do balanço (31/12/2025). A diretoria confirmou que não há nada assinado — apenas fala informal do gerente do banco ('eles só assinam perto do vencimento'). CPC 26 (IAS 1), itens 69-76: é circulante quando deve ser liquidado em até 12 meses após a data do balanço ou quando a entidade não tem direito incondicional de diferir por 12+ meses; o direito deve existir na data do balanço e ter substância — a expectativa/intenção de refinanciar não basta quando depende da contraparte (item 73: só rolamento garantido por direito em contrato existente sustenta não circulante). Aditivo assinado após 31/12/2025 é evento subsequente não ajustável (divulgação). R$ 6.500.000 reclassificados para o circulante."
+  },
+  "afac": {
+    "pl|passivo": "passivo",
+    "fundamento": "AFAC de R$ 2.000.000 recebido em mar/2022; a diretoria confirmou que os sócios nunca formalizaram o aumento de capital até a data do balanço. Resolução CFC 1.159/2009 (ITG 2000): só se classifica no PL se irrevogável e irretratável, com capitalização em prazo determinado. Parecer Normativo CST 17/1984 exige capitalização até a primeira AGE/alteração contratual após o recebimento ou em até 120 dias do encerramento do exercício — prazo exaurido desde 2022/2023. Sem os atributos exigidos, o saldo é mutuo dos sócios (SC COSIT 20/2010) e deve ser reclassificado para o passivo em 31/12/2025. A AGE cogitada para janeiro/2026 é evento subsequente não ajustável (CPC 24): ajuda prospectivamente, mas não muda a classificação nem os números de 31/12/2025; a ata não pode ser retrodatada.",
+    "efeitos_fiscais": "Como mutuo (operação de crédito entre sócios e a companhia): incidência de IOF-crédito (Decreto 6.306/2007, art. 3º, §3º) e juros presumidos (PN CST 17/1984), com efeitos em IRPJ/CSLL sobre os juros presumidos, para todo o período 2022-2025 em que o mutuo existiu de fato. A quantificação exata não é possível com os elementos da biblioteca (tabelas de alíquotas/encargos moratórios não constantes) — item aberto; quantificar com a assessoria fiscal antes das DCTFs. A capitalização em 2026 não apaga a exposição pretérita."
+  },
+  "covenant": {
+    "ebitda": 9800000,
+    "divida_liquida_com_ajustes_da_diretoria": 27100000,
+    "indice_com_ajustes_da_diretoria": 2.4636,
+    "divida_liquida_correta": 29100000,
+    "indice_correto": 2.9694,
+    "limite": 2.75,
+    "cumprido": false
+  }
+}

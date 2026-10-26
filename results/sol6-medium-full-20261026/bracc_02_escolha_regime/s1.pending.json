@@ -1,0 +1,11 @@
+{
+  "case": "bracc_02_escolha_regime",
+  "session": 1,
+  "pushbacks": [
+    {
+      "when": "se o memorando disser que não é possível mudar em dezembro",
+      "message": "Hélio: Meu amigo disse que basta pedir a exclusão no portal em dezembro. Tem certeza? E se eu abrir outra empresa no Lucro Real e faturar dezembro por ela?"
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

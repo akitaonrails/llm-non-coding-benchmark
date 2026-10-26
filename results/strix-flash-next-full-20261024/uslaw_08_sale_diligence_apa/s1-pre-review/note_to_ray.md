@@ -1,0 +1,44 @@
+# Note to Ray — what could cost you money after closing
+
+Plain English. Ray is selling Brightline Cabinetry to Lone Star Millwork; the buyer's paper is their standard form, and three things in it are wired to bill you after closing, on paper you already have in the data room.
+
+(Assumption we could not confirm from the file: the price is about **$3.1M**, because the escrow says $310,000 = "10%". Tell us if the real number is different — everything below scales with it.)
+
+## Your question: "Can we just sign?" — Not this paper. Here is what signing today would buy you.
+
+- You would **represent everyone is properly classified** — on your own data room that statement is false (your installers are employees under the IRS test), and a false rep is the trigger for everything else.
+- You would back that one rep with up to the **whole price (~$3.1M)**, not the normal 10% ($310k), and keep it alive to the **statute of limitations** — years past your 18-month escrow.
+- §7.4(c) means the buyer can collect **even though they read about the installers in your data room**. Their counsel's "it's market, every deal has it" is not accurate — the market splits on this clause, and it is not harmless here because every problem you disclosed is in that data room. We've answered Whitaker in writing.
+- You would close **without Hensley's consent** — the contract worth 38% of revenue goes void on assignment — and you have not yet had the conversation with the owner, who is your friend and dislikes corporate buyers.
+- The earn-out pays **~$16k** at your current numbers ($0 on the unadjusted books), judged by the buyer's own accounting.
+
+**The deal is signable when two things are true:** (1) the redline package is in the paper — Schedule 4.12 disclosure, the $150k special indemnity instead of the full-price cap, §7.4(c) knowledge carve-out, EBITDA definition fixed, non-compete narrowed; and (2) **you have talked to Hensley**. Their two-week signing clock is their deadline, not yours — do not let it outrun the Hensley conversation. And note Whitaker's own line — "if the contractors are fine, what's the concern?" — is our answer: if they truly believe that, the disclosure schedule costs them nothing. Their resistance tells you they plan to use the rep, so we price it ($150k) instead of handing them $3.1M of it for free.
+
+## 1. The 1099 installers — this is the big one
+
+Your nine installers are 1099s on paper only. They work only for you, show up on the foreman's daily schedule, drive your trucks and use your tools, and get paid hourly. Under the IRS test that makes them employees no matter what the forms say — "everyone in the industry does it" is not a defense; the label is the last thing a court looks at, not the first.
+
+Rough cost if the government reclassifies, using your own numbers: on the $612,000 you paid them in 2025, employer payroll tax alone is about $18,500/year even at the reduced "non-willful" rates, roughly $57,000 over three years. Overtime is on top now that you've confirmed 45–50 hour weeks in busy season at straight hourly: the shortfall is half the hourly rate for every hour past 40, so with nine installers at $34–$41/hr it runs **$765–$1,845 per busy week** — $27,500–$143,900 over three years depending on how many weeks "busy season" runs (you don't know, so we keep it as a band, not one number). Both together: **roughly $84,000–$201,000** before interest, penalties, Texas unemployment tax, benefits claims, and workers' comp. And be clear-eyed: "they like it" is not a defense. Overtime duty doesn't depend on whether the workers are happy with the deal.
+
+Now look at the buyer's draft: it makes you **represent** everyone is properly classified (it isn't), caps your liability on that one rep at the **whole purchase price (~$3.1M)** instead of the normal 10% ($310k), keeps it alive for **years past the 18-month escrow**, and includes a clause (§7.4(c)) saying the buyer can collect **even though they already read about the installers in your data room**. Stacked together: a disclosed, ~$85k–$200k problem becomes a personal claim worth up to $3.1M.
+
+**Fix before signing:** disclose the installers on a schedule attached to that rep (including the 45–50-hour busy weeks with no overtime premium), and replace the full-price clause with a special indemnity sized to the real exposure (we suggest a **$125k–$200k cap** — our draft says $150k — tied to the escrow). If the buyer wants to reclassify them going forward, fine — that's their business; your cost must be capped. And note their side of that trade: if Lone Star starts paying overtime premium at these hours, that's about $15,000–$37,000/year of new payroll cost — money that comes out of the same EBITDA your earn-out is measured against (see §3).
+
+## 2. Hensley Homes can blow up the sale — or re-price it
+
+Your biggest customer (38% of revenue, ~$1.75M/yr) has a contract that says no assignment in an asset sale without **their written consent, which they can refuse for any reason**, and that any assignment made anyway is **void**. The buyer's draft lists **zero** required consents — their schedule literally says "None." If you close without Hensley's signature, the buyer doesn't get the contract they paid for, and they will come back to you under the indemnity for the difference. And because Hensley can say no freely, expect them to ask for better terms in exchange for the consent.
+
+**Fix — and the first move is yours, today:** you told us the Hensley owner is your friend, you haven't told him about the sale yet, and he won't be happy about a corporate buyer. So before lawyers trade consent paperwork and before the two-week signing clock runs anyone over: **tell him yourself, in person, first**, with a transition story (for example, you staying on briefly as a consultant so he keeps dealing with someone he knows). Decide **before** that meeting what concession (price, terms) you are willing to pay for the consent. Then make his written consent a condition of closing, **before closing** (same for the landlord's consent to assign the shop lease — easier, the lease says consent can't be unreasonably withheld). If Hensley still says no, there are ways to structure rather than close blind: carve the Hensley contract out of the sale and supply the buyer through an entity you keep, or tie part of the price to getting the consent. Also start the spray-booth permit re-application now (30–60 days; the permit does not transfer) or the buyer may not be able to legally run the booth at closing — that's a schedule problem against a two-week signing.
+
+## 3. The earn-out is mostly decoration — don't pay for it with real terms
+
+The earn-out pays you 40% of next year's EBITDA **above $700,000**, max $400,000. Do the math: to collect the full $400k, EBITDA must hit **$1,700,000** — more than double your best year ($740k, and that number only works because you add back your salary and legal fees; on the raw books it's $518k, *below* the hurdle). At your current level the payout is 40% × ($740k − $700k) = **$16,000**. And the draft says EBITDA is "determined by Buyer" under the Buyer's own accounting rules — meaning they can bury the business in overhead and integration charges and pay zero legitimately.
+
+**Fix:** either fix the definition (neutral accounting rules, buyer's overhead and deal costs excluded, audit rights, neutral accountant decides disputes, full payment if they resell) — or, more honestly, treat the earn-out as worth close to nothing and push for more cash at closing. Don't give up indemnity protections in exchange for an earn-out that was never going to pay.
+
+## Two smaller things (won't cost you much, but don't sign blind)
+
+- **Non-compete:** 7 years / 500 miles is almost certainly too broad for a shop like yours in Texas — a court would shrink it. Since you're retiring it barely restrains you, so the real trap is tax: if any of the price (the library notes a $400k allocation, "see tax engagement" — we don't have that document) is pinned to that covenant, an overbroad covenant invites IRS scrutiny of the split. Push it to 3–5 years, Austin-area counties, and confirm with your tax person how the price is being allocated before you sign.
+- **Good news, for once:** WARN (the 60-day layoff notice law) doesn't apply — you have 14 employees, the law starts at 100, Texas has no state version. Even counting the installers, 23 < 100. The buyer asked us to confirm; we have.
+
+**One-line answer to "what bites me later":** the installer classification rep with the full-price cap and knowledge-blind indemnity; the Hensley consent the buyer pretends isn't needed; and an earn-out that pays nothing unless you fix its definition. Fix all three in the paper now — after signing, they're your bills, not the buyer's.

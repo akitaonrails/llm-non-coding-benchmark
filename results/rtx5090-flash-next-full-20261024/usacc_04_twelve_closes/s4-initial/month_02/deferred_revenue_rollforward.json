@@ -1,0 +1,45 @@
+{
+  "as_of": "2025-02-28",
+  "currency": "USD",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) - prior annual subscription",
+      "term": "2024-06-01 to 2025-05-31",
+      "opening": "32800.00",
+      "billed": "0.00",
+      "recognized": "8200.00",
+      "closing": "24600.00",
+      "note": "8,200.00/month Jan-May 2025 (41,000.00 / 5 remaining months per client opening note). Remaining releases: March and May 2025."
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) - renewal (order form 2025-01-01, INV-2225)",
+      "term": "2025-01-01 to 2025-12-31",
+      "opening": "22000.00",
+      "billed": "0.00",
+      "recognized": "2000.00",
+      "closing": "20000.00",
+      "note": "24,000.00 / 12 = 2,000.00/month; February is month 2 of 12."
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025) - implementation & license (order form 2025-02-01, INV-2250)",
+      "term": "ASSUMED 2025-02-01 to 2026-01-31 (term not stated in the documents - see open_items.md section 1)",
+      "opening": "0.00",
+      "billed": "36000.00",
+      "recognized": "3000.00",
+      "closing": "33000.00",
+      "note": "Billed upfront ('due on signature') 2025-02-01; contract liability at billing per ASC 606-10-45-2 and Board policy 1. No revenue recognized at billing: Board policy 2 'when performed' not met (no separately priced distinct implementation; no delivery evidence; set-up is not a performance obligation per ASC 606-10-25-17). 36,000.00 / 12 = 3,000.00/month under the assumed 12-month term; release rate and 2025/2026 split change if a different term is confirmed."
+    }
+  ],
+  "totals": {
+    "opening": "54800.00",
+    "billed": "36000.00",
+    "recognized": "13200.00",
+    "closing": "77600.00"
+  },
+  "account_2200_reconciliation": {
+    "per_prior_tb_2025_01_31": "54800.00",
+    "rollforward": "54,800.00 + 36,000.00 (JE-2025-013 Pinecone billing) - 8,200.00 (JE-2025-020) - 2,000.00 (JE-2025-021) - 3,000.00 (JE-2025-022) = 77,600.00 = 24,600.00 + 20,000.00 + 33,000.00 (matches 2200 in trial_balance.json)"
+  },
+  "presentation_note": "Entire balance remains in 2200 (current), consistent with January. However, under the assumed Pinecone term, releases after 2025-02-28 are: prior 16,400.00 (Mar, May) + renewal 18,000.00 (Mar-Dec) + Pinecone 30,000.00 (Mar-Dec 2025) + Pinecone 24,000.00 (Jan 2026, beyond 12 months). The January blanket statement 'all amounts release within 12 months' no longer holds from February - flag in open_items.md section 1. Library has no non-current split; presentation choice, disclosed.",
+  "monthly_contracts_note": "24 monthly-billed customers (INV-2226..INV-2249, 30,450.00) collected in-month; no contract liabilities arise from monthly-billed contracts (Board policy 1 applies to annual upfront billings)."
+}

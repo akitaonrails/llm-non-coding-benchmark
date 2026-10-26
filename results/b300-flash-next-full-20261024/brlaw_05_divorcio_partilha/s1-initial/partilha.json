@@ -1,0 +1,74 @@
+[
+  {
+    "bem": "Apartamento (Perdizes)",
+    "natureza": "comum",
+    "valor_total": 1200000,
+    "valor_partilhavel": 900000,
+    "meacao_fernanda": 450000,
+    "fundamento": "Adquirido onerosamente em 2017, na constância do casamento: bem comum (CC art. 1.660, I — library/cc_comunhao_parcial.md). Valor partilhável líquido do saldo devedor de R$ 300.000,00, dívida para encargo da família (art. 1.664, citado no mesmo arquivo).",
+    "controversia": "Nenhuma quanto à natureza. Pendência prática: com a convivência em semanas alternadas pretendida pelo cliente, quem fica com o imóvel e o financiamento (premissa: Fernanda — ver QUESTIONS.md)."
+  },
+  {
+    "bem": "Carro (SUV) — Fernanda",
+    "natureza": "comum",
+    "valor_total": 120000,
+    "valor_partilhavel": 60000,
+    "meacao_fernanda": 30000,
+    "fundamento": "Confirmado pelo cliente: carro da família (transportava as crianças), no nome de Fernanda, com financiamento também no nome dela — dívida contraída para encargo da família responde como comum (CC arts. 1.662 e 1.664 — library/cc_comunhao_parcial.md). Líquido do saldo devedor de R$ 60.000,00.",
+    "controversia": "A proposta de Fernanda omite o carro e o financiamento, que estão no nome dela. No plano de partilha, fica com Fernanda, que assume integralmente o saldo devedor (desejo expresso do cliente)."
+  },
+  {
+    "bem": "PGBL — Fernanda",
+    "natureza": "comum",
+    "valor_total": 90000,
+    "valor_partilhavel": 90000,
+    "meacao_fernanda": 45000,
+    "fundamento": "Aportes 2016–2025, todos na constância: partilhável por natureza de investimento na fase de acumulação (STJ REsp 1.698.774/RS, 3ª Turma, 2020 — library/stj_fgts_quotas_previdencia.md). Meação de Marcelo: R$ 45.000,00.",
+    "controversia": "Matéria controvertida: a 4ª Turma diverge quanto ao VGBL; a biblioteca adota a partilha do PGBL como referência, exigindo registro da controvérsia. A proposta de Fernanda omite este bem, que está no nome dela."
+  },
+  {
+    "bem": "Casa em Atibaia",
+    "natureza": "misto",
+    "valor_total": 800000,
+    "valor_partilhavel": 120000,
+    "meacao_fernanda": 60000,
+    "fundamento": "A casa é bem particular: recebida por sucessão (herança do pai, formal de partilha 2019, matrícula 11/2019 — CC art. 1.659, I — library/cc_comunhao_parcial.md). PORÉM o cliente confirmou reforma em 2021 com cerca de R$ 120.000,00 'do nosso dinheiro' (recursos comuns): parcela da valorização (R$ 620.000 no inventário → R$ 800.000 hoje) decorrente de esforço/dinheiro comum comunica-se, por analogia à orientação das quotas ('valorização decorrente do esforço comum' — library/stj_fgts_quotas_previdencia.md). Base conservadora adotada: o valor comprovado das obras (120.000), não a valorização inteira (180.000); a valorização natural remanescente (~60.000) não se comunica. Meação de Fernanda: 60.000.",
+    "controversia": "Valor das obras informado como aproximado ('uns 120 mil') — exige recibos/notas e comprovantes de pagamento com recursos comuns; obras custeadas por lucro da empresa (pessoa jurídica) não seriam pagamento com dinheiro do casal. A proposta pede metade da casa (400.000) — 340.000 sem fundamento."
+  },
+  {
+    "bem": "FGTS — Marcelo",
+    "natureza": "comum",
+    "valor_total": 140000,
+    "valor_partilhavel": 140000,
+    "meacao_fernanda": 70000,
+    "fundamento": "Depósitos integrais na constância do casamento: integram o patrimônio comum e devem ser partilhados, ainda que o saque seja diferido (STJ REsp 1.399.199/RS, 2ª Seção, 2017 — library/stj_fgts_quotas_previdencia.md). O art. 1.659, VI, não afasta a partilha de valores já incorporados. Conferência: depósito mensal de R$ 2.400 = 8% de salário bruto de R$ 30.000, compatível com líquido de R$ 24.000 informado.",
+    "controversia": "A proposta de Fernanda diz que o FGTS 'fica com ele' — contradiz a orientação do STJ citada pela própria parte. Reconhecer a meação de 70.000 como moeda de troca pela resistência em Atibaia/quotas; eventual renúncia dela deve ser expressa e documentada."
+  },
+  {
+    "bem": "Quotas — Andrade Engenharia Ltda. (100%)",
+    "natureza": "misto",
+    "valor_total": 1500000,
+    "valor_partilhavel": 1100000,
+    "meacao_fernanda": 550000,
+    "fundamento": "Sociedade constituída em 2011, antes do casamento: quotas são bem particular (CC art. 1.659, I). A valorização na constância (R$ 1.500.000 laudo − R$ 400.000 em 2014 = R$ 1.100.000) comunica-se: cliente confirmou que NUNCA distribuiu lucros — tudo reinvestido —, de modo que a valorização é integralmente formada por lucros não distribuídos/reinvestidos e esforço comum na constância, frutos comunicáveis (CC art. 1.660, V; STJ REsp 1.595.775/AP; EREsp 1.623.858 — library/stj_fgts_quotas_previdencia.md), por apuração de haveres, sem ingresso da ex-cônjuge.",
+    "controversia": "Divergência jurisprudencial sobre o alcance da comunicação (registrada na biblioteca). Base medida 'do casamento até a separação de fato' — o cliente não tem a data; adotou-se o laudo atual (premissa que pode reduzir a base). A proposta pede 50% do total (750.000): 200.000 acima da meação comunicável."
+  },
+  {
+    "bem": "TOTAL",
+    "natureza": "comum",
+    "valor_total": 3850000,
+    "valor_partilhavel": 2410000,
+    "meacao_fernanda": 1205000,
+    "fundamento": "valor_total = todos os bens: 1.200.000 + 120.000 + 90.000 + 800.000 + 140.000 + 1.500.000 = 3.850.000. valor_partilhavel = (1.200.000−300.000) + (120.000−60.000) + 90.000 + 120.000 + 140.000 + 1.100.000 = 900.000 + 60.000 + 90.000 + 120.000 + 140.000 + 1.100.000 = 2.410.000. Meação de Fernanda = 2.410.000 ÷ 2 = 1.205.000 = 450.000 + 30.000 + 45.000 + 60.000 + 70.000 + 550.000 ✓. Particulares de Marcelo excluídos: Atibaia líquida de obras (800.000 − 120.000 = 680.000) + valor originário das quotas (400.000) = 1.080.000.",
+    "controversia": "A meação pode variar se (i) a separação de fato for anterior à data-base do laudo (quotas) ou (ii) o valor comprovado das obras de Atibaia diferir de 120.000. Premissas em QUESTIONS.md."
+  },
+  {
+    "bem": "DIVIDAS",
+    "natureza": "comum",
+    "valor_total": 360000,
+    "valor_partilhavel": 360000,
+    "meacao_fernanda": 180000,
+    "fundamento": "Financiamento do apartamento R$ 300.000 + financiamento do carro R$ 60.000 (este no nome de Fernanda, mas contraído para encargo da família — cliente confirmou uso familiar do veículo) = R$ 360.000; CC art. 1.664, citado em library/cc_comunhao_parcial.md. Já deduzidas como contrapartida nos respectivos bens acima (não somar em duplicidade). No plano de partilha, Fernanda assume ambos os financiamentos, o que realiza a meação dela de 180.000 e é compensado no cálculo da torna.",
+    "controversia": "Nenhuma quanto ao montante; distribuição segue o desenho de proposta_acordo.md §3."
+  }
+]

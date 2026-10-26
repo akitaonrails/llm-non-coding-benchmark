@@ -1,0 +1,19 @@
+{
+  "itbi": {
+    "devido": false,
+    "base": 0,
+    "fundamento": "CF, art. 156, §2º, I: não incide ITBI sobre a transmissão de bens para integralização de capital, salvo se a atividade preponderante do adquirente for compra e venda, locação de imóveis ou arrendamento mercantil (CTN, art. 37: preponderante quando mais de 50% da receita operacional; empresa nova: apuram-se os 3 anos seguintes). No desenho corrigido a locação dos 40% do imóvel (R$ 8.000/mês ao dentista) fica na PF do casal: receita imobiliária da PJ = 0%. Se a locação fosse da PJ, o teste literal ainda passaria (96.000 ÷ 1.296.000 = 7,41% < 50%), mas a LC 123, art. 17, XV (locação de imóveis próprios; CNAE 6810-2/02) mataria o Simples. Tema 796/STF: a imunidade não alcança o valor que exceder o capital social a integralizar - capital de R$ 402.000 cobre a fração integralizada de R$ 252.000, portanto base zero. Riscos residuais: RE 1.495.108 pendente (nota do arquivo da biblioteca); alíquota e interpretação da prefeitura [NÃO VERIFICADO NA BIBLIOTECA]."
+  },
+  "integralizacao_imovel": {
+    "valor_recomendado": 252000,
+    "ganho_capital_pf": 0
+  },
+  "pro_labore_minimo_recomendado_mensal": {
+    "Marina": 0,
+    "Felipe": 1518,
+    "Luana": 0
+  },
+  "distribuicao_mensal_pretendida": 50000,
+  "irrf_dividendos_2026_estimado_mensal": 0,
+  "simples_possivel": false
+}

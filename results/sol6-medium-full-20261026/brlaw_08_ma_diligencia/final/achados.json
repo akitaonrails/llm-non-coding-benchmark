@@ -1,0 +1,79 @@
+[
+  {
+    "achado": "Horizonte Azul exige anuência prévia e expressa para mudança direta ou indireta de controle; ainda não foi avisada.",
+    "onde": "data room §1.1; resposta de Hélio; minuta §3.2 e Anexo 3.2",
+    "por_que_importa": "Rescisão imediata e multa de 20% do saldo contratual se a anuência faltar. O cliente representa 31% da receita de 2025: R$ 4.200.000 × 31% = R$ 1.302.000 de receita anual histórica, não o saldo nem a multa. O saldo é desconhecido.",
+    "efeito": "anuencia",
+    "solucao": "Incluir anuência escrita no Anexo 3.2 como condição de fechamento, obtida antes da transferência; apurar o saldo contratual. Não presumir anuência pela amizade com o diretor."
+  },
+  {
+    "achado": "Contrato municipal exige comunicação prévia da alteração societária e manutenção das condições de habilitação; Hélio, responsável técnico, sairá.",
+    "onde": "data room §§1.2, 3.3; minuta §3.2 e Anexo 3.2",
+    "por_que_importa": "O contrato representa 12% da receita de 2025: R$ 4.200.000 × 12% = R$ 504.000 históricos. A troca de controle não exige automaticamente anuência, mas a falta de comunicação, regularidade fiscal ou responsável técnico pode afetar a execução e pagamentos. Base: library/lei14133_alteracao_societaria.md.",
+    "efeito": "prazo",
+    "solucao": "Prever comunicação prévia comprovada, manutenção da habilitação e substituto técnico regularizado perante CREA e Administração antes da saída de Hélio; confirmar exigências e cronograma com o Município."
+  },
+  {
+    "achado": "Direito de preferência dos quotistas com prazo de 30 dias; não há renúncias ou notificações documentadas.",
+    "onde": "data room §4.1; minuta §3.2 e Anexo 3.2",
+    "por_que_importa": "A cessão de quotas pode não estar liberada dentro dos 45 dias desejados. Identidade dos titulares, notificações e datas são desconhecidas.",
+    "efeito": "prazo",
+    "solucao": "Exigir renúncias escritas de todos os titulares ou prova do cumprimento do procedimento contratual e decurso dos 30 dias como condição de fechamento."
+  },
+  {
+    "achado": "Onze engenheiros PJ trabalham com exclusividade, horário e subordinação; a declaração trabalhista da minuta nega qualquer risco.",
+    "onde": "data room §2.2; minuta §§5.7, 8.4(b)-(d)",
+    "por_que_importa": "Há risco concreto de reconhecimento de vínculo, encargos e autuações, sem valor calculado. Na venda de quotas, a empregadora continua a mesma e o passivo permanece na Vértice. Base: library/clt_10_448_sucessao_trabalhista.md; library/sandbagging_franquia_mercado.md.",
+    "efeito": "indenizacao",
+    "solucao": "Revelar nominalmente os 11 contratos em anexo; qualificar §5.7; apurar exposição e negociar indenização específica com teto e garantia próprios, sem cobrança duplicada."
+  },
+  {
+    "achado": "Três reclamações trabalhistas classificadas como perda possível têm valor de causa de R$ 1,4 mi e provisão contábil de R$ 380 mil.",
+    "onde": "data room §2.3; minuta §5.7",
+    "por_que_importa": "Diferença aritmética de R$ 1.400.000 − R$ 380.000 = R$ 1.020.000; não é estimativa de perda adicional. Autos e avaliação individual dos processos não foram fornecidos.",
+    "efeito": "preco",
+    "solucao": "Listar ações e provisão no anexo de exceções, obter avaliação por processo e tratar eventual insuficiência de provisão no preço ou indenização específica sem dupla recuperação."
+  },
+  {
+    "achado": "CND federal positiva por IRPJ 2023 em cobrança de cerca de R$ 310 mil, disputado e não parcelado.",
+    "onde": "data room §3.1; resposta de Hélio; minuta §§5.9, 8.4(b)-(d)",
+    "por_que_importa": "A declaração de certidões negativas é falsa como redigida. O débito continua na sociedade adquirida; pode afetar regularidade para o contrato público. R$ 310 mil não inclui atualização, juros, multas ou custos, desconhecidos. Base: library/ctn_133_sucessao.md; library/lei14133_alteracao_societaria.md.",
+    "efeito": "indenizacao",
+    "solucao": "Excepcionar o débito em §5.9; obter demonstrativo atualizado e status da cobrança; definir quitação, garantia/regularização ou ajuste de preço e indenização específica limitada à exposição acordada."
+  },
+  {
+    "achado": "Sublimite do Simples Nacional ultrapassado em 2025, com ISS devido por fora; apuração não fornecida.",
+    "onde": "data room §3.2; minuta §5.9",
+    "por_que_importa": "Pode haver ISS, acréscimos e reflexos no preço ainda não quantificados. A biblioteca não traz regra para calcular esse imposto; qualquer valor seria não verificado.",
+    "efeito": "preco",
+    "solucao": "Obter apuração e guias de ISS, incluir exceção específica à declaração tributária e alocar apenas exposição confirmada em preço ou garantia."
+  },
+  {
+    "achado": "CADE consta como condição precedente apesar de ambos os grupos estarem abaixo dos limiares cumulativos informados.",
+    "onde": "data room §4.2; minuta §3.2",
+    "por_que_importa": "Meridiano: R$ 390 mi < R$ 750 mi; Vértice: R$ 4,2 mi < R$ 75 mi. Com esses faturamentos brasileiros de 2025 e o fechamento em 2026, a notificação obrigatória não se aplica. A condição pode atrasar indevidamente os 45 dias. Possibilidade excepcional de requisição posterior pelo CADE permanece. Base: library/cade_limiares.md.",
+    "efeito": "prazo",
+    "solucao": "Excluir aprovação do CADE como condição; obter confirmação documental do faturamento brasileiro consolidado e composição dos grupos."
+  },
+  {
+    "achado": "Earn-out de 35% do EBITDA excedente pode ser reduzido por práticas do comprador e rateio corporativo.",
+    "onde": "minuta §2.3",
+    "por_que_importa": "Máximo de R$ 1,5 mi exige EBITDA de R$ 1,1 mi + R$ 1,5 mi ÷ 0,35 = R$ 5.385.714,29 aproximadamente. Sem proteção operacional e contábil, a parcela variável pode chegar a zero por decisões do comprador. Base: library/earnout_pratica.md.",
+    "efeito": "preco",
+    "solucao": "Fixar critérios contábeis históricos, excluir rateios e integração, exigir curso normal, informações, perícia independente e aceleração em revenda."
+  },
+  {
+    "achado": "§8.4 combina basket que dispara pagamento integral, teto igual ao preço para trabalhista/fiscal, sandbagging e cinco anos; escrow retém 20% por cinco anos.",
+    "onde": "minuta §§8.4(a)-(d), 10.2",
+    "por_que_importa": "Fatos já divulgados podem gerar indenização até o Preço Total, além de imobilizar 20% desse preço. O valor e a composição do Preço Total não foram fornecidos; os montantes em reais não são calculáveis. Base: library/sandbagging_franquia_mercado.md.",
+    "efeito": "indenizacao",
+    "solucao": "Usar franquia dedutível, teto geral de 15% do preço fixo a definir, exceções trabalhista/fiscal identificadas e quantificadas, retenção total limitada com subcontas alocadas, sem sandbagging sobre fatos revelados; liberação escalonada da garantia."
+  },
+  {
+    "achado": "Não concorrência por 10 anos em todo o Brasil excede o parâmetro de cinco anos e pode restringir atividade fora da área da Vértice.",
+    "onde": "minuta §9.1",
+    "por_que_importa": "A biblioteca indica cinco anos na alienação de estabelecimento e aplicação analógica à cessão de controle; área nacional sem relação com atuação regional tende a ser reduzida. Área real de atuação não foi fornecida. Base: library/cc_1147_nao_concorrencia.md.",
+    "efeito": "nenhum",
+    "solucao": "Reduzir a cinco anos e à área efetiva de atuação listada em anexo, definindo atividade concorrente de forma objetiva."
+  }
+]

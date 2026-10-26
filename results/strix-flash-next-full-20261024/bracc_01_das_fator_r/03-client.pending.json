@@ -1,0 +1,48 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "questions": "# Perguntas ao cliente — DAS maio/2026 — encerramento (2ª rodada)\n\nO cliente respondeu à 1ª rodada (pró-labore de abril pago em **30/04/2026**; locação de\n20 notebooks para a Orla \"por uns meses\", NF-e porque \"locação não é NFS-e\") e informou\n**não ter informação adicional** para as demais perguntas. **Não há novas perguntas** — as\nperguntas já respondidas não são repetidas. As incógnitas restantes ficam sinalizadas\nexplicitamente abaixo (não foram preenchidas com suposições silenciosas nem fontes fora da\nbiblioteca; detalhe em `memoria.md` §12):\n\n1. **Repartição do Anexo V, 4ª faixa (serviços, R$ 14.682,35)** — a tabela de repartição\n   não consta da biblioteca e o cliente não dispõe do dado (PGDAS-D). A partição em\n   IRPJ/CSLL/COFINS/PIS/CPP/ISS dos serviços fica **em aberto**; `apuracao.json` traz\n   apenas a parcela verificável (locação — Anexo III/4ª, [L2]).\n2. **Caixa da folha nos 12 meses (Fator R em sentido estrito)** — extratos/comprovantes de\n   mai/2025–abr/2026 não existem mais. Cenários possíveis: 27,44%–27,90%, todos < 28%\n   (Anexo V inalterado). Para mudar de anexo, o encargo pago em mai/2025 (abr/2025, não\n   documentado) teria de ser ≥ R$ 5.700, ou haver pagamentos não documentados — nada nos\n   autos indica isso.\n3. **DAS de abril (R$ 10.480,22 = efetiva de 12,0462% sobre a receita de 87.000)** — a\n   única leitura aritmeticamente consistente é Anexo III/4ª com RBT12 (abr/2025–mar/2026)\n   de R$ 901.418,11, refutada pela receita documentada (os 11 meses conhecidos da janela já\n   somam 933.000); o cliente não soube explicar e não tem os DAS anteriores. Não forçamos\n   ajuste (memória §9.2).\n4. **\"Consultoria de arquitetura\" (1183) e \"treinamento\" (1186)** — o cliente não trouxe\n   CNAE/códigos de serviço; permanecem tratados como serviços de TI (premissa A2).\n5. **`faturamento_12_meses.csv`** — sem resposta se está líquido de estornos históricos e se\n   inclui locações de meses anteriores (a locação é recorrente \"por uns meses\"). Usado como\n   receita bruta total (premissa A1); sem impacto conhecido.\n6. **XML da NF-e 000.512** — autodeclarado \"documento fictício… sem validade fiscal\" (e com\n   protocolo de autorização em contradição interna); o rodapé do extrato em PDF também\n   declara banco/conta fictícios. O cliente não endereçou. A receita de R$ 6.000 está\n   corroborada pela tabela de notas e pelo extrato (crédito 26/05) e foi considerada.\n7. **Biblioteca [L2]** — a repartição do Anexo III/4ª soma 99,85% (divergência interna da\n   fonte; parcelas da locação somam 505,73 ≠ 506,49). Não ajustado à força.\n8. **Linha 2026-03 do resumo de folha** (pró-labore zero) — sem explicação; sem efeito\n   sobre o total de caixa (não houve pagamento em março).\n9. **Comprovante do pró-labore de 30/04/2026** — prometido pelo sócio, ainda não anexado\n   aos autos; o cálculo usa a data informada por ele.\n\n# Perguntas ao cliente — DAS maio/2026 — encerramento (2ª rodada)\n\n*Arquivo com o nome citado no `CONTRACT.md` (`PERGUNTAS.md`); conteúdo idêntico a\n`QUESTIONS.md` — manter ambos sincronizados se houver nova rodada.*\n\nO cliente respondeu à 1ª rodada (pró-labore de abril pago em **30/04/2026**; locação de\n20 notebooks para a Orla \"por uns meses\", NF-e porque \"locação não é NFS-e\") e informou\n**não ter informação adicional** para as demais perguntas. **Não há novas perguntas** — as\nperguntas já respondidas não são repetidas. As incógnitas restantes ficam sinalizadas\nexplicitamente abaixo (não foram preenchidas com suposições silenciosas nem fontes fora da\nbiblioteca; detalhe em `memoria.md` §12):\n\n1. **Repartição do Anexo V, 4ª faixa (serviços, R$ 14.682,35)** — a tabela de repartição\n   não consta da biblioteca e o cliente não dispõe do dado (PGDAS-D). A partição em\n   IRPJ/CSLL/COFINS/PIS/CPP/ISS dos serviços fica **em aberto**; `apuracao.json` traz\n   apenas a parcela verificável (locação — Anexo III/4ª, [L2]).\n2. **Caixa da folha nos 12 meses (Fator R em sentido estrito)** — extratos/comprovantes de\n   mai/2025–abr/2026 não existem mais. Cenários possíveis: 27,44%–27,90%, todos < 28%\n   (Anexo V inalterado). Para mudar de anexo, o encargo pago em mai/2025 (abr/2025, não\n   documentado) teria de ser ≥ R$ 5.700, ou haver pagamentos não documentados — nada nos\n   autos indica isso.\n3. **DAS de abril (R$ 10.480,22 = efetiva de 12,0462% sobre a receita de 87.000)** — a\n   única leitura aritmeticamente consistente é Anexo III/4ª com RBT12 (abr/2025–mar/2026)\n   de R$ 901.418,11, refutada pela receita documentada (os 11 meses conhecidos da janela já\n   somam 933.000); o cliente não soube explicar e não tem os DAS anteriores. Não forçamos\n   ajuste (memória §9.2).\n4. **\"Consultoria de arquitetura\" (1183) e \"treinamento\" (1186)** — o cliente não trouxe\n   CNAE/códigos de serviço; permanecem tratados como serviços de TI (premissa A2).\n5. **`faturamento_12_meses.csv`** — sem resposta se está líquido de estornos históricos e se\n   inclui locações de meses anteriores (a locação é recorrente \"por uns meses\"). Usado como\n   receita bruta total (premissa A1); sem impacto conhecido.\n6. **XML da NF-e 000.512** — autodeclarado \"documento fictício… sem validade fiscal\" (e com\n   protocolo de autorização em contradição interna); o rodapé do extrato em PDF também\n   declara banco/conta fictícios. O cliente não endereçou. A receita de R$ 6.000 está\n   corroborada pela tabela de notas e pelo extrato (crédito 26/05) e foi considerada.\n7. **Biblioteca [L2]** — a repartição do Anexo III/4ª soma 99,85% (divergência interna da\n   fonte; parcelas da locação somam 505,73 ≠ 506,49). Não ajustado à força.\n8. **Linha 2026-03 do resumo de folha** (pró-labore zero) — sem explicação; sem efeito\n   sobre o total de caixa (não houve pagamento em março).\n9. **Comprovante do pró-labore de 30/04/2026** — prometido pelo sócio, ainda não anexado\n   aos autos; o cálculo usa a data informada por ele.\n",
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "locacao",
+    "prolabore_abril"
+  ],
+  "literal_suggestions": [
+    "estorno"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

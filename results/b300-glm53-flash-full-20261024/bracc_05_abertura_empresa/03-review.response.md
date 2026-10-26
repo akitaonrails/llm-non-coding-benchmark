@@ -1,0 +1,5 @@
+I'll do a full pre-delivery audit: verify every citation against the actual library contents, re-read each deliverable end-to-end, and reconcile numbers across files. Starting with the library and its index:
+
+All 7 library files confirmed in the index. Now reading their full contents to verify every rate and provision cited:
+
+The library confirms most authorities (INSS 11%/20%, SC COSIT 120/2016, Lei 15.270 gatilho, LC 123 vedações art. 17 XV + exceção ISS). Two things to refine: the Q12 exception **does** exist in the library text ("exceto quando se referir a prestação de serviços tributados pelo ISS" — my deliverables currently hedge "se verificável na biblioteca"), and the Lei 8.112 phrasing should stay tied to the excerpt's literal text. Now re-reading the full `parecer.md` plus the other deliverables for stale or unsupported content:

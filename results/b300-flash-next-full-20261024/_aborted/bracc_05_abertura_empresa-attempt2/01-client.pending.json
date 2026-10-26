@@ -1,0 +1,60 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "questions": "# QUESTIONS — pendências de fato para fechar o plano\n\nRespostas (Q1–Q8) alteram números/estrutura indicada; o pacote foi entregue com premissas sinalizadas (ver `parecer.md` §7).\n\n1. **Dinheiro de Luana (Q1).** A Sra. Luana dispõe de **R$ 100.500** para integralizar os 20% do capital sugerido (R$ 502.500)? Se não, qual o valor máximo de aporte, para recalcularmos capital e percentuais pela fórmula do parecer §2.3 (ex.: 10% → R$ 44.666,67; 5% → R$ 21.157,89)? Ou pretendem outro desenho (ex.: Luana 20% com imóvel próprio/dinheiro menor e capital menor)?\n2. **Sócios em outras empresas (Q2).** Marina, Felipe e Luana participam de **outra empresa optante pelo Simples Nacional**? Qual o faturamento global dessas participações? (LC 123/2006, art. 17 — vedação de sócio de outra optante com receita global acima do limite; o valor do limite não consta da biblioteca.)\n3. **Casamento (Q3).** Confirmar a data do casamento de Marina e Felipe e se a **comunhão universal** foi adotada por pacto antenupcial (há escritura?). Há planejamento de alteração do regime de bens? (Afeta o art. 977 CC e a Variante adotável.)\n4. **Salário mínimo vigente (Q4).** Qual o valor do salário mínimo em vigor na data da abertura (2026)? Usamos R$ 1.518,00 (valor de 2025) como premissa do piso de pró-labore; a biblioteca não contém esse número. Qual pró-labore real pretendem fixar para Felipe e para Luana (valor de mercado — recomendo documentar)?\n5. **Renda real do aluguel (Q5).** Já existe negociação/proposta de locação dos 40% da sala? Valor mensal? (Usado no teste de preponderância do CTN art. 37 — estimamos R$ 1,8–3,6 mil/mês de mercado; a regra é da PJ, e a resposta reforça ou fragiliza o resultado.)\n6. **Variante (Q6).** Confirmam a **Variante 1** (Felipe sócio+administrador; Marina fora do quadro) — ou preferem a **Variante 2** (Marina única sócia do casal como cotista, Felipe administrador não sócio)? A escolha afeta o contrato a registrar.\n7. **Documentos (Q7).** Fornecer: (a) página da declaração de IR de Felipe com o imóvel (R$ 420.000); (b) certidão atualizada da matrícula 118.442; (c) ato administrativo/comprovante do vínculo de Marina no Ministério da Saúde (cargo, jornada) para o parecer de desimpedimento; (d) CPF/qualificação completa dos sócios; (e) dados do contador responsável.\n8. **Avaliação do imóvel (Q8).** Quem avaliou os R$ 900.000 (laudo? corretor?)? Há laudo formal? (Relevante para a memória de exata estimação — CC art. 1.055, §1º — e eventual uso de valor de mercado.)\n",
+  "facts": [
+    {
+      "id": "aluguel_pct",
+      "trigger": [
+        "alugar",
+        "locação",
+        "40%",
+        "terceiros",
+        "receita de aluguel"
+      ],
+      "answer": "Felipe: uns 40% da sala ficam vagos; vamos alugar para um dentista. Deve dar uns R$ 8 mil/mês.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "regime_bens",
+      "trigger": [
+        "regime de bens",
+        "comunhão",
+        "casados",
+        "pacto"
+      ],
+      "answer": "Marina: comunhão universal, casamos em 2010, sem pacto.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "luana_trabalho",
+      "trigger": [
+        "Luana",
+        "serviços",
+        "trabalho",
+        "integraliz",
+        "quotas por trabalho"
+      ],
+      "answer": "Luana: eu não tenho dinheiro pra aportar; a ideia é que meu trabalho vale 20%.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "marina_cargo",
+      "trigger": [
+        "servidora",
+        "administrar",
+        "Lei 8.112",
+        "cargo público",
+        "dedicação"
+      ],
+      "answer": "Marina: sou analista federal, 40h. Posso ser sócia, né? Administrar eu faria fora do expediente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "aluguel_pct",
+    "regime_bens",
+    "luana_trabalho"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

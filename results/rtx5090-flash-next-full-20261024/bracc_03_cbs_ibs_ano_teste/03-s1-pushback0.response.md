@@ -1,0 +1,15 @@
+Excelente pergunta do Paulo — e é exatamente a confusão que precisa ser desfeita. Deixa eu conferir a redação exata do comunicado do CGIBS antes de responder:
+
+Comunicado confirmado. Vou incluir essa resposta no `orientacao.md` (merece ficar registrado, é a objeção natural do Paulo) e depois respondo direto:
+
+Resposta ao Paulo — **não, autorização não torna regular.** A resposta completa ficou registrada em `deliverable/orientacao.md` (seção *"Se a SEFAZ autorizou, está regular, não?"*). O essencial:
+
+**1. A vedação é da emissão, não do carimbo.** O comunicado do CGIBS [`cgibs_comunicado_03_08_2026.md`] diz que, a partir de 03/08/2026, "**não será permitida a emissão** de DFe por contribuintes do regime regular **sem o preenchimento** dos grupos de IBS e CBS" — e que documentos sem os grupos "serão rejeitados". O cStat 100 é resposta do ambiente autorizador, não atestado de conformidade. Se algum autorizador deixou passar XML sem o grupo, a leitura compatível com o texto é **validação atrasada/desativada naquele ambiente**, não permissão. A biblioteca em lugar nenhum diz que nota autorizada sem o grupo vira regular — o único salvo-conduto de validade para documentos sem o grupo é para os emitidos **antes** de 03/08.
+
+**2. O que protege o seu bolso é a dispensa, e ela independe da autorização.** Em 2026 não se paga CBS/IBS **desde que** se cumpram as obrigações acessórias — incluindo **destacar** IBS/CBS nos documentos (ADCT art. 125, §4º; LC 214 art. 346). Nota sem o grupo `IBSCBS` **não tem destaque**, autorizada ou não — e o comunicado fecha a porta: nada de penalidades em 2026, "**sem prejuízo da perda da dispensa de recolhimento**". Ou seja: o "passou na SEFAZ" não blinda a exposição de até R$ 2.862,00 (CBS) + R$ 318,00 (IBS) só de agosto.
+
+**3. A "autorização" alegada nem está provada.** Os cStat 100 que tenho nos arquivos são todos `tpAmb=2` — **homologação**, ambiente de teste onde essa validação não bloqueia (é exatamente por isso que as 2308/2310/2312 aparecem "autorizadas" lá). Na produção, o relato do próprio TI prova o contrário: o ambiente rejeitou notas sem o grupo. Não recebi **nenhum XML de produção** dessas notas que "passaram" com o emissor rebaixado. Próximo passo concreto: baixar a **lista de NF-e em produção** no portal do autorizador e conferir o que de fato existe, com chave e cStat.
+
+**4. E se realmente houver autorização em produção de nota sem o grupo?** A biblioteca não descreve esse cenário nem suas consequências — não vou afirmar de memória que "estão valendo" nem que "são nulas". É **anomalia a esclarecer com a SEFAZ/CGIBS**. O que não muda em nenhuma hipótese: a apuração-teste (débitos calculados de qualquer forma) e o risco à dispensa enquanto faltar destaque.
+
+**Síntese:** o critério de 2026 não é "a SEFAZ carimbou?", é "calculei, **destaquei**, escriturei e fiz a apuração-teste?". O emissor rebaixado é justamente o que elimina o destaque — a condição mais importante para continuar sem pagar nada. Manter o rollback é trocar uma rejeição incômoda pela perda potencial da dispensa.

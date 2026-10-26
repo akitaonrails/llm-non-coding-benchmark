@@ -1,0 +1,228 @@
+[
+  {
+    "ref": "JE-2508-001",
+    "date": "2025-08-01",
+    "memo": "August 2025 monthly subscription invoices INV-2374..INV-2397, 24 customers, total 30,450.00 (documents/month_08/invoices.csv; every description 'Monthly subscription - August 2025'). Billed and earned in the same month per revenue policy memo #1 - no contract liability arises. C-012 Alder Studios LLC gave cancellation notice 08/11 effective 08/31 (documents/month_08/email_cancellation_C-012.txt): INV-2385 (1,800.00) was issued 08/01 before the notice, August service was fully delivered, and the invoice was collected 08/22 - no August adjustment; billing stops from September (open_items.md item 2).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-002",
+    "date": "2025-08-26",
+    "memo": "24 customer ACH receipts per cash_receipts.csv, total 30,450.00; every August invoice paid in full, receipts dated 08/20-08/26, bank credits 1:1 (bank_reconciliation.md). As in every prior month, no receipt was applied to the 92,650.00 opening (legacy) accounts receivable - eighth consecutive month, standing unknown U3.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-003",
+    "date": "2025-08-05",
+    "memo": "AWS 10,760.00 (vendor_bills.csv: 'Hosting & infrastructure'), paid 08/05 (bank ACH AWS). Sixth straight +120.00/month usage increase: 10,160 -> 10,280 -> 10,400 -> 10,520 -> 10,640 -> 10,760; drift noted, no adjustment.",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 10760.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 10760.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-004",
+    "date": "2025-08-06",
+    "memo": "WeWork rent 7,200.00 (vendor_bills.csv: 'Rent'), paid 08/06 (bank ACH WEWORK). Unchanged every month since January.",
+    "lines": [
+      {
+        "account": "6100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-005",
+    "date": "2025-08-07",
+    "memo": "Gusto payroll-platform fees 240.00 (vendor_bills.csv: 'G&A other'), paid 08/07 (bank ACH GUSTO FEES).",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-006",
+    "date": "2025-08-08",
+    "memo": "Notion/Slack/GitHub 1,460.00 (vendor_bills.csv: 'Software & tools'), paid 08/08 (bank ACH NOTION/SLACK/GITHUB). Unchanged every month since January.",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-007",
+    "date": "2025-08-09",
+    "memo": "Google Ads 3,600.00 (vendor_bills.csv: 'Marketing'), paid 08/09 (bank ACH GOOGLE ADS). +50.00/month drift continues: 3,350 -> 3,400 -> 3,450 -> 3,500 -> 3,550 -> 3,600; drift noted, no adjustment.",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 3600.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 3600.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-008",
+    "date": "2025-08-09",
+    "memo": "Payment of the five August vendor bills, total 23,260.00 (bank ACH debits 08/05-08/09; bank_reconciliation.md). No Harbor Law LLP bill in August - consistent with the observed quarterly cadence (03/09, 06/09, next expected September); no invoice received so no accrual - 6600 stays 5,000.00 YTD (open_items.md item 3).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 23260.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 23260.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-009",
+    "date": "2025-08-25",
+    "memo": "August payroll per payroll_register.json: gross 54,404.00 (9 employees), net pay 48,200.00; employee withholding 54,404.00 - 48,200.00 = 6,204.00 credited to 2210. Net pay agrees 1:1 with bank ACH GUSTO NET PAY 48,200.00 on 08/25. Register identical for an eighth consecutive month (standing unknown U11).",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-010",
+    "date": "2025-08-25",
+    "memo": "Employer payroll taxes 5,076.00 per payroll_register.json (employer_taxes); identical eighth month (U11).",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-011",
+    "date": "2025-08-25",
+    "memo": "Payroll tax remittance; agrees 1:1 with bank ACH GUSTO TAX 11,280.00 on 08/25. Clears 2210 exactly: withholding 6,204.00 + employer taxes 5,076.00 = 11,280.00.",
+    "lines": [
+      {
+        "account": "2210",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-012",
+    "date": "2025-08-31",
+    "memo": "Monthly depreciation per close checklist: 64,000.00 equipment / 36-month straight line = 1,777.78/month (U5). 1510 Accumulated depreciation reaches 35,555.24 cumulative.",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "JE-2508-013",
+    "date": "2025-08-31",
+    "memo": "Scheduled August releases of contract liabilities on documented terms (policy #1; ASC 606-10-25-14(b), 25-27): Trestle 2,000.00 + Pinecone 3,000.00 + Marigold 1,500.00 + Quarry 2,500.00 + Saltline 1,800.00 = 10,800.00. The C-012 cancellation effective 08/31 has no deferred-revenue effect (monthly billing, fully collected).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 10800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 10800.0
+      }
+    ]
+  }
+]

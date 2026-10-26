@@ -1,0 +1,11 @@
+vendor,invoice_date,amount,pre_or_post_petition,payable_now,authority
+Mesa Steel Supply,2026-02-02,62400.00,pre,NO,"DIP Order Dkt. 61 ¶2 (no DIP proceeds to pre-petition claims absent separate order) & ¶3 (no netting); Dkt. 48 Sched. 1 — Mesa not listed (""No other vendor is included""); 11 U.S.C. §549(a) [library/bc_362_363_503_549.md] — payment would be avoidable post-petition transfer; cure: noticed motion to add as critical vendor (Dkt. 48 ¶2)"
+Mesa Steel Supply,2026-03-18,18900.00,post,YES,"11 U.S.C. §503(b)(1) admin expense — post-petition goods; §363(c)(1) ordinary course, no order needed [library/bc_362_363_503_549.md]; open at 3/31, DIP use permitted per Dkt. 61 ¶2"
+Apex Coatings,2026-02-20,31200.00,pre,YES — PAID 2026-03-24,"Critical Vendor Order Dkt. 48 (documents/critical_vendor_order.pdf): Apex on Sched. 1 at $31,200, within $35,000 aggregate cap; conditioned on written Customary Trade Terms; satisfies §549(a) authorization requirement [library/bc_362_363_503_549.md]"
+Apex Coatings,2026-03-22,9800.00,post,YES — PAID,11 U.S.C. §503(b)(1) & §363(c)(1) [library/bc_362_363_503_549.md]
+Front Range Electric,2026-03-05,7400.00,pre,NO,"Pre-petition (invoice predates 3/10/2026 petition); not covered by Dkt. 48; 11 U.S.C. §549(a) [library/bc_362_363_503_549.md]; DIP Order Dkt. 61 ¶2; hold for compromise"
+Front Range Electric,2026-03-28,7650.00,post,YES — PAID,11 U.S.C. §503(b)(1) & §363(c)(1) [library/bc_362_363_503_549.md]
+Grainger,2026-02-11,4310.00,pre,NO,"Pre-petition; not covered by Dkt. 48; 11 U.S.C. §549(a) [library/bc_362_363_503_549.md]; DIP Order Dkt. 61 ¶2; hold for compromise"
+Grainger,2026-03-15,2120.00,post,YES — PAID,11 U.S.C. §503(b)(1) & §363(c)(1) [library/bc_362_363_503_549.md]
+Holland & Pierce LLP (debtor counsel),2026-03-31,140000.00,post,NO (in March),"11 U.S.C. §§330(a), 331 [library/bc_330_331.md] — payable only on court award or §331 interim procedure; interim comp order entered 4/14/2026 (80%/100% holdback): after that order up to $112,000 (80%) on interim application, balance on final award; nothing payable in March period"
+Corbin Advisors (financial advisor),2026-03-31,45000.00,post,NO (in March),"11 U.S.C. §§330(a), 331 [library/bc_330_331.md] — fee application required, none granted as of 3/31/2026; report as Part 5 holdback"

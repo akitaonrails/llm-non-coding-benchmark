@@ -1,0 +1,9 @@
+COMPLETE WITH OPEN ITEMS
+
+Session 1 deliverables are prepared in `session1/`. The March MOR remains a draft because the opening cash balance, complete cash and liability records, payroll petition-date allocation, Apex's written trade-terms agreement and funding source, and March professional-fee approval/holdback records were unavailable. The resulting unknown fields and arithmetic are identified in `session1/march_mor_workpaper.md`.
+
+Session 2 deliverables are prepared in `session2/`. The April MOR remains a draft because opening and ending cash, a complete transaction listing, closing liabilities, actual professional payments and awards, and the Corbin fee split and objection status were unavailable. The H&P interim payment ceiling assumes all billed work and expenses occurred on or after its retention date. See `session2/april_mor_workpaper.md` and `session2/professional_fees.md`.
+
+Session 3 deliverables are prepared in `session3/`. The COD and NOL reduction schedule uses the petition-date NOL as a provisional balance; the discharge-year tax attributes and election analysis were not supplied. Fresh-start status depends on unverified voting rights and measures at the pre-confirmation test date. A numeric emergence balance sheet cannot be reconciled without the effective-date trial balance, installment schedule and present value, and exit-financing and equity transaction amounts. See `session3/cod_workpaper.md`, `session3/fresh_start.md`, and `session3/emergence_balance_sheet.md`.
+
+Pre-delivery review: source invoice counts, arithmetic, JSON validity, and all indexed-library citation paths were checked. Remaining unknowns above have not been forced to zero or into a balancing entry.

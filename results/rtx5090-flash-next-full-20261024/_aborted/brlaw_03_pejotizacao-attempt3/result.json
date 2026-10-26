@@ -1,0 +1,22 @@
+{
+  "case": "brlaw_03_pejotizacao",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-full-20261024/brlaw_03_pejotizacao/02-s1-work-client1",
+  "elapsed_seconds": 500.00094691396225,
+  "controller_wait_seconds": 19.001990835997276,
+  "model_turn_seconds": 480.9770596460439,
+  "turns": 2,
+  "released_facts": [
+    "valor_embutia"
+  ],
+  "usage": {
+    "input_tokens": 785794,
+    "cached_input_tokens": 703190,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 52505,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

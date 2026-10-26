@@ -1,0 +1,21 @@
+{
+  "case": "uslaw_01_deadlines_removal",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 349.8568116449751,
+  "controller_wait_seconds": 37.00352357904194,
+  "model_turn_seconds": 312.84747916203924,
+  "turns": 4,
+  "released_facts": [
+    "appearance",
+    "member"
+  ],
+  "usage": {
+    "input_tokens": 432762,
+    "cached_input_tokens": 401792,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 15168,
+    "reasoning_output_tokens": 4823
+  },
+  "api_equivalent_usd": 0.29397840000000003
+}

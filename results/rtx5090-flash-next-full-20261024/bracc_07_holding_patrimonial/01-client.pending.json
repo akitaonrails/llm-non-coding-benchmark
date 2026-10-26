@@ -1,0 +1,47 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "questions": "# Perguntas à cliente (respostas afetam os números do parecer)\n\n1. **(Inventário do marido)** O inventário do falecido marido (comunhão parcial, viúva desde 2019) foi concluído? Os 11 imóveis e as aplicações de R$ 2,1 mi estão 100% em nome da Dona Helena, ou parte ainda pertence ao espólio/herança dele? *Se a metade adquirida na constância do casamento não foi partilhada, a base de doação e a conta da legítima mudam por completo.*\n2. **(Domicílio)** A Dona Helena reside e tem domicílio no Estado de São Paulo? (ITCMD de doação é estadual; usamos a lei de SP.)\n3. **(Deduções PF e locatários)** Quanto de IPTU, condomínio (pago pelo locador) e comissão de administração de imóveis ela deduz hoje no carnê-leão, item por item? Os locatários são pessoas físicas ou empresas? (Sem esses dados, a carga PF foi calculada sem deduções — piso de R$ 269.418/ano.)\n4. **(Netos)** Marcos tem filhos? (Se sim, mesmo uma eventual exclusão dele não esvazia a legítima — a biblioteca não trata da regra de representação, por isso o ponto está sinalizado como não verificado.)\n5. **(Calendário do ITCMD)** Ela prefere pagar o ITCMD da doação parcelado no tempo (nua-propriedade agora, usufruto depois — R$ 438.133 + R$ 219.067) ou tem caixa para a doação integral? E há endividamento pessoal ou empresarial que desaconselhe transferências agora?\n6. **(Justa causa para cláusulas)** Existe fato concreto e provável (não apenas o rompimento familiar) que possa ser declarado como \"justa causa\" para gravar com cláusulas restritivas a parte que tocar na legítima de Marcos (CC art. 1.848)? O que exatamente motiva o rompimento?\n7. **(ITBI fora de SP)** Para o Galpão em Guarulhos, a Casa em Campos do Jordão e o Terreno em Cotia: qual a alíquota de ITBI e a base de cálculo (lançamentos/valores venais recentes) desses municípios? A biblioteca só traz a alíquota de São Paulo/SP (3%).\n",
+  "facts": [
+    {
+      "id": "marcos",
+      "trigger": [
+        "Marcos",
+        "excluir",
+        "deserdar",
+        "legítima",
+        "terceiro filho"
+      ],
+      "answer": "Ele não fala comigo há seis anos. Não quero que receba nada. Se a lei obriga, quero o mínimo possível e com as cláusulas de proteção.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uso_proprio",
+      "trigger": [
+        "Campos do Jordão",
+        "Cotia",
+        "uso próprio",
+        "moradia"
+      ],
+      "answer": "A casa de Campos é da família, ninguém aluga. O terreno de Cotia é para os netos um dia. Eu moro no Jardins — ah não, o Jardins está alugado; moro em Higienópolis, que é alugado por mim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deducoes",
+      "trigger": [
+        "IPTU",
+        "condomínio",
+        "administradora",
+        "despesas dos imóveis"
+      ],
+      "answer": "A administradora cobra 8%; IPTU e condomínio dos vagos eu pago.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "marcos",
+    "uso_proprio",
+    "deducoes"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

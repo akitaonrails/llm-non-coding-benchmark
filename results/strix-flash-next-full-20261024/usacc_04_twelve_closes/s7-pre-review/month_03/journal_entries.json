@@ -1,0 +1,262 @@
+[
+  {
+    "ref": "JE-2503-001",
+    "date": "2025-03-01",
+    "memo": "March 2025 monthly subscription invoices INV-2251..INV-2274, 24 customers, total 30,450 (invoices.csv). SaaS access provided continuously over March; series satisfied over time (ASC 606-10-25-14(b), 25-27; policy #1). Billed and earned in the same month.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-002",
+    "date": "2025-03-01",
+    "memo": "INV-2275 Marigold Schools Inc (C-027) 18,000, order form dated 2025-03-01: 'Annual subscription - 12 months, billed upfront'; payment due on signature; service start 2025-03-01; term 12 months from service start, auto-renewing; MSA v3.2 referenced. Billed advance is a contract liability until the service is transferred (ASC 606-10-45-2). Policy #1: annual upfront billings go to deferred revenue and release 1/12 per month. Term is stated ON the order form, so the release IS computable - unlike Pinecone C-025 (U10).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 18000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2200",
+        "debit": 0.0,
+        "credit": 18000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-003",
+    "date": "2025-03-26",
+    "memo": "March customer receipts, 25 items (cash_receipts.csv; bank_statement.pdf): 24 monthly ACH collections 03/20-03/26 totaling 30,450 (ties INV-2251..INV-2274 in full) + 03/15 wire Marigold Schools Inc 18,000 (INV-2275 advance collected; collection does not transfer revenue - stays in 2200 per JE-2503-002). Total 48,450. Every March receipt applied to a March invoice; nothing applied to the opening A/R 92,650 (third month; U3).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 48450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 48450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-004",
+    "date": "2025-03-05",
+    "memo": "Vendor bill AWS 10,160, 03/05 (vendor_bills.csv, hosting & infrastructure).",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 10160.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 10160.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-005",
+    "date": "2025-03-06",
+    "memo": "Vendor bill WeWork 7,200, 03/06 (vendor_bills.csv, rent).",
+    "lines": [
+      {
+        "account": "6100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-006",
+    "date": "2025-03-07",
+    "memo": "Vendor bill Gusto fees 240, 03/07 (vendor_bills.csv, G&A other).",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-007",
+    "date": "2025-03-08",
+    "memo": "Vendor bill Notion/Slack/GitHub 1,460, 03/08 (vendor_bills.csv, software & tools).",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-008",
+    "date": "2025-03-09",
+    "memo": "Vendor bill Harbor Law LLP 2,500, 03/09 (vendor_bills.csv, professional fees). NEW ACCOUNT 6600 Professional fees: the chart of accounts has no professional-fees expense account; opening a 6600 rather than burying legal fees in 6200 G&A other. Flagged in open_items.md item 3.",
+    "lines": [
+      {
+        "account": "6600",
+        "debit": 2500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 2500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-009",
+    "date": "2025-03-10",
+    "memo": "Vendor bill Google Ads 3,350, 03/10 (vendor_bills.csv, marketing).",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 3350.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 3350.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-010",
+    "date": "2025-03-10",
+    "memo": "Vendor ACH payments, 6 bills paid in-month per bank 03/05-03/10 (AWS 10,160 + WeWork 7,200 + Gusto fees 240 + software 1,460 + Harbor Law 2,500 + Google Ads 3,350 = 24,910). No payment against opening AP 17,420 for the third consecutive month (U9 observation).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 24910.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 24910.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-011",
+    "date": "2025-03-25",
+    "memo": "March payroll per payroll_register.json (03/25): gross 54,404, net 48,200, employer taxes 5,076, remitted 11,280, 9 employees. Register numerically identical to January and February for the THIRD consecutive month (U11 - flagged, not re-asked; ties to bank). Withholding derived: 54,404 - 48,200 = 6,204 (U7).",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-012",
+    "date": "2025-03-25",
+    "memo": "Employer payroll taxes & benefits per register, 5,076 (03/25).",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-013",
+    "date": "2025-03-25",
+    "memo": "Payroll tax remittance per register and bank GUSTO TAX 03/25, 11,280 = withholding 6,204 + employer 5,076. 2210 clears to zero for the month.",
+    "lines": [
+      {
+        "account": "2210",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-014",
+    "date": "2025-03-31",
+    "memo": "Depreciation 1,777.78 = 64,000 straight-line over 36 months per close checklist item 6 (U5 assumption carried).",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "JE-2503-015",
+    "date": "2025-03-31",
+    "memo": "March deferred-revenue release, 11,700: Trestle prior contract 8,200 (Jan-2025 C-026 correction balance, Mar-May service period) + Trestle renewal 2,000 + Marigold C-027 1,500 = 18,000/12 (policy #1; term stated on order form). Pinecone C-025 release 0.00 - term unknown, no computable release (U10). Service-period basis per rollforward.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 11700.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 11700.0
+      }
+    ]
+  }
+]

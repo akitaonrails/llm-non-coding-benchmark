@@ -1,0 +1,30 @@
+# Perguntas ao cliente (Vértice Engenharia Consultiva Ltda.)
+
+Responda numerando P1–P8. As respostas refinam os números; o ranking Simples < Presumido < Real não depende delas.
+
+## Rodada 2 — respostas recebidas (encerrada)
+
+**Resposta do cliente:** "Uns 15% do faturamento é obra pequena com material; o resto é consultoria." Para as demais perguntas, o cliente **não tem informação adicional**.
+
+- **P5 — RESOLVIDA:** o rateio proporcional à receita (15% da folha → obras) está alinhado à composição informada (15% obras / 85% consultoria), que confere com o balancete (630k/4.200k = 15%). Mantido.
+- **P1, P2, P3, P4, P6, P7 — SEM INFORMAÇÃO:** permanecem como incógnitas, sinalizadas no §6 do memorando (U1, A5, R4, A2, R2, A3/U4). Nenhuma delas altera o ranking Simples < Presumido < Real.
+
+
+- **P1.** Vocês conseguem confirmar (ou enviar print do Simples Nacional/DAS mensal) a alíquota efetiva aplicada à parcela de **obras com materiais (Anexo IV)** nos últimos meses? A tabela do Anexo IV não está na biblioteca e usei estimativa sinalizada (~7,63% efetiva → DAS-IV ≈ R$ 48.060).
+- **P2.** Em que mês a RBT12 de 12 meses cruzou **R$ 3,6 mi** (sublimite)? Assumi que já em 2025, com excesso ≤ 20% → ISS fora do DAS desde jan/2026. Confirma?
+- **P3.** A receita 2026 pode estourar **R$ 4,8 mi** (carteiras/contratos novos, reajustes)? Se sim, a exclusão obrigatória e seus efeitos retroativos precisam de verificação em fonte oficial (regra do art. 26 não está na biblioteca).
+- **P4.** Qual a alíquota de **RAT** e o **FAP** da empresa? Usei o total típico de ~28% de encargos patronais fora do Simples.
+- **P5.** Existe rateio contábil da folha entre **obras** e **serviços de consultoria**? Usei proporcional à receita (15% da folha → obras), para a CPP do Anexo IV.
+- **P6.** As licenças **CAD/BIM (TopSoft, R$ 200 mil)** são contratos de assinatura/serviço ou aquisição definitiva, e são usadas diretamente na execução dos projetos (essencialidade)? Isso sustenta ou fragiliza o crédito no Real.
+- **P7.** A Prefeitura de SP cobra ISS sobre as **obras com materiais** (e sobre qual base — valor total ou materiais excluídos)? A regra não está na biblioteca; não apliquei ISS sobre os R$ 630 mil de obras.
+
+## Rodada 3 — pergunta nova (revisão dos cálculos)
+
+- **P8.** Podem enviar a **DRE projetada itemizada** por trás da linha "lucro contábil antes de IRPJ/CSLL = R$ 756.000 (projetado p/ Real)"? Em particular: (i) PIS/COFINS e ISS do Real já estão descontados nessa linha? (ii) a CPP patronal (~28%) está incluída nos R$ 1.300.000 de folha/encargos/FGTS? (iii) quais são os ~R$ 260.000 de "demais custos" que a soma das linhas do resumo não explica? Motivo: na leitura adotada nada muda no ranking (Real 1.080.790 vs. Simples 908.460); mas se o lucro de 756.000 for, na verdade, **antes de todos os tributos**, o Real cairia para ~847.750 e **inverteria o ranking** (ver `memorando.md` §5-bis).
+
+## Rodada 4 — resposta recebida (P8; encerrada, sem novas perguntas)
+
+**Resposta do cliente:** "Margem antes de imposto uns 18%." Para o restante, **não tem informação adicional**.
+
+- **P8 — PARCIALMENTE RESPONDIDA / ENCERRADA:** 18,0% × 4.200.000 = **756.000 exatos** — confirma a grandeza da linha de lucro e o LCRI adotado (A4); nenhum número muda. A itemização (i/ii/iii) não veio e não virá. A leitura alternativa "antes de todos os tributos" fica **improvável** (implicaria prejuízo de −152.460 no Simples hoje, incompatível com o balancete) mas não formalmente excluída — registrado como aberto limitado em `STATUS.md` item 8 e no §5-bis do memorando.
+- Nenhuma pergunta será reaberta: o cliente declarou duas vezes não ter mais informação. As incógnitas restantes estão rotuladas definitivamente no §6 do memorando (A1-A5, U1-U8) e em `STATUS.md`.

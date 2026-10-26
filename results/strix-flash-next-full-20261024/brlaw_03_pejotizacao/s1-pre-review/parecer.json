@@ -1,0 +1,41 @@
+{
+  "probabilidade_vinculo": "alta (75% a 85%)",
+  "fundamentos": [
+    "Subordinação documentada pela própria empresa: horário fixo 9h-18h com local e home office autorizados pelo gestor (contrato §4); cobrança de pontualidade e de planilha de ponto (Slack 12/03/2024); ordens de permanência até 20h (02/06/2025); faltas submetidas a aprovação do RH com desconto de 'saldo de 20 dias' (20/08/2025); avaliação de desempenho com o mesmo formulário dos CLTs (05/01/2026); reporte ao Gerente de Engenharia (contrato §5) - requisitos do art. 3º da CLT presentes (library/clt_requisitos_vinculo.md).",
+    "Remuneração fixa de R$ 18.000/mês 'independentemente de entregas', contrato por prazo indeterminado e 84 NFs mensais consecutivas (01/10/2019-30/09/2026): não eventualidade e onerosidade; pessoalidade por PJ de sócio único cujo 'sócio' é disponibilizado (contrato §4).",
+    "Art. 442-B (leitura da biblioteca) só afasta vínculo 'desde que ausente a subordinação' - aqui presente; art. 9º nulifica o desvirtuamento; art. 818: admitida a prestação, o ônus de provar autonomia recai sobre a Solaris, e as provas apontam em sentido contrário.",
+    "Tema 725 (RE 958.252/ADPF 324/ADC 48) declares lícita a terceirização entre pessoas jurídicas mas NÃO afasta reconhecimento de vínculo quando presentes os requisitos do art. 3º com fraude (art. 9º) no caso concreto; e mantém a responsabilidade da contratante (library/stf_tema_725_adc48_adpf324.md).",
+    "Não se invocam Súmula 256 nem OJ SDI-1 191: canceladas (library/tst_sumulas_ojs.md). Súmulas 212 e 338 podem onerar a defesa (ônus do término; presunção de jornada se >20 empregados - efetivo NÃO consta, e o cliente declarou não ter a informação).",
+    "Confissão do cliente (25/10/2026): a PJ de Rafael só tinha a Solaris como tomadora ('dedicado a nós, 7 anos') - elimina a defesa de empresário autônomo com pluralidade de clientes e reforça não eventualidade/dependência econômica; o argumento de que os R$ 18.000 'embutiam' custos (base de ~R$ 12.000) é admitido pela biblioteca 'salvo prova', mas o ônus é da empresa (art. 818) e NÃO há documentação no acervo - cenário-base permanece 18.000."
+  ],
+  "prescricao": {
+    "data_ajuizamento": "16/11/2026 (anunciada na notificação extrajudicial de 30/09/2026)",
+    "corte_quinquenal": "16/11/2021 (5 anos contados do ajuizamento - Súmula 308; FGTS segue a mesma prescrição quinquenal)",
+    "meses_exigiveis": 58.5,
+    "meses_prescritos": 25.5
+  },
+  "exposicao": {
+    "remuneracao_base": 1053000,
+    "decimo_terceiro": 87750,
+    "ferias_terco": 117000,
+    "fgts": 100620,
+    "multa_40": 40248,
+    "aviso_previo": 30600,
+    "inss_patronal": 352170,
+    "horas_extras": "estimativa 161540 (22,5 h/mês da planilha jan-jun/2025 x 58,5 meses x hora de 81,82 c/ adicional; divisor 220h e adicional 50% são premissas NÃO verificadas na biblioteca; demais meses a apurar; reflexos s/ HE ~+63.300 não somados)",
+    "total": 889928
+  },
+  "tema_1389": {
+    "efeito_processual": "Suspensão nacional dos processos sobre licitude de contratação de PJ/autônomo desde 14/04/2025 (ARE 1.532.603); mérito pendente na data da biblioteca (out/2026). A reclamação protocolada em 16/11/2026 tende a ser sobrestada após a instrução/antes da sentença, conforme a prática de cada TRT; o STF poderá fixar tese sobre ônus da prova e critérios de fraude.",
+    "efeito_na_exposicao": "A exposição não desaparece nem congela: juros e correção correm durante o sobrestamento (Lei 14.905/2024: IPCA + SELIC-IPCA, conforme a biblioteca); a prescrição já se fixa na data do ajuizamento (corte 16/11/2021), de modo que a suspensão não reduz o valor nominal - apenas posterga; o mérito do Tema pode reduzir ou AUMENTAR a exposição."
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 890000
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [500000, 800000]
+  },
+  "_notas_calculo": "Exposição = verbas NÃO pagas do período exigível (16/11/2021-30/09/2026, 58,5 meses): base de cálculo 58,5 x 18.000 = 1.053.000 (já paga em NF, por isso fora do total de desembolso); 13º 58,5 x 1.500 = 87.750; férias+1/3 4x24.000 + 10,5/12x24.000 = 117.000; FGTS 8% x 1.257.750 = 100.620; 40% = 40.248; aviso 51 dias (30+3x7 anos completos de serviço total, Lei 12.506; tempo de serviço considerado por inteiro ainda que verbas anteriores estejam prescritas) x 600 = 30.600; INSS 28% x 1.257.750 = 352.170 (débito perante a RFB); HE estimada ~161.540. Total 728.388 + 161.540 = 889.928. Se a saída for tratada como renúncia (foi Rafael quem encerrou a prestação): caem aviso e multa 40% -> 657.165 + HE = ~818.705. Fora do total (não reconciliáveis na data da biblioteca): correção Lei 14.905 durante sobrestamento, multas 467/477 (discutíveis, ~+18.000 p/ 477), honorários 791-A 5-15% (~44.500-133.400). Provisão de 890.000 = cenário cheio arredondado; faixa de provisão 820.000-1.100.000. Sensibilidade (§5.1 do parecer): se a empresa PROVAR que a base era R$ 12.000 (alegação do Diretor, sem documentação no acervo; ônus da empresa - art. 818), a mesma aritmética dá base 702.000; 13º 58.500; férias+1/3 78.000; FGTS 67.080; 40% 26.832; aviso 20.400; INSS 234.780; HE ~107.693; total ~593.285 (renúncia: ~546.053) - redução de ~296.643. Sem prova, cenário-base mantém 18.000/889.928 e provisão 890.000."
+}

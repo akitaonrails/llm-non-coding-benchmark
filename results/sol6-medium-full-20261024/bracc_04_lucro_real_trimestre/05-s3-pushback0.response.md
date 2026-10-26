@@ -1,0 +1,3 @@
+Entendo o custo de deixar o saldo para depois, mas não posso registrar a compensação integral: a [regra da biblioteca](/work/workspace/library/lei9065_art15_trava.md) limita o uso a **30% do lucro ajustado do trimestre**, tanto para IRPJ quanto para CSLL.
+
+Na premissa usada no fechamento, o máximo é **R$ 204.644,70**; os **R$ 695.355,30** restantes continuam na Parte B para períodos futuros. Mesmo no cenário alternativo da NF 8812, o máximo seria R$ 207.974,70. Mantive a [apuração trimestral](/work/workspace/deliverable/mes_03/lalur.json) dentro desse limite.

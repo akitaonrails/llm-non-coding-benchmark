@@ -1,0 +1,42 @@
+{
+  "periodos": [
+    {
+      "periodo": "3T/2020",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 268000.00
+    },
+    {
+      "periodo": "4T/2020",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 241000.00
+    },
+    {
+      "periodo": "1T/2021",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2026-03-31",
+      "decaido": false,
+      "valor": 302000.00
+    },
+    {
+      "periodo": "2T/2021",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2026-12-31",
+      "decaido": false,
+      "valor": 289000.00
+    }
+  ],
+  "valor_decaido": 509000.00,
+  "valor_remanescente": 591000.00,
+  "vicios_formais": [
+    "Campo 'fundamento da multa' da CDA em branco: a multa de ofício de 75% (R$ 429.000,00, 39% do total) não tem dispositivo legal individualizado. O elenco genérico 'Lei 9.430/96, arts. 1º, 2º e 44' não basta, porque o art. 44 comporta percentuais distintos (75% no inciso I; 150% no §1º, sonegação/fraude/conluio) — violação do art. 2º, §5º, III, da LEF (origem, natureza e fundamento legal da dívida).",
+    "Endereço da sede constante da CDA (Rua das Pedras, 100) desatualizado: a mudança para Av. Industrial, 2.500, Cotia/SP foi registrada na JUCESP em 12/03/2026 e na RFB em 20/03/2026, ANTES da inscrição (10/07/2026); o mandado de citação retornou negativo (28/09/2026). Vício impeditivo da citação e, sobretudo, fato que afasta a presunção de dissolução irregular da Súmula 435 (a comunicação aos órgãos competentes foi anterior à diligência).",
+    "Não se infere da CDA se os pagamentos parciais declarados no PAF (DARF R$ 61.000,00 em 29/01/2021 e R$ 84.000,00 em 30/04/2021) foram deduzidos dos principais de 4T/2020 (R$ 125.320,00) e 1T/2021 (R$ 157.040,00) — possível excesso de execução, ainda NÃO VERIFICADO (ver QUESTIONS.md).",
+    "CDA não indica corresponsáveis; qualquer futura emenda/substituição não pode modificar o sujeito passivo (Súmula 392 STJ), resguardo relevante para os pedidos de redirecionamento das Sessões 3–4."
+  ],
+  "veiculo": "exceção de pré-executividade",
+  "por_que": "A decadência está expressamente listada na Súmula 392/393 STJ (arquivo lef_e_sumulas_cda.md) como matéria conhecível de ofício e o exame se faz só com documentos já existentes (datas da própria CDA: AIF 03/02/2026 e inscrição 10/07/2026; DCTF/DARF do processo administrativo 10880.722.144/2025-11), sem dilação probatória. A exceção independe de garantia da execução: os embargos são incabíveis sem garantia (LEF art. 16, §1º), cuja caução custaria ~30% a mais do débito (seguro-garantia/fiança, Portaria PGFN 164/2014) — custo que só se avalia na Sessão 5. A nulidade da CDA por ausência de fundamento legal da multa também é conhecível de ofício; antecipa-se que a Fazenda pode emendar (LEF art. 2º, §8º; Súmula 392), mas sem alterar o sujeito passivo. Embargos ficam reservados para o mérito (origem dos depósitos — Lei 9.430, art. 42 não está na biblioteca, exigiria prova) após a garantia."
+}

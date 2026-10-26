@@ -1,0 +1,50 @@
+{
+  "total_prepetition_claim": 125000,
+  "admin_503b9": {
+    "amount": 78100,
+    "invoices": [
+      {"invoice": "MS-7788", "delivery_date": "2026-02-20", "amount": 41300},
+      {"invoice": "MS-7815", "delivery_date": "2026-03-04", "amount": 36800}
+    ],
+    "reasoning": "March 10 petition; these steel goods were received 18 and 6 days before filing, within the 20-day goods window, assuming the listed delivery dates are receipt dates and the sales were in the ordinary course. $41,300 + $36,800 = $78,100. Freight/handling and on-site cutting are services, not qualifying goods. Authority: library/bc_503b9_546c.md. Request allowance separately under the court's actual procedure; do not count this amount twice. Authority: library/frbp_3002_3003.md."
+  },
+  "general_unsecured": 46900,
+  "claim_arithmetic": "MS-7740: $62,400 - $36,800 = $25,600; MS-7788: $41,300; MS-7802: $6,900; MS-7815: $36,800; MS-7819: $14,400. Total $125,000. General unsecured $25,600 + $6,900 + $14,400 = $46,900; administrative goods $78,100; sum $125,000. MS-7701 was paid in full. The $210,000 collection demand exceeds the supported balance by $85,000; the client supplied no reconciliation.",
+  "reclamation": {
+    "available": true,
+    "why": "Potential statutory remedy, not an established recoverable amount. Steel delivered Feb 4 (MS-7740; $25,600 invoice balance), Feb 20 (MS-7788; $41,300 balance), and Mar 4 (MS-7815; $36,800 balance) was within 45 days before the March 10 petition, assuming delivery was receipt. A written demand should be sent by March 30, 2026 (20 days after filing because each 45-day period would expire after filing). Reclamation requires insolvency at receipt; insolvency is unproved. The record does not show whether Redwood still holds goods that can be returned. The DIP lender's blanket lien is prior. The unpaid invoice balances tied to these goods sum to $103,700 ($25,600 + $41,300 + $36,800); that is not an established value of reclaimable goods or recovery estimate. Avoid duplicate recovery alongside the claim. Authority: library/bc_503b9_546c.md."
+  },
+  "bar_date": "2026-06-11",
+  "bar_date_qualification": "The supplied notice states June 11, 2026 at 5:00 p.m. Mountain Time, but is dated April 2, 2026, after the engagement's March 19 date. The client cannot verify the discrepancy. Treat the deadline and filing instructions as provisional; confirm with the court/claims agent before filing. Authority for Chapter 11 claim filing: library/frbp_3002_3003.md.",
+  "preference": {
+    "transfers_in_90_days": 180000,
+    "ordinary_course_defense": {
+      "protected": 95000,
+      "exposed": 85000,
+      "reasoning": "90-day window begins Dec 10, 2025. Transfers: Dec 18 $51,000 + Jan 22 $44,000 + Feb 10 $48,200 + Feb 27 $36,800 = $180,000. The first two ACH payments took 45 and 43 days, consistent with the earlier 43-47-day ACH pattern ($95,000 potentially protected). Feb 10 took 29 days; Feb 27 took 25 days and was a wire demanded by Mesa ($85,000 potentially outside the parties' ordinary course). The Jan 20 terms change and pressure also weaken the defense. Objective ordinary business terms and all defense elements are unproven; these are estimates, not adjudicated amounts. Authority: library/bc_547.md."
+    },
+    "new_value_defense": 85000,
+    "net_exposure_estimate": 0,
+    "reasoning": "Conditional maximum new-value offset against the $85,000 not provisionally protected as ordinary-course: after Feb 10 and before Feb 27, $41,300 steel (Feb 20) + $6,900 freight/handling (Feb 26) = $48,200; after Feb 27, $36,800 steel (Mar 4) covers the second $36,800 transfer. The $14,400 Mar 9 cutting service is not needed for that maximum allocation. $85,000 - $85,000 = $0 conditional net estimate, assuming all listed value was unsecured and not paid by an otherwise unavoidable transfer. The library does not define whether freight/handling or cutting services count as section 547(c)(4) new value; their treatment is unverified. If only the $78,100 steel goods count, $85,000 - $78,100 = $6,900 remains at issue. If those goods cannot be used because of later administrative payment or another reason, but both service amounts count, $85,000 - ($6,900 + $14,400) = $63,700 remains at issue. If neither goods nor services qualify, the entire $85,000 is at issue before other defenses. The library does not resolve the effect of a paid section 503(b)(9) claim on section 547(c)(4); that issue is also unverified. These are possible preference exposures, not amounts currently owed; the estate must establish section 547(b) elements and Mesa bears the defense burden. Authority: library/bc_547.md."
+  },
+  "stay_violations": [
+    "March 12 final-notice letter and email demanding $210,000 within five days and threatening collections after the March 10 petition: an act to collect a prepetition claim. Authority: library/bc_362.md.",
+    "March 15 collection call continued after Redwood AP said it had filed Chapter 11; Mesa's response knowingly pressed payment. Authority: library/bc_362.md.",
+    "March 18 email threatening credit reporting and withholding future shipments as pressure for the old balance: the collection threat violates the stay. A prospective decision about future credit alone is a separate issue; do not use it to collect prepetition debt. Authority: library/bc_362.md."
+  ],
+  "immediate_actions": [
+    "Stop all AR calls, letters, emails, credit-reporting threats, collection referral, and payment demands concerning prepetition invoices; notify staff and outside collectors. Authority: library/bc_362.md.",
+    "Preserve the communications, retract the postpetition demands through counsel, and discuss cure of the stay problem with debtor's counsel. Authority: library/bc_362.md.",
+    "Prepare a written reclamation demand immediately for eligible steel goods and send it by March 30, 2026, subject to counsel confirming recipient and service details; do not attempt self-help repossession. Authority: library/bc_503b9_546c.md.",
+    "Verify the actual bar-date order, notice, claims agent, and procedure for section 503(b)(9); file the supported $125,000 claim with a separately stated $78,100 goods administrative request. Authority: library/frbp_3002_3003.md; library/bc_503b9_546c.md.",
+    "Contact debtor's counsel about the pending critical-vendor motion and offer continued supply on agreed customary terms if Mesa is genuinely essential; payment requires debtor choice and court approval. Authority: library/critical_vendor_practice.md.",
+    "Preserve payment history, invoice terms, delivery proof, and communications for a possible preference demand; avoid unilateral setoff or conditioning return of funds on claim payment. Authority: library/bc_547.md; library/bc_502d_setoff.md."
+  ],
+  "open_items": [
+    "Unexplained $85,000 difference between collection demand and invoice ledger; no omitted invoices or charges substantiated.",
+    "Future-dated April 2 notice and resulting lack of independent bar-date and filing-instruction verification.",
+    "No direct proof of receipt, ordinary-course sale, insolvency at receipt, inventory status, or prepetition security/lien details beyond the listed records and library statement about the DIP lender's blanket lien.",
+    "No information on any reclamation demand or payment/credit after the petition.",
+    "No court schedules, critical-vendor order, or actual section 503(b)(9) filing procedure supplied."
+  ]
+}

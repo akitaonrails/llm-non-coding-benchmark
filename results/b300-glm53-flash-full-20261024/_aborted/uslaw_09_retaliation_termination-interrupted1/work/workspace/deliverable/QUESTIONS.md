@@ -1,0 +1,23 @@
+# QUESTIONS.md — client information requests
+
+Written to Lena Ortiz, HR Director. These are questions of fact; the answers will refine (not overturn) the advice already delivered. Please answer in writing and preserve the correspondence.
+
+1. **Severance plan status (OWBPA).** Does the company have a written severance plan or policy that already entitles an Account Manager at termination to 4 weeks' base pay? This determines whether the 4 weeks offered in ¶3 is "consideration in addition to anything of value to which the individual is already entitled" under §626(f)(1)(D) (`library/adea_owbpa_626f.md`). If yes, what is the plan's formula, and has it been paid without a release?
+
+2. **Full agreement text.** The draft we received (`documents/separation_agreement_draft.md`) contains only paragraphs 3, 4, 7, 9, and 11. Please send the complete form, including any attorney-consultation advice, effective-date clause, and paragraphs 1–2, 5–6, 8, 10, so the §626(f)(1)(A)–(G) review can be finished (`library/adea_owbpa_626f.md`).
+
+3. **Complaint history regarding Tom Hale.** Have any other employees complained about Hale (harassment, retaliation, favoritism), formally or informally, at any time? Are there prior internal investigations or notes his conduct was raised in management discussions?
+
+4. **Policy and training records.** Does the company have a written anti-harassment policy and complaint procedure, and records of training? These bear on the *Faragher/Ellerth* affirmative defense analysis (`library/harassment_investigation_duty.md`).
+
+5. **Who is the final decision-maker for this termination?** You (HR Director), the VP, both, or someone else — and what is Hale's role, if any, in the final decision? This affects attribution of the 10/2 email and the retaliation direct-evidence theory (`library/title_vii_704a.md`, `library/fmla_2615.md`).
+
+6. **PIP benchmarking.** Has a quota target of "100% of quarterly quota within 60 days" ever been used for any other Account Manager, and what did their attainment look like when it was imposed? Also: what objective reason exists for the 24-hour CRM-update term, and is it applied company-wide?
+
+7. **Compensation data for exposure math.** Dana's current annual base salary and any bonus/commission structure. We have the arithmetic frame (FMLA remedies include liquidated/double damages and fees, `library/fmla_2615.md`; Columbia claims carry a longer limitations period and uncapped compensatory damages, `library/columbia_at_will_exceptions.md`) but no dollar inputs — nothing balances to a number yet and none is asserted.
+
+8. **Events after 2026-10-06.** Has anything occurred since the 10/6 request: any HR response to the 9/30 FMLA request; any further PIP steps or coaching; any contact with Dana about the 9/12 complaint; any schedule change to the proposed termination? Our current analysis is expressly stated as of 2026-10-06.
+
+9. **FMLA administration.** Who handles FMLA determinations, and what tool/eligibility criteria does the company apply? (Note a stated gap: the library contains the interference/retaliation rules, `library/fmla_2615.md`, but not the eligibility/duration criteria — we will not rely on any eligibility standard we cannot verify.)
+
+10. **Document retention systems.** What is the company's email/text retention and auto-deletion setup for Hale, Ortiz, and the VP of Dana's department? This is needed to scope the litigation hold (`library/litigation_hold.md`) and confirm the 10/2 email and related messages are fully captured.

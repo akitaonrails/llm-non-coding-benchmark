@@ -1,0 +1,34 @@
+{
+  "status": "PRELIMINAR / INCOMPLETO — apuração do 1º trimestre com base em 01/2026 + 02/2026 (fechados). Março/2026 não existe em documents/ e o cliente confirmou, em duas rodadas (sessões 3 e 6), não ter informação adicional — condição definitiva nesta base documental; campos de março estão null (NÃO zero). Valores preenchidos = piso com a documentação existente; NÃO usar para recolhimento definitivo nem para escrituração do e-LALUR. Fundamentos e aritmética em memoria.md.",
+  "lucro_liquido_contabil": 321566.00,
+  "adicoes": {
+    "brindes_jan2026 (Lei 9.249/95, art. 13, VII; premissa proeminente: 100% da conta 4.2.02 de jan)": 85000.00,
+    "brindes_fev2026 (NF-e 4410 Brindes Prime, CFOP 1949 — Lei 9.249/95, art. 13, VII)": 48000.00,
+    "doacao_fev2026 (Associação Beneficente Luz — sem utilidade pública federal/OSCIP; exceção do § 2º inaplicável — Lei 9.249/95, art. 13, VI)": 30000.00,
+    "adicoes_mar2026 (sem documentos — desconhecido, não é zero)": null
+  },
+  "exclusoes": {},
+  "lucro_antes_compensacao": 484566.00,
+  "compensacao_prejuizo": 145369.80,
+  "lucro_real": 339196.20,
+  "irpj_15": 50879.43,
+  "adicional_10": 27919.62,
+  "csll": 30527.66,
+  "parte_b": {
+    "prejuizo_fiscal_saldo_final": 754630.20,
+    "base_negativa_csll_saldo_final": 754630.20
+  },
+  "_notas_calculo": [
+    "lucro_liquido_contabil = jan 128.483,00 (139.583,00 - 11.100,00 do estorno AJ-2601-01, ainda não escriturado pelo cliente no razão — ver mes_02/pendencias.md item 5) + fev 193.083,00 (razão/balancete fev, sem ajustes) = 321.566,00. Março: null.",
+    "adicoes jan+fev = 85.000,00 + 48.000,00 + 30.000,00 = 163.000,00 (Lei 9.249/95, art. 13, VI e VII; library/lei9249_art13.md).",
+    "lucro_antes_compensacao = 321.566,00 + 163.000,00 = 484.566,00 (janeiro+fevereiro apenas).",
+    "compensacao_prejuizo = trava de 30% do lucro líquido ajustado por adições/exclusões: 30% x 484.566,00 = 145.369,80; saldo disponível de 900.000,00 (documents/saldos_fiscais_abertura.md) NÃO é o limitante nesta altura (a trava só consumiria o saldo integral se o ajustado ultrapassasse 3.000.000,00). Lei 9.065/95, arts. 15 e 16; Lei 8.981/95, arts. 42 e 58; RE 591.340 — library/lei9065_art15_trava.md. O pedido do diretor de compensar os 900.000,00 integrais continua vedado.",
+    "lucro_real = 484.566,00 - 145.369,80 = 339.196,20.",
+    "irpj_15 = 15% x 339.196,20 = 50.879,43.",
+    "adicional_10 = 10% x (339.196,20 - 60.000,00 = 279.196,20) = 27.919,62 (excedente trimestral — Lei 9.430/96, arts. 1º-2º; library/irpj_csll_trimestral.md).",
+    "csll = 9% x 339.196,20 = 30.527,658 -> 30.527,66; mesma trava de 30% sobre a base ajustada (Lei 9.065/95, art. 16) => compensação idêntica de 145.369,80; não há adições/exclusões específicas de CSLL nos documentos de jan-fev.",
+    "parte_b: abertura 900.000,00 e 900.000,00 (documents/saldos_fiscais_abertura.md) - 145.369,80 = 754.630,20 (saldo final PRELIMINAR, só definitivo com março).",
+    "Estorno PIS/COFINS da NF-e 8812 (AJ-2601-01, 11.100,00) NÃO figura como adição: é ajuste contábil já refletido no lucro líquido societário (dedutível), não despesa indedutível (library/pis_cofins_uso_consumo.md).",
+    "Composição de 4.2.02 em fevereiro está documentada (48.000 brindes + 30.000 doação + 85.000 ordinárias dedutíveis); a premissa de '100% de 4.2.02 = brindes' permanece apenas para janeiro (85.000,00)."
+  ]
+}

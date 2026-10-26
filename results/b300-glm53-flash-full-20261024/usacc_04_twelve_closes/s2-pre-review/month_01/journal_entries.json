@@ -1,0 +1,228 @@
+[
+  {
+    "ref": "JE-2025-001",
+    "date": "2025-01-01",
+    "memo": "Bill January monthly subscriptions \u2014 INV-2201..INV-2224, 24 customers (invoices.csv). One-month service period is January 2025: recognize in full (policy memo \u00a71; ASC 606 ratable).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 30450
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-002",
+    "date": "2025-01-01",
+    "memo": "Bill Trestle Freight LLC annual subscription upfront \u2014 INV-2225 (order form C-026; term Jan\u2013Dec 2025, billed on signature). Billed before performance: contract liability (ASC 606-10-45-2).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 24000,
+        "credit": 0
+      },
+      {
+        "account": "2200",
+        "debit": 0,
+        "credit": 24000
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-003",
+    "date": "2025-01-15",
+    "memo": "Receipt \u2014 Trestle Freight wire $24,000 applies to INV-2225 (cash_receipts.csv; bank 01/15 WIRE IN).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 24000,
+        "credit": 0
+      },
+      {
+        "account": "1100",
+        "debit": 0,
+        "credit": 24000
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-004",
+    "date": "2025-01-26",
+    "memo": "Receipts \u2014 24 monthly invoices INV-2201..INV-2224 collected by ACH 01/20\u201301/26 ($30,450) per cash_receipts.csv; each receipt applied to its invoice; agrees to bank statement credits.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30450,
+        "credit": 0
+      },
+      {
+        "account": "1100",
+        "debit": 0,
+        "credit": 30450
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-005",
+    "date": "2025-01-05",
+    "memo": "AWS hosting & infrastructure paid 01/05 ACH (vendor_bills.csv = bank).",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 9920,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 9920
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-006",
+    "date": "2025-01-06",
+    "memo": "WeWork rent paid 01/06 ACH (vendor_bills.csv = bank).",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 7200,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 7200
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-007",
+    "date": "2025-01-07",
+    "memo": "Gusto fees \u2014 G&A other, paid 01/07 ACH (vendor_bills.csv = bank).",
+    "lines": [
+      {
+        "account": "6800",
+        "debit": 240,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 240
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-008",
+    "date": "2025-01-08",
+    "memo": "Notion/Slack/GitHub software & tools, paid 01/08 ACH.",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 1460,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 1460
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-009",
+    "date": "2025-01-09",
+    "memo": "Google Ads marketing, paid 01/09 ACH.",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 3250,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 3250
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-010",
+    "date": "2025-01-25",
+    "memo": "Payroll 01/25 (payroll_register.json): gross $54,404.00; employer taxes & benefits $5,076.00; net pay $48,200.00; taxes remitted $11,280.00. Withheld = 54,404 \u2212 48,200 = 6,204.00; 6,204 + 5,076 = 11,280 remitted same day. Cash 48,200 + 11,280 = 59,480 agrees to bank (ACH GUSTO NET PAY 48,200; ACH GUSTO TAX 11,280). No residual payroll liability.",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 54404,
+        "credit": 0
+      },
+      {
+        "account": "6100",
+        "debit": 5076,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 59480
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-011",
+    "date": "2025-01-31",
+    "memo": "Release Trestle prior annual contract (Jun 2024\u2013May 2025): 8,200.00/month per note_opening_deferred.md; 1/12 ratable (policy memo \u00a71).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 8200,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 8200
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-012",
+    "date": "2025-01-31",
+    "memo": "Release Trestle 2025 annual contract: 1/12 \u00d7 24,000 = 2,000.00 (policy memo \u00a71).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2000,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 2000
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-013",
+    "date": "2025-01-31",
+    "memo": "Depreciation $1,777.78/month per close checklist item 6.",
+    "lines": [
+      {
+        "account": "6900",
+        "debit": 1777.78,
+        "credit": 0
+      },
+      {
+        "account": "1510",
+        "debit": 0,
+        "credit": 1777.78
+      }
+    ]
+  }
+]

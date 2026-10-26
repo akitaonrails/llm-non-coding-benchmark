@@ -1,0 +1,11 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "session": 1,
+  "pushbacks": [
+    {
+      "when": "se analise.json disser que as parcelas 5 e 6 prescreveram",
+      "message": "Sérgio: Mas eles pagaram em 2023! Pagamento interrompe a prescrição, qualquer um sabe. E eu tenho relatório assinado das parcelas 5 e 6. Como pode ter prescrito?"
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

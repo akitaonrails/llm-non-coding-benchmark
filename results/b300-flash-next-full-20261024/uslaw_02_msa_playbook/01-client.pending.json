@@ -1,0 +1,46 @@
+{
+  "case": "uslaw_02_msa_playbook",
+  "questions": "# Questions for the client (Cobalt Legal)\n\nAnswers would let us close the assumptions below; the issues list stands without them.\n\n1. **Affiliate use (rule A5 / redline §5).** Will users from Cobalt Freight Europe B.V. and/or\n   Cobalt Brokerage LLC actually work in RouteWise, or is it Holdings-only in practice? If an\n   affiliate contracts with drivers in the EU, does it act as controller for that data (vs.\n   Holdings)? This decides how the DPA roles clause is drafted.\n2. **EU go-live timing.** What is the planned start date for processing EU driver/customer data\n   (Rotterdam/Hamburg) relative to signature? The DPA (Exhibit C) must be executed before that\n   date; we need to know if there is time to negotiate one or whether we demand RouteWise's\n   standard form immediately.\n3. **RouteWise's standard DPA.** Does RouteWise already publish a GDPR Art. 28-compliant DPA we\n   can attach as Exhibit C, or are we drafting from scratch (our skeleton is in redlines.md §2)?\n4. **Fleet size.** The Order Form covers up to 350 vehicles. Is Cobalt's in-scope fleet (including\n   affiliates') inside 350? If not, scope/fee terms need to change now, not via a later Order Form\n   that overrides the MSA (§14.1).\n5. **Leverage.** The COO wants to sign this week and the vendor knows it. Are we willing to hold\n   signature to the DPA + cap carve-out even if RouteWise stalls the other edits? (Our default\n   assumption: yes for items 1–2 of the one-pager.)\n",
+  "facts": [
+    {
+      "id": "affiliates",
+      "trigger": [
+        "affiliate",
+        "Cobalt Freight Europe",
+        "Brokerage",
+        "who will use",
+        "entities"
+      ],
+      "answer": "Both affiliates will use it — Europe for Rotterdam/Hamburg, Brokerage for carrier routing. Holdings signs.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "eu_data",
+      "trigger": [
+        "EU",
+        "GDPR",
+        "personal data",
+        "driver data",
+        "Rotterdam"
+      ],
+      "answer": "Yes — driver names, locations, hours, and customer addresses from the EU ops. Real GDPR scope.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "chronic",
+      "trigger": [
+        "chronic",
+        "termination for SLA",
+        "repeated outages"
+      ],
+      "answer": "There is no chronic-failure termination right in their paper. Add one if you think it matters.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "affiliates",
+    "eu_data"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

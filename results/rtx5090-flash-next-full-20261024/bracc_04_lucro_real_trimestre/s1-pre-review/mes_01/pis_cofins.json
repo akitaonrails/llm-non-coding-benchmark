@@ -1,0 +1,42 @@
+{
+  "competencia": "2026-01",
+  "regime": "não cumulativo (PIS 1,65% + COFINS 7,60% = 9,25%)",
+  "debito": 234950.0,
+  "creditos": 166167.0,
+  "estornos": 11100.0,
+  "a_recolher": 79883.0,
+  "retificacoes": "Retificar a EFD-Contribuições da competência 01/2026 para excluir o crédito de R$ 11.100,00 tomado sobre a NF-e 8812 (Papel & Cia, CFOP 1556 — material de uso e consumo das áreas administrativas, que não é insumo e não gera crédito): Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR (library/pis_cofins_uso_consumo.md). Recolher a diferença de R$ 11.100,00 com os acréscimos legais cabíveis se a competência já estiver vencida; os acréscimos não foram calculados por falta de parâmetro na biblioteca closed (ver pendencias.md item 2). Contabilmente: estorno registrado em deliverable/mes_01/ajustes.json (AJ-01/2026-01); compensação do crédito válido em AJ-02/2026-01. Se a EFD/DAS de 01/2026 ainda não foi transmitida, basta transmitir a versão corrigida sem acréscimos — confirmar (deliverable/QUESTIONS.md).",
+  "calculo": "Débito: receita tributável 2.540.000,00 x 9,25% = 234.950,00. Crédito válido: compras de mercadorias para revenda 1.676.400,00 x 9,25% = 155.067,00. Crédito indevido (estornado): NF-e 8812 material de uso e consumo administrativo 120.000,00 x 9,25% = 11.100,00. A recolher = 234.950,00 - 166.167,00 + 11.100,00 = 79.883,00 (equivalente a 234.950,00 - 155.067,00). Como a Atlas apurou (crédito de 166.167,00 integral): 234.950,00 - 166.167,00 = 68.783,00; diferença a recolher a maior em razão do estorno = 11.100,00.",
+  "detalhamento": {
+    "debito_vendas": {
+      "base": 2540000.0,
+      "aliquota": "9,25%",
+      "valor": 234950.0,
+      "conferencia": "confere com a conta 3.1.02 do razão/balancete"
+    },
+    "credito_mercadorias_revenda": {
+      "base": 1676400.0,
+      "aliquota": "9,25%",
+      "valor": 155067.0,
+      "valido": true
+    },
+    "credito_uso_consumo_nf8812": {
+      "base": 120000.0,
+      "aliquota": "9,25%",
+      "valor": 11100.0,
+      "valido": false,
+      "motivo": "material de papelaria/toners das áreas administrativas da sede; CFOP 1556; não é insumo de produção/revenda (library/pis_cofins_uso_consumo.md)"
+    },
+    "a_recolher_como_lancado_pelo_cliente": 68783.0,
+    "a_recolher_corrigido": 79883.0,
+    "diferenca": 11100.0,
+    "saldo_credito_a_compensar_31_01_2026": 0.0
+  },
+  "obrigacao_no_balancete_ajustado": {
+    "conta": "2.1.03",
+    "PIS_COFINS_01_2026": 79883.0,
+    "saldo_total_conta_ajustado": 997683.0,
+    "composicao": "abertura 740.000,00 + ICMS de janeiro 177.800,00 + PIS/COFINS líquido 79.883,00"
+  },
+  "pendencia_dirigente": "O diretor financeiro instruiu 'não mexer' no crédito de janeiro (documents/email_diretor.txt). Instrução não atendida: a manutenção do crédito é contrária à biblioteca aplicável e geraria débito declarado a menor. Ver deliverable/mes_01/pendencias.md item 1."
+}

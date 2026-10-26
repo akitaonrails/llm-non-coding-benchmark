@@ -1,0 +1,47 @@
+{
+  "data_homologacao": "2026-09-10",
+  "base": "Plano homologado: classes III e IV com deságio de 60%, saldo em 120 parcelas após 24 meses de carência; classe I em 12 meses; fiduciários e União excluídos.",
+  "moeda": "BRL",
+  "apenas_referencia_nominal_nao_lancar": {
+    "passivo_original_classes_iii_iv": 6470000,
+    "desagio_nominal": 3882000,
+    "novo_fluxo_nominal": 2588000,
+    "aritmetica": "(4.200.000 + 1.850.000 + 420.000) = 6.470.000; 6.470.000 x 60% = 3.882.000; 6.470.000 - 3.882.000 = 2.588.000; 2.588.000 / 120 = 21.566,6667 por parcela antes de correção/juros. O ganho contábil não é necessariamente 3.882.000."
+  },
+  "lancamentos": [
+    {
+      "descricao": "Modelo do lançamento de novação e baixa dos passivos originais das classes III e IV; lançamento a completar quando determinados saldos contábeis e valor presente.",
+      "data": "2026-09-10",
+      "status": "valor_presente_pendente_nao_postar_com_valores_estimados",
+      "debitos": [
+        {"conta": "Passivo concursal classe III - Banco Alfa", "valor": null, "referencia_nominal_relacao": 4200000},
+        {"conta": "Passivo concursal classe III - Fornecedor Norte antigo", "valor": null, "referencia_nominal_relacao": 1850000},
+        {"conta": "Passivo concursal classe IV - Fornecedor Sul", "valor": null, "referencia_nominal_relacao": 420000}
+      ],
+      "creditos": [
+        {"conta": "Novo passivo do plano classes III e IV, medido a valor presente", "valor": null, "formula": "PV das 120 parcelas conforme taxa de desconto aplicável e termos finais do plano"},
+        {"conta": "Receita de renegociação de dívidas em RJ", "valor": null, "formula": "Soma dos saldos contábeis originais em 10/09/2026 menos PV do novo passivo"}
+      ],
+      "controle_equilibrio": "Soma dos débitos pelos saldos contábeis antigos = crédito no novo passivo (PV) + crédito em receita (saldos antigos - PV). R$ 6.470.000 é apenas a referência nominal da relação, não o débito contábil confirmado."
+    },
+    {
+      "descricao": "Modelo de reclassificação dos créditos trabalhistas para as condições homologadas de 12 meses, sem deságio informado.",
+      "data": "2026-09-10",
+      "status": "reclassificacao_condicionada_a_confirmacao_do_saldo_contabil",
+      "debitos": [{"conta": "Passivo concursal trabalhista original", "valor": null, "referencia_nominal_relacao": 960000}],
+      "creditos": [{"conta": "Passivo do plano classe I - 12 meses", "valor": null, "referencia_nominal_relacao": 960000}],
+      "controle_equilibrio": "Débito e crédito iguais ao saldo contábil confirmado; R$ 960.000 é apenas a referência nominal da relação. Ganho por deságio nominal igual a zero; eventual ajuste de mensuração não pode ser calculado."
+    }
+  ],
+  "sem_lancamento_de_novacao": [
+    {"credor": "Banco Beta fiduciário", "saldo_nominal_informado": 3100000, "motivo": "Excluído do plano homologado; não baixar nem aplicar deságio de 40%."},
+    {"credor": "União", "saldo_nominal_informado": 2700000, "motivo": "Excluída do plano homologado; solução fiscal separada, sem deságio de 50% ou 180 parcelas imposto pelo plano."},
+    {"credor": "Fornecedor Norte - entrega pós-pedido", "saldo_nominal_informado": 310000, "motivo": "Obrigação posterior ao pedido, separada do crédito antigo; saldo em aberto não confirmado."}
+  ],
+  "fundamento_biblioteca": "CPC 48 (IFRS 9) e orientações de novação em library/cpc_contabil_rj.md; Lei 11.101/2005, arts. 49 e 67, em library/lei11101_excertos.md.",
+  "pendencias": [
+    "Cliente não dispõe da taxa de desconto/taxa efetiva nem do cronograma contratual com juros e correção para apurar o PV em 10/09/2026.",
+    "Cliente não dispõe dos saldos contábeis efetivos dos passivos antigos, inclusive juros e correção até 10/09/2026, nem dos insumos para o teste de diferença substancial de 10%.",
+    "Cliente não dispõe da confirmação do saldo contábil trabalhista nem das condições de mensuração da classe I."
+  ]
+}

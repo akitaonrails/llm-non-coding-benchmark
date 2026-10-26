@@ -1,0 +1,26 @@
+{
+  "case": "usacc_03_household_1040",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 2960.6180377380224,
+  "controller_wait_seconds": 51.0050621520204,
+  "model_turn_seconds": 2909.2658634590043,
+  "turns": 4,
+  "released_facts": [
+    "contrib",
+    "convenience",
+    "employer_coverage",
+    "fmv_rent",
+    "leo_8332"
+  ],
+  "usage": {
+    "input_tokens": 3676347,
+    "cached_input_tokens": 3544996,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 123049,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

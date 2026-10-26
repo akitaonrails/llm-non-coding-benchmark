@@ -1,0 +1,7 @@
+I’ll address both timing questions directly and add the answer to the HR advice so the engagement file reflects Lena’s follow-up.
+
+No. **At-will status and a PIP do not protect a termination made for an unlawful reason.** Tom opened the PIP four days after Dana complained about him, and he has explicitly linked termination to her anticipated leave. Those facts require an independent review. [Columbia at-will exceptions](/work/workspace/library/columbia_at_will_exceptions.md) · [FMLA](/work/workspace/library/fmla_2615.md)
+
+The company is not stuck employing Dana forever, but **terminating her immediately after leave is not a safe shortcut**. The decision must rest on a genuine, documented reason independent of her complaint and leave, whenever it occurs. First investigate the complaint impartially, process the FMLA request, and have someone other than Tom review the PIP and comparable employees’ performance. Do not set a termination date based on her return. [Title VII retaliation](/work/workspace/library/title_vii_704a.md) · [Investigation duty](/work/workspace/library/harassment_investigation_duty.md)
+
+I added this response to [advice_to_hr.md](/work/workspace/deliverable/advice_to_hr.md) and recorded Tom’s reported statement in [risk_assessment.json](/work/workspace/deliverable/risk_assessment.json).

@@ -1,0 +1,111 @@
+{
+  "qsbs_exclusion_at_risk": 9388000,
+  "imputed_interest_annual": {
+    "Oakline Properties LLC -> Oakline Services LLC": 16480,
+    "Oakline Services LLC -> Oakline Digital LLC": 6180,
+    "total": 22660,
+    "conditional": "Total applies only if the three LLCs are separate taxpayers for federal purposes (i.e. Holdings owns them as a true partnership, or a genuine second member exists). If they remain single-member/disregarded - which is the likely result of the 99/1 design because the 1% member is Nadia's own revocable living trust - the annual imputed interest is 0. See opinion.md section 8.2. [UNVERIFIED: the grantor-trust and two-bona-fide-partner rules are not in the library.]"
+  },
+  "properties_contribution_gain_estimate": 0,
+
+  "client_response_2026_10_25": {
+    "helio_exit_expected_months_low": 12,
+    "helio_exit_expected_months_high": 18,
+    "helio_stake_value_estimate_low": 9000000,
+    "helio_stake_value_estimate_high": 10000000,
+    "properties_mortgage_recourse_to_nadia": "none - nonrecourse to her personally",
+    "refinancing_2024_proceeds_location": "Nadia's personal brokerage account ($1,200,000)",
+    "identity_of_1pct_member": "Nadia's revocable living trust; advisor's stated reason was 'we need two partners'",
+    "exclusion_at_risk_range_from_client_estimate": [8988000, 9988000],
+    "conclusion_on_partnership_status": "As drafted, Holdings most likely has ONE owner for federal tax purposes, not two; the 1% trust member is not a separate taxpayer. [UNVERIFIED]",
+    "client_has_no_further_information_on": ["Helio gross-asset/QTIB documentation", "83(b) inclusion and basis facts", "the Properties balance sheet reconciliation", "the Helio financing documents and transfer restrictions", "prior-year 7872 reporting", "residence and where the businesses are managed", "whether any step was already executed", "tax rates and Digital's loss position"]
+  },
+
+  "qsbs_detail": {
+    "helio_stake_409a_value": 9400000,
+    "basis_paid": 12000,
+    "estimated_gain": 9388000,
+    "exclusion_percentage": 1.0,
+    "per_issuer_cap": 10000000,
+    "ten_times_basis_alternative_cap": 120000,
+    "headroom_under_cap": 612000,
+    "gain_if_exclusion_preserved": 0,
+    "gain_if_stock_contributed_to_holdings": 9388000,
+    "illustrative_federal_tax_at_20pct": 1877600,
+    "illustrative_federal_tax_at_23_8pct": 2234344,
+    "illustrative_federal_tax_at_40pct": 3755200,
+    "note": "Gain = 9,400,000 - 12,000 = 9,388,000. 100% tier (issued 2020-02-18, held >5 years). Cap = greater of $10,000,000 (issuance pre-7/4/2025) or 10 x basis = $120,000, so $10,000,000; the whole gain is excludable if the stock is never contributed to the partnership. Rates are NOT in the library - illustrative only.",
+
+    "exit_scenarios": [
+      {"stake_value": 9000000, "gain": 8988000, "excluded": 8988000, "taxable_above_cap": 0, "illustrative_tax_at_23_8pct": 0},
+      {"stake_value": 9400000, "gain": 9388000, "excluded": 9388000, "taxable_above_cap": 0, "illustrative_tax_at_23_8pct": 0},
+      {"stake_value": 10000000, "gain": 9988000, "excluded": 9988000, "taxable_above_cap": 0, "illustrative_tax_at_23_8pct": 0},
+      {"stake_value": 10012000, "gain": 10000000, "excluded": 10000000, "taxable_above_cap": 0, "illustrative_tax_at_23_8pct": 0, "note": "breakeven - cap starts binding above this stake value"},
+      {"stake_value": 10500000, "gain": 10488000, "excluded": 10000000, "taxable_above_cap": 488000, "illustrative_tax_at_23_8pct": 116144},
+      {"stake_value": 11000000, "gain": 10988000, "excluded": 10000000, "taxable_above_cap": 988000, "illustrative_tax_at_23_8pct": 235144},
+      {"stake_value": 12000000, "gain": 11988000, "excluded": 10000000, "taxable_above_cap": 1988000, "illustrative_tax_at_23_8pct": 473144}
+    ],
+    "cap_binding_above_stake_value": 10012000,
+    "headroom_at_10m_stake_value": 12000,
+    "cap_mechanics_open_point": "[UNVERIFIED] The library states only 'per-issuer cap'. Whether it applies per-issuer per-life or per-sale/per-year must be confirmed before sequencing partial sales or tranches, and whether a donee of gifted shares takes a separate per-issuer cap is not addressed in the library at all."
+  },
+
+  "properties_contribution_detail": {
+    "mortgage_nonrecourse": 1900000,
+    "nadia_personally_liable": false,
+    "pct_shifted_to_other_partner_per_library": 0.01,
+    "sec_752b_deemed_distribution": 19000,
+    "sec_752b_deemed_distribution_if_holdings_disregarded": 0,
+    "outside_basis_reading_A_inside_asset_basis": 3280000,
+    "outside_basis_reading_B_tax_capital_plus_debt": 1520000,
+    "outside_basis_after_contribution_reading_A": 3261000,
+    "outside_basis_after_contribution_reading_B": 1501000,
+    "sec_731a_gain_reading_A": 0,
+    "sec_731a_gain_reading_B": 0,
+    "sensitivity_deemed_distribution_at_5pct": 95000,
+    "sensitivity_deemed_distribution_at_10pct": 190000,
+    "sensitivity_deemed_distribution_at_30pct": 570000,
+    "gift_of_holdings_interests_752b_shift_and_gain": [
+      {"pct_of_interests_transferred": 0.01, "debt_shifted": 19000, "gain_reading_A": 0, "gain_reading_B": 0},
+      {"pct_of_interests_transferred": 0.30, "debt_shifted": 570000, "gain_reading_A": 0, "gain_reading_B": 0},
+      {"pct_of_interests_transferred": 0.50, "debt_shifted": 950000, "gain_reading_A": 0, "gain_reading_B": 0},
+      {"pct_of_interests_transferred": 0.79, "debt_shifted": 1501000, "gain_reading_A": 0, "gain_reading_B": 0, "note": "breakpoint on the pessimistic basis reading"},
+      {"pct_of_interests_transferred": 0.99, "debt_shifted": 1881000, "gain_reading_A": 0, "gain_reading_B": 380000}
+    ],
+    "balance_sheet_reconciliation_gap": 1760000,
+    "note": "Assets 3,400,000 - 1,120,000 + 600,000 + 400,000 = 3,280,000; less mortgage 1,900,000 = implied equity +1,380,000, vs stated owner's tax capital (380,000) -> unexplained difference of 1,760,000. NOT forced to balance. The client cannot resolve this, so the gain estimate is stated on both basis readings: 0 on either. It is NOT robust to a large transfer of Holdings interests: on reading B a 99% gift produces about 380,000 of 731(a) gain, equal to the negative tax capital. Re-run before any transfer."
+  },
+
+  "mortgage_payoff_after_exit": {
+    "recommended_funding": "capital contribution from Nadia, not a sale of a building",
+    "cash_contribution_to_properties": 1900000,
+    "outside_basis_after_contribution_reading_A": 5161000,
+    "outside_basis_after_contribution_reading_B": 3401000,
+    "sec_752b_deemed_distribution_on_retiring_debt_partnership_branch": 1881000,
+    "sec_752b_deemed_distribution_if_holdings_disregarded": 0,
+    "branch_note": "Partnership branch: 99% x 1,900,000 = 1,881,000 deemed distribution, tested against basis above -> no gain. Disregarded branch (opinion.md 8.2): sections 752 and 731 do not apply to her, so there is no deemed distribution to test and no gain. Same answer either way.",
+    "sec_731a_gain_reading_A": 0,
+    "sec_731a_gain_reading_B": 0,
+    "accumulated_depreciation_on_buildings": 1120000,
+    "caution": "Funding the payoff by selling a building would put 1,120,000 of accumulated depreciation plus remaining gain in issue; the library contains no depreciation-recapture authority. [UNVERIFIED] - quantify with the CPA before choosing a funding path."
+  },
+
+  "imputed_interest_detail": {
+    "afr_used_mid_term_3_to_9_yr": 0.0412,
+    "afr_short_term_alt": 0.0396,
+    "afr_long_term_alt": 0.0458,
+    "loans": [
+      {"from": "Oakline Properties LLC", "to": "Oakline Services LLC", "principal": 400000, "origination": "2024-03-01 ($250,000) + 2025-06-15 ($150,000)", "documentation": "none", "annual_imputed_4_12pct": 16480},
+      {"from": "Oakline Services LLC", "to": "Oakline Digital LLC", "principal": 150000, "origination": "2025-09-01", "documentation": "email only", "annual_imputed_4_12pct": 6180}
+    ],
+    "total_at_short_term_3_96pct": 21780,
+    "total_at_long_term_4_58pct": 25190,
+    "rate_sensitivity_difference_mid_vs_short": 880,
+    "partial_year_2025_estimate_properties": 13669.37,
+    "partial_year_2025_estimate_digital": 2048.71,
+    "branch_if_entities_remain_single_member": 0,
+    "note": "Simple annual interest, full-year 2026 balances. Partial-year 2025 figures use day counts (199 days from 2025-06-15; 121 days from 2025-09-01) and are indicative only: the library does not state which AFR term applies to an undocumented demand loan, nor the accrual/compounding method, nor any de minimis exception. Prior-year amounts require a proper accrual and are left open. The whole 22,660 figure is contingent: if all three LLCs stay single-member and disregarded (the likely result under section 8.2), Nadia stands on both sides of every loan and the imputed interest is 0; the exposure begins when a genuine second owner or a true partnership exists."
+  },
+
+  "assumptions": "(1) The library is the only authority relied on; items marked [UNVERIFIED] in opinion.md are not supported by it. (2) Helio Grid stock meets IRC 1202(c)(1) on the client file as it stands - Delaware C corp, shares issued directly by the company 2020-02-18 for $12,000 cash, company's SPA 2.3 representation that gross assets did not exceed $1,000,000 at issuance and that it was engaged in the active conduct of a qualified trade or business; holding period >5 years as of 2025-02-18; the 100% tier therefore applies per 1202(a) for stock acquired after 9/27/2010, and the $15,000,000 cap figure is inapplicable because the issuance predates 7/4/2025. (3) The 409A value of $9,400,000 is used as the point proxy for sale proceeds; the client's 2026-10-25 estimate of $9,000,000-$10,000,000 for her stake is carried as the exit_scenarios range, and gain is finally measured on an actual sale. (4) No tax rates are in the library - the 20% / 23.8% / 40% figures are illustrative assumptions, and Colorado tax on the gain is not quantified because neither the Colorado rate nor whether Colorado conforms to IRC 1202 is in the library. (5) IRC 752 liability shift is taken at the library's stated 99/1 arithmetic (1% of the $1,900,000 mortgage = $19,000); no other nonrecourse-liability allocation rule is in the library. The client confirms she is not personally liable on the mortgage, which removes any recourse-liability element but does not resolve the nonrecourse allocation question. (6) Outside basis in Oakline Properties is stated as a range because the Properties balance sheet does not reconcile (unexplained 1,760,000 difference); the 731(a) gain of 0 holds on both readings, but a large transfer of Holdings interests does gain on the lower reading. (7) Imputed interest uses the mid-term AFR of 4.12% given for this engagement, simple annual interest, full-year 2026 balances; the loans are undocumented demand advances. (8) The three Oakline LLCs are treated as owned 100% by Nadia (single-member, disregarded) today. (9) The 1% member is Nadia's own revocable living trust (client confirmed 2026-10-25); the library does not address grantor trusts or the two-bona-fide-partner requirement, so Holdings is treated as probably disregarded, and every number that depends on partnership status (752(b) shift, 1065 filing, 7872 imputed interest) is presented with both branches. (10) Nothing here addresses gift/estate tax, securities/transfer-restriction, or employment matters; those are outside the library. (11) The client expects an exit in 12-18 months and reports she has no further information on the open factual items; those are carried as limitations in QUESTIONS.md rather than re-asked. (12) Whether the proposed steps have already been executed (documents/org_chart.md carries a 'Step 1: Wyoming' note dated 2025-11-04) is unresolved; if Oakline Holdings already exists and holds anything, the Helio analysis must be redone immediately."
+}

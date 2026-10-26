@@ -1,0 +1,92 @@
+{
+  "terminate_today": "no",
+  "claims": [
+    {
+      "claim": "Title VII §704(a) retaliation (discharge following internal harassment complaint) [library/title_vii_704a.md]",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Protected activity: written internal complaint of sexual harassment filed with HR 2026-09-12; the library file states an internal complaint of sexual harassment is protected opposition [library/title_vii_704a.md].",
+        "Chain of adverse actions begins 4 days later: PIP opened 2026-09-16 by Tom Hale — the very Regional VP she complained about and her direct manager — and it is her first performance document in 7.5 years of employment (personnel file: no prior discipline, no prior PIP).",
+        "Termination is proposed 24 days after the complaint; the library states causation may be shown by 'very close temporal proximity (days to a few weeks)' [library/title_vii_704a.md].",
+        "HR acknowledged the complaint but no investigation was opened ('Tom is on the road; will circle back'); failure to investigate is itself evidence in a retaliation case [library/harassment_investigation_duty.md].",
+        "Client admission 2026-10-06: no investigation effort of any kind has occurred ('Honestly, nothing. Tom's been traveling. I was going to get to it.') — the only stated reason for the delay is the accused's own travel, not any staffing or merits constraint [library/harassment_investigation_duty.md].",
+        "Pretext: peers performing below her (Brennan 79%, Osei 84%, Park 86%) have no PIP and are not targeted; a YTD 88% is exactly the peer-group mean, and the decline is gradual over 4 years rather than a discrete collapse.",
+        "The accused (Hale) authored the PIP and wants her out — HR confirms ('Tom wrote the PIP and Tom wants her out. I'm just processing it'), which places the accused in the effective decision-maker role; the library lists decision-maker statements and disparate treatment of non-complainant comparators as causation vehicles [library/title_vii_704a.md].",
+        "Client confirms the contemplated action is a single-employee termination ('Just her. No RIF') — no reduction-in-force context explains selecting the one employee who complained and is the only person on a PIP."
+      ]
+    },
+    {
+      "claim": "FMLA interference, 29 U.S.C. §2615(a)(1) [library/fmla_2615.md]",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "She requested intermittent FMLA leave 2026-09-30 and submitted certification 2026-10-03; HR confirms the request is still neither approved nor denied as of 2026-10-06, and that the deferral was directed by Hale ('Tom said to wait') — the accused is steering the leave determination that his 10-02 email sought to beat to the door [library/fmla_2615.md].",
+        "Renewed directive (HR reports, 2026-10-06, after counsel advised pausing): Hale again pushes to terminate 'before she goes on leave' — the 10-02 email intent is ongoing, not a one-off; this account and any related notes belong in the preservation scope [library/fmla_2615.md; library/litigation_hold.md].",
+        "Direct evidence: email from Tom Hale to Lena Ortiz 2026-10-02 — 'Let's get this done before she's out on leave. Once she's on FMLA it's a nightmare to move on her.' — 4 days before the termination request and 2 days after her leave request.",
+        "The library states terminating an employee to prevent her from taking approved or requested leave is interference, that the taking/request of leave may not be used as a negative factor (§825.220), and that an employee need not have begun the leave — a request alone suffices [library/fmla_2615.md].",
+        "Discharging her before the leave begins would deny the exercise of an FMLA right under §2615(a)(1).",
+        "Exposure if she were terminated: lost wages, liquidated (double) damages, fees, and reinstatement [library/fmla_2615.md]."
+      ]
+    },
+    {
+      "claim": "FMLA retaliation, 29 U.S.C. §2615(a)(2) [library/fmla_2615.md]",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Same body of evidence as the interference claim: protected FMLA request 2026-09-30, adverse action contemplated 2026-10-06, 6 days later.",
+        "The Hale email is direct evidence of retaliatory motive tied to her exercise of FMLA rights: the Title VII file treats decision-maker statements linking an action to protected activity as direct evidence of causation [library/title_vii_704a.md], and the FMLA file prohibits discharging an employee for exercising FMLA rights [library/fmla_2615.md].",
+        "Timing compounds FMLA interference rather than standing alone, but each violation independently carries the same remedies (double damages, fees, reinstatement)."
+      ]
+    },
+    {
+      "claim": "Failure to investigate harassment / hostile-environment predicate claim [library/harassment_investigation_duty.md]",
+      "strength_for_employee": "medium",
+      "key_facts": [
+        "Complaint describes repeated comments by Regional VP Tom Hale about her appearance and 'whether she's too distracted at home to travel'.",
+        "Received 2026-09-12, acknowledged, and no investigation was ever opened; the library requires a prompt, impartial investigation with corrective action, conducted by someone outside the accused's chain of command [library/harassment_investigation_duty.md].",
+        "By working closely with or deferring to the accused (Hale opened the PIP and is driving termination), HR is structurally unable to satisfy the investigation duty.",
+        "Client admission 2026-10-06: no investigation of any kind has occurred — 'Honestly, nothing. Tom's been traveling. I was going to get to it.' The only stated reason is the accused's own travel schedule, and HR (the complaint recipient) has simultaneously been 'processing' a termination requested by the same accused; the complaint handler cannot be impartial while implementing the accused's personnel agenda [library/harassment_investigation_duty.md].",
+        "Failure to investigate undermines the Faragher/Ellerth affirmative defense [library/harassment_investigation_duty.md].",
+        "Caveat (honest limitation): the library file states the investigation duty and the defense consequence, but does not restate the full elements of a hostile-environment claim; the strength rating above is for the failure-to-investigate/duty portion, and the underlying harassment claim would need further verification."
+      ]
+    },
+    {
+      "claim": "Columbia state-law discrimination/retaliation claims (mirrors Title VII/FMLA) [library/columbia_at_will_exceptions.md]",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "At-will status does not permit termination for an unlawful reason (discrimination, retaliation, exercise of statutory rights) [library/columbia_at_will_exceptions.md].",
+        "State law mirrors Title VII and FMLA with a longer limitations period and uncapped compensatory damages, so state-law exposure exceeds the federal exposure stack.",
+        "Same fact pattern applies: 4-day complaint-to-PIP gap, 24-day complaint-to-termination gap, un-investigated complaint, and the 10-02 Hale email."
+      ]
+    },
+    {
+      "claim": "Age discrimination (ADEA) — flagged: substantive standard NOT verifiable in this library [library/adea_owbpa_626f.md]",
+      "strength_for_employee": "medium",
+      "key_facts": [
+        "Dana is 42; three of her four peers are younger (29, 31, 35) and all three are performing worse (79%, 84%, 86%) with no PIP and no separation — a comparator-treatment pattern consistent with age bias.",
+        "The library's ADEA/OWBPA file covers only the knowing-and-voluntary waiver requirements of 29 U.S.C. §626(f)(1), not the substantive age-discrimination elements; per the working rules this assessment is therefore UNVERIFIED as a legal claim and relies on comparator arithmetic.",
+        "Client confirms 2026-10-06 this is a single-employee termination ('Just her. No RIF'), not an exit-incentive or group program, so the 21-day consideration period (not 45) is the applicable minimum for any waiver [library/adea_owbpa_626f.md].",
+        "What the library does verify: the waiver provision to which any ADEA claim would be subject must satisfy §626(f)(1)(A)-(G), and the current 7-day consideration / 3-day revocation terms fail those requirements."
+      ]
+    }
+  ],
+  "separation_agreement_defects": [
+    "DEFECT 1 (fatal): company form para. 7 allows only seven (7) days to consider; any ADEA waiver requires at least 21 days; the 45-day group-program alternative is CONFIRMED INAPPLICABLE because the client states this is a single-employee termination ('Just her. No RIF') — 29 U.S.C. §626(f)(1)(F) [library/adea_owbpa_626f.md].",
+    "DEFECT 2 (fatal): para. 7 allows revocation within three (3) days after signing; the statute requires at least 7 days following execution, and the agreement is not effective until the revocation period expires — §626(f)(1)(G) [library/adea_owbpa_626f.md].",
+    "DEFECT 3: para. 4 is a release of 'all claims' with no carve-out for claims arising after execution; the waiver must not cover future claims — §626(f)(1)(C) [library/adea_owbpa_626f.md].",
+    "DEFECT 4: no written advisement to consult an attorney appears in the provided company form — §626(f)(1)(E) [library/adea_owbpa_626f.md]. Caveat: only paras. 3, 4, 7, 9, and 11 were provided; the full text must be checked.",
+    "DEFECT 5 (verification gap): the 4 weeks' base pay severance (para. 3) counts as knowing/voluntary consideration only if it is in addition to anything of value to which she is already entitled — §626(f)(1)(D); the file contains no policy, plan, or contract entitling her to severance, so (D) cannot be verified on the current record [library/adea_owbpa_626f.md].",
+    "DEFECT 6 (partial): para. 4 does name 'the ADEA', which likely satisfies the specific-reference requirement of §626(f)(1)(B), but the text should expressly say 'rights or claims arising under the ADEA'; the excerpt must also be checked against the plain-language requirement of §626(f)(1)(A) [library/adea_owbpa_626f.md].",
+    "DEFECT 7 (contextual): even a defect-free release cannot salvage a termination made in these circumstances — an ADEA release that fails §626(f)(1) requirements is unenforceable against the ADEA and the employee may keep the severance and sue (*Oubre v. Entergy*), and no waiver can retroactively launder an FMLA/Title VII retaliatory decision."
+  ],
+  "comparator_analysis": "Same role (Account Manager), 2026 YTD attainment from comparator_data.csv: Whitcomb 88% (F, 42; complainant 9/12; only employee on a PIP, opened 9/16). Peers: Brennan 79% (M, 35) — 9 pts BELOW Whitcomb, no PIP, not targeted; Osei 84% (M, 29) — 4 pts below, no PIP; Park 86% (M, 31) — 2 pts below, no PIP; Lind 103% (F, 47) — above, no PIP. Arithmetic: peer-group mean (79+84+103+86)/4 = 352/4 = 88.0%, exactly Whitcomb's number; five-person mean (88+79+84+103+86)/5 = 440/5 = 88.0%. Every other employee in the PIP-eligible performance band (<=88%) is male, younger than the complainant, and untouched; the only employee on a PIP — and the only one slated for termination — is the female, 42-year-old complainant. Performance history does not close the gap: her decline is gradual (118% -> 101% -> 96% -> 92% -> 88% YTD), rated 'Meets' 2023-2025 with no prior discipline, so 88% is not an abrupt disqualification relative to colleagues at 79-86%. This pattern supports pretext and disparate treatment of a complainant under [library/title_vii_704a.md]. Client confirmation 2026-10-06 ('Just her. No RIF') rules out any reduction-in-force or group-selection context: the contemplated action is an individual termination aimed at the one employee who complained and is the only person on a PIP. The same younger/worse-performing pattern raises age concerns, but the library contains no substantive ADEA discrimination standard to verify the elements — flagged UNVERIFIED [library/adea_owbpa_626f.md covers waiver mechanics only].",
+  "recommended_course": [
+    "STEP 1 — Do not terminate today or this week. The 2026-10-02 Hale email ('before she's out on leave') is direct evidence that the contemplated termination is driven by her FMLA request [library/fmla_2615.md], and the 24-day complaint-to-termination gap plus the Hale-single-author PIP establishes temporal proximity and pretext for Title VII retaliation [library/title_vii_704a.md].",
+    "STEP 2 — Issue a written litigation hold today to HR, Hale, and IT: preserve executives' emails and texts (especially Hale's 10-02 message), the 9/12 complaint file, the PIP file, the FMLA request and certification, HR's own 10-06 statements that no investigation work has occurred and that the FMLA deferral was made on Hale's instruction ('Tom said to wait'), CRM records, and pay/bonus records; litigation is already reasonably anticipated and these admissions are themselves discoverable evidence [library/litigation_hold.md].",
+    "STEP 3 — Open the harassment investigation now, staffed by someone outside Tom Hale's chain of command, prompt and impartial. This is urgent: HR has admitted no investigation work has been done ('Honestly, nothing'), while simultaneously 'processing' the accused's termination request — take contemporaneous notes, preserve Hale's emails/texts, and interview witnesses and Hale [library/harassment_investigation_duty.md].",
+    "STEP 4 — Answer the FMLA request in writing immediately and confirm whether she is found eligible and whether the certification is sufficient; if it is, approve the leave. HR must make this determination on the merits and without Tom Hale's direction — HR confirms the current deferral ('Tom said to wait') is his instruction, not a merits-based hold; using the taking or requesting of leave as a negative factor is prohibited [library/fmla_2615.md].",
+    "STEP 5 — If performance discipline is later still warranted, (a) assign a decision-maker independent of Tom Hale and stop 'processing' the termination at his direction (HR has confirmed he wrote the PIP, wants her out, and is directing even the FMLA hold); (b) let the 60-day PIP run its documented course (2026-09-16 + 60 days = 2026-11-15; only 20 of 60 days have elapsed) or, if accelerated, apply the same standard to comparators performing at 79-86%; (c) create contemporaneous, metric-specific documentation; (d) leave a cooling-off interval so no termination lands adjacent to protected activity.",
+    "STEP 6 — Do not present the current separation agreement and do not present any agreement until the §626(f)(1) defects are cured (21-day consideration, 7-day revocation effective-on-its-expiry, future-claims carve-out, written attorney-consult advisement, express ADEA-specific reference, verifiable additional consideration) [library/adea_owbpa_626f.md]; note that even a cured agreement cannot waive claims arising after execution or mend a retaliation-motivated decision.",
+    "STEP 7 — Instruct Tom Hale and all HR staff in writing to make no further email/text or CRM commentary about Dana Whitcomb, her complaint, her leave, or her age/sex, and to route any questions through counsel.",
+    "STEP 8 — Remaining unverified items after the client's 2026-10-06 reply (the decision-maker, investigation, and group-program questions are now answered): the full text of the separation agreement (only paras. 3, 4, 7, 9, 11 were provided), any severance policy or entitlement (needed to verify the §626(f)(1)(D) consideration prong), documentation supporting the comparator attainment figures, Whitcomb's and comparators' compensation figures, and the merits of any FMLA eligibility determination HR has yet to make."
+  ],
+  "litigation_hold": true
+}

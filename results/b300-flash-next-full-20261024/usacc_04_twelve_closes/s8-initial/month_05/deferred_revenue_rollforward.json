@@ -1,0 +1,66 @@
+{
+  "period": "2025-05",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 prior annual subscription",
+      "term": "2024-06-01 to 2025-05-31",
+      "source": "documents/note_opening_deferred.md \u2014 release 8,200.00/month Jan\u2013May 2025; FINAL (fifth) release booked in May; contract expires 2025-05-31 fully recognized, balance closed to 0.00",
+      "opening": 8200.0,
+      "billed": 0.0,
+      "recognized": 8200.0,
+      "closing": 0.0
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 renewal, order form C-026",
+      "term": "2025-01-01 to 2025-12-31",
+      "source": "documents/month_01/order_form_C-026.md; 24,000.00 billed upfront Jan 2025; release 1/12 = 2,000.00/month (revenue_policy_memo #1), fifth of twelve releases booked in May. Overlap with prior contract is open item 3: stated term runs Jan\u2013Dec 2025 while prior contract ran Jun 2024\u2013May 2025; cumulative over-recognition exposure reaches its cap of 10,000.00 (5 releases x 2,000.00) at end-May and is frozen there pending client evidence of the true renewal term",
+      "opening": 16000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 14000.0
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025) \u2014 INV-2250 'Implementation & license \u2014 one-time'",
+      "term": "not documented (order form states no term)",
+      "source": "documents/month_02/order_form_C-025.md + client answer (QUESTIONS.md round 2): nothing bespoke, self-onboarded, 'license' label only. Deferred in full per revenue_policy_memo #2 and ASC 606-10-25-10 et seq.; $0 recognized; no release pattern computable without documented term/performance evidence. Client confirmed this is final \u2014 no May billing or performance evidence. See month_02/open_items.md item 1",
+      "opening": 36000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 36000.0
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027) \u2014 INV-2275 annual subscription, order form C-027",
+      "term": "2025-03-01 to 2026-02-28 (12 months from service start, auto-renewing)",
+      "source": "documents/month_03/order_form_C-027.md: 18,000.00 billed upfront Mar 2025, service start 2025-03-01; release 1/12 = 1,500.00/month per revenue_policy_memo #1; third of twelve releases booked in May; no May rebilling",
+      "opening": 15000.0,
+      "billed": 0.0,
+      "recognized": 1500.0,
+      "closing": 13500.0
+    },
+    {
+      "contract": "Quarry Analytics Co (C-028) \u2014 INV-2324 annual subscription, order form C-028",
+      "term": "2025-05-01 to 2026-04-30 (12 months from service start, auto-renewing)",
+      "source": "documents/month_05/order_form_C-028.md: 30,000.00 annual billed upfront on signature, service start 2025-05-01; collected by bank wire 05/15. First of twelve releases = 30,000.00/12 = 2,500.00 (revenue_policy_memo #1; ASC 606-10-55-51). MSA v3.2 referenced on the order form is not in the file \u2014 same documentation gap as C-027 (open item 13); treatment does not depend on it",
+      "opening": 0.0,
+      "billed": 30000.0,
+      "recognized": 2500.0,
+      "closing": 27500.0
+    },
+    {
+      "contract": "UNIDENTIFIED opening deferred revenue",
+      "term": "unknown",
+      "source": "opening_trial_balance.csv 2200 credit 65,000.00 vs note_opening_deferred.md explaining only 41,000.00; residual 24,000.00 has no contract documentation. Question to client answered 'no additional information'. STATED ASSUMPTION: genuine contract liability of unknown origin; no revenue recognized absent evidence of performance (ASC 606-10-45-2); flagged through year-end. See month_01/open_items.md item 1",
+      "opening": 24000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 24000.0
+    }
+  ],
+  "totals": {
+    "opening": 99200.0,
+    "billed": 30000.0,
+    "recognized": 14200.0,
+    "closing": 115000.0
+  },
+  "tie_out": "Opening 99,200.00 (agrees with month_04 closing and trial_balance.json 2200) + billed 30,000.00 \u2212 recognized 14,200.00 = closing 115,000.00, agrees with trial_balance.json account 2200 credit balance 115,000.00. Line sums: opening 8,200+16,000+36,000+15,000+0+24,000 = 99,200.00; billed 30,000 (Quarry only); recognized 8,200+2,000+0+1,500+2,500+0 = 14,200.00; closing 0+14,000+36,000+13,500+27,500+24,000 = 115,000.00"
+}

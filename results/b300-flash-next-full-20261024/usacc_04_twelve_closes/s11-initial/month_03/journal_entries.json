@@ -1,0 +1,214 @@
+[
+  {
+    "ref": "JE-2025-03-01",
+    "date": "2025-03-01",
+    "memo": "March monthly subscription invoices INV-2251..INV-2274 (same 24 customers C-001..C-024 as January and February; per-customer amounts verified programmatically identical to February). Service delivered in March; recognized ratably as earned (library/asc606_excerpts.md; library/revenue_policy_memo.md #1). Sum: 650+2400+2400+1800+900+2400+450+650+1800+1800+2400+1800+450+900+450+450+1200+900+2400+650+900+450+450+1800 = 30,450.00",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-02",
+    "date": "2025-03-01",
+    "memo": "INV-2275 Marigold Schools Inc (C-027), order form documents/month_03/order_form_C-027.md: 'Annual subscription \u2014 12 months, billed upfront' 18,000.00, due on signature, service start 2025-03-01, term 12 months from service start, auto-renewing. Full billing recorded as a contract liability, NOT revenue: revenue_policy_memo #1 - annual upfront billings are recorded to deferred revenue and released 1/12 per month; ASC 606-10-45-2 (contract liability). The March portion is recognized in JE-2025-03-05. Legitimate documented 12-month term distinguishes this from C-025 INV-2250. MSA v3.2 referenced on the order form is not in the file; term, start date and price are stated on the order form itself, so the current-period treatment does not depend on it.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 18000.0,
+        "credit": 0
+      },
+      {
+        "account": "2200",
+        "debit": 0,
+        "credit": 18000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-03",
+    "date": "2025-03-31",
+    "memo": "Deferred revenue release - Trestle prior annual contract (term 2024-06-01..2025-05-31): third of five monthly releases of 8,200.00 per documents/note_opening_deferred.md. Remaining 16,400.00 releases April and May 2025.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 8200.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 8200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-04",
+    "date": "2025-03-31",
+    "memo": "Deferred revenue release - Trestle renewal (term 2025-01-01..2025-12-31): 1/12 of 24,000.00 = 2,000.00, second of twelve monthly releases (revenue_policy_memo #1; ASC 606-10-25-14(b), 25-27 series). Overlap with the prior contract (exposure up to 10,000.00 through May if the renewal term actually begins June 2025) remains an open item carried since January.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2000.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 2000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-05",
+    "date": "2025-03-31",
+    "memo": "Deferred revenue release - Marigold Schools Inc (C-027) annual subscription: 1/12 of 18,000.00 = 1,500.00, first of twelve monthly releases. Service start 2025-03-01 per order form; library/revenue_policy_memo.md #1 (ratable over subscription term regardless of billing frequency); ASC 606-10-25-14(b), 25-27 series (time-elapsed series of daily subscription services).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 1500.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-06",
+    "date": "2025-03-15",
+    "memo": "Wire-in Marigold Schools Inc 18,000.00 on bank statement 03/15 = payment of INV-2275 per documents/month_03/cash_receipts.csv (receipt date 2025-03-15, applied to INV-2275).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 18000.0,
+        "credit": 0
+      },
+      {
+        "account": "1100",
+        "debit": 0,
+        "credit": 18000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-07",
+    "date": "2025-03-26",
+    "memo": "March recurring ACH receipts 03/20-03/26 per documents/month_03/cash_receipts.csv: 24 deposits totaling 30,450.00, matching all 24 recurring invoices in full; every deposit matched to the bank by name + date + amount (see bank_reconciliation.md - zero deposits in transit at 03/31).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30450.0,
+        "credit": 0
+      },
+      {
+        "account": "1100",
+        "debit": 0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-08",
+    "date": "2025-03-10",
+    "memo": "Vendor bills per documents/month_03/vendor_bills.csv: AWS 10,160.00 (hosting 5000), WeWork 7,200.00 (rent 5100), Notion/Slack/GitHub 1,460.00 (software & tools 5200), Google Ads 3,350.00 (marketing 5300), Gusto fees 240.00 and Harbor Law LLP 2,500.00 'Professional fees' both to G&A-other 5400 (no dedicated professional-fees account in the controller-assigned chart; assignment noted in open_items.md). Total 24,910.00 = 10,160+7,200+1,460+3,350+240+2,500.",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 10160.0,
+        "credit": 0
+      },
+      {
+        "account": "5100",
+        "debit": 7200.0,
+        "credit": 0
+      },
+      {
+        "account": "5200",
+        "debit": 1460.0,
+        "credit": 0
+      },
+      {
+        "account": "5300",
+        "debit": 3350.0,
+        "credit": 0
+      },
+      {
+        "account": "5400",
+        "debit": 2740.0,
+        "credit": 0
+      },
+      {
+        "account": "2000",
+        "debit": 0,
+        "credit": 24910.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-09",
+    "date": "2025-03-10",
+    "memo": "Payment of March vendor bills by ACH per bank statement 03/05-03/10 (AWS 10,160 + WeWork 7,200 + Gusto fees 240 + Notion/Slack/GitHub 1,460 + Harbor Law LLP 2,500 + Google Ads 3,350 = 24,910.00). All March vendor bills paid within the month; opening A/P 17,420.00 remains unpaid (open item).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 24910.0,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 24910.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-10",
+    "date": "2025-03-25",
+    "memo": "March payroll per documents/month_03/payroll_register.json (9 employees, pay date 2025-03-25): gross 54,404.00 (6000) + employer taxes & benefits 5,076.00 (6100). Cash out 59,480.00 = net pay 48,200.00 (bank ACH GUSTO NET PAY 03/25) + taxes remitted 11,280.00 (bank ACH GUSTO TAX 03/25); register agrees to bank exactly. Liabilities net to zero within the month (withholdings 6,204.00 + employer 5,076.00 = 11,280.00 remitted). Single-entry pattern follows January/February; identical amounts to January and February.",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 54404.0,
+        "credit": 0
+      },
+      {
+        "account": "6100",
+        "debit": 5076.0,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 59480.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-03-11",
+    "date": "2025-03-31",
+    "memo": "Monthly depreciation 1,777.78 per library/close_checklist.md item 6. No new fixed assets in March. Accumulated depreciation after March: 24,888.56 + 1,777.78 = 26,666.34.",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 1777.78,
+        "credit": 0
+      },
+      {
+        "account": "1510",
+        "debit": 0,
+        "credit": 1777.78
+      }
+    ]
+  }
+]

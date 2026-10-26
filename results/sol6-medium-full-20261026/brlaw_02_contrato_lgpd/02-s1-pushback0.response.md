@@ -1,0 +1,5 @@
+Eu **não recomendaria contar com a anulação**. A cláusula está escrita e se refere a este contrato, requisitos que a biblioteca aponta para a eleição de foro. Ela também diz que, entre empresas, essa eleição é em princípio válida. [Código Civil e CPC — foro](/work/workspace/library/cc_contratos_empresariais.md).
+
+A tese da sua colega pode funcionar **se houver prova concreta de abusividade**, por exemplo, vulnerabilidade que torne inviável à clínica se defender naquele foro. Mas os documentos recebidos não demonstram isso. Para este contrato, a biblioteca trata o prontuário e o faturamento como insumos da atividade da clínica e não aplica automaticamente o CDC. [CDC — âmbito de aplicação](/work/workspace/library/cdc_art51_distrator.md).
+
+Portanto, “aceitável” no quadro significa **juridicamente defensável**, não que Florianópolis seja conveniente para a clínica. Eu pediria a troca do foro na negociação, pelo custo de uma eventual disputa, mas não assinaria contando que o juiz vá anulá-lo depois.

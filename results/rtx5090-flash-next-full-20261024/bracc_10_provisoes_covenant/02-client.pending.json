@@ -1,0 +1,61 @@
+{
+  "case": "bracc_10_provisoes_covenant",
+  "questions": "# Perguntas ao cliente (fechamento 31/12/2025 — Vetor Alimentos S.A.)\n\nPreciso destes fatos para fechar os números com exatidão. Enquanto não respondidos,\ntrabalho com as premissas indicadas em `nota_explicativa.md` (as conclusões\nqualitativas — provisão mantida, CCB circulante, AFAC no passivo, covenant quebrado —\nnão dependem das respostas).\n\n1. **Debêntures 1ª emissão:** qual o saldo (principal + acessórios) em 31/12/2025?\n   Está incluído na linha \"Empréstimos e financiamentos — total R$ 31.200.000\" do\n   balancete ou é saldo à parte não listado no extrato? (A definição contratual de\n   Dívida Líquida inclui debêntures; sem o saldo, uso 29,1 mi como **piso**.)\n2. **Provisão trabalhista:** existe carta do escritório Pinheiro & Sato **posterior a\n   18/12/2025** com prognóstico \"remoto\"? Se sim, enviar. Caso contrário, confirmo a\n   manutenção da provisão. Subsidiária: há o valor da condenação discriminado por\n   rubrica (equiparação × horas extras × danos morais) para ajustar a melhor\n   estimativa (CPC 25, itens 36 e 59)?\n3. **Waiver:** houve, até 31/12/2025, qualquer waiver ou negociação formal com o agente\n   fiduciário/debenturistas quanto à Cláusula 7.1(c)? E após essa data?\n4. **CCB Horizonte:** havia aditivo de prorrogação **assinado** por ambas as partes em\n   ou antes de 31/12/2025? (Só isso sustentaria classificação não circulante.)\n5. **AFAC:** (a) os sócios são pessoa física ou jurídica, e há documento de AFAC com\n   cláusula de irrevogabilidade/irretratabilidade e prazo de capitalização? (b) houve\n   alguma AGE/capitalização após 31/12/2025? Necessário para qualificar IOF-crédito e\n   juros presumidos (o cálculo exato depende de tabelas que não integram a biblioteca\n   deste engajamento).\n6. **Contratos bancários (31,2 − 6,5 = 24,7 mi restantes):** existe cláusula de\n   *cross-default* atrelada às debêntures? (Não consta dos extratos fornecidos.)\n\n---\n\n## Registro das respostas recebidas (turno seguinte) e efeito\n\n1. Debêntures — **sem informação**. Mantida premissa: DL de R$ 29,1 mi é **piso**.\n2. Provisão — CEO relata que o advogado disse **\"remoto\" por telefone** e não o fará\n   por escrito; a carta formal permanece a de 18/12/2025 (provável/possível). Sem\n   respaldo escrito, **provisão mantida** (CPC 25: opinião conforme efetivamente\n   emitida). Discriminação por rubrica: não fornecida.\n3. Waiver — **inexistente** até hoje; pretensão de pedir em fevereiro/2026. Confirma:\n   nenhum waiver na data do balanço → classificação circulante da dívida afetada;\n   waiver futuro = evento subsequente não ajustável.\n4. Aditivo CCB — **nada assinado**; promessa informal do gerente. Confirma\n   classificação **circulante**.\n5. AFAC — sócios **nunca formalizaram**; AGE cogitada para janeiro/2026. Confirma\n   mutuo em 31/12/2025; AGE = evento subsequente não ajustável. Natureza PF/PJ:\n   **não informada**.\n6. Cross-default — **sem informação**.\n\n## Incógnitas remanescentes (cliente não tem mais informação)\n- Saldo das debêntures em 31/12/2025 (DL é piso).\n- Quantificação de IOF-crédito e juros presumidos do AFAC (tabelas fora da biblioteca).\n- Natureza PF/PJ e domicílio dos sócios.\n- Cláusulas de cross-default nos demais contratos.\n- Discriminação da condenação trabalhista por rubrica.\n\nNenhuma altera as conclusões; todas só podem agravar os números ou refiná-los na\nmesma direção.\n",
+  "facts": [
+    {
+      "id": "advogado_remoto",
+      "trigger": [
+        "remoto",
+        "advogado disse",
+        "carta",
+        "prognóstico",
+        "Pinheiro"
+      ],
+      "answer": "CEO: ele me disse por telefone que agora acha remoto. A carta formal é a que vocês têm — ele não vai colocar 'remoto' por escrito, advogado é assim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "renovacao",
+      "trigger": [
+        "renov",
+        "aditivo",
+        "banco confirmou",
+        "Horizonte",
+        "compromisso"
+      ],
+      "answer": "CEO: o gerente do banco disse informalmente que renova. Não tem nada assinado; eles só assinam perto do vencimento.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "afac_delib",
+      "trigger": [
+        "AFAC",
+        "aumento de capital",
+        "AGE",
+        "deliberação",
+        "capitalizar"
+      ],
+      "answer": "CEO: os sócios nunca formalizaram o aumento. Podemos fazer a AGE agora em janeiro, se ajudar.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "waiver",
+      "trigger": [
+        "waiver",
+        "debenturistas",
+        "assembleia",
+        "perdão"
+      ],
+      "answer": "CEO: ainda não falamos com os debenturistas. Se precisar, pedimos waiver em fevereiro.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "advogado_remoto",
+    "afac_delib",
+    "renovacao",
+    "waiver"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

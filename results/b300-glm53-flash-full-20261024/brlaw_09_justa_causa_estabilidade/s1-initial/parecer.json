@@ -1,0 +1,76 @@
+{
+  "engagement": "Vetor Alimentos — pedido de dispensa por justa causa de Camila Rocha",
+  "data": "2026-10-11",
+  "atualizado_em": "2026-10-25",
+  "justa_causa_cabivel": false,
+  "motivos": [
+    "Imediatidade quebrada: a gerente Renata (preposto) tomou conhecimento do post em 21/08/2026 (e-mail a Felipe, 21/08 08:51); a punição só foi provocada ao RH em 07/10/2026 — cerca de 47 dias depois — configurando perdão tácito (CLT art. 493 e jurisprudência do TST sobre imediatidade, conforme biblioteca)",
+    "Ausência de proporcionalidade/gradação: nenhum histórico disciplinar (prontuário sem advertências/suspensões, avaliações 'bom'/'muito bom'); faltas leves exigem advertência/suspensão antes da dispensa",
+    "Gravidade insuficiente: crítica genérica às condições de trabalho em rede social, sem ofensa pessoal a superior nem imputação falsa de crime — tende a ser considerada liberdade de expressão, insuficiente para a alínea 'k' (conforme nota da biblioteca)",
+    "Veracidade do fato narrado: 'fim de semana trabalhando sem hora extra paga' encontra respaldo no banco de horas com saldo positivo de 62h de finais de semana (jul–ago/2026), creditadas ao banco e nunca pagas — confirmado pela própria cliente em 25/10/2026; não há imputação falsa que lesione a honra"
+  ],
+  "estabilidades": [
+    {
+      "tipo": "CIPA — suplente eleita em 12/05/2026, posse em 02/06/2026, mandato de 1 ano",
+      "fundamento": "ADCT art. 10, II, 'a'; CLT art. 165 e parágrafo único (ônus do empregador de comprovar motivo); TST Súmula 339, I (o suplente goza da garantia de emprego) — fonte: library/estabilidade_cipa.md",
+      "ate": "2028-06-02 (estimado: mandato de 1 ano até ~02/06/2027, mais 1 ano após o fim do mandato; garantia corre desde o registro da candidatura, anterior a 12/05/2026)"
+    },
+    {
+      "tipo": "Gestante — gravidez confirmada em 18/09/2026 (9 semanas, obstetra; registro do ambulatório confirmado pela cliente em 25/10/2026; desconhecimento do empregador é irrelevante — Súmula 244, I)",
+      "fundamento": "ADCT art. 10, II, 'b'; TST Súmula 244, I e II; Lei 9.029/95 — fonte: library/estabilidade_gestante.md",
+      "ate": "2027-09-22 (estimado: DPP ≈ 23/04/2027, de 9 semanas em 18/09/2026, mais 5 meses após o parto; estimativa — substituir pela DPP oficial quando disponível)"
+    }
+  ],
+  "exposicao_se_reverter": {
+    "verbas_rescisorias": 44406.27,
+    "indenizacao_estabilidade": 153920.00,
+    "dano_moral_estimado": 15000.00,
+    "total": 213326.27,
+    "nota_metodologica": "Salário R$ 7.800,00; dispensa presumida em 11/10/2026; verbas de reversão conforme library/verbas_reversao.md. Indenização da estabilidade = período remanescente da garantia mais longa (CIPA até ~02/06/2028), que absorve o período da gestante (até ~set/2027) sem dupla remuneração dos mesmos meses. Detalhamento aritmético, premissas e cenário com acessórios em parecer.md."
+  },
+  "exposicao_acessoria_banco_de_horas": {
+    "status": "ilustrativa — NÃO incluída no total de 213.326,27; depende de instrumento e prazo não informados pela cliente e não constantes da biblioteca (não verificado)",
+    "fato_confirmado_25_10_2026": "62h de fim de semana (jul–ago/2026) creditadas ao banco de horas, sem pagamento; compensação posterior não registrada no arquivo",
+    "cenarios": [
+      { "cenario": "banco válido e dentro do prazo", "total_estimado": 0 },
+      { "cenario": "adicional de 50% (hora simples já remunerada)", "principal": 1099.09, "fgts_8pc": 87.93, "multa_40pc_fgts": 35.17, "total_estimado": 1222.19 },
+      { "cenario": "adicional de 100% (hora simples já remunerada)", "principal": 2198.18, "fgts_8pc": 175.85, "multa_40pc_fgts": 70.34, "total_estimado": 2444.38 },
+      { "cenario": "hora integral + 50%", "principal": 3297.27, "fgts_8pc": 263.78, "multa_40pc_fgts": 105.51, "total_estimado": 3666.57 },
+      { "cenario": "hora integral + 100%", "principal": 4396.36, "fgts_8pc": 351.71, "multa_40pc_fgts": 140.68, "total_estimado": 4888.76 }
+    ],
+    "nota": "Valor-hora 7.800/220 = 35,4545; encargos ≈ 11,2% do principal; reflexos em 13º/férias não calculados; aritmética em parecer.md §5.7"
+  },
+  "itens_abertos": [
+    "Férias 2021–2026: período 2025/2026 concedido? Se não: + R$ 10.400,00 na exposição",
+    "Histórico salarial desde a admissão: base do FGTS/multa de 40% e salário-dia",
+    "Data exata do registro da candidatura à CIPA: início da garantia cipeira",
+    "DPP oficial da gestante: estimativa atual ~23/04/2027 (garantia até ~22/09/2027)",
+    "Instrumento, prazo e estado de compensação do banco de horas: define se as 62h valem R$ 0 (banco válido) ou ~R$ 1,2 mil a ~R$ 4,9 mil (conversão ilustrativa)",
+    "Data pretendida da dispensa: aritmética parametrizada para 11/10/2026 (recalcular se posterior)"
+  ],
+  "informacoes_cliente": {
+    "data_registro": "2026-10-25",
+    "respostas": [
+      {
+        "tema": "Gestante — ciência do empregador",
+        "resposta": "O ambulatório registrou o atestado com gestação em 18/09/2026; a gerente Renata não sabia.",
+        "efeito": "Nenhum na conclusão nem na quantificação: Súmula 244, I (biblioteca) — o desconhecimento do estado gravídico pelo empregador não afasta o direito; a garantia corre desde a confirmação da gravidez (18/09/2026), antes da dispensa cogitada. Fato distinto da imediatidade quanto ao post, que não é recuperada."
+      },
+      {
+        "tema": "Banco de horas — destino das horas de fim de semana",
+        "resposta": "As horas de fim de semana foram creditadas ao banco de horas; não houve pagamento (post verdadeiro nesses termos).",
+        "efeito": "Confirma a veracidade fática do substrato do post (motivo 4): reforça a gravidade insuficiente e o risco de dano moral em reversão. Regras do banco (instrumento/prazo/estado de compensação) seguem sem resposta — quantificação ilustrativa em exposicao_acessoria_banco_de_horas."
+      }
+    ],
+    "outras_informacoes": "A cliente informou não possuir informações adicionais para as demais perguntas (férias, histórico salarial, registro de candidatura à CIPA, DPP oficial, data pretendida da dispensa) — ver itens_abertos."
+  },
+  "alternativas": [
+    "Não aplicar a dispensa por justa causa nem qualquer dispensa agora: ambas as estabilidades (CIPA e gestante) vedam a dispensa arbitrária/sem justa causa até ~02/06/2028",
+    "Manter o contrato e administrar a gestão da pessoa: acomodar o repouso médico (atestado 18/09/2026 indicou repouso relativo de 3 dias) e evoluir a percepção salientada no post",
+    "Auditar o banco de horas (62h de finais de semana jul–ago/2026, creditadas ao banco e não pagas — confirmado pela cliente em 25/10/2026): verificar instrumento, prazo e saldo atual; se o banco for válido, tratar o uso do saldo; se não for, converter em pagamento — elimina o substrato factual do post, o risco de reivindicação de horas (R$ 0 a ~R$ 4.888,76, ilustrativo — v. exposicao_acessoria_banco_de_horas) e reduz o risco de ação trabalhista correlata",
+    "Se houver nova falta no futuro, aplicar a gradação regular com registro em prontuário (advertência → suspensão), documentando gravidade, imediatidade e proporcionalidade desde o primeiro dia de conhecimento do empregador (preposto incluído)",
+    "Orientar gestores (gerente/coordenador = prepostos): conhecimento deles é conhecimento do empregador; agir na semana da falta, não meses depois",
+    "Resposta institucional moderada e sem retaliação, se houver comunicação interna necessária — retaliação agravaria o risco de dano moral"
+  ],
+  "recomendacao": "Não homologar a dispensa por justa causa. A alínea 'k' dificilmente se sustenta: não há gravidade suficiente para quebrar a fidúcia (crítica genérica com lastro factual no banco de horas), a imediatidade está quebrada (47 dias entre o conhecimento pela gerente em 21/08/2026 e a provocação ao RH em 07/10/2026 → perdão tácito) e não há histórico disciplinar que permita dispensa direta. Adicionalmente, a empregada acumula DUAS estabilidades vigorando (cipeira suplente até ~02/06/2028 e gestante até ~22/09/2027), de modo que qualquer dispensa sem justa causa também está vedada. Exposição estimada caso a justa causa seja tentada e revertida: ~R$ 213.326,27 (verbas R$ 44.406,27 + indenização de estabilidade R$ 153.920,00 + dano moral R$ 15.000,00), podendo subir ~R$ 48 mil com acessórios do período (v. parecer.md). Recomenda-se manter o contrato, regularizar o banco de horas e, se futura falta grave realmente ocorrer, documentá-la com gradação e imediatidade. Respostas da cliente de 25/10/2026 não alteram a conclusão: o desconhecimento da gravidez pela gerente é irrelevante (Súmula 244, I) e o crédito das 62h ao banco de horas, sem pagamento, confirma a veracidade do substrato do post (exposição acessória ilustrativa adicional de R$ 0 a ~R$ 4.888,76, não incluída no total)."
+}

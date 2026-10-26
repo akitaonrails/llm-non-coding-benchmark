@@ -1,0 +1,48 @@
+# Resposta à carta do advogado do Comprador (Grupo Meridiano)
+
+*Referência: minuta do Comprador (CPC de quotas) e carta afirmando "minuta padrão de mercado", que a 8.4(c) seria "apenas a redação usual de sandbagging", que não há anuências (Anexo 3.2 'não aplicável') e pedindo confirmação de notificação ao CADE.*
+
+Senhores,
+
+Confirmamos três pontos e contestamos três. As posições abaixo se apoiam exclusivamente nos extratos da data room e na biblioteca de referência deste engajamento (itens citados entre parênteses).
+
+## 1. Anexo 3.2 — "não aplicável" está errado; há anuência/condições reais
+
+- **Construtora Horizonte Azul S.A. (31% da receita; contrato 2024–2028):** a Cláusula 19 do contrato dispõe que "a alteração do controle societário da CONTRATADA, direta ou indireta, sem prévia e expressa anuência da CONTRATANTE, constitui causa de rescisão imediata, com multa de 20% do saldo contratual" (data room §1.1). Não se trata de contrato "silente". A anuência expressa é condição prática do negócio e **deve constar do Anexo 3.2**; trata-se, inclusive, do interesse de ambos: sem ela, o Comprador compra 31% a menos de receita e ainda paga/sofre multa. Informamos que os Vendedores **já estão disparando a consulta formal à contratante** (a relação comercial com a emitente é próxima, mas a análise será feita pelo jurídico da contratante, que tende a ser rigorosa). Propomos estrutura dupla: (i) anuência como condição precedente com prazo razoável; (ii) se não vier dentro da janela do cronograma, fallback automático — holdback/indenização específica limitada à multa de 20% sobre o saldo contratual, liberado no prazo — em vez de travar o fechamento aguardando despacho de terceiro.
+- **Contrato administrativo nº 044/2025 — Município de Sorocaba (12% da receita):** a cessão total é vedada; a **alteração societária é admitida** desde que mantidas as condições de habilitação, com comunicação prévia à Administração (data room §1.2). Juridicamente: a alteração social não é causa de extinção mantida a habilitação (Lei 14.133/2021, art. 137, VI, a contrario; art. 91), mas exige comunicação e **regularidade fiscal mantida durante a execução** (art. 92, XVI), sob pena de retenção de pagamentos e sanções (art. 124, II; art. 137, VI) — `library/lei14133_alteracao_societaria.md`. Sobre a CND federal **positiva** (débito de IRPJ 2023 de R$ 310 mil, data room §3.1): o débito está em cobrança e é **objeto de controvérsia pelos Vendedores, que não o pagaram nem o parcelaram** — a certidão, portanto, tende a permanecer positiva no Fechamento. Em vez de prometer regularização que não ocorrerá, propomos alocar o risco contratualmente: (i) revelação integral no Anexo de Exceções; (ii) indenização específica limitada ao valor do débito + encargos acessórios, com **retenção dedicada de R$ 310 mil + encargos** em conta vinculada; (iii) sub-rogação do Comprador na defesa administrativa/judicial do crédito, quando cabível, com cooperação dos Vendedores. Se houver mecanismo de garantia/parcelamento que suspenda a exigibilidade sem reconhecimento do débito, isso será avaliado pelos assessores contábeis/tributários da sociedade — não afirmamos aqui por não estar verificado na nossa base de referência. Ademais, o responsável técnico (sócio Hélio) será substituído perante o CREA e a Administração antes da comunicação da alteração (data room §3.3; mesma fonte).
+- Demais contratos privados: silentes quanto a mudança de controle (data room §1.3) — aqui, sim, nada a constar do Anexo 3.2. Na cessão de quotas a sociedade permanece a mesma titular dos contratos, de modo que contratos silentes não exigem anuência (e não há sucessão quanto ao passivo, que continua da sociedade — CTN arts. 132–133, `library/ctn_133_sucessao.md`).
+
+**Conclusão:** o Anexo 3.2 deve listar: (i) anuência Horizonte Azul (consulta formal já em curso; fallback de holdback se não vier no prazo); (ii) garantia dedicada para o débito federal contestado (retenção + indenização específica — não condição de regularidade, pois os Vendedores o contestam); (iii) RT substituído/COMUNICAÇÃO prévia à Administração. O que **não** vai no Anexo 3.2 é o CADE.
+
+## 2. CADE — não notificável; propomos suprimir a condição precedente (condition precedent)
+
+A notificação é obrigatória apenas se, **cumulativamente**, ao menos um grupo envolvido tiver faturamento bruto anual no Brasil ≥ R$ 750 milhões **e** outro grupo ≥ R$ 75 milhões (Lei 12.529/2011, art. 88; Portaria Interministerial 994/2012 — `library/cade_limiares.md`). Pelos números da data room §4.2:
+
+- Grupo Meridiano: faturamento consolidado Brasil 2025 = **R$ 390 milhões < R$ 750 milhões** (falha o primeiro limiar);
+- Vértice: faturamento 2025 = **R$ 4,2 milhões < R$ 75 milhões** (falha o segundo limiar).
+
+Nenhum dos dois limiares é atingido, de modo que **não há notificação obrigatória** — pelo contrário, manter "aprovação do CADE" como condição precedente criaria, sem base legal, exatamente o atraso de meses que a carta diz querer evitar. Fora dos limiares, o CADE pode excepcionalmente requerer análise em até 1 ano (art. 88, §7º), risco que consideramos remoto diante da ausência de sobreposição relevante entre as atividades (a Vértice é consultoria de engenharia regional; os dados de sobreposição do grupo não constam da data room). **Sugestão de redação:** suprimir a condição do §3.2 e, se o Comprador insistir em cobertura, uma representação recíproca de que o ato não é notificável, com as informações de faturamento em anexo. Pressuposto declarado: o faturamento de referência é o de 2025, único informado; se o grupo Meridiano apurar faturamento de ano anterior ≥ R$ 750 milhões, revisamos — pedimos a confirmação.
+
+## 3. 8.4(c) — "sandbagging usual" é eufemismo neste caso
+
+A cláusula 8.4(c) na redação do Comprador é **pró-sandbagging plena**: o conhecimento do Comprador, antes ou depois da assinatura, não afasta a indenização. O problema não é a figura em abstrato — é a combinação montada nesta minuta:
+
+- declarações **absolutas** na 5.7 ("inexistindo risco de reconhecimento de vínculo") e na 5.9 ("situação fiscal regular, com certidões negativas vigentes") — quando a data room revela exatamente o contrário: 11 engenheiros PJ com exclusividade, horário e subordinação, no "perfil do caso Solaris" (§2.2), 3 reclamações trabalhistas de R$ 1,4 mi (§2.3), e CND federal **positiva** por débito de R$ 310 mil (§3.1);
+- 8.4(b): teto do **preço total** (não 15%) justamente para 5.7/5.9;
+- 8.4(a): franquia non-deductible de R$ 150 mil — que o débito conhecido de R$ 310 mil ultrapassa sozinho (tipping: cobra-se desde o primeiro real);
+- 8.4(d): 5 anos; e 10.2: escrow de 20% por 5 anos.
+
+Efeito conjunto: o Comprador **se indeniza pelo que já sabia e precificou**, inclusive o débito de R$ 310 mil, até o teto do preço, por 5 anos, com dinheiro em garantia. A revelação no data room deixa de ter qualquer valor jurídico. É exatamente a estrutura descrita na biblioteca como a proteção que o vendedor deve neutralizar (sandbagging pró-comprador + declaração 'limpa' sobre matéria revelada + limite igual ao preço transferem ao vendedor risco conhecido e precificável, de forma integral e por 5 anos) — `library/sandbagging_franquia_mercado.md`. E, na seara trabalhista, note-se que na cessão de quotas a empregadora é a mesma e o passivo (inclusive o risco da pejotização) permanece na sociedade — por isso cabe em preço/indenização dimensionada, não em representação irreal — CLT arts. 10, 448 e 448-A, `library/clt_10_448_sucessao_trabalhista.md`.
+
+**Contraproposta concreta (a íntegra no redline anexo):**
+1. **Anexo de exceções (disclosure schedule)** qualificando 5.7 e 5.9 com os itens revelados;
+2. **Indenizações específicas com tetos dimensionados**: ações trabalhistas listadas (até R$ 1,4 mi, até trânsito em julgado; gap sobre provisão = R$ 1.400.000 − R$ 380.000 = R$ 1.020.000); débito fiscal (em disputa ativa pelos Vendedores — garantia dedicada de R$ 310 mil + encargos em escrow específico, com sub-rogação do Comprador na defesa); PJs (teto a dimensionar após quantificação conjunta);
+3. Regime geral: franquia **dedutível**, teto de 15% do preço para as demais declarações, sobrevivência de 2 anos (específicas: vinculadas ao evento), escrow geral de 15% com liberação em 12/24 meses + escrow específico dimensionado;
+4. 8.4(c) aceita **apenas** para fatos não revelados: fato da data room/Anexo X não configura violação nem gera indenização.
+
+## 4. Cronograma de 45 dias — factível sem CADE, apertado com o resto
+
+Sem CADE (item 2), os gargalos reais são: (i) prazo de **preferência dos sócios** no contrato social (30 dias, data room §4.1) — a notificação/renúncia deve começar hoje, em paralelo; (ii) anuência Horizonte Azul (item 1) — a consulta formal está sendo disparada agora; dado que a análise pelo jurídico da emitente pode extrapolar a janela, o fallback de holdback/indenização específica (limitado à multa de 20% do saldo) evita que o fechamento refém de terceiro; (iii) substituição do RT antes da comunicação à Administração de Sorocaba. A regularização fiscal **saiu do caminho crítico** — os Vendedores contestam o débito e não o solverão no fechamento; o Comprador fica protegido pela retenção dedicada de R$ 310 mil + encargos e pela sub-rogação na defesa. A JUCESP não exige CND para averbar a alteração societária (`library/ctn_133_sucessao.md`), de modo que o débito não trava o registro — mas a regularidade pesa para o contrato público, daí a garantia dedicada e a comunicação prévia à Administração.
+
+Atenciosamente,
+Assessoria dos Vendedores

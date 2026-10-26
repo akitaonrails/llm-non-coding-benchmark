@@ -1,0 +1,5 @@
+O registro confirma sua propriedade fiduciária. A regra da biblioteca preserva esse direito, mas impede retirar bens de capital essenciais do estabelecimento da Atlas durante o prazo de suspensão. Vou deixar essa distinção e a orientação sobre o caminhão explícitas na resposta ao cliente.
+
+Edson, o contrato e o registro confirmam seu direito de propriedade fiduciária. **Não mande o caminhão buscar as empilhadeiras agora.** A ficha informa que elas são essenciais à operação da Atlas, e a lei impede sua retirada do estabelecimento durante o prazo de suspensão da recuperação judicial. Seu direito permanece; precisamos conferir quando esse prazo termina antes de marcar a retomada. Fonte: [library/lrf_49_essencialidade.md](/work/workspace/library/lrf_49_essencialidade.md).
+
+Deixei essa orientação explícita na [resposta ao cliente](/work/workspace/deliverable/resposta_cliente.md).

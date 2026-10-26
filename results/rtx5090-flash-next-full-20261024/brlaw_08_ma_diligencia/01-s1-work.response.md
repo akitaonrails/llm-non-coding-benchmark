@@ -1,0 +1,15 @@
+Now the library files:
+
+Engagement complete. All five deliverables are in `deliverable/`, verified (valid JSON, all required clauses redlined, every citation traced to `library/INDEX.md`).
+
+**What hits the sellers in a "standard" minuta:**
+
+1. **CADE is a phantom condition — deleting it saves the 45-day plan.** Art. 88 thresholds are cumulative: one group ≥ R$ 750M and another ≥ R$ 75M. Meridiano R$ 390M < 750M; Vértice R$ 4.2M < 75M → not notifiable (library confirms). The buyer's lawyer asking to "confirm the notification" would add months for nothing.
+2. **Anexo 3.2 "não aplicável" hides the real closing risk:** Horizonte Azul (31% of revenue) can terminate immediately with a 20% penalty (≈ R$ 520k estimated on ~R$ 2.6M balance) if the change of control isn't consented to. It must be listed as a condition precedent and requested now — it's the long-lead item.
+3. **The indemnity machine:** clean reps (5.7 "no employment-risk", 5.9 "negative certificates") over facts the data room already discloses (11 subordinate "PJ" engineers, 3 suits worth R$ 1.4M vs R$ 380k provisioned, positive CND with R$ 310k IRPJ debt) + cap = **total price** for 5.7/5.9 + pro-sandbagging 8.4(c) + 5-year term + 20% escrow for 5 years = sellers pay known, priced risks up to 100% of price. Since a quota sale keeps tax/labor liabilities inside the company (CTN 133; CLT 10/448/448-A), the buyer's only recovery route is the contract — which is exactly what these clauses build. Fix: disclosure schedules, capped specific indemnities, deductible franchise, anti-sandbagging, 2–3 years, sized escrow.
+4. **The earn-out is decorative:** the R$ 1.5M cap requires EBITDA ≥ R$ 5,385,714 (1.5/0.35 + 1.1M) — more than the company's entire R$ 4.2M revenue — and "EBITDA apurado pelo Comprador com rateio de despesas corporativas" lets the buyer zero even the threshold (R$ 1.1M = 26% of 2025 revenue).
+5. **Timing traps:** 30-day right of first refusal in the bylaws and Hélio as departing CREA technical officer (affects the Sorocaba contract's habilitação, 12% of revenue ≈ R$ 504k/yr, whose positive CND can already trigger payment retention under Lei 14.133 art. 92 XVI). Non-compete of 10 years/national vs. the CC art. 1.147 pattern (5 years, reasonableness).
+
+`STATUS.md` = **COMPLETE WITH OPEN ITEMS**: price, historical EBITDA, contract balance, PJ cost base, per-suit amounts, ISS/Simples exposure and the preference waiver are requested in `QUESTIONS.md` (caps shown as % + sensitivity tables meanwhile; parcelamento mechanics flagged as not in the library, i.e., unverified). No numbers were forced to reconcile — the Horizon Azul penalty and escrow figures are explicitly labeled estimates.
+
+One housekeeping note: the harness repeatedly flagged my commands as containing `find … -delete`. They were read-only inventory listings (`find <dir> -type f`) with no `-delete`; nothing destructive was run, and I'll ask before running anything that could delete files.

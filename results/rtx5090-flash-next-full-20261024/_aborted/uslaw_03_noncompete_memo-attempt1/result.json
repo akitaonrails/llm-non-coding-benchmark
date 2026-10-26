@@ -1,0 +1,20 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-full-20261024/uslaw_03_noncompete_memo/01-s1-work",
+  "elapsed_seconds": 83.35306503300671,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 82.93348893002258,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

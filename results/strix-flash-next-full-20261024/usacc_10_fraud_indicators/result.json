@@ -1,0 +1,23 @@
+{
+  "case": "usacc_10_fraud_indicators",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 4648.354466303019,
+  "controller_wait_seconds": 101.00963142301771,
+  "model_turn_seconds": 4547.116515860078,
+  "turns": 3,
+  "released_facts": [
+    "nguyen",
+    "summit"
+  ],
+  "usage": {
+    "input_tokens": 5551043,
+    "cached_input_tokens": 5330834,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 185664,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

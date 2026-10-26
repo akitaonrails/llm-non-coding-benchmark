@@ -1,0 +1,161 @@
+{
+  "rebuilt_at": "2026-10-26T07:48:24Z",
+  "model": "qwen3.8-flash-next-iq3_s",
+  "hardware": "Strix Halo; IQ3_S; Strata 0.1.45.3 resident experts",
+  "cases": {
+    "bracc_01_das_fator_r": {
+      "status": "completed_ungraded",
+      "attempts": 2
+    },
+    "bracc_02_escolha_regime": {
+      "status": "candidate_output_limit",
+      "attempts": 1
+    },
+    "bracc_03_cbs_ibs_ano_teste": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_04_lucro_real_trimestre": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_05_abertura_empresa": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_06_venda_quotas_vs_ativos": {
+      "status": "candidate_output_limit",
+      "attempts": 1
+    },
+    "bracc_07_holding_patrimonial": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_08_recuperacao_judicial": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_09_distribuicao_lucros": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_10_provisoes_covenant": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_01_prazos_processuais": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_02_contrato_lgpd": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_03_pejotizacao": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_04_execucao_fiscal": {
+      "status": "completed_ungraded",
+      "attempts": 2
+    },
+    "brlaw_05_divorcio_partilha": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_07_credor_rj": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_08_ma_diligencia": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_09_justa_causa_estabilidade": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_10_cobranca_prescrita": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "usacc_01_schedule_c": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "usacc_02_close_gap": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "usacc_03_household_1040": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "usacc_04_twelve_closes": {
+      "status": "candidate_output_limit",
+      "attempts": 1
+    },
+    "usacc_05_entity_choice": {
+      "status": "completed_ungraded",
+      "attempts": 2
+    },
+    "usacc_06_sale_asset_vs_stock": {
+      "status": "candidate_output_limit",
+      "attempts": 2
+    },
+    "usacc_07_holding_qsbs": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "usacc_08_chapter11_debtor": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "usacc_09_revenue_going_concern": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "usacc_10_fraud_indicators": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "uslaw_01_deadlines_removal": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "uslaw_02_msa_playbook": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "uslaw_03_noncompete_memo": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "uslaw_04_litigation_sequence": {
+      "status": "completed_ungraded",
+      "attempts": 2
+    },
+    "uslaw_05_divorce_split_support": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "uslaw_07_chapter11_creditor": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "uslaw_08_sale_diligence_apa": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "uslaw_09_retaliation_termination": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "uslaw_10_llc_squeeze_out": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    }
+  },
+  "retained_results": 38,
+  "completed": 38
+}

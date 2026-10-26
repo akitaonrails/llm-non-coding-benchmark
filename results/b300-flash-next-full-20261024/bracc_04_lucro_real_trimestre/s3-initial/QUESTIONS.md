@@ -1,0 +1,17 @@
+# Perguntas ao cliente — atualizado no fechamento de 03/2026
+
+**Não há perguntas em aberto.** Nada será re-perguntado: o cliente já respondeu (ou declarou não ter) tudo o que foi solicitado nas rodadas anteriores, e os documentos de março/2026 (razão e balancete) foram recebidos e conciliados (22/22 contas articulam com fevereiro; quadra OK).
+
+Sobre a única pergunta já feita (natureza dos R$ 85.000,00 "comerciais ordinários" pagos em 20/01, 20/02 e 20/03), o cliente declarou não ter mais informação — o tratamento adotado é **premissa declarada final**, com sensibilidade quantificada no fechamento do trimestre (`mes_03/memoria.md` item 8):
+- janeiro: 100% da conta 4.2.02 tratado como brinde (adição AF-01-001, R$ 85.000) — por declaração escrita do próprio cliente;
+- fevereiro e março: os R$ 85.000 do dia 20 tratados como despesa comercial normal, dedutível — posição da auditoria interna ("brindes: só os 48 mil").
+Se a contabilidade posteriormente produzir documentação que altere isso, a retificação é uma linha de adição + trava na ECF do 1T.
+
+## Premissas declaradas consolidadas (cliente sem mais informação)
+- Compra de 15/01 (R$ 1.676.400), 15/02 (R$ 1.702.800) e 15/03 (R$ 1.729.200) = mercadoria para revenda → créditos de 155.067,00 / 157.509,00 / 159.951,00 mantidos.
+- Data/valor dos pagamentos de tributos desconhecidos (nenhum recolhimento aparece nos livros) → acréscimos sobre os R$ 11.100,00 do estorno da EFD 01/2026 não quantificados; sistemática de cálculo também não está na biblioteca citável.
+- Saldos de abertura (R$ 900.000 prejuízo fiscal / R$ 900.000 base negativa): assumidos compensáveis, sempre sob a trava de 30%.
+
+## Não-perguntas (decisões documentadas, não dúvidas)
+- Contas da provisão de IRPJ/CSLL (4.3.02 / 2.1.05): proposta em `mes_03/ajustes.json` (AJ-03-002), sujeita a aprovação — item 4 de `mes_03/pendencias.md`.
+- Compensação integral do prejuízo pedida pela diretoria: negada por impossibilidade legal (trava de 30%), não é tema de pergunta — item 6 de `mes_03/pendencias.md`.

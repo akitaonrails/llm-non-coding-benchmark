@@ -1,0 +1,24 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 2998.311930465017,
+  "controller_wait_seconds": 113.0156258289935,
+  "model_turn_seconds": 2885.2367934249924,
+  "turns": 8,
+  "released_facts": [
+    "brindes",
+    "luz",
+    "papel"
+  ],
+  "usage": {
+    "input_tokens": 2594528,
+    "cached_input_tokens": 2423665,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 114263,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

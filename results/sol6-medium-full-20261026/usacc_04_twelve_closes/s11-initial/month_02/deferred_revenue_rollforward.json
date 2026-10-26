@@ -1,0 +1,34 @@
+{
+  "contracts": {
+    "Trestle Freight LLC \u2014 Jun 2024\u2013May 2025": {
+      "opening": 32800,
+      "billed": 0,
+      "recognized": 8200,
+      "closing": 24600
+    },
+    "Trestle Freight LLC \u2014 Jan\u2013Dec 2025": {
+      "opening": 22000,
+      "billed": 0,
+      "recognized": 2000,
+      "closing": 20000
+    },
+    "Pinecone Dental Group \u2014 term unconfirmed": {
+      "opening": 0,
+      "billed": 36000,
+      "recognized": 0,
+      "closing": 36000
+    }
+  },
+  "unallocated_opening_deferred_revenue": {
+    "opening": 24000,
+    "billed": 0,
+    "recognized": 0,
+    "closing": 24000
+  },
+  "total": {
+    "opening": 78800,
+    "billed": 36000,
+    "recognized": 10200,
+    "closing": 104600
+  }
+}

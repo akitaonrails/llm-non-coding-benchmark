@@ -1,0 +1,74 @@
+{
+  "referencia": "Sessão 1 — mês do pedido (assume-se pedido na RJ de Atlas Distribuidora S.A. processada por decisão de 12/03/2026, TJSP proc. 1012xxx-xx.2026.8.26.0100). Data exata do pedido não consta nos documentos; o intervalo aceitável é 03/02/2026–12/03/2026, pois o crédito do Fornecedor Sul (03/02/2026) é concursal e a entrega de 20/03/2026 é pós-pedido. Ver QUESTIONS.md",
+  "valores_em": "BRL",
+  "creditos": [
+    {
+      "credor": "Banco Alfa (capital de giro, quirografário)",
+      "valor": 4200000,
+      "classe": "quirografario",
+      "sujeito_ao_plano": true,
+      "fundamento": "Crédito quirografário de origem 10/11/2025, existente na data do pedido — sujeito à RJ (lei11101_excertos.md, Lei 11.101/2005, art. 49, caput). Sem garantia ou privilégio indicados na relação de credores; classe III pela minuta do plano (deságio 60%, 120 parcelas mensais, carência 24 meses — plano_minuta.md)."
+    },
+    {
+      "credor": "Banco Beta (CCB com alienação fiduciária de máquinas)",
+      "valor": 3100000,
+      "classe": "extraconcursal_fiduciario",
+      "sujeito_ao_plano": false,
+      "fundamento": "Credor na posição de proprietário fiduciário de bens móveis não se submete aos efeitos da RJ, prevalecendo os direitos de propriedade (lei11101_excertos.md, Lei 11.101/2005, art. 49, §3º). Vedada, durante o prazo de suspensão do art. 6º, §4º, a venda ou retirada do estabelecimento dos bens de capital essenciais. A cláusula da minuta que submete fiduciários a deságio de 40% conflita com o art. 49, §3º (impugnação a detalhar na Sessão 2)."
+    },
+    {
+      "credor": "Fornecedor Norte Ltda (atrasos acumulados, origem 15/01/2026)",
+      "valor": 1850000,
+      "classe": "quirografario",
+      "sujeito_ao_plano": true,
+      "fundamento": "Crédito quirografário existente na data do pedido — sujeito à RJ (lei11101_excertos.md, Lei 11.101/2005, art. 49, caput); classe III pela minuta (deságio 60%). Pagamento avulso 'por fora do plano' é vedado: viola a par condicio creditorum, configura favorecimento ao credor (art. 172) e pode ensejar afastamento dos administradores (art. 64) e convolação em falência (lei11101_excertos.md)."
+    },
+    {
+      "credor": "Fornecedor Sul S.A. (EPP)",
+      "valor": 420000,
+      "classe": "me_epp",
+      "sujeito_ao_plano": true,
+      "fundamento": "Crédito de ME/EPP existente na data do pedido (origem 03/02/2026) — sujeito à RJ (lei11101_excertos.md, Lei 11.101/2005, art. 49, caput); classe própria de ME/EPP conforme relação apresentada e minuta (classe IV, mesmo tratamento de deságio de 60% e 120 parcelas — plano_minuta.md)."
+    },
+    {
+      "credor": "Trabalhistas (112 empregados; origens 'diversas', anteriores ao pedido)",
+      "valor": 960000,
+      "classe": "trabalhista",
+      "sujeito_ao_plano": true,
+      "fundamento": "Crédito trabalhista existente na data do pedido — sujeito à RJ (lei11101_excertos.md, Lei 11.101/2005, art. 49, caput); classe I. Minuta paga integralmente em até 18 meses da homologação; o prazo legal-teto é de 1 ano (art. 54, caput), admitindo até 2 anos nas condições especiais do art. 54, §2º — cláusula a validar na análise da Sessão 2."
+    },
+    {
+      "credor": "União — IRPJ/CSLL/PIS/COFINS",
+      "valor": 2700000,
+      "classe": "nao_sujeito_tributario",
+      "sujeito_ao_plano": false,
+      "fundamento": "Crédito tributário: cobrança judicial não se sujeita a concurso de credores ou habilitação em RJ (ctn_187_191a.md, CTN art. 187); o crédito tributário não se sujeita ao plano (lei11101_excertos.md, Lei 11.101/2005, art. 68). Vias lícitas: parcelamento ou transação de débitos federais em RJ (lei10522_parcelamento_rj.md, Lei 10.522/2002, arts. 10-A a 10-C; Lei 13.988/2020) — não 'inclusão no plano'. Inclui-lo no plano com deságio, como minuta prevê, é ilegal (ponto para a Sessão 2)."
+    },
+    {
+      "credor": "Fornecedor Norte Ltda — entrega de 20/03/2026",
+      "valor": 310000,
+      "classe": "extraconcursal_pos_pedido",
+      "sujeito_ao_plano": false,
+      "fundamento": "Obrigação contraída no curso da recuperação (após a decisão de processamento de 12/03/2026): fornecimentos pós-pedido são extraconcursais (lei11101_excertos.md, Lei 11.101/2005, art. 67) — pagáveis no curso normal, sem deságio e sem suspensão."
+    }
+  ],
+  "totais": {
+    "concursais_sujeitos_ao_plano": 7430000,
+    "detalhe_concursais": {
+      "trabalhista_classe_I": 960000,
+      "quirografario_classe_III": 6050000,
+      "me_epp_classe_IV": 420000
+    },
+    "a_pagar_segundo_minuta_sem_juros": 3548000,
+    "ganho_nominal_desagio": 3882000,
+    "extraconcursais_e_nao_sujeitos": 6110000,
+    "detalhe_extraconcursais": {
+      "fiduciario_BancoBeta": 3100000,
+      "tributario_Uniao": 2700000,
+      "pos_pedido_fornecedores": 310000
+    },
+    "passivo_total_identificado": 13540000
+  },
+  "ausencia": "Não há credor com garantia real (classe II) na relação apresentada; única garantia informada é a alienação fiduciária de máquinas (Banco Beta), tratada como extraconcursal fiduciária.",
+  "assuncao_destacada": "Data do pedido não informada; classificação assume que todos os créditos com origem até 03/02/2026 (inclusive) são anteriores ao pedido e que a entrega de 20/03/2026 é posterior, como rotulado no arquivo do cliente."
+}

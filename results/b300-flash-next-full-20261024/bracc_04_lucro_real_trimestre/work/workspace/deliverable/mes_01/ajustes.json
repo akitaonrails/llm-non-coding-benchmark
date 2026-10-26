@@ -1,0 +1,53 @@
+{
+  "mes": "2026-01",
+  "empresa": "Atlas Distribuidora S.A.",
+  "regime": "Lucro Real trimestral; PIS/COFINS não cumulativos",
+  "atualizacao": "v2 — incorpora as respostas do cliente (10/2026): brindes confirmados na conta 4.2.02 e NF 8812 confirmada como papel/toner da sede. Verificacoes e pendencias atualizadas.",
+  "ajustes": [
+    {
+      "id": "AJ-01-001",
+      "data": "2026-01-31",
+      "referencia": "NF-e 8812 (Papel & Cia Suprimentos Ltda, 09/01/2026), CFOP 1556",
+      "descricao": "Estorno do crédito de PIS/COFINS tomado sobre material de uso e consumo das áreas administrativas (papel A4, toners, material de escritório — cliente confirmou: 'é papel e toner da sede'). Material de uso e consumo de área administrativa não é insumo e não gera crédito; o valor do crédito destacado pelo fornecedor (R$ 11.100,00 = 9,25% x R$ 120.000,00) deve compor o custo da despesa. Lançamento original (ref. NF8812): D 4.2.04 120.000 / D 1.1.04 11.100 / C 2.1.01 131.100.",
+      "lancamentos": [
+        { "conta": "4.2.04", "nome": "Material de uso e consumo", "debito": 11100.00, "credito": 0.00 },
+        { "conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "debito": 0.00, "credito": 11100.00 }
+      ],
+      "valor": 11100.00,
+      "fundamento": "Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR — library/pis_cofins_uso_consumo.md",
+      "impacto_lucro_liquido": -11100.00,
+      "observacao": "A tese do cliente ('o fornecedor destacou PIS/COFINS, então creditamos') não prospera: a destaque do fornecedor (CST 01) não cria direito a crédito; o critério é a qualidade de insumo na atividade do adquirente (library/pis_cofins_uso_consumo.md). A instrução da diretoria ('não mexe') foi sobreposta pela evidência documental — ver pendencias.md."
+    }
+  ],
+  "registros_fiscais_sem_lancamento_contabil": [
+    {
+      "id": "AF-01-001",
+      "data": "2026-01-31",
+      "tipo": "adição ao lucro real e à base de cálculo da CSLL (e-LALUR Parte A)",
+      "conta_referencia": "4.2.02 Despesas comerciais",
+      "valor": 85000.00,
+      "descricao": "Despesas com brindes: cliente confirmou que a conta 4.2.02 ('despesas comerciais ordinárias', R$ 85.000,00, paga em dinheiro em 20/01) é composta de 'vinho e canivete gravado pros 400 melhores clientes' (marketing). Dedução vedada na apuração do lucro real e da CSLL. NÃO há lançamento contábil: a despesa permanece válida na contabilidade societária; o efeito é exclusivamente fiscal, na apuração do 1º trimestre.",
+      "fundamento": "Lei 9.249/95, art. 13, VII — library/lei9249_art13.md; despesas indedutíveis são adições na Parte A do e-LALUR, sem alteração da contabilidade societária — library/irpj_csll_trimestral.md",
+      "premissa_prominente": "Sem memória de cálculo do cliente, tratei a TOTALIDADE do saldo de 4.2.02 (R$ 85.000,00) como brindes. Se apenas parte for brinde, a adição do trimestre deve ser reduzida na apuração de mes_03.",
+      "reflexo": "Levar para lalur.json (mes_03) como adição permanente de IRPJ e CSLL, salvo informação nova.",
+      "verificacao_pis_cofins": "No razão, a compra foi liquidada integralmente em caixa (D 4.2.02 85.000 / C 1.1.01 85.000), sem crédito de PIS/COFINS tomado — nada a estornar nesse item."
+    }
+  ],
+  "efeito_resumo": {
+    "lucro_liquido_contabil_segundo_balancete": 139583.00,
+    "ajustes_sobre_lucro_liquido": -11100.00,
+    "lucro_liquido_contabil_apos_ajustes": 128483.00,
+    "aritmética": "2.540.000 (receita) - 234.950 (PIS/COFINS s/ vendas) - 177.800 (ICMS s/ vendas) - 1.397.000 (CMV) - 210.000 (pessoal) - 85.000 (comerciais/brindes) - 96.000 (administrativas) - 120.000 (uso e consumo) - 51.667 (depreciação) - 28.000 (financeiras) = 139.583; menos estorno 11.100 = 128.483",
+    "adicao_fiscal_paralela_nao_contabil": 85000.00,
+    "contas_afetadas_pos_ajuste": {
+      "1.1.04": 155067.00,
+      "4.2.04": 131100.00
+    }
+  },
+  "retificacoes_meses_anteriores": [],
+  "verificacoes": {
+    "balancete_quadra": "Débitos = Créditos = 19.880.584,00 (OK)",
+    "razao_vs_balancete": "Todas as 22 contas conciliam (abertura + movimento = saldo final)",
+    "tributacao": "PIS/COFINS s/ vendas 9,25% x 2.540.000 = 234.950 (OK); crédito mercadorias 9,25% x 1.676.400 = 155.067 (OK, mantido — aquisição para revenda, premissa); crédito NF 8812 9,25% x 120.000 = 11.100 (estornado)"
+  }
+}

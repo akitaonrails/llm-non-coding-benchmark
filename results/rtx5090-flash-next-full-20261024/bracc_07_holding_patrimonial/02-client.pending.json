@@ -1,0 +1,47 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "questions": "# QUESTÕES PARA A CLIENTE — Revisão 2 (apenas itens ainda em aberto)\n\nAs perguntas da 1ª rodada já respondidas (comissão de 8%, quem paga IPTU/condomínio, residência em Higienópolis, destino de Campos/Cotia, posição sobre Marcos) **não se repetem**. Restam as incógnitas abaixo, que limitam os números do parecer.\n\n## Q1 — Inventário do falecido marido (CRÍTICA — nunca respondida)\nO inventário/partilha do marido (falecido em 2019, casamento em comunhão parcial) foi concluído? Os 11 imóveis e as aplicações estão registrados em nome da Dona Helena?\n**Por que importa:** se a metade adquirida na constância do casamento ainda pertence ao espólio, a senhora não pode integralizar nem doar a fração alheia — e todo o cálculo de legítima/disponível (R$ 9.265.000 / R$ 3.088.333) muda.\n\n## Q2 — Valores de IPTU e condomínio das unidades vagas\nQuanto a senhora paga por ano de IPTU e condomínio das unidades que ficam vagas (e de quantas unidades/semana se trata)?\n**Por que importa:** é dedução (ou não) na PF e despesa contábil na PJ; mexe no IR da PF (hoje R$ 247.004 como teto) e no lucro contábil que trava as distribuições da holding (IRRF).\n\n## Q3 — Os netos: de quem são filhos?\nOs netos mencionados são filhos do Marcos, de Ricardo ou de Paula? Têm menos de 18 anos algum?\n**Por que importa:** se Marcos tiver filhos, a parte dele na sucessão pode ir aos netos (regra de representação — não tratada na nossa biblioteca, a verificar); e \"Cotia para os netos\" precisa ser desenhada conforme a linha do neto (adiantamento de legítima na linha do pai/mãe — a verificar).\n\n## Q4 — Alíquotas e valores venais em Guarulhos (e depois Campos/Cotia)\nA cliente declarou não ter essa informação — fica aberta como lacuna de verificação externa: consultar a legislação municipal de Guarulhos (alíquota de ITBI e valor venal do galpão de R$ 3,1 mi). Usamos 3% por analogia com São Paulo **[não verificado]**; o ITBI de R$ 432.900 pode mudar.\n\n## Q5 — Escrituração contábil da futura holding\nHaverá contabilidade formal (livro Diário/Lalub) para apurar o lucro contábil da PJ? O plano de distribuir ~R$ 67,8 mil/mês e pagar IRRF de só R$ 21,3 mil/ano depende de a PJ provar lucro contábil; sem escrituração, a distribuição vira questionável.\n\n## Q6 — (Decisão, não fato) Aceitação formal da estratégia \"mínimo para Marcos\"\nConfirmar por escrito: (i) doar a Ricardo e Paula o teto de R$ 9.265.000 em nua-propriedade de quotas (ITCMD R$ 370.600); (ii) deixar o piso de Marcos (R$ 3.088.333) sair do remanescente; (iii) testamento com justa causa declarada para gravar o que exceder o piso dele — ciente do risco de o Judiciário afastar as cláusulas sobre a legítima.\n",
+  "facts": [
+    {
+      "id": "marcos",
+      "trigger": [
+        "Marcos",
+        "excluir",
+        "deserdar",
+        "legítima",
+        "terceiro filho"
+      ],
+      "answer": "Ele não fala comigo há seis anos. Não quero que receba nada. Se a lei obriga, quero o mínimo possível e com as cláusulas de proteção.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uso_proprio",
+      "trigger": [
+        "Campos do Jordão",
+        "Cotia",
+        "uso próprio",
+        "moradia"
+      ],
+      "answer": "A casa de Campos é da família, ninguém aluga. O terreno de Cotia é para os netos um dia. Eu moro no Jardins — ah não, o Jardins está alugado; moro em Higienópolis, que é alugado por mim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deducoes",
+      "trigger": [
+        "IPTU",
+        "condomínio",
+        "administradora",
+        "despesas dos imóveis"
+      ],
+      "answer": "A administradora cobra 8%; IPTU e condomínio dos vagos eu pago.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "deducoes",
+    "marcos",
+    "uso_proprio"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,150 @@
+date,description,amount,classification,schedule_c_line,note
+2024-12-27,ACH CREDIT TESSARO STUDIOS INV 1041,3000.00,prior_year,n/a,"Invoice 1041 payment received 2024-12-27; cash method -> 2024 return. Tessaro 2025 1099-NEC ($9,400.00) excludes it"
+2024-12-30,DEBIT CARD H-E-B #412 AUSTIN TX,-84.12,prior_year,n/a,Groceries paid 2024-12-30; personal (IRC 262) and belongs to 2024
+2025-01-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-01-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-01-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-01-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-01-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-01-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-01-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-01-12,DEBIT CARD H-E-B #412 AUSTIN TX,-209.59,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-01-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,n/a,"W-2 wages (Larkspur Interactive), Form 1040 line 1a; not self-employment. 2025 deposits $19,502.80 net; W-2 Box 1 wages $24,800.00"
+2025-01-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,n/a,"W-2 wages (Larkspur Interactive), Form 1040 line 1a; not self-employment. 2025 deposits $19,502.80 net; W-2 Box 1 wages $24,800.00"
+2025-02-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-02-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-02-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-02-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-02-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-02-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-02-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,1812.55,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-02-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-02-12,DEBIT CARD H-E-B #412 AUSTIN TX,-165.22,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-02-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,n/a,"W-2 wages (Larkspur Interactive), Form 1040 line 1a; not self-employment. 2025 deposits $19,502.80 net; W-2 Box 1 wages $24,800.00"
+2025-02-20,HISCOX PROFESSIONAL LIABILITY,-480.00,business_expense,15,"Professional liability insurance (business, other than health) -> line 15"
+2025-02-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,n/a,"W-2 wages (Larkspur Interactive), Form 1040 line 1a; not self-employment. 2025 deposits $19,502.80 net; W-2 Box 1 wages $24,800.00"
+2025-03-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-03-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-03-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-03-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-03-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-03-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-03-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,2503.10,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-03-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-03-12,DEBIT CARD H-E-B #412 AUSTIN TX,-151.03,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-03-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,n/a,"W-2 wages (Larkspur Interactive), Form 1040 line 1a; not self-employment. 2025 deposits $19,502.80 net; W-2 Box 1 wages $24,800.00"
+2025-03-19,ACH CREDIT TESSARO STUDIOS,2400.00,business_income,1,"Direct ACH from Tessaro Studios; the four 2025 ACH credits total $9,400.00 = Tessaro 2025 1099-NEC; not part of PayHub 1099-K (no card/TPSO)"
+2025-03-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,n/a,"W-2 wages (Larkspur Interactive), Form 1040 line 1a; not self-employment. 2025 deposits $19,502.80 net; W-2 Box 1 wages $24,800.00"
+2025-04-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-04-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-04-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-04-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-04-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-04-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-04-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-04-08,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3109.40,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-04-12,DEBIT CARD H-E-B #412 AUSTIN TX,-143.16,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-04-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,n/a,"W-2 wages (Larkspur Interactive), Form 1040 line 1a; not self-employment. 2025 deposits $19,502.80 net; W-2 Box 1 wages $24,800.00"
+2025-04-15,IRS USATAXPYMT ES 2025 Q1,-1500.00,tax_payment,n/a,"2025 federal estimated tax (Q1) -> Form 1040 line 26; visible total $6,500.00 (Q4 2025 not in export)"
+2025-04-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,n/a,"W-2 wages (Larkspur Interactive), Form 1040 line 1a; not self-employment. 2025 deposits $19,502.80 net; W-2 Box 1 wages $24,800.00"
+2025-05-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-05-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-05-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-05-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-05-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-05-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-05-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3880.20,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-05-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-05-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership 8 x $350.00 (May-Dec) = $2,800.00 -> line 20b"
+2025-05-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,n/a,"Self-employed health insurance premium 8 x $380.00 = $3,040.00 -> Schedule 1 line 17; NOT Schedule C line 15 (per 2025 Sch C instructions)"
+2025-05-12,DEBIT CARD H-E-B #412 AUSTIN TX,-225.36,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-06-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-06-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-06-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-06-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-06-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-06-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-06-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4015.75,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-06-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-06-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership 8 x $350.00 (May-Dec) = $2,800.00 -> line 20b"
+2025-06-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,n/a,"Self-employed health insurance premium 8 x $380.00 = $3,040.00 -> Schedule 1 line 17; NOT Schedule C line 15 (per 2025 Sch C instructions)"
+2025-06-12,DEBIT CARD H-E-B #412 AUSTIN TX,-157.97,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-06-13,SOUTHWEST AIR 118 AUS-DEN,-389.00,personal,n/a,June Denver flight $389.00; wedding trip; client confirmed cousin's wedding, not work-related (Q5) - gift Venmo $200.00 on 6/14 also confirmed personal; Pub 463 personal travel
+2025-06-14,VENMO: WEDDING GIFT KAT&JULES,-200.00,personal,n/a,Wedding gift - personal IRC 262(a)
+2025-06-16,IRS USATAXPYMT ES 2025 Q2,-2500.00,tax_payment,n/a,"2025 federal estimated tax (Q2) -> Form 1040 line 26; visible total $6,500.00 (Q4 2025 not in export)"
+2025-06-19,ACH CREDIT TESSARO STUDIOS,3100.00,business_income,1,"Direct ACH from Tessaro Studios; the four 2025 ACH credits total $9,400.00 = Tessaro 2025 1099-NEC; not part of PayHub 1099-K (no card/TPSO)"
+2025-07-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-07-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-07-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-07-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-07-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-07-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-07-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-07-08,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3650.00,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-07-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership 8 x $350.00 (May-Dec) = $2,800.00 -> line 20b"
+2025-07-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,n/a,"Self-employed health insurance premium 8 x $380.00 = $3,040.00 -> Schedule 1 line 17; NOT Schedule C line 15 (per 2025 Sch C instructions)"
+2025-07-12,DEBIT CARD H-E-B #412 AUSTIN TX,-178.90,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-08-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-08-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-08-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-08-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-08-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-08-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-08-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4420.90,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-08-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-08-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership 8 x $350.00 (May-Dec) = $2,800.00 -> line 20b"
+2025-08-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,n/a,"Self-employed health insurance premium 8 x $380.00 = $3,040.00 -> Schedule 1 line 17; NOT Schedule C line 15 (per 2025 Sch C instructions)"
+2025-08-12,DEBIT CARD H-E-B #412 AUSTIN TX,-154.21,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-09-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-09-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-09-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-09-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-09-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-09-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-09-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4172.35,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-09-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-09-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership 8 x $350.00 (May-Dec) = $2,800.00 -> line 20b"
+2025-09-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,n/a,"Self-employed health insurance premium 8 x $380.00 = $3,040.00 -> Schedule 1 line 17; NOT Schedule C line 15 (per 2025 Sch C instructions)"
+2025-09-12,DEBIT CARD H-E-B #412 AUSTIN TX,-195.36,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-09-14,APPLE.COM/BILL MACBOOK PRO 14,-2149.00,business_expense,27a,"MacBook Pro 14 $2,149.00; de minimis safe harbor election (<= $2,500/item) -> line 27a; business-use assumed 100%, unconfirmed (Q6: client offered no additional information); each 10% personal = $214.90"
+2025-09-15,IRS USATAXPYMT ES 2025 Q3,-2500.00,tax_payment,n/a,"2025 federal estimated tax (Q3) -> Form 1040 line 26; visible total $6,500.00 (Q4 2025 not in export)"
+2025-09-19,ACH CREDIT TESSARO STUDIOS,2150.00,business_income,1,"Direct ACH from Tessaro Studios; the four 2025 ACH credits total $9,400.00 = Tessaro 2025 1099-NEC; not part of PayHub 1099-K (no card/TPSO)"
+2025-10-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-10-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-10-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-10-02,SOUTHWEST AIR 526 AUS-SFO,-412.00,business_expense,24a,Oct airfare AUS-SFO for DesignWeek SF -> line 24a
+2025-10-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-10-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-10-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-10-06,HOTEL ZEPHYR SAN FRANCISCO,-618.00,business_expense,24a,Oct SF lodging -> line 24a
+2025-10-06,DESIGNWEEK SF CONFERENCE REG,-650.00,business_expense,27a,Conference registration -> line 27a (professional development)
+2025-10-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-10-07,SQ *MARINA DELI SAN FRANCISCO,-64.00,business_expense,24b,Meal during Oct SF business trip; deductible 50% = $32.00 on line 24b
+2025-10-08,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4511.60,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-10-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership 8 x $350.00 (May-Dec) = $2,800.00 -> line 20b"
+2025-10-08,TARTINE MANUFACTORY,-126.00,business_expense,24b,Meal during Oct SF business trip; deduct 50% = $63.00; Q5: no further information received, stands as drafted (DesignWeek registration $650.00 corroborates the SF business trip)
+2025-10-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,n/a,"Self-employed health insurance premium 8 x $380.00 = $3,040.00 -> Schedule 1 line 17; NOT Schedule C line 15 (per 2025 Sch C instructions)"
+2025-10-12,DEBIT CARD H-E-B #412 AUSTIN TX,-181.27,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-11-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-11-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-11-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-11-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-11-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-11-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-11-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4102.00,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-11-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-11-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership 8 x $350.00 (May-Dec) = $2,800.00 -> line 20b"
+2025-11-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,n/a,"Self-employed health insurance premium 8 x $380.00 = $3,040.00 -> Schedule 1 line 17; NOT Schedule C line 15 (per 2025 Sch C instructions)"
+2025-11-12,DEBIT CARD H-E-B #412 AUSTIN TX,-141.56,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"
+2025-11-19,ACH CREDIT TESSARO STUDIOS,1750.00,business_income,1,"Direct ACH from Tessaro Studios; the four 2025 ACH credits total $9,400.00 = Tessaro 2025 1099-NEC; not part of PayHub 1099-K (no card/TPSO)"
+2025-12-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"Mobile phone 12 x $85.00 = $1,020.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)"
+2025-12-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,n/a,"Rent paid to M. Okafor 12 x $1,650.00 = $19,800.00; personal. Home-office question pending (no exclusive business use documented)"
+2025-12-02,SPECTRUM INTERNET,-70.00,business_expense,25,Home internet 12 x $70.00 = $840.00 -> line 25; Q4 answered: client 60% business-use estimate applied; form shows 60% x $1,860.00 = $1,116.00 (CSV records gross by design)
+2025-12-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Figma software subscription; 12 x $45.00 = $540.00 -> line 27a
+2025-12-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Adobe Creative Cloud; 12 x $59.99 = $719.88 -> line 27a
+2025-12-05,NETFLIX.COM,-15.49,personal,n/a,Personal streaming - IRC 262(a); not deductible
+2025-12-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3973.00,business_income,1,"PayHub payout received net of 2.9% payout fees (fees deducted on Sch C line 10, $1,199.15 total; gross $41,350.00 per 1099-K reported once on line 1)"
+2025-12-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,n/a,Gym membership - IRC 262(a); not deductible
+2025-12-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership 8 x $350.00 (May-Dec) = $2,800.00 -> line 20b"
+2025-12-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,n/a,"Self-employed health insurance premium 8 x $380.00 = $3,040.00 -> Schedule 1 line 17; NOT Schedule C line 15 (per 2025 Sch C instructions)"
+2025-12-12,DEBIT CARD H-E-B #412 AUSTIN TX,-199.32,personal,n/a,"Groceries/debit-card purchases - personal IRC 262(a); 2025 total $2,102.95"

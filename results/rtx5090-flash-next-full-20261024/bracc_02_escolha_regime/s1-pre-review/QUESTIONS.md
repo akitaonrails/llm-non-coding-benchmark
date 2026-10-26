@@ -1,0 +1,19 @@
+# Perguntas ao cliente (Vértice Engenharia Consultiva Ltda.)
+
+Responda numerando P1–P7. As respostas refinam os números; o ranking Simples < Presumido < Real não depende delas.
+
+## Rodada 2 — respostas recebidas (encerrada)
+
+**Resposta do cliente:** "Uns 15% do faturamento é obra pequena com material; o resto é consultoria." Para as demais perguntas, o cliente **não tem informação adicional**.
+
+- **P5 — RESOLVIDA:** o rateio proporcional à receita (15% da folha → obras) está alinhado à composição informada (15% obras / 85% consultoria), que confere com o balancete (630k/4.200k = 15%). Mantido.
+- **P1, P2, P3, P4, P6, P7 — SEM INFORMAÇÃO:** permanecem como incógnitas, sinalizadas no §6 do memorando (U1, A5, R4, A2, R2, A3/U4). Nenhuma delas altera o ranking Simples < Presumido < Real.
+
+
+- **P1.** Vocês conseguem confirmar (ou enviar print do Simples Nacional/DAS mensal) a alíquota efetiva aplicada à parcela de **obras com materiais (Anexo IV)** nos últimos meses? A tabela do Anexo IV não está na biblioteca e usei estimativa sinalizada (~7,63% efetiva → DAS-IV ≈ R$ 48.060).
+- **P2.** Em que mês a RBT12 de 12 meses cruzou **R$ 3,6 mi** (sublimite)? Assumi que já em 2025, com excesso ≤ 20% → ISS fora do DAS desde jan/2026. Confirma?
+- **P3.** A receita 2026 pode estourar **R$ 4,8 mi** (carteiras/contratos novos, reajustes)? Se sim, a exclusão obrigatória e seus efeitos retroativos precisam de verificação em fonte oficial (regra do art. 26 não está na biblioteca).
+- **P4.** Qual a alíquota de **RAT** e o **FAP** da empresa? Usei o total típico de ~28% de encargos patronais fora do Simples.
+- **P5.** Existe rateio contábil da folha entre **obras** e **serviços de consultoria**? Usei proporcional à receita (15% da folha → obras), para a CPP do Anexo IV.
+- **P6.** As licenças **CAD/BIM (TopSoft, R$ 200 mil)** são contratos de assinatura/serviço ou aquisição definitiva, e são usadas diretamente na execução dos projetos (essencialidade)? Isso sustenta ou fragiliza o crédito no Real.
+- **P7.** A Prefeitura de SP cobra ISS sobre as **obras com materiais** (e sobre qual base — valor total ou materiais excluídos)? A regra não está na biblioteca; não apliquei ISS sobre os R$ 630 mil de obras.

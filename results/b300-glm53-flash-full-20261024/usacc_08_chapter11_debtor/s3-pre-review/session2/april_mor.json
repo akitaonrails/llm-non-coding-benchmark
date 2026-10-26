@@ -1,0 +1,24 @@
+{
+  "part1": {
+    "receipts": 1480300.00,
+    "disbursements": {
+      "payroll_paid_2026-04-10_and_2026-04-24_postpetition_periods": 796000.00,
+      "post_petition_vendor_payments_ordinary_course": 214600.00,
+      "total": 1010600.00
+    },
+    "ending_cash": null
+  },
+  "part2": {
+    "post_petition_payables": 212026.16,
+    "pre_petition_liabilities_subject_to_compromise": 74110.00
+  },
+  "part5": {
+    "professional_fees_approved": 0,
+    "paid": 0,
+    "holdback": 0
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "No — the April activity file records no payments on pre-petition claims. Mesa Steel's February invoice ($62,400.00) remains an unpaid pre-petition unsecured claim; April shipments under the post-petition trade agreement (Dkt. 83) are post-petition transactions payable in the ordinary course (11 U.S.C. §363(c)(1), §503(b)(1) — library: bc_362_363_503_549.md). Payrolls of 4/10 and 4/24 ($398,000.00 each) cover post-petition working periods; pre-petition wage accruals were addressed in the 3/13 payroll under the wage motion (Dkt. 9), reported in the March MOR. The $74,110.00 of documented pre-petition trade payables remains unpaid. (Reference: March MOR Part 7 discloses the March-period payments on pre-petition debt — Apex under Dkt. 48 and the Dkt. 9 wages.)",
+    "payments_outside_ordinary_course_without_approval": "No — April disbursements were post-petition payroll ($796,000.00) and post-petition vendor payments ($214,600.00), ordinary-course transactions needing no approval (§363(c)(1) — library: bc_362_363_503_549.md). No professional fee disbursements are recorded in April: Holland & Pierce's $116,200.00 became payable after the 4/29 no-objection date under the interim compensation procedures (Dkt. 77, entered 4/14) — a payment under court-ordered procedures, not outside approval (library: bc_330_331.md); whether it was disbursed in late April is unconfirmed (QUESTIONS.md Q8). Corbin's $45,000.00 statement is not payable in whole or part until it segregates pre-retention services (3/10–3/19; retained effective 3/20), per Dkt. 77's bar on payment for any period before the retention date."
+  }
+}

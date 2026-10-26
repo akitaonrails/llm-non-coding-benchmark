@@ -1,0 +1,18 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 247.51384421100374,
+  "controller_wait_seconds": 19.001705682021566,
+  "model_turn_seconds": 228.50760244496632,
+  "turns": 3,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 273176,
+    "cached_input_tokens": 237184,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 11282,
+    "reasoning_output_tokens": 3319
+  },
+  "api_equivalent_usd": 0.2322408
+}

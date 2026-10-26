@@ -1,0 +1,6 @@
+# Minutes and notices (produced by the Manager on request)
+- **2022-08-15 — Manager's resolution:** engages "Castellan Asset Services LLC" (wholly owned by Bram) as property manager at 6% of gross rents + "asset management fee" $180,000/yr escalating 8%/yr. **No written disclosure to Members found** in the file; Imani says she learned of it in 2026.
+- **Capital call notice dated 2026-08-20:** "$1,500,000 additional capital for working capital and opportunities. Due 2026-09-20. Members funding pro rata. Non-funding Members diluted." **Sent by text message** to Imani's mobile with a PDF; no certified mail; email bounced (old address on file). Imani's pro rata share: $270,000. She did not fund. Bram funded $1,230,000 **and** Imani's share.
+- **2026-09-25 — Manager's notice of Dilution Event:** Imani's interest recomputed to **6.1%** based on a "fair value" of $7.2M "determined by the Manager".
+- **2026-10-01 — Offer letter:** Company offers to buy Imani's interest at Book Value: 6.1% × $3.1M members' equity = **$189,100**. Open for 30 days.
+- Independent broker opinion of value (obtained by Imani, 2026-10-05): enterprise value $14.5M; equity value ≈ $9.8M → 18% = **$1,764,000**; 6.1% = **$597,800**.

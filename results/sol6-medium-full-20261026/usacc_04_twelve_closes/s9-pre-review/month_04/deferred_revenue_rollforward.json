@@ -1,0 +1,40 @@
+{
+  "contracts": {
+    "Trestle Freight LLC \u2014 Jun 2024\u2013May 2025": {
+      "opening": 16400,
+      "billed": 0,
+      "recognized": 8200,
+      "closing": 8200
+    },
+    "Trestle Freight LLC \u2014 Jan\u2013Dec 2025": {
+      "opening": 18000,
+      "billed": 0,
+      "recognized": 2000,
+      "closing": 16000
+    },
+    "Pinecone Dental Group \u2014 term unconfirmed": {
+      "opening": 36000,
+      "billed": 0,
+      "recognized": 0,
+      "closing": 36000
+    },
+    "Marigold Schools Inc \u2014 Mar 2025\u2013Feb 2026": {
+      "opening": 16500,
+      "billed": 0,
+      "recognized": 1500,
+      "closing": 15000
+    }
+  },
+  "unallocated_opening_deferred_revenue": {
+    "opening": 24000,
+    "billed": 0,
+    "recognized": 0,
+    "closing": 24000
+  },
+  "total": {
+    "opening": 110900,
+    "billed": 0,
+    "recognized": 11700,
+    "closing": 99200
+  }
+}

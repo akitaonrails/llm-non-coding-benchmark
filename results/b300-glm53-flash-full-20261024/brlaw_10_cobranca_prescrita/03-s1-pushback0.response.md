@@ -1,0 +1,10 @@
+Both pushbacks answered in the record (`memorando.md` §10, mirrored in `analise.json`; `STATUS.md` updated). The short version for Sérgio:
+
+**"Pagamento interrompe a prescrição"** — right rule, wrong application:
+1. What interrupts is an **unequivocal act of recognition by the debtor** (CC 202 VI). A payment recognizes *what was paid* — the PIX was "por conta da parcela 1", nothing beyond it.
+2. Interruption can occur **only once** (CC 202 caput) — and that single slot was already spent by the 15/09/2022 recognition email, which is precisely why parcels 1–4 are alive until **15/09/2027**. The library states it flatly: partial payment is a new recognition but **does not interrupt again**. Net effect: the 2023 PIX changed no deadline at all.
+3. For parcels 5–6 it's triply irrelevant: it didn't pay them; even if it had, no new interruption; and their clock never needed any later act — it ran from vencimento (10/02/2021 / 10/03/2021) and lapsed on **10/02/2026 and 10/03/2026**.
+
+**"Tenho relatório assinado das 5 e 6"** — a signed report proves the **service** (merits); it does not revive an **extinguished claim**. The pretensão died on those dates regardless of evidence quality. What would have saved parcels 5–6 was an interruptive act *before* those dates — a debtor's unequivocal recognition or judicial citation. Instead, that very email of 15/09/2022 **expressly contested** them ("não reconhecemos") — contestation is the opposite of the recognition that stops the clock.
+
+Also anchored in §10: don't sneak 5–6 into the monitória "to see what happens" — the CC 206 §5º I defense is objective, near-certain to win for the debtor, and would hand their lawyer ammunition against the client's own Serasa entry. The strategy stands: monitória for R$ 110.000 + encargos (~R$ 194.190 without IPCA), citation before 15/09/2027, Serasa corrected to R$ 110.000, no protest — agreement on the principal as the parallel path.

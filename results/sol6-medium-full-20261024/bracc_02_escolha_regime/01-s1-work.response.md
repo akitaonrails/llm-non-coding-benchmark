@@ -1,0 +1,5 @@
+I’ll read the contract and workspace files, then complete the deliverables using the information provided. I’ll put any client questions in `deliverable/QUESTIONS.md` if a required fact is missing.
+
+The files show that the R$ 630,000 in works must be treated separately from consulting services under Simples, but the reference library has no Anexo IV rate table. The payroll total also combines wages with charges, so it cannot support an exact employer contribution calculation. I’ll document those missing inputs for the client.
+
+Registrei as informações necessárias em [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). A biblioteca exige separar as obras da consultoria no Simples, mas não contém a tabela do Anexo IV; também falta a base da folha para calcular a contribuição patronal. Aguardo a resposta do cliente para fechar o comparativo e a recomendação.

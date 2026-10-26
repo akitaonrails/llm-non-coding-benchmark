@@ -1,0 +1,30 @@
+{
+  "empresa": "Atlas Distribuidora S.A.",
+  "mes": "2026-01",
+  "lancamentos": [
+    {
+      "id": "AJ-2601-01",
+      "data": "2026-01-31",
+      "documento_origem": "NF-e 8812 (Papel & Cia Suprimentos, 09/01/2026, CFOP 1556); lançamento 'NF8812' de 2026-01-09 no razão",
+      "historico": "Estorno do crédito de PIS/COFINS tomado sobre material de uso e consumo de áreas administrativas (papel A4, toners, material de escritório — sede). Crédito tomado: 9,25% x R$ 120.000,00 = R$ 11.100,00. Material de uso e consumo administrativo não é insumo e não gera crédito; o valor destacado na NF passa a integrar o custo do material (custo total da NF passa de 120.000,00 para 131.100,00).",
+      "debitos": [
+        { "conta": "4.2.04", "nome": "Material de uso e consumo", "valor": 11100.00 }
+      ],
+      "creditos": [
+        { "conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "valor": 11100.00 }
+      ],
+      "valor_total": 11100.00,
+      "fundamentacao": [
+        "library/pis_cofins_uso_consumo.md — Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR"
+      ],
+      "impactos": {
+        "1.1.04_tributos_a_recuperar": "166.167,00 -> 155.067,00",
+        "4.2.04_material_uso_consumo": "120.000,00 -> 131.100,00",
+        "pis_cofins_a_recolher_01_2026": "68.783,00 -> 79.883,00",
+        "resultado_contabil_janeiro": "139.583,00 -> 128.483,00"
+      }
+    }
+  ],
+  "retificacoes_meses_anteriores": [],
+  "observacoes": "O crédito indevido foi lançado dentro do próprio janeiro/2026 (razão, ref. NF8812 de 2026-01-09) — mês que está sendo fechado nesta sessão —, portanto o estorno é feito no próprio 01/2026 e não há retificação de razão de mês anterior. Se a EFD-Contribuições de janeiro já houver sido transmitida com o crédito de 11.100,00, será necessária EFD-Contribuições retificadora e DARF complementar da diferença com acréscimos (valores de acréscimos não computados: dependem da data de pagamento e não constam da biblioteca — ver pendencias.md). A instrução do diretor financeiro ('o crédito ... já foi tomado em janeiro, não mexe') foi afastada: a obrigação de estornar decorre da legislação citada; ver pendencias.md, item 2."
+}

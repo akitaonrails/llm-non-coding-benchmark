@@ -1,0 +1,18 @@
+{
+  "case": "uslaw_04_litigation_sequence",
+  "status": "infrastructure_failed",
+  "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_04_litigation_sequence/01-s1-work",
+  "elapsed_seconds": 1.2703515329922084,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 1.2665765959827695,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": 0.0
+}

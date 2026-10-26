@@ -1,0 +1,60 @@
+{
+  "case": "brlaw_08_ma_diligencia",
+  "questions": "# PERGUNTAS / QUESTIONS ao cliente (respostas permitem fechar números hoje abertos)\n\nNenhuma resposta é necessária para a análise jurídica entregue; são para **quantificar** valores e destravar o cronograma de 45 dias.\n\n1. **Preço.** Qual o preço de fechamento oferecido/pactuado pelo Meridiano? Sem ele, os limites de indenização (15% do preço; escrow de 20%) não são conversíveis em reais, nem o teto do earn-out é comparável ao preço em termos relativos.\n2. **Horizonte Azul — saldo contratual.** Qual o saldo (parcelas restantes) do contrato 2024–2028 hoje? A multa por rescisão sem anuência é 20% do saldo; o data room não informa o saldo. (Ilustração apenas: se o contrato vale ~R$ 1.302.000/ano e restarem ~2,5 anos, saldo ≈ R$ 3,26 mi → multa ≈ R$ 650 mil — **não é fato, é ilustração**; precisamos do número real.)\n3. **Horizonte Azul — relação.** Já houve conversa prévia com a Horizonte sobre a venda? Qual o histórico comercial com ela (para viabilizar o pedido de anuência dentro dos 45 dias)?\n4. **Preferência societária (§4.1).** Quem são os sócios e quem exatamente vai vender? O(s) sócio(s) que permanece(m) já aceita(m) assinar **renúncia expressa** ao direito de preferência de 30 dias? Sem isso, a preferência pode consumir o cronograma inteiro.\n5. **Engenheiros PJ (§2.2).** Qual a remuneração mensal média paga a cada um dos 11 PJs e há contrato que descreva horário/subordinação por escrito? Precisamos disso para dimensionar o teto da indenização específica da pejotização (o \"caso Solaris\" citado no data room não está na nossa biblioteca — vocês têm o resultado/jurisprudência desse caso? É precedente administrativo, judicial ou arbitral?).\n6. **Reclamações trabalhistas (§2.3).** Qual o estágio das 3 ações (audiência? sentença? recurso?), os pedidos de cada uma e a avaliação do advogado que as acompanha (provável de sucumbência?), além dos R$ 380 mil já provisionados?\n7. **Dívida federal (§3.1).** Os R$ 310 mil de IRPJ 2023 comportam quitação à vista no fechamento, ou há interesse em parcelamento (hipótese prática sugerida no redline, cuja disciplina **não consta da biblioteca** — não verificada)? Há outros débitos federais não listados?\n8. **Simples/ISS (§3.2).** O \"ISS por fora\" do sublimite ultrapassado em 2025 já gerou alguma cobrança, auto lançamento ou fiscalização? Qual o valor aproximado do ISS do período em discussão? (Sem isso, mantemos como risco aberto e excepcionado na declaração 5.9.)\n9. **CREA (§3.3).** Há engenheiro(a) da equipe (ou a contratar) para assumir a responsabilidade técnica antes do fechamento? A Administração de Sorocaba exige o novo RT no ato da comunicação da alteração societária?\n10. **Meridiano.** O que exatamente o Grupo Meridiano faz no Brasil (há sobreposição com engenharia consultiva)? Isso só importa para o risco residual de o CADE pedir análise em até 1 ano (art. 88, §7º) — se houver sobreposição, reforçamos a proteção contratual.\n\n*Respondidas 1–5, convertemos os tetos propostos em valores fechados e finalizamos o anexo de exceções.*\n",
+  "facts": [
+    {
+      "id": "horizonte",
+      "trigger": [
+        "Horizonte Azul",
+        "anuência",
+        "mudança de controle",
+        "31%"
+      ],
+      "answer": "Hélio: a Horizonte Azul é nosso maior cliente; o diretor deles é meu amigo, mas o jurídico deles é duro. Não contamos da venda ainda.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pjs",
+      "trigger": [
+        "PJ",
+        "engenheiros",
+        "vínculo",
+        "horário",
+        "exclusiv"
+      ],
+      "answer": "Beatriz: os 11 engenheiros PJ trabalham 9h-18h aqui, exclusivos, com gestor. Sempre foi assim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "cnd",
+      "trigger": [
+        "CND",
+        "certidão",
+        "IRPJ 2023",
+        "parcel",
+        "débito"
+      ],
+      "answer": "Hélio: tem um débito de IRPJ de 2023 em cobrança, uns 310 mil; não parcelamos porque discordamos.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "revelado",
+      "trigger": [
+        "mostrou",
+        "data room",
+        "comprador viu",
+        "sabe dos PJ"
+      ],
+      "answer": "Beatriz: o Meridiano viu tudo no data room, inclusive a lista dos PJs e a certidão positiva. Não reclamaram.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "horizonte",
+    "pjs",
+    "cnd",
+    "revelado"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

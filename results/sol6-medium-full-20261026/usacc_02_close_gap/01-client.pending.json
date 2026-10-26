@@ -1,0 +1,72 @@
+{
+  "case": "usacc_02_close_gap",
+  "questions": "# March close — information needed from Ray\n\nPlease answer these questions and provide any supporting records available. I will leave the affected classifications or subledger differences open until supported.\n\n1. The March 14 bank credit of **$1,500** says “ONLINE TRANSFER FROM CHK *4420.” Who owns account *4420, and what was the purpose of the transfer? Please provide the transfer detail or the sending-account statement. The bookkeeper credited sales; I need to determine whether it belongs in owner's contributions, another account, or revenue.\n2. Who paid the **$4,312 mobile deposit dated March 21**, and what was it for? Please provide the deposit image or remittance detail and any related invoice number. I can record it temporarily as an unidentified receipt under the close policy, but need this to clear suspense.\n3. Was the **$212 Uchi charge on March 15** business or personal? If business, identify the guests and business purpose; if personal, confirm it should be owner's draws.\n4. The March ledger produces **$115,288 A/R** before adjustments, while the March 31 aging totals **$56,100**, a **$59,188 difference**. Please provide the February 28 A/R aging or customer-level A/R detail, and a March 31 customer ledger showing invoices, payments, credits, and write-offs. Were any March receipts or credit memos omitted from the supplied GL or aging?\n5. The March 31 aging says Hardaway Builders disputes **$9,800** and that you would “eat half.” Has a **$4,900 credit** been approved or issued, and on what date? Please provide the credit memo or written approval if so.\n6. Please provide the March 31 A/P open-bills listing, or confirm that Cascade invoice **CH-7731** was already included in the February 28 A/P balance. The supplied ledger has a February 26 posting and another posting March 9 for the same $4,860 invoice.\n",
+  "facts": [
+    {
+      "id": "xfer_1500",
+      "trigger": [
+        "1,500",
+        "1500",
+        "transfer from *4420",
+        "4420",
+        "online transfer"
+      ],
+      "answer": "That's from my personal checking, I moved money over to cover payroll. It's my money, not a sale.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "mobile_4312",
+      "trigger": [
+        "4,312",
+        "4312",
+        "mobile deposit",
+        "March 21",
+        "3/21"
+      ],
+      "answer": "Huh. I don't remember depositing anything that day. Maybe Carla (office) did? Let me ask her... (later) she doesn't know either. Can you just park it somewhere for now?",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "cascade_dup",
+      "trigger": [
+        "Cascade",
+        "CH-7731",
+        "duplicate",
+        "twice",
+        "same invoice"
+      ],
+      "answer": "Cascade emails invoices and then mails a paper copy a couple of weeks later. Same invoice. We paid it once.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uchi",
+      "trigger": [
+        "Uchi",
+        "dinner",
+        "212"
+      ],
+      "answer": "Uchi was my anniversary dinner, I grabbed the wrong card. Put it on me.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "hardaway",
+      "trigger": [
+        "Hardaway",
+        "9,800",
+        "dispute",
+        "warped"
+      ],
+      "answer": "Still arguing with them. Don't write it off yet.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "xfer_1500",
+    "mobile_4312",
+    "cascade_dup",
+    "uchi",
+    "hardaway"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

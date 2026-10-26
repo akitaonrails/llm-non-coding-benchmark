@@ -1,0 +1,30 @@
+[
+  {
+    "label": "s1-work",
+    "seconds": 2.5692749859881587,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 4549,
+      "cached_input_tokens": 4462,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 26,
+      "reasoning_output_tokens": 0
+    },
+    "thread_id": "ses_e8b4b4b0effeBvVLSImgaRCQxk"
+  },
+  {
+    "label": "review",
+    "seconds": 632.9119859799976,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 546204,
+      "cached_input_tokens": 537873,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 29514,
+      "reasoning_output_tokens": 0
+    },
+    "thread_id": "ses_e8b4b4b0effeBvVLSImgaRCQxk"
+  }
+]

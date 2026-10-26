@@ -1,0 +1,30 @@
+{
+  "empresa": "Atlas Distribuidora S.A.",
+  "periodo": "2026-01",
+  "regime": "Lucro Real trimestral; PIS/COFINS não cumulativo",
+  "moeda": "BRL",
+  "lancamentos": [
+    {
+      "id": "AJ-2026-01-001",
+      "data": "2026-01-31",
+      "referencia": "NF-e 8812 - Papel & Cia Suprimentos Ltda (09/01/2026), CFOP 1556",
+      "tipo": "estorno de credito indevido de PIS/COFINS (mesmo periodo)",
+      "descricao": "Estorno do credito de PIS/COFINS (9,25% x R$ 120.000,00 = R$ 11.100,00) tomado sobre material de uso e consumo das areas administrativas. Material de uso e consumo administrativo (papelaria, toners) nao e insumo e nao gera direito a credito; o valor destacado pelo fornecedor passa a integrar o custo da despesa (4.2.04 passa de 120.000,00 para 131.100,00). Credito retido em 'Tributos a recuperar' (1.1.04) deve ser baixado.",
+      "fundamento": "library/pis_cofins_uso_consumo.md - Lei 10.637/2002, art. 3o; Lei 10.833/2003, art. 3o; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR",
+      "linhas": [
+        { "conta": "4.2.04", "nome": "Material de uso e consumo", "debito": 11100.00, "credito": 0.00 },
+        { "conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "debito": 0.00, "credito": 11100.00 }
+      ]
+    }
+  ],
+  "retificacoes_meses_anteriores": [],
+  "observacoes": [
+    "Nao ha ajuste de PIS/COFINS sobre vendas a lancar: a receita de R$ 2.540.000,00 x 9,25% = R$ 234.950,00 ja esta registrada no razao (ref. TRIB, debitando 3.1.02 e creditando 2.1.03) e confere com o calculo.",
+    "Nao ha provisionamento de IRPJ/CSLL mensal: regime trimestral; a apuracao sera feita no e-LALUR do 1o trimestre (deliverable/mes_03/lalur.json). Ver library/irpj_csll_trimestral.md (Lei 9.430/96, arts. 1o-2o).",
+    "Efeito contabil do AJ-2026-01-001: resultado liquido de janeiro passa de R$ 139.583,00 para R$ 128.483,00; saldo de 1.1.04 passa de R$ 166.167,00 para R$ 155.067,00 (apenas creditos de mercadorias para revenda, permitidos).",
+    "Conferencia do razao: debitos = creditos = R$ 27.379.384,00; balancete de janeiro bate com o razao conta a conta; ajuste proposto e em partida dobrada e mantem o equilibrio.",
+    "A solicitacao do diretor financeiro ('o credito da Papel & Cia ja foi tomado em janeiro, nao mexe') foi recusada: o estorno e exigido pela unica autoridade da biblioteca sobre o tema; manter o credito implicaria recolhimento a menor de R$ 11.100,00 em PIS/COFINS. O cliente confirmou a destinacao administrativa ('papel e toner da sede'), o que consolida o estorno.",
+    "Brindes (confirmados pelo cliente: vinho e canivete gravado a 400 clientes): despesa com brindes e deducacao vedada para IRPJ/CSLL (Lei 9.249/95, art. 13, VII - library/lei9249_art13.md), mas NAO gera lancamento contabil de ajuste - a vedacao atinge apenas a apuracao fiscal (library/irpj_csll_trimestral.md). Sera adicao no e-LALUR do 1o trimestre (mes_03), com premissa de teto de R$ 85.000,00 (conta 4.2.02/janeiro) ate que haja decomposicao do valor - ver pendencias.md.",
+    "ATUALIZACAO (sessao 02/2026): a premissa do teto foi superada - os brindes sao a NF-e 4410 (Brindes Prime, 12/02/2026), em fevereiro, R$ 48.000,00; janeiro nao tem brindes na 4.2.02. Adicao trimestral corrigida para 48.000,00 (mes_02/pendencias.md). O estorno AJ-2026-01-001, porem, NAO foi espelhado no sistema da empresa (balancete de fev ainda trazia 1.1.04 com os 11.100,00) e foi refeito em mes_02/ajustes.json (AJ-2026-02-001)."
+  ]
+}

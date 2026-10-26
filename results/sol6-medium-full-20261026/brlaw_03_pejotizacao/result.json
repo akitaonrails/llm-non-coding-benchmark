@@ -1,0 +1,18 @@
+{
+  "case": "brlaw_03_pejotizacao",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 340.70275029801996,
+  "controller_wait_seconds": 31.003344731987454,
+  "model_turn_seconds": 309.6933638250339,
+  "turns": 4,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 423692,
+    "cached_input_tokens": 394880,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 14781,
+    "reasoning_output_tokens": 5595
+  },
+  "api_equivalent_usd": 0.28441
+}

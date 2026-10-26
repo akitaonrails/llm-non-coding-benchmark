@@ -1,0 +1,56 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "questions": "# Client information needed\n\n1. What confidential information or customer goodwill did Zhao actually receive or develop at Meridian, and what evidence shows access (for example, projects, repositories, customer relationships, and dates)? Was any information taken, disclosed, or used after departure? Please distinguish evidence from concern based only on Zhao's new job.\n2. What is Zhao's position and expected work at Kestrel, including products, customers, territory, and duties? How do they overlap with Zhao's Meridian work?\n3. As of February 14, 2024, how many California employees and former employees employed after January 1, 2022 had a non-compete that did not satisfy a statutory exception? Were any individualized voidness notices later sent to that group, and if so, when and by what delivery methods?\n4. Did Zhao acquire any ownership interest in Meridian or sell any business interest connected with this agreement? If so, provide the documents and dates.\n",
+  "facts": [
+    {
+      "id": "austin_trips",
+      "trigger": [
+        "Texas",
+        "Austin",
+        "ever in Texas",
+        "physically"
+      ],
+      "answer": "Twice: onboarding week March 2024, and an offsite October 2025. Otherwise Oakland.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "counsel",
+      "trigger": [
+        "counsel",
+        "lawyer",
+        "negotiat",
+        "represented"
+      ],
+      "answer": "No. It's our standard form; engineers sign the same day. Nobody negotiates.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "notice_1076",
+      "trigger": [
+        "AB 1076",
+        "notice",
+        "February 14",
+        "16600.1"
+      ],
+      "answer": "Legal ops never sent the notices. The ticket was closed as 'won't do'. Please don't put that in writing if you can avoid it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trade_secrets",
+      "trigger": [
+        "trade secret",
+        "confidential",
+        "took",
+        "misappropriat"
+      ],
+      "answer": "No evidence he took anything. He said he wouldn't. It's the competing itself we object to.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "notice_1076",
+    "trade_secrets"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

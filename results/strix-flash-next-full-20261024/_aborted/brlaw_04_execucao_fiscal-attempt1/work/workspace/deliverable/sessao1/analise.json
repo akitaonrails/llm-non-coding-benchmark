@@ -1,0 +1,40 @@
+{
+  "periodos": [
+    {
+      "periodo": "3T/2020",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 268000
+    },
+    {
+      "periodo": "4T/2020",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 241000
+    },
+    {
+      "periodo": "1T/2021",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2026-03-31",
+      "decaido": false,
+      "valor": 302000
+    },
+    {
+      "periodo": "2T/2021",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2026-12-31",
+      "decaido": false,
+      "valor": 289000
+    }
+  ],
+  "valor_decaido": 509000,
+  "valor_remanescente": 591000,
+  "vicios_formais": [
+    "Campo 'fundamento da multa' da CDA em branco: a multa de ofício de 75% aparece apenas com o percentual, sem o dispositivo legal específico que a fundamenta, em violação ao art. 2º, §5º, III, da LEF (origem, natureza e fundamento legal da dívida). O campo geral de 'fundamentação legal' cita genericamente a Lei 9.430/96 (arts. 1º, 2º e 44), sem indicar inciso (art. 44, I — 75% — ou §1º — 150%), impedindo o controle da legalidade da penalidade. Vício sanável por emenda/substituição até a sentença (LEF art. 2º §8º; Súmula 392/STJ), mas que autoriza o pedido de nulidade e a exigência de regularização sem efeitos retroativos.",
+    "A CDA não evidencia a baixa/compensação dos DARFs já pagos nos períodos declarados a menor (R$ 61.000 em 29/01/2021 — 4T/2020; R$ 84.000 em 30/04/2021 — 1T/2021); impossível verificar de plano se o principal exequendo (R$ 125.320 e R$ 157.040) é líquido da retenção ou se houve cobrança em duplicidade — verificar no processo administrativo (pergunta ao cliente)."
+  ],
+  "veiculo": "exceção de pré-executividade",
+  "por_que": "A decadência (CTN arts. 150 §4º e 173 I; Súmula 555/STJ; Tema 163/STJ) é matéria de ordem pública, conhecida de ofício, e demonstrável com prova pré-constituída (datas da própria CDA: períodos 3T/2020–2T/2021, auto de infração em 03/02/2026, inscrição em 10/07/2026; PAF: pagamento parcial ou ausência dele em cada trimestre). Não há dilação probatória necessária: para 3T/2020 e 4T/2020 o quinquênio se exaure até 31/12/2025 sob QUALQUER das regras aplicáveis (150 §4º ou 173 I), e o lançamento de 03/02/2026 é posterior — a controvérsia é exclusivamente de direito (Súmula 393/STJ). A exceção prescinde de garantia do juízo (a exigência do art. 16 §1º da LEF alcança só os embargos) e ataca de imediato R$ 509.000,00 dos R$ 1.100.000,00. O vício formal da CDA (campo 'fundamento da multa' em branco) também é aparente do próprio texto e cognoscível de ofício. Embargos ficam reservados para eventuais matérias que exijam dilação probatória (p. ex. duplicidade de cobrança dos DARFs), cujo prazo só corre da garantia (LEF art. 16), e poderão ser opostos depois, inclusive sobre nova CDA emendada (§8º), quando o débito remanescente (R$ 591.000,00) já estiver reduzido e atualizado."
+}

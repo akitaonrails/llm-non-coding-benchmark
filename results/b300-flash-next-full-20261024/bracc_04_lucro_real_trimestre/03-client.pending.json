@@ -1,0 +1,46 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "questions": "# Perguntas ao cliente — atualizado após o fechamento de 02/2026\n\nPerguntas já respondidas não se repetem. Incógnitas sem resposta possível seguem flagradas como premissas (`mes_01/pendencias.md` item 4 e `mes_02/pendencias.md` item 6).\n\n## Pergunta nova (única, e é material)\n1. **As \"despesas comerciais ordinárias\" de R$ 85.000,00 pagas em dinheiro em 20/01 e repetidas em 20/02 — o que são, exatamente?** Em janeiro o senhor(a) as descreveu como \"vinho e canivete gravado pros 400 melhores clientes\"; mas a NF-e 4410 (12/02, BRINDES PRIME) já documenta essa compra — 400 kits de vinho + canivete por R$ 48.000 — e a auditoria interna de fevereiro diz que brindes no mês foram só os 48 mil. Preciso saber: (a) os R$ 85.000 de janeiro são a mesma campanha da NF 4410 ou outra coisa? Se forem brindes, qual a documentação/memória de cálculo? (b) os R$ 85.000 de fevereiro (e de meses futuros, se recorrente) são o quê — marketing regular, comissões, outra coisa? Cada mês em que a resposta for \"brindes\" adiciona R$ 85.000 à base do lucro real/CSLL; se a resposta desfizer a premissa de janeiro, a adição de lá cai.\n\n## Necessidade de documentos (sessão seguinte)\n2. **Documentos de março/2026** para fechar mes_02→mes_03 e a apuração trimestral: razão e balancete de março, NFs de brindes/uso e consumo/doações do mês e extratos/bloqueios de recolhimentos de PIS/COFINS/ICMS (os livros não mostram nenhum pagamento lançado até fevereiro).\n\n## Incógnitas que seguem como premissas declaradas (sem repetição)\n- Compra de 15/02 = mercadoria para revenda (crédito de R$ 157.509,00 mantido).\n- Data/valor do pagamento do PIS/COFINS de 01/2026 desconhecidos → acréscimos sobre os R$ 11.100,00 do estorno não quantificados (sistemática também não está na biblioteca citável).\n- Saldos de abertura (R$ 900.000 prejuízo fiscal / R$ 900.000 base negativa): assumidos compensáveis, sempre sob a trava de 30%.\n",
+  "facts": [
+    {
+      "id": "luz",
+      "trigger": [
+        "Luz",
+        "OSCIP",
+        "utilidade pública",
+        "qualificação",
+        "doação"
+      ],
+      "answer": "A Associação Luz é uma ONG do bairro, não tem título nenhum. O presidente conhece o dono.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "brindes",
+      "trigger": [
+        "brindes",
+        "kits",
+        "4410",
+        "campanha"
+      ],
+      "answer": "Vinho e canivete gravado pros 400 melhores clientes. Marketing, ora.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "papel",
+      "trigger": [
+        "8812",
+        "Papel",
+        "uso e consumo",
+        "crédito"
+      ],
+      "answer": "É papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "brindes",
+    "papel"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

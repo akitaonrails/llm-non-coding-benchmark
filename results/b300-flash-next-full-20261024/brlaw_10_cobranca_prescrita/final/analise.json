@@ -1,0 +1,90 @@
+{
+  "via_processual": "monitoria",
+  "por_que": "O contrato foi assinado apenas pelos representantes das partes, SEM 2 testemunhas (documents/contrato_prestacao_servicos.md) — FATO CONFIRMADO PELO CLIENTE em 12/10/2026 ('assinado só pelos dois representantes, sem testemunhas', sem menção a certificação digital; resposta à Q4), portanto não é título executivo extrajudicial: CPC art. 784 III exige documento particular assinado pelo devedor e por 2 testemunhas, e o REsp 1.438.263 assenta que contrato particular sem duas testemunhas não é título executivo; o boleto também não é título executivo (library/cpc_titulo_executivo_monitoria.md). A exceção de assinatura eletrônica digital (Tema 1.247/STJ) não é aplicável ao caso, conforme a própria biblioteca. Logo a 'execução' pedida pelo cliente é inviável de plano (inépcia/extinção sem resolução). A via correta é a AÇÃO MONITÓRIA (CPC art. 700), pois há prova escrita sem eficácia de título executivo — contrato assinado pelas partes, relatórios de serviço assinados pelo encarregado da devedora (documents/boletos_e_comprovantes.csv) e reconhecimento escrita da dívida (documents/emails_reconhecimento.txt) —, com o bônus de a confissão documental das parcelas 1 a 4 reduzir o risco de embargos. Alternativa subsidiária: ação de cobrança pelo procedimento comum (mesma fonte). O prazo para a monitória é o quinquenal da pretensão subjacente (por analogia com a Súmula 503/STJ; cf. Súmula 299/STJ), de modo que a prescrição apurada abaixo vale igualmente para a monitória.",
+  "prescricao": [
+    {
+      "parcela": 1,
+      "vencimento": "2020-10-10",
+      "termo_quinquenal_original": "2025-10-10",
+      "interrompida_em": "2022-09-15",
+      "fundamento_interrupcao": "e-mail do financeiro da devedora reconhecendo as parcelas 1 a 4 — ato inequívoco extrajudicial de reconhecimento do direito pelo devedor, CC art. 202 VI (anterior ao termo original); interrupção reconhecida apenas quanto às parcelas reconhecidas (library/cc_prescricao_202_206.md)",
+      "novo_termo": "2027-09-15",
+      "efeito_pagamento_2023_08_02": "novo reconhecimento, mas NÃO interrompe pela segunda vez (CC art. 202, caput: 'somente poderá ocorrer uma vez'); serve apenas para abater R$ 10.000,00",
+      "prescrita": false
+    },
+    {
+      "parcela": 2,
+      "vencimento": "2020-11-10",
+      "termo_quinquenal_original": "2025-11-10",
+      "interrompida_em": "2022-09-15",
+      "fundamento_interrupcao": "reconhecimento das parcelas 1 a 4 no e-mail de 15/09/2022 — CC art. 202 VI",
+      "novo_termo": "2027-09-15",
+      "efeito_pagamento_2023_08_02": "sem efeito interruptivo (interrupção já consumida)",
+      "prescrita": false
+    },
+    {
+      "parcela": 3,
+      "vencimento": "2020-12-10",
+      "termo_quinquenal_original": "2025-12-10",
+      "interrompida_em": "2022-09-15",
+      "fundamento_interrupcao": "reconhecimento das parcelas 1 a 4 no e-mail de 15/09/2022 — CC art. 202 VI",
+      "novo_termo": "2027-09-15",
+      "efeito_pagamento_2023_08_02": "sem efeito interruptivo (interrupção já consumida)",
+      "prescrita": false
+    },
+    {
+      "parcela": 4,
+      "vencimento": "2021-01-10",
+      "termo_quinquenal_original": "2026-01-10",
+      "interrompida_em": "2022-09-15",
+      "fundamento_interrupcao": "reconhecimento das parcelas 1 a 4 no e-mail de 15/09/2022 — CC art. 202 VI",
+      "novo_termo": "2027-09-15",
+      "efeito_pagamento_2023_08_02": "sem efeito interruptivo (interrupção já consumida)",
+      "prescrita": false
+    },
+    {
+      "parcela": 5,
+      "vencimento": "2021-02-10",
+      "termo_quinquenal_original": "2026-02-10",
+      "interrompida_em": null,
+      "fundamento_interrupcao": "inexistente: as parcelas 5 e 6 foram EXPRESSAMENTE CONTESTADAS no e-mail de 15/09/2022 (greve/serviço não concluído), logo não houve ato inequívoco de reconhecimento quanto a elas; o PIX de 02/08/2023 foi pago 'por conta da parcela 1', sem alcance de reconhecimento das parcelas 5 e 6",
+      "novo_termo": null,
+      "efeito_pagamento_2023_08_02": "nenhum quanto à parcela 5 (não reconhecida)",
+      "prescrita": true,
+      "prescrita_em_dias_ate_hoje": 244
+    },
+    {
+      "parcela": 6,
+      "vencimento": "2021-03-10",
+      "termo_quinquenal_original": "2026-03-10",
+      "interrompida_em": null,
+      "fundamento_interrupcao": "inexistente: contestadas no e-mail de 15/09/2022; pretensão nasceu com o vencimento (CC art. 189) e correu in albis por 5 anos (CC art. 206 §5º I)",
+      "novo_termo": null,
+      "efeito_pagamento_2023_08_02": "nenhum quanto à parcela 6 (não reconhecida)",
+      "prescrita": true,
+      "prescrita_em_dias_ate_hoje": 216
+    }
+  ],
+  "valor_principal_exigivel": 110000,
+  "detalhe_principal_exigivel": "4 parcelas reconhecidas (1 a 4) x R$ 30.000,00 = R$ 120.000,00, menos PIX de R$ 10.000,00 pago em 02/08/2023 e declarado 'por conta da parcela 1' = R$ 110.000,00",
+  "valor_prescrito": 60000,
+  "detalhe_valor_prescrito": "parcelas 5 e 6 (venc. 10/02/2021 e 10/03/2021), R$ 30.000,00 cada, nominal",
+  "valor_total_estimado_sem_ipca": 194390,
+  "detalhe_encargos_estimados": "principal exigível R$ 110.000,00 + multa 2% (4 x R$ 600,00 = R$ 2.400,00) + juros moratórios contratuais 1% a.m. até 12/10/2026 (R$ 81.990,00, apurados por dias/30 sobre o saldo de cada parcela, com o saldo da parcela 1 reduzido a R$ 20.000,00 desde 02/08/2023). A correção IPCA contratada NÃO foi calculada: a série do IPCA não existe em workspace/ nem em library/ — item aberto (ver QUESTIONS.md). Total do pedido será materialmente maior.",
+  "negativacao": {
+    "regular_quanto_a": 110000,
+    "indevida_quanto_a": 70000,
+    "composicao": "R$ 60.000,00 de dívida prescrita (parcelas 5 e 6 — inscrição de dívida prescrita é indevida, pois a pretensão está extinta e o registro não pode ultrapassar o prazo prescricional: STJ Tema 1.264, REsp 1.792.700, CDC art. 43 §5º por analogia, in library/negativacao_prescrita_sumula385.md) + R$ 10.000,00 já pagos em 02/08/2023 (parcela inexistente após o pagamento — consequência lógica dos documentos, não item da biblioteca)",
+    "risco_dano_moral": "BAIXO, mas não nulo. A devedora tem 3 negativações anteriores (2024-2025), não contestadas (documents/negativacao_e_consulta.md): incidindo a Súmula 385/STJ, anotação irregular não gera indenização quando preexiste legítima inscrição, ressalvado o direito ao cancelamento — ou seja, o risco real é de sentença de EXCLUSÃO/REBAIXA do registro (e honorários/custos), não de dano moral. Ressalvas: (i) a Súmula 385 pressupõe inscrição anterior LEGÍTIMA — se alguma das 3 anteriores for impugnada e tida por irregular, o óbice cai e o dano moral volta ao jogo, pois a inscrição de dívida prescrita 'enseja, em tese, dano moral' (library/negativacao_prescrita_sumula385.md); (ii) a manutenção da parcela prescrita após notificação/citação agrava a exposição e pode ser lida como exercício abusivo, além de contaminar o protesto.",
+    "acao": "RETIFICAR JÁ, por iniciativa própria: reduzir a inscrição de R$ 180.000,00 para o valor exigível (R$ 110.000,00 de principal, atualizado com multa, juros e IPCA) e EXCLUIR os R$ 70.000,00 (R$ 60.000,00 prescritos + R$ 10.000,00 pagos), guardando comprovante da retificação e da ciência da devedora. Não 'renegativar' as parcelas 5 e 6 em nenhum valor. Observar teto temporal: o registro não pode ultrapassar o prazo prescricional da dívida exigível, ou seja, deve cair até 15/09/2027 se não houver pagamento — que é também o termo de prescrição das parcelas 1 a 4."
+  },
+  "protesto": "recomendado",
+  "protesto_condicionado": "Recomendado SOMENTE quanto à dívida exigível (parcelas 1 a 4 líquidas do pagamento = R$ 110.000,00 + encargos), na modalidade protesto de documento de dívida, admitida pelo art. 1º da Lei 9.492/97 ainda que sem força executiva (library/negativacao_prescrita_sumula385.md). PROIBIDO protestar as parcelas 5 e 6: protesto de título/documento de dívida prescrita é igualmente indevido e gera responsabilidade (mesma fonte). Também não protestar os R$ 10.000,00 já pagos. Antes de protestar, obter os originais/carteiras dos boletos e confirmar com o cartório a instrução do pedido (a biblioteca não traz regras de instrução/produtos do protesto — lacuna).",
+  "diligencia_respostas_cliente_2026_10_12": {
+    "confirmado": "(i) contrato assinado só pelos dois representantes, sem testemunhas e sem certificação digital — via MONITORIA confirmada (Q4); (ii) o PIX de R$ 10.000,00 de 02/08/2023 ('por conta da primeira parcela') foi o ÚNICO pagamento, sem outros pagamentos parciais ou de encargos desde então ('depois sumiram') — principal exigível R$ 110.000,00 e negativação indevida em R$ 70.000,00 confirmados (Q2); (iii) houve greve em fev/2021, o serviço foi parcialmente executado ('fizemos o que deu') e HÁ relatórios assinados pelo encarregado da devedora — inclusive os das parcelas 5 e 6, um a uma, cf. documents/boletos_e_comprovantes.csv (Q7).",
+    "efeito": "Nenhuma conclusão central muda. O pedido permanece R$ 110.000,00 + multa + juros (+ IPCA aberta). Para a mesa de acordo, os relatórios assinados são força nova contra a alegação de 'serviço não concluído'; em contrapartida, a confissão do cliente de que o serviço foi apenas parcial reforça a recomendação de NÃO litigar as parcelas 5 e 6 (§3.1 do memorando).",
+    "desconhecidos_remanentes_explicitos": "Q1 série de IPCA (cliente não dispõe — totais seguem SEM correção, subestimados); Q3 legitimidade das 3 negativações anteriores da ré (condição da Súmula 385 — risco de dano moral segue 'baixo, condicionado'); Q5 originais/carteiras dos boletos e exigências do cartório de protesto (confirmar antes de protocolar); Q6 inexistente ato posterior quanto às parcelas 5/6 — cliente não dispõe de outro documento, logo a tese de upside de R$ 102.320,00 permanece FRACA e não integrada; Q9 solvência/RJ/falência da devedora (define garantia no acordo); Q10 ações em curso e endereço atualizado para citação. Imputação do PIX (principal x encargos, §4.3 do memorando): o cliente não trouxe dado novo — é questão de regra legal AUSENTE da biblioteca (não verificado), cenário principal mantido, alternativo quantificado.",
+    "replica_objecao_verbal_2026_10_12": "Objeição verbal do cliente (Sérgio): 'pagaram em 2023, pagamento interrompe prescrição; tenho relatório assinado das parcelas 5 e 6'. Resposta no §10 do memorando, sem mudança de conclusões: (i) art. 202 VI exige ato INEQUÍVOCO de reconhecimento do direito, e o caput admite interrupção 'somente uma vez' — a biblioteca anota in literis que 'o pagamento parcial posterior é novo reconhecimento, mas não interrompe novamente'; (ii) PIX de 02/08/2023: para 1-4 a única interrupção já estava consumida (15/09/2022), para 5-6 não há reconhecimento (destinação expressa 'por conta da parcela 1', 11 meses após contestação escrita nominal das 5 e 6) — o PIX só tem efeito subtrativo (abate R$ 10.000,00); (iii) relatórios assinados provam EXECUÇÃO do serviço (prova escrita da monitória, CPC art. 700), não reconhecimento de dívida; o arquivo não os data nem descreve conteúdo além de 'relatório de serviço' — mas eles documentam a execução de um contrato encerrado em mar/2021, nada indica relatório posterior a 2021 e o cliente não tem documento depois (Q6); lidos como interruptivos, teriam consumido antes do e-mail de 15/09/2022 a única interrupção admissível e matariam também as parcelas 1-4, e para as 5-6 o prazo de 5 anos contaria da própria assinatura e morreria em 2026 (leitura que se autocorrige); (iv) data-limite: só reconhecimento do devedor datado de 12/10/2021 em diante salvaria 5-6 hoje; os dois atos posteriores da devedora existem e apontam contra (contestação 15/09/2022; PIX etiquetado). Se aparecer documento tal, recálculo mecânico de +R$ 102.320,00 (§3.1). 'Obrigação natural' para as prescritas usada como descrição prática — art. 882/CC não está na biblioteca (não verificado)."
+  },
+  "recomendacao": "1) Corrigir a negativação hoje (R$ 180.000,00 -> R$ 110.000,00 + encargos) e nunca protestar as parcelas 5 e 6. 2) Ajuizar AÇÃO MONITÓRIA em Sorocaba/SP (cláusula de foro do contrato) apenas contra R$ 110.000,00 + multa 2% + juros 1% a.m. + IPCA (a apurar), instruindo com contrato, relatórios de serviço e os dois e-mails; NÃO incluir as parcelas 5 e 6 no pedido (prescritas — pedir seria desnecessário e contraproducente, com risco de sucumbência e de uso da irregularidade da negativação como álibi). 3) Prazo crítico: a interrupção do art. 202/CC já foi utilizada uma única vez, então o ajuizamento não reabre prazo; a petição deve entrar BEM ANTES de 15/09/2027 (hoje 12/10/2026: ~11 meses), pois a citação é que faria interromper e uma segunda interrupção não é admitida. 4) Em paralelo, acordo é racional: a devedora já confessou R$ 120.000,00 e pagou R$ 10.000,00; assinar confissão de dívida com o valor exigível, em instrumento assinado pelo devedor e 2 TESTEMUNHAS (CPC art. 784 III), com vencimentos curtos e garantia, converte o crédito em título executivo e permite EXECUÇÃO direta em caso de novo calote — o que hoje é impossível. 5) Não contar com as parcelas 5 e 6 como valor cobrável: a biblioteca não contém fundamento para renúncia/posterior reconhecimento de prescrição já consumada, portanto eventual pagamento delas só como valor de negociação (obrigação natural), nunca como pretensão em juízo nem como registro/protesto. 6) Fluxo recomendado: retificação da negativação -> proposta de acordo com instrumento de confissão (2 testemunhas) -> sem acordo em ≈60 dias, monitória + protesto restrito ao exigível."
+}

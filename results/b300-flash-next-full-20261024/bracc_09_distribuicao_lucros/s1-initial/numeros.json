@@ -1,0 +1,20 @@
+{
+  "limite_presumido_liquido_teorico": 1300800,
+  "lucro_contabil_2025": -310000,
+  "prejuizos_acumulados": -1120000,
+  "lucro_distribuivel": 0,
+  "distribuicao_recomendada": 0,
+  "irrf_10pct_se_distribuir_800k": 80000,
+  "multa_art32_risco": 400000,
+  "mutuo": {
+    "recomendado": false,
+    "condicoes": "Nao recomendado: PJ em prejuizo e com debito fiscal nao garantido (auto de infracao R$ 1.480.000 sem garantia) - sinal de retirada disfarcada (DL 1.598/77 art. 60 e material da biblioteca). A presuncao automatica do art. 60, V nao incide (nao ha lucros/reservas na data do emprestimo), mas sem intencao/capacidade de pagamento o mutuo e recaracterizado como rendimento (pro-labore/dividendo). Se, excepcionalmente e com ciencia dos riscos, for adiante: contrato escrito, juros de mercado, prazo e garantias, IOF-credito (0,0082%/dia + 0,38%) recolhido, capacidade financeira real de repactuacao e comprovacao do efetivo pagamento das parcelas."
+  },
+  "_premissas_e_aritmetica": {
+    "limite_presumido_liquido_teorico": "6.400.000 x 32% = 2.048.000 (base) - IRPJ 440.000 (307.200 + adicional 132.800) - CSLL 307.200 (15% x 2.048.000) = 1.300.800. Aliquotas de IRPJ/CSLL NAO constam da biblioteca (nao verificadas). Deducindo-se tb PIS/COFINS (ex.: 3,65% x 6.400.000 = 233.600), cairia para ~1.067.200.Numero meramente teorico: com prejuizo escriturado, IN RFB 1.700 art. 238 par. 3/4 requalifica o que exceder o apurado na escrituracao.",
+    "irrf_10pct_se_distribuir_800k": "Lei 15.270/2025: 400.000/mes por socio PF residente > 50.000 -> IRRF 10% sobre o total = 40.000 por socio; 80.000 no total dos 800.000. Transicao afastada por FATO CONFIRMADO pelo cliente (nenhuma deliberaao aprovada ate 31/12/2025). Premissa remanescente nao resolvivel: socios PF residentes (cliente sem mais informacoes).",
+    "multa_art32_risco": "Lei 4.357/64 art. 32: 50% x 800.000 = 400.000 (PJ e beneficiarios, solidariamente), teto = 50% x 1.480.000 = 740.000 -> aplica-se 400.000. Distribuicao com debito nao garantido; controversia sobre debito com exigibilidade suspensa (CTN 151 III / COSIT 30/2016 / CARF) documentada no parecer - risco relevante.",
+    "balanco_nao_reconcilia": "Passivo+PL conforme linhas = 10.610.000 vs total declarado 9.850.000; diferenca de 760.000 nao ajustada (pode indicar prejuizos acumulados de ate 1.880.000). Em qualquer cenario, lucro distribuivel = 0.",
+    "prejuizos_acumulados_fonte": "R$ 1.120.000 conforme linha do balanco/ECD 31/12/2025 (valor usado; ver ressalva acima)"
+  }
+}

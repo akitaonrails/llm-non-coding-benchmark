@@ -1,0 +1,19 @@
+{
+  "revenue_as_drafted": 1540000,
+  "adjustments": {
+    "halvorsen_loi": -480000,
+    "saltline_kits": -210000,
+    "ironvale_hosting": 0
+  },
+  "revenue_corrected": 850000,
+  "hosting": {
+    "treatment": "Embedded lease under ASC 842-10-15-3 to 15-20 (identified servers by serial number, no substantive substitution right, customer directs use). Capitalize; power/cooling/network are non-lease components pending allocation data. Amounts below are undiscounted (0% assumed) because no discount rate was provided; they are an upper bound and will be restated once the incremental borrowing rate and lease/non-lease split are supplied. ROU asset and lease liability shown at 12/31/2025 (36 x 18,000 = 648,000 initial; less 3 months of 18,000 payments/amortization = 594,000).",
+    "rou_asset": 594000,
+    "lease_liability": 594000
+  },
+  "going_concern": {
+    "substantial_doubt": true,
+    "plans_probable": false,
+    "disclosure": "Disclose that substantial doubt exists (ASC 205-40-50). Cash flows go negative week ending 2026-02-20 and reach -509,000 by 2026-03-27 without funding; the only plan is the non-binding Crestline note, which per the library is not a probable plan and whose >=1,500,000 revenue condition precedent fails on the corrected 850,000."
+  }
+}

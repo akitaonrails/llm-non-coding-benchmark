@@ -1,0 +1,7 @@
+Diretor, a suspensão **adia a decisão; não elimina a dívida potencial**. Na biblioteca disponível, o mérito do Tema 1.389 ainda está pendente e juros e atualização continuam durante o sobrestamento ([Tema 1.389](/work/workspace/library/stf_tema_1389_pejotizacao.md)).
+
+O Tema 725 admite a terceirização, mas não impede o reconhecimento de vínculo quando a prova concreta mostra os requisitos da CLT ([Tema 725](/work/workspace/library/stf_tema_725_adc48_adpf324.md)). Neste caso, há horário fixo, ponto, ordens de jornada e aprovação de ausências pelo RH. Por isso, estimei risco de vínculo em **70%–85%**.
+
+A provisão indicativa de **R$ 657.540** cobre o cenário-base bruto: R$ 305.370 em parcelas trabalhistas e R$ 352.170 em INSS patronal estimado. Os valores dependem das premissas abertas no [parecer](/work/workspace/deliverable/parecer.md). A classificação contábil formal pela CPC 25 não pôde ser verificada na biblioteca fechada; deve ser validada pela contabilidade.
+
+Não posso confirmar a notícia de uma decisão posterior: o contrato deste trabalho limita as fontes à biblioteca fornecida. Se a diretoria tiver o texto da decisão, ele precisará ser confrontado com este parecer antes de rever o risco.

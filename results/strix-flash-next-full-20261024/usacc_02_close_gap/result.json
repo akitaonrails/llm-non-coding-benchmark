@@ -1,0 +1,26 @@
+{
+  "case": "usacc_02_close_gap",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 1742.6912206659908,
+  "controller_wait_seconds": 50.00483106501633,
+  "model_turn_seconds": 1692.4087471470411,
+  "turns": 4,
+  "released_facts": [
+    "cascade_dup",
+    "hardaway",
+    "mobile_4312",
+    "uchi",
+    "xfer_1500"
+  ],
+  "usage": {
+    "input_tokens": 1236307,
+    "cached_input_tokens": 1163175,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 72289,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

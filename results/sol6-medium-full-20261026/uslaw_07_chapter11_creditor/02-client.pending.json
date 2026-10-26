@@ -1,0 +1,44 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "questions": "# Client response recorded\n\nThe client reports no additional information for the prior questions. There are no repeated requests. The unresolved facts and their effect on the drafts are stated in `claim_analysis.json`, `proof_of_claim_draft.md`, `advice_to_ceo.md`, and `STATUS.md`.\n",
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

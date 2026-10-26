@@ -1,0 +1,23 @@
+{
+  "empresa": "Atlas Distribuidora S.A.",
+  "mes": "2026-03",
+  "status": "BLOQUEADO — registros de março/2026 NÃO EXISTEM na base documental. O cliente foi perguntado expressamente (QUESTIONS.md) e respondeu, em duas rodadas (sessões 3 e 6), que não tem informação adicional. Nada será inventado: sem razão/balancete/notas de março, nenhum lançamento pode ser identificado sem fabricar fatos.",
+  "lancamentos": [],
+  "_justificativa": "Ausência total de documentos de março/2026 em documents/ (não há mes_03/). Diferentemente de fevereiro (cujos registros foram entregues na sessão 4 e o mês foi fechado), março permanece inexistente. Este arquivo marca o entregável como bloqueado para que a estrutura contratual (ajustes.json + pis_cofins.json + pendencias.md por mês) exista e documente o motivo — os campos NÃO são zero, são 'não apurável'.",
+  "retificacoes_meses_anteriores": [
+    {
+      "id": "AJ-2601-01 (reiterada pela terceira vez — AINDA NÃO ESCRITURADA)",
+      "data": "2026-01-31",
+      "historico": "Estorno do crédito indevido de PIS/COFINS da NF-e 8812 (uso e consumo administrativo): D 4.2.04 / C 1.1.04, 11.100,00. Detalhamento completo em ../../mes_02/ajustes.json (retificacoes_meses_anteriores). Evidência de pendência no último balancete existente (fev/2026 acumulado): 1.1.04 = 323.676,00, deveria ser 312.576,00.",
+      "fundamentacao": ["library/pis_cofins_uso_consumo.md — Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR"]
+    }
+  ],
+  "checklist_se_os_registros_surgirem": [
+    "1. Tie-out: abertura + razão jan (sem linhas ABERT) + razões fev e mar reproduzem o balancete acumulado de março; conferir equilíbrio débito=crédito.",
+    "2. Amarrações-padrão: 2.1.03 (PIS/COFINS + ICMS mês a mês) e 1.1.04 (créditos; deve já conter o estorno AJ-2601-01 se escriturado).",
+    "3. PIS/COFINS março: débito 9,25% x receita; varredura de créditos por item (somente insumo/revenda — rejeitar uso e consumo, energia/aluguel conforme library/pis_cofins_uso_consumo.md).",
+    "4. Varredura de indedutíveis do art. 13 da Lei 9.249/95 em 4.2.x (brindes, doações, multas, sanções): adições no e-LALUR sem alterar a contabilidade (library/irpj_csll_trimestral.md).",
+    "5. Atualizar mes_03/lalur.json e memoria.md para a versão DEFINITIVA do trimestre e recalcular a Parte B."
+  ],
+  "observacoes": "Enquanto este arquivo permanecer BLOQUEADO, o e-LALUR em ../lalur.json é PRELIMINAR (piso jan+fev) e não pode ser escriturado nem embasar recolhimento de IRPJ/CSLL do 1º trimestre. Motivo e desconhecidos consolidados em ../pendencias.md e ../../RELATORIO_FINAL.md."
+}

@@ -1,0 +1,30 @@
+# Perguntas ao cliente (Marcelo) — registro das duas rodadas
+
+Rodada 1 (abaixo, Q1–Q10) e rodada 2 de follow-up foram respondidas em parte. O cliente declarou que **não tem mais informação** além do que respondeu. Nenhuma pergunta é repetida; o que restou sem resposta virou **incógnita com premissa expressa** no §8 de `proposta_acordo.md` (não há pergunta pendente a fazer).
+
+## Rodada 1 — perguntas e desfecho
+
+| # | Pergunta | Desfecho |
+|---|---|---|
+| 1 | Data da separação de fato | **Sem resposta** → premissa: valorização ≈ data do laudo (1.100.000). Incógnita §8.1 |
+| 2 | Pró-labore: valor, habitualidade, separado do CLT? | **Respondido (rodada 2):** 15.000/mês, separado do salário CLT de 24.000 → incluído na base de alimentos (presunção: líquido) |
+| 3 | Distribuição de lucros / PLR | **Respondido (rodada 2):** nunca distribuiu lucro, tudo reinvestido → nada de lucros na base de alimentos; reforça a partilha da valorização (550.000). PLR: **sem resposta** → não incluída (incógnita §8.4) |
+| 4 | Origem do sinal do apartamento (2017) | **Sem resposta** → premissa: recursos comuns (CC 1.660, I). Incógnita §8.5 |
+| 5 | Atibaia: alugada? reforma com dinheiro do casal? | **Parcial (rodada 2):** reforma em 2021 com ~120.000 do casal → crédito da massa (meação 60.000 no caixa). Aluguel: **sem resposta** → premissa: nenhuma renda (incógnita §8.6) |
+| 6 | Valores declarados no IR dos bens | **Sem resposta** → neutral tributário só pode ser desenhado no instrumento; risco sinalizado. Incógnita §8.7 |
+| 7 | FGTS: 140.000 até a separação? havia saldo pré-casamento? | **Sem resposta** → premissa: 140.000 são depósitos da constância (o resumo dos documentos os apresenta assim). Se houver saldo anterior, a meação cai |
+| 8 | Financiamento do carro: quem contraiu, em nome de quem? | **Respondido (rodada 2):** carro da família (levava as crianças), carro e financiamento no nome de Fernanda → comum (CC 1.662/1.664), fica com ela e com o saldo devedor |
+| 9 | Banco consultado sobre transferência do financiamento do apto? | **Sem resposta** → mantida como condição prática do instrumento (procedimento não verificado na biblioteca) |
+| 10 | Fernanda trabalha (9.000 estáveis)? Pediria pensão para ela? | **Sem resposta** → 9.000 do resumo adotados; alimentos entre ex-cônjuges não são tratados na biblioteca (tema não verificado) se ela levantar |
+
+## Rodada 2 — respostas registradas (já embutidas nos números)
+
+- Carro da família; financiamento no nome de Fernanda.
+- Empresa: nunca distribuiu lucro; reinvestiu tudo; valia "uns 400 mil" no casamento, hoje 1,5 mi (estimativa verbal, sem laudo de 2014).
+- Pró-labore 15.000/mês, fora do salário CLT (24.000 líquidos).
+- Reforma de Atibaia em 2021 com ~120.000 do dinheiro do casal.
+- Demais itens: o cliente não tem mais informação.
+
+## Efeito líquido nas respostas
+
+Base de alimentos subiu para **43.666,67/mês** (524.000/ano) → pensão ancorada em 20% (8.733,33) com teto de 25% (10.916,67). Massa partilhável subiu para **2.770.000 bruto / 2.410.000 líquido** → meação de cada **1.205.000**, caixa equalizador **985.000** (+70.000 de FGTS). A admissão "reinvesti tudo" praticamente congela o número das quotas (550.000) — a antiga alavanca de desconto de Marcelo desapareceu.

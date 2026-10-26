@@ -1,0 +1,36 @@
+{
+  "options": {
+    "founders_plan_as_stated_llc_with_s_election_40k_salaries": {
+      "entity_level_tax": 3300,
+      "founder_tax_priya": 37296,
+      "founder_tax_tomas": 37296,
+      "payroll_taxes": 12240,
+      "total": 90132,
+      "assumptions": "Modelled AS STATED, i.e. assuming arguendo the S election were valid. IT IS NOT: Tomas is a nonresident alien for 2026 (substantial presence: 118 + 96/3 + 66/6 = 161 < 183, IRC 7701(b)(3)(A)), and 1361(b)(1)(C) bars NRA shareholders, so the election is void and the LLC defaults to partnership taxation (numbers then equal the recommended option). Arithmetic as stated: salaries 2 x 40,000; payroll FICA 15.3% x 80,000 = 12,240; each founder salary 40,000 + distribution 90,000 - 199A QBI deduction (20% x 90,000 = 18,000; wages are not QBI) = taxable 112,000 x assumed 33.3% combined rate = 37,296. Entity: CA 800 annual tax + 2,500 fee (receipts 610,000 in 500k-999,999 band, Cal RT 17942/17941 per ca_llc_franchise.md); CA corporate-franchise treatment not in library; Delaware costs not in library. NOT INCLUDED (would raise this total): Watson-type recharacterization exposure of 15.3% x 90,000 x 2 = 27,540 plus penalties/interest on 40,000 salaries for full-time consultants generating 610,000 revenue (Rev Rul 74-44; Watson 8th Cir 2012); Tomas 83 ordinary income 50,000 (stock for services) if incorporated; Priya 351 gain 39,000 if 80% control fails (it likely does, ~57%). Rates 33.3% and 15.3% are ASSUMPTIONS - no rate schedules exist in the library."
+    },
+    "recommended_ca_llc_partnership_profits_interest": {
+      "entity_level_tax": 3300,
+      "founder_tax_priya": 34632,
+      "founder_tax_tomas": 34632,
+      "payroll_taxes": 39780,
+      "total": 112344,
+      "assumptions": "California LLC (no Delaware layer), default partnership taxation, no entity income tax. Priya contributes tool (FMV 120,000, basis 31,000): 721 nonrecognition, no control test. Tomas: 20,000 cash capital + 50% PROFITS interest for services (Rev. Proc. 93-27: 0 income on receipt; 0 on immediate liquidation) with capital vesting 3y/1y cliff. Flow-through: each 50% x 260,000 = 130,000. Self-employment tax (in payroll_taxes) 15.3% x 130,000 x 2 = 39,780 (assumes no 92.35% base reduction, no SS cap effect - not in library). 199A: consulting is SSTB but each taxable income (~104,000) is below the 2026 single threshold (~200,300, library says verify), so SSTB limit does not apply: deduction 20% x 130,000 = 26,000 each; taxable 104,000 x assumed 33.3% = 34,632 each. Entity: CA 800 + 2,500 gross-receipts fee. Future open item: each capital-vesting conversion for Tomas is measured at then-FMV (83) - unmodelled. Tomas's NRA-status U.S. taxation of his 130,000 share (filing, possible partnership withholding) is NOT addressed anywhere in the library - flagged, modelled symmetrically for comparison only. Client round 2 confirmed: Tomas in U.S. ~1/3 of the year (~122 days) - 2027 weighted 177.3 < 183, so he is likely NRA again in 2027; the partnership is the durable structure, not a waiting room for an S election. Confirmed personal facts: Priya single (San Diego); Tomas married in Mexico, no prenup, works mostly from Monterrey; clients U.S.-wide. Rates are ASSUMPTIONS (no rate authority in library)."
+    },
+    "recommended_variant_straight_50_50_capital_with_83b": {
+      "entity_level_tax": 3300,
+      "founder_tax_priya": 34632,
+      "founder_tax_tomas": 51282,
+      "payroll_taxes": 39780,
+      "total": 128994,
+      "assumptions": "Same recommended structure except Tomas takes the literal 50/50 CAPITAL interest at grant (their stated wish). Capital interest for services is taxable compensation (Rev. Proc. 93-27): 50% x (120,000 tool + 20,000 cash) = 70,000 FMV minus 20,000 paid = 50,000 ordinary income in year 1; protective 83(b) election REQUIRED within 30 days of grant (no extension, 83(b)/Treas Reg 1.83-2) to fix it at grant value instead of higher vesting-date values. Founder_tax_tomas = 34,632 operating + 50,000 x 33.3% = 16,650 = 51,282. Whether the 50,000 capital-interest inclusion also carries self-employment tax is not in the library - excluded, flagged. SE tax and 199A as in the recommended option; rates ASSUMPTIONS."
+    },
+    "hypothetical_s_corp_once_tomas_resident_reasonable_comp": {
+      "entity_level_tax": 800,
+      "founder_tax_priya": 43290,
+      "founder_tax_tomas": 43290,
+      "payroll_taxes": 39780,
+      "total": 127160,
+      "assumptions": "NOT AVAILABLE IN 2026 (Tomas NRA per 7701(b)(3)(A); 1361(b)(1)(C)). Shown as the best legitimate version of the friend's plan, for a later resident year. RESIDENCY OUTLOOK UPDATE (client round 2: Tomas in the U.S. ~1/3 of the year, ~122 days): 2027 weighted 122 + 118/3 + 96/6 = 177.3 < 183, so 2027 is unlikely (would need 128 days); 2028 at 122 days = 182.3 < 183 (needs 123); steady-state line is exactly 122 days/yr (1.5 x days >= 183), so the stated pattern makes him resident in 2029 (183.0). Earliest realistic S year is therefore ~2029, not 2027; day-count choices interact with Mexican residency/tax (outside library - Mexican counsel). Comp must be reasonable (Rev Rul 74-44; Watson): modelled conservatively as all 260,000 net as wages, 130,000 each, 0 distributions. FICA 15.3% x 260,000 = 39,780. 199A: wages are NOT QBI (irc_199a_sstb.md) -> deduction 0; each 130,000 x 33.3% = 43,290. Entity shown at CA 800 minimum franchise only - the library cites Cal RT 23153 but its text gives no corporation rates, so any CA corporate-level add-on is outside the library (flagged, left open). Form 2553 deadline if ever used: within 2 months 15 days of the tax year start or anytime in the prior year (Form 2553 instructions per library). TN-status permission to work for their own entity: outside library, unresolved. Rates ASSUMPTIONS."
+    }
+  }
+}

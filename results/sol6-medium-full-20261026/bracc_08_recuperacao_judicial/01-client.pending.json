@@ -1,0 +1,34 @@
+{
+  "case": "bracc_08_recuperacao_judicial",
+  "questions": "# Informações necessárias para fechar a sessão 1\n\n1. Qual é a **data exata do pedido de recuperação judicial**? As quatro semanas do arquivo `fluxo_caixa_13_semanas.csv` correspondem a quais datas de início e término? Elas representam todo o mês de março de 2026 ou apenas parte dele?\n2. Os saldos inicial de R$ 820.000 e final de R$ 840.000 são saldos **realizados de todas as contas bancárias e caixa**, conciliados com extratos, ou são projeções? Se as quatro semanas não cobrem março inteiro, envie o fluxo realizado para o restante do mês.\n3. A entrega de R$ 310.000 do Fornecedor Norte em 20/03/2026 foi paga? Se sim, em qual data e ela está incluída nos R$ 5.750.000 de “pagamentos pós-pedido”? Se não, qual era o saldo em aberto no fim de março? Envie também a posição de demais obrigações pós-pedido nessa data.\n4. Houve venda, assinatura de contrato ou recebimento relativo ao galpão/UPI até 31/03/2026? Se houve, informe data, valor efetivo, custos da operação e comprovantes.\n",
+  "facts": [
+    {
+      "id": "norte",
+      "trigger": [
+        "Norte",
+        "metade",
+        "por fora",
+        "fornecimento",
+        "parar"
+      ],
+      "answer": "O Norte aceita continuar fornecendo à vista a partir de agora, mas quer 'um sinal' sobre o atrasado. Se eu não pagar, eles param.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "beta",
+      "trigger": [
+        "Beta",
+        "fiduciária",
+        "máquinas",
+        "essenciais"
+      ],
+      "answer": "As máquinas do Beta são a linha de separação de pedidos; sem elas, não opera.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "norte"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

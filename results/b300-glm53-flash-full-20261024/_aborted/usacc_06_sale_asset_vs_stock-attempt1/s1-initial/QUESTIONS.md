@@ -1,0 +1,31 @@
+# QUESTIONS.md — round-2 record and remaining unknowns
+
+**Status of this file:** Ray answered the round-2 questions (Oct 25, 2026). Per his instruction, nothing is being re-asked: he stated he has no additional information on everything not addressed. Unanswered items are therefore listed below as labeled assumptions / open flags, not as questions.
+
+## Answered this round (and where each answer landed)
+
+- **Covenant term and label (touches original Q1/Q2/Q10).** *"I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same."* The 5-year covenant is a non-issue in both deals. His indifference to the label is exactly why `memo.md` §10.1 quantifies what the label is worth to him — covenant dollars ordinary at 37% vs goodwill capital at 20% is **$68,000** on the full $400,000 — and why `form_8594_counter.md` now carries an optional retiring-seller variant (covenant → Class VII goodwill). **Note:** routing of the payment (original Q1) was *not* addressed; the direct-to-Ray assumption stands, and it dissolves if the variant is signed (the money then flows through the entity as part of the price).
+- **Note security (original Q8).** Confirmed **unsecured**; Ray does not know Hensley's balance sheet, so buyer credit quality is unverified and no benchmark information for the 6% rate exists (§483/§1274-type rules are absent from the library — unverified). Negotiation responses: `memo.md` §10.3 (security via acquired-company guarantee, indemnity setoff against the note, escrow alignment).
+- **Liabilities (original Q3, partial).** A Hardaway dispute of **$9,800** plus "the usual warranty stuff" ("nothing big"). No cash balance, payables schedule, or loan details were supplied. Reflected in `memo.md` §10.2 and `comparison.json` (`buyer_A_liability_tail`): Buyer A leaves these behind with the entity (est. −$9,800 cash to Ray if the dispute is ultimately paid; warranty unquantified); Buyer B assumes all liabilities known and unknown, so B's numbers are unchanged — but since Hardaway is now a *known* item, it must be disclosed in the reps.
+
+## Not answered — Ray has no information (assumptions retained; flagged, not asked again)
+
+1. Routing of the $400,000 covenant payment (direct to Ray assumed).
+2. Consulting-fee amount under Buyer A's covenant/consulting package, if any (unmodeled; service-compensation character unverified — not in the library).
+3. Company cash balance and complete liability schedule at closing.
+4. §1366(f)(2) loss character — swings **±$40,341** (237,300 × (37% − 20%)); the library states the loss exists but not its character.
+5. Material-participation facts for the NIIT exclusion (library relief retained; note that retiring during 2026 does not negate sale-year participation, but the fact pattern was never confirmed).
+6. Other 2026 income behind the 37% ordinary marginal rate (library directive followed).
+7. Texas franchise tax status and specifics (no rate in the library; unmodeled; relevant mainly to Buyer B, which inherits the company).
+8. Benchmark adequacy of the 6% note rate (unverified — no library rule; stayed beyond §483/§1274 by intent since none is citable).
+9. Actual note payment schedule — the $100,000-principal + declining-balance 6% model is retained as labeled (LOI says only "annual principal").
+10. Timing flexibility toward a post-12/31/2027 closing (none assumed; the $237,300 §1374 entity tax stands; a two-year wait was never recommended, and Ray's retirement leans toward closing now).
+11. Independent equipment appraisal (the fixed-asset register's $650,000 FMV remains the only support for the Class V counter).
+
+## New fact-pattern items disclosed this round (client cannot resolve further)
+
+12. **Hensley credit quality** — unverified; mitigations are negotiation items, not tax items (`memo.md` §10.3).
+13. **Warranty exposure amount** — "usual" but unspecified; retained-liability economics for Buyer A are in `memo.md` §10.2; immaterial to the tax comparison.
+14. **Outcome of the Hardaway dispute** — $9,800 is disputed and unresolved; treated as an estimated Buyer A cash haircut only if it is ultimately paid; fully inside Buyer B's assumption of liabilities (indemnity cap $285,000, escrow $100,000).
+
+**No further question round is planned.** The deliverables are final figures under the stated assumptions; every unknown above is flagged where it matters, and none of them flips the recommendation (Buyer B, per `memo.md` §9 and §10).

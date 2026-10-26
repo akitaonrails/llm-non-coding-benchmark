@@ -1,0 +1,59 @@
+{
+  "case": "uslaw_09_retaliation_termination",
+  "questions": "# Questions for the client\n\nAnswering these will let us close the open items in `risk_assessment.json` and `corrected_separation_agreement_terms.md`. **None of them changes the bottom-line answer — do not terminate today —** so please act on item 6 of `advice_to_hr.md` (litigation hold) and section 3–4 of that memo (investigate, answer the FMLA request) **now**, without waiting to reply.\n\n## A. Money / exposure (needed to quantify, not to advise)\n\n1. What is Dana's annual base salary, and her target/bonus and commission plan terms? (Every exposure figure in the memo is expressed as weeks because the file has no salary. 4 weeks = 7.7% of base; the FMLA doubled-damages illustration scales with this number.)\n2. Is she represented by a union or covered by any collective agreement?\n\n## B. The separation agreement form (the ADEA defects)\n\n3. Please send the **complete** company form, not the excerpt (the excerpt covers only clauses 3, 4, 7, 9, 11). Specifically, does the full form contain language **advising her in writing to consult an attorney**? If not, the form is defective as to ADEA claims on its face — 29 U.S.C. § 626(f)(1)(E).\n4. Is this termination an **individual** separation or part of an **exit incentive or other termination program offered to a group or class**? (21 days' consideration if individual; **45 days** if a group program — § 626(f)(1)(F).)\n5. Is any part of the 4 weeks' base pay something Dana is **already entitled to** under a company policy, severance plan, employment agreement, or state final-pay/PTO rules? Consideration must be \"in addition to anything of value to which the individual is already entitled\" — § 626(f)(1)(D).\n6. Does the form contain any confidentiality, non-cooperation, non-disparagement or reference restriction beyond clause 9 as quoted, and what is clause 9's exact wording?\n\n## C. Facts about the complaint and the decision\n\n7. Who is the actual decision-maker on this termination, and what is Tom Hale's role in it — decision-maker, recommender, or witness only? (He is the person named in the 09/12 complaint and the author of the 10/02 email.)\n8. Are there any **other** statements by Hale, Ortiz, the VP, or any manager about Dana's complaint, her leave, her age, her family or travel situation — in email, Slack/Teams, or text? Have any such messages been deleted?\n9. Have any complaints of harassment or discrimination ever been made against Tom Hale before 2026-09-12, by anyone? Has HR ever investigated him?\n10. Has Dana filed a charge with the EEOC or any state agency, or engaged a lawyer? Has she been told anything about the status of her internal complaint?\n11. Since 2026-09-12, has anyone interviewed Dana, the witnesses, or Hale? Please produce any notes.\n\n## D. The performance case (what a jury will compare)\n\n12. What is the **written rule or practice** for opening a PIP — an attainment threshold, a pipeline-hygiene standard, or manager discretion? Have Brennan (79%), Osei (84%) or Park (86%) ever received a PIP, a written warning, or a documented performance conversation, in any year?\n13. Are there **any documents predating 2026-09-16** evidencing the \"pipeline hygiene\" problem (CRM audits, deal-hygiene reports, coaching notes, manager emails)? This is the only way the stated reason can pre-date the protected activity.\n14. What are the **actual 2026 CRM/pipeline hygiene scores** for all five Account Managers on the same measure, if one exists?\n15. How is \"quarterly quota\" defined for the PIP's 100% target — quarterly, or annualized YTD? Her 88% is Q1–Q3 YTD; a Q3-only number could look different, and we need it to test the PIP's fairness.\n16. What did the 60-day PIP say about consequences, and has Dana received any written mid-point review?\n\n## E. FMLA file (eligibility/process — **not covered by the library**, so we must confirm the source)\n\n17. Confirm how many employees work at Dana's site and within 75 miles of it, and her hours worked in the 12 months preceding 2026-09-30. (Service is fine — hired 2019-04-15 — but the 1,250-hour and 50-employee/75-mile tests are not in the file.)\n18. Has HR sent any FMLA designation/eligibility notice, or any request for a second or third medical opinion? What is the exact current status of the 09/30 request?\n19. Who is Dana's direct report-to today, and did the reporting line change at any point on or after 2026-09-12?\n20. **Source question:** the library in this workspace contains only FMLA § 105 (interference/retaliation) and no eligibility, designation, notice, certification-cure or \"serious health condition\"/parent provisions. Please confirm whether we may consult the full FMLA statute and 29 C.F.R. Part 825 for process advice, or whether we are limited to the closed library. Until confirmed, our memo deliberately leaves those questions unverified.\n\n## F. Columbia-specific items (also outside the library)\n\n21. Please provide the employee handbook and any progressive-discipline or job-security language, plus any employment agreement. (The library's Columbia item states only that termination may not be for an unlawful reason; it does not tell us whether the state recognizes an implied-contract or handbook exception, so we cannot assess that claim.)\n22. What is Columbia's rule on final pay and accrued-PTO payout and timing? (Bears directly on whether the 4 weeks is lawful consideration.)\n23. Confirm the state statute of limitations and damages posture for the state discrimination/FMLA analog — the library states \"longer limitations period and uncapped compensatory damages\" but gives no period.\n24. **Source question:** the library has no substantive ADEA provision (only the § 626(f)(1) waiver rules) and no Title VII hostile-work-environment standard. Are we authorized to rely on the ADEA and Title VII substantive standards as generally understood, or must the age and harassment claims stay labeled \"unverified\"? Our deliverables currently label them that way.\n\n## G. Records / hold\n\n25. Confirm retention/auto-deletion settings for Tom Hale's and Lena Ortiz's mail and mobile messaging, and whether any device has been replaced, wiped, or \"cleaned\" since 2026-09-12.\n26. Has Dana's system access, CRM ownership, or file permissions changed since 2026-09-12? (Changes to her CRM records after the complaint will be read as post-hoc documentation.)\n",
+  "facts": [
+    {
+      "id": "investigation",
+      "trigger": [
+        "investigat",
+        "complaint",
+        "September 12",
+        "what happened with"
+      ],
+      "answer": "Honestly, nothing. Tom's been traveling. I was going to get to it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pip_author",
+      "trigger": [
+        "who wrote the PIP",
+        "Tom",
+        "decision-maker",
+        "who decided"
+      ],
+      "answer": "Tom wrote the PIP and Tom wants her out. I'm just processing it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "fmla_status",
+      "trigger": [
+        "FMLA",
+        "leave request",
+        "certification",
+        "approved"
+      ],
+      "answer": "We haven't approved or denied it. Certification came in 10/3. Tom said to wait.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "group",
+      "trigger": [
+        "others",
+        "group",
+        "RIF",
+        "program",
+        "anyone else"
+      ],
+      "answer": "Just her. No RIF.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "investigation",
+    "pip_author",
+    "fmla_status",
+    "group"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

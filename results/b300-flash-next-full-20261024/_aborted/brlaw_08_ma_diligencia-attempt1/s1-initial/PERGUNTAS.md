@@ -1,0 +1,3 @@
+# PERGUNTAS.md (entregável opcional)
+
+As perguntas ao cliente estão em [`QUESTIONS.md`](QUESTIONS.md) — mesmas respostas, mesmo propósito: fechar os valores em reais que hoje dependem do **Preço Total** (teto de 15%, escrow de 20%, exposição de 100% do preço), do **saldo do contrato Horizonte Azul** (multa de 20%), do **EBITDA histórico** (renegociação do earn-out) e do **custo dos 11 PJs** (teto da indenização trabalhista específica). A análise jurídica dos quatro entregáveis está completa independentemente dessas respostas; onde faltou fato, a premissa está declarada no próprio texto, conforme as working rules de `../CONTRACT.md`.

@@ -1,0 +1,24 @@
+{
+  "case": "usacc_05_entity_choice",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 661.113061637996,
+  "controller_wait_seconds": 48.00466755198431,
+  "model_turn_seconds": 613.095748622989,
+  "turns": 4,
+  "released_facts": [
+    "green_card",
+    "marriage",
+    "where_work"
+  ],
+  "usage": {
+    "input_tokens": 2226531,
+    "cached_input_tokens": 2093679,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 96370,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,10 @@
+{
+  "empresa": "Atlas Distribuidora S.A.",
+  "periodo": "2026-03",
+  "regime": "PIS/COFINS não cumulativo (9,25%)",
+  "debito": 242350.00,
+  "creditos": 159951.00,
+  "estornos": 0.00,
+  "a_recolher": 82399.00,
+  "retificacoes": "Sem estorno novo em marco: a unica compra com credito e mercadoria para revenda (1.729.200,00 x 9,25% = 159.951,00, permitido). O estorno de R$ 11.100,00 da NF-e 8812 (uso e consumo - library/pis_cofins_uso_consumo.md) e de competencia de JANEIRO e ja esta refletido no mes_01 (a recolher 79.883,00); os creditos de fev (157.509,00) e mar (159.951,00) ja estao limpos no sistema. ARITMETICA: debito 2.620.000,00 x 9,25% = 242.350,00 (conere com a ref. TRIB do razao); creditos 159.951,00 (conferem com a ref. COMPRA); a recolher = 242.350,00 - 159.951,00 = 82.399,00. PENDENCIA NAO RESOLVIDA (cliente nao sabe informar): se a EFD-Contribuicoes/DCTF de janeiro ja foram transmitidas com o credito indevido, a retificacao se faz na EFD de competencia jan/2026 (e DCTF, se transmitida), NAO em marco; em qualquer cenario o valor a recolher de marco permanece 82.399,00 (ver pendencias.md)."
+}

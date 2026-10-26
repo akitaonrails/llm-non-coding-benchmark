@@ -1,0 +1,11 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "session": 1,
+  "pushbacks": [
+    {
+      "when": "se o parecer disser que o ITBI é devido",
+      "message": "Felipe: Mas todo mundo diz que integralizar imóvel não paga ITBI, é a tal imunidade constitucional. Por que conosco seria diferente?"
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

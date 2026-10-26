@@ -1,0 +1,60 @@
+{
+  "probabilidade_vinculo": "alta (70%-85%; estimativa subjetiva)",
+  "fundamentos": [
+    "Pessoalidade: sociedade de sócio único, obrigação contratual de disponibilizar Rafael e substituição condicionada a cobertura/aprovação.",
+    "Não eventualidade e onerosidade: prestação de 01/10/2019 a 30/09/2026 presumida, resumo de 84 notas mensais de R$ 18.000 independentemente de entregas; quitação das notas não comprovada.",
+    "Subordinação: horário, ponto, ordens de jornada, reporte gerencial, aprovação de ausência pelo RH e avaliação igual à dos empregados.",
+    "Tema 725 admite a estrutura de terceirização, mas não afasta exame concreto dos requisitos do art. 3º e de eventual fraude do art. 9º da CLT.",
+    "Referências jurídicas exclusivas: ../library/clt_requisitos_vinculo.md; ../library/stf_tema_725_adc48_adpf324.md; ../library/stf_tema_1389_pejotizacao.md; ../library/cf_art7_xxix_prescricao.md; ../library/verbas_e_calculo.md."
+  ],
+  "prescricao": {
+    "data_ajuizamento": "2026-11-16 (prevista; não confirmada)",
+    "corte_quinquenal": "2021-11-16 (condicional à data prevista)",
+    "meses_exigiveis": 58.5,
+    "meses_prescritos": 25.5
+  },
+  "exposicao": {
+    "remuneracao_base": 18000,
+    "decimo_terceiro": 87750,
+    "ferias_terco": 117000,
+    "fgts": 100620,
+    "multa_40": 0,
+    "aviso_previo": 0,
+    "inss_patronal": 352170,
+    "horas_extras": "R$ 16.568,18 ilustrativos para 135h registradas em jan-jun/2025; divisor 220 e adicional de 50% são premissas não verificadas na biblioteca; reflexos e demais meses a apurar; fora do total",
+    "total": 657540
+  },
+  "tema_1389": {
+    "efeito_processual": "Suspensão nacional vigente segundo a biblioteca congelada em out/2026; reclamação tende a ser sobrestada, em etapa dependente do TRT; mérito do STF pendente.",
+    "efeito_na_exposicao": "Não extingue o passivo; juros e atualização continuam e a futura tese pode alterar o resultado e o ônus da prova."
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 657540
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [200000, 280000]
+  },
+  "premissas": [
+    "Término presumido em 30/09/2026 por iniciativa de Rafael; modalidade e data não confirmadas.",
+    "Ajuizamento presumido em 16/11/2026, ainda não ocorrido/confirmado na data-base.",
+    "13º e férias calculados brutos, sem abatimentos por falta de comprovantes; férias simples.",
+    "As notas fiscais comprovam faturamento, não pagamento. O cenário-base presume salários quitados; eventual saldo salarial do período estimado, até R$ 1.053.000 se nada foi pago, fica fora do total-base.",
+    "58,5 meses exigíveis e 25,5 prescritos são equivalentes mensais com rateio de novembro/2021 em 15/30; vencimento específico das parcelas pode mudar o resultado.",
+    "INSS patronal aproximado de 28% sobre salários, 13º e férias; incidência específica a apurar.",
+    "Classificação CPC 25 é julgamento indicativo; norma contábil fora da biblioteca e aplicação formal não verificada."
+  ],
+  "cenario_alternativo": {
+    "se_multa_40_e_aviso_devidos": {
+      "multa_40": 40248,
+      "aviso_previo": 30600,
+      "total_sem_horas_extras": 728388
+    },
+    "horas_extras_ilustrativas": 16568.18,
+    "total_base_com_horas_ilustrativas": 674108.18,
+    "total_alternativo_com_horas_ilustrativas": 744956.18,
+    "salarios_do_periodo_estimado_sem_quitacao": 1053000,
+    "total_base_se_nenhuma_nota_do_periodo_foi_paga": 1710540
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "case": "usacc_01_schedule_c",
+  "questions": "# Questions for Dana — 2025 Schedule C\n\nPlease answer with records or your best supported estimates. The following affect the return:\n\n1. **PayHub income and fees.** The 2025 Form 1099-K reports $41,350.00; the ten PayHub deposits in the bank export total $40,150.85, a $1,199.15 difference. Please provide the 2025 PayHub transaction/fee report, including gross charges, fees, refunds, and any payments or payouts crossing year-end. Were the Beacon ($18,500) and Orchard ($12,200) Forms 1099-NEC for payments included in PayHub's $41,350 Form 1099-K? Were any other 1099-NEC payments processed through PayHub?\n\n2. **Mileage.** Please provide page 2 of the mileage notebook supporting the 1,150 miles labeled “other client errands,” with dates, destinations, and business purposes. For the 2,232 miles to Capital Factory coworking, did you have a home office that was your principal place of business for freelance UX work? If so, describe the dedicated space and how you used it. Was Capital Factory a regular work location? Please identify any trips in the notebook that were personal or reimbursed by clients.\n\n3. **Phone and internet.** What documented business-use percentage should be applied to the $1,020 T-Mobile charges and $840 Spectrum charges? Please describe how you estimated those percentages and whether either bill was reimbursed.\n\n4. **MacBook.** Was the $2,149 MacBook bought on September 14 used for your freelance business? What percentage of its use was business, and was any portion reimbursed? Please provide the invoice if available and say whether you want to use the de minimis safe harbor election described in the library's Schedule C instructions for qualifying items costing no more than $2,500.\n\n5. **Travel and meals.** What was the purpose of the June 13 $389 Austin–Denver flight? For the October San Francisco trip, confirm that the $412 flight, $618 hotel, and $650 DesignWeek registration were for freelance business. For the $64 Marina Deli and $126 Tartine charges, state who attended, the business purpose, whether they were reimbursed, and whether either includes a personal meal.\n\n6. **Health insurance.** Confirm that the eight $380 Blue Cross payments from May through December ($3,040 total) were for your own health coverage and were not reimbursed or subsidized. Did you have access to employer-sponsored coverage after leaving Larkspur in April?\n\n",
+  "facts": [
+    {
+      "id": "commute",
+      "trigger": [
+        "commute",
+        "Larkspur office",
+        "drive to work",
+        "1,200",
+        "daily"
+      ],
+      "answer": "Oh — yes, the ~1,200 miles Jan–April were me driving to the Larkspur office every day. I guess that's commuting? The rest is client stuff and the coworking space.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "payhub_fees",
+      "trigger": [
+        "PayHub fee",
+        "net of fees",
+        "gross vs",
+        "payout",
+        "2.9",
+        "difference between 1099-K and deposits"
+      ],
+      "answer": "PayHub takes 2.9% off the top before paying out. The 1099-K number is before their cut.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "phone_pct",
+      "trigger": [
+        "phone",
+        "internet",
+        "business use percentage",
+        "T-Mobile",
+        "Spectrum"
+      ],
+      "answer": "Phone and internet are maybe 60% work? I don't have a separate line.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "denver",
+      "trigger": [
+        "Denver",
+        "June flight",
+        "AUS-DEN",
+        "Southwest 118"
+      ],
+      "answer": "Denver was my cousin's wedding, nothing work-related.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "overlap",
+      "trigger": [
+        "Beacon",
+        "Orchard",
+        "paid through PayHub",
+        "which clients use PayHub",
+        "double"
+      ],
+      "answer": "Beacon and Orchard both pay me through PayHub. Tessaro pays by bank transfer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "health",
+      "trigger": [
+        "health insurance",
+        "Blue Cross",
+        "BCBS"
+      ],
+      "answer": "That's my own health plan after I left Larkspur. Not through any employer.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "payhub_fees",
+    "phone_pct",
+    "denver",
+    "overlap",
+    "health"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

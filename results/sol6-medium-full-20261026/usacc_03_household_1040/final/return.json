@@ -1,0 +1,26 @@
+{
+  "form1040": {
+    "1a_wages": 122000,
+    "2b_interest": 400,
+    "8_other_income_sch1": -31050,
+    "11_agi": 91350,
+    "12_deduction": 31500,
+    "15_taxable_income": 59850,
+    "16_tax": 6708,
+    "19_ctc": 2200,
+    "17_sch2_excess_aptc": null,
+    "24_total_tax": null,
+    "25d_withholding": 8730,
+    "34_refund_or_37_owed": null
+  },
+  "form7203": {"stock_basis_begin": 11500, "loss_allowed": 11500, "loss_suspended": 16500},
+  "form8582": {"rental_loss": 21018, "magi": 110900, "special_allowance": 19550, "loss_allowed": 19550, "carryforward": 1468},
+  "form8962": {"household_income": 91350, "fpl_pct": null, "applicable_figure_pct": null, "annual_ptc": null, "aptc": null, "excess": null, "repayment_limitation": null, "repayment": null, "reported_policy_aptc_before_allocation": 9900},
+  "dependents": ["Sofia Reyes"],
+  "ny": {
+    "resident_days": 181,
+    "marcus_ny_wages": 68000,
+    "elena_ny_wages": 54000,
+    "method": "Provisional: Jan 1-Jun 30 resident (181/365 days); all Jul-Dec wages sourced to NY under convenience-of-employer rule because both Florida arrangements were employee requests. Confirm exact domicile and physical NY workdays."
+  }
+}

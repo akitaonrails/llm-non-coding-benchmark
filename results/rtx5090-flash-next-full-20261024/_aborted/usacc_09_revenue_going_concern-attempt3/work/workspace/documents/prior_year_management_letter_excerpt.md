@@ -1,0 +1,2 @@
+# Management letter — audit of 2024 financial statements (excerpt), Pell & Marsh CPAs
+**Observation 3 — Bill-and-hold transaction (Trestle, Dec 2024).** We accepted management's conclusion for the Trestle transaction because the customer had requested the arrangement in writing, the units were **physically segregated and labeled**, were ready for shipment, and **no right of return existed**. We recommend management document each bill-and-hold criterion contemporaneously in the future; we would not expect to reach the same conclusion absent those facts.

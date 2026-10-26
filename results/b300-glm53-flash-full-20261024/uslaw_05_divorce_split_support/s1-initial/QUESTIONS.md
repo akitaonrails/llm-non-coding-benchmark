@@ -1,0 +1,23 @@
+# Open items — question and answer registry
+
+The client has now answered what she can and has instructed that she has **no additional information** beyond her replies (refinance uncertainty; husband's bonuses recur, 2025 ≈ $40,000 by recollection; everything else stands as in the file). Accordingly this file is no longer a question list to send — it is the registry of (a) answered items and how they changed the analysis, and (b) explicitly flagged unknowns. **No unresolved question blocks any deliverable**, and nothing below is relied on as if verified.
+
+## Part 1 — Answered (client's 2026-10 reply)
+
+| # | Was asked | Answer | Effect on deliverables |
+|---|---|---|---|
+| 1 | Can you refinance the $400,000 mortgage — any pre-approval or quotes? | Doesn't know; if she can't refinance, she will sell. | House plan restructured into a decision tree (advice.md §2): Plan 1 refinance-with-equalization → Plan 2 deferred **co-owned** sale capturing two §121 $250,000 exclusions (~43,992 total tax; each side 619,484) → Plan 3 sale now on a joint return (same numbers, children move now). Refinance contingency added to Alternative A in `division.json`. Lender qualification itself remains unknown (Part 2). |
+| 2 | Were bonuses paid in 2024/2025, and roughly how much? | "He always gets a bonus"; 2025 ≈ $40,000 (recollection). | Recurrence is now a supported finding (guidelines: "expected or recurring bonuses"); affidavit's "none expected" is additionally contradicted by client testimony; Rule 16.2(e) leverage strengthened; 2025-level bonus sensitivity added to `child_support.json` (share 2,004/mo). The $40,000 *amount* stays flagged (Part 2). |
+
+Items from the original list that the client did not separately answer (September-money location, her debts/expenses, her own retirement, 401(k) withdrawal preference) fall under her instruction that she has no further information — they are carried as unknowns below, and the deliverables were already written to hold without them (equalization preferably in cash/brokerage; not contingent on her answers).
+
+## Part 2 — Explicitly flagged unknowns (client has no more information; not answerable from `library/`)
+
+1. **Lender qualification for a ~$400,000 refinance on her income.** Unknown to the client; mortgage underwriting standards are outside the library, so no verification is possible here. The analysis substitutes disclosed arithmetic: payment 2,648/mo ≈ 26% of her ~10,042 monthly inflow (years 1–3, while maintenance and support run) and ≈ 44% of ~6,000 (years 4–6 after the 36-month cliff). Next real-world step is a lender pre-application, which she has not yet done (unknown whether she ever will).
+2. **2025 bonus amount (≈ $40,000)** — client recollection only; no employer record for 2025 is in the file. The demand for 2025–2026 payout records (advice.md §6) is the mechanism to convert this; unverified until produced.
+3. **Decree timing** — whether the decree enters on or before December 31, 2026 is unknown; it controls 2026 filing status and whether a joint-return sale (Alternative B) is even available. Plan 2 (deferred co-owned sale) was added precisely because it needs neither a joint return nor an intact marriage.
+4. **Wife's marginal ordinary tax rate** — not stated anywhere in the file or library; the after-tax value to her of any QDRO/401(k) slice is therefore unverified in all alternatives.
+5. **Property tax, insurance, and ordinary upkeep on the house** — absent from the documents; income-share figures for the 2,648 payment understate total housing cost to that degree (affordability conclusions are conservative in that direction).
+6. **Rule 16.2(e) enhanced-award amount** — the rule (per `columbia_equitable_distribution.md`) authorizes an unequal division and reopening, but the library gives no formula; the quantum is deliberately unquantified rather than estimated.
+7. **Location/traceability of the September 2026 bonus installment (~22,500–25,200)** — unverified whether it sits inside the schedule's 100,000 "cash"; remains a tracing demand, not a client question.
+8. **Future house value drift (2026–2032)** — not modeled in any alternative (values held at today's figures); it would move Alternative A/D outcomes with the market, and the sign of the effect differs between the parties by structure.

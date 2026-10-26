@@ -1,0 +1,48 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "questions": "# QUESTIONS FOR MESA STEEL SUPPLY — answered by the client, then incorporated\n\nPrepared 2026-03-19. Nothing below is assumed in the deliverables; where an answer was needed to finish, the\ndeliverable states the assumption. Items are referenced by number from `proof_of_claim_draft.md`,\n`advice_to_ceo.md` and `workpapers_calculations.md`.\n\n## A. Court / case mechanics (highest priority — these change deadlines)\n\n1. **The bar-date notice in the file is internally inconsistent.** It is \"Notice dated: **April 2, 2026**\" — a date\n   fourteen days in the future as of today (2026-03-19) — and it recites a critical-vendor hearing on the same date\n   (April 2, 2026). Please send (a) the **operative bar-date order** as entered on the docket, (b) its entry date, and\n   (c) the date Mesa actually received the notice. Is the bar date **June 11, 2026, 5:00 p.m. MT** as printed? I have\n   used that date, but it rests on a document that may be mis-dated.\n2. Does the bar-date order (or any local order) set a **separate deadline or procedure for a §503(b)(9)\n   administrative request**? The notice we have is silent. Should we file a stand-alone §503(b)(9) motion in addition\n   to the Form 410 checkbox?\n3. Please provide the **docket sheet** and the following documents if they exist: the voluntary petition and schedules\n   (is Mesa scheduled, and as disputed/contingent/unliquidated?), the DIP motion and DIP order (to confirm the blanket\n   lien said to prime reclamation), any **post-petition trade payables / critical-vendor order (Dkt. 44)** as filed,\n   and any stay-violation motion already on file against any creditor.\n4. Confirm the claims agent's name and Mesa's e-filing credentials / account, and the exact legal name, state of\n   organization, notice address and authorised signatory for the proof of claim.\n\n## B. The account and the numbers\n\n5. Are there **credit memos, returns, rejections, short shipments, price adjustments, warranty or quality claims** on\n   MS-7740, MS-7788, MS-7802, MS-7815 or MS-7819? My $125,000 assumes none. Any Redwood-side dispute reduces the claim.\n6. Do you want to claim **pre-petition interest, late fees or collection costs**? If yes, send the contract/terms\n   provision that allows them and the accrual; if no, the claim stays at $125,000 flat (my recommendation).\n7. The payment history references **MS-7612 (paid 2025-12-18, $51,000)** and **MS-7655 (paid 2026-01-22, $44,000)**,\n   but those invoices are not in the invoice file. Send copies with dates of invoice and delivery — they are paid, so\n   they create no claim, but they are the evidence for the ordinary-course defence.\n8. Please send **signed delivery receipts / PROs / timesheets** for MS-7740, MS-7788, MS-7802, MS-7815 and MS-7819\n   showing the date Redwood **received** each. The §503(b)(9) (20 days) and §546(c) (45 days) tests run off receipt\n   dates, not invoice dates, and MS-7788 (received 2026-02-20, 18 days) has only 2 days of margin.\n9. Was **MS-7819 \"cutting services (on-site)\"** performed by Mesa employees on Redwood's material at Redwood's site,\n   or on Mesa's material? Any portion that is a sale of material rather than a service could move dollars from general\n   unsecured into the §503(b)(9) bucket.\n10. Freight & handling of $6,900 (MS-7802): was freight **separately contracted and invoiced by a carrier**, or\n    Mesa's own delivery charge? Either way the library treats freight and handling as not \"goods\"; I have left it as\n    general unsecured. Confirm there is no separately invoiced steel component hidden in that line.\n11. Besides the four payments listed, did Mesa receive **any** other payment, credit, partial payment, or in-kind\n    payment from Redwood at any time, especially **on or after 2026-02-27 or after the 2026-03-10 filing**? A\n    post-filing receipt on a pre-filing invoice is a problem for both sides and I need to know immediately.\n12. Does Mesa hold any **deposit, prepayment, unapplied credit balance, consigned inventory, tooling or customer-owned\n    material** at Redwood's plants — and does Redwood (or its estate) assert that **Mesa owes Redwood anything** (the\n    \"you owe us\" remark in the collection log)? This drives the \"subject to offset\" box on Form 410 and whether we may\n    ever set off — setoff of pre-filing mutual debts needs stay relief (library/bc_502d_setoff.md).\n13. Who said \"that's not our problem, you owe us\" on the 2026-03-15 call — **our AR clerk** (a willfulness problem for\n    us) or **Redwood's AP rep** (a hint at a claim against Mesa)? Send any notes, and any **credit-bureau report we\n    actually filed** on Redwood, plus the date.\n14. When did Mesa **first** learn of the Chapter 11 filing, and who knew on 2026-03-12 when the \"FINAL NOTICE\" letter\n    went out? Any earlier letter/email/phone note referencing the filing.\n15. Are there **personal or corporate guaranties, letters of credit, or a surety** behind Redwood's account?\n\n## C. Preference defence\n\n16. Who sent the **2026-01-20 NET 15 / \"oldest open invoice first\"** email, on what authority, and did Redwood reply\n    (objection, acceptance, or silence)? Was it our credit manager or sales?\n17. Who demanded the **2026-02-27 wire** of $36,800, and in what words? Send the email/notes. This is the most exposed\n    payment ($36,800) and the wording decides how it is characterised.\n18. What are **industry-standard terms for steel coil and structural steel supply** to fabricators in our market\n    (net 30? net 45?) — and do we have anything to show it: our standard terms and conditions, other customers'\n    invoices, an industry association source? Without it we cannot run the \"ordinary business terms\" branch of the\n    ordinary-course defence, and we carry the burden of proof (library/bc_547.md §547(g)).\n19. Have we ever **filed a UCC-1, taken a security interest, or required a PMSI** on Redwood inventory? Any lien,\n    judgment or garnishment filed against Redwood in the last 18 months? (Averts surprises on the \"secured\" question\n    and on the §547(b)(5) analysis.)\n20. Since the two February payments, did we **reduce credit lines, put the account on hold, or demand more** from\n    Redwood in ways that would look like collection pressure? A chronology would help.\n\n## D. Critical vendor / supply going forward\n\n21. Are we **the sole or principal supplier** of the coil and structural steel Redwood needs, and what are realistic\n    lead times from another mill/service centre? Any written statements from Redwood's purchasing people that they need\n    us? This is the whole critical-vendor case (library/critical_vendor_practice.md) and the estate will test it.\n22. Have we shipped anything **after 2026-03-10**? Our records show the last delivery on 2026-03-09. Are we on hold,\n    and what terms would we require for post-filing shipments (cash in advance? COD? court-approved net terms?)?\n23. What terms would Mesa accept during the case (e.g. net 30 on new orders, monthly minimum volume, no personal\n    guaranty) in exchange for a critical-vendor payment of part of the $125,000?\n24. Who has already contacted Debtor's counsel about Dkt. 44, and what has been said? The hearing is **2026-04-02**.\n25. Do we want the **§546(c) reclamation demand** served by **2026-03-30** even though the DIP lender's blanket lien\n    likely leaves us nothing? My recommendation is yes, for leverage and to preserve the right — please confirm, and\n    tell me whether the steel from MS-7740/MS-7788/MS-7815 is still identifiable in Redwood's inventory or has been\n    fabricated or resold.\n\n## E. Scope / authority\n\n26. Confirm who is authorised to instruct counsel on this matter, whether Mesa's insurer (if any) must be notified of\n    a probable preference claim, and the budget authority for: a §503(b)(9) motion, the reclamation demand, and a\n    critical-vendor application.\n",
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "terms",
+    "credit_bureau",
+    "critical_vendor"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

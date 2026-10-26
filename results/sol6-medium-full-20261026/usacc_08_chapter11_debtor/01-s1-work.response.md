@@ -1,0 +1,5 @@
+I’ll read the contract and workspace files, then prepare the CFO response, March MOR, and petition-date segregation from the records provided.
+
+The records support the cash inflows and listed payments, but they omit the opening cash balance and the payroll split across the petition date. I also need to confirm the written agreement required for the Apex payment and the balances for the MOR liability sections. I’m putting those specific questions in the client file.
+
+I wrote the information needed to finish Session 1 in [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). The March MOR needs the opening cash balance, payroll split, and liability balances; the Apex payment also needs confirmation that the order’s written-agreement condition was met. I’ve paused for the client’s answers as CONTRACT.md directs.

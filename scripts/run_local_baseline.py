@@ -340,11 +340,14 @@ def main():
     ap.add_argument('--case', action='append')
     ap.add_argument('--turn-timeout', type=int, default=7200)
     ap.add_argument('--probe', action='store_true')
+    ap.add_argument('--resume', action='store_true',
+                    help='Continue an interrupted run directory: completed cases are skipped and '
+                         'unfinished case directories are preserved under _aborted/ before a clean retry')
     args = ap.parse_args()
     args.run_dir = args.run_dir.resolve()
-    args.run_dir.mkdir(parents=True, exist_ok=False)
+    args.run_dir.mkdir(parents=True, exist_ok=args.resume)
     source_dir = args.run_dir / 'runner-source'
-    source_dir.mkdir()
+    source_dir.mkdir(exist_ok=args.resume)
     source_hashes = {}
     for source in [Path(__file__), Path(baseline.__file__)]:
         shutil.copy2(source, source_dir / source.name)
@@ -423,18 +426,45 @@ def main():
     cases = args.case or [c for group in suite['core'].values() for c in group]
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
               for p in (ROOT / 'tasks').rglob('*') if p.is_file()}
-    baseline.save(args.run_dir / 'manifest.json', {'model': args.model, 'endpoint': args.endpoint, 'ssh_host': args.ssh_host,
-        'hardware': args.hardware,
-        'harness': 'opencode 2.1.2', 'workers': 1, 'cases': cases, 'pack_hashes': hashes,
-        'started_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
-        'limitations': ['Diagnostic; ungraded fixtures match Sol baseline.',
-                       'Electricity/hardware/rental cost not included; no API fee.', 'Different agent harness from Sol.']})
+    manifest = args.run_dir / 'manifest.json'
+    if not manifest.exists():
+        baseline.save(manifest, {'model': args.model, 'endpoint': args.endpoint, 'ssh_host': args.ssh_host,
+            'hardware': args.hardware,
+            'harness': 'opencode 2.1.2', 'workers': 1, 'cases': cases, 'pack_hashes': hashes,
+            'started_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
+            'limitations': ['Diagnostic; ungraded fixtures match Sol baseline.',
+                            'Electricity/hardware/rental cost not included; no API fee.', 'Different agent harness from Sol.']})
+    pending_cases = []
+    for case in cases:
+        dest = args.run_dir / case
+        if args.resume and (dest / 'result.json').exists():
+            continue
+        if args.resume and dest.exists():
+            # An interrupted attempt is preserved, never treated as a result.
+            aborted = args.run_dir / '_aborted'
+            aborted.mkdir(exist_ok=True)
+            attempt = 1
+            while (aborted / f'{case}-attempt{attempt}').exists():
+                attempt += 1
+            dest.rename(aborted / f'{case}-attempt{attempt}')
+            with (args.run_dir / 'retries.jsonl').open('a') as out:
+                out.write(json.dumps({'case': case, 'preserved': f'_aborted/{case}-attempt{attempt}',
+                                      'time': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())}) + '\n')
+        pending_cases.append(case)
+    print(json.dumps({'stage': 'begin', 'pending': len(pending_cases),
+                      'skipped_completed': len(cases) - len(pending_cases)}), flush=True)
     start = time.monotonic()
     results = []
-    for case in cases:
+    for case in pending_cases:
         results.append(baseline.run_case(case, args.run_dir, args))
         baseline.save(args.run_dir / 'progress.json', results)
-    baseline.save(args.run_dir / 'summary.json', {'wall_seconds': time.monotonic()-start, 'cases': results,
+    retained = []
+    for case in cases:
+        f = args.run_dir / case / 'result.json'
+        if f.exists():
+            retained.append(json.loads(f.read_text()))
+    baseline.save(args.run_dir / 'summary.json', {'wall_seconds': time.monotonic()-start, 'cases': retained,
+                                                'resumed_cases': len(pending_cases),
                                                 'api_charge_usd': 0, 'electricity_cost_usd': None})
 
 

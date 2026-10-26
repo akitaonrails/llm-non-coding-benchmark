@@ -1,0 +1,46 @@
+{
+  "case": "uslaw_02_msa_playbook",
+  "questions": "# Questions for the client (Cobalt)\n\n**Q1 — Affiliates (affects issues.json rank 4 / rule A5).** Will Cobalt Freight Europe B.V. and/or Cobalt Brokerage LLC actually use the RouteWise platform under this agreement (e.g., does the Europe B.V. run the Rotterdam/Hamburg driver routing)?\n- If **yes** → we apply redline path (a): affiliates named in §2.2, covered at no additional fee.\n- If **no** → §2.2 can stand as drafted and the A5 issue is moot.\n\n**Q2 — Signature structure (alternative compliance path for A5).** If the affiliates will use the platform, does Cobalt prefer them named on the license (no additional fee), or is it acceptable for Holdings to sign \"on behalf of itself and its Affiliates\" as the playbook permits? Note: the delivered documents contain no signature blocks, so we cannot verify the intended signing structure from the paper.\n\n**Q3 — Controller mapping for the DPA (affects Exhibit C content).** If the Europe B.V. uses the Services, will it submit its own personal data (as a separate controller) or will Holdings be the sole controller? The DPA's required content per Art. 28(3) (categories of data subjects, controller's obligations and rights — see library `gdpr_art28.md`) depends on this.\n",
+  "facts": [
+    {
+      "id": "affiliates",
+      "trigger": [
+        "affiliate",
+        "Cobalt Freight Europe",
+        "Brokerage",
+        "who will use",
+        "entities"
+      ],
+      "answer": "Both affiliates will use it — Europe for Rotterdam/Hamburg, Brokerage for carrier routing. Holdings signs.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "eu_data",
+      "trigger": [
+        "EU",
+        "GDPR",
+        "personal data",
+        "driver data",
+        "Rotterdam"
+      ],
+      "answer": "Yes — driver names, locations, hours, and customer addresses from the EU ops. Real GDPR scope.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "chronic",
+      "trigger": [
+        "chronic",
+        "termination for SLA",
+        "repeated outages"
+      ],
+      "answer": "There is no chronic-failure termination right in their paper. Add one if you think it matters.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "affiliates",
+    "eu_data"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,11 @@
+Dra. Beatriz, resposta direta — e a colega não está inventando, ela está aplicando a regra certa ao contrato errado. Isso já está registrado na nota (`nota_socia.md`, item 8). O argumento em quatro passos:
+
+1. **O CDC não se aplica a este contrato.** Ele só vale em relação de consumo, e consumidor é o *destinatário final* (Lei 8.078/90, arts. 2º e 3º). A senhora contrata o NexaClin como **insumo da atividade da clínica** — prontuário, agenda, faturamento TISS —, não como consumidora. É a "teoria finalista" do STJ. A exceção (finalista mitigada) exige vulnerabilidade **demonstrada**; não se presume numa sociedade de R$ 9,2 mi/ano assessorada por advogado. Sem relação de consumo, cai o art. 51 inteiro — inclusive o inciso que anula cláusulas de foro. A regra que a colega cita existe e é boa; simplesmente não incide aqui.
+
+2. **Entre empresas vale o CPC, art. 63**: foro de eleição é **válido** quando consta de instrumento escrito e cita expressamente o negócio — a Cláusula 14 faz as duas coisas. A biblioteca que embasa este parecer registra jurisprudência do STJ confirmando validade entre empresas paritárias (REsp 1.707.855/SP).
+
+3. **"O juiz anula" tem gatilho estreito** (CPC art. 63, §3º): foro abusivo em **contrato de adesão com parte vulnerável**. Nosso contrato será negociado (a contraproposta prova isso), entre empresas que se declaram tais (Cláusula 15). Abusividade teria de ser provada em caso concreto — nada no nosso cenário sugere isso.
+
+4. **De onde vem a intuição da colega**: na relação **clínica × paciente**, ela está certa — aí a Aurora é fornecedora, é relação de consumo, e foro no seu próprio endereço seria abusivo. Essa regra deve inclusive orientar os termos de consentimento/admissão dos seus pacientes. O erro é transplantá-la para o contrato B2B com a NEXA.
+
+Uma ressalva honesta: "aceitar" não significa não negociar — se litigar em Florianópolis incomoda, podemos pedir "foro do domicílio do réu" como **preferência comercial**. O que não recomendo é ir à mesa alegar abusividade: não existe base para a alegação neste contrato, e alegar mal enfraquece nossa posição nos pontos que realmente valem dinheiro — a multa de saída (R$ 496.800 no exemplo do mês 12), a não concorrência de R$ 500 mil e os dados de saúde na AWS "provavelmente" nos EUA. É aí que está o risco do contrato, não no mapa do foro.

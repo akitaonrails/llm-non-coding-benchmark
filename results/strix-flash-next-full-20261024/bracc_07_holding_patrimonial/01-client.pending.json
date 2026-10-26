@@ -1,0 +1,47 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "questions": "# Perguntas à cliente (respostas podem alterar o parecer e os números)\n\n1. **Inventário do esposo (falecido em 2019, comunhão parcial):** foi concluído? Os 11 imóveis foram adquiridos na vigência do casamento? Hoje Helena é titular de 100% de cada imóvel ou os filhos já são coproprietários de parte deles (meação/herança)?\n   *Por que importa: se o inventário não foi feito, os filhos — inclusive Marcos — já são donos de parte dos imóveis e a integralização/doação da totalidade é juridicamente impossível sem eles. É a premissa P1 do parecer.*\n2. **Dívidas e litígios:** Helena (ou os filhos) tem dívidas, execuções fiscais/trabalhistas, processos ou risco de credores hoje?\n   *Por que importa: estrutura montada com credores no radar pode ser desfeita por fraude (análise específica fora da biblioteca deste expediente).*\n3. **Deduções da locação na PF:** quanto se paga por mês de IPTU, condomínio pagos pela locadora e comissão de administração de aluguéis?\n   *Por que importa: abatem a base do carnê-leão; hoje o IR de PF (R$ 269 mil/ano) está calculado sem dedutíveis (teto).*\n4. **Política de distribuição da futura PJ:** a intenção é distribuir todo o aluguel mensalmente ao sócio, ou reter/reinvestir parte (inclusive as aplicações de R$ 2,1 mi dentro da holding)?\n   *Por que importa: define o IRRF de 10% sobre o que exceder R$ 50 mil/mês (Lei 15.270/2025); retenção reduz esse custo.*\n5. **Vendas futuras:** há intenção de vender algum imóvel nos próximos anos? Quais os valores de aquisição declarados no IR de cada um?\n   *Por que importa: venda dentro da PJ de locação (Presumido) tem tratamento diverso da venda por PF; a biblioteca não permite comparar — precisa-se delimitar.*\n6. **Adiantamentos anteriores:** Ricardo, Paula ou Marcos já receberam doações/compra subsidiada de imóveis ou dinheiro de Helena?\n   *Por que importa: colação (CC arts. 544 e 2.002-2.012) — impacta o cálculo da legítima e o que ainda pode ser doado.*\n7. **Regime de casamento dos três filhos** (e uniões estáveis): qual o regime de cada um?\n   *Por que importa: efeito prático da cláusula de incomunicabilidade contra genros/noras.*\n8. **Municípios dos imóveis fora de São Paulo capital** (Galpão Guarulhos, Terreno Cotia, Casa Campos do Jordão): confirmação das cidades e disponibilidade de aceitar estimativa a 3% de ITBI para elas (alíquotas não constam da biblioteca deste expediente).\n9. **Existem causas concretas e prováveis contra Marcos** (ofensa física, injúria etc.) que pudessem fundamentar deserdação em testamento?\n   *Por que importa: é o único caminho legal para excluí-lo da legítima (CC arts. 1.961-1.965); as causas legais não estão reproduzidas na biblioteca deste expediente — precisaríamos ampliá-la.*\n",
+  "facts": [
+    {
+      "id": "marcos",
+      "trigger": [
+        "Marcos",
+        "excluir",
+        "deserdar",
+        "legítima",
+        "terceiro filho"
+      ],
+      "answer": "Ele não fala comigo há seis anos. Não quero que receba nada. Se a lei obriga, quero o mínimo possível e com as cláusulas de proteção.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uso_proprio",
+      "trigger": [
+        "Campos do Jordão",
+        "Cotia",
+        "uso próprio",
+        "moradia"
+      ],
+      "answer": "A casa de Campos é da família, ninguém aluga. O terreno de Cotia é para os netos um dia. Eu moro no Jardins — ah não, o Jardins está alugado; moro em Higienópolis, que é alugado por mim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deducoes",
+      "trigger": [
+        "IPTU",
+        "condomínio",
+        "administradora",
+        "despesas dos imóveis"
+      ],
+      "answer": "A administradora cobra 8%; IPTU e condomínio dos vagos eu pago.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "marcos",
+    "uso_proprio",
+    "deducoes"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

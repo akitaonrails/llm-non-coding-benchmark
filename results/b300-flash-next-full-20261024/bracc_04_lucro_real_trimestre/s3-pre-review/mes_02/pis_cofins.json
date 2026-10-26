@@ -1,0 +1,21 @@
+{
+  "mes": "2026-02",
+  "empresa": "Atlas Distribuidora S.A.",
+  "regime": "PIS/COFINS não cumulativos (9,25% combinado)",
+  "debito": 238650.00,
+  "creditos": 157509.00,
+  "estornos": 0.00,
+  "a_recolher": 81141.00,
+  "retificacoes": "Ver mes_01/pis_cofins.json: retificação da EFD-Contribuições de 01/2026 (estorno NF 8812, R$ 11.100,00 + acréscimos não quantificados — cliente não tem data/valor do pagamento original) continua pendente de execução pelo cliente. No mês de fevereiro não há estorno próprio: nenhuma aquisição com crédito indevido no mês.",
+  "memoria": {
+    "debito": "9,25% x receita de vendas 2.580.000,00 = 238.650,00 (razão, ref. TRIB, confere com o lançado em 2.1.03)",
+    "creditos": "9,25% x aquisições de mercadorias para revenda 1.702.800,00 = 157.509,00 (razão, 15/02; premissa mantida: distribuidora, aquisição para revenda — crédito lícito). Brindes (NF-e 4410, 48.000) e doação (30.000) pagos integralmente em caixa, sem crédito tomado — nada a creditar nem estornar nesses itens (verificados no razão).",
+    "estornos": "0,00 — nenhum crédito indevido tomado em fevereiro. O estorno de 11.100 é competência de janeiro (EFD 01/2026 a retificar); contabilmente, foi executado em fevereiro via AJ-02-001.",
+    "a_recolher": "238.650 - 157.509 = 81.141,00 (valor informacional do mês isolado; nos livros, débito 2.1.03 e crédito 1.1.04 permancem brutos — a conta 2.1.03 fecha fevereiro em 1.572.000 sem nenhum recolhimento lançado)",
+    "ativo_acumulado": "1.1.04 no balancete de fev: 323.676 nos livros; após AJ-02-001 = 312.576 (= 155.067 + 157.509, todos lícitos sob a premissa de revenda)"
+  },
+  "alertas": [
+    "Datas de vencimento e situação de pagamento dos DARFs não informadas (cliente declarou não ter a informação) — não calculo acréscimos; sistemática de cálculo também não está na biblioteca citável.",
+    "Os R$ 85.000,00 mensais 'comerciais ordinários' (20/01 e 20/02) foram pagos integralmente em caixa, sem crédito de PIS/COFINS tomado no razão; o cliente declarou não ter mais informação sobre a natureza deles (premissa declarada em pendencias.md item 4) — nada a retificar neste arquivo sob as premissas atuais."
+  ]
+}

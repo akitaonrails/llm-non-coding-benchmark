@@ -1,0 +1,67 @@
+{
+  "evento": "Homologação do plano de recuperação judicial (novação - LRF art. 59, conforme library/cpc_contabil_rj.md)",
+  "criterio_contabil": "CPC 48 (IFRS 9): teste dos 10% - alteração do passivo nominal de 6.470.000 para 2.588.000 (mudança de 60% do nominal) é substancialmente diferente -> baixa o passivo original e reconhece novo passivo a valor justo (PV das parcelas); diferença vai ao resultado como 'receita de renegociação de dívidas em RJ', separadamente divulgada.",
+  "lancamentos": [
+    {
+      "id": 1,
+      "descricao": "Baixa dos passivos financeiros concursais renegociados (classes III e IV)",
+      "debitos": [
+        { "conta": "Passivo - Fornecedores/Empréstimos quirografários (Banco Alfa)", "valor": 4200000 },
+        { "conta": "Passivo - Fornecedores quirografários (Fornecedor Norte, pré-pedido)", "valor": 1850000 },
+        { "conta": "Passivo - Fornecedores ME/EPP (Fornecedor Sul)", "valor": 420000 }
+      ],
+      "creditos": [
+        { "conta": "Passivo - Dívida renegociada RJ - valor justo (120 parcelas pós-carência de 24m)", "valor": 2588000 },
+        { "conta": "Resultado - Receita de renegociação de dívidas em RJ (ganho do deságio)", "valor": 3882000 }
+      ],
+      "conferencia": "D 6.470.000 = C 2.588.000 + C 3.882.000"
+    },
+    {
+      "id": 2,
+      "descricao": "Reclassificação (não baixa) dos créditos concursais mantidos - trabalhistas integrais",
+      "debitos": [
+        { "conta": "Passivo - Obrigações trabalhistas (circulante/original)", "valor": 960000 }
+      ],
+      "creditos": [
+        { "conta": "Passivo - Créditos concursais - classe I (rubrica própria durante a RJ)", "valor": 960000 }
+      ],
+      "conferencia": "Valor integral (sem deságio); ajuste ao valor presente das parcelas (12-18 meses) seria despesa financeira - não calculável sem taxa; mantido pelo nominal. OCPC/CFC: créditos concursais em rubrica própria."
+    },
+    {
+      "id": 3,
+      "descricao": "Banco Beta (fiduciário) - NENHUM lançamento de novação",
+      "debitos": [],
+      "creditos": [],
+      "conferencia": "Cláusula do plano ineficaz (art. 49 §3º): dívida de 3.100.000 permanece extraconcursal. Se quitada com o produto do galpão: D Dívida fiduciária 3.100.000 / C Caixa 3.100.000; máquinas voltam ao ativo imobilizado operando (linha de separação de pedidos)."
+    },
+    {
+      "id": 4,
+      "descricao": "União (R$ 2.700.000) - sem novação; reclassificação por adesão ao parcelamento/transação",
+      "debitos": [
+        { "conta": "Passivo - Tributos federais vencidos (IRPJ/CSLL/PIS/COFINS)", "valor": 2700000 }
+      ],
+      "creditos": [
+        { "conta": "Passivo - Parcelamento/transação fiscal federal (Lei 10.522 arts. 10-A a 10-C), líquido conforme opção eleita", "valor": 2700000 }
+      ],
+      "conferencia": "Se a transação conceder desconto (sessao3/passivo_fiscal_solucao.md), a baixa do diferencial segue CPC 25/orientação aplicável - valor do desconto depende do aceite da PGFN, deixo em aberto."
+    },
+    {
+      "id": 5,
+      "descricao": "Obrigações pós-pedido - segregação contábil (OCPC/CFC)",
+      "debitos": [],
+      "creditos": [],
+      "conferencia": "Fornecimentos pós-pedido (ex.: Norte R$ 310.000) permanecem fora das rubricas concursais, em passivo operacional normal, pagável (art. 67)."
+    }
+  ],
+  "efeito_resultado_no_ano": {
+    "receita_renegociacao": 3882000,
+    "pis_cofins": 0,
+    "irpj_csll_estimado": 1317880,
+    "observacao": "ver sessao2/efeito_tributario_desagio.json - alíquotas rotuladas como não verificadas na biblioteca; tributação pode ser reduzida por prejuízo fiscal (sem trava de 30%, art. 50-A II), mas o estoque de prejuízo é desconhecido."
+  },
+  "premissas_proeminentes": [
+    "Valor justo do novo passivo registrado a R$ 2.588.000 (nominal) como PROXIZAÇÃO do PV: taxa de desconto/não informada; quando houver curva de juros, recalcular (PV < nominal aumentaria o ganho; a materialidade do teste dos 10% já está configurada pela queda de 60% do nominal).",
+    "Data da homologação não informada; lançamento projetado para a data da homologação do plano corrigido (cláusulas ilegais removidas - ver sessao2/analise_plano.md).",
+    "Ganho sobre fiduciário (1.240.000) e sobre a União (1.350.000 se deságio de 50% da minuta) NÃO lançados: juridicamente inexequíveis."
+  ]
+}

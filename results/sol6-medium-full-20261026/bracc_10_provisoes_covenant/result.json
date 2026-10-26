@@ -1,0 +1,20 @@
+{
+  "case": "bracc_10_provisoes_covenant",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 329.74195281695575,
+  "controller_wait_seconds": 30.00262029800797,
+  "model_turn_seconds": 299.733442903962,
+  "turns": 4,
+  "released_facts": [
+    "waiver"
+  ],
+  "usage": {
+    "input_tokens": 351436,
+    "cached_input_tokens": 314240,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 13806,
+    "reasoning_output_tokens": 4326
+  },
+  "api_equivalent_usd": 0.2753
+}

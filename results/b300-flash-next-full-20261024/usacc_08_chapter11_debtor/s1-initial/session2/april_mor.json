@@ -1,0 +1,24 @@
+{
+  "_status": "PLACEHOLDER — DO NOT FILE. No April activity records exist in the client file (documents/ contains only March records), and the client has provided no April receipts/disbursements. Figures are null rather than invented; see april_mor_notes.md. New requests added to QUESTIONS.md.",
+  "part1": {
+    "receipts": null,
+    "disbursements": null,
+    "ending_cash": null,
+    "_known": "Roll-forward identity: April ending cash = 1,771,630.00 (March ending, itself assuming $0 beginning cash — see session1/march_mor_notes.md) + April receipts − April disbursements. Court-ordered/likely April items once records arrive: possible H&P interim fee payment up to 112,000.00 after the 4/14 interim order (see professional_fees.md); Q1 UST fee payment (accrued 3,926.16). No Mesa payment is authorized on current facts."
+  },
+  "part2": {
+    "post_petition_payables": null,
+    "pre_petition_liabilities_subject_to_compromise": null,
+    "_known": "Carry-forward from 3/31 absent April facts: post-petition payables 207,826.16 (incl. H&P 140,000.00, Corbin 45,000.00, Mesa post-petition 18,900.00, UST accrual 3,926.16); LSTC 74,110.00 (incomplete claims register — flagged open since Session 1)."
+  },
+  "part5": {
+    "professional_fees_approved": null,
+    "paid": null,
+    "holdback": null,
+    "_known": "Interim compensation order entered 4/14/2026 (80% interim / 100% holdback). IF H&P's interim application covered its invoiced period and was granted in full: maximum interim payment 140,000.00 × 0.80 = 112,000.00, with the 100% holdback in place pending final award. Whether H&P filed, the awarded amount, and any payment actually made are not in the file. Corbin: no order in file — approved 0, paid 0, holdback 45,000.00 unless April records show otherwise. See professional_fees.md."
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "no — per the April facts in the client file: no payment to Mesa Steel has been made or authorized, and the only pre-petition-debt payments known (Apex $31,200.00 under Dkt. 48; pre-petition wage portion under Dkt. 9) occurred in March. PENDING April disbursements register; a court-awarded H&P interim payment would be an administrative expense, not pre-petition debt.",
+    "payments_outside_ordinary_course_without_approval": "no — per the April facts in the client file. PENDING April disbursements register."
+  }
+}

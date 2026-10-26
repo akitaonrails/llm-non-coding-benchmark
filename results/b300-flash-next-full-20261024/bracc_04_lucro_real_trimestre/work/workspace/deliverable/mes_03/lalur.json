@@ -1,0 +1,34 @@
+{
+  "periodo": "1T/2026 (janeiro–março), Lucro Real trimestral",
+  "empresa": "Atlas Distribuidora S.A.",
+  "lucro_liquido_contabil": 604149.00,
+  "adicoes": {
+    "brindes_janeiro_AF_01_001": 85000.00,
+    "brindes_fevereiro_NFe_4410_AF_02_001": 48000.00,
+    "doacao_assoc_luz_fevereiro_AF_02_002": 30000.00
+  },
+  "exclusoes": {},
+  "lucro_antes_compensacao": 767149.00,
+  "compensacao_prejuizo": 230144.70,
+  "lucro_real": 537004.30,
+  "irpj_15": 80550.65,
+  "adicional_10": 47700.43,
+  "csll": 48330.39,
+  "parte_b": {
+    "prejuizo_fiscal_saldo_final": 669855.30,
+    "base_negativa_csll_saldo_final": 669855.30
+  },
+  "notas_de_preenchimento": {
+    "lucro_liquido_contabil": "Lucro contábil acumulado do 1T APÓS o ajuste AJ-01-001/AJ-03-001 (estorno do crédito NF 8812): 128.483 (jan ajustado) + 193.083 (fev) + 282.583 (mar) = 604.149. Os livros do cliente ainda mostram 615.249,00 até registrarem o estorno (pendência 2). ANTES da provisão de IRPJ/CSLL do próprio trimestre (AJ-03-002, 176.581,47), que não altera a base da apuração que a calcula.",
+    "adicoes": "Nenhuma adição em março (razão sem brindes/doações/uso e consumo; R$ 85.000,00/mês tratados como despesa normal pela premissa final declarada — sensibilidade em alertas). Todas as adições atingem igualmente o lucro real e a base da CSLL (Lei 9.249/95, art. 13 — library/lei9249_art13.md). Fundamentos detalhados em memoria.md.",
+    "aritmética": "767.149,00 = 604.149,00 + 163.000,00 - 0,00",
+    "compensacao_prejuizo": "Limite da trava = 30% x 767.149,00 = 230.144,70; saldo disponível 900.000,00 em 31/12/2025 (saldos_fiscais_abertura.md) > trava → compensa-se a trava cheia. Pedido da diretoria de compensar os 900.000 integrais NEGADO por impossibilidade legal (Lei 9.065/95, arts. 15/16; RE 591.340/Tema 117 — library/lei9065_art15_trava.md).",
+    "lucro_real": "767.149,00 - 230.144,70 = 537.004,30",
+    "irpj": "IRPJ total = 80.550,65 + 47.700,43 = 128.251,08. Adicional: 10% x (537.004,30 - 60.000,00) = 10% x 477.004,30 = 47.700,43 (threshold de R$ 60.000 por trimestre — library/irpj_csll_trimestral.md).",
+    "csll": "Base da CSLL = lucro ajustado antes da compensação menos compensação da base negativa (mesma trava de 30% do art. 16): 767.149,00 - 230.144,70 = 537.004,30; CSLL = 9% x 537.004,30 = 48.330,39.",
+    "arredondamento": "Valores exatos: irpj_15 = 80.550,645; IRPJ total = 128.251,075; CSLL = 48.330,387; soma exata IRPJ+CSLL = 176.581,462. Convenção adotada: arredondar cada componente ao centavo (half-up) e somar os arredondados → IRPJ 128.251,08 + CSLL 48.330,39 = 176.581,47 (provisão AJ-03-002). Diferença de 1 centavo vs. soma exata, aqui evidenciada.",
+    "parte_b": "Prejuízo fiscal: 900.000,00 - 230.144,70 = 669.855,30. Base negativa CSLL: 900.000,00 - 230.144,70 = 669.855,30. Prazo/vencimento desses saldos não é tratado na biblioteca citável — nenhuma afirmação sobre eles.",
+    "total_tributos_1t": "IRPJ 128.251,08 + CSLL 48.330,39 = 176.581,47 (provisionado em 31/03 por AJ-03-002; vencimento do DARF trimestral não consta da biblioteca — não afirmo prazo)",
+    "saldos_pos_apuracao": "LL acumulado após provisão: 604.149,00 - 176.581,47 = 427.567,53. Dedutibilidade dessa provisão na apuração do 2T/2026 NÃO verificada na biblioteca — pendência do 2º trimestre."
+  }
+}

@@ -1,0 +1,5 @@
+I’ll read the contract and inventory the workspace, then build the required deliverables from the provided files. I’ll put any questions that block the work in `deliverable/QUESTIONS.md`.
+
+The RBT12 sums to R$ 1.020.000,00, and the payroll summary totals R$ 284.600,00. Two points prevent an exact final JSON: the April pró-labore appears in the summary but the partner says it was paid in May, and the library does not give the Anexo V tax split needed for `reparticao`. I’ll record precise questions for the client.
+
+Registrei as informações necessárias em [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md) e marquei o trabalho como bloqueado em [STATUS.md](/work/workspace/deliverable/STATUS.md). A confirmação do pagamento do pró-labore define a folha e o Fator R exatos; a biblioteca também precisa da repartição da 4ª faixa do Anexo V para completar o JSON.

@@ -1,0 +1,48 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "questions": "# Questions for the client (Ray Brightline) — status after client reply\n\n## ANSWERED\n\n1. **Covenant / consulting payment:** Client confirms the $400,000 is entirely the 5-year\nnon-competition payment — no separate services component — and he will sign for 5 years\n(he is retiring). He is indifferent to how the payment is labeled as long as the total is unchanged.\nTax consequence is now fixed: the full 400,000 (Exhibit A) is covenant income — **ordinary income to\nRay personally** (`library/irc_197_and_noncompete.md`, Rev. Rul. 69-643; *Muskat*). The counter's\nClass VI position (100,000) stands unchanged by this answer; the covenant term/retiring-seller facts\nare consistent with a real, valuable restraint, which is what keeps a partial Class VI allocation\ndefensible as economic reality.\n\n## UNANSWERED — remaining unknowns (client offered no additional information)\n\n2. **FMV support for Class V (equipment & vehicles) at 650,000:** The fixed asset register's\n`fmv_estimate` column is the only source for the counter's Class V price, and nothing in the file\nsays who prepared it or as of what date. **Flagged unknown** — if Buyer A disputes 650,000, the\nClass V/Exhibit A fix (worth 92,500 to Ray) rests on an unsupported estimate and could require an\nappraisal before signing.\n\n3. **Receivables history:** The file says 200,000 with \"no reserve,\" but whether any prior-year\nbad-debt deductions or reserves exist is unconfirmed. **Flagged unknown** — if any existed, the\nClass III sale could produce ordinary gain (become a tax trap rather than a wash).\n\n## Not answerable by the client (matters of law outside the library) — see memo § 9\n\n- Self-employment tax on Ray's covenant income; Texas franchise tax computation; §453A\ninterest-charge floor on deferred sales; §453B acceleration on note default; the §1221/§1231/§1253\nstatutory underpinning of goodwill-as-capital; character of the §1366(f)(2) BIG-tax loss\npass-through. All labeled unverified in the memo and referred to the return CPA.\n\n## Client questions logged during the engagement\n\n**Turn 3 — \"The $250k-higher offer nets me less? What number from Lone Star beats Hensley?\"** —\nAnswered in memo.md §1, §8(4) and §10. Walk-through: Buyer B taxes one bucket at 20%\n(2,850,000 − 420,000 basis = 2,430,000; tax 486,000; net 2,364,000); Buyer A routes 1,070,000 of the\nprice through the 37% lane (recapture 660,000 + covenant 400,000 + inventory 10,000), leaves only\n1,450,000 at 20%, and a 237,300 §1374 toll is paid at the company gate before anything reaches Ray —\ntotal tax 867,529, net 2,232,471. The 250,000 price advantage is eaten by 381,529 of extra tax.\nTie prices vs B: **3,145,411.25 with the counter allocation; ≈3,264,411–3,308,776 as drafted**\n(bracket stands in for where a renegotiated raise lands in Exhibit A, which the LOI does not fix).\nAssumption reused: entity tax capped (NRIG 1,130,000) and the 237,300 §1366(f)(2) offset fixed at\nany price ≥ 3,100,000 — arithmetic verified line-by-line.\n",
+  "facts": [
+    {
+      "id": "noncompete_term",
+      "trigger": [
+        "non-compete",
+        "noncompete",
+        "longer term",
+        "consult",
+        "stay on"
+      ],
+      "answer": "I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "note_security",
+      "trigger": [
+        "note",
+        "secured",
+        "collateral",
+        "Hensley credit"
+      ],
+      "answer": "The $500k note is unsecured. Hensley's a family office, seems solid, but I don't know their balance sheet.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "liabilities",
+      "trigger": [
+        "liabilities",
+        "warranty",
+        "claims",
+        "lawsuit",
+        "Hardaway"
+      ],
+      "answer": "There's the Hardaway dispute ($9,800) and the usual warranty stuff. Nothing big that I know of.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "noncompete_term"
+  ],
+  "literal_suggestions": [
+    "note_security"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

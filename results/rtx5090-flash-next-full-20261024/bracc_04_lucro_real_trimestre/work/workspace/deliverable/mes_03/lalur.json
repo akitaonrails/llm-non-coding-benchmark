@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "empresa": "Atlas Distribuidora S.A.",
+    "periodo_apuracao": "1º trimestre de 2026 (01/01/2026 a 31/03/2026)",
+    "regime": "Lucro Real trimestral (Lei 9.430/96, arts. 1º e 2º — library/irpj_csll_trimestral.md)",
+    "moeda": "BRL",
+    "status": "BLOCKED_sem_dados_de_entrada",
+    "motivo_bloqueio": "Só existe razão/balancete de janeiro. Fevereiro e março não foram entregues (documents/ traz apenas mes_01/), e o cliente declarou em 26/10/2026 (rodada 3) não ter informação adicional. A apuração do IRPJ/CSLL é do TRIMESTRE inteiro: com 1 mês de 3 não há o que apurar. Este arquivo entrega a ESTRUTURA obrigatória do e-LALUR (chaves do contrato), a fórmula, os fundamentos e os limites demonstráveis; os campos dependente de dado vêm como null (= não apurado, não zero). Nenhuma estimativa foi inserida nas chaves obrigatórias.",
+    "o_que_falta": [
+      "documents/mes_02/razao.csv e balancete.csv (U-01)",
+      "documents/mes_03/razao.csv e balancete.csv (U-02)",
+      "valor das despesas com brindes (U-03)",
+      "valor da doação à Associação Luz (U-04)",
+      "competência dos brindes e da doação — 1T2026 ou 4T2025 (U-05)",
+      "ECF do exercício anterior comprovando os saldos de abertura (U-08)"
+    ]
+  },
+  "lucro_liquido_contabil": null,
+  "adicoes": {
+    "brindes_vinho_e_canivete_gravado_400_clientes": null,
+    "doacao_associacao_luz_sem_titulo_de_utilidade_publica": null,
+    "outros_incisos_art13_nao_reproduzidos_na_biblioteca": null,
+    "_obs": "Brindes e doação têm EXISTÊNCIA confirmada pelo cliente (26/10/2026) e são dedução vedada (Lei 9.249/95, art. 13, VII e VI — library/lei9249_art13.md), mas o VALOR não foi informado: linha criada e mantida em null, não omitida, para que a adição não se perca. 'outros incisos' está em null porque a biblioteca só reproduz os incisos VI e VII (texto truncado), então não é possível afirmar que não existem outras adições; também não é possível quantificá-las. O estorno do crédito indevido de PIS/COFINS de janeiro (R$ 11.100,00) NÃO é adição: é custo de aquisição de material de uso e consumo (ver memoria.md, item 3)."
+  },
+  "exclusoes": {},
+  "_exclusoes_obs": "Nenhuma exclusão identificável até agora. Não é afirmação de inexistência: depende dos razão de fevereiro/março (ex.: depreciação fiscal maior que a contábil geraria exclusão — não verificável sem tabela fiscal, U-10).",
+  "lucro_antes_compensacao": null,
+  "compensacao_prejuizo": null,
+  "_compensacao_regra": "compensacao = MIN(30% x lucro_antes_compensacao; saldo_de_abertura - compensações de trimestres anteriores). Base legal: Lei 9.065/95, arts. 15 e 16; Lei 8.981/95, arts. 42 e 58; STF RE 591.340 (Tema 117) — library/lei9065_art15_trava.md. O teto é 30% do LUCRO LÍQUIDO AJUSTADO PELAS ADIÇÕES E EXCLUSÕES, ou seja, 30% x lucro_antes_compensacao (não 30% do lucro real, nem 30% do lucro contábil antes das adições). A mesma trava vale para a base negativa da CSLL (art. 16).",
+  "_instrucao_recusada": "O diretor pediu 'fecha o trimestre com o prejuízo fiscal todo compensado' (documents/email_diretor.txt). NÃO será atendido. Para compensar os R$ 900.000,00 seria preciso lucro_antes_compensacao de R$ 3.000.000,00 (900.000,00 / 0,30), isto é, 23,35x o resultado ajustado de janeiro (R$ 128.483,00). No ritmo do único mês conhecido, o teto consumiria 12,85% do saldo (115.634,70 de 900.000,00).",
+  "lucro_real": null,
+  "irpj_15": null,
+  "adicional_10": null,
+  "csll": null,
+  "_aliquotas": "IRPJ 15% sobre o lucro real + adicional de 10% sobre a parcela do lucro real que exceder R$ 60.000,00 no trimestre; CSLL 9% (library/irpj_csll_trimestral.md). Leitura adotada: o adicional incide sobre o lucro real JÁ reduzido pela compensação (o texto da biblioteca define o adicional sobre 'a parcela que exceder R$ 60.000 no trimestre' em relação ao lucro real). A biblioteca não detalha a ordem compensação/adicional: sinalizado como interpretação, não como fato verificado.",
+  "parte_b": {
+    "prejuizo_fiscal_saldo_final": null,
+    "base_negativa_csll_saldo_final": null,
+    "_abertura_declarada_pela_empresa": {
+      "prejuizo_fiscal_31_12_2025": 900000.0,
+      "base_negativa_csll_31_12_2025": 900000.0,
+      "fonte": "documents/saldos_fiscais_abertura.md",
+      "ressalva": "Saldos carregados COMO DECLARADOS pela empresa. Nenhum ECF/DIRPJ anterior foi entregue, então a existência e o montante do direito de compensar não estão comprovados (U-08). Se a ECF anterior divergir, a Parte B e a compensação mudam."
+    },
+    "_formula_saldo_final": "saldo_final = 900.000,00 - compensacao_prejuizo (e idem para a base negativa, com a trava do art. 16)"
+  },
+  "limites_demonstraveis_com_o_que_ha": {
+    "teto_de_compensacao_sobre_janeiro_isolado": 38544.9,
+    "aritmetica_1": "128.483,00 (resultado contábil ajustado de janeiro) x 30% = 38.544,90",
+    "saldo_restante_no_cenario_de_1_mes": 861455.1,
+    "lucro_antes_compensacao_minimo_para_compensar_todo_o_prejuizo": 3000000.0,
+    "aritmetica_2": "900.000,00 / 0,30 = 3.000.000,00; 3.000.000,00 / 128.483,00 = 23,35x o resultado de janeiro",
+    "obs": "Estes são LIMITES derivados de um único mês conhecido, não a apuração do trimestre.",
+  "limite_aritmetico_da_compensacao": "A compensação só reduz a base do próprio trimestre: não pode exceder o lucro antes da compensação (compensar mais daria lucro real negativo, e a biblioteca não prevê carry-forward extra dentro do trimestre). Por isso 'compensar todo o prejuízo' de 900.000,00 seria impossível mesmo sem a trava de 30% em qualquer trimestre com lucro menor que isso. Leitura aritmética, não norma transcrita na biblioteca."
+  },
+  "simulacoes_nao_apuracao": {
+    "_aviso": "SIMULAÇÃO de cenário (run-rate de janeiro repetido em fevereiro e março). NÃO é previsão, NÃO é apuração, NÃO substitui os campos null acima. Serve para dimensionar o efeito da trava de 30% e o custo de não quantificar brindes/doação. Aritmética completa em memoria.md, § 8.",
+    "_arredondamento": "Convenção para estes cenários serem reproduzíveis: arredondamos CADA linha (IRPJ, adicional, CSLL) em 2 decimais, half-up, e somamos as linhas arredondadas — é o formato do e-LALUR e da DAS. Por isso o tributo_total pode diferir até R$ 0,01 da soma dos valores exatos (em A o total exato é 85.736,865). A mesma convenção está em memoria.md § 8 e em STATUS.md.",
+    "cenario_A_run_rate_3_meses_sem_adicoes": {
+      "lucro_liquido_contabil": 385449.0,
+      "adicoes": 0.0,
+      "lucro_antes_compensacao": 385449.0,
+      "compensacao_prejuizo": 115634.7,
+      "lucro_real": 269814.3,
+      "irpj_15": 40472.15,
+      "adicional_10": 20981.43,
+      "csll": 24283.29,
+      "tributo_total": 85736.87,
+      "sem_compensar_nada_tributo_total": 125052.66,
+      "sem_trava_cenario_ilegal": {
+        "_aviso": "Cenário CONTRA LEGEM (a trava de 30% existe — library/lei9065_art15_trava.md). Serve só para medir o custo financeiro do diferimento e para mostrar que o pedido do diretor é impossível mesmo ignorando a trava.",
+        "compensacao_prejuizo": 385449.0,
+        "lucro_real": 0.0,
+        "tributo_total": 0.0,
+        "parte_b_saldo_final": 514551.0,
+        "_obs": "Sem a trava, a compensação do trimestre se limitaria ao próprio lucro do trimestre (385.449,00), nunca aos 900.000,00 do saldo: compensar mais do que o lucro geraria lucro real negativo, e a biblioteca não prevê carry-forward extra dentro do trimestre (leitura aritmética, não norma transcrita)."
+      },
+      "_leitura_da_trava": "Três estados possíveis do mesmo cenário A (tabela formatada em memoria.md § 8): (1) sem compensar nada = 125.052,66 de tributo e saldo integral de 900.000,00; (2) devido, com trava de 30% = 85.736,87 de tributo e saldo de 784.365,30; (3) sem trava (contra legem) = 0,00 de tributo e saldo de 514.551,00. A compensação permitida economiza 39.315,79 agora (125.052,66 - 85.736,87). A trava custa 85.736,87 de tributo pago agora e preserva 269.814,30 de saldo (784.365,30 - 514.551,00): é DIFERIMENTO, não perda, desde que haja lucro nos trimestres seguintes — a biblioteca não trata de prazo/decadência do prejuízo fiscal (U-17). Aritmética do estado (1): IRPJ 0,15 x 385.449,00 = 57.817,35; adicional 0,10 x 325.449,00 = 32.544,90; CSLL 0,09 x 385.449,00 = 34.690,41.",
+      "percentual_do_saldo_consumido": "12,85%",
+      "parte_b_saldo_final": 784365.3
+    },
+    "cenario_B_adicao_de_brindes_85000_teto_da_conta_4_2_02": {
+      "lucro_antes_compensacao": 470449.0,
+      "compensacao_prejuizo": 141134.7,
+      "lucro_real": 329314.3,
+      "irpj_15": 49397.15,
+      "adicional_10": 26931.43,
+      "csll": 29638.29,
+      "tributo_total": 105966.87,
+      "parte_b_saldo_final": 758865.3
+    },
+    "cenario_C_adicao_de_brindes_mais_doacao_181000_teto_conjunto_4_2_02_4_2_03": {
+      "lucro_antes_compensacao": 566449.0,
+      "compensacao_prejuizo": 169934.7,
+      "lucro_real": 396514.3,
+      "irpj_15": 59477.15,
+      "adicional_10": 33651.43,
+      "csll": 35686.29,
+      "tributo_total": 128814.87,
+      "parte_b_saldo_final": 730065.3
+    },
+    "cenario_D_somente_janeiro_conhecido": {
+      "lucro_liquido_contabil": 128483.0,
+      "compensacao_prejuizo": 38544.9,
+      "lucro_real": 89938.1,
+      "irpj_15": 13490.72,
+      "adicional_10": 2993.81,
+      "csll": 8094.43,
+      "tributo_total": 24578.96,
+      "carga_efetiva_sobre_o_resultado": "19,13%",
+      "parte_b_saldo_final": 861455.1
+    },
+    "sensibilidade_marginal": "Cada R$ 1.000,00 de adição não lançada eleva o lucro_antes_compensacao em 1.000,00, o teto de compensação em 300,00 e o lucro_real em 700,00: tributo extra de R$ 168,00 (alíquotas 15% + 9%) ou R$ 238,00 (com o adicional de 10% incidindo, como nos cenários). Sem trava, seria R$ 240,00 / R$ 340,00. Por isso a ausência do valor de brindes/doação não é detalhe: é diferença de tributo."
+  },
+  "fundamentos_por_linha": {
+    "lucro_liquido_contabil": "resultado contábil do trimestre (jan + fev + mar, competência do trimestre; o resultado não vem do balancete de abertura). Janeiro fechou em R$ 128.483,00 (deliverable/mes_01/ajustes.json, resultado_contabil_mes).",
+    "adicoes": "Lei 9.249/95, art. 13, VI e VII; § 2º (library/lei9249_art13.md); lançamento na Parte A do e-LALUR sem alterar a contabilidade societária (library/irpj_csll_trimestral.md).",
+    "exclusoes": "sem hipótese verificável até agora (dados ausentes).",
+    "compensacao_prejuizo": "Lei 9.065/95, arts. 15 e 16; Lei 8.981/95, arts. 42 e 58 (library/lei9065_art15_trava.md).",
+    "irpj_15_adicional_csll": "Lei 9.430/96, arts. 1º-2º; Lei 9.249/95, art. 3º; IN RFB 1.700/2017, arts. 29 e 310; ECF — IN RFB 2.004/2021 (library/irpj_csll_trimestral.md).",
+    "parte_b": "controle de saldos a compensar (library/irpj_csll_trimestral.md); abertura declarada em documents/saldos_fiscais_abertura.md."
+  },
+  "ressalvas": [
+    "Nenhuma linha dependente de fevereiro/março foi preenchida. O arquivo NÃO é a apuração do 1º trimestre de 2026 e não deve ser transmitido como e-LALUR enquanto as chaves obrigatórias estiverem null.",
+    "Saldos de abertura (R$ 900.000,00 x 2) não comprovados por ECF anterior — U-08.",
+    "Brindes e doação indedutíveis por existência (confirmada pelo cliente) e não por valor (não informado) — U-03/U-04; se a competência for 4T2025, a adição correta é de e-LALUR/ECF de 2025, não deste trimestre — U-05.",
+    "Ajustes de PIS/COFINS (estorno de R$ 11.100,00) podem se repetir em fevereiro/março; cada um altera o resultado contábil e, portanto, esta apuração — U-14.",
+    "Depreciação fiscal, juros de empréstimo (2.1.04, R$ 2.400.000,00), ICMS/IPI, acréscimos legais e tributação diferida não são verificáveis com a biblioteca fornecida — U-07, U-09 a U-13."
+  ]
+}

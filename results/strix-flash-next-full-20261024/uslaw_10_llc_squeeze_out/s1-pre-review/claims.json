@@ -1,0 +1,132 @@
+[
+  {
+    "claim": "Breach of OA §5.4 (affiliate transactions): Company payments to Castellan Asset Services LLC (100% Castellan-owned) — asset-management fee of $180,000/yr paid 2022-2026 (total $1,050,000) plus monthly 6% of gross rents — without the written disclosure to Members that §5.4 requires for transactions over $50,000/yr, and allegedly not on terms 'no less favorable' than arm's-length",
+    "theory": "express_contract",
+    "direct_or_derivative": "derivative (harm to the Company; recovery to the Company — the library expressly treats 'excessive fees paid to an affiliate' as derivative)",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "Each payment is a separate accrual: 2022-09-01, 2023-09-01, 2024-09-01, 2025-09-01, 2026-09-01 (the §5.4 disclosure was due within 30 days of each). The 2022-08-15 resolution engaging Castellan accrued then, so a challenge to the engagement itself expired 2025-08-15 absent tolling. 10 Del. C. §8106 window measured from today (2026-10-08) opens 2023-10-08.",
+      "barred_portion": 375000,
+      "tolling_argument": "Absent tolling, the 2022 ($180,000) and 2023 ($195,000) payments are outside the 3-year period = $375,000 of the $1,050,000 asset-management fees (35.7%). Tolling is available on two grounds recognized in the library: (a) inherently unknowable injury — the fees were paid by a Company the client does not manage and appear only in bank records the Manager produced on request in 2026; (b) fraudulent/concealment-based tolling — §5.4 imposed a contractual duty to disclose in writing within 30 days and no written disclosure is in the file, and the library states that breach of that §5.4-style disclosure duty supports concealment-based tolling as to the undisclosed fees. Client confirms (2026-10-08) she did not learn of the affiliate arrangement until 2026, when bank statements were produced through a books-and-records demand; until then she received only one-page summaries labeled 'management expenses.' That fact converts the tolling case from available to fact-supported on both grounds: concealment (affiliate payments relabeled, never disclosed in writing as §5.4 requires) and inherent unknowability from records held by the Manager. Demand and production dates must be pulled from her correspondence to fix the discovery date (client has no further information). Equitable tolling on a fiduciary-reliance rationale is weak here because §7.3 eliminated fiduciary duties. Client must have acted promptly on discovery (she obtained records and a broker opinion in 2026 and should file within weeks). Amounts of the monthly 6%-of-gross-rents fees are not in the client file, so the barred portion of that component cannot be quantified."
+    },
+    "strength": "medium",
+    "remedy": "Contract damages to the Company measured by the excess over an arm's-length fee, and/or restitution of payments made outside the §5.4 permission (the library does not state what remedy Delaware allows for breach of an LLC-agreement fee condition — label that as unverified). Practical value to the client is only her 18% share: 18% × $675,000 (in-window) = $121,500; 18% × $1,050,000 (if fully tolled) = $189,000. Demand futility is readily pleaded because the sole Manager is the interested party (§18-1001; Zuckerberg)."
+  },
+  {
+    "claim": "Breach of OA §5.4 written-disclosure right personal to each Member (failure to disclose the Castellan engagement and each annual payment within 30 days)",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct (the library treats breach of a contractual right personal to the member as direct; the disclosure ran 'to all Members')",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "30 days after each covered transaction/payment: 2022-10-01, 2023-10-01, 2024-10-01, 2025-10-01, 2026-10-01.",
+      "barred_portion": 0,
+      "tolling_argument": "Same concealment/inherently-unknowable argument as above. Note the irony that the breach of the disclosure duty is itself the best tolling argument, and that the earliest disclosure breaches (2022-10-01, 2023-10-01) sit just outside the 3-year window on 2026-10-08. Client confirms (2026-10-08) she received only one-page summaries labeled 'management expenses' until a 2026 books-and-records demand produced bank statements — corroboration that no §5.4 written disclosure was ever made."
+    },
+    "strength": "low",
+    "remedy": "Nominal-to-modest damages; its real value is (i) as the tolling predicate for the fee claims and (ii) as an undisputed contractual breach framing the equitable case. Damages for non-disclosure as such are not quantifiable from the file."
+  },
+  {
+    "claim": "Breach of fiduciary duty (loyalty / self-dealing) against Bram Castellan in his capacity as MANAGER — the claim the client most wants",
+    "theory": "fiduciary",
+    "direct_or_derivative": "derivative as to the fees; direct as to the dilution",
+    "survives_waiver": false,
+    "limitations": {
+      "accrual": "Same dates as the fee and dilution conduct (2022-08-15 / payment dates; 2026-08-20 to 2026-09-25).",
+      "barred_portion": 0,
+      "tolling_argument": "Moot — the claim fails at the waiver, not the limitations line. Note that the elimination of fiduciary duties also weakens fiduciary-rationale equitable tolling."
+    },
+    "strength": "low",
+    "remedy": "None. OA §7.3 eliminates the Manager's duties of care and loyalty 'to the fullest extent permitted by the Delaware Limited Liability Company Act,' and 6 Del. C. §18-1101(c) permits elimination of fiduciary duties with maximum effect to freedom of contract. Do not lead with this claim; it invites a motion to dismiss and a fee award risk."
+  },
+  {
+    "claim": "Breach of fiduciary duty against Bram Castellan in his capacity as an 82% CONTROLLING MEMBER (not as Manager) — for causing the capital call, dilution and book-value buyout to be used to acquire the client's interest at a fraction of value",
+    "theory": "fiduciary",
+    "direct_or_derivative": "direct (wrongful dilution of her own interest is direct per the library)",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-08-20 (call notice), 2026-09-25 (dilution notice), 2026-10-01 (buyout offer) — comfortably inside 3 years.",
+      "barred_portion": 0,
+      "tolling_argument": "Not needed for the dilution conduct."
+    },
+    "strength": "medium",
+    "remedy": "Rescission/declaration that the Dilution Event is void, damages measured by the value of the interest taken. CONDITIONAL, and this is the single most important open item: the excerpted §7.3 by its terms eliminates the duties of 'the Manager' only and says nothing about a Member's duties, and 6 Del. C. §18-1101(c) eliminates duties only 'by provisions in the limited liability company agreement.' If the complete agreement contains a member-level waiver, this claim disappears. We have only excerpts (see QUESTIONS.md). Also unverified: whether Delaware enforces such a capacity-limited waiver strictly — that proposition is not in the library."
+  },
+  {
+    "claim": "Invalid Dilution Event — failure to satisfy OA §6.3 notice mechanics: the 2026-08-20 call was sent by text message with a PDF; no letter or certified mail was ever sent; the email bounced to an email address on file dating from 2019 (all confirmed by the client 2026-10-08). §6.3 requires written notice 'delivered to each Member by certified mail and email'",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct (wrongful dilution of the member's own interest)",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-08-20 (defective notice) / 2026-09-25 (notice of Dilution Event). Not time-barred.",
+      "barred_portion": 0,
+      "tolling_argument": "None needed. Note laches: in Chancery the 3-year period applies by analogy and delay in equitable claims is itself a risk — file promptly."
+    },
+    "strength": "high",
+    "remedy": "Declaratory judgment that no Dilution Event occurred and the client remains an 18% Member; injunction against the Company exercising the §9.2 buyout option, which arises only 'following a Dilution Event.' The library rule is strict: the issuer must strictly comply with the agreement's notice mechanics, and a call that fails the specified delivery method does not trigger dilution. Timing was NOT the defect (2026-08-20 to 2026-09-20 is 31 days, which satisfies 'at least 30 days'); the delivery method is. Risks (sharpened by client confirmation, 2026-10-08): (a) actual receipt is now established — she saw the text and PDF on 2026-08-20 and did not respond because she 'assumed it wasn't real notice' — so the count is purely a delivery-method compliance case, exposed to substantial-compliance, waiver and laches responses in an equitable forum; (b) the unexcerpted agreement may contain a notice section permitting other delivery methods or deeming notice effective when sent to the address in the Company's records; (c) she could not have funded in any event (maximum ≈$60,000 versus the $270,000 share), so she cannot argue the notice defect caused her non-funding — the case must be made on compliance, with the purpose and fair-value counts carrying the equities."
+  },
+  {
+    "claim": "Invalid Dilution Event — the call was not 'for a bona fide Company purpose set forth in the call notice': the notice stated only '$1,500,000 additional capital for working capital and opportunities', and Bram funded the entire $1,500,000 including the client's $270,000, immediately diluting her and offering book value",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-08-20 / 2026-09-25. Not time-barred.",
+      "barred_portion": 0,
+      "tolling_argument": "None needed."
+    },
+    "strength": "medium",
+    "remedy": "Same relief as the notice-mechanics claim. Weaker than the delivery defect because 'working capital' is on its face a purpose; the claim needs evidence of pretext — what the $1,500,000 was actually spent on, and whether it was needed at all (see QUESTIONS.md). Client confirms (2026-10-08) she has no information about the use of the $1,500,000 or the Company's cash position in August 2026; the receipts-and-uses ledger must be obtained from the Company (demanded in the draft objection letter). The library requires strict compliance with purpose requirements and treats a call lacking the stated bona fide purpose as not triggering dilution."
+  },
+  {
+    "claim": "Implied covenant of good faith and fair dealing — the §6.3 'fair value of the Company as determined by the Manager in good faith' was exercised arbitrarily/in bad faith: $7,200,000 against a 2026-10-05 independent indication of $14,500,000 enterprise value / $9,800,000 equity value, and the resulting 6.1% cannot be reproduced from any pro rata formula using $7,200,000",
+    "theory": "implied_covenant",
+    "direct_or_derivative": "direct",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-09-25. Not time-barred.",
+      "barred_portion": 0,
+      "tolling_argument": "None needed."
+    },
+    "strength": "high",
+    "remedy": "Void the recomputation and order a good-faith determination; damages measured by her interest at the correct value (15.61% on a $9,800,000 equity base = $1,529,841 of value, versus 6.1%). This claim survives by design: §7.3 expressly preserves the implied covenant, 6 Del. C. §18-1101(c) forbids its elimination, and §18-1101(e) forbids limiting liability for a bad-faith violation of it. The library states a manager's 'good faith' fair-value determination is reviewable for arbitrariness or bad faith where the value is far below a contemporaneous independent indication — $7,200,000 is 26.53% below the independent equity indication and 50.34% below the independent enterprise value."
+  },
+  {
+    "claim": "Implied covenant — using the capital-call → dilution → book-value-buyout machinery to strip an 18% Member for $189,100, i.e. 10.72% of the independent indication of the value of that interest, while the Manager's wholly owned affiliate collected $1,050,000 in undisclosed fees",
+    "theory": "implied_covenant",
+    "direct_or_derivative": "direct",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-08-20 to 2026-10-01. Not time-barred.",
+      "barred_portion": 0,
+      "tolling_argument": "None needed."
+    },
+    "strength": "medium",
+    "remedy": "Declaration plus damages; the library's Dieckman line supports policing a contractual process used deceptively to deprive a minority holder of the fruits of the bargain, notwithstanding exculpation. Risk: the covenant is only a gap-filler and cannot override express terms, so this theory must be tied to the discretion §6.3 confers (purpose, delivery, fair value) rather than to the fairness of book value itself."
+  },
+  {
+    "claim": "Attack on the §9.2 buyout price standard itself (Book Value from the most recent year-end balance sheet = $3,100,000, versus $9,800,000 independent equity value — a $6,700,000 gap)",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-10-01 (offer). Not time-barred.",
+      "barred_portion": 0,
+      "tolling_argument": "None needed."
+    },
+    "strength": "low",
+    "remedy": "None on its own. The library is explicit that the implied covenant cannot override express terms and dilution/valuation provisions are enforced as written; a bargained-for book-value formula is exactly such a term. The correct attack is on the CONDITION PRECEDENT — no valid Dilution Event, therefore no §9.2 option — not on the price formula. Do not plead 'book value is unfair' as a standalone claim."
+  },
+  {
+    "claim": "Declaratory relief on the characterization of the $270,000 Bram funded 'and Imani's share': Company capital contribution by Bram, a member loan to Imani, or an unauthorized advance",
+    "theory": "other",
+    "direct_or_derivative": "direct",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-09-20 (funding date) / 2026-09-25. Not time-barred.",
+      "barred_portion": 0,
+      "tolling_argument": "None needed."
+    },
+    "strength": "medium",
+    "remedy": "Outcome-determinative and unresolved on the file: if the $270,000 was an advance/loan to her, she keeps 18% but owes $270,000 (plus any agreed interest); if it was a Bram capital contribution, a valid dilution would move her to about 15.61% (fair-value-weighted) or 14.90% (at the Manager's own $7,200,000). The Company's ledger treatment must be obtained (QUESTIONS.md)."
+  }
+]

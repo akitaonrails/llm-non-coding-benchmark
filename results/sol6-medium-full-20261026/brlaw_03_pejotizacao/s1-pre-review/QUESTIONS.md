@@ -1,0 +1,6 @@
+# Informações necessárias para fechar o parecer
+
+1. **Término e iniciativa:** qual foi o último dia efetivo de prestação de Rafael? A Solaris dispensou Rafael sem justa causa, Rafael pediu o encerramento, ou houve acordo? Houve aviso prévio trabalhado ou indenizado? Envie a comunicação de rescisão, se existir. A notificação de 30/09/2026 apenas informa que Rafael comunicou o encerramento; ela não esclarece esses pontos.
+2. **Férias e pagamentos:** em cada ano de 2019 a 2026, Rafael efetivamente se afastou? Quais foram as datas e quantos dias? As notas de R$ 18.000 continuaram a ser pagas integralmente durante esses afastamentos ou houve desconto/pagamento específico de férias ou 13º? Envie registros e comprovantes, se disponíveis. O contrato prevê 20 dias anuais, mas não comprova gozo nem quitação.
+3. **Ajuizamento:** a reclamação foi de fato protocolada em 16/11/2026? Se não, informe a data efetiva ou confirme que ainda não houve ajuizamento. A data indicada no arquivo é apenas prevista e altera o corte quinquenal.
+4. **Jornada:** a planilha de janeiro a junho de 2025 cobre toda a jornada extraordinária conhecida? Há registros de ponto ou pagamentos/compensações de horas extras para os demais meses do período exigível? Envie os dados, se houver.

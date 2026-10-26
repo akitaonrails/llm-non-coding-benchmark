@@ -1,0 +1,20 @@
+{
+  "case": "uslaw_02_msa_playbook",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 672.7342453259625,
+  "controller_wait_seconds": 37.00369275599951,
+  "model_turn_seconds": 635.4812609659857,
+  "turns": 2,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 550753,
+    "cached_input_tokens": 542335,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 29540,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

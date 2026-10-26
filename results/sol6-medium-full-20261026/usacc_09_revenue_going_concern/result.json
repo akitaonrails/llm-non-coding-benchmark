@@ -1,0 +1,18 @@
+{
+  "case": "usacc_09_revenue_going_concern",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 335.16065768996486,
+  "controller_wait_seconds": 72.0068146699341,
+  "model_turn_seconds": 263.14686553098727,
+  "turns": 5,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 411679,
+    "cached_input_tokens": 376448,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 11590,
+    "reasoning_output_tokens": 3745
+  },
+  "api_equivalent_usd": 0.2616516
+}

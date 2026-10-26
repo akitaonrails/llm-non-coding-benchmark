@@ -1,0 +1,279 @@
+[
+  {
+    "ref": "JE-2506-001",
+    "date": "2025-06-01",
+    "memo": "June 2025 monthly subscription invoices INV-2325..INV-2348, 24 customers, total 30,450 (invoices.csv). Same cohort as Feb-May. SaaS access over time (ASC 606-10-25-14(b), 25-27; policy #1). Billed and earned in the same month.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-002",
+    "date": "2025-06-01",
+    "memo": "New annual contract C-029 Saltline Hospitality, INV-2349 21,600 billed upfront for 12 months (invoices.csv; order_form_C-029.md: order 2025-06-01, service start 2025-06-01, term 12 months from service start, auto-renewing, signed electronically). Contract liability per policy #1 and ASC 606-10-25-27; monthly release 21,600/12 = 1,800 begins in June (JE-2506-016).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 21600.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2200",
+        "debit": 0,
+        "credit": 21600.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-003",
+    "date": "2025-06-26",
+    "memo": "June customer receipts: all 24 monthly invoices collected 06/20-06/26 (cash_receipts.csv, 30,450; matches bank ACH credits 06/20-06/26 one-for-one by date and amount; payee-name variants noted - see bank reconciliation).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-004",
+    "date": "2025-06-15",
+    "memo": "Saltline Hospitality annual prepayment collected by wire 06/15, 21,600 (bank; INV-2349).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 21600.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0,
+        "credit": 21600.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-005",
+    "date": "2025-06-05",
+    "memo": "Vendor bill AWS 10,520, 06/05 (vendor_bills.csv, hosting & infrastructure); paid by ACH 06/05 per bank. May was 10,400, April 10,280 - usage trend, no anomaly.",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 10520.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0,
+        "credit": 10520.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-006",
+    "date": "2025-06-06",
+    "memo": "Vendor bill WeWork 7,200, 06/06 (vendor_bills.csv, rent); paid by ACH 06/06 per bank. Unchanged.",
+    "lines": [
+      {
+        "account": "6100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-007",
+    "date": "2025-06-07",
+    "memo": "Vendor bill Gusto fees 240, 06/07 (vendor_bills.csv, G&A other); paid by ACH 06/07 per bank, separate from payroll debits. Unchanged.",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-008",
+    "date": "2025-06-08",
+    "memo": "Vendor bill Notion/Slack/GitHub 1,460, 06/08 (vendor_bills.csv, software & tools); paid by ACH 06/08 per bank. Unchanged.",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-009",
+    "date": "2025-06-09",
+    "memo": "Vendor bill Harbor Law LLP 2,500, 06/09 (vendor_bills.csv, professional fees); paid by ACH 06/09 per bank. Second Harbor Law occurrence this year: March carried an identical 2,500 bill paid 03/09 (verified against the March statement in May). Distinct documented bill in each month, each paid once - consistent with a quarterly cadence (03/09, 06/09); not a duplicate posting. See open_items.md.",
+    "lines": [
+      {
+        "account": "6600",
+        "debit": 2500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0,
+        "credit": 2500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-010",
+    "date": "2025-06-10",
+    "memo": "Vendor bill Google Ads 3,500, 06/10 (vendor_bills.csv, marketing); paid by ACH 06/10 per bank. May was 3,450, March/April 3,300 - spend varies.",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 3500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0,
+        "credit": 3500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-011",
+    "date": "2025-06-10",
+    "memo": "Vendor ACH payments, 6 bills paid in-month per bank 06/05-06/10 (AWS 10,520 + WeWork 7,200 + Gusto fees 240 + software 1,460 + Harbor Law 2,500 + Google Ads 3,500 = 25,420). No payment against opening AP 17,420 for the sixth consecutive month (U9 observation).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 25420.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 25420.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-012",
+    "date": "2025-06-25",
+    "memo": "June payroll per payroll_register.json (pay date 06/25): gross 54,404; net pay 48,200 paid via bank 06/25 (GUSTO NET PAY). Employee withholding derived as 54,404 - 48,200 = 6,204 - register does not itemize it (U7). Third-party verification: gross 54,404 is arithmetically impossible as 9 x 5,000 x 6 = 270,000 x 20.15% (rate implied by January U1 evidence: 54,404 = 20.15% x 270,000).",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2210",
+        "debit": 0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-013",
+    "date": "2025-06-25",
+    "memo": "Employer payroll taxes/benefits for June per payroll_register.json, 5,076.",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2210",
+        "debit": 0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-014",
+    "date": "2025-06-25",
+    "memo": "Payroll tax remittance per register and bank 06/25 (GUSTO TAX): 11,280 = 6,204 employee withholding + 5,076 employer portion. Register and bank agree for the sixth consecutive month.",
+    "lines": [
+      {
+        "account": "2210",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-015",
+    "date": "2025-06-30",
+    "memo": "June depreciation: 64,000 / 5 yr = 12,800/yr = 1,066.67/mo leasehold improvements (account 1300) + 2,120.00/12 = 177.00 x 4 = 711.00/mo computer equipment (account 1500) = 1,777.67 per revenue_policy_memo depreciation schedule; used as booked in prior months: 1,777.78.",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "JE-2506-016",
+    "date": "2025-06-30",
+    "memo": "June revenue release from deferred revenue: Trestle renewal 24,000/12 = 2,000 (renewal term 2025-01-01..2025-12-31, order form C-026). Pinecone 0 - term unknown (U10, F4). Marigold 18,000/12 = 1,500 (term documented, order form C-027). Quarry 30,000/12 = 2,500 (term documented, order form C-028). Saltline 21,600/12 = 1,800 (term documented, order form C-029; service start 2025-06-01). Per policy #1 and ASC 606-10-25-27. Monthly release = 7,800.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 7800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 7800.0
+      }
+    ]
+  }
+]

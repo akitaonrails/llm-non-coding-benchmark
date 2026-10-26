@@ -1,0 +1,47 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "questions": "# Perguntas ao cliente (Técnica Forte — Sérgio)\n\n## Respostas recebidas (12/10/2026) — perguntas encerradas\n\n- **(2) Reconhecimento de P5–P6:** inexistente — «depois sumiram». **Prescrição de P5–P6 consolidada.** Não perguntar de novo.\n- **(3) Outros pagamentos:** nenhum além do PIX de 02/08/2023 (R$ 10.000, «por conta da primeira parcela»). Abatido.\n- **(5) Serviço de fev–mar/2021:** houve greve em fev/2021; equipe «fez o que deu»; existem relatórios assinados pelo encarregado da Boa Vista. Prejudicado pela prescrição de P5–P6.\n- **(6) Aditivos:** cliente descreve tudo como «meio informal», contrato só com os dois representantes, sem testemunhas; nada de aditivo/assinatura digital. **Monitória confirmada.**\n- **(4) Negativações preexistentes:** cliente não tem informação → tratada como **desconhecido** (ver abaixo).\n\n## Perguntas que ficam sem resposta (cliente não dispõe dos dados — fechar como assunção/desconhecido)\n\n1. **IPCA acumulado (out/2020 → 12/10/2026)**: indisponível no acervo. O cálculo final da correção terá de ser feito na inicial com fatores oficiais (IBGE), não verificáveis neste workspace. Total encerrado sem IPCA: **R$ 194.390**.\n2. **Legitimidade das 3 negativações preexistentes da Boa Vista**: desconhecida; a blindagem da Súmula 385/STJ fica condicionada a esse fato.\n",
+  "facts": [
+    {
+      "id": "testemunhas",
+      "trigger": [
+        "testemunha",
+        "assinatura",
+        "título executivo",
+        "quem assinou"
+      ],
+      "answer": "O contrato foi assinado só pelos dois representantes, sem testemunhas. Foi tudo meio informal.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pagamento",
+      "trigger": [
+        "pagamento parcial",
+        "10 mil",
+        "2023",
+        "PIX"
+      ],
+      "answer": "Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "greve",
+      "trigger": [
+        "greve",
+        "parcelas 5 e 6",
+        "serviço concluído",
+        "fevereiro",
+        "março"
+      ],
+      "answer": "Teve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "greve",
+    "pagamento",
+    "testemunhas"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

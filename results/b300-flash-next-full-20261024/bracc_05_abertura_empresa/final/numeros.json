@@ -1,0 +1,19 @@
+{
+  "itbi": {
+    "devido": false,
+    "base": 0,
+    "fundamento": "CF art. 156, §2º, I e CTN arts. 36-37 (library/cf156_ctn37_itbi.md): transmissao de bens ao patrimonio de PJ em realizacao de capital e imune. Tema 796/STF (RE 796.376): a imunidade so alcanga o valor creditado ao capital - no desenho recomendado o imovel entra por R$ 420.000 (valor da declaracao de IR - Lei 9.249/95, art. 23) integralmente creditados ao capital, logo base tributavel R$ 0. Excecao da atividade preponderante (CTN art. 37, PJ nova: 3 anos seguintes): aluguel real dos 40% informado pelo cliente - R$ 8.000/mes ao dentista = R$ 96.000/ano, ou seja, ~8,0% da receita projetada de R$ 1.200.000 (~7,4% se somada a locacao a receita) - folgadamente abaixo de 50%; acompanhar por 3 anos. Se o imovel entrasse por R$ 900.000 com apenas parte creditada ao capital, o excesso de R$ 480.000 seria tributavel. RE 1.495.108 pendente sobre o alcance da excecao (risco residual). Sem imovel na PJ (Cenario B - recomendado), nao ha ITBI."
+  },
+  "integralizacao_imovel": {
+    "valor_recomendado": 420000,
+    "ganho_capital_pf": 0
+  },
+  "pro_labore_minimo_recomendado_mensal": {
+    "Marina": 0,
+    "Felipe": 5000,
+    "Luana": 5000
+  },
+  "distribuicao_mensal_pretendida": 50000,
+  "irrf_dividendos_2026_estimado_mensal": 0,
+  "simples_possivel": false
+}

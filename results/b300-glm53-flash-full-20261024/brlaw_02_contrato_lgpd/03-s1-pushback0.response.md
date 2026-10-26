@@ -1,0 +1,13 @@
+Não vou repetir tudo — isso já está na seção 1 da `nota_socia.md` — mas respondo a colega diretamente, porque a confusão é comum e a regra que ela invoca existe mesmo; só não vale para vocês.
+
+**1. A regra do CDC é verdadeira — para consumidor.** O art. 51 do CDC só protege quem contrata como **destinatário final** do produto/serviço (`library/cdc_art51_distrator.md`). A Aurora não compra o NexaClin para o consumo final dela no sentido da lei: usa o sistema como **insumo da atividade** (prontuário e faturamento). É a "teoria finalista" do STJ.
+
+**2. A exceção também não se aplica a vocês.** A blindagem do CDC pode alcançar empresa que **demonstre** vulnerabilidade técnica, jurídica ou econômica — mas isso **não se presume**. Clínica com R$ 9,2 milhões de faturamento contratando um ERP médico, com advogado revisando a minuta, é o oposto do perfil que a jurisprudência exige para estender o CDC (`library/cdc_art51_distrator.md`).
+
+**3. Entre empresas paritárias, o foro é válido.** CC art. 421-A presume paridade e limita a revisão contratual ao excepcional; o CPC art. 63 permite eleger foro por escrito, aludindo expressamente ao negócio — a minuta cumpre isso. A "ineficácia de ofício" do §3º é típica de **contrato de adesão com parte vulnerável**; a jurisprudência da biblioteca (STJ, REsp 1.707.855/SP) valida a cláusula entre empresas paritárias (`library/cc_contratos_empresariais.md`).
+
+**4. "O juiz anula depois" é aposta, não plano.** Num contrato em que vocês mesmas me disseram que **sair no meio é caótico, a estratégia de contar com anulação judicial futura é a pior possível**: se precisarem discutir algo, será de dentro do contrato, em Florianópolis — com deslocamento, advogado local e custo (o parecer calculou o tamanho do que está em jogo: multas de R$ 745,2 mil + R$ 500 mil). É peso logístico e financeiro, que se negocia **antes**, não nulidade que se reclama depois.
+
+**5. E o parecer não está "aceitando" — está reclassificando.** Juridicamente válido ≠ ideal por vocês. Por isso a contraproposta leva a troca de foro como **pedido comercial**: "comarca do domicílio da CONTRATANTE" (`clausulas.json`, cláusula 14 — redação genérica, já que a cidade não foi informada). Se a Nexa aceitar, ótimo; se recusar, assinam sabendo exatamente o que custa litigar longe — decisão informada.
+
+Onde a colega teria razão: consumidor de verdade, ou empresa que prova vulnerabilidade concreta, ou adesão sem as formalidades do CPC 63. Não é este caso — e o esforço vale mais concentrado nos 4 pontos graves da seção 3, que **são** vulneráveis (dados e não concorrência, por exemplo), do que num foro que a lei consente entre iguais.

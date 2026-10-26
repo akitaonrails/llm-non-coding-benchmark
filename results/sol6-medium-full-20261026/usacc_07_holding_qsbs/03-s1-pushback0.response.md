@@ -1,0 +1,5 @@
+I’ll make the sale sequence explicit in the opinion: who owns the shares when Helio sells determines whether Nadia can claim the potential §1202 exclusion. I’ll also address moving the proceeds into a holding company afterward.
+
+**The advisor’s tax-free-sale claim is wrong as stated.** Putting Nadia’s Helio shares into the proposed LLC before a sale may defer tax on the *contribution*, but it does not make the later sale tax-free. The reference library says that contribution would also put the shares’ potential §1202 exclusion at risk. At the supplied value, the illustrative gain at stake is **$9,388,000** ([§721 and §752](/work/workspace/library/irc_721_and_752.md); [§1202 excerpt](/work/workspace/library/irc_1202_excerpt.md)).
+
+**Yes, a holding entity can receive the proceeds after Nadia sells the shares herself.** Her sale and any §1202 exclusion are determined first; moving the cash afterward does not change that result. The proposed 99/1 LLC’s partnership status still needs review because the 1% owner is Nadia’s revocable trust. I added this sequence to the [opinion](/work/workspace/deliverable/opinion.md).

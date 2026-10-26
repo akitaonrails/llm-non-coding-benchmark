@@ -1,0 +1,48 @@
+{
+  "form1040": {
+    "1a_wages": 122000.00,
+    "2b_interest": 400.00,
+    "8_other_income_sch1": -31050.00,
+    "11_agi": 91350.00,
+    "12_deduction": 31500.00,
+    "15_taxable_income": 59850.00,
+    "16_tax": 6708.00,
+    "19_ctc": 2200.00,
+    "17_sch2_excess_aptc": 1900.00,
+    "24_total_tax": 6408.00,
+    "25d_withholding": 8730.00,
+    "34_refund_or_37_owed": 2322.00
+  },
+  "form7203": {
+    "stock_basis_begin": 11500.00,
+    "loss_allowed": 11500.00,
+    "loss_suspended": 16500.00
+  },
+  "form8582": {
+    "rental_loss": 21018.00,
+    "magi": 110900.00,
+    "special_allowance": 19550.00,
+    "loss_allowed": 19550.00,
+    "carryforward": 1468.00
+  },
+  "form8962": {
+    "household_income": 91350.00,
+    "fpl_pct": 292.79,
+    "applicable_figure_pct": 5.7115,
+    "annual_ptc": 7531.26,
+    "aptc": 9900.00,
+    "excess": 2368.74,
+    "repayment_limitation": 1900.00,
+    "repayment": 1900.00
+  },
+  "dependents": [
+    "Sofia Reyes (age 15 per client email and 1095-A; exact DOB not in file) — qualifying child, CTC $2,200",
+    "Leo Castellano (b. 2016-03-14, age 9; name/DOB per custody order) — NOT claimed for 2025: custody order gives odd years to the father and client confirmed Elena signed a Form 8332 release for his year (open check: release should specify TY 2025)"
+  ],
+  "ny": {
+    "resident_days": 183,
+    "marcus_ny_wages": 68000.00,
+    "elena_ny_wages": 54000.00,
+    "method": "Part-year: NY resident Jan 1 - Jul 2 (183 of 365 days; FL domicile established Jul 3, Tampa closing/move-in). Nonresident Jul 3 - Dec 31. Wages from both NY employers treated as NY-source for the full year under the convenience-of-the-employer rule (remote work from FL for employee convenience, not employer necessity); non-wage income allocated by resident-day ratio (183/365); the Brooklyn condo rental is ASSUMED NY-source for the entire year — the library's IT-203 excerpt taxes nonresidents on NY-source income but supplies no sourcing rule for real-property income, so this is an outside-library assumption (judgment call #12), immaterial because no NY tax figure is a deliverable field. Excess NY withholding ($6,752) is recovered as a refund on IT-203. Client confirmed both spouses requested the remote arrangement and neither employer needed them out of state — employee convenience, not employer necessity — so post-move NY workdays (unknown) do not affect the full-year wage sourcing."
+  }
+}

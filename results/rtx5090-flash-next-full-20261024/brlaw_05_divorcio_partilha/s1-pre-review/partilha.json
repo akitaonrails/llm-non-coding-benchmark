@@ -1,0 +1,83 @@
+[
+  {
+    "bem": "Apartamento Perdizes",
+    "natureza": "comum",
+    "valor_total": 1200000,
+    "valor_partilhavel": 1200000,
+    "meacao_fernanda": 600000,
+    "fundamento": "Adquirido onerosamente em 2017, na constância do casamento (CC art. 1.660, I). FINANCIAMENTO: saldo devedor R$ 300.000 é dívida comum (ver linha DIVIDAS); meação líquida = (1.200.000 - 300.000)/2 = R$ 450.000.",
+    "controversia": "Presunção de comum. Verificar se o sinal não foi pago com dinheiro de herança (sub-rogação, CC 1.659, I) — ver QUESTIONS.md; sem prova, presume-se comum."
+  },
+  {
+    "bem": "Casa de Atibaia (Rua das Hortênsias, 45)",
+    "natureza": "particular",
+    "valor_total": 800000,
+    "valor_partilhavel": 0,
+    "meacao_fernanda": 0,
+    "fundamento": "Bem sobrevindo por sucessão na constância do casamento — excluído da comunhão (CC art. 1.659, I). Formal de partilha do inventário de João Andrade (2019) atribui a casa a Marcelo, registrada na matrícula em 11/2019, valorada em R$ 620.000.",
+    "controversia": "Fernanda pede metade. A valorização 620k (2019) → 800k (hoje) é de bem particular: a biblioteca não estende a tese de 'esforço comum' (que ela trata só para quotas) a imóveis herdados — comunicam-se apenas frutos/percepções (CC 1.660, V); o cliente confirmou reforma em 2021 com ~R$ 120.000 do casal (ver linha própria: indenização devida pela casa ao patrimônio comum). A reforma NÃO converte o imóvel em comum; gera crédito de recomposição. Pretensão de metade do imóvel segue sem amparo na biblioteca."
+  },
+  {
+    "bem": "Benfeitorias/reforma da casa de Atibaia (2021, ~R$ 120.000 pagos com dinheiro do casal)",
+    "natureza": "comum",
+    "valor_total": 120000,
+    "valor_partilhavel": 120000,
+    "meacao_fernanda": 60000,
+    "fundamento": "Crédito da sociedade conjugal contra o bem particular de Marcelo: R$ 120.000 do patrimônio comum empregados na reforma (confirmação do cliente, 2021). A recomposição já embutida no bem valorizado não se duplica: o valor atual da casa (800.000) já reflete a reforma; o crédito de 120.000 reduz o particular líquido de Marcelo (1.200.000 → 1.080.000) e engrossa a massa. Pagamento feito via caixa equalizador (+R$ 60.000).",
+    "controversia": "BASE JURÍDICA NÃO ESTÁ NA BIBLIOTECA: os arts. 1.658–1.662 não tratam expressamente de benfeitorias em bem particular; a tese de recomposição é Doutrina/Jurisprudência NÃO VERIFICADAS aqui. Tratada como ajuste equitativo de negociação (60.000 é barato diante dos 800.000 do imóvel preservados)."
+  },
+  {
+    "bem": "FGTS — Marcelo (saldo depositado na constância)",
+    "natureza": "comum",
+    "valor_total": 140000,
+    "valor_partilhavel": 140000,
+    "meacao_fernanda": 70000,
+    "fundamento": "Valores depositados durante o casamento integram o patrimônio comum e devem ser partilhados, ainda que o saque seja diferido; o art. 1.659, VI, não afasta a partilha do que já se incorporou ao patrimônio (STJ REsp 1.399.199/RS, 2ª Seção, 2017).",
+    "controversia": "Nenhuma quanto à partilha — a proposta de Fernanda ('FGTS fica com ele porque é dele') está ERRADA contra o precedente, embora o resultado a beneficie. Incluir a partilha protege o acordo de revisão futura."
+  },
+  {
+    "bem": "Quotas Andrade Engenharia Ltda. (100%, Marcelo)",
+    "natureza": "misto",
+    "valor_total": 1500000,
+    "valor_partilhavel": 1100000,
+    "meacao_fernanda": 550000,
+    "fundamento": "Quotas: bem particular (sociedade constituída em 2011, antes do casamento — CC art. 1.659, I). Comunicam-se a valorização por esforço comum e os lucros não distribuídos/reinvestidos na constância (CC art. 1.660, V), apurados por apuração de haveres da fração do período, SEM ingresso da ex-cônjuge na sociedade (STJ REsp 1.595.775/AP; EREsp 1.623.858). Cálculo de referência da biblioteca: diferença de valor entre o casamento e a separação: 1.500.000 - 400.000 = 1.100.000; meação 550.000. Pagamento via apuração de haveres.",
+    "controversia": "A divergência sobre o ALCANCE foi estreitada pela CONFIRMAÇÃO do cliente: 'nunca distribuí lucro; reinvesti tudo' — a totalidade do hiato 400k→1,5M é lucros não distribuídos/reinvestidos na constância (CC 1.660, V), não ágio de mercado. Alavanca de negociação de Marcelo praticamente zerada; manter 550.000. O 'uns 400 mil' é estimativa do cliente (sem laudo de 2014) — risco de laudo adverso usar base menor que 400k aumentaria a meação; data da separação de fato não informada (assumida ≈ laudo)."
+  },
+  {
+    "bem": "PGBL — Fernanda (aportes 2016–2025)",
+    "natureza": "comum",
+    "valor_total": 90000,
+    "valor_partilhavel": 90000,
+    "meacao_fernanda": 45000,
+    "fundamento": "Previdência privada aberta (PGBL) em fase de acumulação: saldo formado por aportes na constância é partilhável por natureza de investimento (STJ REsp 1.698.774/RS, 3ª Turma, 2020) — posição de referência adotada. O PGBL fica com Fernanda; ela compensa Marcelo com R$ 45.000 (já embutido no caixa equalizador).",
+    "controversia": "Matéria controvertida: a 4ª Turma decide em sentido contrário quanto ao VGBL. Todos os aportes são de 2016–2025 (casamento iniciados em 2014), então 100% do saldo é de época comum."
+  },
+  {
+    "bem": "Carro SUV (Fernanda)",
+    "natureza": "comum",
+    "valor_total": 120000,
+    "valor_partilhavel": 120000,
+    "meacao_fernanda": 60000,
+    "fundamento": "Bem móvel: presumem-se adquiridos na constância os bens móveis quando não provada data anterior (CC art. 1.662); usado pela família. Fica com Fernanda (desejo do cliente), que assume o saldo devedor de R$ 60.000: efeito líquido = 120.000 - 60.000 = R$ 60.000, exatamente a meação de cada.",
+    "controversia": "Dívida do carro: é comum (bens da comunhão respondem por obrigações para os encargos da família — CC art. 1.664). O pedido de Marcelo ('dívida é dela') só se sustenta como COMPENSAÇÃO no cálculo — é o que o quadro faz — não como exclusão da partilha."
+  },
+  {
+    "bem": "TOTAL",
+    "natureza": "comum",
+    "valor_total": 3850000,
+    "valor_partilhavel": 2770000,
+    "meacao_fernanda": 1385000,
+    "fundamento": "valor_total = bens físicos descritos (1.200.000+800.000+140.000+1.500.000+90.000+120.000). valor_partilhavel = comuns: 1.200.000 + 140.000 + 1.100.000 (quotas, só a valorização) + 90.000 + 120.000 (carro) + 120.000 (crédito de reforma de Atibaia, liquidado em dinheiro por quem fica com a casa — não é novo bem físico; por isso não entra no valor_total) = 2.770.000 bruto. Líquido das dívidas comuns: 2.770.000 - 360.000 = 2.410.000 → MEAÇÃO LÍQUIDA DE CADA = R$ 1.205.000. Particulares de Marcelo: 800.000 (casa, reforma compensada no caixa) + 400.000 (quotas pré-casamento) = 1.200.000; após compensar o crédito da reforma (120.000), restam 1.080.000. Provação final em caixa: Marcelo fica com 1.200.000 (apto líq.) + 1.500.000 (quotas) + 800.000 (casa) + 70.000 (FGTS metade) - 985.000 (caixa pago) = 2.285.000 = meação 1.205.000 + particular líq. 1.080.000 ✔; Fernanda 60.000 (carro líq.) + 90.000 (PGBL) + 70.000 (FGTS) + 985.000 = 1.205.000 ✔; soma 3.490.000 = 3.850.000 - 360.000 ✔.",
+    "controversia": "meacao_fernanda 1.385.000 é sobre o BRUTO; após rateio das dívidas comuns (180.000) fica 1.205.000. Ver proposta_acordo.md para o quadro de equalização (caixa de R$ 985.000, sendo 60.000 = metade do crédito da reforma, + R$ 70.000 de FGTS pagos por Marcelo)."
+  },
+  {
+    "bem": "DIVIDAS",
+    "natureza": "comum",
+    "valor_total": 360000,
+    "valor_partilhavel": 360000,
+    "meacao_fernanda": 180000,
+    "fundamento": "Dívidas comuns (CC art. 1.664 — bens da comunhão respondem por obrigações para os encargos da família): financiamento do apartamento R$ 300.000 (garante bem comum, contraído na constância) + financiamento do carro R$ 60.000 — cliente confirma: carro da família (levava as crianças), carro E financiamento no nome de Fernanda; presumida comum (CC 1.662) e destinada aos encargos da família (1.664). Rateio: 180.000 cada. No acordo, Marcelo assume o saldo do apartamento e Fernanda o do carro (já está em nome dela — natural e sem cessão a tratar) — refletido no quadro de equalização.",
+    "controversia": "A alegação original de Marcelo de que 'a dívida do carro é só dela' não é aceita como exclusão da partilha; entra como compensação na adjudicação do carro a Fernanda (líquido 60.000 a cada). O saldo do apartamento exige anuência do credor para cessão — procedimento não tratado na biblioteca (não verificado)."
+  }
+]

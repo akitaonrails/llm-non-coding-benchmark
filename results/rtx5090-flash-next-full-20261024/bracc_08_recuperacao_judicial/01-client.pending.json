@@ -1,0 +1,35 @@
+{
+  "case": "bracc_08_recuperacao_judicial",
+  "questions": "# Perguntas ao Cliente — Sessão 1\n\nResponda numerado; as respostas serão incorporadas na próxima rodada.\n\n1. **Data exata do pedido** de recuperação judicial (a decisão de processamento é de 12/03/2026 e a relação trata 20/03/2026 como pós-pedido). Precisamos da data do protocolo para fixar o corte do art. 49 e a data de início das contas mensais ao AJ.\n2. **Fluxo de caixa 13 semanas**: só recebemos as semanas 1–4 do CSV. Entregue as semanas 5–13 (ou confirme que só existem 4).\n3. **Entrega Norte de 20/03 (R$ 310 mil)**: esse valor já foi pago (e está dentro da linha \"pagamentos_pos_pedido\" das semanas 1–4) ou ainda está em aberto?\n4. **Créditos trabalhistas (R$ 960 mil / 112 empregados)**: há relação individual por empregado? Sem a base do art. 83 na biblioteca não consigo verificar eventual cisão pelo teto de 1,5 salário mínimo; com a relação individual poderemos ao menos sinalizar a distribuição (assinale como não verificada).\n5. **Galpão (UPI)**: valor contábil (custo menos depreciação) e situação (livre e desembaraçado? onerado? essencial à atividade?). Necessário para o demonstrativo e para o ganho na venda.\n6. **Partes ligadas**: algum dos credores da relação (notadamente Banco Alfa/Beta ou fornecedores) é parte ligada ao controle da Atlas? O art. 50-A, parágrafo único, exclui pessoas ligadas dos benefícios fiscais da renegociação.\n7. **Máquinas do Banco Beta**: são bens de capital essenciais à distribuição (vedação de retirada durante a suspensão — art. 49, §3º)? Há risco de consolidação de propriedade pelo fiduciário?\n8. **Dívidas tributárias estaduais/municipais (ICMS/ISS)**: existem, além dos R$ 2,7 mi federais? A biblioteca só cobre o parcelamento federal (Lei 10.522).\n",
+  "facts": [
+    {
+      "id": "norte",
+      "trigger": [
+        "Norte",
+        "metade",
+        "por fora",
+        "fornecimento",
+        "parar"
+      ],
+      "answer": "O Norte aceita continuar fornecendo à vista a partir de agora, mas quer 'um sinal' sobre o atrasado. Se eu não pagar, eles param.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "beta",
+      "trigger": [
+        "Beta",
+        "fiduciária",
+        "máquinas",
+        "essenciais"
+      ],
+      "answer": "As máquinas do Beta são a linha de separação de pedidos; sem elas, não opera.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "norte",
+    "beta"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

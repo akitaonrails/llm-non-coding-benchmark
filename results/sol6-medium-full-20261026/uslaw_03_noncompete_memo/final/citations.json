@@ -1,0 +1,104 @@
+[
+  {
+    "cite": "Restatement (Second) of Conflict of Laws §187(2)",
+    "library_file": "restatement_187.md",
+    "proposition": "A contractual choice yields to the law of a state with a materially greater interest and fundamental contrary policy when that state's law would otherwise apply.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "DeSantis v. Wackenhut Corp., 793 S.W.2d 670 (Tex. 1990)",
+    "library_file": "desantis_v_wackenhut.md",
+    "proposition": "Texas refused a foreign law clause in a non-compete dispute because the working state had a materially greater interest and contrary fundamental policy.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Nedlloyd Lines B.V. v. Superior Court, 3 Cal.4th 459 (1992)",
+    "library_file": "nedlloyd_v_superior_court.md",
+    "proposition": "California applies the Restatement §187 fundamental-policy and materially-greater-interest test to contractual law choices.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Application Group, Inc. v. Hunter Group, Inc., 61 Cal.App.4th 881 (1998)",
+    "library_file": "application_group_v_hunter.md",
+    "proposition": "California's non-compete policy is fundamental and displaced a foreign law choice where California had a materially greater interest.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Cal. Lab. Code §925",
+    "library_file": "cal_lab_925.md",
+    "proposition": "An employee who primarily resides and works in California can elect to void prohibited, required out-of-state forum and choice provisions; actual individual counsel in negotiation is an exception; employee fees are discretionary.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Tex. Civ. Prac. & Rem. Code §17.042; Michiana Easy Livin' Country v. Holten, 168 S.W.3d 777 (Tex. 2005)",
+    "library_file": "tx_jurisdiction_note.md",
+    "proposition": "A forum clause generally supplies jurisdictional consent, but independent Texas contacts become uncertain if it is voided; a Texas injunction faces California nonrecognition risk.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Advanced Bionics Corp. v. Medtronic, Inc., 29 Cal.4th 697 (2002)",
+    "library_file": "advanced_bionics_v_medtronic.md",
+    "proposition": "California courts generally should not enjoin parallel litigation in another state over a non-compete.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Cal. Bus. & Prof. Code §16600 (as amended by SB 699, eff. Jan. 1, 2024)",
+    "library_file": "cal_bpc_16600.md",
+    "proposition": "Employment non-competes are void absent a statutory exception, regardless of narrow tailoring.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Edwards v. Arthur Andersen LLP, 44 Cal.4th 937 (2008)",
+    "library_file": "edwards_v_arthur_andersen.md",
+    "proposition": "California rejects the narrow-restraint exception for employment non-competes.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Ixchel Pharma, LLC v. Biogen, Inc., 9 Cal.5th 1130 (2020)",
+    "library_file": "ixchel_v_biogen.md",
+    "proposition": "A rule of reason for business-to-business restraints is distinct from the rule governing employment non-competes.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Cal. Bus. & Prof. Code §16600.5 (eff. Jan. 1, 2024)",
+    "library_file": "cal_bpc_16600_5.md",
+    "proposition": "Void non-competes are unenforceable regardless of signing place; entry or attempted enforcement is a civil violation with employee injunctive, damages, and prevailing-party fee remedies.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Tex. Bus. & Com. Code §15.50(a), §15.51(b)-(c), §15.52",
+    "library_file": "tex_bcc_15_50.md",
+    "proposition": "An employment covenant must be ancillary and reasonably limited; the employer bears the burden; courts must reform unreasonable limits and cannot award prereformation breach damages.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Alex Sheshunoff Management Services, L.P. v. Johnson, 209 S.W.3d 644 (Tex. 2006)",
+    "library_file": "sheshunoff_v_johnson.md",
+    "proposition": "An employer's promise to provide confidential information can support an at-will employment covenant when the promise is later performed.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Marsh USA Inc. v. Cook, 354 S.W.3d 764 (Tex. 2011)",
+    "library_file": "marsh_usa_v_cook.md",
+    "proposition": "Stock-option consideration related to goodwill can support a covenant without a narrow give-rise requirement.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "FTC Non-Compete Clause Rule, 89 Fed. Reg. 38342 (May 7, 2024)",
+    "library_file": "ftc_noncompete_rule_16cfr910.md",
+    "proposition": "The final federal non-compete rule was vacated nationwide and never took effect.",
+    "status_checked": "vacated"
+  },
+  {
+    "cite": "Ryan LLC v. FTC, 739 F. Supp. 3d 496 (N.D. Tex. 2024)",
+    "library_file": "ryan_llc_v_ftc.md",
+    "proposition": "The district court set aside the FTC Non-Compete Clause Rule nationwide; the appeal was later dismissed.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Cal. Bus. & Prof. Code §16600.1 (eff. Jan. 1, 2024)",
+    "library_file": "cal_bpc_16600_1.md",
+    "proposition": "Invalid non-competes cannot be included in employment contracts; individualized notices to eligible workers were due February 14, 2024, and violation is unfair competition.",
+    "status_checked": "in force"
+  }
+]

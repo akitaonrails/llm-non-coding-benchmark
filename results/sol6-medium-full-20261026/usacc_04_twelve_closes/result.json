@@ -1,0 +1,20 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 1473.8624216530006,
+  "controller_wait_seconds": 154.01503760600463,
+  "model_turn_seconds": 1319.7541122660623,
+  "turns": 15,
+  "released_facts": [
+    "pinecone_onboarding"
+  ],
+  "usage": {
+    "input_tokens": 5983806,
+    "cached_input_tokens": 5830016,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 80256,
+    "reasoning_output_tokens": 17322
+  },
+  "api_equivalent_usd": 2.2761432000000004
+}

@@ -1,0 +1,46 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "questions": "# QUESTIONS.md — informação pedida ao cliente\n\n> Instruções: respostas por extenso; nada aqui bloqueia a leitura do parecer, mas cada resposta refina um número ou um risco.\n\n1. **Valor venal municipal dos 11 imóveis (verba descritiva do município de São Paulo/Guarulhos/etc.):** a base do ITBI é o valor venal, não informado; estimamos pelo valor de mercado (R$ 16.430.000). Com o venal, refazemos: 3% × venal = ITBI exato.\n2. **Deduções da PF (carnê-leão):** quanto ela pagou/deduziu de IPTU, condomínio e comissão de administração nos últimos 12 meses? Com isso afunila-se o IR da PF e a economia real da PJ.\n3. **IRRF 2026:** pode confirmar a redação que a sua assessoria adota para a Lei 15.270/2025 — 10% sobre **o excedente** mensal de R$ 50 mil ou sobre **o total** distribuído?? (A biblioteca não explicita; mudança de leitura altera a carga PJ de 15,07% para 20,96%.)\n4. **Regime de bens dos filhos:** Ricardo, Paula e Marcos são casados ou união estável? Com quem? Regime? (afeta a análise das cláusulas de incomunicabilidade.)\n5. **Passivos:** há dívidas, financiamentos ou hipotecas sobre imóveis ou pessoais? (afeta legítima e valor de quotas.)\n6. **Água/gás/seguro:** há despesas recorrentes imputáveis à locação que devam entrar na holding além de IPTU/condomínio/comissão (ex.: administradora de aluguéis, reformas)? (ajusta o lucro distribuível e o IRRF 2026.)\n7. **Aplicações (R$ 2,1 mi):** do que é a carteira? (a biblioteca não traz a regra de integralização de aplicações; sem isso, recomendamos mantê-las fora da holding.)\n8. **Deserdação de Marcos:** ela desejaria receber orientação formal sobre as causas legais de deserdação (arts. 1.961-1.965)? Se sim, é preciso narrar fatos específicos e comprováveis, além de eventual testamento com justa causa declarada.\n9. **Outras rendas:** além dos aluguéis, tem renda tributável (pensão, pró-labore, juros)? (a tabela progressiva da PF e o limite de R$ 50 mil/mês de distribuição dependem do conjunto das rendas.)\n",
+  "facts": [
+    {
+      "id": "marcos",
+      "trigger": [
+        "Marcos",
+        "excluir",
+        "deserdar",
+        "legítima",
+        "terceiro filho"
+      ],
+      "answer": "Ele não fala comigo há seis anos. Não quero que receba nada. Se a lei obriga, quero o mínimo possível e com as cláusulas de proteção.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uso_proprio",
+      "trigger": [
+        "Campos do Jordão",
+        "Cotia",
+        "uso próprio",
+        "moradia"
+      ],
+      "answer": "A casa de Campos é da família, ninguém aluga. O terreno de Cotia é para os netos um dia. Eu moro no Jardins — ah não, o Jardins está alugado; moro em Higienópolis, que é alugado por mim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deducoes",
+      "trigger": [
+        "IPTU",
+        "condomínio",
+        "administradora",
+        "despesas dos imóveis"
+      ],
+      "answer": "A administradora cobra 8%; IPTU e condomínio dos vagos eu pago.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "marcos",
+    "deducoes"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

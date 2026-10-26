@@ -1,0 +1,28 @@
+{
+  "options": {
+    "founders_plan_delaware_llc_s_election_ineligible": {
+      "entity_level_tax": 3300.0,
+      "founder_tax_priya": 31322.5,
+      "founder_tax_tomas": 31322.5,
+      "payroll_taxes": 12240.0,
+      "total": 78185.0,
+      "assumptions": "INELIGIBLE counterfactual, not an available tax plan on supplied 2026 residency facts. Hypothetical 2027 calendar year; $610,000 receipts; $260,000 before owner pay; $40,000 wage each. Assumed 15.3% combined employee/employer payroll on $80,000 wages = $12,240; half, $6,120, is employer expense. LLC California tax/fee $800+$2,500=$3,300. Pass-through after wages, employer payroll and CA charge = $260,000-$80,000-$6,120-$3,300=$170,580, or $85,290 each; illustrative 25% founder income tax on $40,000+$85,290=$125,290 is $31,322.50 each. $3,300+$31,322.50+$31,322.50+$12,240=$78,185. Excludes Delaware cost, potentially taxable service stock, California/Mexico income taxes and cross-border items. The $40,000 wage may be unreasonable."
+    },
+    "recommended_california_llc_partnership_50_50_future_profits": {
+      "entity_level_tax": 3300.0,
+      "founder_tax_priya": 32087.5,
+      "founder_tax_tomas": 32087.5,
+      "payroll_taxes": 39275.1,
+      "total": 106750.1,
+      "assumptions": "Illustrative 2027 calendar year. $610,000 receipts; $260,000 before owner compensation; no guaranteed payments or wages; $800 CA annual tax + $2,500 receipts fee = $3,300. $260,000-$3,300=$256,700 available for 50/50 current profit allocation, $128,350 each. Assumed flat 25% founder income tax = $32,087.50 each. Assumed 15.3% self-employment tax proxy on entire $256,700 = $39,275.10, placed in payroll_taxes to keep the requested schema. $3,300+$32,087.50+$32,087.50+$39,275.10=$106,750.10. No deduction for self-employment tax or §199A. Cross-border tax, withholding, state personal income tax, sourcing, Mexico tax and actual rates are unknown; employment tax treatment is unverified by the library."
+    },
+    "other_california_llc_partnership_contribution_weighted_profits": {
+      "entity_level_tax": 3300.0,
+      "founder_tax_priya": 55007.14,
+      "founder_tax_tomas": 9167.86,
+      "payroll_taxes": 39275.1,
+      "total": 106750.1,
+      "assumptions": "Same illustrative year and rates as recommendation, but profits follow appraised/cash contribution ratio $120,000:$20,000 = 6:1 instead of equal future profits. After $3,300 CA charge, $256,700 x 6/7 = $220,028.57 Priya and x 1/7 = $36,671.43 Tomas. Assumed 25% founder income taxes are $55,007.14 and $9,167.86. Assumed 15.3% self-employment tax proxy on $256,700 = $39,275.10. $3,300+$55,007.14+$9,167.86+$39,275.10=$106,750.10. This misses the requested equal future upside. Same unverified tax-rate, sourcing, cross-border and deduction exclusions as recommendation."
+    }
+  }
+}

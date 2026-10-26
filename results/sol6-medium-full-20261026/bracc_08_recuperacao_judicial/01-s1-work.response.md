@@ -1,0 +1,7 @@
+Vou ler o contrato e os arquivos de workspace/, identificar as regras aplicáveis ao mês do pedido e montar a resposta ao diretor financeiro com o primeiro demonstrativo mensal ao AJ.
+
+Os créditos e as regras jurídicas estão documentados. O fluxo chamado “13 semanas” traz só quatro linhas, sem datas; vou fechar a aritmética dessas quatro semanas e deixar explícito o que falta para atribuí-las ao mês de março e confirmar os saldos do demonstrativo.
+
+Preparei os três arquivos da sessão 1: [resposta ao diretor](/work/workspace/deliverable/sessao1/resposta_diretor.md), [classificação dos créditos](/work/workspace/deliverable/sessao1/classificacao_creditos.json) e [demonstrativo mensal ao AJ](/work/workspace/deliverable/sessao1/demonstrativo_mensal_aj.md). Os cálculos conferem: R$ 7,43 milhões em créditos concursais e caixa de R$ 840 mil ao fim das quatro semanas informadas.
+
+O demonstrativo ainda é **provisório**: o fluxo não traz as datas das semanas nem comprova que cobre todo o mês do pedido. Registrei as informações necessárias em [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md) e o estado da entrega em [STATUS.md](/work/workspace/deliverable/STATUS.md). Aguardo as respostas do cliente para fechá-lo.

@@ -1,0 +1,23 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/strix-flash-next-full-20261024/brlaw_04_execucao_fiscal/02-s1-work-client1",
+  "elapsed_seconds": 1578.7171110950003,
+  "controller_wait_seconds": 13.001429656986147,
+  "model_turn_seconds": 1565.506556331995,
+  "turns": 2,
+  "released_facts": [
+    "ana_saida",
+    "opera"
+  ],
+  "usage": {
+    "input_tokens": 832992,
+    "cached_input_tokens": 772950,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 53985,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

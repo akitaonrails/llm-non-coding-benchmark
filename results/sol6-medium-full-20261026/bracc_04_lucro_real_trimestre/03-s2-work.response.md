@@ -1,0 +1,7 @@
+Vou conferir os documentos de fevereiro e os saldos de janeiro, lançar os ajustes necessários e conciliar o PIS/COFINS em `deliverable/mes_02/`.
+
+O balancete de fevereiro é acumulado e ainda traz os saldos de janeiro sem os ajustes do fechamento anterior. Vou incluir esses lançamentos na conciliação acumulada, registrar a compensação dos créditos elegíveis de fevereiro e separar a doação das despesas comerciais. Os R$ 48 mil de brindes e os R$ 30 mil de doação ficarão identificados para adição fiscal no trimestre.
+
+Fechei fevereiro em [mes_02](/work/workspace/deliverable/mes_02/pendencias.md). O [PIS/COFINS do mês](/work/workspace/deliverable/mes_02/pis_cofins.json) resulta em **R$ 81.141,00 a recolher**. O lucro contábil de fevereiro é **R$ 193.083,00**. Conferi o balancete acumulado após os [ajustes](/work/workspace/deliverable/mes_02/ajustes.json): débitos e créditos somam R$ 22.975.334,00 cada.
+
+Separei a doação das despesas comerciais e identifiquei **R$ 78.000,00 em adições fiscais** para a apuração trimestral: R$ 48.000,00 de brindes e R$ 30.000,00 de doação. O [status](/work/workspace/deliverable/STATUS.md) permanece *COMPLETE WITH OPEN ITEMS* pelas pendências da NF 8812 e da escrituração de janeiro, detalhadas no fechamento.

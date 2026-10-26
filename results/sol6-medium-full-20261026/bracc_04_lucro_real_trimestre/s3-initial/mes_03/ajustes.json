@@ -1,0 +1,51 @@
+[
+  {
+    "data": "2026-03-31",
+    "ref": "RET01-JAN-NF8812",
+    "historico": "Transposição para o balancete acumulado de março do ajuste de janeiro AJ01-NF8812, ausente no razão recebido. Estorno do crédito indevido da NF 8812 sob premissa de R$ 120.000,00 devidos ao fornecedor. Aplicar somente uma vez; não duplicar se já contabilizado.",
+    "debito": {"conta": "2.1.01", "nome": "Fornecedores", "valor": 11100.00},
+    "credito": {"conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "valor": 11100.00}
+  },
+  {
+    "data": "2026-03-31",
+    "ref": "RET02-JAN-PISCOFINS",
+    "historico": "Transposição para o balancete acumulado de março do ajuste de janeiro AJ02-PISCOFINS, ausente no razão recebido. Compensação do crédito elegível de janeiro. Aplicar somente uma vez.",
+    "debito": {"conta": "2.1.03", "nome": "Tributos a recolher", "valor": 155067.00},
+    "credito": {"conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "valor": 155067.00}
+  },
+  {
+    "data": "2026-03-31",
+    "ref": "RET03-FEV-PISCOFINS",
+    "historico": "Transposição para o balancete acumulado de março do ajuste de fevereiro AJ03-FEV-PISCOFINS, ausente no razão recebido. Compensação do crédito elegível de fevereiro. Aplicar somente uma vez.",
+    "debito": {"conta": "2.1.03", "nome": "Tributos a recolher", "valor": 157509.00},
+    "credito": {"conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "valor": 157509.00}
+  },
+  {
+    "data": "2026-03-31",
+    "ref": "RET04-FEV-DOACAO",
+    "historico": "Transposição para o balancete acumulado de março da reclassificação AJ04-FEV-DOACAO, ausente no razão recebido. Sem efeito no resultado. Aplicar somente uma vez.",
+    "debito": {"conta": "4.2.06", "nome": "Despesas com doações", "valor": 30000.00},
+    "credito": {"conta": "4.2.02", "nome": "Despesas comerciais", "valor": 30000.00}
+  },
+  {
+    "data": "2026-03-31",
+    "ref": "AJ05-MAR-PISCOFINS",
+    "historico": "Compensação do crédito elegível de PIS/COFINS sobre compras de mercadorias de março.",
+    "debito": {"conta": "2.1.03", "nome": "Tributos a recolher", "valor": 159951.00},
+    "credito": {"conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "valor": 159951.00}
+  },
+  {
+    "data": "2026-03-31",
+    "ref": "AJ06-IRPJ-TRI",
+    "historico": "Provisão de IRPJ do 1º trimestre de 2026: 15% sobre R$ 485.274,30 mais adicional de 10% sobre R$ 425.274,30; total R$ 115.318,58.",
+    "debito": {"conta": "4.4.01", "nome": "Despesa de IRPJ", "valor": 115318.58},
+    "credito": {"conta": "2.1.03", "nome": "Tributos a recolher", "valor": 115318.58}
+  },
+  {
+    "data": "2026-03-31",
+    "ref": "AJ07-CSLL-TRI",
+    "historico": "Provisão de CSLL do 1º trimestre de 2026: 9% sobre a base de R$ 485.274,30; R$ 43.674,69.",
+    "debito": {"conta": "4.4.02", "nome": "Despesa de CSLL", "valor": 43674.69},
+    "credito": {"conta": "2.1.03", "nome": "Tributos a recolher", "valor": 43674.69}
+  }
+]

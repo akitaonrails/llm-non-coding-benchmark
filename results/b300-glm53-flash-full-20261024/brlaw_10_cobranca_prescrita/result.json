@@ -1,0 +1,23 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 529.0065262040007,
+  "controller_wait_seconds": 63.00624144100584,
+  "model_turn_seconds": 465.896053163975,
+  "turns": 4,
+  "released_facts": [
+    "greve",
+    "pagamento"
+  ],
+  "usage": {
+    "input_tokens": 1254745,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 47474,
+    "reasoning_output_tokens": 29751
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

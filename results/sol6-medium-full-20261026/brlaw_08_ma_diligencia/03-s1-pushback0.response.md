@@ -1,0 +1,7 @@
+I’ll address the buyer’s objection in the negotiation response and give Hélio a clear signing recommendation. The issue is how 8.4(c) works with 5.7 and 5.9 when the disclosed PJ arrangements and positive federal certificate contradict those declarations.
+
+**Hélio: não assinem a minuta atual.** A 5.7 diz que não existe risco de vínculo, mas os 11 engenheiros PJ trabalham com exclusividade, horário e subordinação. A 5.9 diz que há certidões negativas, mas a certidão federal é positiva pelo IRPJ em cobrança. Não podemos tratar essas declarações como verdadeiras só porque são “básicas”.
+
+A 8.4(c) pode ser usual isoladamente. **Nesta minuta**, ela permite ao comprador pedir indenização por esses fatos já conhecidos, com teto de até o preço total para 5.7 e 5.9 e prazo de cinco anos. Propus ao advogado do comprador anexos que descrevam os fatos e indenizações específicas com limites acordados; a resposta está em [resposta_advogado_comprador.md](/work/workspace/deliverable/resposta_advogado_comprador.md).
+
+É possível **assinar uma versão revista antes de receber a anuência da Horizonte Azul**, desde que a anuência escrita seja condição efetiva para fechar a venda. A minuta atual diz que o Anexo 3.2 “não se aplica”. Também precisam estar acordados, antes da assinatura, os anexos de exceções e os limites de indenização. A orientação aos sócios está atualizada em [nota_socios.md](/work/workspace/deliverable/nota_socios.md).

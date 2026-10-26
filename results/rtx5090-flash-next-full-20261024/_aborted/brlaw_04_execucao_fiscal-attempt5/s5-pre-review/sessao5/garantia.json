@@ -1,0 +1,17 @@
+{
+  "valor_remanescente_atualizado": 591000,
+  "seguro_garantia": {
+    "valor_garantido": 768300,
+    "custo_anual": 8835
+  },
+  "fianca": {
+    "valor_garantido": 768300,
+    "custo_anual": 19208
+  },
+  "transacao": {
+    "base": 591000,
+    "desconto_estimado": 164636,
+    "observacao": "Base = apenas o crédito remanescente (1T/2021 R$ 302.000 + 2T/2021 R$ 289.000 = 591.000); os R$ 509.000 decaídos (3T/2020 268.000 + 4T/2020 241.000) ficam FORA da transação — a fonte veda transacionar débito decaído ('excluem-se primeiro os períodos nulos'). Desconto estimado (piso): multa = 591.000 − principal, com principal = 591.000 ÷ 1,75 = 337.714,29 e multa = 253.285,71 (premissa: multa de ofício exatamente 75% sobre o principal, consistente com o TVF — conferir no inteiro teor do AI); 65% × 253.285,71 = 164.635,71 ≈ 164.636, abaixo do limite legal (desconto limitado ao principal de 337.714 ✔). É PISO porque SELIC/juros não foram computados: a biblioteca não contém tabela SELIC mensal (VALOR NÃO VERIFICADO) — acrescida a SELIC, sobem tanto o débito quanto o desconto (até o teto = principal). ATENÇÃO: adesão implica confissão irrevogável e DESISTÊNCIA das defesas quanto aos débitos incluídos — transacionar agora abandonmentaria exceção (decadência) e embargos sobre esses períodos; por isso a base só deve ser confirmada APÓS decisão da decadência."
+  },
+  "recomendacao": "1) 'valor_remanescente_atualizado' de R$ 591.000 é o saldo SEM atualização SELIC — a tabela mensal não consta da biblioteca (não verificável aqui); pedir a planilha/CDAP atualizada da PGFN e reescalar tudo antes de contratar. 2) Garantia do juízo: preferir SEGURO-GARANTIA a fiança bancária — cobertura idêntica de 130% (591.000 × 1,30 = 768.300; Portaria PGFN 164/2014: 'acrescido de 30%'), custo anual típico 0,8–1,5% a.a. sobre a apólice = R$ 6.146 a R$ 11.525 (ponto médio 1,15% ≈ 8.835), contra 2–3% a.a. da fiança = R$ 15.366 a R$ 23.049 (ponto médio 2,5% ≈ 19.208) — economia anual de ~R$ 10 mil e a fiança ainda consome limite de crédito bancário. Valores são piso: com SELIC, a cobertura de 13% a mais sobre um débito maior sobe. 3) A garantia habilita os EMBARGOS (30 dias da garantia — LEF arts. 9º e 16 §1º) para as matérias probatórias reservadas (imputação dos DARFs de 61.000 e 84.000, base de cálculo), mantendo a exceção de pré-executividade (decadência de 509.000). Alternativa legal prevista (nomeação de bens, LEF art. 9º III) pode ser avaliada com o cliente; penhora de faturamento é excepcional (fonte). 4) Transação (Lei 13.988/2020): NÃO adesitar agora — exige confissão irrevogável + desistência das defesas sobre o débito incluído. Sequência recomendada: (i) garantia com seguro 768.300 (ajustado à planilha atualizada); (ii) embargos + sustentar decadência; (iii) após decisão que extinga os 509.000, renegociar por transação apenas o resíduo (desconto estimado ≥164.636 sobre multa, teto = principal, prazos até 120 meses, conforme CAPAG) — comparando transação × continuidade dos embargos quando a planilha SELIC e o inteiro teor do AI permitirem calcular o valor real. 5) Se a decisão da exceção sair antes da contratação, a cobertura recai só sobre o débito já reduzido — esperar o provável é financeiramente melhor, mas garante-se contra penhora garantindo logo; decisão a tomar com o cliente (risco hoje: execução sobre a sociedade; sócios protegidos pela defesa ao redirecionamento)."
+}

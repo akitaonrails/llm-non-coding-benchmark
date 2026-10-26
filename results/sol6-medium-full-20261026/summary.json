@@ -1,0 +1,765 @@
+{
+  "wall_seconds": 4376.242874595046,
+  "cases": [
+    {
+      "case": "bracc_01_das_fator_r",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 314.38323121500434,
+      "controller_wait_seconds": 26.00264319201233,
+      "model_turn_seconds": 288.3654966009781,
+      "turns": 3,
+      "released_facts": [
+        "prolabore_abril"
+      ],
+      "usage": {
+        "input_tokens": 472121,
+        "cached_input_tokens": 437888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15425,
+        "reasoning_output_tokens": 4675
+      },
+      "api_equivalent_usd": 0.3102936
+    },
+    {
+      "case": "bracc_03_cbs_ibs_ano_teste",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 365.51913669198984,
+      "controller_wait_seconds": 33.00329773995327,
+      "model_turn_seconds": 332.4963566440274,
+      "turns": 4,
+      "released_facts": [
+        "rejeicao"
+      ],
+      "usage": {
+        "input_tokens": 771862,
+        "cached_input_tokens": 716288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15159,
+        "reasoning_output_tokens": 4790
+      },
+      "api_equivalent_usd": 0.40599559999999996
+    },
+    {
+      "case": "bracc_02_escolha_regime",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 417.9522185070091,
+      "controller_wait_seconds": 35.003506764012855,
+      "model_turn_seconds": 382.93528829689603,
+      "turns": 4,
+      "released_facts": [
+        "lucro",
+        "obra_pct"
+      ],
+      "usage": {
+        "input_tokens": 670115,
+        "cached_input_tokens": 597248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20559,
+        "reasoning_output_tokens": 7783
+      },
+      "api_equivalent_usd": 0.47077359999999996
+    },
+    {
+      "case": "bracc_04_lucro_real_trimestre",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 577.1968692379887,
+      "controller_wait_seconds": 46.00456105690682,
+      "model_turn_seconds": 531.1692238600226,
+      "turns": 6,
+      "released_facts": [
+        "papel"
+      ],
+      "usage": {
+        "input_tokens": 1015732,
+        "cached_input_tokens": 965632,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30633,
+        "reasoning_output_tokens": 10571
+      },
+      "api_equivalent_usd": 0.5996564
+    },
+    {
+      "case": "bracc_06_venda_quotas_vs_ativos",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 292.0525469040149,
+      "controller_wait_seconds": 20.00172136805486,
+      "model_turn_seconds": 272.0452363509685,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 410132,
+        "cached_input_tokens": 370816,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13293,
+        "reasoning_output_tokens": 4400
+      },
+      "api_equivalent_usd": 0.2857252
+    },
+    {
+      "case": "bracc_07_holding_patrimonial",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 353.1590613690205,
+      "controller_wait_seconds": 44.00369884201791,
+      "model_turn_seconds": 309.1501506969216,
+      "turns": 4,
+      "released_facts": [
+        "deducoes",
+        "uso_proprio"
+      ],
+      "usage": {
+        "input_tokens": 379316,
+        "cached_input_tokens": 351232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15805,
+        "reasoning_output_tokens": 5627
+      },
+      "api_equivalent_usd": 0.2844644
+    },
+    {
+      "case": "bracc_05_abertura_empresa",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 470.4328352569719,
+      "controller_wait_seconds": 42.003481708001345,
+      "model_turn_seconds": 428.4231623400701,
+      "turns": 3,
+      "released_facts": [
+        "aluguel_pct",
+        "luana_trabalho",
+        "marina_cargo",
+        "regime_bens"
+      ],
+      "usage": {
+        "input_tokens": 422519,
+        "cached_input_tokens": 379392,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20876,
+        "reasoning_output_tokens": 4779
+      },
+      "api_equivalent_usd": 0.3708924
+    },
+    {
+      "case": "brlaw_01_prazos_processuais",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 157.46117623400642,
+      "controller_wait_seconds": 14.001388514006976,
+      "model_turn_seconds": 143.45465624297503,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 218039,
+        "cached_input_tokens": 192512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6728,
+        "reasoning_output_tokens": 1821
+      },
+      "api_equivalent_usd": 0.1568364
+    },
+    {
+      "case": "bracc_09_distribuicao_lucros",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 341.9159749959945,
+      "controller_wait_seconds": 73.00706083711702,
+      "model_turn_seconds": 268.9018136559753,
+      "turns": 4,
+      "released_facts": [
+        "deliberacao_2025"
+      ],
+      "usage": {
+        "input_tokens": 391567,
+        "cached_input_tokens": 364928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13544,
+        "reasoning_output_tokens": 3399
+      },
+      "api_equivalent_usd": 0.2617036
+    },
+    {
+      "case": "bracc_10_provisoes_covenant",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 329.74195281695575,
+      "controller_wait_seconds": 30.00262029800797,
+      "model_turn_seconds": 299.733442903962,
+      "turns": 4,
+      "released_facts": [
+        "waiver"
+      ],
+      "usage": {
+        "input_tokens": 351436,
+        "cached_input_tokens": 314240,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13806,
+        "reasoning_output_tokens": 4326
+      },
+      "api_equivalent_usd": 0.2753
+    },
+    {
+      "case": "brlaw_02_contrato_lgpd",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 357.6383277619607,
+      "controller_wait_seconds": 15.001586798985954,
+      "model_turn_seconds": 342.6313711379771,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 454278,
+        "cached_input_tokens": 416768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15716,
+        "reasoning_output_tokens": 3750
+      },
+      "api_equivalent_usd": 0.31553359999999997
+    },
+    {
+      "case": "bracc_08_recuperacao_judicial",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 732.065628965036,
+      "controller_wait_seconds": 89.00891201000195,
+      "model_turn_seconds": 643.0440749389818,
+      "turns": 8,
+      "released_facts": [
+        "norte"
+      ],
+      "usage": {
+        "input_tokens": 1281685,
+        "cached_input_tokens": 1201664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35607,
+        "reasoning_output_tokens": 10571
+      },
+      "api_equivalent_usd": 0.7564448
+    },
+    {
+      "case": "brlaw_03_pejotizacao",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 340.70275029801996,
+      "controller_wait_seconds": 31.003344731987454,
+      "model_turn_seconds": 309.6933638250339,
+      "turns": 4,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 423692,
+        "cached_input_tokens": 394880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14781,
+        "reasoning_output_tokens": 5595
+      },
+      "api_equivalent_usd": 0.28441
+    },
+    {
+      "case": "brlaw_07_credor_rj",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 321.5227781169815,
+      "controller_wait_seconds": 34.00309380405815,
+      "model_turn_seconds": 287.5140002639964,
+      "turns": 4,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 412972,
+        "cached_input_tokens": 372864,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14281,
+        "reasoning_output_tokens": 4784
+      },
+      "api_equivalent_usd": 0.2975988
+    },
+    {
+      "case": "brlaw_05_divorcio_partilha",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 360.41915562399663,
+      "controller_wait_seconds": 27.00262305693468,
+      "model_turn_seconds": 333.41066827002214,
+      "turns": 4,
+      "released_facts": [
+        "guarda",
+        "lucros_reinvestidos"
+      ],
+      "usage": {
+        "input_tokens": 546742,
+        "cached_input_tokens": 478848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 17728,
+        "reasoning_output_tokens": 5183
+      },
+      "api_equivalent_usd": 0.40883759999999997
+    },
+    {
+      "case": "brlaw_04_execucao_fiscal",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 685.6592021109536,
+      "controller_wait_seconds": 81.00764745095512,
+      "model_turn_seconds": 604.6365714559797,
+      "turns": 8,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 1638103,
+        "cached_input_tokens": 1566336,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31980,
+        "reasoning_output_tokens": 8324
+      },
+      "api_equivalent_usd": 0.7766012
+    },
+    {
+      "case": "brlaw_08_ma_diligencia",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 455.8897676279885,
+      "controller_wait_seconds": 49.004567664000206,
+      "model_turn_seconds": 406.8791743629845,
+      "turns": 4,
+      "released_facts": [
+        "cnd",
+        "horizonte"
+      ],
+      "usage": {
+        "input_tokens": 635065,
+        "cached_input_tokens": 576256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22312,
+        "reasoning_output_tokens": 4007
+      },
+      "api_equivalent_usd": 0.45598920000000004
+    },
+    {
+      "case": "brlaw_10_cobranca_prescrita",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 247.51384421100374,
+      "controller_wait_seconds": 19.001705682021566,
+      "model_turn_seconds": 228.50760244496632,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 273176,
+        "cached_input_tokens": 237184,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11282,
+        "reasoning_output_tokens": 3319
+      },
+      "api_equivalent_usd": 0.2322408
+    },
+    {
+      "case": "brlaw_09_justa_causa_estabilidade",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 421.0990218250081,
+      "controller_wait_seconds": 48.00454037298914,
+      "model_turn_seconds": 373.08823970798403,
+      "turns": 4,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 502199,
+        "cached_input_tokens": 468864,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19402,
+        "reasoning_output_tokens": 5922
+      },
+      "api_equivalent_usd": 0.35446279999999997
+    },
+    {
+      "case": "usacc_02_close_gap",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 305.507594840019,
+      "controller_wait_seconds": 30.00300980900647,
+      "model_turn_seconds": 275.49896757293027,
+      "turns": 4,
+      "released_facts": [
+        "cascade_dup",
+        "hardaway",
+        "mobile_4312",
+        "uchi",
+        "xfer_1500"
+      ],
+      "usage": {
+        "input_tokens": 520532,
+        "cached_input_tokens": 471808,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14414,
+        "reasoning_output_tokens": 4503
+      },
+      "api_equivalent_usd": 0.33594959999999996
+    },
+    {
+      "case": "usacc_01_schedule_c",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 446.2934299699846,
+      "controller_wait_seconds": 58.00523260800401,
+      "model_turn_seconds": 388.2811066979775,
+      "turns": 3,
+      "released_facts": [
+        "denver",
+        "health",
+        "overlap",
+        "payhub_fees",
+        "phone_pct"
+      ],
+      "usage": {
+        "input_tokens": 984947,
+        "cached_input_tokens": 937216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18360,
+        "reasoning_output_tokens": 6530
+      },
+      "api_equivalent_usd": 0.4665052
+    },
+    {
+      "case": "usacc_03_household_1040",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 434.2487636570004,
+      "controller_wait_seconds": 30.002788459998555,
+      "model_turn_seconds": 404.23997041699477,
+      "turns": 4,
+      "released_facts": [
+        "convenience",
+        "fmv_rent",
+        "leo_8332"
+      ],
+      "usage": {
+        "input_tokens": 704868,
+        "cached_input_tokens": 647296,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20920,
+        "reasoning_output_tokens": 5892
+      },
+      "api_equivalent_usd": 0.4538032
+    },
+    {
+      "case": "usacc_05_entity_choice",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 511.04535478097387,
+      "controller_wait_seconds": 30.00282536901068,
+      "model_turn_seconds": 481.03611206496134,
+      "turns": 4,
+      "released_facts": [
+        "green_card",
+        "marriage",
+        "where_work"
+      ],
+      "usage": {
+        "input_tokens": 1063110,
+        "cached_input_tokens": 1018240,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24255,
+        "reasoning_output_tokens": 8404
+      },
+      "api_equivalent_usd": 0.535938
+    },
+    {
+      "case": "usacc_06_sale_asset_vs_stock",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 469.0241288089892,
+      "controller_wait_seconds": 43.004285536007956,
+      "model_turn_seconds": 426.0132636510534,
+      "turns": 4,
+      "released_facts": [
+        "liabilities",
+        "noncompete_term"
+      ],
+      "usage": {
+        "input_tokens": 461447,
+        "cached_input_tokens": 430592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19840,
+        "reasoning_output_tokens": 6713
+      },
+      "api_equivalent_usd": 0.34622840000000005
+    },
+    {
+      "case": "usacc_07_holding_qsbs",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 363.34603763499763,
+      "controller_wait_seconds": 26.00266203097999,
+      "model_turn_seconds": 337.3379675040487,
+      "turns": 4,
+      "released_facts": [
+        "basis_holdings",
+        "loans_terms",
+        "trust"
+      ],
+      "usage": {
+        "input_tokens": 469485,
+        "cached_input_tokens": 431488,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18103,
+        "reasoning_output_tokens": 5316
+      },
+      "api_equivalent_usd": 0.34332159999999995
+    },
+    {
+      "case": "usacc_09_revenue_going_concern",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 335.16065768996486,
+      "controller_wait_seconds": 72.0068146699341,
+      "model_turn_seconds": 263.14686553098727,
+      "turns": 5,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 411679,
+        "cached_input_tokens": 376448,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11590,
+        "reasoning_output_tokens": 3745
+      },
+      "api_equivalent_usd": 0.2616516
+    },
+    {
+      "case": "usacc_10_fraud_indicators",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 333.2674994749832,
+      "controller_wait_seconds": 31.002979502954986,
+      "model_turn_seconds": 302.2594109349884,
+      "turns": 3,
+      "released_facts": [
+        "nguyen",
+        "summit"
+      ],
+      "usage": {
+        "input_tokens": 454025,
+        "cached_input_tokens": 421632,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15975,
+        "reasoning_output_tokens": 4813
+      },
+      "api_equivalent_usd": 0.30886240000000004
+    },
+    {
+      "case": "uslaw_02_msa_playbook",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 242.28389084304217,
+      "controller_wait_seconds": 23.002212118997704,
+      "model_turn_seconds": 219.27729948604247,
+      "turns": 2,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 334382,
+        "cached_input_tokens": 310656,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10928,
+        "reasoning_output_tokens": 4557
+      },
+      "api_equivalent_usd": 0.2188632
+    },
+    {
+      "case": "uslaw_01_deadlines_removal",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 349.8568116449751,
+      "controller_wait_seconds": 37.00352357904194,
+      "model_turn_seconds": 312.84747916203924,
+      "turns": 4,
+      "released_facts": [
+        "appearance",
+        "member"
+      ],
+      "usage": {
+        "input_tokens": 432762,
+        "cached_input_tokens": 401792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15168,
+        "reasoning_output_tokens": 4823
+      },
+      "api_equivalent_usd": 0.29397840000000003
+    },
+    {
+      "case": "usacc_08_chapter11_debtor",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 785.3322970469599,
+      "controller_wait_seconds": 84.00825425586663,
+      "model_turn_seconds": 701.310395485023,
+      "turns": 8,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 1707123,
+        "cached_input_tokens": 1607680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 37079,
+        "reasoning_output_tokens": 14961
+      },
+      "api_equivalent_usd": 0.891212
+    },
+    {
+      "case": "usacc_04_twelve_closes",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 1473.8624216530006,
+      "controller_wait_seconds": 154.01503760600463,
+      "model_turn_seconds": 1319.7541122660623,
+      "turns": 15,
+      "released_facts": [
+        "pinecone_onboarding"
+      ],
+      "usage": {
+        "input_tokens": 5983806,
+        "cached_input_tokens": 5830016,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 80256,
+        "reasoning_output_tokens": 17322
+      },
+      "api_equivalent_usd": 2.2761432000000004
+    },
+    {
+      "case": "uslaw_03_noncompete_memo",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 338.2412793979747,
+      "controller_wait_seconds": 43.004260282963514,
+      "model_turn_seconds": 295.22891989391064,
+      "turns": 4,
+      "released_facts": [
+        "notice_1076",
+        "trade_secrets"
+      ],
+      "usage": {
+        "input_tokens": 530438,
+        "cached_input_tokens": 501120,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13852,
+        "reasoning_output_tokens": 3724
+      },
+      "api_equivalent_usd": 0.29738
+    },
+    {
+      "case": "uslaw_05_divorce_split_support",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 386.97149418800836,
+      "controller_wait_seconds": 36.00359324197052,
+      "model_turn_seconds": 350.96199767803773,
+      "turns": 4,
+      "released_facts": [
+        "bonus_knowledge",
+        "house_plan"
+      ],
+      "usage": {
+        "input_tokens": 359465,
+        "cached_input_tokens": 333824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15641,
+        "reasoning_output_tokens": 5884
+      },
+      "api_equivalent_usd": 0.2744568
+    },
+    {
+      "case": "uslaw_07_chapter11_creditor",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 467.1136270290008,
+      "controller_wait_seconds": 115.01316606602632,
+      "model_turn_seconds": 352.09339226194425,
+      "turns": 4,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 404102,
+        "cached_input_tokens": 367104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 17404,
+        "reasoning_output_tokens": 5521
+      },
+      "api_equivalent_usd": 0.3214568
+    },
+    {
+      "case": "uslaw_09_retaliation_termination",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 280.6621081570047,
+      "controller_wait_seconds": 18.00199323799461,
+      "model_turn_seconds": 262.65299648599466,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 353093,
+        "cached_input_tokens": 316416,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13517,
+        "reasoning_output_tokens": 3169
+      },
+      "api_equivalent_usd": 0.2718072
+    },
+    {
+      "case": "uslaw_08_sale_diligence_apa",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 449.2792423350038,
+      "controller_wait_seconds": 34.00347406300716,
+      "model_turn_seconds": 415.2702790009789,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 573031,
+        "cached_input_tokens": 521600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 21007,
+        "reasoning_output_tokens": 5330
+      },
+      "api_equivalent_usd": 0.417252
+    },
+    {
+      "case": "uslaw_04_litigation_sequence",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 751.4814875899465,
+      "controller_wait_seconds": 118.01157445798162,
+      "model_turn_seconds": 633.448840321973,
+      "turns": 9,
+      "released_facts": [
+        "feb11",
+        "padded"
+      ],
+      "usage": {
+        "input_tokens": 1464801,
+        "cached_input_tokens": 1399296,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31592,
+        "reasoning_output_tokens": 8821
+      },
+      "api_equivalent_usd": 0.7267891999999999
+    },
+    {
+      "case": "uslaw_10_llc_squeeze_out",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 383.3722320130328,
+      "controller_wait_seconds": 38.00441880105063,
+      "model_turn_seconds": 345.36019290890545,
+      "turns": 4,
+      "released_facts": [
+        "knowledge_fees"
+      ],
+      "usage": {
+        "input_tokens": 466072,
+        "cached_input_tokens": 411136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18450,
+        "reasoning_output_tokens": 5715
+      },
+      "api_equivalent_usd": 0.3765992
+    }
+  ],
+  "api_equivalent_usd": 16.721958
+}

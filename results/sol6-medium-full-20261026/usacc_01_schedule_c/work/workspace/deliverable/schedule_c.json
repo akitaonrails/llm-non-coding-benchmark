@@ -1,0 +1,78 @@
+{
+  "tax_year": 2025,
+  "lines": {
+    "1": 50750.00,
+    "9": 194.60,
+    "10": 1199.15,
+    "15": 480.00,
+    "20b": 2800.00,
+    "24a": 1030.00,
+    "24b": 95.00,
+    "25": 1116.00,
+    "27a": 1909.88,
+    "28": 8824.63,
+    "31": 41925.37
+  },
+  "schedule_se": {
+    "net_earnings": 38718.08,
+    "se_tax": 5923.87,
+    "deductible_half": 2961.94
+  },
+  "not_on_schedule_c": [
+    {
+      "item": "Larkspur W-2 gross wages",
+      "amount": 24800.00,
+      "where": "W-2 wages outside Schedule C; exact return line unverified in library"
+    },
+    {
+      "item": "Larkspur W-2 federal income tax withholding",
+      "amount": 2310.00,
+      "where": "W-2 tax withholding outside Schedule C; exact return line unverified in library"
+    },
+    {
+      "item": "Self-paid Blue Cross health premiums, May–December",
+      "amount": 3040.00,
+      "where": "Potential Schedule 1 line 17 deduction, subject to eligibility; not Schedule C"
+    },
+    {
+      "item": "Deductible half of self-employment tax",
+      "amount": 2961.94,
+      "where": "Schedule 1 line 15"
+    },
+    {
+      "item": "Federal estimated tax payments",
+      "amount": 6500.00,
+      "where": "Federal tax payments outside Schedule C; exact return line unverified in library"
+    },
+    {
+      "item": "Tessaro receipt dated December 27, 2024",
+      "amount": 3000.00,
+      "where": "Prior year cash-method receipt"
+    },
+    {
+      "item": "Denver flight for cousin’s wedding",
+      "amount": 389.00,
+      "where": "Personal"
+    },
+    {
+      "item": "MacBook purchase; business use unknown",
+      "amount": 2149.00,
+      "where": "Unclaimed pending business-use support and asset treatment"
+    },
+    {
+      "item": "Undocumented other client errands, 1,150 miles × $0.70",
+      "amount": 805.00,
+      "where": "Unclaimed pending mileage substantiation"
+    },
+    {
+      "item": "Coworking travel, 2,232 miles × $0.70",
+      "amount": 1562.40,
+      "where": "Unclaimed pending home-office/regular-work-location facts"
+    },
+    {
+      "item": "Personal share of phone and internet at assumed 40%",
+      "amount": 744.00,
+      "where": "Personal"
+    }
+  ]
+}

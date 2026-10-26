@@ -1,0 +1,11 @@
+# Perguntas ao cliente (respondidas na próxima sessão)
+
+1. **Pagamentos parciais já deduzidos?** Os DARF de R$ 61.000,00 (29/01/2021, 4T/2020) e R$ 84.000,00 (30/04/2021, 1T/2021) já foram deduzidos dos principais da CDA (R$ 125.320,00 e R$ 157.040,00)? Se houver a memória de cálculo do auto de infração ou a planilha do TFV, favor enviar — isso define se há excesso de execução a alegar.
+
+2. **Teor do auto de infração / TFV:** o AIF imputa expressamente **dolo, fraude ou simulação** (ou pede multa qualificada — 150%)? A CDA não traz essa imputação e aplicou 75%; precisamos confirmar que o AIF também não a traz, pois isso fecha a ressalva do art. 150, §4º, do CTN.
+
+3. **Documentos para a prova documental da exceção:** a cliente tem em mãos cópias das **DCTFs zeradas (3T/2020 e 2T/2021)** e dos **DARF pagos (4T/2020 e 1T/2021)**, ou facilidade de obtê-las no e-CAC? A exceção de pré-executividade exige prova exclusivamente documental.
+
+4. **Ciência do AIF:** como se deu a ciência de 10/02/2026 (domicílio tributário eletrônico, correio)? Há divergência possível sobre a data da ciência? (Releva para constituição definitiva e prescrição — CTN art. 174.)
+
+5. **Para as Sessões 3–4 (redirecionamento):** a "outra empresa" que ocupa a Rua das Pedras, 100 desde "o começo do ano" é empresa do mesmo ramo/ligada aos atuais sócios (Bruno Tavares)? O senhor Carlos Vieira ainda figura como sócio (40%)? O contrato anexado não registra saída dele.

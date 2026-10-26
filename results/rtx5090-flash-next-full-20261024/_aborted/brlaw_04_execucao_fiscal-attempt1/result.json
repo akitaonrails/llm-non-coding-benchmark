@@ -1,0 +1,20 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-full-20261024/brlaw_04_execucao_fiscal/01-s1-work",
+  "elapsed_seconds": 427.07954869500827,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 426.6782303370128,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 357640,
+    "cached_input_tokens": 308251,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 46761,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

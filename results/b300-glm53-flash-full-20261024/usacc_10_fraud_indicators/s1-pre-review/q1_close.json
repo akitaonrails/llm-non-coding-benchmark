@@ -1,0 +1,38 @@
+{
+  "months": {
+    "01": {
+      "revenue": 171677.51,
+      "payroll": 224698.15,
+      "supplies": 16511.40,
+      "rent": 21600.00,
+      "other": {
+        "utilities_austin_energy": 2155.90,
+        "software_dentrix": 1290.00,
+        "summit_supply_checks_flagged": 14750.00
+      }
+    },
+    "02": {
+      "revenue": 164019.14,
+      "payroll": 223722.92,
+      "supplies": 15927.82,
+      "rent": 21600.00,
+      "other": {
+        "utilities_austin_energy": 2393.44,
+        "software_dentrix": 1290.00,
+        "summit_supply_checks_flagged": 14750.00
+      }
+    },
+    "03": {
+      "revenue": 173544.82,
+      "payroll": 224629.41,
+      "supplies": 15141.54,
+      "rent": 21600.00,
+      "other": {
+        "utilities_austin_energy": 2316.49,
+        "software_dentrix": 1290.00,
+        "summit_supply_checks_flagged": 14750.00
+      }
+    }
+  },
+  "notes": "SIMPLIFIED P&L BY MONTH, Q1 2026 (Harlow Dental Group PLLC) - built solely from bank operating-account activity (bank_operating_q1.csv / .pdf, 48 transactions, Jan 1 - Mar 31, 2026).\n\nConventions: revenue and expenses shown as positive magnitudes (expenses are outflows). Cash-basis from bank activity only; no accruals, no month-end adjusting entries.\n\nClassification rules: revenue = the 12 MERCHANT DEPOSIT lines (Delta Dental / CIGNA / patient collections; insurer mix not separable from the statement). payroll = ACH ADP PAYROLL + ACH ADP TAX. supplies = ACH HENRY SCHEIN SUPPLIES + ACH PATTERSON DENTAL. rent = ACH PROPERTY MGMT RENT 3 LOCATIONS ($21,600.00 each month). other lines: utilities_austin_energy; software_dentrix ($1,290.00/month); summit_supply_checks_flagged = the 9 CHECK SUMMIT SUPPLY LLC disbursements ($4,900.00 or $4,950.00 each; $14,750.00/month; $44,250.00 total) - reported separately rather than in supplies because the supporting invoices (summit_supply_invoices.csv) describe several of these as 'consulting' with no deliverables, and the disbursements are flagged as irregular (see below).\n\nArithmetic ties (all recomputed with Python, row by row):\n- Running balances of all 48 rows verified against prior balance + amount; statement ending balance -118,735.42 ties.\n- Revenue by month: Jan 40,288.65 + 38,294.49 + 46,841.15 + 46,253.22 = 171,677.51; Feb 42,443.36 + 40,436.65 + 40,908.47 + 40,230.66 = 164,019.14; Mar 44,742.74 + 42,615.77 + 45,646.24 + 40,540.07 = 173,544.82. Total = 509,241.47 = statement 'Total credits'.\n- Payroll: Jan 88,175.55 + 24,479.29 + 87,372.10 + 24,671.21 = 224,698.15; Feb 86,583.69 + 24,217.06 + 88,791.51 + 24,130.66 = 223,722.92; Mar 86,791.65 + 24,257.41 + 88,999.42 + 24,580.93 = 224,629.41. Total = 673,050.48.\n- Supplies: Jan 11,649.87 + 4,861.53 = 16,511.40; Feb 11,420.96 + 4,506.86 = 15,927.82; Mar 10,975.27 + 4,166.27 = 15,141.54. Total = 47,580.76.\n- All expense categories total 673,050.48 (payroll) + 47,580.76 (supplies) + 64,800.00 (rent) + 54,985.83 (other: other-category detail Jan 18,195.90 / Feb 18,433.44 / Mar 18,356.49, including Summit 44,250.00, utilities 6,865.83, Dentrix 3,870.00) = 840,417.07 = statement 'Total debits'. Every classified line, nothing forced: the classification ties at the penny.\n- Statement header: beginning 212,440.18 - debits 840,417.07 + credits 509,241.47 = ending -118,735.42.\n\nOpen items (nothing forced to balance):\n1) PAYROLL NOT RECONCILED: payroll_register_q1.csv gross_per_period sums to 65,576.15 per period (7 employees); x 6 pay dates = 393,456.90 gross for Q1, versus combined ADP debits of 673,050.48 (526,713.92 ADP PAYROLL + 146,336.56 ADP TAX). Difference 279,593.58 is unexplained with the documents provided; the register appears not to cover all paid employees, or debits include additional amounts (benefits, garnishments, third parties) that we cannot decompose from a bank statement. Left open; see QUESTIONS.md.\n2) NEGATIVE OPERATING BALANCE: the account runs to -118,735.42 by Mar 31 (first negative 02/28 after the ADP TAX debit, -12,552.80). A fully listed operating account should not go negative; either the statement omits credits or the account has an overdraft facility. Revenue above may therefore be understated. Unresolved; see QUESTIONS.md.\n3) The flagged Summit Supply payments ($44,250.00 in Q1) exhibit indicators listed in library:fraud_indicators_reference.md (amounts structured at 98%-99% of the $5,000 two-partner-approval threshold in the client's approval_policy.md; sole approval by the Managing Partner; vendor created by the approver; no W-9 on file; no PO or receiving documents; sequential, evenly spaced invoices; vague descriptions; vendor address matching a relative of the Managing Partner per the HR emergency-contact file). Per engagement letter section 4 these matters are reported in writing to the Chair of the Partnership Finance Committee because they involve or may involve the Managing Partner: see communication_to_dr_r_patel.md. Payments to an unlicensed third party for 'consulting' with no deliverables may raise unlawful fee-splitting concerns under library:tx_dental_fee_splitting.md - context noted; this office makes no legal determination of fraud or illegality (library:ssars_responsibilities.md: not auditors; procedures not designed to detect fraud; no fraud conclusion drawn).\n\nAssumptions (stated prominently): (a) all 12 merchant-deposit lines are operating collections, no non-patient credits exist; (b) every listed transaction is posted above once and only once (sums tie to the statement, supporting this); (c) bank-activity classification is the deliverable requested, so insurance receivables/payables, depreciation, patient A/R and payables accruals are NOT reflected; month totals are movements, not accrual-basis P&L results. No general ledger or trial balance was provided, so books-to-bank reconciliation was not possible."
+}

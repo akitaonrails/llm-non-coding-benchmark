@@ -1,0 +1,135 @@
+[
+  {
+    "achado": "Contrato com a Construtora Horizonte Azul (31% da receita, 2024–2028) tem cláusula 19 de change of control: a alteração do controle da Vértice sem anuência prévia e expressa da contratante causa rescisão imediata com multa de 20% do saldo contratual. O Anexo 3.2 da minuta (condições precedentes) diz 'não aplicável' — está errado.",
+    "onde": "data room §1.1 (minuta §3.2 / Anexo 3.2)",
+    "por_que_importa": "É o maior contrato da empresa. Sem anuência, a venda pode extinguir 31% da receita e ainda gerar multa de 20% do saldo (saldo não informado — item aberto). A perda do contrato também destrói o earn-out (menos EBITDA nos 12 meses seguintes).",
+    "efeito": "anuencia",
+    "solucao": "Obter anuência expressa da Horizonte Azul antes do fechamento e incluí-la no Anexo 3.2 como única condição precedente de anuência genuína; se não sair a tempo, usar retenção de preço/escrow específico dimensionado à multa ou indenização específica pelo saldo devedor da cláusula 19."
+  },
+  {
+    "achado": "A venda ainda NÃO foi revelada à Horizonte Azul (resposta do cliente). O relacionamento pessoal ('diretor é amigo do Hélio') não produz anuência — quem decide é o jurídico da contratante, que o próprio cliente descreve como 'duro'. O processo de consentimento nem começou.",
+    "onde": "resposta do cliente (data room §1.1)",
+    "por_que_importa": "A anuência exige que a contratante saiba da operação; o pedido formal de consentimento revela a venda e aciona a análise do jurídico deles. Demorar cria dois riscos: (i) vazamento no mercado antes do controle da narrativa; (ii) o jurídico 'duro' simplesmente negar ou condicionar o consentimento, o que ativa a cláusula 19 (rescisão + multa de 20% do saldo). Amizade ajuda o patrocínio interno, não o despacho formal.",
+    "efeito": "anuencia",
+    "solucao": "Disparar imediatamente, em paralelo à negociação da SPA: briefing do diretor (patrocínio interno) + requerimento formal ao jurídico da contratante. Estrutura dupla na SPA: (i) anuência como condição precedente com prazo; (ii) fallback se não vier na janela de 45 dias — holdback/indenização específica limitada à multa de 20% do saldo contratual (saldo ainda não informado — item aberto). Antecipar que o jurídico da emitente pode pedir contrapartida comercial (rebalanceamento do contrato) — risco não quantificado."
+  },
+  {
+    "achado": "Contrato administrativo nº 044/2025 com o Município de Sorocaba (12% da receita): cessão total é vedada, mas alteração societária é admitida desde que mantidas as condições de habilitação, com comunicação prévia à Administração.",
+    "onde": "data room §1.2",
+    "por_que_importa": "Não exige 'anuência', mas exige comunicação prévia e regularidade fiscal mantida durante a execução (Lei 14.133/2021, arts. 92 XVI, 124 II, 137 VI; art. 91 — library/lei14133_alteracao_societaria.md). Com a CND federal positiva (débito de R$ 310 mil), a Administração pode reter pagamentos e aplicar sanções; a alteração social em si não é causa de extinção se mantida a habilitação (art. 137, VI, a contrario). Como o Vendedor decidiu não regularizar (resposta do cliente), a regularidade NÃO será restabelecida antes do fechamento: a reação da Administração ao saber da CND positiva é risco real e não quantificado.",
+    "efeito": "anuencia",
+    "solucao": "Comunicação prévia formal à Administração; quanto ao débito contestado, tratar o risco por garantia dedicada (indenização específica + retenção de R$ 310 mil + encargos, com efeitos também sobre eventuais retenções da Administração no contrato); substituir o responsável técnico perante o CREA e a Administração (ver achado do CREA). Se a Administração vier a exigir comprovação de regularidade, o gargalo recai sobre o mecanismo indenizatório — não sobre condição de fechamento satisfeita pelo Vendedor."
+  },
+  {
+    "achado": "A minuta exige 'Aprovação do CADE' como condição precedente (3.2), mas o negócio NÃO é notificável: os limiares da Lei 12.529/2011 art. 88 são cumulativos — um grupo com faturamento bruto anual no Brasil ≥ R$ 750 mi E outro ≥ R$ 75 mi. Meridiano: R$ 390 mi (< 750 mi); Vértice: R$ 4,2 mi (< 75 mi). Nenhum dos dois grupos alcança seu limiar.",
+    "onde": "data room §4.2 (minuta §3.2)",
+    "por_que_importa": "Manter essa condição precedente sujeita o fechamento a uma aprovação que a lei não exige — é o que faria o negócio 'demorar meses' e quebraria o plano de 45 dias dos sócios. Fora dos limiares não há notificação obrigatória; o CADE pode, excepcionalmente, requerer análise em até 1 ano (art. 88, §7º) — risco residual baixo em operação sem sobreposição relevante (library/cade_limiares.md).",
+    "efeito": "prazo",
+    "solucao": "Suprimir a condição de 'aprovação do CADE' do §3.2 e não protocolar notificação (fundamentar com library/cade_limiares.md); confirmar o faturamento de referência do grupo Meridiano no ano anterior à operação (pressuposto: 2025 = R$ 390 mi, conforme data room)."
+  },
+  {
+    "achado": "Débito federal de R$ 310 mil (IRPJ 2023) em cobrança, sem parcelamento; CND federal é POSITIVA. O Vendedor discorda do débito e não pretende pagar/parcelar (resposta do cliente): a CND positiva tende a permanecer vigente no fechamento. A declaração 5.9 da minuta ('situação fiscal regular, com certidões negativas vigentes') é objetivamente falsa no dia da assinatura.",
+    "onde": "data room §3.1 (minuta §5.9)",
+    "por_que_importa": "Na cessão de quotas a pessoa jurídica permanece a mesma — não há sucessão tributária (CTN arts. 132–133; library/ctn_133_sucessao.md): o débito continua da Vértice e o comprador o transfere ao vendedor pela via da indenização. Com 8.4(b) (teto = preço total para 5.9), 8.4(c) (sandbagging) e 8.4(d) (5 anos), o débito revelado no data room vira reclamação de até 100% do preço. A CND positiva também trava a regularidade exigida pelo contrato de Sorocaba (Lei 14.133 art. 92 XVI). A JUCESP não exige CND para a alteração contratual, então o registro da venda não fica travado.",
+    "efeito": "preco",
+    "solucao": "O pagamento/parcelamento antes do fechamento foi descartado pelo cliente (discorda do débito), então a garantia migra para mecanismo contratual: disclosure schedule na 5.9 (CND positiva + débito contestado) + indenização específica limitada ao valor do débito + encargos, com retenção dedicada de R$ 310 mil no fechamento e sub-rogação do Comprador na defesa administrativa/judicial quando cabível. A biblioteca não trata de defesa em execução fiscal nem de suspensão de exigibilidade — não afirmamos efeito processual da discordância; eventual mecanismo de garantia de juízo/parcelamento sem reconhecimento do débito é questão para o contador/tributarista da sociedade (item aberto, não verificado na library)."
+  },
+  {
+    "achado": "11 engenheiros contratados como PJ com exclusividade, horário fixo e subordinação — 'mesmo perfil do caso Solaris' — ao lado de 46 empregados CLT. Confirmado pelo cliente (resposta 2): jornada 9h–18h nas instalações da empresa, exclusividade, gestor direto, 'sempre foi assim'.",
+    "onde": "data room §2.2",
+    "por_que_importa": "Na cessão de quotas a empregadora não muda (CLT arts. 10, 448, 448-A; library/clt_10_448_sucessao_trabalhista.md): o passivo/risco de reconhecimento de vínculo fica na sociedade e é matter de preço/indenização. A declaração 5.7 ('inexistindo risco de reconhecimento de vínculo') é falsa; com 8.4(b)/(c)/(d) o risco revelado vira exposição de até o preço total por 5 anos.",
+    "efeito": "indenizacao",
+    "solucao": "Qualificar a 5.7 com disclosure schedule descrevendo o regime confirmado pelo cliente (9h-18h nas instalações, exclusividade, gestor direto) e tratar o tema por indenização específica com teto dimensionado e escrow dedicado. 'Sempre foi assim' sugere vínculo prolongado no tempo, mas anos de regime e remunerações não foram informados — exposição segue não quantificada (premissa registrada no STATUS.md; não inventar número)."
+  },
+  {
+    "achado": "3 reclamações trabalhistas em curso: valor de causa total R$ 1,4 mi; provisão contábil de R$ 380 mil (classificadas 'possível').",
+    "onde": "data room §2.3",
+    "por_que_importa": "Gap não provisionado de R$ 1.400.000 − R$ 380.000 = R$ 1.020.000. Como a empregadora não muda na cessão de quotas (CLT art. 448-A), o resultado dessas ações fica com a sociedade vendida; em minuta 'padrão' isso cairia na franquia e nos tetos gerais, o que é ruim para ambos os lados — o item conhecido deve ser tratado fora do regime geral.",
+    "efeito": "indenizacao",
+    "solucao": "Indenização específica para as 3 ações listadas (até o valor de causa, até trânsito em julgado) ou desconto de preço/dedução no fechamento; fora da franquia e dos tetos gerais; não misturar com a declaração genérica 5.7."
+  },
+  {
+    "achado": "Declaração 5.7 (Trabalhista) redigida de forma absoluta e 'limpa', em matéria expressamente revelada no data room (PJs e ações em curso).",
+    "onde": "data room §2.2–§2.3 (minuta §5.7)",
+    "por_que_importa": "Declaração limpa sobre fato revelado + sandbagging pró-comprador + teto = preço + prazo de 5 anos transfere ao vendedor, de forma integral e conhecida, risco que deveria estar no preço (library/sandbagging_franquia_mercado.md).",
+    "efeito": "indenizacao",
+    "solucao": "Anexo de exceções (disclosure schedule) qualificando a 5.7; em última instância, excluir a palavra 'inexistindo risco' e substituir por 'ressalvadas as matérias do Anexo X'."
+  },
+  {
+    "achado": "Declaração 5.9 (Tributária) 'regular, com certidões negativas vigentes' é inexata no ato da assinatura: a CND federal é positiva (R$ 310 mil).",
+    "onde": "data room §3.1 (minuta §5.9)",
+    "por_que_importa": "Violação imediata e incontroversa: o comprador assinaria knowing e ainda assim poderia reclamar (8.4(c)). Combinada com 8.4(b) (teto = preço total), expõe todo o preço por um fato de R$ 310 mil já revelado (library/sandbagging_franquia_mercado.md; library/ctn_133_sucessao.md).",
+    "efeito": "indenizacao",
+    "solucao": "Disclosure schedule com o débito e a CND positiva; indenização específica limitada ao valor do débito + encargos, com garantia dedicada em retenção (o Vendedor contesta o débito e não vai pagá-lo/parcelá-lo — resposta do cliente), fora do regime geral de 5.9."
+  },
+  {
+    "achado": "8.4(a): franquia (basket) de R$ 150.000 não dedutível (tipping): superada a franquia, o comprador cobra desde o primeiro real.",
+    "onde": "minuta §8.4(a)",
+    "por_que_importa": "Aritmética: o débito federal conhecido (R$ 310 mil) sozinho supera a franquia (R$ 150 mil). Se as declarações ficarem 'limpas', a reclamação possível pelo débito é R$ 310 mil sob tipping vs R$ 160 mil (310 − 150) sob franquia dedutível — diferença de R$ 150 mil apenas nesse item conhecido.",
+    "efeito": "indenizacao",
+    "solucao": "Franquia dedutível (cobra-se apenas o excedente) e exclusão das indenizações específicas (ações trabalhistas, débitos conhecidos) da franquia e dos tetos gerais (library/sandbagging_franquia_mercado.md)."
+  },
+  {
+    "achado": "8.4(b): limite global de 15% do preço, mas com EXCEÇÃO para 5.7 (trabalhista) e 5.9 (tributária), cujo teto é o Preço Total.",
+    "onde": "minuta §8.4(b)",
+    "por_que_importa": "As duas matérias em que a Vértice tem exatamente os problemas conhecidos e revelados (11 PJs; CND positiva) ficam sem teto prático: exposição de até 100% do preço, por 5 anos, com sandbagging. A prática de mercado é limite geral de 10–20% do preço com tetos dimensionados para itens específicos (library/sandbagging_franquia_mercado.md).",
+    "efeito": "indenizacao",
+    "solucao": "Reconduzir 5.7 e 5.9 ao teto geral (10–20% do preço) e tratar os itens conhecidos por indenizações específicas com teto dimensionado (ações: até R$ 1,4 mi; débito: R$ 310 mil + encargos; PJs: teto a dimensionar)."
+  },
+  {
+    "achado": "8.4(c): 'O conhecimento do Comprador sobre qualquer fato, antes ou depois da assinatura, não afasta nem reduz o direito à indenização' — sandbagging pró-comprador. O advogado do comprador chama isso de 'apenas a redação usual'.",
+    "onde": "minuta §8.4(c)",
+    "por_que_importa": "Não é detalhe: combinado com declarações limpas (5.7/5.9) sobre matéria revelada no data room (PJs; CND positiva) e teto igual ao preço, o sandbagging torna a revelação do data room inútil e transfere ao vendedor risco conhecido e precificável de forma integral e por 5 anos (library/sandbagging_franquia_mercado.md).",
+    "efeito": "indenizacao",
+    "solucao": "Inverter para anti-sandbagging para fatos revelados: fato constante do data room ou do anexo de exceções não configura violação nem gera indenização; aceitar cláusula pró-sandbagging apenas para fatos NÃO revelados, sob teto geral."
+  },
+  {
+    "achado": "8.4(d): sobrevivência das declarações por 5 anos para 5.7 e 5.9 e 2 anos para as demais.",
+    "onde": "minuta §8.4(d)",
+    "por_que_importa": "A prática de mercado para prazo geral é 2–3 anos; para fiscal/trabalhista é defensável prescrição + 6 meses (library/sandbagging_franquia_mercado.md). Nota: o prazo prescricional aplicável não está na biblioteca — não afirmamos o termo; a recomendar vinculação ao evento concreto (trânsito em julgado das ações; encerramento do processo administrativo fiscal).",
+    "efeito": "indenizacao",
+    "solucao": "2 anos para declarações gerais; indenizações específicas com prazo próprio vinculado ao evento (trânsito em julgado / decurso do prazo de lançamento), e não 5 anos secos sobre as declarações 'limpas'."
+  },
+  {
+    "achado": "2.3: earn-out de 35% do EBITDA (12 meses pós-fechamento) acima de R$ 1.100.000, cap de R$ 1.500.000, com 'EBITDA' apurado pelo Comprador segundo suas práticas contábeis, podendo incluir rateio de despesas corporativas do grupo.",
+    "onde": "minuta §2.3 (contexto: data room §4.2 faturamento 2025 de R$ 4,2 mi)",
+    "por_que_importa": "EBITDA definido e calculado pelo comprador com rateio discricionário permite zerar o earn-out (library/earnout_pratica.md). Aritmética: para pagar o cap inteiro de R$ 1,5 mi, o EBITDA precisaria exceder a base em R$ 1.500.000 / 0,35 = R$ 4.285.714,29, ou seja, EBITDA ≥ R$ 5.385.714,29 — mais que o faturamento total de 2025 (R$ 4,2 mi). Como redigido, o earn-out é quase certamente inatingível antes mesmo do rateio; e qualquer corte/realocação pós-fechamento pelo comprador o elimina.",
+    "efeito": "preco",
+    "solucao": "Definir EBITDA pelos princípios contábeis históricos da sociedade (ou CPC aplicados consistentemente), excluir rateios corporativos do grupo e custos de integração/aquisições; obrigação de conduzir o negócio no curso normal e de não frustrar o earn-out; acesso a relatórios mensais; perito independente para divergências; aceleração (antecipação do cap) em caso de revenda do controle no período (library/earnout_pratica.md). Confirmar o EBITDA histórico — item aberto (QUESTIONS.md)."
+  },
+  {
+    "achado": "9.1: não concorrência de 10 anos em todo o território nacional.",
+    "onde": "minuta §9.1",
+    "por_que_importa": "O padrão legal é 5 anos (CC art. 1.147, aplicado por analogia à cessão de controle); prazos muito superiores a 5 anos e território nacional sem relação com a atuação real da empresa tendem a ser reduzidos por razoabilidade (library/cc_1147_nao_concorrencia.md). Para os sócios, é restrição de carreira desproporcional; para o comprador, cláusula inflada não dá segurança (risco de redução) e cria gatilho de disputa/indenização.",
+    "efeito": "indenizacao",
+    "solucao": "5 anos e território limitado à área de atuação efetiva e aos clientes da sociedade (mapeamento geográfico pendente — QUESTIONS.md); definir escopo de atividade vedada e permitir atuação fora desse escopo."
+  },
+  {
+    "achado": "10.2: conta-garantia (escrow) de 20% do preço por 5 anos.",
+    "onde": "minuta §10.2",
+    "por_que_importa": "Escrow de 20% supera o teto geral de 15% (8.4(b)) e dura os 5 anos das exceções — dinheiro dos sócios preso por meia década como garantia inclusive de riscos revelados (com sandbagging). A prática aponta escrow dedicado para indenizações específicas, dimensionado à exposição, e tetos gerais de 10–20% do preço (library/sandbagging_franquia_mercado.md).",
+    "efeito": "prazo",
+    "solucao": "Reduzir o escrow geral para até o teto geral (ex.: 15%) com liberação em parcelas atreladas à sobrevivência (2–3 anos) e criar escrow específico dimensionado para as indenizações conhecidas (ex.: até R$ 1,4 mi das ações; R$ 310 mil + encargos para o débito fiscal contestado, com sub-rogação do Comprador na defesa); alternativa comercial: garantia bancária em vez de dinheiro em conta (sugestão de negócio; não verificada na biblioteca)."
+  },
+  {
+    "achado": "Contrato social tem cláusula de preferência dos sócios na cessão de quotas (30 dias) e não há acordo de sócios.",
+    "onde": "data room §4.1",
+    "por_que_importa": "Se houver sócio não vendedor, a cessão depende de ofertar as quotas aos demais sócios pelo prazo de 30 dias — isso consome 2/3 da janela de 45 dias e precisa começar imediatamente, em paralelo à negociação. Se Hélio e Beatriz detêm 100% e vendem a totalidade, a cláusula fica sem efeito prático — o cliente não forneceu qualificação societária adicional (item aberto; premissa adotada: Hélio e Beatriz detêm 100% e vendem a totalidade, a confirmar antes da assinatura sob pena de a preferência travar o fechamento).",
+    "efeito": "prazo",
+    "solucao": "Confirmar a participação societária hoje e notificar os sócios (oferta de preferência) de imediato, se aplicável; não assinar a SPA antes de vencer/renunciar o prazo de 30 dias."
+  },
+  {
+    "achado": "Responsável técnico perante o CREA é o sócio Hélio, que sai com a venda; registro da empresa é regular.",
+    "onde": "data room §3.3",
+    "por_que_importa": "Para o contrato de Sorocaba valem as condições de habilitação mantidas (Lei 14.133 art. 91 — habilitação mantida; arts. 92 XVI, 137 VI): o responsável técnico que sai deve ser substituído perante o CREA e a Administração (library/lei14133_alteracao_societaria.md), sob pena de comprometer a execução do contrato administrativo (12% da receita).",
+    "efeito": "anuencia",
+    "solucao": "Indicar novo RT antes da comunicação da alteração societária à Administração (e antes do fechamento); confirmar a existência de engenheiro substituto — item aberto (QUESTIONS.md)."
+  },
+  {
+    "achado": "Regime: Simples Nacional com sublimite ultrapassado em 2025 — ISS 'por fora'. Consequências (ISS devido fora do Simples, eventual auto de infração) não estão analisadas na biblioteca.",
+    "onde": "data room §3.2",
+    "por_que_importa": "Pode haver exposição tributária adicional não quantificada (ISS e eventual diferença de regime), que o comprador vai tentar empurrar para a 5.9 sem teto. Não citamos regra do Simples Nacional porque não há item sobre o regime na library/INDEX.md — tratamos como fato do data room com risco a quantificar, e não como conclusão legal verificada.",
+    "efeito": "indenizacao",
+    "solucao": "Levantar com o contador a situação exata (exclusão? ISS recolhido por fora?) antes de fechar a 5.9; se houver exposição, tratar por indenização específica com teto ou desconto de preço; disclosure schedule com o fato em qualquer caso."
+  }
+]

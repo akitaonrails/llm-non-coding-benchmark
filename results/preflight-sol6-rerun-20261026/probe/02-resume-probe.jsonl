@@ -1,0 +1,7 @@
+{"type":"thread.started","thread_id":"01a17887-4198-7372-b8a9-9c4f5fe47701"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I’ll check that `/work/probe.txt` exists."}}
+{"type":"item.started","item":{"id":"item_1","type":"command_execution","command":"/usr/bin/zsh -lc 'test -f /work/probe.txt'","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"command_execution","command":"/usr/bin/zsh -lc 'test -f /work/probe.txt'","aggregated_output":"","exit_code":0,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"Done. `probe.txt` exists."}}
+{"type":"turn.completed","usage":{"input_tokens":69082,"cached_input_tokens":65536,"cache_write_input_tokens":0,"output_tokens":824,"reasoning_output_tokens":198}}

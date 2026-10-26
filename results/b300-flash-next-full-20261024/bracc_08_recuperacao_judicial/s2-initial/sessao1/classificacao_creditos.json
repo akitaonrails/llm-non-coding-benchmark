@@ -1,0 +1,51 @@
+[
+  {
+    "credor": "Trabalhistas (112 empregados)",
+    "valor": 960000,
+    "classe": "trabalhista",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito existente na data do pedido (Lei 11.101/2005, art. 49) — Classe I (classificação da relação de credores do cliente). Prazo do plano limitado pelo art. 54 (até 1 ano; até 2 anos apenas nas condições do §2º) — a minuta prevê 18 meses e precisa ser ajustada."
+  },
+  {
+    "credor": "Banco Alfa (capital de giro, quirografário)",
+    "valor": 4200000,
+    "classe": "quirografario",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito quirografário existente na data do pedido, sem garantia real (Lei 11.101/2005, art. 49) — Classe III. Sujeito ao plano, inclusive quanto a deságio e carve-out negociados em assembleia."
+  },
+  {
+    "credor": "Fornecedor Norte Ltda (saldo vencido pré-pedido)",
+    "valor": 1850000,
+    "classe": "quirografario",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito existente na data do pedido (Lei 11.101/2005, art. 49) — Classe III. Vedado pagamento fora do plano: viola par condicio creditorum, configura favorecimento (art. 172 — crime), enseja afastamento dos administradores (art. 64) e convolação em falência."
+  },
+  {
+    "credor": "Fornecedor Sul S.A. (EPP)",
+    "valor": 420000,
+    "classe": "me_epp",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito existente na data do pedido (Lei 11.101/2005, art. 49), credor titular microempresa/empresa de pequeno porte — Classe IV (classificação da relação de credores do cliente; votará em classe própria na assembleia)."
+  },
+  {
+    "credor": "Banco Beta (CCB com alienação fiduciária de máquinas)",
+    "valor": 3100000,
+    "classe": "extraconcursal_fiduciario",
+    "sujeito_ao_plano": false,
+    "fundamento": "Proprietário fiduciário de bens móveis NÃO se submete aos efeitos da recuperação judicial; prevalece o direito de propriedade (Lei 11.101/2005, art. 49, §3º). Cláusula da minuta que submete fiduciários ao plano com deságio de 40% é ineficaz. No prazo de suspensão do art. 6º, §4º, contudo, é vedada venda/retirada das máquinas essenciais do estabelecimento."
+  },
+  {
+    "credor": "União — IRPJ/CSLL/PIS/COFINS",
+    "valor": 2700000,
+    "classe": "nao_sujeito_tributario",
+    "sujeito_ao_plano": false,
+    "fundamento": "Crédito tributário não se sujeita a concurso de credores nem a habilitação na RJ (CTN, art. 187); o crédito tributário não se sujeita ao plano (Lei 11.101/2005, art. 68). Execuções fiscais não se suspendem (art. 6º, §7º-B). Via própria: parcelamento/transação (Lei 10.522/2002, arts. 10-A a 10-C; Lei 13.988/2020; Portaria PGFN 2.382/2021) para obter CND+ (LRF art. 57; CTN art. 191-A)."
+  },
+  {
+    "credor": "Fornecedor Norte Ltda — entrega 20/03/2026 (pós-pedido)",
+    "valor": 310000,
+    "classe": "extraconcursal_pos_pedido",
+    "sujeito_ao_plano": false,
+    "fundamento": "Obrigação contraída durante a recuperação (fornecimento pós-pedido) é extraconcursal (Lei 11.101/2005, art. 67); pagável no curso normal da atividade, sem autorização judicial e independentemente do plano."
+  }
+]

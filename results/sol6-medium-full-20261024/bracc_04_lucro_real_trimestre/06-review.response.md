@@ -1,0 +1,3 @@
+Vou revisar os três meses contra o razão, os balancetes e a biblioteca. Vou conferir saldos, cálculos, lançamentos propostos e fundamentos citados, e corrigir qualquer divergência que encontrar.
+
+O razão de cada mês reconcilia com o respectivo balancete, e os cálculos de PIS/COFINS, IRPJ e CSLL conferem. Encontrei uma ressalva que precisa ficar mais clara: o balancete de março não registra provisão de IRPJ/CSLL, embora a apuração calcule esses valores. Vou explicitar que a obrigação ainda não está refletida nos saldos contábeis apresentados.

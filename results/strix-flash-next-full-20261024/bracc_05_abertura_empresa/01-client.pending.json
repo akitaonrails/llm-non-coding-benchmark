@@ -1,0 +1,61 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "questions": "# QUESTÕES AO CLIENTE — Clínica Estética Aurora\n\nRespostas necessárias para fechar números que hoje estão como **premissas** no parecer:\n\n1. **Receita de locação dos 40% da sala:** quanto esperam alugar por mês? (Teste de preponderância do CTN art. 37 — só haveria ITBI se a locação passasse de ~R$ 100 mil/mês com o faturamento projetado; e, no Simples, a simples existência da locação no CNPJ já é impeditiva.)\n2. **Decisão estrutural:** vocês aceitam (a) manter o Simples e deixar a locação dos 40% fora do CNPJ (imóvel integralizado, mas os subcontratos de locação celebrados pelo CPF?), ou (b) integralizar, alugar pelo CNPJ e sair do Simples (Lucro Presumido)? A resposta muda `simples_possivel` e o contrato.\n3. **Dra. Luana:** ela pode integralizar em dinheiro ~R$ 142,5 mil (parcelado)? Qual a capacidade real de aporte? Ela tem registro profissional que cubra os procedimentos previstos (e há algum dentista envolvido — daí o CNAE 8630?)?\n4. **Quem efetivamente trabalha e administra?** Felipe vai administrar de fato (pró-labore dele se justifica)? Luana vai atender na clínica? Marina pretende apenas investir (sem trabalhar)? Alguém mais terá gerência?\n5. **Projeção do lucro (R$ 420 mil/ano):** já desconta salários e um pró-labore de sócios, ou foi feita com \"pró-labore zero\"? (Muda o lucro distribuível de R$ 35 mil para ~R$ 22 mil/mês.)\n6. **Valor do aluguel que a clínica pagará** se a sala ficar integralizada (para preço de mercado entre partes relacionadas) e se há outros 40% ocupantes (contratos, prazo).\n7. **Regime de bens:** existe disposição de alterar a comunhão universal (CC art. 977 é impeditivo com os DOIS no quadro)? Se não, confirmam que só Marina entra como sócia?\n8. **Endereço/sede, dados de qualificação** dos sócios e **nome empresarial** disponível (para DBE/JUCESP).\n9. A **preferência de quotas de Marina** pode ser suprimida (recomendação: sim, pois pela comunhão universal Marina e Felipe são o mesmo bloco patrimonial)?\n",
+  "facts": [
+    {
+      "id": "aluguel_pct",
+      "trigger": [
+        "alugar",
+        "locação",
+        "40%",
+        "terceiros",
+        "receita de aluguel"
+      ],
+      "answer": "Felipe: uns 40% da sala ficam vagos; vamos alugar para um dentista. Deve dar uns R$ 8 mil/mês.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "regime_bens",
+      "trigger": [
+        "regime de bens",
+        "comunhão",
+        "casados",
+        "pacto"
+      ],
+      "answer": "Marina: comunhão universal, casamos em 2010, sem pacto.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "luana_trabalho",
+      "trigger": [
+        "Luana",
+        "serviços",
+        "trabalho",
+        "integraliz",
+        "quotas por trabalho"
+      ],
+      "answer": "Luana: eu não tenho dinheiro pra aportar; a ideia é que meu trabalho vale 20%.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "marina_cargo",
+      "trigger": [
+        "servidora",
+        "administrar",
+        "Lei 8.112",
+        "cargo público",
+        "dedicação"
+      ],
+      "answer": "Marina: sou analista federal, 40h. Posso ser sócia, né? Administrar eu faria fora do expediente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "aluguel_pct",
+    "regime_bens",
+    "luana_trabalho",
+    "marina_cargo"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

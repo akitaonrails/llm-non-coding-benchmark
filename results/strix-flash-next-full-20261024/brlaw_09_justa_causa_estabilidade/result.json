@@ -1,0 +1,23 @@
+{
+  "case": "brlaw_09_justa_causa_estabilidade",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 1961.7647043850156,
+  "controller_wait_seconds": 50.004834643012146,
+  "model_turn_seconds": 1911.3782003520464,
+  "turns": 4,
+  "released_facts": [
+    "gravidez",
+    "horas"
+  ],
+  "usage": {
+    "input_tokens": 1373780,
+    "cached_input_tokens": 1290287,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 75299,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,267 @@
+[
+  {
+    "ref": "JE-2509-001",
+    "date": "2025-09-01",
+    "memo": "September billing per documents/month_09/invoices.csv: 24 monthly subscription invoices INV-2398..INV-2421 total 30,450.00, and INV-2422 Vireo Clinics PBC (C-030) 27,000.00 annual subscription billed upfront (order_form_C-030.md). Monthly fees billed and earned in the same month (policy memo #1); the Vireo advance billing creates a contract liability (ASC 606-10-25-14(b)) released monthly - see JE-2509-015. INV-2409 to C-012 Alder Studios LLC (1,800.00) was issued in error despite the 08/11 cancellation effective 08/31 - reversed by credit memo JE-2509-002 the same month.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 57450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      },
+      {
+        "account": "2200",
+        "debit": 0.0,
+        "credit": 27000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-002",
+    "date": "2025-09-06",
+    "memo": "Credit memo CM-2509-01: void INV-2409 (C-012 Alder Studios LLC, 1,800.00). C-012 cancelled effective 2025-08-31 (email 08/11, MSA section 6.2, see month_08); the billing system nonetheless re-invoiced on 09/01. No September service was delivered, so there is no performance obligation and no revenue (ASC 606 step 5 / policy memo #1); customer email 09/06 (email_dispute_C-012.txt) states it will not pay and asks us to 'issue a credit and stop'. Invoice uncollected (no cash_receipts.csv or bank line). Same-period void - August books were correct, so no ASC 250 prior-period correction.",
+    "lines": [
+      {
+        "account": "4000",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-003",
+    "date": "2025-09-26",
+    "memo": "24 customer receipts per cash_receipts.csv, total 55,650.00: 23 monthly ACHs 28,650.00 (09/20-09/26, every current customer except C-012) plus Vireo Clinics PBC wire 27,000.00 on 09/15 (INV-2422). All map 1:1 to bank credit lines (bank_reconciliation.md). No receipt for the voided INV-2409. Ninth consecutive month with no receipt applied to the 92,650.00 opening (legacy) accounts receivable - standing unknown U3.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 55650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 55650.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-004",
+    "date": "2025-09-05",
+    "memo": "AWS 10,880.00 (vendor_bills.csv: 'Hosting & infrastructure'), paid 09/05 (bank ACH AWS). Seventh straight +120.00/month usage increase: 10,160 -> 10,280 -> 10,400 -> 10,520 -> 10,640 -> 10,760 -> 10,880; drift noted, no adjustment.",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 10880.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 10880.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-005",
+    "date": "2025-09-06",
+    "memo": "WeWork rent 7,200.00 (vendor_bills.csv: 'Rent'), paid 09/06 (bank ACH WEWORK). Unchanged every month since January.",
+    "lines": [
+      {
+        "account": "6100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-006",
+    "date": "2025-09-07",
+    "memo": "Gusto payroll-platform fees 240.00 (vendor_bills.csv: 'G&A other'), paid 09/07 (bank ACH GUSTO FEES).",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-007",
+    "date": "2025-09-08",
+    "memo": "Notion/Slack/GitHub 1,460.00 (vendor_bills.csv: 'Software & tools'), paid 09/08 (bank ACH NOTION/SLACK/GITHUB). Unchanged every month since January.",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-008",
+    "date": "2025-09-09",
+    "memo": "Harbor Law LLP 2,500.00 (vendor_bills.csv: 'Professional fees'), paid 09/09 (bank ACH HARBOR LAW LLP). Third bill on the observed quarterly cadence: 03/09, 06/09, 09/09 - cadence confirmed; next expected December. 6600 reaches 7,500.00 YTD. Vendor is distinct from customer Harbor Logistics LLC (C-017).",
+    "lines": [
+      {
+        "account": "6600",
+        "debit": 2500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 2500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-009",
+    "date": "2025-09-10",
+    "memo": "Google Ads 3,650.00 (vendor_bills.csv: 'Marketing'), paid 09/10 (bank ACH GOOGLE ADS). +50.00/month drift continues: 3,350 -> 3,400 -> 3,450 -> 3,500 -> 3,550 -> 3,600 -> 3,650; drift noted, no adjustment.",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 3650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 3650.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-010",
+    "date": "2025-09-10",
+    "memo": "Payment of the six September vendor bills, total 25,930.00 (bank ACH debits 09/05-09/10; bank_reconciliation.md).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 25930.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 25930.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-011",
+    "date": "2025-09-25",
+    "memo": "September payroll per payroll_register.json: gross 54,404.00 (9 employees), net pay 48,200.00; employee withholding 54,404.00 - 48,200.00 = 6,204.00 credited to 2210. Net pay agrees 1:1 with bank ACH GUSTO NET PAY 48,200.00 on 09/25. Register identical for a ninth consecutive month (standing unknown U11).",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-012",
+    "date": "2025-09-25",
+    "memo": "Employer payroll taxes 5,076.00 per payroll_register.json (employer_taxes); identical ninth month (U11).",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-013",
+    "date": "2025-09-25",
+    "memo": "Payroll tax remittance; agrees 1:1 with bank ACH GUSTO TAX 11,280.00 on 09/25. Clears 2210 exactly: withholding 6,204.00 + employer taxes 5,076.00 = 11,280.00.",
+    "lines": [
+      {
+        "account": "2210",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-014",
+    "date": "2025-09-30",
+    "memo": "Monthly depreciation per close checklist: 64,000.00 equipment / 36-month straight line = 1,777.78/month (U5). 1510 Accumulated depreciation reaches 37,333.02 cumulative.",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "JE-2509-015",
+    "date": "2025-09-30",
+    "memo": "Scheduled September releases of contract liabilities on documented terms (policy #1; ASC 606-10-25-14(b), 25-27): Trestle 2,000.00 + Pinecone 3,000.00 + Marigold 1,500.00 + Quarry 2,500.00 + Saltline 1,800.00 + Vireo Clinics PBC 2,250.00 (first month of the 12-month term begun 09/01/2025, 27,000.00 / 12) = 13,050.00.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 13050.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 13050.0
+      }
+    ]
+  }
+]

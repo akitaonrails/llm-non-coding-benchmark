@@ -1,0 +1,48 @@
+{
+  "case": "uslaw_05_divorce_split_support",
+  "questions": "# Questions for client (Wife)\n\nAnswering these sharpens the numbers; the deliverables proceed on the stated assumptions without them.\n\n1. **House carrying costs:** What are you actually paying now for property taxes, homeowners insurance, and utilities (annual $)? Needed to run real affordability (DTI) on a refinance instead of the ~$1,000/mo placeholder.\n2. **Bonus history:** Do you know what Husband was actually paid in bonuses for 2023, 2024 and 2025 (rough amounts, any statements you've seen)? The HR letter only documents 2026; history would price both support and a nondisclosure claim.\n3. **Household finances:** Roughly what share of household expenses do you currently pay, and will you pay more than half of the house costs after the decree? (Head-of-household requires you to pay >half the cost of the home.)\n4. **Credit/savings for refinance:** Do you have reserves for closing costs and a refinance, and any sense of your credit standing? (Determines whether removing him from the loan is realistic or whether a joint-loan + hold-harmless structure is the only path.)\n5. **Timing:** How quickly do you want the decree final — is it important to be final **before December 31, 2026** (files you as HoH for 2026, and forecloses a joint-return year)? Conversely, would you refuse to sign a joint 2026 return if his counsel asks (it affects the Alt-B sell-now tax saving)?\n6. **Kids' schedule:** Confirm the ~70/30 overnight split is actual practice, not aspiration — the 35% shared-parenting threshold and the 65% residential threshold turn on real counts.\n7. **Husband's age / near-retirement:** Any idea if he is over 59½ or planning distributions? Affects how much the 401(k) discount (12% vs 24% vs 32%) is real for him.\n8. **Occupancy exit:** If keeping the house \"through middle school\" slips (job, remarriage, kids' wishes), would you accept a deferred-sale trigger tied to you vacating, with him remaining on title for the §121 exclusion stacking?\n",
+  "facts": [
+    {
+      "id": "house_plan",
+      "trigger": [
+        "sell",
+        "refinance",
+        "afford",
+        "how long",
+        "stay in the house"
+      ],
+      "answer": "I'd like to stay 3–6 years but I honestly don't know if I can refinance a $400k mortgage on $72k. If I can't, I'd have to sell.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "overnights",
+      "trigger": [
+        "overnights",
+        "parenting time",
+        "custody",
+        "70/30",
+        "nights"
+      ],
+      "answer": "Kids are with me about 255 nights a year.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "bonus_knowledge",
+      "trigger": [
+        "bonus",
+        "did you know",
+        "September paycheck",
+        "Granite Peak"
+      ],
+      "answer": "He always gets a bonus. He told me last year's was around $40k. His affidavit says none expected — that's not true.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "house_plan",
+    "overnights",
+    "bonus_knowledge"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

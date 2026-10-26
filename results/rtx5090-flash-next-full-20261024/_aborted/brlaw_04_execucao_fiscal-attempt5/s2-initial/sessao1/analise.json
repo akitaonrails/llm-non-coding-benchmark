@@ -1,0 +1,54 @@
+{
+  "periodos": [
+    {
+      "periodo": "3T/2020",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 268000.0,
+      "fundamento": "Sem pagamento e DCTF zerada (PAF): Súmula 555 STJ e Tema 163 (REsp 973.733/SC) => art. 173, I exclusivamente. Termo inicial 01/01/2021 (primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado); prazo de 5 anos completado em 31/12/2025. Auto de infração lavrado em 03/02/2026, portanto após o termo final."
+    },
+    {
+      "periodo": "4T/2020",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 241000.0,
+      "fundamento": "Pagamento antecipado parcial (DARF de R$ 61.000,00 em 29/01/2021; declarado a menor): Tema 163 (REsp 973.733/SC) => art. 150 §4º, 5 anos da ocorrência do fato gerador. FG trimestral do 4T/2020 ocorrido em 31/12/2020; termo final em 31/12/2025. Auto de infração de 03/02/2025 é posterior. Cláusula de exceção do art. 150 §4º (dolo/fraude/simulação) não invocada nem fundamentada no lançamento: a multa aplicada foi de 75% (Lei 9.430/96, art. 44, I), e não a dobrada de 150% do §1º, reservada a sonegação/fraude/conluio."
+    },
+    {
+      "periodo": "1T/2021",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2026-03-31",
+      "decaido": false,
+      "valor": 302000.0,
+      "fundamento": "Pagamento antecipado parcial (DARF de R$ 84.000,00 em 30/04/2021): Tema 163 => art. 150 §4º. FG ocorrido em 31/03/2021; termo final em 31/03/2026. Auto de infração de 03/02/2026 é tempestivo (margem de ~2 meses)."
+    },
+    {
+      "periodo": "2T/2021",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2026-12-31",
+      "decaido": false,
+      "valor": 289000.0,
+      "fundamento": "Sem pagamento e DCTF zerada: Súmula 555 / Tema 163 => art. 173, I. Termo inicial 01/01/2022; termo final em 31/12/2026. Lançamento de 03/02/2026 tempestivo."
+    }
+  ],
+  "valor_decaido": 509000.0,
+  "valor_remanescente": 591000.0,
+  "aritmetica": "CDA confere internamente: 3T/2020 139.360,00 + 104.520,00 + 24.120,00 = 268.000,00; 4T/2020 125.320,00 + 93.990,00 + 21.690,00 = 241.000,00; 1T/2021 157.040,00 + 117.780,00 + 27.180,00 = 302.000,00; 2T/2021 150.280,00 + 112.710,00 + 26.010,00 = 289.000,00; total 1.100.000,00. Multas = exatamente 75% do principal em todos os períodos. Decaido: 268.000,00 + 241.000,00 = 509.000,00 (46,3%). Remanescente: 302.000,00 + 289.000,00 = 591.000,00.",
+  "vicios_formais": [
+    "CDA com o campo 'fundamento da multa' em branco: falta o fundamento legal do crédito exequendo (multa de ofício), em violação ao art. 2º, §5º, III, da Lei 6.830/80 (a CDA indica genericamente a Lei 9.430/96, arts. 1º, 2º e 44, mas não vincula a multa ao dispositivo). Vício de forma corrigível por emenda/substituição até a decisão de 1ª instância (LEF, art. 2º §8º; Súmula 392 STJ) — não sustenta, sozinho, a extinção da execução.",
+    "Endereço da executada na CDA (Rua das Pedras, 100) desatualizado: a sede foi transferida para Av. Industrial, 2.500, Galpão 7, Cotia/SP, com alteração registrada na JUCESP em 12/03/2026 e atualizada na RFB em 20/03/2026, ANTES da inscrição (10/07/2026); o oficial de justiça não localizou a empresa no endereço da CDA e devolveu o mandado negativo (certidão de 28/09/2026). Cliente confirma: opera normalmente em Cotia desde março/2026 e dispõe dos protocolos da Junta e da RFB — comunicação do novo domicílio fiscal anterior à diligência (relevante p/ nulidade de citação e p/ afastar a presunção da Súmula 435).",
+    "CDA não individualiza a base de cálculo (valores de receitas omitidas apurados por período, a partir dos 'depósitos bancários sem origem comprovada'): defesa cerceada quanto à exatidão dos valores. Ressalva: o dever de discriminar a base de cálculo NÃO está expresso nos artigos constantes da biblioteca (art. 2º, §§5º-8º, Lei 6.830/80); tratar como alegação adicional em embargos, mediante conferência do auto de infração integral.",
+    "Possível ausência de baixa dos pagamentos parciais declarados no PAF (DARF R$ 61.000,00 de 29/01/2021 e DARF R$ 84.000,00 de 30/04/2021) — os DARFs não constam dos documentos recebidos; verificar no auto de infração se os valores lançados (R$ 125.320,00 e R$ 157.040,00) já são a diferença não paga. Matéria de dilação probatória (documental), típica de embargos, não de exceção."
+  ],
+  "veiculo": "exceção de pré-executividade",
+  "por_que": "A decadência é matéria conhecível de ofício que não demanda dilação probatória (Súmula 393 STJ): os prazos se apuram com datas do próprio documento exequendo (fato gerador dos períodos na CDA; AI lavrado em 03/02/2026; inscrição 10/07/2026) combinadas com DCTF/DARF já extraídos do PAF. Elimina de imediato R$ 509.000,00 (46,3% da execução), inclusive a multa acessória, sem garantia do juízo. Os embargos exigem garantia integral (seguro-garantia/fiança a 130% do débito, Portaria PGFN 164/14) e só abrem em 30 dias da garantia (LEF, arts. 9º e 16 §1º) — custoso e mais lento; e os vícios formais da CDA são sanáveis por emenda até a sentença (LEF, art. 2º §8º; Súmulas 392/393), logo a decadência é a tese decisiva e ela cabe na exceção. Estratégia: exceção agora (extinção parcial por decadência); embargos após a garantia para as matérias que dependem de prova (imputação dos DARFs, base de cálculo), sem preclusão da tese de decadência.",
+  "observacoes": [
+    "Prescrição interuma/não: constituição definitiva ~fev/2026 (ciência 10/02/2026 sem impugnação), inscrição 10/07/2026 e ajuizamento 2026 — sem prescrição da cobrança (CTN, art. 174).",
+    "A Fazenda sinaliza emenda à CDA na sessão 2: a emenda (art. 2º §8º LEF) sana vícios formais mas NÃO reavive crédito decaído; a Súmula 392 veda modificação do sujeito passivo — relevante contra o futuro redirecionamento em CDA emendada.",
+    "A assunção de que o fato gerador do IRPJ/CSLL trimestral (lucro real) ocorre no último dia do período de apuração é premissa de data necessária ao cálculo do art. 150 §4º; alternativa menos favorável para o 4T/2020 (contagem do vencimento do DARF, 29/01/2021) também resulta em decadência (termo final ~29/01/2026 < 03/02/2026).",
+    "Fatos confirmados pelo cliente (out/2026): (a) Bruno Tavares opera a empresa em Cotia desde março/2026 e tem os protocolos da alteração de endereço na JUCESP e na RFB; (b) Ana Paula Vieira retirou-se regularmente em junho/2023 (3ª alteração, registrada na JUCESP em 22/06/2023), cedendo as quotas a Bruno.",
+    "Perfil de redirecionamento (antecipação p/ sessões 3-4): a presunção da Súmula 435 é afastada pela comunicação da mudança de endereço aos órgãos competentes (JUCESP 12/03/2026 e RFB 20/03/2026) ANTERIOR à diligência (mandado de 28/09/2026) — inteligência expressa no item da biblioteca sobre redirecionamento; e Ana, retirada regularmente em 2023 sem dar causa a qualquer dissolução irregular, está protegida pelo Tema 962; Súmula 430 (inadimplemento não gera responsabilidade por si só); CTN 135 III exige excesso de poderes/infração de lei, não fundamentado no TVF (multa de 75%, sem fraude qualificada)."
+  ]
+}

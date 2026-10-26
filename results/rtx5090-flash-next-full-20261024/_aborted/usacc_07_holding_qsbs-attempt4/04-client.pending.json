@@ -1,0 +1,57 @@
+{
+  "case": "usacc_07_holding_qsbs",
+  "questions": "# Open items and information requests — Nadia Oakline\n\n**Updated 2026-10-25 after the client's response.** Answered items are recorded below and are **not re-asked**. The\nclient states she has **no additional information** on anything else, so this file no longer poses questions to her.\nIt now does three things: (1) closes what she answered, (2) lists what can only come from **third parties** — Helio,\nher CPA, the lender, counsel — where her only role is to authorize the request, and (3) records what cannot be\nestablished at all and how `opinion.md` handles it. References in parentheses are the original question numbers.\n\n---\n\n## 1. Answered — closed\n\n| Ref | Client's answer | Where it is used |\n|---|---|---|\n| (Q9, partly) | Helio is in discussions with acquirers; a sale in **12–18 months** is realistic; her stake would be about **$9–10M**. | `opinion.md` §8.3–§8.5; `numbers.json` → `client_response_2026_10_25`, `qsbs_detail.exit_scenarios` |\n| (Q8, partly) | The $1.9M mortgage is **nonrecourse to her personally**; the 2024 refinancing proceeds went into her **personal brokerage account**. | `opinion.md` §8.7; §7.7 flag unchanged |\n| (Q6, partly) | The 1% member is her **revocable living trust**; the advisor's reason was \"we need two partners.\" | `opinion.md` §8.2 — the two-partner premise is rejected; the 99/1 design should be abandoned |\n| (2026-10-25 challenge) | Challenged the §1202 conclusion: the advisor said \"the holding is how I avoid tax when Helio sells — 'the gain lands in the LLC'\" and asked who is right and whether the holding can own the stock **after** the sale. | `opinion.md` **§9** — answered on the existing record; **no information needed from the client** |\n\n## 2. Still open, and gating\n\n**G1 — Has anything already been executed? (from Q9).** `documents/org_chart.md` carries a \"Step 1: Wyoming\" note dated\n**2025-11-04**, so Oakline Holdings may already exist even though the proposal is dated 2026-02-11. Needed: whether\nHoldings has been formed, whether any assignment/contribution agreement or membership certificate has been signed,\nwhether **any Helio share** has been assigned or pledged, and whether bank accounts have been merged. *This is the\nsingle most urgent item in the file: if the Helio shares were already moved, the §1202 analysis is no longer\nprospective and the opinion must be redone.*\n\n**G2 — Lender position on the $1.9M mortgage (remaining half of Q8).** Nonrecourse status is answered; the\n**due-on-sale / change-of-control and consent** question is not. Only the loan documents and the lender can answer it.\nSee R3.\n\n---\n\n## 3. Requests to third parties (the client need only authorize these)\n\n**R1 — From Helio Grid (company records, not personal knowledge) (was Q1, Q2, Q4):**\n1. Balance sheet / gross-assets computation as of **18 Feb 2020** supporting SPA §2.3 (\"aggregate gross assets do not\n   exceed $1,000,000\").\n2. Written confirmation Helio has been a domestic **C** corporation continuously since formation (never an S corp).\n3. Description of its business lines, for the \"qualified trade or business\" character.\n4. The **complete** financing package: charter, bylaws, stockholders/investor agreement, and every ROFR, co-sale,\n   drag-along or transfer-restriction provision.\n5. Each annual **409A** report and its valuation date; confirmation whether $9.4M is still current.\n6. The 2020 **§83(b) election** as filed, the FMV reported, whether the shares were subject to vesting or a repurchase\n   right at grant, and whether any amount was included in her 2020 income; confirmation the paid-in amount is $12,000.\n   *Effect on the numbers is small — the cap is $10,000,000 unless her basis exceeds $1,000,000 — but the record should\n   be complete and the basis figure should not be guessed.*\n7. **New, and now time-critical:** as soon as any term sheet, LOI, merger agreement or data room exists, send the\n   **deal structure** (stock sale vs asset sale vs merger; consideration mix; any rollover equity, escrow, holdback or\n   earnout; any requirement that holders contribute shares to an entity) **before signing**.\n\n**R2 — From her CPA / the entity books (was Q3, Q5, Q10):**\n1. Formation-to-date reconstruction of Oakline Properties' owner's capital account: contributions, **every**\n   distribution, depreciation, losses, and unrecorded liabilities. The unexplained difference is **$1,760,000**\n   (implied equity +$1,380,000 vs stated tax capital $(380,000)). Whether the $400,000 \"Due from Services\" is a real\n   receivable or a distribution in substance. **Also ask which convention each book figure uses** — whether the\n   building line is cost less accumulated depreciation, and whether the $(380,000) capital line is already net of\n   depreciation and of the 2024 $1.2M distribution. That single answer decides which of the two outside-basis readings\n   in `opinion.md` §6(b) ($3,280,000 vs $1,520,000 before the §752(b) shift) is the right one, and it may explain part\n   of the gap.\n2. How the three advances ($250,000 on 2024-03-01, $150,000 on 2025-06-15, $150,000 on 2025-09-01) were reported on\n   the 2024 and 2025 returns, whether any were repaid or offset, and whether the Services→Digital $150,000 is on both\n   sets of books or only in the email.\n3. Digital's cumulative losses, her current basis/at-risk position, and the $1,120,000 of accumulated depreciation at\n   Properties (needed if any building is ever sold).\n\n**R3 — From the mortgage lender (was Q8):** the current loan agreement for the 2024 refinancing; whether it contains a\ndue-on-sale/change-of-control clause; whether transferring the Properties membership interest to a holding company\nrequires consent, and the lender's form of consent/estoppel.\n\n**R4 — To a §1202 specialist (questions I cannot answer from the library):**\n1. Does the per-issuer **$10,000,000 cap** apply per-issuer per-life, or per-sale/per-year? Do partial sales or\n   tranches consume it separately?\n2. Does a **donee** of gifted §1202 shares get a **separate** per-issuer cap (the §1202(h) tack is in the library; the\n   separate-cap question is not)? Relevant only if the deal values her stake above **$10,012,000**, and only if a gift\n   is made **well before** any LOI — a gift made during a negotiated sale is the classic step-transaction target.\n3. Do the anticipated deal structures (stock sale, reverse merger, asset sale, rollover into an acquirer entity)\n   preserve §1202 on the cashed-out and rolled portions?\n4. Gain-recognition timing for escrow, holdback and earnout consideration.\n5. Whether a transfer of her shares to her **own revocable trust** is a §1202 non-event (§1202(h) in the library does\n   not address it).\n\n**R5 — To estate/gift counsel:** the vehicle for the three Oakline LLC interests (her existing revocable trust vs a new\nirrevocable vehicle), gift-tax and valuation consequences of any transfer of Holdings interests, and whether the estate\ndocuments already pass the Helio shares at death without any pre-sale transfer.\n\n**R6 — To her CPA for rates (was Q10):** her marginal federal rate and filing status and the Colorado rate, plus\n**whether Colorado conforms to §1202**. Not quantifying Colorado state tax on a $9–10M gain is a real limitation of\nthis opinion; if Colorado does not conform, the state cost is six figures on any plausible rate.\n\n---\n\n## 4. Unknowns that cannot be established — handled as stated assumptions\n\n| Unknown | How the opinion handles it |\n|---|---|\n| Whether Holdings will be a partnership for federal tax (trust as 1% member) | **[UNVERIFIED]** — both branches priced: §752(b) shift $19,000 vs $0; imputed interest $22,660 vs $0. Recommendation is to stop relying on the trust for partnership status (§8.2). |\n| Which nonrecourse-liability allocation applies in a 99/1 partnership | **[UNVERIFIED]** — the library's 1% arithmetic is used; between 1% and 30% the current gain is $0 on both basis readings. |\n| Oakline Properties outside basis | Stated as **two readings** (A $3,280,000 / B $1,520,000) because the sheet does not reconcile; nothing is forced to balance. The $19,000 contribution case is $0 gain on either reading; a 99% transfer would produce ~$380,000 of gain on reading B (§8.7). |\n| Which AFR term and accrual method apply to undocumented demand loans; any §7872 exception | **[UNVERIFIED]** — mid-term 4.12% used; short-term and long-term totals ($21,780 / $25,190) shown for sensitivity. |\n| Prior-year (2024–2025) §7872 reporting | Left **open**; remediation options in §5. Not fixed on assumed facts. |\n| Tax rates (federal capital gain, NIIT, AMT, Colorado, Colorado conformity with §1202) | **[UNVERIFIED]** — every monetary tax figure is labelled illustrative. |\n| \"Qualified small business\" / \"qualified trade or business\" definitions; the consequences of the 2020 §83(b) election recited in the SPA excerpt; at-risk and passive-loss limits; depreciation recapture; merger/asset-sale mechanics; installment-sale timing; gift and estate tax; Helio transfer restrictions | **[UNVERIFIED]** — outside the five library items; flagged where they bite and referred out in `agreements_required.md`. |\n| Whether the businesses have nexus outside Colorado; whether Nadia is a Colorado resident | Nexus conclusion (Colorado filing regardless of Wyoming) is stated on the practice aid's stated assumption of a WY entity **managed from Colorado**; the assumption is prominent in §2, Step 1. |\n\n**No further reply from the client is expected or required on the items in §3 and §4.** The client's only remaining\nactions are to authorize R1–R3 (documents that exist at Helio, the CPA's office and the lender), answer **G1**, and route\nR4–R6 to a §1202 specialist and estate counsel.\n",
+  "facts": [
+    {
+      "id": "helio_exit",
+      "trigger": [
+        "exit",
+        "sale of Helio",
+        "liquidity",
+        "when do you expect"
+      ],
+      "answer": "Helio is talking to acquirers; a sale in 12–18 months is realistic. My stake would be about $9–10M.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "basis_holdings",
+      "trigger": [
+        "basis",
+        "Properties",
+        "negative capital",
+        "mortgage recourse"
+      ],
+      "answer": "The mortgage is nonrecourse to me personally. The refinancing cash went into my brokerage account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trust",
+      "trigger": [
+        "trust",
+        "1%",
+        "revocable",
+        "who is the other partner"
+      ],
+      "answer": "The 1% is my revocable living trust — the advisor said we need two partners.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "loans_terms",
+      "trigger": [
+        "loan terms",
+        "promissory",
+        "interest rate",
+        "repay"
+      ],
+      "answer": "No paperwork. I just move money where it's needed.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "basis_holdings",
+    "helio_exit",
+    "trust"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

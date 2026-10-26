@@ -1,0 +1,44 @@
+{
+  "probabilidade_vinculo": "alta (85–90%)",
+  "fundamentos": [
+    "Pessoalidade: cláusula 4ª do contrato obriga a disponibilização do SÓCIO (Rafael) pessoalmente; R.M. Desenvolvimento tem sócio único — a PJ é mera passagem (CLT art. 3º; documents/contrato_prestacao_servicos_pj.pdf).",
+    "Onerosidade e habitualidade: R$ 18.000/mês fixos, 'independentemente de entregas' (cláusula 2ª), por 84 meses ininterruptos (84 NFs, R$ 1.512.000 somados em notas_fiscais_resumo.csv) — sem risco do negócio, traço típico de salário (CLT arts. 2º/3º).",
+    "Subordinação: controle de jornada e de ponto ('vi que você logou 9h20... o combinado é 9h', 12/03/2024), determinação de permanência até 20h (02/06/2025), ausência sujeita a aprovação do RH/gestora (19-20/08/2025), avaliação de desempenho com o MESMO formulário dos CLTs (05/01/2026) e subordinação hierárquica expressa à Gerente de Engenharia (cláusula 5ª) — poder diretivo pleno, não cooperação entre empresas.",
+    "O próprio contrato confessa os elementos: exclusividade (cláusula 3ª), horário fixo 9h-18h nas dependências da contratante (cláusula 4ª), 'férias' de 20 dias 'a combinar' (cláusula 6ª). O art. 442-B da CLT só afasta o vínculo 'desde que ausente a subordinação' — aqui ela está documentada; prevalece a nulidade do art. 9º da CLT.",
+    "Ônus da prova: a prestação está admitida (contrato + NFs + Slack), invertendo-se o ônus para a Solaris provar autonomia (CLT art. 818); data e modo de extinção pesam contra a empresa (Súmula 212 TST); sem cartões de ponto, vale a presunção da Súmula 338 TST se >20 empregados (nº de empregados: a confirmar).",
+    "Tema 725/ADPF 324/ADC 48 NÃO blindam o caso: a tese do Tema 725 (RE 958.252) trata da licitude da terceirização entre pessoas jurídicas e 'não afasta o reconhecimento de vínculo quando presentes, no caso concreto, os requisitos do art. 3º da CLT com fraude (art. 9º)' — a discussão migrou para o caso concreto, exatamente o cenário daqui (pejotização de pessoa física com subordinação).",
+    "Tema 1.389 (ARE 1.532.603): repercussão geral reconhecida (abr/2025) e SUSPENSÃO NACIONAL dos processos sobre licitude de contratação de PJ/autônomo (14/04/2025); mérito pendente na biblioteca (out/2026) — o processo tende a ser sobrestado, mas a exposição permanece, com correção correndo.",
+    "Confissões da gestão (rodada 2, cliente): a gerente Carla aprovava férias, cobrava horário e dava feedback 'igual aos CLTs'; a PJ de Rafael só tinha a Solaris como cliente (dependência econômica total; art. 442-B exige autonomia ausente). Probabilidade elevada para 85–90%.",
+    "Diretor: 'os 18 mil eram cheios justamente porque ele era PJ; um CLT equivalente ganharia uns 12 mil' — admissão de prêmio de pejotização: o excedente 18k−12k é contrapartida de o trabalhador arcar sozinho com tributos/encargos, natureza remuneratória (sem prova documental de custos — a tese de redução da base para 12k é cenário defensivo ≈ R$ 496.637, não a premissa do cálculo, que mantém a presunção da biblioteca: base = valor pago à PJ). Reduz também o risco de isonomia (OJ 383): ele ganhava ~50% acima do CLT equivalente.",
+    "Não se utilizam Súmula 256/TST nem OJ SDI-1 191 — ambas CANCELADAS (tst_sumulas_ojs.md); Súmula 363/TST é inaplicável (não há administração pública)."
+  ],
+  "prescricao": {
+    "data_ajuizamento": "2026-11-16",
+    "corte_quinquenal": "2021-11-16",
+    "meses_exigiveis": 58,
+    "meses_prescritos": 26
+  },
+  "exposicao": {
+    "remuneracao_base": 1053000,
+    "decimo_terceiro": 87750,
+    "ferias_terco": 117000,
+    "fgts": 100620,
+    "multa_40": 40248,
+    "aviso_previo": 30600,
+    "inss_patronal": 352170,
+    "horas_extras": "R$ 16.568 (135 h registradas jan–jun/2025: 135 × (18.000/220) × 1,5); meses anteriores exigíveis sem planilha: a apurar (presunção da Súmula 338/TST se >20 empregados); extrapolando o ritmo de 22,5 h/mês aos demais 52,5 meses exigíveis: +R$ 144.972",
+    "total": 744956
+  },
+  "tema_1389": {
+    "efeito_processual": "Suspensão nacional de todos os processos que tratem da licitude da contratação de PJ/autônomo (ARE 1.532.603, rel. Gilmar Mendes, decisão de 14/04/2025): a reclamação ajuizada em 16/11/2026 tende a ser sobrestada após instrução/antes da sentença, conforme a prática do TRT; mérito ainda pendente (biblioteca congelada em out/2026).",
+    "efeito_na_exposicao": "A suspensão NÃO zera a exposição: o valor fica em aberto com juros e correção correndo (Lei 14.905/2024: IPCA + SELIC−IPCA), sobre ~R$ 745 mil; o tema ainda definirá ônus da prova da fraude e critérios, podendo alterar o valor para mais ou para menos. O sobrestamento é argumento de tempo, não de mérito — e não desobriga a provisão CPC 25."
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 744956
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [450000, 600000]
+  }
+}

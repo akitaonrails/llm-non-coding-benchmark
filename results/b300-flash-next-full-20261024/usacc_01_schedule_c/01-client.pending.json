@@ -1,0 +1,84 @@
+{
+  "case": "usacc_01_schedule_c",
+  "questions": "# QUESTIONS.md — Open items for Dana Okafor (2025 Schedule C / SE)\n\nAnswer these and we can finalize the return. Items 1–3 can change numbers; the rest confirm\nclassifications already made. Reply inline under each question.\n\n## Can change the numbers\n\n**Q1. Phone/internet business split (affects Line 25 — currently $1,488.00).**\nT-Mobile ($85/mo, $1,020/yr) and Spectrum ($70/mo, $840/yr) are mixed-use. We applied a\nconsistent **80% business-use** assumption pending your records. What is your substantiated\nbusiness-use percentage for each, and what supports it (plan documents, usage logs)? Every\n10 points of business use moves Line 25 by about $186. At 0% they would be fully personal.\n\n**Q2. Did Beacon Studio Group and Orchard Media pay you through PayHub in 2025? (affects Line 1\nmaterially).** Their 1099-NECs report $18,500 (Beacon, \"Design services\") and $12,200\n(Orchard, \"Graphic design services\"), but no separate deposits from either name appear in your\nbank data — and the PayHub statement lists \"Beacon Studio Group\" and \"Orchard Media Group\" as\nits sending clients, matching the 1099-K exactly. We've counted the 1099-K gross ($41,350) once.\nIf these clients paid you some other way in 2025 (cash, other account, 2026 deposits), tell us\nwhere to look.\n\n**Q3. Cash-billed business expenses.** Your notebook lists two items with no bank record:\n- Camera body rental (Aug 21) — amount and payment method?\n- Print shop (Mar 3) — amount and payment method?\nIf paid in cash, we need receipts to add them to Lines 21/27a (Pub 463/§274 substantiation).\n\n## Confirm classifications\n\n**Q4. June 12–15 trip to Denver.** Flight $389 (June 13), hotel $224 (June 13–15), meals ~$50 —\nwe classified it **personal** (wedding gift the next morning). Do you agree no business\nactivities happened there?\n\n**Q5. Mileage log — page 2.** Page 1 itemizes 278 specific client-trip miles (Beacon, Orchard,\nTessaro, print shop, camera rental, supplies) plus a summary line of **1,150 \"other client\nerrands (see pg 2)\"** — page 2 was not in the file. We included the 1,150 at the 70¢ rate\n(Line 9 = $999.60) pending the detail. Please provide page 2; if those miles can't be\nsubstantiated, Line 9 drops to $194.60 (278 mi × $0.70).\n\n**Q6. MacBook Pro $2,149 (Nov 2).** Used 100% for design work? Any trade-in? We expensed it\nunder the §1.263(a)-1(f) de minimis safe harbor ($4,058.88 total on Line 27a); a signed election\nstatement must be attached to the return. OK to proceed this way, or prefer Section 179 /\nbonus depreciation? (If you use it partly personally, tell us the business %)\n\n**Q7. Health insurance (BCBS $3,040).** This goes on Schedule 1 (self-employed health insurance\ndeduction), not Schedule C — we need: which months were you covered, and confirm you were **not**\neligible to participate in Larkspur's (or any spouse's) employer plan for those months — you left\nLarkspur in April, so early-2025 months may fail the eligibility test.\n\n**Q8. Home office / storage unit $95/mo ($1,140/yr).** Your notebook says \"not primary\nresidence.\" Is there any space in your apartment you use **regularly and exclusively** as your\nprincipal place of business or to meet clients? If not, the storage unit stays nondeductible\n(personal convenience — Pub 463).\n\n**Q9. Tessaro $3,000 check dated 12/27/2024.** Not in 2025 activity — confirm it was reported on\nyour **2024** return (if it wasn't, it belongs in 2024, not 2025).\n\n**Q10. Anything else?** Other business accounts, cards, cash income/expenses, or 1099s we\nhaven't seen (the bank export shows no activity after Dec 12 — we assume that's a real gap in\nthe export and will request a full statement from the bank).\n",
+  "facts": [
+    {
+      "id": "commute",
+      "trigger": [
+        "commute",
+        "Larkspur office",
+        "drive to work",
+        "1,200",
+        "daily"
+      ],
+      "answer": "Oh — yes, the ~1,200 miles Jan–April were me driving to the Larkspur office every day. I guess that's commuting? The rest is client stuff and the coworking space.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "payhub_fees",
+      "trigger": [
+        "PayHub fee",
+        "net of fees",
+        "gross vs",
+        "payout",
+        "2.9",
+        "difference between 1099-K and deposits"
+      ],
+      "answer": "PayHub takes 2.9% off the top before paying out. The 1099-K number is before their cut.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "phone_pct",
+      "trigger": [
+        "phone",
+        "internet",
+        "business use percentage",
+        "T-Mobile",
+        "Spectrum"
+      ],
+      "answer": "Phone and internet are maybe 60% work? I don't have a separate line.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "denver",
+      "trigger": [
+        "Denver",
+        "June flight",
+        "AUS-DEN",
+        "Southwest 118"
+      ],
+      "answer": "Denver was my cousin's wedding, nothing work-related.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "overlap",
+      "trigger": [
+        "Beacon",
+        "Orchard",
+        "paid through PayHub",
+        "which clients use PayHub",
+        "double"
+      ],
+      "answer": "Beacon and Orchard both pay me through PayHub. Tessaro pays by bank transfer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "health",
+      "trigger": [
+        "health insurance",
+        "Blue Cross",
+        "BCBS"
+      ],
+      "answer": "That's my own health plan after I left Larkspur. Not through any employer.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "phone_pct",
+    "denver",
+    "overlap",
+    "health"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

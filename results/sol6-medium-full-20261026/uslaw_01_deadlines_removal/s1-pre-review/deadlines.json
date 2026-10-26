@@ -1,0 +1,25 @@
+{
+  "service_date": "2026-09-11",
+  "service_method": "Personal delivery of summons and complaint to the LLC's Delaware registered agent through an authorized intake specialist",
+  "state_court_answer_due": "2026-10-01",
+  "removal_deadline": "2026-10-13",
+  "removal_available": false,
+  "removal_reason": "Pleaded damages of $129,156.40 exceed $75,000, but plaintiff is a Washington citizen and defendant LLC is also a Washington citizen through its Seattle member, assuming his reported residence is his domicile. Complete diversity is absent and the served LLC is a forum defendant.",
+  "if_removed": {
+    "notice_filed_assumed": "2026-09-28",
+    "answer_due_after_removal": "2026-10-05",
+    "scheduling_order_due_by": "2026-11-30",
+    "rule_26f_conference_by": "2026-11-09"
+  },
+  "rules_relied_on": [
+    "Wash. Super. Ct. Civ. R. 4(a)(2), 6(a), 6(e), 12(a) — library/wa_cr_4_6_12.md",
+    "RCW 1.16.050 — library/rcw_1_16_050_wa_holidays.md",
+    "Fed. R. Civ. P. 6(a), 6(d), 12(a) — library/frcp_4_5_6_12_excerpts.md",
+    "Federal holidays and W.D. Wash. closures — library/federal_holidays_2026.md",
+    "28 U.S.C. §§1332, 1441, 1446, 1447 — library/28usc_1332_1441_1446_1447.md",
+    "LLC citizenship cases — library/llc_citizenship_cases.md",
+    "Fed. R. Civ. P. 81(c)(2) — library/frcp_81c_removed_actions.md",
+    "Fed. R. Civ. P. 16(b)(2), 26(f)(1) — library/frcp_16_26f.md",
+    "Wash. Super. Ct. Civ. R. 55(a)(3) — library/wa_cr_55_default.md"
+  ]
+}

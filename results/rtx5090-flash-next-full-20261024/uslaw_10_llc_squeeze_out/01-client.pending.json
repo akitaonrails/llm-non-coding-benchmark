@@ -1,0 +1,60 @@
+{
+  "case": "uslaw_10_llc_squeeze_out",
+  "questions": "# QUESTIONS for the client (answered by client in next turn)\n\nAnswers to these sharpen strength ratings and damages; none currently blocks the core analysis.\n\n## About the notice / capital call\n1. When and how did you receive the 2026-08-20 capital-notice text? Did you reply to it or to Bram by any channel? Do you still have the text and the attached PDF?\n2. What email address is on the Company's records, and when did you last update (or fail to update) it? Did anyone at the Company know the address was stale?\n3. Have you ever received *any* written notice from the Company by certified mail (any year)? Any annual reports, K-1s, distribution statements, or financials — and to what address?\n\n## About the Castellan fees\n4. When exactly did you first learn of the Castellan Asset Services arrangement and the fees? What told you? (This is the linchpin of the tolling argument for the 2022–2023 fees.)\n5. In your judgment, do 6% of gross rents **plus** a separate $180,000→$240,000/yr \"asset management fee\" look above market for this property? Do you know (or can you get) gross rent figures for 2022–2026, or quotes from unaffiliated property managers?\n6. Did the Company make distributions to you in those years, and did any statement break out management fees?\n\n## About the documents (we only have excerpts)\n7. Please provide the **complete** operating agreement (all amendments). Does it contain a dilution *formula*, notice-address provisions, drag-along/tag-along rights, or any fee-shifting clause?\n8. Can you produce the Castellan management agreement, rent rolls, or any financial statements showing (a) the \"6% of gross rents\" actually paid and (b) how Bram's payment of your $270,000 share was booked (loan to the Company vs. contribution credited to Bram)?\n9. Do you have the 2025 year-end balance sheet showing $3.1M members' equity? Does that number look right to you?\n10. Has Bram or the Company ever shown the arithmetic for the 6.1% recomputation? (Nothing in the file reproduces it.)\n\n## About the appraisal\n11. The $14.5M EV / $9.8M equity figure — full written appraisal or an informal broker opinion letter? Do you have the workpapers? Would a broker testify?\n\n## About your goals and funding\n12. Is your priority to **exit at a fair price** or to **stay in as an 18% member** (or both, price permitting)? Would you consider an installment buyout?\n13. Realistically, what can you contribute to legal fees (even $10–20k affects the strategy — a lean notice-defect-only case is much cheaper than a full valuation fight)? Have you spoken to any lawyers about contingency or hybrid fee arrangements?\n14. The offer expires ~2026-10-31. Do you authorize (a) written rejection/counter now, and (b) preparing a Chancery complaint or a standstill demand before that date?\n",
+  "facts": [
+    {
+      "id": "notice",
+      "trigger": [
+        "certified mail",
+        "how did you receive",
+        "notice",
+        "text",
+        "email address"
+      ],
+      "answer": "He texted me a PDF on August 20. No letter. My email on file is from 2019 and dead. I saw the text but assumed it wasn't real notice.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "knowledge_fees",
+      "trigger": [
+        "when did you learn",
+        "fees",
+        "asset management",
+        "disclosed",
+        "financials"
+      ],
+      "answer": "I only saw the affiliate fees in 2026 when I finally got the bank statements through a books-and-records demand. Before that I got one-page summaries with 'management expenses'.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "fund",
+      "trigger": [
+        "fund",
+        "$270",
+        "raise the money",
+        "loan"
+      ],
+      "answer": "I can't raise $270k. Maybe $60k.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "offer_timing",
+      "trigger": [
+        "offer",
+        "30 days",
+        "deadline",
+        "expire"
+      ],
+      "answer": "The $189,100 offer expires October 31.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "notice",
+    "knowledge_fees",
+    "fund",
+    "offer_timing"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

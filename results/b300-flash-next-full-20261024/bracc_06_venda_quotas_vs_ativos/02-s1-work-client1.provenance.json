@@ -1,0 +1,8 @@
+{
+  "model": "qwen3.8-flash-next",
+  "harness": "opencode 2.1.2",
+  "network": "unshare-all; allowlisted model-only Unix gateway",
+  "usage_source": "provider SSE usage",
+  "requests": 6,
+  "http_errors": 0
+}

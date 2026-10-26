@@ -1,0 +1,69 @@
+# Redline proposto — cessão do controle da Vértice
+
+**Base factual e limites.** Data room §§1.1–4.2, minuta do comprador e resposta de Hélio. As palavras entre colchetes exigem preenchimento ou negociação antes de assinar. O Preço Total fixo (**P**), o saldo do contrato Horizonte Azul (**S**), as exposições dos PJs (**T**) e ISS (**I**), a área de atuação e as datas de notificação/renúncia dos quotistas não foram informados. Não há base para converter percentuais do preço em reais ou afirmar que o fechamento em 45 dias é viável. Os R$ 310 mil de IRPJ são valor aproximado de principal/cobrança, sem atualização informada.
+
+## 2.3 — Alterar: earn-out
+
+**Redação:** “O Comprador pagará aos Vendedores 35% do EBITDA da Sociedade nos 12 meses contados do Fechamento que exceder R$ 1.100.000, limitado o pagamento a R$ 1.500.000. EBITDA será apurado com os critérios contábeis historicamente aplicados pela Sociedade, consistentemente, sem despesas, receitas ou ajustes de aquisição, integração, financiamento ou rateios corporativos do Comprador ou de suas afiliadas que não integravam os resultados históricos da Sociedade. Durante o período de apuração, o Comprador conduzirá a Sociedade no curso normal, em boa-fé, sem atos com o propósito ou efeito principal de frustrar o earn-out. Até [30] dias após o período, entregará memória de cálculo e documentos de suporte; os Vendedores terão [30] dias para contestar e acesso aos registros pertinentes. Divergência não resolvida em [15] dias será decidida por perito contábil independente escolhido pelas partes, cuja determinação será vinculante, ressalvado erro manifesto. Em revenda do controle ou transferência substancial das operações antes do término, o earn-out será apurado por [critério de aceleração a pactuar], sem prejuízo do limite de R$ 1.500.000.”
+
+**Motivo:** As práticas próprias e rateios do comprador permitem reduzir EBITDA. A fórmula original chega ao teto apenas se EBITDA ≈ R$ 1.100.000 + (R$ 1.500.000 ÷ 0,35) = **R$ 5.385.714,29**; este é limiar matemático, não projeção. O método de aceleração precisa de fórmula acordada, pois não há orçamento ou histórico de EBITDA nos documentos. Base: [earnout_pratica.md](../library/earnout_pratica.md).
+
+## 3.2 e Anexo 3.2 — Alterar: condições precedentes e CADE
+
+**Redação §3.2:** “O Fechamento fica condicionado a: (i) anuência prévia, expressa e escrita da Construtora Horizonte Azul S.A. à mudança de controle, sem rescisão ou multa; (ii) renúncia escrita de todos os titulares do direito de preferência ou comprovação de notificação válida e decurso integral do prazo contratual de 30 dias; (iii) comprovação da comunicação prévia ao Município de Sorocaba da alteração societária, preservadas as condições de habilitação e a execução do Contrato 044/2025; (iv) antes da saída de Hélio da responsabilidade técnica, substituição regular perante CREA e Administração, por profissional habilitado; e (v) [solução documentada para regularidade fiscal necessária à execução do contrato público, inclusive tratamento do IRPJ em cobrança]. As partes cooperarão prontamente e informarão qualquer impedimento. A aprovação do CADE fica excluída como condição, com base nos faturamentos dos grupos informados para 2025; as partes confirmarão documentalmente esses números e a composição dos grupos antes da assinatura.”
+
+**Anexo 3.2, substituir ‘não aplicável’:** “1. Construtora Horizonte Azul S.A., contrato 2024–2028, cláusula 19: anuência prévia e expressa escrita à mudança direta ou indireta de controle. 2. Quotistas titulares de preferência: [nomes e documentos de renúncia ou notificações e datas]. 3. Município de Sorocaba, Contrato 044/2025: comunicação prévia comprovada; manutenção da habilitação e regularização do responsável técnico. A comunicação não é descrita como anuência.”
+
+**Motivo:** Horizonte Azul responde por 31% de R$ 4,2 mi = **R$ 1,302 mi** da receita histórica anual; a multa é **20% × S**, e S não foi fornecido. Hélio confirmou que ainda não comunicou a venda. O Município responde por 12% × R$ 4,2 mi = **R$ 504 mil** históricos. A mudança societária é admitida com comunicação e habilitação mantida; a CND positiva e a saída do responsável técnico exigem ação. Base: [lei14133_alteracao_societaria.md](../library/lei14133_alteracao_societaria.md). Para CADE, R$ 390 mi < R$ 750 mi e R$ 4,2 mi < R$ 75 mi; os dois limiares cumulativos não são atingidos. A requisição excepcional posterior pelo CADE permanece possível. Base: [cade_limiares.md](../library/cade_limiares.md). A preferência consta do contrato social do data room; não há na biblioteca regra adicional citável sobre sua forma de exercício.
+
+## 5.7 — Alterar: declaração trabalhista
+
+**Redação:** “Exceto pelos fatos especificados no Anexo de Exceções 5.7, os Vendedores declaram, após investigação razoável, que os empregados e prestadores da Sociedade estão contratados conforme a documentação disponibilizada e que não receberam reclamação ou autuação não revelada relativa a reconhecimento de vínculo. O Anexo 5.7 identificará os 11 engenheiros contratados como PJ, suas condições de trabalho e contratos, as três reclamações em curso (valor de causa conjunto R$ 1.400.000; provisão contábil R$ 380.000), seus números, pedidos e fase processual [a completar]. A inclusão no anexo impede que o fato descrito constitua, por si, violação desta declaração; eventual responsabilidade econômica específica será exclusivamente a da cláusula 8.4.”
+
+**Motivo:** Exclusividade, horário e subordinação tornam falsa a afirmação de inexistência de risco. A diferença R$ 1.400.000 − R$ 380.000 = **R$ 1.020.000** é diferença entre valor de causa e provisão, não estimativa de perda. Na compra de quotas, a Vértice continua empregadora e carrega o passivo. Base: [clt_10_448_sucessao_trabalhista.md](../library/clt_10_448_sucessao_trabalhista.md); [sandbagging_franquia_mercado.md](../library/sandbagging_franquia_mercado.md).
+
+## 5.9 — Alterar: declaração tributária
+
+**Redação:** “Exceto pelos fatos no Anexo de Exceções 5.9, os Vendedores declaram que a Sociedade apresentou as declarações e recolheu os tributos devidos segundo os documentos disponibilizados, e que não receberam cobrança ou autuação tributária não revelada. O Anexo 5.9 registrará expressamente: (i) certidão federal positiva e débito de IRPJ 2023 em cobrança, atualmente informado em aproximadamente R$ 310.000, contestado e não parcelado, com demonstrativo atualizado e estágio da cobrança [a completar]; (ii) ultrapassagem do sublimite do Simples Nacional em 2025, com ISS devido fora do regime, valor e pagamentos [a apurar]; e (iii) certidões FGTS, estadual e municipal regulares conforme disponibilizadas. Os fatos especificados não constituem, por si, violação desta declaração, observada a indenização específica da cláusula 8.4.”
+
+**Motivo:** A certidão federal não é negativa. Na cessão de quotas, o débito continua na mesma pessoa jurídica; a CND positiva pode afetar o contrato público. Base: [ctn_133_sucessao.md](../library/ctn_133_sucessao.md); [lei14133_alteracao_societaria.md](../library/lei14133_alteracao_societaria.md). A biblioteca não fornece método de apuração do ISS; qualquer cálculo sem documentos é **não verificado**.
+
+## 8.4(a) — Alterar: franquia
+
+**Redação:** “Para reclamações gerais de violação de declarações e garantias, os Vendedores somente indenizarão a parcela das Perdas agregadas comprovadas que exceder R$ 150.000. A franquia é dedutível: se Perdas elegíveis forem R$ 200.000, a indenização será R$ 200.000 − R$ 150.000 = R$ 50.000, sujeita ao teto aplicável. Uma mesma Perda não poderá ser recuperada mais de uma vez nem cumulada com ajuste de preço ou cobertura específica.”
+
+**Motivo:** A redação atual faz os R$ 150 mil funcionarem como gatilho para cobrar o valor integral. A franquia dedutível é proteção de mercado. Base: [sandbagging_franquia_mercado.md](../library/sandbagging_franquia_mercado.md).
+
+## 8.4(b) — Alterar: limites e riscos identificados
+
+**Redação:** “O limite agregado das indenizações gerais será 15% do Preço Total fixo P, não incluído earn-out ainda não pago. Quanto aos fatos especificamente identificados nos Anexos 5.7 e 5.9, as partes pactuarão, antes da assinatura, indenizações específicas: (i) engenheiros PJ: perdas líquidas comprovadas relativas a períodos anteriores ao Fechamento, teto **T** [valor e metodologia a negociar]; (ii) IRPJ 2023: valor definitivo comprovado atribuível ao débito revelado, após créditos, reduções e pagamentos já refletidos no preço, teto **F** [base aproximada R$ 310.000, atualização e acessórios a apurar]; (iii) ISS 2025: somente exposição pré-Fechamento apurada, teto **I** [a apurar]; e (iv) reclamações trabalhistas existentes: [tratamento específico a definir após análise processual]. Cada subconta terá limite próprio; nenhuma matéria poderá ser cobrada simultaneamente sob a garantia geral e a específica. Os Vendedores terão direito de acompanhar e participar da defesa e de eventual acordo, sem impedir medidas urgentes da Sociedade.”
+
+**Motivo:** O teto de 100% de P para 5.7/5.9 expõe integralmente os vendedores por riscos já conhecidos. 15% × P é o teto geral proposto, mas P não foi informado. T, F e I não podem ser escolhidos responsavelmente sem cálculo; o R$ 310 mil de IRPJ não inclui atualização. A alocação específica e teto dimensionado seguem a biblioteca. Base: [sandbagging_franquia_mercado.md](../library/sandbagging_franquia_mercado.md).
+
+## 8.4(c) — Alterar: conhecimento do comprador
+
+**Redação:** “Fatos descritos de modo específico e suficiente nos Anexos de Exceções 5.7 e 5.9 e documentos expressamente identificados nesses anexos qualificam as respectivas declarações e não fundamentam reclamação por violação delas. O Comprador conserva os direitos às indenizações específicas expressamente previstas na cláusula 8.4(b). O simples acesso genérico ao data room não equivale a revelação específica. A defesa por conhecimento não abrangerá ocultação dolosa de fato material.”
+
+**Motivo:** A cláusula atual permite cobrar por declarações ‘limpas’ sobre PJs e CND positiva já conhecidos. A redação proposta exige divulgação precisa e preserva a cobertura negociada. Base: [sandbagging_franquia_mercado.md](../library/sandbagging_franquia_mercado.md).
+
+## 8.4(d) — Alterar: prazo
+
+**Redação:** “Reclamações gerais deverão ser notificadas em até 2 anos do Fechamento. Reclamações de indenização específica trabalhista ou fiscal poderão ser notificadas até [prazo de prescrição aplicável à pretensão relevante + 6 meses, definido por assessoria especializada antes da assinatura], desde que descrevam o fato, valor estimado e fundamento; uma reclamação tempestiva subsistirá até decisão final. A mera duração do prazo de reclamação não prorroga a retenção integral do escrow.”
+
+**Motivo:** Cinco anos indistintos para todas as matérias trabalhistas e fiscais mantêm a garantia travada sem distinguir riscos. A biblioteca aponta prescrição + 6 meses como posição defensável; os prazos concretos não constam dela e ficam **não verificados**. Base: [sandbagging_franquia_mercado.md](../library/sandbagging_franquia_mercado.md).
+
+## 9.1 — Alterar: não concorrência
+
+**Redação:** “Por 5 anos a partir do Fechamento, os Vendedores não desenvolverão, direta ou indiretamente, atividade de engenharia consultiva concorrente com a efetivamente exercida pela Sociedade nos [municípios/estados listados em anexo conforme atuação nos 24 meses anteriores ao Fechamento], ressalvadas participações passivas de até [percentual a pactuar] em companhias abertas e atividades previamente reveladas e aprovadas pelo Comprador.”
+
+**Motivo:** Dez anos e Brasil inteiro excedem o parâmetro da biblioteca; a área real da Vértice precisa ser documentada. Base: [cc_1147_nao_concorrencia.md](../library/cc_1147_nao_concorrencia.md).
+
+## 10.2 — Alterar: conta-garantia
+
+**Redação:** “No Fechamento, será depositado em conta-garantia o montante correspondente a [até 15% × P para reclamações gerais, se justificado pela exposição acordada] e subcontas específicas de [T, F, I e ações em curso, conforme limites finais da cláusula 8.4(b)], vedada retenção duplicada do mesmo risco. A parcela geral não reclamada será liberada no 24º mês. Cada subconta específica será reduzida pelo valor de risco definitivamente extinto e liberada no encerramento do prazo aplicável da cláusula 8.4(d), permanecendo bloqueado apenas o valor razoavelmente reclamado em notificação tempestiva. Rendimentos pertencem aos Vendedores; saques exigem acordo escrito ou decisão final conforme mecanismo de disputas do contrato. A conta-garantia limita a retenção de preço, sem ampliar os tetos de responsabilidade.”
+
+**Motivo:** 20% × P por cinco anos é indisponibilidade significativa, mesmo para matérias gerais que expiram em dois anos. Como P e exposições faltam, a soma das subcontas não pode ser fixada em reais. Base: [sandbagging_franquia_mercado.md](../library/sandbagging_franquia_mercado.md).
+
+## Pontos abertos para assinatura
+
+Preço Total P e estrutura de pagamento; saldo S e anuência escrita da Horizonte Azul; identidade/renúncia/notificação dos quotistas; comunicação e exigências do Município, substituto técnico e solução de regularidade fiscal; cálculos T, F e I e avaliação das três ações; área efetiva de atuação; critério de aceleração do earn-out. Sem esses dados, os colchetes não devem ser tratados como acordados. O alvo de 45 dias depende especialmente de anuência, preferência de 30 dias, habilitação e regularidade para o contrato público.

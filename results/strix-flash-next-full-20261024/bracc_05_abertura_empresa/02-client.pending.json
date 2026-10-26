@@ -1,0 +1,61 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "questions": "# QUESTIONS — Desconhecidos restantes (v2)\n\n**Rodada 2:** as perguntas anteriores foram respondidas (locação dos 40% ≈ R$ 8.000/mês a dentista; comunhão universal desde 2010 sem pacto; Luana sem dinheiro para aportar; Marina servidora 40h querendo administrar \"fora do expediente\") e **não serão repetidas**. O cliente informou **não ter mais informação** além dessa. O que segue são as lacunas que permanecem — cada um já tratado com **premissa expressa** no parecer (não bloqueia a entrega; confirmação melhora precisão).\n\n## A. Números da operação (premissas aplicadas)\n1. **As projeções (faturamento R$ 1,2 mi; lucro R$ 420 mil/ano) já descontam aluguel e pró-labore?** Sem resposta, o parecer mostra os três cenários (A: 35 mil/mês; B: 23 mil/mês; B pessimista: 10 mil/mês). Se houver DRE real, enviar.\n2. **Preço de mercado do aluguel dos 60% que a clínica pagará ao casal** (Variante B). Premissa: rateio dos dados do cliente (40% = R$ 8.000 → sala ≈ R$ 20.000/mês → 60% ≈ R$ 12.000/mês). Partes relacionadas: precisa de avaliação/testemunha de mercado. **[NÃO VERIFICADO: tributação do aluguel na PF do casal — IRPF fora da biblioteca.]**\n3. Os R$ 8.000 do dentista são estimativa ou já há proposta/contrato? Se o ponto não alugar, o teste de preponderância do ITBI (Variante A) e a renda do casal mudam.\n\n## B. Luana (entrave central)\n4. **Ela consegue pagar R$ 4.800 (12× R$ 400) do próprio pró-labore** para integralizar os 20% na Variante B? Se não: ela entra primeiro como profissional e subscreve depois, ou aceita percentual menor. **Não existe alternativa lícita de \"quota em troca de trabalho\"** (CC art. 1.055, §2º).\n5. Formação e registro profissional de Luana (diploma de biomédica? conselho?) e o escopo real do que fará na clínica; a atividade exige responsável técnico/autorização sanitária? **[NÃO VERIFICADO: regulação sanitária/CRO/RT fora da biblioteca.]**\n\n## C. Decisão estrutural\n6. **Variante B (recomendada: imóvel fica no CPF) x Variante A (imóvel no CNPJ)?** Confirmar a escolha antes do registro — muda capital, CNAE, Simples e ITBI. O parecer recomenda B e o contrato ajustado já está redigido em B (A no anexo).\n\n## D. Dados cadastrais e atos\n7. Qualificação completa dos três (estado civil/data, profissão, endereço, documentos), endereço e área da sala, e se a denominação \"Aurora\" está livre. **[NÃO VERIFICADO: consulta prévia de nome — JUCESP, fora da biblioteca.]**\n8. Marina: o regulamento interno do IBGE exige comunicação de participação societária ou veda conflito de interesse com a clínica? **[NÃO VERIFICADO: estatuto do servidor além do art. 117 — fora da biblioteca; consultar RH do órgão.]**\n\n## E. Diligências externas (não são perguntas ao cliente)\n9. Alíquota e procedimento de comunicação de imunidade do ITBI no Município de SP (para o caso de se optar a Variante A). **[NÃO VERIFICADO na biblioteca.]**\n10. Rotinas de registro na JUCESP (viabilidade, assinatura digital, FCJ, arquivamento do termo de administrador não sócio). **[NÃO VERIFICADO na biblioteca.]**\n11. Regime tributário substituto ao Simples se a Variante A for escolhida (Lucro Presumido). **[NÃO VERIFICADO: LC 123 é o único texto tributário federal da biblioteca além dos citados.]**\n",
+  "facts": [
+    {
+      "id": "aluguel_pct",
+      "trigger": [
+        "alugar",
+        "locação",
+        "40%",
+        "terceiros",
+        "receita de aluguel"
+      ],
+      "answer": "Felipe: uns 40% da sala ficam vagos; vamos alugar para um dentista. Deve dar uns R$ 8 mil/mês.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "regime_bens",
+      "trigger": [
+        "regime de bens",
+        "comunhão",
+        "casados",
+        "pacto"
+      ],
+      "answer": "Marina: comunhão universal, casamos em 2010, sem pacto.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "luana_trabalho",
+      "trigger": [
+        "Luana",
+        "serviços",
+        "trabalho",
+        "integraliz",
+        "quotas por trabalho"
+      ],
+      "answer": "Luana: eu não tenho dinheiro pra aportar; a ideia é que meu trabalho vale 20%.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "marina_cargo",
+      "trigger": [
+        "servidora",
+        "administrar",
+        "Lei 8.112",
+        "cargo público",
+        "dedicação"
+      ],
+      "answer": "Marina: sou analista federal, 40h. Posso ser sócia, né? Administrar eu faria fora do expediente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "aluguel_pct",
+    "luana_trabalho",
+    "marina_cargo",
+    "regime_bens"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

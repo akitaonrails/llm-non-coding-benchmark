@@ -1,0 +1,8 @@
+{
+  "questions": "# Perguntas ao cliente — sessão 01/2026\n\n1. **Brindes em janeiro:** a conta 4.2.02 \"Despesas comerciais\" (R$ 85.000,00, lançamento COM de 2026-01-20) inclui despesas com **brindes**? Se sim, qual o valor? Qual foi exatamente o comentário da auditoria interna sobre brindes (documento/valor/mês a que se refere)?\n2. **EFD-Contribuições de janeiro/2026:** já foi transmitida? Se sim, constou o crédito de R$ 11.100,00 da NF-e 8812 (Papel & Cia)? Isso define se basta não tomar o crédito na apuração ou se é necessária EFD retificadora + DARF complementar com acréscimos.\n3. **NFs de compras de mercadorias (ref. COMPRA, R$ 1.676.400,00 + créditos de 155.067,00):** podem ser fornecidas? Confirmar que tudo é mercadoria para revenda (sem material de uso/consumo ou ativo misturado na conta Estoques).\n\nRespostas que ainda não chegaram não impedem o fechamento de 01/2026 (premissas estão em `mes_01/pendencias.md`), mas afetam a apuração do 1º trimestre (mes_03).\n",
+  "released_fact_ids": [
+    "brindes",
+    "papel"
+  ],
+  "answer": "Vinho e canivete gravado pros 400 melhores clientes. Marketing, ora.\nÉ papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

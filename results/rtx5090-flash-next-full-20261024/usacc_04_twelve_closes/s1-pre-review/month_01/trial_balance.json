@@ -1,0 +1,87 @@
+{
+  "as_of": "2025-01-31",
+  "basis": "cumulative",
+  "accounts": {
+    "1000": {
+      "debit": "384900.00",
+      "credit": "0.00"
+    },
+    "1100": {
+      "debit": "38200.00",
+      "credit": "0.00"
+    },
+    "1300": {
+      "debit": "9600.00",
+      "credit": "0.00"
+    },
+    "1500": {
+      "debit": "64000.00",
+      "credit": "0.00"
+    },
+    "1510": {
+      "debit": "0.00",
+      "credit": "23110.78"
+    },
+    "2000": {
+      "debit": "0.00",
+      "credit": "17420.00"
+    },
+    "2100": {
+      "debit": "0.00",
+      "credit": "0.00"
+    },
+    "2200": {
+      "debit": "0.00",
+      "credit": "54800.00"
+    },
+    "3000": {
+      "debit": "0.00",
+      "credit": "650000.00"
+    },
+    "3900": {
+      "debit": "205953.00",
+      "credit": "0.00"
+    },
+    "4000": {
+      "debit": "0.00",
+      "credit": "40650.00"
+    },
+    "5000": {
+      "debit": "54404.00",
+      "credit": "0.00"
+    },
+    "5010": {
+      "debit": "5076.00",
+      "credit": "0.00"
+    },
+    "5100": {
+      "debit": "3250.00",
+      "credit": "0.00"
+    },
+    "5200": {
+      "debit": "7200.00",
+      "credit": "0.00"
+    },
+    "5300": {
+      "debit": "9920.00",
+      "credit": "0.00"
+    },
+    "5400": {
+      "debit": "1460.00",
+      "credit": "0.00"
+    },
+    "5700": {
+      "debit": "1777.78",
+      "credit": "0.00"
+    },
+    "5900": {
+      "debit": "240.00",
+      "credit": "0.00"
+    }
+  },
+  "totals": {
+    "debit": "785980.78",
+    "credit": "785980.78"
+  },
+  "note": "Balances include JE-2025-001, a 2025-01-01 restatement of opening balances for Dec-2024 errors (see open_items.md). January 2025: revenue 40,650.00 - expenses 83,327.78 = net loss (42,677.78), reflected in accounts 4000 and 5xxx; equity change for January including the (30,450.00) restatement debit = (73,127.78)."
+}

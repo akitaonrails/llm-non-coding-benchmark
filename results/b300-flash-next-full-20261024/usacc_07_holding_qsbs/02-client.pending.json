@@ -1,0 +1,59 @@
+{
+  "case": "usacc_07_holding_qsbs",
+  "questions": "# QUESTIONS — remaining unknowns (turn 2)\n\nClient has answered what she can (exit timing/size; trust is her revocable living trust; she will not\npaper intercompany transfers) and has **no additional information** for the rest. Per instruction,\npreviously answered questions are not repeated. These unknowns are flagged as such; none changes the\ncore advice (do not contribute Helio; single-member holding; document or capitalize the loans), but\nR1–R3 directly affect whether the §1202 exclusion actually lands on the expected scale.\n\n**R1 — Helio QSB certification (high stakes, exit in 12–18 months).** Ask Helio's board/counsel for a\nwritten qualified-small-business certification covering Feb 2020 through closing (domestic C corp,\nactive qualified trade or business, continuous gross-asset compliance). We only have the company's\nFeb 2020 representation (SPA §2.3). Without ongoing certification the 100% exclusion rests on\nunverified facts. *Who to ask: Helio corporate counsel, via the deal process.*\n\n**R2 — Complete Helio transaction history (high stakes: shared $10M cap, headroom as thin as\n$12,000).** Every prior sale, exchange, option exercise, redemption or repurchase of Helio stock by\nNadia reduces the same per-issuer cap. Nadia should pull her own brokerage/transfer-agent records and\nany secondary-sale documents; Helio's stock ledger copy would corroborate. If the full $9–10M is a\nfirst-ever disposition, the numbers in `numbers.json` hold.\n\n**R3 — Deal structure (library cannot evaluate).** Will the acquirer buy *shares* (or merge with\ncash-out of shares) or buy *assets*? Structure confirmation must come from deal counsel/CPA —\nreorganization and recast rules are **not in the closed library** and I do not opine on them.\nGet the answer before the LOI is signed.\n\n**R4 — Full Helio stockholder agreement / ROFR / drag-along.** Still not in the file; the deal itself\nwill produce these documents — route through counsel; confirm none is signed in a way that reads as a\npre-closing transfer by Nadia.\n\n**R5 — Properties mortgage loan documents (2024 refinance).** Still not provided; the due-on-transfer\nquestion for the (revised) contribution of Properties' interest remains open. If lender consent is\nrequired and refused, Properties stays titled directly under Nadia — the revised plan works without\nit; nothing in the plan depends on Properties moving into the holding LLC.\n\n**R6 — Filed returns (2024, 2025) and preparer.** Still unknown; the §7872 catch-up entries can be\nfinalized only against the filed returns. If Nadia prefers, the year-end sweep/capitalization path\n(opinion §5.3) at least stops new exposure from accruing while this is sorted.\n\n*Standing assumption (no answer available):* mid-term AFR 4.12% tenor for imputed interest, with\nshort-term 3.96% sensitivity shown in `numbers.json`.\n",
+  "facts": [
+    {
+      "id": "helio_exit",
+      "trigger": [
+        "exit",
+        "sale of Helio",
+        "liquidity",
+        "when do you expect"
+      ],
+      "answer": "Helio is talking to acquirers; a sale in 12–18 months is realistic. My stake would be about $9–10M.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "basis_holdings",
+      "trigger": [
+        "basis",
+        "Properties",
+        "negative capital",
+        "mortgage recourse"
+      ],
+      "answer": "The mortgage is nonrecourse to me personally. The refinancing cash went into my brokerage account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trust",
+      "trigger": [
+        "trust",
+        "1%",
+        "revocable",
+        "who is the other partner"
+      ],
+      "answer": "The 1% is my revocable living trust — the advisor said we need two partners.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "loans_terms",
+      "trigger": [
+        "loan terms",
+        "promissory",
+        "interest rate",
+        "repay"
+      ],
+      "answer": "No paperwork. I just move money where it's needed.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "helio_exit",
+    "loans_terms",
+    "trust"
+  ],
+  "literal_suggestions": [
+    "basis_holdings"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

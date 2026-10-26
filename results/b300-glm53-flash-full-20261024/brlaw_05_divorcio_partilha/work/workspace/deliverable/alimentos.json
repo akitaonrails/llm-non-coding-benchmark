@@ -1,0 +1,27 @@
+{
+  "base_mensal_liquida": 35250,
+  "base_mensal_liquida_teto": 39000,
+  "base_nota": "Base provisória (Cenário B): salário líquido CLT 24.000 + pró-labore líquido estimado 11.250 = 35.250. Teto (Cenário A): 39.000, se o pró-labore informado de 15.000 se provar LÍQUIDO. O fator líquido 0,75 do pró-labore NÃO é verificado: a biblioteca não traz tabela de IR/INSS para a conversão; fixar pelo contracheque/informe de rendimentos.",
+  "incide_sobre": [
+    "Salário líquido CLT: R$ 24.000,00/mês (após IR e INSS)",
+    "Pró-labore habitual — R$ 15.000,00 informado pelo cliente em 26/10/2026, fora do salário CLT. Biblioteca (alimentos_base_calculo.md): 'Pró-labore e lucros distribuídos integram a base quando habituais'. Base em LÍQUIDOS (após IR/INSS): Cenário B (pró-labore bruto, carga típica) ≈ 15.000 × 0,75 = 11.250 líquidos; Cenário A (se o 15.000 já for o valor líquido) = 15.000. Conversão exata pende de documento — assunção sinalizada",
+    "13º salário líquido (R$ 24.000,00/ano) — STJ REsp 1.332.808. Nota: pró-labore, em regra, não gera 13º/férias; se o documento de renda mostrar que gera, somar 25% sobre as parcelas",
+    "Férias + terço constitucional líquidos (R$ 32.000,00/ano) — STJ REsp 1.332.808",
+    "Lucros distribuídos de fato, se passarem a ser habituais — não são hoje: o cliente declara 'nunca distribuí lucro; reinvesti tudo' (26/10/2026)"
+  ],
+  "nao_incide_sobre": [
+    "FGTS (depósitos mensais de R$ 2.400 e saldo partilhável de 140.000) — exclusão expressa em library/alimentos_base_calculo.md (AgInt no AREsp)",
+    "Verbas rescisórias de natureza indenizatória (aviso-prévio indenizado, multa de 40%, férias indenizadas)",
+    "Auxílios e diárias",
+    "PLR — eventual: sem prova de habitualidade não integra; controvérsia anotada na biblioteca (pergunta ao cliente ficou sem resposta em 26/10)",
+    "Lucros NÃO distribuídos/reinvestidos da Andrade Engenharia (1.100.000 captados como partilha das quotas pela linha quotas de partilha.json): são capital reinvestido, não rendimento auferido — a base da biblioteca incide sobre rendimentos líquidos e sobre 'lucros distribuídos' habituais. Fernanda pode alegar capacidade potencial (CC 1.694); a biblioteca não modela capacidade potencial — tratado como lacuna, não como recusa de princípio"
+  ],
+  "percentual_sugerido": 25,
+  "valor_mensal_estimado": 8812.5,
+  "valor_mensal_estimado_teto": 9750,
+  "equivalente_mensal_medio": 9979.17,
+  "equivalente_mensal_medio_teto": 10916.67,
+  "guarda": "Compartilhada com residência alternada em semanas (pedido do cliente, 'se der'); se a alternância se mostrar inviável (escola/rotina — dado não informado), residência de referência única a fixar no acordo, preferencialmente pelo interesse dos filhos e não pela distribuição patrimonial. Alimentos não se afastam pela guarda compartilhada (guarda_compartilhada.md).",
+  "fundamento": "CC arts. 1.694 (necessidade-possibilidade, proporcionalidade), 1.695 e 1.699; sem percentual legal fixo — prática de 15% a 30% dos rendimentos LÍQUIDOS (após IR/INSS); pró-labore habitual integra a base (alimentos_base_calculo.md). Base B = 24.000 + 11.250 = 35.250; 25% × 35.250 = R$ 8.812,50/mês; 13º: 25% × 24.000 = 6.000/ano; férias+terço: 25% × 32.000 = 8.000/ano; equivalente mensal (12 × 8.812,50 + 6.000 + 8.000)/12 = 119.750/12 = R$ 9.979,17. Teto A (pró-labore líquido): base 39.000; 25% = R$ 9.750/mês; annual = 12 × 9.750 + 14.000 = 131.000; equivalente R$ 10.916,67. Piso 20% da base B: R$ 7.050/mês (equivalente (12 × 7.050 + 14.000)/12 = R$ 8.216,67). Renda de Fernanda (R$ 9.000 líquidos/mês) entra na proporcionalidade (1.694, §1º) sem eliminar a obrigação de Marcelo; a diferença de rendas é grande (35.250–39.000 vs 9.000), o que sustenta o topo da faixa. Guarda alternada: a biblioteca não contém regra de calibragem de alimentos por tempo de residência — lacuna assinalada; a quantia proposta não se altera por isso.",
+  "controversia_preco": "Contra-proposta: 25% da base líquida provisória (R$ 8.812,50/mês Cenário B; até R$ 9.750 se o pró-labore de 15.000 se provar líquido), com cláusula conta-gotas: valor-condição fixado pelo contracheque/informe. A demanda da outra parte (30% DO BRUTO, incluindo FGTS, verbas rescisórias e PLR) recusada nos mesmos três fundamentos (i)–(iii). Comparação recalcada com o pró-labore conhecido: 30% × bruto aproximado (24.000 + 15.000 + FGTS 2.400 = 41.400) = 12.420/mês; 13º 7.200/ano + férias 9.600/ano + FGTS 8.640/ano → equivalente mensal (149.040 + 7.200 + 9.600 + 8.640)/12 = 174.480/12 = R$ 14.540 — contra R$ 9.979,17 da nossa linha (diferença ≈ R$ 4.560,83/mês ≈ 54.730/ano (exato: 174.480 − 119.750); antes do pró-labore revelado, 9.320 vs 7.166,67). Base bruta e FGTS continuam sendo o principal ponto."
+}

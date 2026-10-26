@@ -1,0 +1,47 @@
+{
+  "case": "uslaw_05_divorce_split_support",
+  "questions": "# Questions for the client (answers will sharpen, not block, the deliverables)\n\n1. **September bonus money:** the pay stub shows ~$27,212 of YTD gross above prorated salary, paid around Sept 15. Does the $100,000 \"joint checking/savings\" on husband's schedule already include that payment? Do you know where those funds are now (his account, joint account, spent)?\n2. **February 2027 bonus half (~$22,500–$25,200):** it appears on no schedule. Do you have any visibility into whether it is likely to be paid (his plan attainment history)?\n3. **Decree timing:** do you expect the decree to be signed **on or before December 31, 2026**? If the house could be **listed and sold before that date** while you can still file a joint return, the §121 exclusion jumps from $250,000 to $500,000 — worth ~$47,000 to you.\n4. **House history:** confirm you both owned and lived in 48 Larkspur Lane for at least 2 of the last 5 years (needed for the joint $500,000 exclusion). When did Husband move out, if he has?\n5. **Refinance reality check:** can you give me your monthly share of the household's actual costs (mortgage, taxes, insurance, utilities)? Head-of-household requires you to pay >half the cost of the home, and a lender will test the ~$2,648/mo P&I against your income. Have you gotten a refinance pre-qualification? What rate were you quoted?\n6. **Alternatives to the house:** if Scenario B (sell now) is on the table, what would your housing plan be — buy smaller, rent near the kids' school? Is the \"stay until middle school ends\" a hard requirement or a preference?\n7. **Children's other support:** does Husband currently pay, or offer to pay, a share of health insurance premiums, childcare, or school costs? The guideline excerpt in our library shows only the basic obligation — add-ons may exist in the full statute [not in library].\n8. **Husband's age:** is he under 59½? (Affects how much the 401(k) side really shrinks and whether a non-QDRO \"cash settlement\" from the plan could backfire on him — useful in negotiation.)\n9. **Maintenance security:** would you accept a lien on the house sale proceeds or life-insurance assignment to secure the 36-month maintenance stream if we concede a shorter term?\n10. **Bonus-at-plan:** the HR letter says \"currently at 112% of plan\" → expected payout ≈ $50,400, not $45,000. Is there any history suggesting payouts get cut or capped at year end?\n",
+  "facts": [
+    {
+      "id": "house_plan",
+      "trigger": [
+        "sell",
+        "refinance",
+        "afford",
+        "how long",
+        "stay in the house"
+      ],
+      "answer": "I'd like to stay 3–6 years but I honestly don't know if I can refinance a $400k mortgage on $72k. If I can't, I'd have to sell.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "overnights",
+      "trigger": [
+        "overnights",
+        "parenting time",
+        "custody",
+        "70/30",
+        "nights"
+      ],
+      "answer": "Kids are with me about 255 nights a year.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "bonus_knowledge",
+      "trigger": [
+        "bonus",
+        "did you know",
+        "September paycheck",
+        "Granite Peak"
+      ],
+      "answer": "He always gets a bonus. He told me last year's was around $40k. His affidavit says none expected — that's not true.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "house_plan",
+    "bonus_knowledge"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

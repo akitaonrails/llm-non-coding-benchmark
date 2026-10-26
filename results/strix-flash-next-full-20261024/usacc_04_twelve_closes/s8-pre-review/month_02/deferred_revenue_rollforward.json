@@ -1,0 +1,45 @@
+{
+  "as_of": "2025-02-28",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) - prior annual contract, Jun 2024-May 2025",
+      "opening": "32800.00",
+      "billed": "0.00",
+      "recognized": "8200.00",
+      "closing": "24600.00",
+      "basis": "Release 8,200/month (client-note basis 41,000 / 5 months Jan-May 2025); Feb closing 32,800 - 8,200 = 24,600 = 3 remaining months Mar-May. JE-2502-014."
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) - renewal, 12 months from service start 2025-01-01",
+      "opening": "22000.00",
+      "billed": "0.00",
+      "recognized": "2000.00",
+      "closing": "20000.00",
+      "basis": "Order form C-026 + INV-2225; policy #1: 24,000/12 = 2,000 per month, Jan-Dec 2025. JE-2502-014."
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025) - order form 2025-02-01, term NOT stated",
+      "opening": "0.00",
+      "billed": "36000.00",
+      "recognized": "0.00",
+      "closing": "36000.00",
+      "basis": "INV-2250 billed and collected (02/15 wire) before any evidenced performance: contract liability per ASC 606-10-45-2. Policy #2 would allow recognition only for an actually delivered, separately priced, distinct implementation service - the order form is a single blended line and no delivery evidence exists; the described scope is set-up activity (ASC 606-10-25-17). No term stated, so no ratable release can be computed without inventing facts. Recognized 0.00 pending client answers (QUESTIONS.md). Client reply this session: customer 'self-onboarded like everyone else' and the 'license' wording was procurement's - confirms the sole performance obligation is over-time platform access with an UNKNOWN term (U10); treatment unchanged, recognized 0.00."
+    }
+  ],
+  "total": {
+    "opening": "54800.00",
+    "billed": "36000.00",
+    "recognized": "10200.00",
+    "closing": "80600.00"
+  },
+  "reconciliation_to_trial_balance": {
+    "2200 per trial balance (01/31/2025)": "54800.00",
+    "plus billed INV-2250 (JE-2502-002)": "36000.00",
+    "less recognized (JE-2502-014)": "-10200.00",
+    "2200 per trial balance (02/28/2025)": "80600.00"
+  },
+  "notes": [
+    "Monthly subscription customers (INV-2226..INV-2249) are billed and earned in the same month; no contract liability remains at month end, so they do not appear in this roll-forward.",
+    "Account 2200 is labeled 'current'; 20,000 of the Trestle renewal relates to Mar-Dec 2025 and the Pinecone 36,000 cannot be split pending the term answer (U10). Presentation left all-current (unknown U6)."
+  ]
+}

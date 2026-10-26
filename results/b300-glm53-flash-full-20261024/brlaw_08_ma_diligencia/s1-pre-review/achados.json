@@ -1,0 +1,100 @@
+[
+  {
+    "achado": "A minuta exige aprovação do CADE como condição precedente, mas a operação não é notificável: os limiares do art. 88, I e II, da Lei 12.529/2011 (Portaria Interministerial 994/2012) exigem R$ 750 milhões (um grupo) e R$ 75 milhões (outro); Meridiano faturou R$ 390 milhões e Vértice R$ 4,2 milhões — ambos abaixo (fonte: library/cade_limiares.md).",
+    "onde": "data room §4.2; minuta cláusula 3.2",
+    "por_que_importa": "Condição que nunca será satisfeita: não há processo a obter nem prazo correlato, e o contrato passaria a ter uma condição sem conteúdo, com risco de aborto/discussão sobre qual parte a frustrou — o oposto da meta de 45 dias.",
+    "efeito": "prazo",
+    "solucao": "Suprimir a condição do CADE da cláusula 3.2 e substituir por declaração de que os limiares do art. 88 não foram atingidos, com memorando interno; registrar a possibilidade residual do art. 88, §7º (CADE pode requerer análise excepcional em até 1 ano) apenas como nota de conformidade."
+  },
+  {
+    "achado": "O Anexo 3.2 está como 'não aplicável', mas o maior contrato da Vértice (Horizonte Azul, 31% da receita) tem cláusula 19: alteração de controle sem anuência prévia e expressa = rescisão imediata + multa de 20% do saldo contratual (data room §1.1).",
+    "onde": "data room §1.1; minuta cláusula 3.2/Anexo 3.2",
+    "por_que_importa": "Se a anuência não for obtida, no fechamento o contrato pode ser rescindido: perda de receita de 31% (31% x R$ 4.200.000 = R$ 1.302.000/ano) e multa de 20% x saldo contratual (S_HA, valor não informado).",
+    "efeito": "anuencia",
+    "solucao": "Listar no Anexo 3.2 a anuência da Horizonte Azul como condição de fechamento; os vendedores solicitam a anuência imediatamente após a assinatura (ou antes), com 'outside date' curto alinhado aos 45 dias. Confirmado pelos sócios (26/10): a anuência ainda não foi solicitada e a venda não foi comunicada; o relacionamento amistoso com um diretor não substitui a anuência prévia e expressa exigida pela cláusula 19."
+  },
+  {
+    "achado": "Exposição financeira do contrato Horizonte Azul caso a anuência não seja obtida: multa de 20% sobre o saldo contratual mais perda da receita vinculada.",
+    "onde": "data room §1.1",
+    "por_que_importa": "É o risco de maior impacto imediato pós-fechamento: 0,20 x S_HA de multa e até R$ 1.302.000/ano de receita (31% x R$ 4,2 mi). O saldo S_HA não está no data room.",
+    "efeito": "preco",
+    "solucao": "Obter a anuência antes do fechamento para eliminar o risco — com a confirmação dos sócios (26/10) de que nenhum pedido de anuência foi feito ainda, o pedido formal precisa entrar já na assinatura do SPA; se não for possível, precificar (abatimento no preço igual à multa estimada 0,20 x S_HA) ou escrow dedicado. Saldo contratual segue sem número — ver QUESTIONS.md."
+  },
+  {
+    "achado": "Contrato administrativo de Sorocaba (Lei 14.133/2021; 12% da receita) admite alteração societária desde que mantidas as condições de habilitação, com comunicação prévia à Administração (data room §1.2) — não exige anuência, mas exige comunicação.",
+    "onde": "data room §1.2; minuta Anexo 3.2",
+    "por_que_importa": "A alteração de controle é lícita, mas a comunicação prévia é requisito do próprio contrato e a habilitação deve ser mantida (Lei 14.133/2021, arts. 137 VI interpretado a contrario, 91; fonte: library/lei14133_alteracao_societaria.md). Omissão pode gerar prejuízo à execução.",
+    "efeito": "anuencia",
+    "solucao": "Listar no Anexo 3.2, como item de natureza diversa (comunicação prévia, não anuência), a comunicação ao Município de Sorocaba, a ser feita antes do fechamento."
+  },
+  {
+    "achado": "CND federal positiva (débito de IRPJ 2023 de R$ 310 mil em cobrança, sem parcelamento). No contrato público, CND positiva pode ensejar retenção de pagamentos e/ou sanções durante a execução (Lei 14.133/2021, art. 92, XVI; fonte: library/lei14133_alteracao_societaria.md).",
+    "onde": "data room §3.1 e §1.2",
+    "por_que_importa": "Risco de fluxo de caixa pós-fechamento sobre 12% da receita (12% x R$ 4,2 mi = R$ 504.000/ano), além de constrangimento na habilitação pública.",
+    "efeito": "preco",
+    "solucao": "Divulgar no anexo de exceções. Respondida a pergunta 7 (26/10): não haverá quitação nem parcelamento antes do fechamento (os sócios discordam do lançamento) — a certidão segue positiva no Fechamento; escrow dedicado de R$ 310.000 em vez de ampliar o escrow global."
+  },
+  {
+    "achado": "A declaração 5.9 ('situação fiscal regular, com certidões negativas vigentes') é falsa em face do data room: CND federal positiva com débito de R$ 310.000 (data room §3.1). Combinada com 8.4(c) (pro-sandbagging) e com limite de 5.7/5.9 igual ao Preço Total, transfere ao vendedor, de forma integral e por 5 anos, um risco já conhecido e divulgado no data room (fonte: library/sandbagging_franquia_mercado.md).",
+    "onde": "data room §3.1; minuta 5.9, 8.4(b)-(c)-(d)",
+    "por_que_importa": "Exposição teórica de até 100% do preço por uma dívida conhecida de R$ 310.000 + encargos, guardada em escrow de 20% por 5 anos: desproporção total entre risco e remédio.",
+    "efeito": "indenizacao",
+    "solucao": "Qualificar 5.9 por anexo de exceções; substituir a cobertura genérica por indenização específica limitada a R$ 310.000 + encargos de cobrança, com escrow dedicado de R$ 310.000 e prazo alinhado (2–3 anos; 'prescrição + 6 meses é defensável' — library/sandbagging_franquia_mercado.md). Confirmado pelos sócios (26/10): débito em cobrança, sem parcelamento, por discordância do lançamento — o valor nominal segue o número do escrow; o desfecho da discussão apenas decide se a reserva é liberada ou consumada. Nota CTN art. 133: na compra de quotas não há sucessão; o passivo permanece na própria sociedade (fonte: library/ctn_133_sucessao.md) — por isso o debate é de preço/escrow/indenização, não de responsabilidade direta dos vendedores."
+  },
+  {
+    "achado": "A declaração 5.7 ('inexistindo risco de reconhecimento de vínculo') é desmentida pelo data room: 11 engenheiros PJ, com exclusividade, horário e subordinação — mesmo perfil apontado no data room como risco (data room §2.2). Na cessão de quotas, a empregadora é a mesma e o passivo permanece na sociedade, sendo objeto de preço/indenização (CLT arts. 10, 448 e 448-A; fonte: library/clt_10_448_sucessao_trabalhista.md).",
+    "onde": "data room §2.2; minuta 5.7, 8.4(b)-(c)-(d)",
+    "por_que_importa": "Exposição teórica de até 100% do preço por risco conhecido a 11 pretensões de vínculo, com base 5.7 limpa + pro-sandbagging + 5 anos + escrow de 20%/5 anos.",
+    "efeito": "indenizacao",
+    "solucao": "Qualificar 5.7 por anexo de exceções (lista dos 11 PJs); substituir por indenização específica com teto igual à soma das verbas indenizatórias por profissional (equivalência salarial, verbas e encargos por período — teto CAP_PJ a apurar; dados solicitados em QUESTIONS.md); escrow dedicado; ou regularizar previamente (custo a apurar). A estrutura do cálculo (equivalência salarial/verbas) não consta da biblioteca — rotulada como não verificada."
+  },
+  {
+    "achado": "3 reclamações trabalhistas em curso com valor de causa total R$ 1,4 milhão e provisão contábil de R$ 380 mil classificada como 'possível' — diferença de R$ 1.020.000 sem provisão (1.400.000 - 380.000).",
+    "onde": "data room §2.3",
+    "por_que_importa": "Gap entre risco pedido e provisão: o comprador vai exigir coberturas; sem qualificação no anexo de exceções, cada resultado pior do que provisionado vira pedido de indenização contra os vendedores.",
+    "efeito": "indenizacao",
+    "solucao": "Listar as 3 ações no anexo de exceções (com valores de causa e provisão), declaração qualificada por litígios pendentes; fixar no SPA que a perda é medida pela provisão/desembolso excedente, não pelo valor de causa."
+  },
+  {
+    "achado": "Responsável técnico perante o CREA é o sócio Hélio, que sai com a venda (data room §3.3). A habilitação do contratado deve ser mantida, com substituição do responsável técnico perante o CREA e a Administração.",
+    "onde": "data room §3.3",
+    "por_que_importa": "Sem substituição formal, a condição de habilitação do contrato de Sorocaba fica fragilizada no mesmo ato da transferência.",
+    "efeito": "prazo",
+    "solucao": "Novo responsável técnico indicado e registrado no CREA antes do fechamento; comunicação à Administração junto com a comunicação da alteração societária (fonte: library/lei14133_alteracao_societaria.md)."
+  },
+  {
+    "achado": "Escrow de 20% do preço por 5 anos (minuta 10.2) não está dimensionado pelo risco real.",
+    "onde": "minuta 10.2; data room §3.1 e §2.2",
+    "por_que_importa": "Trava 20% x P por 5 anos (P = preço, não informado), enquanto o passivo identificado é: R$ 310.000 (IRPJ) + CAP_PJ (PJs) + 0,20 x S_HA (multa Horizonte Azul, só se anuência não obtida). O escrow global superdimensionado congela capital dos vendedores por 5 anos sem risco correspondente.",
+    "efeito": "preco",
+    "solucao": "Escrow itemizado: R$ 310.000 + CAP_PJ + (0,20 x S_HA se sem anuência até o fechamento), por prazo alinhado às respectivas indenizações (2–3 anos), sem escrow global de 5 anos."
+  },
+  {
+    "achado": "Earn-out: 35% do excesso de EBITDA sobre R$ 1,1 milhão, limitado a R$ 1,5 milhão, com EBITDA apurado pelo Comprador 'segundo suas práticas contábeis', podendo incluir rateio de despesas corporativas do grupo (minuta 2.3). Definição manipulável: rateios e práticas do comprador podem zerar o earn-out (fonte: library/earnout_pratica.md).",
+    "onde": "minuta 2.3; data room §4.2",
+    "por_que_importa": "Até R$ 1,5 milhão em jogo (35% x excesso; excesso máximo para atingir o teto: 1.500.000 / 0,35 = R$ 4.285.714, ou seja, EBITDA-referência de R$ 5.385.714). EBITDA histórico da Vértice não consta do data room — o achievement do gatilho de R$ 1,1 mi é desconhecido.",
+    "efeito": "preco",
+    "solucao": "Definir EBITDA por princípios contábeis históricos/iniciais da sociedade (ou CPC consistentemente aplicados), excluir rateio do grupo e custos de integração, obrigação de curso normal sem atos para frustrar o earn-out, acesso a informações, perito independente para divergências e aceleração em caso de revenda (fonte: library/earnout_pratica.md). EBITDA histórico solicitado em QUESTIONS.md."
+  },
+  {
+    "achado": "Não concorrência de 10 anos em território nacional (minuta 9.1) acima do padrão do CC art. 1.147, que fixa 5 anos e admite redução de prazos/territórios excessivos por razoabilidade (fonte: library/cc_1147_nao_concorrencia.md).",
+    "onde": "minuta 9.1; data room §3.3",
+    "por_que_importa": "Atinge diretamente a liberdade profissional dos sócios vendedores por uma década em todo o país; prazos muito superiores a 5 anos e território nacional sem relação com a atuação regional tendem a ser reduzidos.",
+    "efeito": "nenhum",
+    "solucao": "Alinhar a 5 anos com território composto pelos municípios/estados onde a Sociedade atuou nos 24 meses anteriores ao fechamento (anexo de território — geografia solicitada em QUESTIONS.md)."
+  },
+  {
+    "achado": "Cláusula de preferência dos sócios na cessão de quotas com prazo de 30 dias; sem acordo de sócios (data room §4.1).",
+    "onde": "data room §4.1",
+    "por_que_importa": "A venda conjunta dos dois sócios depende de manifestação de renúncia/recusa dentro da janela; o calendário de 45 dias deve absorver esse prazo sem sobreposição com condicionados externos.",
+    "efeito": "prazo",
+    "solucao": "Renúncia expressa e recíproca à preferência lavrada no próprio instrumento (ambos alienam a totalidade); confirmar split de quotas (se um dos sócios aliena apenas parte, a mecânica colhe direito de preferência). Composição de quotas solicitada em QUESTIONS.md."
+  },
+  {
+    "achado": "Regime tributário: Simples Nacional com sublimite ultrapassado em 2025 — ISS 'por fora' (data room §3.2). Certidões estaduais/municipais e CRF/FGTS regulares (data room §3.1).",
+    "onde": "data room §3.1 e §3.2",
+    "por_que_importa": "Ponto de conformidade operacional (processamento municipal do ISS); a biblioteca não cobre efeitos adicionais do sublimite/ISS — nenhum impacto quantificável identificado sem inventar base legal.",
+    "efeito": "nenhum",
+    "solucao": "Registrar no anexo de exceções a condição tributária; manter declaração 5.9 qualificada (não genérica) e monitorar recolhimento municipal pós-fechamento. Efeito jurídico do sublimite: não verificado na biblioteca — rotulado como não verificado."
+  }
+]

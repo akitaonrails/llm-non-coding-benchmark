@@ -1,0 +1,47 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "questions": "# QUESTÕES — Revisão 3 (encerradas por falta de resposta; incógnitas sinalizadas)\n\nNa última rodada a cliente declarou **não ter informação adicional** sobre qualquer item. Nenhuma pergunta será repetida. Este arquivo passa a registrar as incógnitas **definitivas** e como o parecer as trata (sensibilidade em `parecer.md` §9):\n\n| Incógnita | Situação | Como o parecer trata |\n|---|---|---|\n| Inventário do marido (P1) | cliente não sabe/não respondeu | **Risco material não quantificável** (regras de concorrência do cônjuge fora da biblioteca). Recomendação: não executar integralização/doação antes de verificar certidões de matrícula e situação do inventário. |\n| IPTU/condomínio das unidades vagas | valor nunca informado | Sensibilidade: holding segue vantajosa para qualquer despesa plausível (a vantagem só some acima de ~R$ 447–581 mil/ano). PF de R$ 247.004 é teto. |\n| Filhos de Marcos / linha dos netos | cliente não informou | Desenho neutro; Cotia só será endereçada após identificar a linha do neto; representação [fora da biblioteca]. |\n| Alíquota ITBI Guarulhos | cliente não tem; verificação externa de registro/legislação municipal, não consultável na biblioteca | Faixa 2%–5%: ITBI R$ 401.900–494.900; payback 3,95–4,87 anos; provisão conservadora R$ 432.900. |\n| Escrituração contábil da holding | não confirmado | Condição operacional para a trava de distribuição dentro do lucro contábil (§7.2). |\n| Aceitação formal da estratégia \"mínimo para Marcos\" e do teto de doação | não manifestada | Plano recomendado, **não executado**; exige manifestação escrita antes de escritura (§9.v). |\n\nItens da 1ª e 2ª rodadas já respondidos pela cliente permanecem incorporados ao parecer e **não se repetem**.\n",
+  "facts": [
+    {
+      "id": "marcos",
+      "trigger": [
+        "Marcos",
+        "excluir",
+        "deserdar",
+        "legítima",
+        "terceiro filho"
+      ],
+      "answer": "Ele não fala comigo há seis anos. Não quero que receba nada. Se a lei obriga, quero o mínimo possível e com as cláusulas de proteção.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uso_proprio",
+      "trigger": [
+        "Campos do Jordão",
+        "Cotia",
+        "uso próprio",
+        "moradia"
+      ],
+      "answer": "A casa de Campos é da família, ninguém aluga. O terreno de Cotia é para os netos um dia. Eu moro no Jardins — ah não, o Jardins está alugado; moro em Higienópolis, que é alugado por mim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deducoes",
+      "trigger": [
+        "IPTU",
+        "condomínio",
+        "administradora",
+        "despesas dos imóveis"
+      ],
+      "answer": "A administradora cobra 8%; IPTU e condomínio dos vagos eu pago.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "deducoes",
+    "marcos",
+    "uso_proprio"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

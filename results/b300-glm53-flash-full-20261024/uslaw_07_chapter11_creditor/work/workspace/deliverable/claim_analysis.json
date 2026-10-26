@@ -1,0 +1,79 @@
+{
+  "case": "In re Redwood Fabrication, Inc., Case No. 26-11842-TBM (Bankr. D. Colo.), Chapter 11",
+  "petition_date": "2026-03-10",
+  "analysis_date": "2026-03-19",
+  "total_prepetition_claim": 125000,
+  "claim_arithmetic": {
+    "invoiced_2026_total": 210000,
+    "less_payments_received": 85000,
+    "of_which_MS7701_paid_2026-02-10": 48200,
+    "of_which_MS7740_partial_2026-02-27": 36800,
+    "unpaid_balance": 125000,
+    "note": "The 2026-03-12 dunning letter demanded $210,000; that figure double-counts $85,000 already collected. Unpaid invoices: MS-7740 remainder 62,400-36,800=25,600; MS-7788 41,300; MS-7802 6,900; MS-7815 36,800; MS-7819 14,400. Sum = 125,000. Assumes the 12-month payment ledger is complete and no other invoices are open."
+  },
+  "admin_503b9": {
+    "amount": 78100,
+    "invoices": [
+      {"invoice": "MS-7788", "delivery_date": "2026-02-20", "description": "structural steel", "amount": 41300, "days_before_petition": 18},
+      {"invoice": "MS-7815", "delivery_date": "2026-03-04", "description": "steel coil", "amount": 36800, "days_before_petition": 6}
+    ],
+    "excluded": [
+      {"invoice": "MS-7802", "delivery_date": "2026-02-26", "amount": 6900, "reason": "freight & handling -- not 'goods' (library, 11 U.S.C. §503(b)(9) note)"},
+      {"invoice": "MS-7819", "delivery_date": "2026-03-09", "amount": 14400, "reason": "cutting services -- services are not 'goods'"},
+      {"invoice": "MS-7740", "delivery_date": "2026-02-04", "amount": 62400, "reason": "delivered 34 days before petition -- outside the 20-day window"}
+    ],
+    "assertion_note": "Must be requested per the procedure the bar-date order specifies, separately from the general unsecured claim (Fed. R. Bankr. P. 3003 note in library)."
+  },
+  "general_unsecured": 46900,
+  "general_unsecured_arithmetic": "MS-7740 remainder 25,600 + MS-7802 freight 6,900 + MS-7819 services 14,400 = 46,900; 78,100 + 46,900 = 125,000",
+  "reclamation": {
+    "available": false,
+    "why": "A §546(c)(1) written demand would still be timely (45-day rule: earlier of 45 days after each receipt -- Mar 21 for the Feb 4 delivery, Apr 6 for Feb 20, Apr 18 for Mar 4 -- capped at 20 days after the petition, i.e., Mar 30, where the 45-day period expires after commencement). But recovery is not realistically available: under the library's §546(c) note reclamation is subject to prior liens, and the DIP lender holds a blanket lien ranking ahead of reclamation. Additional practical limit (our observation, not from the library): delivered steel is largely consumed in fabrication, so identifiable goods may no longer exist. A demand by Mar 21 is cheap and preserves the argument; expected recovery is $0."
+  },
+  "bar_date": "2026-06-11",
+  "bar_date_detail": "June 11, 2026, 5:00 p.m. Mountain Time (notice of commencement; non-governmental creditors). Filing after that date requires excusable neglect (Rule 3002(c) note; *Pioneer*).",
+  "notice_anomaly": "The notice of commencement prints 'Notice dated: April 2, 2026', which postdates both today (2026-03-19) and the petition (2026-03-10). All operative dates used in this analysis come from the body of the notice (petition 2026-03-10; Dkt. 44 hearing 2026-04-02; §341 meeting 2026-04-21; bar date 2026-06-11). Flagged as a document inconsistency and left open per the engagement contract: if a corrected notice issues, re-verify the bar date before relying on 2026-06-11.",
+  "preference": {
+    "window": "2025-12-10 to 2026-03-10 (90 days, statutory presumption of insolvency within it, §547(f) note)",
+    "transfers_in_90_days": 180000,
+    "transfer_detail": [
+      {"date": "2025-12-18", "amount": 51000, "applied_to": "MS-7612", "days_after_invoice": 45, "method": "ACH", "ordinary_course_band": "inside the historical 43-47 day band"},
+      {"date": "2026-01-22", "amount": 44000, "applied_to": "MS-7655", "days_after_invoice": 43, "method": "ACH"},
+      {"date": "2026-02-10", "amount": 48200, "applied_to": "MS-7701", "days_after_invoice": 29, "method": "ACH"},
+      {"date": "2026-02-27", "amount": 36800, "applied_to": "MS-7740 (partial)", "days_after_invoice": 25, "method": "WIRE -- demanded by Mesa credit mgr"},
+      {"date": "2025-11-03", "amount": 41800, "excluded": true, "reason": "127 days before petition -- outside the 90-day window"}
+    ],
+    "ordinary_course_defense": {
+      "protected": 95000,
+      "exposed": 85000,
+      "reasoning": "Pre-window history (7 payments, all ACH) ran 43-47 days after invoice. Dec 18 (45 days) and Jan 22 (43 days) ACH payments sit inside that band and are defended under §547(c)(2)(A). The Feb 10 payment (29 days, ACH) and the Feb 27 payment (25 days, by WIRE 'demanded by Mesa credit mgr') are faster than any historical payment and the wire is an unusual method; per the library's §547 note, payments under shortened terms, pressure, or unusual methods compared with the parties' history fall outside (c)(2)(A). Mesa itself unilaterally shortened terms to NET 15 by email on 2026-01-20 and demanded oldest-invoice-first/wire payment -- Mesa built its own preference exposure, which does not help its defense (pressure exerted by the creditor is still pressure)."
+    },
+    "new_value_defense": 85000,
+    "new_value_arithmetic": "§547(c)(4): unsecured value Mesa delivered after each exposed transfer. (1) After the Feb 10 transfer (48,200): MS-7788 goods Feb 20 = 41,300 + MS-7802 freight Feb 26 = 6,900 -> 48,200; the Feb 27 transfer was on account of MS-7740 (an older invoice), not on account of these deliveries, so the offset holds; 48,200 - 48,200 = 0. (2) After the Feb 27 transfer (36,800): MS-7815 goods Mar 4 = 36,800 + MS-7819 services Mar 9 = 14,400 -> 51,200, capped at 36,800; 36,800 - 36,800 = 0. Total new value credited 85,000; net exposure 85,000 - 85,000 = 0.",
+    "net_exposure_estimate": 0,
+    "estimate_caveats": "Best estimate is $0 under the library's text. Sensitivity (each lower only with additional assumptions): (a) if deliveries claimed as §503(b)(9) goods (MS-7788 + MS-7815 = 78,100) may not also count as §547(c)(4) new value -- the library is silent on stacking, so labeled UNVERIFIED -- available new value falls to 21,300 (freight 6,900 + services 14,400) and net exposure is 63,700; Mesa would then have to choose between the 503(b)(9) election and the defense (the 503(b)(9) admin claim is worth more). (b) under the strictest reading of 'on account of which the debtor did not make an otherwise unavoidable transfer', the Feb 20/26 deliveries could be barred until the trustee actually recovers the Feb 27 interim transfer (the rule for recovering avoided interim transfers is not in the library; UNVERIFIED, no authority cited), putting the interim worst case at 48,200. (c) if freight/services do not count as 'new value' (definition not in the library; UNVERIFIED), add 6,900 and/or 14,400. Even at $0 net, expect an objection and possible inquiry under 11 U.S.C. §502(d)."
+  },
+  "stay_violations": [
+    "2026-03-12: 'FINAL NOTICE -- pay $210,000 within 5 days or we refer to collections' mailed and emailed to the debtor nine days after commencement -- an act to collect a prepetition claim, 11 U.S.C. §362(a)(6) (and (a)(1)); the $210,000 figure itself is wrong by $85,000 (double-counts paid invoices).",
+    "2026-03-15: collection call to the debtor's AP staff after being told a Chapter 11 was filed ('that's not our problem, you owe us') -- a continuation of collection activity, §362(a)(6), knowingly continued after actual notice of the filing (willfulness factor).",
+    "2026-03-18: email to the debtor's CFO threatening to hold all future shipments and report to credit bureaus -- threats to report to credit bureaus are expressly identified in the library's §362 note as acts to collect; the threat used withholding of supply as leverage to collect a prepetition debt."
+  ],
+  "stay_exposure_note": "Willful violations expose Mesa to actual damages, costs and attorneys' fees (§362(k)) and, as a corporate creditor, to sanctions under §105 (library §362 note); the notice to creditors repeats this warning. Today those liabilities run against Mesa, not for it.",
+  "immediate_actions": [
+    "TODAY: issue a written directive to all AR, sales and credit staff to stop every demand, letter, call, credit-bureau report and payment application against Redwood; the automatic stay began 2026-03-10. Log what has already gone out.",
+    "TODAY: correct the ledger -- total claim is $125,000, not $210,000 ($85,000 was collected post-invoice on Feb 10 and Feb 27).",
+    "Prepare a remedial communication to debtor's counsel acknowledging the stay and withdrawing the Mar 12/15/18 demands (helps contain §362(k)/§105 exposure).",
+    "Contact debtor's counsel about the critical vendor motion (Dkt. 44, hearing April 2, 2026) -- the legitimate route to early payment; designation requires agreement to customary trade terms and is at the debtor's discretion and the court's approval (library practice note). UPDATE 2026-03-19: Redwood's counsel initiated contact and asked whether Mesa will keep supplying on 'normal terms' if old invoices are paid; the CEO answered 'pay first' (he did not know about the motion). Actions: (i) send the written clarification described in advice_to_ceo.md -- yes to customary terms through the Dkt. 44 order, old invoices addressed in that order, no side payments; (ii) obtain Dkt. 44 and its proposed order from debtor's counsel and prepare the designation reply before the April 2 hearing; (iii) no further 'pay first' statements.",
+    "Prepare and, per the bar-date order's procedure, file the proof of claim ($125,000, with the 503(b)(9) request of $78,100 asserted separately) by June 11, 2026, 5:00 p.m. MT.",
+    "If a reclamation demand is sent at all, send it before 2026-03-21 (45-day deadline for the Feb 4 delivery); expected recovery $0 behind the DIP blanket lien.",
+    "Do not set off any deposits/claims without stay relief -- prepetition setoff requires relief from stay (library §553 note).",
+    "Decide future supply policy on business grounds only; do not use withheld shipments or credit-bureau threats as collection leverage.",
+    "Preserve complete books/records: invoices, delivery receipts, the payment ledger, the 2026-01-20 terms-change email and the collection log -- these prove the ordinary-course and new-value defenses and the 503(b)(9) claim."
+  ],
+  "assumptions": [
+    "The 12-month payment ledger and the six-invoice 2026 file are complete; no other prepetition invoices are open.",
+    "Redwood is presumed insolvent throughout the 90-day preference window, Dec 10, 2025 through Mar 10, 2026 (§547(f) note; the library presumes insolvency for all of that period), and goods were sold to it in the ordinary course of its business.",
+    "Mesa holds no security and received no post-petition payments.",
+    "The DIP lender's blanket lien ranks ahead of reclamation (stated in the library's §546(c) note)."
+  ]
+}

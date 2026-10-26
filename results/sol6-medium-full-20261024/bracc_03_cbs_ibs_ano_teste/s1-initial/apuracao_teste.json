@@ -1,0 +1,159 @@
+{
+  "saidas": [
+    {
+      "numero": 2301,
+      "data": "2026-08-01",
+      "valor": 18000.0,
+      "cbs": 162.0,
+      "ibs": 18.0,
+      "situacao": "regular",
+      "motivo": "Emitida antes de 03/08; ausência de IBSCBS admitida pela regra de transição."
+    },
+    {
+      "numero": 2302,
+      "data": "2026-08-01",
+      "valor": 24000.0,
+      "cbs": 216.0,
+      "ibs": 24.0,
+      "situacao": "regular",
+      "motivo": "Emitida antes de 03/08; ausência de IBSCBS admitida pela regra de transição."
+    },
+    {
+      "numero": 2303,
+      "data": "2026-08-02",
+      "valor": 9500.0,
+      "cbs": 85.5,
+      "ibs": 9.5,
+      "situacao": "regular",
+      "motivo": "Emitida antes de 03/08; ausência de IBSCBS admitida pela regra de transição."
+    },
+    {
+      "numero": 2304,
+      "data": "2026-08-02",
+      "valor": 31000.0,
+      "cbs": 279.0,
+      "ibs": 31.0,
+      "situacao": "regular",
+      "motivo": "Emitida antes de 03/08; ausência de IBSCBS admitida pela regra de transição."
+    },
+    {
+      "numero": 2305,
+      "data": "2026-08-02",
+      "valor": 4200.0,
+      "cbs": 37.8,
+      "ibs": 4.2,
+      "situacao": "regular",
+      "motivo": "Emitida antes de 03/08; ausência de IBSCBS admitida pela regra de transição."
+    },
+    {
+      "numero": 2306,
+      "data": "2026-08-04",
+      "valor": 42000.0,
+      "cbs": 378.0,
+      "ibs": 42.0,
+      "situacao": "irregular",
+      "motivo": "IBSCBS por item e valores corretos, mas ausência de IBSCBSTot no XML fornecido; completar/validar totalizadores."
+    },
+    {
+      "numero": 2307,
+      "data": "2026-08-06",
+      "valor": 56000.0,
+      "cbs": 504.0,
+      "ibs": 56.0,
+      "situacao": "irregular",
+      "motivo": "IBSCBS por item e valores corretos, mas ausência de IBSCBSTot no XML fornecido; completar/validar totalizadores."
+    },
+    {
+      "numero": 2308,
+      "data": "2026-08-10",
+      "valor": 12500.0,
+      "cbs": 112.5,
+      "ibs": 12.5,
+      "situacao": "irregular",
+      "motivo": "Ausência de IBSCBS após 03/08 e de IBSCBSTot; corrigir documento."
+    },
+    {
+      "numero": 2309,
+      "data": "2026-08-13",
+      "valor": 38000.0,
+      "cbs": 342.0,
+      "ibs": 38.0,
+      "situacao": "irregular",
+      "motivo": "Alíquotas invertidas no XML (CBS 0,10%, IBS UF 0,90%) e ausência de IBSCBSTot; valores aqui recalculados."
+    },
+    {
+      "numero": 2310,
+      "data": "2026-08-18",
+      "valor": 7800.0,
+      "cbs": 70.2,
+      "ibs": 7.8,
+      "situacao": "irregular",
+      "motivo": "Ausência de IBSCBS após 03/08 e de IBSCBSTot; corrigir documento."
+    },
+    {
+      "numero": 2311,
+      "data": "2026-08-21",
+      "valor": 61000.0,
+      "cbs": 549.0,
+      "ibs": 61.0,
+      "situacao": "irregular",
+      "motivo": "IBSCBS por item e valores corretos, mas ausência de IBSCBSTot no XML fornecido; completar/validar totalizadores."
+    },
+    {
+      "numero": 2312,
+      "data": "2026-08-27",
+      "valor": 176000.0,
+      "cbs": 1584.0,
+      "ibs": 176.0,
+      "situacao": "irregular",
+      "motivo": "Ausência de IBSCBS após 03/08 e de IBSCBSTot; corrigir documento."
+    }
+  ],
+  "entradas": [
+    {
+      "numero": 2313,
+      "valor": 48000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "Fornecedor regular, mas NF-e anterior a 03/08 sem destaque de IBS/CBS; crédito não demonstrado."
+    },
+    {
+      "numero": 2314,
+      "valor": 62000.0,
+      "credito_cbs": 558.0,
+      "credito_ibs": 62.0,
+      "motivo": "Fornecedor regular (CRT 3) e IBS/CBS destacados por item; crédito informativo sujeito à validação do XML, que não contém IBSCBSTot."
+    },
+    {
+      "numero": 2315,
+      "valor": 15000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "Emitente do Simples (CRT 1), sem destaque de IBS/CBS; crédito zero em 2026."
+    },
+    {
+      "numero": 2316,
+      "valor": 40000.0,
+      "credito_cbs": 360.0,
+      "credito_ibs": 40.0,
+      "motivo": "Fornecedor regular (CRT 3) e IBS/CBS destacados por item; crédito informativo sujeito à validação do XML, que não contém IBSCBSTot."
+    },
+    {
+      "numero": 2317,
+      "valor": 60000.0,
+      "credito_cbs": 540.0,
+      "credito_ibs": 60.0,
+      "motivo": "Fornecedor regular (CRT 3) e IBS/CBS destacados por item; crédito informativo sujeito à validação do XML, que não contém IBSCBSTot."
+    }
+  ],
+  "totais": {
+    "debito_cbs": 4320.0,
+    "debito_ibs": 480.0,
+    "credito_cbs": 1458.0,
+    "credito_ibs": 162.0,
+    "saldo_cbs": 2862.0,
+    "saldo_ibs": 318.0
+  },
+  "recolhimento_devido": 0,
+  "condicao_dispensa": "R$ 0 somente se cumpridas as obrigações acessórias de destaque, escrituração e apuração-teste; irregularidades identificadas impedem afirmar que a condição já foi atendida. Sem comprovação/regularização, recolhimento eventual não está quantificado como exigível."
+}

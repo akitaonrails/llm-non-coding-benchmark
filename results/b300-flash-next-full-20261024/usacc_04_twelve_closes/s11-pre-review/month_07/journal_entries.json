@@ -1,0 +1,231 @@
+[
+  {
+    "ref": "JE-2025-07-01",
+    "date": "2025-07-01",
+    "memo": "July monthly subscription invoices INV-2350..INV-2373 (same 24 recurring customers C-001..C-024, per-customer amounts identical to June per documents/month_07/invoices.csv), total 30,450.00. All 24 invoices were collected in full during July (24 receipts in cash_receipts.csv, all deposited to the bank 07/20-07/26; 1:1 match name+amount, see bank_reconciliation.md)",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-02",
+    "date": "2025-07-31",
+    "memo": "Trestle Freight LLC (C-026) renewal: seventh of twelve 2,000.00 monthly releases on the 24,000.00 annual renewal billed upfront in January (documents/month_01/order_form_C-026.md, stated term 2025-01-01 to 2025-12-31; revenue_policy_memo #1). Deferred 12,000.00 -> 10,000.00; five releases remain through December under the order-form reading. Jan-May overlap exposure frozen at the 10,000.00 cap (open item 3)",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-03",
+    "date": "2025-07-31",
+    "memo": "Marigold Schools Inc (C-027): fifth of twelve 1,500.00 monthly releases on the 18,000.00 annual subscription billed upfront March 2025 (documents/month_03/order_form_C-027.md, service start 2025-03-01, term 2025-03-01 to 2026-02-28; revenue_policy_memo #1; ASC 606-10-55-51). Deferred 12,000.00 -> 10,500.00 (open item 1)",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 1500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-04",
+    "date": "2025-07-31",
+    "memo": "Quarry Analytics Co (C-028): third of twelve 2,500.00 monthly releases on the 30,000.00 annual subscription billed upfront May 2025 (documents/month_05/order_form_C-028.md, service start 2025-05-01, term 2025-05-01 to 2026-04-30; revenue_policy_memo #1; ASC 606-10-55-51). Deferred 25,000.00 -> 22,500.00 (open item 13)",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-05",
+    "date": "2025-07-31",
+    "memo": "Saltline Hospitality (C-029): second of twelve 1,800.00 monthly releases on the 21,600.00 annual subscription billed upfront June 2025 (documents/month_06/order_form_C-029.md, service start 2025-06-01, term 2025-06-01 to 2026-05-31; revenue_policy_memo #1; ASC 606-10-55-51). Deferred 19,800.00 -> 18,000.00 (open item 14)",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-06",
+    "date": "2025-07-02",
+    "memo": "Pinecone Dental Group (C-025) \u2014 ASC 250 prior-period error correction, five months February-June 2025 (5 x 3,000.00). Amendment No. 1 to the 2025-02-01 Order Form (documents/month_07/order_form_amendment_C-025.md, effective 2025-07-02, signed by both parties) states the original item 1 'Implementation & license \u2014 one-time, $36,000' was a CLERICAL ERROR, that no implementation services were or will be delivered, and replaces it with 'Annual platform subscription, 12-month term commencing 2025-02-01, billed upfront.' The correct accounting therefore existed at every prior month-end; the failure to use it is an error under asc250_excerpts.md ('oversight or misuse of facts that existed when the statements were prepared'), not a change in estimate, so retrospective correction is required and prospective correction without disclosure is not permitted. Five months of subscription revenue that should have been recognized February-June 2025 (36,000.00 x 5/12 = 15,000.00) are recognized here in July with the corresponding reduction of deferred revenue. Restated February-June revenue, deferred revenue and net-loss figures are presented in open_items.md item 15; the previously issued month_02..month_06 packages (issued to the Board) are not rewritten. J. Alvarado's forwarding note ('Nothing changes on our side, right?') is contradicted by the amendment he signed: 15,000.00 of deferred revenue and 15,000.00 of understated revenue both change",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 15000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 15000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-07",
+    "date": "2025-07-31",
+    "memo": "Pinecone Dental Group (C-025): sixth of twelve 3,000.00 monthly releases on the 36,000.00 annual subscription (36,000.00/12 per revenue_policy_memo #1; ASC 606-10-55-51 time-based series), term 2025-02-01 to 2026-01-31 per Amendment No. 1. Contract-basis deferred 36,000.00 -> 18,000.00 (six months remaining Aug 2025-Jan 2026). Supersedes the prior 'no documented term, $0 recognized' treatment (month_02 assumption, now closed; see open items 4 and 15)",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 3000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 3000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-08",
+    "date": "2025-07-26",
+    "memo": "July cash receipts, 24 ACH deposits totaling 30,450.00 (documents/month_07/cash_receipts.csv), matched 1:1 by customer+amount to the 24 July invoices and 1:1 to the 24 bank credits 07/20-07/26 (bank_reconciliation.md). Opening accounts receivable 92,650.00 remains uncollected (open item 7)",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-09",
+    "date": "2025-07-09",
+    "memo": "July vendor bills per documents/month_07/vendor_bills.csv; account mapping per open item 11 (controller-assigned): AWS 10,640.00 -> 5000 Hosting (June 10,520.00, +120.00 usage variance); WeWork 7,200.00 -> 5100 Rent (unchanged); Notion/Slack/GitHub 1,460.00 -> 5200 Software (unchanged); Google Ads 3,550.00 -> 5300 Marketing (June 3,500.00, +50.00); Gusto fees 240.00 -> 5400 G&A other (unchanged). NO Harbor Law LLP bill arrived in July \u2014 the May/June 2,500.00 pattern did not continue (open item 2)",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 10640.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5200",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5300",
+        "debit": 3550.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5400",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 23090.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-10",
+    "date": "2025-07-09",
+    "memo": "July vendor bills paid by ACH: 07/05 AWS 10,640.00, 07/06 WeWork 7,200.00, 07/07 Gusto fees 240.00, 07/08 Notion/Slack/GitHub 1,460.00, 07/09 Google Ads 3,550.00 \u2014 five debits total 23,090.00, matched to the penny to the five accrued bills. Accounts payable 2000 unchanged at 17,420.00 = the unpaid opening payables (open item 8). No payment to Harbor Law LLP in July (open item 2)",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 23090.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 23090.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-11",
+    "date": "2025-07-25",
+    "memo": "July payroll per documents/month_07/payroll_register.json: gross 54,404.00 (6000), employer taxes & benefits 5,076.00 (6100), total employer cost 59,480.00 paid in cash. Register agrees to BOTH sides as required: internally gross 54,404.00 = net 48,200.00 + employee withholdings 6,204.00, and taxes remitted 11,280.00 = withholdings 6,204.00 + employer portion 5,076.00; the two bank legs on 07/25 (net pay 48,200.00 + tax remittance 11,280.00) sum to 59,480.00 = total cost, to the penny (see bank_reconciliation.md). Register is identical to May and June (9 employees, same amounts) \u2014 third consecutive identical month, noted in open_items.md without opening a new item, consistent with the May/June precedent of accepting repetition when register AND bank agree",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 59480.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-07-12",
+    "date": "2025-07-31",
+    "memo": "Monthly depreciation: computer equipment 64,000.00 / 36-month straight line = 1,777.78 (unchanged since January; accumulated depreciation 31,999.68 -> 33,777.46)",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "as_of": "2025-02-28",
+  "accounts": {
+    "1000": {
+      "name": "Cash \u2014 Operating",
+      "debit": 369630.00,
+      "credit": 0.0
+    },
+    "1100": {
+      "name": "Accounts receivable",
+      "debit": 92650.00,
+      "credit": 0.0
+    },
+    "1300": {
+      "name": "Prepaid expenses",
+      "debit": 9600.00,
+      "credit": 0.0
+    },
+    "1500": {
+      "name": "Computer equipment",
+      "debit": 64000.00,
+      "credit": 0.0
+    },
+    "1510": {
+      "name": "Accumulated depreciation",
+      "debit": 0.0,
+      "credit": 24888.56
+    },
+    "2000": {
+      "name": "Accounts payable",
+      "debit": 0.0,
+      "credit": 17420.00
+    },
+    "2200": {
+      "name": "Deferred revenue \u2014 current",
+      "debit": 0.0,
+      "credit": 104600.00
+    },
+    "3000": {
+      "name": "Common stock & APIC",
+      "debit": 0.0,
+      "credit": 650000.00
+    },
+    "3900": {
+      "name": "Retained earnings",
+      "debit": 205953.00,
+      "credit": 0.0
+    },
+    "4000": {
+      "name": "Subscription revenue",
+      "debit": 0.0,
+      "credit": 111750.00
+    },
+    "5000": {
+      "name": "Hosting & infrastructure",
+      "debit": 19960.00,
+      "credit": 0.0
+    },
+    "5100": {
+      "name": "Rent",
+      "debit": 14400.00,
+      "credit": 0.0
+    },
+    "5200": {
+      "name": "Software & tools",
+      "debit": 2920.00,
+      "credit": 0.0
+    },
+    "5300": {
+      "name": "Marketing",
+      "debit": 6550.00,
+      "credit": 0.0
+    },
+    "5400": {
+      "name": "G&A \u2014 other",
+      "debit": 480.00,
+      "credit": 0.0
+    },
+    "6000": {
+      "name": "Salaries & wages",
+      "debit": 108808.00,
+      "credit": 0.0
+    },
+    "6100": {
+      "name": "Payroll taxes & benefits",
+      "debit": 10152.00,
+      "credit": 0.0
+    },
+    "6200": {
+      "name": "Depreciation",
+      "debit": 3555.56,
+      "credit": 0.0
+    }
+  },
+  "totals": {
+    "debit": 908658.56,
+    "credit": 908658.56
+  },
+  "notes": [
+    "Cumulative from opening_trial_balance.csv plus JE-2025-01-01..10 and JE-2025-02-01..10. Movement check vs 2025-01-31 TB: 1000 384,900.00 + 66,450.00 receipts - 22,240.00 bills - 59,480.00 payroll = 369,630.00 (agrees to bank). 2200 78,800.00 + 36,000.00 INV-2250 - 10,200.00 releases = 104,600.00 (agrees to roll-forward). 4000 71,100.00 + February revenue 40,650.00 (recurring 30,450.00 + Trestle 8,200.00 + 2,000.00) = 111,750.00; of the 4000 balance, 30,450.00 is the unexplained opening credit from the 2024 TB (open_items.md item 3) and 0.00 of C-025 implementation revenue is included (deferred per policy #2 / ASC 606-10-25-17 / 45-2). 1100 92,650.00 unchanged: all February invoices (incl. INV-2250) fully collected; opening A/R still 0 collected (open_items.md). 2000 17,420.00 unchanged: February bills paid in-month; opening A/P unpaid.",
+    "February activity: revenue 40,650.00; expenses 83,497.78 (opex 22,240.00 + payroll 59,480.00 + depreciation 1,777.78); net loss (42,847.78). Two-month 2025 net loss (85,525.56)."
+  ]
+}

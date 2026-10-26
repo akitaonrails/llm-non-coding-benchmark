@@ -1,0 +1,43 @@
+{
+  "probabilidade_vinculo": "alta (80-90%)",
+  "fundamentos": [
+    "Art. 3º CLT — não eventualidade: contrato por prazo indeterminado de 01/10/2019 a 30/09/2026 (84 meses ininterruptos, 87 NFs de R$ 18.000/mês; clausula 2a remunera 'independentemente de entregas')",
+    "Art. 3º CLT — subordinação: clausula 5a (reporte ao Gerente de Engenharia), clausula 4a (horário 9h-18h, seg-sex, nas dependências da contratante), clausula 3a (exclusividade); provas: Slack 12/03/2024 (cobrança de horário + ordem de marcar ponto), 02/06/2025 (ordem de ficar até 20h), 19-20/08/2025 (férias só com aprovação de gestor e RH, desconto de 'saldo de 20 dias'), 05/01/2026 (avaliação de desempenho com o mesmo formulário dos CLTs)",
+    "Art. 3º CLT — onerosidade e pessoalidade: R$ 18.000 mensais fixos contra NF; sócio único Rafael Moreira disponibilizado nominalmente (clausula 4a 'disponibilizará seu sócio')",
+    "Art. 9º CLT — nulidade do ato que desvirtua a aplicação da CLT: contrato de PJ com exclusividade, horário, subordinação e pagamento fixo sem vinculação a entregas",
+    "Art. 442-B CLT não socorre: a afastamento da qualidade de empregado exige subordinação ausente — no caso ela é documental; art. 818/CLT + Súmula 212 TST: admitida a prestação, o ônus de provar autonomia é da Solaris",
+    "Tema 725/ADPF 324/ADC 48 não resolve: tese trata de licitude da terceirização entre pessoas jurídicas (com responsabilidade subsidiária da tomadora) e NÃO afasta reconhecimento de vínculo quando presentes os requisitos do art. 3º com fraude (art. 9º); pejotização de pessoa física subordinada é outra questão (Tema 1.389)",
+    "Prescrição (CF art. 7º, XXIX; CLT art. 11; Súmula 308 TST): ajuizamento previsto 16/11/2026 corta créditos anteriores a 16/11/2021 — 25,5 meses prescritos, 58,5 exigíveis; bienal pós-contrato não barreira (encerramento 30/09/2026); FGTS segue a mesma quinquenal (STF ARE 709.212, Tema 608, conforme biblioteca)",
+    "Não se citam Súmula 256 nem OJ SDI-1 191: ambas canceladas (Res. 121/2003 / cancelada-convertida), conforme tst_sumulas_ojs.md; Súmula 363 TST inaplicável (não há administração pública)",
+    "Debate da base de cálculo (verbas_e_calculo.md): presunção = valor pago à PJ (R$ 18.000), 'salvo prova de que embutia tributos/custos'; o diretor alegou base 'real' de ~R$ 12 mil (CLT equivalente), mas o cliente não tem prova documental de custos da PJ — alegação sem lastro; cenário primário 18k (R$ 728.388), cenário defensivo 12k (R$ 485.592), provisão ponderada 70/30 = R$ 655.549 (ver parecer.md §6.1)"
+  ],
+  "prescricao": {
+    "data_ajuizamento": "2026-11-16",
+    "corte_quinquenal": "2021-11-16",
+    "meses_exigiveis": 58.5,
+    "meses_prescritos": 25.5
+  },
+  "exposicao": {
+    "remuneracao_base": 1053000,
+    "decimo_terceiro": 87750,
+    "ferias_terco": 117000,
+    "fgts": 100620,
+    "multa_40": 40248,
+    "aviso_previo": 30600,
+    "inss_patronal": 352170,
+    "horas_extras": "estimativa: R$ 18.225 diretas (135 h registradas jan-jun/2025, hora a R$ 135,00 = 18.000/200 * 1,5; com base 12k: R$ 12.150) + reflexos (Súmula 437) + demais meses a apurar; extrapolar para os 58,5 meses daria ~1.316 h = R$ 177.694 diretas (base 18k) / R$ 118.463 (base 12k). Divisor 200 e adicional 50% são premissas não verificadas na biblioteca. NÃO incluído no total",
+    "total": 728388
+  },
+  "tema_1389": {
+    "efeito_processual": "ARE 1.532.603 (rel. Gilmar Mendes): repercussão geral reconhecida (abr/2025) e suspensão nacional de todos os processos sobre licitude de contratação de PJ/autônomo (14/04/2025). Mérito pendente e suspensão mantida na biblioteca (congelada em out/2026). A reclamação de Rafael, ajuizada em 16/11/2026, tende a ser sobrestada após instrução/antes da sentença, conforme a prática de cada TRT — o processo congela, não se extingue",
+    "efeito_na_exposicao": "A exposição não desaparece: o passivo calculado permanece e continua corrigido (Lei 14.905/2024: IPCA + SELIC-IPCA) durante o sobrestamento; o corte prescricional fica travado na data do ajuizamento, mas juros/correção corroem o valor; o mérito do STF pode fixar tese sobre ônus da prova da fraude e critérios, podendo melhorar ou piorar a exposição — provisionar mantém a companhia preparada para qualquer desfecho"
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 655549
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [270000, 480000]
+  }
+}

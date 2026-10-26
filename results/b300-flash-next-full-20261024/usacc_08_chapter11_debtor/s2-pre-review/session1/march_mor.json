@@ -1,0 +1,25 @@
+{
+  "part1": {
+    "receipts": 2262400.00,
+    "disbursements": {
+      "payroll": 412000.00,
+      "post_petition_vendor_invoices_ordinary_course": 19570.00,
+      "pre_petition_critical_vendor_payment_dkt48": 31200.00,
+      "utilities_deposit_dkt31": 28000.00
+    },
+    "ending_cash": 1771630.00
+  },
+  "part2": {
+    "post_petition_payables": 207826.16,
+    "pre_petition_liabilities_subject_to_compromise": 74110.00
+  },
+  "part5": {
+    "professional_fees_approved": 0,
+    "paid": 0,
+    "holdback": 185000.00
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "yes — Apex Coatings pre-petition claim $31,200.00 paid 3/24/2026 under critical vendor order Dkt. 48; pre-petition wage portion of the 3/13/2026 payroll paid under first-day wage order Dkt. 9 (estimated $294,285.71, being 10 of 14 payroll days 2/28–3/13; pre-petition wages within the $17,150 per-employee §507(a)(4) cap per client file). No other pre-petition debt paid; Mesa Steel February invoice was NOT paid.",
+    "payments_outside_ordinary_course_without_approval": "no"
+  }
+}

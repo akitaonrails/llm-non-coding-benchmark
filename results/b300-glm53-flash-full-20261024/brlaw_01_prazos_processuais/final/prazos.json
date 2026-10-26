@@ -1,0 +1,25 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "Publicacao = 1o dia util seguinte a disponibilizacao, 20/11 foi feriado (Lei 14.759/2023) => 23/11/2026 (Lei 11.419/2006 art. 4 §3, espelhado em CPC art. 224 §2). Inicio da contagem = 24/11/2026 (Lei 11.419/2006 art. 4 §4 / CPC art. 224 §3; dia do começo = data de publicação, art. 231 VII, excluido pelo art. 224). PRAZO EM DOBRO REJEITADO: CPC art. 229 §2 (em cpc_prazos.md) - 'Nao se aplica o disposto no caput aos processos em autos eletronicos'; o processo 1044712-38.2026.8.26.0114 e digital (e-SAJ), conforme o proprio DJe. O argumento do socio (litisconsortes com procuradores de escritorios distintos, art. 229 caput) exige a existencia de autos fisicos e, portanto, nao se aplica. Contestacao = 15 dias uteis (CPC art. 335, III, via cpc_prazos_recursais.md), dias uteis (CPC art. 219), com exclusao de 08/12/2026 (feriado municipal de Campinas, N. Sra. da Conceicao, calendario_forense_campinas.md). Vencimento: 15/12/2026."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "Recesso/suspensao de prazos CPC art. 220: 20/12/2026 a 20/01/2027, inclusive - nenhum dia do prazo de apelacao considerado nesse intervalo",
+      "24/12/2026 (qui) e 31/12/2026 (qui) - sem expediente forense (dentro do recesso)",
+      "25/12/2026 (sex) - Natal (dentro do recesso)",
+      "01/01/2027 (sex) - Confraternizacao Universal (dentro do recesso)",
+      "25/01/2027 (seg) - Aniversario de Sao Paulo: feriado municipal APENAS na Capital, NAO vale para Campinas; contado como dia util (dia 8 da apelacao), conforme calendario_forense_campinas.md",
+      "Sabados e domingos excluidos da contagem (dias uteis apenas, CPC art. 219)"
+    ]
+  }
+}

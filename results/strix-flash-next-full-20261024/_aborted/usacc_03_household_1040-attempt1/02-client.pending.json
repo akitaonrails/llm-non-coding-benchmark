@@ -1,0 +1,74 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Questions for the client — round 2 (round 1 answered)\n\nNo figure in the return changed as a result of the client's answers. Section A records what was\nanswered and closed (for the file); section B lists the **remaining unknowns**, flagged explicitly.\nAnswered questions are not re-asked.\n\n## A. Answered 2026-10-25 — closed items (no change to the filed figures)\n\n| Was | Client answer (summary) | Effect |\n|---|---|---|\n| Q1 basis | No contributions since forming the company in 2021; never lent the corporation money; **Pike** guarantees the bank line. | Confirms `marcus_basis_note.md`: stock basis $11,500, **debt basis zero**, allowed loss $11,500, suspended $16,500. No document change. |\n| Q2 Leo | Elena **signed the Form 8332** releasing Leo to his father; 2025 is the father's year. (The answer contained a literal \"{TY}\" placeholder — read as **2025**, the year at issue; the order says odd years are the father's, so the reading is safe.) | Leo not claimed. Dependents = Sofia only, CTC $2,200 — **locked**. |\n| Q3 coverage | Dropped the marketplace plan; Elena enrolled in **Halvorsen's employer plan July 1**. | One 1095-A only; Form 8962 on six covered months (Jan–Jun) — **locked**. Consistent with W-2 box 12 DD ($7,140, Jul–Dec). |\n| Q5 NY | Marcus's employer \"said remote was fine when I asked\" — no out-of-state need; Halvorsen closed its Tampa office years ago and **approved Elena's request**. Both moves were at the employees' request. | Convenience-of-the-employer rule satisfied on the taxpayers' own words: both spouses' wages **100% NY source**. $68,000 / $54,000 — **locked**. Day-ratio alternative is now affirmatively refuted, not merely undocumented. |\n| Q6 rental | Tenant is a **stranger** — a nurse found through a broker in 2019; \"we just never raised the rent.\" | Exactly the library's carve-out scenario: below-market rent to an **unrelated** tenant \"because rent was never raised … does not by itself trigger this rule if the rent is a fair rental for that lease\" ([form8582_instructions_excerpt.md]). Rental loss allowed — treatment **confirmed as far as the facts go**; residual risk below (B4). |\n\n## B. Remaining unknowns (client has no further information) — flagged\n\n1. **B1 — Form 8962 family size / poverty line (the only open item that moves money).**\n   Unanswered. The return uses the only FPL in the library — family of 4, $31,200 — matching the four\n   individuals covered on the 1095-A. If the correct family size were 3, the repayment rises and the\n   refund falls by roughly $906 (repayment ≈ $2,806 instead of $1,900). **I cannot compute that\n   branch: the family-of-3 poverty line is not in `library/`**, so even if the client confirms family\n   size 3, I can only flag it, not price it. *Unverified estimate of magnitude only.*\n2. **B2 — Prior-year Forms 7203 (2021–2024) still not in the file.** The client confirmed the *facts*\n   behind the basis trail, but the basis number remains client-prepared. Any prior-year return\n   inconsistent with the note would move the allowed loss, AGI, the rental allowance, the PTC and the\n   refund. Kept as a documentary open item, not re-asked as a fact question.\n3. **B3 — Depreciation support for 318 Dean St #4B** (purchase price, land/building allocation,\n   placed-in-service date). Client has none. The $270,000 ÷ 27.5 = $9,818 figure stays\n   **[unverified]** — no depreciation authority is in the library either.\n4. **B4 — Written lease / market-rent evidence for the Brooklyn unit.** Client has none. The facts now\n   squarely match the library's carve-out (unrelated tenant, rent never raised), but the library's own\n   condition — \"a fair rental for that lease\" — cannot be documented at $1,500 vs the stated ~$2,600\n   market. Treated as rental (loss allowed); the downside branch (whole $21,018 disallowed, PTC\n   repayment to the $3,150 cap) stays disclosed in `judgment_calls.md` §4 and is unpriceable\n   federally (tax-table excerpt covers only MFJ $59,000–$61,000).\n5. **B5 — \"No other 2025 items\" was not affirmatively confirmable.** Client has no additional\n   information, which is consistent with the file but is not a signed confirmation. The return reports\n   no other income, adjustments or credits because **nothing else is in the file**.\n6. **B6 — NY/NYC filing mechanics unanswered.** Also still open for a structural reason: the library\n   has **no NY rate schedule, deduction, or credits**, so the IT-203 tax, the disposition of the\n   $6,752 NY withholding, and any NYC Jan–Jun tax are not computable in this engagement — stated, not\n   estimated. Related flagged assumptions unchanged: NY part-year **status** itself (abode test /\n   183-day test is not in the library), and July–Dec NY visit day counts, which the client did not\n   supply. The day counts do not change the wage allocation (100% under the convenience rule now that\n   employee-convenience is confirmed), but they could matter to residency status if a NY abode had been\n   available — nothing in the file or the answers suggests one (Brooklyn lease ended June 30).\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for {TY}, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "contrib",
+    "convenience",
+    "employer_coverage",
+    "fmv_rent",
+    "leo_8332"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

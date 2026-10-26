@@ -1,0 +1,61 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "questions": "# Perguntas — rodada 2 (somente perguntas NOVAS)\n\nAs respostas da rodada 1 foram incorporadas ao `parecer.md` (§9). **Não re-pergunto** o que já foi respondido (Luana sem capital; aluguel ≈ R$ 8.000/mês ao dentista; comunhão universal desde 2010 sem pacto; Marina servidora federal 40h). As perguntas da rodada 1 que ficaram sem resposta (Q2 — outras optantes no Simples; Q4 — salário mínimo 2026; Q6 — remuneração de mercado) foram tratadas como **incógnitas explícitas** no parecer §7, conforme orientação do cliente — não voltam aqui.\n\n- [ ] **N1 — Luana:** ela aceita o desenho atual — **prestadora de serviços agora** (honorários mensais, INSS de contribuinte individual retido na fonte) e **sócia apenas mediante aporte em dinheiro** quando tiver capital (hoje, 20% custariam **R$ 100.500**)? Ou prefere vínculo diverso (PJ própria / CLT)? *Sem o \"sim\", o contrato social fica como está e ela segue só como prestadora.*\n\n- [ ] **N2 — Locação do dentista:** o contrato dos 40% (sala com acesso autônomo) será assinado **pelo casal, em nome próprio (PF)**, com Felipe tocando a gestão do contrato — **nunca pela clínica**? É a premissa de todo o desenho tributário (Simples + ITBI). Se a intenção era locar pela PJ, avisem **antes** do registro: o Simples cai (LC 123, art. 17, XV).\n\n- [ ] **N3 — Marina:** (a) confirmam que ela **não** praticará nenhum ato de gestão, ainda que \"fora do expediente\", e assinam declaração nesse sentido para arquivo? (b) Vão protocolar **consulta formal de desimpedimento** no órgão federal dela antes de qualquer figurinização (Variante B)? Sem (a) e (b), mantenho a recomendação de deixá-la **fora** do quadro (Variante A).\n\n- [ ] **N4 — Honorários de Luana:** qual a compensação mensal prevista (fixo, % dos atendimentos, misto)? O lucro distribuível cai R$ 1 para cada R$ 1 pago a ela: sem esse número, o quadro do §5.3 do parecer não pode ser fechado e a lacuna das retiradas (R$ 50.000 pretendidos vs ≈ R$ 33.500 distribuíveis **antes** dela) fica maior ainda.\n\n*Responda em qualquer formato. Itens sem resposta seguem como incógnitas declaradas no parecer e no STATUS.*\n",
+  "facts": [
+    {
+      "id": "aluguel_pct",
+      "trigger": [
+        "alugar",
+        "locação",
+        "40%",
+        "terceiros",
+        "receita de aluguel"
+      ],
+      "answer": "Felipe: uns 40% da sala ficam vagos; vamos alugar para um dentista. Deve dar uns R$ 8 mil/mês.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "regime_bens",
+      "trigger": [
+        "regime de bens",
+        "comunhão",
+        "casados",
+        "pacto"
+      ],
+      "answer": "Marina: comunhão universal, casamos em 2010, sem pacto.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "luana_trabalho",
+      "trigger": [
+        "Luana",
+        "serviços",
+        "trabalho",
+        "integraliz",
+        "quotas por trabalho"
+      ],
+      "answer": "Luana: eu não tenho dinheiro pra aportar; a ideia é que meu trabalho vale 20%.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "marina_cargo",
+      "trigger": [
+        "servidora",
+        "administrar",
+        "Lei 8.112",
+        "cargo público",
+        "dedicação"
+      ],
+      "answer": "Marina: sou analista federal, 40h. Posso ser sócia, né? Administrar eu faria fora do expediente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "aluguel_pct",
+    "luana_trabalho",
+    "marina_cargo",
+    "regime_bens"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,45 @@
+{
+  "form1040": {
+    "1a_wages": 122000,
+    "2b_interest": 400,
+    "8_other_income_sch1": -31050,
+    "11_agi": 91350,
+    "12_deduction": 31500,
+    "15_taxable_income": 59850,
+    "16_tax": 6708,
+    "19_ctc": 2200,
+    "17_sch2_excess_aptc": 1900,
+    "24_total_tax": 6408,
+    "25d_withholding": 8730,
+    "34_refund_or_37_owed": 2322
+  },
+  "form7203": {
+    "stock_basis_begin": 11500,
+    "loss_allowed": 11500,
+    "loss_suspended": 16500
+  },
+  "form8582": {
+    "rental_loss": 21018,
+    "magi": 110900,
+    "special_allowance": 19550,
+    "loss_allowed": 19550,
+    "carryforward": 1468
+  },
+  "form8962": {
+    "household_income": 91350,
+    "fpl_pct": 292.79,
+    "applicable_figure_pct": 5.71,
+    "annual_ptc": 7531.26,
+    "aptc": 9900.00,
+    "excess": 2368.74,
+    "repayment_limitation": 1900.00,
+    "repayment": 1900.00
+  },
+  "dependents": ["Sofia Reyes (15, qualifying child for CTC)"],
+  "ny": {
+    "resident_days": 181,
+    "marcus_ny_wages": 68000,
+    "elena_ny_wages": 54000,
+    "method": "Part-year resident, resident period 2025-01-01 to 2025-06-30 (181 days). All wages are NY source: resident-period wages under the resident-period rule, and July-December wages under the convenience-of-the-employer rule (both employers NY-based; remote work from Florida for the employees' own convenience; no employer-necessity facts). Allocation ratio for wages is therefore 100%; Brooklyn rental and the NYC S-corp wage/K-1 items are also treated as NY source (rental/pass-through sourcing not spelled out in the closed library — labeled unverified). NY tax not computed: no NY rate schedule in the closed library."
+  }
+}

@@ -1,0 +1,6 @@
+# Lei 11.101/2005 — classes (art. 41), quórum (art. 45), cram down (art. 58 §1º), objeção (art. 55)
+
+*Citation:* LRF arts. 41, 45, 55, 58 §1º  
+*Status in this library:* in force
+
+**Art. 41.** Classes: I – trabalhistas; II – garantia real; III – quirografários, privilégio especial/geral, subordinados; **IV – titulares de créditos enquadrados como microempresa ou empresa de pequeno porte**. **Art. 45.** Nas classes I e IV, aprovação pela **maioria simples dos presentes (por cabeça)**; nas classes II e III, por credores que representem **mais da metade do valor** dos presentes **e** maioria simples por cabeça. **Art. 55.** Qualquer credor pode manifestar **objeção ao plano em 30 dias** da publicação da relação do AJ (art. 7º §2º). **Art. 58 §1º.** O juiz pode conceder a recuperação com base em plano rejeitado em uma classe (cram down), desde que: voto favorável de credores que representem mais da metade do valor de todos os créditos presentes; aprovação de 3 das 4 classes (ou 2 de 3 / 1 de 2); e, na classe que rejeitou, voto favorável de mais de 1/3 dos credores. **Um credor com crédito fiduciário (parte) e quirografário (parte) vota apenas com a parte sujeita, na classe correspondente; sendo EPP, na classe IV.**

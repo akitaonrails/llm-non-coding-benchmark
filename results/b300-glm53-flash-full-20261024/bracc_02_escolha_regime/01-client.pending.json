@@ -1,0 +1,45 @@
+{
+  "case": "bracc_02_escolha_regime",
+  "questions": "# PERGUNTAS.md — dúvidas ao cliente (Vértice Engenharia Consultiva Ltda.)\n\n**Contexto:** comparativo Simples × Presumido × Lucro Real 2026 já concluído (ver `comparativo.json` e `memorando.md`). A recomendação (permanecer no Simples, economizando R$ 112.690/ano frente ao Real) **não muda mesmo sob as premissas mais generosas** — mas estas 5 respostas refinam (ou derrubam) os cálculos. Itens de biblioteca que precisamos do cliente não são citáveis como lei.\n\n---\n\n## P1 — Qual é exatamente o ano dos efeitos da mudança?\n\nVocê pediu \"mudar em dezembro\". Pela regra de opção da LC 123/2006 [library/lc123_sublimite_opcao.md, art. 16, §§2º e 2º-A], não existe saída com efeitos no meio do ano: a exclusão por opção comunicada até 30/01/2026 produz efeitos **a partir de 1º/01/2026**; comunicada depois, só a partir de 1º/01/2027.\n\n- **Pergunta:** confirmam que a eventual saída vale para o **ano-calendário 2026** (pedido até 30/01/2026)?\n- **Se a resposta for \"não, seria para 2027\":** o comparativo deve ser refeito com números de 2027 e o prazo passa a ser **29/01/2027** (último dia útil de janeiro/2027; 29/01/2027 é sexta).\n- **Impacto:** alto para a \"data\", nulo para a comparação (o DAS de dezembro/2025 segue devido em qualquer cenário).\n\n## P2 — As obras de R$ 630.000 ficam mesmo no Anexo III? E qual é a folha vinculada às obras?\n\nO balancete afirma \"Anexo III (Fator R ≈ 31%)\", mas o excerto da LC 123 [library/lc123_sublimite_opcao.md, art. 18, §4º, IV] **segrega receitas de obras (construção com emprego de materiais) para o Anexo IV**. A biblioteca disponível **não contém as alíquotas do Anexo IV**, portanto não pudemos quantificar o efeito — deixamos tudo no Anexo III como leitura do próprio cliente.\n\n- **Perguntas:**\n  1. Os \"contratos EPC pequenos\" (R$ 630.000) têm ART (anotação de responsabilidade técnica) e caracterização de obra com emprego de materiais de terceiros?\n  2. Se parte da receita tributa como Anexo IV, qual é a folha de salários **vinculada às obras** (quanto do R$ 1,3 mi de folha é rateável às obras)?\n- **Por quê:** no Anexo IV a CPP **não** está no DAS [library/inss_patronal.md, LC 123 art. 13, VI e §3º] e a alíquota do DAS muda — isso altera tanto o bloco \"simples\" quanto o INSS patronal por fora e a ponte da Seção 5 do memorando.\n\n## P3 — Qual é hoje o RAT/FAP da empresa (CNAE predominante)?\n\nAssumimos INSS patronal total de **28%** da folha (média típica: 20% + RAT 1–3% + terceiros ≈ 5,8% — [library/inss_patronal.md]). A faixa implícita é **26,8%–28,8%**.\n\n- **Pergunta:** qual é o FAP vigente e a alíquota de RAT aplicada ao CNAE predominante da empresa?\n- **Impacto:** delta de **−15.600 a +10.400/ano** no INSS patronal dos regimes por fora. Não altera o ranking (Presumido/Real: ambos pagam 364.000 na base 28%).\n\n## P4 — Todas as receitas são tributáveis pelo ISS em São Paulo, a 5%, sem retenção?\n\nAssumimos ISS de 5% sobre **100%** de R$ 4,2 mi (= R$ 210.000/ano), citando o município do balancete. A biblioteca não traz a lista de serviços da LC 116 nem regras municipais.\n\n- **Pergunta:** confirmam que (i) toda a receita (obras + consultiva) é serviço tributável pelo município de São Paulo, (ii) **não há retenção de ISS na fonte por tomadores** nem benefícios/reduções municipais aplicáveis?\n- **Impacto:** proporcional (a cada 10% de base não tributável, −21.000 nos três regimes — ranking preservado).\n\n## P5 — Notas fiscais/contratos das licenças CAD/BIM (TopSoft)\n\nO maior crédito contestável é o da TopSoft: R$ 200.000 × 9,25% = **R$ 18.500** [premissa: uso essencial/relevante à prestação — `library/pis_cofins_nao_cumulativo.md`, Lei 10.637/10.833 art. 3º; IN 2.121 arts. 175-176].\n\n- **Pergunta:** envie as notas fiscais e os contratos das licenças CAD/BIM (o quê, para quê, como se integra ao serviço).\n- **Impacto:** se o entendimento for por \"uso geral/incorporação ao custo do serviço\", o crédito Real cai 18.500 (Real: de 1.060.690 → 1.079.190). O ranking **não muda**; é resguardo em eventual fiscalização.\n\n---\n\n**Resumo:** (a) ano dos efeitos — 2026? (b) obras no Anexo III ou IV (+ folha rateável)? (c) RAT/FAP? (d) base integral de ISS a 5%, sem retenção? (e) documentação TopSoft.\n",
+  "facts": [
+    {
+      "id": "obra_pct",
+      "trigger": [
+        "obra",
+        "empreitada",
+        "materiais",
+        "EPC",
+        "percentual"
+      ],
+      "answer": "Uns 15% do faturamento é obra pequena com material; o resto é consultoria.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "creditos",
+      "trigger": [
+        "uso e consumo",
+        "creditável",
+        "mobiliário",
+        "veículos",
+        "administrativo"
+      ],
+      "answer": "Dos R$ 1,4 mi, uns R$ 500 mil são móveis, carros e papelaria. O resto é insumo de obra e software.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "lucro",
+      "trigger": [
+        "lucro contábil",
+        "margem",
+        "lucro real projetado"
+      ],
+      "answer": "Margem antes de imposto uns 18%.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "obra_pct"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

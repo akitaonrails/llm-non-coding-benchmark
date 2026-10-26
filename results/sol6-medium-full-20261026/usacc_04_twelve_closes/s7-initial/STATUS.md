@@ -1,0 +1,3 @@
+COMPLETE WITH OPEN ITEMS
+
+July 2025 required files are in `month_07/`. The bank reconciles to $0.00 and the closing trial balance balances. February–June 2025 were restated for Pinecone's $3,000 monthly subscription revenue; full reissued trial balances and deferred revenue roll-forwards, plus the line-item disclosure, are in `month_07/restated_prior_periods/` and `month_07/restatement.md`. Remaining items: $24,000 unidentified opening deferred revenue, Trestle's historical overlapping terms, unsupported opening A/R, A/P and prepaids, and the $30,450 opening revenue credit. See `month_07/open_items.md`.

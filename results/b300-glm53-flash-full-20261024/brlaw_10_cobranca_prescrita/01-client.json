@@ -1,0 +1,8 @@
+{
+  "questions": "# QUESTIONS.md — perguntas ao cliente (não bloqueiam o relatório;STATUS é \"COMPLETE WITH OPEN ITEMS\")\n\n1. **Série do IPCA** (out/2020 → out/2026, mensal ou fator acumulado por mês): sem ela não dá para computar a correção da (`library/juros_correcao.md`). A estimativa no memorando está **sem IPCA** (conservadora). Com a série, atualizo os números parcela a parcela.\n2. Houve **qualquer pagamento ou reconhecimento novo depois do PIX de 02/08/2023** (e-mail, assinatura em documento, acordo interrompido)? Isso muda o calendário de prescrição — embora **nenhum novo ato interrompa novamente** (interrupção já usada em 15/09/2022), pode reconfigurar o que é exigível hoje.\n3. Os **relatórios de serviço** das parcelas 5 e 6 (fev/mar/2021) foram assinados pelo encarregado? Só muda se o cliente for discutir algo judicialmente sobre essas parcelas — estão prescritas, **não** vamos cobrá-las.\n4. Deseja manter a **inscrição no Serasa em R$ 110.000** (parte exigível) enquanto corre a monitória, ou retirá-la e deixar só a ação?\n5. Dados cadastrais completos da Metalúrgica Boa Vista (CNPJ, endereço) para a inicial — o genérico nos documentos não traz.\n",
+  "released_fact_ids": [
+    "pagamento",
+    "greve"
+  ],
+  "answer": "Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.\nTeve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "ref": "AJE-1",
+    "date": "2026-03-21",
+    "memo": "Record bank deposit not on the books: bank statement 03/21/2026 'MOBILE DEPOSIT $4,312.00'. Payer and invoice not identifiable from any document in the file set, so it is held in Unapplied Receipts (2100) per close policy (anything uncategorized goes to a suspense-type account) rather than guessed into revenue or against a specific A/R invoice. Client and office manager were asked and neither can identify the payer; client asked to 'park it somewhere' - it stays in 2100, the policy-prescribed suspense account, visible on the balance sheet, not buried. Deposit slip / mobile-deposit image from the bank requested.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 4312.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2100",
+        "debit": 0.0,
+        "credit": 4312.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-2",
+    "date": "2026-03-31",
+    "memo": "Reverse duplicate posting of Cascade Hardwoods invoice CH-7731. Both vendor bill copies in the file set are the same job (PO-8842), identical line items, identical total $4,860.00: emailed copy memo 'booked 2/26' (GL row 2026-02-26) and mailed copy stamped 'RECEIVED 2026-03-09, OK TO PAY' (GL row 2026-03-09). One invoice must be keyed once by invoice number (close policy), and check #2040 paid CH-7731 exactly once ($4,860.00, cleared 03/22). Client confirmed: 'Cascade emails invoices and then mails a paper copy a couple of weeks later. Same invoice. We paid it once.' Reverses the March-dated 3/9 posting; the 2/26 booking is treated as prior-period, assumed included in the February TB.",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 4860.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5000",
+        "debit": 0.0,
+        "credit": 4860.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-3",
+    "date": "2026-03-14",
+    "memo": "Reclassify online transfer from account *4420 out of Sales. GL 03/14 booked 'Online transfer in *4420' as a credit to 4000 (Sales); the client confirms: 'That's from my personal checking, I moved money over to cover payroll. It's my money, not a sale.' Account *4420 is the owner's personal bank account, not on this ledger. Removed from revenue and credited to 3100 Owner's contributions per the COA. (The earlier 'Pipeline bill' reference is superseded by this client response; no Pipeline invoice exists in the file set.)",
+    "lines": [
+      {
+        "account": "4000",
+        "debit": 1500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "3100",
+        "debit": 0.0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-4",
+    "date": "2026-03-31",
+    "memo": "Record bank monthly service fee not on the books: bank statement 03/31/2026 'MONTHLY SERVICE FEE $35.00'.",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 35.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 35.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-5",
+    "date": "2026-03-20",
+    "memo": "Allied Insurance $1,150.00 (GL 03/20, memo 'Q2 GL') is a multi-month prepayment per close policy (anything covering more than one month goes to 1300, never the month's expense). The bill itself is not in the file set; from the 'Q2' memo we assume the policy period is Apr-Jun 2026, so no amortization in March and $383.33/month begins April. Coverage dates need client confirmation \u2014 see QUESTIONS.md.",
+    "lines": [
+      {
+        "account": "1300",
+        "debit": 1150.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6300",
+        "debit": 0.0,
+        "credit": 1150.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-6",
+    "date": "2026-03-11",
+    "memo": "CabinetVision annual license $1,188.00 charged on Summit Visa 03/11; card statement shows the line 'ANNUAL LICENSE 04/2026-03/2027' \u2014 a 12-month prepayment. Move from Software & subscriptions to Prepaid expenses; amortize $99.00/month beginning April 2026. Nothing amortized in March (period starts 04/2026).",
+    "lines": [
+      {
+        "account": "1300",
+        "debit": 1188.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6400",
+        "debit": 0.0,
+        "credit": 1188.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-7",
+    "date": "2026-03-15",
+    "memo": "Uchi dinner $212.00 charged on Summit Visa 03/15; card statement notes 4 guests, Saturday 8:40pm. Close policy: personal charges go to Owner draws (3200), not Meals. Client confirmed: 'Uchi was my anniversary dinner, I grabbed the wrong card. Put it on me.' Personal charge; draws treatment confirmed.",
+    "lines": [
+      {
+        "account": "3200",
+        "debit": 212.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6500",
+        "debit": 0.0,
+        "credit": 212.0
+      }
+    ]
+  }
+]

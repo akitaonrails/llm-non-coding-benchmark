@@ -1,0 +1,46 @@
+{
+  "contracts": {
+    "Trestle Freight LLC \u2014 Jun 2024\u2013May 2025": {
+      "opening": 8200,
+      "billed": 0,
+      "recognized": 8200,
+      "closing": 0
+    },
+    "Trestle Freight LLC \u2014 Jan\u2013Dec 2025": {
+      "opening": 16000,
+      "billed": 0,
+      "recognized": 2000,
+      "closing": 14000
+    },
+    "Marigold Schools Inc \u2014 Mar 2025\u2013Feb 2026": {
+      "opening": 15000,
+      "billed": 0,
+      "recognized": 1500,
+      "closing": 13500
+    },
+    "Quarry Analytics Co \u2014 May 2025\u2013Apr 2026": {
+      "opening": 0,
+      "billed": 30000,
+      "recognized": 2500,
+      "closing": 27500
+    },
+    "Pinecone Dental Group \u2014 Feb 2025\u2013Jan 2026, restated": {
+      "opening": 27000,
+      "billed": 0,
+      "recognized": 3000,
+      "closing": 24000
+    }
+  },
+  "unallocated_opening_deferred_revenue": {
+    "opening": 24000,
+    "billed": 0,
+    "recognized": 0,
+    "closing": 24000
+  },
+  "total": {
+    "opening": 90200,
+    "billed": 30000,
+    "recognized": 17200,
+    "closing": 103000
+  }
+}

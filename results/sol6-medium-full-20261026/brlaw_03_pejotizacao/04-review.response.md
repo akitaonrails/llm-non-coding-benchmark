@@ -1,0 +1,7 @@
+I’ll check the deliverables against the closed library and source records, then recalculate the figures. I’ll correct any unsupported claim or mismatch I find before handing them over.
+
+I found a material proof gap: the fiscal-note summary shows amounts invoiced, but it does not prove they were paid. The draft called them paid and excluded salary balances on that basis. I’ll make payment an explicit scenario assumption and show the additional exposure if payment cannot be established.
+
+I corrected a material proof error in [parecer.md](/work/workspace/deliverable/parecer.md) and [parecer.json](/work/workspace/deliverable/parecer.json): the fiscal-note summary shows **R$ 1.512.000 invoiced**, but does not prove payment. The R$ 657.540 base estimate now expressly assumes the notes were paid. I added an unpaid-salary sensitivity of up to **R$ 1.053.000**, bringing the purely arithmetic total to **R$ 1.710.540** if none of the estimated period was paid. This is a scenario, not an allegation of nonpayment.
+
+I also narrowed the description of the documented absence approval, removed an unsupported termination label, and added proof of payment to the open items in [STATUS.md](/work/workspace/deliverable/STATUS.md). I rechecked the invoice totals, JSON arithmetic and library links; they reconcile. The unverified calculation and accounting assumptions remain explicitly flagged.

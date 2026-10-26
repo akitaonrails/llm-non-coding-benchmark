@@ -1,0 +1,48 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "questions": "# QUESTIONS.md — round-2 record and remaining unknowns\n\n**Status of this file:** Ray answered the round-2 questions (Oct 25, 2026). Per his instruction, nothing is being re-asked: he stated he has no additional information on everything not addressed. Unanswered items are therefore listed below as labeled assumptions / open flags, not as questions.\n\n## Answered this round (and where each answer landed)\n\n- **Covenant term and label (touches original Q1/Q2/Q10).** *\"I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.\"* The 5-year covenant is a non-issue in both deals. His indifference to the label is exactly why `memo.md` §10.1 quantifies what the label is worth to him — covenant dollars ordinary at 37% vs goodwill capital at 20% is **$68,000** on the full $400,000 — and why `form_8594_counter.md` now carries an optional retiring-seller variant (covenant → Class VII goodwill). **Note:** routing of the payment (original Q1) was *not* addressed; the direct-to-Ray assumption stands, and it dissolves if the variant is signed (the money then flows through the entity as part of the price).\n- **Note security (original Q8).** Confirmed **unsecured**; Ray does not know Hensley's balance sheet, so buyer credit quality is unverified and no benchmark information for the 6% rate exists (§483/§1274-type rules are absent from the library — unverified). Negotiation responses: `memo.md` §10.3 (security via acquired-company guarantee, indemnity setoff against the note, escrow alignment).\n- **Liabilities (original Q3, partial).** A Hardaway dispute of **$9,800** plus \"the usual warranty stuff\" (\"nothing big\"). No cash balance, payables schedule, or loan details were supplied. Reflected in `memo.md` §10.2 and `comparison.json` (`buyer_A_liability_tail`): Buyer A leaves these behind with the entity (est. −$9,800 cash to Ray if the dispute is ultimately paid — net after-tax cost $7,840 per the §10.2 rollforward; warranty unquantified); Buyer B assumes all liabilities known and unknown, so B's numbers are unchanged — but since Hardaway is now a *known* item, it must be disclosed in the reps.\n\n## Not answered — Ray has no information (assumptions retained; flagged, not asked again)\n\n1. Routing of the $400,000 covenant payment (direct to Ray assumed).\n2. Consulting-fee amount under Buyer A's covenant/consulting package, if any (unmodeled; service-compensation character unverified — not in the library).\n3. Company cash balance and complete liability schedule at closing.\n4. §1366(f)(2) loss character — swings **±$40,341** (237,300 × (37% − 20%)); the library states the loss exists but not its character.\n5. Material-participation facts for the NIIT exclusion (library relief retained as a labeled assumption; the fact pattern was never confirmed, and the library does not detail the test).\n6. Other 2026 income behind the 37% ordinary marginal rate (library directive followed).\n7. Texas franchise tax status and specifics (no rate in the library; unmodeled; relevant mainly to Buyer B, which inherits the company).\n8. Benchmark adequacy of the 6% note rate (unverified — no library rule; stayed beyond §483/§1274 by intent since none is citable).\n9. Actual note payment schedule — the $100,000-principal + declining-balance 6% model is retained as labeled (LOI says only \"annual principal\").\n10. Timing flexibility toward a post-12/31/2027 closing (none assumed: Ray's retirement leans toward closing now, and the $237,300 §1374 entity tax is in every figure). For completeness: the recognition period runs through 12/31/2027, so a 2028 closing would fall outside it and erase the $237,300 tax — a ≥14-month delay, not assumed in any figure.\n11. Independent equipment appraisal (the fixed-asset register's $650,000 FMV remains the only support for the Class V counter).\n\n## New fact-pattern items disclosed this round (client cannot resolve further)\n\n12. **Hensley credit quality** — unverified; mitigations are negotiation items, not tax items (`memo.md` §10.3).\n13. **Warranty exposure amount** — \"usual\" but unspecified; retained-liability economics for Buyer A are in `memo.md` §10.2; immaterial to the tax comparison.\n14. **Outcome of the Hardaway dispute** — $9,800 is disputed and unresolved; if ultimately paid, estimated Buyer A net cost $7,840 (`memo.md` §10.2 rollforward); fully inside Buyer B's assumption of liabilities (indemnity cap $285,000, escrow $100,000).\n\n**No further question round is planned.** The deliverables are final figures under the stated assumptions; every unknown above is flagged where it matters, and none of them flips the recommendation (Buyer B, per `memo.md` §9 and §10).\n",
+  "facts": [
+    {
+      "id": "noncompete_term",
+      "trigger": [
+        "non-compete",
+        "noncompete",
+        "longer term",
+        "consult",
+        "stay on"
+      ],
+      "answer": "I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "note_security",
+      "trigger": [
+        "note",
+        "secured",
+        "collateral",
+        "Hensley credit"
+      ],
+      "answer": "The $500k note is unsecured. Hensley's a family office, seems solid, but I don't know their balance sheet.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "liabilities",
+      "trigger": [
+        "liabilities",
+        "warranty",
+        "claims",
+        "lawsuit",
+        "Hardaway"
+      ],
+      "answer": "There's the Hardaway dispute ($9,800) and the usual warranty stuff. Nothing big that I know of.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "liabilities",
+    "noncompete_term",
+    "note_security"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

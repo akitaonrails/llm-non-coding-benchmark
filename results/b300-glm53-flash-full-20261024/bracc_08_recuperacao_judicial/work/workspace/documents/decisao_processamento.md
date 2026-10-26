@@ -1,0 +1,3 @@
+# TJSP — 2ª Vara de Falências e Recuperações Judiciais — Processo 1012xxx-xx.2026.8.26.0100
+**Atlas Distribuidora S.A. — Recuperação Judicial**
+Decisão de 2026-03-12: **defiro o processamento** da recuperação judicial (art. 52). Nomeio administrador judicial **AJ Reorganiza Ltda.** Determino: (i) a apresentação de **contas demonstrativas mensais** enquanto perdurar a recuperação (art. 52, IV); (ii) suspensão das execuções pelo prazo do art. 6º, §4º (180 dias, prorrogável uma vez); (iii) publicação do edital do art. 52, §1º. Créditos existentes na data do pedido, ainda que não vencidos, sujeitam-se à recuperação (art. 49).

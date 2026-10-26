@@ -1,0 +1,1 @@
+{"pushback_indices": [], "nudge": false, "reason": "The single scripted pushback is scoped to session 3 and to a LALUR limited to 30% compensation; after session 2 there is no lalur.json yet, so the condition does not match. No nudge: mes_01 and mes_02 are closed and session 3 follows.", "controller": "opencode-session-agent", "decided_at": "2026-10-24T20:59:05Z"}

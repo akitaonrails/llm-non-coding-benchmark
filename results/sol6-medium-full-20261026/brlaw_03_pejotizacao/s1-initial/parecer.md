@@ -1,0 +1,54 @@
+# Parecer — Solaris Tecnologia × Rafael Moreira
+
+**Data-base: 26/10/2026.** Estimo **probabilidade alta de reconhecimento do vínculo (70%–85%)**. A faixa é julgamento de risco, não frequência estatística. A provisão indicativa é **R$ 657.540,00**, sujeita às premissas e aos itens abertos abaixo. A tese de “risco zero” não se sustenta.
+
+## Premissas e limites
+
+* Considero prestação de 01/10/2019 a **30/09/2026**, pois há nove notas de R$ 18.000 em 2026 e notificação de encerramento nessa última data. O último dia efetivo não foi confirmado.
+* Considero **ajuizamento hipotético em 16/11/2026**. É data futura apenas prevista; se a ação não for proposta nessa data, o corte prescricional e as contas mudam.
+* No cenário-base, trato o encerramento como **iniciativa de Rafael**, sem dispensa imotivada, rescisão indireta reconhecida ou aviso indenizado comprovados. Assim, multa de 40% do FGTS e aviso-prévio têm valor zero na provisão-base. Quantifico separadamente o cenário em que essas parcelas sejam devidas.
+* Presumo, apenas para a estimativa bruta, que **13º e férias não foram quitados** por outra rubrica e que não há compensações comprovadas. O contrato prevê 20 dias anuais e há um registro de saldo de 20 dias; faltam datas efetivas de gozo e comprovantes de pagamento. As notas mensais podem ensejar discussão sobre quitação ou compensação. Férias são calculadas **simples**, conforme a simplificação expressa da [biblioteca de cálculo](../library/verbas_e_calculo.md).
+* Adoto R$ 18.000/mês como remuneração. Os 84 documentos fiscais totalizam R$ 1.512.000 (84 × 18.000), coerentes com outubro/2019 a setembro/2026. Não incluo novamente os salários já faturados e pagos como crédito trabalhista; uso a remuneração como base das parcelas e contribuições. A empresa pode demonstrar tributos ou custos embutidos no preço, conforme a [biblioteca de cálculo](../library/verbas_e_calculo.md).
+
+## Vínculo e prova
+
+O [art. 3º da CLT, com os arts. 2º, 9º, 442-B e 818](../library/clt_requisitos_vinculo.md), exige prestação pessoal, não eventual, onerosa e subordinada. Aqui, a pessoalidade aparece na contratação da sociedade de sócio único Rafael e na obrigação de disponibilizar **seu sócio**. Não há prova de substituição livre: a ausência dependia de cobertura por Pedro e aprovação do RH. A continuidade decorre do prazo indeterminado, da prestação diária de segunda a sexta e de 84 notas mensais. A onerosidade decorre dos R$ 18.000 mensais independentemente de entregas.
+
+A subordinação é o ponto mais forte: horário contratual das 9h às 18h, comparecimento ou home office autorizado pelo gestor, reporte ao gerente de Engenharia, cobrança por login às 9h e registro em planilha de ponto, determinação para trabalhar até 20h, aprovação de ausências pelo RH e avaliação com o mesmo formulário dos empregados. Esses elementos indicam comando sobre **tempo, presença e desempenho**, além da contratação de resultados. Exclusividade e duração, isoladamente, não bastam: o [art. 442-B](../library/clt_requisitos_vinculo.md) admite autônomo exclusivo e contínuo quando ausente subordinação. A defesa deve preservar prova de autonomia real, entregas, negociação de preços e eventual atuação para terceiros, se existir; nada disso foi fornecido.
+
+O [Tema 725, ADPF 324 e ADC 48](../library/stf_tema_725_adc48_adpf324.md) admitem terceirização e divisão de trabalho entre pessoas jurídicas, independentemente da atividade. A licitude abstrata dessa estrutura **não elimina** a apuração concreta dos requisitos do art. 3º nem eventual fraude do art. 9º. A ADC 48 versa sobre transportador autônomo e não resolve, por si, este contrato de desenvolvimento. O ônus probatório e a demonstração de autonomia seguem relevantes; o próprio [Tema 1.389](../library/stf_tema_1389_pejotizacao.md) ainda discute o ônus da prova da fraude.
+
+## Tema 1.389 e prescrição
+
+Segundo a [biblioteca do Tema 1.389](../library/stf_tema_1389_pejotizacao.md), há suspensão nacional dos processos sobre licitude de contratação PJ/autônomo desde 14/04/2025 e mérito pendente na referência congelada em outubro/2026. Uma reclamação proposta agora tende a ficar sobrestada, com o estágio exato dependente do tribunal. O sobrestamento **adia a solução, sem zerar a exposição**; juros e atualização seguem incidindo segundo a biblioteca. A futura tese pode alterar o desfecho e as regras de prova. Convém preservar prontamente os registros e negociar enquanto há incerteza, sem presumir vitória de qualquer lado.
+
+Pela [CF art. 7º, XXIX, CLT art. 11 e Súmula 308](../library/cf_art7_xxix_prescricao.md), o limite bienal termina, **sob a premissa de término em 30/09/2026**, em 30/09/2028. O ajuizamento projetado em 16/11/2026 estaria dentro desse limite. O corte quinquenal seria **16/11/2021**. Em meses de serviço de outubro/2019 a setembro/2026: 25 meses integrais anteriores ao corte (outubro/2019 a outubro/2021) + 15/30 de novembro/2021 = **25,5 meses prescritos equivalentes**; 15/30 de novembro/2021 + 58 meses integrais (dezembro/2021 a setembro/2026) = **58,5 meses exigíveis equivalentes**. Total: 84 meses. O rateio de novembro em trinta avos é uma **convenção de estimativa**, não uma conclusão sobre o vencimento de cada parcela; a exigibilidade de 13º, férias e FGTS pode alterar a conta fina.
+
+## Cálculo bruto de referência
+
+Parâmetros de 13º (1/12 por mês), férias simples com 1/3, FGTS de 8% sobre salários + 13º + férias com 1/3 para esta tarefa, multa de 40%, aviso proporcional e contribuição patronal aproximada de 28% constam na [biblioteca de cálculo](../library/verbas_e_calculo.md). Valores em reais, sem atualização, juros, honorários ou compensações:
+
+| Parcela | Conta | Cenário-base |
+|---|---:|---:|
+| Remuneração mensal de referência | Notas: 84 × 18.000 = 1.512.000 pagos; período exigível: 58,5 × 18.000 = 1.053.000 | **18.000,00** (base, fora da soma) |
+| 13º | 1.053.000 ÷ 12 | 87.750,00 |
+| Férias simples + 1/3 | (1.053.000 ÷ 12) × 4/3 | 117.000,00 |
+| FGTS | (1.053.000 + 87.750 + 117.000) × 8% | 100.620,00 |
+| Multa de 40% do FGTS | Base: sem dispensa; cenário alternativo: 100.620 × 40% | 0,00 |
+| Aviso-prévio | Base: sem dispensa; cenário alternativo: 51 dias × 18.000 ÷ 30 | 0,00 |
+| INSS patronal aproximado | (1.053.000 + 87.750 + 117.000) × 28% | 352.170,00 |
+| **Total-base** | 87.750 + 117.000 + 100.620 + 352.170 | **657.540,00** |
+
+Os **51 dias** alternativos pressupõem sete anos completos (30 + 7 × 3), a confirmar pela data efetiva de término, conforme a [regra de aviso proporcional](../library/verbas_e_calculo.md). Se forem devidos aviso e multa de 40%, acrescentam **R$ 30.600 + R$ 40.248 = R$ 70.848**, levando o total a **R$ 728.388**, antes de reflexos e horas extras. A prescrição das parcelas mensais não retira, por si, os anos de serviço usados no aviso proporcional, conforme a [biblioteca de prescrição](../library/cf_art7_xxix_prescricao.md).
+
+As 135 horas extras registradas entre janeiro e junho/2025 (18 + 22 + 15 + 26 + 20 + 34) indicam valor **ilustrativo** de **R$ 16.568,18**: 135 × (18.000 ÷ 220) × 1,5. O divisor 220 e o adicional de 50% **não constam expressamente da biblioteca fechada**; são hipóteses de cálculo **não verificadas** aqui. Não somo esse valor à provisão-base, pois faltam jornada completa, compensações, horas de outros meses e reflexos. A [biblioteca de cálculo](../library/verbas_e_calculo.md) manda apurar horas extras pela prova; a documentação de ponto apresentada cobre só seis meses. Somado apenas como sensibilidade aritmética, o total-base iria a **R$ 674.108,18**; com aviso e multa de 40%, a **R$ 744.956,18**. Multas dos arts. 467 e 477 e honorários de 5%–15% são contingências adicionais discutíveis, sem base suficientemente definida para quantificar aqui ([biblioteca de multas e honorários](../library/multa_477_e_honorarios.md)).
+
+O INSS usa alíquota aproximada de 28% fornecida pela biblioteca, sobre toda a remuneração estimada. A incidência específica sobre férias conforme gozo ou indenização e eventuais deduções exigem apuração; **não há regra suficiente na biblioteca para fechar esses ajustes**. O preço mensal pago à PJ, os períodos efetivos de férias, os pagamentos, o tipo de término e a data real do ajuizamento também podem mudar materialmente o valor.
+
+## Provisão e estratégia
+
+Recomendo **classificação “provável” e provisão indicativa de R$ 657.540** para o cenário-base bruto, com revisão assim que houver documentos de férias, encerramento e ajuizamento. A classificação usa o julgamento de risco de vínculo acima; **a norma CPC 25 não integra a biblioteca, portanto a aplicação contábil formal aqui é não verificada** e deve ser validada pela contabilidade. O valor engloba R$ 352.170 estimados de INSS patronal como exposição da empresa; contabilização e eventual cobrança fiscal devem ser examinadas separadamente. Não trato suspensão do Tema 1.389 como baixa do passivo.
+
+Recomendo autorização para negociar **R$ 200.000–280.000** sobre as parcelas trabalhistas, com quitação adequadamente delimitada e sem presumir que acordo extinga o risco previdenciário. A faixa equivale a aproximadamente 66%–92% das parcelas trabalhistas quantificadas no cenário-base (**R$ 305.370 = 87.750 + 117.000 + 100.620**), refletindo risco elevado de vínculo e incerteza de abatimentos, jornada e modalidade de término. A cifra é parâmetro de negociação, não avaliação legal de quitação tributária. Preservar contrato, notas, comunicações, ponto, comprovantes de afastamentos e eventuais pagamentos; confrontar as datas e fazer nova conta após o ajuizamento efetivo. Não se utiliza súmula ou OJ cancelada.
+
+**Itens abertos:** data e modalidade efetivas do término; data do ajuizamento; gozo e pagamento das férias/13º; eventual compensação de valores; registros completos de jornada; incidência previdenciária específica; atualização, juros, reflexos, multas e honorários.

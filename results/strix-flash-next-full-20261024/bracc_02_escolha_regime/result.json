@@ -1,0 +1,22 @@
+{
+  "case": "bracc_02_escolha_regime",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/strix-flash-next-full-20261024/bracc_02_escolha_regime/05-review",
+  "elapsed_seconds": 4209.036590295,
+  "controller_wait_seconds": 83.00899984998978,
+  "model_turn_seconds": 4125.678334533004,
+  "turns": 5,
+  "released_facts": [
+    "obra_pct"
+  ],
+  "usage": {
+    "input_tokens": 3275811,
+    "cached_input_tokens": 3042627,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 162408,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

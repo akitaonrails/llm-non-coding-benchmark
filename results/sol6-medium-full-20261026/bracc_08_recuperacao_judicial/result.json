@@ -1,0 +1,20 @@
+{
+  "case": "bracc_08_recuperacao_judicial",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 732.065628965036,
+  "controller_wait_seconds": 89.00891201000195,
+  "model_turn_seconds": 643.0440749389818,
+  "turns": 8,
+  "released_facts": [
+    "norte"
+  ],
+  "usage": {
+    "input_tokens": 1281685,
+    "cached_input_tokens": 1201664,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 35607,
+    "reasoning_output_tokens": 10571
+  },
+  "api_equivalent_usd": 0.7564448
+}

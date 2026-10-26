@@ -1,0 +1,61 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "questions": "# Informações necessárias para fechar a estrutura da Clínica Estética Aurora\n\n1. **Quem ficará no quadro societário?** Marina e Felipe, casados em comunhão universal, não podem constituir esta sociedade juntos. Para a estrutura proposta, confirmam **Marina como sócia apenas cotista (sem administração) e Felipe fora da sociedade**, ou preferem **Felipe como sócio e Marina fora**? Se desejam outra composição, descrevam-na.\n\n2. **Como Luana receberá os 20% de quotas?** Prestação de serviços não pode integralizar capital de limitada. Ela fará aporte em dinheiro? Em caso positivo, qual valor e quando? Se a intenção é receber quotas por cessão de outro sócio, indiquem quem cederá, se a cessão será onerosa ou gratuita e a data pretendida.\n\n3. **Qual será o destino do imóvel e da locação a terceiros?** Aceitam manter a sala na titularidade das pessoas físicas, contratar o uso de aproximadamente 60% pela clínica e manter os 40% alugados a terceiros fora da sociedade? Se insistem na transferência do imóvel à clínica, informem a receita anual projetada, separadamente, para serviços de estética e aluguel nos três primeiros anos, além do valor pelo qual desejam integralizá-lo (R$ 420.000 da declaração ou R$ 900.000 de mercado).\n\n4. **Qual retirada pretendem após ajustar o plano financeiro?** O lucro projetado é R$ 420.000/ano (média de R$ 35.000/mês), mas Marina e Felipe planejam retirar juntos R$ 50.000/mês (R$ 600.000/ano), antes de qualquer participação de Luana. Indiquem o valor mensal pretendido para cada pessoa e quem efetivamente trabalhará na clínica ou a administrará. Informem também se o lucro de R$ 420.000 já desconta remuneração pelo trabalho (pró-labore), aluguel e tributos.\n",
+  "facts": [
+    {
+      "id": "aluguel_pct",
+      "trigger": [
+        "alugar",
+        "locação",
+        "40%",
+        "terceiros",
+        "receita de aluguel"
+      ],
+      "answer": "Felipe: uns 40% da sala ficam vagos; vamos alugar para um dentista. Deve dar uns R$ 8 mil/mês.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "regime_bens",
+      "trigger": [
+        "regime de bens",
+        "comunhão",
+        "casados",
+        "pacto"
+      ],
+      "answer": "Marina: comunhão universal, casamos em 2010, sem pacto.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "luana_trabalho",
+      "trigger": [
+        "Luana",
+        "serviços",
+        "trabalho",
+        "integraliz",
+        "quotas por trabalho"
+      ],
+      "answer": "Luana: eu não tenho dinheiro pra aportar; a ideia é que meu trabalho vale 20%.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "marina_cargo",
+      "trigger": [
+        "servidora",
+        "administrar",
+        "Lei 8.112",
+        "cargo público",
+        "dedicação"
+      ],
+      "answer": "Marina: sou analista federal, 40h. Posso ser sócia, né? Administrar eu faria fora do expediente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "aluguel_pct",
+    "regime_bens",
+    "luana_trabalho",
+    "marina_cargo"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

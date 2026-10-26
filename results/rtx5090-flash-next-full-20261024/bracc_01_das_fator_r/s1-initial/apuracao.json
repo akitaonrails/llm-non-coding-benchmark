@@ -1,0 +1,29 @@
+{
+  "rbt12": 1020000.00,
+  "folha_12m": 284600.00,
+  "fator_r": 0.2790196078,
+  "anexo": "V",
+  "faixa": 4,
+  "aliquota_nominal": 0.205,
+  "parcela_deduzir": 17100.00,
+  "aliquota_efetiva": 0.1882352941,
+  "receitas": {
+    "servicos": 78000.00,
+    "locacao": 6000.00
+  },
+  "das": {
+    "servicos": 14682.35,
+    "locacao": 506.49,
+    "total": 15188.84
+  },
+  "reparticao": {
+    "IRPJ": 2085.54,
+    "CSLL": 1347.67,
+    "COFINS": 3041.89,
+    "PIS": 610.18,
+    "CPP": 5753.25,
+    "ISS": 2349.18
+  },
+
+  "_notes": "Ver memoria.md (todas as fontes e aritmética). Folha_12m = 284.600 (base pagamentos mai/2025-abr/2026): o pro-labore de abr/2026 (3.200) foi pago em 30/04/2026, DENTRO da janela (resposta do cliente; no extrato de maio nao aparece porque e de abril). Fator R = 284.600/1.020.000 = 0,279020 < 28% -> Anexo V. SENSIBILIDADE: faltam apenas R$ 1.000 de folha para virar Anexo III; o resumo mostra pro-labore zerado na competencia 2026-03 sem explicacao (cliente nao sabe) - item aberto critico, ver STATUS. Se a data antiga do e-mail (06/05) valesse: 281.400/1.020.000 = 27,59%, ainda Anexo V. Receitas.servicos = 82.000 bruto - 4.000 estorno NF-e 1188. Aliquota efetiva Anexo V 4ª faixa = (1.020.000x0,205 - 17.100)/1.020.000 = 18,8235% (nao a nominal 20,50%). Locacao = Anexo III efetiva 12,5059% x (1-0,325) = 8,4415%, sem ISS (SV 31). Reparticao: percentuais do Anexo V usados na parte servicos NAO constam da biblioteca (suposicao nao verificada); tabela do Anexo III na biblioteca soma 99,85% -> diferenca de R$ 1,13 nao forcada a fechar."
+}

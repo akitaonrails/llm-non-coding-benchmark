@@ -1,0 +1,23 @@
+{
+  "case": "bracc_02_escolha_regime",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 669.2195610830095,
+  "controller_wait_seconds": 57.00554443101282,
+  "model_turn_seconds": 612.098872299015,
+  "turns": 5,
+  "released_facts": [
+    "lucro",
+    "obra_pct"
+  ],
+  "usage": {
+    "input_tokens": 1477515,
+    "cached_input_tokens": 1341004,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 98130,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

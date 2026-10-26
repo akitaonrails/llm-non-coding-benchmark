@@ -1,0 +1,97 @@
+[
+  {
+    "run": "sol6-medium-full-20261024",
+    "expected_cases": 38,
+    "expected_sessions": 63,
+    "errors": [],
+    "outcomes": {
+      "completed_ungraded": 4,
+      "infrastructure_failed": 34
+    },
+    "cases_with_results": 38,
+    "completed_initial_sessions": 9,
+    "missing_case_results": [],
+    "pending": [],
+    "all_cases_accounted_for": true,
+    "all_cases_completed": false
+  },
+  {
+    "run": "sol6-medium-full-20261026",
+    "expected_cases": 38,
+    "expected_sessions": 63,
+    "errors": [],
+    "outcomes": {
+      "completed_ungraded": 38
+    },
+    "cases_with_results": 38,
+    "completed_initial_sessions": 63,
+    "missing_case_results": [],
+    "pending": [],
+    "all_cases_accounted_for": true,
+    "all_cases_completed": true
+  },
+  {
+    "run": "b300-flash-next-full-20261024",
+    "expected_cases": 38,
+    "expected_sessions": 63,
+    "errors": [],
+    "outcomes": {
+      "completed_ungraded": 33,
+      "candidate_output_limit": 5
+    },
+    "cases_with_results": 38,
+    "completed_initial_sessions": 61,
+    "missing_case_results": [],
+    "pending": [],
+    "all_cases_accounted_for": true,
+    "all_cases_completed": false
+  },
+  {
+    "run": "b300-glm53-flash-full-20261024",
+    "expected_cases": 38,
+    "expected_sessions": 63,
+    "errors": [],
+    "outcomes": {
+      "candidate_output_limit": 7,
+      "completed_ungraded": 31
+    },
+    "cases_with_results": 38,
+    "completed_initial_sessions": 51,
+    "missing_case_results": [],
+    "pending": [],
+    "all_cases_accounted_for": true,
+    "all_cases_completed": false
+  },
+  {
+    "run": "rtx5090-flash-next-full-20261024",
+    "expected_cases": 38,
+    "expected_sessions": 63,
+    "errors": [],
+    "outcomes": {
+      "completed_ungraded": 35,
+      "candidate_output_limit": 3
+    },
+    "cases_with_results": 38,
+    "completed_initial_sessions": 53,
+    "missing_case_results": [],
+    "pending": [],
+    "all_cases_accounted_for": true,
+    "all_cases_completed": false
+  },
+  {
+    "run": "strix-flash-next-full-20261024",
+    "expected_cases": 38,
+    "expected_sessions": 63,
+    "errors": [],
+    "outcomes": {
+      "completed_ungraded": 34,
+      "candidate_output_limit": 4
+    },
+    "cases_with_results": 38,
+    "completed_initial_sessions": 59,
+    "missing_case_results": [],
+    "pending": [],
+    "all_cases_accounted_for": true,
+    "all_cases_completed": false
+  }
+]

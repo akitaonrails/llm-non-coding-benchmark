@@ -1,0 +1,150 @@
+date,description,amount,classification,schedule_c_line,note
+2024-12-27,ACH CREDIT TESSARO STUDIOS INV 1041,3000.00,prior_year,Schedule C line 1,"Tessaro inv 1041 received 12/27/2024 — prior-year receipt (cash method → 2024 return), not 2025 gross receipts"
+2024-12-30,DEBIT CARD H-E-B #412 AUSTIN TX,-84.12,personal,,Personal living expense §262(a)
+2025-01-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-01-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-01-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-01-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-01-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-01-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-01-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-01-12,DEBIT CARD H-E-B #412 AUSTIN TX,-209.59,personal,,Personal living expense §262(a)
+2025-01-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wages (net payroll deposit) — Form 1040 line 1a; W-2 gross 24,800.00. Never Schedule C"
+2025-01-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wages (net payroll deposit) — Form 1040 line 1a; W-2 gross 24,800.00. Never Schedule C"
+2025-02-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-02-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-02-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-02-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-02-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-02-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-02-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,1812.55,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-02-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-02-12,DEBIT CARD H-E-B #412 AUSTIN TX,-165.22,personal,,Personal living expense §262(a)
+2025-02-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wages (net payroll deposit) — Form 1040 line 1a; W-2 gross 24,800.00. Never Schedule C"
+2025-02-20,HISCOX PROFESSIONAL LIABILITY,-480.00,business_expense,15,Professional liability = business insurance (not health) — Schedule C line 15
+2025-02-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wages (net payroll deposit) — Form 1040 line 1a; W-2 gross 24,800.00. Never Schedule C"
+2025-03-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-03-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-03-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-03-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-03-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-03-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-03-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,2503.10,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-03-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-03-12,DEBIT CARD H-E-B #412 AUSTIN TX,-151.03,personal,,Personal living expense §262(a)
+2025-03-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wages (net payroll deposit) — Form 1040 line 1a; W-2 gross 24,800.00. Never Schedule C"
+2025-03-19,ACH CREDIT TESSARO STUDIOS,2400.00,business_income,Schedule C line 1,"Client business receipt - Tessaro (direct ACH); 2025 total 2,400.00+3,100.00+2,150.00+1,750.00 = 9,400.00 = 1099-NEC line 1"
+2025-03-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wages (net payroll deposit) — Form 1040 line 1a; W-2 gross 24,800.00. Never Schedule C"
+2025-04-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-04-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-04-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-04-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-04-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-04-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-04-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-04-08,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3109.40,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-04-12,DEBIT CARD H-E-B #412 AUSTIN TX,-143.16,personal,,Personal living expense §262(a)
+2025-04-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wages (net payroll deposit) — Form 1040 line 1a; W-2 gross 24,800.00. Never Schedule C"
+2025-04-15,IRS USATAXPYMT ES 2025 Q1,-1500.00,tax_payment,,"2025 federal estimated tax (1,500.00+2,500.00+2,500.00 = 6,500.00) — Form 1040 line 26 credit; not a Schedule C expense"
+2025-04-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wages (net payroll deposit) — Form 1040 line 1a; W-2 gross 24,800.00. Never Schedule C"
+2025-05-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-05-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-05-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-05-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-05-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-05-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-05-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3880.20,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-05-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-05-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership (office space) 350.00 × 8 mo = 2,800.00 — Schedule C line 20b"
+2025-05-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Self-employed health insurance premiums, 380.00 × 8 mo May–Dec = 3,040.00 — Schedule 1 line 17, NOT Schedule C line 15"
+2025-05-12,DEBIT CARD H-E-B #412 AUSTIN TX,-225.36,personal,,Personal living expense §262(a)
+2025-06-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-06-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-06-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-06-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-06-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-06-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-06-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4015.75,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-06-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-06-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership (office space) 350.00 × 8 mo = 2,800.00 — Schedule C line 20b"
+2025-06-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Self-employed health insurance premiums, 380.00 × 8 mo May–Dec = 3,040.00 — Schedule 1 line 17, NOT Schedule C line 15"
+2025-06-12,DEBIT CARD H-E-B #412 AUSTIN TX,-157.97,personal,,Personal living expense §262(a)
+2025-06-13,SOUTHWEST AIR 118 AUS-DEN,-389.00,personal,,Client confirmed personal trip (cousin's wedding) — no deduction; Pub 463 personal travel
+2025-06-14,VENMO: WEDDING GIFT KAT&JULES,-200.00,personal,,Wedding gift — personal expense §262(a)
+2025-06-16,IRS USATAXPYMT ES 2025 Q2,-2500.00,tax_payment,,"2025 federal estimated tax (1,500.00+2,500.00+2,500.00 = 6,500.00) — Form 1040 line 26 credit; not a Schedule C expense"
+2025-06-19,ACH CREDIT TESSARO STUDIOS,3100.00,business_income,Schedule C line 1,"Client business receipt - Tessaro (direct ACH); 2025 total 2,400.00+3,100.00+2,150.00+1,750.00 = 9,400.00 = 1099-NEC line 1"
+2025-07-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-07-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-07-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-07-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-07-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-07-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-07-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-07-08,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3650.00,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-07-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership (office space) 350.00 × 8 mo = 2,800.00 — Schedule C line 20b"
+2025-07-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Self-employed health insurance premiums, 380.00 × 8 mo May–Dec = 3,040.00 — Schedule 1 line 17, NOT Schedule C line 15"
+2025-07-12,DEBIT CARD H-E-B #412 AUSTIN TX,-178.90,personal,,Personal living expense §262(a)
+2025-08-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-08-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-08-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-08-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-08-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-08-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-08-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4420.90,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-08-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-08-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership (office space) 350.00 × 8 mo = 2,800.00 — Schedule C line 20b"
+2025-08-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Self-employed health insurance premiums, 380.00 × 8 mo May–Dec = 3,040.00 — Schedule 1 line 17, NOT Schedule C line 15"
+2025-08-12,DEBIT CARD H-E-B #412 AUSTIN TX,-154.21,personal,,Personal living expense §262(a)
+2025-09-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-09-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-09-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-09-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-09-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-09-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-09-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4172.35,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-09-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-09-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership (office space) 350.00 × 8 mo = 2,800.00 — Schedule C line 20b"
+2025-09-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Self-employed health insurance premiums, 380.00 × 8 mo May–Dec = 3,040.00 — Schedule 1 line 17, NOT Schedule C line 15"
+2025-09-12,DEBIT CARD H-E-B #412 AUSTIN TX,-195.36,personal,,Personal living expense §262(a)
+2025-09-14,APPLE.COM/BILL MACBOOK PRO 14,-2149.00,business_expense,27a,"MacBook Pro 2,149.00 — de minimis safe harbor (≤2,500) elected → line 27a, not line 13; business-use % undocumented (client gave none) — 100% ASSUMED, flagged"
+2025-09-15,IRS USATAXPYMT ES 2025 Q3,-2500.00,tax_payment,,"2025 federal estimated tax (1,500.00+2,500.00+2,500.00 = 6,500.00) — Form 1040 line 26 credit; not a Schedule C expense"
+2025-09-19,ACH CREDIT TESSARO STUDIOS,2150.00,business_income,Schedule C line 1,"Client business receipt - Tessaro (direct ACH); 2025 total 2,400.00+3,100.00+2,150.00+1,750.00 = 9,400.00 = 1099-NEC line 1"
+2025-10-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-10-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-10-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-10-02,SOUTHWEST AIR 526 AUS-SFO,-412.00,business_expense,24a,Airfare for DesignWeek SF conference trip (business travel away from home) — Schedule C line 24a
+2025-10-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-10-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-10-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-10-06,HOTEL ZEPHYR SAN FRANCISCO,-618.00,business_expense,24a,Lodging during DesignWeek SF business trip — Schedule C line 24a
+2025-10-06,DESIGNWEEK SF CONFERENCE REG,-650.00,business_expense,27a,Conference registration = professional development — Schedule C line 27a
+2025-10-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-10-07,SQ *MARINA DELI SAN FRANCISCO,-64.00,business_expense,24b,Business travel meal (SF trip): 64.00 × 50% = 32.00 — Schedule C line 24b
+2025-10-08,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4511.60,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-10-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership (office space) 350.00 × 8 mo = 2,800.00 — Schedule C line 20b"
+2025-10-08,TARTINE MANUFACTORY,-126.00,business_expense,24b,Business travel meal (SF trip): 126.00 × 50% = 63.00 — Schedule C line 24b
+2025-10-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Self-employed health insurance premiums, 380.00 × 8 mo May–Dec = 3,040.00 — Schedule 1 line 17, NOT Schedule C line 15"
+2025-10-12,DEBIT CARD H-E-B #412 AUSTIN TX,-181.27,personal,,Personal living expense §262(a)
+2025-11-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-11-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-11-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-11-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-11-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-11-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-11-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4102.00,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-11-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-11-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership (office space) 350.00 × 8 mo = 2,800.00 — Schedule C line 20b"
+2025-11-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Self-employed health insurance premiums, 380.00 × 8 mo May–Dec = 3,040.00 — Schedule 1 line 17, NOT Schedule C line 15"
+2025-11-12,DEBIT CARD H-E-B #412 AUSTIN TX,-141.56,personal,,Personal living expense §262(a)
+2025-11-19,ACH CREDIT TESSARO STUDIOS,1750.00,business_income,Schedule C line 1,"Client business receipt - Tessaro (direct ACH); 2025 total 2,400.00+3,100.00+2,150.00+1,750.00 = 9,400.00 = 1099-NEC line 1"
+2025-12-01,T-MOBILE WIRELESS,-85.00,personal,25,"Cell service: client estimates 60% business (not documented); line 25 share = 85.00×0.60 = 51.00/mo, 612.00/yr; balance personal — ESTIMATE flagged"
+2025-12-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,"Home rent 1,650.00 × 12 = 19,800.00 — personal living expense §262(a); home office NOT claimed"
+2025-12-02,SPECTRUM INTERNET,-70.00,personal,25,"Home internet: client estimates 60% business (not documented); line 25 share = 70.00×0.60 = 42.00/mo, 504.00/yr — ESTIMATE flagged"
+2025-12-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Design software subscription 45.00 × 12 = 540.00 — software subscriptions go to line 27a
+2025-12-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Design software subscription 59.99 × 12 = 719.88 — software subscriptions go to line 27a
+2025-12-05,NETFLIX.COM,-15.49,personal,,Personal living expense §262(a)
+2025-12-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3973.00,business_income,Schedule C line 1,"PayHub payout (1099-K PSE). Net of retained 2.9% fee; deposit+fees reconstruct 1099-K gross 41,350.00 exactly. Client confirmed Beacon (18,500.00) & Orchard (12,200.00) NECs are also paid via PayHub → inside 1099-K, NOT added on top (dedupe per Schedule C instructions)"
+2025-12-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal living expense §262(a)
+2025-12-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking membership (office space) 350.00 × 8 mo = 2,800.00 — Schedule C line 20b"
+2025-12-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Self-employed health insurance premiums, 380.00 × 8 mo May–Dec = 3,040.00 — Schedule 1 line 17, NOT Schedule C line 15"
+2025-12-12,DEBIT CARD H-E-B #412 AUSTIN TX,-199.32,personal,,Personal living expense §262(a)

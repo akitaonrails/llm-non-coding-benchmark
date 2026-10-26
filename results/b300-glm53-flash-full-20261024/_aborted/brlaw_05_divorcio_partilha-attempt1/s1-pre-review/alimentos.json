@@ -1,0 +1,19 @@
+{
+  "base_mensal_liquida": 39000,
+  "incide_sobre": [
+    "salário CLT mensal líquido (R$ 24.000,00) — informado pelo cliente",
+    "pró-labore habitual da Andrade Engenharia (R$ 15.000) — confirmado pelo cliente como habitual; integra a base (alimentos_base_calculo.md). PREMISSA ASSINALADA: o cliente não disse se os R$ 15.000 são líquidos ou brutos; a base foi calculada como se líquidos fossem (ver QUESTIONS/STATUS)",
+    "13º salário líquido (R$ 24.000,00/ano) — REsp 1.332.808 (alimentos_base_calculo.md)",
+    "férias e terço líquidos (R$ 32.000,00) — REsp 1.332.808 (alimentos_base_calculo.md)",
+    "PLR (controvérsia; tendência de incidência quando habitual — alimentos_base_calculo.md) — NÃO incluída: cliente não respondeu suficiente informação; sem valor conhecido, tratada como inexistente/para verificar"
+  ],
+  "nao_incide_sobre": [
+    "FGTS — depósitos e saque, inclusive os R$ 2.400,00 mensais (AgInt no AREsp — alimentos_base_calculo.md)",
+    "verbas rescisórias de natureza indenizatória (aviso-prévio indenizado, multa de 40%, férias indenizadas — alimentos_base_calculo.md)",
+    "auxílios e diárias (alimentos_base_calculo.md)"
+  ],
+  "percentual_sugerido": 25,
+  "valor_mensal_estimado": 9750,
+  "guarda": "compartilhada",
+  "fundamento": "Binômio necessidade–possibilidade e proporcionalidade (CC art. 1.694, §1º; arts. 1.695 e 1.699 — alimentos_base_calculo.md): Fernanda aufere R$ 9.000 líquidos/mês; Marcelo atinge R$ 39.000 líquidos/mês (24.000 CLT + 15.000 pró-labore habitualmente sacado da própria empresa — ambos confirmados pelo cliente). Não há percentual legal fixo; prática de 15% a 30% sobre LÍQUIDOS. Com dois filhos (9 e 6), mantém-se 25% mesmo com a base ampliada: 25% × 39.000 = R$ 9.750/mês (total dos dois filhos), mais complementos periódicos: 13º do emprego CLT = 25% × 24.000 = R$ 6.000 (em dezembro) e férias = 25% × 32.000 = R$ 8.000 — total anual 12 × 9.750 + 6.000 + 8.000 = R$ 131.000. NÃO ENGLOBADO: 13º/retiradas especiais do pró-labore (cliente não informou — se existirem, somam à base). CONTRA-PROPOSTA à peça oposta (30% do BRUTO incluindo FGTS e verbas rescisórias): (i) a base correta é o LÍQUIDO (descontos de IR e INSS mencionados no resumo); (ii) FGTS e verbas indenizatórias NÃO incidem (alimentos_base_calculo.md; STJ AgInt no AREsp); (iii) 30% é o teto da prática, não a regra — com a base corrigida para líquidos, 25% e a peça oposta praticamente se igualam em valor, o que dá à Fernanda um incentivo real de fechar. Guarda COMPARTILHADA (CC art. 1.584, §2º; art. 1.583 — guarda_compartilhada.md): a compartilhada não afasta alimentos nem significa divisão igual de tempo. Assunção registrada: Fernanda segue como genitora de referência da residência dos filhos; se a residência de referência variar, revisar valor e sistemática."
+}

@@ -1,0 +1,44 @@
+{
+  "case": "bracc_06_venda_quotas_vs_ativos",
+  "questions": "# QUESTIONS — itens a confirmar com o cliente (não bloqueiam a conclusão)\n\nOs números do comparativo já fecham sob premissas razoáveis (listadas no memorando, seção 0). Estas respostas serviriam para refinar o cronograma e a Proposta B:\n\n1. **Data prevista de fechamento** (mês/ano) — só muda o rótulo dos anos do cronograma de DARFs e o trimestre da apuração do IRPJ/CSLL na Proposta B; as alíquotas e o comparativo não mudam.\n2. **As 3 parcelas anuais da Proposta A terão correção monetária/juros?** Se sim, a parcela tributável de cada período aumenta pela atualização (Lei 7.713/88, art. 21 — `library/lei7713_art21_parcelado.md`) e recalculo os DARFs.\n3. **Patrimônio líquido da Vértice em 31/12/2025:** existe lucro acumulado de até 2025 e houve **deliberação de distribuição aprovada até 31/12/2025**? É a única via, na biblioteca, de distribuição a PF ficar fora do IRRF de 10% (Lei 15.270/2025 — `library/lei15270_dividendos_2026.md`). Sem isso, tratei toda a distribuição como tributada a 10%.\n4. **Outros rendimentos de Hélio e Beatriz** (pró-labore, aluguéis, aplicações): o IRRF de 10% é **antecipação do IRPFM**; no ajuste anual pode haver imposto adicional conforme o conjunto de rendimentos — sem esses dados, mantive 10% como custo.\n5. Ambos os sócios são **residentes fiscais no Brasil** e declaram assim? (A biblioteca não cobre tratamento de não residentes.)\n6. Para a negociação da Proposta A: o comprador ofereceu **garantia** para as parcelas (caução, penhor de quotas, aval)? Não é tributo, mas é o principal risco da estrutura A.\n\nRespostas em qualquer combinação não alteram a recomendação: a carga da Proposta A é ~13% do preço contra ~34% na PJ + 10% na distribuição; a B só empataria com preço ≈ R$ 12,09 mi.\n\n# PERGUNTAS\n\nAs perguntas ao cliente estão em `QUESTIONS.md` (mesmo diretório), conforme a regra de trabalho do contrato.\n",
+  "facts": [
+    {
+      "id": "comprador_estrutura",
+      "trigger": [
+        "incorpora",
+        "estrutura do comprador",
+        "laudo",
+        "como vai usar o ágio"
+      ],
+      "answer": "Hélio: o Meridiano não disse se vai incorporar a Vértice; disseram só que 'aproveitam o ágio'.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "custo",
+      "trigger": [
+        "custo de aquisição",
+        "DIRPF",
+        "600",
+        "declaração"
+      ],
+      "answer": "Beatriz: nas nossas declarações está R$ 600 mil cada. Mas a empresa vale 9 milhões, não faz sentido pagar imposto sobre tudo isso.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "distribuicao",
+      "trigger": [
+        "distribuir",
+        "caixa da casca",
+        "dividendos",
+        "quando sacar"
+      ],
+      "answer": "Hélio: se vender pela PJ a gente tira o dinheiro todo em {ANO} mesmo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "distribuicao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

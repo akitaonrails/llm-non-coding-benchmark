@@ -1,0 +1,18 @@
+{
+  "case": "uslaw_09_retaliation_termination",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 280.6621081570047,
+  "controller_wait_seconds": 18.00199323799461,
+  "model_turn_seconds": 262.65299648599466,
+  "turns": 3,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 353093,
+    "cached_input_tokens": 316416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 13517,
+    "reasoning_output_tokens": 3169
+  },
+  "api_equivalent_usd": 0.2718072
+}

@@ -1,0 +1,40 @@
+{
+  "part1": {
+    "receipts": 1480300.0,
+    "disbursements": {
+      "payroll_wages_gross_as_reported": 796000.0,
+      "post_petition_vendor_invoices": 214600.0,
+      "pre_petition_critical_vendor_dkt48": 0.0,
+      "utilities_deposit": 0.0,
+      "professional_fees": 0.0,
+      "dip_repayments": 0.0,
+      "asset_purchases": 0.0
+    },
+    "ending_cash": 2241330.0
+  },
+  "part2": {
+    "post_petition_payables": 201210.96,
+    "pre_petition_liabilities_subject_to_compromise": 74110.0
+  },
+  "part5": {
+    "professional_fees_approved": 144200.0,
+    "paid": 0.0,
+    "holdback": 28000.0
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "NO for April 2026. Mesa Steel's 2/2/2026 invoice ($62,400.00) was NOT paid and remains a pre-petition general unsecured claim - confirmed by the April activity file and the Dkt. 83 post-petition trade agreement negotiated by counsel (order text not in file; flagged). The $214,600.00 of April vendor payments is labeled post-petition; itemization not provided - ASSUMPTION none touched pre-petition debt; if itemization shows otherwise this answer flips and §549(a) treatment applies (library/bc_362_363_503_549.md). The 4/10 and 4/24 payrolls cover services rendered entirely after the 3/10/2026 petition - no pre-petition component. No professional-fee cash went out in April (see Part 5). No setoff/netting applied (Dkt. 61 para.3); the ~$11,000.00 Mesa returned-coil credit remains uncollected as a separate estate asset.",
+    "payments_outside_ordinary_course_without_approval": "NO per the April file. DIP draw $500,000.00 on 4/9 is within authority: cumulative drawn 1,050,000.00 + 500,000.00 = 1,550,000.00 vs authority 2,500,000.00 - headroom 950,000.00 (Dkt. 61). Mesa shipments continued under the Dkt. 83 post-petition trade agreement (a court order; text not in file - flagged). Professional payments are not yet made; when made they are authorized by the Dkt. 77 interim compensation procedures (80% fees + 100% expenses absent objection) and funded per Dkt. 61 para.2. The Dkt. 61 para.1 10% budget-variance covenant remains UNTESTED - Exhibit B was never provided.",
+    "_schema_note": "Shape per contract; categories mirror march_mor.json for comparability."
+  },
+  "_notes": [
+    "Reporting period 4/1/2026-4/30/2026; MOR due 5/21/2026 (Dkt. 61 para.4, by the 21st). Sources: documents/session2/april_activity.md and documents/session2/interim_compensation_order_excerpt.md (Dkt. 77). Support: april_mor_workpaper.md.",
+    "RECEIPTS 1,480,300.00 = collections 980,300.00 + DIP draw 500,000.00 (4/9); the DIP draw is financing but is reported in Part 1 receipts (cash statement). DISBURSEMENTS 1,010,600.00 = payroll 398,000.00 (4/10) + 398,000.00 (4/24) + post-petition vendor payments 214,600.00. Payroll is gross as reported (same cash-vs-gross caveat as March).",
+    "ENDING_CASH 2,241,330.00 is the CUMULATIVE ACTIVITY figure: March activity ending 1,771,630.00 + (1,480,300.00 - 1,010,600.00) = 2,241,330.00. Still NOT reconciled to a bank statement - the 3/10 opening sweep remains unquantified (open item A). Do not file against a bank balance without one.",
+    "PART 2 post-petition payables 201,210.96 documented components: H&P 144,200.00 (fees 140,000.00 + expenses 4,200.00, unpaid) + Corbin 45,000.00 (unpaid; payment eligibility limited - see Part 5 note) + UST fee accruals 12,010.96 cumulative (3,926.16 March + 8,084.80 April = 0.8% x 1,010,600.00, client's estimate rate - 28 U.S.C. 1930 NOT in library [unverified]; UST fees are billed quarterly, no April payment in file). UNDERSTATEMENTS disclosed: unpaid April vendor invoices at 4/30 (file gives payments, not purchases), wages earned 4/25-4/30 and unpaid, and DIP interest/fees (rate not in file). Mesa's 3/18 post-petition invoice 18,900.00 is assumed extinguished inside the 214,600.00: 207,826.16 + additions 12,284.80 - 18,900.00 = 201,210.96. If it is still unpaid, add 18,900.00.",
+    "PART 2 LSTC 74,110.00 unchanged: Mesa 62,400.00 (April file: 'remains an unsecured pre-petition claim') + Front Range 7,400.00 + Grainger 4,310.00. Dkt. 83 trade agreement covers POST-petition dealings only per the file. Gap to the 8,400,000.00 allowed GUC pool (8,325,890.00) remains unreconciled - not plugged.",
+    "PART 5: approved 144,200.00 = H&P March fee statement procedurally approved under Dkt. 77 (served 4/15, no objection within 14 days by 4/29). NOT a 330 final award - the 20% holdback still requires court approval of an interim or final application. paid 0.00 - the April file records no fee disbursement; maximum currently payable under Dkt. 77 = 0.80 x 140,000.00 + 100% x 4,200.00 = 116,200.00. holdback 28,000.00 = 0.20 x 140,000.00 of fees, payable only on Court approval; reported here as the amount that MUST be withheld when payment is made (no cash has moved yet - presentation choice, see workpaper).",
+    "CORBIN EXCLUDED from Part 5: (i) served 4/16, 14-day objection period ended 4/30 but the file does not state whether an objection was made - no payment may be made until that is confirmed; (ii) Dkt. 77 bars payment for any period before retention - Corbin retained effective 3/20 while the statement covers 3/10-3/31. Pro-rata day allocation (assumption, no day detail in file): eligible 3/20-3/31 = 12/22 days = 24,545.45 (max payable 80% = 19,636.36); NOT payable 3/10-3/19 = 10/22 days = 20,454.55 absent nunc pro tunc relief. Contrast: H&P retained nunc pro tunc to 3/10, so H&P's whole March statement is period-eligible. 24,545.45 + 20,454.55 = 45,000.00.",
+    "The ~11,000.00 Mesa coil credit is still carried as a separate estate asset (uncollected receivable); no netting (Dkt. 61 para.3). If Dkt. 83 incorporated it, that needs the order text - unknown.",
+    "Dkt. 77 (entered 4/14/2026) resolves the vendor-CSV note 'interim comp order entered 4/14 (80%/100% holdback)': Reading A confirmed - pay 80% of fees and 100% of expenses absent objection; 20% fee holdback until interim/final application approval. The session2/professional_fees.md interim version has been updated to the order's actual terms."
+  ]
+}

@@ -1,0 +1,1 @@
+Plano homologado em 10/09/2026 (sem as cláusulas sobre fiduciários e União, excluídas após objeção). Classe III/IV: deságio 60%, 120 parcelas, carência 24 meses. Classe I: 12 meses. Saldos fiscais: prejuízo fiscal acumulado R$ 3.400.000,00; base negativa CSLL idem.

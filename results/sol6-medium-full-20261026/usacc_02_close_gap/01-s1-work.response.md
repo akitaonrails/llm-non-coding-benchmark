@@ -1,0 +1,5 @@
+I’ll read the contract and workspace materials, then build the requested deliverables from the available evidence. I’ll put any client questions in `deliverable/QUESTIONS.md` if the files leave a material gap.
+
+The bank reconciliation can be traced to a $4,312 mobile deposit and a $35 service fee missing from the ledger. Other close items need client facts: the source of a $1,500 transfer, the purpose of a card dinner, and a large A/R difference. I’m recording focused questions before finalizing the entries.
+
+I recorded six specific requests in [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md) and marked the close [BLOCKED](/work/workspace/deliverable/STATUS.md). The answers are needed to support transaction classifications and resolve the $59,188 difference between the ledger and A/R aging. I’ll complete the deliverables when the client replies.

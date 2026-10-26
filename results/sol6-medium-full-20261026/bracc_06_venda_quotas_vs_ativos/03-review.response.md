@@ -1,0 +1,9 @@
+Vou conferir os cálculos, cada fundamento citado e a reconciliação entre ganho da PJ, caixa e dividendos. Depois ajustarei os arquivos e resumirei as correções.
+
+Encontrei um ponto que precisava de correção: os R$ 7,056 milhões de caixa após tributos da PJ incluem R$ 2,1 milhões correspondentes ao valor contábil transferido. Os arquivos não demonstram que todo esse caixa possa ser pago como dividendos. Vou separar o cálculo certo da PJ da simulação de distribuição e mostrar como isso afeta a comparação.
+
+Revisei os cálculos, as citações e a reconciliação. **A principal correção foi na distribuição da PJ:** os R$ 7,056 milhões após IRPJ e CSLL incluem R$ 2,1 milhões correspondentes ao valor contábil transferido. Os documentos não demonstram que todo esse caixa possa ser distribuído como dividendos.
+
+Alterei o [memorando](/work/workspace/deliverable/memorando.md) para separar o ganho após tributos (**R$ 4,956 milhões**) do restante, mostrar o IRRF de **R$ 495,6 mil** se apenas esse ganho for distribuído em um mês de 2026 e tratar os **R$ 705,6 mil do JSON como simulação**, não como imposto apurado. Também corrigi a comparação a valor presente para usar o caixa da PJ *antes* da retirada e delimitei o que a biblioteca permite afirmar sobre retificação da DIRPF. Atualizei o [status](/work/workspace/deliverable/STATUS.md) com esses pontos abertos.
+
+Validei a aritmética do [comparativo](/work/workspace/deliverable/comparativo.json) e confirmei que todas as citações do memorando apontam para arquivos do índice da biblioteca. O líquido efetivo da alternativa PJ continua em aberto até que haja balanço e plano de distribuição.

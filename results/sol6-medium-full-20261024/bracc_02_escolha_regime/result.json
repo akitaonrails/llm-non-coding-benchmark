@@ -1,0 +1,22 @@
+{
+  "case": "bracc_02_escolha_regime",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 311.3449328679999,
+  "controller_wait_seconds": 31.00323918799404,
+  "model_turn_seconds": 280.3289134039951,
+  "turns": 4,
+  "released_facts": [
+    "creditos",
+    "lucro",
+    "obra_pct"
+  ],
+  "usage": {
+    "input_tokens": 535278,
+    "cached_input_tokens": 488320,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 18875,
+    "reasoning_output_tokens": 7077
+  },
+  "api_equivalent_usd": 0.38033
+}

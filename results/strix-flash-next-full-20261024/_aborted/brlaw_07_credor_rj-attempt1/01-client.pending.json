@@ -1,0 +1,49 @@
+{
+  "case": "brlaw_07_credor_rj",
+  "questions": "# PERGUNTAS ao cliente (para fechar valores e a peça)\n\nNenhuma destas respostas altera a estratégia nem o prazo (27/04/2026); elas completam os \"[●]\" da peça e o cálculo de atualização (art. 9º, II da LRF).\n\n1. **Data do pedido de recuperação judicial / deferimento do processamento** da Atlas: vocês têm a data? Serve para (a) atualizar os créditos até o pedido (art. 9º, II) e (b) calcular quando termina o *stay* de 180 dias (prorrogável uma vez) — a data a partir da qual poderão retomar a execução das empilhadeiras.\n2. **Cálculo de atualização**: os R$ 2,1 milhões estão a valor nominal. Vocês têm memória de cálculo (juros/encargos contratuais) dos títulos até a data do pedido?\n3. **Identificação dos bens fiduciários**: marca, modelo, nº de chassi/série das 2 empilhadeiras e do sistema de separação de pedidos, e nº/data do registro do contrato de alienação fiduciária.\n4. **Duplicatas**: planilha título a título (nº, vencimento, valor, aceite/protesto) dos R$ 1.200.000,00.\n5. **Composição dos R$ 1.6 mi listados pela Atlas**: a Atlas ou vocês sabem como ela chegou a R$ 1.600.000,00? (Não concilia: duplicatas = 1,2 mi; total = 2,1 mi.)\n6. **Documentos societários**: CNPJ, endereço completo da Fornecedor Sul, contrato social e documentos do representante (art. 9º, I).\n7. **EPP**: comprovante de enquadramento como EPP / declaração de receita bruta anual (R$ 3,9 mi).\n8. **Fiança**: há outras garantias suas ou da empresa ligadas à CCB do Banco Horizonte (outros avais, garantias reais)? Vocês têm poderes/contrato de mandato da Atlas para regresso? *(Fora do alcance da biblioteca: orientação sobre proteção do fiador será dada apenas com base em documentos.)*\n",
+  "facts": [
+    {
+      "id": "essencial",
+      "trigger": [
+        "essenciais",
+        "empilhadeira",
+        "operação da Atlas",
+        "retirar",
+        "retomar"
+      ],
+      "answer": "As empilhadeiras e o sistema de separação são o coração do galpão deles. Sem isso a Atlas para.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "epp",
+      "trigger": [
+        "EPP",
+        "porte",
+        "faturamento",
+        "Simples",
+        "classe IV"
+      ],
+      "answer": "Somos EPP, faturamos uns R$ 3,9 mi. Estamos no Lucro Presumido, não no Simples.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "banco",
+      "trigger": [
+        "banco",
+        "Horizonte",
+        "fiança",
+        "anuiu",
+        "aprovou"
+      ],
+      "answer": "O banco não concordou com nada; já me mandou notificação como fiador.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "essencial",
+    "epp",
+    "banco"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

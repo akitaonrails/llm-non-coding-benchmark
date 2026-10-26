@@ -1,0 +1,58 @@
+{
+  "periodos": [
+    {
+      "periodo": "3T/2020",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 268000,
+      "fundamento": "Sem pagamento e DCTF zerada (PAF). Súmula 555 STJ: contagem exclusiva pelo art. 173, I. Vencimento do trimestre em out/2020 (padrão trimestral comprovado pelos DARFs do PAF: 1T/2021 pago em 30/04/2021; 4T/2020 pago em 29/01/2021) => lançamento poderia ter sido efetuado em 2020 => contagem de 01/01/2021, encerrando em 31/12/2025. AIF lavrado em 03/02/2026 (34 dias após)."
+    },
+    {
+      "periodo": "4T/2020",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 241000,
+      "fundamento": "Pagamento antecipado parcial (DARF R$ 61.000 em 29/01/2021, declarado a menor). Tema 163 (REsp 973.733/SC): havendo pagamento antecipado parcial, aplica-se o art. 150 §4º - 5 anos do fato gerador. FG trimestral encerrado em 31/12/2020 => prazo até 31/12/2025. AIF em 03/02/2026, decaído. Ressalva: a Fazenda poderia tentar a exceção final do 150 §4º (dolo/fraude/simulação comprovada), mas o lançamento NÃO comprovou fraude - aplicou multa de 75% (Lei 9.430 art. 44 I) e não a duplicada de 150% (art. 44 §1º)."
+    },
+    {
+      "periodo": "1T/2021",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2026-03-31",
+      "decaido": false,
+      "valor": 302000,
+      "fundamento": "Pagamento antecipado parcial (DARF R$ 84.000 em 30/04/2021) => art. 150 §4º (Tema 163). FG em 31/03/2021 => prazo até 31/03/2026; AIF em 03/02/2026 atingiu o prazo com folga de 56 dias. CONCESSÃO: período não decaído."
+    },
+    {
+      "periodo": "2T/2021",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2026-12-31",
+      "decaido": false,
+      "valor": 289000,
+      "fundamento": "Sem pagamento, DCTF zerada => art. 173, I c/c Súmula 555. Vencimento em jul/2021 => contagem de 01/01/2022, prazo até 31/12/2026. AIF tempestivo. CONCESSÃO: período não decaído."
+    }
+  ],
+  "valor_decaido": 509000,
+  "valor_remanescente": 591000,
+  "vicios_formais": [
+    "A CDA aplica multa de ofício de 75% (R$ 104.520 + R$ 93.990 + R$ 117.780 + R$ 112.710) sem indicar o dispositivo legal que a fundamenta - campo 'fundamento da multa' em branco - em afronta ao art. 2º, §5º, III, da LEF (a inscrição deve conter o fundamento legal da dívida). O vício é sanável: a CDA pode ser emendada até a decisão de 1ª instância (LEF art. 2º §8º; Súmula 392 STJ admite emenda por erro formal). O percentual em si (75%) corresponde ao art. 44, I, da Lei 9.430/96 e não à duplicação do §1º.",
+    "Sonegação de baixa dos pagamentos antecipados (possível excesso de execução material, a apurar): o lançamento originou-se de omissão de receitas, mas o PAF registra DARFs pagos - R$ 61.000 (4T/2020, em 29/01/2021) e R$ 84.000 (1T/2021, em 30/04/2021), total de R$ 145.000. A memória de cálculo do AIF não consta dos autos da execução; não é possível verificar se esses valores foram abatidos dos principais executados (R$ 125.320 e R$ 157.040). Se não abatidos, há cobrança de débito já satisfeito parcialmente - matéria que demanda dilação probatória e deve ser veiculada em embargos (garantido o juízo), não na exceção.",
+    "Endereço da sede indicado na CDA (Rua das Pedras, 100) está desatualizado: a sede foi transferida para Av. Industrial, 2.500, Galpão 7, Cotia/SP, com ato praticado e registrado em tempo hábil (4ª alteração 05/03/2026, JUCESP 12/03/2026, RFB 20/03/2026) - anterior à diligência infrutífera (certidão de 28/09/2026). Não é nulidade da CDA em si, mas afasta a presunção de dissolução irregular da Súmula 435 STJ (comunicação aos órgãos competentes anterior à diligência), defendendo contra futuros redirecionamentos."
+  ],
+  "veiculo": "exceção de pré-executividade",
+  "por_que": "A decadência é matéria conhecível de ofício e demonstrável de plano, sem dilação probatória (Súmula 393 STJ): os períodos constam da própria CDA, a data do AIF (03/02/2026) está na CDA e a existência/ausência de pagamentos consta do PAF anexável. A exceção dispensa garantia do juízo (aos embargos só se segue a garantia - LEF art. 16 §1º) e ataca de imediato R$ 509.000,00 dos R$ 1.100.000,00. As matérias que exigem prova (abatimento dos DARFs de R$ 61.000 e R$ 84.000) ficam reservadas para embargos à execução, a opor no prazo de 30 dias contado da garantia (LEF art. 16), se necessário. Prescrição intercorrente/exequo não incide: constituição definitiva em 10/02/2026 e citação em 14/09/2026, muito antes dos 5 anos do art. 174 CTN.",
+  "premissas_assumidas": [
+    "FG de cada trimestre encerra-se no último dia do trimestre (regime trimestral, conforme a própria CDA: 'Lucro Real trimestral', períodos de apuração trimestrais).",
+    "Vencimento de cada trimestre no último dia útil do mês seguinte ao trimestre - padrão confirmado pelos DARFs do PAF (4T/2020 pago em 29/01/2021; 1T/2021 pago em 30/04/2021). Sem isso, a contagem do 173 I do 3T/2020 deveria ser reexaminada.",
+    "Datas do lançamento: AIF 03/02/2026, ciência 10/02/2026, sem impugnação (trânsito administrativo - CONFIRMADO pelo cliente Bruno Tavares em resposta ao R2: 'o contador anterior não impugnou o auto. Perdemos o prazo.'), inscrição 10/07/2026.",
+    "A biblioteca não contém norma sobre suspensão/interrupção do prazo do art. 173 nem sobre tese de 'fraude que afasta decadência também no 173'; eventual alegação da Fazenda nesse sentido NÃO é verificável na biblioteca e será tratada como não verificada."
+  ],
+  "desconhecidos_flagged": [
+    "U1 - Abatimento dos DARFs pagos (R$ 61.000 + R$ 84.000 = R$ 145.000) nos principais de 4T/2020 e 1T/2021: memória de cálculo do AIF indisponível; cliente não tem a informação. Tratado como questão em aberto; providência processual: requerimento de junta da íntegra do PAF aos autos (peça, item V 'd'); se não abatidos, arguir excesso de execução em embargos.",
+    "U2 - Eventual descrição de dolo/fraude/simulação no TVF/AIF além da presunção do art. 42 da Lei 9.430: cliente não informou. Premissa de trabalho: NÃO descrita (multa de 75% do art. 44 I, não 150% do §1º), a confirmar com os autos quando juntados.",
+    "U3 - Vencimentos exatos dos trimestres não pagos (3T/2020 e 2T/2021): cliente não confirmou. Premissa mantida pelo padrão dos DARFs do PAF (mês seguinte ao trimestre).",
+    "U4 - Bens/patrimônio da empresa e capacidade de garantia: ainda não informado (necessário para a Sessão 5).",
+    "U5 - Retificações de DCTF/declarações entre 2021 e 2025: cliente não informou; a biblioteca não tem norma de suspensão/interrupção do art. 173, logo trabalha-se como se não houvesse efeito (matéria não verificada)."
+  ]
+}

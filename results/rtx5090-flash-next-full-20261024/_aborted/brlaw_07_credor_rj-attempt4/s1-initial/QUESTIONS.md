@@ -1,0 +1,27 @@
+# REGISTRO DE DESCONHECIDOS REMANESCENTES (roda 2 — 20/04/2026)
+
+O cliente respondeu em 20/04 e **declarou não dispor de mais informação**. Rodada anterior de perguntas encerrada; nada é perguntado de novo. Este arquivo registra, de forma explícita, o que **não sabemos**, como cada lacuna foi tratada nos entregáveis e quem pode saná-la fora desta mesa.
+
+## Respondido nesta rodada (fatos incorporados)
+- **Essencialidade** das 2 empilhadeiras e do sistema de separação: confirmada pelo cliente ("coração do galpão; sem isso a Atlas para") → usada como fundamento do impedimento de retirada no stay e como alavanca de negociação direta (estrategia.json, peça, resposta).
+- **EPP**: faturamento ~R$ 3,9 mi confirmado; regime tributário = **Lucro Presumido** (não Simples) → classe IV sustentada com certidão da Junta + escrituração; ver "premissa não verificada" abaixo.
+- **Fiança**: Banco Horizonte **não anuiu** e **já notificou o Sr. Edson como fiador** → análise da Súmula 581/arts. 49 §1º e 59 vira fato consumado; ação imediata de resposta à notificação.
+
+## Desconhecidos que PERMANECEM e como foram tratados
+| # | Desconhecido | Tratamento no entregável | Quem sanha |
+|---|---|---|---|
+| 1 | **Data do pedido da RJ** (base de atualização dos valores — art. 9º, II) | Peça protocola valores **nominais** (R$ 2,1 mi) com **reserva expressa** de complementação da atualização; tempestividade não afetada | Advogado: consulta aos autos/portal do RJ (não depende do cliente) |
+| 2 | **Data do deferimento do processamento** (início do stay de 180 dias; prorrogável uma vez) e eventual prorrogação | Data de retomada das empilhadeiras declarada **indeterminada**; premissa de que o stay conta do deferimento sinalizada (marco inicial não expresso no arquivo da biblioteca) | Advogado: consulta aos autos |
+| 3 | **Índices de correção/juros dos contratos** (para a atualização do art. 9º, II) | Campo `[ ]` na peça; valores nominais | Cliente: contrato de fornecimento/fiduciária com o setor comercial/jurídico interno — se não houver até 24/04, protocolar sem e completar |
+| 4 | **Números de contrato e das duplicatas; CNPJ/endereço; série/patrimônio dos bens; cartório/matrícula do registro fiduciário** | Placeholders `[ ]` na peça; requerimentos e classificação já fechados | Cliente (documentos internos) — não bloqueia protocolo |
+| 5 | **Comprovação documental do enquadramento EPP** (certidão da Junta com qualificação EPP + demonstrativos de receita R$ 3,9 mi; sem PGDAS/DEFIS por ser Lucro Presumido) | Exigência da classe IV fundamentada no art. 41, IV + ficha do credor; lista de documentos na peça | Cliente (Junta/contabilidade) |
+| 6 | **Saldo atual da CCB e teor exato da notificação do banco; existência de ação/execução em curso contra o fiador** | Não especulados; ação imediata = responder à notificação e trazer CCB + termo de fiança | Cliente (e advogado do fiador) |
+| 7 | **Íntegra da minuta do plano e petição inicial da RJ** (só temos o resumo) | Objeção (art. 55) ainda não protocolável: prazo **nem começou** (depende da relação do AJ, art. 7º §2º); fundamentos já mapeados | Advogado: autos/portal; cliente se tiver a minuta |
+| 8 | **Publicação da relação do AJ (art. 7º §2º)** → prazos de objeção (30 dias, art. 55) e impugnação (10 dias, art. 8º) | Marcados como "a marcar", com monitoramento | Fato futuro do processo |
+
+## Premissas NÃO VERIFICÁVEIS na biblioteca fechada (sinalizadas nos entregáveis)
+- **Regime tributário não define o enquadramento ME/EPP** (EPP valeria mesmo no Lucro Presumido): a lei que define ME/EPP (LC 123/2006) **não está na biblioteca** → tratada como premissa; mitigada por prova documental de enquadramento/receita.
+- **Marco inicial do stay** (deferimento do processamento): duração (180 dias + 1 prorrogação) está na biblioteca; o marco inicial não está expresso → premissa.
+- **Regresso do fiador que pagar o banco contra a devedora em RJ**: sem material na biblioteca → não orientado; marcado como pesquisa pendente.
+
+*Parâmetros de valor usados em todos os entregáveis: 900.000 + 1.200.000 = 2.100.000; listado Atlas 1.600.000 (não reconcilia com nenhuma parcela — apontado sem forçar ajuste); cenários da minuta sobre R$ 1,2 mi: classe III ≈ 480 mil (×0,40) vs classe IV ≈ 840 mil (×0,70), diferença nominal 360 mil; cláusula fiduciária 40% de deságio ≈ cortaria 360 mil dos R$ 900 mil, o que combatemos.*

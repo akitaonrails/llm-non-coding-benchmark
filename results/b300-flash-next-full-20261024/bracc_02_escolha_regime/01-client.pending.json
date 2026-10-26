@@ -1,0 +1,45 @@
+{
+  "case": "bracc_02_escolha_regime",
+  "questions": "# PERGUNTAS.md — informações que refinariam (não bloqueiam) a recomendação\n*(Nenhuma é impeditiva: o Simples vence nos três regimes com folga ≥ R$ 160 mil e os cenários de sensibilidade estão no memorando, §5. Respondidas, podem melhorar a precisão e fechar os riscos R1–R4.)*\n\n**Q1 (base de CPP — a mais relevante).** Os R$ 1.300.000 de \"folha + pró-labore + encargos + FGTS\" se decompõem em quanto de **remuneração bruta** (salários + pró-labore, base do INSS patronal) e quanto de encargos/FGTS? (Break-even do ranking: CPP ≤ ~R$ 200 mil, i.e., base ≤ ~R$ 715 mil.)\n\n**Q2 (natureza das obras).** Os R$ 630.000 de \"obras com emprego de materiais (EPC)\" são tributados pelo município como construção civil (ISS) ou pelo estado (ICMS sobre materiais)? A alíquota de ISS/ICMS aplicável? (No cenário ISS sobre tudo, Simples = R$ 948 mil e continua vencedor.)\n\n**Q3 (conformidade — Anexo IV).** Hoje a empresa recolhe o DAS de **toda** a receita no Anexo III, ou segrega as obras no Anexo IV com CPP recolhida à parte? (A biblioteca manda segregar — art. 18, §4º, IV — mas não traz a tabela do Anexo IV; sem a resposta não consigo quantificar eventual subrecolhimento pretérito.)\n\n**Q4 (ajustes do Real, se o sócio insistir).** Existe a escrituração/ajustes projetados (adições, exclusões, depreciação de máquinas e equipamentos usados na prestação, energia, aluguel de equipamentos) que gerariam créditos adicionais de PIS/COFINS fora dos R$ 900 mil de insumos? Valores anuais de cada rubrica.\n\n**Q5 (calendário).** Confirma que a decisão do sócio é para o exercício **2026** (opção/exclusão somente com efeitos em 1º de janeiro)? Se ele quiser \"dezembro\", não há mechanism legal — a opção pelo Simples é irretratável por todo o ano-calendário.\n",
+  "facts": [
+    {
+      "id": "obra_pct",
+      "trigger": [
+        "obra",
+        "empreitada",
+        "materiais",
+        "EPC",
+        "percentual"
+      ],
+      "answer": "Uns 15% do faturamento é obra pequena com material; o resto é consultoria.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "creditos",
+      "trigger": [
+        "uso e consumo",
+        "creditável",
+        "mobiliário",
+        "veículos",
+        "administrativo"
+      ],
+      "answer": "Dos R$ 1,4 mi, uns R$ 500 mil são móveis, carros e papelaria. O resto é insumo de obra e software.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "lucro",
+      "trigger": [
+        "lucro contábil",
+        "margem",
+        "lucro real projetado"
+      ],
+      "answer": "Margem antes de imposto uns 18%.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "obra_pct"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

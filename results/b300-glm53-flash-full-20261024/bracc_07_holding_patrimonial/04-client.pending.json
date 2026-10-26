@@ -1,0 +1,46 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "questions": "# QUESTIONS.md — informação pedida ao cliente\n\n> Instruções: respostas por extenso; nada aqui bloqueia a leitura do parecer, mas cada resposta refina um número ou um risco.\n> **Atualização pós-2ª rodada:** a cliente respondeu dois itens (inline abaixo) e informou que **não possui informação adicional** para os demais. As perguntas restantes **não são re-encaminhadas**; cada uma virou premissa destacada no parecer (ver \"Limites e premissas\", itens A–E).\n\n1. **Valor venal municipal dos 11 imóveis:** *sem informação adicional.* → **premissa adotada:** base do ITBI estimada pelo valor de mercado (R$ 16.430.000); a base legal do ITBI **não está reproduzida na biblioteca** (não verificável); se a base real for menor, a estimativa cai na mesma proporção.\n2. **Deduções da PF (carnê-leão):** ✔ **Respondida (2ª rodada):** comissão da administradora = **8%**; ela paga IPTU/condomínio dos imóveis **vagos** (sem montantes informados). → aplicada ao parecer: comissão 6.792/mês dedutível, base tributável 78.108/mês; IPTU/condomínio não deduzidos por falta de montante e de vínculo com aluguel recebido.\n3. **IRRF 2026 (Lei 15.270/2025 — base \"excedente\" ou \"total\"?):** *sem informação adicional.* → **premissa adotada:** 10% sobre o excedente de R$ 50 mil/mês (IRRF 21.326,44/ano); cenário alternativo (10% do total: 81.326,44/ano) quantificado no item 2 do parecer.\n4. **Regime de bens dos filhos:** *sem informação adicional.* → **premissa adotada:** análise limitada ao que a biblioteca contém; efeitos de regimes marcados como não verificáveis (Premissa D/E).\n5. **Passivos:** *sem informação adicional.* → **premissa adotada:** patrimônio sem dívidas; legítima apurada sobre ativos (Premissa D).\n6. **Água/gás/seguro e outras despesas de locação:** *sem informação adicional.* → **premissa adotada:** lucro distribuível = receita − comissão 8% − impostos PJ (nenhuma outra despesa deduzida). Se houver outras despesas comprovadas, o efeito depende do tipo: as dedutíveis no carnê-leão segundo a biblioteca (IPTU/condomínio/comissão) reduzem o IR da PF em 27,5% por real — mais do que reduzem a PJ (10% de IRRF sobre o excedente) — e **diminuem** a vantagem da PJ; despesas fora dessa lista reduzem só o lucro da PJ (IRRF menor, enquanto houver excedente) e tendem a **aumentar** a vantagem.\n7. **Aplicações (R$ 2,1 mi):** *sem informação adicional.* → **recomendação mantida:** permanecem fora da holding (a biblioteca não traz regra de integralização de aplicações; risco de ganho de capital não quantificável).\n8. **Deserdação de Marcos:** ✔ **Respondida (2ª rodada):** ela deseja que ele receba \"o mínimo possível e com as cláusulas de proteção\" (rompimento de 6 anos; \"não quero que receba nada\"). → aplicada ao parecer: piso legal de Marcos = **R$ 3.088.333** (1/3 da legítima, invariante pela colação), plano de doação da nua-propriedade de 50% das quotas a Ricardo e Paula; deserdação **não recomendada automaticamente** — as causas legais (arts. 1.961-1.965) não estão reproduzidas na biblioteca e exigirão fatos específicos e prova, com orientação formal de advogado.\n9. **Outras rendas (pensão, pró-labore, juros):** *sem informação adicional.* → **premissa adotada:** única renda é a locação; carnê-leão e limite de R$ 50 mil/mês avaliados isoladamente (Premissa A).\n\n## Unknowns explicitamente remanescentes (sem resposta da cliente)\n- Base do ITBI: base legal não reproduzida na biblioteca; valor venal municipal (se for a base) não informado.\n- Montantes de IPTU/condomínio dos imóveis vagos (pagos por ela) e dos locados (pagador desconhecido).\n- Base exata do IRRF da Lei 15.270/2025 (excedente × total).\n- Faixas da tabela progressiva do IRPF e do GCAP (não constam da biblioteca).\n- Regimes de bens dos três filhos; existência de passivos.\n- Causas legais de deserdação (dispositivos listados, causas não reproduzidas na biblioteca).\n",
+  "facts": [
+    {
+      "id": "marcos",
+      "trigger": [
+        "Marcos",
+        "excluir",
+        "deserdar",
+        "legítima",
+        "terceiro filho"
+      ],
+      "answer": "Ele não fala comigo há seis anos. Não quero que receba nada. Se a lei obriga, quero o mínimo possível e com as cláusulas de proteção.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uso_proprio",
+      "trigger": [
+        "Campos do Jordão",
+        "Cotia",
+        "uso próprio",
+        "moradia"
+      ],
+      "answer": "A casa de Campos é da família, ninguém aluga. O terreno de Cotia é para os netos um dia. Eu moro no Jardins — ah não, o Jardins está alugado; moro em Higienópolis, que é alugado por mim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deducoes",
+      "trigger": [
+        "IPTU",
+        "condomínio",
+        "administradora",
+        "despesas dos imóveis"
+      ],
+      "answer": "A administradora cobra 8%; IPTU e condomínio dos vagos eu pago.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "deducoes",
+    "marcos"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

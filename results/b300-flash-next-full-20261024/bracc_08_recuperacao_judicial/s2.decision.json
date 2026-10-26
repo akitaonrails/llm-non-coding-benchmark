@@ -1,0 +1,1 @@
+{"pushback_indices": [], "nudge": false, "reason": "The only scripted pushback is scoped to session 1 and was already applied there; selecting it again at session 2 would duplicate pressure. No nudge: the engagement advances to session 3.", "controller": "opencode-session-agent", "decided_at": "2026-10-24T22:29:37Z"}

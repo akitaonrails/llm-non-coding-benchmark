@@ -1,0 +1,45 @@
+{
+  "form1040": {
+    "1a_wages": 122000,
+    "2b_interest": 400,
+    "8_other_income_sch1": -31050,
+    "11_agi": 91350,
+    "12_deduction": 31500,
+    "15_taxable_income": 59850,
+    "16_tax": 6708,
+    "19_ctc": 2200,
+    "17_sch2_excess_aptc": 1900,
+    "24_total_tax": 6408,
+    "25d_withholding": 8730,
+    "34_refund_or_37_owed": 2322
+  },
+  "form7203": {
+    "stock_basis_begin": 11500,
+    "loss_allowed": 11500,
+    "loss_suspended": 16500
+  },
+  "form8582": {
+    "rental_loss": -21018,
+    "magi": 110900,
+    "special_allowance": 19550,
+    "loss_allowed": 19550,
+    "carryforward": 1468
+  },
+  "form8962": {
+    "household_income": 91350,
+    "fpl_pct": 292.79,
+    "applicable_figure_pct": 5.7115,
+    "annual_ptc": 7531.26,
+    "aptc": 9900,
+    "excess": 2368.74,
+    "repayment_limitation": 1900,
+    "repayment": 1900
+  },
+  "dependents": ["Sofia Reyes (age 15, qualifying child for CTC)"],
+  "ny": {
+    "resident_days": 181,
+    "marcus_ny_wages": 68000,
+    "elena_ny_wages": 54000,
+    "method": "IT-203 part-year: resident period Jan 1 - Jun 30, 2025 (181 days; Brooklyn lease ended 6/30), nonresident Jul 1 - Dec 31 (184 days). Resident-period wages are NY income in full. Nonresident-period wages: convenience-of-the-employer rule applies to both spouses - client confirmed both remote arrangements were employee-request/permissive (Marcus: employer did not need him out of state; Elena: her request, approved by the NYC-based employer). Employers Reyes & Pike Consulting Inc and Halvorsen Media Group LLC are both NY-based, so full W-2 wages are NY source. Employer-necessity alternative resolved out on client's statements (it would have reduced Elena's NY wages to approx 26,690-26,778)."
+  }
+}

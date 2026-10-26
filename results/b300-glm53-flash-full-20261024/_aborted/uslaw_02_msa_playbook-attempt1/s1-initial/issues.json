@@ -1,0 +1,65 @@
+[
+  {
+    "rank": 1,
+    "clause": "§5.3 / Exhibit C",
+    "playbook_rule": "A2",
+    "severity": "hard",
+    "issue": "Data Processing Addendum is '[To be attached]' — no DPA exists in the paper.",
+    "why": "Cobalt will run EU driver data through the platform (GC email; playbook A2: Cobalt processes EU driver data for Rotterdam/Hamburg). Library/gdpr_art28.md (Regulation (EU) 2016/679, Art. 28(3)) sets out what the Art. 28 contract must contain and states: absent such a contract, the controller is in breach of Art. 28 from the first day of processing. Exhibiting a 'to be attached' blank is exactly what playbook A2 prohibits.",
+    "redline": "Replace §5.3 so the DPA is Exhibit C, executed concurrently with the MSA, incorporated as part of the Agreement, and no personal-data processing is permitted before it is executed. Exhibit C must contain the Art. 28(3) elements: subject-matter/duration/nature and purpose of processing, data types and data-subject categories, and processor obligations (documented instructions; confidentiality; security measures; sub-processor conditions; controller assistance; deletion/return; audit information and access). Full text in redlines.md."
+  },
+  {
+    "rank": 2,
+    "clause": "§9.1 / §9.3 / §10.1",
+    "playbook_rule": "A1",
+    "severity": "hard",
+    "issue": "The §9.1 'notwithstanding anything to the contrary' liability cap swallows the 'uncapped' IP indemnity in §10.1.",
+    "why": "The cap applies to 'any liability arising out of or related to this Agreement' and is expressly made to apply notwithstanding anything to the contrary, including the narrower 'Uncapped' statement in §10.1, unless the cap clause itself carves the indemnity out (library/contract_interpretation_notwithstanding.md, Restatement (Second) of Contracts §203; Delaware cases on 'notwithstanding anything to the contrary'). §9.3 carves out only gross negligence, willful misconduct, fraud and Customer's payment obligations — not the IP indemnity. Net effect: Provider's IP indemnity is capped at 12 months' fees ($222,000 at current pricing), contradicting playbook A1 (indemnity must be uncapped and not subject to the cap). Survival is fine (§12.3 includes §10); the cap carve-back is the defect; this is the C2 trap in the drafting notes.",
+    "redline": "Amend §9.1 to except 'the limitations in this Section 9 shall not apply to Provider's obligations under Section 10.1 (IP indemnity), a party's liability for gross negligence, willful misconduct or fraud, or Customer's payment obligations,' and extend §9.3 accordingly. Full text in redlines.md."
+  },
+  {
+    "rank": 3,
+    "clause": "Exhibit A (Order Form) §4",
+    "playbook_rule": "A3",
+    "severity": "hard",
+    "issue": "Unilateral price increase once during the Initial Term on 60 days' notice, capped at the greater of 8% or CPI-U; renewal increases set by the same 'greater of 8%' formula.",
+    "why": "Playbook A3 prohibits unilateral increases during an initial term outright and caps renewal increases at the lower of 5% or CPI with 90 days' notice. Because §14.1 gives the Order Form precedence on its subject matter (confirmed by playbook C1), Exhibit A §4 is the operative clause. Arithmetic: 8% of $18,500/mo = $1,480/mo = $17,760/yr (assumes CPI-U change below 8%); playbook allows at most 5% = $925/mo = $11,100/yr. Excess = $6,660/yr; worst case (increase takes effect near the start of the 36-month Initial Term) ≈ $53,280. 60-day notice also fails A3's 90-day requirement.",
+    "redline": "Replace Exhibit A §4: no fee increase during the Initial Subscription Term; renewal-term increases limited to the lower of (a) 5% or (b) the CPI-U change over the preceding 12 months, on at least 90 days' prior written notice. Full text in redlines.md."
+  },
+  {
+    "rank": 4,
+    "clause": "§3.3",
+    "playbook_rule": "A4",
+    "severity": "hard",
+    "issue": "Auto-renewal term is 24 months with a 90-day non-renewal notice window.",
+    "why": "Playbook A4 requires renewal terms ≤ 12 months and non-renewal notice ≤ 30 days. Business effect: missing the 90-day window locks Cobalt into a 24-month renewal cycle — 24 × $18,500 = $444,000 exposure (before renewal increases), double the $222,000 a 12-month cycle would commit. Combined with issue 3's 8% floor, a missed window prices at up to 24 × $19,980 = $479,520 versus 12 × $19,425 = $233,100 under playbook terms.",
+    "redline": "Replace §3.3: auto-renewal for successive twelve (12)-month renewal terms unless either party gives written notice of non-renewal at least thirty (30) days before the end of the then-current term. Full text in redlines.md."
+  },
+  {
+    "rank": 5,
+    "clause": "§2.2",
+    "playbook_rule": "A5",
+    "severity": "hard",
+    "issue": "License is granted to Customer (Holdings) only; affiliates are excluded unless named on an Order Form at additional fees.",
+    "why": "Playbook A5 requires that Cobalt Freight Europe B.V. and Cobalt Brokerage LLC be covered by the license at no additional fee, or that Holdings sign on behalf of the affiliates. Exhibit A (Order Form No. 1) names neither affiliate, so under the current paper the Europe/Brokerage operations would need separate paid license entitlements. Route (a) redline §2.2 to cover affiliates at no additional fee with Customer responsible for affiliate compliance; or route (b) name the affiliates on the Order Form / add a Holdings-signs-on-behalf-of recital.",
+    "redline": "Replace §2.2: 'The license granted hereunder extends to Customer's Affiliates (including Cobalt Freight Europe B.V. and Cobalt Brokerage LLC, as designated in Exhibit A) at no additional fee; Customer remains responsible for its Affiliates' compliance with this Agreement.' Alternative (b): add affiliate names to Exhibit A with the same no-additional-fee statement. Full text in redlines.md."
+  },
+  {
+    "rank": 6,
+    "clause": "Exhibit B (SLA)",
+    "playbook_rule": "B5",
+    "severity": "preferred",
+    "issue": "Service credits are the sole and exclusive remedy for availability failures, with no termination right for chronic SLA failure.",
+    "why": "Playbook B5 accepts credits-as-sole-remedy only if a termination right exists for chronic failure (subscription below target 3 months in any 6). Nothing in the MSA or Exhibit B creates that exit; §12.1's material-breach termination is not a reliable route because Exhibit B forecloses breach remedies with 'sole remedy' language. Math check: credits accrue 5% per full 0.5% below the 99.5% target, capped at 25% of monthly fees = max $4,625/mo ($18,500 × 25%).",
+    "redline": "Add to Exhibit B: 'If the Services fail to meet the availability target in any three (3) calendar months within a rolling six (6) month period, Customer may terminate the affected Order Form upon thirty (30) days' written notice and receive a pro-rata refund of prepaid, unused fees.' Full text in redlines.md."
+  },
+  {
+    "rank": 7,
+    "clause": "§5.4",
+    "playbook_rule": "A2 (conformity)",
+    "severity": "note",
+    "issue": "Provider may use aggregated, de-identified usage data 'for any purpose', stated outside the DPA.",
+    "why": "Under Regulation (EU) 2016/679, Art. 28(3)(a) as excerpted in library/gdpr_art28.md, a processor processes only on documented instructions; a free-standing 'any purpose' right should expressly sit inside the DPA framework, not alongside it. This is a consistency point to negotiate with the DPA, not a standalone A2 defeat (the core A2 defect is rank 1).",
+    "redline": "Add a proviso: '…provided such data is derived from Customer Data in accordance with the DPA, including processing only on documented instructions, and does not identify or re-identify any data subject.' Full text in redlines.md."
+  }
+]

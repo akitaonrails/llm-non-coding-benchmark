@@ -1,0 +1,8 @@
+{
+  "fact_ids": [
+    "obra_pct",
+    "creditos",
+    "lucro"
+  ],
+  "reason": "Questions 1 and 3 ask the construction/materials revenue mix; question 5 asks which purchases support credits; question 4 requests confirmation of the projected accounting profit assumptions. Release only the corresponding fixed scripted answers, with no new legal sources or figures."
+}

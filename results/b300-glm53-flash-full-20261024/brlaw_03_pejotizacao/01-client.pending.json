@@ -1,0 +1,46 @@
+{
+  "case": "brlaw_03_pejotizacao",
+  "questions": "# PERGUNTAS.md — Solicitações ao cliente (Solaris Tecnologia)\n\n> Perguntas que materialmente movem os números do parecer. Enquanto não respondidas,\n> os itens seguem como premissas conservadoras/piores-caso sinalizadas em\n> `parecer.md` §11 e em `open_items` do `parecer.json`. Prazo/ordem de prioridade indicada.\n\n---\n\n## P1 — Composição do valor da nota fiscal (R$ 18.000/mês) · alta prioridade\n\nO valor mensal faturado pela PJ do Sr. Rafael **inclui** tributos e custos da PJ\n(ISS, PIS/COFINS, IRPJ, pró-labore, contabilidade, encargos SOC/contador)?\n\n- **Por que importa:** a remuneração-base trabalhista do acervo é \"o valor pago à PJ\".\n  Se R$ 18.000 embutisse custo não remuneratório, o salário-de-função seria menor e\n  **todas** as verbas (13º, férias+1/3, FGTS+40%, INSS patronal, HE) cairiam\n  proporcionalmente — é o principal argumento de defesa quantificável.\n- **Cenário atual:** mantive R$ 18.000 integral (pior caso para a Solaris), como o\n  ônus da prova da imputação recai sobre quem alega.\n\n## P2 — Planilhas completas de horas extras · alta prioridade\n\nA prova de HE disponível cobre **apenas jan–jun/2025** (135 h no semestre; média\n22,5 h/mês). Precisamos de:\n\n1. Registros/prints/planilha de horas **out/2021–dez/2024**;\n2. **jul–dez/2025** e **jan–out/2026**;\n3. Qualquer política de compensação ou banco de horas vigente no período.\n\n- **Por que importa:** a estimativa central (R$ 162.920,45) usa 22,5 h/mês como\n  proxy para os 59 meses exigíveis. Se a média real for menor/maior, o item mais\n  sensível do parecer muda na mesma proporção (cada ±5 h/mês ≈ ±R$ 36.000 no total\n  de HE sobre a base 122,73/h).\n- **Cenário atual:** proxy 22,5 h/mês declarado como estimativa, não como prova.\n\n## P3 — Intervalo intrajornada (refeição) · alta prioridade\n\nHavia pausa de refeição na rotina do Sr. Rafael? Qual duração típica (1h? mais?)\ne há controle ou prova disso?\n\n- **Por que importa:** decide o divisor da hora-extra na estimativa:\n  **220h** (jornada 9h–18h com 1h de intervalo) vs **198h** (sem intervalo ou\n  intervalo totalmente eliminado — pior caso). Cenário alternativo já calculado:\n  R$ 181.022,73 vs R$ 162.920,45 (diferença ~R$ 18.102). O acervo não traz a regra\n  aplicável — premissa **[não verificada no acervo]**.\n- **Cenário atual:** divisor 220 (divisor mais defensável, mas rotulado).\n\n## P4 — Natureza do \"saldo de 20 dias\" (e-mail do RH de 20/08/2025) · média prioridade\n\nO RH mencionou \"saldo de 20 dias\" no e-mail de 20/08/2025. O que é exatamente?\n\n- Banco de horas? Abono? Fruição de \"férias\" via NF? Licença remunerada?\n- Houve **faturamento via NF** correspondente a esses 20 dias?\n- **Por que importa:** pode alterar contas de férias (simples vs dobradas) e de\n  FGTS sobre o período, e serve de prova adicional de subordinação/pagamento\n  condicionado. Também alimenta a tese de fraude (art. 9º).\n\n## P5 — Quadro de empregados da Solaris · média prioridade\n\nA Solaris tem **mais de 20 empregados** registrados no período (2019–2026)?\n\n- **Por que importa:** é a premissa da **Súmula 338** (presunção de controle de\n  jornada relativo/onus da empresa que mantém 20+ empregados) e sustenta parte da\n  prova de HE. Não muda o centro do parecer, mas muda a faculdade de instrução.\n\n## P6 — Prática de imputação contábil · média prioridade\n\nInternamente, os valores pagos via NF foram tratados como custo de serviço\nPJ **ou** como remuneração imputável ao prestador?\n\n- **Por que importa:** o cenário central (R$ 897.272,45) assume imputação dos\n  R$ 1.062.000 pagos; sem imputação, a exposição vai a **R$ 1.959.272,45**.\n  A imputação é prática usual, mas **não está no acervo** — preciso saber como a\n  Solaris contabilizou, para orientar a defesa.\n\n## P7 — Provisionamento (CPC 25) · baixa prioridade\n\nO cliente referiu CPC 25 como framework de provisionamento. Confirma que a\nprovisão deve ser registrada como **\"provável\" pelo valor central\nR$ 897.272,45**, com nota aberta da variação? (Framework não está no acervo —\naplico sigla informada pelo cliente e sinalizo.)\n\n---\n\n## Registro de respostas\n\n| # | Data | Resposta | Impacto nos números |\n|---|------|----------|---------------------|\n| – | – | (aguardando) | – |\n",
+  "facts": [
+    {
+      "id": "outros_clientes",
+      "trigger": [
+        "outros clientes",
+        "exclusiv",
+        "prestava para terceiros"
+      ],
+      "answer": "Carla: Não. Ele era dedicado a nós, 7 anos. A PJ dele só tinha a gente.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "quem_decidia",
+      "trigger": [
+        "quem decidia",
+        "férias",
+        "horário",
+        "aprovava",
+        "subordina"
+      ],
+      "answer": "Carla: Eu. Aprovava férias, cobrava horário, dava feedback. Igual aos CLTs.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "valor_embutia",
+      "trigger": [
+        "embutia",
+        "tributos",
+        "custo",
+        "valor da nota",
+        "remuneração-base"
+      ],
+      "answer": "Diretor: Os 18 mil eram 'cheios' justamente porque ele era PJ. Um CLT equivalente ganharia uns 12 mil.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "quem_decidia",
+    "valor_embutia"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

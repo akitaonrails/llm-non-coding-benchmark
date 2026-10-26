@@ -1,0 +1,24 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "Publicacao = 1o dia util seguinte a disponibilizacao de 19/11/2026 (qui): 20/11/2026 (feriado nacional, Lei 14.759/2023, no calendario de Campinas), 21-22/11 fim de semana, logo 23/11/2026 (Lei 11.419/2006, art. 4o, par. 3o; CPC art. 224, par. 2o). Inicio da contagem no 1o dia util seguinte a publicacao: 24/11/2026 (Lei 11.419/2006, art. 4o, par. 4o; CPC arts. 224, par. 3o, e 231, VII). Contestacao: 15 dias (CPC art. 335, III), somente dias uteis (CPC art. 219), excluindo o dia do começo e incluindo o do vencimento (CPC art. 224, caput). Feriado municipal de Campinas 08/12/2026 (N. Sra. da Conceicao) nao computado. Dia util 15 = 15/12/2026 (ter), antes do recesso de 20/12 (CPC art. 220), que portanto nao interfere. SEM prazo em dobro: ainda que haja litisconsortes com procuradores de escritorios distintos (fls. 61 e 70), o CPC art. 229, par. 2o nao aplica a dobra aos processos em autos eletronicos — este e processo digital (e-SAJ). A alegacao do socio esta incorreta."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "12-13/12/2026 e 19-20/12/2026, 23-24/01/2027, 30-31/01/2027: fins de semana (nao sao dias uteis — CPC art. 219)",
+      "20/12/2026 a 20/01/2027, inclusive: suspensao do curso do prazo (CPC art. 220; confirmada pelo calendario forense de Campinas, que tambem registra expediente suspenso/feriados em 24-25/12/2026, 31/12/2026 e 01/01/2027)",
+      "21/01/2027 (qui): primeiro dia util apos o recesso — retoma a contagem da apelacao (dia 6 de 15)",
+      "25/01/2027 (seg): ANIVERSARIO DE SAO PAULO — feriado APENAS na Capital, NAO em Campinas; dia util computado na apelacao (calendario forense de Campinas)",
+      "08/02/2027-09/02/2027 (Carnaval) e 18/02/2026: fora dos periodos contados, sem efeito sobre estes prazos"
+    ]
+  }
+}

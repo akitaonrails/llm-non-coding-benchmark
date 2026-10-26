@@ -1,0 +1,28 @@
+{
+  "simples": {
+    "das": 675360,
+    "iss_fora": 178500,
+    "inss_patronal": 54600,
+    "total": 908460
+  },
+  "presumido": {
+    "irpj": 269160,
+    "csll": 109620,
+    "pis_cofins": 153300,
+    "iss": 178500,
+    "inss_patronal": 364000,
+    "total": 1074580
+  },
+  "real": {
+    "irpj": 165000,
+    "csll": 68040,
+    "pis_cofins_debito": 388500,
+    "creditos": 83250,
+    "iss": 178500,
+    "inss_patronal": 364000,
+    "total": 1080790
+  },
+  "recomendacao": "simples",
+  "mudanca_em_dezembro": "impossivel",
+  "prazo_opcao": "2027-01-29"
+}

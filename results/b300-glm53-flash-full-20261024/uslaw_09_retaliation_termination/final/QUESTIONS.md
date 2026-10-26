@@ -1,0 +1,33 @@
+# QUESTIONS.md — items for the client (Whitcomb matter) — UPDATED 2026-10-06 after client reply
+
+*This update follows the client's 2026-10-06 reply (and confirmation that there is no additional information beyond it). Per the engagement instruction, already answered questions are NOT asked again — they are recorded below for the file only. Nothing here blocks the core advice (do not terminate today).*
+
+---
+
+## Answered — recorded for the file (do not re-ask)
+
+- **Q3 (decision-maker identity) — ANSWERED:** "Tom wrote the PIP and Tom wants her out. I'm just processing it." → The accused (Hale) is the effective decision-maker; HR is implementing his request; no independent decision-maker exists. (This *strengthens* the retaliation risk; see advice_to_hr.md.)
+- **Q4 (investigation records since 9/12) — ANSWERED:** "Honestly, nothing. Tom's been traveling. I was going to get to it." → No investigation of any kind has occurred; the only stated reason is the accused's own travel schedule.
+- **Q5 (FMLA status) — ANSWERED:** "We haven't approved or denied it. Certification came in 10/3. Tom said to wait." → The request is unresolved, and the deferral was directed by the accused — not a merits-based hold.
+- **Group-program assumption (a) — ANSWERED:** "Just her. No RIF." → Single-employee termination is confirmed; the 21-day OWBPA consideration period applies (45-day group-program rule inapplicable) [library/adea_owbpa_626f.md].
+- **Q1 (full agreement text), Q2 (severance policy), Q6 (comparator documentation), Q7 (compensation figures), and quarterly-quota assumption (b):** client states there is no additional information. They remain open items below for completeness — the client may simply be unable to produce them today, and they are still needed before any agreement is executed or any exposure number is quoted.
+
+---
+
+## Remaining questions (new or still unanswered)
+
+1. **Full separation agreement text (Q1, still open).** Only paras. 3, 4, 7, 9, and 11 were provided (separation_agreement_draft.md). Please send the complete company form so we can confirm whether any other provision contains the OWBPA attorney-consultation advisement, a future-claims carve-out, or confidentiality/cooperation/no-sue clauses that interact with a release (affects DEFECTS 3, 4, 7). [authority: library/adea_owbpa_626f.md]
+
+2. **Severance policy or contractual entitlement (Q2, still open).** Does any written policy, plan, employment agreement, or past practice entitle sales staff to severance? If 4 weeks' base pay is something a departing employee receives without signing anything, it cannot count as the "consideration in addition to anything of value to which the individual is already entitled" that makes an ADEA waiver valid (§626(f)(1)(D)). Client has stated no additional information is available today; a written disclaimer on the agreement can solve this if no policy exists. [authority: library/adea_owbpa_626f.md]
+
+3. **Comparator performance documentation (Q6, still open).** Please share for Brennan, Osei, Park, and Lind any written performance documents, prior PIPs, or pipeline-hygiene/CRM write-ups, and confirm whether Dana's CRM standard is the same one others are held to (quota definition identical across the five). Needed to show the 79–86% band was treated better on identical metrics. [authority: library/title_vii_704a.md]
+
+4. **Compensation figures (Q7, still open).** Dana's current base and any quarterly bonus/commission accrued but unpaid — needed to quantify the FMLA doubled-liquidated exposure and back-pay accrual. [authority: library/fmla_2615.md]
+
+5. **NEW — Name an independent decision-maker.** Q3 is answered (Hale drives the decision; HR "just processing"), which is itself the problem. The next decision needed from the client is an *action*, not information: identify a person **outside Tom Hale's chain of command** to (i) run the harassment investigation of Hale, and (ii) hold decision authority over her PIP outcome. Under [library/harassment_investigation_duty.md] the investigation must be impartial and outside the accused's chain of command — it cannot credibly be run by HR while HR simultaneously implements Hale's termination request. If the client will commit to the separation of roles now, that fact should go in writing today.
+
+---
+
+## Assumption flagged for the record (not re-asked)
+
+- *"Quota attainment" is measured per calendar quarter, so the PIP's "100% of quarterly quota" cannot be measured against a completed quarter inside the PIP window.* The PIP (2026-09-16 + 60 days = 2026-11-15) falls mid-Q4; the only complete-quarter data on file is Q1–Q3 (88% YTD). The client offered no information on this point.

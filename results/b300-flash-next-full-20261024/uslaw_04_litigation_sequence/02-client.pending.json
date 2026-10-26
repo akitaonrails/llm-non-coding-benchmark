@@ -1,0 +1,48 @@
+{
+  "case": "uslaw_04_litigation_sequence",
+  "questions": "# Questions for the client — log (updated after client responses, Oct. 26, 2026)\n\n## Answered (do not re-ask)\n- **Bell waiver scope (Q5, part):** Bell confirmed the Feb 11, 2026 email — \"I waived the fee for Rosa and Tay… Just those two… I never agreed to the other five.\" Treated as fact: waiver covered exactly two hires.\n- **J-4533 audit substance (Q2, part / Q8):** Juniper's own review found two double-entered June shifts ≈ $3,100; client states the rest of June is legitimate. Letter ¶2 credits $3,100 and demands Pinecrest's specific findings by Nov. 9.\n- **Exhibit C provenance (new info):** CEO confirms the arbitration exhibit came from a prior lawyer's template and was not read. Answered in assessment §6: does not invalidate the clause (FAA §2 — enforceable absent revocation grounds; none in the file; unread-boilerplate defense is **[not in library — unverified]**), but it binds Juniper too, so we invoke arbitration rather than fight it.\n\n## Unanswered — client has no additional information (flagged as unknowns; assumptions stated in assessment §9)\n1. Actual first-year compensation per hire → placeholder $64,000 avg; $80,000 demand subject to true-up.\n2. J-4533 issue/receipt date → deemed-acceptance fallback for that invoice dropped; posture uses credit-and-substantiate instead.\n3. Any Pinecrest payments/set-offs after the CSV → assumed none (letter is framed on the CSV).\n4. 60-day termination notice status → immaterial to liability (§3 reaches term + 12 months).\n5. May 14 Bell–Lindqvist call content → flagged as the loose thread on Priya/Luis/Keisha implied-waiver risk.\n6. Prior conversion-fee invoices or written demands → assumed none, stated.\n7. Internal policy limiting Bell's authority → assumed none known; the authority argument is abandoned regardless (Bell's admission + no library authority).\n\n## Action items not requiring client input (counsel to obtain at filing)\n- AAA Commercial fee schedule; Pinecrest's address/registered agent for certified mail and the AAA demand; Juniper's June shift-level documentation to verify \"the rest is legit\" before the letter goes out.\n",
+  "facts": [
+    {
+      "id": "feb11",
+      "trigger": [
+        "February 11",
+        "waived",
+        "one-off",
+        "Rosa",
+        "Tay",
+        "did anyone consent"
+      ],
+      "answer": "Marcus: Yeah… I waived the fee for Rosa and Tay in February. Just those two. I didn't think it was a big deal. I never agreed to the other five.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "exhibit_c",
+      "trigger": [
+        "Exhibit C",
+        "arbitration",
+        "dispute resolution",
+        "AAA"
+      ],
+      "answer": "Dolapo: There's an arbitration exhibit? Our old lawyer used a template. Nobody read it. Does that kill us?",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "padded",
+      "trigger": [
+        "padded",
+        "J-4533",
+        "audit",
+        "hours"
+      ],
+      "answer": "Dolapo: Two shifts were double-entered in June, about $3,100. The rest is legit.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "exhibit_c",
+    "feb11",
+    "padded"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

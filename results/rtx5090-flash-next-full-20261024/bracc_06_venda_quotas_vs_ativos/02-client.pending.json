@@ -1,0 +1,44 @@
+{
+  "case": "bracc_06_venda_quotas_vs_ativos",
+  "questions": "# QUESTIONS — ENCERRADAS (turno 2: cliente sem informações adicionais)\n\nAs seis perguntas abaixo foram feitas no turno 1. O cliente respondeu que **não possui informações adicionais**. Nenhuma será re-perguntada. Cada item passa a **incerteza explicitamente sinalizada**, com a assunção adotada e o bound de impacto dimensionados na seção 7 do `memorando.md`:\n\n1. **Data prevista de fechamento** — não informada. Assunção: 2026. Impacto: zero sobre os valores; muda apenas o rótulo dos anos do cronograma de DARFs (mesmo com recebimento antecipado integral, o ganho de R$ 3,9 mi por sócio permanece na faixa de 15%).\n2. **Correção monetária das parcelas (Proposta A)** — não informada. Assunção: sem correção. Impacto: só melhora a Proposta A (+R$ 0,85 líquidos por R$ 1 corrigido).\n3. **Lucros pré-2025 com distribuição aprovada até 31/12/2025 (Proposta B)** — não informado. Assunção: inexistentes (prazo legal de aprovação já estava encerrado na data do fechamento projetado). Impacto: só melhora B; mesmo no extremo de IRRF zero na distribuição inteira, A vence por R$ 774.000.\n4. **Outros rendimentos dos sócios (ajuste anual do IRPFM sobre o IRRF de B)** — não informados. A tabela do IRPFM não consta da biblioteca → eventual adicional/restituição **não verificável**; mantido IRRF 10% como custo. Bound superior já coberto no item 3.\n5. **Residência fiscal** — não confirmada. Assunção: ambos residentes no Brasil. Se algum sócio não for residente, a análise PF da Proposta A não é sustentável pela biblioteca e exige reavaliação (flag, não pergunta reaberta).\n6. **Garantias das parcelas da Proposta A** — não informado. Mantido como risco negocial aberto (seção 5.4 do memorando): negociar caução/penhor/aval antes do fechamento.\n\n**Nenhuma dessas incógnitas altera a recomendação (PF — Proposta A) nem a resposta sobre a DIRPF (não retificar).** Ver tabela de robustez na seção 7 do memorando.\n",
+  "facts": [
+    {
+      "id": "comprador_estrutura",
+      "trigger": [
+        "incorpora",
+        "estrutura do comprador",
+        "laudo",
+        "como vai usar o ágio"
+      ],
+      "answer": "Hélio: o Meridiano não disse se vai incorporar a Vértice; disseram só que 'aproveitam o ágio'.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "custo",
+      "trigger": [
+        "custo de aquisição",
+        "DIRPF",
+        "600",
+        "declaração"
+      ],
+      "answer": "Beatriz: nas nossas declarações está R$ 600 mil cada. Mas a empresa vale 9 milhões, não faz sentido pagar imposto sobre tudo isso.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "distribuicao",
+      "trigger": [
+        "distribuir",
+        "caixa da casca",
+        "dividendos",
+        "quando sacar"
+      ],
+      "answer": "Hélio: se vender pela PJ a gente tira o dinheiro todo em {ANO} mesmo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "custo"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

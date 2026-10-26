@@ -1,0 +1,59 @@
+{
+  "case": "uslaw_09_retaliation_termination",
+  "questions": "# Remaining unknowns (flagged per client instruction)\n\nAll nine original questions were answered or the client stated it has no additional\ninformation. Resolved points are **not** re-asked. Record of client answers (2026-10-06):\n\n| Topic | Client's answer | Effect on analysis |\n|---|---|---|\n| FMLA request status | Not approved or denied; \"Tom said to wait\" | Added as an independent interference act (restraining attempt to exercise a right, `fmla_2615.md`) |\n| Decision chain | Tom Hale wrote the PIP and \"wants her out\"; HR \"just processing\" | Accused = decision-maker; causation effectively conceded at fact level (`title_vii_704a.md`); HR Director is a custodian/witness |\n| Group program? | \"Just her. No RIF\" | **21-day** OWBPA period confirmed; 45-day rule not triggered (`adea_owbpa_626f.md`) |\n| Harassment investigation | \"Tom's been traveling. I was going to get to it.\" | 24 days with no investigation; failure-to-investigate facts locked in (`harassment_investigation_duty.md`) |\n\n## Still unknown — explicitly flagged, client has no further information\n\n1. **FMLA eligibility facts** — worksite headcount within 75 miles; her hours over the past\n   12 months. The library contains no FMLA eligibility rules, so this is **UNVERIFIED**; we\n   assume eligibility and note that the FMLA theory's core (direct evidence, \"wait\"\n   instruction) does not depend on it being resolved in our favor to require action now.\n2. **Dana's salary/commission** — the 4-weeks'-severance vs. double-damages exposure cannot\n   be stated in dollars. Arithmetic in the deliverables uses day counts and attainment\n   percentages only.\n3. **Verbatim text of the 2026-09-12 complaint** — severity/frequency of the conduct remains\n   undocumented; hostile-environment claim stays rated **medium**. (Recommendation to\n   investigate is unchanged.)\n4. **Any prior complaints about Tom Hale** — unknown; investigator-selection instruction\n   (outside his chain of command) is unchanged regardless (`harassment_investigation_duty.md`).\n5. **Benchmark for the PIP's 100%-quota / 24h-CRM targets** — none produced; `comparator_data.csv`\n   shows no PIPs for peers at 79–86% as of 2026-10-06. The PIP remains treated as presumptively\n   pretextual, and any future performance case must supply its own benchmark.\n6. **Whether FMLA rights can be released by private agreement** — no authority in the\n   library; remains **UNVERIFIED**; the release is not credited as FMLA protection in any\n   deliverable.\n7. **Whether other communications reference \"FMLA\" or leave status** (Slack/texts) —\n   unknown; hold scope is written broadly (all custodians' email, texts, ESI) to cover it\n   (`litigation_hold.md`).\n\n## Assumptions now carried forward\n\n- Dana is FMLA-eligible (unverified — item 1).\n- Individual termination; 21-day OWBPA period (confirmed by client).\n- 88/79/84/86/103% figures are comparable attainment metrics, same period.\n- Company is a covered employer under Title VII/ADEA/FMLA (coverage thresholds not in the\n  library — UNVERIFIED).\n",
+  "facts": [
+    {
+      "id": "investigation",
+      "trigger": [
+        "investigat",
+        "complaint",
+        "September 12",
+        "what happened with"
+      ],
+      "answer": "Honestly, nothing. Tom's been traveling. I was going to get to it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pip_author",
+      "trigger": [
+        "who wrote the PIP",
+        "Tom",
+        "decision-maker",
+        "who decided"
+      ],
+      "answer": "Tom wrote the PIP and Tom wants her out. I'm just processing it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "fmla_status",
+      "trigger": [
+        "FMLA",
+        "leave request",
+        "certification",
+        "approved"
+      ],
+      "answer": "We haven't approved or denied it. Certification came in 10/3. Tom said to wait.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "group",
+      "trigger": [
+        "others",
+        "group",
+        "RIF",
+        "program",
+        "anyone else"
+      ],
+      "answer": "Just her. No RIF.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "fmla_status",
+    "group",
+    "investigation",
+    "pip_author"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

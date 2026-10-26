@@ -1,0 +1,70 @@
+# QUESTIONS — for the client
+
+## January 2025 close — CLOSED, answers received
+
+Client response: *"For questions not answered above, the client has no additional information."* Q1–Q7
+below are therefore closed as unanswerable and **will not be re-asked**; the related balances stay
+recorded as-is with disclosure, carried per ASC 250 to the December close. Numbering matches the
+`month_01/open_items.md` references.
+
+1. **Opening deferred revenue.** Account 2200 opened at **65,000.00**, but `note_opening_deferred.md` says opening deferred revenue is **41,000.00** (Trestle prior contract). What is the source of the extra **24,000.00**? Is it (a) the Trestle renewal already booked to deferred before 1/1/2025 (i.e., INV-2225 is a *second* recording and I should not re-book it), or (b) some other contract — if so, which, over what service period?
+
+2. **Opening revenue / retained earnings.** Account 4000 opened with a **30,450.00 credit** and 3900 with a **205,953.00 debit**. Is the 30,450.00 prior-year revenue that was never closed? If so, may I make the opening reclassification **Dr 4000 30,450.00 / Cr 3900 30,450.00** (retained-earnings deficit to 175,503.00), disclosed per ASC 250? Please also confirm 205,953.00 is a cumulative deficit.
+
+3. **A/R aging.** Provide the customer-level detail / aging for the **92,650.00** opening accounts receivable (which customers, which invoice dates). None was collected in January; is any of it disputed or uncollectible?
+
+4. **Prepaid expenses.** Provide the schedule behind the **9,600.00** opening prepaids (what was prepaid, service period, monthly amount) so I can book the correct amortization. I booked none for January pending this.
+
+5. **Accounts payable.** Provide vendor-level detail for the **17,420.00** opening A/P and confirm none of it was paid in January (no bank debit matched it).
+
+6. **Fixed assets.** Confirm the **64,000.00** equipment is in service since ~Jan 2024 over a **36-month** life (implied by the checklist's 1,777.78/mo and the 21,333.00 accumulated figure), and note any additions/disposals in January.
+
+7. **Stray file.** `documents/bank_statement.csv` shows only **December 2025** transactions on a negative balance — not this account's January 2025 activity. Please confirm it is not part of the January record (I did not use it; I reconciled to `month_01/bank_statement.pdf`).
+
+## February 2025 close — CLOSED, answers received
+
+Client response (verbatim): *"Alvarado: Honestly nothing bespoke — they self-onboarded like everyone
+else. Procurement just wanted it called a license. For questions not answered above, the client has no
+additional information. Flag remaining unknowns explicitly."*
+
+- **Q9 is answered** and *confirms* the February treatment: no bespoke/separately priced implementation
+  was delivered — Pinecone self-onboarded like every other customer, and the "license" label was a
+  procurement preference, not a distinct deliverable. The full 36,000.00 therefore attaches to platform
+  access, exactly as booked (100% deferred, zero February revenue). This is not an error and not new
+  information changing an estimate — **no ASC 250 restatement and no prospective adjustment**; February
+  amounts are unchanged.
+- **Q8 is closed as unanswerable** ("no additional information"): the MSA v3.2 and the access term are
+  not obtainable. Per the client's instruction this will **not be re-asked**; the remaining unknown (the
+  access term, and hence any release rate) is **flagged explicitly** in `month_02/open_items.md` item 6
+  and carried with disclosure to the December close. Zero release continues — recognizing any amount
+  would require inventing a term.
+
+Neither question will be repeated. Numbering below matches the `month_02/open_items.md` item 6.
+
+8. **Pinecone contract term.** What is the access/subscription term the 36,000.00 buys, and when does it
+   run? Specifically: (a) please provide **Master Subscription Agreement v3.2** referenced on the order form
+   (it is not in the file); (b) if the MSA is unavailable, state the agreed access term in writing (e.g., 12
+   months from the 2025-02-01 service-start date); (c) confirm Pinecone has had continuous platform access
+   since 2025-02-01. Until answered, no revenue is recognized; if a 12-month term is confirmed, the release
+   is 36,000.00 ÷ 12 = **3,000.00/month** from February, and I will record the February catch-up then.
+
+9. **Pinecone implementation element.** Was a **distinct, separately priced** implementation service
+   actually delivered — anything beyond platform deployment and user onboarding set-up (e.g., a statement of
+   work, delivery/acceptance evidence, or a price allocation between "implementation" and "license")? Under
+   the Board's revenue policy (#2) and ASC 606-10-25-17, set-up and onboarding activities are not revenue until
+   (and unless) a distinct service transfers to the customer; the single unallocated invoice line and the
+   "one-time" wording do not change that. If paid implementation was truly delivered as a distinct service,
+   tell me when it completed and at what price, and the allocation and recognition pattern will change.
+
+## March 2025 close — OPEN (one procedural request; Q1–Q9 will not be repeated)
+
+This is not a re-ask of anything above. Q8/Q9 are closed and the Pinecone term stays disclosed as
+unknown. The March close is **BLOCKED** solely because no March source records exist in the engagement
+file — `documents/month_03/` has not been delivered.
+
+10. **Delivery of March 2025 records.** To close March I need, for March only: (a) invoices issued,
+    (b) cash receipts, (c) the March bank statement, (d) the March payroll register, (e) vendor bills,
+    and (f) any order form or contract for a *new* March customer. Until these exist in the file, no
+    March transaction can be booked, reconciled, or disclosed without inventing data, which I will not
+    do. February's package is final as issued (Q9's answer confirms it; amounts unchanged).
+

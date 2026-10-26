@@ -1,0 +1,21 @@
+{
+  "limite_presumido_liquido_teorico": 1351680,
+  "lucro_contabil_2025": -310000,
+  "prejuizos_acumulados": 1120000,
+  "lucro_distribuivel": 0,
+  "distribuicao_recomendada": 0,
+  "irrf_10pct_se_distribuir_800k": 80000,
+  "multa_art32_risco": 400000,
+  "mutuo": {
+    "recomendado": false,
+    "condicoes": "Mútuo a sócio só seria aceitável com contrato escrito, prazo, garantias, juros de mercado efetivamente pagos e recolhimento de IOF-crédito (0,0082%/dia + 0,38%); sem intenção/capacidade de pagamento é recaracterizado como rendimento (pró-labore/dividendo). Aqui a PJ está em prejuízo (2025: -310.000; acumulados: 1.120.000) e com débito fiscal não garantido (1.480.000 — confirmado pelo cliente: impugnação de 2024 na DRJ, sem depósito, sem garantia, sem parcelamento) — a biblioteca registra que mútuo a sócio nessas condições é sinal de retirada disfarçada; risco de recaracterização alto. A presunção específica do DL 1.598/77 art. 60, V não incide (não há lucros acumulados/reservas), mas o risco residual é inaceitável. NÃO recomendado."
+  },
+  "_notas_calculo": {
+    "limite_presumido_liquido_teorico": "6.400.000 × 32% = 2.048.000; menos IRPJ (premissa não verificada, 25%: 512.000) e CSLL (premissa não verificada, 9%: 184.320) = 1.351.680. PIS/COFINS/ISS não deduzidos: valores indisponíveis (desconhecido U1 — cliente não dispõe da informação) → teto real seria menor. Número irrelevante para o caso: com escrituração em prejuízo, o teto isento efetivo é o lucro contábil apurado (= 0). A conta da contadora (só IRPJ) dava 1.536.000.",
+    "lucro_distribuivel": "0 — pressuposto da isenção (Lei 9.249 art. 10 / IN 1.700 art. 238) é lucro existente; há prejuízo no exercício e prejuízos acumulados; além disso, vedação autônoma da Lei 4.357/64 art. 32, com o débito não garantido CONFIRMADO pelo cliente (sem depósito, sem garantia, sem parcelamento).",
+    "irrf_10pct_se_distribuir_800k": "Lei 15.270/2025: 400.000 por sócio em jan/2026 > 50.000/mês → 10% sobre o total = 40.000 × 2 = 80.000 (texto da biblioteca). Regra de transição afastada: cliente CONFIRMOU não ter havido ata até 31/12/2025, e não há lucro apurado até 2025. Alternativa de leitura (10% só sobre o excedente de 50 mil): 70.000 (U6). Pode haver ainda tributação progressiva por recaracterização (IN 1.700 art. 238 §3º/§4º). Premissa U2: sócios PF residentes no Brasil.",
+    "multa_art32_risco": "Por contribuinte se distribuídos 800.000: PJ 50% × 800.000 = 400.000; beneficiários 50% × 800.000 = 400.000 (200.000 por sócio); teto 50% × 1.480.000 = 740.000 por contribuinte (não reduz). Exposição combinada PJ+sócios: até 800.000. Mais responsabilidade solidária (CC 1.009). Risco concreto — cliente confirmou débito sem garantia."
+  },
+  "_atualizacao_rodada_cliente": "Números inalterados. Cliente confirmou: (1) nenhuma ata até 31/12/2025 → transição Lei 15.270 definitivamente afastada; (2) auto de infração de 2024 na DRJ sem depósito/garantia/parcelamento → 'débito não garantido' confirmado. Demais perguntas: sem informação adicional (desconhecidos U1–U6 sinalizados em parecer.md §7 e QUESTIONS.md).",
+  "_atualizacao_rodada_3": "Pedido do Sócio A de registrar os 800.000 como 'antecipação de lucros futuros' NÃO altera nenhum número: IRRF 80.000; multa art. 32 de 400.000 (PJ) + 400.000 (beneficiários, teto 740.000 cada); responsabilidade solidária (CC 1.009 — distribuição fictícia); excedente integral tributado como rendimento (IN 1.700 art. 238 §§3º/§4º). A biblioteca não disciplina 'antecipação de lucros futuros' (U7); histórico de distribuições anteriores não verificável sem as ECDs (U8, pergunta Q7)."
+}

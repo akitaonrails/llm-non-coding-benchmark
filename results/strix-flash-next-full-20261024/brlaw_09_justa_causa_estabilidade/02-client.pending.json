@@ -1,0 +1,46 @@
+{
+  "case": "brlaw_09_justa_causa_estabilidade",
+  "questions": "# QUESTIONS — Vetor Alimentos\n\n## Respondidas pelo cliente (turno 2)\n\n- **Q5/Q6 (parcialmente)** — “O ambulatório registrou o atestado com gestação em 18/09. A Renata não sabia.” → **Efeito no parecer: nenhum** (Súmula 244, I do TST: o desconhecimento pelo empregador não afasta a estabilidade; e o registro no ambulatório da empresa em 18/09/2026 já configura confirmação no meio empregador). Ver §7.1 do `parecer.md`.\n- **Q7/Q8 (parcialmente)** — “As horas de fim de semana foram para o banco de horas; não pagamos. O post é verdadeiro, tecnicamente.” → **Confirmação decisiva**: esvazia a alínea “k” (verdade confessada, sem imputação falsa/ofensa pessoal) e torna as **62h de jul–ago/2026 passivo autônomo confessado**. Ver §7.2 do `parecer.md`.\n\n## Não respondidas — o cliente declarou não ter mais informações\n\nConforme orientação, **não reapresentadas**; ficam sinalizadas como premissas/limites dos valores (não alteram a conclusão jurídica):\n\n| Incógnita | Como tratada | Efeito possível |\n|---|---|---|\n| Dispensa já aplicada? data-base | Premissa P1 (não aplicada; base 11/10/2026) | Se aplicada antes, mudam marcos de verbas/prazos (CLT 477) |\n| Espelho de férias | Premissa P6 (1 vencido + 7/12 = R$ 16.466,67) | Faixa R$ 6.066,67–58.066,67 |\n| Extrato analítico do FGTS | Piso estimado (67 depósitos × R$ 624 → multa 40% = R$ 16.723,20, sem correção) | Multa real é maior (créditos corrigidos) |\n| Registro da candidatura / fim do mandato CIPA | Premissa P3 (fim 01/06/2027 → estabilidade ~01/06/2028) | ±poucos dias (~R$ 260/dia) |\n| DUM/USG (data do parto) | Premissa P4 (DN provável 23/04/2027 ±2 semanas → estabilidade até ~23/09/2027) | ±±15 dias (~R$ 3.900) |\n| Jornada/divisor p/ as 62h | Ilustrativo 200h/mês: R$ 2.418,00–3.627,00 (não incluído nos totais) | Valor do passivo confessado |\n| Existência de outros fatos disciplinares além do post | Assumido: não há (nada nos autos) | Se houver, exigiriam imediatidade própria |\n\n# PERGUNTAS (encerrado)\n\nPerguntas apresentadas ao cliente e **respostas recebidas** (Q sobre gestação/ambulatório e horas do banco): ambas respondidas e incorporadas ao parecer — **não alteram a conclusão; reforçam-na** (ver `parecer.md` §7).\n\nAs demais perguntas ficaram sem resposta adicional do cliente e **não foram reapresentadas**: tratadas como premissas sinalizadas (P1–P7) com faixa de valores, conforme registro em `QUESTIONS.md` e `STATUS.md`.\n",
+  "facts": [
+    {
+      "id": "quando_soube",
+      "trigger": [
+        "quando soube",
+        "tomou conhecimento",
+        "e-mail de agosto",
+        "21/08",
+        "Felipe"
+      ],
+      "answer": "Paula (RH): pelo e-mail que a Renata mandou ao Felipe, ela viu o post no dia seguinte, 21/08. Ela diz que 'soube semana passada' no sentido de decidir fazer algo.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "gravidez",
+      "trigger": [
+        "gestante",
+        "grávida",
+        "atestado",
+        "ambulatório"
+      ],
+      "answer": "Paula: o ambulatório registrou o atestado com gestação em 18/09. A Renata não sabia. Isso muda alguma coisa?",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "horas",
+      "trigger": [
+        "hora extra",
+        "banco de horas",
+        "fim de semana",
+        "pagou"
+      ],
+      "answer": "Paula: as horas de fim de semana foram para o banco de horas; não pagamos. Então o post é... verdadeiro, tecnicamente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "gravidez",
+    "horas"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

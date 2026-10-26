@@ -1,0 +1,18 @@
+# STATUS
+
+**Session 5 — COMPLETE WITH OPEN ITEMS** (Nov. 6, 2026).
+
+Delivered:
+- `deliverable/session5/settlement.json` — `recommended_range` **[$340,000, $390,000]**; `walk_away` **$300,000** (acceptable $300k–$340k only as pre-filing immediate cash, no 0%-interest schedule); `fee_exposure_if_arbitrated` **$135,000** worst-case tail (60,000 our fees to award + 25,000 net AAA/arbitrator advance + 50,000 their C.3 costs if they prevail on a counterclaim — every component labeled assumed: the AAA Commercial fee schedule is **[not in library — unverified]** and must be pulled at the Nov. 17 filing, which is precisely what Session 3's action item queued); reasoning carries the full arithmetic: demand $428,399.50 (same at filing — first interest step-up Nov. 26), EV $357,084.53, filing-net ≈ $290k–$330k, and why the zone beats it.
+- `deliverable/session5/term_sheet.md` — ¶1 acknowledged balance $428,399.50 with the admitted $265,200 quoted from their Sept. 29 letter; ¶3 unconditional core payment (0%-interest 6-month schedule rejected with arithmetic: 11,499.50 accrued + 7,956.00 forgone = $19,455.50 below their own admitted number); ¶4 fee true-up to 25% × actual comp, Rosa/Tay excluded on the face of the paper; ¶5 J-4533 substantiate-or-pay contractualized with documents-only C.1 track; ¶6 C.3 fees; ¶7 releases only on final payment (signing-date releases declined); ¶8 acceleration + consented expedited arbitration (in-contract machinery; exotica labeled unverified); ¶9 C.4 preserved for future §3 breaches; ¶10 content guardrails (no interference theory, no Rosa/Tay, no "never consented" — Rule 3.1); ¶11 conditions with Nov. 17 filing trigger. Internal negotiation brief with authority limits and deal-breakers.
+
+New input handled: `documents/session5/opposing_counsel_settlement_posture.md` — Halvorsen **call of Oct. 20, 2026** (pre-engagement): 265,200 over 6 months / $0 J-4533 / $0 fees / mutual release / own fees / C.3 threat aimed at the interference count, which we abandoned on our own documents — threat inert. Offer **rejected** in both deliverables with arithmetic. Surfaced Q13 (who took that call; any writing — bears on Q11–Q12 and the filing statement) and Q14 (CEO-only vs. board settlement authority; term sheet ¶11(a) bracketed until answered) in QUESTIONS.md.
+
+Carried open items (none blocks Nov. 16/17):
+1. Q11–Q14 (pre-engagement letter author/date/copy + no-complaint confirmation; Oct. 20 call recipient/writing; settlement-signing authority).
+2. Pre-filing counsel actions: internal inspection of Juniper's June shift-level docs (J-4533); pull the real AAA Commercial fee schedule at filing and replace the assumed $66k mid-case / $135k tail figures in `settlement.json` if they move materially.
+3. Facts that move the numbers, not the plan: actual comp per hire (true-up ¶4 both directions); Pinecrest's J-4533 findings (due Nov. 16; any post-CSV payments; May 14 call content).
+
+Position of record (unchanged since Nov. 2): demand $428,399.50; immediate core $276,699.50; J-4533 $71,700 substantiate-or-pay by Nov. 16; conversion $80,000 (5 hires, true-up); no interference count, no Rosa/Tay fees, no "never consented," no court threat. File AAA (with C.3 pleaded) **Nov. 17** absent payment, executed term sheet, or a mediation date.
+
+Prior sessions: S1 assessment + demand (rev. 2, $425,747.50); S2 advice + reply letter ($428,399.50, Nov. 2) + §6 addendum refusing the CEO's interference directive; S3 arbitration/fee-shifting advice; S4 strategy memo (verdict: improved on liability and leverage, not yet in cash; EV $357,084.53; zone $340k–$390k, floor $300k; board formulation in §7A). All five contracted deliverables are now on file.

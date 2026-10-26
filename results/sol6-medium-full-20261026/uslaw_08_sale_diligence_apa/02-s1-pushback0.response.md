@@ -1,0 +1,5 @@
+I’ll address counsel’s two claims in the reply and give Ray a direct signing recommendation. The supplied installer facts and the draft’s full-price §4.12 cap make this a decision worth spelling out plainly.
+
+Ray should **not sign the current draft**. The nine installers’ working arrangements strongly indicate employee status, so a clean §4.12 compliance promise could expose him to a claim capped at the full purchase price. Counsel’s claim that §7.4(c) appears in every deal does not resolve that risk; the supplied reference library recognizes both knowledge approaches.
+
+A two-week signing remains possible if the agreement first includes an express installer disclosure and capped indemnity, agreed earn-out accounting, and closing conditions for the Hensley and landlord consents and the new spray-booth permit. I updated the [reply to buyer’s counsel](/work/workspace/deliverable/reply_to_buyer_counsel.md) and [note to Ray](/work/workspace/deliverable/note_to_ray.md) with that position.

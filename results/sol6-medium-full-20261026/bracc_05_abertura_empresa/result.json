@@ -1,0 +1,23 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 470.4328352569719,
+  "controller_wait_seconds": 42.003481708001345,
+  "model_turn_seconds": 428.4231623400701,
+  "turns": 3,
+  "released_facts": [
+    "aluguel_pct",
+    "luana_trabalho",
+    "marina_cargo",
+    "regime_bens"
+  ],
+  "usage": {
+    "input_tokens": 422519,
+    "cached_input_tokens": 379392,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 20876,
+    "reasoning_output_tokens": 4779
+  },
+  "api_equivalent_usd": 0.3708924
+}

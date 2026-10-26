@@ -1,0 +1,34 @@
+{
+  "contracts": [
+    {
+      "contract": "Trestle Freight prior annual (Jun 2024\u2013May 2025)",
+      "opening": 41000.0,
+      "billed": 0.0,
+      "recognized": 8200.0,
+      "closing": 32800.0,
+      "note": "Opening per note_opening_deferred.md; released 8,200/month Jan\u2013May 2025."
+    },
+    {
+      "contract": "Trestle Freight 2025 annual (Jan\u2013Dec 2025)",
+      "opening": 0.0,
+      "billed": 24000.0,
+      "recognized": 2000.0,
+      "closing": 22000.0,
+      "note": "INV-2225, order form C-026, billed upfront 2025-01-01; released 1/12 = 2,000/month."
+    },
+    {
+      "contract": "Unidentified opening balance \u2014 held, no release",
+      "opening": 24000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 24000.0,
+      "note": "Opening deferred $65,000 minus $41,000 explained by note_opening_deferred.md; no contract terms in the client file. Questioned to client in deliverable/QUESTIONS.md."
+    }
+  ],
+  "total": {
+    "opening": 65000.0,
+    "billed": 24000.0,
+    "recognized": 10200.0,
+    "closing": 78800.0
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "questions": "# Questions for the Client — Meridian Robotics / Wei-Lin Zhao\n\n**To:** General Counsel, Meridian Robotics, Inc.\n**From:** Outside counsel\n**Re:** Travis County enforcement decision re: §8 of the Zhao employment agreement (memo.md, Oct. 26, 2026)\n\nThese are the facts that are missing from the current file and that materially affect the analysis. Each question states why it matters and which conclusion it could change. The memo's recommendation (**do not file in Travis County**) stands unless your answers change the premises in Q1–Q3.\n\n---\n\n**Q1. Corporate structure (Assumption A).** What is Meridian Robotics, Inc.'s state of incorporation and principal place of business? The file shows an Austin HR office, an Austin HQ, a Texas governing-law clause, and a Travis County venue clause, but never states the entity facts. Confirm: state of incorporation; address of principal place of business; location of officers who make employment decisions.\n*Why it matters:* The choice-of-law and personal-jurisdiction analysis rests on Texas being Meridian's home state (memorandum Part IV.B, Assumption A). If Meridian is incorporated elsewhere (e.g., Delaware with PPB in California), the §187 \"substantial relationship\" leg weakens and the exposure analysis worsens.\n\n**Q2. Confidential information actually received.** What categories of confidential information did Zhao actually receive during his tenure (product specifications, source code, proprietary roadmaps, customer data, pricing)? Produce access logs: repositories touched, download/export records, and anything accessed or transferred after his resignation (September 30, 2026) or after the Kestrel offer.\n*Why it matters:* Under *Alex Sheshunoff* the Texas covenant's consideration can be satisfied by the employer's later-performed promise to supply confidential information (memo Part IV.C); if Meridian supplied none, the ancillarity leg of its best case weakens. The access records also support or foreclose the separate confidentiality/trade-secret lane (memo Part VI.3), which this library's authorities do not yet support.\n\n**Q3. Equity compensation.** Did Zhao receive stock options, RSUs, or other equity? If so: grant dates, vesting schedule, whether any unvested tranche remains, and whether the plan conditions treatment on compliance with restrictive covenants.\n*Why it matters:* *Marsh USA Inc. v. Cook* supports a covenant supported by equity consideration reasonably related to goodwill protection (memo Part IV.C). Equity also changes the \"what does Meridian have at stake\" calculus in the recommendation.\n\n**Q4. The complete agreement (Assumption B).** Provide the full employment agreement text, especially: (a) any attorneys'-fees clause anywhere in the instrument; (b) any arbitration or other dispute-resolution mechanism (§§11–13, which are not in the excerpt); (c) the complete §8 and §14 texts as executed; (d) any bonus, continuing-training, or confidentiality addendum attached to the standard form that could serve as additional §15.50 consideration.\n*Why it matters:* The analysis proceeds on the excerpt only (memo, Assumption B). A fees clause changes the fee-exposure arithmetic in Part IV.F; an arbitration clause changes the forum analysis in Part IV.B/D entirely, and must be before any filing decision is executed.\n\n**Q5. Zhao's actual role at Kestrel.** What do you know about Zhao's title, duties, and product assignment at Kestrel Autonomy (Fremont, CA), and the source of that information? Does any evidence exist that his work involves the design or sale of autonomous mobile robots *for warehouse logistics* — versus some other Kestrel application area? Separately: any evidence of employee solicitation, customer diversion, or data removal before departure?\n*Why it matters:* §8, even under Texas law, is only as broad as its \"warehouse-AMR design or sale\" scope. If his role falls outside that market language, the restraint question becomes moot or merely reformation-guided (memo Part IV.C). Solicitation evidence triggers the §9 analysis (also likely void under §16600 if California law applies — flagged, not held, in memo Part IV.D).\n\n**Q6. LO-233 population and history.** (a) How many current California-resident employees and covered former employees (employed after January 1, 2022) hold the standard form with §8-type clauses? (b) What did legal-ops ticket LO-233 originally scope, who deprioritized it, and is there any record of the §16600.1 notice decision or of AB 1076 notices sent to any other state's employees? (c) Are California employees or former employees of other jurisdictions on the same form?\n*Why it matters:* This is the company-wide compliance exposure the memo flags (Parts IV.E and VI.5): §16600.5(c)–(d) make the *form itself* a problem, and §16600.1(b) notice was missed for the covered class. The inventory decision (memo Part VI.5) needs this population count.\n\n**Q7. Zhao-side counsel.** Who is Zhao's California employment counsel, and what communications has Meridian received from him or on his behalf — any demand letter, deadlines, or asserted claims (e.g., §925(c), §16600.5(e))? Does Zhao's side know of the AB 1076 notice gap?\n*Why it matters:* The resignation email states he has consulted counsel and his position tracks §925 and California voidness (memo Part III, item 6; Part IV.E). Facing a represented adversary before filing changes the tactical advice in Part VI (demand/no-demand, timing, what may lawfully be said in writing).\n\n**Q8. Timing pressure and business objectives.** When does Zhao begin at Kestrel (file indicates October 13, 2026)? Does Meridian have any business response in view — retention, customer reassurance, win-back, or an internal transfer offer — that would make a declaratory action (rather than a Travis County enforcement suit) or a negotiated waiver a realistic alternative? Is there any regulatory, investor, or certification deadline tied to his availability on a Kestrel project?\n*Why it matters:* The memo's bottom line is that litigation is both unlikely to protect (~0–10% effective restraint, Part IV.G) and affirmatively costly (§16600.5(d)–(e), Parts IV.E and VI.1–2). If the client's real objective is competitive intelligence or timeline protection, the remedy set should be built around confidentiality-preserving steps (memo Part VI.3) rather than the non-compete.\n\n---\n\n**Standing assumptions the answers may also contradict:** the excerpt's \"opportunity to consult counsel\" acknowledgment is boilerplate applied company-wide (Q7 helps test whether any employee ever negotiated); and no notice under LO-233 ever issued to any California employee (Q6 confirms scope). If any answer contradicts the memo's facts, the memo's probability bands and recommendation will be revised and reissued.\n",
+  "facts": [
+    {
+      "id": "austin_trips",
+      "trigger": [
+        "Texas",
+        "Austin",
+        "ever in Texas",
+        "physically"
+      ],
+      "answer": "Twice: onboarding week March 2024, and an offsite October 2025. Otherwise Oakland.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "counsel",
+      "trigger": [
+        "counsel",
+        "lawyer",
+        "negotiat",
+        "represented"
+      ],
+      "answer": "No. It's our standard form; engineers sign the same day. Nobody negotiates.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "notice_1076",
+      "trigger": [
+        "AB 1076",
+        "notice",
+        "February 14",
+        "16600.1"
+      ],
+      "answer": "Legal ops never sent the notices. The ticket was closed as 'won't do'. Please don't put that in writing if you can avoid it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trade_secrets",
+      "trigger": [
+        "trade secret",
+        "confidential",
+        "took",
+        "misappropriat"
+      ],
+      "answer": "No evidence he took anything. He said he wouldn't. It's the competing itself we object to.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "austin_trips",
+    "counsel",
+    "notice_1076",
+    "trade_secrets"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

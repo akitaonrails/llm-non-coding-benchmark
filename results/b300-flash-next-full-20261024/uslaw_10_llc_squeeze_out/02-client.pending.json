@@ -1,0 +1,60 @@
+{
+  "case": "uslaw_10_llc_squeeze_out",
+  "questions": "# Questions for Imani Reyes-Okafor — 2026-10-08 — CLOSED RECORD\n\nRound 1 was sent 2026-10-08 and answered the same day. The client has stated\nshe has **no further information beyond her answers**. This file is therefore\nclosed as a record of what was asked and what was learned. Nothing here is a\nlive ask; every remaining gap is carried in `claims.json`,\n`valuation_gap.json`, and `strategy_memo.md` as an **explicit unknown** with a\nroute (records demand, discovery, or drafting) rather than a new question to\nthe client.\n\n## Part A — What the client confirmed (2026-10-08)\n\n**Q7 — the 2026-08-20 notice.** She received a text message with a PDF that\nday and nothing else. **No certified letter was ever received.** The email\naddress on the Company's file dates from 2019 and has been dead since. She\nread the text but \"assumed it wasn't real notice\" and did not object before\nthe 2026-09-20 funding deadline or the 2026-09-25 dilution declaration.\n→ Effect: the delivery failure is total (one non-conforming channel, zero\ncertified mail), which strengthens the *Zimmerman* argument; it also puts\nprejudice (\"she read it\") and acquiescence (\"she stayed silent\") squarely on\nthe table. Count 1 stays **high**, not certain.\n\n**Q2 — when she learned of the Castellan fees.** First saw affiliate payments\nin **2026**, when a books-and-records demand finally produced bank\nstatements. Before that she received only one-page summaries labeled\n\"management expenses\" — no payee named, no affiliate relationship disclosed,\nin any year 2022–2025. → Effect: concealment tolling moves from assumption to\n**client-confirmed primary position**; the §5.4 counts are pleaded at the full\n$1,050,000, with the $375,000 (2022–2023) cutoff preserved only as the risk\nscenario if a court finds the summaries disclosed the injury.\n\n**Q10 — funding.** Cannot raise the $270,000 call amount. Roughly **$60,000**\nis her realistic total budget for this matter. → Effect: the plan is scoped to\na books-and-records follow-on demand, a complaint, and one narrowed\nsummary-judgment motion; no tender toward the call in any amount.\n\n**Q9 — the offer deadline.** Confirmed the $189,100 offer expires\n**2026-10-31** (23 days from her answers). No response has gone out; nothing\nsigned.\n\n## Part B — Questions the client could not answer (\"no further information\")\n\nEach converted into an explicit unknown with a route:\n\n- **Q1 — the complete LLC agreement.** She does not have it. Whether an\n  appraisal right, fair-value floor, deemed-notice, or drag-along clause sits\n  in the unproduced portions is unknown. Route: follow-on books-and-records\n  demand; complaint if refused.\n- **Q3 — the balance sheets and debt.** She has no balance sheets and no\n  independent knowledge of the mortgage or cash. The $3.1M book equity and the\n  ~$4.7M implied net debt remain the offer letter's and the broker's numbers,\n  not ours. Route: records demand (2024/2025 year-end balance sheets, loan\n  file).\n- **Q4 — gross rents / the 6% monthly draws.** No rent roll, and the 2026\n  production did not quantify the monthly management draws. This is the\n  largest unquantified item in the case. Route: top target of the follow-on\n  demand. (The §5.4 breach itself is already pleadable: the trigger bites\n  above $50,000 / 0.06 = $833,333/yr of gross rents.)\n- **Q5 — the third-party fee benchmark.** No comparable quotes or proposals.\n  Route: retain a benchmark once the budget allows; it sets the damages\n  measure, not the breach.\n- **Q6 — the purpose of the $1.5M call.** She has no information either way.\n  Route: the call file in the demand; discovery on \"working capital and\n  opportunities.\"\n- **Q8 — Bram's 6.1% derivation and what he booked for her $270,000** (loan,\n  credited contribution, or simply taken interest). Unknown. Our reverse-solve\n  stands: his 6.1% implies pre-money value of $630,504–$768,908, 89%–91% below\n  his own $7.2M. Route: capital-account ledger in the demand; plead around the\n  unseen derivation rather than guess it.\n- **Q11 — additional documents.** Nothing further in her possession beyond\n  the file already produced (texts, the PDF notice, the summaries, the broker\n  letter, the offer letter).\n- **Exact 2026 production date.** She did not fix the date the books-and-records\n  demand produced the bank statements. On the concealment theory the three\n  years run from that production, so all five fee years stay live whatever\n  the 2026 date; the date matters for diligence framing. Route: her demand\n  letter and any transmittal she still has, then the Company's own records.\n\n## Rule going forward\n\nNo round 2 to the client. The remaining unknowns above are listed verbatim in\n`valuation_gap.json` (\"remaining_unknowns\") and flagged in `claims.json`\nwhere they bound a claim's strength. If a future fact arrives through the\ndemand or discovery, the deliverables are updated then — not by re-asking.\n",
+  "facts": [
+    {
+      "id": "notice",
+      "trigger": [
+        "certified mail",
+        "how did you receive",
+        "notice",
+        "text",
+        "email address"
+      ],
+      "answer": "He texted me a PDF on August 20. No letter. My email on file is from 2019 and dead. I saw the text but assumed it wasn't real notice.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "knowledge_fees",
+      "trigger": [
+        "when did you learn",
+        "fees",
+        "asset management",
+        "disclosed",
+        "financials"
+      ],
+      "answer": "I only saw the affiliate fees in 2026 when I finally got the bank statements through a books-and-records demand. Before that I got one-page summaries with 'management expenses'.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "fund",
+      "trigger": [
+        "fund",
+        "$270",
+        "raise the money",
+        "loan"
+      ],
+      "answer": "I can't raise $270k. Maybe $60k.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "offer_timing",
+      "trigger": [
+        "offer",
+        "30 days",
+        "deadline",
+        "expire"
+      ],
+      "answer": "The $189,100 offer expires October 31.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "fund",
+    "knowledge_fees",
+    "notice",
+    "offer_timing"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

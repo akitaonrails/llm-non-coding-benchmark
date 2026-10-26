@@ -1,0 +1,3 @@
+COMPLETE WITH OPEN ITEMS
+
+All required deliverables are present. Open items: the $1,760,000 Properties tax-balance-sheet discrepancy ($1,360,000 even if the related-entity receivable is excluded) and related asset/liability basis; tax treatment of the 2024 refinancing distribution; trust tax ownership and partnership classification; actual cash-transfer character, balances, terms, and federal recognition; complete Helio §1202 qualification and any prior use of the issuer cap. Conditional estimates and assumptions appear in `opinion.md` and `numbers.json`. The client has no further information at this time.

@@ -1,0 +1,48 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "questions": "# QUESTÕES AO CLIENTE — Sessão 1\n\nAs respostas abaixo refinarão (não bloqueiam) as peças da Sessão 1 e preparam as sessões seguintes.\n\n## Sobre a citação (inconsistência nos autos)\n\n1. O contrato informa **citação em 14/09/2026**, mas os autos trazem **mandado devolvido NEGATIVO em 28/09/2026** (oficial não localizou a empresa na Rua das Pedras, 100). Como a citação se efetivou? Quem a recebeu, em que endereço e em que data exata (certidão do oficial / AR / edital)? Há nos autos certidão de citação posterior à devolução negativa?\n   - *Por que importa:* prazo e via de defesa (embargos contam 30 dias da **garantia**, LEF art. 16 §1º — mas a regularidade da citação pode ser arguida; e o endereço da CDA está desatualizado desde a alteração registrada na JUCESP em 12/03/2026 e na RFB em 20/03/2026).\n\n## Sobre o auto de infração e os pagamentos\n\n2. Podemos obter o **auto de infração integral** (TVF de 03/02/2026)? Precisamos verificar:\n   a) se os principais lançados no 4T/2020 (R$ 125.320,00) e no 1T/2021 (R$ 157.040,00) **já são a diferença não paga** após imputação dos DARFs de R$ 61.000,00 (29/01/2021) e R$ 84.000,00 (30/04/2021), ou se o Fisco lançou o tributo integral sem baixa dos pagamentos;\n   b) a **memória de cálculo da omissão de receitas por período** (depósitos bancários apontados, datas e valores) — a CDA não individualiza a base de cálculo por período;\n   c) se o TVF contém **qualquer fundamento específico de dolo, fraude ou simulação** (isso afetaria a contagem do art. 150 §4º no 4T/2020 — pela nossa leitura, não há, pois a multa foi de 75%, e não 150%).\n\n3. Existem em poder do cliente (ou do contador anterior) os **comprovantes originais**: DARF de 29/01/2021 (R$ 61.000,00), DARF de 30/04/2021 (R$ 84.000,00) e as **DCTFs** de todos os quatro períodos (incluindo as zeradas de 3T/2020 e 2T/2021)? A exceção será instruída com eles.\n\n4. Houve algum **pagamento, parcelamento ou compensação** depois de 30/04/2021 até hoje, ainda que parcial, relativo a esses períodos?\n\n## Contexto (para as sessões seguintes — responder se possível)\n\n5. A empresa **continua em atividade** no endereço de Cotia (Av. Industrial, 2.500)? Algum sócio (Ana Paula, Carlos, Bruno) figurem hoje como administradores ou já se retiraram formalmente? *(A 3ª alteração de 2023 e a 4ª de 2026 constam do contrato social que recebemos; confirmamos que não houve nenhuma outra alteração desde então.)*\n",
+  "facts": [
+    {
+      "id": "opera",
+      "trigger": [
+        "ainda opera",
+        "funciona",
+        "novo endereço",
+        "Cotia",
+        "mudou"
+      ],
+      "answer": "Bruno: Operamos normalmente em Cotia desde março. Mudamos o endereço na Junta e na Receita — tenho os protocolos.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "ana_saida",
+      "trigger": [
+        "Ana",
+        "saiu",
+        "retirou",
+        "2023",
+        "cedeu"
+      ],
+      "answer": "Ana: Saí em junho de 2023, vendi minhas quotas ao Bruno, tudo registrado. Não tenho nada com a empresa desde então.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "impugnacao",
+      "trigger": [
+        "impugnação",
+        "prazo administrativo",
+        "contador",
+        "DRJ"
+      ],
+      "answer": "Bruno: o contador anterior não impugnou o auto. Perdemos o prazo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "opera",
+    "ana_saida",
+    "impugnacao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

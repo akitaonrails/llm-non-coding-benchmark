@@ -1,0 +1,75 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Questions for the client — round 2\n\nRound-1 questions 1–6 are closed. The client answered: the Brooklyn tenant is unrelated (a nurse\nfound through a broker in 2019; rent simply never raised); Marcus has put nothing into the S-corp\nsince 2021 and never lent it money (Pike guarantees the bank line); both spouses' remote work was\nemployee-request/employer-permissive (\"they didn't need me out of state\"; Halvorsen approved Elena's\nrequest); and Elena signed Form 8332 for Leo's father for 2025. For everything else the client has\n**no additional information**, so no further questions are asked. The remaining unknowns below are\nflagged explicitly and handled as stated assumptions.\n\n## Remaining unknowns (unanswerable — handled as assumptions)\n\n1. **8962 family size (affects the refund).** The 2025 family-of-3 poverty line is not in the\n   reference library and the client has no Marketplace-application records, so family size **4** is\n   used (the 1095-A enrolled exactly four individuals). If the Marketplace actually used size 3, the\n   income percentage rises, the credit shrinks, and the repayment could grow from $1,900 to the\n   300–400% FPL cap of $3,150 *[the caps are in the library; the family-of-3 banding is not\n   computable from it]* — the refund would fall by up to ≈ $1,250.\n\n2. **Brooklyn lease documentation (largest swing item).** No signed lease or rent-comparable file\n   exists; the \"fair rental for that lease\" condition rests on the rental summary's own comparables\n   ($1,500 vs ~$2,600 market). With the client's confirmation that the tenant is unrelated and the\n   rent was never raised, the library's safe sentence applies and the $21,018 rental loss stands. If\n   the Service instead called $1,500 below fair rental for that lease, the whole loss is disallowed\n   and the $2,322 refund flips to an estimated **balance due of ≈ $1,270** *[estimate outside the\n   library's table excerpt — unverified]*.\n\n3. **Leo / child-support delinquency.** The client has no information on whether support is\n   delinquent. A delinquency-based custodial-parent override exists in some states but is **not in the\n   library** *[unverified]*, so it is not applied; treatment stays per the alternating custody order\n   and the signed Form 8332 (2025 is the father's year).\n\n4. **2025 Tampa property-tax statement / other deductions.** Not provided. Immaterial: documented\n   itemized deductions ≈ $13,232 are far below the $31,500 standard deduction, and no plausible\n   property-tax figure bridges that gap.\n\n5. **Brooklyn condo basis detail.** Building basis $270,000 (÷ 27.5 = $9,818 depreciation) and \"no\n   capitalized improvements\" come from the rental summary and are unconfirmed. Any error is largely\n   absorbed by the Form 8582 carryforward ($1,468 currently suspended) rather than the current refund.\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for 2025, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "contrib",
+    "convenience",
+    "fmv_rent",
+    "leo_8332"
+  ],
+  "literal_suggestions": [
+    "employer_coverage"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

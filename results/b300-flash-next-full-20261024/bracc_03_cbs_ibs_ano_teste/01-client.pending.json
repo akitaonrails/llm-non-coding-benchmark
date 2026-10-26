@@ -1,0 +1,34 @@
+{
+  "case": "bracc_03_cbs_ibs_ano_teste",
+  "questions": "# PERGUNTAS (não bloqueantes — entregável concluído sob as premissas abaixo)\n\nEntregues em 25/10/2026. Respondemos com premissas explícitas (item 7 de `orientacao.md`); as respostas abaixo podem alterar detalhes, mas não o resultado central (recolhimento R$ 0,00 sob a dispensa; saldo-teste CBS 2.862,00 / IBS 318,00; 4 notas irregulares).\n\n1. **Arquivo do mês.** As 17 NF-e de `documents/saidas` e `documents/entradas` são a totalidade das operações de agosto/2026 da Horizonte? Todas aparecem com `tpAmb` = 2 (homologação) e com o texto \"documento fictício\" em `infCpl` — assumimos que o conjunto representa as operações reais do mês. Há outras saídas/entradas não listadas?\n2. **As duas notas rejeitados pela SEFAZ.** O e-mail menciona duas notas rejeitadas que \"o sistema voltou a emitir\". Nos arquivos, 2308, 2310 e 2312 constam autorizadas (cStat 100) **sem** o grupo IBSCBS depois de 03/08. Quais numerais foram rejeitados e essas três efetivamente circularam (foram entregues aos clientes / escrituradas)?\n3. **Regime dos fornecedores.** Distribuidora Norte (CNPJ 55.666.777/0001-88) e Logística Atlas (CNPJ 99.000.111/0001-22) não estão na carteira fornecida. Confirmam que ambos são do regime regular (inferimos pelo CRT 3 das notas)?\n4. **Correção das irregulares.** Existe orientação do Fisco/SEFAZ-SP para sanar, ainda em agosto/2026, as NF-e 2308, 2310 e 2312 (sem grupo IBSCBS) e 2309 (alíquotas invertidas)? A biblioteca não traz procedimento de correção para 2026, e a extensão da eventual perda da dispensa (mês inteiro ou só as operações irregulares) também não está definida nos textos da biblioteca.\n",
+  "facts": [
+    {
+      "id": "rejeicao",
+      "trigger": [
+        "rejeição",
+        "rejeitou",
+        "SEFAZ",
+        "cStat",
+        "mensagem"
+      ],
+      "answer": "A rejeição dizia: 'Rejeição: Grupo IBSCBS não informado para emitente do regime regular (NT 2025.002)'. O TI 'contornou' voltando a versão do emissor.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "ponto_fixo",
+      "trigger": [
+        "Ponto Fixo",
+        "Simples",
+        "crédito de entrada",
+        "fornecedor do Simples"
+      ],
+      "answer": "O Ponto Fixo é do Simples, a nota deles veio sem nada de IBS/CBS.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "rejeicao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

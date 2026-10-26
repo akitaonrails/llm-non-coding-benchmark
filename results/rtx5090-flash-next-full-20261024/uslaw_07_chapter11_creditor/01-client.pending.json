@@ -1,0 +1,48 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "questions": "# Questions for Mesa Steel Supply — answers needed to finalize\n\n1. **The $210,000 vs. $125,000 problem (blocks the claim amount).** The March 12 dunning letter demanded $210,000, but the invoice ledger you gave us shows only $125,000 open (six invoices, Jan–Mar 2026). Does the ledger we have cover the *entire* account — are there older unpaid invoices (2025 or earlier, or anything not in `invoices_and_deliveries.csv`)? Please send the complete A/R aging for Redwood as of 2026-03-19. We will not file above $125,000 without records.\n\n2. **The notice is dated in the future.** The \"Notice of Chapter 11 Case and Bar Date\" in your file says the bar date is **June 11, 2026** but is dated **April 2, 2026** — two weeks *after* today (March 19). When and how did Mesa receive this notice? Is there an earlier-served version? We are working to the June 11 date; please confirm, and send the bar-date order itself (it should specify the procedure for asserting §503(b)(9) administrative claims).\n\n3. **Written reclamation demand?** Under §546(c) a demand must be *written* and demand *return of the goods*. The March 12 letter demanded payment. Has anyone at Mesa ever sent Redwood (or its counsel) a written demand for the return of specific goods? If not, the practical §546(c) deadline for goods received Feb. 4 is ~March 21–30, so we need your go/no-go this week.\n\n4. **Industry payment-terms evidence (§547(c)(2)(B)).** Do you have — or can you get from your trade association or other customers — data showing that net-30-to-net-60 payment timing is normal *in the steel supply trade*? That is the fallback defense for the Feb. 10 payment (29 days) if the court finds it outside *your* parties' history.\n\n5. **Security and paperwork.** Confirm Mesa holds **no** lien, PMSI, deposit, letter of credit, or personal guaranty for the Redwood account, and send any master supply agreement / purchase orders (a current supply contract also strengthens the critical-vendor pitch).\n\n6. **Critical vendor posture.** Is Mesa willing to (a) continue supplying during the case and (b) agree to customary trade terms for post-petition orders? Should we contact Redwood's counsel before the April 2 hearing on Dkt. 44? What share of Redwood's coil/structural-steel supply does Mesa hold, and could Redwood realistically replace Mesa quickly?\n\n7. **Goods still on Redwood's floor.** For the MS-7788 structural steel and MS-7815 coil: any knowledge whether those goods are still in Redwood's possession and identifiable (not fabricated into products or sold)? Relevant only to the reclamation lever.\n\n8. **Stay-violation cleanup.** Who exactly sent the Mar. 12 letter, Mar. 15 call, and Mar. 18 email, and have they been instructed to stop? Any reply yet from Redwood or its counsel? This drives how quickly counsel should send the corrective letter.\n",
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "terms",
+    "credit_bureau",
+    "critical_vendor"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

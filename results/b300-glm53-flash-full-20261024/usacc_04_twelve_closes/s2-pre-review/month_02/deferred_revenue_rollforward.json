@@ -1,0 +1,42 @@
+{
+  "contracts": [
+    {
+      "contract": "Trestle Freight prior annual (Jun 2024\u2013May 2025)",
+      "opening": 32800.0,
+      "billed": 0.0,
+      "recognized": 8200.0,
+      "closing": 24600.0,
+      "note": "Per note_opening_deferred.md; 8,200/month Jan\u2013May 2025; February is the second of five releases; 24,600 covers Mar\u2013May at 8,200."
+    },
+    {
+      "contract": "Trestle Freight 2025 annual (Jan\u2013Dec 2025)",
+      "opening": 22000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 20000.0,
+      "note": "INV-2225 (order form C-026) billed upfront 2025-01-01; 1/12 = 2,000/month; ten months remain."
+    },
+    {
+      "contract": "Pinecone Dental Group \u2014 held, no release",
+      "opening": 0.0,
+      "billed": 36000.0,
+      "recognized": 0.0,
+      "closing": 36000.0,
+      "note": "INV-2250 'Implementation & license \u2014 one-time' (order form C-025, due on signature), collected 02/15. No delivery/acceptance evidence, no separately priced distinct service, no stated license term \u2192 held at 36,000 as contract liability (ASC 606-10-45-2). Questioned to client (QUESTIONS.md #7); see open_items.md \u00a71."
+    },
+    {
+      "contract": "Unidentified opening balance \u2014 held, no release",
+      "opening": 24000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 24000.0,
+      "note": "Opening deferred $65,000 less $41,000 explained by note_opening_deferred.md. Still no contract terms in the client file; not re-asked per client instruction; held unreleased."
+    }
+  ],
+  "total": {
+    "opening": 78800.0,
+    "billed": 36000.0,
+    "recognized": 10200.0,
+    "closing": 104600.0
+  }
+}

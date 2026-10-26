@@ -1,0 +1,3 @@
+COMPLETE WITH OPEN ITEMS
+
+All required deliverables are present. Arithmetic and cited authorities were reviewed against the closed library. The division and child-support figures are provisional under the stated assumptions. Open items: actual bonus/payroll reconciliation and any revised affidavit; residence acquisition and occupancy history; lender refinance terms and full housing budget; brokerage tax lots and possible brokerage NIIT (not resolved by the closed library); decree date and household-cost payer; future sale price, mortgage payoff, and sale-year tax position. The client has no further information on these items now.

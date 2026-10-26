@@ -1,0 +1,48 @@
+{
+  "case": "uslaw_05_divorce_split_support",
+  "questions": "# Client answers received (2026-10 turn)\n\n1. **Occupancy:** wants to stay 3–6 years; unsure about refinance capacity → analysis now conclusive: refinance on $72k salary fails underwriting in every scenario (housing ratio 35.1–58.7%, worst when maintenance expires); therefore Alt C is structured so **no refinance is needed** (loan stays joint, both on title). If Husband refuses to remain on the loan/title, sale (Alt B) is the genuine fallback.\n2. **Overnights:** 255 nights/yr with Wife = **69.9%** → residential parent (≥65%) and Husband's 30.1% < 35% → no shared-parenting adjustment. Confirmed in `child_support.json`.\n3. **Bonus history:** \"always gets a bonus,\" 2025 ≈ $40,000 — client recollection, corroborates the pattern; still to be converted into evidence via discovery (W-2s/plan statements). Client's own characterization of the affidavit (\"that's not true\") is consistent with the documentary conflict already found.\n\n# Remaining unknowns — explicitly flagged (no client information available; NOT re-asked)\n\n| # | Unknown | Where it bites | Resolution path |\n|---|---|---|---|\n| U1 | Actual property taxes / insurance / utilities | Alt-C carrying-cost budget and the 28–31% underwriting ratios (placeholder $1,100/mo used; labeled assumption) | County tax record; insurance quote |\n| U2 | Husband's 2023–2025 bonus amounts (documents) | Guideline income uses employer-documented bonuses only; $40k is hearsay; also prices the Rule 16.2(e) claim | Subpoena W-2s, bonus-plan statements, payroll register |\n| U3 | The ~$2,012 stub residual (27,212 unexplained vs 25,200 expected Sept installment) | May indicate more income than modeled | Payroll detail via discovery |\n| U4 | Whether Wife will actually pay >half the household costs post-decree | Head-of-household qualification (IRC §2(b)) | Track expenditures from decree forward |\n| U5 | Husband's age / 59½ status; his actual withdrawal timing | The 12/24/32% valuation of his 401(k) side (gap ranges 17k–97k under the proposal) | Affidavit amendment; plan statements |\n| U6 | Short- vs long-term lot split in brokerage (\"mostly 2024–25 purchases\") | 15% vs up to 24% tax on the $80,000 gain (husband's side 654,800–662,000) | Schwab cost-basis report |\n| U7 | Husband's willingness to (a) stay on loan/title (Alt C) and (b) file a joint return in a sale year (Alt B, worth ~$47,000) | Chooses between Alt C and Alt B; Alt B's tax saving fails without it | Negotiation posture |\n| U8 | Decree timing (final before 2026-12-31?) | 2026 filing status (HoH vs married); interaction with U7 | Case scheduling |\n| U9 | Child-support duration/termination, health-insurance and child-care add-ons | Not in the library excerpt — **outside authority, not guessed** | Full Columbia guidelines / counsel |\n| U10 | Maintenance benchmark for Columbia | No maintenance guideline in library — $2,000×36mo cannot be benchmarked here | Full Columbia guidelines / counsel |\n| U11 | House price path over 3–6 years | Larger gain at later sale; two-exclusion structure shelters 500k of it | Sensitivity only; held flat in the model |\n",
+  "facts": [
+    {
+      "id": "house_plan",
+      "trigger": [
+        "sell",
+        "refinance",
+        "afford",
+        "how long",
+        "stay in the house"
+      ],
+      "answer": "I'd like to stay 3–6 years but I honestly don't know if I can refinance a $400k mortgage on $72k. If I can't, I'd have to sell.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "overnights",
+      "trigger": [
+        "overnights",
+        "parenting time",
+        "custody",
+        "70/30",
+        "nights"
+      ],
+      "answer": "Kids are with me about 255 nights a year.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "bonus_knowledge",
+      "trigger": [
+        "bonus",
+        "did you know",
+        "September paycheck",
+        "Granite Peak"
+      ],
+      "answer": "He always gets a bonus. He told me last year's was around $40k. His affidavit says none expected — that's not true.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "bonus_knowledge",
+    "house_plan",
+    "overnights"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

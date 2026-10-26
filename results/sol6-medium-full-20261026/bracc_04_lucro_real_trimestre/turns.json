@@ -1,0 +1,86 @@
+[
+  {
+    "label": "s1-work",
+    "seconds": 49.83976884698495,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 92494,
+      "cached_input_tokens": 80512,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2222,
+      "reasoning_output_tokens": 1194
+    },
+    "thread_id": "01a17888-396c-7e91-b5a0-1571f9873fca"
+  },
+  {
+    "label": "s1-work-client1",
+    "seconds": 99.86882748303469,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 109491,
+      "cached_input_tokens": 102400,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6182,
+      "reasoning_output_tokens": 1391
+    },
+    "thread_id": "01a17888-396c-7e91-b5a0-1571f9873fca"
+  },
+  {
+    "label": "s2-work",
+    "seconds": 90.6414629680221,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 172521,
+      "cached_input_tokens": 164096,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4973,
+      "reasoning_output_tokens": 1015
+    },
+    "thread_id": "01a17888-396c-7e91-b5a0-1571f9873fca"
+  },
+  {
+    "label": "s3-work",
+    "seconds": 161.85653338598786,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 307197,
+      "cached_input_tokens": 293632,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 10217,
+      "reasoning_output_tokens": 3181
+    },
+    "thread_id": "01a17888-396c-7e91-b5a0-1571f9873fca"
+  },
+  {
+    "label": "s3-pushback0",
+    "seconds": 9.88131952600088,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 44649,
+      "cached_input_tokens": 43904,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 422,
+      "reasoning_output_tokens": 255
+    },
+    "thread_id": "01a17888-396c-7e91-b5a0-1571f9873fca"
+  },
+  {
+    "label": "review",
+    "seconds": 119.08131164999213,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 289380,
+      "cached_input_tokens": 281088,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6617,
+      "reasoning_output_tokens": 3535
+    },
+    "thread_id": "01a17888-396c-7e91-b5a0-1571f9873fca"
+  }
+]

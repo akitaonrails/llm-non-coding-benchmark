@@ -1,0 +1,4 @@
+shell check /mnt/data: absent
+shell check /home/akitaonrails: absent
+example.com:443: gaierror: [Errno -3] Temporary failure in name resolution
+1.1.1.1:443: PermissionError: [Errno 1] Operation not permitted

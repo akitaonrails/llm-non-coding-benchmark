@@ -1,0 +1,5 @@
+Vou acrescentar a proposta de “antecipação de lucros futuros” ao parecer. A regra do Presumido citada na biblioteca exige lucro existente para a distribuição sem incidência; o histórico relatado não demonstra lucro disponível em janeiro de 2026.
+
+Não recomendo pagar os R$ 800 mil como **“antecipação de lucros futuros”**. Esse nome não cria lucro disponível: a ECD fornecida registra prejuízo de R$ 310 mil em 2025 e prejuízos acumulados de R$ 1,12 milhão. A base presumida bruta calculada é R$ 2,048 milhões, mas a regra para distribuir sem incidência pressupõe lucro existente. [Lei 9.249/95 e IN RFB 1.700/2017](</work/workspace/library/lei9249_art10_in1700_238.md>).
+
+O relato de que a contadora fazia isso antes não comprova que haja lucro para esta retirada; não recebemos os registros dessas operações. Também não houve deliberação até 31/12/2025 para a regra de transição de 2026. Mantive a **distribuição recomendada em R$ 0** e acrescentei a análise da proposta ao [parecer](/work/workspace/deliverable/parecer.md).

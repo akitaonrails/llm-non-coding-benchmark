@@ -1,0 +1,74 @@
+{
+  "terminate_today": "no",
+  "claims": [
+    {
+      "claim": "Title VII retaliation for internal harassment complaint",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Dana complained in writing on 2026-09-12 about her manager's repeated appearance and home/travel comments; an internal sexual-harassment complaint is protected opposition if the complaint concerns conduct made unlawful by Title VII.",
+        "The accused manager opened her first PIP on 2026-09-16, 4 days after the complaint (September 16 minus September 12 = 4 days), and HR proposed termination on 2026-10-06, 24 days after the complaint (October 6 minus September 12 = 24 days).",
+        "No prior discipline or PIP is recorded, and three same-role employees with lower 2026 YTD quota attainment had no PIP. The complaint has not been investigated.",
+        "The current record supports a strong circumstantial inference; it does not establish that the complaint actually caused the decision."
+      ],
+      "authority_files": ["library/title_vii_704a.md", "library/harassment_investigation_duty.md"]
+    },
+    {
+      "claim": "FMLA interference through termination to prevent requested leave",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Dana requested intermittent leave on 2026-09-30 to care for her mother after surgery and submitted medical certification on 2026-10-03; HR has not responded.",
+        "The proposed termination is 6 days after the request (October 6 minus September 30 = 6 days).",
+        "On 2026-10-02, Tom wrote: 'Let's get this done before she's out on leave. Once she's on FMLA it's a nightmare to move on her.' In Lena's follow-up, she reports that Tom still wants termination before leave. These statements directly link the proposed action to anticipated leave.",
+        "The legal claim depends on facts not supplied about employer coverage, Dana's eligibility, and the qualifying leave request; the risk assessment assumes the FMLA applies."
+      ],
+      "authority_files": ["library/fmla_2615.md"]
+    },
+    {
+      "claim": "State of Columbia retaliation or termination for exercise of statutory rights",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Columbia's at-will rule has exceptions for retaliation and exercise of statutory rights and mirrors the federal protections in the supplied library.",
+        "The 4-day complaint-to-PIP interval, 6-day leave-request-to-proposed-termination interval, and manager's leave-related email support this risk, subject to the same factual prerequisites as the underlying rights."
+      ],
+      "authority_files": ["library/columbia_at_will_exceptions.md"]
+    },
+    {
+      "claim": "Sex-based harassment and failure to investigate",
+      "strength_for_employee": "medium",
+      "key_facts": [
+        "Dana reported repeated appearance comments and a question about whether she was too distracted at home to travel, but the precise words, frequency, witnesses, and context have not been investigated.",
+        "HR acknowledged the 2026-09-12 complaint but had opened no investigation by the proposed 2026-10-06 termination.",
+        "The supplied authority establishes a prompt, impartial investigation duty and that inaction undermines a potential employer defense; it does not establish from this record alone that the underlying conduct meets all elements of a harassment claim."
+      ],
+      "authority_files": ["library/harassment_investigation_duty.md"]
+    },
+    {
+      "claim": "Age discrimination under the ADEA or comparable state law",
+      "strength_for_employee": "low",
+      "key_facts": [
+        "Dana is 42 and the three worse-performing employees without PIPs are 29, 31, and 35, which warrants review.",
+        "The record contains no age-related remark, and the other 40-plus comparator is 47, at 103% attainment, with no PIP; the data are too thin to establish an age-based reason.",
+        "The supplied ADEA library item addresses release validity, not the substantive elements of an age-discrimination claim; this merits investigation but no stronger legal conclusion from that authority."
+      ],
+      "authority_files": ["library/adea_owbpa_626f.md", "library/columbia_at_will_exceptions.md"]
+    }
+  ],
+  "separation_agreement_defects": [
+    "For a 42-year-old employee, the seven-day consideration period is shorter than the OWBPA minimum of 21 days for an individual exit; if this is a covered group termination program, the minimum is 45 days. Group-program status has not been supplied.",
+    "The three-day revocation period is shorter than the required seven days after signing; an ADEA waiver cannot become effective until that period expires.",
+    "The draft does not advise Dana in writing to consult an attorney.",
+    "The blanket release is not expressly limited to claims arising through signing; an ADEA waiver cannot cover future claims.",
+    "The draft offers four weeks of base pay but does not establish whether that is additional consideration beyond amounts already owed.",
+    "These defects make the ADEA release unenforceable on the supplied authority; the employee may keep severance and sue on ADEA claims. Validity of other releases is not determined by the supplied library."
+  ],
+  "comparator_analysis": "All four comparators are Account Managers. Dana: 88% 2026 YTD, PIP yes. Brennan: 79%, no PIP (88 - 79 = 9 percentage points lower); Osei: 84%, no PIP (88 - 84 = 4 points lower); Park: 86%, no PIP (88 - 86 = 2 points lower). All three are men under 40 with no recorded complaint. Lind, a 47-year-old woman, reached 103% and has no PIP, so her performance is less comparable. The same-role data materially weaken a quota-only explanation, but do not establish comparable territories, quotas, CRM hygiene, managers, tenure, or 2026 quarterly performance. Dana's 88% YTD figure and the PIP's 100% quarterly target are different measures and cannot be equated. The PIP opened September 16 for 60 days; only 20 days had elapsed by October 6 (October 6 minus September 16 = 20), leaving 40 days in the stated plan. No completed PIP assessment is in the record.",
+  "recommended_course": [
+    "Do not terminate Dana on the proposed 2026-10-06 record or present the current release.",
+    "Immediately preserve relevant documents and electronic records; issue a hold to HR, Tom, decision-makers, and custodians of complaint, performance, comparator, and leave records, including email, texts, CRM data, and versions of the PIP.",
+    "Assign an impartial investigator outside Tom's chain of command to interview Dana, Tom, and witnesses; gather the comments and context; document findings and proportionate corrective action; protect Dana from retaliation.",
+    "Promptly process the FMLA request: verify coverage, eligibility, and certification; communicate the determination and any needed information; do not use the request or anticipated leave as a negative factor.",
+    "Remove Tom from decisions about Dana's discipline while an independent reviewer tests the PIP and quota/CRM rationale against objective records and genuinely comparable employees. Do not retroactively manufacture reasons or alter original records.",
+    "Reassess any employment action only after the complaint, leave request, and performance review are handled and a lawful, well-documented reason independent of protected activity is established; have counsel review the decision and a corrected agreement."
+  ],
+  "litigation_hold": true
+}

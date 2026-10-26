@@ -1,0 +1,45 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "questions": "# Pergunta ao cliente — fechamento de janeiro/2026\n\nNa NF 8812 da Papel & Cia, o item exibido vale R$ 120.000,00, mas o razão registrou R$ 120.000,00 como despesa, R$ 11.100,00 como crédito de PIS/COFINS e R$ 131.100,00 como obrigação com o fornecedor. Qual é o **valor total da NF e o valor efetivamente devido ao fornecedor**: R$ 120.000,00 ou R$ 131.100,00? Se possível, informe o campo “valor total da NF” do documento completo. A resposta determina se o estorno do crédito indevido de R$ 11.100,00 reduz a obrigação com o fornecedor ou aumenta a despesa registrada.\n",
+  "facts": [
+    {
+      "id": "luz",
+      "trigger": [
+        "Luz",
+        "OSCIP",
+        "utilidade pública",
+        "qualificação",
+        "doação"
+      ],
+      "answer": "A Associação Luz é uma ONG do bairro, não tem título nenhum. O presidente conhece o dono.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "brindes",
+      "trigger": [
+        "brindes",
+        "kits",
+        "4410",
+        "campanha"
+      ],
+      "answer": "Vinho e canivete gravado pros 400 melhores clientes. Marketing, ora.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "papel",
+      "trigger": [
+        "8812",
+        "Papel",
+        "uso e consumo",
+        "crédito"
+      ],
+      "answer": "É papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "papel"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

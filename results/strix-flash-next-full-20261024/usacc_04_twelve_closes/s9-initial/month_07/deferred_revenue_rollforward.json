@@ -1,0 +1,65 @@
+{
+  "as_of": "2025-07-31",
+  "contracts": [
+    {
+      "contract": "Trestle renewal (C-026)",
+      "opening": 12000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 10000.0,
+      "note": "12,000.00 remaining after the July release of 2,000.00 covers Aug-Dec 2025 - fully current. Annual renewal billed Jan 2026 expected."
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025 / INV-2250)",
+      "opening": 36000.0,
+      "billed": 0.0,
+      "recognized": 18000.0,
+      "closing": 18000.0,
+      "note": "Amendment No. 1 (documents/month_07/order_form_amendment_C-025.md, effective 2025-07-02, both parties signed) corrected a clerical error: 36,000.00 is an annual platform subscription, 12-month term 2025-02-01 to 2026-01-31; no implementation services ever. Release is now computable: 36,000/12 = 3,000.00/month. Recognized 18,000.00 = 3,000.00 July service month (JE-2507-013) + 15,000.00 ASC 250 prior-period correction for Feb-Jun under-recognition (JE-2507-PC01, disclosed in open_items.md). Closing 18,000.00 covers Aug 2025-Jan 2026 - fully current. U10 CLOSED by the amendment; the Feb-Jun books understated revenue and overstated this balance by 15,000.00."
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027 / INV-2275)",
+      "opening": 12000.0,
+      "billed": 0.0,
+      "recognized": 1500.0,
+      "closing": 10500.0,
+      "note": "12,000.00 billed upfront, documented term 12 months from service start 2025-03-01 (order_form_C-027.md). Release 1,500.00/month. After July, 10,500.00 covers Aug 2025-Feb 2026 - fully current."
+    },
+    {
+      "contract": "Quarry Analytics Co (C-028 / INV-2324)",
+      "opening": 25000.0,
+      "billed": 0.0,
+      "recognized": 2500.0,
+      "closing": 22500.0,
+      "note": "30,000.00 billed 05/01/2025, documented term 12 months from service start 05/01/2025 (order_form_C-028.md). Release 2,500.00/month. After July, 22,500.00 covers Aug 2025-Apr 2026 - fully current."
+    },
+    {
+      "contract": "Saltline Hospitality (C-029 / INV-2349)",
+      "opening": 19800.0,
+      "billed": 0.0,
+      "recognized": 1800.0,
+      "closing": 18000.0,
+      "note": "21,600.00 billed upfront 06/01/2025, documented term 12 months, service start 06/01/2025, auto-renewing (order_form_C-029.md). Release 1,800.00/month. After July, 18,000.00 covers Aug 2025-May 2026 - fully current."
+    }
+  ],
+  "total": {
+    "opening": 104800.0,
+    "billed": 0.0,
+    "recognized": 25800.0,
+    "closing": 79000.0
+  },
+  "reconciliation_to_trial_balance": {
+    "2200 per trial balance (06/30/2025)": 104800.0,
+    "plus billed": 0.0,
+    "less recognized (JE-2507-013)": -10800.0,
+    "less prior-period correction (JE-2507-PC01)": -15000.0,
+    "2200 per trial balance (07/31/2025)": 79000.0
+  },
+  "notes": [
+    "July billings: none advance. All 24 July invoices (INV-2350..INV-2373, total 30,450.00) are monthly subscriptions billed and earned in the same month, collected within the month; no contract liability remains, so they do not appear in this roll-forward.",
+    "Pinecone C-025: U10 closed by Amendment No. 1. Feb-Jun 2025 books understated 4000 and overstated 2200 by 15,000.00; corrected as prior-period entry JE-2507-PC01 with ASC 250 disclosure in month_07/open_items.md. See prior-month roll-forwards for the $0.00-release history.",
+    "Trestle prior-contract line remains CLOSED (0.00) since May - documented service period ended 05/31/2025; it no longer appears.",
+    "All five remaining balances are fully current as of 2025-07-31 (every remaining service month falls within 12 months), so the U6 classification problem (no non-current contract-liability account in the chart) is moot for the first time since February.",
+    "Closing 79,000.00 equals account 2200 net in month_07/trial_balance.json (credits 194,600.00 less debits 115,600.00). Opening 104,800.00 equals the June roll-forward closing."
+  ]
+}

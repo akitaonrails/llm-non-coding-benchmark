@@ -1,0 +1,78 @@
+{
+  "asset_sale_buyer_a_as_drafted": {
+    "ordinary_income": 1070000,
+    "capital_gain": 1372700,
+    "entity_level_tax": 237300,
+    "total_tax": 907740,
+    "net_after_tax": 2192260
+  },
+  "stock_sale_buyer_b": {
+    "ordinary_income": 0,
+    "capital_gain": 2430000,
+    "entity_level_tax": 0,
+    "total_tax": 486000,
+    "net_after_tax": 2364000
+  },
+  "asset_sale_counter_allocation": {
+    "ordinary_income": 820000,
+    "capital_gain": 1622700,
+    "entity_level_tax": 237300,
+    "total_tax": 865240,
+    "net_after_tax": 2234760
+  },
+  "ray_naive_estimate": {
+    "net_after_tax": 2480000
+  },
+  "rate_basis": {
+    "source": "library/capital_gain_rates.md (the only rates permitted): ordinary 37%; long-term capital gain 20%; 3.8% NIIT excluded (active trade or business, material participation assumed - see QUESTIONS.md); no Texas individual income tax."
+  },
+  "assumptions": [
+    "Buyer A's $400,000 covenant allocation is paid directly to Ray at closing (it is Ray's personal covenant under the LOI). If routing differs, numbers change - see QUESTIONS.md.",
+    "Ray sells everything in 2026 (inside the S-corp built-in-gain recognition period, which library cites as the 5 years beginning 1/1/2023, i.e. through 12/31/2027).",
+    "Buyer B's note: 5 annual payments of $100,000 principal + 6% interest on the declining balance (LOI says 'annual principal'); interest total $90,000 is NOT netted into stock_sale_buyer_b figures above - it is separate ordinary income disclosed in memo.md.",
+    "Company cash balance and liability amounts at closing are unknown; figures reflect only the sale proceeds. See QUESTIONS.md."
+  ],
+  "installment_schedule_buyer_b": {
+    "gross_profit_ratio_pct": 85.2632,
+    "closing_year_gain": 2003684.21,
+    "note_years_gain_per_year": 85263.16,
+    "note_interest_total": 90000,
+    "note_interest_tax": 33300,
+    "nominal_total_tax_2026_2031": 519300,
+    "nominal_net_2026_2031": 2420700,
+    "note": "gain ratio = 2,430,000 / 2,850,000; closing-year gain = 2,350,000 x ratio; each note year = 100,000 principal x ratio; interest taxed separately as ordinary income (that treatment is beyond the library - labeled unverified in memo.md)"
+  },
+  "comparisons": {
+    "buyer_B_minus_buyer_A_drafted": 171740,
+    "buyer_B_minus_buyer_A_counter": 129240,
+    "counter_minus_drafted_savings": 42500,
+    "naive_overstatement_vs_drafted_truth": 287740
+  },
+  "second_round_updates": {
+    "new_facts_from_client_round_2": [
+      "Ray is retiring and would sign the 5-year covenant as proposed; he is indifferent to how the $400,000 is labeled as long as the total price is unchanged.",
+      "Buyer B's $500,000 note is confirmed unsecured; Hensley's balance sheet is unknown to Ray (buyer credit quality unverified).",
+      "Hardaway dispute of $9,800 (disputed, unresolved) and unspecified customary warranty obligations are now known liabilities."
+    ],
+    "retiring_seller_variant_buyer_A_counter": {
+      "allocation": {"III_receivables": 200000, "IV_inventory": 150000, "V_equipment": 650000, "VI_covenant": 0, "VII_goodwill": 2100000},
+      "ordinary_income": 420000,
+      "capital_gain": 2022700,
+      "entity_level_tax": 237300,
+      "total_tax": 797240,
+      "net_after_tax": 2302760,
+      "saving_vs_base_counter": 68000,
+      "saving_formula": "400,000 x (37% - 20%); entity BIG unchanged: goodwill min(900,000 BIG, 2,100,000 gain) = 900,000 + equipment 230,000 = 1,130,000 x 21% = 237,300",
+      "condition": "requires Buyer A's written agreement (section 1060 consistency); economic-reality support is Ray's retirement, per library/irc_197_and_noncompete.md; IRS may challenge unrealistic allocations in either direction"
+    },
+    "comparison_after_variant": {
+      "buyer_B_net_after_tax": 2364000,
+      "buyer_A_counter_variant_net_after_tax": 2302760,
+      "buyer_B_advantage": 61240
+    },
+    "buyer_A_liability_tail": {
+      "disclosed": "Hardaway dispute $9,800 (disputed); customary warranty obligations, amount unspecified",
+      "effect": "Buyer A assumes only listed trade payables, so these ride with the entity Ray liquidates and come out of company cash first (estimated net 2,192,260 - 9,800 = 2,182,460 if Hardaway is ultimately paid; warranty unquantified). Tax effect immaterial (worst-case swing 9,800 x 17% = 1,666) and the character of any offsetting loss is not addressed by the library - left open rather than forced. Buyer B assumes all liabilities known and unknown, so stock_sale_buyer_b figures are unchanged; the Hardaway item is a known liability, so disclosure in the reps is required."
+    }
+  }
+}

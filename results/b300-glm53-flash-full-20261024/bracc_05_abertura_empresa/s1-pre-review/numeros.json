@@ -1,0 +1,25 @@
+{
+  "_nota": "Valores conforme parecer.md, atualizado com as respostas do cliente de 25/10/2026 (ver QUESTIONS.md). R$ 1.518,00 = piso previdenciário ADOTADO COMO REFERÊNCIA (salário mínimo 2025); NÃO verificado na biblioteca para 2026 [Q5 sem resposta]. ITBI não devido com margem quantificada (fundamento abaixo) e sujeito ao controle dos 3 primeiros anos.",
+  "itbi": {
+    "devido": false,
+    "base": 420000,
+    "fundamento": "CF art. 156, §2º, I (imunidade na integralização em capital, salvo preponderância de locação), CTN art. 37 (preponderância > 50% da receita; empresa nova: 3 anos seguintes), Tema 796/STF (imunidade limitada ao capital social a integralizar); cf. library/cf156_ctn37_itbi.md. MARGEM QUANTIFICADA (resposta do cliente: aluguel R$ 8.000/mês): locação 8.000 × 12 = R$ 96.000/ano; receita total 1.200.000 + 96.000 = R$ 1.296.000/ano; participação da locação 96.000 ÷ 1.296.000 = 7,41% — para ameaçar a imunidade a locação teria de chegar a mais de R$ 648.000/ano (648.000 ÷ 96.000 = 6,75×), mantida a receita da estética."
+  },
+  "integralizacao_imovel": {
+    "valor_recomendado": 420000,
+    "ganho_capital_pf": 0,
+    "_nota": "Pelo valor da declaração de IR (Lei 9.249/95, art. 23) → sem ganho de capital. Pelos R$ 900.000 (minuta): ganho de capital de R$ 480.000."
+  },
+  "pro_labore_minimo_recomendado_mensal": {
+    "Marina": 0,
+    "Felipe": 1518,
+    "Luana": 0,
+    "_nota": "Estrutura definitiva (25/10/2026). Marina: não é sócia (CC 977 — comunhão universal confirmada, casou 2010, sem pacto) e não pode administrar (Lei 8.112, art. 117, X) — inclusive fora do expediente; R$ 0. Felipe: sócio único e administrador — pró-labore no piso R$ 1.518 [UNVERIFIED para 2026]; INSS segurado 11% = R$ 166,98/mês. Luana: confirmado que não tem moeda para aporte → NÃO é sócia; será contratada e recebe salário de empregada (não pró-labore); forma contratual e encargos de empregada fora da biblioteca [UNVERIFIED]. Arrasto do piso: 1 × R$ 166,98 = R$ 2.003,76/ano (segurado); patronal 20% = R$ 303,60/mês = R$ 3.643,20/ano (fora do Simples)."
+  },
+  "distribuicao_mensal_pretendida": 50000,
+  "irrf_dividendos_2026_estimado_mensal": 0,
+  "_nota_irrf": "Lei 15.270/2025: gatilho de R$ 50.000 por beneficiário/mês, retenção de 10% sobre o total do mês. Único beneficiário possível: Felipe (sócio único) — distribuição possível R$ 35.000/mês ≤ R$ 50.000 → retenção zero, com margem de R$ 15.000/mês. Distribuição a um único beneficiário acima de R$ 50.000/mês (R$ 50.001 já dispara) gera 10% sobre o total do mês. Pagamentos da PJ à Marina não são dividendos (não-sócia) — sem tratamento na biblioteca [UNVERIFIED].",
+  "_nota_distribuicao": "INCONSISTÊNCIA ABERTA (Q6 sem resposta): pretensão familiar de R$ 50.000/mês (R$ 600.000/ano) vs lucro projetado R$ 420.000/ano (R$ 35.000/mês) → déficit de R$ 15.000/mês (R$ 180.000/ano); o pretendido excede o lucro em 42,9% (180.000 ÷ 420.000). TETO pela PJ: R$ 35.000/mês, todo ao sócio único Felipe — a configuração 25.000 + 25.000 caiu com as respostas (Marina não é sócia e não recebe dividendo). Não balanceado de propósito.",
+  "simples_possivel": false,
+  "_nota_simples": "FALSO DEFINITIVO para o plano confirmado pelo cliente (25/10/2026): imóvel integralizado + locação dos 40% pela PJ (R$ 8.000/mês = R$ 96.000/ano = 7,41% da receita total). A vedação (LC 123, art. 17, XV; CNAE 6810-2/02) é pela ATIVIDADE de locação de imóvel próprio — a proporção da receita (7,4%) não a contorna. 8630-5/04 segue excluído (responsável técnico CRO inexistente — Q9 sem resposta). Como o Simples está descartado, 6810-2/02 pode ser registrado como CNAE secundário para exercer a locação. Simples só voltaria com a locação fora da PJ (ou, se verificável na biblioteca, com serviços da locação tributados pelo ISS — ver Q12); regime próprio fora da biblioteca [UNVERIFIED]."
+}

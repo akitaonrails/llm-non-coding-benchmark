@@ -1,0 +1,36 @@
+{
+  "options": {
+    "founders_plan_as_stated": {
+      "entity_level_tax": 37800.0,
+      "founder_tax_priya": 23820.0,
+      "founder_tax_tomas": 23820.0,
+      "payroll_taxes": 12240.0,
+      "total": 97680.0,
+      "assumptions": "The stated plan (LLC + S election, $40,000 salary each, Delaware) is LEGALLY VOID: Tomas is a nonresident alien for 2026 under IRC 7701(b)(3)(A) (118 + 96/3 + 66/6 = 161 < 183; 140 US days needed; client-confirmed pattern of about one-third of the year, ~120 days, gives 163.0 - conclusion robust either way) and IRC 1361(b)(1)(C) bars a nonresident alien S shareholder, so the election is ineffective and the entity is a C corporation. Numbers show that C-corp reality: salary 2x40,000=80,000; entity income 260,000-80,000=180,000; corporate tax 180,000 x 0.21 (21% ASSUMED - rate not in library) = 37,800; after-tax 142,200 distributed 71,100 each; founder tax each = wages 40,000 x 0.24 (24% flat illustrative, NOT in library) = 9,600 + dividend 71,100 x 0.20 (20% qualified-dividend rate ASSUMED, not in library) = 14,220 -> 23,820; payroll 80,000 x 0.153 (15.3% ASSUMED, wage cap not in library, exceeds all amounts) = 12,240 (employer+employee halves both in payroll_taxes; founder_tax = income tax only). TOTAL IS DECEPTIVELY LOW: excludes penalties/interest for the invalid election, NRA withholding on distributions to Tomas (illustrative 30% = 21,330 instead of 14,220), CA corporate franchise tax (statute cited in library, amount not stated), and any 199A deduction (none available to C corp owners). 199A/1361/7701 points per library."
+    },
+    "recommended_llc_partnership": {
+      "entity_level_tax": 3300.0,
+      "founder_tax_priya": 30804.0,
+      "founder_tax_tomas": 30804.0,
+      "payroll_taxes": 39275.1,
+      "total": 104183.1,
+      "assumptions": "California LLC taxed as a partnership (no Delaware). Entity tax = CA annual tax 800 + gross-receipts fee 2,500 for 610,000 revenue in the 500,000-999,999 band (Cal. Rev. & Tax. Code 17941/17942 per library; assumes fee base = total revenue). Partnership itself income-tax-free (default-classification reg not in library - labeled unverified). K-1 each = (260,000 - 3,300)/2 = 128,350. SE tax each = 128,350 x 0.153 (ASSUMED rate, not in library) = 19,637.55; payroll_taxes = 2 x 19,637.55 = 39,275.10. Founder income tax each = 128,350 x 0.24 (flat illustrative, ASSUMED) = 30,804. Deliberately excluded (conservative): half-SE-tax deduction (~2,356.51 tax each), Priya's possible 20% QBI deduction (income ~130,000 below ~200,300 single threshold per IRC 199A library item; 25,670 deduction ~ 6,160.80 tax value; consulting IS an SSTB per library), 0.9% add-on Medicare, standard deductions. With those two benefits total ~= 93,309, below every other option. Tomas's QBI entitlement as an NRA is not addressed in the library (open). Client-confirmed: Tomas works mostly from Monterrey, Priya from San Diego, clients all over the US. Consequences flagged, not quantified: (i) if CA-allocable gross receipts fell to the 250,000-499,999 band the fee would be 900 and founder tax rises (entity 1,700; K-1 each 129,150; SE each 19,759.95; income tax each 30,996; total 103,211.90) - allocation rules not in the library, unverified, base case keeps 2,500; (ii) the US-source portion of Tomas's 50% allocation and NRA withholding mechanics are outside the library (specialist); (iii) other-state registration/nexus from clients all over the US is outside the library. Equity per IRC 721 (Priya tool FMV 120,000 basis 31,000, capital account 120,000) + Tomas 20,000 cash capital + 50% profits interest (Rev. Proc. 93-27 - not taxable at grant; protective 83(b) by Dec 2, 2026 per Rev. Proc. 2001-43 and IRC 83(b))."
+    },
+    "s_corp_if_tomas_becomes_us_resident": {
+      "entity_level_tax": 0.0,
+      "founder_tax_priya": 31200.0,
+      "founder_tax_tomas": 31200.0,
+      "payroll_taxes": 39780.0,
+      "total": 102180.0,
+      "assumptions": "NOT AVAILABLE IN 2026 (IRC 1361(b)(1)(C): Tomas is an NRA; see founders_plan option). Illustrative only, to test the friend's claim in the world where Tomas is a US resident AND compensation is reasonable per Rev. Rul. 74-44 / Watson (library): salary 130,000 each (a 40,000 salary would invite recharacterization of distributions as wages). Wages 260,000 exhaust the 260,000 net -> distributions 0. Entity income tax 0 (S corp pass-through; CA corporate franchise not modeled - amount not in library; CA LLC-style fee treated as not applicable). Payroll 260,000 x 0.153 (ASSUMED) = 39,780. Founder tax each 130,000 x 0.24 (ASSUMED) = 31,200. Per library IRC 199A item: W-2 wages are NOT QBI and distributions are 0, so QBI deduction = 0 - the S corp LOSES the ~6,161 deduction the partnership route may give Priya. vs recommended: +2,003 before partnership-only benefits (half-SE, QBI) that reverse the gap. Conclusion: at 260,000 net the self-employment-tax 'saving' of an S election is approximately zero once compensation is reasonable - and the structure is void today regardless."
+    },
+    "delaware_llc_ca_foreign_registration": {
+      "entity_level_tax": 3300.0,
+      "founder_tax_priya": 30804.0,
+      "founder_tax_tomas": 30804.0,
+      "payroll_taxes": 39275.1,
+      "total": 104183.1,
+      "assumptions": "Same partnership structure and same federal numbers as recommended_llc_partnership, but formed in Delaware and registered as a foreign LLC in California. Per library (Cal. Rev. & Tax. Code 17941/17942/23153; Cal. Corp. Code 17708.02): a Delaware LLC doing business in California pays the SAME 800 annual tax and gross-receipts fee (2,500 at 610,000 revenue) and must register or lose access to California courts plus penalties. Federal figures identical: entity CA burden 3,300; K-1 each (260,000-3,300)/2 = 128,350; SE 15.3% x 128,350 x 2 = 39,275.10; income tax 24% (ASSUMED) x 128,350 x 2 = 61,608. Total shown EXCLUDES Delaware formation/franchise costs, which are NOT in the library and cannot be quantified here - the true total is strictly higher than the CA-formed option. Rejected solely for that reason (plus duplicated registration/compliance); nothing else differs. Client facts (Tomas mostly Monterrey-based, clients all over the US) change nothing here: the CA-fee-band sensitivity described in the recommended option applies identically, and DE adds a second registration to maintain."
+    }
+  }
+}

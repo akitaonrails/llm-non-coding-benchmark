@@ -1,0 +1,24 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 1742.75109125601,
+  "controller_wait_seconds": 73.00685102600255,
+  "model_turn_seconds": 1669.6161456330155,
+  "turns": 4,
+  "released_facts": [
+    "liabilities",
+    "noncompete_term",
+    "note_security"
+  ],
+  "usage": {
+    "input_tokens": 2447033,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 207522,
+    "reasoning_output_tokens": 153459
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

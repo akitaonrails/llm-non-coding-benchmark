@@ -1,0 +1,43 @@
+# STATUS — Meridian Robotics / Zhao non-compete engagement
+
+**Status: COMPLETE WITH OPEN ITEMS**
+
+Updated October 25, 2026, after the client's written response to `QUESTIONS.md`. The response did not change any conclusion or probability; it converted two assumptions into confirmed facts and confirmed several others.
+
+## Delivered
+- `memo.md` — Question Presented; Brief Answer (probabilities with shown arithmetic in §IV.F); Facts; Analysis (law-applicability via §925 and Restatement §187; enforceability under Texas and California law; §925; §16600.5; AB 1076/§16600.1; remedies and fee exposure; strongest argument each side; **new §IV.I** on the client's "don't put it in writing" request); Recommendation (do not file; do not send any §8 demand; rely on §10; remediate AB 1076); authority-hygiene appendix.
+- `citations.json` — 21 entries, every one mapped to a file in `library/INDEX.md`; statuses checked (`in force` / `superseded` / `vacated`; includes superseded *Campbell*/General Commercial Packaging, vacated FTC rule, and the internal memos flagged as non-authority). Unchanged by the client response; no new authority added.
+- `QUESTIONS.md` — closed out: records the client's answers and lists the remaining unknowns as unknowns; nothing re-asked.
+
+## Client response incorporated (Oct. 25, 2026)
+- **Confirmed:** Agreement is the non-negotiated standard form, same-day signature ("nobody negotiates") — the former no-individual-counsel assumption is now a confirmed fact; the §925(e) exception is analytically unavailable.
+- **Confirmed:** Austin trips twice only (onboarding week March 2024; offsite October 2025); otherwise Oakland.
+- **Confirmed:** AB 1076 notices never sent; ticket LO-233 closed as "won't do."
+- **Confirmed:** No evidence Zhao took anything; employer's objection is "the competing itself" — the interest no available remedy can deliver against a California employee.
+- Memo assumption set renumbered (now A1–A4); former A2 (no individual counsel) and A4 (no misuse) became confirmed facts; former A3 (confidential-information delivery) is now A2 and remains an assumption; former A5 (judgmental probabilities) is now A3; former A6 narrowed by the client's "No" is now A4. Cross-references updated throughout.
+
+## Unknowns — flagged explicitly (client has no additional information; not re-asked)
+1. California-employee population holding §8-type clauses (AB 1076/§17200 exposure sizing stays qualitative).
+2. Zhao's actual consideration (confidential materials delivered, training, equity) — Texas §15.50(a) ancillary showing (memo Assumption A2); moot in result because we recommend against filing.
+3. Zhao's final-period access logs / device-return status — internal ops follow-up recommended (preservation first).
+4. Written assurances beyond the resignation email — none provided.
+5. Meridian's California market footprint.
+6. Meridian's state of incorporation (memo Assumption A1).
+7. *Westbrook* en banc disposition — authority remains unverified and uncited.
+
+## Interpretive questions the library cannot resolve (flagged in memo, not asserted)
+(a) whether §16600.1(b)'s February 14, 2024 notice deadline reaches employees hired after that date (Zhao signed 2024-03-04); (b) intensity of §16600.5's application to out-of-state filings/demand letters; (c) §17200 remedy amounts; (d) trade-secret statutory scheme; (e) enforceability of §9 non-solicitation under California law; (f) employer-side fee exposure under Tex. §15.51 (library text silent).
+
+## Dollar figures
+Not computable from the client file (no fee/comp/penalty data). The memo shows the exposure structure and the ~6% effective-restraint / 30–60% new-fee-exposure probabilities with arithmetic (§IV.F).
+
+## Professional-responsibility note
+The client asked counsel to avoid memorializing the AB 1076 failure. Handled in memo §IV.I: privileged analysis retains the facts; no new non-privileged operational writings will be created; existing records (LO-233) are not to be altered, destroyed, or "lost," and production/answers must be accurate if reached in any action or inquiry.
+
+## Not relied on (per contract standards)
+- *Calderon* and *Westbrook* (firm memo-bank cases) — not in library, unverified, not cited.
+- *Campbell* (1987) and *General Commercial Packaging* (1997) — superseded by *Edwards*; not cited.
+- FTC Non-Compete Rule — vacated nationwide (*Ryan LLC v. FTC*); never took effect.
+- *Light v. Centel* — modified by *Sheshunoff*; cited nowhere (only *Sheshunoff* is used).
+
+**Engagement remains COMPLETE WITH OPEN ITEMS**; the open items are refinements and internal (non-counsel) fact-gathering, none of which changes the recommendation not to sue.

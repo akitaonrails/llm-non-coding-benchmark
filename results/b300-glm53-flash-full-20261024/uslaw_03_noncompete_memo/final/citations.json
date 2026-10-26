@@ -1,0 +1,122 @@
+[
+  {
+    "cite": "Cal. Bus. & Prof. Code \u00a716600 (as amended by SB 699, eff. Jan. 1, 2024)",
+    "library_file": "cal_bpc_16600.md",
+    "proposition": "\u00a716600(a) voids every contract by which anyone is restrained from engaging in a lawful profession, trade, or business, to that extent; \u00a716600(b)(1) (declaratory of existing law) requires a broad reading that voids the application of any noncompete agreement in the employment context and any noncompete clause in an employment contract, no matter how narrowly tailored, absent a statutory exception. If California law governs, \u00a78 of the Zhao agreement is void, and so is \u00a79 (non-solicit) by the statute's broad text.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Cal. Bus. & Prof. Code \u00a716600.5 (eff. Jan. 1, 2024)",
+    "library_file": "cal_bpc_16600_5.md",
+    "proposition": "Void contracts are unenforceable regardless of where and when signed (\u00a716600.5(a)); an employer shall not attempt to enforce a void contract regardless of whether the contract was signed and the employment maintained outside California (\u00a716600.5(b)); an employer shall not enter into a contract containing such a provision (\u00a716600.5(c)); entering or attempting to enforce is a civil violation (\u00a716600.5(d)); the employee may sue for injunctive relief and/or actual damages, and a prevailing employee recovers reasonable attorney's fees and costs (\u00a716600.5(e)). This is the operative liability created by filing in Travis County.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Cal. Bus. & Prof. Code \u00a716600.1 (eff. Jan. 1, 2024)",
+    "library_file": "cal_bpc_16600_1.md",
+    "proposition": "It is unlawful to include or require a noncompete clause that does not satisfy an exception (\u00a716600.1(a)); employers had to individually notify current and covered former employees by February 14, 2024 that such clauses are void (\u00a716600.1(b)); a violation is an act of unfair competition under \u00a717200 (\u00a716600.1(c)). Zhao's own duty never attached (offer letter 2024-02-28 and signing 2024-03-04 postdate the deadline), but the LO-233 notice gap as to other California employees is a separate compliance flag.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Cal. Lab. Code \u00a7925",
+    "library_file": "cal_lab_925.md",
+    "proposition": "An employer may not require an employee who primarily resides and works in California, as a condition of employment, to agree to adjudicate outside California a claim arising in California or to forfeit the substantive protection of California law (\u00a7925(a)); such a provision is voidable at the employee's election, whereupon the matter is adjudicated in California and California law governs (\u00a7925(b)); the carve-out requires the employee be in fact individually represented by legal counsel in negotiating the forum/choice-of-law terms (\u00a7925(e)); the statute applies to contracts entered into on or after January 1, 2017 (\u00a7925(f)). \u00a714 of the Zhao agreement is voidable at his election.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Edwards v. Arthur Andersen LLP, 44 Cal.4th 937 (2008)",
+    "library_file": "edwards_v_arthur_andersen.md",
+    "proposition": "The California Supreme Court holds that \u00a716600 voids non-competition agreements in the employment context unless they fall within a statutory exception, and rejects the Ninth Circuit's 'narrow restraint' exception: noncompetes are invalid even if narrowly drawn. It disapproves Campbell v. Board of Trustees and General Commercial Packaging to the extent inconsistent.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Campbell v. Board of Trustees of Leland Stanford Junior University, 817 F.2d 499 (9th Cir. 1987)",
+    "library_file": "campbell_v_stanford_1987.md",
+    "proposition": "Former Ninth Circuit authority applying a 'narrow restraint' exception under which a restraint barring an employee from only a small or limited part of the business does not violate \u00a716600. That reasoning was rejected by the California Supreme Court in Edwards v. Arthur Andersen (2008) and is not California law; do not build on it.",
+    "status_checked": "superseded \u2014 see Edwards (2008)"
+  },
+  {
+    "cite": "General Commercial Packaging, Inc. v. TPS Package Engineering, Inc., 126 F.3d 1131 (9th Cir. 1997)",
+    "library_file": "general_commercial_packaging_1997.md",
+    "proposition": "Former Ninth Circuit authority upholding a contractual provision as a 'narrow restraint' not barred by \u00a716600; disapproved in Edwards (2008). No longer citable in Meridian's favor.",
+    "status_checked": "superseded \u2014 see Edwards (2008)"
+  },
+  {
+    "cite": "FTC Non-Compete Clause Rule, 16 C.F.R. Part 910 (89 Fed. Reg. 38342, May 7, 2024)",
+    "library_file": "ftc_noncompete_rule_16cfr910.md",
+    "proposition": "The Rule would have declared most worker noncompete clauses an unfair method of competition and required notice to workers; it was set aside nationwide in Ryan LLC v. FTC, the FTC voted in September 2025 to dismiss its appeal and accede to vacatur, and it never took effect. It is neither an obstacle to the state-law analysis nor a basis to enforce \u00a78.",
+    "status_checked": "vacated \u2014 see Ryan LLC v. FTC"
+  },
+  {
+    "cite": "Ryan LLC v. Federal Trade Commission, 739 F. Supp. 3d 496 (N.D. Tex. 2024)",
+    "library_file": "ryan_llc_v_ftc.md",
+    "proposition": "The court held the FTC lacked substantive rulemaking authority under \u00a76(g) of the FTC Act to promulgate the Non-Compete Rule and that the Rule was arbitrary and capricious, setting it aside with nationwide effect; the FTC's Fifth Circuit appeal was voluntarily dismissed in September 2025. Confirms the vacatur that removes any federal overlay from this dispute.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Tex. Bus. & Com. Code \u00a715.50(a), \u00a715.51(b)-(c), \u00a715.52",
+    "library_file": "tex_bcc_15_50.md",
+    "proposition": "A covenant not to compete is enforceable only if ancillary to or part of an otherwise enforceable agreement and reasonable as to time, geographical area, and scope of activity, imposing no greater restraint than necessary to protect the promisee's goodwill or other business interest (\u00a715.50(a)); the promisee bears that burden when the agreement's primary purpose is personal services (\u00a715.51(b)); unreasonable limitations must be reformed to the extent necessary and enforced as reformed, without damages for pre-reformation breach (\u00a715.51(c)); \u00a715.51's procedures and remedies are exclusive and preempt other criteria (\u00a715.52). Governs \u00a78 if Texas law applies.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Alex Sheshunoff Management Services, L.P. v. Johnson, 209 S.W.3d 644 (Tex. 2006)",
+    "library_file": "sheshunoff_v_johnson.md",
+    "proposition": "A covenant not to compete in an at-will employment agreement may be enforceable where the employer's promise (e.g., to provide confidential information) is later performed, modifying Light v. Centel Cellular Co. of Texas to the extent Light required the consideration to be given at the time of agreement; the core inquiry is reasonableness under \u00a715.50. Supports Meridian's ancillarity showing if confidential information was in fact furnished over Zhao's tenure.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Light v. Centel Cellular Co. of Texas, 883 S.W.2d 642 (Tex. 1994)",
+    "library_file": "light_v_centel_1994.md",
+    "proposition": "Held a covenant not to compete must be ancillary to an otherwise enforceable agreement, with the consideration given and covenant designed to enforce the return promise at the time of agreement. Its timing requirement was modified by Sheshunoff (2006); it must not be cited for the proposition that a unilateral at-will promise cannot support a covenant.",
+    "status_checked": "modified \u2014 see Sheshunoff (2006)"
+  },
+  {
+    "cite": "Marsh USA Inc. v. Cook, 354 S.W.3d 764 (Tex. 2011)",
+    "library_file": "marsh_usa_v_cook.md",
+    "proposition": "Stock-option consideration reasonably related to the employer's interest in protecting goodwill can support a covenant not to compete; the Court rejected a narrow 'give rise' requirement. Broadens the ancillarity/consideration path (relevant if Zhao received equity).",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "DeSantis v. Wackenhut Corp., 793 S.W.2d 670 (Tex. 1990)",
+    "library_file": "desantis_v_wackenhut.md",
+    "proposition": "Applying Restatement (Second) of Conflict of Laws \u00a7187, the Texas Supreme Court refused to apply a Florida choice-of-law clause to a noncompete for an employee working in Texas, because the state with the materially greater interest had a fundamental contrary policy. The principle is symmetrical and is Meridian's own best authority \u2014 applied to these facts (California resident, California work location, California competitor) it cuts against Texas law's application.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Nedlloyd Lines B.V. v. Superior Court, 3 Cal.4th 459 (1992)",
+    "library_file": "nedlloyd_v_superior_court.md",
+    "proposition": "California follows Restatement \u00a7187: a contractual choice of law is enforced if the chosen state has a substantial relationship to the parties, unless the chosen law is contrary to a fundamental policy of California and California has a materially greater interest in the determination of the issue.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Application Group, Inc. v. Hunter Group, Inc., 61 Cal.App.4th 881 (1998)",
+    "library_file": "application_group_v_hunter.md",
+    "proposition": "California had a materially greater interest in applying \u00a716600 to a Maryland employer's noncompete against an employee recruited to work for a California employer; the Maryland choice-of-law clause did not control, and California's policy against noncompetes is 'fundamental'. Analogical support for the \u00a7187(2)(b) analysis (posture differs: there the employee was recruited to a California employer).",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Advanced Bionics Corp. v. Medtronic, Inc., 29 Cal.4th 697 (2002)",
+    "library_file": "advanced_bionics_v_medtronic.md",
+    "proposition": "In parallel California/Minnesota noncompete litigation, the Court held California courts should generally not enjoin a party from pursuing litigation in another state's courts (reversing a TRO), cautioning against interstate forum-conflict tactics; it does not retreat from \u00a716600. A 'race to the courthouse' is not a reliable strategy for either side.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Ixchel Pharma, LLC v. Biogen, Inc., 9 Cal.5th 1130 (2020)",
+    "library_file": "ixchel_v_biogen.md",
+    "proposition": "A rule of reason applies to \u00a716600 challenges in business-to-business contracts only; the Court distinguished the employment context, where Edwards governs and noncompetes are void. Zhao is an employee, so Ixchel offers Meridian no comfort.",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Restatement (Second) of Conflict of Laws \u00a7187(2)",
+    "library_file": "restatement_187.md",
+    "proposition": "The law of the state chosen by the parties will be applied unless (a) the chosen state has no substantial relationship to the parties or transaction and no other reasonable basis for the choice, or (b) application of the chosen law would be contrary to a fundamental policy of a state with a materially greater interest in the issue which, under \u00a7188, would be the state of the applicable law absent an effective choice. Principle (2)(b) is adopted by both Texas (DeSantis) and California (Nedlloyd).",
+    "status_checked": "in force"
+  },
+  {
+    "cite": "Tex. Civ. Prac. & Rem. Code \u00a717.042; Michiana Easy Livin' Country v. Holten, 168 S.W.3d 777 (Tex. 2005) (practice note)",
+    "library_file": "tx_jurisdiction_note.md",
+    "proposition": "A forum-selection clause consenting to Travis County generally supplies consent to personal jurisdiction; but if \u00a714 is voided under Cal. Lab. Code \u00a7925 at the employee's election, the Texas court needs independent minimum contacts, and two short business trips to Austin plus a contract with a Texas employer may or may not suffice. An injunction entered in Texas would in any event face non-recognition in California on public-policy grounds for the noncompete.",
+    "status_checked": "in force"
+  }
+]

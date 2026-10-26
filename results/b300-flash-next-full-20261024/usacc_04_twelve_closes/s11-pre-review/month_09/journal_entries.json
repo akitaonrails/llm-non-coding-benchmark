@@ -1,0 +1,180 @@
+[
+  {
+    "ref": "JE-2025-09-01",
+    "date": "2025-09-01",
+    "memo": "September monthly subscription invoices INV-2398..INV-2421 (24 lines, 30,450.00) as issued by the billing system. Includes INV-2409 1,800.00 to Alder Studios LLC (C-012), which cancelled effective 2025-08-31 (month_08 email; open item 16) \u2014 billed in error, credited in full by JE-2025-09-02 (revenue_policy_memo #3; ASC 606-10-25-1: no contract for September, no performance). C-018 Alder Studios Inc (900.00) is a different, continuing customer and stays billed",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-09-02",
+    "date": "2025-09-06",
+    "memo": "Credit memo \u2014 INV-2409 (1,800.00) issued 09/01 to C-012 Alder Studios LLC after its cancellation effective 2025-08-31. Customer dispute email 2025-09-06 (documents/month_09/email_dispute_C-012.txt): 'We will not be paying this. Please issue a credit and stop.' No contract in September (ASC 606-10-25-1), no performance, no consideration expected; policy memo #3: invoices issued in error on cancelled contracts are credited. Not collected, never becomes A/R aging; net September recurring revenue 30,450.00 \u2212 1,800.00 = 28,650.00 = 23 customers (open items 16 and 17). Current-period event \u2014 no prior-period correction",
+    "lines": [
+      {
+        "account": "4000",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-09-03",
+    "date": "2025-09-01",
+    "memo": "Vireo Clinics PBC (C-030) INV-2422 \u2014 annual subscription 27,000.00 billed upfront per signed order form (documents/month_09/order_form_C-030.md), service start 2025-09-01, term 12 months to 2026-08-31, auto-renewing, MSA v3.2 (not in file \u2014 open item 18). Billed before performance = contract liability (ASC 606-10-45-2); released 1/12 monthly per revenue_policy_memo #1",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 27000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2200",
+        "debit": 0.0,
+        "credit": 27000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-09-04",
+    "date": "2025-09-30",
+    "memo": "September deferred-revenue releases 13,050.00: Trestle renewal 2,000.00 (9/12, open item 3) + Marigold 1,500.00 (7/12, item 1) + Quarry 2,500.00 (5/12, item 13) + Saltline 1,800.00 (4/12, item 14) + Pinecone 3,000.00 (8/12, item 15, per Amendment No. 1) + Vireo 2,250.00 (1/12 service start 2025-09-01, item 18; 27,000.00/12 = 2,250.00)",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 13050.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 13050.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-09-05",
+    "date": "2025-09-26",
+    "memo": "September cash receipts 55,650.00 (documents/month_09/cash_receipts.csv): 23 recurring ACH deposits 28,650.00 (09/20\u201309/26, one per valid invoice \u2014 INV-2409 not collected, credit memo JE-2025-09-02) + Vireo Clinics PBC wire 27,000.00 (09/15, applied to INV-2422). Matched 1:1 by name+amount to the 24 bank deposit rows; all September billings collected in-month; no opening A/R collected (open item 7)",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 55650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 55650.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-09-06",
+    "date": "2025-09-10",
+    "memo": "September vendor bills per documents/month_09/vendor_bills.csv, 25,930.00: AWS 10,880.00 -> 5000 (Aug 10,760.00, +120.00 third consecutive step, usage variance \u2014 item 11); WeWork 7,200.00 -> 5100; Notion/Slack/GitHub 1,460.00 -> 5200; Google Ads 3,650.00 -> 5300 (Aug 3,600.00, +50.00); Gusto fees 240.00 + Harbor Law LLP 2,500.00 -> 5400. Harbor Law returns on the quarterly cycle (bills 03/09, 06/09, 09/09 \u2014 pattern confirmed, item 2 closed this month)",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 10880.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5200",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5300",
+        "debit": 3650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5400",
+        "debit": 2740.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 25930.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-09-07",
+    "date": "2025-09-10",
+    "memo": "September vendor bills paid by ACH 09/05\u201309/10 \u2014 all six traced to bank withdrawals (AWS, WeWork, Gusto fees, Notion/Slack/GitHub, Harbor Law LLP 2,500.00, Google Ads); total 25,930.00",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 25930.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 25930.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-09-08",
+    "date": "2025-09-25",
+    "memo": "September payroll per documents/month_09/payroll_register.json: gross 54,404.00 (6000) + employer taxes & benefits 5,076.00 (6100) = employer cost 59,480.00 paid in cash \u2014 bank legs 09/25 GUSTO NET PAY 48,200.00 + GUSTO TAX 11,280.00. Register identical to May/June/July/August for the fifth consecutive month (9 employees) \u2014 observation only; withholdings 6,204.00 remit in-month, no residual liability",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 59480.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-09-09",
+    "date": "2025-09-30",
+    "memo": "Monthly depreciation: computer equipment 64,000.00 / 36-month straight line = 1,777.78 (unchanged since January; accumulated depreciation 35,555.24 -> 37,333.02 after 9 months; rounding of the 1,777.7777 periodic charge settles at the end of the useful life)",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "case": "bracc_02_escolha_regime",
+  "questions": "# Perguntas ao cliente (Vértice Engenharia Consultiva Ltda.)\n\nResponda numerando P1–P7. As respostas refinam os números; o ranking Simples < Presumido < Real não depende delas.\n\n- **P1.** Vocês conseguem confirmar (ou enviar print do Simples Nacional/DAS mensal) a alíquota efetiva aplicada à parcela de **obras com materiais (Anexo IV)** nos últimos meses? A tabela do Anexo IV não está na biblioteca e usei estimativa sinalizada (~7,63% efetiva → DAS-IV ≈ R$ 48.060).\n- **P2.** Em que mês a RBT12 de 12 meses cruzou **R$ 3,6 mi** (sublimite)? Assumi que já em 2025, com excesso ≤ 20% → ISS fora do DAS desde jan/2026. Confirma?\n- **P3.** A receita 2026 pode estourar **R$ 4,8 mi** (carteiras/contratos novos, reajustes)? Se sim, a exclusão obrigatória e seus efeitos retroativos precisam de verificação em fonte oficial (regra do art. 26 não está na biblioteca).\n- **P4.** Qual a alíquota de **RAT** e o **FAP** da empresa? Usei o total típico de ~28% de encargos patronais fora do Simples.\n- **P5.** Existe rateio contábil da folha entre **obras** e **serviços de consultoria**? Usei proporcional à receita (15% da folha → obras), para a CPP do Anexo IV.\n- **P6.** As licenças **CAD/BIM (TopSoft, R$ 200 mil)** são contratos de assinatura/serviço ou aquisição definitiva, e são usadas diretamente na execução dos projetos (essencialidade)? Isso sustenta ou fragiliza o crédito no Real.\n- **P7.** A Prefeitura de SP cobra ISS sobre as **obras com materiais** (e sobre qual base — valor total ou materiais excluídos)? A regra não está na biblioteca; não apliquei ISS sobre os R$ 630 mil de obras.\n\n# PERGUNTAS.md\n\nAs perguntas ao cliente estão em `QUESTIONS.md` (mesma pasta). Ver P1–P7.\n",
+  "facts": [
+    {
+      "id": "obra_pct",
+      "trigger": [
+        "obra",
+        "empreitada",
+        "materiais",
+        "EPC",
+        "percentual"
+      ],
+      "answer": "Uns 15% do faturamento é obra pequena com material; o resto é consultoria.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "creditos",
+      "trigger": [
+        "uso e consumo",
+        "creditável",
+        "mobiliário",
+        "veículos",
+        "administrativo"
+      ],
+      "answer": "Dos R$ 1,4 mi, uns R$ 500 mil são móveis, carros e papelaria. O resto é insumo de obra e software.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "lucro",
+      "trigger": [
+        "lucro contábil",
+        "margem",
+        "lucro real projetado"
+      ],
+      "answer": "Margem antes de imposto uns 18%.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "obra_pct"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,13 @@
+# Questions to the client — from the January 2025 close
+Prepared by the Controller. These concern prior-period balances for which no supporting detail exists in the client file (see `deliverable/month_01/open_items.md`).
+
+**Client response (received after the January close):** "For questions not answered above, the client has no additional information." — i.e., **none of the six questions below produced new evidence.** They are closed as questions; each unknown is flagged explicitly in `deliverable/month_01/open_items.md` and will only be revisited in another month's close on the basis of *new* documents, not by re-asking.
+
+| # | Subject | Client's information received? | Status |
+|---|---|---|---|
+| 1 | Identity/term/release schedule of the $24,000.00 opening deferred revenue not explained by `note_opening_deferred.md` | No | Unknown — held unreleased (see open_items §1) |
+| 2 | Aging/customer/invoice detail for opening A/R $92,650.00 | No | Unknown — collectability unassessed (open_items §2) |
+| 3 | What opening prepaid $9,600.00 covers and its amortization | No | Unknown — not amortized (open_items §3) |
+| 4 | Vendor/invoice detail for opening A/P $17,420.00 | No | Unknown — unvouched (open_items §4) |
+| 5 | Fixed-asset schedule behind the $1,777.78/month depreciation | No | Unknown — checklist amount applied as directed (open_items §6d) |
+| 6 | Year-close convention for the unclosed 2024 income-statement accounts | No | Controller decision documented (open_items §5) |

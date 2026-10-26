@@ -1,0 +1,9 @@
+{
+  "mes": "2026-02",
+  "status": "BLOQUEADO — NÃO APURADO. Sem razão/balancete e sem documentos fiscais de fevereiro/2026 no arquivo do cliente; o cliente informou não ter informação adicional. Preencher com zeros seria inventar fato.",
+  "debito": null,
+  "creditos": null,
+  "estornos": null,
+  "a_recolher": null,
+  "retificacoes": "Apuração de fevereiro também deve incluir eventual estorno de crédito de PIS/COFINS sobre uso e consumo administrativo, se houver (library/pis_cofins_uso_consumo.md). Itens de janeiro já fechados em mes_01/pis_cofins.json (a recolher 79.883,00)."
+}

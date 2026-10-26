@@ -1,0 +1,48 @@
+{
+  "case": "uslaw_04_litigation_sequence",
+  "questions": "# QUESTIONS FOR CLIENT — Session 1\nAnswers will sharpen the conversion-fee line, the J-4533 dispute, and the covenant's timeline. Each question states why it matters.\n\n1. **Per-hire compensation.** What is the first-year annualized compensation of Priya S., Luis F., Keisha B., Anne O., and Victor H. at Pinecrest (offer letters, payroll, or any source), and what is the source of the $64,000 \"average\" used in the damages summary? *Why: the conversion fee is 25% of each hire's actual first-year comp; an average is an assumption, and if actuals are higher (note Schedule 1 annualized bill rates as an outer bracket: RN $191,360, LPN $141,440, CNA $91,520), the claim grows materially; if lower, we must not over-purchase the claim in a demand our numbers contradict.*\n\n2. **Invoice issue/receipt dates.** When was each of J-4411, J-4452, J-4490, J-4533, and J-4571 issued and received by Pinecrest? *Why: the \"deemed accepted\" argument (§2 15-day window) depends on receipt dates — especially for J-4533, where the July 9 dispute is only useful to them if it was timely.*\n\n3. **The 6-minute call.** Marcus Bell's text \"call me\" of May 14 was followed by a 6-minute call with Hanna Lindqvist. What was said on it (and on any other calls about the Priya/Luis/Keisha transitions)? *Why: that call may either create implied-waiver/estoppel exposure on three of the five hire claims or contain Juniper's contemporaneous statement of the fee position.*\n\n4. **Waivers.** Besides the February 11, 2026 email (Rosa M. and Tay W. only), has Juniper given **any other** written or oral waiver of conversion fees, to anyone, at any time? *Why: we must not assert a demand our own file or later discovery contradicts.*\n\n5. **Audit.** What is the status/output of Pinecrest's \"padded shifts\" audit announced July 9? What documentation supports the June invoice (timesheets, request forms)? *Why: J-4533 ($74,800 plus $2,144.27 interest) is the one contested invoice; we need the actual documentation before the arbitration filing.*\n\n6. **Term status.** Is the Agreement still in term (auto-renewing), and has either party given or discussed a 60-day termination notice? What is the current monthly staffing volume? *Why: the §3 conversion covenant runs through the term plus 12 months; the timeline drives whether future hires are also protected and how the damages accrue.* *Also:* what was billed/delivered after July 2026, if anything?\n\n7. **Work performed under the disputed invoice.** For June 2026 specifically, is there anything in Juniper's internal QA of timesheets that would flag adjusted or double-entered shifts before Pinecrest makes its case? *Why: better we find a problem in the $74,800 before Pinecrest does; we will not assert the invoice as undisputed.*\n\n8. **\"Corporate mandate\" background.** Any communications from Pinecrest before/after the May 2 \"We'll pull back on agency use\" email indicating a termination of the Agreement or a commitment to continue ordering (e.g., \"we'll finish out the current requests\")? *Why: it shores up the account-stated/accepted-work position and clarifies that the hired personnel transitioned under, not in place of, billed services.*\n",
+  "facts": [
+    {
+      "id": "feb11",
+      "trigger": [
+        "February 11",
+        "waived",
+        "one-off",
+        "Rosa",
+        "Tay",
+        "did anyone consent"
+      ],
+      "answer": "Marcus: Yeah… I waived the fee for Rosa and Tay in February. Just those two. I didn't think it was a big deal. I never agreed to the other five.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "exhibit_c",
+      "trigger": [
+        "Exhibit C",
+        "arbitration",
+        "dispute resolution",
+        "AAA"
+      ],
+      "answer": "Dolapo: There's an arbitration exhibit? Our old lawyer used a template. Nobody read it. Does that kill us?",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "padded",
+      "trigger": [
+        "padded",
+        "J-4533",
+        "audit",
+        "hours"
+      ],
+      "answer": "Dolapo: Two shifts were double-entered in June, about $3,100. The rest is legit.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "feb11",
+    "exhibit_c",
+    "padded"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

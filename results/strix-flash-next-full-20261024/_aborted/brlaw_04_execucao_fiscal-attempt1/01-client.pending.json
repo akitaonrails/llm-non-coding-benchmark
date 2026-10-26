@@ -1,0 +1,48 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "questions": "# Perguntas ao cliente — Sessão 1\n\nAs respostas NÃO travam a exceção de pré-executividade (que se prova com a CDA e o resumo do PAF), mas são necessárias para as peças seguintes e para conferir os valores.\n\n1. **DARFs:** Vocês têm os DARFs originais/comprovantes dos pagamentos de R$ 61.000,00 (29/01/2021, 4T/2020) e R$ 84.000,00 (30/04/2021, 1T/2021)? O relatório de acompanhamento do processo administrativo informa se esses valores foram **baixados/deduzidos** do principal da CDA (R$ 125.320,00 e R$ 157.040,00) ou se há cobrança em duplicidade?\n2. **DCTFs:** Vocês têm acesso às DCTF e à DIPJ/ECF dos 4 trimestres (3T/2020 a 2T/2021)? (Prova da \"DCTF zerada\" e do valor declarado a menor — essencial para fixar a regra decadencial de cada trimestre.)\n3. **Citação:** O contrato registra citação em 14/09/2026, mas o mandado para a Rua das Pedras, 100 devolvido negativo é de 28/09/2026. Como a empresa foi citada em 14/09 (postal? edital? outra pessoa)? Houve citação de algum sócio? (Releva para nulidade de citação e cômputo de prazos.)\n4. **Endereço:** A empresa sempre exerceu atividade em Av. Industrial, 2.500, Galpão 7, Cotia/SP desde quando? A mudança (registrada na JUCESP em 12/03/2026 e na RFB em 20/03/2026) foi a única comunicação feita — houve comunicação à prefeitura/alvará? (Para afastar a presunção de dissolução irregular — Súmula 435/STJ — no redirecionamento anunciado.)\n5. **Sócios:** Confirmar se Ana Paula Vieira (retirou-se em 15/06/2023) e Carlos Vieira (40% desde 2012 — ainda é sócio?) tinham poderes de administração nos trimestres 2020–2021, e se há acordo de cessão/documentos da saída da Ana Paula.\n6. **Ciência do AI:** Confirmar a ciência do auto de infração em 10/02/2026 e que **não houve impugnação** no administrativo (o resumo do PAF menciona prazo perdido pelo contador anterior). Houve alguma manifestação/consulta posterior?\n7. **Capacidade de pagamento / bens:** Para as fases de garantia e transação: quais bens a empresa possui (imóveis, máquinas, frota)? Qual o faturamento mensal médio atual? Existe proposta de seguro-garantia/fiança bancária pré-aprovada?\n8. **Origem dos depósitos:** Há documentação capaz de explicar a origem de parte dos depósitos bancários imputados como receita omitida (integralizações, empréstimos, intercompany)? (Defesa de mérito eventual nos embargos.)\n",
+  "facts": [
+    {
+      "id": "opera",
+      "trigger": [
+        "ainda opera",
+        "funciona",
+        "novo endereço",
+        "Cotia",
+        "mudou"
+      ],
+      "answer": "Bruno: Operamos normalmente em Cotia desde março. Mudamos o endereço na Junta e na Receita — tenho os protocolos.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "ana_saida",
+      "trigger": [
+        "Ana",
+        "saiu",
+        "retirou",
+        "2023",
+        "cedeu"
+      ],
+      "answer": "Ana: Saí em junho de 2023, vendi minhas quotas ao Bruno, tudo registrado. Não tenho nada com a empresa desde então.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "impugnacao",
+      "trigger": [
+        "impugnação",
+        "prazo administrativo",
+        "contador",
+        "DRJ"
+      ],
+      "answer": "Bruno: o contador anterior não impugnou o auto. Perdemos o prazo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "opera",
+    "ana_saida",
+    "impugnacao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "bem": "Apartamento (Perdizes)",
+    "natureza": "comum",
+    "valor_total": 1200000,
+    "valor_partilhavel": 1200000,
+    "meacao_fernanda": 600000,
+    "fundamento": "Adquirido em 2017, na constância do casamento, por título oneroso e em nome de ambos — entra na comunhão (CC art. 1.660, I — cc_comunhao_parcial.md).",
+    "controversia": "Nenhuma quanto à natureza (acervo não indica aquisição anterior ao casamento). O financiamento (R$ 300.000) é tratado na linha DIVIDAS; no acordo, Marcelo fica com o imóvel e assume a dívida, compensada na equalização."
+  },
+  {
+    "bem": "Casa em Atibaia (Rua das Hortênsias, 45)",
+    "natureza": "particular",
+    "valor_total": 800000,
+    "valor_partilhavel": 0,
+    "meacao_fernanda": 0,
+    "fundamento": "Herdada do pai de Marcelo em 2019 — formal de partilha anexo (documents/formal_partilha_atibaia.md), matrícula registrada em 11/2019. Herança é bem particular, com os sub-rogados em seu lugar (CC art. 1.659, I — cc_comunhao_parcial.md). Não entra na partilha. O imóvel permanece particular APÓS a reforma de 2021 (R$ 120.000 pagos com verba comum, confirmada pelo cliente): a sub-rogação não converte o particular em comum nem o contrário nos termos da biblioteca.",
+    "controversia": "REAÇÃO do turno do cliente: reforma em 2021 com ~R$ 120.000 de verba comum. A biblioteca NÃO disciplina a reposição de verba comum empregada em bem particular — qualquer direito de Fernanda a essa partida é UNVERIFIED. Tratamento proposto: compensação composicional de 60.000 (metade de 120.000) à Fernanda, na equalização (proposta_acordo.md), documentada como contraprestação, para que não surja doação (ITCMD 4%). Eventuais frutos (aluguéis): sem resposta do cliente; presumo nenhum rendimento."
+  },
+  {
+    "bem": "FGTS — saldo vinculado de Marcelo",
+    "natureza": "comum",
+    "valor_total": 140000,
+    "valor_partilhavel": 140000,
+    "meacao_fernanda": 70000,
+    "fundamento": "Saldo integralmente depositado na constância do casamento: patrimônio comum e partilhável, ainda que o saque fique diferido; o art. 1.659, VI (proventos do trabalho) não afasta a partilha de valores já incorporados (STJ REsp 1.399.199/RS, 2ª Seção, 2017 — stj_fgts_quotas_previdencia.md).",
+    "controversia": "A proposta oposta diz que o FGTS 'fica com ele porque é dele' — juridicamente incorreto, porém em FAVOR do cliente. Recomendo corrigir e conceder a meação (R$ 70.000) no acordo, para segurança contra reforma em juízo; ver proposta_acordo.md."
+  },
+  {
+    "bem": "Quotas — Andrade Engenharia Ltda. (100%)",
+    "natureza": "misto",
+    "valor_total": 1500000,
+    "valor_partilhavel": 1100000,
+    "meacao_fernanda": 550000,
+    "fundamento": "Sociedade constituída em 2011, antes do casamento: as quotas são bem particular até R$ 400.000 — CC art. 1.659, I. CONFIRMADO pelo cliente: nunca houve distribuição de lucros; tudo reinvestido; valor de R$ 400.000 quando casou e R$ 1.500.000 hoje (laudo). A valorização na constância do casamento, por esforço comum e lucros não distribuídos/reinvestidos, é fruto comunicável — CC art. 1.660, V: 1.500.000 − 400.000 = 1.100.000; meação = 550.000 via apuração de haveres da fração do período, sem ingresso da ex-cônjuge na sociedade (STJ REsp 1.595.775/AP — stj_fgts_quotas_previdencia.md; CC 1.027 conforme a biblioteca).",
+    "controversia": "Divergência no STJ sobre o alcance; base de referência da biblioteca = diferença entre o valor na data do casamento (confirmado: 400.000) e na separação de fato. A data da separação de fato NÃO foi informada — assumida até o valor do laudo atual; se a separação de fato for anterior, o haveres diminui. Metodologia plena de apuração de haveres NÃO está na biblioteca — não especificada (unverified)."
+  },
+  {
+    "bem": "PGBL — Fernanda",
+    "natureza": "comum",
+    "valor_total": 90000,
+    "valor_partilhavel": 90000,
+    "meacao_fernanda": 45000,
+    "fundamento": "Aportes de 2016 a 2025, todos dentro do casamento: saldo partilhável por natureza de investimento (STJ REsp 1.698.774/RS, 2020, 3ª Turma — stj_fgts_quotas_previdencia.md). No acordo, Fernanda retém o saldo integral (R$ 90.000) e a meação teórica (R$ 45.000) entra no saldo da equalização — ver proposta_acordo.md.",
+    "controversia": "Matéria controvertida: a 4ª Turma tem decisões contrárias quanto ao VGBL; a biblioteca adota a partilha do PGBL como posição de referência, com o registro da controvérsia (stj_fgts_quotas_previdencia.md)."
+  },
+  {
+    "bem": "Carro (SUV)",
+    "natureza": "comum",
+    "valor_total": 120000,
+    "valor_partilhavel": 120000,
+    "meacao_fernanda": 60000,
+    "fundamento": "Bem móvel: presume-se adquirido na constância do casamento, salvo prova em contrário (CC art. 1.662 — cc_comunhao_parcial.md); era usado pela família. No acordo, Fernanda retém o veículo e assume integralmente o financiamento (R$ 60.000), conforme posição do cliente — equívale a atribuir a ela R$ 60.000 líquidos (120.000 − 60.000), contra meação teórica de R$ 60.000.",
+    "controversia": "CONFIRMADO pelo cliente: carro da família (levava as crianças), no nome dela, com financiamento também no nome dela. Data da compra permanece desconhecida: aplica-se a presunção de bem móvel adquirido na constância (CC 1.662, ônus de quem alega aquisição anterior). Dívida comum por uso familiar (CC 1.664) — assinada como verba da família; tratada na linha DIVIDAS."
+  },
+  {
+    "bem": "TOTAL",
+    "natureza": "comum",
+    "valor_total": 3850000,
+    "valor_partilhavel": 2290000,
+    "meacao_fernanda": 1145000,
+    "fundamento": "Aritmética: bens partilháveis brutos = 1.200.000 (apto) + 140.000 (FGTS) + 1.100.000 (fração comunicável das quotas) + 90.000 (PGBL) + 120.000 (carro) = 2.650.000; dívidas comuns = 360.000 (registradas como −360.000 na linha DIVIDAS); líquido = 2.650.000 − 360.000 = 2.290.000; meação ideal de cada cônjuge = 1.145.000. Fora da conta (particulares): casa de Atibaia (800.000) e parcela particular das quotas (400.000); soma geral dos bens do casal = 3.850.000.",
+    "controversia": "A soma dos 'valor_total' inclui bens particulares (casa 800.000 e quota particular 400.000) apenas para retratar o acervo; a partilha incide sobre 'valor_partilhavel'. A COMPENSAÇÃO pela reforma de Atibaia (60.000 ao Fernanda) NÃO entra neste quadro: não é meação de bem comum; é item adicional proposto na equalização (proposta_acordo.md), com natureza unverified."
+  },
+  {
+    "bem": "DIVIDAS",
+    "natureza": "comum",
+    "valor_total": 360000,
+    "valor_partilhavel": -360000,
+    "meacao_fernanda": -180000,
+    "fundamento": "Financiamento do apartamento (300.000) + financiamento do carro (60.000), ambos contraídos na constância do casamento para encargos da família — respondem com os bens da comunhão (CC art. 1.664 — cc_comunhao_parcial.md). Atribuição no acordo: Marcelo assume 300.000 (apto que fica com ele); Fernanda assume 60.000 (carro que fica com ela). Como os bens foram tomados BRUTOS e as dívidas entram aqui como redutor, nenhuma dívida é contada duas vezes.",
+    "controversia": "Assume-se que ambos os financiamentos se destinavam a encargos da família (imóvel da família e carro de uso familiar); nenhum elemento no acervo afasta a regra de CC 1.664."
+  }
+]

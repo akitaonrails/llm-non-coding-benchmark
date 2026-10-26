@@ -1,0 +1,50 @@
+{
+  "endpoint": "http://127.0.0.1:18081",
+  "ssh_host": "b300-noncoding",
+  "selected_model": "qwen3.8-flash-next",
+  "hardware": "RunPod 1xB300 SXM6; Qwen3.8 Flash-Next NVFP4; vLLM 0.32.0",
+  "agent_context_limit": 65536,
+  "agent_output_limit": 16384,
+  "reasoning": "provider default; no reasoning override",
+  "binary_sha256": "cf5841e6666aeb469abec8b39ca494cef07a637756454a34a742b2f4996e1675",
+  "runner_source_sha256": {
+    "run_local_baseline.py": "29f78de0959b4deea0f07a496638269555b6cc67b2274f5aa54a49f9e724dc82",
+    "run_codex_baseline.py": "5d54ca6a5755c40281ef793c2c0454819fae92613cdef44194f682645b180c91"
+  },
+  "/api/version": {
+    "unavailable": "HTTPError"
+  },
+  "/api/tags": {
+    "unavailable": "HTTPError"
+  },
+  "/v1/models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "qwen3.8-flash-next",
+        "object": "model",
+        "created": 1792989698,
+        "owned_by": "vllm",
+        "root": "/workspace/noncoding-benchmark/weights/qwen3.8-flash-next",
+        "parent": null,
+        "max_model_len": 65536,
+        "permission": [
+          {
+            "id": "modelperm-aef8ef3af2ddcb54",
+            "object": "model_permission",
+            "created": 1792989698,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  }
+}

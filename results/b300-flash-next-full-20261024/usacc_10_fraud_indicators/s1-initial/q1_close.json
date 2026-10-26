@@ -1,0 +1,41 @@
+{
+  "months": {
+    "01": {
+      "revenue": 171677.51,
+      "payroll": 175547.65,
+      "supplies": 16511.40,
+      "rent": 21600.00,
+      "other": {
+        "payroll_taxes_adp": 49150.50,
+        "summit_supply_llc_checks_pending_review": 14750.00,
+        "dentrix_software": 1290.00,
+        "utilities_austin_energy": 2155.90
+      }
+    },
+    "02": {
+      "revenue": 164019.14,
+      "payroll": 175375.20,
+      "supplies": 15927.82,
+      "rent": 21600.00,
+      "other": {
+        "payroll_taxes_adp": 48347.72,
+        "summit_supply_llc_checks_pending_review": 14750.00,
+        "dentrix_software": 1290.00,
+        "utilities_austin_energy": 2393.44
+      }
+    },
+    "03": {
+      "revenue": 173544.82,
+      "payroll": 175791.07,
+      "supplies": 15141.54,
+      "rent": 21600.00,
+      "other": {
+        "payroll_taxes_adp": 48838.34,
+        "summit_supply_llc_checks_pending_review": 14750.00,
+        "dentrix_software": 1290.00,
+        "utilities_austin_energy": 2316.49
+      }
+    }
+  },
+  "notes": "Simplified cash-basis P&L derived solely from operating account (Capital City Bank, acct ending 0441) Q1 2026 activity; expenses shown positive. Revenue = merchant deposits (Delta Dental/Cigna/patient). Q1: revenue 509,241.47; debits 840,417.07; net cash -331,175.60; statement balance 212,440.18 -> -118,735.42 (overdrawn since 02/28). Payroll = ADP PAYROLL ACH lines only; ADP TAX lines (Q1 146,336.56) are classified separately in other.payroll_taxes_adp (assumption). Supplies = Henry Schein + Patterson Dental only. Summit Supply LLC checks (14,750.00/month; Q1 44,250.00) are shown in a separate flagged category and NOT in supplies: invoices are vague, self-approved and unsupported, and client staff confirm no deliveries were ever seen and payments were made on the Managing Partner's direct instruction - see communication_to_dr_r_patel.md (incl. Supplement No. 1). UNRECONCILED (left open): ADP PAYROLL debits Q1 526,713.92 vs payroll-register gross 65,576.15/period x 6 periods = 393,456.90; difference 133,257.02 of unknown composition - client has no ADP invoices. Register includes employee E-22 T. Nguyen (Q1 gross 17,100.00): 0 timeclock hours, no benefits, paper checks mailed to a PO Box, unknown to office staff - reported to Finance Committee Chair. REMAINING UNKNOWNS (client has no further information): account 0441 assumed to be the only account; ADP-line composition; whether Nguyen's paper checks were funded via the ADP payroll line. No accrual adjustments (production/receivables) attempted - bank deposits only. No assurance provided; not an audit or review."
+}

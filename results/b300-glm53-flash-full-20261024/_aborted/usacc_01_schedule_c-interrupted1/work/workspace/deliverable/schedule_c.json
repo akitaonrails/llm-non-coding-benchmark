@@ -1,0 +1,43 @@
+{
+  "tax_year": 2025,
+  "lines": {
+    "1": 50750.00,
+    "3": 50750.00,
+    "7": 50750.00,
+    "9": 194.60,
+    "10": 1199.15,
+    "15": 480.00,
+    "20b": 2800.00,
+    "24a": 1030.00,
+    "24b": 95.00,
+    "25": 930.00,
+    "27a": 4058.88,
+    "28": 10787.63,
+    "29": 39962.37,
+    "31": 39962.37
+  },
+  "schedule_se": {
+    "net_earnings": 36905.25,
+    "se_tax": 5646.50,
+    "deductible_half": 2823.25
+  },
+  "not_on_schedule_c": [
+    {"item": "Form 1099-NEC, Beacon Fintech Inc (box 1)", "amount": 18500.00, "where": "NOT included on Schedule C line 1 — no payments from Beacon appear anywhere in the sole checking account (12/2024–01/2026). Open item: excluded pending client confirmation of actual receipt. If received in 2025, it belongs on Schedule C line 1 and all SE figures change."},
+    {"item": "Form 1099-NEC, Orchard Health PBC (box 1)", "amount": 12200.00, "where": "NOT included on Schedule C line 1 — same open item as Beacon above."},
+    {"item": "ACH credit Tessaro Studios INV 1041, 12/27/2024", "amount": 3000.00, "where": "prior year — received December 2024, belongs on the 2024 return. The Tessaro 1099-NEC ($9,400) equals only the four 2025 receipts (2,400+3,100+2,150+1,750), confirming the $3,000 is not 2025 income."},
+    {"item": "W-2 wages, Larkspur Interactive LLC (box 1)", "amount": 24800.00, "where": "Form 1040 wages — employment income, never Schedule C. Social security wages $24,800 enter the SE tax wage-base test."},
+    {"item": "Blue Cross Blue Shield TX premiums 5/9–12/9/2025 (8 × $380)", "amount": 3040.00, "where": "Schedule 1 line 17 — self-employed health insurance deduction, per the Schedule C instructions excerpt (line 15 forbids deducting health premiums on Schedule C). Open item: eligibility conditions are not covered in the library; verify no employer-eligible months."},
+    {"item": "One-half of SE tax", "amount": 2823.25, "where": "Schedule 1 line 15, per the Schedule SE excerpt in the library."},
+    {"item": "Federal estimated tax payments IRS USATAXPYMT ES 2025 Q1 $1,500, Q2 $2,500, Q3 $2,500 (Q4 not paid by 12/12/2025)", "amount": 6500.00, "where": "reported as federal estimated tax payments on the individual income tax return (specific 1040 line number is outside the library — unverified). Payment of tax, not a business expense."},
+    {"item": "Personal living expenses paid from checking: Zelle rent to M. Okafor (12 × $1,650 = $19,800), groceries/H-E-B 2025 ($1,961.39), Netflix (12 × $15.49 = $185.88), Orangetheory gym (12 × $49.00 = $588.00), Venmo wedding gift ($200.00)", "amount": 22819.39, "where": "personal — nondeductible under IRC §262(a); row-level detail in classification.csv"},
+    {"item": "Employee-side payroll deductions of W-2 wages (SS/Medicare $1,537.60+$359.60 and Roth deferral box 12 DD $1,960.00)", "amount": 3857.20, "where": "already reflected in W-2 box 1; no Schedule C entry. (Box 12 DD coding is standard W-2 knowledge, not in the library — unverified.)"}
+  ],
+  "open_items_and_assumptions": [
+    "OPEN ITEM (material, $30,700): Beacon Fintech 1099-NEC $18,500 and Orchard Health 1099-NEC $12,200 have no matching deposits in the only checking account; excluded from line 1 under the cash-method rule in the library (income when actually/constructively received). Line 1 uses only receipts traceable in the bank: Tessaro $9,400 + PayHub 1099-K gross $41,350. If Dana confirms receipt of these amounts in 2025, gross receipts become $81,450 and net profit/SE tax must be recomputed.",
+    "ASSUMPTION (flagged): T-Mobile $1,020 and Spectrum $840 claimed at an assumed 50% business use — no business-use percentage is supported by the documents ($930 total on line 25).",
+    "ASSUMPTION (flagged): MacBook Pro 14 ($2,149 on 9/14/2025) treated as 100% business and expensed under the de minimis safe harbor election (≤ $2,500 per item, per the Schedule C instructions excerpt, line 13 discussion) on line 27a; election statement must be attached to the return.",
+    "ASSUMPTION (flagged): Figma ($540) and Adobe Creative Cloud ($719.88) treated as 100% business (core design tools of the trade).",
+    "ASSUMPTION (flagged): San Francisco trip 10/2–10/8 (flight $412 + Hotel Zephyr $618) treated as primarily business — attending DESIGNWEEK SF; meals Marina Deli $64 + Tartine $126 deducted at 50% ($95). Pub 463 excludes primarily-personal travel.",
+    "Mileage: only 278 of the notebook's 4,860 miles are deducted ($194.60 at the 2025 rate of 70¢/mile from Notice 2025-5). Excluded: 1,200 mi Larkspur commuting, 2,232 mi routine coworking commuting (home ↔ regular place of business — nondeductible per Notice 2025-5 §4 and Pub 463), and 1,150 'misc other client errands' whose detail page (pg 2 of the notebook) was not provided. Correct rate is 70¢ (2025), not the 65.5¢ used in the notebook."
+  ]
+}

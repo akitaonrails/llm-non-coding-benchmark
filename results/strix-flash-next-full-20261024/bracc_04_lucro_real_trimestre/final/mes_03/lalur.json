@@ -1,0 +1,29 @@
+{
+  "empresa": "Atlas Distribuidora S.A.",
+  "periodo": "2026-Q1 (janeiro, fevereiro, marco de 2026 - Lucro Real trimestral)",
+  "lucro_liquido_contabil": 604149.00,
+  "adicoes": {
+    "brindes_nf_4410_brindes_prime": 48000.00,
+    "doacao_associacao_beneficente_luz": 30000.00
+  },
+  "exclusoes": {},
+  "lucro_antes_compensacao": 682149.00,
+  "compensacao_prejuizo": 204644.70,
+  "lucro_real": 477504.30,
+  "irpj_15": 71625.65,
+  "adicional_10": 41750.43,
+  "csll": 42975.39,
+  "parte_b": {
+    "prejuizo_fiscal_saldo_final": 695355.30,
+    "base_negativa_csll_saldo_final": 695355.30
+  },
+  "notas": {
+    "lucro_liquido_contabil": "Corrigido pelo estorno do credito indevido de PIS/COFINS de jan/2026 (AJ-2026-03-001, R$ 11.100,00): 128.483,00 + 193.083,00 + 282.583,00 = 604.149,00. No balancete da ATLAS (sem o estorno espelhado) o acumulado seria 615.249,00; a diferenca e exatamente 11.100,00.",
+    "adicoes": "Brindes: Lei 9.249/95, art. 13, VII. Doacao sem titulo de utilidade publica federal/OSCIP: art. 13, VI e par. 2o (cliente confirmou 'nao tem titulo nenhum'). Ambas vedadas para IRPJ E CSLL. Total 78.000,00. Ver memoria.md.",
+    "compensacao_prejuizo": "Trava de 30% do lucro liquido ajustado (682.149,00 x 30% = 204.644,70) - Lei 9.065/95, arts. 15 e 16 (library/lei9065_art15_trava.md). O pedido do diretor ('compensar todo o prejuizo' de 900.000,00) e legalmente impossivel no trimestre. O MESMO valor compensa a base negativa da CSLL (trava identica, base ajustada identica, saldo de abertura identico de 900.000,00). Saldo disponivel em 31/12/2025: 900.000,00 (documents/saldos_fiscais_abertura.md).",
+    "arredondamento": "Valores exatos: IRPJ 15% = 71.625,645; CSLL 9% = 42.975,387; adicional = 41.750,43 exatos. Assuncao declarada (a biblioteca fechada NAO traz regra de arredondamento): arredondar ao centavo mais proximo. Alternativa de corte (truncamento) daria 71.625,64 e 42.975,38 (diferenca < 1 centavo). Pendencia registrada em QUESTIONS.md.",
+    "adicional_10": "10% sobre a parcela do lucro real que excede R$ 60.000,00 no trimestre: (477.504,30 - 60.000,00) x 10% = 417.504,30 x 10% = 41.750,43 (library/irpj_csll_trimestral.md).",
+    "total_tributos_q1": "IRPJ 71.625,65 + adicional 41.750,43 + CSLL 42.975,39 = 156.351,47.",
+    "saldos_parte_b_posteriores": "PF 695.355,30 e BN CSLL 695.355,30 permanecem compensaveis em trimestres seguintes, sempre sob a trava de 30%."
+  }
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "ref": "JE-2025-01-01",
+    "date": "2025-01-01",
+    "memo": "January monthly subscription invoices INV-2201..INV-2224 (24 customers, C-001..C-024). Service delivered in January; recognized ratably as earned (library/asc606_excerpts.md; library/revenue_policy_memo.md #1). Sum: 650+2400+2400+1800+900+2400+450+650+1800+1800+2400+1800+450+900+450+450+1200+900+2400+650+900+450+450+1800 = 30,450.00",
+    "lines": [
+      {"account": "1100", "debit": 30450.00, "credit": 0},
+      {"account": "4000", "debit": 0, "credit": 30450.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-01-02",
+    "date": "2025-01-01",
+    "memo": "INV-2225 Trestle Freight LLC (C-026) renewal order form: annual subscription 12 months, 24,000.00 billed upfront, service start 2025-01-01. Billed before performance -> contract liability, not revenue (ASC 606-10-45-2; revenue_policy_memo #1).",
+    "lines": [
+      {"account": "1100", "debit": 24000.00, "credit": 0},
+      {"account": "2200", "debit": 0, "credit": 24000.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-01-03",
+    "date": "2025-01-31",
+    "memo": "Deferred revenue release - Trestle prior annual contract (Jun 2024-May 2025): documents/note_opening_deferred.md directs 8,200.00/month Jan-May 2025. January release.",
+    "lines": [
+      {"account": "2200", "debit": 8200.00, "credit": 0},
+      {"account": "4000", "debit": 0, "credit": 8200.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-01-04",
+    "date": "2025-01-31",
+    "memo": "Deferred revenue release - Trestle renewal (term 2025-01-01..2025-12-31): 1/12 of 24,000.00 = 2,000.00 for January (revenue_policy_memo #1: annual upfront billings released 1/12 per month; ASC 606-10-25-14(b), 25-27 series over time).",
+    "lines": [
+      {"account": "2200", "debit": 2000.00, "credit": 0},
+      {"account": "4000", "debit": 0, "credit": 2000.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-01-05",
+    "date": "2025-01-26",
+    "memo": "Cash receipts deposited 01/15-01/26 per documents/month_01/cash_receipts.csv, all applied to January invoices INV-2201..INV-2225 and confirmed on the bank statement (25 deposits totaling 54,450.00 = monthly 30,450.00 + Trestle wire 24,000.00 on 01/15).",
+    "lines": [
+      {"account": "1000", "debit": 54450.00, "credit": 0},
+      {"account": "1100", "debit": 0, "credit": 54450.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-01-06",
+    "date": "2025-01-09",
+    "memo": "Vendor bills per documents/month_01/vendor_bills.csv: AWS 9,920.00 (hosting 5000), WeWork 7,200.00 (rent 5100), Gusto fees 240.00 (G&A other 5400), Notion/Slack/GitHub 1,460.00 (software 5200), Google Ads 3,250.00 (marketing 5300). Total 22,070.00. Expense account codes assigned by controller - no chart of accounts beyond 4000 was provided (judgment call, see open_items.md).",
+    "lines": [
+      {"account": "5000", "debit": 9920.00, "credit": 0},
+      {"account": "5100", "debit": 7200.00, "credit": 0},
+      {"account": "5200", "debit": 1460.00, "credit": 0},
+      {"account": "5300", "debit": 3250.00, "credit": 0},
+      {"account": "5400", "debit": 240.00, "credit": 0},
+      {"account": "2000", "debit": 0, "credit": 22070.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-01-07",
+    "date": "2025-01-09",
+    "memo": "Payment of January vendor bills by ACH per bank statement 01/05-01/09 (AWS 9,920 + WeWork 7,200 + Gusto fees 240 + Notion/Slack/GitHub 1,460 + Google Ads 3,250 = 22,070.00).",
+    "lines": [
+      {"account": "2000", "debit": 22070.00, "credit": 0},
+      {"account": "1000", "debit": 0, "credit": 22070.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-01-08",
+    "date": "2025-01-25",
+    "memo": "January payroll per documents/month_01/payroll_register.json (9 employees, pay date 2025-01-25): gross 54,404.00 + employer taxes/benefits 5,076.00 = cost 59,480.00. Bank agrees to register: net pay ACH 48,200.00 and tax remittance ACH 11,280.00, total cash out 59,480.00. Withheld from employees 54,404.00 - 48,200.00 = 6,204.00; remitted taxes 6,204.00 + employer 5,076.00 = 11,280.00 - agrees to bank exactly. Net-to-zero liability path: remittance within the same month, so no payroll-tax liability remains (see bank_reconciliation.md).",
+    "lines": [
+      {"account": "6000", "debit": 54404.00, "credit": 0},
+      {"account": "6100", "debit": 5076.00, "credit": 0},
+      {"account": "1000", "debit": 0, "credit": 59480.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-01-09",
+    "date": "2025-01-31",
+    "memo": "Monthly depreciation 1,777.78 per library/close_checklist.md item 6.",
+    "lines": [
+      {"account": "6200", "debit": 1777.78, "credit": 0},
+      {"account": "1510", "debit": 0, "credit": 1777.78}
+    ]
+  }
+]

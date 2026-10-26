@@ -1,0 +1,71 @@
+{
+  "case": "usacc_02_close_gap",
+  "questions": "# Brightline Cabinetry LLC — Questions to the Owner (Ray Brightline)\n**Period:** March 2026 close · **As of:** 03/31/2026\n\nThese are numbered to match the open-items note (`open_items.md`). While an item is unanswered it stays where policy puts it (usually suspense 2100 or unchanged on the books) — nothing is posted on assumption, per `library/close_policy.md` and `library/bank_rec_standard.md`.\n\n---\n\n**Q1 — Mobile deposit 4,312.00 (03/21).** The bank statement shows \"MOBILE DEPOSIT\" with no payor. Which customer or other source is this? If a customer, give the invoice number (it matches no open invoice: Ortiz 3,900 · Kessler 22,750 · Pham 7,120 · Delgado 6,250 · Hardaway 9,800 · Novak 6,280). Meanwhile it sits in 2100 suspense, not revenue.\n\n**Q2 — Transfer in 1,500.00 from checking *4420 (03/14).** Whose account is *4420? If the funds are yours from personal sources, we will reclassify from 2100 to 3100 Owner's contributions (per `library/close_policy.md`, never to revenue). If a past owner loan, it goes to a loan account; if a customer prepayment, to a customer liability. One sentence from you settles it.\n\n**Q3 — February A/R detail.** The books carry **81,518.00** of pre-March receivables after the Cole (14,350) and Alvarez (11,800) collections, but the printed aging lists only Hardaway 9,800 and Novak 6,280 from before March. Please send the listing of invoices open at 02/28 (customer, invoice, date, amount) — or hold invoices out for audit — so we can explain the unexplained **65,438.00** (collected-but-unposted receipts? credit memos never recorded? invoices missing from the aging?).\n\n**Q4 — Hardaway Builders INV-1167, 9,800.00.** You said you'd \"eat half\" (aging footnote ²). Please confirm **in writing** the approved customer credit (4,900.00 as stated), the reason for the claim, and that we should issue the credit memo; we'll book it in April as approved. Until then the books carry 9,800.00 in full — we won't post a revenue reduction without your written instruction.\n\n**Q5 — Summit card, Uchi dinner 212.00 (03/15, Saturday 8:40 p.m., 4 guests).** Business (whose customer?) or personal? If personal, we move it from 6500 to 3200 Owner's draws per `library/close_policy.md`.\n\n**Q6 — Legacy prepaid 2,400.00.** What does the prepaid balance covering at 02/28 represent (policy provider, term, start/end dates)? No March amortization was recorded and we can't compute one without terms. Once documented, we amortize prospectively per the prepaid rule.\n\n**Q7 — Allied Insurance 1,150.00 (billed \"Q2 GL\", 03/20).** Does this bill cover 04/01–06/30/2026? If yes we move the full 1,150.00 from insurance expense to 1300 prepaid (same rule as the CabinetVision license) when you confirm. It's currently unpaid in A/P either way.\n\n**Q8 — Depreciation.** No March depreciation was recorded on equipment 148,000.00 (accumulated 61,250.00). Send the depreciation schedule or approve a method/useful lives and we'll post the catch-up entry in the April books.\n\n**Q9 — A/P detail at 02/28.** Closing A/P is 29,505.40; besides Rivera 5,600 and Allied 1,150, we can trace only **22,755.40** back to the opening trial balance with no itemization in the file. Please send the 02/28 open-bills listing (vendor, invoice number, amount, payment status).\n\n**Q10 — Payroll schedule.** What are the pay-period start/end dates for the Gusto runs paid 03/13 and 03/27? If the 03/27 run's work period extends through 03/31 (paid in April), do you want a wage/tax accrual booked for lender reporting? Currently nothing is accrued; the 03/13–03/27 spacing looks biweekly, so tell us rather than let us guess.\n\n**Q11 — Sales tax.** Sales tax payable is 4,121.55 and unchanged since February — no March payments. Is the return filed? If filed, when is the payment scheduled; if not, note that this is a filing-compliance matter on your side. Either way, please confirm how you want the liability to read for the lender package.\n\n---\n\n*No reply needed where an item is already resolved by documents; one-line answers suffice for Q1–Q5 and Q7. Until then, every unanswered item remains disclosed in the open-items note per policy.*\n",
+  "facts": [
+    {
+      "id": "xfer_1500",
+      "trigger": [
+        "1,500",
+        "1500",
+        "transfer from *4420",
+        "4420",
+        "online transfer"
+      ],
+      "answer": "That's from my personal checking, I moved money over to cover payroll. It's my money, not a sale.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "mobile_4312",
+      "trigger": [
+        "4,312",
+        "4312",
+        "mobile deposit",
+        "March 21",
+        "3/21"
+      ],
+      "answer": "Huh. I don't remember depositing anything that day. Maybe Carla (office) did? Let me ask her... (later) she doesn't know either. Can you just park it somewhere for now?",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "cascade_dup",
+      "trigger": [
+        "Cascade",
+        "CH-7731",
+        "duplicate",
+        "twice",
+        "same invoice"
+      ],
+      "answer": "Cascade emails invoices and then mails a paper copy a couple of weeks later. Same invoice. We paid it once.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uchi",
+      "trigger": [
+        "Uchi",
+        "dinner",
+        "212"
+      ],
+      "answer": "Uchi was my anniversary dinner, I grabbed the wrong card. Put it on me.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "hardaway",
+      "trigger": [
+        "Hardaway",
+        "9,800",
+        "dispute",
+        "warped"
+      ],
+      "answer": "Still arguing with them. Don't write it off yet.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "xfer_1500",
+    "mobile_4312",
+    "uchi",
+    "hardaway"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

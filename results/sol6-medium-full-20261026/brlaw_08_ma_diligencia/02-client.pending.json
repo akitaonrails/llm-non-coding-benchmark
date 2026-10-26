@@ -1,0 +1,60 @@
+{
+  "case": "brlaw_08_ma_diligencia",
+  "questions": "# Registro de esclarecimentos do cliente\n\nHélio confirmou que a Horizonte Azul ainda não foi informada da venda. O débito de IRPJ 2023, de aproximadamente R$ 310 mil, está em cobrança, é contestado e não foi parcelado.\n\nO cliente informou não dispor de dados adicionais para as demais perguntas. Permanecem desconhecidos o Preço Total e sua estrutura, o saldo do contrato Horizonte Azul, titulares e datas do direito de preferência, comunicação e exigências do Município, substituto técnico, cálculos das exposições trabalhistas e fiscais e tratamento da regularidade federal. Esses pontos estão marcados como abertos no redline e em STATUS.md; não se presumiu resposta.\n",
+  "facts": [
+    {
+      "id": "horizonte",
+      "trigger": [
+        "Horizonte Azul",
+        "anuência",
+        "mudança de controle",
+        "31%"
+      ],
+      "answer": "Hélio: a Horizonte Azul é nosso maior cliente; o diretor deles é meu amigo, mas o jurídico deles é duro. Não contamos da venda ainda.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pjs",
+      "trigger": [
+        "PJ",
+        "engenheiros",
+        "vínculo",
+        "horário",
+        "exclusiv"
+      ],
+      "answer": "Beatriz: os 11 engenheiros PJ trabalham 9h-18h aqui, exclusivos, com gestor. Sempre foi assim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "cnd",
+      "trigger": [
+        "CND",
+        "certidão",
+        "IRPJ 2023",
+        "parcel",
+        "débito"
+      ],
+      "answer": "Hélio: tem um débito de IRPJ de 2023 em cobrança, uns 310 mil; não parcelamos porque discordamos.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "revelado",
+      "trigger": [
+        "mostrou",
+        "data room",
+        "comprador viu",
+        "sabe dos PJ"
+      ],
+      "answer": "Beatriz: o Meridiano viu tudo no data room, inclusive a lista dos PJs e a certidão positiva. Não reclamaram.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "cnd",
+    "horizonte"
+  ],
+  "literal_suggestions": [
+    "pjs"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

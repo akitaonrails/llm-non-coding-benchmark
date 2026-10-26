@@ -1,0 +1,36 @@
+{
+  "options": {
+    "a_founders_plan_as_stated_as_if_valid": {
+      "entity_level_tax": 3300.0,
+      "founder_tax_priya": 26308.08,
+      "founder_tax_tomas": 26308.08,
+      "payroll_taxes": 12800.0,
+      "total": 68716.16,
+      "assumptions": "HYPOTHETICAL ONLY - NOT ACHIEVABLE: an S election is invalid while Tomás is a nonresident alien shareholder (26 U.S.C. §1361(b)(1)(C); SPT 2026 = 118 + 96/3 + 66/6 = 161 < 183, 26 U.S.C. §7701(b)(3)(A)). Computed as the friend promised: salaries $40,000 each (W-2, full FICA 15.3% = $12240.0, unemployment $560); remaining income 260,000 - 80,000 - employer payroll $6680.0 - CA LLC $800 + $2,500 fee = $170020.0; K-1 share $85010.0 each; salary is not QBI so §199A deduction 20% x 85010.0 = $17002.0; federal on taxable income $92258.0 = $15210.76 each (assumed 2025 single rate schedule + $15,750 standard deduction - NOT in library; Tomás here assumed to file like a resident); CA tax as flat 9.3% x (income - $5,540 - $144) (graduated CA rates not in library); CA entity tax $800 + $2,500 gross-receipts fee (Cal. Rev. & Tax. Code §§17941-17942, 23153 per library; revenue $610,000 falls in $500k-$999,999 band); DE franchise/agent costs NOT quantified (library silent). Also: even if valid, $40k salary for two full-time principals in a $610k-revenue consulting firm is far below reasonable compensation (Rev. Rul. 74-44; Watson, 668 F.3d 1008) - payroll tax, penalties, interest exposure."
+    },
+    "b_recommended_ca_llc_partnership": {
+      "entity_level_tax": 3300.0,
+      "founder_tax_priya": 23700.34,
+      "founder_tax_tomas": 32039.41,
+      "payroll_taxes": 36270.55,
+      "total": 95310.31,
+      "assumptions": "CA LLC (formed IN California), default partnership taxation. No salaries/guaranteed payments; net 260,000 - CA entity tax $3,300 = $256700.0 allocated 50/50 = $128350.0 each. Payroll taxes = SE tax 15.3% x (92.35% x share) = $18135.28 each (assumed rates; 92.35% factor not in library). Priya (resident, single): income 128350.0 - half-SE 9067.64 - std ded 15,750 = 103532.36; §199A below threshold so SSTB limit off: deduction min(20%x128350.0, 20%x103532.36) = $20706.47; taxable 82825.89; federal $13135.7; CA flat 9.3% x 113598.36 = $10564.65. Tomas (nonresident alien, 7701(b)(3)): same SE tax (assumed - no US-Mexico totalization in library); NO standard deduction and NO QBI deduction (assumed); federal $21474.77 on full $119282.36 WORST CASE that ALL his services are US-performed; client (Oct 2026) confirms Priya is all-San-Diego and Tomás works MOSTLY FROM MONTERREY, so his true U.S./CA tax should be LOWER, but the exact Mexico/US split is unknown and sourcing rules are not in the library - upper bound stands. CA shown at flat 9.3% on same base (worst-case ceiling). NRA residency base confirmed by client: TN visa, no green card or pending application, in the U.S. 'maybe a third of the year' (~122 days -> 2027 SPT = 122 + 118/3 + 96/6 = 177.33 < 183, about 6 days below the 128-day flip point; flip tracked via day log, would change the whole model). Tomás's 50% is a profits interest: $0 income at grant (Rev. Proc. 93-27) + protective §83(b). Tomás's $20k and Priya's tool ($120k FMV, $31k basis) enter tax-free (§721). All rate schedules are assumptions, not library authority."
+    },
+    "c_delaware_llc_partnership": {
+      "entity_level_tax": 3300.0,
+      "founder_tax_priya": 23700.34,
+      "founder_tax_tomas": 32039.41,
+      "payroll_taxes": 36270.55,
+      "total": 95310.31,
+      "assumptions": "Fed/individual tax identical to (b) - Delaware adds nothing for a pass-through consulting LLC; DE franchise/registered-agent costs CANNOT be quantified from the library (not covered) - extra cost only. Delaware LLC doing business in CA must still register as a foreign LLC in CA and pay the SAME $800 + $2,500 (Cal. Corp. Code §17708.02; Cal. Rev. & Tax. Code §§17941-17942, 23153), and failure to register bars it from CA courts and adds penalties."
+    },
+    "d_plan_as_stated_actual_result_invalid_election": {
+      "entity_level_tax": 37029.2,
+      "founder_tax_priya": 22422.22,
+      "founder_tax_tomas": 28196.51,
+      "payroll_taxes": 12800.0,
+      "total": 100447.93,
+      "assumptions": "WHAT THE PLAN ACTUALLY BECOMES IF THEY ALSO ELECT CORPORATE STATUS (Form 8832) AND THE INVALID S ELECTION IS TREATED AS A C CORP: entity taxable income 260,000 - 80,000 salaries - $6680.0 employer payroll - $800 CA minimum = $172520.0 x assumed 21% = $36229.2 (21% and CA 8.85% not in library; CA shown at $800 minimum - understated, open item). After-tax $68145.4 each distributed: Priya qualified dividend at assumed 15% + salary tax; Tomás as NRA: 30% statutory withholding on the US dividend (US-Mexico treaty NOT in library - cannot verify any lower rate; client gave no treaty information), salary taxed as ECI (all-US worst case; client confirms he works mostly from Monterrey - exact split unknown, so this is an upper bound). Double taxation + no QBI + NRA withholding - strictly worse than (b). Note: WITHOUT a Form 8832 the default classification of an LLC is a partnership, so the botched 2553 alone would not create a C corp; this option shows the trap if corporate treatment was also elected. State (CA) computations are rough flat-9.3% assumptions."
+    }
+  }
+}

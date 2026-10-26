@@ -1,0 +1,5 @@
+I’ll read the contract and workspace files, then prepare the required deliverables using only those materials.
+
+The Fator R result is close to the 28% cutoff: the payroll summary totals R$ 284.600, while the threshold is R$ 285.600. The library requires amounts paid in the prior 12 months, but the summary is labeled by competence, and the stated May 6 pró-labore payment does not appear in the May statement. I’ll ask the client to confirm the payment dates before fixing the annex and DAS.
+
+Registrei os esclarecimentos necessários em [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). A folha informada fica R$ 1.000,00 abaixo do limite de 28% do Fator R, mas o resumo está por competência e a regra da biblioteca exige valores pagos. A resposta sobre as datas de pagamento pode mudar o anexo e o DAS; por isso, aguardo o cliente antes de fechar a apuração.

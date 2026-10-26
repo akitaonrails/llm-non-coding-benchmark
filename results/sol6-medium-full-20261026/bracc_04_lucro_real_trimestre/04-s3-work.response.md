@@ -1,0 +1,9 @@
+Vou conferir março e reconciliar o trimestre com os ajustes já propostos para janeiro e fevereiro. Em seguida, preparo o fechamento mensal e a apuração de IRPJ/CSLL, com as Partes A e B do e-LALUR e a memória de cálculo.
+
+Os dados levam a R$ 615.249,00 de resultado contábil antes da provisão de IRPJ/CSLL. Com R$ 78.000,00 de adições por brindes e doação, a base antes da compensação é R$ 693.249,00; o limite de 30% permite compensar R$ 207.974,70 dos saldos fiscais. Vou registrar também a provisão trimestral de IRPJ/CSLL e mostrar sua reversão na conciliação da Parte A.
+
+Fechei março e preparei a apuração trimestral em [mes_03](/work/workspace/deliverable/mes_03/pendencias.md). O [PIS/COFINS de março](/work/workspace/deliverable/mes_03/pis_cofins.json) é **R$ 82.399,00 a recolher**. O balancete ajustado foi conciliado em R$ 26.441.744,27 de cada lado.
+
+A [Parte A e a Parte B do e-LALUR](/work/workspace/deliverable/mes_03/lalur.json), detalhadas na [memória de cálculo](/work/workspace/deliverable/mes_03/memoria.md), apuram lucro real de **R$ 485.274,30**, IRPJ de **R$ 115.318,58** e CSLL de **R$ 43.674,69**. A compensação ficou limitada a R$ 207.974,70 para cada saldo fiscal; restam R$ 692.025,30 de prejuízo fiscal e R$ 692.025,30 de base negativa de CSLL.
+
+O [status](/work/workspace/deliverable/STATUS.md) é **COMPLETE WITH OPEN ITEMS**. O valor total da NF 8812 segue sem confirmação e pode alterar a contrapartida contábil e os tributos. Também permanecem sem confirmação a situação da EFD-Contribuições de janeiro e o fundamento fiscal específico, ausente da biblioteca, para a reversão das provisões de IRPJ/CSLL na Parte A.

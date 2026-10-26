@@ -1,0 +1,47 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "questions": "# Client response and remaining unknowns\n\nThe client will sign a five-year non-compete because he is retiring, has no preference about the payment label if total price is unchanged, and disclosed a $9,800 Hardaway dispute and routine warranty claims. He has no further information for the other requests. No response is pending.\n\nThe remaining unknowns are listed and modeled as assumptions in `memo.md`: assumed trade payables and other liabilities; receivables tax basis/accounting method; updated stock and asset bases; supportable equipment, inventory and covenant values; consulting terms; escrow timing; Texas franchise tax; and the shareholder treatment of the §1374 tax loss.\n",
+  "facts": [
+    {
+      "id": "noncompete_term",
+      "trigger": [
+        "non-compete",
+        "noncompete",
+        "longer term",
+        "consult",
+        "stay on"
+      ],
+      "answer": "I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "note_security",
+      "trigger": [
+        "note",
+        "secured",
+        "collateral",
+        "Hensley credit"
+      ],
+      "answer": "The $500k note is unsecured. Hensley's a family office, seems solid, but I don't know their balance sheet.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "liabilities",
+      "trigger": [
+        "liabilities",
+        "warranty",
+        "claims",
+        "lawsuit",
+        "Hardaway"
+      ],
+      "answer": "There's the Hardaway dispute ($9,800) and the usual warranty stuff. Nothing big that I know of.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "liabilities",
+    "noncompete_term"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

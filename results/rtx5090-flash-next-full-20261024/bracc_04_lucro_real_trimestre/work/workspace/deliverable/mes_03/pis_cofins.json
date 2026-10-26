@@ -1,0 +1,32 @@
+{
+  "competencia": "2026-03",
+  "regime": "não cumulativo (PIS 1,65% + COFINS 7,60% = 9,25%)",
+  "status": "BLOCKED_sem_dados_de_entrada",
+  "apurado": false,
+  "debito": null,
+  "creditos": null,
+  "estornos": null,
+  "a_recolher": null,
+  "retificacoes": "Não apurado: razão/balancete de março (e fevereiro) não entregues; rodada 3 (26/10/2026) — o cliente não tem informação adicional. Retificações acumuladas do trimestre, todas com valor já medido apenas em janeiro: (i) EFD-Contribuições 01/2026 — excluir o crédito indevido de R$ 11.100,00 (NF-e 8812, CFOP 1556) e recolher a diferença; situação de transmissão/pagamento da competência desconhecida (U-06), por isso os acréscimos legais NÃO foram calculados (U-07: norma ausente na biblioteca); (ii) EFD 02/2026 e 03/2026 — retificar somente se os testes T3/T4 (deliverable/mes_02/ajustes.json) encontrarem crédito sobre uso e consumo ou crédito válido não baixado: nenhuma hipótese dessas foi confirmada nem negada, porque não há dados; (iii) eventual ECF/e-LALUR de 4T2025 se a competência dos brindes e da doação for de 2025 (U-05).",
+  "calculo": "Roteiro aplicável na chegada dos dados: débito = receita bruta tributável x 9,25%; créditos = apenas insumos da atividade, verificados item a item; estornos = créditos vedados (Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR — library/pis_cofins_uso_consumo.md); a recolher = débito - créditos válidos + estornos. Em janeiro: 2.540.000,00 x 9,25% = 234.950,00; crédito válido 1.676.400,00 x 9,25% = 155.067,00; estorno 120.000,00 x 9,25% = 11.100,00; a recolher 79.883,00.",
+  "consolidado_trimestral_pis_cofins": {
+    "janeiro_a_recolher": 79883.0,
+    "fevereiro_a_recolher": null,
+    "marco_a_recolher": null,
+    "total_1T2026": null,
+    "obs": "PIS/COFINS é apurado MÊS a mês (fatos geradores mensais, regime não cumulativo); não existe 'apuração trimestral' dessas contribuições. O total do trimestre só pode ser somado quando fevereiro e março forem apurados — não será estimado."
+  },
+  "conferencias_obrigatorias": {
+    "debito_vs_conta": "3.1.02",
+    "creditos_vs_conta": "1.1.04",
+    "a_recolher_vs_conta": "2.1.03",
+    "extra_marco": "conciliar também com a provisão de IRPJ/CSLL do trimestre proposta em deliverable/mes_03/ajustes.json (AJ-03) — o PIS/COFINS do trimestre afeta o resultado contábil e, portanto, a base do IRPJ/CSLL"
+  },
+  "obrigacao_no_balancete_ajustado": {
+    "conta": "2.1.03",
+    "PIS_COFINS_03_2026": null,
+    "saldo_total_conta_ajustado": null,
+    "obs": "a 31/01/2026 a conta tinha R$ 997.683,00 C (abertura 740.000,00 + ICMS jan 177.800,00 + PIS/COFINS jan 79.883,00)."
+  },
+  "pendencia_dirigente": "A instrução 'não mexer' no crédito de janeiro não se estende a março: se houver crédito sobre material de uso e consumo em fevereiro ou março, o estorno é devido na competência em que foi tomado (library/pis_cofins_uso_consumo.md)."
+}

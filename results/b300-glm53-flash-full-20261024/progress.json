@@ -1,0 +1,27 @@
+[
+  {
+    "case": "uslaw_09_retaliation_termination",
+    "status": "completed_ungraded",
+    "error": null,
+    "elapsed_seconds": 861.5427475220058,
+    "controller_wait_seconds": 100.00919942499604,
+    "model_turn_seconds": 761.2155797999585,
+    "turns": 4,
+    "released_facts": [
+      "fmla_status",
+      "group",
+      "investigation",
+      "pip_author"
+    ],
+    "usage": {
+      "input_tokens": 2315059,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 72173,
+      "reasoning_output_tokens": 35396
+    },
+    "api_equivalent_usd": null,
+    "api_charge_usd": 0,
+    "electricity_cost_usd": null
+  }
+]

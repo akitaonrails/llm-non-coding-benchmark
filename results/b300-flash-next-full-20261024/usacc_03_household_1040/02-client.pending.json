@@ -1,0 +1,74 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# QUESTIONS — Reyes 2025 Engagement (Round 1 closed)\n\nRound 1 (Q1–Q7) was answered by the client on 2025 engagement call-back; answers are recorded in\n`return.md` §8 and absorbed in `judgment_calls.md`. Per the client, **no additional information exists**\nfor anything left open. This file therefore lists only the **residual unknowns** — items neither the\nclient nor the library can resolve. They are flagged, not assumed silently. None changes a computed\nfigure today; items marked ⚠ would change figures **if** contrary facts ever surfaced.\n\n| # | Unknown | Status / why it stays open | Numerical exposure |\n|---|---|---|---|\n| **R1** | ⚠ Prior-year filed Forms 7203 (2021–2024) corroborating the $11,500 opening stock basis | Client has no copies; Marcus confirms no contributions or loans since 2021, so the note is internally consistent, but it remains his own account | If real opening basis < $11,500, allowed S-corp loss drops, AGI rises, 8962 band shifts |\n| **R2** | ⚠ Brooklyn lease document (below-market carve-out proviso \"fair rental for *that* lease\") | Referenced as \"attached in prior-year file\"; not in documents; client has no additional info. Client facts (stranger tenant, broker-sourced 2019, rent never raised) fit the library carve-out exactly | If the carve-out failed, the $21,018 rental loss dies → AGI $110,900, 8962 repayment capped at $3,150 (full alternative in `judgment_calls.md` §3) |\n| **R3** | Exact NY residency end date (6/30 vs 7/3) | Move email is the only evidence; client supplied nothing further. 6/30 retained (181 days); 7/3 alternative documented | None under the confirmed convenience-of-the-employer rule (wages NY-source either way) |\n| **R4** | NY tax liability / IT-203 refund | Library has no NY rate schedule, deductions, or credits — **not computable from allowed authority**. Sourcing (68,000 / 54,000) and day count are delivered | NY refund/balance unquantified; fed return unaffected |\n| **R5** | Schedule A mechanics (SALT cap etc.) and Tampa property-tax amount | Not in library; client has no figure | Moot: standard deduction $31,500 wins on every available number |\n\nNo question in this register is answerable from the client file or the closed library, so per the\ncontract nothing is invented to close it. Q1–Q7 themselves are **not** repeated here.\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for 2025, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "contrib",
+    "convenience",
+    "employer_coverage",
+    "fmv_rent",
+    "leo_8332"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

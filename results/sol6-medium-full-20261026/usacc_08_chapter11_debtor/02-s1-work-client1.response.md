@@ -1,0 +1,5 @@
+I’ll complete the packet with explicit unknowns where the client has no further records. The listed March cash activity nets to an increase of $1,771,630, but ending cash cannot be stated without the swept opening balance.
+
+The Session 1 packet is prepared: [CFO response](/work/workspace/deliverable/session1/response_to_cfo.md), [March MOR](/work/workspace/deliverable/session1/march_mor.json), and [invoice segregation](/work/workspace/deliverable/session1/segregation.csv).
+
+The MOR is a **draft**. The listed activity shows a $1,771,630 cash increase, but the missing opening balance prevents an ending-cash figure. Other unresolved amounts and the Apex payment condition are documented in the [workpaper](/work/workspace/deliverable/session1/march_mor_workpaper.md). [STATUS.md](/work/workspace/deliverable/STATUS.md) records “COMPLETE WITH OPEN ITEMS.”

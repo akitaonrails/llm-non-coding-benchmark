@@ -1,0 +1,73 @@
+date,ref,account,name,memo,debit,credit
+2026-03-02,INV-1181,1100,Accounts receivable,INV-1181 Whitmore kitchen,18400.00,
+2026-03-02,INV-1181,4000,Sales — custom cabinetry,INV-1181 Whitmore kitchen,,18400.00
+2026-03-05,INV-1182,1100,Accounts receivable,INV-1182 Delgado vanity x2,6250.00,
+2026-03-05,INV-1182,4000,Sales — custom cabinetry,INV-1182 Delgado vanity x2,,6250.00
+2026-03-12,INV-1183,1100,Accounts receivable,INV-1183 Ortiz install,3900.00,
+2026-03-12,INV-1183,4100,Sales — installation,INV-1183 Ortiz install,,3900.00
+2026-03-19,INV-1184,1100,Accounts receivable,INV-1184 Kessler built-ins,22750.00,
+2026-03-19,INV-1184,4000,Sales — custom cabinetry,INV-1184 Kessler built-ins,,22750.00
+2026-03-27,INV-1185,1100,Accounts receivable,INV-1185 Pham pantry,7120.00,
+2026-03-27,INV-1185,4000,Sales — custom cabinetry,INV-1185 Pham pantry,,7120.00
+2026-03-03,DEP,1000,Cash — Operating (HCCB ...2210),Deposit — Whitmore progress,9200.00,
+2026-03-03,DEP,1100,Accounts receivable,Deposit — Whitmore progress,,9200.00
+2026-03-10,DEP,1000,Cash — Operating (HCCB ...2210),Deposit — Cole final (Feb inv),14350.00,
+2026-03-10,DEP,1100,Accounts receivable,Deposit — Cole final (Feb inv),,14350.00
+2026-03-17,DEP,1000,Cash — Operating (HCCB ...2210),Deposit — Alvarez (Feb inv),11800.00,
+2026-03-17,DEP,1100,Accounts receivable,Deposit — Alvarez (Feb inv),,11800.00
+2026-03-24,DEP,1000,Cash — Operating (HCCB ...2210),Deposit — Whitmore balance,9200.00,
+2026-03-24,DEP,1100,Accounts receivable,Deposit — Whitmore balance,,9200.00
+2026-03-31,DEP,1000,Cash — Operating (HCCB ...2210),Deposit — Delgado (check #4471),6250.00,
+2026-03-31,DEP,1100,Accounts receivable,Deposit — Delgado (check #4471),,6250.00
+2026-03-14,XFER,1000,Cash — Operating (HCCB ...2210),Online transfer in *4420,1500.00,
+2026-03-14,XFER,4000,Sales — custom cabinetry,Online transfer in *4420,,1500.00
+2026-03-09,CH-7731,5000,Materials — COGS,Cascade Hardwoods CH-7731 (mailed copy),4860.00,
+2026-03-09,CH-7731,2000,Accounts payable,Cascade Hardwoods CH-7731 (mailed copy),,4860.00
+2026-03-06,BILL,5000,Materials — COGS,Austin Lumber & Ply AL-20931,7315.00,
+2026-03-06,BILL,2000,Accounts payable,Austin Lumber & Ply AL-20931,,7315.00
+2026-03-11,BILL,5000,Materials — COGS,Blum hardware dist. 55102,2944.80,
+2026-03-11,BILL,2000,Accounts payable,Blum hardware dist. 55102,,2944.80
+2026-03-18,BILL,5100,Subcontract labor,Rivera Finish Carpentry sub — Kessler,5600.00,
+2026-03-18,BILL,2000,Accounts payable,Rivera Finish Carpentry sub — Kessler,,5600.00
+2026-03-01,BILL,6100,Rent — shop,Shop rent — March,4500.00,
+2026-03-01,BILL,2000,Accounts payable,Shop rent — March,,4500.00
+2026-03-16,BILL,6200,Utilities,Austin Energy,612.40,
+2026-03-16,BILL,2000,Accounts payable,Austin Energy,,612.40
+2026-03-20,BILL,6300,Insurance,Allied Insurance — Q2 GL,1150.00,
+2026-03-20,BILL,2000,Accounts payable,Allied Insurance — Q2 GL,,1150.00
+2026-03-07,#2036,2000,Accounts payable,#2036 Shop rent,4500.00,
+2026-03-07,#2036,1000,Cash — Operating (HCCB ...2210),#2036 Shop rent,,4500.00
+2026-03-13,#2038,2000,Accounts payable,#2038 Austin Lumber,7315.00,
+2026-03-13,#2038,1000,Cash — Operating (HCCB ...2210),#2038 Austin Lumber,,7315.00
+2026-03-20,#2040,2000,Accounts payable,#2040 Cascade Hardwoods CH-7731,4860.00,
+2026-03-20,#2040,1000,Cash — Operating (HCCB ...2210),#2040 Cascade Hardwoods CH-7731,,4860.00
+2026-03-28,#2041,2000,Accounts payable,#2041 Austin Energy,612.40,
+2026-03-28,#2041,1000,Cash — Operating (HCCB ...2210),#2041 Austin Energy,,612.40
+2026-03-30,#2044,2000,Accounts payable,#2044 Blum hardware,2944.80,
+2026-03-30,#2044,1000,Cash — Operating (HCCB ...2210),#2044 Blum hardware,,2944.80
+2026-03-13,PAYROLL,6000,Wages,Payroll 13 Mar — net,7100.00,
+2026-03-13,PAYROLL,1000,Cash — Operating (HCCB ...2210),Payroll 13 Mar — net,,7100.00
+2026-03-13,PAYROLL,6050,Payroll taxes,Payroll taxes 13 Mar,653.20,
+2026-03-13,PAYROLL,1000,Cash — Operating (HCCB ...2210),Payroll taxes 13 Mar,,653.20
+2026-03-27,PAYROLL,6000,Wages,Payroll 27 Mar — net,7100.00,
+2026-03-27,PAYROLL,1000,Cash — Operating (HCCB ...2210),Payroll 27 Mar — net,,7100.00
+2026-03-27,PAYROLL,6050,Payroll taxes,Payroll taxes 27 Mar,653.20,
+2026-03-27,PAYROLL,1000,Cash — Operating (HCCB ...2210),Payroll taxes 27 Mar,,653.20
+2026-03-03,CC,6600,Vehicle & fuel,Summit Visa — Shell fuel,182.40,
+2026-03-03,CC,2050,Credit card payable — Summit Visa,Summit Visa — Shell fuel,,182.40
+2026-03-08,CC,6900,Office & misc,Summit Visa — Home Depot misc,214.77,
+2026-03-08,CC,2050,Credit card payable — Summit Visa,Summit Visa — Home Depot misc,,214.77
+2026-03-11,CC,6400,Software & subscriptions,Summit Visa — CabinetVision annual license,1188.00,
+2026-03-11,CC,2050,Credit card payable — Summit Visa,Summit Visa — CabinetVision annual license,,1188.00
+2026-03-15,CC,6500,Meals,Summit Visa — Uchi dinner,212.00,
+2026-03-15,CC,2050,Credit card payable — Summit Visa,Summit Visa — Uchi dinner,,212.00
+2026-03-22,CC,5000,Materials — COGS,Summit Visa — Fastenal,341.10,
+2026-03-22,CC,2050,Credit card payable — Summit Visa,Summit Visa — Fastenal,,341.10
+2026-03-25,CC,6600,Vehicle & fuel,Summit Visa — Shell fuel,167.85,
+2026-03-25,CC,2050,Credit card payable — Summit Visa,Summit Visa — Shell fuel,,167.85
+2026-03-05,CCPAY,2050,Credit card payable — Summit Visa,Pay Summit Visa — Feb statement,3188.22,
+2026-03-05,CCPAY,1000,Cash — Operating (HCCB ...2210),Pay Summit Visa — Feb statement,,3188.22
+2026-03-31,LOC,6800,Interest expense,LOC interest — March,318.75,
+2026-03-31,LOC,1000,Cash — Operating (HCCB ...2210),LOC interest — March,,318.75
+2026-02-26,CH-7731,5000,Materials — COGS,"Cascade Hardwoods CH-7731 (email copy, booked 2/26)",4860.00,
+2026-02-26,CH-7731,2000,Accounts payable,"Cascade Hardwoods CH-7731 (email copy, booked 2/26)",,4860.00

@@ -1,0 +1,19 @@
+{
+  "revenue_as_drafted": 1540000,
+  "adjustments": {
+    "halvorsen_loi": -480000,
+    "saltline_bill_and_hold": -210000,
+    "ironvale_hosting": 0
+  },
+  "revenue_corrected": 850000,
+  "hosting": {
+    "treatment": "Embedded lease under ASC 842-10-15-3 to 15-20 (identified asset by serial number, no substantive substitution right, exclusive use, customer directs use, 36-month term, no termination for convenience). Q4 hosting expense of 54,000 (3 x 18,000 paid in arrears) is reclassified from service expense to lease cost; ROU asset and lease liability recognized on the balance sheet. Amounts below are the UNDISCOUNTED UPPER BOUND (remaining 33 x 18,000 = 594,000 at 12/31/2025) and remain so after the client confirmed (Turn 2) that no discount rate and no lease/non-lease component pricing are available; the entire 18,000 monthly fee is provisionally treated as the lease component. Present-value examples (not conclusions): at 8% APR 533,637; at 10% 520,461; at 12% 507,944. Operating vs finance classification criteria are not in the library; under straight-line lease cost the Q4 expense stays 54,000 and the P&L is unaffected.",
+    "rou_asset": 594000,
+    "lease_liability": 594000
+  },
+  "going_concern": {
+    "substantial_doubt": true,
+    "plans_probable": false,
+    "disclosure": "Disclose in the 2025 financial statements that substantial doubt about the entity's ability to continue as a going concern exists (ASC 205-40-50-1 to 50-14). Conditions: 13-week cash flow forecast shows cash turning negative in week 8 (ending 2026-02-20, -105,000) and reaching -509,000 by 2026-03-27 absent new financing. Plans considered: Crestline $3.0M convertible note term sheet is non-binding and subject to conditions precedent (Q4 revenue >= 1,500,000 - which fails at corrected revenue of 850,000 - and no going-concern qualification); per the library a non-binding term sheet with conditions precedent is not a probable plan, so the doubt is not alleviated and the substantial-doubt disclosure is required. Client confirmed (Turn 2) there is no forecast beyond 13 weeks, no other financing plan, and no signed/waived Crestline commitment; the evaluation window beyond 2026-03-27 is an explicitly flagged documentation gap that does not alleviate the doubt."
+  }
+}

@@ -1,0 +1,385 @@
+[
+  {
+    "ref": "JE-2025-047",
+    "date": "2025-05-01",
+    "memo": "May 2025 monthly subscription invoices INV-2300..INV-2323 (24 invoices, 30,450.00 = 3x650.00 + 5x2,400.00 + 5x1,800.00 + 4x900.00 + 6x450.00 + 1x1,200.00; identical count and composition to Jan-Apr). Recognized on billing per Board revenue policy item 2 (monthly subscriptions recognized in the month billed).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": "30450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "4000",
+        "debit": "0.00",
+        "credit": "30450.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-048",
+    "date": "2025-05-01",
+    "memo": "Quarry Analytics Co (C-028) INV-2324 'Annual subscription - 12 months, billed upfront' 30,000.00; order form C-028 (order date 2025-05-01, J. Alvarado): payment due on signature, SERVICE START 2025-05-01, term EXPLICITLY stated '12 months from service start, auto-renewing'. NOT recognized at billing: billed before performance = contract liability (ASC 606-10-45-2); Board revenue policy item 1 - annual upfront billings deferred and released straight-line over the stated term (same treatment as Marigold C-027 and the Trestle renewal). 30,000.00 / 12 = 2,500.00/month, May 2025 - April 2026. Judgment call in open_items.md section 2; no client question needed (term documented).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": "30000.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "2200",
+        "debit": "0.00",
+        "credit": "30000.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-049",
+    "date": "2025-05-26",
+    "memo": "May 2025 customer receipts - 25 receipts totaling 60,450.00 (24 monthly subscription ACHs 05/20-05/26 totaling 30,450.00 + Quarry Analytics Co wire 30,000.00 received 05/15). Every receipt agreed 1:1 to a bank statement credit on the same date, same customer name and same amount (bank_reconciliation.md); receipt total agrees to total May billings (30,450.00 + 30,000.00), so no 2025 May A/R remains - the 30,000.00 collected sits in 2200 (JE-2025-048). Cash-debit lines follow cash_receipts.csv order (INV-2300..INV-2324); aggregate A/R credit.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": "650.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "650.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1200.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "650.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "30000.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "0.00",
+        "credit": "60450.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-050",
+    "date": "2025-05-09",
+    "memo": "May 2025 vendor bills, all paid within the month and agreed 1:1 to bank ACH debits (05/05-05/09): AWS 10,400.00 (hosting - up from 10,280.00 in April, usage-based variance), WeWork 7,200.00 (rent, flat), Gusto platform fee 240.00 (G&A, flat), Notion/Slack/GitHub 1,460.00 (software, flat), Google Ads 3,450.00 (marketing - up from 3,400.00, variance). No prepaid/deferred element identified (checklist item 3).",
+    "lines": [
+      {
+        "account": "5300",
+        "debit": "10400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "5200",
+        "debit": "7200.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "5900",
+        "debit": "240.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "5400",
+        "debit": "1460.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "5100",
+        "debit": "3450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "0.00",
+        "credit": "22750.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-051",
+    "date": "2025-05-25",
+    "memo": "May 2025 payroll (register dated 2025-05-25; 9 employees; gross 54,404.00, net pay 48,200.00, employee withholding 6,204.00 = gross - net - identical figures to January, February, March and April). Gross to salaries expense; net paid per bank line ACH GUSTO NET PAY 48,200.00 (05/25) - the ONLY net-pay debit this month, i.e. the April duplicate-debit problem did not recur (see JE-2025-054 / open_items.md section 1). Withholding credited to payroll tax liability.",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": "54404.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "0.00",
+        "credit": "48200.00"
+      },
+      {
+        "account": "2100",
+        "debit": "0.00",
+        "credit": "6204.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-052",
+    "date": "2025-05-25",
+    "memo": "May 2025 employer payroll taxes/benefits per register: 5,076.00 (identical to prior months; composition still undocumented - Q4 flag carried). Credited to payroll tax liability pending remittance.",
+    "lines": [
+      {
+        "account": "5010",
+        "debit": "5076.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "2100",
+        "debit": "0.00",
+        "credit": "5076.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-053",
+    "date": "2025-05-25",
+    "memo": "May 2025 payroll tax remittance per bank line GUSTO TAX 11,280.00 (05/25) = register taxes_remitted 11,280.00 = withholding 6,204.00 + employer 5,076.00. Clears 2100 to nil for the month.",
+    "lines": [
+      {
+        "account": "2100",
+        "debit": "11280.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "0.00",
+        "credit": "11280.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-054",
+    "date": "2025-05-09",
+    "memo": "GUSTO REFUND - recovery of the disputed April duplicate net-pay debit. Bank credit 'ACH CREDIT GUSTO REFUND' 48,200.00 dated 05/09. Full recovery of the claim booked in JE-2025-041 (Gusto ticket #GS-44812): Dr cash / Cr 1200, clearing the claim account to nil. NOT revenue and not an expense reversal: the credit equals the recorded claim exactly, so no gain or loss arises. The link between this credit and the disputed debit is INFERRED from the exact amount match, the single May payroll, and the absence of any other 48,200.00 item - no written Gusto/bank correspondence has been received; flagged in open_items.md section 1.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": "48200.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1200",
+        "debit": "0.00",
+        "credit": "48200.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-055",
+    "date": "2025-05-31",
+    "memo": "May 2025 depreciation 1,777.78 per Board close checklist item 6 (fixed policy amount; policy basis not further documented - carried flag). Accumulated depreciation reaches 30,221.90.",
+    "lines": [
+      {
+        "account": "5700",
+        "debit": "1777.78",
+        "credit": "0.00"
+      },
+      {
+        "account": "1510",
+        "debit": "0.00",
+        "credit": "1777.78"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-056",
+    "date": "2025-05-31",
+    "memo": "FINAL release of Trestle Freight LLC (C-026) PRIOR annual subscription: 8,200.00 (client opening note: 41,000.00 over remaining 5 months = 8,200.00/month Jan-May 2025). May is the 5th and FINAL release - the contract is now FULLY released and closes; no residual deferred revenue remains for it. Cash was collected in 2024.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": "8200.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "4000",
+        "debit": "0.00",
+        "credit": "8200.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-057",
+    "date": "2025-05-31",
+    "memo": "May 2025 release of Trestle Freight LLC (C-026) renewal (order form 2025-01-01, INV-2225 24,000.00): 24,000.00 / 12 = 2,000.00/month. May is month 5 of 12 (term 2025-01-01 to 2025-12-31).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": "2000.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "4000",
+        "debit": "0.00",
+        "credit": "2000.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-058",
+    "date": "2025-05-31",
+    "memo": "May 2025 release of Pinecone Dental Group (C-025), INV-2250 36,000.00: 3,000.00/month under the ASSUMED 12-month term (2025-02-01 to 2026-01-31 - actual term permanently unknown, Q8; flag carried). May is month 4 of 12.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": "3000.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "4000",
+        "debit": "0.00",
+        "credit": "3000.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-059",
+    "date": "2025-05-31",
+    "memo": "May 2025 release of Marigold Schools Inc (C-027), INV-2275 18,000.00 (documented term: 12 months from 2025-03-01 service start): 18,000.00 / 12 = 1,500.00/month. May is month 3 of 12; remaining 9 releases (Jun 2025 - Feb 2026).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": "1500.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "4000",
+        "debit": "0.00",
+        "credit": "1500.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-060",
+    "date": "2025-05-31",
+    "memo": "May 2025 FIRST release of Quarry Analytics Co (C-028), INV-2324 30,000.00 (documented term: 12 months from 2025-05-01 service start): 30,000.00 / 12 = 2,500.00/month. May is month 1 of 12 (full month: service started 2025-05-01, same full-month pattern as Marigold's first month); remaining 11 releases (Jun 2025 - Apr 2026).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": "2500.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "4000",
+        "debit": "0.00",
+        "credit": "2500.00"
+      }
+    ]
+  }
+]

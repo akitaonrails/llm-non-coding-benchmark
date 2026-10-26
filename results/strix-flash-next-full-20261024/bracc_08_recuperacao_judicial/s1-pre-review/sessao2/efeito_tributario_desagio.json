@@ -1,0 +1,28 @@
+{
+  "ganho_desagio": 3882000,
+  "pis_cofins_sobre_ganho": 0,
+  "prejuizo_fiscal": 0,
+  "compensacao": 0,
+  "base_irpj_csll": 3882000,
+  "irpj_csll": 1319880,
+  "trava_30_aplicavel": false,
+  "_notas": {
+    "ganho_desagio": "Deságio JURIDicamente possível: 60% × 6.470.000 (Banco Alfa 4.200.000 + Norte pré-pedido 1.850.000 + Sul ME/EPP 420.000) = 3.882.000. Excluídos do cálculo os ganhos inexistentes contados pela minuta: 40% × 3.100.000 do Banco Beta (fiduciário não se submete à RJ — art. 49, §3º, library/lei11101_excertos.md) = 1.240.000 e 50% × 2.700.000 da União (crédito tributário não se sujeita ao plano — CTN art. 187 e art. 68) = 1.350.000.",
+    "base_de_apuracao": "Valor NOMINAL do deságio, tratado como PISO do ganho. Pelo CPC 48 (IFRS 9, library/cpc_contabil_rj.md) o passivo novo é reconhecido a valor presente: com carência de 24 meses e 120 parcelas, o ganho contábil é MAIOR que 3.882.000 (1,0% a.m. → 5.286.124; 1,5% a.m. → 5.632.704). A adoção do valor nominal é a posição prudente para a provisão de IRPJ/CSLL. Cenários completos em deliverable/sessao2/efeito_tributario_desagio_sensibilidade.md.",
+    "pis_cofins_sobre_ganho": "Zero: na renegociação de dívidas no âmbito de recuperação judicial, a receita da operação não entra na base de cálculo de PIS/COFINS — Lei 11.101/2005, art. 50-A, I (library/lei11101_excertos.md). Alíquotas de PIS/COFINS não constam da biblioteca e não são aplicadas.",
+    "prejuizo_fiscal": "0 = AUSÊNCIA DE DADO, não afirmação. O saldo de prejuízo fiscal e a base negativa de CSLL não foram informados (pergunta nº 8). Se houver prejuízo fiscal, ele abate a base por INTEIRO, porque a trava de 30% não se aplica.",
+    "compensacao": "0 = reflexo do campo anterior (nada a compensar com dado ausente). Potencial de compensação não quantificado. Regime e limites de compensação de prejuízo fiscal não constam da biblioteca — NÃO VERIFICADO.",
+    "base_irpj_csll": "Igual ao ganho (3.882.000) por dois motivos: (i) não há redução por trava, pois o ganho com a redução da dívida NÃO se sujeita à trava de 30% — art. 50-A, II; (ii) prejuízo fiscal desconhecido. As despesas com as obrigações do plano são dedutíveis — art. 50-A, III — e nenhumas foram lançadas aqui (NÃO VERIFICADO o regime de amortização dessas despesas).",
+    "irpj_csll": "3.882.000 × 34% = 1.319.880, PROVISÃO. O parâmetro de 34% (IRPJ 25% + adicional 10% + CSLL 9%) é NÃO VERIFICADO: não consta de nenhum arquivo de library/INDEX.md. Outros parâmetros: 25% → 970.500; 9% → 349.380.",
+    "trava_30_aplicavel": "false — a pretensão do diretor financeiro de aplicar a trava de 30% ao ganho do deságio é expressamente afastada pelo art. 50-A, II da Lei 11.101/2005 (library/lei11101_excertos.md). Se a trava fosse aplicada, o uso de prejuízo limitaria o ganho tributado a 2.717.400 e o imposto cairia para 923.916: a trava NÃO protege, ela reduz o valor do prejuízo fiscal disponível.",
+    "vedacao_a_pessoas_ligadas": "Os benefícios do art. 50-A (I, II e III) não alcançam dívidas com pessoas ligadas ao devedor (art. 50-A, parágrafo único). Nenhum credor do plano foi identificado como pessoa ligada (premissa P3, deliverable/sessao2/analise_plano.md) — confirmar antes de registrar o ganho (pergunta nº 14).",
+    "ganhos_fora_do_desagio": "A alienação judicial de bens da recuperação (venda do galpão/UPI, se houver ganho de capital) também não se sujeita à trava de 30% — art. 6º-B (library/lei11101_excertos.md). Valor contábil do galpão desconhecido: ganho não quantificado.",
+    "fontes": [
+      "library/lei11101_excertos.md — Lei 11.101/2005, arts. 6º-B, 49, 50-A, 68",
+      "library/ctn_187_191a.md — CTN arts. 187, 191-A",
+      "library/cpc_contabil_rj.md — CPC 48 (IFRS 9), teste dos 10%, valor presente",
+      "documents/relacao_credores.csv — valores dos créditos",
+      "documents/plano_minuta.md — deságio de 60%, 120 parcelas, carência de 24 meses"
+    ]
+  }
+}

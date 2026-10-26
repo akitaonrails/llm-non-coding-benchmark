@@ -1,0 +1,26 @@
+{
+  "lucro_liquido_contabil": 456255.73,
+  "adicoes": {
+    "provisao_irpj_csll": 158993.27,
+    "brindes_nf_4410": 48000.00,
+    "doacao_associacao_beneficente_luz": 30000.00
+  },
+  "exclusoes": {},
+  "lucro_antes_compensacao": 693249.00,
+  "compensacao_prejuizo": 207974.70,
+  "lucro_real": 485274.30,
+  "irpj_15": 72791.15,
+  "adicional_10": 42527.43,
+  "base_csll_antes_compensacao": 693249.00,
+  "compensacao_base_negativa_csll": 207974.70,
+  "base_csll": 485274.30,
+  "csll": 43674.69,
+  "parte_b": {
+    "prejuizo_fiscal_saldo_inicial": 900000.00,
+    "prejuizo_fiscal_utilizado": 207974.70,
+    "prejuizo_fiscal_saldo_final": 692025.30,
+    "base_negativa_csll_saldo_inicial": 900000.00,
+    "base_negativa_csll_utilizada": 207974.70,
+    "base_negativa_csll_saldo_final": 692025.30
+  }
+}

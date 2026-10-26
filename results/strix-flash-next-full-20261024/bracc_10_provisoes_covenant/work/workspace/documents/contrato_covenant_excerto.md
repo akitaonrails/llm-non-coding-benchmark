@@ -1,0 +1,2 @@
+# Debêntures 1ª emissão — Escritura (excerto)
+**Cláusula 7.1(c):** a Emissora manterá **Dívida Líquida / EBITDA ≤ 2.75**, apurado anualmente com base nas demonstrações financeiras auditadas de 31/12. 'EBITDA' = lucro operacional + depreciação/amortização, **sem exclusão de provisões**. 'Dívida Líquida' = empréstimos, financiamentos e debêntures (circulante e não circulante) − caixa e aplicações. **Descumprimento → vencimento antecipado automático**, salvo waiver aprovado por debenturistas representando 75%.

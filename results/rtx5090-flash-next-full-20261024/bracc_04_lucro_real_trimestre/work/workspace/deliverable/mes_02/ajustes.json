@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "empresa": "Atlas Distribuidora S.A.",
+    "competencia": "2026-02",
+    "encerramento": "mes 2/3 do trimestre 1º trimestre de 2026",
+    "regime": "Lucro Real trimestral (apuração e recolhimento de IRPJ/CSLL no fechamento do trimestre); PIS/COFINS não cumulativo (fatos geradores mensais)",
+    "moeda": "BRL",
+    "data_referencia_lancamentos": "2026-02-28",
+    "status": "BLOCKED_sem_dados_de_entrada",
+    "motivo_bloqueio": "Não existe razão analítico nem balancete de fevereiro/2026 no workspace. Em 26/10/2026 (rodada 3) o cliente informou que 'não tem informação adicional'. Sem razão/balancete não há o que fechar: nenhum lançamento pode ser identificado, medido ou conciliado. Nada foi estimado — todos os valores quantitativos deste arquivo são null ou lista vazia.",
+    "arquivos_esperados": [
+      "documents/mes_02/razao.csv (mesmo layout de documents/mes_01/razao.csv: data, ref, conta, histórico/descrição, débito, crédito)",
+      "documents/mes_02/balancete.csv (mesmo layout de documents/mes_01/balancete.csv)"
+    ],
+    "impacto_da_falta": "Registros U-01 e U-02 de deliverable/UNKNOWN.md. Bloqueia esta sessão e a apuração trimestral de IRPJ/CSLL (deliverable/mes_03/).",
+    "fontes_consultadas": [
+      "documents/balancete_abertura.csv",
+      "documents/saldos_fiscais_abertura.md",
+      "documents/email_diretor.txt",
+      "deliverable/mes_01/ajustes.json (balancete ajustado a 31/01/2026, que é a abertura de fevereiro)"
+    ]
+  },
+  "lancamentos": [],
+  "lancamentos_obs": "Nenhum lançamento foi registrado porque nenhum fato de fevereiro foi entregue. Isso NÃO significa ausência de ajustes: os quatro testes abaixo já identificaram ajuste em janeiro e têm alta probabilidade de se repetir (mesma rotina de compras). O formato de lançamento a usar é o de deliverable/mes_01/ajustes.json (partida dobrada, campo a campo).",
+  "testes_a_rodar_na_chegada_dos_dados": [
+    {
+      "id": "T1",
+      "teste": "Tie-out razão × balancete",
+      "como": "somar por conta os movimentos do razão e conferir com o saldo do balancete de 28/02/2026; conferir D = C no balancete; conferir que o saldo de abertura de cada conta é o saldo ajustado de 31/01/2026 de deliverable/mes_01/ajustes.json (ex.: 2.1.03 = 997.683,00 C; 1.1.04 = 0,00; 4.2.04 = 131.100,00 D em acumulado do mês).",
+      "em_janeiro": "aprovado — 14 contas conferiram, balancete 19.880.584,00 D = 19.880.584,00 C",
+      "se_falhar": "registrar a divergência e não forçar o fechamento (CONTRACT.md, regra de números)"
+    },
+    {
+      "id": "T2",
+      "teste": "Débito de PIS/COFINS sobre vendas",
+      "como": "receita bruta tributável × 9,25% (PIS 1,65% + COFINS 7,60%) e confronto com a conta 3.1.02; checar receitas não tributáveis / exceções de tributação se aparecerem no razão (a biblioteca não trata hipóteses de não incidência — sinalizar como não verificável).",
+      "em_janeiro": "2.540.000,00 × 9,25% = 234.950,00 (confere)"
+    },
+    {
+      "id": "T3",
+      "teste": "Caça a crédito indevido de PIS/COFINS (repetição do erro da NF-e 8812)",
+      "como": "listar todo crédito registrado em 1.1.04 e toda aquisição de despesa/custo com crédito destacado; classificar cada bem/serviço como insumo da revenda (gera crédito) ou uso e consumo / despesa administrativa (NÃO gera crédito). Procurar no razão por CFOP 1556, 'uso e consumo', 'material de escritório', 'papel', 'toner', 'limpeza', 'EPI', 'brinde', 'marketing', 'doação', 'energia/telecom/aluguel' com crédito tomado.",
+      "fundamento": "Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR (library/pis_cofins_uso_consumo.md)",
+      "em_janeiro": "1 ocorrência (NF-e 8812, refs NF8812 nas linhas 36-38 de documents/mes_01/razao.csv) → estorno AJ-01/2026-01 de 120.000,00 × 9,25% = 11.100,00",
+      "tratamento_se_repetir": "mesmo padrão de AJ-01: D despesa/custo, C 1.1.04; tributo não recuperável passa a compor o custo; EFD-Contribuições da competência retificada"
+    },
+    {
+      "id": "T4",
+      "teste": "Compensação contábil dos créditos válidos contra a obrigação (apresentação)",
+      "como": "verificar se os créditos válidos foram baixados de 1.1.04 contra 2.1.03 na apuração do mês; se não, repetir AJ-02 (D 2.1.03 / C 1.1.04); verificar se sobrou saldo em 1.1.04 a compensar/carregar e conciliar com a EFD-Contribuições.",
+      "em_janeiro": "crédito válido 155.067,00 não baixado → AJ-02/2026-01; 1.1.04 zera a 31/01/2026"
+    },
+    {
+      "id": "T5",
+      "teste": "Varredura de despesas indedutíveis do art. 13 (efeito apenas no e-LALUR do trimestre)",
+      "como": "examinar notas/descrições de 4.2.02 Despesas comerciais, 4.2.03 Despesas administrativas e 4.2.04 Material de uso e consumo em busca de brindes e doações; rastrear pagamento à Associação Luz.",
+      "alcance_da_biblioteca": "A biblioteca só reproduz os incisos VI (doações) e VII (brindes) do art. 13 — o texto vem truncado ('[...]'). Itens outros do caput do art. 13 NÃO podem ser afirmados com a biblioteca fornecida: devem ser apontados como não verificáveis, não como conformidade (library/INDEX.md; library/lei9249_art13.md).",
+      "em_janeiro": "brindes e doação confirmados pelo cliente, sem valor; registrado em deliverable/mes_01/brindes_doacoes.md e UNKNOWN.md U-03/U-04"
+    },
+    {
+      "id": "T6",
+      "teste": "Depreciação contábil × depreciação fiscal",
+      "como": "conferir a taxa usada no mês contra a tabela fiscal do imobilizado; eventual diferença é adição/exclusão no e-LALUR.",
+      "limite": "nenhuma tabela de depreciação fiscal na biblioteca → U-10 de UNKNOWN.md; não calculável aqui"
+    },
+    {
+      "id": "T7",
+      "teste": "Nenhuma provisão mensal de IRPJ/CSLL",
+      "como": "confirmar que fevereiro não trouxe provisão de IRPJ/CSLL (a apuração é no fechamento do trimestre); se houver, estornar/reclassificar e registrar.",
+      "fundamento": "library/irpj_csll_trimestral.md",
+      "em_janeiro": "nenhuma provisão lançada — nada a fazer"
+    }
+  ],
+  "retificacoes_meses_anteriores": [],
+  "retificacoes_meses_anteriores_obs": "Em aberto, sem valor: se os brindes e a doação confirmados pelo cliente (documents/email_diretor.txt e resposta de 26/10/2026) forem de competência de 4T2025, a correção é de e-LALUR/ECF de 2025 (library/irpj_csll_trimestral.md) e o 1T2026 fica sem essa adição. A competência não foi informada — U-05 de deliverable/UNKNOWN.md. Nenhuma retificação numérica pode ser lançada sem o valor e a data.",
+  "valores_nao_apurados": {
+    "receita_bruta_fev": null,
+    "pis_cofins_sobre_vendas_fev": null,
+    "icms_sobre_vendas_fev": null,
+    "creditos_validos_fev": null,
+    "creditos_indevidos_fev": null,
+    "brindes_fev": null,
+    "doacoes_fev": null,
+    "resultado_contabil_fev": null,
+    "balancete_fev_debitos": null,
+    "balancete_fev_creditos": null,
+    "obs": "null = não apurado por falta de dado de entrada (não é zero). Preencher ao receber documents/mes_02/razao.csv e balancete.csv e rodar T1-T7."
+  },
+  "alertas_permanentes_do_trimestre": [
+    "Instrução do diretor 'fecha o trimestre com o prejuízo fiscal todo compensado' (documents/email_diretor.txt) não será atendida: compensação limitada a 30% do lucro líquido ajustado pelas adições e exclusões (Lei 9.065/95, arts. 15 e 16; Lei 8.981/95, arts. 42 e 58 — library/lei9065_art15_trava.md).",
+    "Instrução 'não mexe' no crédito da Papel & Cia já foi recusada em janeiro (AJ-01/2026-01). Se fevereiro repetir o padrão (T3), o estorno é devido igualmente.",
+    "Saldos de abertura de prejuízo fiscal e base negativa (R$ 900.000,00 cada, documents/saldos_fiscais_abertura.md) seguem sem comprovação por ECF anterior — U-08 de UNKNOWN.md; carregados como declarados pela empresa, com ressalva."
+  ]
+}

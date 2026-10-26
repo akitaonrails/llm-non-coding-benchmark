@@ -1,0 +1,48 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "questions": "# QUESTÕES À CLIENTE — Sessão 1 (Execução Fiscal 5001234-56.2026.4.03.6182)\n\nFavor responder por escrito; as respostas serão aproveitadas nas Sessões 2 a 5. Não há resposta bloqueante para o protocolo da exceção de pré-executividade (Sessão 1), exceto a questão 3, que recomendamos anexar ao pedido se disponível.\n\n1. **CNPJ/RFB:** podem nos fornecer o comprovante de atualização cadastral do CNPJ relativo ao endereço novo (Av. Industrial, 2.500, Galpão 7, Cotia/SP), cuja atualização na RFB teria ocorrido em 20/03/2026? O documento que temos é só a 4ª alteração contratual (JUCESP, 12/03/2026) — o comprovante RFB fortalece o item \"endereço\" da EPE.\n2. **PAD 10880.722.144/2025-11:** existe em poder da empresa (ou do contador atual) cópia do Auto de Infração (AIF de 03/02/2026) e do Termo de Verificação Fiscal? Pede-se cópia integral, em especial para conferir: (a) a data do fato gerador declarada em cada período; (b) o fundamento legal indicado para a multa de 75%; (c) a base dos juros SELIC de cada período.\n3. **Comprovantes:** possuem os recibo/DARF de R$ 61.000 (29/01/2021) e R$ 84.000 (30/04/2021) e as DCTFs entregues de 4T/2020 e 1T/2021 (e as zeradas de 3T/2020 e 2T/2021)? São a prova do cômputo decadencial pedido (pagamentos parciais → art. 150 §4º do CTN).\n4. **Situação operacional:** a empresa está em atividade no endereço novo (industrial/produção e expediente)? Há quantos empregados e faturamento mensal aproximado? (Informa a escolha de garantia das Sessões 3-5 e é relevante para eventual penhora de percentual de faturamento.)\n5. **Sócios e administração atual:** confirmar: Ana Paula Vieira retirou-se em 15/06/2023, Bruno Tavares é administrador único desde então e permanece hoje? Há procuradores com poderes de gerência? (Fato central das Sessões 3-4 — redirecionamento.)\n6. **Seguro-garantia/fiança:** a empresa tem relação bancária sólida e balanço fechado de 2025 para cotação de seguro-garantia? (Sessão 5.)\n",
+  "facts": [
+    {
+      "id": "opera",
+      "trigger": [
+        "ainda opera",
+        "funciona",
+        "novo endereço",
+        "Cotia",
+        "mudou"
+      ],
+      "answer": "Bruno: Operamos normalmente em Cotia desde março. Mudamos o endereço na Junta e na Receita — tenho os protocolos.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "ana_saida",
+      "trigger": [
+        "Ana",
+        "saiu",
+        "retirou",
+        "2023",
+        "cedeu"
+      ],
+      "answer": "Ana: Saí em junho de 2023, vendi minhas quotas ao Bruno, tudo registrado. Não tenho nada com a empresa desde então.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "impugnacao",
+      "trigger": [
+        "impugnação",
+        "prazo administrativo",
+        "contador",
+        "DRJ"
+      ],
+      "answer": "Bruno: o contador anterior não impugnou o auto. Perdemos o prazo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "opera",
+    "ana_saida",
+    "impugnacao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

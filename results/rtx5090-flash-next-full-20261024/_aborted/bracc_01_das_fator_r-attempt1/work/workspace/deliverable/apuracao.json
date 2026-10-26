@@ -1,0 +1,37 @@
+{
+  "rbt12": 1020000,
+  "folha_12m": 284600,
+  "fator_r": 0.2790196078,
+  "anexo": "V",
+  "faixa": 4,
+  "aliquota_nominal": 0.205,
+  "parcela_deduzir": 17100,
+  "aliquota_efetiva": 0.1882352941,
+  "receitas": {
+    "servicos": 78000,
+    "locacao": 6000
+  },
+  "das": {
+    "servicos": 14682.35,
+    "locacao": 506.49,
+    "total": 15188.84
+  },
+  "reparticao": {
+    "IRPJ": null,
+    "CSLL": null,
+    "COFINS": null,
+    "PIS": null,
+    "CPP": null,
+    "ISS": 0
+  },
+  "notas": {
+    "janela_rbt12": "mai/2025 a abr/2026 (12 meses anteriores ao periodo de apuracao), LC 123/2006 art. 18 par. 1o - library/lc123_art18_fator_r.md",
+    "folha_12m_base": "documents/resumo_folha_12_meses.csv por competencia (salarios 193.000 + pro-labore 35.200 + FGTS/encargos 56.400 = 284.600). A biblioteca exige valores PAGOS na janela (Res. CGSN 140 art. 26 par. 2o); a base de pagamento nao foi fornecida. Ver QUESTIONS.md Q1-Q3. Este e o item que pode mudar o anexo: o limiar de 28% exige folha >= 285.600, faltam 1.000.",
+    "receitas_servicos": "bruto 82.000 (NFS-e 1181-1187) menos estorno 4.000 (NFS-e 1188) = 78.000; o estorno reduz a receita do mes em que ocorre - library/lc123_art18_fator_r.md",
+    "aliquota_efetiva_locacao": 0.0844147059,
+    "locacao_tratamento": "receita segregada (art. 18 par. 4o) e tributada pelo Anexo III da 4a faixa (efetiva 12,5059%) com a parcela de ISS deduzida (32,50%): 12,5059% x (1 - 0,325) = 8,4415% -> 6.000 x 8,4415% = 506,49 - library/locacao_bens_moveis_iss.md. Leitura alternativa (deduzir 32,50% da aliquota nominal) daria 7,3059% -> 438,35; a biblioteca nao define a mecanica. Ver QUESTIONS.md Q5.",
+    "reparticao": "ISS = 0 apenas porque a unica receita com componente de ISS seria a de servicos; a tabela de reparticao do Anexo V 4a faixa NAO consta da biblioteca (so ha a do Anexo III 4a faixa), portanto IRPJ/CSLL/COFINS/PIS/CPP do DAS de servicos nao sao apuraveis com a autoridade disponivel. Valores em null = nao apurado, nao zero apurado. Ver memoria.md secao 10 e QUESTIONS.md Q4.",
+    "comparacao_instrucao_socio": "repetir o Anexo V com a aliquota nominal da faixa (20,50%) sobre 84.000 sem segregar a locacao daria 17.220,00, ou seja 2.031,16 a mais do que o valor apurado.",
+    "impacto_do_fator_r_na_faixa_de_fronteira": "se a folha paga na janela for >= 285.600, o anexo passa a III: DAS de servicos 9.754,59 + locacao 506,49 = 10.261,08 (diferenca de 4.927,76)."
+  }
+}

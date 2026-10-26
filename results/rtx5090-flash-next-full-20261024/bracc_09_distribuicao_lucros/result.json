@@ -1,0 +1,22 @@
+{
+  "case": "bracc_09_distribuicao_lucros",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 451.5816424090008,
+  "controller_wait_seconds": 63.00619604601525,
+  "model_turn_seconds": 388.0698048499762,
+  "turns": 4,
+  "released_facts": [
+    "auto"
+  ],
+  "usage": {
+    "input_tokens": 1152072,
+    "cached_input_tokens": 1056819,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 61164,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,60 @@
+{
+  "case": "brlaw_08_ma_diligencia",
+  "questions": "# Perguntas aos sócios (e pontos de confirmação com o comprador)\n\nAs perguntas abaixo travam apenas a *quantificação* de riscos já identificados — nenhuma delas impede a revisão da minuta, que já está feita em `redline.md`. Respostas por escrito permitem fechar os números do Anexo X e dos tetos de indenização.\n\n## A. Perguntas para os sócios da Vértice\n\n1. **Preço Total.** Qual o valor (fixo + variável) negociado ou pretendido para a cessão? A minuta do comprador não fixa o Preço Total; todos os cálculos de franquia (R$ 150 mil), teto de 15%, escrow de 20% e teto do earn-out dependem desse número. *Sem resposta, mantivemos exemplos ilustrativos declarados.*\n\n2. **Contrato Horizonte Azul — saldo contratual.** Quanto falta receber do contrato de prestação de serviços (2024–2028) na data provável do fechamento? A multa da cláusula 19 é de 20% do saldo; usamos premissa de 24 meses (R$ 2.604.000,00 → multa de R$ 520.800,00). Confirmem também se já houve qualquer conversa com a Horizonte Azul sobre a venda.\n\n3. **Os 11 engenheiros PJ (DR §2.2).** (a) Remuneração média mensal de cada um; (b) data de início de cada prestação; (c) existe contrato escrito e notas fiscais regulares; (d) já houve fiscalização trabalhista/previdenciária ou notificação sobre esse tema? O data room compara o perfil ao \"caso Solaris\" — **o que foi o caso Solaris** (processo contra a Vértice? do setor?). Isso não consta dos nossos materiais e calibra a probabilidade do risco.\n\n4. **IRPJ de R$ 310.000,00 (DR §3.1).** O débito em cobrança está quitado, parcelado, ou garantido? Se ainda não parcelado, autorizam quitar/parcelar antes do fechamento (nossa recomendação)? Há discussão administrativa em curso sobre o mérito?\n\n5. **ISS/Sublimite do Simples (DR §3.2).** O sublimite foi ultrapassado em 2025 com ISS \"por fora\": existe cálculo, autuação ou cobrança em curso com valor definido? Em qual(is) município(s)? O data room não quantifica — não inventamos número.\n\n6. **Reclamações trabalhistas (DR §2.3).** Confirmar os 3 processos (partes, varas, estágios) e se há proposta de acordo em valores compatíveis com a provisão de R$ 380.000,00.\n\n7. **Preferência de sócios (DR §4.1).** Os 30 dias da cláusula de preferência do contrato social já foram ofertados a algum sócio? Algum sócio manifestou interesse em comprar as quotas ou discorda da venda? A minuta e o cronograma de 45 dias dependem disso.\n\n8. **Responsável técnico (DR §3.3).** Hélio sai com a venda. Quem será o RT substituto perante o CREA, e com que data de registro? É condição para manter a habilitação no contrato de Sorocaba.\n\n9. **Formação do preço.** Que plano/projeções de EBITDA embasaram a precificação? Sem um número de referência, o gatilho do earn-out (EBITDA > R$ 1,1 mi) e o teto (R$ 1,5 mi) não podem ser negociados com base em metas factíveis (ver aritmética em `redline.md`, cláusula 2.3).\n\n## B. Pontos a confirmar por escrito com o advogado do comprador\n\n10. **Faturamento do grupo Meridiano no ano de referência do art. 88.** Confirmar que o faturamento bruto anual no Brasil do grupo é mesmo R$ 390 milhões (DR §4.2). Se atingir R$ 750 milhões no ano de referência, revertemos a conclusão de não notificação ao CADE.\n\n11. **Minuta completa.** O arquivo analisado traz apenas cláusulas relevantes + carta. Necessário receber a minuta integral para: (a) tabela de Preço Total e forma de pagamento; (b) definição de \"data limite\" e cláusula de MAC (material adverse change), se houver; (c) confirmação de que o escrow (10.2) cobre todas as claims; (d) anexos 3.2 e demais anexos.\n\n12. **Anuências (Anexo 3.2 \"não aplicável\").** Confirmar por escrito se o comprador admite que a anuência da Horizonte Azul (e a comunicação prévia a Sorocaba) constem de anexo com obrigação do comprador pós-fechamento — proposta redigida em `redline.md`, cláusula 3.2/Anexo 3.2.\n\n# PERGUNTAS\n\nAs perguntas aos sócios e os pontos de confirmação com o comprador estão reunidos em [`QUESTIONS.md`](QUESTIONS.md) (mesmo conteúdo, um único arquivo para evitar duplicação):\n\n- A. Perguntas para os sócios da Vértice (preço; saldo da Horizonte Azul; situação e remuneração dos 11 engenheiros PJ e o \"caso Solaris\"; situação do débito de IRPJ de R$ 310 mil; valores de ISS fora do Simples; estágio dos 3 processos trabalhistas; preferência de sócios de 30 dias; responsável técnico substituto no CREA; plano de EBITDA que embasou o preço).\n- B. Confirmações escritas ao advogado do comprador (faturamento do grupo no ano de referência do art. 88; minuta completa com Preço Total, data limite e anexos; tratamento da anuência da Horizonte Azul no Anexo 3.2).\n",
+  "facts": [
+    {
+      "id": "horizonte",
+      "trigger": [
+        "Horizonte Azul",
+        "anuência",
+        "mudança de controle",
+        "31%"
+      ],
+      "answer": "Hélio: a Horizonte Azul é nosso maior cliente; o diretor deles é meu amigo, mas o jurídico deles é duro. Não contamos da venda ainda.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pjs",
+      "trigger": [
+        "PJ",
+        "engenheiros",
+        "vínculo",
+        "horário",
+        "exclusiv"
+      ],
+      "answer": "Beatriz: os 11 engenheiros PJ trabalham 9h-18h aqui, exclusivos, com gestor. Sempre foi assim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "cnd",
+      "trigger": [
+        "CND",
+        "certidão",
+        "IRPJ 2023",
+        "parcel",
+        "débito"
+      ],
+      "answer": "Hélio: tem um débito de IRPJ de 2023 em cobrança, uns 310 mil; não parcelamos porque discordamos.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "revelado",
+      "trigger": [
+        "mostrou",
+        "data room",
+        "comprador viu",
+        "sabe dos PJ"
+      ],
+      "answer": "Beatriz: o Meridiano viu tudo no data room, inclusive a lista dos PJs e a certidão positiva. Não reclamaram.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "horizonte",
+    "pjs",
+    "cnd",
+    "revelado"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

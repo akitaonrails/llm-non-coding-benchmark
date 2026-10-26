@@ -1,0 +1,48 @@
+{
+  "case": "uslaw_08_sale_diligence_apa",
+  "questions": "# Questions for the client (Ray Brightline)\n\nAnswers needed to close the open items. Each deliverable currently proceeds on stated assumptions; answer any that apply and we will update.\n\n1. **Purchase price.** The APA excerpt never states the price; the escrow ($310,000 = \"10%\") implies **$3.1M**. Confirm the actual price and how much is cash at closing vs. escrow/holdback. (All cap/basket math scales with this.)\n\n2. **Price allocation / the \"tax engagement.\"** Our reference notes mention a \"$400k of price\" allocated to the non-compete, \"see tax engagement\" — that document is not in our file. Is any part of the price allocated to the non-compete or the earn-out? Who is doing the tax side, and can you send us the allocation? (This decides how hard we push on §8.2.)\n\n3. **Installer hours (FLSA exposure).** Your nine 1099 installers are paid hourly ($34–41/hr). Roughly how many hours per week do they actually work — do any regularly exceed 40? Unpaid overtime is part of the exposure we are sizing, and we have no hours data in the data room.\n\n4. **Installer future.** Does Lone Star intend to keep the nine installers (as employees) after closing? If yes, the buyer has direct continuity exposure (FLSA successor liability), which helps us argue the special indemnity should be modest.\n\n5. **Tax history.** Has Brightline ever received an IRS, Texas Workforce Commission, or unemployment-tax audit, notice, or assessment concerning the installers? Any workers' comp claims by an installer? (Goes to the disclosure schedule and whether \"non-willful\" treatment is safe.)\n\n6. **Hensley relationship.** Are you on good terms with Hensley Homes? Any open complaints? Are you willing to approach them for consent as soon as the APA is agreed in principle, and what concession (price, terms) are you willing to pay to get the consent quickly?\n\n7. **Landlord.** Any reason the 7700 Burleson Rd landlord could refuse or delay consent (lease defaults, unpaid rent, prior unapproved changes)? Does the buyer intend to keep operating at that shop?\n\n8. **The 22 residential contracts.** Do any depend on you personally (custom design work you do yourself)? If so, those duties may not be delegable without consent, and they belong on Schedule 3.3.\n\n9. **The \"one-time\" legal $42k add-back.** What was that spend? The data room only shows a $9,800 Hardaway dispute and warranty items — a buyer's quality-of-eye review will ask, and it affects whether $740k EBITDA survives diligence.\n\n10. **Spray-booth permit.** Has anyone applied to the City of Austin for the new owner's permit? Nothing in the data room shows a filing, and the 30–60 day runway conflicts with a two-week signing target.\n",
+  "facts": [
+    {
+      "id": "hensley_relationship",
+      "trigger": [
+        "Hensley",
+        "consent",
+        "talked to",
+        "relationship",
+        "38%"
+      ],
+      "answer": "Hensley's owner is a friend. I haven't told him I'm selling. He won't love a corporate buyer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "installers_hours",
+      "trigger": [
+        "installers",
+        "hours",
+        "overtime",
+        "how many hours",
+        "1099"
+      ],
+      "answer": "The installers do 45–50 hours a week in busy season. Paid straight hourly. They like it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "disclosed",
+      "trigger": [
+        "disclose",
+        "told the buyer",
+        "schedule",
+        "did Lone Star know"
+      ],
+      "answer": "The buyer's people saw the census and asked about the 1099s. I said it's industry standard. They didn't push back.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "hensley_relationship",
+    "installers_hours",
+    "disclosed"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,1146 @@
+[
+  {
+    "ref": "BILL-INV-2374",
+    "date": "2025-08-01",
+    "memo": "INV-2374 Birch Health Co; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 650.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2375",
+    "date": "2025-08-01",
+    "memo": "INV-2375 Ember Health Co; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2376",
+    "date": "2025-08-01",
+    "memo": "INV-2376 Kestrel Systems Inc; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2377",
+    "date": "2025-08-01",
+    "memo": "INV-2377 Granite Systems LLC; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2378",
+    "date": "2025-08-01",
+    "memo": "INV-2378 Iris Health LLC; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 900.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2379",
+    "date": "2025-08-01",
+    "memo": "INV-2379 Birch Labs LLC; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2380",
+    "date": "2025-08-01",
+    "memo": "INV-2380 Fjord Studios Inc; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2381",
+    "date": "2025-08-01",
+    "memo": "INV-2381 Juniper Logistics LLC; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 650.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2382",
+    "date": "2025-08-01",
+    "memo": "INV-2382 Cedar Labs LLC; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2383",
+    "date": "2025-08-01",
+    "memo": "INV-2383 Cedar Logistics LLC; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2384",
+    "date": "2025-08-01",
+    "memo": "INV-2384 Ember Capital Inc; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2385",
+    "date": "2025-08-01",
+    "memo": "INV-2385 Alder Studios LLC; Monthly subscription \u2014 August 2025; final service month per cancellation effective August 31",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2386",
+    "date": "2025-08-01",
+    "memo": "INV-2386 Ember Logistics Inc; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2387",
+    "date": "2025-08-01",
+    "memo": "INV-2387 Dune Health Co; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 900.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2388",
+    "date": "2025-08-01",
+    "memo": "INV-2388 Dune Foods Co; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2389",
+    "date": "2025-08-01",
+    "memo": "INV-2389 Cedar Logistics Inc; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2390",
+    "date": "2025-08-01",
+    "memo": "INV-2390 Harbor Logistics LLC; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 1200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1200.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2391",
+    "date": "2025-08-01",
+    "memo": "INV-2391 Alder Studios Inc; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 900.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2392",
+    "date": "2025-08-01",
+    "memo": "INV-2392 Ember Capital Co; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2393",
+    "date": "2025-08-01",
+    "memo": "INV-2393 Kestrel Foods Co; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 650.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2394",
+    "date": "2025-08-01",
+    "memo": "INV-2394 Cedar Studios Inc; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 900.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2395",
+    "date": "2025-08-01",
+    "memo": "INV-2395 Fjord Health Co; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2396",
+    "date": "2025-08-01",
+    "memo": "INV-2396 Ember Systems Inc; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "BILL-INV-2397",
+    "date": "2025-08-01",
+    "memo": "INV-2397 Ember Foods LLC; Monthly subscription \u2014 August 2025",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "PAY-VB-01",
+    "date": "2025-08-05",
+    "memo": "Bank payment to AWS",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 10760.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 10760.0
+      }
+    ]
+  },
+  {
+    "ref": "VB-01",
+    "date": "2025-08-05",
+    "memo": "AWS bill; Hosting & infrastructure",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 10760.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 10760.0
+      }
+    ]
+  },
+  {
+    "ref": "PAY-VB-02",
+    "date": "2025-08-06",
+    "memo": "Bank payment to WeWork",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "VB-02",
+    "date": "2025-08-06",
+    "memo": "WeWork bill; Rent",
+    "lines": [
+      {
+        "account": "5200",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "PAY-VB-03",
+    "date": "2025-08-07",
+    "memo": "Bank payment to Gusto fees",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "VB-03",
+    "date": "2025-08-07",
+    "memo": "Gusto fees bill; G&A other",
+    "lines": [
+      {
+        "account": "5300",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "PAY-VB-04",
+    "date": "2025-08-08",
+    "memo": "Bank payment to Notion/Slack/GitHub",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "VB-04",
+    "date": "2025-08-08",
+    "memo": "Notion/Slack/GitHub bill; Software & tools",
+    "lines": [
+      {
+        "account": "5400",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "PAY-VB-05",
+    "date": "2025-08-09",
+    "memo": "Bank payment to Google Ads",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 3600.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 3600.0
+      }
+    ]
+  },
+  {
+    "ref": "VB-05",
+    "date": "2025-08-09",
+    "memo": "Google Ads bill; Marketing",
+    "lines": [
+      {
+        "account": "5500",
+        "debit": 3600.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 3600.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2389",
+    "date": "2025-08-20",
+    "memo": "Receipt from Cedar Logistics Inc applied to INV-2389",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2391",
+    "date": "2025-08-20",
+    "memo": "Receipt from Alder Studios Inc applied to INV-2391",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 900.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2393",
+    "date": "2025-08-20",
+    "memo": "Receipt from Kestrel Foods Co applied to INV-2393",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 650.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2396",
+    "date": "2025-08-20",
+    "memo": "Receipt from Ember Systems Inc applied to INV-2396",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2383",
+    "date": "2025-08-21",
+    "memo": "Receipt from Cedar Logistics LLC applied to INV-2383",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2397",
+    "date": "2025-08-21",
+    "memo": "Receipt from Ember Foods LLC applied to INV-2397",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2375",
+    "date": "2025-08-22",
+    "memo": "Receipt from Ember Health Co applied to INV-2375",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2377",
+    "date": "2025-08-22",
+    "memo": "Receipt from Granite Systems LLC applied to INV-2377",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2382",
+    "date": "2025-08-22",
+    "memo": "Receipt from Cedar Labs LLC applied to INV-2382",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2385",
+    "date": "2025-08-22",
+    "memo": "Receipt from Alder Studios LLC applied to INV-2385",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2381",
+    "date": "2025-08-23",
+    "memo": "Receipt from Juniper Logistics LLC applied to INV-2381",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 650.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2384",
+    "date": "2025-08-23",
+    "memo": "Receipt from Ember Capital Inc applied to INV-2384",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2386",
+    "date": "2025-08-23",
+    "memo": "Receipt from Ember Logistics Inc applied to INV-2386",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2390",
+    "date": "2025-08-23",
+    "memo": "Receipt from Harbor Logistics LLC applied to INV-2390",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 1200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 1200.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2394",
+    "date": "2025-08-23",
+    "memo": "Receipt from Cedar Studios Inc applied to INV-2394",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 900.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2376",
+    "date": "2025-08-24",
+    "memo": "Receipt from Kestrel Systems Inc applied to INV-2376",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2378",
+    "date": "2025-08-24",
+    "memo": "Receipt from Iris Health LLC applied to INV-2378",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 900.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2379",
+    "date": "2025-08-24",
+    "memo": "Receipt from Birch Labs LLC applied to INV-2379",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "PR-2025-08-25",
+    "date": "2025-08-25",
+    "memo": "August payroll gross wages and employee withholding",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2100",
+        "debit": 0.0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "PR-ER-2025-08-25",
+    "date": "2025-08-25",
+    "memo": "August employer taxes and benefits accrued",
+    "lines": [
+      {
+        "account": "5010",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2100",
+        "debit": 0.0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "PR-TAX-2025-08-25",
+    "date": "2025-08-25",
+    "memo": "August payroll tax remittance: employee withholding plus employer taxes and benefits",
+    "lines": [
+      {
+        "account": "2100",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2387",
+    "date": "2025-08-25",
+    "memo": "Receipt from Dune Health Co applied to INV-2387",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 900.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2392",
+    "date": "2025-08-25",
+    "memo": "Receipt from Ember Capital Co applied to INV-2392",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 2400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 2400.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2395",
+    "date": "2025-08-25",
+    "memo": "Receipt from Fjord Health Co applied to INV-2395",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2374",
+    "date": "2025-08-26",
+    "memo": "Receipt from Birch Health Co applied to INV-2374",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 650.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2380",
+    "date": "2025-08-26",
+    "memo": "Receipt from Fjord Studios Inc applied to INV-2380",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "RCPT-INV-2388",
+    "date": "2025-08-26",
+    "memo": "Receipt from Dune Foods Co applied to INV-2388",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 450.0
+      }
+    ]
+  },
+  {
+    "ref": "DEP-2025-08",
+    "date": "2025-08-31",
+    "memo": "Monthly computer equipment depreciation per close checklist",
+    "lines": [
+      {
+        "account": "5900",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "REV-MARIGOLD-2025-08",
+    "date": "2025-08-31",
+    "memo": "Marigold Mar 2025\u2013Feb 2026 annual contract: August ratable release",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 1500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "REV-PINECONE-2025-08",
+    "date": "2025-08-31",
+    "memo": "Pinecone Feb 2025\u2013Jan 2026 annual subscription: August ratable release",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 3000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 3000.0
+      }
+    ]
+  },
+  {
+    "ref": "REV-QUARRY-2025-08",
+    "date": "2025-08-31",
+    "memo": "Quarry May 2025\u2013Apr 2026 annual contract: August ratable release",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2500.0
+      }
+    ]
+  },
+  {
+    "ref": "REV-SALTLINE-2025-08",
+    "date": "2025-08-31",
+    "memo": "Saltline Jun 2025\u2013May 2026 annual contract: August ratable release",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "REV-TRESTLE-NEW-2025-08",
+    "date": "2025-08-31",
+    "memo": "Trestle Jan\u2013Dec 2025 annual contract: August ratable release",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2000.0
+      }
+    ]
+  }
+]

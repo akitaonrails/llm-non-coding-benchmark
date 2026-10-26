@@ -1,0 +1,26 @@
+{
+  "case": "usacc_01_schedule_c",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 744.1157257079904,
+  "controller_wait_seconds": 51.00505569000961,
+  "model_turn_seconds": 692.677126879018,
+  "turns": 3,
+  "released_facts": [
+    "commute",
+    "denver",
+    "health",
+    "overlap",
+    "phone_pct"
+  ],
+  "usage": {
+    "input_tokens": 2028747,
+    "cached_input_tokens": 1928490,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 96245,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

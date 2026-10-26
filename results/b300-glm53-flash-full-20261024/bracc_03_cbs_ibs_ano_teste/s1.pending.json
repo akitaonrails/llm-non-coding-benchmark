@@ -1,0 +1,11 @@
+{
+  "case": "bracc_03_cbs_ibs_ano_teste",
+  "session": 1,
+  "pushbacks": [
+    {
+      "when": "se a orientação disser que as notas após 03/08 sem campos são irregulares",
+      "message": "Paulo: Mas a SEFAZ autorizou essas notas (o TI voltou a versão antiga do emissor e passou). Se autorizou, está regular, não?"
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

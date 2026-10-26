@@ -1,0 +1,23 @@
+{
+  "case": "bracc_08_recuperacao_judicial",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 624.4966237350018,
+  "controller_wait_seconds": 72.00686767703155,
+  "model_turn_seconds": 552.2112656750251,
+  "turns": 6,
+  "released_facts": [
+    "beta",
+    "norte"
+  ],
+  "usage": {
+    "input_tokens": 1735176,
+    "cached_input_tokens": 1588857,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 86190,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

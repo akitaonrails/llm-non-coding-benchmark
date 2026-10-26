@@ -1,0 +1,48 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "questions": "# Questions for the client (Ray Brightline) — status after client reply\n\n## ANSWERED\n\n1. **Covenant / consulting payment:** Client confirms the $400,000 is entirely the 5-year\nnon-competition payment — no separate services component — and he will sign for 5 years\n(he is retiring). He is indifferent to how the payment is labeled as long as the total is unchanged.\nTax consequence is now fixed: the full 400,000 (Exhibit A) is covenant income — **ordinary income to\nRay personally** (`library/irc_197_and_noncompete.md`, Rev. Rul. 69-643; *Muskat*). The counter's\nClass VI position (100,000) stands unchanged by this answer; the covenant term/retiring-seller facts\nare consistent with a real, valuable restraint, which is what keeps a partial Class VI allocation\ndefensible as economic reality.\n\n## UNANSWERED — remaining unknowns (client offered no additional information)\n\n2. **FMV support for Class V (equipment & vehicles) at 650,000:** The fixed asset register's\n`fmv_estimate` column is the only source for the counter's Class V price, and nothing in the file\nsays who prepared it or as of what date. **Flagged unknown** — if Buyer A disputes 650,000, the\nClass V/Exhibit A fix (worth 92,500 to Ray) rests on an unsupported estimate and could require an\nappraisal before signing.\n\n3. **Receivables history:** The file says 200,000 with \"no reserve,\" but whether any prior-year\nbad-debt deductions or reserves exist is unconfirmed. **Flagged unknown** — if any existed, the\nClass III sale could produce ordinary gain (become a tax trap rather than a wash).\n\n## Not answerable by the client (matters of law outside the library) — see memo § 9\n\n- Self-employment tax on Ray's covenant income; Texas franchise tax computation; §453A\ninterest-charge floor on deferred sales; §453B acceleration on note default; the §1221/§1231/§1253\nstatutory underpinning of goodwill-as-capital; character of the §1366(f)(2) BIG-tax loss\npass-through. All labeled unverified in the memo and referred to the return CPA.\n",
+  "facts": [
+    {
+      "id": "noncompete_term",
+      "trigger": [
+        "non-compete",
+        "noncompete",
+        "longer term",
+        "consult",
+        "stay on"
+      ],
+      "answer": "I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "note_security",
+      "trigger": [
+        "note",
+        "secured",
+        "collateral",
+        "Hensley credit"
+      ],
+      "answer": "The $500k note is unsecured. Hensley's a family office, seems solid, but I don't know their balance sheet.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "liabilities",
+      "trigger": [
+        "liabilities",
+        "warranty",
+        "claims",
+        "lawsuit",
+        "Hardaway"
+      ],
+      "answer": "There's the Hardaway dispute ($9,800) and the usual warranty stuff. Nothing big that I know of.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "noncompete_term"
+  ],
+  "literal_suggestions": [
+    "note_security"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

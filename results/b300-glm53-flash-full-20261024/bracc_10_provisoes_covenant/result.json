@@ -1,0 +1,24 @@
+{
+  "case": "bracc_10_provisoes_covenant",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 879.04205516199,
+  "controller_wait_seconds": 77.00738181601628,
+  "model_turn_seconds": 801.5329107919824,
+  "turns": 4,
+  "released_facts": [
+    "afac_delib",
+    "renovacao",
+    "waiver"
+  ],
+  "usage": {
+    "input_tokens": 1848547,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 90985,
+    "reasoning_output_tokens": 60135
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

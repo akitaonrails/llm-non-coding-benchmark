@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "empresa": "Atlas Distribuidora S.A.",
+    "competencia": "2026-01",
+    "encerramento": "mes 1/3 do trimestre 1º trimestre de 2026",
+    "regime": "Lucro Real trimestral (apuração e recolhimento de IRPJ/CSLL no fechamento do trimestre); PIS/COFINS não cumulativo (fatos geradores mensais)",
+    "moeda": "BRL",
+    "data_referencia_lancamentos": "2026-01-31",
+    "estrutura": "linhas em partida dobrada; soma de débitos = soma de créditos em cada lançamento e no conjunto",
+    "fontes": [
+      "documents/mes_01/razao.csv",
+      "documents/mes_01/balancete.csv",
+      "documents/mes_01/nf_8812_papel_cia.md",
+      "documents/balancete_abertura.csv",
+      "documents/saldos_fiscais_abertura.md",
+      "documents/email_diretor.txt"
+    ]
+  },
+  "lancamentos": [
+    {
+      "id": "AJ-01/2026-01",
+      "data": "2026-01-31",
+      "ref": "NF8812-EST",
+      "tipo": "estorno_credito_pis_cofins_indevido",
+      "fato_retificado": "2026-01-09 — NF-e 8812 Papel & Cia Suprimentos Ltda, CFOP 1556 (material de uso e consumo administrativo), razão ref NF8812: D 4.2.04 120.000,00 + D 1.1.04 11.100,00 / C 2.1.01 131.100,00",
+      "historico": "Estorno do crédito de PIS/COFINS (9,25%) tomado indevidamente sobre material de uso e consumo das áreas administrativas (papel A4, toners, material de escritório — NF-e 8812). O valor do tributo destacado pelo fornecedor, não recuperável, passa a compor o custo do material: despesa 4.2.04 de R$ 120.000,00 passa a R$ 131.100,00.",
+      "calculo": "120.000,00 x 9,25% (PIS 1,65% + COFINS 7,60%) = 11.100,00",
+      "linhas": [
+        {
+          "conta": "4.2.04",
+          "nome": "Material de uso e consumo",
+          "debito": 11100.0,
+          "credito": 0.0
+        },
+        {
+          "conta": "1.1.04",
+          "nome": "Tributos a recuperar (PIS/COFINS)",
+          "debito": 0.0,
+          "credito": 11100.0
+        }
+      ],
+      "valor": 11100.0,
+      "fundamentacao": [
+        "Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR — biblioteca: library/pis_cofins_uso_consumo.md (material de uso e consumo administrativo não é insumo e não gera crédito; crédito tomado indevidamente deve ser estornado)"
+      ],
+      "efeito_resultado_contabil": -11100.0,
+      "efeito_fiscal": "Aumenta em R$ 11.100,00 o PIS/COFINS a recolher da competência 01/2026 (ver pis_cofins.json). Para IRPJ/CSLL não é adição: o acréscimo de R$ 11.100,00 é custo de aquisição de material de uso e consumo, despesa operacional não constante das vedações do art. 13 da Lei 9.249/95 (library/lei9249_art13.md). A regra geral de dedutibilidade de despesas operacionais não está reproduzida na biblioteca — interpretação sinalizada.",
+      "observacao": "Instrução do diretor financeiro (documents/email_diretor.txt: 'o crédito de PIS/COFINS da Papel & Cia já foi tomado em janeiro, não mexe') foi RECUSADA: manter o crédito significaria crédito indevido declarado em EFD-Contribuições e recolhimento a menor de R$ 11.100,00. Resposta do cliente em 26/10/2026: 'é papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.' A justificativa não procede: o destaque feito pelo fornecedor apenas evidencia o tributo pago por ele na venda; o direito a crédito não decorre do destaque, e sim de o bem ser insumo (essencial/relevante) na produção ou revenda — Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR (library/pis_cofins_uso_consumo.md). Sendo material de uso e consumo das áreas administrativas (CFOP 1556), não há crédito, destacado ou não; ao contrário, é justamente o destaque que faz o tributo compor o custo de aquisição: 120.000,00 + 11.100,00 = 131.100,00. Ver pendencias.md item 1 e brindes_doacoes.md."
+    },
+    {
+      "id": "AJ-02/2026-01",
+      "data": "2026-01-31",
+      "ref": "PISCOFINS-COMP",
+      "tipo": "compensacao_credito_valido_com_obrigacao",
+      "fato_retificado": "2026-01-15 — compras de mercadorias (ref COMPRA): crédito de PIS/COFINS de R$ 155.067,00 registrado em 1.1.04 e nunca baixado contra 2.1.03",
+      "historico": "Compensação dos créditos válidos de PIS/COFINS de mercadorias para revenda contra a obrigação tributária da competência 01/2026. Os lançamentos originais mantiveram o crédito inteiro no ativo (1.1.04) e o débito integral de vendas no passivo (2.1.03), sem a baixa da compensação; o passivo ficava superestimado e o ativo continha crédito que não seria recuperado.",
+      "calculo": "1.676.400,00 x 9,25% = 155.067,00 (confere com o valor registrado em 1.1.04)",
+      "linhas": [
+        {
+          "conta": "2.1.03",
+          "nome": "Tributos a recolher",
+          "debito": 155067.0,
+          "credito": 0.0
+        },
+        {
+          "conta": "1.1.04",
+          "nome": "Tributos a recuperar (PIS/COFINS)",
+          "debito": 0.0,
+          "credito": 155067.0
+        }
+      ],
+      "valor": 155067.0,
+      "fundamentacao": [
+        "Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º — biblioteca: library/pis_cofins_uso_consumo.md (geram crédito os bens utilizados como insumo na produção/revenda)"
+      ],
+      "efeito_resultado_contabil": 0.0,
+      "efeito_fiscal": "Nenhum efeito sobre o valor devido (R$ 79.883,00); efeito de apresentação: 2.1.03 passa a evidenciar o saldo líquido a recolher de PIS/COFINS de janeiro e 1.1.04 zera (não há saldo de crédito a compensar/carregar).",
+      "observacao": "Ajuste de apresentação/classificação, não de mérito fiscal. Se a Atlas mantiver a compensação apenas na EFD-Contribuições, o registro contábil deve ao menos conciliar com a DCTF/DAS."
+    }
+  ],
+  "retificacoes_meses_anteriores": [],
+  "retificacoes_meses_anteriores_obs": "Nenhuma. O crédito indevido é da própria competência 01/2026 (NF-e 8812, 09/01/2026); a retificação devida é da EFD-Contribuições de 01/2026 (mesma competência), tratada em pis_cofins.json. Saldos de abertura de IRPJ/CSLL (prejuízo fiscal R$ 900.000,00 e base negativa R$ 900.000,00) foram conferidos apenas quanto à existência (documents/saldos_fiscais_abertura.md); a apuração é trimestral e será feita em deliverable/mes_03/lalur.json.",
+  "nao_ajustado_aguardando_cliente": [
+    {
+      "item": "Despesas com brindes — vinho e canivete gravado entregues aos 400 melhores clientes",
+      "status": "EXISTÊNCIA CONFIRMADA PELO CLIENTE em 26/10/2026; VALOR NÃO INFORMADO ('the client has no additional information')",
+      "classificacao_fiscal": "Dedução VEDADA para o lucro real e para a base de cálculo da CSLL — Lei 9.249/95, art. 13, VII, 'independentemente do disposto no art. 47 da Lei 4.506/64' (library/lei9249_art13.md). A alegação do cliente de que 'é marketing/despesa comercial' é irrelevante: o art. 13 não se ocupa da classificação contábil da despesa.",
+      "tratamento": "Adição na Parte A do e-LALUR do trimestre (library/irpj_csll_trimestral.md: despesas indedutíveis são adições na Parte A; não se altera a contabilidade societária, apenas a apuração fiscal). Por isso não há lançamento contábil em janeiro, e o fechamento do mês não depende desse valor.",
+      "motivo_de_nao_lancar": "Nenhum documento em documents/ evidencia brinde ou seu valor (busca no razão/balancete/NF-e não localizou). Não inventamos número. Contas candidatas: 4.2.02 Despesas comerciais R$ 85.000,00 e/ou 4.2.03 Despesas administrativas R$ 96.000,00 — teto conjunto de R$ 181.000,00, que é limite material possível, não fato apurado.",
+      "exposicao_se_nao_quantificado": "Cada R$ 1.000,00 de brinde não adicionado custa R$ 238,00 de IRPJ+adicional+CSLL no caso da Atlas (trava de 30% + lucro real acima de R$ 60.000,00 no trimestre), R$ 168,00 se o lucro real trimestral ficasse abaixo de R$ 60.000,00, e até R$ 340,00 se não houvesse trava nem saldo a compensar. Aritmética e cenários em deliverable/mes_01/brindes_doacoes.md e deliverable/mes_03/memoria.md § 8.",
+      "impacto_em_janeiro": "Nenhum efeito no balancete ajustado deste mês; impacto apenas no IRPJ/CSLL do trimestre (deliverable/mes_03/lalur.json)."
+    },
+    {
+      "item": "Doação/benefício à Associação Luz (ONG de bairro)",
+      "status": "EXISTÊNCIA AFIRMADA PELO CLIENTE em 26/10/2026 ('ONG do bairro, não tem título nenhum; o presidente conhece o dono'); VALOR NÃO INFORMADO; nenhum lançamento no arquivo a identifica",
+      "classificacao_fiscal": "Dedução VEDADA — Lei 9.249/95, art. 13, VI ('das doações, exceto as referidas no § 2º'). A exceção do § 2º, II exige entidade civil sem fins lucrativos RECONHECIDA COMO DE UTILIDADE PÚBLICA FEDERAL ou QUALIFICADA COMO OSCIP; o cliente afirma que a entidade 'não tem título nenhum' → exceção inaplicável; nem é projeto cultural (§ 2º, I) nem instituição de ensino/pesquisa (§ 2º, III). Logo, doação integralmente indedutível para IRPJ e CSLL (library/lei9249_art13.md).",
+      "limite_da_excecao": "Mesmo que a entidade fosse qualificada, a dedução seria limitada a 2% do lucro operacional: lucro operacional de janeiro = R$ 156.483,00 → teto de R$ 3.129,66 (aritmética em deliverable/mes_01/brindes_doacoes.md).",
+      "tratamento": "Adição na Parte A do e-LALUR do trimestre, quando quantificada; sem lançamento na contabilidade societária.",
+      "motivo_de_nao_lancar": "Sem documento e sem valor. A Associação não aparece no razão de janeiro; pode estar embutida em 4.2.02/4.2.03 ou fora dos livros — hipótese, não constatação.",
+      "ponto_nao_verificavel": "Eventual relação com partes relacionadas ('o presidente conhece o dono') e eventual doação de bens (desdobramentos de ICMS/IPI/PIS/COFINS) não têm norma na biblioteca fornecida (library/INDEX.md): registrado como não verificado, não como conformidade."
+    }
+  ],
+  "conciliacao": {
+    "balancete_original": {
+      "debitos": 19880584.0,
+      "creditos": 19880584.0,
+      "diferenca": 0.0
+    },
+    "razao_saldos_vs_balancete": "14 contas conferem conta a conta entre razão e balancete de 31/01/2026 (ver script de conferência); nenhuma divergência",
+    "ajustes_debito": 166167.0,
+    "ajustes_credito": 166167.0,
+    "balancete_ajustado": {
+      "debitos": 20046751.0,
+      "creditos": 20046751.0,
+      "diferenca": 0.0
+    }
+  },
+  "resultado_contabil_mes": {
+    "receita_bruta": 2540000.0,
+    "pis_cofins_sobre_vendas": -234950.0,
+    "icms_sobre_vendas": -177800.0,
+    "receita_liquida": 2127250.0,
+    "cmv": -1397000.0,
+    "despesas_com_pessoal": -210000.0,
+    "despesas_comerciais": -85000.0,
+    "despesas_administrativas": -96000.0,
+    "material_uso_consumo_antes": -120000.0,
+    "depreciacao": -51667.0,
+    "despesas_financeiras": -28000.0,
+    "resultado_antes_dos_ajustes": 139583.0,
+    "efeito_dos_ajustes": -11100.0,
+    "resultado_ajustado": 128483.0,
+    "obs": "Resultado contábil do mês (não é base de IRPJ/CSLL mensal: a apuração é trimestral — library/irpj_csll_trimestral.md). Nenhum lançamento de provisão de IRPJ/CSLL foi feito em janeiro."
+  },
+  "balancete_ajustado": [
+    {
+      "conta": "1.1.01",
+      "nome": "Caixa e bancos",
+      "debito": 2504600.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "1.1.02",
+      "nome": "Clientes",
+      "debito": 3920000.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "1.1.03",
+      "nome": "Estoques",
+      "debito": 4689400.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "1.1.04",
+      "nome": "Tributos a recuperar (PIS/COFINS)",
+      "debito": 166167.0,
+      "credito": 166167.0
+    },
+    {
+      "conta": "1.2.01",
+      "nome": "Imobilizado",
+      "debito": 6200000.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "1.2.02",
+      "nome": "(-) Depreciação acumulada",
+      "debito": 0.0,
+      "credito": 2531667.0
+    },
+    {
+      "conta": "2.1.01",
+      "nome": "Fornecedores",
+      "debito": 0.0,
+      "credito": 3436167.0
+    },
+    {
+      "conta": "2.1.02",
+      "nome": "Obrigações trabalhistas",
+      "debito": 0.0,
+      "credito": 820000.0
+    },
+    {
+      "conta": "2.1.03",
+      "nome": "Tributos a recolher",
+      "debito": 155067.0,
+      "credito": 1152750.0
+    },
+    {
+      "conta": "2.1.04",
+      "nome": "Empréstimos",
+      "debito": 0.0,
+      "credito": 2400000.0
+    },
+    {
+      "conta": "2.3.01",
+      "nome": "Capital social",
+      "debito": 0.0,
+      "credito": 5000000.0
+    },
+    {
+      "conta": "2.3.02",
+      "nome": "Reservas / lucros acumulados",
+      "debito": 0.0,
+      "credito": 2000000.0
+    },
+    {
+      "conta": "3.1.01",
+      "nome": "Receita bruta de vendas",
+      "debito": 0.0,
+      "credito": 2540000.0
+    },
+    {
+      "conta": "3.1.02",
+      "nome": "(-) PIS/COFINS sobre vendas",
+      "debito": 234950.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "3.1.03",
+      "nome": "(-) ICMS sobre vendas",
+      "debito": 177800.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "4.1.01",
+      "nome": "CMV",
+      "debito": 1397000.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "4.2.01",
+      "nome": "Despesas com pessoal",
+      "debito": 210000.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "4.2.02",
+      "nome": "Despesas comerciais",
+      "debito": 85000.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "4.2.03",
+      "nome": "Despesas administrativas",
+      "debito": 96000.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "4.2.04",
+      "nome": "Material de uso e consumo",
+      "debito": 131100.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "4.2.05",
+      "nome": "Depreciação",
+      "debito": 51667.0,
+      "credito": 0.0
+    },
+    {
+      "conta": "4.3.01",
+      "nome": "Despesas financeiras",
+      "debito": 28000.0,
+      "credito": 0.0
+    }
+  ],
+  "correspondencia_cliente": {
+    "data": "2026-10-26",
+    "origem": "resposta do cliente ao deliverable/QUESTIONS.md (sessão 1)",
+    "respostas": [
+      {
+        "pergunta": "brindes: existem, em que conta, por quanto",
+        "resposta": "'Vinho e canivete gravado pros 400 melhores clientes. Marketing, ora.'",
+        "efeito": "confirma a despesa indedutível (art. 13, VII); valor permanece em aberto"
+      },
+      {
+        "pergunta": "houve doações; destinatário e qualificação da entidade",
+        "resposta": "'A Associação Luz é uma ONG do bairro, não tem título nenhum. O presidente conhece o dono.'",
+        "efeito": "doação fora das exceções do art. 13, § 2º → indedutível; valor em aberto"
+      },
+      {
+        "pergunta": "natureza das aquisições da NF-e 8812 e dos créditos tomados",
+        "resposta": "'é papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.'",
+        "efeito": "NÃO afasta o estorno: destaque do fornecedor não gera direito a crédito; uso e consumo administrativo não é insumo. Ver AJ-01/2026-01"
+      },
+      {
+        "pergunta": "demais perguntas (situação da EFD/DAS de 01/2026; ECF dos saldos de abertura; credor de 2.1.04; política de provisão mensal; escopo de ICMS; formalização da posição da administração)",
+        "resposta": "sem resposta — 'o cliente não tem informação adicional'",
+        "efeito": "convertidas em assunções explícitas e pontos não verificados; ver deliverable/QUESTIONS.md e pendencias.md"
+      }
+    ],
+    "instrucoes_nao_atendidas": [
+      {
+        "instrucao": "'o crédito de PIS/COFINS da Papel & Cia já foi tomado em janeiro, não mexe'",
+        "tratamento": "recusada; estorno AJ-01/2026-01 mantido (+R$ 11.100,00 de PIS/COFINS a recolher). Fundamento: library/pis_cofins_uso_consumo.md"
+      },
+      {
+        "instrucao": "'fecha o trimestre com o prejuízo fiscal todo compensado'",
+        "tratamento": "recusada preventivamente; a compensação terá teto de 30% do lucro líquido ajustado pelas adições e exclusões (Lei 9.065/95, arts. 15 e 16; RE 591.340/Tema 117 — library/lei9065_art15_trava.md). Será aplicada em deliverable/mes_03/lalur.json"
+      }
+    ]
+  }
+}

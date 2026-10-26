@@ -1,0 +1,11 @@
+# Required changes to any future separation agreement
+
+**Do not use the current form for Dana.** She is 42, and the form's ADEA waiver does not satisfy the supplied OWBPA requirements. Correcting the form does not cure an unlawful termination or extinguish claims arising after signature. [ADEA/OWBPA](../library/adea_owbpa_626f.md)
+
+1. **Consideration period.** Give Dana at least **21 days** to consider an individual agreement. If the request is part of an exit incentive or other employment termination program offered to a group, give at least **45 days**. Whether this is a group program is not established in the file; determine that before issuing an agreement. Replace section 7's seven-day consideration period. [ADEA/OWBPA](../library/adea_owbpa_626f.md)
+2. **Revocation and effective date.** Permit revocation for at least **seven days after execution** and state that the ADEA release is not effective until that period expires. Replace section 7's three-day revocation period. [ADEA/OWBPA](../library/adea_owbpa_626f.md)
+3. **Attorney advice.** State in writing that Dana is advised to consult an attorney before signing. The draft lacks this advice. [ADEA/OWBPA](../library/adea_owbpa_626f.md)
+4. **Scope and language.** Write the waiver in language calculated to be understood; expressly identify ADEA rights; and limit the released claims to those existing through the date Dana signs. The draft names the ADEA but its blanket “all claims” wording does not expressly exclude future claims. [ADEA/OWBPA](../library/adea_owbpa_626f.md)
+5. **Additional consideration.** Confirm in the agreement that the four weeks of base pay is in addition to all wages, benefits, and other amounts already owed. The file does not establish whether the four weeks is extra. If any portion is already owed, provide separate additional value for the ADEA waiver. [ADEA/OWBPA](../library/adea_owbpa_626f.md)
+
+The supplied authority states that a noncompliant ADEA release is unenforceable as to ADEA claims and that the employee may retain severance while pursuing such a claim. It does not establish that the Title VII, FMLA, or state-law portions of this form are valid; counsel should review those provisions against applicable authority before any later use. [ADEA/OWBPA](../library/adea_owbpa_626f.md)

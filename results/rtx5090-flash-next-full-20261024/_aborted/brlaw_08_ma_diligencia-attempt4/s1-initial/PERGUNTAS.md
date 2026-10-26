@@ -1,0 +1,5 @@
+# PERGUNTAS.md (opcional) — espelho
+
+As perguntas ao cliente estão em `QUESTIONS.md` (arquivo pelo qual o cliente responde). Este espelho existe apenas para constar no índice de entregáveis.
+
+**Rodada 2 (após resposta do cliente):** as 10 perguntas originais foram substituídas no `QUESTIONS.md` por (a) registro das respostas recebidas — Horizonte Azul é o maior cliente, venda ainda não revelada à contratante, jurídico "duro"; 11 PJs trabalham 9h–18h com exclusividade e gestor, "sempre foi assim"; débito de IRPJ 2023 (~R$ 310 mil) em cobrança, contestado pelo Vendedor e não parcelado — e (b) tabela dos pontos que seguem em aberto (o cliente não tem mais informações), cada um com a premissa adotada nos entregáveis: preço total; titularidade das quotas/preferência; saldo do contrato Horizonte Azul; sobreposição Horizonte Azul × Meridiano; relação entre as 3 ações e os PJs / cobrança INSS; EBITDA 2023–2025; detalhamento Simples/ISS; RT substituto no CREA; regiões/clientes (Anexo Y); ano-base do faturamento Meridiano; anos/remunerações do regime PJ.

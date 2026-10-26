@@ -1,0 +1,94 @@
+{
+  "year": 2026,
+  "net_before_owner_comp": 260000,
+  "revenue_year1": 610000,
+  "conventions": {
+    "entity_level_tax": "Taxes the ENTITY itself remits: CA LLC taxes/fees. Payroll taxes are shown in payroll_taxes (both employer and employee halves), not here.",
+    "founder_tax_x": "Federal + California personal income tax on each founder (and, for partnership option, self-employment tax, which has no entity payroll analogue).",
+    "payroll_taxes": "Total FICA-style employment taxes on wages, both halves. For the partnership option there is no payroll, so this is 0 and SE tax sits inside the founder lines.",
+    "total": "entity_level_tax + founder_tax_priya + founder_tax_tomas + payroll_taxes"
+  },
+  "assumptions_global": {
+    "income_tax_rate": "24% federal + 8% California = 32% combined, applied to positive taxable income. [NOT IN LIBRARY - bracket schedules, standard deductions and itemized deduction rules are outside the library; identical rates in all options so the comparison between options is apples-to-apples. Ranking is insensitive to the rate level; the dollar level is illustrative only.]",
+    "fica_se_rate": "15.3% (12.4% Social Security + 2.9% Medicare) on wages (both halves) and on 92.35% of partnership net SE earnings. [NOT IN LIBRARY - rates are outside the library; wage-base cap not modeled; at modeled income the cap could bind in later years.]",
+    "qbi": "20% deduction on pass-through income per library irc_199a_sstb.md. Priya is single: SSTB limitation does not apply while taxable income is under approx. $200,300 (threshold per library, which itself says 'verify'; phase-in range $75,000 not reached). Tomás modeled as if resident/married: under approx. $400,600.",
+    "nra_tomas": "Tomás is a NONRESIDENT ALIEN for 2026 per library irc_7701b_substantial_presence.md (118 + 96/3 + 66/6 = 161 < 183). NRA-specific tax mechanics (ECI rules, Sec. 1446 partner withholding, treaty relief, NRA FICA/W-2 treatment) are NOT IN LIBRARY. Where his tax is computed below, we assume resident-equivalent arithmetic and FLAG that actual mechanics differ (open item). CLIENT CONFIRMATION (2026-10-25): TN visa, no green card, no pending application; he estimates ~1/3 of the year in the US ~= 122 days, consistent with the 118-day projection. Even at 122 days the formula gives 165 < 183; break-even = 140 current-year days (140 + 32 + 11 = 183). Residency conclusion unchanged.",
+    "not_modeled": "FUTA/SUTA, local taxes, Mexican tax, bookkeeping of the tool's depreciation/amortization, C-corporation dividend tax. [NOT IN LIBRARY.]"
+  },
+  "client_answers_2026_10_25": {
+    "note": "Client replies received October 25, 2026. No numbers below changed; confirmations are annotated in the option blocks. Unanswered items are flagged unknowns, not new questions.",
+    "priya_basis": "CONFIRMED (client, per her CPA): ~$89,000 expensed on Schedule C 2023-2025; remaining basis ~$31,000. CPA workpapers not provided - treated as a confirmed client/CPA assertion.",
+    "tomas_days": "TN visa, no green card, no pending application; 'maybe a third of the year' ~= 122 days (365/3) vs the 118-day projection. Formula: 118 + 96/3 + 66/6 = 161 < 183; at 122 days: 165 < 183; break-even = 140 current-year days. NRA conclusion unchanged; no number below depends on it.",
+    "spouses": "Tomas married, resides in Mexico, NO prenup; Priya single. Regime specifics not provided [not in library]; written spousal consent still required before/grant per term_sheet.md Sec. 5.",
+    "unanswered": [
+      "Q1: whether any business already operated in 2026 (calendar premise unconfirmed)",
+      "Q4: withholding vendor for any partner-level withholding (quantification blocked by library absence regardless)",
+      "Q6: salary-study choice (only relevant to the deferred Sec. 9.4 S-flip)",
+      "Q7: key-person insurance vs self-funded 48-month note"
+    ],
+    "followup_2026_10_25": "Second client message the same day (Tomas): 'My friend's CPA does this for everyone. Are you sure we can't do the S-corp? What if we just list Priya as the only shareholder for now and add me later?' Answered in full as recommendation.md Sec. 4 item 3 and as option D below. It contained no answer to any open question (Q1, Q4, Q6, Q7), so the unanswered list and every number above stand unchanged."
+  },
+  "options": {
+    "A_founders_plan_as_stated": {
+      "entity_level_tax": 3300,
+      "founder_tax_priya": 34634.24,
+      "founder_tax_tomas": 34634.24,
+      "payroll_taxes": 12240,
+      "total": 84808.48,
+      "assumptions": "LLC with S election, 50/50, $40,000 salaries each, remainder distributed. *** LEGALLY UNAVAILABLE AS STATED IN 2026 ***: Tomás is an NRA shareholder, which violates library irc_1361_excerpt.md (Sec. 1361(b)(1)(C)); an S election with him as a shareholder is void from the start (Sec. 1362(d)(2), same file). Numbers below are a HYPOTHETICAL 'if he were eligible' run, as the contract requires the plan as stated to be modeled. Arithmetic: wages $80,000; employer FICA 7.65% x $80,000 = $6,120; CA LLC $800 + $2,500 gross-receipts fee (library ca_llc_franchise.md, revenue $610,000) = $3,300; remaining profit = 260,000 - 80,000 - 6,120 - 3,300 = $170,580 -> $85,290 each. Founder income tax each: (40,000 + 85,290) - QBI 20%x85,290 = 125,290 - 17,058 = 108,232 taxable x 32% = $34,634.24. FICA total = 15.3% x 80,000 = $12,240. ALSO NOT MODELED HERE: the Sec. 351 problem - if the tool is put into a corporation on these facts, the 80% control test (library irc_351_excerpt.md) is imperiled by Priya's 50% plus Tomás's service-issued stock, risking recognition of 120,000 - 31,000 = $89,000 gain on the tool; that exposure is NOT in the total above.",
+      "flags": ["INVALID in 2026 (NRA shareholder)", "reasonable-compensation exposure per library reasonable_compensation.md (Watson)", "Sec.351 gain risk on tool not in this total"]
+    },
+    "B_recommendation_llc_partnership": {
+      "entity_level_tax": 3300,
+      "founder_tax_priya": 48091.23,
+      "founder_tax_tomas": 48091.23,
+      "payroll_taxes": 0,
+      "rounding_note": "Totals computed from unrounded intermediates; recomputing from the ROUNDED founder lines gives 99,482.46 vs 99,482.47 shown - $0.01 rounding artifact, left as-is.",
+      "total": 99482.47,
+      "assumptions": "Multi-member LLC taxed as a partnership. Priya contributes the tool (Sec. 721, library irc_721_and_revproc_93-27.md: no gain, no 80% control requirement; carryover basis $31,000, CLIENT-CONFIRMED per her CPA: ~$89,000 expensed on Schedule C 2023-2025, workpapers not provided; built-in gain $89,000 embedded - allocation rules [unverified]); Tomás: $20,000 purchased capital interest + 50% PROFITS INTEREST for services, irrevocably tax-free at grant under Rev. Proc. 93-27 SEC. 4.01 (library), vesting 0/33/66/100% at months 12/24/36 with protective Sec. 83(b) per Rev. Proc. 2001-43 within 30 days (library irc_83b.md). Under Rev. Proc. 2001-43 he is taxed on his profit share while unvested. Arithmetic: profit after CA LLC fee = 260,000 - 3,300 = $256,700 -> $128,350 each. SE tax each = 15.3% x (128,350 x 92.35%) = 15.3% x 118,531.23 = $18,135.28 (NOT IN LIBRARY: SE rates/factor). Income tax each: (128,350 - 9,067.64 half-SE) - QBI 20% x 128,350 = 119,282.36 - 25,670 = 93,612.36 taxable x 32% = $29,955.95; founder total each = 29,955.95 + 18,135.28 = $48,091.23. Priya taxable $93,612 < $200,300 -> SSTB limit does not apply (library irc_199a_sstb.md). Tomás flagged resident-equivalent (see assumptions_global.nra_tomas): his ACTUAL year-1 US tax will differ in mechanics (Sec. 1446 withholding not modeled).",
+      "flags": ["Tomás NRA mechanics unmodeled", "Sec.704(c) built-in-gain allocations unverified", "SE tax is higher than the friends' plan's FICA - but B is the only VALID structure and preserves the full QBI deduction anyway; see option C for why the S-corp 'savings' evaporate"]
+    },
+    "C_scorp_corrected_reasonable_comp_illustrative": {
+      "entity_level_tax": 3300,
+      "founder_tax_priya": 37299.2,
+      "founder_tax_tomas": 37299.2,
+      "payroll_taxes": 30600,
+      "total": 108498.4,
+      "assumptions": "What the friends' plan looks like IF Tomás were an eligible shareholder AND reasonable compensation were applied. $100,000 salary each is OUR ILLUSTRATION ONLY - library reasonable_compensation.md gives the rule (pay what comparable professionals earn for generating essentially all revenue) but NO number; a market survey is required (unanswered Q6 - carried as STATUS.md open item 4). Arithmetic: wages $200,000; FICA 15.3% x 200,000 = $30,600; employer half $15,300; profit = 260,000 - 200,000 - 15,300 - 3,300 = $41,400 -> $20,700 each. Income tax each: (100,000 + 20,700) - QBI 20% x 20,700 = 120,700 - 4,140 = 116,560 taxable x 32% = $37,299.20. TOTAL = 2x37,299.20 + 0 + 30,600 + 3,300 = $108,498.40. Point of this line: at market-compensation levels the S corp costs MORE than the partnership in a consulting SSTB (payroll on $200k of wages > SE tax cross-section on the same profit, plus QBI shrinks to the small distribution). Even the friends' own $40k version (option A: $84,808) is cheaper only because its compensation is set at the level Watson recharacterized - the saving is the audit exposure.",
+      "flags": ["salary figure is an assumption, no library number", "not available in 2026 - Tomás is NRA", "payroll on $200k wages plus only $4,140 QBI each - the 'saving' evaporates; the $40k version (option A) only looks cheap because compensation is set at the level Watson recharacterized"]
+    },
+    "D_client_variant_priya_sole_shareholder": {
+      "note": "Second client message of 2026-10-25 (Tomas): 'My friend's CPA does this for everyone. Are you sure we can't do the S-corp? What if we just list Priya as the only shareholder for now and add me later?' Unlike option A, the ELECTION itself would be valid: Priya, a US person, would be the only shareholder, so sec.1361(b)(1)(C)'s nonresident-alien bar (library irc_1361_excerpt.md) is not engaged. But sole-shareholder-ness changes WHO pays, not WHAT is paid: QBI equals 20% of profits regardless of the ownership split and both founders are modeled at the same rate, so each run below reproduces an earlier option's TOTAL to the cent while moving tax between pockets. Full analysis: recommendation.md Sec. 4 item 3.",
+      "entity_level_tax": 3300,
+      "runs": {
+        "market_comp_100k_each": {
+          "founder_tax_priya": 42598.4,
+          "founder_tax_tomas": 32000,
+          "payroll_taxes": 30600,
+          "total": 108498.4,
+          "arithmetic": "Wages 200,000 = 100,000 each (salary level is OUR ILLUSTRATION ONLY, no library number - STATUS.md open item 4; Tomas is still paid market wages for the services he performs). FICA 15.3% x 200,000 = 30,600; employer half 15,300; profit = 260,000 - 200,000 - 15,300 - 3,300 = 41,400, all distributed to Priya (100% shareholder). Priya income tax: (100,000 + 41,400) - QBI 20% x 41,400 = 141,400 - 8,280 = 133,120 taxable x 32% = 42,598.40 (133,120 is under the approx. 200,300 single SSTB threshold - library irc_199a_sstb.md). Tomas: wages only, 100,000 x 32% = 32,000; W-2 wages are not QBI (library irc_199a_sstb.md) and a non-shareholder employee has no pass-through income. Aggregate = 42,598.40 + 32,000 + 30,600 + 3,300 = 108,498.40 = option C EXACTLY (per-founder shift vs option C: Priya +5,299.20, Tomas -5,299.20); vs recommendation B: +9,015.93.",
+          "delta_vs_option_C_total": 0,
+          "delta_vs_option_B_total": 9015.93
+        },
+        "friends_40k_salaries": {
+          "founder_tax_priya": 56468.48,
+          "founder_tax_tomas": 12800,
+          "payroll_taxes": 12240,
+          "total": 84808.48,
+          "arithmetic": "Wages 80,000 (40,000 each); FICA 15.3% x 80,000 = 12,240; employer half 6,120; profit = 260,000 - 80,000 - 6,120 - 3,300 = 170,580, all distributed to Priya. Priya income tax: (40,000 + 170,580) - QBI 20% x 170,580 = 210,580 - 34,116 = 176,464 taxable x 32% = 56,468.48 (176,464 is also under the approx. 200,300 SSTB threshold). Tomas: 40,000 x 32% = 12,800. Aggregate = 56,468.48 + 12,800 + 12,240 + 3,300 = 84,808.48 = option A EXACTLY (per-founder shift vs option A: Priya 34,634.24 -> 56,468.48 = +21,834.24; Tomas 34,634.24 -> 12,800 = -21,834.24). The 14,673.99 apparent saving vs B is precisely the Watson recharacterization exposure: 40,000 of salary against 170,580 of distributions to the sole revenue-generating shareholder - the same pattern the library case recharacterized (24,000 vs ~200,000, library reasonable_compensation.md).",
+          "delta_vs_option_A_total": 0,
+          "watson_exposure_note": "This is the run 'the friend's CPA does for everyone'. Its only aggregate saving is the amount a Watson-style review would reconvert into wages plus payroll taxes, penalties and interest - here concentrated in a single owner-executive of a consulting SSTB."
+        }
+      },
+      "flags": [
+        "Election itself VALID (Priya sole shareholder, a US person) - unlike option A; but valid only while Tomas owns ZERO: any share he acquires while an NRA makes the corporation fail sec.1361(b)(1)(C) and the election TERMINATES (sec.1362(d)(2), library irc_1361_excerpt.md)",
+        "Breaks the founders' agreed 50/50 economics: Tomas holds nothing during exactly the years the practice builds value; no library-supported interim equity for him (see the entry-gate flag)",
+        "Entry gates for 'add me later': (i) Tomas must FIRST meet substantial presence - steady-state arithmetic gives formula total = 1.5 x the annual US-day count, so a sustained >= 122 days/year flips him (exactly 183.00 in 2028 at the ~122-day estimate; 2029 if 2026 lands at the projected 118; NEVER if the steady count is <= 121, since 1.5 x 121 = 181.5 < 183); (ii) the transfer itself - a purchase needs a price (no market values, no lender), gift rules [NOT IN LIBRARY], and stock issued for services is compensation income at FMV when substantially vested (library irc_83b.md: 'absent the election, income is recognized as the property vests, at the value at each vesting date'; the same principle is stated in irc_351_excerpt.md)",
+        "NO profits-interest analogue in a corporation: Rev. Proc. 93-27 is a partnership provision (library irc_721_and_revproc_93-27.md); S-corp stand-ins (options, phantom equity, restricted stock) are [NOT IN LIBRARY] and none of them is a profits interest",
+        "Entity-level figure reuses the CA-LLC schedule ($800 + $2,500, library ca_llc_franchise.md) purely for comparability with options A-C, exactly as option C does; a corporation's own CA franchise minimum is [NOT IN LIBRARY]",
+        "One honest advantage of the variant: while Tomas owns nothing there is NO partnership-level sec.1446 withholding question (STATUS.md open item 2) - but that quantity is unpriced in both directions (recommendation.md Sec. 5 item 3)"
+      ]
+    }
+  },
+  "ranking_note": "A is invalid in 2026, so it is not a rival option to B. Among VALID structures, B ($99,482) beats C ($108,498). D (the client's second-round variant, Priya sole shareholder) reproduces C's total exactly at market comp ($108,498.40) and option A's exactly at the friends' $40k salaries ($84,808.48): sole-shareholder-ness moves tax between the two founders, it does not reduce the total. A and D-at-40k only appear cheapest by pricing compensation at the level courts recharacterize and by ignoring the $89,000 Sec. 351 tool-gain exposure."
+}

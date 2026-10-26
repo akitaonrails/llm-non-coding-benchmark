@@ -1,0 +1,49 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "questions": "# Questions for the client — updated March 19, 2026 (after client reply)\n\nThe client confirmed one new fact (Redwood's counsel asked whether Mesa will keep supplying on\nnormal terms if old invoices are paid; the CEO answered \"pay first\" without knowing about Dkt. 44)\nand stated there is **no additional information** for the other questions. Every remaining\nunknown is flagged below; each analysis item resting on an assumption is labeled in\n`claim_analysis.json`.\n\n## Still open (client has no information — flagged explicitly)\n\n1. **Exact creditor legal name / FEIN.** Assumption: \"Mesa Steel Supply\" is the seller entity. If the invoices were issued by a differently named entity, Form 410 must be re-captioned before filing.\n2. **Ledger completeness.** Assumption stands: no open pre-petition invoices beyond the six 2026 invoices (supported by $210,000 = the sum of exactly those six, but unproven).\n3. **Collateral, letters of credit, deposits or accounts held with Redwood.** Assumption stands: none; claim filed as fully unsecured; no setoff asserted.\n4. **Other transfers between the parties in the 90 days before 2026-03-10** (refunds, returns, credit memos, applied deposits). Assumption stands: none beyond the four ledger payments ($180,000).\n5. **Identity/scope of the DIP lender's blanket lien.** Assumption stands (per the library's §546(c) note, the lien is prior). Affects reclamation only — still $0 expected.\n6. **Dkt. 44 contents: the motion, proposed order, and any trade-agreement form.** OPEN and now the most urgent item before the **April 2, 2026 hearing**. The CEO did not know the motion existed, so no designation request has been filed. Request these from debtor's counsel.\n7. **Post-petition invoices/deliveries since 2026-03-10.** None received to date; if supply resumes under the vendor order, it stays outside the $125,000 claim.\n\n## New unknowns created by the client's reply\n\n8. **What else was said in the counsel conversation?** We have only the CEO's summary of his own reply. Before the designation reply is filed, get a full account (or the call notes) so Mesa's written clarification addresses everything said, not just \"pay first.\"\n9. **Did Redwood act on \"pay first\" (pausing shipments/orders pending payment)?** If supply has paused, that is a business issue to resolve through the designation process, correctable by the written clarification in `advice_to_ceo.md`.\n10. **Has Redwood communicated any timeline or amount proposal for paying old invoices?** If \"old invoices\" means all $125,000 in the vendor-payment order, Mesa should confirm scope in writing; if Redwood means something smaller, that must be surfaced now.\n",
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "critical_vendor"
+  ],
+  "literal_suggestions": [
+    "terms",
+    "credit_bureau"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

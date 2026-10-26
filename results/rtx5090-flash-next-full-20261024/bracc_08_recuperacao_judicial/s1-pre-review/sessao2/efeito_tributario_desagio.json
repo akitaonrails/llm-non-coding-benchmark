@@ -1,0 +1,19 @@
+{
+  "ganho_desagio": 3882000,
+  "pis_cofins_sobre_ganho": 0,
+  "prejuizo_fiscal": 0,
+  "compensacao": 0,
+  "base_irpj_csll": 3882000,
+  "irpj_csll": 1317880,
+  "trava_30_aplicavel": false,
+  "_premissas_e_aritmetica": {
+    "ganho_desagio": "60% x (Banco Alfa 4.200.000 + Norte pre-pedido 1.850.000 + Sul ME/EPP 420.000) = 0,60 x 6.470.000 = 3.882.000. Excluídos: trabalhistas (integrais, sem ganho) e fiduciário Beta (cláusula de 40% ineficaz - art. 49 §3º; não incluiria 1.240.000 de ganho irreal).",
+    "pis_cofins_sobre_ganho": "Zero por Lei 11.101/2005, art. 50-A, I (receita da renegociação em RJ fora da base de PIS/COFINS).",
+    "prejuizo_fiscal": "VALOR DESCONHECIDO - o cliente não forneceu. Zero informado no cálculo como piso conservador; ganho contábil existe (CPC 48), mas a base de cálculo fiscal do prejuízo acumulado não está no arquivo. PREMISSA PROEMINENTE.",
+    "compensacao": "Zero apenas porque o prejuízo informado é zero. Se houver prejuízo fiscal, a compensação NÃO tem limite: art. 50-A, II afasta a trava dos arts. 42/58 da Lei 8.981/95 e 15/16 da Lei 9.065/95. Base = max(0; 3.882.000 - prejuizo_fiscal).",
+    "base_irpj_csll": "3.882.000 - 0 (compensação) = 3.882.000.",
+    "irpj_csll": "ALÍQUOTAS NÃO CONSTAM DA BIBLIOTECA - premissa rotulada como NÃO VERIFICADA: IRPJ 15% = 582.300; adicional de 10% sobre a parcela que exceder R$ 20.000/mês, com ganho concentrado no mês da homologação = 10% x (3.882.000 - 20.000) = 386.200; CSLL 9% = 349.380. Total = 582.300 + 386.200 + 349.380 = 1.317.880.",
+    "trava_30_aplicavel": "false - art. 50-A, II da Lei 11.101/2005 (redação Lei 14.112/2020): o ganho com redução da dívida na renegociação em RJ NÃO se sujeita ao limite de 30%. Para referência apenas: com trava, a compensação por período seria limitada a 30% x 3.882.000 = 1.164.600.",
+    "ressalva_pessoas_ligadas": "Art. 50-A, parágrafo único: benefícios não se aplicam a dívidas com pessoas ligadas. Cliente não informou se Alfa/Beta/fornecedores são partes ligadas - risco aberto: se forem, ganho volta à sistemática normal (PIS/COFINS e trava aplicáveis)."
+  }
+}

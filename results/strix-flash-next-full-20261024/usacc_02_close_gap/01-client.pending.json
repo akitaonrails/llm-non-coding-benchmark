@@ -1,0 +1,72 @@
+{
+  "case": "usacc_02_close_gap",
+  "questions": "# Questions for the client (March 2026 close)\n\n1. **A/R gap (material):** The GL shows A/R 115,288.00 at 3/31, but the aging supports only 49,850.00 (after applying Delgado check #4471) — difference 65,438.00, coming from the 2/28 balance of 107,668.00. Please send the customer/invoice detail behind the 2/28 A/R balance.\n2. **Mobile deposit 4,312.00 (3/21):** Who paid it and which job/invoice does it belong to? It is sitting in 2100 suspense, not revenue.\n3. **Transfer 1,500.00 on 3/14 from \"CHK *4420\":** Is that your personal checking account, or a customer payment? If personal, I will reclass from Sales (4000) to Owner's contributions (3100) per policy.\n4. **Uchi dinner 212.00 (3/15, Summit card):** Business or personal? If personal I will reclass to Owner's draws (3200) per the close checklist.\n5. **Cascade CH-7731:** The bill was booked twice and paid once (#2040). Please confirm no second payment was made or is planned, and whether the emailed copy's payment instructions matched the vendor's normal ones.\n6. **Hardaway INV-1167 (9,800.00 disputed):** You said \"we'll eat half\" — may I issue a 4,900.00 credit memo, or do you want it handled differently? Nothing is booked until the credit memo exists.\n7. **Prepaid 2,400.00 (from the 2/28 books):** What does it cover and over what period? Is any amortization needed for February/March?\n8. **Allied Insurance \"Q2 GL\" 1,150.00:** Confirm the policy period is April 1 – June 30, 2026 (I assumed so; booked to prepaid with no March expense).\n9. **Depreciation:** Please provide the fixed-asset schedule / monthly depreciation amount; none was recorded for March.\n10. **Missing check numbers:** Are #2037, #2039, #2042, #2043 voided, unissued, or lost?\n11. **A/P carryover:** Please provide the open vendor-bill listing supporting the 2/28 A/P of 27,615.40 (of the 3/31 balance 29,505.40, only 6,750.00 is evidenced by bills in the file).\n",
+  "facts": [
+    {
+      "id": "xfer_1500",
+      "trigger": [
+        "1,500",
+        "1500",
+        "transfer from *4420",
+        "4420",
+        "online transfer"
+      ],
+      "answer": "That's from my personal checking, I moved money over to cover payroll. It's my money, not a sale.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "mobile_4312",
+      "trigger": [
+        "4,312",
+        "4312",
+        "mobile deposit",
+        "March 21",
+        "3/21"
+      ],
+      "answer": "Huh. I don't remember depositing anything that day. Maybe Carla (office) did? Let me ask her... (later) she doesn't know either. Can you just park it somewhere for now?",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "cascade_dup",
+      "trigger": [
+        "Cascade",
+        "CH-7731",
+        "duplicate",
+        "twice",
+        "same invoice"
+      ],
+      "answer": "Cascade emails invoices and then mails a paper copy a couple of weeks later. Same invoice. We paid it once.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uchi",
+      "trigger": [
+        "Uchi",
+        "dinner",
+        "212"
+      ],
+      "answer": "Uchi was my anniversary dinner, I grabbed the wrong card. Put it on me.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "hardaway",
+      "trigger": [
+        "Hardaway",
+        "9,800",
+        "dispute",
+        "warped"
+      ],
+      "answer": "Still arguing with them. Don't write it off yet.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "xfer_1500",
+    "mobile_4312",
+    "cascade_dup",
+    "uchi",
+    "hardaway"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

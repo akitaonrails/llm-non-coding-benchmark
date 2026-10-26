@@ -1,0 +1,20 @@
+{
+  "ganho_desagio": 3882000,
+  "pis_cofins_sobre_ganho": 0,
+  "prejuizo_fiscal": 3400000,
+  "compensacao": 3400000,
+  "base_irpj_csll": 482000,
+  "irpj_csll": 161880,
+  "trava_30_aplicavel": false,
+  "_atualizacao_pos_homologacao": "Versão atualizada com o registro de homologação (documents/sessao3/homologacao.md, plano homologado em 10/09/2026 sem as cláusulas de fiduciários e União): o estoque de prejuízo fiscal, antes desconhecido (a versão anterior usava 0 como piso conservador), agora é documentado. Cláusulas do plano homologado confirmam a base: deságio 60% das classes III/IV (ganho 3.882.000 inalterado).",
+  "_premissas_e_aritmetica": {
+    "ganho_desagio": "60% x (Banco Alfa 4.200.000 + Norte pre-pedido 1.850.000 + Sul ME/EPP 420.000) = 0,60 x 6.470.000 = 3.882.000. Excluídos: trabalhistas (integrais, sem ganho) e fiduciário Beta (cláusula de 40% ineficaz - art. 49 §3º; a cláusula foi excluída na homologação; não incluiria 1.240.000 de ganho irreal).",
+    "pis_cofins_sobre_ganho": "Zero por Lei 11.101/2005, art. 50-A, I (receita da renegociação em RJ fora da base de PIS/COFINS).",
+    "prejuizo_fiscal": "DOCUMENTADO nos autos - registro de homologação (documents/sessao3/homologacao.md): prejuízo fiscal acumulado R$ 3.400.000,00 e base negativa de CSLL idem (R$ 3.400.000,00). Cestas distintas: prejuízo fiscal abate base de IRPJ; base negativa abate base de CSLL.",
+    "compensacao": "Cenário-base: compensação integral de 3.400,00 x 100 = 3.400.000 por tributo (art. 50-A, II: sem trava de 30%). Base por tributo = 3.882.000 - 3.400.000 = 482.000. ALTERNATIVA (se a tesouraria reservar 810.000 do prejuízo para liquidar débito fiscal via parcelamento opção B - Lei 10.522 art. 10-A §1º-B): compensação = 2.590.000, base = 1.292.000, IRPJ/CSLL = 437.280; comparação completa em sessao3/passivo_fiscal_solucao.md.",
+    "base_irpj_csll": "3.882.000 - 3.400.000 (compensação) = 482.000.",
+    "irpj_csll": "ALÍQUOTAS NÃO CONSTAM DA BIBLIOTECA - premissa rotulada como NÃO VERIFICADA: IRPJ 15% = 72.300; adicional de 10% sobre a parcela que exceder R$ 20.000/mês, com o ganho concentrado no mês da homologação (10/09/2026) = 10% x (482.000 - 20.000) = 46.200; CSLL 9% = 43.380. Total = 72.300 + 46.200 + 43.380 = 161.880. Sem a compensação (cálculo anterior, prejuízo desconhecido), a estimativa era 1.317.880.",
+    "trava_30_aplicavel": "false - art. 50-A, II da Lei 11.101/2005 (redação Lei 14.112/2020): o ganho com redução da dívida na renegociação em RJ NÃO se sujeita ao limite de 30%. Para referência apenas: com trava, a compensação por período seria limitada a 30% x 3.882.000 = 1.164.600.",
+    "ressalva_pessoas_ligadas": "Art. 50-A, parágrafo único: benefícios não se aplicam a dívidas com pessoas ligadas. Cliente não informou se Alfa/Beta/fornecedores são partes ligadas - risco aberto: se forem, ganho volta à sistemática normal (PIS/COFINS e trava aplicáveis)."
+  }
+}

@@ -1,0 +1,23 @@
+I'm sure — and your friend isn't stupid, he's applying the right rule to the wrong kind of entity. Here's the distinction, and it's the single most common removal mistake there is.
+
+**Your friend's rule is real — but only for corporations.** The "state of incorporation + principal place of business" test comes from 28 U.S.C. §1332(c)(1), and that subsection says, by its own words, "**a corporation** shall be deemed to be a citizen of..." Sound Cascade Foods, **Inc.** is a corporation, so it's a Washington citizen twice over. So far, so textbook.
+
+**An LLC is not a corporation, and gets no test of its own.** Congress never wrote a citizenship rule for LLCs, so the courts apply the old rule for unincorporated firms: an LLC is a citizen of **every state of which its members are citizens**. That's the holding your friend skipped — *Johnson v. Columbia Properties Anchorage, LP*, 437 F.3d 894, 899 (9th Cir. 2006): "like a partnership, an LLC is a citizen of every state of which its owners/members are citizens"; *Carden v. Arkoma Associates*, 494 U.S. 185 (1990) applies the same look-through to unincorporated entities. (That's exactly the entry in our library — `llc_citizenship_cases.md`.)
+
+**"The company isn't him" is the intuition that fails here.** For *liability*, sure, the LLC is separate from its members — that's why it's called a limited liability company. But for *citizenship*, the LLC has no brain, no home, no body of its own; it can only be a citizen through its owners. Delaware formation is just paperwork about *whose law governs its internal affairs* — it doesn't make a Delaware citizen of anything. If it did, everyone would form Delaware LLCs to shop for federal court, which is precisely why the courts refuse that trick.
+
+**Run the arithmetic with your actual facts:**
+
+| Party | Citizenship |
+|---|---|
+| Sound Cascade Foods, **Inc.** | Washington (corporation: inc. WA + PPB Kent) |
+| Harbor Street Bakery **LLC** | **Washington** (member Caleb Sorensen, 35%, Seattle) **and Oregon** (member Noor Haddad, 65%, Portland) |
+| Caleb himself | not a party — irrelevant to who's aligned, *except* that his citizenship flows into the LLC's |
+
+Diversity jurisdiction requires that **no** plaintiff share a state with **any** defendant. Washington plaintiff vs. a Washington-citizen defendant → complete diversity fails. And even if it didn't, the forum-defendant rule (28 U.S.C. §1441(b)(2)) separately blocks diversity removal when a properly served defendant is a citizen of the state where the suit sits — Washington, here. Two independent doors, both shut.
+
+**What makes this trap dangerous rather than merely wrong:** subject-matter jurisdiction can be challenged *at any time*, and a federal court "shall" remand if it's missing — and on remand the judge "may require payment of just costs and any actual expenses, including attorney fees" caused by the removal (28 U.S.C. §1447(c)). So a removal on your friend's theory doesn't just fail; if it succeeds in being filed, it burns weeks and can hand Sound Cascade a fee bill.
+
+One caveat, stated plainly because it's the only crack in the analysis: the rule turns on Caleb's **domicile**, and what I have from you is that he "lives in Seattle (Ballard)" and runs the Seattle shop. If he actually maintains his permanent home in another state and only lives in Seattle temporarily — and you could prove it — the door would technically reopen. But (a) someone who runs a Seattle business and lives there is about as safe a Washington-domiciliary finding as facts come by, (b) we'd be betting fee-shifting against a judge's eyeball test, and (c) even then, why risk it? The answer in King County Superior Court is due **Thursday, Oct 1** and can raise everything you'd want to raise anyway — the spoiled deliveries, the risk-of-loss terms, the butter claim.
+
+So: your friend is applying the corporate rule to an LLC, which the cases expressly forbid. We stay in state court, and we spend this week on the answer.

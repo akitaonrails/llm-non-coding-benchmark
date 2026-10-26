@@ -1,0 +1,26 @@
+# Perguntas ao cliente — registro e pendências (rodada 2 encerrada)
+
+Rodada 1: as 5 perguntas abaixo foram enviadas. O cliente respondeu **apenas à pergunta 1** (parcialmente) e informou que **não tem mais informação** para as demais. As perguntas não repetem; o que resta são **desconhecidos sinalizados explicitamente**, que seguem em aberto nos entregáveis.
+
+## Pergunta 1 — Quais notas foram rejeitadas? **Respondida parcialmente**
+
+- **Resposta do cliente:** a mensagem de rejeição era "Rejeição: Grupo IBSCBS não informado para emitente do regime regular (NT 2025.002)", e o TI "contornou" **rebaixando a versão do emissor**.
+- **Leitura técnica:** a mensagem relatada é **compatível com** a rejeição anunciada pelo comunicado do CGIBS (jul/2026) para DFe do regime regular sem o grupo `IBSCBS` emitido após 03/08/2026 — a produção está aplicando a regra; não é defeito. (O texto literal da mensagem vem do relato do cliente; o comunicado só promete "rejeição específica".) O rollback do emissor **não regulariza**: por inferência, a versão rebaixada voltou a gerar XML sem o grupo (o mesmo defeito) e agrava a ameaça à dispensa (ADCT art. 125, §4º). Ver `orientacao.md`, seção "O 'contorno' do TI NÃO é solução".
+- **Continua desconhecido:** os **números/chaves das duas notas rejeitadas**. As três saídas arquivadas sem o grupo após 03/08 (2308, 2310, 2312) são candidatas de mesmo perfil, mas os arquivos estão em **homologação** (`tpAmb=2`, cStat 100 — a biblioteca não descreve a validação nesse ambiente; inferência compatível com os arquivos: ali a checagem do grupo não bloqueia), então não é possível afirmar que correspondem às rejeições de produção.
+
+## Perguntas 2–5 — **Sem resposta (cliente não tem a informação)** → seguem como desconhecidos explícitos
+
+2. **Reemissão das notas rejeitadas:** não se sabe se as duas rejeitadas chegaram a ser reemitidas — nem se as reemissões do emissor rebaixado (XML **presumivelmente sem** o grupo — inferência sobre a versão anterior) foram **autorizadas em produção**. Se foram autorizadas, isso **contradiz o comunicado do CGIBS** e é uma anomalia a esclarecer com o autorizador; se continuam rejeitadas, aquelas vendas podem estar **sem DFe autorizado**. A apuração-teste não pôde considerar nenhuma reemissão (nenhum XML adicional recebido).
+3. **Completude da carteira de agosto:** permanece a assunção de que os documentos de agosto são exatamente as NF-e 2301–2317 recebidas. Não há confirmação sobre NFS-e nacional, CT-e ou devoluções; se existirem, a apuração-teste precisará ser complementada.
+4. **Origem do erro de alíquotas da NF-e 2309** (pIBSUF 0,90 / pCBS 0,10 — invertidos vs. NT 2025.002): presumido erro de configuração do emissor; não confirmado, e não se sabe se há outras notas com o mesmo defeito fora deste conjunto. O rollback do emissor também pode ter reproduzido outros defeitos antigos — não verificável com os arquivos recebidos.
+5. **Instrumento de regularização** aceito para documentos sem o grupo emitidos após 03/08 (2308, 2309, 2310, 2312): **não consta da biblioteca** e o cliente não tem orientação da SEFAZ/CGIBS. Não citarei procedimento de memória — item a confirmar diretamente com o fisco.
+
+## Desconhecido adicional (não é pergunta nova — lacuna da própria biblioteca)
+
+- A biblioteca **não diz** se a perda da dispensa de recolhimento por descumprimento acessório atinge **o mês inteiro** ou **apenas as operações irregulares**. Na exposição máxima usei o saldo integral (CBS 2.862,00 + IBS 318,00) como teto conservador.
+
+## Assunções mantidas nos entregáveis
+
+- As notas rejeitadas (números desconhecidos) **não substituem** nenhuma das 12 saídas arquivadas — nenhuma reemissão foi documentada.
+- Carteira de saídas/entradas de agosto = exatamente 2301–2317.
+- Apuração-teste com alíquotas legais de 2026 (CBS 0,9% / IBS 0,1%) sobre todas as saídas tributáveis, independentemente de destaque (LC 214/2025, art. 343).

@@ -1,0 +1,42 @@
+{
+  "probabilidade_vinculo": "alta (75–90%)",
+  "fundamentos": [
+    "Pessoalidade: o contrato obriga o sócio único Rafael Moreira a disponibilizar-se pessoalmente (cl. 4ª) e todo o arquivo mostra apenas ele na prestação (contrato_prestacao_servicos_pj.pdf; prints_mensagens.txt).",
+    "Não eventualidade: prestação contínua por 84 meses ininterruptos (01/10/2019–30/09/2026), contrato por prazo indeterminado (cl. 7ª) e 12 notas fiscais por ano em valor idêntico (notas_fiscais_resumo.csv). CLT art. 3º (library/clt_requisitos_vinculo.md).",
+    "Onerosidade/salário: R$ 18.000,00 mensais fixos \"independentemente de entregas\" (cl. 2ª) — habitualidade e risco econômico todo da tomadora, traço típico de salário. CLT art. 3º.",
+    "Subordinação: horário fixo 9h–18h nas dependências da contratante ou home office autorizado pelo gestor (cl. 4ª), reporte ao Gerente de Engenharia (cl. 5ª), cobrança de horário e exigência de registro em ponto (Slack 12/03/2024), ordens de permanência até 20h para release (Slack 02/06/2025), ausência submetida a aprovação do RH com desconto de \"saldo de 20 dias\" (ago/2025), avaliação de desempenho com o mesmo formulário dos CLTs (05/01/2026), exclusividade (cl. 3ª). CLT art. 3º.",
+    "Fraude/simulação: a montagem de PJ com sócio único, exclusividade, horário e reporte hierárquico visa desvirtuar a aplicação da CLT — nulidade de pleno direito. CLT art. 9º.",
+    "CLT art. 442-B não socorre a empresa: a contratação de autônomo com exclusividade/continuidade só afasta a qualidade de empregado \"desde que ausente a subordinação\" — e a subordinação está documentada (library/clt_requisitos_vinculo.md).",
+    "Ônus da prova: admitida a prestação pessoal do serviço, cabe à reclamada provar a autonomia (CLT art. 818; Súmula 212 quanto ao fato impeditivo do término — library/tst_sumulas_ojs.md).",
+    "Tema 725 (RE 958.252), ADPF 324 e ADC 48 tratam da licitude da TERCEIRIZAÇÃO entre pessoas jurídicas distintas e mantêm a responsabilidade subsidiária da contratante; não afastam o reconhecimento de vínculo quando presentes, no caso concreto, os requisitos do art. 3º da CLT com fraude (art. 9º) (library/stf_tema_725_adc48_adpf324.md). Pejotização com subordinação é questão distinta e está pendente de julgamento no Tema 1.389."
+  ],
+  "prescricao": {
+    "data_ajuizamento": "16/11/2026 (data anunciada na notificação extrajudicial de 30/09/2026 — suposição de trabalho)",
+    "corte_quinquenal": "16/11/2021 — créditos exigíveis antes desta data estão prescritos (CF art. 7º, XXIX; Súmula 308 TST: quinquenal contada do ajuizamento). Não há prescrição bienal: ajuizamento dentro de 2 anos do término (30/09/2026), cujo termo final seria 30/09/2028.",
+    "meses_exigiveis": 59,
+    "meses_prescritos": 25
+  },
+  "exposicao": {
+    "remuneracao_base": 1062000,
+    "decimo_terceiro": 88500,
+    "ferias_terco": 118000,
+    "fgts": 101480,
+    "multa_40": 40592,
+    "aviso_previo": 30600,
+    "inss_patronal": 355180,
+    "horas_extras": "a apurar — prova direta (jan–jun/2025, 135 h): ≈ R$ 16.568; extrapolando a média de 22,5 h/mês aos 59 meses da janela (≈1.328 h): ≈ R$ 162.920. Premissas NÃO constantes da biblioteca (divisor 220 h/mês e adicional de 50%): não verificadas.",
+    "total": 734352
+  },
+  "tema_1389": {
+    "efeito_processual": "STF, ARE 1.532.603/DF (rel. Min. Gilmar Mendes): repercussão geral reconhecida (abril/2025) e suspensão nacional de todos os processos sobre licitude de contratação de PJ/autônomo desde 14/04/2025; na biblioteca (congelada em out/2026) o mérito está pendente e a suspensão mantida. A reclamação ajuizada em 16/11/2026 tende a ser sobrestada após a instrução/antes da sentença, conforme a prática de cada TRT. O mérito do STF poderá fixar teses sobre competência da Justiça do Trabalho, fraude e ônus da prova.",
+    "efeito_na_exposicao": "A suspensão não reduz nem extingue a exposição: o passivo fica em aberto e continua correndo juros e correção (Lei 14.905/2024: IPCA + SELIC−IPCA, conforme descrito em library/stf_tema_1389_pejotizacao.md) — quanto mais longo o sobrestamento, maior o valor final. O Tema 725 não garante vitória antecipada; o resultado do Tema 1.389 é incerto nos dois sentidos (pode melhorar ou piorar a posição da empresa)."
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 734352
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [367000, 514000]
+  }
+}

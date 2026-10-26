@@ -1,0 +1,5 @@
+I’ll read the emergence documents and the library’s COD and fresh-start guidance, calculate the schedules, and prepare the balance sheet with any unsupported amounts identified.
+
+The claim recovery implies a $5.46 million discharge, but a complete emergence balance sheet needs an effective-date trial balance and the present value of the 24-month payments. The fresh-start ownership test also depends on voting shares, which the stated 60% equity retention does not explicitly identify. I’ll request those items before finalizing.
+
+I wrote the emergence-specific information needed in [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). The effective-date trial balance and payment terms are needed for a numeric balance sheet; voting-share details determine the fresh-start test. I’ve paused for the scripted client’s response under CONTRACT.md.

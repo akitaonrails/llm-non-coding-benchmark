@@ -1,0 +1,45 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "questions": "# Esclarecimentos necessários — DAS de maio/2026\n\nPara o Fator R, a biblioteca (`library/lc123_art18_fator_r.md`) exige a folha **paga entre 01/05/2025 e 30/04/2026**, independentemente da competência. O arquivo `resumo_folha_12_meses.csv` está organizado por competência e soma R$ 284.600,00; 28% do RBT12 de R$ 1.020.000,00 são R$ 285.600,00. Uma diferença de R$ 1.000,00 na folha pode mudar o anexo.\n\n1. Os valores de salários, pró-labore, contribuições patronais e FGTS no resumo de folha representam **pagamentos efetivos** dentro de 01/05/2025 a 30/04/2026 ou valores por competência? Se forem por competência, envie o total de cada rubrica **paga nesse intervalo** (ou um demonstrativo por data de pagamento), incluindo eventuais pagamentos de competências anteriores e excluindo valores ainda não pagos em 30/04/2026.\n2. Confirme especificamente quando foram pagos os R$ 3.200,00 de pró-labore lançados na linha `2026-04`, se houve algum pagamento de pró-labore referente à linha `2026-03` antes de 30/04/2026, e se há outros pagamentos da folha no intervalo que não constam do resumo.\n3. O e-mail informa pagamento de pró-labore de abril em 06/05/2026, mas o extrato de maio (CSV e PDF) não mostra essa saída. Confirme a data, o valor e a conta pela qual foi pago; esclareça se o pagamento de 06/05 é o mesmo valor de R$ 3.200,00 lançado na linha `2026-04`.\n\nCom essas respostas, será possível fechar a classificação entre Anexos III e V e o DAS.\n",
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "prolabore_abril"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,52 @@
+{
+  "probabilidade_vinculo": "alta (85%–95%)",
+  "fundamentos": [
+    "Subordinação comprovada no arquivo: cl. 5 do contrato (reportar-se ao Gerente de Engenharia); cl. 4 (horário fixo seg–sex 9h–18h, nas dependências da contratante ou em home office 'autorizado pelo gestor'); Slack 12/03/2024 (fiscalização de login — 'logou 9h20… o combinado é 9h' — e exigência de marcar 'planilha de ponto'); Slack 02/06/2025 (ordem de ficar até as 20h no release); Slack 19/08/2025 + e-mail RH 20/08/2025 (ausência só com aprovação de gestor/RH, com desconto do 'saldo de 20 dias'); Slack 05/01/2026 (avaliação de desempenho dos PJs com o mesmo formulário dos CLTs) — CLT art. 3º.",
+    "Não eventualidade: prestação contínua de 01/10/2019 a 30/09/2026 (84 meses; contrato por prazo indeterminado, cl. 7; 84 notas fiscais mensais ininterruptas) — CLT art. 3º.",
+    "Onerosidade com feição de salário: R$ 18.000,00 mensais fixos 'independentemente de entregas' (cl. 2) — CLT art. 3º.",
+    "Pessoalidade / PJ interposta: PJ de sócio único que 'disponibilizará seu sócio' (cl. 4), com exclusividade e vedação a terceiros (cl. 3); ato praticado para desvirtuar a CLT é nulo de pleno direito — CLT art. 9º.",
+    "CLT art. 442-B não socorre a empresa: o afastamento da qualidade de empregado opera apenas 'desde que ausente a subordinação' — e a subordinação é exatamente o que os documentos provam.",
+    "Ônus da prova: admitida a prestação de serviços, cabe à Solaris provar a autonomia (CLT art. 818); quanto ao modo de extinção do contrato, ônus do empregador (Súmula 212 TST).",
+    "Tema 725 / ADPF 324 / ADC 48 tratam da licitude da terceirização entre pessoas jurídicas (mantida a responsabilidade subsidiária da tomadora); NÃO afastam o reconhecimento de vínculo quando presentes, no caso concreto, os requisitos do art. 3º da CLT com fraude (art. 9º). A pejotização propriamente dita está pendente de mérito no STF (Tema 1.389).",
+    "Não utilizar Súmula 256 nem OJ SDI-1 nº 191 (ambas CANCELADAS); Súmula 363 TST (administração pública) é inaplicável; Súmula 331 TST trata de terceirização — aqui se discute vínculo direto por pejotização simulada.",
+    "Admissão da própria empresa (respostas ao parecer, 24/10/2026): a PJ de Rafael tinha a Solaris como ÚNICA cliente e ele era 'dedicado a nós' havia 7 anos — não existe estrutura empreendedora/mercado próprio a defender; reforça pessoalidade e não eventualidade e esvazia definitivamente a exceção do art. 442-B CLT (autonomia só afasta vínculo 'desde que ausente a subordinação'). Motivo da primeira revisão (para alta 80%–90%, item 12.2), aprofundada na rodada 3 para alta (85%–95%) pelo item 12.6; ver itens 12.2 e 12.6 do parecer.md.",
+    "Tese defensiva da base reduzida (diretor, 24/10/2026): os R$ 18.000 seriam 'cheios' e 'um CLT equivalente ganharia uns 12 mil'. A base presumida é o valor pago à PJ, 'salvo prova de que embutia tributos/custos' (library/verbas_e_calculo.md) — hoje há apenas ALEGAÇÃO, sem memória de preço/decomposição nos autos. Se um dia provada (base R$ 12.000), a exposição cai para R$ 481.616 (sem HE) / 492.661 (HE 2025) / 588.389 (extrapolada). Risco reverso: a frase confessa posto CLT equivalente (realimenta o art. 3º) e cria paradigma improvisado de isonomia (OJ 383 SDI-1) — embora em dinheiro os 18 mil pagos superem os 12 mil alegados; benefícios do par CLT desconhecidos. Ver item 12.3 do parecer.md.",
+    "Admissão pessoal de subordinação pela própria gestora de RH da Solaris (segunda resposta ao parecer, 24/10/2026): \"Eu. Aprovava férias, cobrava horário, dava feedback. Igual aos CLTs.\" Controle de jornada, aprovação de férias e avaliação de desempenho passam de inferência documental a confissão em primeira pessoa de quem os exercia; \"igual aos CLTs\" admite integração de Rafael à organização empresarial (arts. 2º e 3º CLT) e, somada ao \"CLT equivalente\" do diretor, reforça a equiparação fática para isonomia (OJ 383 SDI-1) e eleva o peso do cenário de HE extrapoladas se houver >20 empregados (Súmula 338). Fundamento da revisão para alta (85%–95%) — item 12.6 do parecer.md."
+  ],
+  "prescricao": {
+    "data_ajuizamento": "16/11/2026 (data prevista de protocolo, conforme notificação extrajudicial de 30/09/2026)",
+    "corte_quinquenal": "16/11/2021 (CF art. 7º, XXIX; Súmula 308 TST)",
+    "meses_exigiveis": 58,
+    "meses_prescritos": 26,
+    "obs": "Exigíveis = dez/2021–set/2026 (58 meses). Prescritos = out/2019–nov/2021 (26 meses; nov/2021 é o mês-limite: alcança em parte o corte de 16/11/2021 — tratado como prescrito, ver §6 do parecer.md). Bienal pós-contratual em dia: término 30/09/2026, protocolo 16/11/2026 (limite 30/09/2028). FGTS segue a mesma prescrição quinquenal (CF art. 7º, XXIX / Tema 608 STF, conforme cf_art7_xxix_prescricao.md)."
+  },
+  "exposicao": {
+    "remuneracao_base": 1044000,
+    "decimo_terceiro": 87000,
+    "ferias_terco": 116000,
+    "fgts": 99760,
+    "multa_40": 39904,
+    "aviso_previo": 30600,
+    "inss_patronal": 349160,
+    "horas_extras": "estimativa: R$ 16.568 (135 h registradas jan–jun/2025 × R$ 122,73/h) a R$ 160.159 (extrapolação da média de 22,5 h/mes para os 58 meses da janela); demais períodos a apurar",
+    "total": 722424,
+    "obs": "remuneracao_base (58 × R$ 18.000) já foi paga via NFs e não é reembolsável — é a base de cálculo das demais verbas e só entraria no total se houvesse pedido de diferenças. total = 13º + férias/1/3 + FGTS + multa 40% + aviso + INSS patronal (EXCLUI horas extras — campo descritivo —, correção/rendimentos da Lei 14.905, multas dos arts. 467/477 CLT e honorários do art. 791-A, todos quantificados no §7 do parecer.md). Cenários do total: s/ HE = R$ 722.424; c/ HE registradas de 2025 = R$ 738.992; c/ HE extrapoladas = R$ 882.583. Sensibilidade de base (item 12.3 do parecer.md): aceitando-se a tese do preço cheio a R$ 12.000/mês, os cenários passam a R$ 481.616 / 492.661 / 588.389 (diferença de R$ −240.808 no cenário sem HE) e o piso combinado com extinção atribuída ao autor fica em ≈ R$ 434.613. NÃO adotada como base provisória: a alegação do diretor não é prova documental da composição do preço. Após a segunda admissão (item 12.6: \"cobrava horário\", confesso pela gestora, com planilhas de 2021–2024/2026 ausentes do arquivo), o cenário de HE extrapoladas (R$ 882.583) deixa de ser hipótese remota e passa a risco realista de condenação se a Solaris tiver mais de 20 empregados (Súmula 338 TST — número de empregados permanece em aberto)."
+  },
+  "tema_1389": {
+    "efeito_processual": "O STF reconheceu repercussão geral (ARE 1.532.603/DF, abr/2025) e determinou a SUSPENSÃO NACIONAL de todos os processos sobre a licitude da contratação de PJ/autônomo (14/04/2025); na biblioteca (congelada em out/2026) o mérito está pendente e a suspensão, mantida. A reclamação ajuizada em 16/11/2026 tende a ser sobrestada após a fase de instrução / antes da sentença, conforme a prática de cada TRT.",
+    "efeito_na_exposicao": "A suspensão não extingue nem reduz a exposição: ela fica em aberto, com juros e correção correndo (Lei 14.905/2024: IPCA + SELIC−IPCA, parâmetro indicado no próprio arquivo do Tema 1.389; taxas não constam da biblioteca — não quantificável aqui), e o mérito do STF poderá fixar tese sobre ônus da prova e critérios de fraude, podendo elevar ou reduzir a exposição final. Não é possível quantificar esse efeito de antemão — 'congela o pagamento, não congela a dívida'."
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 740000,
+    "obs": "Melhor estimativa = R$ 722.424 (verbas duras) + R$ 16.568 (HE registradas de 2025) ≈ R$ 740.000, a que se somam correção/rendimentos, HE de demais períodos, multas e honorários (cenário alto ≈ R$ 883 mil + encargos). A premissa da diretoria ('risco zero' pelo Tema 725) não se sustenta: o Tema 725 não trata de pejotização com subordinação (Tema 1.389 pendente). Ver §9 do parecer.md. Mantida em R$ 740.000 após as respostas do cliente (24/10/2026): as duas admissões da empresa (PJ só com a Solaris — item 12.2; gestão pessoal \"igual aos CLTs\" pela própria RH — item 12.6) elevaram a probabilidade de vínculo para 85%–95% e a tese dos '18 mil cheios' segue sem prova documental. A provisão permanece igual ao cenário central (R$ 738.992): a alta de probabilidade aumenta a chance de materialização, não o melhor valor estimado — gatilhos de reavaliação: memória de preço/encargos da PJ nos autos, planilhas de 2021–2024/2026 e o mérito do Tema 1.389."
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [
+      500000,
+      650000
+    ],
+    "obs": "Faixa elevada de R$ 450.000–600.000 para R$ 500.000–650.000 após a segunda admissão (item 12.6 do parecer.md): perda esperada sem ponderar base = (0,85–0,95) × 738.992 = 628.143,20–702.042,40; ponderando a sensibilidade de base 12 mil (pesos 65/35, item 12.4) = (0,85–0,95) × 652.776,15 = 554.859,73–620.137,34, antes de correção e honorários. O teto de 650.000 guarda contra o cenário de HE extrapoladas (0,95 × 882.583 ≈ 838.454, nominal, sem correção)."
+  }
+}

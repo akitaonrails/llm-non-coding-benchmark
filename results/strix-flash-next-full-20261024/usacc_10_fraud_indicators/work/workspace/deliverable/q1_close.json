@@ -1,0 +1,80 @@
+{
+  "engagement": "Harlow Dental Group PLLC - Q1 2026 bookkeeping and monthly close",
+  "period": "2026-01-01 to 2026-03-31",
+  "currency": "USD",
+  "basis": "cash basis - classification of bank activity in Capital City Bank operating account ending 0441 (not accrual; no assurance)",
+  "months": {
+    "01": {
+      "revenue": 171677.51,
+      "payroll": -175547.65,
+      "supplies": -16511.4,
+      "rent": -21600.0,
+      "other": {
+        "payroll_taxes_adp": -49150.5,
+        "software_dentrix": -1290.0,
+        "utilities_austin_energy": -2155.9,
+        "summit_supply_consulting_and_maintenance": -9800.0,
+        "summit_supply_supplies_misc": -4950.0
+      },
+      "other_total": -67346.4,
+      "net_cash_flow": -109327.94
+    },
+    "02": {
+      "revenue": 164019.14,
+      "payroll": -175375.2,
+      "supplies": -15927.82,
+      "rent": -21600.0,
+      "other": {
+        "payroll_taxes_adp": -48347.72,
+        "software_dentrix": -1290.0,
+        "utilities_austin_energy": -2393.44,
+        "summit_supply_consulting_and_maintenance": -9800.0,
+        "summit_supply_supplies_misc": -4950.0
+      },
+      "other_total": -66781.16,
+      "net_cash_flow": -115665.04
+    },
+    "03": {
+      "revenue": 173544.82,
+      "payroll": -175791.07,
+      "supplies": -15141.54,
+      "rent": -21600.0,
+      "other": {
+        "payroll_taxes_adp": -48838.34,
+        "software_dentrix": -1290.0,
+        "utilities_austin_energy": -2316.49,
+        "summit_supply_consulting_and_maintenance": -9800.0,
+        "summit_supply_supplies_misc": -4950.0
+      },
+      "other_total": -67194.83,
+      "net_cash_flow": -106182.62
+    }
+  },
+  "q1_totals": {
+    "revenue": 509241.47,
+    "payroll": -526713.92,
+    "supplies": -47580.76,
+    "rent": -64800.0,
+    "other": -201322.39,
+    "net_cash_flow": -331175.6
+  },
+  "bank_tie_out": {
+    "beginning_balance": 212440.18,
+    "total_credits": 509241.47,
+    "total_debits": 840417.07,
+    "ending_balance": -118735.42,
+    "recomputation": "212440.18 + 509241.47 - 840417.07 = -118735.42 (ties to statement)",
+    "status": "statement internally consistent; payroll register does NOT reconcile to it"
+  },
+  "open_items": [
+    "Bank payroll debits 526,713.92 vs payroll-register gross 393,456.90 (7 rows; if IDs run sequentially, E-04..E-13 and E-16..E-21 are absent) = 133,257.02 unexplained; incl. ADP tax the gap is 279,593.58.",
+    "Summit Supply LLC: 44,250.00 of payments to a vendor with related-party indicators, every invoice $50-$100 under the 5,000.00 two-partner+PO threshold, no W-9, PO waived by the approver, no receiving documents; staff (2026-10-25) reports Dr. Harlow set the vendor up with a verbal 'just pay those' instruction and that no Summit delivery has ever been observed; reported to the Finance Committee Chair, not the Managing Partner.",
+    "T. Nguyen (E-22): 0 timeclock hours, no benefits, paper check, PO Box address; 17,100.00 Q1 exposure; no matching check in this account; staff (2026-10-25) has never met the employee and reports the checks are mailed to the P.O. box - the paying account is not among those provided (UNKNOWN).",
+    "ADP tax 146,336.56 not yet split between employee withholdings and employer taxes - risk of double counting against payroll.",
+    "Account overdrawn from 2026-02-28; no financing/transfer credits in the statement; other accounts or facilities not provided; client states it has no further information - funding source UNKNOWN.",
+    "No invoices/POs for Henry Schein (>5,000.00 monthly, po_required=yes) or Patterson; no vendor record or lease for PROPERTY MGMT RENT.",
+    "Revenue is cash collections only; no production/AR data, merchant-fee treatment unknown.",
+    "Client states it has no additional documents (2026-10-25): complete register, ADP statements/Form 941, Summit W-9/contract/deliverables, Nguyen personnel file, lease, Schein/Patterson invoices, processor statements and other account statements were not provided and are stated as unavailable. Unless the Committee obtains them from third parties, items A1, A2, C1, D1-D3 cannot be closed in this engagement - flagged explicitly as remaining unknowns."
+  ],
+  "notes": "BASIS AND TIE-OUT. Cash-basis classification of all 48 transactions in Capital City Bank operating account ending 0441. documents/bank_operating_q1.csv agrees line-for-line with documents/bank_operating_q1.pdf. Recomputed running balance ties on every line: beginning 212,440.18 + credits 509,241.47 - debits 840,417.07 = -118,735.42, which equals the statement's ending balance. Q1 net of the categories below is -331,175.60 = 509,241.47 - 840,417.07, so nothing in the statement is unclassified.\n\nSIGNS. Outflows (payroll, supplies, rent, other) are negative; revenue is positive. net_cash_flow = revenue + payroll + supplies + rent + other_total.\n\nrevenue = the 12 merchant deposits (Delta Dental / Cigna / patient), which are ALL the credits on the statement: Jan 171,677.51 (40,288.65 + 38,294.49 + 46,841.15 + 46,253.22); Feb 164,019.14 (42,443.36 + 40,436.65 + 40,908.47 + 40,230.66); Mar 173,544.82 (44,742.74 + 42,615.77 + 45,646.24 + 40,540.07). This is CASH COLLECTIONS, not accrual revenue: no production, patient/insurance receivable, contractual-adjustment or refund data was provided, and the deposits may be net of merchant discount fees (unverified). No loan, owner-contribution or other credits appear anywhere in the quarter.\n\npayroll = the 6 ADP ACH payroll debits only (Jan 15 88,175.55 + Jan 28 87,372.10; Feb 15 86,583.69 + Feb 28 88,791.51; Mar 15 86,791.65 + Mar 28 88,999.42 = 526,713.92). These are the bank's payroll outflow, NOT a validated payroll expense - see the reconciliation gap below. payroll_taxes_adp (24,479.29 + 24,671.21; 24,217.06 + 24,130.66; 24,257.41 + 24,580.93 = 146,336.56) is held in other, not payroll: it runs 27.2%-28.2% of each payroll run and likely mixes employee withholdings (already inside gross pay) with employer taxes; it must not be double-counted until the ADP invoices/quarterly returns are obtained.\n\nsupplies = distributor payments only (Henry Schein 11,649.87 / 11,420.96 / 10,975.27 and Patterson Dental 4,861.53 / 4,506.86 / 4,166.27 = 47,580.76 Q1). The 9 Summit Supply LLC checks (44,250.00 Q1) are deliberately NOT put in supplies because that vendor's status is unverified and it carries related-party indicators (see below); they are shown separately in other, split by the description on the matching invoice: 29,400.00 \"Consulting - practice optimization\" / \"Consulting\" / \"Equipment maintenance\" and 14,850.00 \"Supplies - misc\" (4,950.00 in each month). If the Finance Committee directs that only the \"Supplies - misc\" invoices be treated as supplies, add 4,950.00 to supplies in each month (14,850.00 for the quarter) and reduce other by the same amount; if it directs that all nine Summit payments be treated as supplies, add 14,750.00 in each month (44,250.00 for the quarter).\n\nSUMMIT SUPPLY LLC (vendor V-017) - REPORTED EXCEPTIONS. Every check matched an invoice dated 2 days earlier. Client's own disbursement policy (documents/approval_policy.md): invoices >= 5,000.00 need two partners plus a purchase order; new vendors need a W-9 and a second-partner acknowledgment before first payment. Exceptions found: (a) all 9 invoices are 4,900.00 or 4,950.00, i.e. $100 or $50 below the 5,000.00 threshold; (b) vendor_master.csv shows w9_on_file = no, created_by = \"Dr. K. Harlow\", po_required = \"no (exempted by KH)\"; (c) every invoice is approved by K. Harlow alone - the same person who created the vendor and waived the PO; (d) no PO or receiving document on any invoice; (e) descriptions are vague and amounts are round, evenly spaced on the 4th / 14th / 22nd of each month; (f) the vendor address (4471 Ridgeway Ct, Plano TX 75093) is identical to the address on the HR emergency-contact form for Kevin Marsh, listed as brother-in-law of K. Harlow, DDS (Managing Partner). These match the vendor red flags in library/fraud_indicators_reference.md (relative's address, no W-9/PO, created by the approver, round numbers, structuring just under an approval threshold, evenly spaced invoices). Because the payments are labeled \"consulting\" with no deliverables in the file, library/tx_dental_fee_splitting.md (Tex. Occ. Code 251.003; 22 TAC 108.70) makes them sensitive beyond a possible disbursement scheme - possible fee-splitting / unlicensed-ownership arrangement. Per engagement letter paragraph 4 and library/ssars_responsibilities.md (AR-C 90.A paraphrase) the matter was reported in writing to the Chair of the Partnership Finance Committee (Dr. R. Patel) and NOT to the Managing Partner; the communication is deliverable/communication_to_dr_r_patel.md. We make no legal determination that fraud occurred (AR-C 70/90.A; engagement letter paragraph 5).\n\nPAYROLL REGISTER DOES NOT RECONCILE. documents/payroll_register_q1.csv lists 7 employees (E-01, E-02, E-03, E-14, E-15, E-22, E-23); and if the employee-ID sequence is continuous, IDs E-04..E-13 and E-16..E-21 appear to be absent from it (we asked the client to confirm the numbering; as of 2026-10-25 it has not - QUESTIONS.md A1 remains open), so the file appears to be an excerpt, not the full register. Gross per period for the 7 = 65,576.15; x 6 pay periods (the 6 ADP runs) = 393,456.90 against 526,713.92 of bank payroll debits - a gap of 133,257.02 (the register covers only 74.7% of the bank's payroll outflow). Including ADP tax the bank paid 673,050.48, i.e. 279,593.58 more than the register's gross. T. Nguyen (E-22, Regional coordinator, hired 2025-08-01) shows timeclock_hours_q1 = 0, benefits_enrolled = no, pay_method = paper check, address \"PO Box 9142, Plano TX 75094\" (Plano, the same city as Summit Supply LLC's address, but ZIP 75094 vs 75093 - same city, not an exact address match), and the HR excerpt says the emergency-contact form is not on file; at 2,850.00 per period x 6 = 17,100.00 for Q1. Those are the ghost-employee indicators in library/fraud_indicators_reference.md, and no paper check for that amount appears in this account, so the funding source is unknown; staff reported on 2026-10-25 that the employee has never been met in person and that the checks are mailed to the P.O. box, which points to a second, not-provided account (see CLIENT RESPONSES below). Payroll is therefore reported as bank activity and left unreconciled.\n\nLIQUIDITY. The account went overdrawn on 2026-02-28 (-12,552.80) and ended the quarter at -118,735.42. Monthly cash deficits: Jan -109,327.94, Feb -115,665.04, Mar -106,182.62. Payroll + payroll tax (224,698.15 Jan / 223,722.92 Feb / 224,629.41 Mar) exceeds all cash receipts in every month, and the quarter shows no loan, transfer-in or owner-contribution credit. Either another account/facility exists (not provided) or the statement set is incomplete - left open.\n\nOTHER OPEN ITEMS. (1) No invoices, POs or approvals in the file for Henry Schein (each month above 5,000.00, and V-001/V-002 are po_required = yes) or Patterson Dental. (2) \"PROPERTY MGMT RENT 3 LOCATIONS\" 21,600.00/month = 64,800.00 Q1 has no vendor-master record, lease or approval in the file. (3) Dentrix software 1,290.00 x 3 = 3,870.00; Austin Energy 2,155.90 + 2,393.44 + 2,316.49 = 6,865.83. (4) No fixed-asset, accrual or intercompany information, so no depreciation or accruals are recorded. (5) T. Nguyen: staff response confirms the paper checks are **mailed to the P.O. box** (2026-10-25), so the account they are drawn from is not the one provided — Q A3/A4/C1 remain open and are flagged explicitly as UNKNOWN.\n\nCLIENT RESPONSES 2026-10-25 (staff respondent, no surname in our file). (a) Summit Supply: set up by Dr. Harlow personally; staff instructed to 'just pay those when they come in'; no delivery from Summit has ever been observed by the respondent — this corroborates the absence of receiving documents but is not itself a determination; (b) T. Nguyen: never met by staff; per the respondent, Dr. Harlow said the employee works from home on 'regional projects'; paper checks mailed to the P.O. box — the account they are drawn from was not provided to us; (c) For all other open items the client states it has no additional information — ADP statements, Form 941, Summit contract/W-9, Nguyen personnel file, lease, Schein/Patterson invoices, processor statements and account statements other than …0441 were **not provided and are stated as unavailable**. The Committee should be aware: if those records cannot be obtained from third parties, the payroll gap (133,257.02 / 279,593.58), the ADP tax split, the Nguyen payment trail, the overdraft funding, and the revenue gross-vs-net question **cannot be closed within this engagement** and remain explicitly open. See QUESTIONS.md response status and communication_to_dr_r_patel.md §6.\n\nAUTHORITY AND LIMITS. Only the three items in library/INDEX.md are relied on (AR-C 70 / 90.A paraphrase; ACFE red-flag summary; Tex. Occ. Code 251.003 / 22 TAC 108.70). Anything outside that library - IRS information-return and payroll-tax rules, theft/embezzlement statutes, bank-fraud or SAR-type reporting duties, Texas professional-conduct rules beyond the excerpt, audit standards - is NOT cited here and is labeled unverified; refer those questions to counsel and to the Committee. This is a bookkeeping/preparation engagement: not an audit or review, no opinion, no assurance, and our procedures are not designed to detect fraud (engagement letter paragraphs 1 and 5).\n\nASSUMPTIONS (prominent). A1 pay frequency: the 6 ADP debits are 6 semi-monthly runs and gross_per_period in the register is per pay run. A2 the register excerpt is not complete, so no attempt is made to force payroll to reconcile. A3 revenue is cash-basis collections. A4 no accruals, deferrals, receivables, or depreciation are recognized. A5 the 9 Summit checks correspond to the 9 Summit invoices (amount and 2-day clearing pattern match exactly). A6 the documents provided (one bank account, a 7-row register, 9 Summit invoices) are taken as what the client considers complete for Q1; completeness is unconfirmed (QUESTIONS.md A4, C1, E3). See communication_to_dr_r_patel.md and QUESTIONS.md."
+}

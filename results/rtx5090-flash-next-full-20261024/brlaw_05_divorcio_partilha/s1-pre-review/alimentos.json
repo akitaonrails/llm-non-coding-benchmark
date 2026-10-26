@@ -1,0 +1,20 @@
+{
+  "base_mensal_liquida": 43666.67,
+  "incide_sobre": [
+    "salário líquido mensal CLT (R$ 24.000)",
+    "pró-labore mensal habitual (R$ 15.000) — confirmado e quantificado pelo cliente (fora do salário CLT); integra a base por ser habitual (assunção: valor LÍQUIDO — cliente não informou se bruto; revisar se bruto)",
+    "13º salário líquido (R$ 24.000/ano → R$ 2.000/mês proporcional) — STJ REsp 1.332.808 (referente ao vínculo CLT; pró-labore com 13º? não informado)",
+    "férias + terço líquido (R$ 32.000/ano → R$ 2.666,67/mês proporcional) — STJ REsp 1.332.808",
+    "PLR — incluir se habitual (controvérsia; cliente não informou)"
+  ],
+  "nao_incide_sobre": [
+    "FGTS (depósitos mensais de R$ 2.400 e saques)",
+    "verbas rescisórias de natureza indenizatória (aviso-prévio indenizado, multa de 40%, férias indenizadas) — STJ AgInt no AREsp",
+    "auxílios e diárias",
+    "lucros distribuídos — NADA a incluir: cliente CONFIRMOU que a Andrade Engenharia nunca distribuiu lucros (tudo reinvestido). Atenção à moeda de troca: o mesmo fato aumenta a massa partilhável (valorização de 1.100.000 = lucros reinvestidos → meação 550.000 na partilha)"
+  ],
+  "percentual_sugerido": 20,
+  "valor_mensal_estimado": 8733.33,
+  "guarda": "compartilhada",
+  "fundamento": "Binômio necessidade–possibilidade e proporcionalidade (CC 1.694 §1º; 1.695; 1.699). Sem percentual legal: prática judicial 15%–30% dos rendimentos LÍQUIDOS (após IR e INSS). Base atualizada com o pró-labore confirmado: 24.000×12 + 15.000×12 (pró-labore) + 24.000 (13º) + 32.000 (férias) = R$ 524.000/ano = R$ 43.666,67/mês. ÂNCORA DE NEGOCIAÇÃO: 20% = R$ 104.800/ano = R$ 8.733,33/mês (2 filhos, 9 e 6 anos; renda própria de Fernanda R$ 9.000/mês; Marcelo arca custos dos filhos na sua convivência em guarda compartilhada). TETO DE ACEITAÇÃO PARA FECHAR O ACORDO: 25% = R$ 131.000/ano = R$ 10.916,67/mês. O percentual incide sobre CADA verba (mensalidade de 39.000, 13º, férias), não só a média: a 20% → 7.800/mês + 4.800 no 13º + 6.400 nas férias = 104.800/ano ✔; a 25% → 9.750/mês + 6.000 + 8.000 = 131.000/ano ✔. Guarda compartilhada não afasta alimentos pelo genitor sem residência de referência (CC 1.583/1.584). REJEITADA a base 'bruta + FGTS + rescisórias + PLR' da proposta de Fernanda: FGTS e verbas indenizatórias não compõem a base (alimentos_base_calculo); 30% é o teto da faixa, não o ponto de partida — sobre a base nova 30% daria 13.100/mês. Revisão a qualquer tempo (Súmula 358) — se o pró-labore crescer ou vier PLR, a base reabre."
+}

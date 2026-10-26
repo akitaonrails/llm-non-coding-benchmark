@@ -1,0 +1,84 @@
+{
+  "period": "2025-11",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 prior annual subscription",
+      "term": "2024-06-01 to 2025-05-31",
+      "source": "documents/note_opening_deferred.md - fully recognized in May (FINAL release 8,200.00); expired 2025-05-31, closed at 0.00; no November activity",
+      "opening": 0.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 0.0
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 renewal, order form C-026",
+      "term": "2025-01-01 to 2025-12-31 (as stated on order form)",
+      "source": "Eleventh of twelve 2,000.00 monthly releases; 2,000.00 remains and the schedule CLOSES 2025-12-31. Open item 3 unchanged: over-recognition exposure frozen at its 10,000.00 cap; the alternative Jan-2025..Dec-2025 vs renewal-period reading is unresolved pending management's records",
+      "opening": 4000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 2000.0
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025) \u2014 INV-2250, per Amendment No. 1",
+      "term": "2025-02-01 to 2026-01-31",
+      "source": "Tenth of twelve 3,000.00 releases on the ASC 250-restated schedule (Feb-2025..Jan-2026, open item 15); 6,000.00 remains (Dec-2025..Jan-2026)",
+      "opening": 9000.0,
+      "billed": 0.0,
+      "recognized": 3000.0,
+      "closing": 6000.0
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027) \u2014 INV-2275, order form C-027",
+      "term": "2025-03-01 to 2026-02-28",
+      "source": "Ninth of twelve 1,500.00 monthly releases (Mar-2025..Feb-2026); 4,500.00 remains",
+      "opening": 6000.0,
+      "billed": 0.0,
+      "recognized": 1500.0,
+      "closing": 4500.0
+    },
+    {
+      "contract": "Quarry Analytics Co (C-028) \u2014 INV-2324, order form C-028",
+      "term": "2025-05-01 to 2026-04-30",
+      "source": "Seventh of twelve 2,500.00 monthly releases (May-2025..Apr-2026); 12,500.00 remains",
+      "opening": 15000.0,
+      "billed": 0.0,
+      "recognized": 2500.0,
+      "closing": 12500.0
+    },
+    {
+      "contract": "Saltline Hospitality (C-029) \u2014 INV-2349, order form C-029",
+      "term": "2025-06-01 to 2026-05-31",
+      "source": "Sixth of twelve 1,800.00 monthly releases (Jun-2025..May-2026); 10,800.00 remains",
+      "opening": 12600.0,
+      "billed": 0.0,
+      "recognized": 1800.0,
+      "closing": 10800.0
+    },
+    {
+      "contract": "Vireo Clinics PBC (C-030) \u2014 INV-2422, order form C-030",
+      "term": "2025-09-01 to 2026-08-31 (12 months from service start, auto-renewing)",
+      "source": "Third of twelve 2,250.00 monthly releases (Sep-2025..Aug-2026, auto-renewing); 20,250.00 remains",
+      "opening": 22500.0,
+      "billed": 0.0,
+      "recognized": 2250.0,
+      "closing": 20250.0
+    },
+    {
+      "contract": "UNIDENTIFIED opening deferred revenue",
+      "term": "unknown",
+      "source": "No contract in file; no November billing or release; 24,000.00 held UNRECOGNIZED pending contract documentation - recognition withheld (ASC 606-10-25-1); see open_items.md",
+      "opening": 24000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 24000.0
+    }
+  ],
+  "totals": {
+    "opening": 93100.0,
+    "billed": 0.0,
+    "recognized": 13050.0,
+    "closing": 80050.0
+  },
+  "tie_out": "Opening 93,100.00 (agrees with month_10 closing and trial_balance.json account 2200) + new deferred billings 0.00 (no annual prepay invoiced in November) - releases 13,050.00 = closing 80,050.00, agrees with trial_balance.json account 2200 credit balance 80,050.00. Releases = Trestle renewal 2,000.00 + Pinecone 3,000.00 + Marigold 1,500.00 + Quarry 2,500.00 + Saltline 1,800.00 + Vireo 2,250.00 = 13,050.00, agrees with JE-2025-11-03. The 24,000.00 UNIDENTIFIED balance is carried with no release: no contract exists in the file, so no performance obligation is identified to recognize against (ASC 606-10-25-1)."
+}

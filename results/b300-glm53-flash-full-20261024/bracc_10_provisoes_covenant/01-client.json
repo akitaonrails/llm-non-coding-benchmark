@@ -1,0 +1,9 @@
+{
+  "questions": "# PERGUNTAS ao cliente — Vetor Alimentos S.A. (fechamento 31/12/2025)\n\nPerguntas para confirmação; o fechamento segue com as premissas da nota até resposta.\n\n1. **Waiver:** estava ou está em curso tratativa com debenturistas? Existe algum waiver/apoio obtido ou manifesto **até 31/12/2025**? (premissa atual: nenhum.)\n2. **CCB:** algum **aditivo** de renovação/repactuação foi assinado até 31/12/2025? Há cronograma de assinatura?\n3. **Escritura:** a definição de \"empréstimos, financiamentos e debêntures\" da Cláusula 7.1(c) abrange **mútuos de acionista** (ex-AFAC reclassificado)? Se sim, o índice sobe para 2,97.\n4. **Empréstimos:** quadro dos R$ 24.700.000 restantes (credores, vencimentos, garantias) para o disclosure de prazos.\n5. **AFAC:** existe instrumento do aporte (termo, deliberação, data exata em mar/2022)? Houve qualquer AGE/alteração contratual após o recebimento?\n6. **Fiscal:** datas de início da incidência e alíquotas para IOF-crédito/juros presumidos do mútuo; exposição estimada.\n7. **EBITDA auditado:** composição do EBITDA contábil de R$ 9.800.000 (lucro operacional + D&A), confirmando que a despesa da provisão está deduzida.\n",
+  "released_fact_ids": [
+    "renovacao",
+    "afac_delib",
+    "waiver"
+  ],
+  "answer": "CEO: o gerente do banco disse informalmente que renova. Não tem nada assinado; eles só assinam perto do vencimento.\nCEO: os sócios nunca formalizaram o aumento. Podemos fazer a AGE agora em janeiro, se ajudar.\nCEO: ainda não falamos com os debenturistas. Se precisar, pedimos waiver em fevereiro.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

@@ -1,0 +1,44 @@
+{
+  "months": {
+    "01": {
+      "revenue": 171677.51,
+      "payroll": 175547.65,
+      "supplies": 16511.4,
+      "rent": 21600.0,
+      "other": {
+        "payroll_taxes_adp": 49150.5,
+        "dentrix_software": 1290.0,
+        "utilities_austin_energy": 2155.9,
+        "summit_supply_llc_checks_unresolved": 14750.0
+      },
+      "net_for_month": -109327.94
+    },
+    "02": {
+      "revenue": 164019.14,
+      "payroll": 175375.2,
+      "supplies": 15927.82,
+      "rent": 21600.0,
+      "other": {
+        "payroll_taxes_adp": 48347.72,
+        "dentrix_software": 1290.0,
+        "utilities_austin_energy": 2393.44,
+        "summit_supply_llc_checks_unresolved": 14750.0
+      },
+      "net_for_month": -115665.04
+    },
+    "03": {
+      "revenue": 173544.82,
+      "payroll": 175791.07,
+      "supplies": 15141.54,
+      "rent": 21600.0,
+      "other": {
+        "payroll_taxes_adp": 48838.34,
+        "dentrix_software": 1290.0,
+        "utilities_austin_energy": 2316.49,
+        "summit_supply_llc_checks_unresolved": 14750.0
+      },
+      "net_for_month": -106182.62
+    }
+  },
+  "notes": "Basis: simplified P&L from bank activity only, Capital City Bank operating acct ...0441, 01/01-03/31/2026 (documents/bank_operating_q1.pdf; CSV of same statement verified identical \u2014 running balance continuous, debits 840,417.07 and credits 509,241.47 match the statement header, 212,440.18 + 509,241.47 - 840,417.07 = -118,735.42 ending). Revenue = MERCHANT DEPOSIT DELTA DENTAL/CIGNA/PATIENT credits. Payroll = ACH DEBIT ADP PAYROLL debits (net-pay funding). Supplies = Henry Schein + Patterson Dental. Rent = PROPERTY MGMT RENT 3 LOCATIONS. Expense figures shown positive. ARITHMETIC BY MONTH (components = total): 01: revenue 40,288.65+38,294.49+46,841.15+46,253.22=171,677.51; payroll 88,175.55+87,372.10=175,547.65; supplies 11,649.87+4,861.53=16,511.40; rent 21,600.00; payroll_taxes 24,479.29+24,671.21=49,150.50; dentrix 1,290.00; energy 2,155.90; summit 4,900.00+4,950.00+4,900.00=14,750.00; total debits 281,005.45; net 171,677.51-281,005.45=-109,327.94. 02: revenue 42,443.36+40,436.65+40,908.47+40,230.66=164,019.14; payroll 86,583.69+88,791.51=175,375.20; supplies 11,420.96+4,506.86=15,927.82; rent 21,600.00; payroll_taxes 24,217.06+24,130.66=48,347.72; dentrix 1,290.00; energy 2,393.44; summit 14,750.00; total debits 279,684.18; net 164,019.14-279,684.18=-115,665.04. 03: revenue 44,742.74+42,615.77+45,646.24+40,540.07=173,544.82; payroll 86,791.65+88,999.42=175,791.07; supplies 10,975.27+4,166.27=15,141.54; rent 21,600.00; payroll_taxes 24,257.41+24,580.93=48,838.34; dentrix 1,290.00; energy 2,316.49; summit 14,750.00; total debits 279,727.44; net 173,544.82-279,727.44=-106,182.62. Q1: revenue 509,241.47; payroll 526,713.92; supplies 47,580.76; rent 64,800.00; other 201,322.39; net -331,175.60. KEY ASSUMPTION: nine Summit Supply LLC checks (14,750.00/mo, 44,250.00 Q1) are held in 'other' as UNRESOLVED rather than classified to supplies/maintenance/consulting, because their invoice descriptions are vague, inconsistent, and the payments are under Finance Committee review per engagement letter \u00a74 \u2014 do not reclassify before that review concludes. OPEN ITEM NOT RECONCILED (not forced): payroll register (documents/payroll_register_q1.csv, 7 employees, 6 pay periods) gross 65,576.15/period x 6 = 393,456.90 for Q1, but ADP PAYROLL debits (net-pay funding) = 88,175.55+87,372.10+86,583.69+88,791.51+86,791.65+88,999.42 = 526,713.92 \u2014 debits exceed register GROSS by 133,257.02 (134% of gross as net pay is arithmetically impossible if the register is complete); ADP TAX debits 146,336.56 = 37.2% of register gross. Register likely incomplete or ADP includes payees not on it; left open, see QUESTIONS.md. LIQUIDITY: balance turned negative 02/28/2026 and closed at (118,735.42) \u2014 account overdrawn at 03/31/2026. IRREGULARITIES: reported in writing to the Finance Committee Chair (not the Managing Partner, per engagement letter \u00a74) \u2014 see communication_to_dr_r_patel.md. No assurance provided; no fraud determination made (AR-C \u00a770; AR-C \u00a790.A (paraphrased), library/ssars_responsibilities.md; engagement letter \u00a75). CLIENT RESPONSES (close Q&A, documented): staff ('Carla', title not stated) confirms Dr. Harlow created the Summit vendor himself and instructed staff to pay the invoices as they come in, and that she has never seen a delivery from them; she has never met T. Nguyen, per Dr. Harlow works from home on 'regional projects', checks mailed to the P.O. box; no further client information exists for the other open items (ADP registers, W-9/contracts/deliverables, check signatures, second-partner acknowledgment, Nguyen offer letter/I-9/time-clock, leases, other accounts, overdraft funding). Classification of Summit payments therefore remains UNRESOLVED and open; no reclassification to supplies/consulting while unsupported. See addendum in communication_to_dr_r_patel.md and QUESTIONS.md."
+}

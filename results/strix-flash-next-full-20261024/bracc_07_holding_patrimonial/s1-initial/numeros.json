@@ -1,0 +1,28 @@
+{
+  "itbi": {
+    "devido": true,
+    "estimativa": 492900,
+    "fundamento": "Sem imunidade: atividade preponderante do adquirente (holding de aluguel) e locacao de bens imoveis - excecao do CF art. 156, §2º, I (CTN art. 37 §§1º-2º, empresa nova: 3 anos seguintes); e, mesmo onde houvesse imunidade, o Tema 796 (STF RE 796.376) tributa o valor que exceder o capital integralizado. Alíquota SP capital 3% (cf156_ctn37_tema796.md). Cenario adverso (base = valor de mercado dos 11 imoveis, conforme afirmacao da palestra de integralizar todos): 3% x 16.430.000 = 492.900. Alternativas: so os 9 locados (recomendado) = 432.900; base = valor integralizado declarado = 141.600. Base de calculo por mercado e pratica municipal NAO verificada na biblioteca; aliquotas de Guarulhos/Cotia/Campos do Jordao fora da biblioteca (3% assumido)."
+  },
+  "aluguel_anual": 1018800,
+  "pf": {
+    "ir_anual": 246851.64
+  },
+  "pj_presumido": {
+    "irpj_csll_pis_cofins": 124031.64,
+    "irrf_distribuicao_2026": 21326.44,
+    "total": 145358.08
+  },
+  "integralizacao": {
+    "valor_recomendado": 4220000,
+    "gcap_evitado": 1531500
+  },
+  "itcmd_doacao_quotas": {
+    "estimativa": 657200,
+    "base": "Valor patrimonial atualizado (mercado) dos bens da PJ, nao o contable historico quando inferior - Lei 10.705/2000 arts. 2º, 9º, 13 e 16 e Decreto 46.655/2002 art. 14 §4º via TJSP (itcmd_sp_lei10705.md). 4% x 16.430.000 = 657.200 (quotas com os 11 imoveis; na estrutura recomendada com os 9 locados: 4% x 14.430.000 = 577.200). Sobre o contable (4.720.000) seria apenas 188.800 - nao aceito. Doacao com reserva de usufruto paga ITCMD integral de 4% (biblioteca indica particao 2/3 na nua-propriedade + 1/3 na extincao do usufruto, marcada como 'verificar'; ou integral de uma vez). EC 132/2023 torna progressividade obrigatoria, lei estadual pendente: risco de alta. Rodada 2 (distribuição no plano recomendado): fatia de Marcos = 1/6 do acervo (~3.088.333 = 21,40% das quotas dos 9 locados) -> ITCMD ~123.533; Ricardo+Paula ~453.667 do total de 577.200."
+  },
+  "legitima": {
+    "parcela_indisponivel_pct": 50,
+    "marcos_pode_ser_excluido": false
+  }
+}

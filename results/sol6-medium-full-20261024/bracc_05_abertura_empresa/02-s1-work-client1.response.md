@@ -1,0 +1,7 @@
+The client confirmed R$ 8,000/month in potential rent but did not choose a final ownership or payment structure. I’ll complete the engagement with a stated working structure, leave unresolved decisions visible, and separate the proposed transaction from the original plan in the tax figures.
+
+The draft now uses a cash-only capital structure and keeps the property outside the company. The figures show both the R$ 180,000 annual gap between planned withdrawals and projected profit and why R$ 50,000 paid to two different people does not, by itself, trigger the monthly dividend withholding rule. I’m checking the files and citations now.
+
+Concluí os cinco entregáveis: [parecer](/work/workspace/deliverable/parecer.md), [números](/work/workspace/deliverable/numeros.json), [cláusulas ajustadas](/work/workspace/deliverable/contrato_social_ajustado.md), [checklist de registro](/work/workspace/deliverable/checklist_registro.md) e [status](/work/workspace/deliverable/STATUS.md).
+
+A estrutura proposta mantém Marina como cotista passiva, Felipe fora da sociedade, Luana fora do capital inicial e o imóvel fora da clínica. **O contrato ainda não está pronto para protocolo:** faltam a confirmação dessa composição, o aceite e a remuneração de Luana como administradora, os dados cadastrais e a revisão das retiradas. Os R$ 600 mil anuais pretendidos excedem em R$ 180 mil o lucro anual projetado.

@@ -1,0 +1,7 @@
+{
+  "questions": "# Questions for the client (not blocking delivery; see STATUS.md)\n\n1. Did Elena actually sign Form 8332 releasing Leo to his father for 2025, as the custody order requires? It does not change our filing (the alternation agreement controls who claims Leo), but it affects the father's filing and we should confirm ours is documented.\n2. Was the JPMorgan Chase interest account held at a New York branch or opened with a New York address during 2025? This decides whether the Jul–Dec portion of the $400 interest is NY-source income on the IT-203.\n3. To finalize line 16: we need the 2025 Tax Table rows for MFJ taxable income around $86,850 — the library excerpt covers only $59,000–$61,000. (This is a preparer/library question, not one the client need answer; flagged here for completeness.)\n",
+  "released_fact_ids": [
+    "leo_8332"
+  ],
+  "answer": "Elena: I signed the 8332 for Leo's dad for {TY}, it's his year.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

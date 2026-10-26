@@ -1,0 +1,5 @@
+Yes, Redwood can potentially seek repayment of money it paid Mesa **before** bankruptcy, even for steel Mesa delivered. Bankruptcy preference rules can reach payments of old invoices made in the 90 days before filing. That does **not** mean Mesa currently owes Redwood money or that the steel was free. [The supplied rule](/work/workspace/library/bc_547.md) also gives Mesa defenses.
+
+Here, Redwood paid Mesa **$180,000** in that period. Our provisional analysis identifies a plausible ordinary-course defense for **$95,000** and later goods or services that may offset the other **$85,000**. On those assumptions, the estimated amount to return is **$0**. That estimate could change if the defenses fail, particularly depending on how payment of the goods administrative claim affects the later-value defense.
+
+Redwood also owes Mesa for unpaid invoices. The records provided support **$125,000**, not the **$210,000** in Mesa’s demand; no records explain the $85,000 difference. I’ve kept that difference open rather than put an unsupported amount in the claim.

@@ -1,0 +1,16 @@
+{
+  "mes": "2026-01",
+  "debito": 234950.00,
+  "creditos": 155067.00,
+  "estornos": 11100.00,
+  "a_recolher": 79883.00,
+  "retificacoes": "Estorno do crédito indevido de R$ 11.100,00 tomado na NF-e 8812 (Papel & Cia, CFOP 1556 — material de uso e consumo administrativo; crédito de 9,25% sobre R$ 120.000,00), com fundamento em Lei 10.637/2002 art. 3º, Lei 10.833/2003 art. 3º, IN RFB 2.121/2022 art. 176 e REsp 1.221.170/PR (library/pis_cofins_uso_consumo.md). Exige retificação da EFD-Contribuições de 01/2026 e recolhimento da diferença de R$ 11.100,00 sobre o valor eventualmente pago (R$ 68.783,00 = 234.950 - 166.167) com acréscimos legais; os acréscimos não foram calculados por falta da data/valor do pagamento original (informação que o cliente declarou não possuir — ver QUESTIONS.md). Cálculo: débito 234.950 (= 9,25% x 2.540.000) - créditos lícitos 155.067 (= 9,25% x 1.676.400 de mercadorias para revenda, mantidos) = 79.883. Créditos brutos lançados originalmente: 166.167 (155.067 + 11.100).",
+  "detalhe": {
+    "debito_vendas": "9,25% x receita bruta 2.540.000,00 = 234.950,00",
+    "creditos_lancados_original": 166167.00,
+    "creditos_mercadorias_revenda": "9,25% x 1.676.400,00 = 155.067,00 — mantidos (insumo da revenda, REsp 1.221.170/PR, library/pis_cofins_uso_consumo.md)",
+    "credito_estornado_nf8812": "9,25% x 120.000,00 = 11.100,00 — uso e consumo administrativo não gera crédito",
+    "a_recolher_como_registrado": 68783.00,
+    "a_recolher_corrigido": "234.950,00 - 155.067,00 = 79.883,00"
+  }
+}

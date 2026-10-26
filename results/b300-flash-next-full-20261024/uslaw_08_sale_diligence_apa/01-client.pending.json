@@ -1,0 +1,47 @@
+{
+  "case": "uslaw_08_sale_diligence_apa",
+  "questions": "# Questions for client (Ray / Brightline)\n\nAnswers let us replace assumptions with numbers. Deliverables are complete on the stated assumptions; we will revise on receipt.\n\n1. **Purchase price and allocation.** The draft excerpt never states the Purchase Price; we inferred **$3,100,000** from the \"$310,000 (10%)\" escrow (§9.3). Please confirm the actual base price and how the parties plan to allocate it (goodwill, equipment, covenants). The library flags allocation to an overbroad non-compete as a scrutiny risk (`tx_noncompete_sale_of_business.md`) — if the buyer's term sheet allocates ~$400k to §8.2, tell us now.\n2. **Installer hours.** Average and peak weekly hours per installer, last 3 years (are they regularly over 40?). Needed to size the FLSA overtime piece of the §4.12A special indemnity; we assumed it could be material but had no data.\n3. **1099 history.** How many years back do the 1099 payments go, and the approximate annual totals before 2025 (2025 = $612,000 given)? We sized the payroll-tax exposure at 2025 levels × ~3 years (average tenure) = ~$142k; earlier/longer history moves the cap up.\n4. **Prior classification positions.** Has the IRS, TWC, or any auditor/agencies ever questioned the installer classification, or have any installers signed contractor agreements or invoices (even informal)? Any workers'-comp claims by an installer? This affects whether §3509 \"non-willful\" reduced rates apply and how quickly we must act.\n5. **Lease full text.** §22 requires landlord consent (\"not unreasonably withheld\"), but we have not seen the whole lease — any recapture, kick-out, or consent-conditioned-on-new-guaranty/rent step-up clauses? And has the landlord been approached?\n6. **Hensley relationship.** Has anyone signaled anything to Hensley? Is Brightline a sole/preferred supplier under the MSA, and is the relationship current? This shapes how early and how we approach for the consent.\n7. **Buyer's hiring plan.** Does Lone Star intend to hire all 14 W-2 staff and the installers? (No WARN effect — headcount is far below threshold either way — but it drives the buyer's successor-FLSA and reclassification posture, i.e., how hard they will push on §4.12 pricing.)\n8. **Ray post-closing.** Will you consult, mentor, or hold any role for the buyer (paid or unpaid)? A post-closing role changes both the non-compete consideration and the reclassification picture. If pure retirement, confirm — the §8.2 redline assumes yes.\n",
+  "facts": [
+    {
+      "id": "hensley_relationship",
+      "trigger": [
+        "Hensley",
+        "consent",
+        "talked to",
+        "relationship",
+        "38%"
+      ],
+      "answer": "Hensley's owner is a friend. I haven't told him I'm selling. He won't love a corporate buyer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "installers_hours",
+      "trigger": [
+        "installers",
+        "hours",
+        "overtime",
+        "how many hours",
+        "1099"
+      ],
+      "answer": "The installers do 45–50 hours a week in busy season. Paid straight hourly. They like it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "disclosed",
+      "trigger": [
+        "disclose",
+        "told the buyer",
+        "schedule",
+        "did Lone Star know"
+      ],
+      "answer": "The buyer's people saw the census and asked about the 1099s. I said it's industry standard. They didn't push back.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "hensley_relationship",
+    "installers_hours"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

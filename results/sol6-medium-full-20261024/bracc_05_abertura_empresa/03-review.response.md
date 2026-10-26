@@ -1,0 +1,3 @@
+I’ll audit the deliverables against the closed library and the client’s answers, check that the figures reconcile, and revise any unsupported or misleading statements.
+
+I found three points to correct: the text implied Luana needed to pay for quotas even though a genuine documented transfer could be gratuitous; it called Marina’s cash already paid in; and it did not show that paying the full R$ 50,000 to Marina alone would trigger withholding. I’ll make those conditions explicit.

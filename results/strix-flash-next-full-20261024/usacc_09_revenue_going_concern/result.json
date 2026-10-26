@@ -1,0 +1,22 @@
+{
+  "case": "usacc_09_revenue_going_concern",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 1239.1847244820092,
+  "controller_wait_seconds": 77.00763133002329,
+  "model_turn_seconds": 1162.1429508430301,
+  "turns": 5,
+  "released_facts": [
+    "halvorsen_status"
+  ],
+  "usage": {
+    "input_tokens": 1317850,
+    "cached_input_tokens": 1273158,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 47614,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

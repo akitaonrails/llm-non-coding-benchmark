@@ -1,0 +1,3 @@
+Mantenho a compensação de **R$ 207.974,70**. O limite para este trimestre é 30% da base antes da compensação: R$ 693.249,00 × 30% = R$ 207.974,70, conforme [lei9065_art15_trava.md](/work/workspace/library/lei9065_art15_trava.md). A mesma trava vale para a base negativa da CSLL.
+
+Os **R$ 692.025,30 restantes** de cada saldo ficam controlados na Parte B para períodos futuros. Compensar além do limite contrariaria a regra da biblioteca; por isso, não alterei a [apuração trimestral](/work/workspace/deliverable/mes_03/lalur.json).

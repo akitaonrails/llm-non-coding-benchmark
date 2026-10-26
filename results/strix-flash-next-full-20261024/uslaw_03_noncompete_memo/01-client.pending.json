@@ -1,0 +1,57 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "questions": "# QUESTIONS for Meridian (answers will refine, not likely reverse, the analysis)\n\n1. **Condition of employment.** Was signing the March 4, 2024 agreement a mandatory condition of Zhao's hiring (offer contingent on signature)? The HR timeline implies yes (\"offer letter\" then agreement sent; standard form for all engineers), but nothing states it expressly. Lab. Code §925(a) turns on \"as a condition of employment.\"\n\n2. **The complete agreement.** The file contains only an excerpt. Does the full agreement contain (a) any attorneys'-fees clause, (b) a severability clause, (c) the equity/stock-option terms referenced in §10 context (relevant to the Texas *Marsh* ancillarity argument), or (d) any definition of the competitive scope in §8? Please send the executed complete agreement with the DocuSign certificate of completion.\n\n3. **AB 1076 population (company-wide exposure).** How many current employees, and former employees employed after Jan. 1, 2022, signed agreements containing §8-style non-competes while primarily working in California? Status of ticket LO-233 — was *any* §16600.1(b) notice ever sent to anyone?\n\n4. **Kestrel specifics.** Confirm Kestrel Autonomy's business (warehouse AMRs?) and Zhao's role — is §8's target description accurate? (Relevant only if Meridian ever litigated reasonableness/scope; we recommend it not.)\n\n5. **Confidentiality evidence.** Does any evidence exist (device logs, DLP alerts, offboarding review) that Zhao accessed or retained materials beyond normal scope? His email says he took nothing; the offboarding record should corroborate. This drives whether §10-based claims are worth anything; §8 enforcement is not.\n\n6. **Other California hires on this form since 2024-01-01.** How many engineers have signed the same §8 form since Jan. 1, 2024? Each is a potential §16600.5(c) violation; we recommend stopping use for California-based hires immediately regardless of the count.\n\n7. **Prior firm advice.** Was the 2024 memo's *Alvarez* strategy (sue in Travis County) actually used against any California-based employee, and with what outcome? Also, do you have full-text copies of *Calderon v. Pacific Dynamics* and the *Westbrook* en banc decision so their status can be verified — neither is in our library and both underpin the prior advice.\n\n8. **Austin onsite time.** How many total days did Zhao work physically at the Austin HQ (onboarding week + Oct. 2025 offsite)? Bears on any residual \"primarily works in California\" argument against §925 and on Texas minimum-contacts fallbacks.\n",
+  "facts": [
+    {
+      "id": "austin_trips",
+      "trigger": [
+        "Texas",
+        "Austin",
+        "ever in Texas",
+        "physically"
+      ],
+      "answer": "Twice: onboarding week March 2024, and an offsite October 2025. Otherwise Oakland.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "counsel",
+      "trigger": [
+        "counsel",
+        "lawyer",
+        "negotiat",
+        "represented"
+      ],
+      "answer": "No. It's our standard form; engineers sign the same day. Nobody negotiates.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "notice_1076",
+      "trigger": [
+        "AB 1076",
+        "notice",
+        "February 14",
+        "16600.1"
+      ],
+      "answer": "Legal ops never sent the notices. The ticket was closed as 'won't do'. Please don't put that in writing if you can avoid it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trade_secrets",
+      "trigger": [
+        "trade secret",
+        "confidential",
+        "took",
+        "misappropriat"
+      ],
+      "answer": "No evidence he took anything. He said he wouldn't. It's the competing itself we object to.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "austin_trips",
+    "notice_1076",
+    "trade_secrets"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

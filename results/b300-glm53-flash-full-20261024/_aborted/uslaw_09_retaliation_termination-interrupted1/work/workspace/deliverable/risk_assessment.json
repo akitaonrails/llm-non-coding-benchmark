@@ -1,0 +1,76 @@
+{
+  "terminate_today": "no",
+  "claims": [
+    {
+      "claim": "FMLA interference — termination to prevent requested leave [29 U.S.C. §2615(a)(1); 29 C.F.R. §825.220 — library/fmla_2615.md]",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Dana requested intermittent FMLA leave 2026-09-30 to care for her mother post-surgery; medical certification submitted 2026-10-03; HR has not responded (documents/timeline.md).",
+        "The library states terminating an employee to prevent her from taking approved or requested leave is interference, that an employer may not use the taking of FMLA leave as a negative factor in employment actions (§825.220(c)), and that an employee who requested leave need not have begun it (library/fmla_2615.md).",
+        "Direct evidence: 2026-10-02 email from Tom Hale (PIP author, direct manager, and the accused harasser) to HR Director Lena Ortiz — 'Let's get this done before she's out on leave. Once she's on FMLA it's a nightmare to move on her.' (documents/timeline.md). The leave request was 2 days earlier (9/30 -> 10/2) and the terminate-today request followed the email by 4 days (10/2 -> 10/6).",
+        "Both people named in that email are in the termination decision chain — the same HR Director now asking outside counsel to 'confirm we're fine' (documents/hr_request.md, documents/timeline.md).",
+        "Remedies for interference include lost wages, liquidated (double) damages, fees, and reinstatement (library/fmla_2615.md)."
+      ]
+    },
+    {
+      "claim": "Retaliation for the harassment complaint — Title VII §704(a) [42 U.S.C. §2000e-3(a); library/title_vii_704a.md]",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Her 2026-09-12 written internal complaint of harassment (comments on her appearance and 'whether she's too distracted at home to travel') is protected opposition under §704(a) (library/title_vii_704a.md).",
+        "First-ever discipline in 7 years, 5 months of employment (hired 2019-04-15) was opened 2026-09-16 — 4 days after the complaint — by Tom Hale, the very manager she accused (documents/timeline.md; documents/personnel_file_summary.md: 'No prior discipline. No prior PIP.'). Days-to-a-few-weeks temporal proximity supports causation (library/title_vii_704a.md).",
+        "Proposed termination would come 24 days after the complaint and only 20 days into a 60-day PIP (33.3% of the plan elapsed) — before any documented PIP failure. The file shows no evidence the PIP was failing (documents/personnel_file_summary.md); thin justification plus decision-maker's own email about moving on her are pretext indicators (library/title_vii_704a.md).",
+        "Pretext via comparators who did not complain: Brennan (79%), Osei (84%), Park (86%) each performed worse than Dana (88%) and none is on a PIP (documents/comparator_data.csv; comparator treatment as pretext is expressly listed in library/title_vii_704a.md).",
+        "The PIP was authored by the accused harasser, and no investigation was opened before the PIP issued; the performance action is entangled with the complaint and pressured by the VP's 'done this week' timeline (documents/hr_request.md, documents/timeline.md)."
+      ]
+    },
+    {
+      "claim": "Hostile work environment / employer failure to investigate [Faragher v. City of Boca Raton; Burlington Indus. v. Ellerth; EEOC Enforcement Guidance (2024) — library/harassment_investigation_duty.md]",
+      "strength_for_employee": "medium",
+      "key_facts": [
+        "Complaint received 2026-09-12 and acknowledged, but 'no investigation opened' as of 2026-10-06 ('Tom is on the road; will circle back') (documents/timeline.md).",
+        "The employer must promptly and impartially investigate and take corrective action; the investigation should be run by someone outside the accused's chain of command (library/harassment_investigation_duty.md). Hale, the accused, is a Regional VP who continues to manage the complainant and authored her PIP.",
+        "Failure to investigate undermines the Faragher/Ellerth affirmative defense and is itself evidence in a retaliation case (library/harassment_investigation_duty.md) — it converts the unanswered complaint into a second, independent liability theory.",
+        "The alleged comments (appearance plus a sex-stereotype-laced remark about being 'distracted at home') plausibly relate to sex, and the complainant asked only that the comments stop — a minimally intrusive request left unaddressed for 24+ days (documents/timeline.md)."
+      ]
+    },
+    {
+      "claim": "State-law parallels — Col. Rev. Stat. §24-34-402 (retaliation/interference mirrors; plus at-will limits)",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Columbia law mirrors Title VII/FMLA with a longer limitations period and uncapped compensatory damages (library/columbia_at_will_exceptions.md) — the same conduct exposes the company to uncapped state damages.",
+        "HR's 'at-will state' premise is not a defense: employment is at will, but termination may not be for an unlawful reason (discrimination, retaliation, exercise of statutory rights) (library/columbia_at_will_exceptions.md)."
+      ]
+    },
+    {
+      "claim": "Age discrimination (ADEA / state law) — provisional",
+      "strength_for_employee": "low",
+      "key_facts": [
+        "GAP, stated prominently: the library's only ADEA file (library/adea_owbpa_626f.md) covers the §626(f) waiver standard; the substantive ADEA discrimination standard is NOT in the library, so the strength here is provisional/unverified.",
+        "Facts that would feed the claim: Dana (42) is the only employee on a PIP; the three lower performers (79%/84%/86%) are all younger (35/29/31; average 31.67) and un-PIP'd; the only employee at/above quota (Lind, 47, 103%) is untouched (documents/comparator_data.csv, arithmetic above).",
+        "The data is better explained by complaint status than by age: every employee below 100% quota (4 of 5) was left alone except the one who had complained 4 days earlier (documents/comparator_data.csv, documents/timeline.md)."
+      ]
+    }
+  ],
+  "separation_agreement_defects": [
+    "Consideration window: the form gives 7 days to consider; 29 U.S.C. §626(f)(1)(F) (library/adea_owbpa_626f.md) requires at least 21 days (45 if part of an exit-incentive or group termination program) — non-compliant on its face.",
+    "Revocation window: the form allows revocation within 3 days after signing; §626(f)(1)(G) (library/adea_owbpa_626f.md) requires at least 7 days following execution, and the agreement must not become effective until that period expires — the excerpt contains no effective-upon-expiry clause.",
+    "No written advice to consult an attorney appears anywhere in the draft; §626(f)(1)(E) (library/adea_owbpa_626f.md) makes it a mandatory minimum. (The provided draft is an excerpt — paragraphs 3, 4, 7, 9, 11 only — so this and any other required language elsewhere in the form cannot be verified from the file.)",
+    "'Release of all claims' as drafted has no carve-out for post-signing claims; §626(f)(1)(C) (library/adea_owbpa_626f.md) requires the waiver not extend to future claims.",
+    "Consideration may fail §626(f)(1)(D): the 4 weeks' base pay (= 28 days; 4/52 ≈ 7.69% of annual base) must be in addition to anything of value she is already entitled to; whether a severance plan already entitles her to it is unknown (question outstanding in QUESTIONS.md).",
+    "§626(f)(1)(B)/(A): paragraph 4 refers to 'the ADEA' only inside a generic list; the waiver must specifically refer to rights or claims arising under the ADEA and be written in a manner calculated to be understood (library/adea_owbpa_626f.md) — redraft explicitly.",
+    "Consequence if used as-is: an ADEA release failing the §626(f) minimums is unenforceable as to ADEA claims — the employee may keep the severance and still sue (Oubre v. Entergy, quoted in library/adea_owbpa_626f.md).",
+    "Scope caution: the library addresses ADEA-waiver enforceability only; whether the release as drafted would bind her Title VII, FMLA, or Columbia-law claims is not verifiable from the library (unverified — do not rely on the release stopping them)."
+  ],
+  "comparator_analysis": "Performance basis vs. the field (documents/comparator_data.csv, arithmetic shown): Dana's 2026 YTD attainment is 88%. Brennan is at 79% (Dana is 9 points HIGHER; M, 35, no PIP, no complaint), Osei at 84% (+4 vs Dana; M, 29, no PIP, no complaint), Park at 86% (+2 vs Dana; M, 31, no PIP, no complaint). Only Lind (103%, 15 points above Dana; F, 47) outperforms her. Four of five Account Managers are below 100% quota (79/84/86/88), yet exactly one is on a PIP: Dana — the only female employee below quota, the oldest of the below-quota group (42), and the only one who filed a complaint (2026-09-12). The three employees with WORSE numbers are all male, all younger (avg 31.67), and none complained; the one triggered event in this dataset is Dana's complaint, not performance — 9/12 complaint, 9/16 PIP (4 days later), 9/30 FMLA request, 10/2 Hale email, 10/6 terminate-today request. Under library/title_vii_704a.md, disparate treatment of comparators who did not complain is expressly a pretext indicator; under library/fmla_2615.md the sequencing shows the leave request entering the decision chain. CAVEAT (stated prominently): this analysis is as of the latest document date 2026-10-06; whether anything has happened since is unknown and must be confirmed (QUESTIONS.md #8). Also, 2022-2025 ratings show no discipline for 96/92/88% years (documents/personnel_file_summary.md), so a sudden 88%->PIP->termination within 24 days of a complaint is inconsistent with the company's own enforcement history.",
+  "recommended_course": [
+    "Do NOT terminate today. Any termination now would rest on a PIP authored by the accused harasser 4 days after her complaint, with a written record (10/2 Hale email) linking the action to her pending FMLA leave, and a comparator record showing the only sub-quota employee punished is the only one who complained.",
+    "Issue a litigation hold immediately: litigation is reasonably anticipated (internal discrimination complaint + contemplated termination), so preserve Hale's and Ortiz's emails and texts, the PIP file, CRM records, comparator materials, and the 9/12 complaint (library/litigation_hold.md — Fed. R. Civ. P. 37(e); Zubulake).",
+    "Open a prompt, impartial harassment investigation of the 9/12 complaint NOW, run by an investigator outside Hale's chain of command (library/harassment_investigation_duty.md); take interim protective measures and, if the facts warrant, corrective action against Hale.",
+    "Process the FMLA request today: respond, determine and communicate leave status, and stop all decisions that take the leave request into account (library/fmla_2615.md — §2615(a)(1); §825.220(c)).",
+    "Separate the PIP from Hale: reassign its administration and evaluation to a manager outside Hale's chain of command, evaluate against objective metrics applied consistently to Brennan/Osei/Park, and document bona fide performance facts only.",
+    "Do not send the current separation agreement in any scenario: it fails §626(f)(1)(C)(E)(F)(G) and likely (B)/(D); see deliverable/corrected_separation_agreement_terms.md for the mandatory changes (library/adea_owbpa_626f.md).",
+    "If, after the investigation and a full FMLA determination, separation is still justified on documented, comparator-consistent performance grounds, decide on a revised timeline — not 'this week' — and use a corrected agreement with a 21-day consideration period and genuine additional consideration.",
+    "Quantify exposure before any termination decision: FMLA remedies include liquidated (double) damages, fees, and reinstatement (library/fmla_2615.md); the Columbia-law mirror adds a longer limitations period and uncapped compensatory damages (library/columbia_at_will_exceptions.md). Base salary is needed for any dollar figure (QUESTIONS.md #7); nothing balances to a number yet and none is asserted here."
+  ],
+  "litigation_hold": true
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "clausula": "1",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Objeto e serviços identificados. A aceitação comercial deve ser acompanhada de especificações de implantação e integrações, mas o texto não revela defeito jurídico autônomo.",
+    "redacao_proposta": "Manter. Detalhar cronograma e critérios de aceite em anexo operacional, se negociado."
+  },
+  {
+    "clausula": "2",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "A expressão 'ou outro índice a critério da NEXA' permite troca unilateral do índice e impede previsão do preço. Nas três unidades, 3 × R$ 6.900 = R$ 20.700/mês; 36 × R$ 20.700 = R$ 745.200, mais R$ 48.000 de implantação = R$ 793.200 antes de reajustes. Referência: library/cc_contratos_empresariais.md (CC arts. 421-A e 422).",
+    "redacao_proposta": "Mensalidade de R$ 6.900 por unidade ativa, reajustada a cada 12 meses exclusivamente pela variação acumulada do IGP-M; se o índice for extinto, as partes escolherão por escrito índice oficial substituto, vedada escolha unilateral. Definir datas de cobrança da implantação e da ativação de cada unidade."
+  },
+  {
+    "clausula": "3",
+    "avaliacao": "aceitavel",
+    "gravidade": "media",
+    "fundamento": "Prazo de 36 meses, renovação por igual período e aviso de 180 dias são compromissos comerciais relevantes, mas a biblioteca presume paridade e não fornece base para qualificá-los como inválidos. A clínica deve controlar a data de aviso. Referência: library/cc_contratos_empresariais.md (CC art. 421-A).",
+    "redacao_proposta": "Manter se o prazo corresponder à decisão comercial; negociar renovação por 12 meses e aviso de 60 a 90 dias apenas se a flexibilidade for prioridade da clínica."
+  },
+  {
+    "clausula": "4",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Obrigações ordinárias da contratante, sem transferência expressa de deveres da NEXA.",
+    "redacao_proposta": "Manter."
+  },
+  {
+    "clausula": "5",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Dados de saúde são sensíveis; a autorização irrestrita de hospedagem exterior não demonstra mecanismo do art. 33. Uso próprio de dados apenas 'agregados' não assegura anonimização irreversível e extrapola instruções da controladora. Faltam papéis, bases, segurança, incidentes e saída. O faturamento TISS pode integrar transações administrativas e financeiras permitidas nas condições do art. 11, §4º. Referência: library/lgpd_excertos.md (arts. 5º, 11, 33, 37, 39 e 46–48; nota sobre anonimização).",
+    "redacao_proposta": "Substituir integralmente pelo texto de clausula_dados.md, com Anexo de Tratamento preenchido antes de dados reais."
+  },
+  {
+    "clausula": "6",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "A meta de 99% admite 30 × 24 × 1% = 7,2 horas de indisponibilidade em mês de 30 dias. O crédito é 2% × R$ 20.700 = R$ 414 por ponto percentual, limitado a 10% × R$ 20.700 = R$ 2.070. Sem método de medição, janelas de manutenção, restauração, suporte a incidentes clínicos ou saída por falha reiterada, o risco operacional para três unidades fica sem remédio suficiente. É recomendação comercial e de continuidade, não nulidade legal. Referência contextual: library/cfm_prontuario.md (dever de acesso e guarda).",
+    "redacao_proposta": "Definir disponibilidade mensal e medição verificável, manutenção programada com aviso, prioridade e tempos de resposta/restauração para incidentes críticos, cópias e recuperação testadas, relatórios mensais e direito de rescindir sem multa por falhas graves ou repetidas; negociar meta e créditos adequados à operação clínica."
+  },
+  {
+    "clausula": "7",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "O prontuário pertence ao paciente, sob guarda do médico/estabelecimento; dizer que todos os dados pertencem à contratante é impreciso. CSV por apenas 30 dias pode omitir anexos e inviabilizar acesso, portabilidade e guarda mínima de 20 anos após o último registro. Referência: library/cfm_prontuario.md.",
+    "redacao_proposta": "Preservar a propriedade intelectual da NEXA; reconhecer direitos dos titulares e guarda da clínica; assegurar exportação completa e verificável, inclusive anexos, histórico e metadados em formatos interoperáveis, acesso e suporte na transição conforme cláusula de dados proposta."
+  },
+  {
+    "clausula": "8",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "O teto de três mensalidades equivale a 3 × R$ 20.700 = R$ 62.100, valor que pode ser insuficiente para perda de prontuários de cerca de 22.000 pacientes. Não há na biblioteca regra que torne todo teto entre empresas automaticamente nulo; a exceção limitada a dolo deixa sem tratamento contratual falhas de segurança, instruções, confidencialidade e exportação. Responsabilidade legal por dano decorrente de violação da LGPD subsiste. Referências: library/lgpd_excertos.md (art. 42); library/cc_contratos_empresariais.md (CC art. 421-A).",
+    "redacao_proposta": "Excluir do teto violações legais de proteção de dados, descumprimento de instruções lícitas, sigilo, perda ou eliminação indevida de prontuários, obrigação de exportar e reparar danos causados por dolo ou culpa grave; negociar limite separado e proporcional para as demais perdas diretas, sem afastar responsabilidade imposta por lei."
+  },
+  {
+    "clausula": "9",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "O dever contratual mútuo de sigilo por cinco anos é válido em si; a cláusula de dados proposta mantém proteção e sigilo enquanto a NEXA conservar dados. Referência: library/lgpd_excertos.md (arts. 46–48).",
+    "redacao_proposta": "Manter, com prevalência da proteção continuada dos dados na cláusula de dados."
+  },
+  {
+    "clausula": "10",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Multa de 100% de todas as mensalidades vincendas, sem abatimento por serviço não prestado ou custos evitados, pode ser manifestamente excessiva e está sujeita a redução judicial; a revisão, porém, é excepcional em contrato empresarial. No início dos 36 meses, 36 × R$ 20.700 = R$ 745.200, sem reajustes. Referência: library/cc_contratos_empresariais.md (CC arts. 413, 421-A e 473).",
+    "redacao_proposta": "Permitir rescisão imotivada pela contratante com aviso de 60 dias e multa compensatória limitada a até três mensalidades vigentes, proporcional ao período não cumprido e a investimentos de implantação não amortizados comprovados, sem cobrança por serviços futuros não prestados; sem multa se houver inadimplemento material da NEXA ou saída por objeção justificada a novo suboperador."
+  },
+  {
+    "clausula": "11",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Multa de mora de 2%, juros de 1% ao mês e correção não são identificados pela biblioteca como inválidos para este contrato empresarial. Não aplicar automaticamente controle do CDC. Referências: library/cc_contratos_empresariais.md; library/cdc_art51_distrator.md.",
+    "redacao_proposta": "Manter; especificar o índice de correção para evitar dúvida de cálculo, se desejado."
+  },
+  {
+    "clausula": "12",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Subcontratação sem comunicação inviabiliza conhecer quem acessa dados sensíveis e onde, instruir o tratamento, auditar segurança e verificar transferência internacional. Não é proibição absoluta de subcontratar; exige governança contratual. Referência: library/lgpd_excertos.md (arts. 33, 39 e 46–48).",
+    "redacao_proposta": "Lista inicial de suboperadores e locais aprovada por escrito; aviso prévio de mudanças, objeção justificada, obrigações equivalentes, responsabilidade da NEXA pelos suboperadores e aprovação específica de fluxos internacionais, conforme clausula_dados.md."
+  },
+  {
+    "clausula": "13",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Proibir a clínica de desenvolver, contratar ou usar qualquer concorrente por cinco anos, em todo o país, impede migração do prontuário sem proteção proporcional de know-how ou clientela da NEXA. O prazo excede o parâmetro usual de até dois anos; a multa de R$ 500.000 agrava a restrição. Referência: library/stj_nao_concorrencia.md.",
+    "redacao_proposta": "Excluir integralmente a não concorrência e a multa de R$ 500.000. Proteger segredos técnicos da NEXA pela cláusula de confidencialidade, sem impedir troca de fornecedor, integração ou desenvolvimento lícito."
+  },
+  {
+    "clausula": "14",
+    "avaliacao": "aceitavel",
+    "gravidade": "media",
+    "fundamento": "A eleição escrita de Florianópolis para este negócio entre empresas é em princípio válida. A clínica usa o software como insumo da atividade, e a vulnerabilidade que permitiria mitigar a teoria finalista não está demonstrada; portanto não se presume nulidade pelo CDC. O foro pode ser negociado por custo e conveniência, e só evidência concreta de abusividade poderia sustentar ineficácia pelo CPC. Referências: library/cdc_art51_distrator.md; library/cc_contratos_empresariais.md (CPC art. 63).",
+    "redacao_proposta": "Manter se o custo de litigar em Florianópolis for aceitável; negociar foro da sede da clínica ou mediação remota por conveniência, sem contar com anulação automática."
+  },
+  {
+    "clausula": "15",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "As declarações gerais não revelam defeito autônomo nem transformam as cláusulas problemáticas em válidas. Referência: library/cc_contratos_empresariais.md (CC arts. 421-A e 422).",
+    "redacao_proposta": "Manter."
+  }
+]

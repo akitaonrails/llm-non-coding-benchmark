@@ -1,0 +1,22 @@
+{
+  "case": "brlaw_03_pejotizacao",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 832.5035781170009,
+  "controller_wait_seconds": 71.01148183195619,
+  "model_turn_seconds": 761.224951509037,
+  "turns": 5,
+  "released_facts": [
+    "valor_embutia"
+  ],
+  "usage": {
+    "input_tokens": 2246332,
+    "cached_input_tokens": 2133168,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 105186,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

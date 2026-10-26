@@ -1,0 +1,37 @@
+{
+  "justa_causa_cabivel": false,
+  "motivos": [
+    "Perda da imediatidade / perdão tácito: a gerente Renata (preposta — o conhecimento do preposto é conhecimento do empregador) teve ciência do post em 21/08/2026 08:51, um dia após a publicação de 20/08/2026, e nada fez; o pedido de justa causa só foi formalizado em 07/10/2026 e a dispensa seria aplicada em 11/10/2026 — 51 dias após o conhecimento. A alegação de que 'soube dessa semana' é contraditada pelo próprio e-mail dela de 21/08 (CLT arts. 482, 493; jurisprudência consolidada do TST sobre imediatidade — library/clt_482_493_proporcionalidade.md).",
+    "A conduta não se enquadra no art. 482, 'k': o post do LinkedIn é crítica genérica às condições de trabalho ('fim de semana sem hora extra paga', 'trata gente como número'), sem ofensa pessoal a superior hierárquico e sem imputação falsa de crime; tende a ser tida como exercício de liberdade de expressão/manifestação de insatisfação, insuficiente para a alínea k (library/clt_482_493_proporcionalidade.md).",
+    "Veracidade do fato narrado: o prontuário registra saldo positivo de 62h no banco de horas (jul–ago/2026), com horas de fim de semana lançadas e não pagas — o conteúdo do post 'encontra respaldo no banco de horas', enfraquecendo a alegação de ato lesivo à honra/boa fama (documents/prontuario.md).",
+    "Ausência de gravidade e de proporcionalidade/gradação: nenhuma advertência ou suspensão no prontuário; avaliações 2022–2025 'bom'/'muito bom'; faltas leves exigem advertência/suspensão antes da dispensa, salvo gravidade extrema — inexistente (documents/prontuario.md; library/clt_482_493_proporcionalidade.md).",
+    "Dupla estabilidade: Camila é suplente eleita da CIPA (eleição 12/05/2026, posse 02/06/2026, mandato de 1 ano) — suplente goza da garantia (Súmula 339, I do TST) — com estabilidade desde o registro da candidatura até 1 ano após o fim do mandato (~02/06/2028); e é gestante (atestado de 9 semanas registrado no ambulatório da empresa em 18/09/2026), estável desde a confirmação até 5 meses após o parto (DPP estimado ~23/04/2027; ~23/09/2027). Justa causa inválida equivale a dispensa arbitrária vedada pelo ADCT art. 10, II, 'a' e 'b'; justa causa revertida judicialmente restabelece as estabilidades com todos os efeitos — reintegração ou indenização substitutiva (documents/ata_cipa.md; documents/atestado_ambulatorio.md; library/estabilidade_cipa.md; library/estabilidade_gestante.md).",
+    "CLT art. 165: ainda que se tentasse despedida 'com motivo', o empregador teria de comprovar motivo disciplinar/técnico/econômico/financeiro — e o único motivo apontado (o post) não sustenta justa causa."
+  ],
+  "estabilidades": [
+    {
+      "tipo": "suplente de CIPA",
+      "fundamento": "ADCT art. 10, II, a; CLT art. 165; Súmula 339, I do TST (suplente goza da garantia)",
+      "ate": "2028-06-02 (estimado: eleição 12/05/2026, posse 02/06/2026, mandato de 1 ano com término ~01/06–02/06/2027, + 1 ano; datas exatas do mandato a confirmar)"
+    },
+    {
+      "tipo": "gestante",
+      "fundamento": "ADCT art. 10, II, b; Súmula 244, I–III do TST (desconhecimento pela empresa não afasta o direito); Lei 9.029/95",
+      "ate": "~2027-09-23 (estimado: 9 semanas em 18/09/2026 => DUM ~17/07/2026, DPP ~23/04/2027, +5 meses; data real depende do parto)"
+    }
+  ],
+  "exposicao_se_reverter": {
+    "verbas_rescisorias": 41463.07,
+    "indenizacao_estabilidade": 183848.89,
+    "dano_moral_estimado": 15000.00,
+    "total": 240311.96
+  },
+  "alternativas": [
+    "NÃO aplicar a justa causa e arquivar o pedido do RH (recomendado): exposição estimada da reversão ~R$ 240 mil (faixa R$ 163–240 mil), com reintegração provável por dupla estabilidade, além de liberação de FGTS/seguro-desemprego e honorários não quantificados.",
+    "Regularizar as 62h do banco de horas (pagar ou compensar as horas de fim de semana de jul–ago/2026): remove o lastro fático que torna o post verídico e reduz o risco de cobrança de horas extras.",
+    "Se houver fato disciplinar novo: processo graduado (advertência → suspensão → dispensa) com apuração imediata — para o post de 20/08/2026 a imediatidade já está perdida (ciência em 21/08/2026) e advertência sobre esse fato não é mais utilizável.",
+    "Despedida sem justa causa NÃO é rota de fuga: contra cipeiro(a) estável e gestante a dispensa sem motivo é arbitrária (ADCT art. 10, II, 'a' e 'b'); o CLT art. 165 exige comprovação de motivo disciplinar/técnico/econômico/financeiro e o custo do período de estabilidade permaneceria.",
+    "Havendo insistência na separação, a única via com base na biblioteca seria motivo técnico/econômico/financeiro documentado e independente do post (CLT art. 165) — o que o arquivo atual não demonstra."
+  ],
+  "recomendacao": "Não aplicar a dispensa por justa causa. Arquivar o pedido do RH de 11/10/2026 e comunicar à gestão que a ciência pela preposta em 21/08/2026 afasta a imediatidade (perdão tácito, provado por e-mail interno), que a conduta é crítica genérica e verídica (62h no banco de horas) e que a empregada tem dupla estabilidade (CIPA até ~02/06/2028 e gestante até ~5 meses após o parto). Reverter a decisão agora custa ~zero; mantê-la expõe a empresa a ~R$ 240 mil (verbas ~R$ 41,5 mil + indenização de estabilidade ~R$ 183,8 mil + dano moral ~R$ 15 mil), mais reintegração com salários vencidos, liberação de FGTS/seguro-desemprego e honorários. Priorizar a regularização das 62h do banco de horas."
+}

@@ -1,0 +1,47 @@
+{
+  "case": "usacc_09_revenue_going_concern",
+  "questions": "# Open items and follow-up — with management's answers and remaining unknowns\n\n**Client follow-up received (recorded as of 12/31/2025):** asked about the Saltline kits, management confirmed: **\"They're on the shelf with everything else. Same SKU, no point tagging.\"** — i.e., as of the Q4 close the kits remain un-segregated general inventory. For all other questions, the client has **no additional information**. Each remaining unknown is listed below and is flagged as an assumption prominently in the deliverables that use it.\n\n## Answered\n\n- **Saltline tagging/segregation (former Q3):** answered — kits remain on the general shelf, untagged, at year-end close. This **confirms** (does not change) the Q4 conclusion of $0 revenue under ASC 606-10-55-83. Delivery date, tagging plan before delivery, and Tampa-cancellation probability were **not** answered; they remain unknowns and affect only the Q1 2026 delivery entries (refund-liability estimate under 55-22), not the Q4 result.\n\n## Remaining unknowns (client has no additional information — explicitly flagged)\n\n1. **Ironvale discount rate.** No IBR or rate implicit in the lease was provided. The ROU asset / lease liability amounts stand on an **assumed 8.0% annual rate (unverified, not from the library)**; at 6% they are $591,678, at 10% $557,842.\n2. **Lease classification / subsequent expense pattern.** The library is silent and the client provided no information; the deliverables assume straight-line Q4 lease expense of $54,000 (no net-income change). Alternative front-loaded pattern: expense $59,071, net loss $(239,071).\n3. **$850,000 subscription revenue.** No signed subscription contract documents were provided, and the client had no further information; the revenue stands on the stated assumption that the underlying contracts meet all five ASC 606-10-25-1 criteria (including collection probable).\n4. **Going-concern plans.** No plans beyond the Crestline term sheet were identified by management; the deliverables state that **none were identified**. Expected issuance date of the FY2025 statements is also unknown (the 205-40 window runs one year from issuance); assumed to be shortly after year-end close.\n5. **Ironvale commencement details.** Contract commencement taken as 2025-10-01 per the excerpt's term; no prepaid amounts or initial direct costs identified (none provided; none assumed).\n6. **Escalation body.** No information on whether a board or audit committee exists; the response letter states the escalation path under ET §2.130.020 conditionally.\n\n— Controller, 12/31/2025 (updated after client follow-up)\n",
+  "facts": [
+    {
+      "id": "side_letter_signed",
+      "trigger": [
+        "side letter",
+        "countersigned",
+        "return right",
+        "refund"
+      ],
+      "answer": "Yes, Alvarado countersigned it. Saltline insisted. It's just a comfort letter.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "kits_tagged",
+      "trigger": [
+        "segregated",
+        "tagged",
+        "identified",
+        "which kits",
+        "general stock"
+      ],
+      "answer": "They're on the shelf with everything else. Same SKU, no point tagging.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "halvorsen_status",
+      "trigger": [
+        "Halvorsen",
+        "definitive",
+        "MSA signed",
+        "procurement committee"
+      ],
+      "answer": "Procurement meets Jan 20. Security review is 'in progress'. They're committed, trust me.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "kits_tagged"
+  ],
+  "literal_suggestions": [
+    "side_letter_signed"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

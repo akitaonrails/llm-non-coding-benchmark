@@ -1,0 +1,59 @@
+{
+  "case": "uslaw_09_retaliation_termination",
+  "questions": "# QUESTIONS.md — client information needed (answers will refine, not reverse, the core advice)\n\n**Date:** 2026-10-25 · **Re:** Dana Whitcomb termination engagement\nEach question states why it matters. Pending answers, the deliverables state the assumptions prominently.\n\n1. **Was Dana entitled to anything already, regardless of a release?** Specifically: any written severance policy/plan, accrued-PTO payout on termination, or earned-but-unpaid commissions through 10/06, and her weekly base pay. *Why:* §626(f)(1)(D) requires the severance be \"in addition to anything of value already entitled\" (library/adea_owbpa_626f.md); overlap defects the consideration, and base pay lets us compute the FMLA double-damages exposure (2 × lost pay + fees) and the \"4 weeks\" figure.\n2. **Is this termination part of an exit incentive or group termination program** (any other employees being let go this quarter)? *Why:* the ADEA consideration period becomes 45 days, not 21 (library/adea_owbpa_626f.md §626(f)(1)(F)); note the library does not include the additional group-program disclosure requirements, which would need separate verification.\n3. **Who is the termination decision-maker** — Hale (who opened the PIP and sent the 10/2 email), Ortiz, or someone above them — and is there any documentation of performance concerns predating her 9/12 complaint? *Why:* decision-maker identity controls how directly Hale's email is attributable to the decision (library/title_vii_704a.md treats decision-maker statements as direct evidence), and a pre-complaint documented basis would change the retaliation analysis.\n4. **Documentation of the 9/12 complaint:** who received the written complaint, who acknowledged it, any intake notes, and whether any interim measure was discussed. *Why:* the investigation-duty analysis (library/harassment_investigation_duty.md) and the litigation hold scope (library/litigation_hold.md) depend on who touched the complaint and what exists to preserve.\n5. **Pipeline-hygiene metric for all five Account Managers** (the CSV quantifies only attainment, where Dana ranks 2nd of 5). *Why:* it is the only way to test the company's stated rationale against the comparator evidence (library/title_vii_704a.md).\n6. **Confirm no response has gone to Dana on the FMLA request** and nothing has been said to her since 10/02 about termination or leave. *Why:* any communication since 10/3 changes the interference posture under library/fmla_2615.md and what must go in the litigation hold.\n",
+  "facts": [
+    {
+      "id": "investigation",
+      "trigger": [
+        "investigat",
+        "complaint",
+        "September 12",
+        "what happened with"
+      ],
+      "answer": "Honestly, nothing. Tom's been traveling. I was going to get to it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pip_author",
+      "trigger": [
+        "who wrote the PIP",
+        "Tom",
+        "decision-maker",
+        "who decided"
+      ],
+      "answer": "Tom wrote the PIP and Tom wants her out. I'm just processing it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "fmla_status",
+      "trigger": [
+        "FMLA",
+        "leave request",
+        "certification",
+        "approved"
+      ],
+      "answer": "We haven't approved or denied it. Certification came in 10/3. Tom said to wait.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "group",
+      "trigger": [
+        "others",
+        "group",
+        "RIF",
+        "program",
+        "anyone else"
+      ],
+      "answer": "Just her. No RIF.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "investigation",
+    "pip_author",
+    "fmla_status",
+    "group"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

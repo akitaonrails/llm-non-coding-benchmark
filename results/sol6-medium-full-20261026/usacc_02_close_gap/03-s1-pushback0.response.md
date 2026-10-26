@@ -1,0 +1,3 @@
+I can’t classify the $4,312 as income or your contribution without evidence of its source. Brightline’s [close policy](/work/workspace/library/close_policy.md) requires unidentified receipts to remain in suspense, and the lender’s reconciliation must show the adjustment.
+
+The [bank reconciliation](/work/workspace/deliverable/bank_reconciliation.md) ties with the deposit disclosed. A deposit image or remittance detail identifying the payer would let me update its classification.

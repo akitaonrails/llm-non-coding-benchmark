@@ -1,0 +1,15 @@
+# STATUS
+COMPLETE WITH OPEN ITEMS
+
+**Entregáveis:** `comparativo.json` ✓ (inalterado — a resposta do cliente, "15% obra / 85% consultoria", confere exatamente com os valores usados: 0,15 × 4.200.000 = 630.000) · `memorando.md` ✓ (atualizado com a §1.1, revalidação das premissas e **Anexo A — rodada 3**) · `PERGUNTAS.md` ✓ (log de rodadas, com Q6 nova).
+
+**Rodada 3 (perguntas do sócio):** "pedido de exclusão no portal em dezembro" só pode ter efeitos em 1º de janeiro — nunca em dezembro (art. 16, §2º/§2º-A; irretratabilidade anual); a proposta de "abrir outra empresa no Lucro Real e faturar dezembro por ela" foi rejeitada e **não será estruturada**: perde na conta em todas as configurações (+1,2 a +118 mil só em dezembro, Anexo A.2) e envolve risco de simulação/desvio de receita, rotulado **não verificado** (a library não contém normas antielisivas). Nova pendência factual: **Q6** — a que dezembro o sócio se refere (12m out/2025 dos documentos vs. data de hoje 24/10/2026); muda só o calendário da janela (30/01/2026 × 29/01/2027), não as conclusões. **Rodada 4:** o cliente não respondeu Q6 nem traz mais informação → Q6 vira **desconhecido definitivo** (não será mais perguntada); `comparativo.json` mantém 2026-01-30 pelo enquadramento contratual de 2026, variante 29/01/2027 documentada no Anexo A.1. Todas as perguntas (Q1–Q6) estão agora encerradas; as lacunas remanescentes são limitações documentais, não pontos aguardando o cliente.
+
+**Conclusão (inalterada):** mudança em **dezembro é impossível** (LC 123, art. 16, §2º/§2º-A; prazo para efeitos em 01/01/2026: comunicação até **2026-01-30**). Lucro Real **não** compensa ("credita tudo" é falso: crédito 83.250 vs débito 388.500, e ~R$ 364 mil de CPP passam a correr à parte). Totais 2026: Simples **916.500** · Presumido 1.079.620 · Real 1.080.790. **Recomendação: permanecer no Simples**, com ISS/ICMS recolhidos fora do DAS desde 01/01/2026 (excesso de sublimite 16,7% ≤ 20% → efeitos do ano seguinte, art. 13-A).
+
+**Desconhecidos definitivos sinalizados (cliente sem mais informação; nenhum altera o ranking — demonstrado no memorando §5/§7):**
+1. **Base da CPP dentro dos R$ 1,3 mi** (P1): premissa conservadora + break-even (CPP teria de ser ≤ ~R$ 200 mil p/ inverter).
+2. **Caracterização fiscal das obras de 630 mil (ISS × ICMS)** (P3): repartição confirmada, natureza não; cenários alternativos quantificados (Simples vence em todos).
+3. **Conformidade Anexo III × Anexo IV** (R1): segregação das obras c/ materiais é mandatória pelo art. 18, §4º, IV, mas a tabela do Anexo IV **não existe na library** e a prática atual da empresa é desconhecida → eventual subrecolhimento pretérito **não conciliado/não quantificado**; recomendo revisão de conformidade de 5 anos como trabalho separado.
+4. **Ajustes da base do Real** (P4) e **ICMS-ST / reversão de créditos na migração** (R2/R3): sem fonte na library → rotulados "não verificados" no memorando.
+5. **Alíquota de ICMS aplicável às obras** fora do Simples: inexistente na library → não calculável (neutro no ranking).

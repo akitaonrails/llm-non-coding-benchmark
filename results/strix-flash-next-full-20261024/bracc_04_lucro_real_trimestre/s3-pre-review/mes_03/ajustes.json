@@ -1,0 +1,35 @@
+{
+  "empresa": "Atlas Distribuidora S.A.",
+  "periodo": "2026-03",
+  "regime": "Lucro Real trimestral; PIS/COFINS não cumulativo",
+  "moeda": "BRL",
+  "lancamentos": [
+    {
+      "id": "AJ-2026-03-001",
+      "data": "2026-03-31",
+      "referencia": "Retificação de 01/2026 - NF-e 8812 Papel & Cia (reiterada; AJ-2026-01-001 e AJ-2026-02-001 nunca foram espelhados no sistema contábil)",
+      "tipo": "retificação de mês anterior - lançamento único de R$ 11.100,00 (NÃO duplicar com os AJs anteriores, que jamais foram postados)",
+      "descricao": "Terceira verificação consecutiva: o balancete de março continua trazendo o crédito indevido de PIS/COFINS de janeiro. 1.1.04 = R$ 483.627,00 = 166.167,00 (jan SEM estorno) + 157.509,00 (fev) + 159.951,00 (mar), o que prova que nenhum dos AJs propostos foi registrado (balancete mar confere com o razão jan+fev+mar conta a conta, verificado em Python). Efeito após lançamento: 1.1.04 = R$ 472.527,00 (= 155.067 + 157.509 + 159.951, todos créditos permitidos) e 4.2.04 = R$ 131.100,00. O efeito fiscal do estorno é de JANEIRO/competência original; este lançamento só espelha a correção no sistema.",
+      "fundamento": "library/pis_cofins_uso_consumo.md - Lei 10.637/2002, art. 3o; Lei 10.833/2003, art. 3o; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR. Papel e toner administrativos da sede = uso e consumo, sem direito a crédito (cliente confirmou 'papel e toner da sede').",
+      "linhas": [
+        { "conta": "4.2.04", "nome": "Material de uso e consumo", "debito": 11100.00, "credito": 0.00 },
+        { "conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "debito": 0.00, "credito": 11100.00 }
+      ]
+    }
+  ],
+  "sem_lancamento_contabil_efetuado": [
+    {
+      "item": "Brindes NF-e 4410 (R$ 48.000,00, 4.2.02 de fev/2026) e Doação Associação Luz (R$ 30.000,00, 4.2.02 de fev/2026)",
+      "tratamento": "Nenhum lançamento contábil em março: são ADIÇÕES exclusivas do e-LALUR do 1o trimestre (Parte A), apurado em mes_03/lalur.json. A contabilidade societária não se altera (library/irpj_csll_trimestral.md; Lei 9.249/95, art. 13, VI e VII e §2o - library/lei9249_art13.md)."
+    },
+    {
+      "item": "Março em si",
+      "tratamento": "Nenhum fato indedutível ou crédito indevido identificado no razão de março: compras com crédito são só mercadoria para revenda (1.729.200,00 x 9,25% = 159.951,00 - crédito permitido); PIS/COFINS sobre vendas (2.620.000,00 x 9,25% = 242.350,00) e ICMS (2.620.000,00 x 7% = 183.400,00) já registrados corretamente."
+    }
+  ],
+  "observacoes": [
+    "Aviso de processo: o sistema da ATLAS não espelhou nenhum ajuste proposto nos três meses. Se a controladoria postar AJ-2026-01-001, AJ-2026-02-001 e AJ-2026-03-001 EM JUNTO, o estorno será lançado 3 vezes (erro). Postar apenas UM estorno de R$ 11.100,00; o AJ-2026-03-001 é o formulário vigente.",
+    "Resultado líquido contábil de março (razão, sem ajustes): R$ 282.583,00 = receita 2.620.000,00 - PIS/COFINS 242.350,00 - ICMS 183.400,00 - CMV 1.441.000,00 - pessoal 210.000,00 - comerciais 85.000,00 - administrativas 96.000,00 - depreciação 51.667,00 - financeiras 28.000,00.",
+    "Lucro líquido contábil do trimestre CORRIGIDO = 128.483,00 (jan) + 193.083,00 (fev) + 282.583,00 (mar) = R$ 604.149,00. Conferência pelo balancete de março (sem estorno): 7.740.000 - 715.950 - 541.800 - 4.257.000 - 630.000 - 333.000 - 288.000 - 120.000 - 155.001 - 84.000 = 615.249,00; menos o estorno 11.100,00 = 604.149,00 (bate)."
+  ]
+}

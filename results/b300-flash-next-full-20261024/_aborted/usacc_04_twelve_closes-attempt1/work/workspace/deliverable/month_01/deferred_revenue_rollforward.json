@@ -1,0 +1,26 @@
+[
+  {
+    "contract": "Trestle Freight LLC \u2014 prior annual subscription (Jun 2024\u2013May 2025)",
+    "opening": 41000.0,
+    "billed": 0.0,
+    "recognized": 8200.0,
+    "closing": 32800.0,
+    "basis": "note_opening_deferred.md: 41,000 unamortized at 2024-12-31 \u00f7 5 remaining months (Jan\u2013May 2025) = 8,200.00/mo; 41,000 \u2212 8,200 = 32,800"
+  },
+  {
+    "contract": "Trestle Freight LLC \u2014 renewal annual subscription (Jan\u2013Dec 2025), INV-2225",
+    "opening": 0.0,
+    "billed": 24000.0,
+    "recognized": 2000.0,
+    "closing": 22000.0,
+    "basis": "order_form_C-026.md: 24,000 for 12 months from 2025-01-01 \u2192 24,000/12 = 2,000.00 released; 24,000 \u2212 2,000 = 22,000"
+  },
+  {
+    "contract": "Unreconciled opening remainder (account 2200 TB 65,000 \u2212 note 41,000) \u2014 see open_items.md Q1",
+    "opening": 24000.0,
+    "billed": 0.0,
+    "recognized": 0.0,
+    "closing": 24000.0,
+    "basis": "65,000.00 \u2212 41,000.00 = 24,000.00; no supporting contract document in the client file, so nothing released"
+  }
+]

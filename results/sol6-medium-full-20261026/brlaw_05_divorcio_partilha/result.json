@@ -1,0 +1,21 @@
+{
+  "case": "brlaw_05_divorcio_partilha",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 360.41915562399663,
+  "controller_wait_seconds": 27.00262305693468,
+  "model_turn_seconds": 333.41066827002214,
+  "turns": 4,
+  "released_facts": [
+    "guarda",
+    "lucros_reinvestidos"
+  ],
+  "usage": {
+    "input_tokens": 546742,
+    "cached_input_tokens": 478848,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 17728,
+    "reasoning_output_tokens": 5183
+  },
+  "api_equivalent_usd": 0.40883759999999997
+}

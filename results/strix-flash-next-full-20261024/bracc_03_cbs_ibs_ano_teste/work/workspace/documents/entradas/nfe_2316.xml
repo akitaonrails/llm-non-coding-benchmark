@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+ <NFe><infNFe Id="NFeB7641DCF8FC0A8638EC21DBD5410C7E1AE7782C7" versao="4.00">
+  <ide><cUF>35</cUF><natOp>Compra</natOp><mod>55</mod><serie>1</serie><nNF>2316</nNF><dhEmi>2026-08-16T10:00:00-03:00</dhEmi><tpNF>0</tpNF><tpAmb>2</tpAmb></ide>
+  <emit><CNPJ>99000111000122</CNPJ><xNome>LOGISTICA ATLAS S.A.</xNome><enderEmit><xMun>São Paulo</xMun><UF>SP</UF></enderEmit><CRT>3</CRT></emit>
+  <dest><CNPJ>27119804000130</CNPJ><xNome>HORIZONTE COMERCIO E SERVICOS LTDA</xNome><enderDest><xMun>São Paulo</xMun><UF>SP</UF></enderDest><indIEDest>9</indIEDest></dest>
+    <det nItem="1"><prod><cProd>0001</cProd><xProd>Compra de mercadorias</xProd><NCM>84713012</NCM><CFOP>1102</CFOP>
+      <uCom>UN</uCom><qCom>1</qCom><vUnCom>40000.00</vUnCom><vProd>40000.00</vProd></prod>
+      <imposto><PIS><PISAliq><CST>01</CST><vBC>40000.00</vBC><pPIS>0.65</pPIS><vPIS>260.00</vPIS></PISAliq></PIS>
+      <COFINS><COFINSAliq><CST>01</CST><vBC>40000.00</vBC><pCOFINS>3.00</pCOFINS><vCOFINS>1200.00</vCOFINS></COFINSAliq></COFINS>
+      <IBSCBS><CST>000</CST><cClassTrib>000001</cClassTrib>
+        <gIBSCBS><vBC>40000.00</vBC>
+          <gIBSUF><pIBSUF>0.10</pIBSUF><vIBSUF>40.00</vIBSUF></gIBSUF>
+          <gIBSMun><pIBSMun>0.00</pIBSMun><vIBSMun>0.00</vIBSMun></gIBSMun>
+          <gCBS><pCBS>0.90</pCBS><vCBS>360.00</vCBS></gCBS>
+        </gIBSCBS></IBSCBS></imposto></det>
+  <total><ICMSTot><vProd>40000.00</vProd><vNF>40000.00</vNF></ICMSTot></total>
+  <infAdic><infCpl> Documento fictício gerado para benchmark; sem validade fiscal.</infCpl></infAdic>
+ </infNFe></NFe>
+ <protNFe><infProt><chNFe>B7641DCF8FC0A8638EC21DBD5410C7E1AE7782C7</chNFe><dhRecbto>2026-08-16T10:01:12-03:00</dhRecbto><nProt>135000000002316</nProt><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe>
+</nfeProc>

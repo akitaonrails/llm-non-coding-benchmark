@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+ <NFe><infNFe Id="NFeEE0F6172D79CAD7A7D4D4736F1E49D9745384E19" versao="4.00">
+  <ide><cUF>35</cUF><natOp>Locação de bens móveis</natOp><mod>55</mod><serie>1</serie><nNF>512</nNF><dhEmi>2026-05-26T10:00:00-03:00</dhEmi><tpNF>1</tpNF><tpAmb>2</tpAmb></ide>
+  <emit><CNPJ>41228907000155</CNPJ><xNome>LUMEN SOLUCOES DIGITAIS LTDA ME</xNome><enderEmit><xMun>São Paulo</xMun><UF>SP</UF></enderEmit><CRT>1</CRT></emit>
+  <dest><CNPJ>08334411000190</CNPJ><xNome>ORLA TECNOLOGIA LTDA</xNome><enderDest><xMun>São Paulo</xMun><UF>SP</UF></enderDest><indIEDest>9</indIEDest></dest>
+    <det nItem="1"><prod><cProd>0001</cProd><xProd>Locação de notebooks (20 un.) — maio/2026</xProd><NCM>00000000</NCM><CFOP>5949</CFOP>
+      <uCom>UN</uCom><qCom>1</qCom><vUnCom>6000.00</vUnCom><vProd>6000.00</vProd></prod>
+      <imposto><PIS><PISAliq><CST>01</CST><vBC>6000.00</vBC><pPIS>0.65</pPIS><vPIS>39.00</vPIS></PISAliq></PIS>
+      <COFINS><COFINSAliq><CST>01</CST><vBC>6000.00</vBC><pCOFINS>3.00</pCOFINS><vCOFINS>180.00</vCOFINS></COFINSAliq></COFINS></imposto></det>
+  <total><ICMSTot><vProd>6000.00</vProd><vNF>6000.00</vNF></ICMSTot></total>
+  <infAdic><infCpl> Documento fictício gerado para benchmark; sem validade fiscal.</infCpl></infAdic>
+ </infNFe></NFe>
+ <protNFe><infProt><chNFe>EE0F6172D79CAD7A7D4D4736F1E49D9745384E19</chNFe><dhRecbto>2026-05-26T10:01:12-03:00</dhRecbto><nProt>135000000000512</nProt><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe>
+</nfeProc>

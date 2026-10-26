@@ -1,0 +1,159 @@
+{
+  "saidas": [
+    {
+      "numero": 2301,
+      "data": "2026-08-01",
+      "valor": 18000.0,
+      "cbs": 162.0,
+      "ibs": 18.0,
+      "situacao": "regular",
+      "motivo": "Emitida em 01/08 (antes de 03/08/2026) sem o grupo IBSCBS: documento permanece valido (comunicado CGIBS jul/2026). Debito da apuracao-teste calculado as aliquotas legais (LC 214, art. 343)."
+    },
+    {
+      "numero": 2302,
+      "data": "2026-08-01",
+      "valor": 24000.0,
+      "cbs": 216.0,
+      "ibs": 24.0,
+      "situacao": "regular",
+      "motivo": "Idem NF-e 2301: anterior a 03/08/2026, sem grupo IBSCBS, documento valido; debito calculado as aliquotas legais."
+    },
+    {
+      "numero": 2303,
+      "data": "2026-08-02",
+      "valor": 9500.0,
+      "cbs": 85.5,
+      "ibs": 9.5,
+      "situacao": "regular",
+      "motivo": "Destinatario do Simples (Ponto Fixo), mas a nota foi emitida antes de 03/08/2026 sem o grupo: documento valido; debito calculado as aliquotas legais."
+    },
+    {
+      "numero": 2304,
+      "data": "2026-08-02",
+      "valor": 31000.0,
+      "cbs": 279.0,
+      "ibs": 31.0,
+      "situacao": "regular",
+      "motivo": "Anterior a 03/08/2026, sem grupo IBSCBS: documento valido; debito calculado as aliquotas legais."
+    },
+    {
+      "numero": 2305,
+      "data": "2026-08-02",
+      "valor": 4200.0,
+      "cbs": 37.8,
+      "ibs": 4.2,
+      "situacao": "regular",
+      "motivo": "Destinatario MEI; nota anterior a 03/08/2026 sem o grupo: documento valido; debito calculado as aliquotas legais."
+    },
+    {
+      "numero": 2306,
+      "data": "2026-08-04",
+      "valor": 42000.0,
+      "cbs": 378.0,
+      "ibs": 42.0,
+      "situacao": "regular",
+      "motivo": "Posterior a 03/08/2026 COM destaque correto (pCBS 0,90% = 378,00; pIBSUF 0,10% = 42,00; pIBSMun 0,00)."
+    },
+    {
+      "numero": 2307,
+      "data": "2026-08-06",
+      "valor": 56000.0,
+      "cbs": 504.0,
+      "ibs": 56.0,
+      "situacao": "regular",
+      "motivo": "Destaque correto (pCBS 0,90% = 504,00; pIBSUF 0,10% = 56,00)."
+    },
+    {
+      "numero": 2308,
+      "data": "2026-08-10",
+      "valor": 12500.0,
+      "cbs": 112.5,
+      "ibs": 12.5,
+      "situacao": "irregular",
+      "motivo": "Emitida apos 03/08/2026 SEM o grupo IBSCBS (proibido desde 03/08 - comunicado CGIBS). Destinatario do Simples NAO dispensa o destaque pelo emissor do regime regular (LC 214, arts. 346 e 347). Risco de perda da dispensa de recolhimento (ADCT art. 125, par. 4o)."
+    },
+    {
+      "numero": 2309,
+      "data": "2026-08-13",
+      "valor": 38000.0,
+      "cbs": 342.0,
+      "ibs": 38.0,
+      "situacao": "irregular",
+      "motivo": "Destaque com aliquotas INVERTIDAS: no documento pIBSUF=0,90 (vIBSUF 342,00) e pCBS=0,10 (vCBS 38,00); o correto e pIBSUF 0,10 / pCBS 0,90 (NT 2025.002). Valores corretos: CBS 342,00 e IBS 38,00 - a apuracao-teste adota os valores corretos."
+    },
+    {
+      "numero": 2310,
+      "data": "2026-08-18",
+      "valor": 7800.0,
+      "cbs": 70.2,
+      "ibs": 7.8,
+      "situacao": "irregular",
+      "motivo": "Emitida apos 03/08/2026 SEM o grupo IBSCBS (destinatario MEI nao justifica a omissao - obrigacao e do emissor do regime regular)."
+    },
+    {
+      "numero": 2311,
+      "data": "2026-08-21",
+      "valor": 61000.0,
+      "cbs": 549.0,
+      "ibs": 61.0,
+      "situacao": "regular",
+      "motivo": "Destaque correto (pCBS 0,90% = 549,00; pIBSUF 0,10% = 61,00)."
+    },
+    {
+      "numero": 2312,
+      "data": "2026-08-27",
+      "valor": 176000.0,
+      "cbs": 1584.0,
+      "ibs": 176.0,
+      "situacao": "irregular",
+      "motivo": "Emitida apos 03/08/2026 SEM o grupo IBSCBS - a maior nota do mes; corregao prioritaria."
+    }
+  ],
+  "entradas": [
+    {
+      "numero": 2313,
+      "valor": 48000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "Fornecedor do regime regular (CRT 3), mas nota emitida em 02/08 (antes de 03/08) SEM destaque de IBS/CBS: documento valido porem sem credito - creditos so de aquisicoes COM destaque (LC 214, art. 346)."
+    },
+    {
+      "numero": 2314,
+      "valor": 62000.0,
+      "credito_cbs": 558.0,
+      "credito_ibs": 62.0,
+      "motivo": "Destaque correto do fornecedor regular: vCBS 558,00 (62.000 x 0,90%) e vIBSUF 62,00 (62.000 x 0,10%). Credito integral."
+    },
+    {
+      "numero": 2315,
+      "valor": 15000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "Ponto Fixo - Simples Nacional (CRT 1), sem destaque e sem efetivo recolhimento de IBS/CBS no Simples em 2026: SEM credito (LC 214, art. 347: credito limitado ao efetivamente recolhido; sem destaque, nao ha credito)."
+    },
+    {
+      "numero": 2316,
+      "valor": 40000.0,
+      "credito_cbs": 360.0,
+      "credito_ibs": 40.0,
+      "motivo": "Fornecedor regular (Logistica Atlas, CRT 3) com destaque correto: vCBS 360,00 e vIBSUF 40,00. Credito integral."
+    },
+    {
+      "numero": 2317,
+      "valor": 60000.0,
+      "credito_cbs": 540.0,
+      "credito_ibs": 60.0,
+      "motivo": "Fornecedor regular com destaque correto: vCBS 540,00 e vIBSUF 60,00. Credito integral."
+    }
+  ],
+  "totais": {
+    "debito_cbs": 4320.0,
+    "debito_ibs": 480.0,
+    "credito_cbs": 1458.0,
+    "credito_ibs": 162.0,
+    "saldo_cbs": 2862.0,
+    "saldo_ibs": 318.0
+  },
+  "recolhimento_devido": 0,
+  "condicao_dispensa": "Recolhimento dispensado nos termos do ADCT art. 125, par. 4o (redacao da LC 214/2025), DESDE QUE cumpridas as obrigacoes acessorias: destaque de IBS/CBS nos documentos fiscais eletronicos, escrituracao e apuracao-teste mensal (LC 214, art. 346). A apuracao-teste acima e de direito (aliquotas legais de 0,9%/0,1%); as notas irregulares 2308, 2309, 2310 e 2312 colocam a dispensa em risco e devem ser regularizadas. Se a dispensa for perdida, o valor devido seria o saldo apurado: CBS 2.862,00 + IBS 318,00 = 3.180,00, compensavel com PIS/COFINS do mesmo periodo (ADCT art. 125, par. 1o; PIS 3.120,00 + COFINS 14.400,00 = 17.520,00 > 3.180,00, compensacao integral, sem desembolso liquido)."
+}

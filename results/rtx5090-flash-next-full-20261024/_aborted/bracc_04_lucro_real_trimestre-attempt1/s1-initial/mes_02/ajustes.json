@@ -1,0 +1,8 @@
+{
+  "empresa": "Atlas Distribuidora S.A.",
+  "mes": "2026-02",
+  "status": "BLOQUEADO — NÃO FECHADO. Razão/balancete de fevereiro/2026 e documentos de suporte não existem em `documents/` (apenas mes_01 foi fornecido) e o cliente declarou não ter informação adicional. Nenhum valor foi preenchido para não simular um mês revisado.",
+  "lancamentos": null,
+  "retificacoes_meses_anteriores": null,
+  "observacoes": "Quando os arquivos de 02/2026 forem entregues, o fechamento deve ao menos: (i) repetir o teste de crédito PIS/COFINS sobre materiais de uso e consumo (vide AJ-2601-01 de janeiro, library/pis_cofins_uso_consumo.md); (ii) identificar brindes e doações indedutíveis para adição no e-LALUR do 1º trimestre (Lei 9.249/95, art. 13, VI/VII — library/lei9249_art13.md); (iii) conciliar razão ⇄ balancete ⇄ abertura. Ver pendencias.md deste mês."
+}

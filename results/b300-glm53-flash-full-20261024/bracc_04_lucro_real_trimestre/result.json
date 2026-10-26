@@ -1,0 +1,23 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-glm53-flash-full-20261024/bracc_04_lucro_real_trimestre/04-s3-work",
+  "elapsed_seconds": 1232.7167616270017,
+  "controller_wait_seconds": 74.00716344997636,
+  "model_turn_seconds": 1158.678720890981,
+  "turns": 4,
+  "released_facts": [
+    "brindes",
+    "papel"
+  ],
+  "usage": {
+    "input_tokens": 2533359,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 135076,
+    "reasoning_output_tokens": 85052
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,45 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "questions": "# Informação necessária para fechar janeiro de 2026\n\n1. Na NF-e 8812 da Papel & Cia, qual é o **valor total da nota e a obrigação efetiva com o fornecedor**: R$ 120.000,00 ou R$ 131.100,00? O documento recebido mostra materiais de R$ 120.000,00, enquanto o razão registrou R$ 131.100,00 em Fornecedores (R$ 120.000,00 de despesa + R$ 11.100,00 de crédito de PIS/COFINS). Confirme também se os R$ 11.100,00 de PIS/COFINS destacados estão **incluídos** nos R$ 120.000,00 ou foram **acrescidos** ao total da nota.\n",
+  "facts": [
+    {
+      "id": "luz",
+      "trigger": [
+        "Luz",
+        "OSCIP",
+        "utilidade pública",
+        "qualificação",
+        "doação"
+      ],
+      "answer": "A Associação Luz é uma ONG do bairro, não tem título nenhum. O presidente conhece o dono.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "brindes",
+      "trigger": [
+        "brindes",
+        "kits",
+        "4410",
+        "campanha"
+      ],
+      "answer": "Vinho e canivete gravado pros 400 melhores clientes. Marketing, ora.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "papel",
+      "trigger": [
+        "8812",
+        "Papel",
+        "uso e consumo",
+        "crédito"
+      ],
+      "answer": "É papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "papel"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

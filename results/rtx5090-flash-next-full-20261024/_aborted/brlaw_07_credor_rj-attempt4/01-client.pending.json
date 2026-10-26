@@ -1,0 +1,49 @@
+{
+  "case": "brlaw_07_credor_rj",
+  "questions": "# PERGUNTAS AO CLIENTE (Fornecedor Sul S.A.) — respostas necessárias para fechar a peça e o cronograma\n\nResponder por e-mail com os itens numerados. Os campos `[ ]` da peça `habilitacao_divergencia.md` dependem destas respostas. O protocolo da divergência deve ocorrer **até 27/04/2026** independentemente das respostas — se algo atrasar, protocolamos com os campos em aberto e complementamos.\n\n## Sobre prazos (crítico)\n1. **Data do pedido de recuperação judicial da Atlas** (protocolo da petição inicial). A lei exige que o valor do crédito seja informado **atualizado até a data do pedido** (art. 9º, II). Os valores da ficha (R$ 900 mil + R$ 1,2 mi) são nominais?\n2. **Data da decisão de deferimento do processamento** da RJ (para calcular o fim do stay de 180 dias e, portanto, a data em que poderemos retomar as empilhadeiras — e eventual prorrogação).\n3. O sr. já recebeu intimação pessoal ou comunicação do AJ sobre a lista do art. 7º §2º (relação atualizada)? O nome/cargo exato do sócio fiador na CCB é Edson Lima, CPF [ ]?\n\n## Sobre o crédito fiduciário\n4. Número dos contratos de fornecimento e da **alienação fiduciária**; **onde foi registrada** (cartório, data, matrícula/nº de registro) — anexar comprovante.\n5. Identificação dos bens: marca, modelo, nº de **série/patrimônio** das 2 empilhadeiras e do sistema de separação de pedidos; em qual estabelecimento da Atlas estão hoje.\n6. Os R$ 900 mil são o saldo devedor atual do contrato fiduciário (ou valor de face)? Qual o **índice de correção/juros do contrato** (para atualizar até a data do pedido)? Houve mora/protesto/ação de busca e apreensão antes do ajuizamento da RJ?\n\n## Sobre o crédito quirografário (EPP)\n7. Número das **duplicatas** (relação completa) + comprovação de entrega das mercadorias (notas fisicais/duplicatas) e se há protestos.\n8. **Comprovante do enquadramento como EPP**: certidão da Junta Comercial / contrato social com qualificação, e documento da receita bruta anual (R$ 3,9 mi) — ex.: DEFIS/PGDAS ou declaração.\n9. CNPJ e endereço completo atualizados da Fornecedor Sul.\n\n## Sobre a fiança do sócio (Banco Horizonte)\n10. Cópia da **CCB e do termo de fiança** do Sr. Edson Lima; saldo atual da CCB; o banco já ajuizou ação/execução contra a Atlas ou contra o sr. Edson? A Atlas está em dia com as parcelas da CCB?\n11. Há alguma comunicação do banco ou da Atlas sobre liberação/substituição dessa fiança? (Sem autorização escrita do banco, a fiança continua valendo.)\n\n## Sobre o plano\n12. O sr. tem a **íntegra da minuta do plano** (não apenas o resumo) e a **petição inicial da RJ** da Atlas? Precisamos da cláusula exata sobre credores fiduciários e sobre garantias pessoais para a objeção (art. 55), cujo prazo começará com a publicação da lista do AJ.\n\n*(Não perguntamos sobre essencialidade das empilhadeiras: os documentos da pasta já tratam esses bens como essenciais à operação da Atlas.)*\n",
+  "facts": [
+    {
+      "id": "essencial",
+      "trigger": [
+        "essenciais",
+        "empilhadeira",
+        "operação da Atlas",
+        "retirar",
+        "retomar"
+      ],
+      "answer": "As empilhadeiras e o sistema de separação são o coração do galpão deles. Sem isso a Atlas para.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "epp",
+      "trigger": [
+        "EPP",
+        "porte",
+        "faturamento",
+        "Simples",
+        "classe IV"
+      ],
+      "answer": "Somos EPP, faturamos uns R$ 3,9 mi. Estamos no Lucro Presumido, não no Simples.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "banco",
+      "trigger": [
+        "banco",
+        "Horizonte",
+        "fiança",
+        "anuiu",
+        "aprovou"
+      ],
+      "answer": "O banco não concordou com nada; já me mandou notificação como fiador.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "essencial",
+    "epp",
+    "banco"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

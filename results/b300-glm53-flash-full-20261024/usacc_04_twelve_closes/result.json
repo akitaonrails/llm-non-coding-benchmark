@@ -1,0 +1,22 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-glm53-flash-full-20261024/usacc_04_twelve_closes/05-s3-work",
+  "elapsed_seconds": 1520.9662767799746,
+  "controller_wait_seconds": 76.00783150497591,
+  "model_turn_seconds": 1444.6969076799578,
+  "turns": 5,
+  "released_facts": [
+    "pinecone_onboarding"
+  ],
+  "usage": {
+    "input_tokens": 2667461,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 171521,
+    "reasoning_output_tokens": 119584
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

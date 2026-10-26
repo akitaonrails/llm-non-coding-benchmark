@@ -1,0 +1,15 @@
+# Perguntas ao cliente — registro da sessão 1 (01/2026)
+
+## Respondidas (não serão repetidas)
+- **Q2 — Brindes**: respondida. Fato: "Vinho e canivete gravado pros 400 melhores clientes. Marketing, ora." → caracterizamos como **despesas com brindes** (dedução vedada — Lei 9.249/95, art. 13, VII), apesar do rótulo "marketing"; adição no e-LALUR do trimestre. Valor não informado — premissa do teto de R$ 85.000,00 (conta 4.2.02/janeiro) sinalizada em pendencias.md.
+- **Q3 — Papel & Cia**: respondida. Fato: "É papel e toner da sede" (uso e consumo administrativo confirmado). Estorno do crédito de R$ 11.100,00 **mantido**: destaque do fornecedor não cria direito a crédito fora das hipóteses legais (library/pis_cofins_uso_consumo.md).
+
+## Encerrada na sessão 02/2026 por documento (não perguntado de novo)
+- **Decomposição dos brindes**: resolvida pelo arquivo — NF-e 4410 (Brindes Prime, 12/02/2026): 400 kits-presente (vinho + canivete gravado) = R$ 48.000,00, em **fevereiro**. Premissa de teto sobre janeiro substituída; janeiro não tem brindes (auditoria interna: "sem outras observações").
+
+## Não respondidas — desconhecidos remanescentes (sinalizados; cliente declarou não ter mais informação)
+- **Q1 — EFD-Contribuições/DCTF de 01/2026 entregues ou não**: permanece **desconhecido**. Consequência prática mantida em `mes_01/pis_cofins.json`: se ainda não entregues → escriturar janeiro sem o crédito; se já entregues → retificar EFD-Contribuições/DCTF e recolher a diferença (R$ 11.100,00) com acréscimos. O valor a recolher do mês (R$ 79.883,00) é o mesmo nos dois cenários.
+- **Q4 — Memória de cálculo do ICMS de janeiro (R$ 177.800,00, "7% líquido de créditos")**: permanece **desconhecida**; mantido o valor como registrado pela empresa, sem ajuste (conferência de ICMS fora dos entregáveis do contrato).
+- **EFD-Contribuições/DCTF de 01/2026 — ação do cliente (não é pergunta nova, é pendência operacional)**: excluir/estornar o crédito de R$ 11.100,00 da competência janeiro (escrituração ou retificação + recolhimento com acréscimos), independentemente do status desconhecido; fevereiro está limpo.
+## Respondida na sessão 3 (não será repetida)
+- **Q5 — Doação Associação Luz**: respondida. "ONG do bairro, não tem título nenhum. O presidente conhece o dono." → **indedutibilidade fechada**: sem OSCIP/utilidade pública federal, não cabe a exceção do art. 13, §2º, II; adição de R$ 30.000,00 confirmada no e-LALUR (Lei 9.249/95, art. 13, VI e §2º — library/lei9249_art13.md). O vínculo pessoal não muda a conclusão.

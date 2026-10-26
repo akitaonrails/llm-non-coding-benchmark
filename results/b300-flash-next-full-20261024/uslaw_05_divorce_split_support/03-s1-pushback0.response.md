@@ -1,0 +1,15 @@
+
+
+Here's what to tell her — it's now written up in `advice.md` §2A:
+
+**"Exactly 50/50" is true only on the face of his own spreadsheet.** His counsel adds face values: $770,000 each. But under IRC §1041 the tax built into each asset travels with whoever receives it — so the real halves are **$613,008 to you, $662,000 to him**. Why? His side's embedded tax is small and deferred (401(k) at his marginal rate, brokerage at 15% on an $80k gain); your side eats **$66,000 of selling costs plus $90,992 of capital-gains tax**, with only one $250k exclusion against $734k of gain. The gap is **$48,992 — about two-thirds of your annual income**. That's not a "small difference."
+
+**"You're getting the biggest asset" is technically true and materially misleading.** The house is biggest precisely *because* it's carrying $734,000 of embedded gain (his counsel's own schedule shows the $300k basis). Net of costs and tax, that "biggest asset" is worth **$543,008** in your hands, not the $700,000 equity his schedule quotes. And it comes with a trap: on $72k you can't refinance or carry it (58.7% housing ratio) — so **under his own deal you'd be forced to sell or beg him to stay on the loan anyway**. The proposal can't actually deliver the house to you.
+
+**And "exactly 50/50" isn't even Columbia's rule.** Equitable distribution isn't mathematical equal division — and his affidavit ("bonus: none expected") is contradicted by his own HR letter paying 112% of plan. Nondisclosure lets a court reopen the deal and divide **unequally in your favor**. His "50/50" is a bargaining position dressed up as arithmetic.
+
+**Now the important part about her fear — the fear is aimed at the wrong thing.** She doesn't lose the house by negotiating; she loses it by signing a deal that gives her a house she can't afford to keep. And the recommendation isn't a lawsuit at all. Look at what Alternative C does to **his** number: **$661,004 vs the $662,000 he already "wins" — he gives up about $1,000 on paper.** It asks him for structure, not money: stay on the loan and title with a fixed sale trigger, indemnity, and a deed of trust securing him; move $200k of 401(k) to her via QDRO — retirement-plan paper, not a check. She keeps the kids in the house 3–6 years and goes from $613k to $661k after tax. A lawyer who insists on "exactly 50/50" while sitting at essentially the same after-tax number has no arithmetic left to argue with.
+
+Two asks aren't fights either — they're free wins: child support on his documented income (**$2,042/mo vs $1,830** — salary-only underpays ~$212/mo), and refusing the alternating-dependents clause (§152(e) already makes her the default claimant).
+
+If she still chooses the quiet "yes" to avoid conflict, that's her right as the client — but she should know the price tag: **~$49,000 after tax, plus a house she structurally can't keep.** Her real leverage is that *he* needs a deal that can't be reopened.

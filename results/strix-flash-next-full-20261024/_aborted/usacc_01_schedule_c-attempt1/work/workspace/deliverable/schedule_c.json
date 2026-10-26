@@ -1,0 +1,92 @@
+{
+  "tax_year": 2025,
+  "lines": {
+    "1": 50750.00,
+    "9": 194.60,
+    "10": 1199.15,
+    "15": 480.00,
+    "20b": 2800.00,
+    "24a": 1030.00,
+    "24b": 95.00,
+    "25": 1116.00,
+    "27a": 4058.88,
+    "29": 10973.63,
+    "30": 39776.37,
+    "31": 39776.37
+  },
+  "line_notes": {
+    "30": "Profit or loss. Reported here as line 1 minus line 29 (50,750.00 - 10,973.63 = 39,776.37); no Section 280A home-office deduction is claimed because no qualifying facts are in the file. The library's Schedule C instructions excerpt defines only lines 1, 9, 10, 13, 15, 18, 20b, 24a, 24b, 25 and 27a, so this line numbering follows the engagement convention rather than a cited authority. Carried to Form 1040 and Schedule SE."
+  },
+  "schedule_se": {
+    "net_earnings": 36733.48,
+    "se_tax": 5620.22,
+    "deductible_half": 2810.11
+  },
+  "not_on_schedule_c": [
+    {
+      "item": "Larkspur Interactive W-2 wages (gross box 1; net deposits in bank 19,502.80)",
+      "amount": 24800.00,
+      "where": "Form 1040 line 1a (wages) - not Schedule C"
+    },
+    {
+      "item": "Tessaro Studios invoice 1041, received 2024-12-27",
+      "amount": 3000.00,
+      "where": "Prior year - 2024 gross receipts (cash method, 2025 Schedule C instructions excerpt); confirm it was reported on the 2024 return"
+    },
+    {
+      "item": "Blue Cross Blue Shield TX health insurance premiums, May-Dec 2025 (380 x 8). Client confirms this is her own plan, purchased after leaving Larkspur, not through any employer",
+      "amount": 3040.00,
+      "where": "Schedule 1 line 17 - self-employed health insurance deduction (excluded from Schedule C line 15 per 2025 Schedule C instructions excerpt; deduction cannot exceed net SE earnings, which is satisfied: 3,040.00 <= 36,733.48)"
+    },
+    {
+      "item": "One-half of self-employment tax",
+      "amount": 2810.11,
+      "where": "Schedule 1 line 15"
+    },
+    {
+      "item": "Federal estimated tax payments 2025 Q1-Q3 (1,500 + 2,500 + 2,500)",
+      "amount": 6500.00,
+      "where": "Not deductible; payment credits on Form 1040 (library does not state this directly - see unverified items in schedule_c.md)"
+    },
+    {
+      "item": "Beacon Fintech 1099-NEC (18,500) and Orchard Health 1099-NEC (12,200) - client confirms both payers settle through PayHub, so these payments are already inside the 1099-K gross on line 1; no separate bank credit exists for either payer",
+      "amount": 30700.00,
+      "where": "Included once in Schedule C line 1 via the PayHub 1099-K gross - per 2025 Schedule C instructions (line 1: if the same payment is reported on more than one information return, include it only once). Listed here so the NECs are not dropped; adds nothing to line 1"
+    },
+    {
+      "item": "Southwest Airlines AUS-DEN airfare, 2025-06-13 - client confirms it was her cousin's wedding, nothing work-related",
+      "amount": 389.00,
+      "where": "Personal - IRC 262(a); excluded from Schedule C"
+    },
+    {
+      "item": "Personal (non-business) share of phone and internet at the client's stated 40% personal use: (1,020 + 840) x 0.40",
+      "amount": 744.00,
+      "where": "Personal - IRC 262(a); only the 60% business share (1,116.00) is on line 25"
+    },
+    {
+      "item": "Mileage: Larkspur office daily drives Jan 7 - Apr 25, 1,200 miles x $0.70 - client confirms these were drives to the employer's office",
+      "amount": 840.00,
+      "where": "Not deductible - commuting (Notice 2025-5; Pub. 463 excerpt; Schedule C instructions line 9: commuting is not business use)"
+    },
+    {
+      "item": "Mileage: home <-> Capital Factory coworking, 2,232 miles x $0.70 - treated as commuting because nothing in the file establishes a home office that is the principal place of business; client has no further information",
+      "amount": 1562.40,
+      "where": "Not claimed - stated position/assumption; deductible only if a qualifying home office is established (Pub. 463 excerpt)"
+    },
+    {
+      "item": "Mileage log 'page 2' client errands (1,150 miles x $0.70) - page 2 was never provided and the client has no additional information",
+      "amount": 805.00,
+      "where": "Not claimed - unsubstantiated; would move to Schedule C line 9 only if page 2 substantiates the miles"
+    },
+    {
+      "item": "Rent paid to M. Okafor (1,650 x 12)",
+      "amount": 19800.00,
+      "where": "Personal - IRC 262(a); no home-office deduction claimed (no qualifying facts in the file)"
+    },
+    {
+      "item": "Personal living costs: groceries 2,102.95, Netflix 185.88, gym 588.00, wedding gift 200.00",
+      "amount": 3076.83,
+      "where": "Personal - IRC 262(a)"
+    }
+  ]
+}

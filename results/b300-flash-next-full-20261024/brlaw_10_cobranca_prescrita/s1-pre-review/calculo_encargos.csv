@@ -1,0 +1,8 @@
+parcela,vencimento,situacao,principal_saldo_r$,multa_2pct_r$,juros_1pct_am_ate_12_10_2026_r$,correcao_ipca,total_sem_ipca_r$,memoria_de_calculo
+1,10/10/2020,exigivel (termo 15/09/2027),"20,000.00",600.00,"18,040.00",NAO CALCULADA (serie IPCA ausente),"38,640.00","10/10/2020 a 02/08/2023 = 1026d = 34.20 meses x 1% a.m. sobre R$ 30,000.00 = R$ 10,260.00 | 02/08/2023 a 12/10/2026 = 1167d = 38.90 meses x 1% a.m. sobre R$ 20,000.00 = R$ 7,780.00"
+2,10/11/2020,exigivel (termo 15/09/2027),"30,000.00",600.00,"21,620.00",NAO CALCULADA (serie IPCA ausente),"52,220.00","10/11/2020 a 12/10/2026 = 2162d = 72.07 meses x 1% a.m. sobre R$ 30,000.00 = R$ 21,620.00"
+3,10/12/2020,exigivel (termo 15/09/2027),"30,000.00",600.00,"21,320.00",NAO CALCULADA (serie IPCA ausente),"51,920.00","10/12/2020 a 12/10/2026 = 2132d = 71.07 meses x 1% a.m. sobre R$ 30,000.00 = R$ 21,320.00"
+4,10/01/2021,exigivel (termo 15/09/2027),"30,000.00",600.00,"21,010.00",NAO CALCULADA (serie IPCA ausente),"51,610.00","10/01/2021 a 12/10/2026 = 2101d = 70.03 meses x 1% a.m. sobre R$ 30,000.00 = R$ 21,010.00"
+5,10/02/2021,PRESCRITA (termo esgotado),"0,00","0,00","0,00",nao calculada,"0,00",prescricao consumada em 10/02/2026; nao cobrada nem inscrita/protestada
+6,10/03/2021,PRESCRITA (termo esgotado),"0,00","0,00","0,00",nao calculada,"0,00",prescricao consumada em 10/03/2026; nao cobrada nem inscrita/protestada
+TOTAL,,,"110,000.00","2,400.00","81,990.00",PENDENTE,"194,390.00","juros simples contratuais 1% a.m. desde o vencimento, apurados por dias/30; multa de 2% incidente sobre cada parcela (base R$ 30.000,00, inclusive a parcela 1, cuja base nao foi reduzida pelo pagamento parcial)"

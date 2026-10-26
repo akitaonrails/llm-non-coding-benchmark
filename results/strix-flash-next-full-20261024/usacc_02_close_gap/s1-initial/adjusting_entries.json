@@ -1,0 +1,65 @@
+[
+  {
+    "ref": "AJE-1",
+    "date": "2026-03-31",
+    "memo": "Record 3/21/2026 mobile deposit of 4,312.00 appearing on HCCB statement (bank_statement_2026-03.pdf) but not in GL. Payer unidentified: credited to 2100 Unidentified receipts / suspense, not revenue, per close_policy.md. Listed in open_items.md.",
+    "lines": [
+      {"account": "1000", "debit": 4312.00, "credit": 0},
+      {"account": "2100", "debit": 0, "credit": 4312.00}
+    ]
+  },
+  {
+    "ref": "AJE-2",
+    "date": "2026-03-31",
+    "memo": "Record HCCB monthly service fee 35.00 dated 3/31/2026 on bank statement (bank_statement_2026-03.pdf), not recorded in GL.",
+    "lines": [
+      {"account": "6700", "debit": 35.00, "credit": 0},
+      {"account": "1000", "debit": 0, "credit": 35.00}
+    ]
+  },
+  {
+    "ref": "AJE-3",
+    "date": "2026-03-31",
+    "memo": "Reverse duplicate posting of Cascade Hardwoods invoice CH-7731 (4,860.00, inv. dated 02/24/2026). Booked once from emailed copy (2026-02-26, included in 2/28 TB) and again from the mailed copy on 2026-03-09. Same invoice number, same amounts (vendor_bill_cascade_CH-7731_email_copy.pdf; vendor_bill_cascade_CH-7731_mailed_copy.pdf). Paid once by check #2040 (cleared 3/22). Policy close_policy.md: vendor bills recorded once, keyed by vendor invoice number.",
+    "lines": [
+      {"account": "2000", "debit": 4860.00, "credit": 0},
+      {"account": "5000", "debit": 0, "credit": 4860.00}
+    ]
+  },
+  {
+    "ref": "AJE-4",
+    "date": "2026-03-31",
+    "memo": "Reclassify Allied Insurance Q2 general-liability premium 1,150.00 (GL BILL 2026-03-20) from 6300 to 1300 Prepaid. ASSUMPTION (stated): 'Q2' = 4/1/2026-6/30/2026, so no amortization expense in March; coverage dates to be confirmed (QUESTIONS.md). Policy close_policy.md: multi-month items capitalized to 1300 and amortized monthly.",
+    "lines": [
+      {"account": "1300", "debit": 1150.00, "credit": 0},
+      {"account": "6300", "debit": 0, "credit": 1150.00}
+    ]
+  },
+  {
+    "ref": "AJE-5",
+    "date": "2026-03-31",
+    "memo": "Reclassify CabinetVision annual license 1,188.00 (Summit Visa charge 3/11/2026) from 6400 to 1300 Prepaid. Statement shows coverage 'ANNUAL LICENSE 04/2026-03/2027' (credit_card_statement_summit_2026-03.pdf), so no amortization in March. Policy close_policy.md: multi-month items capitalized and amortized monthly.",
+    "lines": [
+      {"account": "1300", "debit": 1188.00, "credit": 0},
+      {"account": "6400", "debit": 0, "credit": 1188.00}
+    ]
+  },
+  {
+    "ref": "AJE-6",
+    "date": "2026-03-31",
+    "memo": "Reclass 3/14 online transfer of 1,500.00 from 'CHK *4420' (bank_statement_2026-03.pdf; GL XFER 2026-03-14) out of 4000 Sales. Owner confirmed 3/14 transfer originated from his personal checking to cover payroll: 'It's my money, not a sale.' Policy close_policy.md: owner personal transactions to 3100 contributions, never revenue.",
+    "lines": [
+      {"account": "4000", "debit": 1500.00, "credit": 0},
+      {"account": "3100", "debit": 0, "credit": 1500.00}
+    ]
+  },
+  {
+    "ref": "AJE-7",
+    "date": "2026-03-31",
+    "memo": "Reclass Uchi dinner 212.00 (Summit Visa 3/15/2026, credit_card_statement_summit_2026-03.pdf; GL CC 2026-03-15) out of 6500 Meals. Owner confirmed personal anniversary dinner ('Put it on me'). Policy close_policy.md / close_checklist.md #4: owner personal charges to 3200 Owner's draws.",
+    "lines": [
+      {"account": "3200", "debit": 212.00, "credit": 0},
+      {"account": "6500", "debit": 0, "credit": 212.00}
+    ]
+  }
+]

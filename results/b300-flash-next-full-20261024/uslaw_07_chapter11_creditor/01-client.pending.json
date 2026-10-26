@@ -1,0 +1,47 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "questions": "# Questions for Mesa Steel Supply — prepared 2026-03-19\n\nThese items could not be determined from the client file. The deliverables state the\nassumptions used in each case; answers will let us amend if needed. None of them\nchanges the core analysis unless expressly noted.\n\n1. **The $210,000 demand letter.** The $210,000 demanded on 2026-03-12 equals exactly\n   the gross invoiced total of all six invoices ($48,200+$62,400+$41,300+$6,900+\n   $36,800+$14,400) without crediting the $85,000 Redwood paid. **Assumption used:**\n   the AR clerk used a gross AR figure; the true balance is $125,000, and there is no\n   second Redwood account or additional prepetition receivable. Please confirm — if\n   any other account exists, the claim amount and the Form 410 draft change.\n2. **Post-petition shipments.** Has Mesa delivered anything to Redwood on or after\n   March 10, 2026, or been asked to? **Assumption used:** none (none appears in the\n   file). Any post-petition deliveries would be administrative claims and would change\n   the shipping strategy entirely.\n3. **Contract documents.** Are there signed writings with Redwood — master supply\n   agreement, purchase orders, an interest-on-late-payment clause, personal or\n   corporate guaranty, letter of credit, or any UCC security interest Mesa filed\n   against Redwood? **Assumption used:** unsecured open account, no contractual\n   interest, no collateral. A guaranty or LC would materially improve recovery.\n4. **Delivery proof.** Can AR produce signed delivery receipts/bills of lading for\n   MS-7740, MS-7788, MS-7815 (needed for the 503(b)(9) claim and any reclamation\n   demand) and the purchase orders?\n5. **Are the coils still there?** Do we have any way to know whether the steel\n   delivered Feb 4 – Mar 10 is still at Redwood's plant, uncut and identifiable?\n   Reclamation (deadline **March 30, 2026**) is worthless if the goods are consumed —\n   we need a business answer by **March 27** to serve a conforming demand in time.\n6. **Critical vendor / continuing supply.** Does Mesa *want* to keep supplying\n   Redwood during the case, and on what payment terms would we agree? Designation\n   under the pending motion (Dkt. 44, hearing **April 2, 2026**) requires agreeing to\n   customary trade terms; we must contact debtor's counsel before the hearing.\n7. **The court's orders.** Please provide (or authorize counsel to pull from the\n   docket): the full bar-date order — it will specify the procedure for asserting the\n   §503(b)(9) claim, and the summary notice in our file is internally inconsistent\n   (\"Notice dated: April 2, 2026,\" a future date), so we want the operative order —\n   and the critical-vendor motion Dkt. 44 with its proposed order and the DIP/cash-\n   collateral stipulation (the library refers to a DIP lender's blanket lien; we want\n   to confirm its scope).\n8. **\"You owe us.\"** At the March 15 call, when Redwood's AP said \"that's not our\n   problem, you owe us,\" did our AR clerk note what Redwood claimed we owed — credit\n   balances, returned goods, warranty claims, tooling, rebate accruals? Any mutual\n   debt affects the claim (§553 setoff requires stay relief; recoupment reduces the\n   claim dollar-for-dollar).\n9. **The Feb 27 wire and Feb 10 payment.** Who at Mesa demanded the wire, and what\n   written record exists (emails, call notes) of the NET-15 demand and payment\n   pressure from Jan 20 onward? Those records are the heart of the §547 ordinary-\n   course analysis — helpful or harmful — and must be preserved and produced to\n   counsel, not deleted.\n",
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "terms",
+    "critical_vendor"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

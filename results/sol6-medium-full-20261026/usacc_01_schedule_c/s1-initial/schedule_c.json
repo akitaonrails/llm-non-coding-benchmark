@@ -1,0 +1,78 @@
+{
+  "tax_year": 2025,
+  "lines": {
+    "1": 50750.0,
+    "9": 194.6,
+    "10": 1199.15,
+    "15": 480.0,
+    "20b": 2800.0,
+    "24a": 1030.0,
+    "24b": 95.0,
+    "25": 1116.0,
+    "27a": 1909.88,
+    "28": 8824.63,
+    "31": 41925.37
+  },
+  "schedule_se": {
+    "net_earnings": 38718.08,
+    "se_tax": 5923.87,
+    "deductible_half": 2961.94
+  },
+  "not_on_schedule_c": [
+    {
+      "item": "Larkspur W-2 gross wages",
+      "amount": 24800.0,
+      "where": "Form 1040 line 1a; not Schedule C"
+    },
+    {
+      "item": "Larkspur W-2 federal income tax withholding",
+      "amount": 2310.0,
+      "where": "Form 1040 federal tax withholding; not Schedule C"
+    },
+    {
+      "item": "Self-paid Blue Cross health premiums, May\u2013December",
+      "amount": 3040.0,
+      "where": "Potential Schedule 1 line 17 deduction, subject to eligibility; not Schedule C"
+    },
+    {
+      "item": "Deductible half of self-employment tax",
+      "amount": 2961.94,
+      "where": "Schedule 1 line 15"
+    },
+    {
+      "item": "Federal estimated tax payments",
+      "amount": 6500.0,
+      "where": "Form 1040 estimated tax payments; not Schedule C"
+    },
+    {
+      "item": "Tessaro receipt dated December 27, 2024",
+      "amount": 3000.0,
+      "where": "Prior year cash-method receipt"
+    },
+    {
+      "item": "Denver flight for cousin\u2019s wedding",
+      "amount": 389.0,
+      "where": "Personal"
+    },
+    {
+      "item": "MacBook purchase; business use unknown",
+      "amount": 2149.0,
+      "where": "Unclaimed pending business-use support and asset treatment"
+    },
+    {
+      "item": "Undocumented other client errands, 1,150 miles \u00d7 $0.70",
+      "amount": 805.0,
+      "where": "Unclaimed pending mileage substantiation"
+    },
+    {
+      "item": "Coworking travel, 2,232 miles \u00d7 $0.70",
+      "amount": 1562.4,
+      "where": "Unclaimed pending home-office/regular-work-location facts"
+    },
+    {
+      "item": "Personal share of phone and internet at assumed 40%",
+      "amount": 744.0,
+      "where": "Personal"
+    }
+  ]
+}

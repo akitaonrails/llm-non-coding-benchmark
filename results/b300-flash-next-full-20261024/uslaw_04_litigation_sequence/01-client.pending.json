@@ -1,0 +1,48 @@
+{
+  "case": "uslaw_04_litigation_sequence",
+  "questions": "# Questions for the client (Session 1)\n\nAnswers needed before the demand letter is finalized/sent and before any arbitration filing. Assumptions currently used in the deliverables are noted in italics.\n\n1. **Actual compensation.** What is the actual first-year annualized compensation (salary + bonus + shift/salary differentials) Pinecrest offered each of the seven hires (Rosa M., Tay W., Priya S., Luis F., Keisha B., Anne O., Victor H.)? *Assumption now: $64,000 average (CEO's estimate) — the contract fee is 25% of each person's actual comp, so $80,000 (5 hires) will move.*\n2. **Invoice J-4533.** On what date was J-4533 issued and (per the transmittal email/portal) received by Pinecrest? Pinecrest's July 9 dispute is timely only if receipt was on or after June 24. Do we have the shift-level timesheets and signed sign-outs for June? Has Pinecrest given any audit findings since July 9?\n3. **Payments.** Has Pinecrest paid *any* amount on any invoice (or set off anything) since the CSV was pulled? Exact amounts and dates if yes.\n4. **Contract status.** Has either party given 60-day notice of termination, or has the Agreement continued into the 2026-01-15 renewal term? Any written notice of the \"corporate mandate\" pull-back?\n5. **Marcus Bell's authority.** What was Bell's title and authority — had he ever previously waived or negotiated conversion fees on Juniper's behalf, with CEO knowledge? Did Juniper ever act inconsistently with the Feb 11 waiver (e.g., invoice Pinecrest for Rosa/Tay fees) or ratify it? Any internal policy limiting account managers' authority, and was it ever shared with Pinecrest?\n6. **May 14, 2026 call.** What was discussed in the 6-minute Bell–Lindqvist call (Luis/Keisha)? Any notes, voicemails, or follow-up emails? Same for any contact about Anne O. and Victor H.\n7. **Prior demands.** Were conversion-fee invoices ever issued for any of the hires, and did Juniper ever send a written demand to Pinecrest before this letter? (Bears on course-of-dealing/waiver arguments.)\n8. **June audit posture.** Did Juniper respond to the July 9 \"hours padded\" email? Any correspondence since? (Bears on whether the J-4533 dispute was resolved or abandoned.)\n9. **Arbitration costs.** Confirm Juniper's tolerance for AAA Commercial filing/administrative fees and arbitrator compensation (figures to be pulled from AAA's fee schedule at filing — not in our reference library).\n10. **Service details.** Pinecrest's registered agent/address for service, and confirm H. Lindqvist is the correct administrator contact, for the AAA demand if needed.\n",
+  "facts": [
+    {
+      "id": "feb11",
+      "trigger": [
+        "February 11",
+        "waived",
+        "one-off",
+        "Rosa",
+        "Tay",
+        "did anyone consent"
+      ],
+      "answer": "Marcus: Yeah… I waived the fee for Rosa and Tay in February. Just those two. I didn't think it was a big deal. I never agreed to the other five.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "exhibit_c",
+      "trigger": [
+        "Exhibit C",
+        "arbitration",
+        "dispute resolution",
+        "AAA"
+      ],
+      "answer": "Dolapo: There's an arbitration exhibit? Our old lawyer used a template. Nobody read it. Does that kill us?",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "padded",
+      "trigger": [
+        "padded",
+        "J-4533",
+        "audit",
+        "hours"
+      ],
+      "answer": "Dolapo: Two shifts were double-entered in June, about $3,100. The rest is legit.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "feb11",
+    "exhibit_c",
+    "padded"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "rank": 1,
+    "clause": "§5.3/Exhibit C",
+    "playbook_rule": "A2",
+    "severity": "hard",
+    "issue": "The DPA is only a promise to enter one later; Exhibit C is a placeholder.",
+    "why": "EU driver data will be processed, so the playbook requires an executed DPA at signing. The library's Article 28 excerpt (library/gdpr_art28.md) says a binding processor contract with specified terms is required from the first day of processing. An absent exhibit does not supply those terms.",
+    "redline": "Replace §5.3: 'The data processing addendum attached as Exhibit C is incorporated into this Agreement and shall be executed by both parties at the same time as this Agreement. Provider shall not process personal data of EU or UK residents on Customer's behalf unless and until the executed Exhibit C is in effect. The parties shall complete Exhibit C so that it specifies the subject matter and duration, nature and purpose of processing, categories of personal data and data subjects, and the parties' obligations and rights, including the processor obligations required by Article 28(3) of the GDPR where applicable.' Replace Exhibit C's placeholder with a negotiated, completed, signed DPA before signature."
+  },
+  {
+    "rank": 2,
+    "clause": "§9.1/§9.3/§10.1",
+    "playbook_rule": "A1",
+    "severity": "hard",
+    "issue": "The absolute 'notwithstanding' liability cap can override the stated uncapped IP indemnity.",
+    "why": "Section 10.1 says the indemnity is uncapped and §12.3 makes it survive, but §9.1 caps all liability notwithstanding anything to the contrary. The interpretation authority in library/contract_interpretation_notwithstanding.md gives that formulation controlling effect over a conflicting uncapped statement. The same conflict also threatens the offered §9.3 carve-outs.",
+    "redline": "Replace §9.1: 'Except for the liabilities excluded from limitation under Section 9.3, neither party's aggregate liability arising out of or related to this Agreement shall exceed the fees paid or payable by Customer in the twelve (12) months preceding the event giving rise to the claim.' Replace §9.3: 'The exclusions and limitations in this Section 9, including the cap in Section 9.1 and the damages exclusion in Section 9.2, shall not apply to Provider's obligations under Section 10.1; either party's liability for its gross negligence, willful misconduct, or fraud; or Customer's payment obligations. Provider's obligations under Section 10.1 are uncapped and survive expiration or termination as provided in Section 12.3.'"
+  },
+  {
+    "rank": 3,
+    "clause": "Exhibit A §4/§4.4/§14.1",
+    "playbook_rule": "A3",
+    "severity": "hard",
+    "issue": "The order form permits a unilateral initial-term increase and has no renewal increase cap.",
+    "why": "One initial-term increase may be as high as the greater of 8% or CPI-U on 60 days' notice; any renewal increase is allowed. The order form prevails for its subject matter under §14.1. At an 8% example, $18,500 × 0.08 = $1,480 more per month, or $17,760 for a full twelve months at that higher rate; CPI-U or timing could change the actual amount.",
+    "redline": "Replace Exhibit A §4: 'Fees stated in this Order Form are fixed for the entire Initial Subscription Term; Provider may not increase them during that term. For each renewal term, Provider may increase the fees once, effective only at the start of that renewal term, by no more than the lesser of five percent (5%) or the percentage increase in the CPI-U over the preceding twelve (12) months. If the CPI-U has not increased, no renewal increase is permitted. Provider must give Customer written notice of any proposed renewal increase at least ninety (90) days before the renewal term begins. In the absence of timely notice, fees for that renewal term remain unchanged.'"
+  },
+  {
+    "rank": 4,
+    "clause": "§3.3",
+    "playbook_rule": "A4",
+    "severity": "hard",
+    "issue": "Automatic renewal lasts 24 months and requires 90 days' non-renewal notice.",
+    "why": "The playbook permits renewal terms of no more than 12 months and a non-renewal notice deadline of no more than 30 days. Missing the current deadline could commit Cobalt to another two years.",
+    "redline": "Replace §3.3: 'Each Subscription Term shall automatically renew for successive terms of twelve (12) months unless either party gives written notice of non-renewal at least thirty (30) days before the end of the then-current term.'"
+  },
+  {
+    "rank": 5,
+    "clause": "§2.2/§1.6",
+    "playbook_rule": "A5",
+    "severity": "hard",
+    "issue": "The license expressly excludes affiliates unless they are named on an order form for extra fees.",
+    "why": "Cobalt Freight Europe B.V. and Cobalt Brokerage LLC are not covered, despite Holdings being the named customer. The playbook requires these affiliates to be covered without additional fees or Holdings to sign on their behalf.",
+    "redline": "Replace §2.2: 'The license and access rights granted under this Agreement and each Order Form extend to Customer and to Cobalt Freight Europe B.V. and Cobalt Brokerage LLC at no additional fee. Each such Affiliate may use the Services through its employees and contractors, who shall be deemed Users for purposes of this Agreement. Customer remains responsible for those Users' compliance with this Agreement. No separate Order Form or additional affiliate fee is required for these rights.'"
+  },
+  {
+    "rank": 6,
+    "clause": "Exhibit B/§12.1",
+    "playbook_rule": "B5",
+    "severity": "preferred",
+    "issue": "Service credits are the sole availability remedy without an express termination right for chronic SLA failure.",
+    "why": "The 99.5% target and credits meet the playbook's baseline, but credits as the sole remedy are acceptable only with a right to terminate after failures in three months of any six. General termination for uncured material breach in §12.1 does not expressly grant that chronic-failure exit.",
+    "redline": "none"
+  }
+]

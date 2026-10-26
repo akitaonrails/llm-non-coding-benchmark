@@ -1,0 +1,159 @@
+{
+  "saidas": [
+    {
+      "numero": 2301,
+      "data": "2026-08-01",
+      "valor": 18000.0,
+      "cbs": 162.0,
+      "ibs": 18.0,
+      "situacao": "regular",
+      "motivo": "Sem grupo IBSCBS, mas emitida em 01/08 (antes de 03/08/2026): permanece valida (comunicado CGIBS, jul/2026). Debito informativo apurado pela aliquota legal (LC 214/2025, art. 343)."
+    },
+    {
+      "numero": 2302,
+      "data": "2026-08-01",
+      "valor": 24000.0,
+      "cbs": 216.0,
+      "ibs": 24.0,
+      "situacao": "regular",
+      "motivo": "Sem grupo IBSCBS; emitida antes de 03/08/2026, permanece valida (CGIBS). Debito informativo pela aliquota legal."
+    },
+    {
+      "numero": 2303,
+      "data": "2026-08-02",
+      "valor": 9500.0,
+      "cbs": 85.5,
+      "ibs": 9.5,
+      "situacao": "regular",
+      "motivo": "Cliente Simples Nacional; sem grupo IBSCBS, porem emitida antes de 03/08/2026 (valida - CGIBS). Debito informativo pela aliquota legal."
+    },
+    {
+      "numero": 2304,
+      "data": "2026-08-02",
+      "valor": 31000.0,
+      "cbs": 279.0,
+      "ibs": 31.0,
+      "situacao": "regular",
+      "motivo": "Sem grupo IBSCBS; emitida antes de 03/08/2026, permanece valida (CGIBS). Debito informativo pela aliquota legal."
+    },
+    {
+      "numero": 2305,
+      "data": "2026-08-02",
+      "valor": 4200.0,
+      "cbs": 37.8,
+      "ibs": 4.2,
+      "situacao": "regular",
+      "motivo": "Cliente MEI; sem grupo IBSCBS, porem emitida antes de 03/08/2026 (valida - CGIBS). Debito informativo pela aliquota legal."
+    },
+    {
+      "numero": 2306,
+      "data": "2026-08-04",
+      "valor": 42000.0,
+      "cbs": 378.0,
+      "ibs": 42.0,
+      "situacao": "regular",
+      "motivo": "Grupo IBSCBS destacado com aliquotas de 2026 (pCBS 0,90 / pIBSUF 0,10 / pIBSMun 0,00 - NT 2025.002); conferido: 42.000 x 0,9% = 378,00 e x 0,1% = 42,00."
+    },
+    {
+      "numero": 2307,
+      "data": "2026-08-06",
+      "valor": 56000.0,
+      "cbs": 504.0,
+      "ibs": 56.0,
+      "situacao": "regular",
+      "motivo": "Grupo IBSCBS correto (NT 2025.002); conferido: 56.000 x 0,9% = 504,00 e x 0,1% = 56,00."
+    },
+    {
+      "numero": 2308,
+      "data": "2026-08-10",
+      "valor": 12500.0,
+      "cbs": 112.5,
+      "ibs": 12.5,
+      "situacao": "irregular",
+      "motivo": "Emitida a partir de 03/08/2026 SEM o grupo IBSCBS: emissao nao permitida (rejeicao - comunicado CGIBS) e risco de perda da dispensa de recolhimento (ADCT art. 125, par. 4o; LC 214 art. 346). Debito informativo pela aliquota legal. Candidata a uma das duas rejeicoes relatadas pelo cliente, cuja mensagem foi 'Rejeicao: Grupo IBSCBS nao informado para emitente do regime regular (NT 2025.002)' - compativel com o comunicado CGIBS; quais notas exatas foram rejeitadas segue desconhecido (cliente nao tem a informacao). Observacao: o TI rebaixou a versao do emissor para 'contornar' a rejeicao; isso NAO regulariza - documentos sem o grupo seguem nao permitidos apos 03/08/2026 (comunicado CGIBS). Candidata a uma das duas rejeicoes relatadas pelo cliente, cuja mensagem foi 'Rejeicao: Grupo IBSCBS nao informado para emitente do regime regular (NT 2025.002)' - compativel com o comunicado CGIBS; quais notas exatas foram rejeitadas segue desconhecido (cliente nao tem a informacao). Observacao: o TI rebaixou a versao do emissor para 'contornar' a rejeicao; isso NAO regulariza - documentos sem o grupo seguem nao permitidos apos 03/08/2026 (comunicado CGIBS)."
+    },
+    {
+      "numero": 2309,
+      "data": "2026-08-13",
+      "valor": 38000.0,
+      "cbs": 342.0,
+      "ibs": 38.0,
+      "situacao": "irregular",
+      "motivo": "Grupo IBSCBS com aliquotas invertidas: XML traz pIBSUF 0,90 (vIBSUF 342,00) e pCBS 0,10 (vCBS 38,00); NT 2025.002 exige pIBSUF 0,10 e pCBS 0,90 em 2026. Nesta apuracao-teste os debitos foram corrigidos para os valores legais (CBS 38.000 x 0,9% = 342,00; IBS 38.000 x 0,1% = 38,00); o documento como emitido destaca os valores trocados."
+    },
+    {
+      "numero": 2310,
+      "data": "2026-08-18",
+      "valor": 7800.0,
+      "cbs": 70.2,
+      "ibs": 7.8,
+      "situacao": "irregular",
+      "motivo": "Emitida a partir de 03/08/2026 SEM o grupo IBSCBS (cliente MEI nao desobriga o emissor do regime regular - LC 214 arts. 346 e 347): rejeicao e risco de perda da dispensa (ADCT art. 125, par. 4o). Debito informativo pela aliquota legal. Candidata a uma das duas rejeicoes relatadas pelo cliente, cuja mensagem foi 'Rejeicao: Grupo IBSCBS nao informado para emitente do regime regular (NT 2025.002)' - compativel com o comunicado CGIBS; quais notas exatas foram rejeitadas segue desconhecido (cliente nao tem a informacao). Candidata a uma das duas rejeicoes relatadas pelo cliente, cuja mensagem foi 'Rejeicao: Grupo IBSCBS nao informado para emitente do regime regular (NT 2025.002)' - compativel com o comunicado CGIBS; quais notas exatas foram rejeitadas segue desconhecido (cliente nao tem a informacao)."
+    },
+    {
+      "numero": 2311,
+      "data": "2026-08-21",
+      "valor": 61000.0,
+      "cbs": 549.0,
+      "ibs": 61.0,
+      "situacao": "regular",
+      "motivo": "Grupo IBSCBS correto (NT 2025.002); conferido: 61.000 x 0,9% = 549,00 e x 0,1% = 61,00."
+    },
+    {
+      "numero": 2312,
+      "data": "2026-08-27",
+      "valor": 176000.0,
+      "cbs": 1584.0,
+      "ibs": 176.0,
+      "situacao": "irregular",
+      "motivo": "Emitida a partir de 03/08/2026 SEM o grupo IBSCBS: emissao nao permitida (rejeicao - comunicado CGIBS) e risco de perda da dispensa (ADCT art. 125, par. 4o). Debito informativo pela aliquota legal. Candidata a uma das duas rejeicoes relatadas pelo cliente, cuja mensagem foi 'Rejeicao: Grupo IBSCBS nao informado para emitente do regime regular (NT 2025.002)' - compativel com o comunicado CGIBS; quais notas exatas foram rejeitadas segue desconhecido (cliente nao tem a informacao). Candidata a uma das duas rejeicoes relatadas pelo cliente, cuja mensagem foi 'Rejeicao: Grupo IBSCBS nao informado para emitente do regime regular (NT 2025.002)' - compativel com o comunicado CGIBS; quais notas exatas foram rejeitadas segue desconhecido (cliente nao tem a informacao)."
+    }
+  ],
+  "entradas": [
+    {
+      "numero": 2313,
+      "valor": 48000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "Fornecedor do regime regular (Distribuidora Norte, CRT 3), porem documento SEM destaque de IBS/CBS (sem grupo IBSCBS). Emitida em 02/08 (antes de 03/08), e valida, mas nao gera credito: creditos so de aquisicoes de contribuintes do regime regular COM destaque (LC 214/2025, art. 346)."
+    },
+    {
+      "numero": 2314,
+      "valor": 62000.0,
+      "credito_cbs": 558.0,
+      "credito_ibs": 62.0,
+      "motivo": "Fornecedor do regime regular (CRT 3) com destaque correto: vCBS 558,00 = 62.000 x 0,9%; vIBSUF 62,00 = 62.000 x 0,1% (LC 214 art. 346; NT 2025.002)."
+    },
+    {
+      "numero": 2315,
+      "valor": 15000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "Fornecedor optante do Simples Nacional (Ponto Fixo, CRT 1), sem destaque. Aquisicao de optante do Simples gera credito limitado ao valor efetivamente recolhido a titulo de IBS/CBS no Simples; em 2026, sem destaque, nao ha credito (LC 214/2025, art. 347)."
+    },
+    {
+      "numero": 2316,
+      "valor": 40000.0,
+      "credito_cbs": 360.0,
+      "credito_ibs": 40.0,
+      "motivo": "Fornecedor do regime regular (Logistica Atlas, CRT 3) com destaque correto: 40.000 x 0,9% = 360,00; x 0,1% = 40,00 (LC 214 art. 346; NT 2025.002)."
+    },
+    {
+      "numero": 2317,
+      "valor": 60000.0,
+      "credito_cbs": 540.0,
+      "credito_ibs": 60.0,
+      "motivo": "Fornecedor do regime regular (Distribuidora Norte, CRT 3) com destaque correto: 60.000 x 0,9% = 540,00; x 0,1% = 60,00 (LC 214 art. 346; NT 2025.002)."
+    }
+  ],
+  "totais": {
+    "debito_cbs": 4320.0,
+    "debito_ibs": 480.0,
+    "credito_cbs": 1458.0,
+    "credito_ibs": 162.0,
+    "saldo_cbs": 2862.0,
+    "saldo_ibs": 318.0
+  },
+  "recolhimento_devido": 0.0,
+  "condicao_dispensa": "Recolhimento de CBS/IBS de 2026 dispensado nos termos do ADCT art. 125, par. 4o (LC 214/2025), CONDICIONADO ao cumprimento das obrigacoes acessorias: destaque de IBS/CBS nos documentos fiscais eletronicos (obrigatorio para emissor do regime regular a partir de 03/08/2026 - comunicado CGIBS jul/2026; NT 2025.002), escrituracao e apuracao-teste mensal (LC 214/2025, art. 346). Ressalva: as NF-e 2308, 2309, 2310 e 2312 (irregulares) ainda nao foram regularizadas; se a dispensa for negada por descumprimento das obrigacoes acessorias, o valor devido passaria a ser o saldo da apuracao-teste (CBS 2.862,00; IBS 318,00). A biblioteca nao define se a perda da dispensa atinge o mes inteiro ou apenas as operacoes irregulares (ver QUESTOES). Valores apurados em 2026 sao informativos para calibragem (LC 214/2025, art. 343). Risco em curso: apos as rejeicoes, o TI rebaixou a versao do emissor (gerando XML sem o grupo IBSCBS); emissoes futuras sem o grupo mantem o descumprimento das obrigacoes acessorias e agravam a ameaca a dispensa. Ignorado o 'contorno': a solucao e emitir com o grupo IBSCBS conforme NT 2025.002. Risco em curso: apos as rejeicoes, o TI rebaixou a versao do emissor (gerando XML sem o grupo IBSCBS); emissoes futuras sem o grupo mantem o descumprimento das obrigacoes acessorias e agravam a ameaca a dispensa. Ignorado o 'contorno': a solucao e emitir com o grupo IBSCBS conforme NT 2025.002."
+}

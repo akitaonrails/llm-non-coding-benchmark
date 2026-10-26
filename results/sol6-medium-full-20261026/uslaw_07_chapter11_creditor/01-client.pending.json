@@ -1,0 +1,44 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "questions": "# Client questions — Mesa Steel / Redwood Fabrication\n\nPlease answer these before we finalize the claim and filing instructions:\n\n1. **Claim balance:** The supplied invoice ledger shows $125,000 unpaid as of the March 10 petition ($25,600 on MS-7740 + $41,300 on MS-7788 + $6,900 on MS-7802 + $36,800 on MS-7815 + $14,400 on MS-7819). Mesa's March 12 collection letter demanded $210,000. What accounts for the other $85,000? Please provide any omitted invoices, credits, interest, fees, or payments and say which amounts were outstanding on March 10.\n2. **Notice and bar date:** The supplied bankruptcy notice says the petition was filed March 10 and the claim deadline is June 11, but the notice itself is dated **April 2, 2026**, after the engagement's March 19 date. Is the notice an authentic issued notice, a draft, or a document with an incorrect date? Please provide the actual issued notice or confirm the court set the June 11 deadline and its filing instructions.\n3. **Goods and reclamation:** Were the steel goods on MS-7788 and MS-7815 received by Redwood on the listed delivery dates, sold in the ordinary course, and still unpaid on March 10? Did Mesa send any written reclamation demand for goods delivered within 45 days before March 10? If so, provide it and its delivery date. Does Mesa have any information on whether Redwood still held identifiable goods on March 10 or was insolvent when it received them?\n4. **Payments after filing:** Has Mesa received any payment, return, or credit from Redwood after March 10 relating to these invoices? If yes, provide dates, amounts, and the invoice applied.\n",
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

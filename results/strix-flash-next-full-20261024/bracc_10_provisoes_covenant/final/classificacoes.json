@@ -1,0 +1,26 @@
+{
+  "provisao_trabalhista": {
+    "manter": "manter",
+    "valor": 1200000,
+    "fundamento": "CPC 25 (itens 14-16, 36, 59): a provisão deve ser revertida apenas se deixar de ser provável a saída de recursos. A carta do advogado de 18/12/2025 — última manifestação escrita disponível — dá prognóstico 'provável' de manutenção da condenação quanto à equiparação salarial e 'possível' apenas quanto à reforma parcial (horas extras); a sentença condenatória de 1º grau é forte indicador de probabilidade (CPC 25, itens 14-16 e 59). A diretoria confirmou (rodada 2) que a mudança para 'remoto' foi apenas telefônica e que o advogado não a reduzirá por escrito; a carta formal permanece a de 18/12/2025. A biblioteca exige que a probabilidade considere a opinião dos especialistas conforme efetivamente emitida — e a opinião efetivamente emitida continua sendo 'provável' quanto à equiparação. A reversão de R$ 1.200.000 não é admissível. O valor de R$ 1.200.000 é mantido por cobrir a exposição total atualizada (condenação R$ 1.180.000; exposição em caso de perda R$ 1,2 mi); o detalhamento da condenação por pedido não foi fornecido (item em aberto), não havendo base nos documentos para reduzir ou aumentar."
+  },
+  "ccb_horizonte": {
+    "circulante": "circulante",
+    "fundamento": "Vencimento único em 31/08/2026, ou seja, dentro de 12 meses após a data do balanço (31/12/2025) — circulante nos termos do CPC 26 (itens 69-70). A renovação da expectativa não basta: a Cláusula 11 da CCB 8812 prevê repactuação 'a exclusivo critério do Credor', sem prorrogação automática nem compromisso bancário, de modo que a empresa não tinha, na data do balanço, direito incondicional de diferir a liquidação por 12 meses (CPC 26, itens 69-73). Eventual aditivo assinado após 31/12/2025 seria evento subsequente não ajustável (divulgação). Nota: essa reclassificação não altera a Dívida Líquida do covenant, que considera a dívida circulante e não circulante (Cláusula 7.1(c) da escritura)."
+  },
+  "afac": {
+    "pl|passivo": "passivo",
+    "fundamento": "AFAC de R$ 2.000.000 recebido em mar/2022, mantido por prazo indeterminado e sem qualquer deliberação de aumento de capital até 31/12/2025 (mais de 3 anos). Pela ITG 2000 (Res. CFC 1.159/2009), classifica-se no PL somente se irrevogável e irretratável, com capitalização em prazo determinado; a prática da RFB (PN CST 17/1984) exige capitalização até a primeira AGE ou em até 120 dias do encerramento do exercício — prazo largamente extrapolado. Sem esses atributos, deve ser reclassificado do PL para o passivo, como mútuo. Recomenda-se classificação no passivo circulante, por não haver direito documental de diferir a liquidação por além de 12 meses (CPC 26, itens 69-70). A diretoria confirmou (rodada 2) que os sócios nunca formalizaram o aumento de capital; eventual AGE em janeiro/2026 é deliberação pós-balanço — evento subsequente não ajustável (CPC 24), que se divulga mas não altera a classificação em 31/12/2025. Impacto no balanço: PL −2.000.000, passivo +2.000.000. Para o covenant, o valor foi incluído na Dívida Líquida por ser operação de mútuo (ver nota_explicativa.md; a conclusão de descumprimento independe dessa inclusão: 27,1/9,8 = 2,77 > 2,75)."
+  ,
+    "efeitos_fiscais": "Como mútuo, a operação fica sujeita a IOF-crédito (Decreto 6.306/2007, art. 3º, §3º — operações de crédito entre pessoa física/jurídica e PJ), conforme a biblioteca, e a juros presumidos (PN CST 17/1984; Solução de Consulta COSIT 20/2010). Os reflexos de IRPJ/CSLL sobre esses juros não estão detalhados na biblioteca — trato-os como não verificados. A extensão temporal da exigibilidade (retroativa à origem ou apenas correntes) e eventual responsabilidade solidária dos sócios também não estão detalhadas nos materiais da biblioteca — recomendo quantificação com a área fiscal; trato esses desdobramentos como não verificados aqui."
+  },
+  "covenant": {
+    "ebitda": 9800000,
+    "divida_liquida_com_ajustes_da_diretoria": 27100000,
+    "indice_com_ajustes_da_diretoria": 2.46,
+    "divida_liquida_correta": 29100000,
+    "indice_correto": 2.97,
+    "limite": 2.75,
+    "cumprido": false
+  }
+}

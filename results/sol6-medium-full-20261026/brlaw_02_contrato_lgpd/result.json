@@ -1,0 +1,18 @@
+{
+  "case": "brlaw_02_contrato_lgpd",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 357.6383277619607,
+  "controller_wait_seconds": 15.001586798985954,
+  "model_turn_seconds": 342.6313711379771,
+  "turns": 3,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 454278,
+    "cached_input_tokens": 416768,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 15716,
+    "reasoning_output_tokens": 3750
+  },
+  "api_equivalent_usd": 0.31553359999999997
+}

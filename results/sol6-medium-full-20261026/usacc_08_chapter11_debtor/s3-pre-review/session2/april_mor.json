@@ -1,0 +1,24 @@
+{
+  "part1": {
+    "receipts": 1480300,
+    "disbursements": {
+      "payroll_reported": 796000,
+      "post_petition_vendors_reported": 214600,
+      "professional_fees_and_other_unreported_payments": null
+    },
+    "ending_cash": null
+  },
+  "part2": {
+    "post_petition_payables": null,
+    "pre_petition_liabilities_subject_to_compromise": null
+  },
+  "part5": {
+    "professional_fees_approved": null,
+    "paid": null,
+    "holdback": null
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "unknown — none reported in the April activity; the February Mesa claim remains unpaid under Dkt. 83, but the activity is not confirmed complete",
+    "payments_outside_ordinary_course_without_approval": "unknown — no such payment reported, but the April disbursement detail is incomplete"
+  }
+}

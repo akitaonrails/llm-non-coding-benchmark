@@ -1,0 +1,26 @@
+# Questions to the client — January 2025 close
+(Answers will be applied in the February close; January was closed with these assumptions stated in `month_01/open_items.md`.)
+
+**Client disposition (received before the February close):** no additional information is available for any of Q1–Q7. Each item is now carried as a permanently flagged assumption — see the response log in `month_01/open_items.md` §7. Do not re-ask.
+
+1. **Dec-2024 / 2024 statements:** Did the prior bookkeeper issue December-2024 or FY2024 financial statements to the Board or a lender, and were the 2024 books formally closed? I need this to know whether the Dec-2024 premature-revenue error (30,450.00) already sits inside opening retained earnings (3900) or remains in the revenue account, so the ASC 250 restatement is charged to the right line.
+2. **A/R aging:** Please provide the customer-level accounts-receivable aging as of 31-Dec-2024 (and any later collections against it). I assumed 38,200.00 of the opening 92,650.00 is genuine 2024 A/R and 54,450.00 was the Dec-2024 posting error.
+3. **A/P detail:** What makes up the opening accounts payable of 17,420.00, is any of it still outstanding, and were any 2024 bills paid after January?
+4. **Prepaid expenses:** What does the 9,600.00 prepaid balance relate to (service, period covered, start date)? I recorded no January amortization because the file provides no support.
+5. **Taxes:** Any income-tax, sales-tax or other tax filings/accruals for Dec-2024/Jan-2025 not in the payroll register? Nothing else was provided, so none was recorded.
+6. **2024 comparative detail:** Can you provide the 2024 revenue and expense detail (for the year-end financial statements and for verifying that the Trestle prior contract was billed 98,400.00 in Jun-2024 and 57,400.00 was recognized Jun–Dec 2024)?
+7. **Stray file:** `documents/bank_statement.csv` contains December-2025 transactions. Is this a full-year statement for later use? I have not used it for January.
+
+---
+
+# Questions to the client — February 2025 close (new items only)
+
+**Client disposition (received after the February close):** Q8 **partially answered** — no separately-priced, distinct implementation service was delivered (customer self-onboarded "like everyone else"); "license" is only a procurement label, so substance is the same subscription access as every other customer. This **confirms the booked characterization**. The subscription term: **no additional information** — the 12-month assumption stands as a permanently flagged assumption, joining Q1–Q7. See the response log in `month_02/open_items.md` §7. Do not re-ask.
+
+8. **Pinecone Dental Group (C-025), INV-2250, 36,000.00 "Implementation & license — one-time":** what is the subscription term (start and end dates) for this contract, and was any separately-priced implementation service actually delivered in February (SOW, delivery or acceptance evidence)? I have booked the full amount to deferred revenue and am releasing 3,000.00/month on an **assumed 12-month term (2025-02-01 → 2026-01-31)** — see `month_02/open_items.md` §1. If you have no additional information, I will continue on this assumption with the flag maintained, and the release rate/split will need revisiting if anything ever contradicts it.
+
+---
+
+# Questions to the client — March 2025 close
+
+**None.** Every March source document ties without assumptions requiring client input: the new Marigold Schools contract (C-027, INV-2275 18,000.00) states its term **explicitly** on the order form ("12 months from service start, auto-renewing"; service start 2025-03-01), so it is booked on documented facts — defer 18,000.00, release 1,500.00/month Mar-2025 → Feb-2026 (see `month_03/open_items.md` §2). Receipts, vendor bills and payroll each agreed 1:1 to the bank. Q1–Q8 remain permanently flagged assumptions and are not re-asked; March judgment calls (new account 5600, prior-month disclosure corrections) are disclosed in `month_03/open_items.md` §§0, 3 and 4 and need no client answer.

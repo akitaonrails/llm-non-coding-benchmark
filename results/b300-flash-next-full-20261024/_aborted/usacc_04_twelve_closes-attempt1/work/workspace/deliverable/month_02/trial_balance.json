@@ -1,0 +1,191 @@
+{
+  "period": "2025-02",
+  "currency": "USD",
+  "basis": "cumulative balances as of 2025-02-28; gross debit/credit activity per account (cumulative TB per contract, so activity since 1/1/2025 plus opening balances is shown gross; presentation_view nets each account for the balance sheet)",
+  "sources": [
+    "documents/opening_trial_balance.csv",
+    "deliverable/month_01/journal_entries.json",
+    "deliverable/month_02/journal_entries.json"
+  ],
+  "accounts": {
+    "1000": {
+      "debit": 532900.0,
+      "credit": 163270.0,
+      "name": "Cash — Operating"
+    },
+    "1100": {
+      "debit": 213550.0,
+      "credit": 120900.0,
+      "name": "Accounts receivable"
+    },
+    "1300": {
+      "debit": 9600.0,
+      "credit": 0.0,
+      "name": "Prepaid expenses"
+    },
+    "1500": {
+      "debit": 64000.0,
+      "credit": 0.0,
+      "name": "Computer equipment"
+    },
+    "1510": {
+      "debit": 0.0,
+      "credit": 24888.56,
+      "name": "Accumulated depreciation"
+    },
+    "2000": {
+      "debit": 44310.0,
+      "credit": 61730.0,
+      "name": "Accounts payable"
+    },
+    "2200": {
+      "debit": 20400.0,
+      "credit": 125000.0,
+      "name": "Deferred revenue — current"
+    },
+    "3000": {
+      "debit": 0.0,
+      "credit": 650000.0,
+      "name": "Common stock & APIC"
+    },
+    "3900": {
+      "debit": 205953.0,
+      "credit": 0.0,
+      "name": "Retained earnings"
+    },
+    "4000": {
+      "debit": 0.0,
+      "credit": 111750.0,
+      "name": "Subscription revenue"
+    },
+    "5000": {
+      "debit": 19960.0,
+      "credit": 0.0,
+      "name": "Hosting & infrastructure"
+    },
+    "5100": {
+      "debit": 108808.0,
+      "credit": 0.0,
+      "name": "Payroll — salaries & wages"
+    },
+    "5110": {
+      "debit": 10152.0,
+      "credit": 0.0,
+      "name": "Payroll — employer taxes & benefits"
+    },
+    "5200": {
+      "debit": 14400.0,
+      "credit": 0.0,
+      "name": "Rent & occupancy"
+    },
+    "5300": {
+      "debit": 2920.0,
+      "credit": 0.0,
+      "name": "Software & tools"
+    },
+    "5400": {
+      "debit": 6550.0,
+      "credit": 0.0,
+      "name": "Marketing"
+    },
+    "5500": {
+      "debit": 3555.56,
+      "credit": 0.0,
+      "name": "Depreciation expense"
+    },
+    "5900": {
+      "debit": 480.0,
+      "credit": 0.0,
+      "name": "G&A other"
+    }
+  },
+  "totals": {
+    "debit": 1257538.56,
+    "credit": 1257538.56
+  },
+  "presentation_view": {
+    "1000": {
+      "debit": 369630.0,
+      "credit": 0.0
+    },
+    "1100": {
+      "debit": 92650.0,
+      "credit": 0.0
+    },
+    "1300": {
+      "debit": 9600.0,
+      "credit": 0.0
+    },
+    "1500": {
+      "debit": 64000.0,
+      "credit": 0.0
+    },
+    "1510": {
+      "debit": 0.0,
+      "credit": 24888.56
+    },
+    "2000": {
+      "debit": 0.0,
+      "credit": 17420.0
+    },
+    "2200": {
+      "debit": 0.0,
+      "credit": 104600.0
+    },
+    "3000": {
+      "debit": 0.0,
+      "credit": 650000.0
+    },
+    "3900": {
+      "debit": 205953.0,
+      "credit": 0.0
+    },
+    "4000": {
+      "debit": 0.0,
+      "credit": 111750.0
+    },
+    "5000": {
+      "debit": 19960.0,
+      "credit": 0.0
+    },
+    "5100": {
+      "debit": 108808.0,
+      "credit": 0.0
+    },
+    "5110": {
+      "debit": 10152.0,
+      "credit": 0.0
+    },
+    "5200": {
+      "debit": 14400.0,
+      "credit": 0.0
+    },
+    "5300": {
+      "debit": 2920.0,
+      "credit": 0.0
+    },
+    "5400": {
+      "debit": 6550.0,
+      "credit": 0.0
+    },
+    "5500": {
+      "debit": 3555.56,
+      "credit": 0.0
+    },
+    "5900": {
+      "debit": 480.0,
+      "credit": 0.0
+    }
+  },
+  "presentation_totals": {
+    "debit": 908658.56,
+    "credit": 908658.56
+  },
+  "notes": [
+    "Account 4000 is cumulative and still carries the 30,450.00 opening credit from the opening trial balance (prior-year revenue not closed to 3900; carried per ASC 250, see month_01 and month_02 open_items.md item 2). February 2025 revenue activity is 40,650.00 = 30,450.00 monthly invoices + 10,200.00 deferred releases. Pinecone INV-2250 36,000.00 is NOT in 4000; it is deferred (see open_items.md item 6).",
+    "Account 2200 closing 104,600.00 = 78,800.00 prior month + 36,000.00 Pinecone billed - 10,200.00 releases; includes the 24,000.00 unsupported opening line (unreleased) and Pinecone 36,000.00 (unreleased, term unknown). Roll-forward in deferred_revenue_rollforward.json.",
+    "Account 1000 nets to 369,630.00, agreeing to the 2025-02-28 bank statement ending balance with a 0.00 difference; all 32 statement items matched.",
+    "Account 1100 nets to 92,650.00, unchanged again: all 25 February receipts applied to February invoices (cash_receipts.csv applied_to), so the unexamined opening receivable remains untouched. See open_items.md item 3.",
+    "Account 1300 prepaid 9,600.00 unchanged, no amortization booked (no schedule exists); account 2000 nets to the unexamined opening 17,420.00 (all February bills paid within February). See open_items.md items 4 and 5."
+  ]
+}

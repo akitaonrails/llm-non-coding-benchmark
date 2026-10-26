@@ -1,0 +1,48 @@
+{
+  "period": "2025-02",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 prior annual subscription",
+      "term": "2024-06-01 to 2025-05-31",
+      "source": "documents/note_opening_deferred.md \u2014 release 8,200.00/month Jan\u2013May 2025; second of five releases booked in February",
+      "opening": 32800.00,
+      "billed": 0.00,
+      "recognized": 8200.00,
+      "closing": 24600.00
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 renewal, order form C-026",
+      "term": "2025-01-01 to 2025-12-31",
+      "source": "documents/month_01/order_form_C-026.md; 24,000.00 billed upfront Jan 2025; release 1/12 = 2,000.00/month (revenue_policy_memo #1). Overlap with prior contract is an open item carried from January (exposure up to 10,000.00 through May if renewal term actually starts Jun 2025)",
+      "opening": 22000.00,
+      "billed": 0.00,
+      "recognized": 2000.00,
+      "closing": 20000.00
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025) \u2014 INV-2250 'Implementation & license \u2014 one-time'",
+      "term": "order form 2025-02-01, service start 2025-02-01; no term stated for the 'license'; no separate subscription billed",
+      "source": "documents/month_02/order_form_C-025.md + invoices.csv INV-2250 36,000.00; collected in full by wire 2025-02-15. STATED ASSUMPTION \u2014 RECOGNIZED $0: policy #2 requires a separately priced, distinct implementation service actually delivered (this is one bundled unseparated line and no delivery evidence exists in the file); ASC 606-10-25-17 treats deployment/onboarding setup that transfers no separate service as no performance obligation; ASC 606-10-45-2 makes billed-before-performance amounts contract liabilities. CLIENT ANSWERED QUESTIONS.md round 2 post-close: 'nothing bespoke \u2014 they self-onboarded like everyone else; procurement just wanted it called a license' \u2014 self-serve onboarding is expressly NOT an implementation service (policy #2) and the license label is form over substance (ASC 606-10-25-10 et seq.). FINAL assumption: entire 36,000.00 stays deferred until term or performance documentation surfaces; no term or subscription exists in any document, so no release pattern is computable; library has no breakage/extinguishment guidance (stated gap). Not a 12-month contract \u2014 no 1/12 release applies",
+      "opening": 0.00,
+      "billed": 36000.00,
+      "recognized": 0.00,
+      "closing": 36000.00
+    },
+    {
+      "contract": "UNIDENTIFIED opening deferred revenue",
+      "term": "unknown",
+      "source": "Opening trial balance 2200 = 65,000.00 vs note_opening_deferred.md explaining only 41,000.00; residual 24,000.00 has no contract documentation. Question to client answered 'no additional information'. STATED ASSUMPTION: genuine contract liability of unknown origin; no revenue recognized absent evidence of performance (ASC 606-10-45-2); flagged through year-end. See month_01/open_items.md item 1",
+      "opening": 24000.00,
+      "billed": 0.00,
+      "recognized": 0.00,
+      "closing": 24000.00
+    }
+  ],
+  "totals": {
+    "opening": 78800.00,
+    "billed": 36000.00,
+    "recognized": 10200.00,
+    "closing": 104600.00
+  },
+  "tie_out": "Closing 78,800.00 + 36,000.00 \u2212 10,200.00 = 104,600.00, agrees with trial_balance.json account 2200 credit balance 104,600.00. Line sums: opening 32,800+22,000+0+24,000 = 78,800.00; billed 0+0+36,000+0 = 36,000.00; recognized 8,200+2,000+0+0 = 10,200.00; closing 24,600+20,000+36,000+24,000 = 104,600.00"
+}

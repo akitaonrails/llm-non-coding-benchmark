@@ -1,0 +1,138 @@
+[
+  {
+    "ref": "AJE-1",
+    "date": "2026-03-31",
+    "memo": "Reverse duplicate posting of Cascade Hardwoods invoice CH-7731 for $4,860.00 (paper mailed copy recorded 3/9/26; the same invoice CH-7731 dated 2/24/26 was already booked 2/26/26 from the emailed copy \u2014 vendor_bill_cascade_CH-7731_email_copy.pdf / _mailed_copy.pdf). Policy: vendor bills are recorded once, keyed by vendor invoice number.",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 4860.0,
+        "credit": 0
+      },
+      {
+        "account": "5000",
+        "debit": 0,
+        "credit": 4860.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-2",
+    "date": "2026-03-31",
+    "memo": "Record unidentified mobile deposit of 3/21/26 of $4,312.00 to suspense (bank_statement_2026-03.pdf line 03/21 MOBILE DEPOSIT; no matching invoice or customer in the A/R aging). Policy: unidentified receipts go to account 2100 until identified. Client response 2026-10-25: owner does not recall the deposit and office manager Carla does not know either; identification remains open and the credit stays in 2100 (policy deadline: April month-end). See open_items.md item 2. Follow-up request (2026-10-25) to rebook to misc income or contributions ahead of lender review declined per policy; rebooking needs an owner statement of what the receipt is or the bank's deposit image.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 4312.0,
+        "credit": 0
+      },
+      {
+        "account": "2100",
+        "debit": 0,
+        "credit": 4312.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-3",
+    "date": "2026-03-31",
+    "memo": "Record HCCB monthly service fee of $35.00 dated 3/31/26 not on the books (bank_statement_2026-03.pdf line 03/31 MONTHLY SERVICE FEE).",
+    "lines": [
+      {
+        "account": "6700",
+        "debit": 35.0,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 35.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-4",
+    "date": "2026-03-31",
+    "memo": "Reclassify online transfer in from check *4420 of 3/14/26 of $1,500.00 out of Sales 4000 into suspense 2100 (bank_statement_2026-03.pdf line 03/14; no invoice or customer matches \u2014 A/R aging has no $1,500 item). Policy: unidentified receipts are not revenue until matched.",
+    "lines": [
+      {
+        "account": "4000",
+        "debit": 1500.0,
+        "credit": 0
+      },
+      {
+        "account": "2100",
+        "debit": 0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-5",
+    "date": "2026-03-31",
+    "memo": "Capitalize the CabinetVision annual license of $1,188.00 charged to expense 3/11/26 (credit_card_statement_summit_2026-03.pdf: 'ANNUAL LICENSE 04/2026-03/2027'). The stated term starts 2026-04-01, so no March amortization: full $1,188.00 is unearned at 3/31/26; $1,188.00 / 12 = $99.00 per month amortizes 04/2026-03/2027. Policy: prepaid items covering more than one month are capitalized to 1300.",
+    "lines": [
+      {
+        "account": "1300",
+        "debit": 1188.0,
+        "credit": 0
+      },
+      {
+        "account": "6400",
+        "debit": 0,
+        "credit": 1188.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-6",
+    "date": "2026-03-31",
+    "memo": "Capitalize Allied Insurance premium billed 3/20/26 of $1,150.00 (GL ref BILL 'Allied Insurance \u2014 Q2 GL'): Q2 coverage (Apr-Jun 2026, assumed) covers no March days. $1,150.00 / 3 = $383.33 per month begins April. Policy: multi-month prepaids go to 1300.",
+    "lines": [
+      {
+        "account": "1300",
+        "debit": 1150.0,
+        "credit": 0
+      },
+      {
+        "account": "6300",
+        "debit": 0,
+        "credit": 1150.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-7",
+    "date": "2026-03-31",
+    "memo": "Summit Visa 3/15/26 'Uchi Restaurant' $212.00 reclassified from 6500 Meals to 3200 Owner's draws. Owner confirmed personal on 2026-10-25 (client response to QUESTIONS.md item 3): personal anniversary dinner charged to the company card by mistake. Policy: library/close_policy.md - owner personal transactions recorded to 3200 Owner's draws or 3100 Owner's contributions, never to expense. 6500 Meals is now 0.00; see open_items.md item 9.",
+    "lines": [
+      {
+        "account": "3200",
+        "debit": 212.0,
+        "credit": 0
+      },
+      {
+        "account": "6500",
+        "debit": 0,
+        "credit": 212.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-8",
+    "date": "2026-03-31",
+    "memo": "Reclassification (client response 2026-10-25): 3/14/26 incoming online transfer $1,500.00 described on the bank statement as 'ONLINE TRANSFER FROM CHK *4420' and in the ledger as 'Online transfer in *4420', posted 3/14/26, moved out of 2100 Unidentified receipts / suspense (AJE-4) into 3100 Owner's contributions. Owner confirmed the funds came from his personal checking account to cover the 3/13/26 payroll and are 'my money, not a sale' (client response to QUESTIONS.md item 2). Policy: library/close_policy.md - owner personal transactions through business accounts are recorded to 3200 Owner's draws or 3100 Owner's contributions, never to revenue or expense. Balance-sheet only; no effect on net income or adjusted cash.",
+    "lines": [
+      {
+        "account": "2100",
+        "debit": 1500.0,
+        "credit": 0
+      },
+      {
+        "account": "3100",
+        "debit": 0,
+        "credit": 1500.0
+      }
+    ]
+  }
+]

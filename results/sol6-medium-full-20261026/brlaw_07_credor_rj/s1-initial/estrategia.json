@@ -1,0 +1,35 @@
+{
+  "prazo_habilitacao_divergencia": "2026-04-27",
+  "contagem": "corridos",
+  "credito_fiduciario": {
+    "valor": 900000,
+    "sujeito_ao_plano": false,
+    "retomada_dos_bens_agora": false,
+    "fundamento": "Valor provisório informado pelo cliente, sem atualização comprovada até a data do pedido de RJ. A alienação fiduciária registrada exclui o crédito dos efeitos do plano; os bens descritos como essenciais não podem ser retirados durante o stay. A data e eventual prorrogação do stay não foram fornecidas. Fonte: library/lrf_49_essencialidade.md (LRF art. 49 §3º; art. 6º §§4º e 7º-A)."
+  },
+  "credito_quirografario": {
+    "valor": 1200000,
+    "classe": "IV",
+    "fundamento": "Duplicatas sem garantia, em valor provisório não atualizado de forma comprovada à data do pedido. A credora é EPP, portanto a parcela sujeita ao plano deve ser classificada na classe IV. Fonte: library/lrf_classes_voto.md (LRF art. 41)."
+  },
+  "divergencia_de_valor": {
+    "listado": 1600000,
+    "correto": 2100000
+  },
+  "fianca_do_socio": {
+    "extinta_pela_homologacao": false,
+    "fundamento": "A homologação, por si, não extingue a fiança de Edson na CCB da Atlas com o Banco Horizonte. A cláusula de supressão de garantias só vincula o titular da garantia se ele a aprovar expressamente; não há notícia de anuência do banco. Fonte: library/sumula_581_coobrigados.md (STJ Súmula 581; LRF arts. 49 §1º e 59)."
+  },
+  "voto": {
+    "classe": "IV",
+    "criterio": "Apenas a parcela de R$ 1.200.000,00 sujeita ao plano confere voto; na classe IV a aprovação é por maioria simples dos credores presentes, por cabeça, não pelo valor. Valores sujeitos à conferência. Fonte: library/lrf_classes_voto.md (LRF arts. 41 e 45)."
+  },
+  "objecao_ao_plano_prazo": "30 dias corridos da publicação da relação de credores do AJ (art. 7º §2º); essa publicação não consta dos documentos, por isso ainda não há data final calculável. Observar a cláusula que submete fiduciários e a cláusula sobre fianças. Fonte: library/lrf_classes_voto.md (LRF art. 55) e library/lrf_habilitacao_prazos.md (LRF art. 189 §1º).",
+  "acoes_imediatas": [
+    "Até 27/04/2026, completar e encaminhar ao AJ a divergência administrativa, com endereço da credora, data do pedido de RJ, saldos atualizados e documentos de suporte; a minuta atual não está apta a protocolo como peça completa. Fonte: library/divergencia_habilitacao_forma.md (LRF art. 9º) e library/lrf_habilitacao_prazos.md (LRF art. 7º §1º).",
+    "Requerer correção da relação: excluir R$ 900.000,00 fiduciários dos créditos sujeitos e lançar R$ 1.200.000,00 de duplicatas na classe IV, ambos provisórios; R$ 900.000,00 + R$ 1.200.000,00 = R$ 2.100.000,00, diferença total de R$ 500.000,00 sobre R$ 1.600.000,00 listados.",
+    "Não retirar os bens essenciais durante o stay; conferir o marco inicial e eventual prorrogação antes de qualquer medida de retomada. Fonte: library/lrf_49_essencialidade.md (LRF art. 49 §3º; art. 6º §§4º e 7º-A).",
+    "Monitorar a publicação da relação do AJ para impugnação em 10 dias e para a objeção ao plano em 30 dias. Fonte: library/lrf_habilitacao_prazos.md (LRF art. 8º) e library/lrf_classes_voto.md (LRF art. 55).",
+    "Solicitar ao Banco Horizonte posição expressa sobre a cláusula de supressão da fiança; até prova de anuência, tratar a garantia pessoal como subsistente. Fonte: library/sumula_581_coobrigados.md."
+  ]
+}

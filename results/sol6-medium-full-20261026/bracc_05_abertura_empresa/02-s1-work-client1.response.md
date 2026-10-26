@@ -1,0 +1,9 @@
+The new answers support a workable path: keep the property in Felipe’s name, have him lease the clinic’s space and the dentist’s space directly, and have Marina participate only as a passive shareholder. Luana can work for the clinic, but services cannot pay for 20% of an LTDA’s capital. I’ll draft the documents around that structure and mark the remaining choices as open.
+
+The required files are drafted, and `numeros.json` validates. I found one factual inconsistency worth flagging before closing: the client reports a 2010 marriage under universal community of property without a marital agreement. The property extract also names that regime, but the library does not establish how to verify it, so the filing checklist will require the marriage record.
+
+Concluí o parecer, os cálculos e as minutas em [deliverable](/work/workspace/deliverable/STATUS.md). A estrutura proposta mantém Marina como cotista passiva, Felipe como proprietário e locador direto dos espaços, e Luana como profissional remunerada sem quotas por serviços.
+
+O plano de retiradas de **R$ 600 mil/ano** supera o lucro projetado de **R$ 420 mil/ano** em **R$ 180 mil**. Na estrutura proposta não há transferência do imóvel à clínica, portanto o ITBI dessa operação é zero. A opção pelo Simples permanece condicional.
+
+O [STATUS.md](/work/workspace/deliverable/STATUS.md) registra **COMPLETE WITH OPEN ITEMS**: faltam, entre outros dados, comprovar o regime matrimonial declarado, definir o administrador e sua remuneração, e fechar os contratos de locação. O [contrato proposto](/work/workspace/deliverable/contrato_social_ajustado.md) não deve ser protocolado com esses campos em aberto.

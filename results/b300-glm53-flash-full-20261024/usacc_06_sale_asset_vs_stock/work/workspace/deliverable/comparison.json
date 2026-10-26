@@ -1,0 +1,32 @@
+{
+  "engagement": "Brightline Cabinetry — comparison of Buyer A (Lone Star) asset sale vs Buyer B (Hensley) stock sale",
+  "rates_used": {"ordinary": 0.37, "long_term_capital_gain": 0.20, "corporate_big_1374": 0.21, "niit": 0, "texas_personal_income_tax": 0},
+  "asset_sale_buyer_a_as_drafted": {
+    "ordinary_income": 1070000,
+    "capital_gain": 1450000,
+    "entity_level_tax": 237300,
+    "total_tax": 867529,
+    "net_after_tax": 2232471,
+    "notes": "ordinary_income = inventory 10,000 + §1245 recapture 660,000 (Class V as drafted) + covenant 400,000, before the 48,300 ordinary share of the §1366(f)(2) BIG-tax loss pass-through; capital_gain = goodwill 1,450,000, before the 189,000 capital share of the BIG-tax loss pass-through. total_tax = entity 237,300 + personal 630,229."
+  },
+  "stock_sale_buyer_b": {
+    "ordinary_income": 0,
+    "capital_gain": 2430000,
+    "entity_level_tax": 0,
+    "total_tax": 486000,
+    "net_after_tax": 2364000,
+    "notes": "Gain = 2,850,000 price − 420,000 stock basis, all capital, 20%. §453 installment: year-1 recognized gain 2,003,684.21 (tax 400,736.84); thereafter 85,263.16 gain per 100,000 note-principal year (tax 17,052.63/yr). Note interest 90,000 over 5 years is additional ordinary income (tax 33,300) on top of the 2,850,000 price; excluded from the price-based figures above."
+  },
+  "asset_sale_counter_allocation": {
+    "ordinary_income": 510000,
+    "capital_gain": 2010000,
+    "entity_level_tax": 237300,
+    "total_tax": 772329,
+    "net_after_tax": 2327671,
+    "notes": "Counter: Class III 200,000 / Class IV 140,000 / Class V 650,000 / Class VI covenant 100,000 / Class VII goodwill 2,010,000. ordinary_income = §1245 recapture 410,000 + covenant 100,000 (inventory gain eliminated at FMV 140,000), before the 48,300 ordinary BIG-tax loss offset; capital_gain = goodwill 2,010,000 before the 189,000 offset. Saves 95,200 vs Buyer A as drafted."
+  },
+  "ray_naive_estimate": {
+    "net_after_tax": 2480000,
+    "notes": "Ray's buddy: all 3,100,000 capital at 20% → tax 620,000. Actual as drafted: 867,529 of tax, net 2,232,471 — Ray is overstating his Buyer A net by 247,529 (34.5% of the price is ordinary-rate income, plus the §1374 entity-level built-in-gains tax)."
+  }
+}

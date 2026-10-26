@@ -1,0 +1,5 @@
+A afirmação em audiência traz uma tese diferente da dissolução irregular: possível ato pessoal de Ana durante a gestão. Vou acrescentar resposta específica. A responsabilidade por esse fundamento exige identificar e provar a conduta atribuída a ela; a fala, sozinha, não estabelece sonegação.
+
+Minha resposta em audiência seria: **“A gerência de Ana na época e a omissão de receitas não provam, por si, que ela praticou sonegação. A Fazenda precisa identificar o ato pessoal, sua participação e a prova correspondente.”**
+
+Atualizei a [defesa](/work/workspace/deliverable/sessao4/defesa_redirecionamento.md) e a [carta a Ana e Bruno](/work/workspace/deliverable/sessao4/carta_aos_socios.md). A saída de Ana em 2023 responde à tese de dissolução irregular posterior; se surgir prova de ato ilícito pessoal durante sua gestão, essa será uma questão distinta a enfrentar.

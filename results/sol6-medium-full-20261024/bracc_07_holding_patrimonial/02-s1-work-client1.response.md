@@ -1,0 +1,1 @@
+The client wants Marcos limited to the legal minimum. I’ll model that limit and the tax figures using the available facts, while marking where missing title records, property locations, and expense amounts prevent a definitive figure.

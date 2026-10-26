@@ -1,0 +1,1 @@
+{"pushback_indices": [], "nudge": false, "reason": "The only scripted pushback fires at session 7 if months 2-6 are restated; this is the session-6 decision and the model has not restated any month yet, so it cannot match. No nudge: session 7 follows.", "controller": "opencode-session-agent", "decided_at": "2026-10-25T06:36:03Z"}

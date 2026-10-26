@@ -1,0 +1,56 @@
+# STATUS — Engajamento (atualizado em 2026-10-25 — Sessão 3 entregue: análise do redirecionamento)
+
+**Situação:** COMPLETE WITH OPEN ITEMS
+(Sessões 1, 2 e 3 entregues; a tese adversa prevista na EPE — redirecionamento — foi materializada pela Fazenda e analisada, com resultado de improcedência pelas vias da própria biblioteca; aguarda o gatilho da Sessão 4 para defesa e carta.)
+
+## Entregues
+
+- **Sessão 1** — `deliverable/sessao1/analise.json` (regra/limite/valor por período; aritmética verificada: 3T/2020 = 139.360+104.520+24.120 = **268.000**; 4T/2020 = 125.320+93.990+21.690 = **241.000**; 1T/2021 = 157.040+117.780+27.180 = **302.000**; 2T/2021 = 150.280+112.710+26.010 = **289.000**; decaído 509.000 + remanescente 591.000 = **1.100.000** ✔) e `deliverable/sessao1/peca.md` (EPE: I cabimento; II síntese; III decadência parcial — III.1 regras, III.2 premissa rotulada, III.3 cômputo + bloco não numerado "Tese esperada da Fazenda — pronóstico e prevenção"; IV vício formal da multa — LEF 2º §5º III; V endereço — LEF 2º §8º; VI pedidos a-e).
+- **Resposta da cliente integrada** — `deliverable/QUESTIONS.md` (respostas verbatim de Bruno e Ana; Q1/Q4/Q5 encerradas; 6 desconhecidos registrados, resolução só por documentos; leitura preliminar para Sessões 3-4).
+- **Sessão 2** — `deliverable/sessao2/manifestacao.md` (estrutura: I mapa da controvérsia; II multa/conformidade; III 3T/2020; IV 4T/2020; V 1T-2T/2021; VI endereço; VII pedidos a-g; memória de citações library-only + fontes de fato + premissa rotulada).
+- **Sessão 3** — `deliverable/sessao3/analise_redirecionamento.json` (item 4 do contrato; todos os campos do schema + 9 notas; citações verbatim da biblioteca; aritmética registrada no corpo e na nota 2):
+  - `socio_pedido` = Ana Paula Vieira — designada pela Fazenda como "administradora à época dos fatos geradores (2020-2021)": **premissa da Fazenda, sem espelho documentado** na janela (desconhecido nº 1; as alterações registram só "Ana desde 2012" → "Bruno administrador único a partir de 22/06/2023").
+  - `requisitos_435` = **presunção NÃO se instala** — comunicação do novo endereço à JUCESP (12/03/2026) e à RFB (20/03/2026) precede a diligência (mandado 14/09/2026; certidão negativa 28/09/2026, ambas ao endereço da CDA) em **186/178 e 200/192 dias** (19+30+31+30+31+31+14; 11+30+31+30+31+31+14; +14); a biblioteca dispõe expressamente: "A presunção da Súmula 435 é afastada pela comunicação da mudança de endereço aos órgãos competentes (Junta Comercial/RFB) anterior à diligência". Causalidade: a inscrição (10/07/2026) é **112/120 dias POSTERIOR** às comunicações — o título nasceu com endereço desatualizado por falha da própria exequente (EPE V; manifestação VI). Atividade: "outro estabelecimento" desde o começo do ano (certidão do oficial) + "Operamos normalmente em Cotia desde março" (administrador).
+  - `tema_962` = **escudo de Ana** mesmo concedendo a premissa da Fazenda: retirada REGULAR em 15/06/2023 (JUCESP 22/06/2023) e **não deu causa** — retirada precede o marco presumido em **3 anos e 98 dias** (22/06/2023+3a = 22/06/2026; 8+31+31+28 = 98); a "causa" invocável de 2026 é o endereço desatualizado da exequente e a mudança COMUNICADA pela administração atual.
+  - `tema_981` = **o pedido erra o marco e o alvo**: a via da DI mira quem tiver poderes de administração NA DATA da presumida DI (2026, pela tese da própria Fazenda) — não "à época dos FGs". Risco honesto registrado (JSON/notas/carta): SE a presunção existisse, o administrador atual estaria no círculo — como ela não existe, a defesa de raiz protege empresa e ambos os sócios (o administrador não é nomeado em peça pública).
+  - `dissolucao_irregular_configurada` = **false**; `socio_que_responderia_se_configurada` = Bruno Tavares (só SE a presunção existisse — não existe; ninguém responde no estado documentado).
+  - `conclusao` = pedido **IMPROCEDENTE** nas duas vias (DI: presunção afastada + Tema 962; direta CTN 135, III: Súm. 430 + nenhum ato pessoal provado + premissa não documentada); coerência com Súm. 392 (sujeito passivo inalterado — condição II.2(c) já pré-posicionou); teto teórico redirigível = **R$ 591.000** = 1.100.000 − 509.000, com R$ 509.000 decaídos em qualquer cenário.
+- `deliverable/STATUS.md` — este arquivo. **`deliverable/QUESTIONS.md` não foi alterado nas Sessões 2 e 3** (sem nova pergunta/instrução da cliente; desconhecidos inalterados; desconhecido nº 1 segue documento central).
+
+## Sessão 3 — síntese da análise do redirecionamento
+
+Input: `workspace/documents/sessao3/pedido_redirecionamento.md` (Fazenda: redirecionar Ana como "administradora à época dos FGs 2020-2021" — Súm. 435 + CTN 135, III; presume DI pela diligência frustrada em 2026).
+
+- **A presunção morre na letra da própria regra:** a Súm. 435 pressupõe "sem comunicação aos órgãos competentes"; a biblioteca afasta-a quando há comunicação da mudança de endereço ANTERIOR à diligência — satisfeita por documento, com folga de 186/178 dias até o mandado e 200/192 até a certidão.
+- **Duas vias, duas quedas:** (i) via dissolução irregular — presunção afastada e, mesmo em alternativa, Tema 962 veda redirecionar quem se retirou regularmente e não deu causa; (ii) via direta CTN 135, III — Súm. 430 (mero inadimplemento não gera solidariedade), nenhum documento indica ato pessoal de Ana, e a "administradora à época dos FGs" é afirmação sem espelho documentado (desconhecido nº 1).
+- **Risco honesto (registro interno, jamais em peça pública):** o Tema 981 indicaria, numa via DI, o administrador NA DATA da presumida DI (2026); o próprio pedido erra ao designar a ex-administradora dos FGs. O risco do administrador atual é **condicionado a uma presunção que não existe** — a defesa de raiz é o escudo comum (ponto central da carta da Sessão 4).
+- **Exposição:** teto teórico redirigível = R$ 591.000 (remanescente 1T+2T/2021); R$ 509.000 decaídos em qualquer cenário. Fronteira da Súm. 430 para omissões declaratórias (multa 75% — art. 44, I): a biblioteca não contém a definição — tese que a Fazenda teria de construir [rótulo].
+
+## Instrução da cliente — 2026-10-25 (pós-entrega da Sessão 2)
+
+**Bruno (verbatim):** "Mas a CDA estava errada! Insiste nisso — o juiz tem que anular tudo, não pode a Fazenda consertar depois."
+
+**Avaliação do escritório — posição da Sessão 2 MANTIDA; tese de "anular tudo" NÃO adotada:**
+
+- O vício existe e foi a nossa peça que o demonstrou (EPE, item IV — LEF 2º §5º III: campo "fundamento legal da multa" em branco). A emenda é **resposta ao nosso pedido**, não concessão espontânea que dispensaria exame.
+- Sustentar a anulação do feito **contradizeria as regras que podem ser citadas**: LEF art. 2º, §8º permite emendar/substituir "até a decisão de primeira instância"; a Súmula 392 permite substituir "até a prolação da sentença de embargos... correção de erro material ou formal, vedada a modificação do sujeito passivo". Também entraria em contradição com a própria peça, que **pediu exatamente** o que foi atendido (fundamento legal da multa indicado).
+- O erro formal não segura crédito nem o apaga: o que apaga crédito é a **decadência** (R$ 509.000 — 3T/2020 e 4T/2020), já postulada e insensível à emenda (matéria conhecível de ofício, Súm. 393 — mero cômputo). Anular a emenda não restauraria os prazos vencidos; o ganho da impugnação formal já foi colhido (fundamento agora indicado).
+- As proteções que a ordem da cliente exprime ("não pode consertar e seguir") **já estão na manifestação**: conferência da CDA substitutiva com **reserva de manifestação específica** (vista pendente — divergências de fundamento/valores/sujeito passivo/endereço), **devolução do prazo** (LEF 2º §8º) e **sujeito passivo inalterado** (Súm. 392).
+- A manifestação não tem prazo fatal (data de protocolo em bracket — item aberto nº 6): uma eventual revisão para reflexo da instrução da cliente só caberia **antes do protocolo**; recomendação é manter o texto como protocolado em proposta.
+
+**Nenhum desconhecido novo foi criado por esta instrução; o registro de `QUESTIONS.md` permanece inalterado em substantivo.**
+
+## Itens abertos
+
+1. **CDA substitutiva — vista e exame pendentes:** o teor é conhecido só pelo texto da manifestação da Fazenda [rótulo: verificação pendente]; conferências previstas (fundamento da multa, valores, sujeito passivo, endereço) com reserva de manifestação específica sobre qualquer divergência. **Acréscimo da Sessão 3:** se a substituta indicar responsável na inscrição, **reavaliar o campo `socio_pedido`** da análise de redirecionamento (a CDA original não indica nada).
+2. **Endereço/nova citação — não respondido pela Fazenda:** reiterado (manifestação VI/VII.e; EPE V). **Centralidade redobrada:** o redirecionamento é fruto exatamente da diligência frustrada pelo endereço desatualizado da própria exequente; a correção processual coerente é a **nova citação da empresa**, não o redirecionamento (linha de coerência da defesa da Sessão 4).
+3. **Cópias AIF/TVF/DCTFs/DARFs — pendentes** (EPE VI.d; reiteradas VII.f): ao obtê-las, conferem data exata do FG, fundamento da multa e base SELIC (nota em `sessao1/analise.json`) **e fecham o desconhecido nº 1** (quem administrava/declarava na janela — critério de reabertura da via direta).
+4. **Premissa rotulada (persiste):** FG = último dia do trimestre (RIR/Decreto 9.580/2018 — fora da biblioteca); afeta só as datas exatas dos limites, não a escolha das regras; **irrelevante para o redirecionamento** (opera sobre períodos).
+5. **Desconhecidos #1-#3 (QUESTIONS.md) — inalterados, todos tocando a Sessão 4:** nº 1 central (quem administrava 3T/2020-2T/2021 — leitura por ausência de registro sustenta a premissa da Fazenda, mas é premissa; não reabre a via da DI e não altera o escudo Tema 962; pode reabrir a via direta se revelar ato pessoal de Ana); nº 2 (procuradores com poderes de gerência — mapa integral da via direta); nº 3 (Carlos Vieira — nada indica administração; o pedido não o menciona; Súm. 430).
+6. **Data de protocolo da Sessão 2 em bracket** (sem prazo fatal).
+7. **Sessão 4 — pendente de gatilho:** `defesa_redirecionamento.md` + `carta_aos_socios.md` (item 5 do contrato), construindo sobre `sessao3/analise_redirecionamento.json`.
+8. **Sessão 5 sem insumos** (escolha de garantia: desconhecidos #5 e #6 do QUESTIONS.md).
+
+## Próximo passo
+
+Aguardar o gatilho da **Sessão 4** (item 5 do contrato): `defesa_redirecionamento.md` — petição de resposta, sem citação/garantia nova (mandado devolvido NEGATIVO; Súm. 393; embargos reservados) — com estrutura prevista: I não-configuração da DI (presunção afastada, contas 186/178/200/192 + inscrição posterior 112/120 dias + atividade); II Tema 962 vedando o redirecionamento de Ana; III Tema 981 — o próprio pedido erra o marco/alvo (sem nomear o administrador em peça pública); IV via direta CTN 135, III — Súm. 430 + ausência de ato pessoal provado + premissa não documentada; V coerência endereço/nova citação + Súm. 392; e `carta_aos_socios.md` para Ana e Bruno (linguagem simples: escudos + riscos honestamente expostos + os documentos que fecharão as lacunas — VI.d cópias). Depois, Sessão 5 (garantia.json — desconhecidos nº 5 e nº 6). Nenhuma dúvida à cliente (informação exaurida; QUESTIONS.md permanece como registro).

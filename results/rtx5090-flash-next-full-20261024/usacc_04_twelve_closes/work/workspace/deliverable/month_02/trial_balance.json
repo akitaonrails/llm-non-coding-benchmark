@@ -1,0 +1,27 @@
+{
+  "as_of": "2025-02-28",
+  "basis": "cumulative",
+  "accounts": {
+    "1000": { "debit": "369630.00", "credit": "0.00" },
+    "1100": { "debit": "38200.00", "credit": "0.00" },
+    "1300": { "debit": "9600.00", "credit": "0.00" },
+    "1500": { "debit": "64000.00", "credit": "0.00" },
+    "1510": { "debit": "0.00", "credit": "24888.56" },
+    "2000": { "debit": "0.00", "credit": "17420.00" },
+    "2100": { "debit": "0.00", "credit": "0.00" },
+    "2200": { "debit": "0.00", "credit": "77600.00" },
+    "3000": { "debit": "0.00", "credit": "650000.00" },
+    "3900": { "debit": "205953.00", "credit": "0.00" },
+    "4000": { "debit": "0.00", "credit": "84300.00" },
+    "5000": { "debit": "108808.00", "credit": "0.00" },
+    "5010": { "debit": "10152.00", "credit": "0.00" },
+    "5100": { "debit": "6550.00", "credit": "0.00" },
+    "5200": { "debit": "14400.00", "credit": "0.00" },
+    "5300": { "debit": "19960.00", "credit": "0.00" },
+    "5400": { "debit": "2920.00", "credit": "0.00" },
+    "5700": { "debit": "3555.56", "credit": "0.00" },
+    "5900": { "debit": "480.00", "credit": "0.00" }
+  },
+  "totals": { "debit": "854208.56", "credit": "854208.56" },
+  "note": "Cumulative YTD incl. JE-2025-001 (2025-01-01 ASC 250 restatement, see month_01). February 2025: revenue 43,650.00 (30,450.00 monthly + 8,200.00 Trestle prior + 2,000.00 Trestle renewal + 3,000.00 Pinecone per assumed 12-month term - open_items.md section 1) less expenses 83,497.78 = net loss (39,847.78). YTD: revenue 84,300.00 - expenses 166,825.56 = (82,525.56). Cash 369,630.00 agrees to bank statement ending balance exactly. 2200 movement Feb: 54,800.00 + 36,000.00 (Pinecone INV-2250) - 8,200.00 - 2,000.00 - 3,000.00 = 77,600.00; under the assumed term, 24,000.00 of the Pinecone balance releases in 2026 (presentation flag - open_items.md section 1)."
+}

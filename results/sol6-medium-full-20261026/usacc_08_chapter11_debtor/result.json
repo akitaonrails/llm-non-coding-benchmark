@@ -1,0 +1,18 @@
+{
+  "case": "usacc_08_chapter11_debtor",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 785.3322970469599,
+  "controller_wait_seconds": 84.00825425586663,
+  "model_turn_seconds": 701.310395485023,
+  "turns": 8,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 1707123,
+    "cached_input_tokens": 1607680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 37079,
+    "reasoning_output_tokens": 14961
+  },
+  "api_equivalent_usd": 0.891212
+}

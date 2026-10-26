@@ -1,0 +1,47 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "questions": "# Questions for the client (non-blocking — assumptions were used to complete the engagement)\n\n1. **Exact legal name and FEIN** of the seller entity (\"Mesa Steel Supply\" appears in the file; if invoices were issued by a differently named entity, the proof of claim must be in that name). *[Assumption: \"Mesa Steel Supply\" is the correct creditor.]*\n\n2. **Is the 12-month payment ledger complete?** We assumed no pre-petition invoices outside the six 2026 invoices are open (the $210,000 demand equals the sum of exactly those six, which supports the assumption).\n\n3. **Does Mesa hold any collateral, letters of credit, direct agreements with Redwood's lender, or deposits/offsetting accounts at Redwood?** We assumed none (claim filed as fully unsecured; no setoff asserted).\n\n4. **Were any other transfers exchanged with Redwood in the 90 days before March 10, 2026** (refunds, returns, credit memos, applied deposits) besides the four payments on the ledger? We assumed none.\n\n5. **Which DIP lender holds the blanket lien referenced in the case materials**, and is there any evidence the lien does not cover the delivered steel? This would change only the reclamation answer (currently $0 expected), not the claim.\n\n6. **Was the critical vendor motion (Dkt. 44) accompanied by a proposed order that names categories or specific vendors, and has debtor's counsel issued any trade-agreement form?** Needed to prepare Mesa's response/designation request before the April 2, 2026 hearing.\n\n7. **Any post-petition invoices or deliveries since March 10, 2026?** None have been received to date; if supply continues under a trade agreement after critical-vendor designation, those are kept outside the $125,000 claim.\n",
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "credit_bureau",
+    "critical_vendor"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,214 @@
+[
+  {
+    "ref": "JE-2025-08-01",
+    "date": "2025-08-01",
+    "memo": "August monthly subscription invoices INV-2374..INV-2397 (24 recurring customers C-001..C-024), 30,450.00; services delivered throughout August, billed and collected in-month. Includes final August invoice to Alder Studios LLC (C-012) 1,800.00 \u2014 customer cancels effective 2025-08-31 per 08/11 email (documents/month_08/email_cancellation_C-012.txt); August is in the notice period, service performed and earned in full (open item 16). September run-rate drops to 23 customers / 28,650.00",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-02",
+    "date": "2025-08-31",
+    "memo": "Trestle Freight LLC (C-026) renewal: eighth of twelve 2,000.00 monthly releases on the 24,000.00 upfront annual subscription (order form C-026; revenue_policy_memo #1); 8,000.00 remains, final releases Sep-Dec 2025. Open item 3 (stated-term overlap, exposure frozen at 10,000.00 cap) continues",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2000.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 2000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-03",
+    "date": "2025-08-31",
+    "memo": "Marigold Schools Inc (C-027): sixth of twelve 1,500.00 monthly releases on the 18,000.00 annual subscription billed upfront Mar 2025 (order form C-027; term 2025-03-01 to 2026-02-28; revenue_policy_memo #1); 9,000.00 remains. MSA v3.2 gap is open item 1; treatment does not depend on it",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 1500.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-04",
+    "date": "2025-08-31",
+    "memo": "Quarry Analytics Co (C-028): fourth of twelve 2,500.00 monthly releases on the 30,000.00 annual subscription billed upfront May 2025 (order form C-028; term 2025-05-01 to 2026-04-30; revenue_policy_memo #1); 20,000.00 remains; MSA v3.2 gap open item 13",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2500.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 2500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-05",
+    "date": "2025-08-31",
+    "memo": "Saltline Hospitality (C-029): third of twelve 1,800.00 monthly releases on the 21,600.00 annual subscription billed upfront Jun 2025 (order form C-029; term 2025-06-01 to 2026-05-31; revenue_policy_memo #1); 16,200.00 remains; MSA v3.2 gap open item 14",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 1800.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-06",
+    "date": "2025-08-31",
+    "memo": "Pinecone Dental Group (C-025): seventh of twelve 3,000.00 monthly releases on the 36,000.00 annual subscription commencing 2025-02-01 per Amendment No. 1 (ASC 250 correction booked in July, JE-2025-07-06, disclosed in open_items.md item 15); 15,000.00 remains, term to 2026-01-31",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 3000.0,
+        "credit": 0
+      },
+      {
+        "account": "4000",
+        "debit": 0,
+        "credit": 3000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-07",
+    "date": "2025-08-26",
+    "memo": "August cash receipts, 24 ACH deposits totaling 30,450.00 (documents/month_08/cash_receipts.csv), matched 1:1 by customer+amount to the 24 August invoices and 1:1 to the 24 bank deposits (08/20-08/26); all invoices collected in-month; no opening A/R collected (open item 7)",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30450.0,
+        "credit": 0
+      },
+      {
+        "account": "1100",
+        "debit": 0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-08",
+    "date": "2025-08-09",
+    "memo": "August vendor bills per documents/month_08/vendor_bills.csv; account mapping per open item 11 (controller-assigned): AWS 10,760.00 -> 5000 Hosting (July 10,640.00, +120.00 usage variance), WeWork 7,200.00 -> 5100 Rent, Notion/Slack/GitHub 1,460.00 -> 5200 Software, Google Ads 3,600.00 -> 5300 Marketing (July 3,550.00, +50.00), Gusto fees 240.00 -> 5400 G&A other; total 23,260.00. NO Harbor Law LLP bill in August \u2014 vendor silent for a second consecutive month after the last bill 06/09 (bills on file 03/09 and 06/09; open item 2, month attribution corrected)",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 10760.0,
+        "credit": 0
+      },
+      {
+        "account": "5100",
+        "debit": 7200.0,
+        "credit": 0
+      },
+      {
+        "account": "5200",
+        "debit": 1460.0,
+        "credit": 0
+      },
+      {
+        "account": "5300",
+        "debit": 3600.0,
+        "credit": 0
+      },
+      {
+        "account": "5400",
+        "debit": 240.0,
+        "credit": 0
+      },
+      {
+        "account": "2000",
+        "debit": 0,
+        "credit": 23260.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-09",
+    "date": "2025-08-09",
+    "memo": "August vendor bills paid by ACH: 08/05 AWS 10,760.00, 08/06 WeWork 7,200.00, 08/07 Gusto fees 240.00, 08/08 Notion/Slack/GitHub 1,460.00, 08/09 Google Ads 3,600.00 \u2014 all five traced to bank statement withdrawals",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 23260.0,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 23260.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-10",
+    "date": "2025-08-25",
+    "memo": "August payroll per documents/month_08/payroll_register.json: gross 54,404.00 (6000), employer taxes & benefits 5,076.00 (6100), total employer cost 59,480.00 paid in cash (net 48,200.00 + taxes remitted 11,280.00 = both legs on bank statement 08/25). Register identical to May/June/July for the fourth consecutive month (9 employees) \u2014 observation, open_items note; withholdings 6,204.00 remit in same month, no residual liability",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 54404.0,
+        "credit": 0
+      },
+      {
+        "account": "6100",
+        "debit": 5076.0,
+        "credit": 0
+      },
+      {
+        "account": "1000",
+        "debit": 0,
+        "credit": 59480.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-08-11",
+    "date": "2025-08-31",
+    "memo": "Monthly depreciation: computer equipment 64,000.00 / 36-month straight line = 1,777.78 (unchanged since January; accumulated depreciation 33,777.46 -> 35,555.24 after 8 months; rounding of the 1,777.7777 periodic charge settles at the end of the useful life)",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 1777.78,
+        "credit": 0
+      },
+      {
+        "account": "1510",
+        "debit": 0,
+        "credit": 1777.78
+      }
+    ]
+  }
+]

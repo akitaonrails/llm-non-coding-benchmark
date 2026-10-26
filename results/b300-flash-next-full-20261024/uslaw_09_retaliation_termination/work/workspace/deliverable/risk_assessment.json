@@ -1,0 +1,76 @@
+{
+  "terminate_today": "no",
+  "claims": [
+    {
+      "claim": "Title VII § 704(a) retaliation (42 U.S.C. § 2000e-3(a)) — adverse action for filing an internal sexual-harassment complaint",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Protected activity: written internal harassment complaint against Regional VP Tom Hale, filed with HR 2026-09-12; an internal complaint of sexual harassment is protected opposition (library/title_vii_704a.md).",
+        "Temporal proximity: the accused, Tom Hale, opened a PIP on Dana 4 days after the complaint (09-12 → 09-16); HR sought termination 24 days after the complaint (09-12 → 10-06). Very close proximity (days to a few weeks) can establish causation (library/title_vii_704a.md).",
+        "Client admissions 10-06: 'Tom wrote the PIP and Tom wants her out. I was just processing it' (HR Director, Ortiz). The sole decision-maker on the PIP and the termination is the person she accused; HR acknowledges it is executing his instruction.",
+        "Pretext via comparators: Whitcomb's 2026 YTD attainment (88%) is higher than Brennan 79%, Osei 84%, and Park 86% (deltas +9, +4, +2), yet she alone is on a PIP; she is also the only team member who filed a complaint (library/title_vii_704a.md — pretext may be shown by 'disparate treatment of comparators who did not complain').",
+        "Pretext via thin justification: the PIP opened 09-16 is the first written performance document in a file with no prior discipline or PIP; ratings were 'Meets' or better every year (2022 Exceeds/118%)."
+      ]
+    },
+    {
+      "claim": "FMLA interference and retaliation (29 U.S.C. § 2615(a); 29 C.F.R. § 825.220) — sitting on a pending leave request and terminating to avoid leave",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "Dana requested intermittent FMLA leave 2026-09-30 (care for mother post-surgery); medical certification submitted 10-03. Client confirms 10-06: request 'hasn't been approved or denied' — and the reason given is 'Tom said to wait.' The accused directed HR to hold the leave process; the library prohibits using the taking of FMLA leave as a negative factor in employment actions (§ 825.220(c)), and § 2615(a)(1) reaches interference with or restraint of even the attempted exercise of a right, which covers the pending request (library/fmla_2615.md).",
+        "Direct evidence #1: Tom Hale → Lena Ortiz email, 2026-10-02: 'Let's get this done before she's out on leave. Once she's on FMLA it's a nightmare to move on her.' Direct evidence = statements by decision-makers linking the action to the protected activity (library/title_vii_704a.md — a Title VII framework applied to the FMLA claim by analogy; the FMLA library entry does not itself define a direct-evidence framework, so the borrowing is noted, not cited).",
+        "Direct evidence #2 (client admission, 10-06): HR confirms it froze the certification at Hale's direction — independent, ongoing interference even apart from any termination (library/fmla_2615.md).",
+        "An employee who requested leave need not have begun it (library/fmla_2615.md); timing: the leave request came 18 days after the harassment complaint (09-12 → 09-30); Hale's email came 2 days after the request and 4 days before the termination request; the PIP supplying the 'cause' was opened by the same manager just 4 days after the complaint (09-12 → 09-16).",
+        "Remedies exposure: lost wages, liquidated (double) damages, fees, reinstatement (library/fmla_2615.md). Damages cannot be sized — salary unknown (see open items). Note: any regulatory deadline for responding to a certification is NOT in this library [UNVERIFIED]; do not assume the delay is technically minor — it is evidence either way."
+      ]
+    },
+    {
+      "claim": "ADEA disparate treatment (age 42; state-law analog per Col. Rev. Stat. § 24-34-402)",
+      "strength_for_employee": "medium",
+      "key_facts": [
+        "Whitcomb (42, on PIP at 88% attainment) is treated worse than every under-40 comparator reviewed — Brennan (35, 79%), Osei (29, 84%), Park (31, 86%) — none on a PIP; the only better performer, Lind (47), has no complaint and no PIP.",
+        "The three most-favored comparators on performance-versus-discipline are all under the ADEA threshold while the one PIPed employee is over 40 — an age inference, though small sample (n=5) and the employer could point to attainment gaps.",
+        "Record is thin on age-specific statements; strength rests on comparator statistics and the same pretext facts as the retaliation claim. Separation is confirmed individual, not a group RIF ('Just her. No RIF.'), so an individual ADEA release is at issue, not a § 626(f)(1)(F) 45-day program."
+      ]
+    },
+    {
+      "claim": "Hostile work environment / failure to investigate (Title VII; Faragher/Ellerth; state analog)",
+      "strength_for_employee": "medium",
+      "key_facts": [
+        "Dana's 09-12 complaint alleges a Regional VP made repeated comments about her appearance and 'whether she's too distracted at home to travel' — facially gender-based; severity/pervasiveness on the full record is untested.",
+        "HR acknowledged the complaint but opened no investigation; client confirms 10-06 that no interim measures were taken ('Tom's been traveling. I was going to get to it') — 24 days of inaction as of the termination request. An employer that receives a harassment complaint must promptly and impartially investigate and take corrective action; failure undermines the Faragher/Ellerth affirmative defense and is itself evidence in a retaliation case (library/harassment_investigation_duty.md).",
+        "Client confirms no other complaints against Hale are on record — the environment claim rests on Dana's account; the duty-to-investigate failure does not depend on corroboration.",
+        "The complaint was filed with HR, the department Ortiz directs (her office acknowledged receipt), and she now concedes she is executing Hale's termination push. Any investigation must be conducted by someone outside the accused's chain of command (library/harassment_investigation_duty.md); excluding Ortiz's existing handling as well is our recommendation on these facts, not a library-stated rule."
+      ]
+    },
+    {
+      "claim": "State-law (Columbia) discrimination/retaliation/FMLA-analog claims",
+      "strength_for_employee": "high",
+      "key_facts": [
+        "At-will status is no defense: termination may not be for an unlawful reason — discrimination, retaliation, or exercise of statutory rights (library/columbia_at_will_exceptions.md).",
+        "Columbia law mirrors Title VII/FMLA but with a longer limitations period and uncapped compensatory damages (library/columbia_at_will_exceptions.md), so the same facts carry larger state-law exposure than the federal claims alone."
+      ]
+    }
+  ],
+  "separation_agreement_defects": [
+    "Consideration period: form gives 7 days to consider; OWBPA requires at least 21 days for an individual agreement — short by 14 days (29 U.S.C. § 626(f)(1)(F); library/adea_owbpa_626f.md). Client confirms 10-06 the separation is individual ('Just her. No RIF.'), so the 21-day period governs (45 days would apply only to a group program).",
+    "Revocation period: form gives 3 days to revoke; OWBPA requires at least 7 days and the agreement may not become effective until the revocation period expires — short by 4 days (29 U.S.C. § 626(f)(1)(G); library/adea_owbpa_626f.md).",
+    "No written advice to consult with an attorney appears in the form; § 626(f)(1)(E) requires it (library/adea_owbpa_626f.md).",
+    "'Release of all claims' on its face purports to waive claims arising after signing; § 626(f)(1)(C) prohibits waiver of future claims (library/adea_owbpa_626f.md).",
+    "Consequence if used as-is: the release is unenforceable as to ADEA claims and Dana could keep the 4 weeks' pay and still sue (Oubre v. Entergy, 522 U.S. 422 (1998); library/adea_owbpa_626f.md) — the company would pay for a release it does not get.",
+    "Note on scope: whether the FMLA release is enforceable cannot be verified from this library — no library item addresses FMLA waivers; treat as unverified and do not rely on it.",
+    "Consideration element (§ 626(f)(1)(D)) appears satisfiable (4 weeks' pay she is not otherwise owed), but her base salary and any existing entitlements are unknown — client has no further information; assumption stated, not verified."
+  ],
+  "comparator_analysis": "Account Manager team, 2026 YTD attainment (documents/comparator_data.csv): Lind 103%, Whitcomb 88%, Park 86%, Osei 84%, Brennan 79%. Whitcomb ranks 2nd of 5 and outperforms Brennan (+9 pts), Osei (+4 pts), and Park (+2 pts); none of those three is on a PIP, and none filed a complaint. Whitcomb is simultaneously the only PIP and the only complaint-filer — the pattern the library flags as pretext ('disparate treatment of comparators who did not complain', library/title_vii_704a.md). Age overlay: the three lower-performing non-PIP employees are all under 40 (35, 29, 31); the only comparator older than Whitcomb (Lind, 47) outperformed her and is a weak counter-example. The PIP's own targets (100% of quarterly quota) exceed what 4 of the 5 team members actually attained this year (everyone except Lind), and her file shows no prior written discipline — the stated grounds do not distinguish her from the untouched comparators. Updated by client admission 10-06: 'Tom wrote the PIP' — one decision-maker authored the sole PIP on the team and drives the termination, so there is no independent managerial judgment validating the comparator disparity.",
+  "recommended_course": [
+    "Do NOT terminate today or this week. Confirming 'we're fine' is impossible on this record.",
+    "Issue a litigation hold immediately: preserve email, texts and ESI of Tom Hale, Lena Ortiz, HR, and IT — the 10-02 Hale–Ortiz email and Ortiz's 10-06 admissions ('Tom said to wait'; 'I was just processing it') are exactly the material the hold exists to preserve; litigation is reasonably anticipated (an internal discrimination complaint followed by contemplated termination) (library/litigation_hold.md; Fed. R. Civ. P. 37(e)).",
+    "Open the harassment investigation now, run by someone outside Hale's chain of command (library/harassment_investigation_duty.md); we additionally recommend it run outside HR's existing handling — our judgment on these facts, since the complaint was received by Ortiz's department and she now concedes she is executing Hale's instruction. Use an external investigator.",
+    "Recuse Tom Hale from every decision affecting Whitcomb (PIP, leave, performance, termination) and cut off his communications with her and with HR on her file.",
+    "Process the FMLA request NOW, over the standing 'Tom said to wait' instruction: review the 10-03 certification, decide eligibility, and approve/designate the intermittent leave; leave may not be a negative factor (library/fmla_2615.md; 29 C.F.R. § 825.220(c)). Remove HR's existing handler from that decision; route it through counsel or neutral HR.",
+    "Suspend the PIP pending the investigation; if performance management is later justified, apply standards consistently against the comparator data, decide through someone outside Hale's chain (and not the complaint recipient), and document contemporaneously.",
+    "If separation is ever genuinely warranted, re-paper with a compliant agreement (see corrected_separation_agreement_terms.md: 21-day consideration [confirmed: individual separation, not a group program], 7-day revocation, attorney-consult advice, no future-claims waiver) and a clean, well-documented business case vetted by counsel.",
+    "Route all communications with Whitcomb through counsel; brief the VP that the 10-02 email and the 'wait' instruction would be plaintiff's exhibits #1 and #2.",
+    "Conflict note: Ortiz's role has changed — she is a fact witness whose interests may diverge from the company's ('I was just processing it'); she should be told the firm represents the company, and the company should consider independent counsel for the investigation's fact-gathering."
+  ],
+  "litigation_hold": true
+}

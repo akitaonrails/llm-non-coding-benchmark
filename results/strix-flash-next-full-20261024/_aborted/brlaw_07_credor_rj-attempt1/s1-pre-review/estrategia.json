@@ -1,0 +1,37 @@
+{
+  "prazo_habilitacao_divergencia": "2026-04-27",
+  "contagem": "corridos",
+  "credito_fiduciario": {
+    "valor": 900000,
+    "sujeito_ao_plano": false,
+    "retomada_dos_bens_agora": false,
+    "fundamento": "LRF art. 49 §3º: o crédito do proprietário fiduciário não se submete aos efeitos da RJ; prevalece o direito de propriedade (alienação fiduciária registrada). Porém, durante a suspensão do art. 6º §4º (stay de 180 dias, prorrogável uma vez — art. 6º §7º-A; STJ Tema 1.051) é vedada a retirada do estabelecimento da devedora dos bens de capital essenciais (2 empilhadeiras e o sistema de separação de pedidos). Essencialidade confirmada pelo cliente em 20/04: sem esses 3 bens a operação da Atlas para — a vedação de retirada incide sobre os três; e a recuperação depende desses bens, o que é alavanca de negociação. Retomada só ao fim do stay, cobrando fora do plano, sem deságio. A cláusula da minuta ('fiduciários sujeitos ao plano com deságio de 40%') não pode ser imposta sem anuência do credor."
+  },
+  "credito_quirografario": {
+    "valor": 1200000,
+    "classe": "IV",
+    "fundamento": "LRF art. 41, IV: classe IV reúne os titulares de créditos enquadrados como microempresa ou empresa de pequeno porte. Fornecedor Sul é EPP (reafirmado pelo cliente em 20/04: faturamento R$ 3,9 mi), mas a relação da Atlas a enquadrou indevidamente na classe III. Atenção: a biblioteca não contém os critérios legais de enquadramento ME/EPP (LC 123 fora do acervo), e nada nela vincula a classe IV à opção pelo Simples Nacional — o fato de a cliente estar no Lucro Presumido não afasta, pelo material disponível, o enquadramento no art. 41, IV; tratar como premissa e comprovar com declaração de receita. Risco remanescente: se o enquadramento não for aceito, o crédito cai na classe III. Classe IV tem tratamento melhor na minuta: deságio 30% (vs. 60%), 36 parcelas (vs. 120), carência 6 meses (vs. 24) — +R$ 360 mil projetados."
+  },
+  "divergencia_de_valor": {
+    "listado": 1600000,
+    "correto": 2100000
+  },
+  "fianca_do_socio": {
+    "extinta_pela_homologacao": false,
+    "fundamento": "Súmula 581/STJ: a RJ do devedor principal não impede o prosseguimento das ações e execuções contra coobrigados (fiança incluída). LRF art. 49 §1º: os credores conservam direitos e privilégios contra fiadores. LRF art. 59: a novação do plano não atinge as garantias, salvo aprovação expressa do titular da garantia (REsp 1.333.349, Tema 885). A cláusula da minuta que 'extingue fianças e avais' não vincula o Banco Horizonte, que não anuiu: confirmado pelo cliente em 20/04 — o banco não concordou com nada e já notificou o fiador (data da notificação não informada). A cobrança contra o Sr. Edson Lima segue permitida. Eventual direito de regresso do fiador contra a Atlas não é tratado na biblioteca — não opinamos sobre isso."
+  },
+  "voto": {
+    "classe": "IV",
+    "criterio": "Vota apenas com a parte sujeita ao plano (R$ 1,2 mi quirografário), na classe correspondente — classe IV por ser EPP; a parte fiduciária (R$ 900 mil) não vota. Nas classes I e IV a aprovação se dá por maioria simples dos presentes, por cabeça (LRF art. 45), de modo que o voto individual pesa. Se perder o prazo do art. 7º §1º, o crédito é retardatário e perde direito a voto (art. 10 §1º). Se a classe IV rejeitar o plano, o juiz ainda pode conceder a recuperação por cram down (art. 58 §1º), o que torna a mobilização da classe decisiva."
+  },
+  "objecao_ao_plano_prazo": "30 (trinta) dias contados da publicação da relação do administrador judicial (art. 7º §2º), em dias corridos (art. 189 §1º, I) — LRF art. 55. A relação do AJ ainda não foi publicada nos documentos recebidos: o prazo ainda não começou e deve ser acompanhado a partir da publicação. Alvos da objeção: a cláusula que submete fiduciários a deságio de 40% (viola art. 49 §3º) e a cláusula de extinção de fianças/avais (viola art. 59 e Súmula 581/STJ; só vincula quem aprovar).",
+  "acoes_imediatas": [
+    "IMEDIATA (20/04, após o cliente anunciar caminhão para buscar os bens esta semana): REVOGAR a retirada das 2 empilhadeiras e do sistema de separação. A autotutela está expressamente vedada: o art. 49 §3º NÃO PERMITE, durante o stay, a venda ou a retirada do estabelecimento da devedora dos bens de capital essenciais; o juízo da RJ pode determinar a suspensão de atos de constrição sobre esses bens (art. 6º §7º-A — stay de 180 dias, prorrogável uma vez; STJ Tema 1.051). A propriedade fiduciária está registrada e ninguém a contesta — ela garante a retomada AO FIM do stay, com crédito integral (fora do plano); não precisa de caminhão. Exigir confirmação escrita do cancelamento; se a retirada ocorrer, a peça (que declara que a credora não promoverá retirada) terá de ser retificada e a posição, fragilizada. A pena específica do texto integral do art. 6º §4º não está reproduzida na biblioteca — não opinada aqui (não verificada).",
+    "Protocolar HOJE (20/04/2026), e no mais tardar em 27/04/2026, ao administrador judicial (AJ Reorganiza Ltda., via e-mail/portal — fase administrativa, não ao juízo): (i) DIVERGÊNCIA contra o valor listado (R$ 1,6 mi) e o enquadramento em classe III, e (ii) HABILITAÇÃO do crédito fiduciário omitido (R$ 900 mil), com o conteúdo do art. 9º (valor atualizado até o pedido de RJ, origem, classificação, documentos, indicação e especificação da garantia em poder da devedora).",
+    "Pedir ao AJ a discriminação da parcela listada pela Atlas (R$ 1,6 mi), que não concilia com os títulos do cliente (1,2 mi + 900 mil = 2,1 mi).",
+    "Preparar objeção ao plano para a janela de 30 dias após a publicação da relação do AJ (art. 55), impugnando a cláusula de deságio fiduciário e a de supressão de garantias; acompanhar eventual cram down (art. 58 §1º).",
+    "Alertar o Sr. Edson Lima: a fiança da CCB do Banco Horizonte NÃO cai com a homologação (Súmula 581/STJ; art. 49 §1º; art. 59); o banco pode prosseguir contra ele. Confirmado em 20/04: o banco não anuiu e já notificou o fiador (data não informada) — NÃO ignorar a notificação; reunir CCB e contrato de fiança para responder; não assinar nada nem invocar a cláusula do plano contra o banco, que não a aprovou. Eventual regresso do fiador contra a Atlas está fora da biblioteca — não opinado.",
+    "Exercer o voto na classe IV (maioria simples por cabeça, art. 45) — a correção do enquadramento III→IV muda a economia do crédito (R$ 840 mil vs. R$ 480 mil recebíveis na minuta).",
+    "Sem mais informações do cliente: suprir os '[●]' da peça a partir dos registros da empresa e documentos comprobatórios (art. 9º, III: contrato, certidão de registro fiduciário, duplicatas, declaração de receita/EPP) ANTES do protocolo — e protocolar mesmo assim até 27/04/2026, com valores a valor nominal e reserva de complementação da atualização (art. 9º, II)."
+  ]
+}

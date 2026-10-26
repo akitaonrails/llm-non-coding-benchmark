@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a178a5-55e9-7003-90b7-30292ddbdf05"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Marcus’s $28,000 K-1 loss is limited to his **$11,500 stock basis**. He reports no direct loan to the company, so he has no debt basis. That leaves **$16,500 suspended** to carry forward until basis is restored. [Form 7203 instructions](/work/workspace/library/form7203_instructions_excerpt.md).\n\nPike’s guarantee of the company’s bank line does not count as a loan from Marcus. Under the supplied instructions, even a shareholder’s guarantee alone does not create debt basis; a direct shareholder loan does. Your buddy’s basis or loan facts may be different."}}
+{"type":"turn.completed","usage":{"input_tokens":290356,"cached_input_tokens":249856,"cache_write_input_tokens":0,"output_tokens":13157,"reasoning_output_tokens":3020}}

@@ -1,0 +1,46 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "questions": "# Perguntas ao cliente (respostas não bloqueiam os números, mas fechariam os itens abertos)\n\n1. **CNAEs / enquadramento das atividades:** a empresa está registrada (CNAE principal e secundários)\n   apenas com atividades de TI? Em especial: \"Consultoria de arquitetura\" (NFS‑e 1183) e \"Treinamento\n   equipe\" (NFS‑e 1186) fazem parte da mesma atividade‑fim de desenvolvimento/suporte de software?\n   (A biblioteca só exemplifica as atividades de TI — \"desenvolvimento, licenciamento, suporte etc.\" —\n   e não permite classificar treinamento/consultoria com segurança.)\n\n2. **Pró‑labore de abril/2026 (R$ 3.200,00):** o e‑mail diz que foi pago em 06/05/2026, mas o extrato\n   de maio (CSV e PDF) não traz esse débito — só DARF/GPS/FGTS ABR (07/05) e o pró‑labore de maio\n   (16/05). Foi pago em outra conta? Em que data efetivamente? (Para o fator R de maio/2026 o\n   resultado não muda: pela regra de \"valores pagos na janela\", ele fica fora da janela de qualquer\n   forma; mas a data exata define em qual mês ele entra depois.)\n\n3. **Pró‑labore da competência 2026‑03:** o resumo de folha mostra R$ 0,00 nesse mês. Ele foi\n   simplesmente não pago/não retirado, ou foi pago em outro mês?\n\n4. **Repartição por tributo (DAS):** consegue a tabela de repartição do PGDAS‑DAS de maio/2026 (ou o\n   percentual do Anexo V/4ª faixa que o programa usou)? Os percentuais que usamos para o Anexo V\n   (IRPJ 14%, CSLL 9%, COFINS 20%, PIS 4%, CPP 37%, ISS 16%) **não constam da biblioteca** e foram\n   usados como suposição não verificada.\n\n5. **Histórico 12 meses:** os valores de `faturamento_12_meses.csv` já incluem as locações de\n   notebooks dos meses anteriores (se houver)? Ou seja, é a receita bruta total de cada competência?\n\n6. **NF‑e 000.512:** o XML está preenchido como regime não optante (CST 01 de PIS/COFINS) e marcado\n   \"documento fictício … sem validade fiscal\". Confirmar que a locação de maio foi documentada em\n   documento fiscal válido — para o cálculo assumimos a operação como tal.\n\n# PERGUNTAS.md\n\nAs perguntas ao cliente estão em `QUESTIONS.md` (mesmo conteúdo; nome conforme a regra de trabalho\ndo contrato). Respostas não são necessárias para os números da apuração — ver `STATUS.md`.\n",
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "prolabore_abril",
+    "locacao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

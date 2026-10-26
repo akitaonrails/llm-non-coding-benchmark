@@ -1,0 +1,18 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 685.6592021109536,
+  "controller_wait_seconds": 81.00764745095512,
+  "model_turn_seconds": 604.6365714559797,
+  "turns": 8,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 1638103,
+    "cached_input_tokens": 1566336,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 31980,
+    "reasoning_output_tokens": 8324
+  },
+  "api_equivalent_usd": 0.7766012
+}

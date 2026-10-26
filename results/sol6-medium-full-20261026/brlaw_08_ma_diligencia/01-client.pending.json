@@ -1,0 +1,59 @@
+{
+  "case": "brlaw_08_ma_diligencia",
+  "questions": "# Perguntas aos sócios — venda da Vértice\n\n1. Qual é o **Preço Total** da venda das quotas (valor fixo, antes do earn-out)? Há parcelas, dívida ou ajuste de preço além do earn-out da cláusula 2.3? Precisamos do valor para converter em reais o teto de 15%, a conta-garantia de 20% e a proposta de limites de indenização.\n2. Qual é o **saldo contratual ainda não executado** do contrato Horizonte Azul na data prevista de fechamento? A contratante já foi consultada sobre anuência prévia e expressa à mudança de controle? Se sim, qual foi a resposta e há documento?\n3. Quem são todos os quotistas atuais, qual a participação de cada um e quais deles venderão? Algum titular do direito de preferência já renunciou por escrito ou o prazo contratual de 30 dias já correu? Informem as datas e forneçam as renúncias ou notificações existentes.\n4. O Município de Sorocaba já foi comunicado da alteração societária proposta? Há indicação de substituto para Hélio como responsável técnico, com registro no CREA e aceitação para o contrato público? Em que datas isso pode ocorrer?\n5. Para dimensionar as indenizações específicas: existe cálculo ou parecer de exposição para os 11 engenheiros PJ, as três reclamações trabalhistas, o IRPJ de R$ 310 mil e o ISS devido fora do Simples em 2025? Se existir, informem valor, premissas e documentos. O débito de IRPJ será quitado ou parcelado antes do fechamento?\n",
+  "facts": [
+    {
+      "id": "horizonte",
+      "trigger": [
+        "Horizonte Azul",
+        "anuência",
+        "mudança de controle",
+        "31%"
+      ],
+      "answer": "Hélio: a Horizonte Azul é nosso maior cliente; o diretor deles é meu amigo, mas o jurídico deles é duro. Não contamos da venda ainda.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pjs",
+      "trigger": [
+        "PJ",
+        "engenheiros",
+        "vínculo",
+        "horário",
+        "exclusiv"
+      ],
+      "answer": "Beatriz: os 11 engenheiros PJ trabalham 9h-18h aqui, exclusivos, com gestor. Sempre foi assim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "cnd",
+      "trigger": [
+        "CND",
+        "certidão",
+        "IRPJ 2023",
+        "parcel",
+        "débito"
+      ],
+      "answer": "Hélio: tem um débito de IRPJ de 2023 em cobrança, uns 310 mil; não parcelamos porque discordamos.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "revelado",
+      "trigger": [
+        "mostrou",
+        "data room",
+        "comprador viu",
+        "sabe dos PJ"
+      ],
+      "answer": "Beatriz: o Meridiano viu tudo no data room, inclusive a lista dos PJs e a certidão positiva. Não reclamaram.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "horizonte",
+    "pjs",
+    "cnd"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,18 @@
+{
+  "revenue_as_drafted": 1540000,
+  "adjustments": {
+    "halvorsen_loi": -480000,
+    "saltline_kits": -210000
+  },
+  "revenue_corrected": 850000,
+  "hosting": {
+    "treatment": "Embedded lease under ASC 842-10-15-3 to 15-20: dedicated servers identified by serial number, no substantive substitution right, customer directs use. Recognize right-of-use asset and lease liability at present value of lease payments; power/cooling/network are non-lease components. Q4 'hosting expense' of 54000 reclassified to ROU amortization plus interest. Amounts are stated-assumption figures: the client has confirmed it has no discount rate and no lease/non-lease price split (follow-up 2025-12-31), so an illustrative 9% annual rate and a 100%-lease assumption are used and flagged; sensitivity 6-12pct gives a 12/31/2025 liability of 503814 to 546327; undiscounted remaining payments 33 x 18000 = 594000; liability at commencement 2025-10-01 (PV of 36 payments at 9pct) = 566042. Payment dates assumed month-end (in arrears). No conclusion depends on these inputs.",
+    "rou_asset": 524468,
+    "lease_liability": 524468
+  },
+  "going_concern": {
+    "substantial_doubt": true,
+    "plans_probable": false,
+    "disclosure": "Substantial doubt about the ability to continue as a going concern exists and is disclosed (ASC 205-40-50-1 to 50-14). The 13-week cash flow forecast shows cash turning negative by the week ending 2026-02-20 (-105000) and reaching -509000 by 2026-03-27 absent new funding. The only mitigating plan in the file is the Crestline convertible-note term sheet, which is non-binding and subject to conditions precedent (Q4 revenue >= 1,500,000 as audited/reviewed and no going-concern qualification); under ASC 205-40 a non-binding term sheet with conditions precedent is not a probable plan, so the doubt is not alleviated. Financial statements must disclose the conditions and state that substantial doubt exists."
+  }
+}

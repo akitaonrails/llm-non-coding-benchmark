@@ -1,0 +1,52 @@
+{
+  "contracts": {
+    "Trestle Freight LLC \u2014 Jan\u2013Dec 2025": {
+      "opening": 2000,
+      "billed": 0,
+      "recognized": 2000,
+      "closing": 0
+    },
+    "Pinecone Dental Group \u2014 Feb 2025\u2013Jan 2026": {
+      "opening": 6000,
+      "billed": 0,
+      "recognized": 3000,
+      "closing": 3000
+    },
+    "Marigold Schools Inc \u2014 Mar 2025\u2013Feb 2026": {
+      "opening": 4500,
+      "billed": 0,
+      "recognized": 1500,
+      "closing": 3000
+    },
+    "Quarry Analytics Co \u2014 May 2025\u2013Apr 2026": {
+      "opening": 12500,
+      "billed": 0,
+      "recognized": 2500,
+      "closing": 10000
+    },
+    "Saltline Hospitality \u2014 Jun 2025\u2013May 2026": {
+      "opening": 10800,
+      "billed": 0,
+      "recognized": 1800,
+      "closing": 9000
+    },
+    "Vireo Clinics PBC \u2014 Sep 2025\u2013Aug 2026": {
+      "opening": 20250,
+      "billed": 0,
+      "recognized": 2250,
+      "closing": 18000
+    }
+  },
+  "unallocated_opening_deferred_revenue": {
+    "opening": 24000,
+    "billed": 0,
+    "recognized": 0,
+    "closing": 24000
+  },
+  "total": {
+    "opening": 80050,
+    "billed": 0,
+    "recognized": 13050,
+    "closing": 67000
+  }
+}

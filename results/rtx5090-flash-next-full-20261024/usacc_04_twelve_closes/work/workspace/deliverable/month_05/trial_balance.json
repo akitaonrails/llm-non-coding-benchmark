@@ -1,0 +1,107 @@
+{
+  "as_of": "2025-05-31",
+  "basis": "cumulative",
+  "accounts": {
+    "1000": {
+      "debit": "342530.00",
+      "credit": "0.00"
+    },
+    "1100": {
+      "debit": "98650.00",
+      "credit": "0.00"
+    },
+    "1200": {
+      "debit": "48200.00",
+      "credit": "0.00"
+    },
+    "1300": {
+      "debit": "9600.00",
+      "credit": "0.00"
+    },
+    "1500": {
+      "debit": "64000.00",
+      "credit": "0.00"
+    },
+    "1510": {
+      "debit": "0.00",
+      "credit": "30221.90"
+    },
+    "2000": {
+      "debit": "0.00",
+      "credit": "17420.00"
+    },
+    "2100": {
+      "debit": "11280.00",
+      "credit": "0.00"
+    },
+    "2200": {
+      "debit": "0.00",
+      "credit": "96200.00"
+    },
+    "3000": {
+      "debit": "0.00",
+      "credit": "650000.00"
+    },
+    "3900": {
+      "debit": "205953.00",
+      "credit": "0.00"
+    },
+    "4000": {
+      "debit": "0.00",
+      "credit": "222250.00"
+    },
+    "5000": {
+      "debit": "272020.00",
+      "credit": "0.00"
+    },
+    "5010": {
+      "debit": "25380.00",
+      "credit": "0.00"
+    },
+    "5100": {
+      "debit": "16750.00",
+      "credit": "0.00"
+    },
+    "5200": {
+      "debit": "36000.00",
+      "credit": "0.00"
+    },
+    "5300": {
+      "debit": "50800.00",
+      "credit": "0.00"
+    },
+    "5400": {
+      "debit": "7300.00",
+      "credit": "0.00"
+    },
+    "5600": {
+      "debit": "2500.00",
+      "credit": "0.00"
+    },
+    "5700": {
+      "debit": "8888.90",
+      "credit": "0.00"
+    },
+    "5900": {
+      "debit": "1200.00",
+      "credit": "0.00"
+    }
+  },
+  "totals": {
+    "debit": "1201051.90",
+    "credit": "1016091.90"
+  },
+  "notes": [
+    "Cumulative through 2025-05-31; reproduces exactly from the month_04 trial balance plus journal_entries.json JE-2025-047..060 (machine validation in this package's open_items.md section 6).",
+    "1000 260,300.00 equals the May bank statement ending balance exactly (see bank_reconciliation.md); includes the 48,200.00 GUSTO REFUND credit of 05/09 recorded in JE-2025-054.",
+    "1200 Other receivables - disputed bank debits (controller-created) is now NIL: the April claim for the duplicate net-pay debit was recovered IN FULL by the 05/09 GUSTO REFUND (JE-2025-054). Resolution and the inferred-link flag in open_items.md section 1; account retained at nil for traceability and possible future reuse.",
+    "1100 unchanged at 38,200.00: all May billings (30,450.00 monthly + 30,000.00 Quarry) collected in-month; this is the 2024-vintage balance, now in its FIFTH month of the engagement with no bank activity - escalated in open_items.md section 5.",
+    "2200 79,000.00 agrees exactly to deferred_revenue_rollforward.json: Quarry 27,500.00 + Trestle renewal 14,000.00 + Pinecone 24,000.00 (ASSUMED term - permanently unknown) + Marigold 13,500.00; Trestle prior FULLY RELEASED in May (final 8,200.00, JE-2025-056) and closed at nil. All releases fall within 12 months of 2025-05-31 (latest 2026-04-30, Quarry); non-current portion 0.00.",
+    "2000 17,420.00: opening A/P, now unpaid for five months with no bank payment activity - escalated in open_items.md section 5.",
+    "1300 9,600.00: opening prepaid, no supporting documentation received; no amortization recorded (flag carried).",
+    "1510 30,221.90 = opening 21,333.00 (per client opening trial balance, 2024 charges) + 5 x 1,777.78 booked Jan-May 2025 per checklist item 6; policy basis still not further documented.",
+    "5600 2,500.00 unchanged: no Harbor Law LLP bill in May.",
+    "2100 nil again for the fifth month: withheld 6,204.00 + employer 5,076.00 remitted same-month (11,280.00).",
+    "3900 205,953.00 is the opening accumulated deficit carried forward unchanged; current-year results sit in the 4000/5xxx accounts until closing. YTD net loss through 2025-05-31: 222,250.00 - 420,838.90 = (198,588.90). The GUSTO REFUND is NOT in revenue or expenses - it settled the 1200 claim at recorded amount."
+  ]
+}

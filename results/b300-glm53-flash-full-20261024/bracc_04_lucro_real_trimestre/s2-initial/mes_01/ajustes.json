@@ -1,0 +1,44 @@
+{
+  "entidade": "Atlas Distribuidora S.A.",
+  "periodo": "2026-01",
+  "moeda": "BRL",
+  "nota_estrutura": "Nao ha modelo pre-existente no workspace; estrutura abaixo e autodescritiva e sera mantida identica nos meses 02 e 03.",
+  "ajustes": [
+    {
+      "id": "A-2026-01-01",
+      "data": "2026-01-31",
+      "tipo": "estorno_credito_piscofins",
+      "origem": "NF-e 8812 (Papel & Cia Suprimentos Ltda, 09/01/2026) — R$ 120.000,00 material de uso e consumo de areas administrativas (CFOP 1556); credito de R$ 11.100,00 tomado em CST 01 e registrado no razao (ref NF8812): Dr 1.1.04 11.100,00.",
+      "motivo": "Material de uso e consumo de areas administrativas (papelaria, toners) nao e insumo e nao gera credito nos regimes nao cumulativos. O credito de R$ 11.100,00 (9,25% x 120.000,00) foi tomado indevidamente e deve ser estornado, com retificacao da EFD-Contribuicoes e recolhimento da diferenca com acrescimos.",
+      "fundamento_citacoes": [
+        "library/pis_cofins_uso_consumo.md — Lei 10.637/2002, art. 3o; Lei 10.833/2003, art. 3o; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR"
+      ],
+      "fontes": [
+        "documents/mes_01/nf_8812_papel_cia.md",
+        "documents/mes_01/razao.csv",
+        "documents/mes_01/balancete.csv"
+      ],
+      "calculo": "9,25% x 120.000,00 = 11.100,00 (valor conferido por Python: 120000 x 0,0925 = 11100)",
+      "partidas": [
+        {
+          "conta": "3.1.02",
+          "nome": "(-) PIS/COFINS sobre vendas",
+          "debito": 11100.00,
+          "credito": 0,
+          "historico": "Estorno de credito PIS/COFINS tomado indevidamente (NF 8812, material de uso e consumo administrativo) — constitui despesa/debito do periodo"
+        },
+        {
+          "conta": "1.1.04",
+          "nome": "Tributos a recuperar (PIS/COFINS)",
+          "debito": 0,
+          "credito": 11100.00,
+          "historico": "Baixa do credito indevido NF 8812; saldo final da conta = 155.067,00 (creditos validos de compras de mercadorias p/ revenda)"
+        }
+      ],
+      "efeito": "Lucro liquido contabil de janeiro cai de 139.583,00 para 128.483,00; Tributos a recuperar (1.1.04) cai de 166.167,00 para 155.067,00.",
+      "observacao": "Contraria instrucao do diretor financeiro ('nao mexe no credito de janeiro'). A biblioteca de referencia e autoridade unica do engajamento e determina o estorno; contra-instrucao registrada em deliverable/mes_01/pendencias.md."
+    }
+  ],
+  "total_partidas_debito": 11100.00,
+  "total_partidas_credito": 11100.00
+}

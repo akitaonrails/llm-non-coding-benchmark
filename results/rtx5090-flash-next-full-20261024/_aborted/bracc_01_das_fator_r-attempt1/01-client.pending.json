@@ -1,0 +1,47 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "questions": "# PERGUNTAS AO CLIENTE — apuração DAS maio/2026\n\nResponda cada item abaixo (Q1–Q8) na próxima rodada. Os itens **Q1–Q3 podem mudar o resultado**:\ncom a folha como enviada, o Fator R ficou a **R$ 1.000** do limiar de 28%. Antes de pagar o DAS,\nrespondam principalmente Q1–Q3.\n\nContexto numérico comum: RBT12 = 1.020.000; folha do resumo = 284.600; Fator R = 27,9020%;\nlimiar de 28% em reais = 0,28 × 1.020.000 = **285.600**.\n\n---\n\n## Q1 — Datas de PAGAMENTO da folha na janela mai/2025–abr/2026\n\nO `resumo_folha_12_meses.csv` vem **por competência**. A biblioteca (Res. CGSN 140/2018, art. 26, §2º,\nem `library/lc123_art18_fator_r.md`) conta no Fator R o que foi **pago** dentro dos 12 meses, não o que\nfoi empenhado no mês.\n\n**Pergunta:** para cada competência da janela, em que data efetiva foram pagos (a) salários,\n(b) pró-labore, (c) INSS patronal + FGTS? Houve algum pagamento de competência mai/2026 **dentro**\nda janela (p. ex. adiantamento em abril/2026) ou algum pagamento de competência antiga atrasado\npara depois de abr/2026?\n\n**Impacto:** se a folha **paga** na janela for ≥ 285.600 (faltam 1.000), o anexo passa de V para III e\no DAS cai de 15.188,84 para **10.261,08** (−4.927,76). Se for < 284.600, continua Anexo V e o DAS não muda.\n\n## Q2 — Pró-labore de mar/2026 (linha zerada) e de abr/2026\n\nNo resumo, a competência 2026-03 tem pró-labore **0,00** com a observação \"pró-labore de abril: em\naberto na data do resumo\". O e-mail do sócio diz que o pró-labore de abril foi pago em **06/05/2026**\n— data que está **fora** da janela mai/2025–abr/2026; o extrato de maio, porém, **não** mostra\npagamento em 06/05: só dois pagamentos de 1.600,00 em 16/05/2026 rotulados \"PRO-LABORE MAI\".\n\n**Perguntas:** (a) o pró-labore de **março/2026** foi pago? Em que data e valor? (b) o pró-labore de\n**abril/2026** foi pago em que data exatamente (06/05 ou 16/05)? (c) os dois pagamentos de 1.600,00 de\n16/05 são o pró-labore de **abril** ou de **maio**, dos dois sócios?\n\n**Impacto:** se algum desses pagamentos caiu **dentro** da janela (até 30/04/2026), a folha sobe e pode\ncruzar o limiar de 285.600 (vide Q1). Se todos caíram em maio/2026, entram na janela de junho/2026 em diante.\n\n## Q3 — Comprovantes para conferir a base de pagamento\n\n**Pedido:** enviem a folha de pagamentos da janela e os comprovantes de INSS patronal (GPS/DARF) e\nFGTS (guias/recolhimento) — ou o extrato bancário dos 12 meses, se existir. O extrato de mai/2026\n(`extrato_maio_2026.csv`) só cobre um mês e mostra encargos constantes de 4.700/mês; isso **não**\nsubstitui a confirmação dos pagamentos de mai/2025 a abr/2026.\n\n**Impacto:** é o que permite substituir a premissa \"competência = pagamento\" usada em `apuracao.json`.\n\n## Q4 — Tabela de repartição do Anexo V, 4ª faixa\n\n`library/anexos_iii_v_tabelas.md` traz a repartição **apenas** da 4ª faixa do **Anexo III**\n(IRPJ 4,00 · CSLL 3,50 · COFINS 14,05 · PIS 3,05 · CPP 42,75 · ISS 32,50) e **não** traz a do\n**Anexo V** — que é o anexo dos serviços em maio/2026. Por isso os campos `reparticao` de\nIRPJ/CSLL/COFINS/PIS/CPP estão `null` em `apuracao.json` (não apurado, não zero).\n\n**Pedidos:** (a) a tabela de repartição do Anexo V, 4ª faixa, para eu preencher o campo `reparticao`;\n(b) confirmando, a linha do Anexo III, 4ª faixa está mesmo incompleta? Os percentuais somam\n**99,85%**, e aplicados à base da locação fecham em 749,23 contra 750,35 (diferença de 1,13), e o\nsubtotal sem ISS fica 505,36 contra 506,49 apurados. Não corrigi para fechar.\n\n## Q5 — Dois pontos que não fecham com a biblioteca\n\n**(a) Descrição fiscal das NFS-e 1183 e 1186.** \"Consultoria de arquitetura\" (9.800,00) e\n\"Treinamento equipe\" (4.500,00) foram tratados como serviços de TI do art. 18, §5º-J, cuja lista na\nbiblioteca é aberta (\"desenvolvimento, licenciamento, suporte etc.\"). **Pergunta:** qual o CNAE e a\ndescrição fiscal dessas notas? Em maio/2026 isso **não altera o valor** (com Fator R < 28% tudo sai\npelo Anexo V de qualquer forma), mas passa a importar se o Fator R virar ≥ 28% (Q1–Q3).\n\n**(b) Mecânica da dedução do ISS na locação de bens móveis.** A biblioteca manda tributar \"no Anexo III,\ndeduzida a parcela correspondente ao ISS\", mas não diz como. Adotei a dedução proporcional à alíquota\nefetiva: 12,505882% × (1 − 0,325) = **8,4415%** → DAS 506,49. A leitura alternativa (deduzir 32,50% da\nalíquota nominal: 12,505882% − 5,20%) daria **7,3059%** → 438,35. **Pergunta:** qual mecânica o PGDAS-D\nadota / qual valor a empresa usaria? **Impacto: R$ 68,14** no DAS de maio.\n\n## Q6 — Natureza do `faturamento_12_meses.csv`\n\nUsei o arquivo como a receita bruta mensal dos 12 meses anteriores, assumindo que (a) estornos e\ncancelamentos de cada mês **já estão líquidos** nos valores e (b) receitas de locação dos meses\nanteriores **já estão incluídas**. **Pergunta:** essas duas premissas estão corretas? Se a locação\nhistórica não estiver no arquivo, o RBT12 (e a faixa/alíquota) muda.\n\n**Impacto potencial:** RBT12 é a base da faixa e da alíquota efetiva das duas atividades.\n\n## Q7 — NF-e 512 com destaque de PIS/COFINS\n\nA `nfe_000512_locacao.xml` destaca PIS 0,65% e COFINS 3,00% com CST 01 (regra geral) e o próprio XML traz\na anotação \"documento fictício... sem validade fiscal\". No Simples essas contribuições viriam dentro do\nDAS; a biblioteca não trata de NF-e/CST, então **não alterei a apuração** — apenas registro.\n**Pergunta:** essa NF-e foi realmente escriturada assim? Há outra via/CF-e de locação emitida?\n\n## Q8 — Base do DAS de abril/2026 (informativo, fora desta apuração)\n\nO extrato mostra DAS ABR/2026 = 10.480,22 pago em 20/05/2026. Com receita de abril de 86.000,00, isso\nimplica alíquota de ~12,19%, compatível com **Anexo III** (10.474,86 pelo cálculo para RBT12 933.000),\ne **não** com Anexo V (16.053,79). Isso contradiz a lembrança do sócio de que \"pagávamos pelo Anexo V\".\n**Pergunta:** podemos conferir o PGDAS-D/mey de abril/2026? Não refiz abril (faltam documentos); é só\npara validar a premissa de histórico.\n\n---\n\n**Não perguntei/assumi e está declarado na memória:** janela do RBT12 = mai/2025–abr/2026; estorno da\nNFS-e 1188 reduzindo maio/2026; vencimento do DAS (fora da biblioteca).\n\n# PERGUNTAS.md (opcional)\n\nAs perguntas ao cliente estão em **`QUESTIONS.md`** (mesma pasta), numeradas Q1–Q8; é lá que o\ncliente deve responder, conforme a regra de trabalho do contrato. Este arquivo existe apenas para\ncumprir o item opcional 3 do contrato e aponta para o arquivo único, para que as duas versões não\ndivirjam.\n\nResumo dos itens abertos (detalhe e impacto de cada um em `QUESTIONS.md` e em `memoria.md` §13):\n\n1. Datas de **pagamento** da folha na janela mai/2025–abr/2026 (Q1–Q3) — podem virar o anexo de V para III.\n2. Pró-labore de mar/2026 (linha zerada) e de abr/2026 (Q2).\n3. Repartição do Anexo V, 4ª faixa, ausente da biblioteca; soma de 99,85% na linha do Anexo III (Q4).\n4. Mecânica da dedução do ISS na locação: 8,4415% adotado × 7,3059% alternativo, diferença de 68,14 (Q5b).\n5. CNAE/descrição fiscal de \"consultoria de arquitetura\" e \"treinamento equipe\" (Q5a).\n6. Natureza do `faturamento_12_meses.csv`: líquido de estornos? inclui locação histórica? (Q6).\n7. NF-e 512 com destaque de PIS/COFINS e anotação \"sem validade fiscal\" (Q7).\n8. Base do DAS de abril/2026 (10.480,22 ≈ Anexo III) contra o histórico citado pelo sócio (Q8).\n",
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "prolabore_abril",
+    "estorno",
+    "locacao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

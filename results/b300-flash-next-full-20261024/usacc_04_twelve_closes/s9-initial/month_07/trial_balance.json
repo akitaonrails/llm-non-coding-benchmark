@@ -1,0 +1,95 @@
+{
+  "as_of": "2025-07-31",
+  "accounts": {
+    "1000": {
+      "name": "Cash \u2014 Operating",
+      "debit": 175330.0,
+      "credit": 0.0
+    },
+    "1100": {
+      "name": "Accounts receivable",
+      "debit": 92650.0,
+      "credit": 0.0
+    },
+    "1300": {
+      "name": "Prepaid expenses",
+      "debit": 9600.0,
+      "credit": 0.0
+    },
+    "1500": {
+      "name": "Computer equipment",
+      "debit": 64000.0,
+      "credit": 0.0
+    },
+    "1510": {
+      "name": "Accumulated depreciation",
+      "debit": 0.0,
+      "credit": 33777.46
+    },
+    "2000": {
+      "name": "Accounts payable",
+      "debit": 0.0,
+      "credit": 17420.0
+    },
+    "2200": {
+      "name": "Deferred revenue \u2014 current",
+      "debit": 0.0,
+      "credit": 103000.0
+    },
+    "3000": {
+      "name": "Common stock & APIC",
+      "debit": 0.0,
+      "credit": 650000.0
+    },
+    "3900": {
+      "name": "Retained earnings",
+      "debit": 205953.0,
+      "credit": 0.0
+    },
+    "4000": {
+      "name": "Subscription revenue",
+      "debit": 0.0,
+      "credit": 335200.0
+    },
+    "5000": {
+      "name": "Hosting & infrastructure",
+      "debit": 71960.0,
+      "credit": 0.0
+    },
+    "5100": {
+      "name": "Rent",
+      "debit": 50400.0,
+      "credit": 0.0
+    },
+    "5200": {
+      "name": "Software & tools",
+      "debit": 10220.0,
+      "credit": 0.0
+    },
+    "5300": {
+      "name": "Marketing",
+      "debit": 23800.0,
+      "credit": 0.0
+    },
+    "5400": {
+      "name": "G&A \u2014 other",
+      "debit": 6680.0,
+      "credit": 0.0
+    },
+    "6000": {
+      "name": "Salaries & wages",
+      "debit": 380828.0,
+      "credit": 0.0
+    },
+    "6100": {
+      "name": "Payroll taxes & benefits",
+      "debit": 35532.0,
+      "credit": 0.0
+    },
+    "6200": {
+      "name": "Depreciation",
+      "debit": 12444.46,
+      "credit": 0.0
+    }
+  }
+}

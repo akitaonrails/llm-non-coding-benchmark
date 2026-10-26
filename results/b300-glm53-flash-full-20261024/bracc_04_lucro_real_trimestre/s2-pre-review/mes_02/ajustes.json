@@ -1,0 +1,67 @@
+{
+  "entidade": "Atlas Distribuidora S.A.",
+  "periodo": "2026-02",
+  "moeda": "BRL",
+  "nota_estrutura": "Estrutura identica a deliverable/mes_01/ajustes.json. Regra do fechamento: balancete de fev/2026 e cumulativo (jan+fev) e foi entregue pelo cliente SEM o lancamento A-2026-01-01 postado; por isso a retificacao de mes anterior esta incluida aqui (per CONTRACT.md: 'incluindo retificacoes de meses anteriores se necessario').",
+  "ajustes": [
+    {
+      "id": "A-2026-02-01",
+      "data": "2026-02-28",
+      "tipo": "retificacao_mes_anterior_estorno_credito_piscofins",
+      "origem": "NF-e 8812 (Papel & Cia Suprimentos Ltda, 09/01/2026) — credito PIS/COFINS indevido de R$ 11.100,00 (9,25% x 120.000,00 material de uso e consumo administrativo, CFOP 1556). Ajuste original: deliverable/mes_01/ajustes.json A-2026-01-01.",
+      "motivo": "O balancete de fev/2026 entregue pelo cliente mostra 1.1.04 = 323.676,00 = 155.067,00 (creditos validos jan) + 11.100,00 (credito indevido NF 8812, ainda embutido) + 157.509,00 (creditos fev) — prova, por conferencia aritmetica, que o ajuste A-2026-01-01 NAO foi contabilizado pelo cliente. A biblioteca determina o estorno (creditos dependem do uso do bem; material de uso e consumo administrativo nao e insumo); o lancamento e repetido neste mes como retificacao de lancamento de janeiro.",
+      "fundamento_citacoes": [
+        "library/pis_cofins_uso_consumo.md — Lei 10.637/2002, art. 3o; Lei 10.833/2003, art. 3o; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR ('Credito tomado indevidamente deve ser estornado, com retificacao da EFD-Contribuicoes do periodo e recolhimento da diferenca com acrescimos')"
+      ],
+      "fontes": [
+        "documents/mes_02/balancete.csv (1.1.04 = 323.676,00)",
+        "documents/mes_02/razao.csv (data 2026-02-15, COMPRA: credito 157.509,00)",
+        "documents/mes_01/nf_8812_papel_cia.md"
+      ],
+      "calculo": "1.1.04: 323.676,00 - 11.100,00 = 312.576,00 pos-ajuste (= 155.067,00 validos jan + 157.509,00 validos fev); conferido em Python.",
+      "partidas": [
+        {
+          "conta": "3.1.02",
+          "nome": "(-) PIS/COFINS sobre vendas",
+          "debito": 11100.00,
+          "credito": 0,
+          "historico": "Retificacao do lancamento de jan/2026 — estorno do credito PIS/COFINS tomado indevidamente na NF 8812 (material de uso e consumo administrativo); ref. ajuste A-2026-01-01 nao postado pelo cliente"
+        },
+        {
+          "conta": "1.1.04",
+          "nome": "Tributos a recuperar (PIS/COFINS)",
+          "debito": 0,
+          "credito": 11100.00,
+          "historico": "Retificacao do lancamento de jan/2026 — baixa do credito indevido NF 8812; saldo 1.1.04 passa de 323.676,00 para 312.576,00"
+        }
+      ],
+      "efeito": "Lucro liquido contabil cumulativo jan+fev de 332.666,00 para 321.566,00; Tributos a recuperar (1.1.04) de 323.676,00 para 312.576,00. Fechamento isolado do mes de fev/2026: LL de 193.083,00 nao e alterado por este lancamento (o efeito e de janeiro).",
+      "observacao": "A divergencia com o diretor financeiro permanece registrada (deliverable/mes_01/pendencias.md item 1); o cliente nao instruiu formalmente a reversao do ajuste. O ajuste fiscal (retificacao da EFD 01/2026 com recolhimento de 11.100,00 + acrescimos) e independente deste lancamento contabil e segue descrito em deliverable/mes_01/pis_cofins.json."
+    }
+  ],
+  "fatos_fiscais_sem_lancamento_contabil": "Fatos de fev/2026 sem ajuste contabil para nao introduzir quadro de contas ou reclassificacoes nao previstas na biblioteca (despesas indedutiveis sao exclusivamente adicoes na Parte A do e-LALUR: library/irpj_csll_trimestral.md, 'Despesas indedutiveis sao adicoes na Parte A; nao se altera a contabilidade societaria (CPC), apenas a apuracao fiscal'). Ambos serão informados em deliverable/mes_02/pendencias.md e somados como adicoes na apuracao do trimestre (deliverable/mes_03/lalur.json):",
+  "adicoes_parte_a_futuras": [
+    {
+      "id": "F-2026-02-01",
+      "data": "2026-02-12",
+      "fato": "Brindes — NF-e 4410 (Brindes Prime Ltda): 400 kits-presente (vinho + canivete gravado) para clientes, campanha 'Parceiros Atlas', R$ 48.000,00, CFOP 1949, contabilizado como despesas comerciais (razao: Dr 4.2.02 48.000,00 / Cr 1.1.01).",
+      "tratamento": "Adicao na Parte A do e-LALUR do 1o trimestre (art. 13, VII). Nao ha excecao para 'marketing': as excecoes do art. 13, § 2o abrangem apenas doacoes tipificadas (projetos culturais; entidades sem fins lucrativos com servicos gratuitos a empregados/comunidade reconhecidas utilidade publica federal ou OSCIP, limite 2%; ensino/pesquisa), nao brindes.",
+      "valor_adicao": 48000.00,
+      "ajuste_contabil": "Nenhum — classificacao comercial (CPC) permanece.",
+      "fundamento_citacoes": ["library/lei9249_art13.md — Lei 9.249/95, art. 13, VII; § 2o"],
+      "fontes": ["documents/mes_02/nf_4410_brindes_prime.md", "documents/mes_02/razao.csv", "documents/mes_02/relatorio_auditoria_interna.md"]
+    },
+    {
+      "id": "F-2026-02-02",
+      "data": "2026-02-18",
+      "fato": "Doacao de R$ 30.000,00 a Associacao Beneficente Luz, contabilizada como despesas comerciais (razao: Dr 4.2.02 30.000,00 / Cr 1.1.01).",
+      "tratamento": "Adicao na Parte A do e-LALUR do 1o trimestre (art. 13, VI): doacoes sao indedutiveis 'exceto as referidas no § 2o'. O recibo constata que a entidade 'nao possui titulo de OSCIP nem certificacao de utilidade publica federal; e associacao civil sem fins lucrativos registrada em cartorio' — nao preenche a condicao do § 2o, II (exige reconhecimento de utilidade publica federal ou qualificacao como OSCIP, alem dos servicos gratuitos a empregados/comunidade). Como nao se qualifica, o limite de 2% do lucro operacional nem chega a ser analisado.",
+      "valor_adicao": 30000.00,
+      "ajuste_contabil": "Nenhum — a apuracao fiscal nao depende da conta usada (4.2.02); recomendacao de reclassificacao fica como item de pendencias (nao implementada).",
+      "fundamento_citacoes": ["library/lei9249_art13.md — Lei 9.249/95, art. 13, VI; § 2o, II"],
+      "fontes": ["documents/mes_02/recibo_doacao_luz.md", "documents/mes_02/razao.csv"]
+    }
+  ],
+  "total_partidas_debito": 11100.00,
+  "total_partidas_credito": 11100.00
+}

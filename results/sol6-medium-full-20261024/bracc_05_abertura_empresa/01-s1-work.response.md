@@ -1,0 +1,5 @@
+I’ll read the contract and workspace materials, then build the required deliverables using only those files. If a client decision is necessary, I’ll put precise questions in `deliverable/QUESTIONS.md`.
+
+The files show choices that change the final contract: Marina and Felipe cannot both be partners under the cited rule for their marriage regime; Luana’s work cannot count as capital; and keeping third-party rental activity in the company conflicts with the planned Simples option. I’ll ask for those decisions before fixing the ownership and capital clauses.
+
+Registrei as decisões necessárias em [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). Preciso das respostas sobre sócios, quotas de Luana, imóvel e retiradas para fechar o contrato e os cálculos sem presumir escolhas dos clientes.

@@ -1,0 +1,19 @@
+{
+  "itbi": {
+    "devido": false,
+    "base": 0,
+    "fundamento": "Estrutura recomendada sem transmissão do imóvel à sociedade; CF art. 156, §2º, I e CTN arts. 36-37 apenas para eventual integralização futura (library/cf156_ctn37_itbi.md)."
+  },
+  "integralizacao_imovel": {
+    "valor_recomendado": 0,
+    "ganho_capital_pf": 0
+  },
+  "pro_labore_minimo_recomendado_mensal": {
+    "Marina": 0,
+    "Felipe": 0,
+    "Luana": 0
+  },
+  "distribuicao_mensal_pretendida": 50000,
+  "irrf_dividendos_2026_estimado_mensal": 0,
+  "simples_possivel": true
+}

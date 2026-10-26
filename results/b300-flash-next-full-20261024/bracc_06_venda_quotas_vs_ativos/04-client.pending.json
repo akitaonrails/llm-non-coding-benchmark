@@ -1,0 +1,46 @@
+{
+  "case": "bracc_06_venda_quotas_vs_ativos",
+  "questions": "# QUESTIONS — atualizado após resposta do cliente\n\n**Respondida:** distribuição do caixa na Proposta B **integral em 2026** (Hélio). Premissa aplicada ao cálculo do IRRF (R$ 695.600) — números inalterados.\n\n**Demais perguntas: o cliente declarou não ter mais informação.** Não as repito como pergunta; ficam como **desconhecidos sinalizados** (todos sem efeito sobre a recomendação PF, margem de R$ 1,47 mi):\n\n| # | Desconhecido | Premissa adotada | Sensibilidade |\n|---|---|---|---|\n| 1 | Mês de fechamento / pagamento das parcelas (A) | DARFs em m+1 de cada recebimento (Lei 7.713/88, art. 21) | Só datas de vencimento; valores não mudam |\n| 2 | Correção monetária nas parcelas de 20% (A) | Sem correção | Se houver, o ganho segue a parcela atualizada (art. 21) — imposto proporcionalmente maior |\n| 3 | Lucros pré-2025 com distribuição aprovada até 31/12/2025 | Inexistência | Se existissem, só reduziriam o IRRF da B — nunca fechariam a diferença de R$ 1,47 mi |\n| 4 | Proporção 50/50 para lucros | Sim (titularidade do capital no arquivo) | Dividir de forma diferente muda quem paga o IRRF, não o total |\n| 5 | R$ 2,1 mi = valor contábil **fiscal** do estabelecimento; o que fica na \"casca\" | Sim, contábil fiscal; nada relevante retido | Ganho da B (base do IRPJ/CSLL) variaria com divergência contábil-fiscal |\n| 6 | IRPFM definitivo pós-IRRF sobre dividendos (fora da biblioteca) | Custo = IRRF 10% | Líquido da B pode ser **menor** que R$ 6,36 mi (piora a B, nunca melhora) |\n",
+  "facts": [
+    {
+      "id": "comprador_estrutura",
+      "trigger": [
+        "incorpora",
+        "estrutura do comprador",
+        "laudo",
+        "como vai usar o ágio"
+      ],
+      "answer": "Hélio: o Meridiano não disse se vai incorporar a Vértice; disseram só que 'aproveitam o ágio'.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "custo",
+      "trigger": [
+        "custo de aquisição",
+        "DIRPF",
+        "600",
+        "declaração"
+      ],
+      "answer": "Beatriz: nas nossas declarações está R$ 600 mil cada. Mas a empresa vale 9 milhões, não faz sentido pagar imposto sobre tudo isso.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "distribuicao",
+      "trigger": [
+        "distribuir",
+        "caixa da casca",
+        "dividendos",
+        "quando sacar"
+      ],
+      "answer": "Hélio: se vender pela PJ a gente tira o dinheiro todo em 2026 mesmo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "distribuicao"
+  ],
+  "literal_suggestions": [
+    "custo"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

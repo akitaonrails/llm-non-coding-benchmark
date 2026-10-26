@@ -1,0 +1,107 @@
+[
+  {
+    "clausula": "1",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Objeto lícito e determinado (licença de uso + serviços de implantação, treinamento e suporte). Sem vício. CC arts. 421/421-A (função social e presunção de paridade entre empresas) respeitados.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "2",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "Reajuste 'pelo IGP-M ou outro índice a critério da NEXA' permite à fornecedora substituir unilateralmente o indexador, quebrando a simetria presumida dos contratos empresariais (CC art. 421-A) e a boa-fé objetiva (CC art. 422; Lei 13.874/2019). Índice deve ser certo; substituição só por sucessor legal do índice.",
+    "redacao_proposta": "Os preços serão reajustados anualmente pelo IGP-M (FGV), ou, na hipótese de sua extinção, pelo índice oficial que legalmente o substituir e, na falta deste, pelo IPCA. É vedada a alteração unilateral do índice por qualquer das partes."
+  },
+  {
+    "clausula": "3",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "Renovação automática por períodos sucessivos de 36 meses, combinada com denúncia só com 180 dias de antecedência e com a multa integral da Cláusula 10, cria lock-in desproporcional (CC art. 421-A; revisão excepcional, mas a simetria exige aviso razoável). Art. 473, parágrafo único, do CC protege investimentos, mas não justifica prorrogações sucessivas de 36 meses sem opção de saída barata. Dado confirmado pelo cliente: migrar ~22.000 prontuários é projeto de meses e a saída no meio do contrato seria caótica — com renovações de 36/36 meses e aviso de 180 dias, cada decisão errada trava a clínica por mais 3 anos; por isso a renovação de 12 meses é condição, não favor.",
+    "redacao_proposta": "Vigência de 36 (trinta e seis) meses, renovável por períodos sucessivos de 12 (doze) meses, salvo denúncia de qualquer das partes comunicada com 90 (noventa) dias de antecedência do término da vigência em curso. A denúncia no fim da vigência não sujeita a parte a qualquer multa."
+  },
+  {
+    "clausula": "4",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Obrigações padrão e razoáveis da contratante. Sem vício.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "5",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Cláusula de dados é a maior exposição do contrato. (a) Autoriza armazenamento 'no Brasil ou no exterior' sem os mecanismos da LGPD art. 33; (b) autoriza uso de dados 'anonimizados ou agregados' para pesquisa e desenvolvimento de produtos da própria NEXA — dados de saúde são sensíveis (LGPD art. 5º, II) e, com ~22.000 pacientes, agregação raramente é anonimização irreversível (LGPD art. 12); isso configura tratamento pelo operador para finalidade própria, fora das instruções do controlador (LGPD art. 39), e comunicação/uso compartilhado de dados sensíveis de saúde entre controladores com vantagem econômica é vedado (LGPD art. 11, §4º), ressalvadas apenas as transações financeiras/administrativas de faturamento (ex.: operadoras); (c) 'medidas de segurança compatíveis com o mercado' é padrão vago ante LGPD arts. 46-48; (d) omite papéis (controlador/operador, art. 5º, VI-VIII), registro (art. 37), incidentes e subcontratação. Due diligence confirmou o risco: a NEXA usa AWS e informou 'provavelmente' nos EUA — hospedagem de dados sensíveis de saúde no exterior só é lícita com mecanismo do art. 33 (adequação, cláusulas-padrão etc.), e 'provavelmente' não é base documental. Substituir integralmente pela cláusula do arquivo clausula_dados.md (item 5.7 com obrigação de revelar região exata, comprovar base do art. 33 ou migrar para região no Brasil).",
+    "redacao_proposta": "Substituir integralmente pelo texto da 'Cláusula 5 — Proteção de Dados e Segurança da Informação' constante de clausula_dados.md (papéis LGPD; bases legais para dados de saúde: art. 11, II, 'f' e §4º para faturamento TISS; tratamento sob instruções do controlador (art. 39); segurança e registro (arts. 37, 46-48); subcontratação controlada; transferência internacional só nos casos do art. 33; incidentes; término/portabilidade; auditoria; responsabilidade (art. 42))."
+  },
+  {
+    "clausula": "6",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "SLA com créditos é termo comercial comum e válido entre empresas (CC art. 421-A). Não há ilegalidade: 99% de disponibilidade admite até 7,2 h/mês de indisponibilidade (30×24 h = 720 h; 1% = 7,2 h); crédito de 2% da mensalidade por ponto (R$ 414,00 por ponto sobre R$ 20.700,00), teto de 10% (R$ 2.070,00/mês). Oportunidade de negociação (resilição por descumprimento crônico de SLA e suporte fora do horário comercial), mas não é cláusula que se exija alterar para assinar.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "7",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Devolver dados 'em formato CSV por 30 dias' ao término é incompatível com o dever de guarda do prontuário: o prontuário pertence ao paciente, sob guarda do estabelecimento, com guarda mínima de 20 anos do último registro (Resolução CFM 1.821/2007; Resolução CFM 2.299/2021; Lei 13.787/2018), e o estabelecimento deve garantir acesso e portabilidade. CSV puro perde estrutura clínica; 30 dias não viabiliza migração de 22.000 pacientes nem a guarda legal.",
+    "redacao_proposta": "Ao término do contrato, por qualquer causa, a NEXA fornecerá, sem custo, exportação completa e fiel de todos os dados (incl. prontuário eletrônico, exames e histórico de faturamento) em formato estruturado e legível por sistema, com documentação técnica compatível com a Lei 13.787/2018 e as Resoluções CFM 1.821/2007 e 2.299/2021, e manterá o sistema em pleno funcionamento durante 180 (cento e oitenta) dias de transição, prestando apoio técnico à migração. A exclusão de dados pela NEXA somente ocorrerá 90 (noventa) dias após confirmação escrita da CONTRATANTE do recebimento íntegro, mediante certificado que abranja também backups."
+  },
+  {
+    "clausula": "8",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "Entre empresas o teto de responsabilidade é válido em si (CC art. 421-A), mas o teto de 3 mensalidades (R$ 62.100,00 = 3 × R$ 20.700,00, ~R$ 2,82 por paciente dos ~22.000 ativos) com única exceção de dolo é desproporcional num contrato que centraliza prontuários de dados sensíveis de saúde: a LGPD art. 42 impõe ao operador o dever de reparar danos por violação da lei e responsabilidade solidária (art. 42, §1º, I) quando descumpre obrigações ou as instruções do controlador — exatamente o cenário de vazamento. Faltam excludentes de teto para violação de dados/LGPD, confidencialidade e culpa grave.",
+    "redacao_proposta": "A responsabilidade da NEXA por perdas e danos limita-se a 12 (doze) mensalidades vigentes, exceto: (i) dolo ou culpa grave; (ii) violação de dados pessoais ou descumprimento da Cláusula 5 (LGPD); (iii) violação da Cláusula 9 (Confidencialidade); (iv) infração de propriedade intelectual; e (v) obrigações de guarda e devolução de dados da Cláusula 7. Nada nesta cláusula afasta a responsabilidade solidária prevista em lei frente a terceiros, nem o direito de regresso."
+  },
+  {
+    "clausula": "9",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Confidencialidade mútua por 5 anos é razoável. Ressalva prática (tratada na nova Cláusula 5, que é perpétua quanto a dados de saúde): sigilo sobre dados de prontuário não deve caducar em 5 anos.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "10",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "Multa de 100% das mensalidades vincendas antecipa integralmente o valor do contrato sem qualquer dedução dos custos evitados pela NEXA (ex.: rescindir no fim do mês 12 gera 24 × R$ 20.700,00 = R$ 496.800,00 — 2 anos de mensalidade). Penalidade manifestamente excessiva sujeita-se a redução equitativa (CC art. 413), mas o risco e o custo de litigar ficam com a clínica; a combinação com a Cláusula 3 (renovações de 36 meses) agrava o lock-in. Dado confirmado pelo cliente (migração de 22 mil prontuários leva meses): a clínica fará investimentos consideráveis para executar o contrato e deles dependerá para sair — o art. 473, parágrafo único, do CC exige que a saída seja possível em prazo compatível com esses investimentos, o que a multa integral inviabiliza na prática.",
+    "redacao_proposta": "A rescisão imotivada pela CONTRATANTE antes do término da vigência sujeita-a a multa compensatória equivalente a 3 (três) mensalidades, acrescida dos custos de implantação não amortizados (rateio linear pelo prazo de vigência) e das mensalidades vencidas, sendo vedada a antecipação integral das mensalidades vincendas."
+  },
+  {
+    "clausula": "11",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Encargos de mora usuais em contratos empresariais (multa 2% + juros 1% a.m. + correção). Sem abusividade identificável à luz da biblioteca.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "12",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Subcontratação livre e até oculta de hospedagem, suporte e processamento inviabiliza o cumprimento da LGPD pela clínica: o operador deve tratar os dados segundo as instruções do controlador (art. 39) e responde solidariamente por violação ou descumprimento de instruções (art. 42, §1º, I); a hospedagem subcontratada no exterior elidiria as restrições de transferência internacional (art. 33) sem controle; e o controlador precisa de registro das operações (art. 37). A cláusula atual transfere risco regulatório integral à Aurora sem contrapartida. Confirmado: a AWS é hoje subcontratada não listada da NEXA — deve entrar na lista notificada, com as obrigações da Cláusula 5 fluindo para ela.",
+    "redacao_proposta": "A NEXA não subcontratará a hospedagem, o suporte, o processamento ou qualquer tratamento de dados sem comunicação prévia e escrita, com identificação do subcontratado, suas funções, o local dos servidores e o escopo de acesso, facultando à CONTRATANTE, em 15 (quinze) dias, opor-se por motivo justificado, sanável em 30 (trinta) dias, findos os quais poderá rescindir sem multa. Todo subcontratado vincular-se-á por escrito a obrigações equivalentes às da Cláusula 5 (LGPD). A NEXA permanece integralmente responsável pelos atos dos subcontratados (LGPD art. 42, §1º, I), responde solidariamente perante a CONTRATANTE e mantém relação atualizada de subcontratados, entregue na assinatura e ao término do contrato."
+  },
+  {
+    "clausula": "13",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Não concorrência de 5 anos, em todo o território nacional, proibindo a CONTRATANTE até de 'contratar ou utilizar software concorrente' após o término, com multa de R$ 500.000,00 (~24 mensalidades; 2,01 × o valor anual do contrato de R$ 248.400,00), é invalidade reconhecida: entre empresas a cláusula exige limitação de tempo, espaço e objeto e interesse legítimo (proteção de know-how/clientela), sendo razoável prazo de até 2 anos e abusiva a restrição territorial ilimitada ou temporalmente desproporcional (STJ, REsp 1.203.109/MG; REsp 680.815/PR); em licença de software, vedar ao LICENCIADO usar software concorrente após o término inverte a lógica — o licenciado não detém o know-how do licenciante — e a restrição é tida por abusiva e sem causa, pois impede o exercício da atividade da clínica. Excluir.",
+    "redacao_proposta": "Excluir a Cláusula 13. Se a NEXA insistir em cláusula de não concorrência, admitir apenas: 'Pelo prazo de 2 (dois) anos após o término do contrato, a CONTRATANTE obriga-se a não desenvolver, por engenharia reversa ou uso de informações confidenciais da NEXA, software concorrente do NexaClin, no território dos municípios onde mantiver unidades; multa de até 3 (três) mensalidades por infração comprovada.' É inadmissível vedar à CONTRATANTE contratar ou utilizar software de terceiros."
+  },
+  {
+    "clausula": "14",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "A tese da sócia (CDC anula o foro) não se sustenta neste contrato. O CDC (Lei 8.078/90, arts. 2º, 3º e 51) pressupõe relação de consumo: a clínica contrata o software como insumo da sua atividade (prontuário e faturamento), não como destinatária final — teoria finalista (STJ); a mitigação exigiria vulnerabilidade técnica, jurídica ou econômica demonstrada, o que não se presume em sociedade com R$ 9,2 mi de faturamento assessorada por advogado; logo, o art. 51 do CDC não se aplica. Entre empresas, a eleição de foro é válida: CPC art. 63 (caput e §1º — instrumento escrito e referência expressa ao negócio, ambos presentes), e o §3º (ineficácia de ofício se abusiva) destina-se a contratos de adesão com parte vulnerável, não ao caso; a jurisprudência confirma validade entre empresas paritárias (STJ, REsp 1.707.855/SP). Consequência prática: eventuais ações correm em Florianópolis/SC. Se isso for inconveniente, negociar foro do domicílio do réu é preferência comercial, não correção de abusividade.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "15",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Disposições inofensivas; a declaração de que as partes são empresas e leram o contrato inclusive reforça a natureza empresarial da relação (CC art. 421-A).",
+    "redacao_proposta": ""
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "questions": "# Perguntas ao cliente (para a próxima sessão)\n\nA Sessão 1 foi concluída com premissas explícitas (listadas abaixo e no arquivo da peça). Para as sessões seguintes (embargos, resposta à emenda da CDA, redirecionamento e garantia), preciso de:\n\n1. **Autos administrativos integrais**: cópia do auto de infração e do Termo de Verificação Fiscal na íntegra. Preciso confirmar se em algum trecho a autoridade **caracterizou dolo, fraude ou simulação** ou mencionou o art. 44, §1º, da Lei 9.430/96 (multa dobrada de 150%) — isso define o risco para a exceção do art. 150 §4º do CTN nos períodos de 2020.\n2. **Prova de origem dos depósitos bancários** dos trimestres 1T/2021 e 2T/2021 (extratos conciliados, controles de caixa, notas fiscais): a defesa de mérito desses trimestres, em embargos, depende dessa documentação. A empresa guarda essa escrituração?\n3. **Memória de cálculo da fiscalização** (como se chegou aos principais de R$ 157.040,00 e R$ 150.280,00): os DARFs pagos (R$ 61.000 em 29/01/2021 e R$ 84.000 em 30/04/2021) foram considerados na apuração? Há risco de a Fazenda cobrar o principal **sem** deduzir os pagamentos parciais.\n4. **Atividade da empresa**: a mudança para Av. Industrial, 2.500, Galpão 7, Cotia/SP (JUCESP 12/03/2026; RFB 20/03/2026) foi acompanhada de funcionamento efetivo no novo endereço? Há alvará/contrato de locação que o comprove? (Relevante para afastar dissolução irregular — Súmula 435/STJ — no redirecionamento pedido nas sessões 3–4.)\n5. **Sócios**: (a) Carlos Vieira exerceu atos de gerência em algum momento entre 2020 e 2026, ou era sócio capitalista? (b) confirme-se que Ana Paula Vieira se retirou em 15/06/2023 sem qualquer pendência de gestão e que Bruno Tavares é o administrador desde então (contrato social do arquivo só traz as alterações resumidas).\n6. **Patrimônio e fluxo de caixa** da empresa (para a Sessão 5): bens disponíveis para nomeação à penhora, faturamento mensal aproximado e limites pré-aprovados pelo sócio para custo de seguro-garantia/fiança; a empresa possui classificação CAPAG junto à PGFN ou proposta de transação em andamento?\n\n## Premissas adotadas na Sessão 1 (corrija-me se alguma estiver errada)\n\n- Fato gerador do IRPJ/CSLL trimestral completo-se no último dia do trimestre (30/09/2020, 31/12/2020, 31/03/2021, 30/06/2021) — coerente com os vencimentos 29/01/2021 e 30/04/2021 dos DARFs; os limites de 2020 não mudam sob nenhuma leitura alternativa (a decadência foi verificada sob as duas regras para cada período).\n- O resumo do PAF (\"perdeu o prazo\", sem impugnação) reflete a situação administrativa até hoje: não houve defesa administrativa protocolada.\n- A multa de 75% incidiu sobre a totalidade dos principais sem dedução dos DARFs pagos — se a base era a \"diferença\", a decadência não muda, mas o valor remanescente pode estar sobrefaturado (ver pergunta 3).\n- Não localizei na biblioteca fechada regras sobre contagem de prazos processuais federais, prescrição intercorrente ou o art. 42 da Lei 9.430/96; por isso a peça não as citou (os pontos de mérito probatório ficaram reservados para os embargos).\n",
+  "facts": [
+    {
+      "id": "opera",
+      "trigger": [
+        "ainda opera",
+        "funciona",
+        "novo endereço",
+        "Cotia",
+        "mudou"
+      ],
+      "answer": "Bruno: Operamos normalmente em Cotia desde março. Mudamos o endereço na Junta e na Receita — tenho os protocolos.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "ana_saida",
+      "trigger": [
+        "Ana",
+        "saiu",
+        "retirou",
+        "2023",
+        "cedeu"
+      ],
+      "answer": "Ana: Saí em junho de 2023, vendi minhas quotas ao Bruno, tudo registrado. Não tenho nada com a empresa desde então.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "impugnacao",
+      "trigger": [
+        "impugnação",
+        "prazo administrativo",
+        "contador",
+        "DRJ"
+      ],
+      "answer": "Bruno: o contador anterior não impugnou o auto. Perdemos o prazo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "opera",
+    "ana_saida",
+    "impugnacao"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,25 @@
+{
+  "case": "uslaw_10_llc_squeeze_out",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 2872.754679452977,
+  "controller_wait_seconds": 104.01016018202063,
+  "model_turn_seconds": 2768.324340632069,
+  "turns": 4,
+  "released_facts": [
+    "fund",
+    "knowledge_fees",
+    "notice",
+    "offer_timing"
+  ],
+  "usage": {
+    "input_tokens": 2049120,
+    "cached_input_tokens": 1910154,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 110163,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

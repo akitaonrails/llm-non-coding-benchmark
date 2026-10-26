@@ -1,0 +1,47 @@
+{
+  "case": "brlaw_07_credor_rj",
+  "questions": "# Perguntas ao cliente (Edson Lima — Fornecedor Sul S.A.)\n\n*Perguntas específicas para refinar os documentos. Nenhuma delas impede o protocolo; as assunções usadas estão em destaque nos entregáveis.*\n\n**Respostas recebidas (cliente, 20/04/2026):** item 7, **parcialmente** — o cliente confirma que as empilhadeiras e o sistema de separação são o coração do galpão da Atlas (\"sem isso a Atlas para\"). A parte restante do item 7 e todos os demais itens **permanecem sem resposta** (o cliente informou não ter informações adicionais). Partes já respondidas não se repetem abaixo.\n\n1. **Qualificação (art. 9º, I):** CNPJ da Fornecedor Sul S.A., endereço completo da sede, e qualificação/representação do Sr. Edson Lima (administrador/sócio-gerente?) + cópia dos atos constitutivos e procuração.\n\n2. **Data do pedido de RJ e encargos (art. 9º, II):** qual a data do **pedido de recuperação judicial** da Atlas (ou do deferimento do processamento, se a souber) e se há juros/multa/atualização contratual a computar sobre as duplicatas (R$ 1.200.000) e sobre o contrato fiduciário (R$ 900.000) até essa data. *Assunção atual: valores nominais.*\n\n3. **Composição dos R$ 1.600.000 listados:** como a Atlas chegou a esse valor (quais títulos somou)? 900k + 1,2 mi = 2,1 mi; a relação não bate. Isso não impede a divergência, mas ajuda a conferir duplicação/exclusão de títulos já pagos.\n\n4. **Documentos (art. 9º, III):** contrato de fornecimento com cláusula de alienação fiduciária e **número/atas do registro**; duplicatas/notas fiscais; demonstrativo de parcelas pagas e pendentes.\n\n5. **Data de publicação da relação de credores do AJ (art. 7º, §2º):** o edital de 10/04/2026 já dá ciência da relação e, para o prazo da **objeção ao plano (art. 55** — 30 dias), assumi 10/04/2026 como data de publicação (termo: 10/05, domingo → 11/05/2026). Confirme se houve publicação **autônoma** da relação do AJ (art. 7º, §2º) em outra data.\n\n6. **Stay:** a Atlas/constância já informou data de deferimento do processamento (para calcular os 180 dias do art. 6º §4º e o ponto futuro de retomada da execução fiduciária)?\n\n7. **Bens — parte restante** *(a essencialidade já foi confirmada pelo cliente em 20/04/2026 — essa pergunta não se repete)*: houve algum sinal de **retirada, uso por terceiro ou dano** nas 2 empilhadeiras e no sistema de separação? **Nº de série e laudo**, se possível — instruem a especificação do art. 9º, V da divergência.\n\n8. **Parcelas fiduciárias:** quantas parcelas do contrato fiduciário já vencidas (12/2025–02/2026) e pagas/inadimplidas? Afeta o demonstrativo da garantia na divergência.\n",
+  "facts": [
+    {
+      "id": "essencial",
+      "trigger": [
+        "essenciais",
+        "empilhadeira",
+        "operação da Atlas",
+        "retirar",
+        "retomar"
+      ],
+      "answer": "As empilhadeiras e o sistema de separação são o coração do galpão deles. Sem isso a Atlas para.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "epp",
+      "trigger": [
+        "EPP",
+        "porte",
+        "faturamento",
+        "Simples",
+        "classe IV"
+      ],
+      "answer": "Somos EPP, faturamos uns R$ 3,9 mi. Estamos no Lucro Presumido, não no Simples.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "banco",
+      "trigger": [
+        "banco",
+        "Horizonte",
+        "fiança",
+        "anuiu",
+        "aprovou"
+      ],
+      "answer": "O banco não concordou com nada; já me mandou notificação como fiador.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "essencial"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

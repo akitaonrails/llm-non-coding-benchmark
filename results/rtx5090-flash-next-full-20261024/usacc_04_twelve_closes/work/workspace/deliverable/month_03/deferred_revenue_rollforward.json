@@ -1,0 +1,50 @@
+{
+  "as_of": "2025-03-31",
+  "currency": "USD",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) - prior annual subscription",
+      "term": "2024-06-01 to 2025-05-31",
+      "opening": "24600.00",
+      "billed": "0.00",
+      "recognized": "8200.00",
+      "closing": "16400.00",
+      "note": "8,200.00/month Jan-May 2025 (41,000.00 / 5 remaining months per client opening note). March is 4th of 5 releases; one release remains (May 2025, final 8,200.00). Cash was collected in 2024."
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) - renewal (order form 2025-01-01, INV-2225)",
+      "term": "2025-01-01 to 2025-12-31",
+      "opening": "20000.00",
+      "billed": "0.00",
+      "recognized": "2000.00",
+      "closing": "18000.00",
+      "note": "24,000.00 / 12 = 2,000.00/month; March is month 3 of 12. Collected 2025-01 (bank wire)."
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025) - implementation & license (order form 2025-02-01, INV-2250)",
+      "term": "ASSUMED 2025-02-01 to 2026-01-31 (term not stated in the documents; client confirmed no further records exist - Q8. See open_items.md section 1)",
+      "opening": "33000.00",
+      "billed": "0.00",
+      "recognized": "3000.00",
+      "closing": "30000.00",
+      "note": "36,000.00 / 12 = 3,000.00/month; March is month 2 of 12. Remaining releases Apr 2025 - Jan 2026 (10 x 3,000.00), ALL within 12 months of 2025-03-31. Under this assumption 33,000.00 is recognized in 2025 and only 3,000.00 (Jan 2026) falls in 2026. The February package said 24,000.00 falls in 2026 - that figure was wrong (arithmetic error in disclosure notes only); corrected in open_items.md section 0."
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027) - annual subscription (order form C-027 2025-03-01, INV-2275)",
+      "term": "2025-03-01 to 2026-02-28 (term EXPLICITLY stated on order form: '12 months from service start, auto-renewing'; service start 2025-03-01)",
+      "opening": "0.00",
+      "billed": "18000.00",
+      "recognized": "1500.00",
+      "closing": "16500.00",
+      "note": "New customer C-027. Billed upfront 2025-03-01 and collected by wire 2025-03-15. 18,000.00 / 12 = 1,500.00/month; March is month 1 of 12. Remaining releases Apr 2025 - Feb 2026, all within 12 months of 2025-03-31. Auto-renewal: no evidence of a renewal order has been received; will treat a renewal as a new contract when documented."
+    }
+  ],
+  "totals": {
+    "opening": "77600.00",
+    "billed": "18000.00",
+    "recognized": "14700.00",
+    "closing": "80900.00"
+  },
+  "reconciliation_to_gl": "Closing 80,900.00 agrees exactly to account 2200 in trial_balance.json (77,600.00 + 18,000.00 billed JE-2025-024 - 8,200.00 JE-2025-031 - 2,000.00 JE-2025-032 - 3,000.00 JE-2025-033 - 1,500.00 JE-2025-034).",
+  "presentation_note": "CORRECTED CLASSIFICATION (supersedes the February note): as of 2025-03-31 every component of the 2200 balance releases within 12 months of the reporting date - latest release date is 2026-02-28 (Marigold). Non-current portion: 0.00. Release schedule from 2025-04-01: Trestle prior 16,400.00 (Apr, May 2025); Trestle renewal 18,000.00 (Apr-Dec 2025); Pinecone 30,000.00 under assumed term (Apr-Dec 2025: 27,000.00; Jan 2026: 3,000.00); Marigold 16,500.00 (Apr-Dec 2025: 13,500.00; Jan-Feb 2026: 3,000.00). The February package's statement that 24,000.00 of the Pinecone balance releases in 2026 was an arithmetic error in the narrative notes; no journal entry, trial balance or roll-forward balance was ever affected - see open_items.md section 0 for the full correction. Pinecone classification remains contingent on the assumed term (permanently unknown)."
+}

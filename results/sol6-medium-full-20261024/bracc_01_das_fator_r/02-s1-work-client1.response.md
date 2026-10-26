@@ -1,0 +1,7 @@
+I’ll check the April payment proof against the existing records, recalculate Fator R, and finish the DAS and calculation memo. I’ll flag any payment details the client could not confirm.
+
+The April R$ 3.200 payment is already in the summary’s April row, so adding it again would double count it. Using the summary as the available 12 month payroll total gives Fator R of 27.90196% and Anexo V for the IT services. The remaining payment history is unverified, and the library does not give the Anexo V tax split; I’ll make both limits explicit in the deliverables.
+
+Concluí a apuração em [apuracao.json](/work/workspace/deliverable/apuracao.json) e a memória de cálculo em [memoria.md](/work/workspace/deliverable/memoria.md). O **DAS calculado é R$ 15.188,84**: R$ 14.682,35 de serviços pelo Anexo V e R$ 506,49 de locação pelo Anexo III sem ISS. O pró-labore de abril informado como pago em 30/04 já constava do resumo e não foi somado duas vezes.
+
+O resultado depende da premissa de que os demais R$ 284.600,00 da folha representam pagamentos elegíveis no período. Apenas R$ 1.000,00 adicionais mudariam o Fator R e o anexo dos serviços. A repartição por tributo também não pôde ser fechada com a biblioteca disponível; os campos correspondentes estão como `null`. Esses e os demais pontos pendentes constam em [STATUS.md](/work/workspace/deliverable/STATUS.md).

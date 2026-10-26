@@ -1,0 +1,5 @@
+I’ll read the contract and workspace files, then prepare the required deliverables. I’ll use only the provided files and local calculations.
+
+The supplied balances indicate a covenant breach after correcting the AFAC and provision. I need one clarification before I can complete the requested numeric covenant schedule: the files include a debenture covenant, but do not give a separate debenture balance or say whether that balance is included in the R$31.2 million debt total. I’ll put that question in `QUESTIONS.md`.
+
+Registrei em [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md) as informações necessárias sobre o saldo das debêntures e eventual *waiver*. Com os saldos conhecidos, o índice corrigido já é **2,9694**, acima do limite de **2,75**; o saldo das debêntures é necessário para fechar o valor exato. Aguardo a resposta do cliente para concluir os entregáveis.

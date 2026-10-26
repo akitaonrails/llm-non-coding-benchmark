@@ -1,0 +1,245 @@
+[
+  {
+    "ref": "JE-2502-001",
+    "date": "2025-02-01",
+    "memo": "February 2025 monthly subscription invoices INV-2226..INV-2249, 24 customers, total 30,450 (invoices.csv). SaaS access provided continuously over February; series satisfied over time (ASC 606-10-25-14(b), 25-27; policy #1). Billed and earned in the same month.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-002",
+    "date": "2025-02-01",
+    "memo": "INV-2250 Pinecone Dental Group (C-025) 36,000, order form dated 2025-02-01, single blended line 'Implementation & license - one-time'; scope platform deployment and user onboarding for up to 40 seats; payment due on signature; NO term stated. Deferred in full: policy #2 recognizes implementation only if a separately priced, distinct service is actually delivered - the fee is not separately priced and February documents show no delivery evidence (no completion certificate, sign-off, or seat provisioning). Set-up activities that do not transfer a service are not a performance obligation (ASC 606-10-25-17). Amount billed before performance is a contract liability (ASC 606-10-45-2). The invoice label 'one-time' is not the recognition criterion (revenue follows the library). No allocation is possible without inventing facts; term unknown. Open item + client question raised. CLIENT RESPONSE (same session, J. Alvarado): 'nothing bespoke - they self-onboarded like everyone else. Procurement just wanted it called a license.' Confirms no distinct implementation service was delivered (policy #2: self-serve onboarding is not an implementation service) and the 'license' label is cosmetic - substance is continuous platform access, a series satisfied over time (ASC 606-10-25-14(b), 25-27; a description correction does not change the accounting, 606-10-25-10 et seq.). With no stated term the release cannot be computed: recognition remains 0.00; unknowns U10 (term / MSA v3.2) carried.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 36000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2200",
+        "debit": 0.0,
+        "credit": 36000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-003",
+    "date": "2025-02-26",
+    "memo": "Customer cash receipts, 25 receipts totaling 66,450 (cash_receipts.csv): 24 monthly ACHs 02/20-02/26 totaling 30,450 applied to INV-2226..INV-2249, plus 02/15 WIRE Pinecone Dental Group 36,000 applied to INV-2250. Every receipt matched exactly one bank credit by date/amount/payee. No receipt applied against the opening A/R of 92,650 - flagged in open_items.md.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 66450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 66450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-004",
+    "date": "2025-02-05",
+    "memo": "AWS hosting & infrastructure bill 10,040 (vendor_bills.csv).",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 10040.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 10040.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-005",
+    "date": "2025-02-06",
+    "memo": "WeWork rent bill 7,200 (vendor_bills.csv).",
+    "lines": [
+      {
+        "account": "6100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-006",
+    "date": "2025-02-07",
+    "memo": "Gusto payroll processing fees 240 (vendor_bills.csv, category 'G&A other').",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-007",
+    "date": "2025-02-08",
+    "memo": "Notion/Slack/GitHub software & tools bill 1,460 (vendor_bills.csv).",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-008",
+    "date": "2025-02-09",
+    "memo": "Google Ads marketing bill 3,300 (vendor_bills.csv).",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 3300.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 3300.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-009",
+    "date": "2025-02-09",
+    "memo": "Payment of vendor bills JE-2502-004..008 by bank ACH 02/05-02/09: AWS 10,040 + WeWork 7,200 + Gusto fees 240 + Notion/Slack/GitHub 1,460 + Google Ads 3,300 = 22,240 (bank_statement.pdf).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 22240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 22240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-010",
+    "date": "2025-02-25",
+    "memo": "February payroll per Gusto register (9 employees): gross 54,404; net paid 48,200 (bank 02/25 ACH GUSTO NET PAY); employee withholding 6,204 = 54,404 - 48,200 credited to 2210 payroll taxes payable (derived - register gives only the aggregate taxes_remitted, flagged as U7).",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-011",
+    "date": "2025-02-25",
+    "memo": "Employer payroll taxes & benefits per register: 5,076, credited to 2210.",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-012",
+    "date": "2025-02-25",
+    "memo": "Tax remittance via Gusto (bank 02/25 ACH GUSTO TAX 11,280; register taxes_remitted 11,280) = employee withholding 6,204 + employer taxes 5,076 = 11,280. Payroll agrees to register and bank; 2210 cleared to zero for the month.",
+    "lines": [
+      {
+        "account": "2210",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-013",
+    "date": "2025-02-28",
+    "memo": "Monthly depreciation per close checklist item 6: equipment 64,000 over 36 months = 1,777.78 (assumption U5, consistent with opening accumulated 21,333 = 12 x 1,777.78).",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "JE-2502-014",
+    "date": "2025-02-28",
+    "memo": "Revenue earned from deferred revenue: Trestle prior contract (Jun 2024-May 2025) release 8,200 (closing 32,800 / 4 remaining months Feb-May = 8,200, ties to client-note basis 8,200/mo); Trestle renewal 24,000 x 1/12 = 2,000 (policy #1). Total 10,200. Pinecone 36,000 NOT released - no delivery evidence, no term (see JE-2502-002).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 10200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 10200.0
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "part1": {
+    "receipts": 2262400.00,
+    "disbursements": {
+      "payroll_paid_2026-03-13_prepetition_portion_authorized_Dkt9": 412000.00,
+      "post_petition_vendor_payments_ordinary_course": 19570.00,
+      "prepetition_apex_paid_under_critical_vendor_order_Dkt48": 31200.00,
+      "utility_deposit_Dkt31": 28000.00,
+      "total": 490770.00
+    },
+    "ending_cash": null
+  },
+  "part2": {
+    "post_petition_payables": 207826.16,
+    "pre_petition_liabilities_subject_to_compromise": 74110.00
+  },
+  "part5": {
+    "professional_fees_approved": 0,
+    "paid": 0,
+    "holdback": 0
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "Yes — (1) Apex Coatings pre-petition claim $31,200 paid 3/24 under the critical-vendor order (Dkt. 48; Schedule 1; $35,000 aggregate cap; condition: written agreement to Customary Trade Terms — confirmation pending, see QUESTIONS.md Q5); (2) the 3/13 payroll of $412,000 (period 2/28–3/13) includes a pre-petition portion paid under the wage motion (Dkt. 9), every employee within the 11 U.S.C. §507(a)(4) cap of $17,150 (library: bc_507a4_wages.md); the pre-/post-petition wage split within $412,000 has not been allocated — see QUESTIONS.md Q6.",
+    "payments_outside_ordinary_course_without_approval": "No — every disbursement was either in the ordinary course (post-petition vendor payments $19,570; 11 U.S.C. §363(c)(1), §503(b)(1) — library: bc_362_363_503_549.md) or made under a Court order (Dkt. 48 critical vendor; Dkt. 9 wages; Dkt. 31 utility deposit; Dkt. 22 cash collateral permitting use of pre-petition receivable collections). The CFO-requested payment of the Mesa Steel February invoice ($62,400) and netting against the returned coils were NOT executed (DIP order Dkt. 61 ¶¶2-3; critical-vendor order Dkt. 48 covers Apex only)."
+  }
+}

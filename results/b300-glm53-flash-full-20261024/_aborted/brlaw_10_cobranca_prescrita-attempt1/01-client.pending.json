@@ -1,0 +1,45 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "questions": "# PERGUNTAS AO CLIENTE — Técnica Forte Ltda. × Metalúrgica Boa Vista Ltda.\n\n*Preparado em 12/10/2026. Referências: `documents/emails_reconhecimento.txt`, `documents/negativacao_e_consulta.md`, `library/INDEX.md`. A análise em `analise.json` e `memorando.md` foi entregue mesmo pendendo estas respostas, com as premissas declaradas em destaque (memorando §8).*\n\n## Perguntas materiais\n\n1. **Houve pagamentos após o PIX de R$ 10.000 de 02/08/2023?** O e-mail da Boa Vista diz \"restante em breve\". Sim/Não; se sim: valores, datas e forma. **Efeito na análise:** cada pagamento novo **abate o principal exigível** na razão do valor (parcela 1 responde pelo saldo, hoje R$ 20.000), **mas não reinicia o prazo prescricional** — a interrupção já foi usada uma única vez (CC art. 202, parágrafo único; nota da `library/cc_prescricao_202_206.md`); o novo termo de **15/09/2027** permanece.\n\n2. **Qual é a data real da inscrição no Serasa?** Sérgio diz \"negativei mês passado\"; o documento registra **12/08/2026** (dois meses antes). A análise adotou a data documentada. Se a inscrição real for outra ou houver lançamentos adicionais, informe data e valores — muda o confronto \"lançado R$ 180.000 × correto R$ 110.000\" e a narração do pedido de correção/exclusão dos R$ 60.000.\n\n## Observação (não é pergunta ao cliente — limitação da base)\n\n3. **Correção IPCA não quantificável:** não existe série do índice em `library/` nem em `documents/`. O total estimado (R$ 189.673,33, memorando §4.4) está **sem correção** e, portanto, **subestimado**. A correção será requerida na inicial/liquidação com índice oficial — nada a perguntar ao cliente, item registrado como aberto em `STATUS.md`.\n",
+  "facts": [
+    {
+      "id": "testemunhas",
+      "trigger": [
+        "testemunha",
+        "assinatura",
+        "título executivo",
+        "quem assinou"
+      ],
+      "answer": "O contrato foi assinado só pelos dois representantes, sem testemunhas. Foi tudo meio informal.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pagamento",
+      "trigger": [
+        "pagamento parcial",
+        "10 mil",
+        "2023",
+        "PIX"
+      ],
+      "answer": "Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "greve",
+      "trigger": [
+        "greve",
+        "parcelas 5 e 6",
+        "serviço concluído",
+        "fevereiro",
+        "março"
+      ],
+      "answer": "Teve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "pagamento"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

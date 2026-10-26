@@ -1,0 +1,22 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-flash-next-full-20261024/usacc_06_sale_asset_vs_stock/03-review",
+  "elapsed_seconds": 1366.8996844859794,
+  "controller_wait_seconds": 46.005274308030494,
+  "model_turn_seconds": 1320.8372258240415,
+  "turns": 3,
+  "released_facts": [
+    "liabilities"
+  ],
+  "usage": {
+    "input_tokens": 2329520,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 223434,
+    "reasoning_output_tokens": 150179
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

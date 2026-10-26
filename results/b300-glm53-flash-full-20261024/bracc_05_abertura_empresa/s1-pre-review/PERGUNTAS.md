@@ -1,0 +1,44 @@
+# QUESTÕES AO CLIENTE — Aurora Estética (status após 25/10/2026)
+
+> **Q1–Q4 respondidas em 25/10/2026** — respostas transcritas abaixo e já incorporadas aos entregáveis (`parecer.md`, `numeros.json`, `contrato_social_ajustado.md`, `checklist_registro.md`). **Q5–Q9 em aberto** (o cliente informou não ter informações adicionais). **Q10–Q12 são novas** e surgem das próprias respostas. Enquanto houver pendências, as entregas valem com as premissas destacadas em `parecer.md`.
+
+## Respondidas (25/10/2026)
+
+**Q1. Regime de bens (define o quadro societário).** Perguntado: comunhão universal impede Marina no quadro (CC, art. 977); escolher entre **Opção A** (Marina fora do quadro, com garantias por instrumento entre o casal) e **Opção B** (alterar o regime por escritura antes do registro; então Marina poderia ser sócia, mas nunca administradora — Lei 8.112/90, art. 117, X).
+> **Resposta:** "Comunhão universal, casamos em 2010, sem pacto." E ainda: "Sou analista federal, 40h. Posso ser sócia, né? Administrar eu faria fora do expediente."
+> **Definição:** comunhão universal confirmada → **Opção A**: Marina **fora do quadro** — a pergunta "posso ser sócia?" é respondida **não** pelo próprio regime (CC, art. 977, leitura literal). "Administrar fora do expediente" também está **vedado**: o art. 117, X da Lei 8.112/90 não comporta exceção de horário nem de remuneração. Alteração de regime segue como caminho teórico [procedimento UNVERIFIED], sem interesse manifestado.
+
+**Q2. Participação da Dra. Luana.** Perguntado: para ser sócia com ~20% precisaria aportar **R$ 114.000 em moeda** (20% × R$ 570.000), pois serviço não integra capital (CC, art. 1.055, §2º); alternativa: começar como não-sócia contratada e comprar quotas depois com dinheiro próprio.
+> **Resposta:** "Não tenho dinheiro pra aportar; a ideia é que meu trabalho vale 20%."
+> **Definição:** trabalho **não** pode integralizar capital (CC, art. 1.055, §2º) → Dra. Luana entra como **contratada, não-sócia**; quotas futuras **somente por aporte em moeda própria ou cessão**. "Vesting por trabalho" não tem base na biblioteca [UNVERIFIED].
+
+**Q3. Aluguel dos 40%.** Perguntado: valor do aluguel mensal projetado da fração vaga (blindar a imunidade de ITBI — CTN art. 37).
+> **Resposta:** "Uns 40% da sala ficam vagos; vamos alugar para um dentista. Deve dar uns R$ 8 mil/mês."
+> **Definição:** R$ 8.000/mês → **R$ 96.000/ano** (8.000 × 12) → **7,41% da receita total projetada** (96.000 ÷ 1.296.000) — folga ≈ **6,75×** (648.000 ÷ 96.000) sobre o limite de 50%; imunidade de ITBI preservada, com controle durante os 3 primeiros anos.
+
+**Q4. Simples × imóvel integralizado.** Perguntado: preferência entre manter o Simples (imóvel e locação fora da PJ) ou integralizar o imóvel e locar pela PJ.
+> **Resposta (pelo plano confirmado, com a resposta da Q3):** alugar os 40% pela PJ, com o imóvel integralizado.
+> **Definição:** imóvel **permanece integralizado**; **Simples descartado de forma definitiva** — a vedação (LC 123, art. 17, XV) é pela **atividade** de locação de imóvel próprio e não pela proporção da receita: mesmo a 7,4% da receita, ela impede a opção. Vigora a alternativa (i) do parecer §2.3. Em decorrência, **6810-2/02 passa a ser registrável como CNAE secundário**.
+
+## Em aberto (sem resposta — o cliente não tem informações adicionais)
+
+**Q5. Piso previdenciário 2026.** O pró-labore mínimo usa R$ 1.518,00 como referência **[UNVERIFIED para 2026]** (salário mínimo 2025); afeta só o piso do pró-labore de Felipe: INSS 11% = R$ 166,98/mês; patronal 20% = R$ 303,60/mês.
+
+**Q6. Distribuição acima do lucro.** Pretensão familiar de **R$ 50 mil/mês** vs lucro projetado de **R$ 35 mil/mês** → déficit de **R$ 15 mil/mês (R$ 180 mil/ano; o pretendido excede o lucro em 42,9%)**. Deixado **não balanceado de propósito**. Com o quadro definitivo (sócio único), o teto via PJ é **R$ 35 mil/mês, todo ao Felipe** — a configuração "25 mil + 25 mil" caiu (Marina não recebe dividendo).
+
+**Q7. Estado do imóvel.** Matrícula 118.442 indica "sem ônus"; confirmar o valor da declaração (R$ 420.000) e eventuais atos posteriores à matrícula.
+
+**Q8. Outras empresas optantes pelo Simples.** Sem resposta — **efeito prático reduzido no plano atual**: o Simples já é inviável pela locação de imóvel próprio (Q4); a questão só volta a importar se a locação sair da PJ ou migrar para a hipótese da Q12.
+
+**Q9. Odontologia (8630-5/04).** Sem resposta sobre responsável técnico inscrito no CRO → CNAE segue **excluído**. Nota: o dentista **locatário** do consultório não responde tecnicamente pela clínica.
+
+## Novas perguntas (derivadas das respostas)
+
+**Q10. Renda esperada da Marina via PJ.** Marina não pode ser sócia (Q1) nem administrar — e pagamentos da PJ a **não-sócio** **não são dividendos** (sem tratamento na biblioteca [UNVERIFIED]). Se ela contava com os "R$ 25 mil/mês" do plano antigo, confirmem que **não** haverá pagamento da PJ a ela — ou indiquem o que pretendem (vínculo de emprego pela PJ? remuneração de servidora fica fora do escopo da biblioteca; ajuste familiar entre o casal **fora deste escopo**).
+
+**Q11. Condições da contratação da Dra. Luana.** Informar salário/remuneração pretendida e a forma (contrato de trabalho ou prestação de serviços — formas fora da biblioteca [UNVERIFIED]). Confirmar também que ela **concorda** em ingressar **sem** o "20% por trabalho" (não registrável no contrato; quotas futuras somente por moeda ou cessão).
+
+**Q12. Hipótese de locação com serviços tributados pelo ISS.** A biblioteca registra uma exceção à vedação do Simples para **prestação de serviços referentes à locação, tributados pelo ISS** (LC 123, art. 17, XV). Se um dia quiserem reabrir o Simples, aceitariam estruturar a locação com serviços vinculados? **O plano atual não depende disso** (imóvel dentro da PJ, sem Simples) — sem resposta, nada fica bloqueado.
+
+---
+*Fonte de citação: apenas `workspace/library/` (7 arquivos). Respostas do cliente transcritas sem alteração; os julgamentos jurídicos remetem a `parecer.md`.*

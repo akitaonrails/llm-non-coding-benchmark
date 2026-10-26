@@ -1,0 +1,26 @@
+{
+  "case": "usacc_02_close_gap",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-full-20261024/usacc_02_close_gap/04-review",
+  "elapsed_seconds": 780.1158275179914,
+  "controller_wait_seconds": 37.00326574096107,
+  "model_turn_seconds": 743.1050880200346,
+  "turns": 4,
+  "released_facts": [
+    "cascade_dup",
+    "hardaway",
+    "mobile_4312",
+    "uchi",
+    "xfer_1500"
+  ],
+  "usage": {
+    "input_tokens": 2029865,
+    "cached_input_tokens": 1938345,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 125685,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

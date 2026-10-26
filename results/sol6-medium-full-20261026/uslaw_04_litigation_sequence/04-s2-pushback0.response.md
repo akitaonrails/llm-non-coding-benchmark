@@ -1,0 +1,5 @@
+I hear the concern about seven hires. I’ll make the advice clearer about what Juniper can still pursue for the five hires without a waiver, and why I cannot put the interference claim in a reply solely to pressure Pinecrest.
+
+We are not folding. Juniper can still pursue the unpaid invoices and conversion fees for the five hires Marcus did not expressly waive. The February email waives fees for Rosa and Tay only.
+
+I cannot keep an interference claim solely to scare Pinecrest. On the current facts, Pinecrest cannot interfere with its own contract, and we lack evidence of improper conduct toward a separate relationship. That claim would put Juniper’s position at risk. I’ve added this explanation and the recommended path to [Session 2 advice](/work/workspace/deliverable/session2/advice.md). The draft reply continues to press the supported claims.

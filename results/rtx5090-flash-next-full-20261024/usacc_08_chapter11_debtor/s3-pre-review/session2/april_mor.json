@@ -1,0 +1,83 @@
+{
+  "report": "UST Form 11-MOR, Monthly Operating Report — period 4/1/2026 through 4/30/2026 (due by 5/21 per Dkt. 61 ¶4)",
+  "case": "In re Redwood Fabrication, Inc., Case No. 26-11842-TBM (Bankr. D. Colo.)",
+  "data_status": "SUBSTANTIALLY COMPLETE — April activity per documents/session2/april_activity.md and interim compensation procedures per Dkt. 77 (documents/session2/interim_compensation_order_excerpt.md). Open items remain: whether the H&P interim payment was made in April, itemization of the $214,600 vendor payments, and April invoice/statement detail for Part 2 aging (QUESTIONS.md). Nothing is forced to balance.",
+  "part1": {
+    "receipts": 1480300.00,
+    "receipts_detail": {
+      "operating_receipts_april_activity_file": 980300.00,
+      "dip_draw_prairie_capital": 500000.00,
+      "dip_draw_detail": { "2026-04-09": 500000.00 },
+      "dip_facility_status": "cumulative draws 600,000 (3/12) + 450,000 (3/26) + 500,000 (4/9) = 1,550,000.00 of 2,500,000.00 cap (Dkt. 61 ¶1); 950,000.00 headroom. Budget (Exhibit B) 10% line-variance test cannot be evaluated — Exhibit B not in file."
+    },
+    "disbursements": {
+      "payroll_4_10_and_4_24": 796000.00,
+      "payroll_detail": { "2026-04-10": 398000.00, "2026-04-24": 398000.00 },
+      "post_petition_vendor_payments": 214600.00,
+      "holland_and_pierce_interim_compensation_IF_PAID_IN_APRIL": 116200.00,
+      "holland_and_pierce_note": "Dkt. 77 (entered 4/14): after the 14-day no-objection window closed 4/29, the Debtor MAY pay 80% of fees ($140,000 x 80% = $112,000) + 100% of expenses ($4,200) = $116,200. The activity file records no objection by 4/29 but does NOT state whether payment was made in April or carried to May. Included in disbursements only if paid in April — see ranges."
+    },
+    "total_disbursements_if_hnp_unpaid_in_april": 1010600.00,
+    "total_disbursements_if_hnp_paid_in_april": 1126800.00,
+    "arithmetic": "796,000.00 + 214,600.00 = 1,010,600.00; + 116,200.00 = 1,126,800.00.",
+    "understated_items": "DIP interest/fees are not quantified anywhere in the file and are NOT included; if any accrued or was paid in April, disbursements and cash are misstated by that amount (QUESTIONS.md).",
+    "ending_cash_if_hnp_unpaid_in_april": 2241330.00,
+    "ending_cash_if_hnp_paid_in_april": 2125130.00,
+    "ending_cash_arithmetic": "March ending 1,771,630.00 + receipts 1,480,300.00 = 3,251,930.00; − 1,010,600.00 = 2,241,330.00; or − 1,126,800.00 = 2,125,130.00.",
+    "ending_cash_note": "Carried-forward March figure already assumes beginning cash of $0 and is UNDERSTATED by the unquantified pre-petition balance swept into the DIP account on 3/10/2026 (client has no further information — permanent flagged unknown). The sweep itself is an internal transfer, not a receipt."
+  },
+  "part2": {
+    "post_petition_payables": {
+      "single_value_possible": false,
+      "reason": "April vendor payments ($214,600.00) are not itemized and April vendor invoices / monthly professional statements are not in the file; payment application cannot be determined without fabricating facts.",
+      "known_components_at_4_30": {
+        "holland_and_pierce": "144,200.00 if the interim payment was NOT made in April (fees 140,000.00 + expenses 4,200.00); 28,000.00 (20% fee holdback) if it WAS made.",
+        "corbin_advisors": "45,000.00 invoiced, unpaid; payment RESTRICTED by Dkt. 77 (no payment for any period before retention date 3/20; statement covers 3/10–3/31 — pre-retention portion unallocatable from file).",
+        "mesa_steel_3_18_invoice": "18,900.00 unpaid at 3/31; payment status not itemized in the April file — presumably applied within the 214,600.00 but UNCONFIRMED.",
+        "ust_fee_accrual": "3,926.16 (prior) + 8,084.80 (April, 0.8% x 1,010,600.00) = 12,010.96; or 3,926.16 + 9,014.40 (0.8% x 1,126,800.00) = 12,940.56 if H&P paid in April. Method carried from March: 0.8% of disbursements, estimate (client confirmed no better basis)."
+      },
+      "unknown_additions": "April vendor invoices: at least 195,700.00 were paid during April (214,600.00 − 18,900.00 known prior post-petition vendor payable) — those invoices are not itemized and any UNPAID April-invoice remainder is unknown. H&P and Corbin April monthly statements: unknown. 4/24-to-4/30 payroll accrual: unknown.",
+      "known_components_illustrative_subtotals": "if H&P paid and Mesa 18,900 paid: 28,000.00 + 45,000.00 + 12,010.96 = 85,010.96 plus unknown unpaid April invoices; if neither paid: 144,200.00 + 45,000.00 + 18,900.00 + 12,010.96 = 220,110.96 plus unknown. These are components, not the total."
+    },
+    "pre_petition_liabilities_subject_to_compromise": {
+      "known_from_file": 74110.00,
+      "detail": {
+        "mesa_steel_2_2": 62400.00,
+        "front_range_electric_3_5": 7400.00,
+        "grainger_2_11": 4310.00
+      },
+      "no_change_in_april": "No authorized pre-petition payments in April. Dkt. 83 (post-petition Mesa trade agreement) expressly confirms 'the February invoice remains an unsecured pre-petition claim' — documentary support for keeping the $62,400.00 in LSTC. Apex $31,200.00 was paid in March under Dkt. 48.",
+      "open": "Full scheduled LSTC remains unknown (only $74,110.00 file-known vs. $8,400,000.00 allowed GUC pool at emergence per plan term sheet) — permanent flagged unknown.",
+      "related_asset": "Mesa pre-petition returned-coils receivable ~$11,000.00 (client estimate) remains an un-netted pre-petition receivable; no collection recorded in April receipts (composition of the $980,300.00 is not itemized)."
+    }
+  },
+  "part5": {
+    "authority_note": "Dkt. 77 (entered 4/14) is an INTERIM PROCEDURES order, not a §330(a) fee award: monthly statements, 14-day objection window, absent objection the Debtor may pay 80% of fees + 100% of expenses; the 20% holdback is payable only upon Court approval of an interim or final fee application; NO payment for any period before the professional's retention date. All amounts remain subject to final fee review and disgorgement (§§330(a)/331; bc_330_331.md).",
+    "holland_and_pierce": {
+      "retention": "nunc pro tunc to 3/10/2026 — entire March statement period is post-retention, so the Dkt. 77 retention-date bar does not bite.",
+      "statement_served": "4/15/2026 for March: fees 140,000.00 + expenses 4,200.00; no objection by 4/29 (14 days per Dkt. 77).",
+      "allowed_for_interim_payment_under_dkt77": 116200.00,
+      "arithmetic": "fees 140,000.00 x 80% = 112,000.00; expenses 4,200.00 x 100% = 4,200.00; total 116,200.00.",
+      "paid_in_april": "UNCONFIRMED — activity file does not state whether the 116,200.00 was disbursed before 4/30 (requested in QUESTIONS.md).",
+      "holdback": 28000.00,
+      "holdback_note": "140,000.00 − 112,000.00 = 28,000.00 (20% of fees); payable only on Court approval of an interim/final application.",
+      "prior_assumption_superseded": "the earlier draft of this MOR assumed a 4/14 order had 'awarded' the full $140,000; the actual Dkt. 77 text replaces that assumption — same 112,000.00/28,000.00 fee split, plus 4,200.00 expenses now payable (80/100, not 80/0)."
+    },
+    "corbin_advisors": {
+      "retention": "effective 3/20/2026.",
+      "statement_served": "4/16/2026 for $45,000.00 covering 3/10–3/31; 14-day objection window ran to 4/30; no objection noted in file.",
+      "retention_date_bar": "Dkt. 77: 'No payment may be made for any period before the professional's retention date.' The statement covers 3/10–3/19 — 10 days PRE-retention. The payable portion cannot be computed from the file.",
+      "illustrative_only_NOT_booked": "if allocated pro-rata by days (illustration only — daily allocation is NOT in the file and may not reflect actual time records): 45,000.00 x 10/22 = 20,454.55 pre-retention (NOT payable under Dkt. 77); 45,000.00 x 12/22 = 24,545.45 payable portion; 80% interim allowed on that = 19,636.36.",
+      "approved": 0.00,
+      "paid": 0.00,
+      "holdback": 0.00,
+      "action": "Do NOT pay Corbin under the interim procedure until the statement is re-served or supplemented with the 3/10–3/19 vs. 3/20–3/31 allocation (and any pre-retention services are addressed by court order if compensation is sought for them)."
+    },
+    "other_professionals": "none in file"
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "NO — based on the April activity file. All April disbursements are labeled post-petition: payroll (4/10, 4/24), post-petition vendor payments 214,600.00, and the H&P interim payment (post-petition services, if made). Dkt. 83 confirms Mesa's February invoice 'remains an unsecured pre-petition claim' — it was not paid, and the proposed 62,400.00 − 11,000.00 = 51,400.00 netting was NOT executed (refused per Dkt. 61 ¶3, §549(a); see session1/response_to_cfo.md). CAVEATS before signing under penalty of perjury: (i) vendor payments need invoice-level itemization to confirm no pre-petition invoice slipped in; (ii) 4/10 payroll run assumed to cover a wholly post-petition service period — confirm (QUESTIONS.md).",
+    "payments_outside_ordinary_course_without_approval": "NONE IDENTIFIED. DIP draw 500,000.00 (4/9) is under Dkt. 61. The H&P interim payment (if made) is under court-ordered Dkt. 77 procedures — reportable in Part 5, authorized, not an ordinary-course item. Dkt. 83 Mesa trade agreement was negotiated by counsel — payments under it are post-petition trade; obtain the order/agreement copy for the file to verify terms (QUESTIONS.md). UST fees accrued, none paid in April."
+  },
+  "authority": "UST Form 11-MOR (2021) per library/ust_mor_instructions.md; 11 U.S.C. §§330(a), 331 (bc_330_331.md); §§362(a), 363(b)-(c), 503(b), 549(a) (bc_362_363_503_549.md); case orders Dkt. 48, 61, 77, 83 and documents/session2/april_activity.md + interim_compensation_order_excerpt.md."
+}

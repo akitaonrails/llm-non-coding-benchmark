@@ -1,0 +1,21 @@
+{
+  "base_mensal_liquida": 43666.67,
+  "incide_sobre": [
+    "salário CLT líquido mensal (R$ 24.000,00; bruto implícito ~R$ 30.000, conferido pelo FGTS de R$ 2.400 = 8%)",
+    "pró-labore habitual (R$ 15.000,00/mês, confirmado pelo cliente; assumido líquido — ver QUESTIONS.md)",
+    "13º salário líquido (R$ 24.000,00/ano = R$ 2.000,00/mês; STJ REsp 1.332.808 — library/alimentos_base_calculo.md)",
+    "férias + terço constitucional líquidos (R$ 32.000,00/ano = R$ 2.666,67/mês; mesma fonte)",
+    "horas extras",
+    "distribuição de lucros, SE e quando habitual (inexiste até hoje: cliente confirma reinvestimento integral; incidiria se passar a distribuir — controvertido, tendência de incidência quando habitual)"
+  ],
+  "nao_incide_sobre": [
+    "FGTS — depósitos mensais (R$ 2.400,00) e saques (AgInt no AREsp — library/alimentos_base_calculo.md)",
+    "verbas rescisórias indenizatórias: aviso-prévio indenizado, multa de 40%, férias indenizadas",
+    "auxílios e diárias",
+    "lucros NÃO distribuídos mantidos na sociedade (biblioteca só manda integrar a base os 'lucros distribuídos' habituais — a tentativa da outra parte de alcançá-los não tem respaldo no material disponível; argumento não verificado)"
+  ],
+  "percentual_sugerido": 20,
+  "valor_mensal_estimado": 8733.33,
+  "guarda": "compartilhada",
+  "fundamento": "Binômio necessidade–possibilidade e proporcionalidade (CC 1.694 §1º; 1.695; 1.699 — library/alimentos_base_calculo.md). Base líquida com pró-labore habitual: 24.000 + 15.000 + 2.000 (13º/12) + 2.666,67 (férias/12) = R$ 43.666,67/mês. Faixa da prática judicial: 15% (R$ 6.550,00) a 30% (R$ 13.100,00). Sugestão: 20% = R$ 8.733,33/mês para 2 filhos (9 e 6): renda do pai ≈ 83% do total do casal (43,7 mil × 9 mil da mãe), que também contribui na guarda compartilhada. Com a residência alternada em semanas (pedido do cliente), margem de negociação até 15–18% (6.550–7.860) — atenuante discricionária, sem regra na biblioteca que reduza alimentos por divisão de tempo. Guarda compartilhada é a regra legal (CC 1.584, §2º — library/guarda_compartilhada.md) e não afasta alimentos do genitor sem residência de referência. Revisão por mudança de situação (Súmula 358). Recusa-se: base 'bruta', incidência sobre FGTS e verbas rescisórias indenizatórias."
+}

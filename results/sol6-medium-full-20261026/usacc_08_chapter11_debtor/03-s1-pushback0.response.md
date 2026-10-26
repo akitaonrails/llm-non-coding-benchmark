@@ -1,0 +1,3 @@
+I’ll add a direct reply to Gil. A genuine deposit for new steel may be possible if it pays only for future deliveries and fits the applicable orders and budget. Relabeling the February balance would still leave it as a pre-petition payment.
+
+I added a [written reply to Gil](/work/workspace/deliverable/session1/response_to_cfo.md). A deposit can support the Q2 order only if it genuinely pays for new steel and meets the DIP budget and approval requirements. If Mesa insists on payment of the February invoice before shipping, counsel needs expedited court authorization; changing the payment’s label does not authorize it.

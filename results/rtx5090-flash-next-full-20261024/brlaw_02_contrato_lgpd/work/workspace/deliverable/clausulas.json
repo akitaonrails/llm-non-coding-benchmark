@@ -1,0 +1,114 @@
+[
+  {
+    "clausula": "1",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Objeto licito, determinado e determinavel (licenca de uso em nuvem + implantacao/treinamento/suporte). Unica adequacao formal: alinhar a descricao do objeto com a nova clausula de protecao de dados (o tratamento de dados e atividade inerente aos servicos, com a NEXA como operadora). Nada que exija alteracao.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "2",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "Reajuste 'pelo IGP-M ou outro indice a criterio da NEXA' deixa a variacao do preco ao arbitrio exclusivo do credor. Entre empresas a revisao contratual so ocorre de maneira excepcional e limitada (CC art. 421-A; library/cc_contratos_empresariais.md) e a boa-fe objetiva (CC art. 422) e incompativel com indice definido unilateralmente por uma parte depois da assinatura. Nota numerica: mensal = 3 x R$ 6.900,00 = R$ 20.700,00; valor do contrato em 36 meses = 36 x 20.700 = R$ 745.200,00 + implantacao R$ 48.000,00 = R$ 793.200,00 (sem reajuste). Conta corrigida do reajuste: 1 ponto percentual acima do esperado pesa R$ 207,00 por mensalidade sobre as parcelas futuras - ~R$ 2.484,00 por ciclo de 12 meses reajustado (12 x 207), ~R$ 4.968,00 se o excesso do indice incidir sobre as 24 parcelas restantes apos o 1º reajuste anual, e ~R$ 7.477,00 no contrato inteiro se os dois reajustes anuais (meses 13 e 25) vierem 1pp acima do esperado (efeito composto).",
+    "redacao_proposta": "\"O preco de implantacao e certo (R$ 48.000,00) e nao sera reajustado no primeiro ano. As mensalidades serao reajustadas a cada 12 meses da vigencia pelo IGP-M (FGV), acumulado no periodo; cessada a publicacao do IGP-M, o indice substituto sera o IPCA, vedada a substituicao a criterio exclusivo de qualquer das partes. Reajustes proporciais (pro rata) so quando legalmente exigidos.\""
+  },
+  {
+    "clausula": "3",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Vigencia de 36 meses com renovacao automatica por 36 meses e denuncia com 180 dias de antecedencia: valida entre empresas (CC art. 421-A - presuncao de paridade; library/cc_contratos_empresariais.md). ALERTA pratico (nao e invalidade): se a janela de 180 dias escapar (ou seja, se o aviso nao sair ate o mes 30 do periodo), o contrato se renova automaticamente por mais 36 meses - mais R$ 745.200,00 (36 x R$ 20.700,00), elevando o compromisso potencial a R$ 1.538.400,00 (72 x 20.700 + 48.000). A renovacao interage com a multa da Clausula 10. Recomendacao de agenda: criar lembrete contratual no mes 24. Negociacao opcional (nao obrigatoria): renovacoes sucessivas de 12 meses e aviso escrito da NEXA com 60 dias de antecedencia do inicio de cada periodo de denuncia.",
+    "redacao_proposta": "(opcional) \"As renovacoes sucessivas serao de 12 meses e a NEXA devera comunicar por escrito, com 60 dias de antecedencia do inicio de cada periodo de denuncia, o prazo-limite para denuncia nao renovatoria.\""
+  },
+  {
+    "clausula": "4",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Obrigacoes tipicas e razoaveis (dados cadastrais corretos, equipe treinada, pontualidade). Nada que precise mudar. Convem apenas registrar que os 'dados cadastrais' incluem dados de titulares tratados por meio do sistema, cuja proteção se rege pela nova clausula de dados.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "5",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Clausula central e a maior exposicao do contrato, em quatro frentes (library/lgpd_excertos.md): (a) NAO define papeis - a clinica e controladora (decisoes sobre o tratamento, LGPD art. 5º VI) e a NEXA e operadora (trata em nome do controlador, art. 5º VII), devendo seguir as instrucoes do controlador (art. 39); (b) o uso de dados 'anonimizados ou agregados' para fins estatisticos, de pesquisa e de DESENVOLVIMENTO DE PRODUTOS da NEXA e tratamento para finalidade propria do operador, fora das instrucoes do controlador (art. 39), e dado de saude e sensivel (art. 5º II), exigindo base legal propria (art. 11); a anonimizacao so e confiavel se irreversivel (art. 12) - o proprio arquivo da base registra que dados agregados de ~22.000 pacientes raramente sao anonimizados de forma irreversivel; (c) armazenamento 'no Brasil ou no exterior a escolha da NEXA' viola o art. 33 (transferencia internacional so nos casos previstos - pais adequado, clausulas-padrao etc.); (d) 'medidas de seguranca compativeis com o mercado' e formula vaga: os arts. 46-48 exigem medidas de seguranca e comunicacao de incidente a ANPD e ao titular em prazo razoavel (Res. CD/ANPD 15/2024: 3 dias uteis), o que e inviavel se a NEXA nao avisar a clinica imediatamente. Observacao importante para o plano de negocio da cliente: a integracao com operadoras (Unimed, Bradesco) para FATURAMENTO TISS e permitida - o art. 11 §4º autoriza o compartilhamento de dados sensiveis de saude entre controladores para as transacoes financeiras e administrativas resultantes do uso e da prestacao dos servicos (o excerto cita expressamente 'faturamento junto a operadoras'); o que nao se admite e uso para vantagem economica fora dessas hipoteses. FATO CONFIRMADO PELA CLIENTE (resposta ao parecer): o sistema ENVIARA guias e dados de atendimento as operadoras para faturamento, e a operacao e essencial. Por isso a nova clausula nao proibe o fluxo: o §4º da clausula substituta o autoriza expressamente (art. 11 §4º), limitando os dados de atendimento ao exigido pelo TISS em cada guia (prontuario completo nao segue para a operadora). DESCONHECIDO REMANESCENTE (sinalizado, sem resposta da cliente): se existe promessa ou pretensao de a NEXA usar dados da clinica para pesquisa/desenvolvimento de produtos proprios - a clausula substituta veda por padrao (§3º); se a NEXA insistir no pedido, dados sensiveis exigem consentimento especifico e destacado (art. 11, I).",
+    "redacao_proposta": "Suprimir integralmente a Clausula 5 atual e substitui-la pela clausula completa de protecao de dados pessoais incluida no entregavel 'clausula_dados.md' (papéis controlador/operador; base legal do art. 11 II 'f' para dados de saude; vedacao de uso para fins proprios da NEXA; anonimizacao so se irreversivel e aprovada por escrito; faturamento TISS autorizado expressamente no §4º; armazenamento em territorio brasileiro por padrao e transferencia internacional apenas nos mecanismos do art. 33; medidas de seguranca minimas; aviso de incidente em ate 24h; subcontratacao com fluxo de obrigacoes; terminos/portabilidade/guarda de 20 anos conforme CFM; plano de saida/migracao; auditoria)."
+  },
+  {
+    "clausula": "6",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "SLA valido entre empresas paritarias; nao ha fundamento na base consultada para tratar como abusiva. Mas e comercialmente fraca para quem depende do sistema para atendimento: 99% de disponibilidade tolera ate 87,6 h de indisponibilidade por ano (1% x 8.760 h); suporte so em horario comercial deixa fins de semana e madrugadas descobertos; os creditos de 2% da mensalidade por ponto abaixo da meta atingem o teto de 10% quando a disponibilidade cai a 94% (meta 99 - 5 pontos x 2% = 10%), isto e, por ate R$ 2.070,00/mes (10% x R$ 20.700,00) a NEXA pode operar com ate ~525 h de queda anual (6% x 8.760). Ponto de negociacao (nao de invalidade): suporte prioritario fora do horario comercial para indisponibilidade total e direito de resolucao sem multa em caso de descumprimento reiterado do SLA.",
+    "redacao_proposta": "(opcional) \"Indisponibilidade total do sistema tera suporte em regime 7x24 com prazo de retomada; tres meses consecutivos de descumprimento da meta de disponibilidade, ou um unico evento de indisponibilidade superior a 24 horas, autorizam resolucao pela CONTRATANTE sem multa e com estorno proporcional.\""
+  },
+  {
+    "clausula": "7",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "A titularidade dos dados para a contratante esta correta, mas a devolucao apenas em CSV e por apenas 30 dias ao termino e INCOMPATIVEL com o dever de guarda do prontuario: o prontuario pertence ao paciente, sob guarda do estabelecimento, com guarda minima de 20 anos do ultimo registro (Res. CFM 1.821/2007; Res. CFM 2.299/2021; Lei 13.787/2018) - a propria base (library/cfm_prontuario.md) registra que 'a disponibilizacao dos dados por apenas 30 dias ao termino do contrato e incompativel com o dever de guarda' e exige exportacao completa em formato estruturado e periodo de transicao. CSV nao transporta anexos (imagens, laudos, PDFs) nem estrutura de prontuario; a clinica tem ~22.000 pacientes ativos e 3 unidades - migrar tudo em 30 dias e inexequivel. (20 anos ~ 7.300 dias; a janela de 30 dias equivale a ~0,4% desse prazo.) FATO CONFIRMADO PELA CLIENTE: migrar ~22.000 prontuarios e projeto de meses e uma saida no meio do contrato seria caotica - a insuficiencia nao e so juridica, e material; por isso a redacao alternativa acrescenta plano de saida/migracao por fases, alem da janela de 120 dias.",
+    "redacao_proposta": "\"Ao termino do contrato, por qualquer motivo, as partes aprovarao plano de saida e migracao por fases (amostragem de conferencia e criterios de aceite); a NEXA disponibilizara, gratuitamente e em ate 30 dias, a exportacao integral dos dados (incluindo prontuarios completos, exames, anexos e arquivos digitais) em formato estruturado e legivel por sistema, de uso corrente, com inventario dos arquivos exportados; o sistema permanecera integralmente disponivel para migracao por 120 dias apos o termino; apos confirmacao escrita da CONTRATANTE da recebimento e integridade, a NEXA extinguira os dados de seus sistemas em ate 90 dias (ressalvadas guardas legais) e emitira termo de extincao. A titularidade dos dados permanece com a CONTRATANTE/titulares em qualquer hipotese.\""
+  },
+  {
+    "clausula": "8",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Teto de '3 mensalidades' e baixo para um contrato de dado sensivel de saude e ambiguo ('mensalidade' e por unidade, R$ 6.900,00 - Cl. 2): sai a R$ 62.100,00 (3 x R$ 20.700,00 do contrato inteiro) ou a R$ 20.700,00 (3 x 6.900,00). O teto equivale a apenas 8,33% (ou 2,78%) do valor do contrato em 36 meses (R$ 745.200,00 = 36 x 20.700) e a ~R$ 2,82 por paciente (62.100 / 22.000). Pela LGPD, controlador e operador respondem por dano em violacao a lei (art. 42), e o operador responde solidariamente quando descumpre a lei ou instrucoes licitas do controlador (art. 42 §1º I) - diante de vazamento atingindo ate ~22.000 titulares, o teto transfere de fato o risco residual (multas, acoes coletivas, reparacao) para a Clinica Aurora, que e quem respondera perante titulares e ANPD. A unica excecao atual (dolo) e insuficiente.",
+    "redacao_proposta": "\"A limitacao nao se aplica a: (i) violacoes da clausula de protecao de dados e das obrigacoes da LGPD; (ii) violacao de confidencialidade; (iii) dolo e culpa grave; (iv) violacao de propriedade intelectual de terceiros. Para esses eventos, a NEXA responde pelos danos e pelos custos de defesa e composicao (incluindo reclamacoes de titulares e da ANPD) decorrentes de fato imputavel a NEXA ou as suas subcontratadas. 'Mensalidade', para esse fim, significa o valor integral da mensalidade do contrato (todas as unidades).\""
+  },
+  {
+    "clausula": "9",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Confidencialidade mutua por 5 anos: valida e usual. Ressalva apenas de encaixe: o dever de sigilo sobre dado pessoal/sensivel de saude nao pode se extinguir em 5 anos, pois a guarda do prontuario e de 20 anos (Res. CFM 1.821/2007 - library/cfm_prontuario.md); isso deve constar da nova clausula de dados, sem necessidade de alterar a Cl. 9 em si.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "10",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Multa de 100% das mensalidades vincendas em rescisao imotivada: arithmeticamente significa pagar o contrato inteiro mesmo sem usar o resto. Exemplos (mensal = 3 x R$ 6.900 = R$ 20.700): sair no mes 12 -> 24 vincendas x 20.700 = R$ 496.800,00 de multa, total pago = 12 x 20.700 + 48.000 + 496.800 = R$ 793.200,00 (igual ao contrato integral); sair no mes 30 (ultimo dia da janela da Cl. 3) -> 6 x 20.700 = R$ 124.200,00; no mes 1 -> 35 x 20.700 = R$ 724.500,00. E manifestamente excessiva frente ao teto reciproco da NEXA (R$ 62.100,00 - multa 8x maior que o teto dela no exemplo do mes 12) e ao que a cliente ja investiu (mes 12: multa de R$ 496.800,00 equivale a 1,68x o total ja pago de R$ 296.400,00). O CC art. 413 permite ao juiz reduzir equitativamente a penalidade manifestamente excessiva (library/cc_contratos_empresariais.md), mas reducao judicial e remedio posterior e incerto - o valor deve ser ajustado na assinatura. FATO CONFIRMADO PELA CLIENTE: sair no meio do contrato seria caotico (migracao de ~22.000 prontuarios e projeto de meses) - combinada com isso, a multa de 100% funciona como lock-in: em qualquer cenario de insatisfacao fica mais 'barato' ficar a sair, e a cliente perderia o poder de negociacao contra descumprimento de SLA/servico ruim (a saida por justa causa existe, mas e o caminho litigioso). Reforca a necessidade do teto graduado.",
+    "redacao_proposta": "\"Rescisao imotivada pela CONTRATANTE antes do termino: multa equivalente a 50% das mensalidades vincendas nos primeiros 12 meses da vigencia, reduzida proporcionalmente a partir do mes 13, nunca superior a 6 mensalidades (R$ 124.200,00), e indevida nos ultimos 6 meses da vigencia. Alternativa minima: multa fixa de 3 mensalidades (R$ 62.100,00), simetrica ao teto da Cl. 8.\""
+  },
+  {
+    "clausula": "11",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Mora por atraso de pagamento (multa 2% + juros 1% a.m. + correcao): padrao de mercado em contratos empresariais e proporcionais; nada na base indicada aponta invalidade. Manter.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "12",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Subcontratar hospedagem, suporte e processamento SEM comunicacao a contratante e inconciliavel com a arquitetura da LGPD (library/lgpd_excertos.md): o operador deve seguir as instrucoes do controlador (art. 39), controlador e operador devem manter registro das operacoes (art. 37), ha responsabilidade solidaria do operador (art. 42 §1º I) e a hospedagem subcontratada pode levar dados ao exterior sem conhecimento da clinica, burlando o art. 33. Somando-se a Cl. 5 (armazenamento 'onde a NEXA escolher'), a cliente perderia totalmente a rastreabilidade de onde estao os prontuarios de ~22.000 pacientes.",
+    "redacao_proposta": "\"A subcontratacao de hospedagem, suporte ou processamento de dados pessoais exige previa comunicacao escrita, com identificacao do subcontratado, escopo e localizacao dos dados, podendo a CONTRATANTE opor-se por motivo legitimo. As obrigacoes de confidencialidade, seguranca e protecao de dados serao integralmente repassadas no fluxo de subcontratacao; a NEXA permanece responsavel solidariamente pelos subcontratados; a lista de subcontratados e a localizacao dos servidores serao mantidas disponiveis e atualizadas; vedada qualquer transferencia internacional que nao atenda ao art. 33 da LGPD.\""
+  },
+  {
+    "clausula": "13",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Nao concorrencia por 5 anos, em TODO o territorio nacional, proibindo a CONTRATANTE de usar software concorrente de terceiros, com multa de R$ 500.000,00. Segundo a base (library/stj_nao_concorrencia.md - STJ REsp 1.203.109/MG e REsp 680.815/PR): tais clausulas so valem se limitadas no tempo, no espaco e no objeto e justificadas por interesse legitimo; prazo razoavel em regra ate 2 anos; abusiva a restricao sem limite territorial ou por prazo desproporcional ou que impeca a atividade da parte; e, em contrato de licenca de software, a clausula que proibe o LICENCIADO de usar software concorrente apos o termino inverte a logica (o licenciado nao detem know-how do licenciante) e e tida por abusiva/sem causa. Aqui os tres vices coexistem: prazo dobrado, territorio nacional, objeto que impede a atividade da clinica de contratar outro sistema - e a multa e desproporcional (R$ 500.000,00 = 8,1x o teto da Cl. 8 de R$ 62.100; = 24,2 mensalidades de R$ 20.700). Risco pratico: apos sair da NEXA por insatisfacao, a clinica ficaria 'presa' sob ameaca de R$ 500 mil para migrar para qualquer concorrente. Deve ser suprimida.",
+    "redacao_proposta": "\"Suprimir a Clausula 13 (nao ha o que proteger: a clinica, como licenciada, nao detem know-how da NEXA; o sigilo da Cl. 9 e a clausula de dados ja protegem a NEXA). Se a NEXA insistir em alguma restricao: vedacao de usar informacoes confidenciais da NEXA para DESENVOLVER software concorrente, por 12 meses, limitada ao mesmo segmento, com multa limitada a 3 mensalidades (R$ 62.100,00).\""
+  },
+  {
+    "clausula": "14",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Atencao: a opiniao divulgada pela colega ('foro em outra cidade e abusiva pelo CDC e da para anular') esta juridicamente ERRADA neste contrato, e a clausula NAO deve ser marcada como a alterar por esse fundamento. O CDC nao se aplica: a clinica contrata o software como INSUMO da atividade empresarial (prontuario, agenda, faturamento TISS), nao como destinataria final (teoria finalista - CDC arts. 2º e 3º; library/cdc_art51_distrator.md), e a mitigacao finalista exige vulnerabilidade tecnica/juridica/economica demonstrada, o que nao se presume em sociedade empresaria com R$ 9,2 mi de faturamento assessorada por advogado - portanto o art. 51 do CDC (que anularia o foro) fica fora do caso. Vale o direito comum: CPC art. 63 permite eleicao de foro; a clausula atende o §1º (instrumento escrito, referencia expressa a este negocio juridico); entre empresas paritarias a eleicao e valida (CC art. 421-A e precedentes do STJ indicados em library/cc_contratos_empresariais.md). O CPC art. 63 §3º permite reconhecer de oficio a ineficacia de foro abusivo antes da citacao, mas a base registra que isso e a hipotese tipica de contrato de adesao com parte vulneravel, nao o caso. Consequencia pratica que a socia deve aceitar ou NEGOCIAR (validamente, por acordo): eventual demanda correra em Florianapolis/SC; custo e logistica de litigar longe podem ser ponderados na negociacao comercial, mas nao existe 'nulidade pelo CDC' a invocar.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "15",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Disposicoes gerais sem vicios: ausencia de vinculo societario e declaracao de ciencia das clausulas sao tipicas e reforcam a natureza empresarial da relacao (coerente com o afastamento do CDC analisado na Cl. 14). Manter.",
+    "redacao_proposta": ""
+  },
+  {
+    "clausula": "nova - Anexo A (em substituicao a Clausula 5) - Protecao de Dados Pessoais",
+    "avaliacao": "inserir",
+    "gravidade": "alta",
+    "fundamento": "O contrato nao contem nenhuma clausula que implemente a LGPD: faltam papeis (controlador/operador - art. 5º VI/VII), base legal para dado sensivel de saude (art. 11 II 'f'), sujeicao do operador as instrucoes do controlador (art. 39), registros (art. 37), limites a transferencia internacional (art. 33), seguranca e comunicacao de incidentes (arts. 46-48; Res. CD/ANPD 15/2024: 3 dias uteis para a comunicacao a ANPD/titular - a clinica so cumpre se a NEXA a avisar de imediato), regras de subcontratacao no fluxo de dados, e terminos/portabilidade/guarda compativeis com a guarda de 20 anos do prontuario (Res. CFM 1.821/2007; Res. CFM 2.299/2021; Lei 13.787/2018). Sem essa clausula, a Clinica Aurora - que e a controladora e quem responde perante pacientes, CFM e ANPD - nao tem como cumprir os proprios deveres nem auditar a NEXA. A integracao com Unimed/Bradesco para faturamento TISS deve ser expressamente autorizada na clausula, no perimetro do art. 11 §4º (transacoes financeiras/administrativas decorrentes da prestacao de servicos). A clinica nao possui DPO formal (ficha) - ver PERGUNTAS.md.",
+    "redacao_proposta": "Texto completo no entregavel 'clausula_dados.md' (substitui integralmente a Clausula 5 e passa a Anexo A; Cl. 7, Cl. 8 e Cl. 12 ajustadas conforme entradas respectivas)."
+  }
+]

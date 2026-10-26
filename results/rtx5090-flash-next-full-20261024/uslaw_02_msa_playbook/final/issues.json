@@ -1,0 +1,56 @@
+[
+  {
+    "rank": 1,
+    "clause": "§9.1 / §9.3 / §10.1",
+    "playbook_rule": "A1 (hard)",
+    "severity": "hard",
+    "issue": "The IP indemnity only looks uncapped. §10.1 says Provider's indemnity obligations 'are uncapped', but §9.1 caps EACH party's aggregate liability at 12 months' fees (~$222,000 on Order Form No. 1) 'NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS AGREEMENT', and §9.3's carve-outs (gross negligence, willful misconduct, fraud, Customer payment obligations) do NOT carve out Section 10. The cap therefore swallows the 'uncapped' language. Violates playbook rule A1 (vendor IP indemnity must not be subject to the liability cap).",
+    "why": "The library confirms the trap: where a clause begins 'notwithstanding anything to the contrary,' courts give it controlling effect over conflicting provisions, including more specific ones, and a statement elsewhere that an obligation is 'uncapped' does not override such a cap unless the cap clause itself carves the obligation out (Restatement (Second) of Contracts §203; Delaware cases on 'notwithstanding anything to the contrary' — library/contract_interpretation_notwithstanding.md). A patent suit against a routing platform can easily exceed $222,000, leaving Cobalt exposed for the excess. Playbook C2 warns to check exactly this. Survival is fine (§12.3 keeps §10 alive) — the fix must be made inside Section 9. Note: §9.3's existing gross-negligence/willful-misconduct/fraud carve-out is itself our B1 preferred position and is kept verbatim; the only defect is that the same sentence omits Section 10. §9.3 appears in the clause field only because it is where the fix goes.",
+    "redline": "Amend §9.3 (full text in redlines.md): '9.3 The exclusions and limitations in this Section 9, including the cap in Section 9.1 and the exclusion in Section 9.2, shall not apply to: (a) a party's liability for its gross negligence, willful misconduct, or fraud; (b) Customer's payment obligations under Section 4; or (c) Provider's indemnification obligations under Section 10.1.' Belt-and-suspenders: amend §10.1 opening to 'Notwithstanding Section 9, Provider shall defend...'"
+  },
+  {
+    "rank": 2,
+    "clause": "§5.3 / Exhibit C",
+    "playbook_rule": "A2 (hard)",
+    "severity": "hard",
+    "issue": "The data processing addendum is a promise for the future ('shall enter into a data processing addendum in the form to be attached as Exhibit C') and Exhibit C reads '[To be attached.]' There is no executed DPA at signing. Playbook A2: a DPA must be executed at signing whenever EU/UK personal data is processed, and 'to be attached' is expressly not acceptable. The GC has confirmed Cobalt will run EU driver data through the platform.",
+    "why": "GDPR Art. 28(3) requires the processing to be governed by a binding contract stipulating items (a)-(h); 'Absent such a contract, the controller is in breach of Art. 28 from the first day of processing' (Regulation (EU) 2016/679, Art. 28(3) — library/gdpr_art28.md). Cobalt is the controller, so signing this way puts Cobalt, not RouteWise, in statutory breach the day EU driver data starts flowing. This is the one item that is not just a commercial risk but a certain regulatory violation on day 1 if signed as-is.",
+    "redline": "Replace §5.3 and Exhibit C so that the DPA is attached and executed concurrently with the Agreement and must satisfy Art. 28(3)(a)-(h); processing may not begin until it is in effect (full text in redlines.md). Open item: Cobalt's standard DPA form must be supplied and attached; it is not in the workspace."
+  },
+  {
+    "rank": 3,
+    "clause": "Exhibit A (Order Form No. 1), Pricing ¶4; enabled by §4.4 / §14.1",
+    "playbook_rule": "A3 (hard)",
+    "severity": "hard",
+    "issue": "Provider may raise fees once during the 36-month Initial Subscription Term on 60 days' notice, and at renewal by 'the greater of 8% or the change in CPI-U'. Playbook A3 forbids any unilateral increase in the initial term and caps renewal increases at the LOWER of 5% or CPI with 90 days' notice. Four separate breaks: increase during initial term (never), 'greater of' (vs 'lower of'), 8% floor (vs 5%), 60 days' notice (vs 90, at least for the renewal increases).",
+    "why": "Order forms override the MSA as to their subject matter (§14.1; playbook C1), and MSA §4.4 defers renewal pricing to the Order Form, so this escalator controls. Arithmetic: 8% on $18,500/mo = +$1,480/mo = $19,980/mo ($239,760/yr, +$17,760/yr); earliest-increase case (60 days' notice run from provisioning, effective ~month 3, 34 months of higher fees: 34 x $1,480 = $50,320) adds up to $50,320 in the initial term alone — timing assumption stated because the Service Start Date is Provider-notified. At renewal the 8% applies to the already-increased base ($19,980 x 1.08 = $21,578.40/mo = $258,940.80 renewal year 1). A compliant 5% cap would be +$11,100/yr; the 8%-vs-5% gap alone is $6,660/yr. CPI-U levels are not in the library, so the CPI leg cannot be verified in this workspace; the 8% is the known floor.",
+    "redline": "Replace Order Form ¶4: fees fixed for the Initial Subscription Term; renewal increases capped at the LESSER of 5% or CPI-U with 90 days' notice (full text in redlines.md)."
+  },
+  {
+    "rank": 4,
+    "clause": "§3.3 (with §3.1, §4.4)",
+    "playbook_rule": "A4 (hard)",
+    "severity": "hard",
+    "issue": "Auto-renewal in successive 24-month terms with 90 days' non-renewal notice. Playbook A4: renewal terms no longer than 12 months and notice no more than 30 days.",
+    "why": "This is a ratchet: miss the 90-day window and Cobalt is committed to 2 more years — at the Order Form's escalated price if the unilateral increase has landed. Arithmetic: 24 months x $19,980 (post-8% increase) = $479,520 locked in, versus a playbook-compliant worst case of a 12-month renewal at 5% ($18,500 x 1.05 x 12 = $233,100) — a swing of $246,420 from one missed calendar date. Interacts with the A3 escalator and with §3.1 (the Agreement lives as long as any Order Form does).",
+    "redline": "Replace §3.3: renewals of 12 months (or at Customer's election month-to-month), non-renewal notice 30 days (full text in redlines.md)."
+  },
+  {
+    "rank": 5,
+    "clause": "§2.2 (with Exhibit A)",
+    "playbook_rule": "A5 (hard)",
+    "severity": "hard",
+    "issue": "The license is 'to Customer only and does not extend to Customer's Affiliates' unless named on an Order Form 'at additional fees', and Order Form No. 1 names only Cobalt Logistics Holdings LLC (up to 350 vehicles). Playbook A5 requires named affiliates — Cobalt Freight Europe B.V. and Cobalt Brokerage LLC — to be covered at no additional fee (or the Agreement signed by Holdings on behalf of the affiliates).",
+    "why": "As drafted, EU/UK operations running driver data (Rotterdam/Hamburg, per playbook A2) would use the Platform outside the §2.2 license — a breach of the Agreement and arguably infringing use of the software — or Cobalt must pay the 'additional fees' A5 prohibits. ASSUMPTION not in the file: Cobalt Freight Europe B.V. is likely the EU entity through which driver data flows, so this issue sits alongside the A2 fix; confirm before sending the redline.",
+    "redline": "Amend §2.2 to extend the license to Customer's Affiliates, expressly naming Cobalt Freight Europe B.V. and Cobalt Brokerage LLC, at no additional fee, with affiliate use counting against the Order Form's 350-vehicle allocation (full text in redlines.md). ASSUMPTION to confirm: total Users/vehicles across Holdings and affiliates stay within the 350-vehicle allocation."
+  },
+  {
+    "rank": 6,
+    "clause": "Exhibit B (SLA)",
+    "playbook_rule": "B5 (preferred)",
+    "severity": "preferred",
+    "issue": "SLA credits are 'the sole remedy for availability failures' but the contract nowhere gives Cobalt a termination right for chronic failure. Playbook B5 accepts credits-as-sole-remedy only if a termination right exists for chronic failure (3 months in any 6).",
+    "why": "Without the termination right the B5 trade is incomplete: a 99.5% target with a 25% credit cap means RouteWise can underdeliver indefinitely for at most a quarter of one month's fee (~$4,625). 30-day claim windows are a trap for an ops team, but the exit right is the point. This is a preferred position — negotiate it, and it can be conceded with Legal approval if needed.",
+    "redline": "Add to Exhibit B: 'If actual availability falls below 99.5% in any three (3) calendar months during any consecutive six (6) month period, Customer may terminate the affected Order Form on thirty (30) days' notice without penalty and receive a pro-rata refund of prepaid, unused fees.' The 99.5% target, credit schedule and 30-day claim window themselves match B5 and are not flagged."
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "questions": "# QUESTIONS FOR THE CLIENT — Meridian Robotics / Wei-Lin Zhao\n\n**Closed out October 25, 2026.** The client answered what it could and stated: *\"For questions not answered above, the client has no additional information.\"* No question is re-asked here; remaining items are recorded as **unknowns** in `memo.md` §III and flagged wherever they affect analysis.\n\n## Answered (incorporated into the memo)\n\n1. **Standard form / no negotiation** *(part of former Q6; validates the no-counsel point)* — Confirmed: \"It's our standard form; engineers sign the same day. Nobody negotiates.\" This converts the counsel half of former Assumption A2 into a client-confirmed fact (memo §III.3): the §925(e) individually-represented-by-counsel exception is unavailable, and the §15 recital is contradicted by practice.\n2. **Other signed Zhao documents** *(remainder of former Q6)* — The client's \"No.\" is read as covering this (no separate signed Zhao agreements). Interpretation flagged in memo Assumption A4; consequences limited to remedies, not the §8/§14 analysis.\n3. **AB 1076 notice status** *(context for former Q1)* — Confirmed: \"Legal ops never sent the notices. The ticket was closed as 'won't do'.\" Ticket LO-233 stands confirmed. The affected-employee *count* was not supplied, so exposure sizing remains qualitative.\n4. **Evidence of misuse** *(adjacent to former Q3)* — Confirmed: \"No evidence he took anything. He said he wouldn't. It's the competing itself we object to.\" No trade-secret predicate exists today; the client's stated grievance is the competition itself — the exact interest the governing law will not protect (memo §II, §IV.G).\n5. **Physical presence in Texas** *(unsolicited, confirmatory)* — Austin twice only: onboarding week March 2024; offsite October 2025; \"otherwise Oakland.\" Supports the §925 \"primarily resides and works in California\" analysis and the judgmental minimum-contacts estimate.\n\n## Not answered — client has no additional information (unknowns, not re-asked)\n\n- **Former Q1 — California-employee population** for AB 1076/§16600.1 exposure sizing: **unknown**.\n- **Former Q2 — Zhao's consideration** (confidential information actually delivered, specialized/paid training, equity) relevant to Texas §15.50(a) if Texas law ever applied: **unknown** (memo Assumption A2).\n- **Former Q3 — access logs / device-return status** for Zhao's final period: **unknown**. Recommended internal follow-up by Meridian's own ops team (preservation matters even before any dispute over misuse).\n- **Former Q4 — written assurances** from Zhao or Kestrel beyond the resignation email: **none provided**.\n- **Former Q5 — Meridian's California market presence**: **unknown**.\n- **Former Q6 (remainder) — Meridian's state of incorporation**: **unknown** (memo Assumption A1 stands).\n- **Former Q7 — disposition of the *Westbrook* en banc rehearing**: **unknown**; that authority remains unverified and is cited nowhere (memo §VI).\n\n## Note on the \"please don't put that in writing if you can avoid it\" request\n\nAddressed in **memo §IV.I**: this memo and its analysis are privileged, so the facts — including the missed AB 1076 deadline and LO-233 — remain recorded there; counsel will create **no new non-privileged operational documents** reciting the failure and recommends Meridian route remediation through counsel; existing records will not be altered, destroyed, or \"lost.\" If any Zhao-side action or inquiry reaches LO-233, Meridian must produce and answer accurately.\n",
+  "facts": [
+    {
+      "id": "austin_trips",
+      "trigger": [
+        "Texas",
+        "Austin",
+        "ever in Texas",
+        "physically"
+      ],
+      "answer": "Twice: onboarding week March 2024, and an offsite October 2025. Otherwise Oakland.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "counsel",
+      "trigger": [
+        "counsel",
+        "lawyer",
+        "negotiat",
+        "represented"
+      ],
+      "answer": "No. It's our standard form; engineers sign the same day. Nobody negotiates.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "notice_1076",
+      "trigger": [
+        "AB 1076",
+        "notice",
+        "February 14",
+        "16600.1"
+      ],
+      "answer": "Legal ops never sent the notices. The ticket was closed as 'won't do'. Please don't put that in writing if you can avoid it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trade_secrets",
+      "trigger": [
+        "trade secret",
+        "confidential",
+        "took",
+        "misappropriat"
+      ],
+      "answer": "No evidence he took anything. He said he wouldn't. It's the competing itself we object to.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "austin_trips",
+    "counsel",
+    "notice_1076",
+    "trade_secrets"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

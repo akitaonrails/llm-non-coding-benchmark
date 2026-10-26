@@ -1,0 +1,58 @@
+[
+  {
+    "issue": "Hensley Homes assignment requires written consent; unauthorized transfer is void",
+    "where": "Data room §1.1, Master Supply Agreement §18",
+    "why_it_matters": "Hensley is 38% of $4,600,000 revenue, or $1,748,000 (0.38 × $4,600,000). The clause expressly covers sale of assets, permits withholding in sole discretion, and makes a prohibited assignment void. Legal basis: library/anti_assignment_change_of_control.md.",
+    "deal_impact": "consent",
+    "fix": "Put Hensley on Schedule 3.3; obtain its written consent before closing as an express closing condition. Do not treat commercially reasonable efforts alone as sufficient. Set an agreed outside date or renegotiate if consent is withheld."
+  },
+  {
+    "issue": "Shop lease requires landlord consent to assignment",
+    "where": "Data room §3.1, shop lease §22",
+    "why_it_matters": "Buyer needs the premises; consent may not be unreasonably withheld, but it is still required for assignment. Legal basis: library/anti_assignment_change_of_control.md.",
+    "deal_impact": "consent",
+    "fix": "List landlord consent on Schedule 3.3 and require written consent before closing if the lease is assigned."
+  },
+  {
+    "issue": "Spray-booth permit cannot transfer to buyer",
+    "where": "Data room §4.1",
+    "why_it_matters": "Buyer must reapply; stated processing time is 30–60 days, longer than the proposed two-week signing window. A consent schedule cannot cure a nontransferable permit.",
+    "deal_impact": "timing",
+    "fix": "Identify it separately on Schedule 3.3 as a new-permit item, not a consent; require buyer to submit the application promptly and make issuance a condition to operating the booth/closing if lawful operation is essential. Determine the actual closing timetable."
+  },
+  {
+    "issue": "Nine 1099 installers appear misclassified",
+    "where": "Data room §2.2; seller email",
+    "why_it_matters": "They work exclusively for Brightline on its daily schedule, with its trucks and tools, and are paid hourly; the label and industry custom do not decide status. 2025 payments were $612,000, averaging $68,000 per person ($612,000 ÷ 9), but the record cannot quantify payroll tax, overtime, benefits, or other claims. Buyer could face successor FLSA exposure and future employment costs. Legal basis: library/worker_classification_tx_irs.md.",
+    "deal_impact": "indemnity",
+    "fix": "Disclose the nine and their working facts against §4.12; remove the clean classification representation for them; negotiate a specifically capped pre-closing indemnity and a buyer reclassification plan. Obtain payroll/hours and tax history to size the reserve."
+  },
+  {
+    "issue": "Earn-out EBITDA can be reduced by buyer accounting choices",
+    "where": "Buyer draft APA §2.4; data room §6.1",
+    "why_it_matters": "Historical seller-prepared EBITDA is $740,000, only $40,000 above the $700,000 hurdle; at that level the formula pays $16,000 (40% × $40,000). The $400,000 maximum requires $1,700,000 EBITDA ($700,000 + $400,000 ÷ 40%). The historical number includes $180,000 owner-salary and $42,000 legal add-backs, whose treatment in the earn-out is unspecified. Legal basis: library/earnout_definitions.md.",
+    "deal_impact": "price",
+    "fix": "Use an agreed EBITDA schedule and consistent accounting; exclude buyer overhead, transaction/integration costs and purchase-accounting effects; add records, audit, accountant dispute and sale-acceleration rights. Reconcile the historical add-backs before setting the schedule."
+  },
+  {
+    "issue": "Known small claims and warranties need a liability allocation",
+    "where": "Data room §§5.1–5.2; buyer draft APA §§7.4(a), 9.3",
+    "why_it_matters": "Hardaway is $9,800 and 11 open warranty items are estimated at $23,000: $32,800 total ($9,800 + $23,000). This is below the $75,000 deductible basket by $42,200 ($75,000 − $32,800), assuming these are indemnifiable Losses and no other Losses. The extracts do not show whether these pre-closing obligations are retained or assumed. Legal basis for basket mechanics: library/baskets_caps.md.",
+    "deal_impact": "price",
+    "fix": "List the dispute and warranty items on disclosure schedules; specify whether seller retains and funds them or buyer assumes them with an agreed price adjustment. Do not rely on the general basket for a known allocation."
+  },
+  {
+    "issue": "Cascade notice is required; other small contracts need review",
+    "where": "Data room §§1.2–1.3",
+    "why_it_matters": "Cascade represents 11% of $4,600,000 revenue, or $506,000 (0.11 × $4,600,000). Its successor assignment is allowed on notice. The 22 residential contracts are silent on assignment; performance or other provisions were not supplied. Legal basis for assignment distinction: library/anti_assignment_change_of_control.md.",
+    "deal_impact": "timing",
+    "fix": "Send Cascade's required notice and track delivery. Confirm that buyer qualifies as a successor to substantially all assets and review the residential contracts' full terms before assigning them."
+  },
+  {
+    "issue": "Draft indemnity and non-compete create disproportionate post-closing exposure",
+    "where": "Buyer draft APA §§7.4(b)–(c), 8.2, 9.3",
+    "why_it_matters": "The $310,000 escrow is 10% of the implied $3,100,000 price ($310,000 ÷ 0.10); §4.12 instead has a full-price cap, and buyer may recover despite knowing a breach. Escrow is not stated to be an exclusive remedy. The 7-year, 500-mile covenant is likely broader than needed for a local shop. Legal basis: library/baskets_caps.md; library/sandbagging.md; library/tx_noncompete_sale_of_business.md.",
+    "deal_impact": "indemnity",
+    "fix": "Except known installer facts from §4.12, limit any special pre-closing installer indemnity to an agreed funded cap, adopt actual-knowledge anti-sandbagging, and narrow the non-compete to the proven trade area and 3 years. State expressly whether escrow limits recovery."
+  }
+]

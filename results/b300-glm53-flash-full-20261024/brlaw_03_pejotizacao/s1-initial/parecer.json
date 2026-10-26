@@ -1,0 +1,56 @@
+{
+  "probabilidade_vinculo": "alta (60% a 80%)",
+  "fundamentos": [
+    "CLT art. 3o (library/clt_requisitos_vinculo.md): todos os requisitos presentes - pessoalidade (socio unico disponibilizado, exclusividade contratual), nao-eventualidade (7 anos continuos, prazo indeterminado), onerosidade (R$ 18.000 fixos mensais, 'independentemente de entregas') e subordinacao (horario fixo 9h-18h de segunda a sexta, reporte ao Gerente de Engenharia, ordens e aprovacao de abono via RH, controle de ponto pela contratante, avaliacao de desempenho com o mesmo formulario dos CLTs, horas extras registradas pela propria Solaris)",
+    "CLT art. 9o (library/clt_requisitos_vinculo.md): o contrato PJ reproduz clausulas tipicas de vinculo (jornada fixa, 'ferias' de 20 dias, rescisao com 30 dias, exclusividade, remuneracao fixa) - atos com objetivo de desvirtuar a CLT sao nulos de pleno direito",
+    "CLT art. 442-B (library/clt_requisitos_vinculo.md): a contratacao de autonomo so afasta a qualidade de empregado desde que ausente a subordinacao - aqui documentada; art. 818: prestacao admitida, onus de provar a autonomia e do reclamado",
+    "STF Tema 725 / ADPF 324 / ADC 48 (library/stf_tema_725_adc48_adpf324.md): a tese trata da licitude da terceirizacao entre PJs e NAO afasta o reconhecimento de vinculo quando presentes os requisitos do art. 3o da CLT com fraude (art. 9o); 'risco zero' pela leitura do Tema 725 nao se sustenta",
+    "STF Tema 1.389, ARE 1.532.603/DF (library/stf_tema_1389_pejotizacao.md): pejotizacao em repercussao geral com suspensao nacional desde 14/04/2025 - merito pendente (situacao ate out/2026 neste acervo); a acao tende a ser sobrestada e a exposicao nao desaparece - juros e correcao IPCA + (SELIC-IPCA), Lei 14.905/2024, correm durante o sobrestamento",
+    "CF art. 7o XXIX; CLT art. 11; Sumula 308 TST (library/cf_art7_xxix_prescricao.md): ajuizamento 16/11/2026 => corte quinquenal 16/11/2021 => 25 meses prescritos (out/2019-out/2021) e 59 meses exigiveis (nov/2021-set/2026); termo bienal ate 30/09/2028 e atendido",
+    "Verbas (library/verbas_e_calculo.md): 13o mensalizado 1/12/mes; ferias simples + 1/3; FGTS de 8% sobre salarios + 13o + ferias com 1/3; multa de 40% do FGTS total; aviso previo proporcional 30 + 3/ano = 51 dias para 7 anos completos; INSS patronal ~28% sobre remuneracao reconhecida; horas extras conforme prova (planilha); dobradas de ferias (nota da biblioteca, Sumula 450/81) tratadas apenas como sensibilidade alta",
+    "Sensibilidades: HE com divisor 198 = R$ 181.022,73; INSS sem ferias/terco na base = R$ 322.140,00 (regra de exclusao NAO esta no acervo); ativando as duas, total ~R$ 882.334,73",
+    "Sensibilidade alta: se NAO for admitida a imputacao dos R$ 1.062.000,00 ja pagos via NF, total ~R$ 1.959.272,45",
+    "Honorarios e multas (library/multa_477_e_honorarios.md): honorarios 5%-15% (art. 791-A) => R$ 44.863,62 a R$ 134.590,87 sobre o cenario central; multas dos arts. 477 §8o (um salario) e 467 (50% de incontroversas) discutiveis na reversao de pejotizacao - nao inclusas no total",
+    "Resposta do cliente/diretor (26/10/2026) sobre a NF: os R$ 18.000 eram 'cheios' 'justamente porque ele era PJ' e 'um CLT equivalente ganharia uns 12 mil' - sem decomposicao em tributos/custos; a unica hipotese de reducao de base prevista no acervo (verbas_e_calculo.md: prova de que embutia tributos/custos) NAO foi corroborada, e a base central permanece R$ 18.000; 'CLT equivalente 12 mil' entra apenas como sensibilidade defensiva rotulada como premissa do cliente (nao no acervo): total ~R$ 598.181,64 com imputacao (2/3 do central) e ~R$ 1.306.181,64 sem imputacao (+ 12.000 x 59 = 708.000 de salarios); a declaracao tambem e admissionaria em sentido contrario: o sobrepreco de ~50% existente 'justamente porque ele era PJ' indica que o diferencial era o contra-valor da condicao PJ - indicio para a analise de fraude do art. 9o, reforcando o vinculo",
+    "Sumulas (library/tst_sumulas_ojs.md): S. 212 (onus do termino), S. 331 (item IV, subsidiaria), S. 338 (presuncao de controle de jornada com 20+ empregados - quadro a confirmar), OJ 383 SDI-1 (isonomia se ilicitude); PROIBIDO citar S. 256 ou OJ SDI-1 191 (ambas canceladas)"
+  ],
+  "prescricao": {
+    "data_ajuizamento": "2026-11-16 (protocolo previsto na notificacao extrajudicial de 30/09/2026; hoje 2026-10-26)",
+    "corte_quinquenal": "2021-11-16",
+    "meses_exigiveis": 59,
+    "meses_prescritos": 25
+  },
+  "exposicao": {
+    "remuneracao_base": 18000,
+    "decimo_terceiro": 88500,
+    "ferias_terco": 118000,
+    "fgts": 101480,
+    "multa_40": 40592,
+    "aviso_previo": 30600,
+    "inss_patronal": 355180,
+    "horas_extras": "estimativa R$ 162.920,45 (media 22,5 h/mes da planilha jan-jun/2025, 135 h em 6 meses, projetada sobre 59 meses exigiveis; valor/hora R$ 18.000/220 x 1,5 = R$ 122,73; divisor 220h e fator 1,5 NAO constam do acervo - premissas padrao explicitadas); reflexos (13o, ferias, FGTS, INSS) em apuracao; com divisor 198h => R$ 181.022,73",
+    "total": 897272.45
+  },
+  "tema_1389": {
+    "efeito_processual": "Suspensao nacional determinada em 14/04/2025 (ARE 1.532.603/DF, rel. Min. Gilmar Mendes) sobre processos que discutem a licitude da contratacao de PJ/autonomo; a acao prevista para 16/11/2026 tende a ser sobrestada apos a instrucao/antes da sentenca, conforme a pratica de cada TRT; merito pendente no STF (acervo congelado em out/2026)",
+    "efeito_na_exposicao": "A suspensao nao extingue nem reduz a exposicao: ela fica em aberto, com juros/correcao (IPCA + (SELIC-IPCA), conforme Lei 14.905/2024 citada no acervo) correndo durante o sobrestamento; a tese final do STF fixara criterios (incl. onus da prova) e pode aliviar ou agravar o resultado"
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 897272.45
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [450000, 600000]
+  },
+  "cenario_imputacao_negada": "Se os R$ 1.062.000 pagos via NF no periodo exigivel NAO forem imputados aos salarios (o acervo trata o valor pago a PJ como remuneracao-base, mas nao regula o credito do valor pago), o total sobe para ~R$ 1.959.272,45",
+  "cenario_base_cliente": "Premissa do diretor (estimativa verbal, sem base documental, NAO no acervo): 'um CLT equivalente ganharia uns 12 mil'. Com base reduzida a R$ 12.000/mes e imputacao mantida: 13o 59.000,00 (12.000 x 59/12); ferias+1/3 78.666,67 (16.000 x 59/12, sendo 16.000 = 12.000 x 4/3); FGTS 8% sobre 14.333,33/mes (12.000 + 1.000 + 1.333,33) = 67.653,33; multa 40% = 27.061,33; INSS patronal 28% = 236.786,67; aviso 51 x 400 = 20.400,00; subtotal 489.568,00; HE 108.613,64 (12.000/220 x 1,5 = 81,82/h x 22,5 h/mes x 59) => total ~R$ 598.181,64 (= 2/3 do central; todas as verbas lineares na base). Sem imputacao: + 12.000 x 59 = 708.000 => ~R$ 1.306.181,64 (tratamento do excesso recebido de 354.000 - 6.000/mes x 59 - nao regulado no acervo; item aberto). Central e provisao permanecem R$ 897.272,45",
+  "notas_prescricao": "Contagem por competencia: creditos de nov/2021 a set/2026 exigiveis (59); out/2019 a out/2021 prescritos (25); total 84 meses (01/10/2019 a 30/09/2026). Contagem por dia exato deslocaria ~15 dias dentro de nov/2021; convencao por competencia adotada e explicitada",
+  "open_items": [
+    "Planilha de ponto cobre somente jan-jun/2025; HE de nov/2021 a out/2026 estimadas (proxy 22,5 h/mes) - a apurar - sem informacao adicional do cliente (26/10/2026)",
+    "Jornada contratual 9h-18h sem intervalo intrajornada provado: divisor de HE em aberto (220h vs 198h) - sem informacao adicional do cliente (26/10/2026)",
+    "NF respondida em parte (26/10/2026, diretor): R$ 18.000 'cheios' 'justamente porque ele era PJ' e 'um CLT equivalente ganharia uns 12 mil' - sem decomposicao em tributos/custos; a unica hipotese de reducao de base do acervo (prova de tributos/custos embutidos) NAO corroborada, base central mantida em 18.000; a cifra de 12 mil e premissa verbal do cliente tratada como sensibilidade (~R$ 598.181,64, vide cenario_base_cliente); natureza e fundamento documental da estimativa de 12 mil permanecem desconhecidos",
+    "Quadro de empregados da Solaris (20+?) para a presuncao da Sumula 338 - a confirmar - sem informacao adicional do cliente (26/10/2026)",
+    "'Saldo de 20 dias' do e-mail do RH (2025-08-20) - natureza e eventuais pagamentos pela PJ a confirmar - sem informacao adicional do cliente (26/10/2026)"
+  ]
+}

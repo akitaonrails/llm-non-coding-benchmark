@@ -1,0 +1,8 @@
+employee_id,name,role,location,hire_date,pay_type,gross_per_period,timeclock_hours_q1,benefits_enrolled,pay_method,address_on_file
+E-01,K. Harlow DDS,Managing partner,Balcones,2019-02-01,salary,19230.77,n/a,yes,DD,(partner)
+E-02,R. Patel DDS,Partner,Round Rock,2019-02-01,salary,17307.69,n/a,yes,DD,(partner)
+E-03,S. Whitfield DDS,Partner,Cedar Park,2021-05-10,salary,17307.69,n/a,yes,DD,(partner)
+E-14,M. Alvarez,Hygienist,Balcones,2020-03-02,hourly,3360.00,476,yes,DD,Austin TX
+E-15,J. Okoro,Hygienist,Round Rock,2022-08-15,hourly,3280.00,468,yes,DD,Round Rock TX
+E-22,T. Nguyen,Regional coordinator,Balcones,2025-08-01,salary,2850.00,0,no,paper check,"PO Box 9142, Plano TX 75094"
+E-23,L. Brandt,Front desk,Cedar Park,2023-01-09,hourly,2240.00,480,yes,DD,Leander TX

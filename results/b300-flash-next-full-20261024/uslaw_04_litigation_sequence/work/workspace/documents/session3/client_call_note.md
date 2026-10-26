@@ -1,0 +1,1 @@
+Call with Dolapo Okonkwo (CEO), 2026-10-06: wants to 'hit them hard' in court. Near the end: 'Oh — Marcus mentioned the contract has some arbitration thing in the back, Exhibit something. Does that matter? Hanna's lawyer hinted at it. We never looked at the exhibits, our old lawyer drafted it off a template.' Also: 'Can we at least make them pay our legal fees?'

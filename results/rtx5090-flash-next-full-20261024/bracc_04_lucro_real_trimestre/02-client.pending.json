@@ -1,0 +1,47 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "questions": "# QUESTIONS — Atlas Distribuidora S.A. (rodada 2, sessão 1 encerrada em 26/10/2026)\n\nRound 1 (8 perguntas) foi respondida em parte. Este arquivo **não repete** o que já foi respondido.\nContém: (1) os dados que faltam para as sessões 2 e 3 — hoje o único bloqueio de execução; (2) duas\nperguntas novas, decorrentes das respostas do cliente; (3) as assunções que passamos a adotar para o\nque ficou sem resposta, para registro.\n\n**Respostas recebidas e tratadas** (detalhe em `mes_01/ajustes.json`, chave\n`correspondencia_cliente`, e `mes_01/brindes_doacoes.md`):\n\n| Tema | Resposta do cliente | Consequência |\n|---|---|---|\n| Brindes | \"vinho e canivete gravado pros 400 melhores clientes. Marketing, ora.\" | despesa **indedutível** (Lei 9.249/95, art. 13, VII); classificação \"marketing\" não altera o resultado fiscal |\n| Doação | \"Associação Luz é ONG do bairro, não tem título nenhum\" | fora da exceção do art. 13, § 2º, II (exige utilidade pública federal ou OSCIP) → **indedutível** |\n| NF-e 8812 | \"é papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.\" | justificativa **não aceita**: destaque do fornecedor não gera crédito; uso e consumo administrativo não é insumo → estorno de R$ 11.100,00 mantido |\n| Demais perguntas | sem resposta (\"não tem informação adicional\") | convertidas em assunções explícitas (§ 3 abaixo) |\n\n---\n\n## 1. Dados que ainda faltam — sem isso as sessões 2 e 3 não existem\n\nO `documents/` do engajamento tem **somente** arquivos de janeiro (`mes_01/razao.csv`,\n`mes_01/balancete.csv`, `mes_01/nf_8812_papel_cia.md`), os saldos de abertura e o e-mail do diretor.\nPara fevereiro e março não há nada. Não fabricamos razão nem balancete.\n\n1.1. **Fevereiro/2026**: razão analítico e balancete de 28/02/2026 (mesmo formato de janeiro) +\ndocumentos de suporte (notas fiscais de vendas e compras, NF-e com PIS/COFINS destacado, memória de\ncálculo de PIS/COFINS e ICMS).\n1.2. **Março/2026**: idem, em 31/03/2026, para a apuração trimestral de IRPJ/CSLL.\n1.3. **Razão analítica (detalhamento por documento) das contas 4.2.02 *Despesas comerciais* e 4.2.03\n*Despesas administrativas*** dos três meses, se existir sistema que o gere — é o único caminho para\nsegregar brinde e doação sem inventar valor.\n1.4. Relação das aquisições com CFOP 1556 / despesas administrativas com crédito tomado nos meses 2 e 3\n(o padrão do erro da NF-e 8812 provavelmente se repete).\n\n## 2. Perguntas novas (só estas duas)\n\n2.1. **Competência dos brindes e da doação**: a campanha do vinho e do canivete aos 400 clientes e a\ncontribuição à Associação Luz ocorreram em **qual data**? Se foram no **4º trimestre/2025 ou em\nexercício anterior**, o ajuste não é deste trimestre — a correção seria de e-LALUR/ECF de 2025\n(retificação de exercício anterior, fora do escopo atual) e o 1T2026 fica sem essa adição.\nSe foram em 1T2026, entra no e-LALUR de março.\n\n2.2. **Existe algum documento** da compra dos brindes (pedido, nota fiscal de remessa de brinde, lista\ndos 400 clientes, custo unitário) **e** da contribuição à Associação Luz (TED/extrato, recibo, ata)?\nSe existir, envie; se **não** existir, pedimos confirmação expressa de que não existe — com isso\nfechamos o trimestre pelo § 4 abaixo, sem especulação de valores.\n\n## 3. Itens sem resposta: assunções adotadas (registro, não pergunta)\n\n| Item sem resposta | Assunção adotada / tratamento |\n|---|---|\n| Situação da EFD-Contribuições e do DAS de 01/2026 | Entregamos a apuração correta (créditos válidos R$ 155.067,00; a recolher **R$ 79.883,00**). Se a EFD/DAS já foi transmitida/paga, é necessária **EFD retificadora + recolhimento da diferença de R$ 11.100,00 com acréscimos**; o valor dos acréscimos **não calculamos** — a biblioteca não tem norma de multa/juros (`library/INDEX.md`) |\n| Comprovação dos saldos de abertura (prejuízo fiscal e base negativa de R$ 900.000,00) | Transcritos de `documents/saldos_fiscais_abertura.md` e carregados na Parte B do e-LALUR **como declarados pela empresa**, com ressalva expressa de que não há ECF que os comprove (`library/irpj_csll_trimestral.md`: Parte B controla saldos a compensar) |\n| Credor dos Empréstimos (2.1.04, R$ 2.400.000,00) e juros de R$ 28.000,00 | **Não verificado**: a biblioteca não contém norma sobre dedutibilidade de juros/encargos ou partes relacionadas; nenhum ajuste, nenhuma afirmação de conformidade |\n| Provisão mensal de IRPJ/CSLL | Não lançamos: o regime é trimestral, apuração e recolhimento no fim do trimestre (Lei 9.430/96, arts. 1º-2º; Lei 9.249/95, art. 3º; IN RFB 1.700/2017, arts. 29 e 310 — `library/irpj_csll_trimestral.md`). Tributação diferida não tem norma na biblioteca → não verificada |\n| ICMS sobre vendas (R$ 177.800,00, \"7% líquido de créditos\") | Fora do escopo: nenhuma norma de ICMS na biblioteca; qualquer afirmação seria não verificada |\n| Depreciação (R$ 51.667,00/mês) | Aceita como base contábil; vida útil **fiscal** não verificada (sem norma na biblioteca) → pode virar adição/exclusão em março |\n| Instruções \"não mexer no crédito\" e \"compensar todo o prejuízo\" | **Não atendidas**, com fundamento (`library/pis_cofins_uso_consumo.md`; `library/lei9065_art15_trava.md`). Registrado que a administração foi formalmente alertada; pedimos que a posição divergente venha por escrito, se desejarem mantê-la |\n\n## 4. Decisão que o cliente precisa tomar para fechar março (brindes e doação sem valor)\n\nSem o valor, o e-LALUR de março ficará com adição **não quantificada**. Escolham uma opção, por escrito:\n\n| Opção | Efeito | Risco |\n|---|---|---|\n| (a) Enviar documento/valor (preferida) | adição exata no e-LALUR | nenhum |\n| (b) Autorizar adicionar o teto material de janeiro (R$ 85.000,00 só em 4.2.02, ou R$ 181.000,00 somando 4.2.03) | IRPJ+CSLL de R$ 14.280,00 a R$ 43.078,00 a mais | paga tributo **a maior**, distorce o LALUR |\n| (c) Instruir por escrito \"não adicionar nada\" | e-LALUR sai com ressalva expressa | tributo **a menor** de 23,8% (trava de 30% + adicional) a 34% do valor não identificado; posição que não podemos afirmar correta |\n\nCálculo por R$ 1.000,00 de adição omitida: **R$ 168,00** com a trava de 30% (lucro real sobe 0,70× o\nvalor adicionado) ou **R$ 240,00** sem adicional / **R$ 340,00** com adicional, se não houver saldo a\ncompensar — Lei 9.249/95, art. 13, VI e VII; Lei 9.065/95, arts. 15-16; Lei 9.430/96, arts. 1º-2º\n(`library/lei9249_art13.md`, `library/lei9065_art15_trava.md`, `library/irpj_csll_trimestral.md`).\n",
+  "facts": [
+    {
+      "id": "luz",
+      "trigger": [
+        "Luz",
+        "OSCIP",
+        "utilidade pública",
+        "qualificação",
+        "doação"
+      ],
+      "answer": "A Associação Luz é uma ONG do bairro, não tem título nenhum. O presidente conhece o dono.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "brindes",
+      "trigger": [
+        "brindes",
+        "kits",
+        "4410",
+        "campanha"
+      ],
+      "answer": "Vinho e canivete gravado pros 400 melhores clientes. Marketing, ora.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "papel",
+      "trigger": [
+        "8812",
+        "Papel",
+        "uso e consumo",
+        "crédito"
+      ],
+      "answer": "É papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "brindes",
+    "luz",
+    "papel"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

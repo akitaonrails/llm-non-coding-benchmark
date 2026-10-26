@@ -1,0 +1,24 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-flash-next-full-20261024/brlaw_04_execucao_fiscal/09-review",
+  "elapsed_seconds": 2389.0931009920023,
+  "controller_wait_seconds": 168.0192765860702,
+  "model_turn_seconds": 2220.5808963279705,
+  "turns": 9,
+  "released_facts": [
+    "ana_saida",
+    "impugnacao",
+    "opera"
+  ],
+  "usage": {
+    "input_tokens": 5880586,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 344664,
+    "reasoning_output_tokens": 200675
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

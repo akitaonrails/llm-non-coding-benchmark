@@ -1,0 +1,23 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 5256.1666266540415,
+  "controller_wait_seconds": 203.02011696610134,
+  "model_turn_seconds": 5052.908622366085,
+  "turns": 9,
+  "released_facts": [
+    "ana_saida",
+    "opera"
+  ],
+  "usage": {
+    "input_tokens": 3936129,
+    "cached_input_tokens": 3670085,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 194127,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

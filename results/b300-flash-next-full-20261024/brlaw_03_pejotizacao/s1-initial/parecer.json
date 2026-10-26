@@ -1,0 +1,42 @@
+{
+  "probabilidade_vinculo": "alta (70%–80%)",
+  "fundamentos": [
+    "Subordinação fática comprovada: cláusula 5 do contrato (reporte ao Gerente de Engenharia); cobrança de horário e cartão-ponto (Slack 12/03/2024); ordem direta de permanência até 20h (Slack 02/06/2025); ausências sujeitas a aprovação do RH com desconto de 'saldo de 20 dias' (Slack/e-mail 19–20/08/2025); avaliação de desempenho com o mesmo formulário dos CLTs (Slack 05/01/2026) — requisitos do art. 3º da CLT presentes (CLT arts. 2º, 3º).",
+    "Pessoalidade: sociedade de sócio único; cláusula 4 obriga a disponibilizar 'seu sócio' (Rafael), de seg. a sex., 9h–18h, nas dependências da contratante ou home office autorizado pelo gestor; toda a correspondência se dirige a Rafael pessoalmente.",
+    "Não eventualidade e onerosidade: prestação contínua por 84 meses (01/10/2019–30/09/2026), 84 notas fiscais de valor fixo de R$ 18.000/mês 'independentemente de entregas' (cláusula 2; notas_fiscais_resumo.csv fecha em R$ 1.512.000 = 84 × R$ 18.000); contrato por prazo indeterminado.",
+    "Fraude à regra matriz: forma PJ desmentida pela substância — nulidade pelo art. 9º da CLT; o art. 442-B só afasta o vínculo 'desde que ausente a subordinação', o que não é o caso; art. 818 inverte contra a Solaris o ônus de provar a autonomia (prestação admitida).",
+    "Tema 725/ADPF 324/ADC 48 não socorrem: a tese trata da licitude da terceirização entre pessoas jurídicas e não afasta o reconhecimento de vínculo quando presentes os requisitos do art. 3º com fraude (art. 9º) no caso concreto (stf_tema_725_adc48_adpf324.md); ADC 48 trata de transportador autônomo, hipótese estranha aos autos.",
+    "Tema 1.389 do STF (ARE 1.532.603): repercussão geral reconhecida e suspensão nacional dos processos sobre licitude de pejotização (14/04/2025), mérito pendente na data de congelamento desta biblioteca (out/2026) — o tema está aberto, não 'resolvido'; não há 'risco zero'.",
+    "Prescrição quinquenal (CF art. 7º, XXIX; Súmula 308/TST; FGTS idem — ARE 709.212/Tema 608): ajuizamento previsto em 16/11/2026 corta créditos anteriores a 16/11/2021 (out/2019–nov/2021), restando 58 meses exigíveis (dez/2021–set/2026); aviso-prévio usa o tempo total de serviço (7 anos → 51 dias, Lei 12.506/2011) mesmo com verbas prescritas.",
+    "Remuneração-base (atualização pós-resposta do cliente, 26/10/2026): mantém-se R$ 18.000/mês pela presunção do arquivo (base = valor pago à PJ, 'salvo prova' de tributos/custos embutidos). O diretor alegou que 'um CLT equivalente ganharia uns 12 mil', mas sem lastro documental (sem contabilidade/declarações fiscais da PJ; cláusula 2 pagava quantia fixa 'independentemente de entregas', sem repasse de custos), a asserção não desativa a presunção. O cliente confirmou não possuir nenhuma documentação adicional que comprove custos da PJ (26/10/2026), de modo que a tese está sem lastro e não utilizável por ora; recomenda-se não articulá-la. O cenário de base R$ 12.000 está quantificado como sensibilidade em parecer.md §6.1 (verbas R$ 443.722,67; −R$ 221.861,33) e não altera os números deste JSON; a mesma alegação, na responsabilidade, favorece o reclamante (admite posto permanente de ~R$ 12 mil no quadro)."
+  ],
+  "prescricao": {
+    "data_ajuizamento": "16/11/2026 (protocolo previsto na notificação extrajudicial de 30/09/2026)",
+    "corte_quinquenal": "16/11/2021 (créditos anteriores prescritos: out/2019 a nov/2021)",
+    "meses_exigiveis": 58,
+    "meses_prescritos": 26
+  },
+  "exposicao": {
+    "remuneracao_base": 1044000,
+    "decimo_terceiro": 87000,
+    "ferias_terco": 116000,
+    "fgts": 99760,
+    "multa_40": 39904,
+    "aviso_previo": 30600,
+    "inss_patronal": 292320,
+    "horas_extras": "estimativa: R$ 16.568,18 comprovados (135 h jan–jun/2025 × R$ 122,73); extrapolável a ~R$ 160.159 para os 58 meses exigíveis — a apurar; jornada média da planilha sugere até ~R$ 19.600 extras não registrados no mesmo período",
+    "total": 665584
+  },
+  "tema_1389": {
+    "efeito_processual": "Reclamação ajuizada em 16/11/2026 tende a ser sobrestada antes da sentença, conforme a prática de cada TRT, em razão da suspensão nacional de todos os processos sobre licitude de contratação de PJ/autônomo (STF, ARE 1.532.603, decisão de 14/04/2025); sem tese firmada não haverá mérito transitado — situação na biblioteca (congelada em out/2026): mérito pendente, suspensão mantida.",
+    "efeito_na_exposicao": "A exposição não desaparece: fica em aberto, com juros e correção correndo no sobrestamento (Lei 14.905/2024: IPCA + SELIC−IPCA, por este arquivo); a tese do STF poderá fixar ônus da prova e critérios de reconhecimento, podendo reduzir ou ampliar a exposição — a provisão deve ser mantida e atualizada, não zerada."
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 682152
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [500000, 700000]
+  }
+}

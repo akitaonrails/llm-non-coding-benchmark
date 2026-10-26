@@ -1,0 +1,25 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 850.8657028389862,
+  "controller_wait_seconds": 72.00693713597138,
+  "model_turn_seconds": 778.5818116740265,
+  "turns": 4,
+  "released_facts": [
+    "austin_trips",
+    "counsel",
+    "notice_1076",
+    "trade_secrets"
+  ],
+  "usage": {
+    "input_tokens": 2227666,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 80368,
+    "reasoning_output_tokens": 47300
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

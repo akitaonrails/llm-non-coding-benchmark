@@ -1,0 +1,58 @@
+{
+  "case": "usacc_07_holding_qsbs",
+  "questions": "# Questions for the client (answers requested — deliverable is complete on stated assumptions)\n\n1. **Properties balance-sheet discrepancy.** Line items imply capital of **+$1,380,000** ($3,280,000 assets − $1,900,000 mortgage), but stated tax capital is **$(380,000)** — a $1,760,000 gap. Are there distributions, liabilities, or basis adjustments missing from the balance sheet? Which figure should be treated as authoritative, and what reconciles the difference?\n2. **Revocable trust.** Is the 1% trust fully revocable by Nadia (grantor trust)? Has any attorney or CPA ever opined that a Nadia + own-revocable-trust pair creates a valid partnership for federal tax purposes?\n3. **Helio stock history.** Since 2/18/2020, has Nadia transferred, pledged, redeemed, exchanged, or restructured any of her Helio shares (including in any merger, recapitalization, or secondary round)? Did Helio receive VC preferred in rounds after her issuance — any conversion affecting her common lot?\n4. **Helio gross assets.** Do you have Helio's gross-asset history (safekeeping: the SPA only represents the ≤$1M figure at 2/2020)? Any indication total gross assets ever exceeded the small-business ceiling at or immediately after original issuance? *(The library excerpt requires QSB status \"at issuance\"; confirm the underlying records exist.)*\n5. **Loans — repayments?** Have any of the three advances (or any other undocumented transfers) been repaid in whole or part? Is the $400,000/$150,000 balance current?\n6. **Mortgage covenants.** Does the 2024 refinance of the $1.9M Properties mortgage contain a due-on-sale / change-of-control clause that transfers of the LLC interests to Holdings would trigger?\n7. **Prior reporting.** How were the 2024 refinancing distribution ($1.2M) and the intercompany advances reported on Nadia's 2024–2025 returns (Schedule C/E, any interest reported)? Were the Properties losses/Digital losses used against Services income?\n8. **Exit timing.** Is a Helio sale/liquidity event expected within ~24 months? (No effect on the §1202 answer — the exclusion is already fully vested — but it affects how urgently the \"do not contribute\" instruction must reach the advisor and any Helio transfer agent.)\n9. **Residency/management.** Confirm Nadia and the entities are managed from Colorado (assumed from the org chart and nexus summary).\n10. **Outside basis.** Confirm no adjustments have ever been made to the Helio stock basis ($12,000) and provide the 2025 basis statement for each Oakline LLC (needed to confirm the §731(a) headroom conclusion beyond the $1,520,000 implied from Properties alone).\n",
+  "facts": [
+    {
+      "id": "helio_exit",
+      "trigger": [
+        "exit",
+        "sale of Helio",
+        "liquidity",
+        "when do you expect"
+      ],
+      "answer": "Helio is talking to acquirers; a sale in 12–18 months is realistic. My stake would be about $9–10M.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "basis_holdings",
+      "trigger": [
+        "basis",
+        "Properties",
+        "negative capital",
+        "mortgage recourse"
+      ],
+      "answer": "The mortgage is nonrecourse to me personally. The refinancing cash went into my brokerage account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trust",
+      "trigger": [
+        "trust",
+        "1%",
+        "revocable",
+        "who is the other partner"
+      ],
+      "answer": "The 1% is my revocable living trust — the advisor said we need two partners.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "loans_terms",
+      "trigger": [
+        "loan terms",
+        "promissory",
+        "interest rate",
+        "repay"
+      ],
+      "answer": "No paperwork. I just move money where it's needed.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "helio_exit",
+    "basis_holdings",
+    "trust",
+    "loans_terms"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

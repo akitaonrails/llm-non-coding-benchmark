@@ -1,0 +1,19 @@
+{
+  "itbi": {
+    "devido": false,
+    "base": 0,
+    "fundamento": "CF art. 156, §2º, I: não incide ITBI na transmissão de bens em realização de capital, salvo atividade preponderante de locação/compra-e-venda imobiliária do adquirente (CTN art. 37: >50% da receita operacional; empresa nova: apuram-se os 3 anos seguintes). Com o dado do cliente (locação dos 40% a dentista por R$ 8.000/mês), o teste numérico fecha a imunidade na Variante A: receita imobiliária 8.000x12 = R$ 96.000/ano sobre receita operacional projetada de R$ 1.296.000 (estética R$ 1.200.000 + locação R$ 96.000) = 7,4% < 50%, logo não preponderante. Tema 796 (STF RE 796.376): sem excedente, imóvel integralizado exatamente pelo valor atribuído ao capital (R$ 420.000 = valor da declaração de IR, Lei 9.249/95 art. 23). Ressalvas: monitorar os 3 anos seguintes (regra da empresa nova no art. 37 do CTN, conforme literalidade da biblioteca: apuram-se os 3 anos seguintes para empresa nova); alíquota/procedimento municipal NÃO VERIFICADOS na biblioteca; e, na Variante B recomendada (imóvel fica no CPF), sequer há transmissão, portanto ITBI não existe. simples_possivel abaixo refere-se ao plano como apresentado (imóvel no CNPJ + locação ao dentista pela sociedade): nesse cenário o Simples é vedado (LC 123/2006, art. 17, XV - locação de imóveis próprios, independentemente do valor); com a Variante B (locação na PF do casal) o Simples volta a ser possível - ver parecer §2.3/§2.4."
+  },
+  "integralizacao_imovel": {
+    "valor_recomendado": 420000,
+    "ganho_capital_pf": 0
+  },
+  "pro_labore_minimo_recomendado_mensal": {
+    "Marina": 0,
+    "Felipe": 5000,
+    "Luana": 8000
+  },
+  "distribuicao_mensal_pretendida": 50000,
+  "irrf_dividendos_2026_estimado_mensal": 0,
+  "simples_possivel": false
+}

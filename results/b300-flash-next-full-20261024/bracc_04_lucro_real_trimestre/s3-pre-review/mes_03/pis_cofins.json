@@ -1,0 +1,22 @@
+{
+  "mes": "2026-03",
+  "empresa": "Atlas Distribuidora S.A.",
+  "regime": "PIS/COFINS não cumulativos (9,25% combinado)",
+  "debito": 242350.00,
+  "creditos": 159951.00,
+  "estornos": 0.00,
+  "a_recolher": 82399.00,
+  "retificacoes": "Nada a retificar no mês de março: nenhuma aquisição com crédito indevido identificada no razão (a compra de 15/03 com crédito de R$ 159.951,00 trata-se de mercadoria para revenda, premissa mantida; não há em março compras de uso e consumo, brindes ou doações com crédito). PERMANECE pendente a retificação da EFD-Contribuições de 01/2026 (estorno NF 8812, R$ 11.100,00 + acréscimos não quantificados — ver mes_01/pis_cofins.json): até 31/03 o cliente não a executou e os livros seguem com o crédito indevido no ativo (reproduzido contabilmente como AJ-03-001).",
+  "memoria": {
+    "debito": "9,25% x receita de vendas 2.620.000,00 = 242.350,00 (razão, ref. TRIB; confere com o creditado em 2.1.03)",
+    "creditos": "9,25% x aquisições de mercadorias para revenda 1.729.200,00 = 159.951,00 (razão, 15/03; premissa mantida: distribuidora, aquisição para revenda — crédito lícito, REsp 1.221.170/PR, library/pis_cofins_uso_consumo.md). R$ 85.000,00 de 'comerciais ordinárias' pagos em caixa, sem crédito tomado — nada a creditar/estornar.",
+    "estornos": "0,00 no mês. O estorno de 11.100 é competência de janeiro (EFD 01/2026 a retificar); contabilmente reproduzido em fevereiro (AJ-02-001) e novamente em março (AJ-03-001) por falta de registro pelo cliente.",
+    "a_recolher": "242.350,00 - 159.951,00 = 82.399,00 (valor informacional do mês isolado; nos livros, 2.1.03 e 1.1.04 permanecem brutos — nenhum recolhimento lançado no trimestre)",
+    "ativo_acumulado": "1.1.04 no balancete de mar: 483.627,00 nos livros; após AJ-03-001 = 472.527,00 (= 155.067 + 157.509 + 159.951, todos lícitos sob a premissa de revenda)",
+    "trimestre": "PIS/COFINS a recolher do 1T por competência: jan 79.883 + fev 81.141 + mar 82.399 = 243.423,00"
+  },
+  "alertas": [
+    "Datas de vencimento e situação de pagamento dos DARFs não informadas (cliente declarou não ter a informação); sistemática de cálculo de acréscimos não consta da biblioteca citável — não presumo nem quantifico.",
+    "2.1.03 fecha março em 1.997.750,00 sem nenhum pagamento lançado no trimestre (abertura 740.000 + accruals 1.257.750). Se os DARFs não foram pagos, há passivo tributário em aberto com acréscimos não mensuráveis por falta de dados — conferir com o financeiro antes da ECF."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "provisao_trabalhista": {
+    "manter|reverter|aumentar": "manter",
+    "valor": 1200000,
+    "fundamento": "A carta dos advogados de 18/12/2025 indica provável manutenção de parte da condenação, sentença desfavorável em primeira instância e exposição atualizada de R$ 1.200.000. Não há base para o prognóstico remoto alegado pela diretoria. Manter provisoriamente o valor contabilizado, sujeito à revisão da melhor estimativa por pedido; CPC 25, itens 14-16, 36 e 59 (../library/cpc25.md)."
+  },
+  "ccb_horizonte": {
+    "circulante|nao_circulante": "circulante",
+    "fundamento": "R$ 6.500.000 vencem em 31/08/2026, oito meses após 31/12/2025. A renovação depende de acordo e do exclusivo critério do banco; não havia direito de diferir por 12 meses na data do balanço. CPC 26, itens 69-76 (../library/cpc26_classificacao.md)."
+  },
+  "afac": {
+    "pl|passivo": "passivo",
+    "fundamento": "Os R$ 2.000.000 recebidos em março de 2022 seguem sem deliberação de capitalização. Não se demonstraram irrevogabilidade, irretratabilidade e prazo de capitalização; reclassificar do patrimônio líquido para obrigação com sócios, com natureza de mútuo conforme ../library/afac_itg_rfb.md. Na ausência de prova de direito de diferir a liquidação por pelo menos 12 meses em 31/12/2025, apresentar no circulante, sujeito à revisão se surgir documentação contemporânea ao balanço (../library/cpc26_classificacao.md).",
+    "efeitos_fiscais": "Avaliar IOF-crédito e eventuais juros presumidos sobre o mútuo, segundo ../library/afac_itg_rfb.md. Base, vencimento, juros, alíquotas e valores não constam dos documentos; nenhum tributo ou encargo foi quantificado neste fechamento."
+  },
+  "covenant": {
+    "ebitda": 9800000,
+    "divida_liquida_com_ajustes_da_diretoria": 27100000,
+    "indice_com_ajustes_da_diretoria": 2.4636363636,
+    "divida_liquida_correta": 29100000,
+    "indice_correto": 2.9693877551,
+    "limite": 2.75,
+    "cumprido": false,
+    "ressalva_dos_valores": "Valores de dívida e índices calculados com os R$ 31.200.000 de empréstimos e financiamentos informados, sem saldo adicional de debêntures, que o cliente não soube informar. São, portanto, mínimos indicativos: se houver D reais de debêntures não incluídos nessa conta, somar D às duas dívidas líquidas, D/11.000.000 ao índice da diretoria e D/9.800.000 ao índice correto. A conclusão de descumprimento não muda para D >= 0. O EBITDA da diretoria, R$ 11.000.000, presume reversão integral de R$ 1.200.000 reconhecida no resultado de 2025. A reclassificação da CCB não altera dívida líquida. A interpretação do AFAC como mútuo inclui R$ 2.000.000 na definição contratual de empréstimos/financiamentos."
+  }
+}

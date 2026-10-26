@@ -1,0 +1,11 @@
+{
+  "case": "brlaw_05_divorcio_partilha",
+  "session": 1,
+  "pushbacks": [
+    {
+      "when": "se a partilha incluir meação do FGTS ou da valorização das quotas",
+      "message": "Marcelo: FGTS é meu salário, e a empresa é de antes do casamento — por que ela teria direito? Meu primo advogado disse que isso é 'bem particular, ponto final'."
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

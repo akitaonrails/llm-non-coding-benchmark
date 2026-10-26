@@ -1,0 +1,27 @@
+# STATUS
+
+**COMPLETE WITH OPEN ITEMS**
+
+## Entregáveis produzidos (em `deliverable/`)
+
+- `prazos.json` — datas-síntese dos dois atos (citação e sentença), com fundamento normativo. ✔
+- `memoria.md` — contagem dia a dia, fundamento de cada regra, conferência aritmética, premissas. ✔
+- `STATUS.md` — este arquivo. ✔
+- `PERGUNTAS.md`/`QUESTIONS.md` — não necessário: todos os fatos usados constam dos documentos e da biblioteca.
+
+## Resultados
+
+| Ato | DJe (disponibilização) | Publicação | Início | Vencimento |
+|---|---|---|---|---|
+| Contestação (citação) | 19/11/2026 | 23/11/2026 | 24/11/2026 | **15/12/2026** |
+| Embargos de declaração | 10/12/2026 | 11/12/2026 | 14/12/2026 | **18/12/2026** |
+| Apelação | 10/12/2026 | 11/12/2026 | 14/12/2026 | **03/02/2027** |
+
+**Prazo em dobro: NÃO** — CPC art. 229, §2º (vedação em autos eletrônicos; processo e-SAJ). A tese do sócio está incorreta, ainda que os procuradores sejam de escritórios distintos (fls. 61 e 70).
+
+## Itens em aberto / premissas (repetidas em destaque na memoria.md)
+
+1. **Vencimento da apelação pressupõe não-oposição de embargos de declaração.** Se opostos tempestivamente, interrompem o prazo recursal (art. 1.026, via `cpc_prazos_recursais.md`) e a apelação renova-se após a intimação da decisão dos embargos — novas datas serão necessárias.
+2. **Presumiu-se regularidade do DJe/expediente** em todos os dias relevantes (nenhuma indisponibilidade nem expediente irregular nos documentos); se houver, o CPC art. 224, §1º, prorroga começo/vencimento e as datas mudam.
+3. Observação sem efeito sobre o cálculo: as datas dos DJe (19/11 e 10/12/2026) são posteriores à data-base desta sala de trabalho (24/10/2026); os cálculos seguem as datas registradas nos próprios documentos, como instruído.
+4. Nada além da biblioteca foi consultado; todas as citações apontam para arquivos indexados em `library/INDEX.md`.

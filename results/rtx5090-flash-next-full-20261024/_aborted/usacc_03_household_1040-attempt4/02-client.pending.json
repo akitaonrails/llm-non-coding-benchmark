@@ -1,0 +1,74 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Questions for the client\n\nThese confirmations would let me close the open items flagged in `STATUS.md`. The return as\nprepared stands on the assumptions stated; answers may change the figures noted.\n\n**Client responded 2025-10-25.** Answers are recorded under each question; the return reflects\nthem (see `judgment_calls.md` #1, #4, #5, #7, #8, #14).\n\n1. **Leo 2025 claim.** The 2019 order gives odd years to the father. Please confirm (a) the father\n   (Leo's other parent) is actually claiming Leo for 2025, and (b) Elena will sign Form 8332 for\n   2025. If the other parent will *not* claim Leo, tell us — the Reyses could then claim him\n   (+$2,200 CTC) and the Form 8962 family size/FPL analysis changes materially.\n   - **Answer (Elena):** \"I signed the 8332 for Leo's dad for {TY}, it's his year.\" The `{TY}`\n     template placeholder is read as 2025 (matches the odd-year clause). **Closed:** Leo not\n     claimed; CTC = Sofia only. 8962 family size stays 4 — the library's only FPL line is keyed\n     to \"2025 coverage\" (the 4-person policy); the family-of-3 alternative is labeled and\n     bounded, not computed (`judgment_calls.md` #5).\n2. **Prior-year S-corp records.** Do 2021–2024 K-1s (or prior Forms 7203) exist anywhere? Our\n   $11,500 opening basis comes only from Marcus's note. Any correction moves the\n   allowed/suspended split of the 2025 loss dollar-for-dollar.\n   - **Answer (Marcus):** \"no, I haven't put anything in since 2021 and I never lent it money.\n     Pike guarantees the bank line.\" Client has no additional information, so no prior K-1s/7203s\n     exist to obtain. **Partially closed:** inputs to the note are client-confirmed; the note\n     itself remains the sole evidence — residual risk stays flagged (`judgment_calls.md` #1).\n3. **Brooklyn lease.** Please send the current lease (2019 term + renewals). Is $1,500/mo the\n   contract rent with no escalator the landlord failed to apply, and is the tenant unrelated with\n   no family/free-use arrangement? If the rent was reduced as a personal courtesy, the entire\n   $19,550 rental deduction disappears (personal-use rule).\n   - **Answer (Elena):** \"the tenant is a stranger, a nurse we found through a broker in 2019.\n     We just never raised the rent.\" **Mostly closed:** tenant unrelated, rent never raised\n     (not a courtesy) → library carve-out applies, loss allowed. Lease document never produced\n     and client has nothing further; \"fair rental for that lease\" rests on the client's account\n     — remaining unknown flagged in `STATUS.md`.\n4. **Remote work facts (NY).** Did either employer have a New York office available that the\n   Reyeses chose not to use? Any written remote-work agreement? Under NY's convenience-of-the-\n   employer rule this decides whether July–December wages stay NY source (our current answer:\n   yes, all $122,000 stays NY source).\n   - **Answer (Marcus):** \"the company said remote was fine when I asked to move; they didn't\n     need me out of state.\" **(Elena):** \"Halvorsen closed their Tampa office years ago; they\n     approved my request\" (Halvorsen's NY office stands per the W-2, 230 Park Ave S). **Closed:**\n     employee-convenience moves, no employer necessity → convenience-of-the-employer rule keeps\n     all $122,000 NY source.\n5. **NY return.** The library has no NY rate schedule, so we did not compute NY tax or the IT-203\n   refund. NY withholding was $6,752 — do you want the NY return prepared when authority is\n   available, and please confirm no other NY items (e.g., 2024 NY carryovers).\n   - **Not answered** (client: \"no additional information\"). **Open:** NY return preparation\n     scope and any NY carryovers remain unconfirmed; NY tax is in any case uncomputable from the\n     closed library (`judgment_calls.md` #12). Related confirmation received separately:\n     marketplace plan dropped 7/1/2025 for Elena's employer plan — 1095-A Jan–Jun coverage and\n     the 6-month 8962 computation confirmed.\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for {TY}, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "contrib",
+    "convenience",
+    "employer_coverage",
+    "fmv_rent",
+    "leo_8332"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

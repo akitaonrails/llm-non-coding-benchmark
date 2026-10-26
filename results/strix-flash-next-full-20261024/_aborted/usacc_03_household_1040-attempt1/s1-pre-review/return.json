@@ -1,0 +1,47 @@
+{
+  "form1040": {
+    "1a_wages": 122000,
+    "2b_interest": 400,
+    "8_other_income_sch1": -31050,
+    "11_agi": 91350,
+    "12_deduction": 31500,
+    "15_taxable_income": 59850,
+    "16_tax": 6708,
+    "19_ctc": 2200,
+    "17_sch2_excess_aptc": 1900,
+    "24_total_tax": 6408,
+    "25d_withholding": 8730,
+    "34_refund_or_37_owed": 2322
+  },
+  "form7203": {
+    "stock_basis_begin": 11500,
+    "loss_allowed": 11500,
+    "loss_suspended": 16500
+  },
+  "form8582": {
+    "rental_loss": -21018,
+    "magi": 110900,
+    "special_allowance": 19550,
+    "loss_allowed": 19550,
+    "carryforward": 1468
+  },
+  "form8962": {
+    "household_income": 91350,
+    "fpl_pct": 292.79,
+    "applicable_figure_pct": 5.7115,
+    "annual_ptc": 7531.25,
+    "aptc": 9900,
+    "excess": 2368.75,
+    "repayment_limitation": 1900,
+    "repayment": 1900
+  },
+  "dependents": [
+    "Sofia Reyes (age 15)"
+  ],
+  "ny": {
+    "resident_days": 181,
+    "marcus_ny_wages": 68000,
+    "elena_ny_wages": 54000,
+    "method": "Part-year (IT-203): NY resident Jan 1 - Jun 30, 2025 = 181 days; nonresident Jul 1 - Dec 31 = 184 days. Wages allocated 100% to NY for both spouses under the convenience-of-the-employer rule (both employers are NY-based; remote work from FL was at the employees' request, not the employer's necessity - client confirmed 2026-10-25), so resident-period wages are taxable as resident income and nonresident-period wages are NY source income. Alternative day-ratio (181/365) figures: Marcus $33,720.55, Elena $26,778.08 - rejected, see judgment_calls.md. NY tax due cannot be computed: the library has no NY rate schedule, deduction, or credit amounts."
+  }
+}

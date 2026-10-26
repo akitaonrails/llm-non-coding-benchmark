@@ -1,0 +1,27 @@
+# QUESTIONS — remaining unknowns (**do not re-ask the client**)
+
+Client turn 2 answered what it can and stated: *"For questions not answered above, the client has no additional information."* Nothing below should go back to the founders; each item is routed to a specialist or to post-formation verification.
+
+## Answers already incorporated (record — no follow-up needed)
+
+| Topic | Client answer | Where reflected |
+|---|---|---|
+| Tomás US presence | "Maybe a third of the year" (≈120 days) | recommendation §2.1/§3.3 (NRA conclusion robust: weighted 161.0–165.0); calendar §§B, D |
+| Immigration status | TN visa; no green card, **no application pending** | recommendation §3.5; register row 9 |
+| Work locations | Priya: San Diego; Tomás: mostly Monterrey | recommendation §3.1/§3.5; calendar §D; JSON assumptions |
+| Clients' locations | All over the US | recommendation §3.5 (state-nexus flag); term sheet §8 |
+| Marital status | Tomás married **in Mexico, no prenup**; Priya single | term sheet §§3, 5, 8 (spousal joinder mandatory) |
+
+## Remaining unknowns (client cannot answer — do not re-ask)
+
+1. **Formation date still assumed Nov 2, 2026.** Drives the §83(b) deadline (Dec 2, 2026, 30 days, no extension) and all "2 months 15 days" reference dates. Resolve at closing by recomputing the calendar — not a client question, a docket fact.
+2. **TN work-authorization clearance.** Whether owning/performing services for this LLC (in CA and remotely for Monterrey clients) is consistent with TN status: client cannot advise; **immigration counsel must clear this before formation**. No green card application pending, so the residency path is immigration-dependent.
+3. **NRA taxation of Tomás's distributive share.** Services mostly performed in Mexico → the US-source/ECI portion of his 50% allocation, withholding on his K-1 allocations, filing mechanics, and any US–Mexico treaty: **none of this is in the library — cross-border specialist**, before the first K-1.
+4. **Tomás's QBI entitlement as an NRA** — library silent; not claimed anywhere. Specialist to confirm; if disallowed, the comparison only widens in the partnership's favor (his side simply carries no §199A benefit).
+5. **Mexican community-property mechanics and spousal joinder.** Marriage in Mexico, no prenup confirmed; whether/how the spouse consents and how Mexican law treats the interest: **Mexican local counsel**. Term sheet treats joinder as a mandatory closing condition.
+6. **Client-contract assignment restrictions.** Client has no information. Contract review is a pre-closing condition (term sheet §8); warranties in §1 of the term sheet are conditional until reviewed.
+7. **CA gross-receipts fee allocation.** Some activity now known to occur outside CA; if CA-allocable receipts fall into the $250k–$499,999 band the fee drops to $900 (illustrative total $103,211.90 vs $104,183.10 — founders' tax rises slightly; recommendation §4). Allocation rules not in library — **FTB/specialist**.
+8. **Other-state registration/nexus** from clients all over the US — outside the library entirely — **SALT adviser**.
+9. **Priya's other income** (affects her §199A headroom under the ~$200,300 threshold): unknown; her year-1 allocation alone (~$128–129k) leaves ~$71k of headroom. Re-check at year-end filing, not by asking again.
+10. **Cash policy and financing plans:** unanswered and unanswerable by the client today. Term sheet default applies (mandatory tax distributions; residual discretionary; no Delaware now — convert if fundraising ever becomes real).
+11. **Standing labeled assumptions** unchanged: tax rates (24/20/21/15.3%), wage-base cap, 199A threshold "verify" flags, Delaware and CA corporate-franchise amounts — none in library; all flagged in `year1_comparison.json` and recommendation §5.

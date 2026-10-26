@@ -1,0 +1,46 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "questions": "# QUESTÕES ao cliente (respostas podem refinar, mas não deslocam o desenho central da análise)\n\n1. **Parcelas 5 e 6 — reconhecimento antes de fev/mar/2026?** Existe algum e-mail, termo de confissão, nota promissória, negociação ou pagamento parcial da Boa Vista que **reconheça as parcelas 5 e/ou 6** em data anterior a 10/02/2026 (P5) / 10/03/2026 (P6)? (Se sim, a conclusão de prescrição quanto a elas pode mudar; até onde vimos, elas foram apenas contestadas.)\n\n2. **Pagamentos após 02/08/2023:** houve qualquer outro pagamento (PIX, boleto, tiquete, compensação) depois daquele PIX de R$ 10.000? Ele foi lançado no seu financeiro como abatimento do principal da parcela 1?\n\n3. **Parceiros de cobrança:** algum sócio/representante da Boa Vista assinou nota promissória, acordo ou termo de confissão de dívida em qualquer momento? (Poderia formar título autônomo — hipótese não documentada no arquivo.)\n\n4. **Base do IPCA:** você consegue me fornecer a série de IPCA (IBGE) out/2020–out/2026 ou autoriza que o contrato preveja índice substituto? Sem essa série, os totais seguem rotulados \"sem IPCA\".\n\n5. **Serasa:** a inclusão de 12/08/2026 pode ser retificada agora para R$ 110.000 + encargos (excluir parcelas 5–6 e os R$ 10.000 pagos)? Confirmar também se o título enviado ao Serasa foi o contrato ou os boletos.\n\n6. **Prova de serviço P5–P6:** os \"relatórios assinados pelo encarregado\" cobrem também fev/mar/2021 (período da greve alegada) ou param em jan/2021? (Relevante só como informação, pois a pretensão está prescrita; e há risco de a devedora usar eventual lacuna contra a honestidade do pedido nas 1–4.)\n",
+  "facts": [
+    {
+      "id": "testemunhas",
+      "trigger": [
+        "testemunha",
+        "assinatura",
+        "título executivo",
+        "quem assinou"
+      ],
+      "answer": "O contrato foi assinado só pelos dois representantes, sem testemunhas. Foi tudo meio informal.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pagamento",
+      "trigger": [
+        "pagamento parcial",
+        "10 mil",
+        "2023",
+        "PIX"
+      ],
+      "answer": "Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "greve",
+      "trigger": [
+        "greve",
+        "parcelas 5 e 6",
+        "serviço concluído",
+        "fevereiro",
+        "março"
+      ],
+      "answer": "Teve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "pagamento",
+    "greve"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

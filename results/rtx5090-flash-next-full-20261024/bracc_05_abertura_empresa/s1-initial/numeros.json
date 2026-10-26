@@ -1,0 +1,19 @@
+{
+  "itbi": {
+    "devido": false,
+    "base": 420000,
+    "fundamento": "Estrutura A (turno 2, parecer ANEXO A A.2/A.5): o imovel NAO e integralizado - o casal permanece proprietario e loca (40% direto ao dentista, 8.000/mes = 96.000/ano, confirmado; 60% a propria clinica). Sem transmissao -> sem fato gerador de ITBI (devido=false por inexistencia de negociacao, nao apenas por imunidade). O campo base registra a base da VARIANTE B, caso um dia integralizem: valor da declaracao de IR (420.000, Lei 9.249 art. 23), quotas de igual valor -> nenhum excedente fora da imunidade (CF art. 156, par. 2, I; STF RE 796.376, Tema 796). Preponderancia de locacao na Variante B: 96.000 / (1.200.000 + 96.000) = 7,41% < 50% (CTN art. 37) -> imunidade sobrevive; monitorar os 3 anos seguintes (empresa nova). Se integralizado por 900.000 contra capital de 420.000, o excedente de 480.000 escaparia da imunidade (Tema 796). Atencao: na Variante B a locacao pela propria sociedade e impeditiva do Simples (LC 123 art. 17 XV) mesmo sem preponderancia - por isso a recomendacao e a Estrutura A. (library/cf156_ctn37_itbi.md; library/lc123_vedacoes.md; library/lei9249_art23.md)"
+  },
+  "integralizacao_imovel": {
+    "valor_recomendado": 420000,
+    "ganho_capital_pf": 0
+  },
+  "pro_labore_minimo_recomendado_mensal": {
+    "Marina": 0,
+    "Felipe": 10000,
+    "Luana": 8000
+  },
+  "distribuicao_mensal_pretendida": 50000,
+  "irrf_dividendos_2026_estimado_mensal": 0,
+  "simples_possivel": false
+}

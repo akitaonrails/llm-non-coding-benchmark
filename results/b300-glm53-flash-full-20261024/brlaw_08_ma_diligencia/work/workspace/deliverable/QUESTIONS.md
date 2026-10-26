@@ -1,0 +1,34 @@
+# QUESTIONS.md — perguntas aos sócios (Vértice)
+
+Para converter os símbolos usados nos entregáveis em números finais, precisamos dos dados abaixo. Enquanto isso, os documentos usam os símbolos **P** (preço total), **S_HA** (saldo contratual Horizonte Azul) e **CAP_PJ** (teto da indenização específica dos PJs), com todas as fórmulas expostas.
+
+1. **Preço total da operação (P)**: qual o valor acordado (ou em negociação) de compra e venda das quotas? Necessário para dimensionar: escrow de 20% x P (20% do preço em escrow), teto de 15% x P (0,15 x P) e a exposição "teto = Preço Total" das cláusulas 5.7/5.9.
+2. **Saldo contratual Horizonte Azul (S_HA)**: qual o saldo remanescente do contrato de 2024–2028 (data room §1.1)? A multa da cláusula 19 é 20% x S_HA. Precisamos também de: prazo estimado de resposta da Horizonte Azul a pedido de anuência e se há contato prévio existente.
+3. **Engenheiros PJ (data room §2.2)**: para dimensionar CAP_PJ — salário (Pessoa Jurídica mensal) de cada um dos 11, tempo de casa (início da contratação), e função. Se preferirem, informem como o próprio grupo Meridiano estima essa exposição. Confirmem ainda: desejam avaliar a regularização (conversão em CLT) antes do fechamento e o custo dela?
+4. **EBITDA histórico**: EBITDA da Vértice de 2023/2024/2025 (data room só traz faturamento de R$ 4,2 milhões). Necessário para avaliar se o gatilho do earn-out (EBITDA > R$ 1.100.000 no 12 meses pós-fechamento) é alcançável e quanto do teto (payout máximo R$ 1.500.000 = 35% x excesso; excesso máximo 1.500.000/0,35 = R$ 4.285.714) está em jogo.
+5. **Composição societária e venda**: confirmem se ambos vendem **a totalidade** das quotas (assim dá para incluir a renúncia recíproca à cláusula de preferência do contrato social — data room §4.1 — sem afetar o calendário de 45 dias) ou se algum de vocês vende apenas parte.
+6. **Geografia da atuação**: municípios/estados onde a Vértice atuou nos últimos 24 meses (para o Anexo de Território da não concorrência em 9.1). Sabemos de Sorocaba; faltam os demais.
+7. **IRPJ 2023 (R$ 310.000)**: há perspectiva de quitação ou parcelamento antes do fechamento? Quanto disso os sócios preferem pagar na fonte (quitação) do que manter em teto/escrow?
+8. **Demais cláusulas de mudança de controle**: além de Horizonte Azul, confiram se há qualquer outro contrato relevante com cláusula similar (o data room registra que os demais contratos privados são silentes — data room §1.3).
+
+---
+
+## Respostas recebidas (26/10/2026)
+
+**Horizonte Azul (relaciona-se à pergunta 2):** "A Horizonte Azul é nosso maior cliente; o diretor deles é meu amigo, mas o jurídico deles é duro. Não contamos da venda ainda." (Hélio)
+- Anotado: contato informal possível por intermédio do diretor; **anuência formal ainda não solicitada**; a venda **não foi comunicada** à Horizonte Azul. O valor **S_HA segue sem número**. Importante: a cláusula 19 (data room §1.1) exige anuência **prévia e expressa** — o apoio informal de um diretor não é anuência; quem pode dispensar o contrato é o jurídico da Horizonte Azul.
+
+**IRPJ 2023 (pergunta 7):** "Tem um débito de IRPJ de 2023 em cobrança, uns 310 mil; não parcelamos porque discordamos."
+- Anotado: débito em cobrança confirmado (data room §3.1 registra R$ 310.000 — mesma ordem do valor informado); **sem parcelamento**; os sócios **discordam do lançamento**. Pergunta respondida: não haverá quitação nem parcelamento antes do fechamento. O tratamento segue o que a redline já propõe (anexo de exceções + escrow dedicado de R$ 310.000 + encargos, com prazo próprio) — e cobre os dois desfechos: se a discussão for ganha, a reserva volta; se for perdida, a reserva paga o saldo.
+
+## Dados que continuam em aberto
+
+Para as perguntas 1, 2 (número), 3, 4, 5, 6 e 8, o cliente informou que **não há informação adicional** no momento. Os valores correspondentes permanecem nos entregáveis como **símbolos com fórmulas expostas**:
+
+- **P** — preço total da operação (pergunta 1): escrow 20% × P; teto 15% × P; exposição "teto = Preço Total" (5.7/5.9).
+- **S_HA** — saldo contratual Horizonte Azul (pergunta 2): multa 0,20 × S_HA no Anexo 3.2 e no escrow itemizado.
+- **CAP_PJ** — salários e tempos de casa dos 11 engenheiros PJ (pergunta 3): teto da indenização específica.
+- EBITDA 2023–2025 (pergunta 4): viabilidade do gatilho de R$ 1.100.000 do earn-out e quanto do teto de R$ 1.500.000 está em jogo.
+- Totalidade vs. parcial das quotas (pergunta 5): renúncia à preferência (data room §4.1) e agenda de 45 dias.
+- Território além de Sorocaba (pergunta 6): Anexo de Território da cláusula 9.1.
+- Outras cláusulas de mudança de controle (pergunta 8, sem resposta): o data room §1.3 segue como única fonte; o Anexo 3.2 parte da lista atual até confirmação contrária.

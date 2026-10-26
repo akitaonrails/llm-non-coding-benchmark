@@ -1,0 +1,6 @@
+Seu primo tem razão **quanto às quotas que você já possuía ao casar**: elas continuam particulares. Isso, porém, não encerra a análise do valor acumulado durante o casamento.
+
+- **FGTS:** embora venha do trabalho, os R$ 140.000 foram depositados integralmente durante o casamento. A orientação do STJ na [biblioteca](/work/workspace/library/stj_fgts_quotas_previdencia.md) os considera partilháveis, mesmo que o saque só ocorra depois. A meação calculada é **R$ 70.000**. FGTS não entra, por isso, na base da pensão.
+- **Empresa:** Fernanda não receberia metade das quotas nem entraria na sociedade. O valor de **R$ 400.000 ao casar** foi tratado como particular. Como você informou que reinvestiu todos os lucros, a diferença até os **R$ 1.500.000 atuais** pode gerar um crédito econômico partilhável. Os **R$ 550.000** na proposta são metade dessa diferença, **como referência de negociação**, não um direito já comprovado nesse valor. A [biblioteca](/work/workspace/library/stj_fgts_quotas_previdencia.md) registra divergência sobre o alcance da valorização; sem apuração que separe lucros reinvestidos de fatores externos, o número permanece aberto.
+
+Portanto, “bem particular” protege suas quotas anteriores ao casamento, mas não resolve sozinho o tratamento do FGTS depositado e dos lucros acumulados durante ele.

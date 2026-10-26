@@ -1,0 +1,22 @@
+{
+  "case": "usacc_08_chapter11_debtor",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 1190.3630791660107,
+  "controller_wait_seconds": 101.01723577003577,
+  "model_turn_seconds": 1088.843565711024,
+  "turns": 6,
+  "released_facts": [
+    "mesa_returns"
+  ],
+  "usage": {
+    "input_tokens": 3078211,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 161542,
+    "reasoning_output_tokens": 83967
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

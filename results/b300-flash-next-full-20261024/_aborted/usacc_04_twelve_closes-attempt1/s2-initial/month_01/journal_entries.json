@@ -1,0 +1,163 @@
+[
+  {
+    "ref": "JE-2025-01-01",
+    "date": "2025-01-01",
+    "memo": "Invoice monthly subscriptions for January 2025, INV-2201..INV-2224 (24 customers) [revenue recognized in period of service]",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-01-02",
+    "date": "2025-01-01",
+    "memo": "Bill Trestle Freight LLC annual subscription, INV-2225 \u2014 12 months service from 2025-01-01, billed upfront; contract liability per ASC 606-10-45-2 and revenue policy #1",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 24000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2200",
+        "debit": 0.0,
+        "credit": 24000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-01-03",
+    "date": "2025-01-26",
+    "memo": "Customer collections 2025-01-15..2025-01-26 per cash_receipts.csv (25 receipts, incl. Trestle wire 24,000 on 01-15); all agree to bank statement credits",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 54450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 54450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-01-04",
+    "date": "2025-01-09",
+    "memo": "January vendor bills recorded per vendor_bills.csv (AWS 9,920 / WeWork 7,200 / Gusto fees 240 / Notion-Slack-GitHub 1,460 / Google Ads 3,250); total 22,070.00",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 9920.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5200",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5900",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5400",
+        "debit": 3250.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 22070.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-01-05",
+    "date": "2025-01-09",
+    "memo": "Payment of January vendor bills 2025-01-05..2025-01-09; ACH debits on bank statement agree to bills line-for-line; total 22,070.00",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 22070.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 22070.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-01-06",
+    "date": "2025-01-25",
+    "memo": "January payroll per register: gross 54,404.00 + employer taxes/benefits 5,076.00; net pay 48,200.00 and taxes remitted 11,280.00 per bank 01/25 (withheld 6,204.00 + employer 5,076.00 = remitted 11,280.00)",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5110",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 59480.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-01-07",
+    "date": "2025-01-31",
+    "memo": "Deferred revenue release January: Trestle prior annual contract (Jun 2024\u2013May 2025) 1/12 = 8,200.00 (note_opening_deferred.md) + Trestle renewal 24,000.00/12 = 2,000.00; ASC 606-10-25-14(b)/25-27, policy #1",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 10200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 10200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-01-08",
+    "date": "2025-01-31",
+    "memo": "Monthly depreciation per close-checklist item 6 (64,000 equipment / 36 months = 1,777.78)",
+    "lines": [
+      {
+        "account": "5500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  }
+]

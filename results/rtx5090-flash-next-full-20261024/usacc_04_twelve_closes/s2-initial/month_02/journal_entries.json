@@ -1,0 +1,130 @@
+[
+  {
+    "ref": "JE-2025-012",
+    "date": "2025-02-01",
+    "memo": "February 2025 monthly subscription invoices INV-2226..INV-2249 (24 invoices, 30,450.00 = 3x650 + 5x2,400 + 4x1,800 + 3x900 + 6x450; same 24 monthly customers as January): A/R and subscription revenue; service period (February) billed in advance on 2025-02-01, performed within the month - recognized at billing consistent with January treatment. Aggregate single A/R line.",
+    "lines": [
+      { "account": "1100", "debit": "30450.00", "credit": "0.00" },
+      { "account": "4000", "debit": "0.00", "credit": "30450.00" }
+    ]
+  },
+  {
+    "ref": "JE-2025-013",
+    "date": "2025-02-01",
+    "memo": "Pinecone Dental Group (C-025) INV-2250 'Implementation & license - one-time' 36,000.00, order form 2025-02-01 (payment due on signature; service start 2025-02-01; governed by Master Subscription Agreement v3.2). NOT recognized as revenue at billing: billed before performance = contract liability (ASC 606-10-45-2); no separately priced distinct implementation shown on the order form and no evidence of delivered implementation services in February, so Board policy 2 'when performed' is not met (set-up activities that do not transfer a service are not a performance obligation, ASC 606-10-25-17); the license is continuous subscription access recognized over time (ASC 606-10-25-14(b), 25-27) and ratably per Board policy 1. Subscription term is NOT stated in the documents - 12-month term assumed (see open_items.md section 1, prominent assumption).",
+    "lines": [
+      { "account": "1100", "debit": "36000.00", "credit": "0.00" },
+      { "account": "2200", "debit": "0.00", "credit": "36000.00" }
+    ]
+  },
+  {
+    "ref": "JE-2025-014",
+    "date": "2025-02-26",
+    "memo": "February cash receipts, 25 items totaling 66,450.00 (24 monthly invoices 30,450.00 + Pinecone 36,000.00), applied INV-2226..INV-2250, receipt dates 2025-02-15..2025-02-26; each receipt traced to a bank credit (see bank_reconciliation.md). Posted at month-end for ledger brevity.",
+    "lines": [
+      { "account": "1000", "debit": "650.00", "credit": "0.00" },
+      { "account": "1000", "debit": "2400.00", "credit": "0.00" },
+      { "account": "1000", "debit": "2400.00", "credit": "0.00" },
+      { "account": "1000", "debit": "1800.00", "credit": "0.00" },
+      { "account": "1000", "debit": "900.00", "credit": "0.00" },
+      { "account": "1000", "debit": "2400.00", "credit": "0.00" },
+      { "account": "1000", "debit": "450.00", "credit": "0.00" },
+      { "account": "1000", "debit": "650.00", "credit": "0.00" },
+      { "account": "1000", "debit": "1800.00", "credit": "0.00" },
+      { "account": "1000", "debit": "1800.00", "credit": "0.00" },
+      { "account": "1000", "debit": "2400.00", "credit": "0.00" },
+      { "account": "1000", "debit": "1800.00", "credit": "0.00" },
+      { "account": "1000", "debit": "450.00", "credit": "0.00" },
+      { "account": "1000", "debit": "900.00", "credit": "0.00" },
+      { "account": "1000", "debit": "450.00", "credit": "0.00" },
+      { "account": "1000", "debit": "450.00", "credit": "0.00" },
+      { "account": "1000", "debit": "1200.00", "credit": "0.00" },
+      { "account": "1000", "debit": "900.00", "credit": "0.00" },
+      { "account": "1000", "debit": "2400.00", "credit": "0.00" },
+      { "account": "1000", "debit": "650.00", "credit": "0.00" },
+      { "account": "1000", "debit": "900.00", "credit": "0.00" },
+      { "account": "1000", "debit": "450.00", "credit": "0.00" },
+      { "account": "1000", "debit": "450.00", "credit": "0.00" },
+      { "account": "1000", "debit": "1800.00", "credit": "0.00" },
+      { "account": "1000", "debit": "36000.00", "credit": "0.00" },
+      { "account": "1100", "debit": "0.00", "credit": "66450.00" }
+    ]
+  },
+  {
+    "ref": "JE-2025-015",
+    "date": "2025-02-28",
+    "memo": "February vendor bills posted and paid in month per bank ACH: AWS 10,040.00; WeWork 7,200.00; Gusto fees 240.00; Notion/Slack/GitHub 1,460.00; Google Ads 3,300.00; total 22,240.00 (10,040 + 7,200 + 240 + 1,460 + 3,300). No month-end A/P arises from February bills.",
+    "lines": [
+      { "account": "5300", "debit": "10040.00", "credit": "0.00" },
+      { "account": "5200", "debit": "7200.00", "credit": "0.00" },
+      { "account": "5900", "debit": "240.00", "credit": "0.00" },
+      { "account": "5400", "debit": "1460.00", "credit": "0.00" },
+      { "account": "5100", "debit": "3300.00", "credit": "0.00" },
+      { "account": "1000", "debit": "0.00", "credit": "22240.00" }
+    ]
+  },
+  {
+    "ref": "JE-2025-016",
+    "date": "2025-02-25",
+    "memo": "Payroll 2025-02-25 per Gusto register (9 employees): gross 54,404.00 (identical to January); net paid 48,200.00; employee withholding 6,204.00 = 54,404.00 - 48,200.00 credited to 2100.",
+    "lines": [
+      { "account": "5000", "debit": "54404.00", "credit": "0.00" },
+      { "account": "1000", "debit": "0.00", "credit": "48200.00" },
+      { "account": "2100", "debit": "0.00", "credit": "6204.00" }
+    ]
+  },
+  {
+    "ref": "JE-2025-017",
+    "date": "2025-02-25",
+    "memo": "Employer payroll taxes & benefits 5,076.00 per register.",
+    "lines": [
+      { "account": "5010", "debit": "5076.00", "credit": "0.00" },
+      { "account": "2100", "debit": "0.00", "credit": "5076.00" }
+    ]
+  },
+  {
+    "ref": "JE-2025-018",
+    "date": "2025-02-25",
+    "memo": "Gusto tax remittance 11,280.00 = withholding 6,204.00 + employer taxes 5,076.00; clears 2100 to zero. Matches bank debits GUSTO NET PAY 48,200.00 and GUSTO TAX 11,280.00.",
+    "lines": [
+      { "account": "2100", "debit": "11280.00", "credit": "0.00" },
+      { "account": "1000", "debit": "0.00", "credit": "11280.00" }
+    ]
+  },
+  {
+    "ref": "JE-2025-019",
+    "date": "2025-02-28",
+    "memo": "Monthly depreciation per close checklist item 6: 1,777.78 (64,000.00 / 36). Cumulative 1510 after February: 21,333.00 + 2 x 1,777.78 = 24,888.56.",
+    "lines": [
+      { "account": "5700", "debit": "1777.78", "credit": "0.00" },
+      { "account": "1510", "debit": "0.00", "credit": "1777.78" }
+    ]
+  },
+  {
+    "ref": "JE-2025-020",
+    "date": "2025-02-28",
+    "memo": "Release Trestle prior contract (Jun-2024-May-2025): 8,200.00/month Jan-May 2025 per client opening note (41,000.00 / 5 remaining months). February release; 2 releases remain (Mar, May).",
+    "lines": [
+      { "account": "2200", "debit": "8200.00", "credit": "0.00" },
+      { "account": "4000", "debit": "0.00", "credit": "8200.00" }
+    ]
+  },
+  {
+    "ref": "JE-2025-021",
+    "date": "2025-02-28",
+    "memo": "Release 1/12 of Trestle renewal: 24,000.00 / 12 = 2,000.00 (February of 2025-01..2025-12 term).",
+    "lines": [
+      { "account": "2200", "debit": "2000.00", "credit": "0.00" },
+      { "account": "4000", "debit": "0.00", "credit": "2000.00" }
+    ]
+  },
+  {
+    "ref": "JE-2025-022",
+    "date": "2025-02-28",
+    "memo": "Release 1/12 of Pinecone Dental Group (C-025) 36,000.00: 36,000.00 / 12 = 3,000.00 (first month of ASSUMED 12-month term 2025-02-01..2026-01-31; term not stated in the documents - see open_items.md section 1; release rate changes if a different term is confirmed).",
+    "lines": [
+      { "account": "2200", "debit": "3000.00", "credit": "0.00" },
+      { "account": "4000", "debit": "0.00", "credit": "3000.00" }
+    ]
+  }
+]

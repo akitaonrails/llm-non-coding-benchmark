@@ -1,0 +1,61 @@
+{
+  "case": "bracc_10_provisoes_covenant",
+  "questions": "# Perguntas ao cliente — registro de respostas e desconhecidos finais\n\n**Turno 1**: as 8 perguntas abaixo foram enviadas à Diretoria (equivalente a `PERGUNTAS.md`).\n**Turno 2 (jan/2026)**: a Diretoria respondeu (respostas transcritas em cada item) e declarou **não ter mais informação** além do que informou. As perguntas já respondidas **não serão repetidas**; o que não foi respondido passa a **desconhecido final sinalizado** na Seção B.\n\n## A. Perguntas enviadas e respostas recebidas\n\n1. **Carta nova do advogado (\"remoto\")?**\n   *Resposta (CEO)*: \"ele me disse por telefone que agora acha remoto. A carta formal é a que vocês têm — ele não vai colocar 'remoto' por escrito.\"\n   *Efeito*: **resolvido contra o ajuste**. Não há (nem haverá) manifestação escrita posterior a 18/12/2025; a opinião do especialista vale conforme efetivamente emitida (CPC 25, `cpc25.md`, item 59) — a emissão vigente é \"possível/provável\". **Provisão mantida em R$ 1.200.000 (decisão final).**\n\n2. **Composição da condenação (equiparação × horas extras)?**\n   *Resposta*: não fornecida — cliente sem mais informação.\n   *Efeito*: **vira desconhecido final B.2**. Sem a decomposição, não há base para reduzir a melhor estimativa; mantém-se R$ 1.200.000.\n\n3. **Saldo das debêntures e inclusão nos R$ 31.200.000?**\n   *Resposta*: não fornecida.\n   *Efeito*: **vira desconhecido final B.1**. Mantida a premissa de inclusão na conta \"Empréstimos e financiamentos\"; saldo separado só **pioraria** o índice.\n\n4. **Waiver até 31/12/2025?**\n   *Resposta (CEO)*: \"ainda não falamos com os debenturistas. Se precisar, pedimos waiver em fevereiro.\"\n   *Efeito*: **resolvido** — inexistência de waiver na data do balanço passa de premissa a **fato**; waiver de fev/2026 (se vier) é evento subsequente **não ajustável** e incerto (quórum de 75%). Recomendação formal: protocolar o pedido em **janeiro** (ver carta).\n\n5. **Texto integral da definição de \"dívida\" da escritura?**\n   *Resposta*: não fornecida.\n   *Efeito*: **vira desconhecido final B.3**. Índice reportado nas duas leituras: **2,97** (com o mútuo dos sócios, substance-over-form — primário) e **2,77** (leitura literal excludente). Quebra em ambas (> 2,75).\n\n6. **AFAC: documentação de 2022; AGE; apuração fiscal?**\n   *Resposta (CEO)*: \"os sócios nunca formalizaram o aumento. Podemos fazer a AGE agora em janeiro, se ajudar.\"\n   *Efeito*: **resolvido quanto à classificação** — confirmado que não existe documento de irrevogabilidade/irretratabilidade nem prazo de capitalização: **passivo/mútuo em 31/12/2025 (decisão final)**; AGE de jan/2026 = evento não ajustável. A **quantificação do IOF/juros presumidos** não foi informada: **desconhecido final B.5**.\n\n7. **EBITDA: equivalência à Cláusula 7.1(c) e composição?**\n   *Resposta*: não fornecida.\n   *Efeito*: **vira desconhecido final B.4**. Mantida a equivalência \"EBITDA contábil 2025 = R$ 9.800.000\" como EBITDA do covenant, coerente com a definição contratual do arquivo (\"sem exclusão de provisões\").\n\n8. **Aditivo de renovação da CCB assinado?**\n   *Resposta (CEO)*: \"o gerente do banco disse informalmente que renova. Não tem nada assinado; eles só assinam perto do vencimento.\"\n   *Efeito*: **resolvido contra o ajuste** — declaração verbal de preposto é expectativa, não direito existente na data do balanço (CPC 26, `cpc26_classificacao.md`, itens 69-76, esp. 73): **CCB no circulante (decisão final)**. Se assinado em 2026, divulgar como evento não ajustável.\n\n## B. Desconhecidos finais (cliente declarou não ter mais informação)\n\nSinalizados explicitamente nos entregáveis; **nenhum altera as conclusões**:\n\n1. **Saldo das debêntures** fora da conta \"Empréstimos e financiamentos\" — assumido inexistente; se existir, DL e índice aumentam (quebra só se agrava).\n2. **Composição da condenação trabalhista** por tese — sem ela, a provisão fica na exposição total de R$ 1.200.000; uma parcela apenas \"possível\" poderia justificar redução futura, se e quando documentada.\n3. **Texto integral da definição de \"dívida\"** da escritura — índice reportado nas duas leituras (2,97 / 2,77); confirmar com o agente fiduciário na conversa do waiver.\n4. **Composição do EBITDA** (lucro operacional + D&A) — usa-se R$ 9.800.000 conforme o balancete/e-mail.\n5. **Quantificação de IOF-crédito e juros presumidos do AFAC desde mar/2022** — base e alíquotas não constam da biblioteca (`afac_itg_rfb.md` dá o fundamento, não o cálculo); apuração pela área fiscal, antes da AGE.\n6. **Correção das comparativas de exercícios anteriores** (AFAC no PL desde 2022) — norma de correção de erros não integra a biblioteca; tratar com a auditoria; não citamos norma fora do arquivo.\n",
+  "facts": [
+    {
+      "id": "advogado_remoto",
+      "trigger": [
+        "remoto",
+        "advogado disse",
+        "carta",
+        "prognóstico",
+        "Pinheiro"
+      ],
+      "answer": "CEO: ele me disse por telefone que agora acha remoto. A carta formal é a que vocês têm — ele não vai colocar 'remoto' por escrito, advogado é assim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "renovacao",
+      "trigger": [
+        "renov",
+        "aditivo",
+        "banco confirmou",
+        "Horizonte",
+        "compromisso"
+      ],
+      "answer": "CEO: o gerente do banco disse informalmente que renova. Não tem nada assinado; eles só assinam perto do vencimento.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "afac_delib",
+      "trigger": [
+        "AFAC",
+        "aumento de capital",
+        "AGE",
+        "deliberação",
+        "capitalizar"
+      ],
+      "answer": "CEO: os sócios nunca formalizaram o aumento. Podemos fazer a AGE agora em janeiro, se ajudar.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "waiver",
+      "trigger": [
+        "waiver",
+        "debenturistas",
+        "assembleia",
+        "perdão"
+      ],
+      "answer": "CEO: ainda não falamos com os debenturistas. Se precisar, pedimos waiver em fevereiro.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "advogado_remoto",
+    "afac_delib",
+    "renovacao",
+    "waiver"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

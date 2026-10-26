@@ -1,0 +1,24 @@
+{
+  "case": "uslaw_04_litigation_sequence",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-flash-next-full-20261024/uslaw_04_litigation_sequence/09-review",
+  "elapsed_seconds": 1124.0355426229944,
+  "controller_wait_seconds": 154.01752008404583,
+  "model_turn_seconds": 969.990214296995,
+  "turns": 9,
+  "released_facts": [
+    "exhibit_c",
+    "feb11",
+    "padded"
+  ],
+  "usage": {
+    "input_tokens": 2597657,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 149002,
+    "reasoning_output_tokens": 82206
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

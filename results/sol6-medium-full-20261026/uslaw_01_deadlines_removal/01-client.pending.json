@@ -1,0 +1,60 @@
+{
+  "case": "uslaw_01_deadlines_removal",
+  "questions": "# Information needed to decide removal and finalize deadlines\n\nPlease answer these for **Harbor Street Bakery LLC** as of **September 8, 2026** (the complaint filing date) and **September 11, 2026** (service). Note any ownership changes between those dates and now.\n\n1. Who were **all** direct members/owners of the LLC, including the partner who runs the Seattle shop? For each individual member, what state was their **domicile** (their permanent home), rather than just where they worked or had an address? Please confirm Noor's domicile too.\n2. If any member was another LLC, partnership, trust, or corporation, identify it and provide its ownership chain down to individuals. For corporations, provide the state(s) of incorporation and principal place of business. Did any member or owner at any level have a Washington domicile or Washington corporate citizenship?\n3. Has Harbor Street already served an answer, notice of appearance, motion, or other response in this case? If yes, give the date and a copy or description. Has it received any other summons, complaint, amended pleading, or court scheduling notice, and when?\n\nThe LLC's Delaware formation and Portland principal office do not establish its diversity citizenship; every member's citizenship is needed. Until these facts are confirmed, removal availability cannot be determined reliably.\n",
+  "facts": [
+    {
+      "id": "member",
+      "trigger": [
+        "member",
+        "partner",
+        "owner",
+        "equity",
+        "who owns",
+        "Seattle"
+      ],
+      "answer": "Yes — Caleb Sorensen owns 35% of the LLC. He lives in Seattle (Ballard). I own 65% and live in Portland. We're the only two members.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "registered_agent",
+      "trigger": [
+        "registered agent",
+        "CSC",
+        "how did you get",
+        "email",
+        "old address"
+      ],
+      "answer": "CSC emailed the scans on the 11th to our old Gmail. Nobody checks it. I found them Sunday night.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "appearance",
+      "trigger": [
+        "appearance",
+        "lawyer in Washington",
+        "already filed",
+        "anyone responded"
+      ],
+      "answer": "Nobody has filed anything for us. We don't have a Washington lawyer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "defense",
+      "trigger": [
+        "short deliveries",
+        "spoiled",
+        "photos",
+        "setoff",
+        "counterclaim"
+      ],
+      "answer": "Three deliveries in March–April were short or spoiled, about $26k worth. I have photos and emails. I never paid those invoices.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "member",
+    "appearance"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

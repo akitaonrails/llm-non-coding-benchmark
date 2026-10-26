@@ -1,0 +1,20 @@
+{
+  "base_mensal_liquida": 39000,
+  "incide_sobre": [
+    "salário líquido CLT de R$ 24.000 por mês, após IR e INSS",
+    "pró-labore de R$ 15.000 por mês se esse valor for líquido após IR e INSS; confirmar holerite/retiradas",
+    "13º salário líquido quando pago: 20% de R$ 24.000 = R$ 4.800 com os dados disponíveis",
+    "férias e terço constitucional líquidos quando pagos, observando eventual substituição do salário mensal para evitar dupla contagem",
+    "horas extras e lucros distribuídos quando habituais e existentes; Marcelo informou nunca ter distribuído lucros",
+    "PLR apenas se habitual, mediante comprovação e previsão expressa no acordo, pois sua incidência é controvertida"
+  ],
+  "nao_incide_sobre": [
+    "depósitos e saques de FGTS, inclusive o depósito mensal informado de R$ 2.400",
+    "verbas rescisórias indenizatórias, inclusive aviso-prévio indenizado, multa de 40% do FGTS e férias indenizadas",
+    "auxílios e diárias"
+  ],
+  "percentual_sugerido": 20,
+  "valor_mensal_estimado": 7800,
+  "guarda": "compartilhada",
+  "fundamento": "Proposta inicial para os dois filhos: 20% x (R$ 24.000 de salário líquido + R$ 15.000 de pró-labore presumido líquido) = R$ 7.800 mensais, sujeito à confirmação do líquido do pró-labore e das necessidades dos filhos. A renda líquida informada de Fernanda é R$ 9.000 por mês. Não há percentual legal fixo; valem necessidade, possibilidade e proporcionalidade, com incidência sobre 13º e férias e exclusões/controvérsias discriminadas em library/alimentos_base_calculo.md (CC arts. 1.694, 1.695, 1.699; STJ REsp 1.332.808 e AgInt no AREsp). Guarda compartilhada, com residência de referência materna, pressuposta aptidão de ambos; CC arts. 1.583 e 1.584, §2º (library/guarda_compartilhada.md). A quantia não inclui ajuste por despesas diretas e calendário de convivência ainda não definidos."
+}

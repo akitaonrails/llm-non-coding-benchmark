@@ -1,0 +1,23 @@
+{
+  "case": "bracc_06_venda_quotas_vs_ativos",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/strix-flash-next-full-20261024/bracc_06_venda_quotas_vs_ativos/04-review",
+  "elapsed_seconds": 4801.379067047994,
+  "controller_wait_seconds": 194.0209918730252,
+  "model_turn_seconds": 4607.232061657007,
+  "turns": 4,
+  "released_facts": [
+    "comprador_estrutura",
+    "custo"
+  ],
+  "usage": {
+    "input_tokens": 4882369,
+    "cached_input_tokens": 4572294,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 171573,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,93 @@
+{
+  "tax_year": 2025,
+  "lines": {
+    "1": 50750.00,
+    "2": 0.00,
+    "3": 50750.00,
+    "4": 0.00,
+    "5": 50750.00,
+    "6": 0.00,
+    "7": 50750.00,
+    "9": 999.60,
+    "10": 1199.15,
+    "13": 0.00,
+    "15": 480.00,
+    "18": 0.00,
+    "20b": 2800.00,
+    "24a": 1030.00,
+    "24b": 95.00,
+    "25": 1116.00,
+    "27a": 4058.88,
+    "28": 11778.63,
+    "29": 38971.37,
+    "30": 0.00,
+    "31": 38971.37
+  },
+  "schedule_se": {
+    "net_earnings": 35990.06,
+    "se_tax": 5506.48,
+    "deductible_half": 2753.24
+  },
+  "not_on_schedule_c": [
+    {
+      "item": "Larkspur Interactive LLC W-2 wages (Jan-Apr 2025, employee compensation)",
+      "amount": 24800.00,
+      "where": "Form 1040 line 1a - wages; not business income"
+    },
+    {
+      "item": "Larkspur W-2 federal income tax withheld",
+      "amount": 2310.00,
+      "where": "Form 1040 line 25a"
+    },
+    {
+      "item": "2025 federal estimated tax payments (2025-04-15 $1,500; 2025-06-16 $2,500; 2025-09-15 $2,500)",
+      "amount": 6500.00,
+      "where": "Form 1040 line 26"
+    },
+    {
+      "item": "Blue Cross Blue Shield TX self-employed health insurance premiums (8 x $380, May-Dec 2025)",
+      "amount": 3040.00,
+      "where": "Schedule 1 line 17 (subject to open item on Jan-Apr employer-coverage eligibility)"
+    },
+    {
+      "item": "Tessaro Studios LLC invoice 1041 payment received 2024-12-27",
+      "amount": 3000.00,
+      "where": "Prior year (cash method - belongs on the 2024 return)"
+    },
+    {
+      "item": "Rent to M. Okafor, 12 x $1,650.00 (personal; no home-office deduction claimed)",
+      "amount": 19800.00,
+      "where": "Personal - 26 U.S.C. 262(a)"
+    },
+    {
+      "item": "H-E-B groceries and debit-card household purchases, 2025",
+      "amount": 2102.95,
+      "where": "Personal - 26 U.S.C. 262(a)"
+    },
+    {
+      "item": "Netflix streaming, 12 x $15.49",
+      "amount": 185.88,
+      "where": "Personal - 26 U.S.C. 262(a)"
+    },
+    {
+      "item": "Orangetheory Fitness, 12 x $49.00",
+      "amount": 588.00,
+      "where": "Personal - 26 U.S.C. 262(a)"
+    },
+    {
+      "item": "Southwest air AUS-DEN, June (no business purpose documented)",
+      "amount": 389.00,
+      "where": "Personal - 26 U.S.C. 262(a); IRS Pub. 463 (primarily personal travel)"
+    },
+    {
+      "item": "Venmo wedding gift (Kat & Jules), June",
+      "amount": 200.00,
+      "where": "Personal gift - 26 U.S.C. 262(a)"
+    },
+    {
+      "item": "H-E-B grocery purchase dated 2024-12-30",
+      "amount": 84.12,
+      "where": "Prior year - personal"
+    }
+  ]
+}

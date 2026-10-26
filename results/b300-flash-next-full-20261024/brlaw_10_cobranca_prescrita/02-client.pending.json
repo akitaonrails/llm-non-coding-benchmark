@@ -1,0 +1,47 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "questions": "# PERGUNTAS AO CLIENTE (Técnica Forte) — registro e estado após a resposta de 12/10/2026\n\nO cliente respondeu em **12/10/2026** e declarou **não dispor de informação adicional** para as perguntas não respondidas. Nada é repetido: o que fechou, fechou; o que ficou, está sinalizado abaixo como **lacuna explícita** (sem suposição no lugar do fato). Efeito detalhado de cada resposta: §9 do memorando.\n\n## Fechadas pela resposta do cliente\n\n- **Q2 — Outros pagamentos.** ✔ **RESOLVIDA.** \"Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.\" → PIX de 02/08/2023 foi o **único** pagamento; principal exigível **R$ 110.000,00** e parte indevida da negativação de **R$ 70.000,00** confirmados.\n- **Q4 — Tipo de assinatura.** ✔ **RESOLVIDA.** \"Só os dois representantes, sem testemunhas. Foi tudo meio informal.\" → sem 2 testemunhas e sem certificação digital: **via definitivamente MONITÓRIA** (CPC art. 784 III; REsp 1.438.263; Tema 1.247/STJ fora do caso, `library/cpc_titulo_executivo_monitoria.md`). Execução direta só via novo instrumento de confissão com 2 testemunhas.\n- **Q7 — Prova do serviço de fev/mar/2021.** ✔ **RESOLVIDA.** \"Teve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.\" → relatórios assinados existem (um por parcela, inclusive fev/mar, `documents/boletos_e_comprovantes.csv`); greve admitida e serviço **parcial**. Uso: mesa de negociação. Em juízo as parcelas 5/6 estão prescritas de qualquer forma.\n- **Q6 — Renegociação posterior a 15/09/2022.** ✔ **RESOLVIDA EM NEGATIVO** (pelo relato \"depois sumiram\" + ausência de outros documentos). A tese de que o PIX de 2023 reconheceu todo o contrato (**upside de R$ 102.320,00**) permanece **fraca** e sem matéria-prima; segue fora do pedido (§3.1 do memorando).\n- **Q8 — Capitalização/encargos no contrato.** ✔ **RESOLVIDA DE OFÍCIO** pelo contrato: cláusula única \"Multa 2%, juros 1% a.m., correção IPCA\" — **sem** capitalização ou limitação pactuadas. Risco de revisão judicial desses encargos: **não verificado** (a regra não está na biblioteca).\n\n## Abertas — o cliente NÃO dispõe da informação (flag explícito, sem suposição)\n\n- **Q1 — Série de IPCA (índice, mês-base, valores out/2020→hoje).** ⚠ **SEM SOLUÇÃO AO NOSSO ALCANCE.** Totais entregues permanecem **sem correção monetária** e materialmente **subestimados** (R$ 194.390,00 nominais + multa + juros). Se a planilha aparecer, o recálculo é mecânico — a memória por parcela está pronta em `calculo_encargos.csv`.\n- **Q3 — Legitimidade das 3 negativações anteriores da ré.** ⚠ Condição de aplicação da **Súmula 385/STJ**: risco de dano moral tratado como **\"baixo, condicionado\"** — se alguma anterior for impugnada e tida por irregular, o risco de indenização retorna.\n- **Q5 — Originais/carteiras dos boletos e exigências do cartório de protesto.** ⚠ Confirmar **antes de protocolar** o protesto (a biblioteca não trata da instrução do protesto).\n- **Q9 — Solvência da devedora (RJ/falência/outras ações).** ⚠ Define o nível de garantia exigível no acordo (fiança dos sócios/garantia real) e a utilidade prática de futura execução.\n- **Q10 — Ações em curso e endereço atual da sede.** ⚠ Conferir na distribuição/Sesa antes de ajuizar (litispendência, citação, alegação de foro de domicílio).\n\n## Pendência de direito (não é pergunta de fato)\n\n- **Imputação do PIX (principal × encargos, §4.3 do memorando):** a regra legal **não existe na biblioteca (não verificado)**. O cliente não trouxe dado novo; mantém-se o cenário principal (abate do principal da parcela 1 → R$ 194.390,00) com o alternativo quantificado (R$ 198.280,00).\n\n---\n**O que NÃO foi preciso perguntar porque o arquivo já responde:** vencimentos e valores das 6 parcelas; ausência de testemunhas no contrato (agora confirmada pelo cliente); reconhecimento das parcelas 1 a 4 em 15/09/2022; contestação expressa das parcelas 5 e 6; PIX de R$ 10.000,00 de 02/08/2023; negativação de R$ 180.000,00 em 12/08/2026; existência de 3 negativações anteriores não contestadas.\n\n# PERGUNTAS — mapa das lacunas (entregável opcional) — estado em 12/10/2026\n\nPerguntas completas e registro das respostas em `QUESTIONS.md`. O cliente respondeu em 12/10/2026 e **não dispõe de informação** para as demais. Efeito detalhado: §9 do memorando.\n\n| # | Pergunta (resumo) | Destrava | Estado após 12/10/2026 |\n|---|---|---|---|\n| Q1 | Série de IPCA (índice, mês-base, valores out/2020→hoje) | Correção monetária do pedido, hoje **PENDENTE** | ⚠ **ABERTA sem solução ao nosso alcance** — cliente não dispõe; totais seguem nominais e subestimados (R$ 194.390,00). Recálculo mecânico se a série aparecer |\n| Q2 | Outros pagamentos além do PIX de R$ 10.000,00 | Principal exigível e o corte da negativação | ✔ **FECHADA** — PIX foi o único pagamento (\"depois sumiram\"). R$ 110.000,00 exigíveis e R$ 70.000,00 indevidos no registro **confirmados** |\n| Q3 | Legitimidade das 3 negativações anteriores da ré | Aplicação da **Súmula 385/STJ** | ⚠ **ABERTA** — cliente não dispõe; risco de dano moral = \"baixo, **condicionado**\" à legitimidade das anteriores |\n| Q4 | Tipo de assinatura do contrato | **Via processual** | ✔ **FECHADA** — só os 2 representantes, sem testemunhas, sem certificação digital: **monitória definitiva**; execução só por novo instrumento com 2 testemunhas |\n| Q5 | Originais/carteiras dos boletos e exigências do cartório | Viabilidade prática do **protesto** | ⚠ **ABERTA** — verificar com o cartório antes de protocolar (protesto restrito a R$ 110.000,00 + encargos) |\n| Q6 | Documentos posteriores a 15/09/2022 sobre as parcelas 5/6 | \"Upside\" de **R$ 102.320,00** | ✔ **FECHADA EM NEGATIVO** — sem documentos novos; tese permanece fraca, fora do pedido |\n| Q7 | Prova material do serviço de fev/mar/2021 | Só a mesa de acordo | ✔ **FECHADA** — relatórios assinados pelo encarregado existem (todos os 6); greve confirmada, serviço admitido parcial → força na negociação, reforço para não litigar 5/6 |\n| Q8 | Capitalização/limitação de encargos no contrato | Risco de revisão dos juros de R$ 81.990,00 | ✔ **FECHADA DE OFÍCIO** — contrato não pactua capitalização nem limite; revisão judicial = **não verificado** (regra fora da biblioteca) |\n| Q9 | Solvência da devedora (RJ/falência/outras ações) | Estrutura do acordo e execução futura | ⚠ **ABERTA** — cliente não dispõe; exigir garantia (fiança/garantia real) no acordo como regra de prudência |\n| Q10 | Ações já ajuizadas e endereço da sede | Roteiro de ajuizamento e citação | ⚠ **ABERTA** — conferir na distribuição/Sesa antes de ajuizar |\n\n**Nenhuma resposta alterou as conclusões centrais** (nem poderia): (i) contrato sem 2 testemunhas não é título executivo → **monitória**; (ii) parcelas 1–4 exigíveis até 15/09/2027 e 5–6 prescritas; (iii) negativação regular em R$ 110.000,00 e indevida em R$ 70.000,00; (iv) protesto só do valor exigível. As respostas **reduziram o campo de hipóteses** — 5 perguntas fecharam (Q2, Q4, Q6, Q7, Q8) e 5 lacunas permanecem explícitas (Q1, Q3, Q5, Q9, Q10).\n",
+  "facts": [
+    {
+      "id": "testemunhas",
+      "trigger": [
+        "testemunha",
+        "assinatura",
+        "título executivo",
+        "quem assinou"
+      ],
+      "answer": "O contrato foi assinado só pelos dois representantes, sem testemunhas. Foi tudo meio informal.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pagamento",
+      "trigger": [
+        "pagamento parcial",
+        "10 mil",
+        "2023",
+        "PIX"
+      ],
+      "answer": "Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "greve",
+      "trigger": [
+        "greve",
+        "parcelas 5 e 6",
+        "serviço concluído",
+        "fevereiro",
+        "março"
+      ],
+      "answer": "Teve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "greve",
+    "pagamento",
+    "testemunhas"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

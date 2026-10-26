@@ -1,0 +1,27 @@
+# Client questions — record and remaining unknowns
+
+Updated 10/06 after the client's responses. Answered items are recorded below for the file; **remaining unknowns are flagged explicitly in Section B** with the assumption each deliverable uses. None of them changes the core advice. Do not re-ask Section A.
+
+## A. Answered by client (10/06) — record
+
+| # | Question | Client answer | Effect on analysis |
+|---|---|---|---|
+| 2 | FMLA status | "We haven't approved or denied it. Certification came in 10/3. **Tom said to wait.**" | Confirms ongoing interference at the accused's direction; direct evidence #2. FMLA processing must move to neutral/counsel-supervised handling. |
+| 3 | Individual vs. group separation | "Just her. No RIF." | OWBPA consideration period is **21 days**, not 45; individual-agreement analysis confirmed. |
+| 4 | Other complaints against Hale | "Honestly, nothing." | No additional complainants on record; HWE claim rests on Dana's account; investigation-failure claim unaffected. |
+| 7 | Who is driving the termination | "**Tom wrote the PIP and Tom wants her out.** I'm just processing it." | Decision-maker on PIP and termination = the accused. Comparator disparity has no independent managerial validation; Ortiz is a fact witness with potentially divergent interests. |
+| 8 | Interim measures after 9/12 complaint | "Tom's been traveling. **I was going to get to it.**" | Confirms 24 days of no investigation and no interim measures; Faragher/Ellerth posture worsens. |
+
+## B. Remaining unknowns — client has no additional information (flagged, not blocking)
+
+1. **Base salary / severance value** (Q1). Unknown. *Assumption used:* 4 weeks' base pay is consideration she is not otherwise owed → § 626(f)(1)(D) satisfiable in a future agreement. **Damages exposure cannot be sized** (FMLA remedies: lost wages + liquidated damages + fees) — left open deliberately, not estimated.
+2. **FMLA eligibility and employer coverage** (Q2 second part, Q9). Hours-of-service eligibility, certification contents/sufficiency, employer headcount/coverage: unknown. *Assumption used:* FMLA-covered employer and facially sufficient certification (hired 2019 supports tenure). If the employer were not covered, the federal FMLA claim would weaken — the state FMLA-analog analysis is [UNVERIFIED — not in library].
+3. **PIP standards applied to others / written PIP policy** (Q5). Unknown. *Assumption used:* comparator file (no other PIPs, three peers at lower attainment) is the best available evidence that targets were not consistently applied.
+4. **Pre-9/12 performance documentation** (Q6). Client has none. *Assumption used:* the 9/16 PIP is the first written performance document, per the personnel file summary.
+5. **Existing severance entitlements** (Q10). No policy/handbook information. *Assumption used:* no contractual/policy entitlement to pay on separation; verify before any future agreement (a pre-existing entitlement would defeat OWBPA consideration).
+
+## C. Legal points outside the closed library — flagged unverified, not cited as authority
+
+- Enforceability of a release of **FMLA** claims; carve-out for **EEOC charge-filing** rights.
+- Any **regulatory deadline to respond to an FMLA certification** (real-world rules exist; none is in `library/`, so we do not cite one).
+- Columbia standards for non-ADEA releases; Columbia final-pay rules; Title VII damages caps/remedies.

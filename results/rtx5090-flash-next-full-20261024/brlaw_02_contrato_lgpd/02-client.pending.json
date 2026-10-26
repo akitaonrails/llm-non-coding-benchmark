@@ -1,0 +1,46 @@
+{
+  "case": "brlaw_02_contrato_lgpd",
+  "questions": "# PERGUNTAS — registro de respostas e desconhecidos sinalizados\n\nAtualizado com a resposta da cliente. Nenhuma pergunta pendente altera as conclusões do parecer; o engajamento segue concluído.\n\n## Respondidas pela cliente (incorporadas às minutas)\n\n1. **Integração com operadoras — respondida.** O sistema **enviará guias e dados de atendimento às operadoras para faturamento; é essencial.**\n   → Incorporado: §4º da cláusula de dados autoriza expressamente o fluxo (art. 11, §4º, LGPD — \"faturamento junto a operadoras\"), limitando os dados de atendimento **ao exigido pelo TISS em cada guia** (prontuário completo não segue para a operadora). Registrado em `clausulas.json` (Cl. 5).\n   → *Sub-item que segue em aberto:* se a integração incluirá **autorização prévia de procedimentos** além do faturamento — a cláusula hoje autoriza faturamento e transações administrativas decorrentes; se houver outro uso de dado sensível, ajusta-se o §4º antes da assinatura.\n\n2. **Migração de dados legados — respondida.** Migrar ~22.000 prontuários é **projeto de meses**; sair no meio do contrato seria caótico.\n   → Incorporado: §10º da cláusula de dados passa a prever **plano de saída/migração por fases** (amostragem e critérios de aceite), janela de 120 dias e assistência de migração; Cl. 7 do `clausulas.json` reforçada; Cl. 10 ganha a leitura de \"lock-in\" (multa de 100% + migração inviável = cliente presa mesmo com serviço ruim).\n\n## Não respondidas — desconhecidos sinalizados explicitamente (cliente não tem mais informação)\n\n3. **Uso dos dados da clínica para P&D/produtos da NEXA:** não se sabe se há promessa ou pretensão comercial nesse sentido.\n   → Tratamento adotado: a cláusula substituta **veda por padrão** (§3º). Se a NEXA levar o pedido à mesa, dado sensível exige **consentimento específico e destacado** dos pacientes (art. 11, I, LGPD) — decisão de negócio da Aurora, não do contrato. A conclusão jurídica (Cl. 5 = alterar) não depende dessa resposta.\n\n4. **Cidades das 3 unidades e conveniência do foro:** cliente não informou.\n   → Não altera a conclusão: o foro de Florianópolis é **válido** (CPC art. 63; CC art. 421-A); a incógnita pesa apenas no custo prático de eventual litígio. Assunção mantida: negociar foro é opção comercial secundária.\n\n## Fora do alcance da cliente (diligência de negociação, não pergunta à cliente)\n\n5. Certificações de segurança da NEXA, histórico de incidentes e lista de datacenters/subcontratados: pedir na mesa — a cláusula nova (§5º–§7º) converte tudo isso em obrigação contratual, independentemente da resposta.\n\nRespostas podem vir por e-mail; não é necessário reabrir o parecer.\n",
+  "facts": [
+    {
+      "id": "operadoras",
+      "trigger": [
+        "operadora",
+        "Unimed",
+        "Bradesco",
+        "TISS",
+        "compartilh"
+      ],
+      "answer": "Sim, o sistema vai enviar guias e dados de atendimento para as operadoras para faturamento. É essencial.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "exterior",
+      "trigger": [
+        "exterior",
+        "servidor",
+        "nuvem",
+        "onde ficam"
+      ],
+      "answer": "A Nexa disse que usa AWS, 'provavelmente' nos EUA.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "investimento",
+      "trigger": [
+        "implantação",
+        "investimento",
+        "migração",
+        "quanto custa sair"
+      ],
+      "answer": "Migrar 22 mil prontuários é um projeto de meses. Sair no meio seria caótico.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "investimento",
+    "operadoras"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

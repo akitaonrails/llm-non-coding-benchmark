@@ -1,0 +1,23 @@
+{
+  "case": "brlaw_02_contrato_lgpd",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 957.2909339279868,
+  "controller_wait_seconds": 68.00651005096734,
+  "model_turn_seconds": 889.1217407550139,
+  "turns": 4,
+  "released_facts": [
+    "exterior",
+    "investimento"
+  ],
+  "usage": {
+    "input_tokens": 1873662,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 102880,
+    "reasoning_output_tokens": 67225
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,49 @@
+{
+  "case": "bracc_09_distribuicao_lucros",
+  "questions": "# Perguntas ao cliente (itens abertos — não alteram a conclusão principal)\n\n1. **Conciliação do balanço (prioridade):** na transcrição do balanço/ECD 31/12/2025, os totais indicam R$ 9.850.000 de lado a lado, mas a soma das contas do lado passivo/PL dá R$ 10.610.000 — divergência de **R$ 760.000**. Qual o valor correto dos prejuízos acumulados (R$ 1.120.000 ou ~R$ 1.880.000)? Há alguma outra conta de PL omitida na transcrição (reservas, ajustes de avaliação)? A ECD transmitida coincide com a planilha interna?\n2. **Detalhamento de tributos 2025:** para calcular com exatidão o teto \"líquido\" do IN 1.700 art. 238 §2º, I, favor enviar a DRE completa de 2025 com a discriminação de ISS, PIS, COFINS e IRPJ/CSLL pagos/arcados no ano (usamos premissa estimada de 8,65% da receita apenas para reproduzir o \"≈ R$ 1,5 mi\" da contadora).\n3. **Atividade preponderante:** a receita de R$ 6,4 mi é toda de serviços auxiliares (presunção 32%) ou há transporte de carga (presunção 8%)? A empresa mantém memória de segregação de receitas? (Não altera a conclusão — não há lucro —, mas altera radicalmente o teto em distribuições futuras.)\n4. **Auto de infração:** há algum bem oferecido em garantia, depósito do valor ou pedido de parcelamento em curso (ainda que não deferido)? Sócios cogitam garantir/parcelar o débito para viabilizar distribuições futuras sem o risco do art. 32?\n5. **Necessidade de caixa dos sócios:** os R$ 800 mil são necessidade pessoal dos sócios ou retirada permanente? Se for necessidade, avaliamos pró-labore/antecipação tributada como alternativa lícita; se for retirada de longo prazo, o caminho é capitalizar prejuízos primeiro.\n",
+  "facts": [
+    {
+      "id": "auto",
+      "trigger": [
+        "auto de infração",
+        "impugnação",
+        "garantia",
+        "depósito",
+        "1.480"
+      ],
+      "answer": "Sócio B: impugnamos em 2024, está na DRJ. Não depositamos nem demos garantia — o advogado disse que não precisava.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deliberacao_2025",
+      "trigger": [
+        "ata",
+        "deliberação",
+        "aprovou",
+        "31/12",
+        "transição"
+      ],
+      "answer": "Sócio A: não fizemos ata nenhuma em dezembro. A gente distribui quando dá.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "mutuo",
+      "trigger": [
+        "mútuo",
+        "contrato",
+        "juros",
+        "prazo",
+        "pagar de volta"
+      ],
+      "answer": "Sócio A: mútuo sem juros, pago quando a empresa melhorar. Sem papelada.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "auto",
+    "deliberacao_2025",
+    "mutuo"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

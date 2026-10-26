@@ -1,0 +1,60 @@
+{
+  "case": "usacc_05_entity_choice",
+  "questions": "# Questions for the founders — status after client response (Oct 2026)\n\nClient has answered what they can and has **no additional information** on the rest. Answered items are closed here and folded into the deliverables; unanswered items are restated once as **standing assumptions or flags**, not re-asked.\n\n## Answered — closed\n\n- **Q2 (Tomás's U.S. days) — ANSWERED, approximate.** Client: no green card, no application pending, TN visa, in the U.S. \"**maybe a third of the year**\" ≈ **122 days/yr**. → 2027 projected SPT = 122 + 118/3 + 96/6 = **177.33 < 183 → nonresident alien expected to continue** (recommendation holds). **Flag:** the residency flip point is **128 days in 2027** — only ~6 days above the stated pattern, i.e. inside the vagueness of \"maybe a third.\" Handled by the monthly day-count tracking in `compliance_calendar.md` and the reporting covenant in `term_sheet.md` §7. Actual day-by-day 2026 counts remain unverified (calendar projects 118).\n- **Q3 (work-location split) — ANSWERED, directional.** Priya: **San Diego** (all client work CA-performed). Tomás: \"**from Monterrey mostly**\"; clients are all over the US (client location is not the source test — place of performance is, per standard doctrine **[U]**, sourcing rules not in library). **Residual unknown: the exact Mexico/US split (hours and revenue-linked).** The model keeps Tomás at the **100%-U.S.-performed worst case** as an upper bound in `year1_comparison.json`; the client's answer confirms that number is conservative. Mexican tax obligations on Monterrey-performed work: **client provided no information** → routed to a Mexican advisor (calendar; recommendation §8).\n- **Q4 (Tomás's spouse / marriage) — PARTLY ANSWERED.** Client: **married, spouse in Mexico, no prenuptial agreement**; **Priya single**. → No marital-property carve-out exists, so the **spousal consent at signing (term sheet §4) is a required closing condition, not optional.** **Residual unknown:** whether the wife is aware of and willing to sign — the term sheet makes her signature a condition precedent, so the deal cannot close without it; treat as an action item for the founders, not a re-ask. Priya's future-marriage §199A filing-status risk: no information; treated as none planned (assumption).\n- **Q6 (immigration facts) — PARTLY ANSWERED.** Confirmed: **TN visa, no green card, no application pending.** **Still unknown:** TN category of admission, current employer of record, precise role for the LLC. Standing instruction unchanged and **not re-asked**: **neither founder works for the entity until immigration counsel clears it** — outside the library, outside this memo.\n\n## Open — client has no additional information; these now stand as labeled assumptions/flags\n\n1. **Formation timing (was Q1).** Assumption stands: formed **Nov 3, 2026**, Year 1 = **2027**; every date in `compliance_calendar.md` is relative to it and **unconfirmed**. If formation slips, the 30-day §83(b) clock and all \"Year-1\" dates move together.\n2. **Exact Mexico/U.S. work split (residual of Q3).** Assumption: worst case 100% U.S.-performed for Tomás's tax line (upper bound); real figure awaits his returns/payroll data. Direction (mostly Mexico) is confirmed, so his actual U.S./CA tax is likely **lower**, and CA estimated-tax guidance for him is a ceiling, not an estimate.\n3. **Tomás's wife's willingness to sign the spousal consent (residual of Q4).** Flagged: hard condition in term sheet §4.\n4. **Outside income for either founder (was Q5).** Assumption: **no material outside/investment income.** Prominently flagged: Priya's Year-2 share (~$185,000) sits ~$15,000 under the assumed §199A SSTB threshold (~$200,300 single) — any outside income pushes her into the phase-in and changes the marginal-rate math in `year1_comparison.json`.\n5. **TN category / employer of record / role details (residual of Q6).** Flag; immigration counsel referral stands.\n6. **Draw policy — fixed vs flexible (was Q7).** Assumption: **flexible draws** per the unanimous-consent schedule in term sheet §1. Tax-neutral in a partnership; flagged constraint: Priya's outside basis starts ≈ $31,000, so early distributions above that need basis tracking **[U]**.\n7. **Buy-sell economics — note term, insurance budget, for-cause discount (was Q8).** Term sheet keeps these as negotiation placeholders (≤3-yr note, appraisal-based death funding, unspecified discount %). Left open by design rather than invented.\n8. **U.S.–Mexico treaty position and Mexican tax filings.** No information; **outside library entirely.** All Tomás figures assume zero treaty/totalization relief; Mexican advisor engaged.\n",
+  "facts": [
+    {
+      "id": "green_card",
+      "trigger": [
+        "green card",
+        "permanent resident",
+        "immigration status",
+        "resident alien",
+        "substantial presence"
+      ],
+      "answer": "Tomás: no green card, no application. TN visa. I'm in the US maybe a third of the year.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "tool_prior_deductions",
+      "trigger": [
+        "deducted",
+        "basis",
+        "development costs",
+        "capitalized"
+      ],
+      "answer": "Priya: I expensed about $89k of it on my Schedule C over three years. Remaining basis is around $31k per my CPA.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "where_work",
+      "trigger": [
+        "where do you work",
+        "operations",
+        "California",
+        "office"
+      ],
+      "answer": "Priya: I work from San Diego. Tomás from Monterrey mostly. Clients are all over the US.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "marriage",
+      "trigger": [
+        "spouse",
+        "married",
+        "community property",
+        "divorce"
+      ],
+      "answer": "Tomás: married, in Mexico, no prenup. Priya: single.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "green_card",
+    "marriage",
+    "where_work"
+  ],
+  "literal_suggestions": [
+    "tool_prior_deductions"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,55 @@
+{
+  "entidade": "Atlas Distribuidora S.A.",
+  "periodo": "2026-T1 (1o trimestre civil de 2026: jan, fev, mar - Lucro Real trimestral)",
+  "moeda": "BRL",
+  "nota_estrutura": "Apuracao IRPJ/CSLL do 1o trimestre/2026 com demonstracao das Partes A e B do e-LALUR, nos termos de library/irpj_csll_trimestral.md ('Parte A do e-LALUR: demonstracao do lucro real (lucro liquido, adicoes, exclusoes, compensacao de prejuizo). Parte B: controle de saldos a compensar (prejuizo fiscal; base negativa)'). A biblioteca nao especifica layout de registros do arquivo eletronico (XML/ECF) nem prazos: esta entrega e demonstracao nivel-controller, com todo o calculo exposto (memoria completa em deliverable/mes_03/memoria.md). Chaves adicionais recordam livros x base fiscal.",
+  "lucro_liquido_contabil": 604149.00,
+  "lucro_liquido_contabil_livros_nao_ajustados": 615249.00,
+  "ajuste_contabil_pendente_nos_livros": -11100.00,
+  "nota_lucro_liquido": "Balancete cumulativo de 31/03/2026 (documents/mes_03/balancete.csv): lucro liquido contabil nos livros de 615.249,00 (receita 7.740.000,00 - deducoes 1.257.750,00 - despesas 5.867.001,00; isolados: jan 139.583,00 + fev 193.083,00 + mar 282.583,00; conferido em Python). A partida de estorno do credito indevido NF 8812 (Dr 3.1.02 / Cr 1.1.04 - 11.100,00) segue NAO postada pelo cliente (terceira conferencia consecutiva: 1.1.04 = 483.627,00); o efeito pertence a janeiro. A apuracao parte do lucro liquido CORRIGIDO de 604.149,00 (615.249,00 - 11.100,00), em conformidade com library/pis_cofins_uso_consumo.md ('Credito tomado indevidamente deve ser estornado, com retificacao da EFD-Contribuicoes do periodo e recolhimento da diferenca com acrescimos'). A postagem UMA UNICA VEZ do ajuste (deliverable/mes_03/ajustes.json, A-2026-03-01, com advertencia expressa) espelha este numero nos livros; postagens multiplas sao divergencias a corrigir antes de transmitir declaracoes.",
+  "adicoes": {
+    "F-2026-02-01 brindes - NF-e 4410 (Brindes Prime Ltda, 12/02/2026); Lei 9.249/95, art. 13, VII": 48000.00,
+    "F-2026-02-02 doacao - Associacao Beneficente Luz (18/02/2026), fora das excecoes do par. 2o; Lei 9.249/95, art. 13, VI": 30000.00
+  },
+  "exclusoes": {},
+  "exclusoes_nota": "Nenhum fato de exclusao identificado nos documentos do trimestre: varredura integral dos razoes e balancetes de jan, fev e mar nao encontrou receita nao tributavel, dividendos, lucro na exploracao ou fato mapeavel a exclusao. Risco honesto: se existir documento do trimestre NAO entregue contendo fato de exclusao, a apuracao muda - incognita registrada em deliverable/mes_03/pendencias.md item 2. A chave segue vazia conforme o contrato; nada forcado a aparecer.",
+  "lucro_antes_compensacao": 682149.00,
+  "lucro_antes_compensacao_nota": "604.149,00 + 48.000,00 + 30.000,00 = 682.149,00.",
+  "compensacao_prejuizo": 204644.70,
+  "compensacao_nota": "Trava de 30% do LLA: 30% x 682.149,00 = 204.644,70 (library/lei9065_art15_trava.md: 'observado o limite maximo, para a compensacao, de 30% do lucro liquido ajustado pelas adicoes e exclusoes'; art. 16 aplica a mesma trava a base de calculo negativa da CSLL; STF, RE 591.340, Tema 117 - constitucionalidade). SUPOSICAO assumida desde a sessao 1 e NUNCA confirmada pelo cliente: os 900.000,00 (documents/saldos_fiscais_abertura.md) seriam integralmente apurados a partir de 01/01/1995; se houver parcela anterior a 1995, a biblioteca nao regula o caso e a apuracao deve ser revista (nada forcado). Disponibilidade: 204.644,70 <= 900.000,00 - compensa-se o limite integral, e somente ele. Pedido do diretor financeiro de compensar os 900.000,00 integralmente (documents/email_diretor.txt) nao pode ser atendido sob a trava - divergencia documentada em deliverable/mes_03/pendencias.md item 6.",
+  "lucro_real": 477504.30,
+  "irpj_15": 71625.65,
+  "irpj_15_nota": "15% x 477.504,30 = 71.625,645 (valor cru exibido) -> 71.625,65 por ROUND_HALF_UP ao centavo; a biblioteca e silente sobre arredondamento - convencao registrada em deliverable/mes_03/memoria.md e em interpretacoes_e_suposicoes.",
+  "adicional_10": 41750.43,
+  "adicional_nota": "Leitura adotada: citacao textual da biblioteca - 'adicional de 10% sobre a parcela que exceder R$ 60.000 no trimestre' (library/irpj_csll_trimestral.md) - entao 10% x (477.504,30 - 60.000,00) = 10% x 417.504,30 = 41.750,43. Leitura ALTERNATIVA nao adotada (base no LLA, antes da compensacao): 10% x (682.149,00 - 60.000,00) = 62.214,90, +20.464,47 - divergencia interpretativa expressa, submetida a ratificacao do tributarista do cliente (deliverable/QUESTIONS.md, rodada 4); a biblioteca nao traz texto adicional para dirimir e a alternativa nao foi aplicada para nao elevar o IRPJ sem comando claro.",
+  "csll": 42975.39,
+  "csll_nota": "9% x 477.504,30 = 42.975,387 (valor cru exibido) -> 42.975,39 (mesma convencao de arredondamento). Base adotada: o proprio lucro real do IRPJ. Fundamentos: aliquota 9% (library/irpj_csll_trimestral.md); vedacoes do art. 13 aplicam-se 'para efeito de apuracao do lucro real e da base de calculo da CSLL' (library/lei9249_art13.md, caput); art. 16 trava a base negativa de CSLL do mesmo modo (library/lei9065_art15_trava.md). A biblioteca nao indica base distinta entre IRPJ e CSLL para os fatos deste trimestre.",
+  "irpj_total": 113376.08,
+  "irpj_csll_total": 156351.47,
+  "nota_totais": "IRPJ total = 71.625,65 + 41.750,43 = 113.376,08. IRPJ + CSLL = 113.376,08 + 42.975,39 = 156.351,47. Prazos de pagamento e de transmissao NAO constam da biblioteca - nao estimados (rotulado, nao verificado).",
+  "parte_b": {
+    "prejuizo_fiscal_saldo_final": 695355.30,
+    "base_negativa_csll_saldo_final": 695355.30,
+    "detalhe": "Abertura (documents/saldos_fiscais_abertura.md): prejuizo fiscal 900.000,00 e base negativa de CSLL 900.000,00. Compensado no trimestre: 204.644,70 em cada coluna (limite da trava; suposicao de integralidade pos-1995 documentada em compensacao_nota). Saldo final: 900.000,00 - 204.644,70 = 695.355,30 em ambas; saldos carregados para periodos futuros, sujeitos a novo limite de 30% do LLA a cada trimestre (library/lei9065_art15_trava.md)."
+  },
+  "conferencia_aritmetica": "Sequencia completa conferida em Python (Decimal): lucro liquido livros 615.249,00 (139.583,00 + 193.083,00 + 282.583,00) - 11.100,00 = 604.149,00; + 48.000,00 + 30.000,00 = 682.149,00 (LLA); x 30% = 204.644,70 (trava; <= 900.000,00 disponivel); 682.149,00 - 204.644,70 = 477.504,30 (lucro real); x 15% = 71.625,645 -> 71.625,65; 10% x (477.504,30 - 60.000,00) = 41.750,43; IRPJ total = 113.376,08; x 9% = 42.975,387 -> 42.975,39 (CSLL); IRPJ + CSLL = 156.351,47; Parte B: 900.000,00 - 204.644,70 = 695.355,30 em ambas as colunas.",
+  "interpretacoes_e_suposicoes": [
+    "1) Adicional de IRPJ: leitura adotada com base no lucro real (parcela que excede 60.000,00), literal na figura da library/irpj_csll_trimestral.md; alternativa com base no LLA daria 62.214,90 (+20.464,47) e segue aberta a ratificacao (deliverable/QUESTIONS.md rodada 4).",
+    "2) Suposicao: prejuizo fiscal de 900.000,00 e base negativa de CSLL integralmente apurados a partir de 01/01/1995 - nunca confirmada pelo cliente (demandada desde a rodada 1; QUESTIONS rodada 4). Se houver parcela anterior a 1995, o tratamento nao consta da biblioteca e a apuracao seria revista.",
+    "3) Arredondamento: ROUND_HALF_UP ao centavo (71.625,645 -> 71.625,65; 42.975,387 -> 42.975,39). A biblioteca e silente sobre arredondamento; convencao explicitamente registrada em cada etapa.",
+    "4) Base de CSLL igual ao lucro real do IRPJ: a biblioteca traz apenas 'CSLL 9%' e o art. 16 iguala a trava da base negativa; nenhuma regra de base distinta consta para os fatos do trimestre.",
+    "5) e-LALUR: layout de registros XML/ECF e prazos de transmissao/pagamento nao constam da biblioteca; esta entrega e demonstracao nivel-controller das Partes A e B, rotulando o que nao se pode verificar (sem citar norma externa).",
+    "6) O ajuste contabil de estorno (-11.100,00) e pressuposto postado UMA unica vez; a base usada (604.149,00) pressupoe exatamente uma postagem; estados alternativos quantificados em deliverable/mes_03/ajustes.json (ADVERTENCIA_DE_POSTAGEM_UNICA).",
+    "7) Sem fato de exclusao identificado: exclusoes = {} reflete verificacao, nao aproximacao (nota em exclusoes_nota)."
+  ],
+  "fontes": [
+    "documents/mes_03/balancete.csv e documents/mes_03/razao.csv (base de marzo); documents/mes_01/balancete.csv + razao.csv e documents/mes_02/balancete.csv + razao.csv (acumulados e isolados de jan/fev)",
+    "documents/saldos_fiscais_abertura.md (Parte B: 900.000,00 / 900.000,00 de abertura)",
+    "documents/mes_02/nf_4410_brindes_prime.md (adicao F-2026-02-01)",
+    "documents/mes_02/recibo_doacao_luz.md (adicao F-2026-02-02)",
+    "documents/mes_01/nf_8812_papel_cia.md (origem do ajuste de -11.100,00)",
+    "documents/email_diretor.txt (posicoes divergentes do diretor financeiro)",
+    "library/irpj_csll_trimestral.md, library/lei9065_art15_trava.md, library/lei9249_art13.md, library/pis_cofins_uso_consumo.md (unicas autoridades, library/INDEX.md)",
+    "deliverable/mes_01/, deliverable/mes_02/, deliverable/mes_03/ (fechamentos, Apuracao e memoria)"
+  ]
+}

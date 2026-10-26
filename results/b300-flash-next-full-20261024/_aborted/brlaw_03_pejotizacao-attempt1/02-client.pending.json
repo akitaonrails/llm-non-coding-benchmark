@@ -1,0 +1,47 @@
+{
+  "case": "brlaw_03_pejotizacao",
+  "questions": "# QUESTIONS — Rodada 2 (fechada): respostas recebidas, perguntas encerradas\n\n**Estado:** o cliente respondeu em 24/10/2026 e **declarou não dispor de informação adicional** para as perguntas restantes. Nenhuma pergunta é repetida. Os itens em aberto deixam de ser \"perguntas\" e passam a **premissas explicitamente sinalizadas** no parecer (§9, U1–U7) e em `STATUS.md`.\n\n## Respostas recebidas e efeito no parecer\n\n| # (v1) | Pergunta | Resposta do cliente | Efeito |\n|---|---|---|---|\n| Q5 | Composição dos R$ 18.000 (custos/tributos embutidos na PJ?) | Carla: *\"Não. (…) A PJ dele só tinha a gente.\"* Diretor: *\"Os 18 mil eram 'cheios' justamente porque ele era PJ. Um CLT equivalente ganharia uns 12 mil.\"* | **Respondida.** Sem prova de custos — a presunção da biblioteca (base = valor pago à PJ) **se mantém**; a fala do diretor é lida como **prêmio de pejotização** (natureza remuneratória) e vira **cenário defensivo de base 12k** (R$ 496.637 dispensa / R$ 449.405 renúncia) na grade de sensibilidade §6.3. |\n| Q6 | Salários dos CLT equivalentes (isonomia, OJ 383) | Diretor: *\"Um CLT equivalente ganharia uns 12 mil.\"* | **Respondida.** Rafael recebia ~50% acima → **risco de diferenças salariais encerrado**. |\n| — | (admissão adicional, espontânea) | Carla: *\"Eu. Aprovava férias, cobrava horário, dava feedback. Igual aos CLTs.\"* | **Admissão de subordinação pela gestora** — probabilidade de vínculo revista de 80–90% para **85–90%** (parecer §3). |\n| Q7 (parcial) | Outros PJs no mesmo modelo | Carla negou que Rafael tivesse outros clientes; **nada informou sobre outros PJs da Solaris** | Permanece em aberto (U6). |\n\n## Sem resposta (cliente não tem mais informação) → premissas sinalizadas\n\nNão farei novas perguntas sobre estes itens; seguem como premissas com impacto quantificado (parecer §9):\n\n| # | Desconhecido | Premissa adotada | Impacto se mudar |\n|---|---|---|---|\n| U1 | Modalidade da extinção (dispensa × renúncia × distrato) | **Dispensa sem justa causa** (conservativa; Súmula 212 — ônus da prova do término é da empresa) | renúncia: **−R$ 70.848** → total 674.108 |\n| U2 | Data exata do fim (30/09/2026 × projeção do aviso de 30 dias) | 30/09/2026 (última NF) | +1 mês: **≈ +R$ 11.928** |\n| U3 | Nº de empregados da Solaris (Súmula 338/TST) | Sem presunção (HE só das 135 h provadas) | com presunção: HE **+≈ R$ 144.972**, teto ≈ R$ 1,04 mi |\n| U4 | Controles de ponto além de jan–jun/2025 | Inexistentes | reduz/amplia U3 |\n| U5 | Benefícios pagos a Rafael (VR/plano/PLR) | Nenhum | compensável no acordo/liquidação |\n| U6 | Outros PJs no mesmo modelo | Desconhecido | escala do risco (não afeta este cálculo) |\n| U7 | Série mensal de correção (IPCA + SELIC−IPCA) | Não acumulada (fórmula conhecida, séries fora da biblioteca) | passivo cresce desde cada vencimento |\n\n**Se qualquer dado novo chegar** (comunicação de desligamento, cartões de ponto, nº de empregados, folha de benefícios), o cálculo é atualizado sem refazer o parecer — cada impacto já está quantificado acima.\n\n# PERGUNTAS\n\nVersão em português de **[QUESTIONS.md](QUESTIONS.md)** — **rodada 2 encerrada**: o cliente respondeu (24/10/2026) e declarou não ter informação adicional. Nenhuma pergunta foi repetida; nenhuma pergunta nova é formulada.\n\n**Respondidas (efeito no parecer):**\n- **Composição dos R$ 18 mil** — a PJ não tinha custos nem outros clientes; o diretor diz que os 18 mil eram \"cheios porque ele era PJ\" e que um CLT equivalente ganharia ~12 mil → base de cálculo **mantida em 18 mil** (presunção da biblioteca, sem prova de custos); 12k vira **cenário defensivo** (R$ 496.637 / 449.405).\n- **Isonomia (OJ 383)** — ele ganhava ~50% acima do CLT equivalente: **risco encerrado**.\n- **Admissão espontânea da gestora** — \"aprovava férias, cobrava horário, dava feedback. Igual aos CLTs\" → probabilidade de vínculo elevada para **85–90%**.\n\n**Em aberto (cliente não tem informação) — premissas sinalizadas, com impacto quantificado:** U1 modalidade da extinção (dispensa adotada; renúncia: −R$ 70.848) · U2 data exata do fim (+1 mês: ≈ +R$ 11.928) · U3 nº de empregados / Súmula 338 (HE: +≈ R$ 144.972) · U4 controles de ponto além de jan–jun/2025 · U5 benefícios pagos · U6 outros PJs no mesmo modelo · U7 série de correção monetária.\n\nDetalhamento completo (respostas × impacto) em **[QUESTIONS.md](QUESTIONS.md)** e no §9 do `parecer.md`.\n",
+  "facts": [
+    {
+      "id": "outros_clientes",
+      "trigger": [
+        "outros clientes",
+        "exclusiv",
+        "prestava para terceiros"
+      ],
+      "answer": "Carla: Não. Ele era dedicado a nós, 7 anos. A PJ dele só tinha a gente.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "quem_decidia",
+      "trigger": [
+        "quem decidia",
+        "férias",
+        "horário",
+        "aprovava",
+        "subordina"
+      ],
+      "answer": "Carla: Eu. Aprovava férias, cobrava horário, dava feedback. Igual aos CLTs.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "valor_embutia",
+      "trigger": [
+        "embutia",
+        "tributos",
+        "custo",
+        "valor da nota",
+        "remuneração-base"
+      ],
+      "answer": "Diretor: Os 18 mil eram 'cheios' justamente porque ele era PJ. Um CLT equivalente ganharia uns 12 mil.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "outros_clientes",
+    "quem_decidia",
+    "valor_embutia"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,57 @@
+{
+  "case": "usacc_05_entity_choice",
+  "questions": "# Client questions — Natarajan Herrera Advisory\n\n1. What exact date do you intend to form/start the business, and what calendar dates does “year 1” in the projections cover? Have either of you already formed an entity, transferred the PriceLab tool, issued an interest, or begun operations? If so, give each date.\n2. For that first tax year, what are Tomás’s actual or projected U.S. presence days, and has he made or does he plan to make a U.S. tax-residency election? Is his spouse a U.S. citizen or U.S. tax resident? Please provide his spouse’s citizenship and U.S. tax residency, because their community-property interest needs review before any S election.\n3. What portion of projected revenue, contractor/tool costs, and overhead arises from California activity versus Nuevo León or elsewhere? Do either founder’s services generate material income from work physically performed outside the United States? This is needed to model state and cross-border tax exposure.\n4. What cash compensation does each founder expect for full-time work, and what comparable annual salary would you pay an unrelated person doing each role? Is Tomás’s $20,000 his total planned cash investment? Are there any other owner payments, benefits, or debt in the $260,000 year-one net figure?\n5. For an illustrative founder-tax comparison, provide each founder’s expected year-one filing status, other taxable income, and available deductions or credits. If you do not have estimates, may we use explicit simplified tax-rate assumptions and label the comparison illustrative rather than a tax-return forecast?\n6. Should Tomás receive 50% of the current $140,000 contributed value (PriceLab $120,000 plus cash $20,000) immediately, or is the intent that he receive 50% of future growth/profits only while his initial capital interest reflects his $20,000 contribution? Should his three-year vesting apply to all of his interest or only the portion earned through services?\n",
+  "facts": [
+    {
+      "id": "green_card",
+      "trigger": [
+        "green card",
+        "permanent resident",
+        "immigration status",
+        "resident alien",
+        "substantial presence"
+      ],
+      "answer": "Tomás: no green card, no application. TN visa. I'm in the US maybe a third of the year.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "tool_prior_deductions",
+      "trigger": [
+        "deducted",
+        "basis",
+        "development costs",
+        "capitalized"
+      ],
+      "answer": "Priya: I expensed about $89k of it on my Schedule C over three years. Remaining basis is around $31k per my CPA.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "where_work",
+      "trigger": [
+        "where do you work",
+        "operations",
+        "California",
+        "office"
+      ],
+      "answer": "Priya: I work from San Diego. Tomás from Monterrey mostly. Clients are all over the US.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "marriage",
+      "trigger": [
+        "spouse",
+        "married",
+        "community property",
+        "divorce"
+      ],
+      "answer": "Tomás: married, in Mexico, no prenup. Priya: single.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "where_work",
+    "marriage"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,16 @@
+Lena is describing the interference theory in her own words — "done before she goes on leave" is exactly what §2615(a)(1) prohibits. Let me verify one date, then add an addendum answering her three questions and update the register.
+
+All deliverables updated and re-validated. Direct answers for Lena (full versions in the Addendum to `advice_to_hr.md`):
+
+**1. "She's at-will and we have a PIP, so we're covered." — Wrong on both halves.**
+- At-will in Columbia bars termination *for unlawful reasons* — discrimination, retaliation, exercise of statutory rights (`columbia_at_will_exceptions.md`). Tom's own email supplies the unlawful reason: *"before she's out on leave."*
+- The PIP isn't a shield; it's her best evidence: written by the man she accused, **4 days** after her complaint, first written document in 7 years, targeting 100% quota while peers at **79%, 84%, 86% were never PIP'd**. Selective, thin justifications are read as **pretext** (`title_vii_704a.md`). Note the arithmetic: the 60-day PIP (09-16) runs to ~**11-15**, yet the plan is to terminate ~10 days in — a countdown clock, not a cure program.
+
+**2. "If we wait, aren't we stuck with her forever?" — No.** FMLA is not tenure. The statute prohibits using leave as a *negative factor* (`fmla_2615.md`); it doesn't immunize her from a genuinely performance-based discharge. But a defensible future termination requires everything this one lacks: a decision-maker with no connection to Hale, fresh prospective documentation, the same standard actually applied to the 79–86% peers, and a completed investigation. Honest caveat from the file: she outperforms three of four peers — a real case may not exist, and **backfilling paper for a decision already made is shifting-justification pretext evidence**. (Her reinstatement entitlement on return isn't addressed by the library — flagged UNVERIFIED.)
+
+**3. "Can we do it right after her leave?" — That's the worst option, not the safe one.**
+- A discharge consciously deferred until leave ends makes leave the operative factor (`fmla_2615.md`), and discharge *immediately after* protected leave is the classic proximity timeline — days-to-weeks can itself prove causation (`title_vii_704a.md`).
+- The taint is also **personal**: Hale is the accused, the PIP author, and the email author. If Tom is still the one choosing, November is as bad as October. Waiting cures timing, never the decision-maker.
+- The strongest defensive act available right now is to decide her FMLA request correctly, immediately, without Hale — that's also the best evidence leave was never the factor.
+
+**Files changed:** `advice_to_hr.md` (new Addendum answering all three questions); `risk_assessment.json` (added the "right after leave" facts to the FMLA-retaliation claim + new recommended-course item correcting the "at-will + PIP = covered" assumption); `QUESTIONS.md` (two new UNVERIFIED flags: reinstatement entitlement, safe waiting period); `STATUS.md` — still **COMPLETE WITH OPEN ITEMS** (now 9 flagged unknowns; none changes the advice: no termination, hold today, investigate, decide the leave now without Hale).

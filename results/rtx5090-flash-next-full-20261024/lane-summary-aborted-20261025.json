@@ -1,0 +1,161 @@
+{
+  "finished_at": "2026-10-25T00:42:24Z",
+  "model": "qwen3.8-flash-next-iq3_s",
+  "hardware": "RTX 5090; Qwen3.8 Flash-Next IQ3_S; Strata 0.1.45.3; guard 3072 MiB, 4096 MiB reserve",
+  "cases": {
+    "bracc_01_das_fator_r": {
+      "status": "completed_ungraded",
+      "attempts": 2
+    },
+    "bracc_02_escolha_regime": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_03_cbs_ibs_ano_teste": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_04_lucro_real_trimestre": {
+      "status": "candidate_output_limit",
+      "attempts": 1
+    },
+    "bracc_05_abertura_empresa": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_06_venda_quotas_vs_ativos": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_07_holding_patrimonial": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_08_recuperacao_judicial": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_09_distribuicao_lucros": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "bracc_10_provisoes_covenant": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_01_prazos_processuais": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_02_contrato_lgpd": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_03_pejotizacao": {
+      "status": "completed_ungraded",
+      "attempts": 1
+    },
+    "brlaw_04_execucao_fiscal": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "brlaw_05_divorcio_partilha": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "brlaw_07_credor_rj": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "brlaw_08_ma_diligencia": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "brlaw_09_justa_causa_estabilidade": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "brlaw_10_cobranca_prescrita": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_01_schedule_c": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_02_close_gap": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_03_household_1040": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_04_twelve_closes": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_05_entity_choice": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_06_sale_asset_vs_stock": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_07_holding_qsbs": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_08_chapter11_debtor": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_09_revenue_going_concern": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "usacc_10_fraud_indicators": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "uslaw_01_deadlines_removal": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "uslaw_02_msa_playbook": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "uslaw_03_noncompete_memo": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "uslaw_04_litigation_sequence": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "uslaw_05_divorce_split_support": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "uslaw_07_chapter11_creditor": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "uslaw_08_sale_diligence_apa": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "uslaw_09_retaliation_termination": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    },
+    "uslaw_10_llc_squeeze_out": {
+      "status": "infrastructure_failed",
+      "attempts": 3
+    }
+  },
+  "retained_results": 38,
+  "completed": 13
+}

@@ -1,0 +1,3 @@
+COMPLETE WITH OPEN ITEMS
+
+All required deliverables are present: `claims.json`, `valuation_gap.json`, and `strategy_memo.md`. The client answered the discovery question in part and has no additional information on the remaining questions. Open items are identified in the memorandum: capital-call purpose and delivery proof; Manager's dilution calculation and valuation basis; affiliate market comparisons, rent totals, and services; inquiry-notice dates; the year-end balance sheet; and the full offer/election terms. These affect merits, damages, and settlement value but do not prevent a conditional recommendation.

@@ -1,0 +1,5 @@
+His lawyer is right that the **listed values add to $770,000 each**. He is also right that the house is the largest single asset. Neither point tells you how much cash you would have if you had to sell it.
+
+I’m confident in the arithmetic, but the **$48,992 after-tax gap is an estimate**, not a certain loss or an amount a court would necessarily award. It assumes a sale at today’s value, a $250,000 home-sale exclusion, selling costs, and specific tax rates. If you can keep the house, those sale costs and taxes are not due now.
+
+You do not need to make that estimate the condition for keeping the house. I would focus first on whether you can refinance and afford the full monthly cost. Ask for a **refinance deadline with a clear sale fallback**, and seek more of the existing cash if possible; cash would also help you carry the house. Separately, insist that support use his documented bonus and that the maintenance tax wording be corrected. Those points matter even if you decide not to negotiate every dollar of the property estimate.

@@ -1,0 +1,7 @@
+COMPLETE WITH OPEN ITEMS
+
+- Os três arquivos exigidos para a sessão 1 foram produzidos em `deliverable/sessao1/`, incorporando a resposta do cliente sobre o Fornecedor Norte.
+- Os dois arquivos exigidos para a sessão 2 foram produzidos em `deliverable/sessao2/`. O deságio de R$ 3.882.000 é nominal e ilustrativo; campos tributários sem dados foram registrados como `null`.
+- O demonstrativo é provisório: as quatro semanas não têm datas e não há comprovação de que correspondam ao mês de março; falta a data exata do pedido.
+- Sem informações adicionais disponíveis: natureza realizada ou projetada e conciliação do caixa; saldo e pagamento das obrigações posteriores ao pedido, inclusive a entrega de R$ 310.000 do Norte; e estágio, valores e custos de eventual alienação da UPI. Essas lacunas estão identificadas no demonstrativo e não foram preenchidas por suposição.
+- O cliente informou não ter dados adicionais para a sessão 2. Permanecem desconhecidos: vínculo dos credores com a Atlas; saldos de prejuízo fiscal/base negativa, apuração e alíquotas; garantias e aprovação da classe trabalhista para 18 meses; aprovação/homologação do plano; e detalhes de eventual venda da UPI. Os campos tributários indetermináveis continuam `null`. Os campos `pis_cofins_sobre_ganho = 0` e `trava_30_aplicavel = false` representam o efeito **condicional** do art. 50-A para dívidas com pessoas não ligadas, premissa não confirmada.

@@ -1,0 +1,48 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "questions": "# Perguntas ao cliente — situação após respostas recebidas\n\n**Rodada 1 (Sessão 1) — respondida.** Bruno: opera normalmente em Cotia desde março/2026, com mudança de endereço comunicada à JUCESP e à RFB (dispõe dos protocolos). Ana Paula: retirou-se em junho/2023, vendeu as quotas a Bruno, tudo registrado. Confirmado: o contador anterior não impugnou o auto — prazo administrativo perdido. **Para as demais perguntas, o cliente declarou não ter informações adicionais** — elas deixam de ser \"perguntas\" e passam a **desconhecidos sinalizados** abaixo (não serão repetidas ao cliente).\n\n## Desconhecidos sinalizados (sem resposta disponível — tratados por premissa/rota processual)\n\n1. **Íntegra do auto de infração / TVF** — não sabemos se algum trecho alega dolo/fraude/simulação ou invoca o art. 44 §1º da Lei 9.430/96. *Tratamento:* a multa do título é a simples de 75% (art. 44, I), o que indica que a própria Fazenda **não tipificou fraude**; a manifestação da Sessão 2 (seções I.2.b e II) responde condicionalmente às duas hipóteses. Se a emenda da Fazenda trouxer alegação de fraude, enfrentamos ao receber seu teor integral (requerimento nº 1 da manifestação).\n2. **Memória de cálculo / dedução dos DARFs** (R$ 61.000 em 29/01/2021 e R$ 84.000 em 30/04/2021 foram considerados nas bases de R$ 125.320,00 e R$ 157.040,00?) — cliente não tem a peça. *Tratamento:* impugnação condicional na manifestação (§IV) com **requerimento de cálculo itemizado à Fazenda**; risco de bis in idem de até R$ 145.000,00 sinalizado.\n3. **Prova de origem dos depósitos bancários** (1T/2021 e 2T/2021) — escrituração indisponível. *Tratamento:* mérito dos trimestres remanescentes fica **enfraquecido em embargos** (presunção do art. 42 da Lei 9.430/96 não elidida por documento); a defesa patrimonial passa a depender mais de garantia/negociação (Sessão 5). Sinalizado aos sócios na carta da Sessão 4.\n4. **Carlos Vieira (40%)** — nunca confirmado se exerceu gerência 2020–2026 ou era sócio capitalista. *Tratamento:* presunção favorável (administração sempre de Ana Paula, depois Bruno, segundo o contrato social resumido); Tema 981 exige gerência **na data da dissolução irregular presumida**, que aqui não se configura. Se a Fazenda o incluir em pedido de redirecionamento, defendemos com o acervo (435 afastada + 981 + 430) e pedimos prova do exercício de gerência.\n5. **Patrimônio, faturamento, CAPAG e limites de custo para garantia** — indisponíveis. *Tratamento:* Sessão 5 modelará as opções (depósito, seguro-garantia 0,8–1,5% a.a., fiança bancária 2–3% a.a., nomeação) **por faixas**, com o custo total sinalizado como estimado até os dados chegarem.\n\n## Pendências de coleta (não são perguntas — são documentos a juntar)\n\n- **Protocolos JUCESP (12/03/2026) e RFB (20/03/2026)** da mudança de endereço — o cliente afirma tê-los; precisam ser juntados às defesas de redirecionamento (Sessões 3–4) para afastar a Súmula 435 com prova documental.\n- DARFs originais de 29/01/2021 e 30/04/2021 (para a discussão de cálculo do §IV da manifestação).\n",
+  "facts": [
+    {
+      "id": "opera",
+      "trigger": [
+        "ainda opera",
+        "funciona",
+        "novo endereço",
+        "Cotia",
+        "mudou"
+      ],
+      "answer": "Bruno: Operamos normalmente em Cotia desde março. Mudamos o endereço na Junta e na Receita — tenho os protocolos.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "ana_saida",
+      "trigger": [
+        "Ana",
+        "saiu",
+        "retirou",
+        "2023",
+        "cedeu"
+      ],
+      "answer": "Ana: Saí em junho de 2023, vendi minhas quotas ao Bruno, tudo registrado. Não tenho nada com a empresa desde então.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "impugnacao",
+      "trigger": [
+        "impugnação",
+        "prazo administrativo",
+        "contador",
+        "DRJ"
+      ],
+      "answer": "Bruno: o contador anterior não impugnou o auto. Perdemos o prazo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "ana_saida",
+    "impugnacao",
+    "opera"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

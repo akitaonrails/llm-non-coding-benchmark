@@ -1,0 +1,59 @@
+== BASE DO PLANO (licita) ==
+quirografarios: 6,050,000  ME/EPP: 420,000  base: 6,470,000
+desagio 60%%: 3,882,000  novo passivo: 2,588,000  parcela 120m: 21,566.67
+trabalhista /18 = 53,333.33   /12 = 80,000.00
+desagio fantasma fiduciario 40%: 1,240,000   uniao 50%: 1,350,000   total: 2,590,000
+desagio total da minuta: 6,472,000  | parte licita: 60.0%
+
+== PASSIVO CONSOLIDADO (31/03/2026) ==
+concursais: 7,430,000  concursais de plano (sem trabalhistas): 6,470,000  extraconcursais: 3,410,000  tributario: 2,700,000  total: 13,540,000
+caixa 31/03 = 840.000 ; posicao liquida de plano = 3.548.000 - 840.000 = 2,708,000
+
+== TESTE DE ESFORCO DO PLANO (sem Beta) ==
+1-18: encargo 75,833.33  deficit 70,833.33 x18 = 1,275,000
+19-24: encargo 22,500.00  deficit 17,500.00 x6 = 105,000
+25-120: encargo 44,066.67  deficit 39,066.67 x96 = 3,750,400
+deficit 120 meses: 5,130,400  galpao 4.500.000 -> GAP 630,400
+24 primeiros meses: trab 960,000 + federal 540,000 = 1,500,000 ; geracao 120,000 -> necessidade 1,380,000
+
+== CCB DO BANCO BETA (prestacao NAO INFORMADA - so ilustracao) ==
+  12 meses: 258,333.33/mes
+  24 meses: 129,166.67/mes
+  36 meses: 86,111.11/mes
+  48 meses: 64,583.33/mes
+  60 meses: 51,666.67/mes
+  120 meses: 25,833.33/mes
+  balao 3.100.000 c/ carencia 12m, PV a 1,5%% a.m.: 2,592,801
+  esforco 120m (mesmo total da divida, qualquer prazo): 5.130.400 + 3.100.000 = 8.230.400
+    gap vs galpao de 4.500.000 = 3.730.400  (o prazo so muda o mes em que o caixa de 840.000 zera)
+
+== GANHO CONTABIL (CPC 48) - sensibilidade ==
+PV 120 parcelas de 21,566.67, 1a em t=25
+  0.00% a.m. (0.00% a.a.): PV 2,588,000  ganho 3,882,000  imposto34 1,319,880
+  0.50% a.m. (6.17% a.a.): PV 1,723,433  ganho 4,746,567  imposto34 1,613,833
+  1.00% a.m. (12.68% a.a.): PV 1,183,876  ganho 5,286,124  imposto34 1,797,282
+  1.50% a.m. (19.56% a.a.): PV 837,296  ganho 5,632,704  imposto34 1,915,119
+  2.00% a.m. (26.82% a.a.): PV 608,146  ganho 5,861,854  imposto34 1,993,030
+imposto sobre o ganho NOMINAL (3,882,000):
+  34% -> 1,319,880
+  25% -> 970,500
+  9% -> 349,380
+trava 30% hipotetica (o diretor quer; e afastada pelo art. 50-A II): limitaria o uso de prejuizo a 1,164,600 e tributaria 2,717,400 -> imposto 923,916
+
+== UNIÃO (2.700.000) - vias ==
+A) 10-A ate 120x: 22,500.00/mes
+B) 10-A 1o-B: liquidar 810,000 com prejuizo/base; saldo 1,890,000/84 = 22,500.00/mes
+   (sem prejuizo disponivel a via B e pior: 2,700,000/84 = 32,142.86/mes)
+C) transacao (ate 70%, 120 meses): saldo 810,000/120 = 6,750.00/mes; economia nominal 1,890,000
+prejuizo fiscal de 810.000: via B quita 810.000 de PRINCIPAL vs abater o ganho rende 275,400 de imposto
+
+== DEFICIT ACUMULADO EM 120 MESES POR VIA FEDERAL (tabela do §4 de sessao3/passivo_fiscal_solucao.md) ==
+premissas: trabalhistas 53,333.33 x 18m  +  plano quirografario 21,566.67 x 96m (meses 25-120)
+           + federal da via  -  geracao de caixa 5,000.00 x 120m   (sem CCB do Beta, sem venda do galpao)
+trab 960,000 + quiro 2,070,400 + geracao -600,000 = 2,430,400 de base comum
+A)  federal 22,500.00 x 120 = 2,700,000  -> deficit 5,130,400
+B') federal 32,142.86 x  84 = 2,700,000  -> deficit 5,130,400  (sem prejuizo: so encurta o prazo)
+B)  federal 22,500.00 x  84 = 1,890,000  -> deficit 4,320,400  (com 810,000 de prejuizo/base)
+C)  federal  6,750.00 x 120 =   810,000  -> deficit 3,240,400  (transacao 70%)
+C50 federal 11,250.00 x 120 = 1,350,000  -> deficit 3,780,400  (transacao 50%)
+economia nominal A -> C = 1,890,000 ; esforco federal nominal A = 2,700,000 vs C = 810,000

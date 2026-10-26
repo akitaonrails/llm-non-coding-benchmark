@@ -1,0 +1,5 @@
+I’ll read the contract and workspace materials, then complete the required deliverables using only those files.
+
+The records show a 2025 accounting loss and accumulated losses, which point to no distributable profit. I also found that the balance sheet totals do not reconcile, and the file lacks the tax amounts needed to calculate the theoretical presumed-profit limit. I’m recording specific questions for the client before finalizing the figures.
+
+Registrei as perguntas em [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). Preciso da apuração dos tributos de 2025 para calcular o limite líquido teórico, da correção do balanço — que apresenta diferença de R$ 760.000 — e da confirmação de eventuais lucros e deliberações anteriores. Com essas respostas, concluo o parecer e os demais entregáveis.

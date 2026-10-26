@@ -1,0 +1,2 @@
+# Mandado de citação — Execução Fiscal 5001234-56.2026.4.03.6182 (1ª Vara Federal de Execuções Fiscais/SP)
+**Certidão (28/09/2026):** Certifico que, dirigindo-me à **Rua das Pedras, 100** (endereço constante da CDA), **não localizei a empresa executada**, informando o atual ocupante tratar-se de outro estabelecimento desde 'o começo do ano'. Devolvo o mandado **negativo**. Oficial de Justiça — mat. 4471.

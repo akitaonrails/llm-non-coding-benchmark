@@ -1,0 +1,25 @@
+{
+  "case": "uslaw_01_deadlines_removal",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 711.8017027559981,
+  "controller_wait_seconds": 44.004909294017125,
+  "model_turn_seconds": 667.3263571010029,
+  "turns": 4,
+  "released_facts": [
+    "appearance",
+    "defense",
+    "member",
+    "registered_agent"
+  ],
+  "usage": {
+    "input_tokens": 1885009,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 99915,
+    "reasoning_output_tokens": 48485
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,43 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "questions": "# Questions to the client — January 2025 close\n\n1. **Opening deferred revenue**: the opening trial balance shows $65,000 in account 2200, but `note_opening_deferred.md` only explains $41,000 (Trestle). What contract(s) support the remaining **$24,000**? Is it a prematurely posted Trestle renewal, another customer's annual billing, or an error? I have recognized $0 against it pending your answer.\n\n2. **Trestle renewal term**: order form C-026 says service start 2025-01-01, 12 months — yet the prior Trestle contract runs through May 2025 and its $8,200/month releases continue per your note. Please confirm the renewal's service period is truly Jan–Dec 2025 (two overlapping subscriptions), or whether the $24,000 was billed early for a term starting 2025-06-01. This changes January revenue by $2,000.\n\n3. **Opening account 4000 balance of $30,450 (credit)**: is this 2024 revenue that was never closed to retained earnings? If so, may I treat it as prior-period and close it to 3900 (with ASC 250 disclosure if prior statements were issued to the Board/lender)?\n\n4. **Opening A/R $92,650**: please provide an aging/customer breakdown — nothing in the January bank activity collects against it.\n\n5. **Prepaid expenses $9,600**: please provide the composition and amortization schedule (what is prepaid, and over what period?). I amortized nothing in January for lack of data.\n\n6. **Opening A/P $17,420**: still unpaid in January — confirm it is open and provide the vendor detail.\n\n7. **Chart of accounts**: the client file has no COA beyond the 10 opening-TB accounts. I assigned expense codes 5000–6200 from vendor-bill categories (see open_items.md). Please confirm or supply the company COA.\n\n8. **`documents/bank_statement.csv`** at the workspace root is dated **December 2025** (future period). Please confirm it is misfiled and should be disregarded.\n",
+  "facts": [
+    {
+      "id": "pinecone_onboarding",
+      "trigger": [
+        "Pinecone",
+        "implementation",
+        "onboarding",
+        "C-025",
+        "what was delivered"
+      ],
+      "answer": "Alvarado: Honestly nothing bespoke — they self-onboarded like everyone else. Procurement just wanted it called a license.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "gusto_dup",
+      "trigger": [
+        "duplicate",
+        "two net pay",
+        "Gusto",
+        "second debit"
+      ],
+      "answer": "Office manager: Gusto admitted the double debit; refund posted May 9.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "c012",
+      "trigger": [
+        "C-012",
+        "cancel",
+        "credit memo",
+        "stop invoicing"
+      ],
+      "answer": "Alvarado: yeah they cancelled. Billing didn't get turned off. Credit them.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

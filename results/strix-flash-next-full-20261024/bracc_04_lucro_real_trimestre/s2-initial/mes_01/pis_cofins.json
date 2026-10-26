@@ -1,0 +1,16 @@
+{
+  "periodo": "2026-01",
+  "debito": 234950.00,
+  "creditos": 155067.00,
+  "estornos": 11100.00,
+  "a_recolher": 79883.00,
+  "retificacoes": "Estorno do credito indevido de R$ 11.100,00 tomado na NF-e 8812 (Papel & Cia, 09/01/2026, CFOP 1556 - papel, toners e material de escritorio para areas administrativas). Material de uso e consumo administrativo nao e insumo e nao gera credito (Lei 10.637/2002, art. 3o; Lei 10.833/2003, art. 3o; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR - library/pis_cofins_uso_consumo.md). Creditos efetivos permitidos no mes = mercadorias para revenda: R$ 1.676.400,00 x 9,25% = R$ 155.067,00. Se a EFD-Contribuicoes de 01/2026 ainda NAO tiver sido entregue, o credito deve simplesmente ser excluido da escrituracao do periodo (sem retificacao); se ja entregue, deve ser retificada a EFD-Contribuicoes de 01/2026 e a diferenca recolhida com acrescimos, conforme library/pis_cofins_uso_consumo.md. Status de entrega da EFD-Contribuicoes/DCTF de 01/2026 permanece DESCONHECIDO (cliente declarou nao ter a informacao); as duas rotas seguem abertas e o valor a recolher e o mesmo nos dois cenarios. Cliente confirmou que o material e uso e consumo administrativo da sede; o destaque de PIS/COFINS pelo fornecedor nao cria direito a credito fora das hipoteses legais.",
+  "memoria_de_calculo": {
+    "debito_sobre_receita": "2.540.000,00 x 9,25% = 234.950,00 (PIS 1,65% + COFINS 7,6%; aliquota ja aplicada no razao ref. TRIB)",
+    "creditos_permitidos": "compras de mercadorias para revenda: 1.676.400,00 x 9,25% = 155.067,00",
+    "creditos_tomados_no_razao": "1.1.04 = 166.167,00 = 155.067,00 (mercadorias) + 11.100,00 (NF 8812 uso e consumo, indevido)",
+    "estorno": "11.100,00 (lançamento AJ-2026-01-001 em ajustes.json)",
+    "a_recolher": "234.950,00 - 155.067,00 = 79.883,00",
+    "consequencia_se_credito_mantido": "234.950,00 - 166.167,00 = 68.783,00; diferenca de 11.100,00 recolhida a menor"
+  }
+}

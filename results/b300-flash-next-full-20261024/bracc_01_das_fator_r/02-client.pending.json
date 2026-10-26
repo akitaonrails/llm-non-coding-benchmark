@@ -1,0 +1,47 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "questions": "# Perguntas ao cliente — DAS maio/2026 (Lumen Soluções Digitais ME) — 2ª rodada\n\nAgradecemos as respostas da rodada anterior, que **fecharam** três pontos: data do\npró-labore de abril (30/04/2026), natureza do estorno da NFS-e 1188 (glosa parcial devolvida\nvia PIX em 29/05) e a regularidade da NF-e de locação 000.512. Esses itens não são repetidos\naqui. O resultado **não mudou** com a resposta: folha 12m = R$ 284.600, Fator R = 27,90% <\n28%, serviços no **Anexo V**, DAS total **R$ 15.188,84**.\n\nRestam apenas os pontos abaixo — os dois primeiros são os únicos que ainda podem mexer no\ncálculo ou fechar divergência documental; os demais são lacunas da biblioteca ou premissas.\n\n## A. Pode alterar o resultado\n\n1. **Pró-labore da competência março/2026 — único ponto remanescente capaz de mudar o\n   Anexo.** A linha 2026-03 do resumo de folha traz **zero** de pró-labore. Se, apesar\n   disso, **houve** pró-labore de março efetivamente **pago até 30/04/2026** (PIX, TED ou\n   caixa), ele entra na folha de 12 meses: 284.600 + 3.200 = **287.800 → Fator R 28,22% ≥\n   28% → serviços migram para o Anexo III** e o DAS total cairia para **R$ 10.261.08**\n   (9.754,59 + 506,49). Favor: confirmar que **não houve** pró-labore em março/2026, ou\n   enviar o comprovante/débito (março–abril/2026) de qualquer pagamento que o resumo não\n   registra. Sem essa informação, mantemos a premissa baseada no resumo (não houve).\n\n## B. Fecha divergência documental (não altera o resultado)\n\n2. **Comprovante do pró-labore de abril/2026 (R$ 3.200,00), pago em 30/04/2026** — prometido\n   na resposta anterior. O e-mail do sócio dizia \"pago atrasado, dia 6 de maio\", e o débito\n   não consta do extrato de maio. Registramos a divergência na memória §4 sem forçá-la.\n   Importante: **qualquer das duas datas mantém o Anexo V** (30/04 → 27,90%; 06/05 →\n   27,59%), então o comprovante serve apenas para consistência de arquivo, não para o cálculo.\n\n## C. Lacunas da biblioteca (só o cliente/contador pode fornecer)\n\n3. **Tabela de repartição do DAS do Anexo V, 4ª faixa.** A biblioteca (`library/INDEX.md`)\n   só contém a repartição do **Anexo III**. Por isso o campo `reparticao` do `apuracao.json`\n   traz **apenas a cota da locação** (R$ 506,49 decomposta), não a dos serviços\n   (R$ 14.682,35). Se possuir a tabela oficial (Anexo V, faixa de R$ 870.000,01–\n   1.080.000,00), enviem que completamos a decomposição. **Não inventamos percentuais.**\n\n4. **Mecânica da exclusão do ISS na locação de bens móveis.** Adotamos a dedução\n   **proporcional à alíquota efetiva** (cota de ISS 32,50% × 750,35 = 243,86 →\n   DAS locação = 506,49). Se o critério da DASN for a exclusão sobre a **alíquota nominal**\n   (32,50% × 6.000 × 16% = 312,00), o DAS da locação seria **R$ 438,35** (−R$ 68,14) e o\n   total **R$ 15.120,70**. Qualquer material oficial (Res. CGSN 140 art. 26-B / perguntas\n   DASN-SIMEI) que a empresa use hoje resolve a ambiguidade.\n\n## D. Premissas adotadas (sem informação adicional do cliente — avisem se estiverem erradas)\n\n- Salários e pró-labore pagos **no mês da competência**; encargos (INSS patronal + FGTS,\n  R$ 4.700/mês) pagos **no dia 7 do mês seguinte** — padrão evidenciado pelo extrato de maio\n  (FOLHA MAIO em 07/05; PRO-LABORE MAI em 16/05; DARF/GPS/FGTS ABR em 07/05). Sob esse\n  padrão, a janela 05/2025–04/2026 captura 12 pagamentos de encargos (competências\n  04/2025–03/2026); os encargos de competência 04/2025 (R$ 4.700) são premissa (valor\n  constante na série, não documentado no extrato).\n- **Nenhuma receita de locação** em maio/2025–abril/2026 (o `faturamento_12_meses.csv` não\n  registra), então a RBT12 de 1.020.000 não misturou atividades em meses anteriores.\n- Pró-labore dividido 2 × R$ 1.600 (Renato e Julia), conforme resumo e extrato (PRO-LABORE\n  MAI de 16/05) — não muda o cálculo.\n- Todas as 7 NFS-e de serviços foram recebidas integralmente (os recebimentos de 18.000 e\n  12.500 de 1181/1182 constam do extrato; saldo final confere em 86.100,33) — nenhum outro\n  cancelamento além do estorno de 4.000.\n",
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "estorno",
+    "locacao",
+    "prolabore_abril"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

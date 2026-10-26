@@ -1,0 +1,85 @@
+{
+  "case": "usacc_01_schedule_c",
+  "questions": "# Remaining open items — no further client information available\n\nDana has no additional information. These items are therefore identified as open in `schedule_c.md` and `STATUS.md`; no further response is requested for this engagement.\n\n- The notebook's 1,150 “other client errands” miles have no supporting second page. The 2,232 coworking miles lack facts establishing a qualifying home office or other basis to distinguish them from travel to a regular work location. Neither amount is deducted.\n- The $2,149 MacBook has no supported business-use percentage or safe harbor election. It is omitted pending substantiation.\n- Dana estimated 60% business use of phone and internet but has no usage records. The estimate is used as an explicit assumption and could change.\n- The October San Francisco trip and its two meals are treated as business conference travel based on the contemporaneous conference registration and location. Dana did not confirm business purpose, attendees, or reimbursement; the deduction could change.\n- The $3,040 Blue Cross payments are for Dana's own coverage after leaving Larkspur, with no employer coverage. Schedule 1 line 17 treatment remains subject to eligibility details outside this library excerpt.\n",
+  "facts": [
+    {
+      "id": "commute",
+      "trigger": [
+        "commute",
+        "Larkspur office",
+        "drive to work",
+        "1,200",
+        "daily"
+      ],
+      "answer": "Oh — yes, the ~1,200 miles Jan–April were me driving to the Larkspur office every day. I guess that's commuting? The rest is client stuff and the coworking space.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "payhub_fees",
+      "trigger": [
+        "PayHub fee",
+        "net of fees",
+        "gross vs",
+        "payout",
+        "2.9",
+        "difference between 1099-K and deposits"
+      ],
+      "answer": "PayHub takes 2.9% off the top before paying out. The 1099-K number is before their cut.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "phone_pct",
+      "trigger": [
+        "phone",
+        "internet",
+        "business use percentage",
+        "T-Mobile",
+        "Spectrum"
+      ],
+      "answer": "Phone and internet are maybe 60% work? I don't have a separate line.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "denver",
+      "trigger": [
+        "Denver",
+        "June flight",
+        "AUS-DEN",
+        "Southwest 118"
+      ],
+      "answer": "Denver was my cousin's wedding, nothing work-related.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "overlap",
+      "trigger": [
+        "Beacon",
+        "Orchard",
+        "paid through PayHub",
+        "which clients use PayHub",
+        "double"
+      ],
+      "answer": "Beacon and Orchard both pay me through PayHub. Tessaro pays by bank transfer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "health",
+      "trigger": [
+        "health insurance",
+        "Blue Cross",
+        "BCBS"
+      ],
+      "answer": "That's my own health plan after I left Larkspur. Not through any employer.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "denver",
+    "health",
+    "overlap",
+    "payhub_fees",
+    "phone_pct"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

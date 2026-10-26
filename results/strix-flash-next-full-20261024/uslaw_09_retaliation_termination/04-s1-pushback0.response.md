@@ -1,0 +1,22 @@
+Lena's three propositions need answering on the record, so let me re-check the timeline details before writing.
+
+I've answered this in writing at `deliverable/advice_to_hr.md` §12 (and added it as step 11 of the recommended course in `risk_assessment.json`). Here is the answer.
+
+**"She's at-will, so we're covered." No.** The library rule is: *"Employment is at will, but termination may not be for an unlawful reason (discrimination, retaliation, exercise of statutory rights)."* At-will answers *do we need a reason at all?* It does not answer *is this reason lawful?* — and every claim here is about the second question. At-will is the door these claims walk through, not the wall that keeps them out.
+
+**"We have a PIP, so we're covered." The PIP is the problem, not the defense.** Four facts about it: first written performance document in a 7-year file with no prior discipline; dated **4 days** after her complaint about the man who wrote it; she sits **2nd of 5** on attainment (88% vs. a mean of 440 ÷ 5 = 88.0) above three men at 79/84/86% who are on no plan; and nothing in the file predating 09/16 supports the stated reason. The library's pretext test is *"shifting or thin justifications, disparate treatment of comparators who did not complain."* A PIP helps you pass that test when it predates the protected activity, comes from a manager with no stake, applies the same standard to peers, and is followed by a real chance to improve. This one fails all four — and she's being exited 20 of 60 days in (20 ÷ 60 = 33.3%), before the standard can be measured.
+
+**"Do it before she goes on leave." That sentence is the interference, not the workaround.** FMLA leave may not be "a negative factor in employment actions" (§825.220(c)); terminating to prevent requested leave **is** interference; and she "need not have begun" the leave. Mr. Hale's 10/02 email — *"Let's get this done before she's out on leave"* — is the best document Dana's lawyer will ever get, and executing on that timetable makes it true.
+
+**"Can we do it right after her leave?" No, and it's worse than doing it now:**
+
+1. **Proximity gets shorter.** The library's measure is "days to a few weeks." Firing on return from protected leave is closer than the current 6 days from certification (10/03 → 10/06) and 24 days from the complaint (09/12 → 10/06).
+2. **Waiting does not run out the claims she already has.** The PIP claim accrued 09/16 and the failure-to-investigate claim accrued over 09/12 → 10/06. Both are actionable whether or not she is ever fired. The state analog has "a longer limitations period" (length not in our library).
+3. **The PIP window collides with the leave** — 09/16 + 60 days closes 11/15, and her intermittent leave starts before then. Scoring a 100%-of-quota target across leave days is not a defensible measure.
+4. **Notes written in October to support a decision taken in October are worse than no notes** — that's a "shifting justification," not a cure.
+
+**"Aren't we stuck with her forever?" No — and this fear is what's driving the bad decision.** FMLA doesn't create tenure; the remedies are lost wages, doubled damages, fees and reinstatement to a job, not a permanent one. A lawful exit later is genuinely available, but it has to be **built**: a decision-maker with no connection to the complaint; the complaint actually investigated (owed regardless, now 24 days late); the leave answered in writing on its own merits; performance managed on the same terms as the other four Account Managers and documented as it happens; a real business case rather than a "just her" plan timed to a leave. A negotiated exit with a compliant agreement (21 days + 7-day revocation, consideration she isn't already owed) may be the cheapest route out.
+
+The choice today isn't "fire her now or keep her forever." It's: fire her now on the accused's document, on the accused's timetable, against a 4-week payment and a 26× nearer measurable exposure (52 × 2 = 104 weeks vs. 4) — or stop this week, fix the process, and decide in November with someone else's judgment and a record that predates the decision.
+
+Two things I need to assess any deferred option, and neither is in the file (logged as items 29–30 in `QUESTIONS.md`): **her leave start date and intermittent schedule**, and **who, if anyone, sits outside Hale's chain and could actually make this decision.** If the answer to the second is "nobody," then on this record the company cannot lawfully exit her at all — which is a different and more serious problem for the VP to hear.

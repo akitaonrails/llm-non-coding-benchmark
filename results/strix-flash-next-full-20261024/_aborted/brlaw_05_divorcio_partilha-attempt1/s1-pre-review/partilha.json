@@ -1,0 +1,83 @@
+[
+  {
+    "bem": "Apartamento (Perdizes)",
+    "natureza": "comum",
+    "valor_total": 1200000,
+    "valor_partilhavel": 1200000,
+    "meacao_fernanda": 600000,
+    "fundamento": "CC art. 1.660, I (library: cc_comunhao_parcial.md) — adquirido onerosamente na constância do casamento (2017), ainda que registrado só em nome de um. A meação líquida sofre o efeito do saldo devedor da hipoteca (linha DIVIDAS): 600.000 − 150.000 = 450.000 se imputada a dívida pro rata.",
+    "controversia": ""
+  },
+  {
+    "bem": "Casa de Atibaia (R. das Hortênsias, 45)",
+    "natureza": "particular",
+    "valor_total": 800000,
+    "valor_partilhavel": 0,
+    "meacao_fernanda": 0,
+    "fundamento": "CC art. 1.659, I (library: cc_comunhao_parcial.md) — bem recebido por sucessão na constância (herança do pai, 2019) e sub-rogado; Formal de Partilha do inventário de João Andrade (documents/formal_partilha_atibaia.md): atribuído a Marcelo por R$ 620.000,00, registrado 11/2019.",
+    "controversia": "Fernanda pede metade. A valorização de 620.000 → 800.000 é valorização do bem particular, não 'fruto percebido' do art. 1.660, V; nada nos autos indica esforço comum na valorização (o parâmetro de esforço comum da library aplica-se a quotas sociais — stj_fgts_quotas_previdencia.md). Atenção a dupla contagem: a reforma de 2021 feita com dinheiro comum (linha 'Benfeitorias — Casa de Atibaia') pode explicar parte da valorização 620k→800k; o ressarcimento da comunhão se dá por aquela linha, não somando de novo aqui. Ressalva: a library não contém precedente expresso sobre valorização de imóvel particular na comunhão parcial — tratar como interpretação, não como regra verificada."
+  },
+  {
+    "bem": "Benfeitorias — Casa de Atibaia (reforma 2021, ~R$ 120.000 com dinheiro comum)",
+    "natureza": "comum",
+    "valor_total": 120000,
+    "valor_partilhavel": 120000,
+    "meacao_fernanda": 60000,
+    "fundamento": "Fato informado pelo cliente (2º turno): reforma paga em 2021 'com uns 120 mil do nosso dinheiro', isto é, com recursos da comunhão (CC art. 1.664 — dívidas/encargos da família; aquisição onerosa na constância, CC 1.660, I, quanto aos materiais/mão de obra). Como a casa é particular (1.659, I), o efeito próprio é crédito da comunhão sobre o bem particular: Marcelo indeniza a meação de 60.000 (já embutida na torna).",
+    "controversia": "NON LIQUET da library: não há artigo/precedente indexado sobre benfeitorias/acessões em bem particular (CC 1.670 e ss. não estão no INDEX) — este tratamento é aplicação de princípio, marcado como NÃO VERIFICADO na library. Valor 'uns 120 mil' é estimativa do cliente; depende de notas fiscais/recibos. Alternativa (não adotada por falta de base na library): medir o acréscimo de valor que a reforma gerou, em vez do custo."
+  },
+  {
+    "bem": "FGTS — Marcelo (saldo 140.000)",
+    "natureza": "comum",
+    "valor_total": 140000,
+    "valor_partilhavel": 140000,
+    "meacao_fernanda": 70000,
+    "fundamento": "STJ REsp 1.399.199/RS (2ª Seção, 2017) (library: stj_fgts_quotas_previdencia.md) — valores depositados durante a constância integram o patrimônio comum e são partilhados, ainda que o saque seja diferido; o art. 1.659, VI não afasta a partilha do que já se incorporou ao patrimônio.",
+    "controversia": "A proposta de Fernanda afirma que o FGTS 'é dele' e fica integralmente com Marcelo — incorreta à luz do precedente; a meação de R$ 70.000 deve ser paga por Marcelo a Fernanda (o corte temporal exato depende da data da separação de fato — ver QUESTÕES)."
+  },
+  {
+    "bem": "Quotas — Andrade Engenharia Ltda. (100%)",
+    "natureza": "misto",
+    "valor_total": 1500000,
+    "valor_partilhavel": 1100000,
+    "meacao_fernanda": 550000,
+    "fundamento": "As quotas são particulares (CC art. 1.659, I — sociedade constituída em 2011, antes do casamento); comunicam-se apenas a valorização por esforço comum e os lucros não distribuídos/reinvestidos na constância (CC art. 1.660, V), por apuração de haveres da fração correspondente ao período, sem ingresso da ex-cônjuge na sociedade (STJ REsp 1.595.775/AP; CC art. 1.027, ambos na library: stj_fgts_quotas_previdencia.md). Cálculo de referência da library: valor na separação (laudo R$ 1.500.000) − valor no casamento (R$ 400.000) = R$ 1.100.000 comunicável; meação de Fernanda = R$ 550.000 (indenização em dinheiro, não metade das quotas). Confirmado pelo cliente (2º turno): nunca distribuiu lucros — 'reinvesti tudo' — e a empresa valia ~400 mil no casamento, 1,5 mi hoje; o fundamento fático dos lucros reinvestidos (1.660, V) está provado pelo depoimento, mas a quantificação documental (balanços) segue pendente.",
+    "controversia": "A library registra divergência quanto ao alcance da comunicabilidade; o marco final é a separação de fato, cuja data não consta do arquivo (ver QUESTÕES). Com a data correta e o valor do laudo na data, o número pode ser ajustado."
+  },
+  {
+    "bem": "PGBL — Fernanda (saldo 90.000)",
+    "natureza": "comum",
+    "valor_total": 90000,
+    "valor_partilhavel": 90000,
+    "meacao_fernanda": 45000,
+    "fundamento": "STJ REsp 1.698.774/RS (3ª Turma, 2020) (library: stj_fgts_quotas_previdencia.md) — PGBL na fase de acumulação: saldo formado por aportes na constância (2016–2025) é partilhável, por natureza de investimento; a library adota a partilha do PGBL como posição de referência.",
+    "controversia": "Matéria controvertida (4ª Turma em sentido contrário quanto a VGBL). A proposta de Fernanda é omissa quanto ao PGBL — deve ser incluído: fica com Fernanda, que compensa Marcelo em R$ 45.000 (já líquidado na torna)."
+  },
+  {
+    "bem": "Carro (SUV)",
+    "natureza": "comum",
+    "valor_total": 120000,
+    "valor_partilhavel": 120000,
+    "meacao_fernanda": 60000,
+    "fundamento": "CC art. 1.662 (library: cc_comunhao_parcial.md) — presunção de aquisição na constância (bem móvel); confirmado pelo cliente (2º turno): carro da família, levava as crianças. Registro e financiamento em nome de Fernanda. Atribuído integralmente a ela, que assume o saldo devedor de R$ 60.000 (linha DIVIDAS — já em seu nome, sem necessidade de transferência de dívida por Marcelo), conforme desejo manifestado por Marcelo (documents/email_cliente.txt): efeito líquido 120.000 − 60.000 = 60.000, exatamente a meação de cada cônjuge nesse bem.",
+    "controversia": ""
+  },
+  {
+    "bem": "TOTAL",
+    "natureza": "comum",
+    "valor_total": 2770000,
+    "valor_partilhavel": 2770000,
+    "meacao_fernanda": 1385000,
+    "fundamento": "Soma dos bens comuns/partilháveis, BRUTA (antes das dívidas): 1.200.000 (apto) + 140.000 (FGTS) + 1.100.000 (valorização quotas) + 90.000 (PGBL) + 120.000 (carro) + 120.000 (benfeitorias Atibaia) = 2.770.000; meação bruta = 1.385.000. Após a linha DIVIDAS (−360.000; meação −180.000): líquido partilhável = 2.410.000 e meação líquida de cada = 1.205.000. Equalização: torna de 1.055.000 Marcelo→Fernanda (F in natura 150.000 + 1.055.000 = 1.205.000; M in natura 2.260.000 − 1.055.000 = 1.205.000). Particulares de Marcelo (não partilháveis): casa de Atibaia 800.000 + base das quotas 400.000 = 1.200.000.",
+    "controversia": "Valores sujeitos a ajuste pela data da separação de fato (FGTS/quotas), pela documentação da reforma de Atibaia (120.000 estimados) e pelos valores de declaração de IR para desenho tributário (ver QUESTÕES)."
+  },
+  {
+    "bem": "DIVIDAS",
+    "natureza": "comum",
+    "valor_total": 360000,
+    "valor_partilhavel": -360000,
+    "meacao_fernanda": -180000,
+    "fundamento": "CC art. 1.664 (library: cc_comunhao_parcial.md) — os bens da comunhão respondem pelas obrigações contraídas para atender aos encargos da família. Hipoteca do apartamento 300.000 + financiamento do veículo familiar 60.000 = 360.000; rateio 180.000 para cada, sendo que a dívida do carro (60.000) fica integralmente com Fernanda, que fica com o veículo — financiamento já registrado em nome dela (cliente, 2º turno) —, e a hipoteca (300.000) integralmente com Marcelo, que fica com o apartamento.",
+    "controversia": "Para o carro, nada a transferir (financiamento já em nome de Fernanda). Para o apartamento, a assunção da hipoteca por Marcelo exige anuência do credor/alteração contratual — não verificado nos autos."
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "case": "uslaw_02_msa_playbook",
+  "questions": "# Questions for the client (Cobalt Legal) — updated 2026-10-25\n\n## Answered (client response 2026-10-25) — no longer asked\n- **Affiliate use (rule A5).** Both named affiliates will use RouteWise — Cobalt Freight Europe B.V.\n  (Rotterdam/Hamburg) and Cobalt Brokerage LLC (carrier routing) — and Holdings signs in its own\n  name. Issue rank 5 is now firm; the redline amends §2.2 plus the §1.2/§1.6 definitions that would\n  otherwise exclude affiliate personnel and data (redlines.md §5).\n- **EU data scope.** Driver names, driver locations, driver working hours, and customer addresses\n  from the EU operations — squarely GDPR-scoped. Issue rank 1 is firm; Exhibit C Annex 1 is now\n  populated with these data types and subject categories (redlines.md §2).\n\n## Remaining unknowns (flagged explicitly, per client instruction — not re-asked)\n1. **Which Cobalt entity is the GDPR \"controller\"** for the Rotterdam/Hamburg data — Holdings or\n   Cobalt Freight Europe B.V. — could not be confirmed. The DPA roles clause is drafted to work\n   either way (redlines.md §2, clause 1). Any controller-to-controller transfer mechanics sit\n   outside the review library and are flagged there as unverified, not cited as law.\n2. **EU go-live date** was not given. Default used: EU data goes live with the Service Start Date,\n   which is why the redline demands the DPA be executed *concurrently with* the MSA — that fix holds\n   regardless of the actual date.\n3. **Whether RouteWise publishes a standard DPA** is unknown. Default used: we table our Exhibit C\n   skeleton; ask RouteWise for their form in the redline exchange (a vendor question, not a Cobalt\n   research item).\n4. **Fleet size vs. the 350-vehicle Order Form cap** is unconfirmed. Commercial check needed before\n   signature: if the in-scope fleet (including affiliates') exceeds 350, scope and fees must be\n   fixed in the Order Form now — which controls over the MSA (§14.1; playbook note C1).\n5. **Signature posture / leverage** was not addressed. Default used: hold signature on the DPA\n   (rank 1) and the indemnity-cap carve-out (rank 2) even if RouteWise stalls the other edits.\n6. **CPI-U values** are not knowable at review time; renewal-increase math is modeled at the 8%\n   contractual floor (see redlines.md §3 arithmetic).\n",
+  "facts": [
+    {
+      "id": "affiliates",
+      "trigger": [
+        "affiliate",
+        "Cobalt Freight Europe",
+        "Brokerage",
+        "who will use",
+        "entities"
+      ],
+      "answer": "Both affiliates will use it — Europe for Rotterdam/Hamburg, Brokerage for carrier routing. Holdings signs.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "eu_data",
+      "trigger": [
+        "EU",
+        "GDPR",
+        "personal data",
+        "driver data",
+        "Rotterdam"
+      ],
+      "answer": "Yes — driver names, locations, hours, and customer addresses from the EU ops. Real GDPR scope.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "chronic",
+      "trigger": [
+        "chronic",
+        "termination for SLA",
+        "repeated outages"
+      ],
+      "answer": "There is no chronic-failure termination right in their paper. Add one if you think it matters.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "affiliates",
+    "eu_data"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,107 @@
+{
+  "repo": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+  "revision": "fc694b54fb0174e0913e6adf86691ef85a4ead47",
+  "resolved_at": 1792980224.1566198,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 1635
+    },
+    {
+      "path": "README.md",
+      "size": 12109
+    },
+    {
+      "path": "chat_template.jinja",
+      "size": 8952
+    },
+    {
+      "path": "config.json",
+      "size": 30820
+    },
+    {
+      "path": "generation_config.json",
+      "size": 202
+    },
+    {
+      "path": "hf_quant_config.json",
+      "size": 23001
+    },
+    {
+      "path": "merges.txt",
+      "size": 3353259
+    },
+    {
+      "path": "model-00001-of-00010.safetensors",
+      "size": 3115991696
+    },
+    {
+      "path": "model-00002-of-00010.safetensors",
+      "size": 10005510304
+    },
+    {
+      "path": "model-00003-of-00010.safetensors",
+      "size": 10005364728
+    },
+    {
+      "path": "model-00004-of-00010.safetensors",
+      "size": 10006060112
+    },
+    {
+      "path": "model-00005-of-00010.safetensors",
+      "size": 10005362392
+    },
+    {
+      "path": "model-00006-of-00010.safetensors",
+      "size": 10005375328
+    },
+    {
+      "path": "model-00007-of-00010.safetensors",
+      "size": 10005956544
+    },
+    {
+      "path": "model-00008-of-00010.safetensors",
+      "size": 10005375200
+    },
+    {
+      "path": "model-00009-of-00010.safetensors",
+      "size": 5679113808
+    },
+    {
+      "path": "model-00010-of-00010.safetensors",
+      "size": 128587536
+    },
+    {
+      "path": "model-fp8-mtp-ple.safetensors",
+      "size": 53717551730
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size": 31275518
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size": 390
+    },
+    {
+      "path": "processor_config.json",
+      "size": 1191
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 12809320
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 17928
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "size": 385
+    },
+    {
+      "path": "vocab.json",
+      "size": 6722759
+    }
+  ]
+}

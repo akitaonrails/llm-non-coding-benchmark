@@ -1,0 +1,58 @@
+[
+  {
+    "label": "s1-work",
+    "seconds": 916.2659477390116,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 407441,
+      "cached_input_tokens": 390792,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 39555,
+      "reasoning_output_tokens": 0
+    },
+    "thread_id": "ses_e89202f29ffeTQiStcY6LqWlZe"
+  },
+  {
+    "label": "s1-work-client1",
+    "seconds": 785.267067206034,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 743665,
+      "cached_input_tokens": 691002,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 29631,
+      "reasoning_output_tokens": 0
+    },
+    "thread_id": "ses_e89202f29ffeTQiStcY6LqWlZe"
+  },
+  {
+    "label": "s1-pushback0",
+    "seconds": 141.81266689801123,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 212360,
+      "cached_input_tokens": 209176,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5460,
+      "reasoning_output_tokens": 0
+    },
+    "thread_id": "ses_e89202f29ffeTQiStcY6LqWlZe"
+  },
+  {
+    "label": "review",
+    "seconds": 924.9786587890121,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 685654,
+      "cached_input_tokens": 619184,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 35517,
+      "reasoning_output_tokens": 0
+    },
+    "thread_id": "ses_e89202f29ffeTQiStcY6LqWlZe"
+  }
+]

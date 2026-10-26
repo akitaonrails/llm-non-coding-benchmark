@@ -1,0 +1,18 @@
+{
+  "case": "bracc_08_recuperacao_judicial",
+  "status": "infrastructure_failed",
+  "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_08_recuperacao_judicial/01-s1-work",
+  "elapsed_seconds": 26.910604970005807,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 26.907180816982873,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 49454,
+    "cached_input_tokens": 45184,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1569,
+    "reasoning_output_tokens": 918
+  },
+  "api_equivalent_usd": 0.033266800000000006
+}

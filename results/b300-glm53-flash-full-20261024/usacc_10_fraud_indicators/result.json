@@ -1,0 +1,20 @@
+{
+  "case": "usacc_10_fraud_indicators",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 490.2079483649868,
+  "controller_wait_seconds": 42.003547781001544,
+  "model_turn_seconds": 448.02807743899757,
+  "turns": 2,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 725806,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 52723,
+    "reasoning_output_tokens": 35944
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

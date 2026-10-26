@@ -1,0 +1,58 @@
+{
+  "case": "brlaw_05_divorcio_partilha",
+  "questions": "# Informações necessárias para fechar a proposta\n\n1. **Data da separação de fato:** em que data Marcelo e Fernanda deixaram de viver como casal? O laudo de R$ 1.500.000 da Andrade Engenharia, os saldos de FGTS e PGBL e os valores dos demais bens/dívidas correspondem a essa data ou a outra data? Informe a data-base de cada valor que for diferente.\n2. **Empresa:** qual é o pró-labore **líquido mensal** de Marcelo, após IR e INSS? Ele recebe lucros distribuídos? Se sim, informe valores, frequência e se esses valores são líquidos. O laudo de R$ 1.500.000 distingue a valorização da empresa por lucros reinvestidos/esforço durante o casamento da valorização por fatores externos? Se houver essa discriminação, envie os valores.\n3. **Alimentos e rotina dos filhos:** quais são as despesas mensais dos dois filhos (escola, saúde, moradia, alimentação e outras), quem as paga hoje e com quem eles residiriam como referência no acordo? Há alguma circunstância concreta que impeça guarda compartilhada por qualquer dos pais?\n4. **Férias e pagamentos variáveis:** os R$ 32.000 de férias líquidas representam o pagamento **total** do período de férias, substituindo o salário mensal de R$ 24.000, ou são um valor **adicional**? Marcelo recebe horas extras ou PLR habitual? Se sim, quais valores líquidos e frequência?\n5. **Partilha e tributos:** qual o custo/valor declarado para fins fiscais do apartamento, da casa e das quotas? Existe intenção de transferir algum imóvel por valor superior ao declarado? Há outros bens comuns, dívidas familiares, pagamentos do financiamento após a separação ou valores de entrada pagos com patrimônio particular que devam entrar na equalização?\n",
+  "facts": [
+    {
+      "id": "carro_uso",
+      "trigger": [
+        "carro",
+        "dívida do carro",
+        "financiamento do carro",
+        "uso",
+        "família"
+      ],
+      "answer": "O carro era da família, levava as crianças. Está no nome dela e o financiamento também.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "lucros_reinvestidos",
+      "trigger": [
+        "lucros",
+        "reinvest",
+        "distribuiu",
+        "pró-labore",
+        "empresa valoriz"
+      ],
+      "answer": "Nunca distribuí lucro; reinvesti tudo. A empresa valia uns 400 mil quando casei e hoje 1,5 mi. Meu pró-labore é 15 mil, fora o salário de 24 mil de um emprego CLT.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "atibaia_reforma",
+      "trigger": [
+        "Atibaia",
+        "reforma",
+        "benfeitoria",
+        "dinheiro do casal"
+      ],
+      "answer": "Reformei a casa de Atibaia em 2021 com uns 120 mil do nosso dinheiro.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "guarda",
+      "trigger": [
+        "guarda",
+        "convivência",
+        "compartilhada"
+      ],
+      "answer": "Quero compartilhada, com as crianças morando com ela e comigo em semanas alternadas se der.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "carro_uso",
+    "lucros_reinvestidos",
+    "guarda"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

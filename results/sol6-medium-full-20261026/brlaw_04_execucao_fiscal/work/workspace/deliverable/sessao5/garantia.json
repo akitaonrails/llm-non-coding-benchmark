@@ -1,0 +1,17 @@
+{
+  "valor_remanescente_atualizado": 614049.00,
+  "seguro_garantia": {
+    "valor_garantido": 798263.70,
+    "custo_anual": 9579.16
+  },
+  "fianca": {
+    "valor_garantido": 798263.70,
+    "custo_anual": 19956.59
+  },
+  "transacao": {
+    "base": 614049.00,
+    "desconto_estimado": 199373.85,
+    "observacao": "Cenário máximo, não oferta confirmada: multa remanescente R$ 230.490,00 + juros da inscrição R$ 53.190,00 + SELIC adicional presumida como juros R$ 23.049,00 = R$ 306.729,00; 65% = R$ 199.373,85, abaixo do principal de R$ 307.320,00. Saldo hipotético R$ 414.675,15. Depende da exclusão dos períodos decaídos, da classificação de difícil recuperação, da CAPAG e dos termos efetivos da adesão. Adesão confessa irrevogavelmente e exige desistência das defesas dos débitos incluídos. Fontes jurídicas: library/transacao_pgfn.md; library/selic_e_garantia.md."
+  },
+  "recomendacao": "Priorizar o reconhecimento da decadência e garantir apenas o saldo exigível para embargos, escolhendo o seguro-garantia da cotação (R$ 9.579,16/ano), mais barato que a fiança (R$ 19.956,59/ano), se aceito nas condições propostas. Não aderir à transação antes de excluir os créditos decaídos e conferir a CAPAG/edital, pois a adesão confessa a dívida e importa desistência das defesas dos débitos incluídos. Enquanto a exclusão não for decidida, o juízo pode exigir garantia sobre a cobrança integral: valor atualizado R$ 1.142.900,00; cobertura R$ 1.485.770,00; seguro R$ 17.829,24/ano; fiança R$ 37.144,25/ano. Valores calculados para 30/11/2026 com SELIC acumulada de 3,9% fornecida na proposta, data futura em relação à elaboração. Fontes jurídicas: library/selic_e_garantia.md; library/transacao_pgfn.md; library/lef_e_sumulas_cda.md."
+}

@@ -1,0 +1,24 @@
+{
+  "case": "usacc_07_holding_qsbs",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 933.3454497010098,
+  "controller_wait_seconds": 73.00676319695776,
+  "model_turn_seconds": 859.940532306995,
+  "turns": 4,
+  "released_facts": [
+    "helio_exit",
+    "loans_terms",
+    "trust"
+  ],
+  "usage": {
+    "input_tokens": 1704446,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 97376,
+    "reasoning_output_tokens": 65450
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

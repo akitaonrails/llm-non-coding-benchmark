@@ -1,0 +1,3 @@
+Now the AJEs, TB, and the source documents for recomputation:
+
+Roll-forward: zero mismatches — but that account table just exposed a real error. Per the COA, **6700 = "Bank charges"** and **6500 = "Meals"**. My AJE-4 debited the $35 bank service fee to **6500 (Meals)** instead of 6700 — and the TB now shows 6500 = 35.00 with 6700 missing entirely. The $35 fee is sitting in meal expense. Let me verify the GL postings and policy wording before fixing:

@@ -1,0 +1,18 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "status": "infrastructure_failed",
+  "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_04_lucro_real_trimestre/06-review",
+  "elapsed_seconds": 461.612777117989,
+  "controller_wait_seconds": 95.01085989398416,
+  "model_turn_seconds": 366.583404066012,
+  "turns": 6,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 1017057,
+    "cached_input_tokens": 966784,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 26136,
+    "reasoning_output_tokens": 9463
+  },
+  "api_equivalent_usd": 0.5552628000000001
+}

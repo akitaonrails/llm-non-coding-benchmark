@@ -1,0 +1,245 @@
+[
+  {
+    "ref": "JE-2507-001",
+    "date": "2025-07-01",
+    "memo": "July 2025 monthly subscription invoices INV-2350..INV-2373, 24 customers, total 30,450 (invoices.csv). Same cohort as Feb-Jun. SaaS access over time (ASC 606-10-25-14(b), 25-27; policy #1). Billed and earned in the same month. No annual/advance billings in July (next expected: Trestle renewal Jan 2026).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-002",
+    "date": "2025-07-26",
+    "memo": "24 customer ACH receipts per cash_receipts.csv, total 30,450; every July invoice paid in full, receipt dates 07/20-07/26; all 24 bank credits matched 1:1 by date, amount and payer (bank_reconciliation.md). Opening A/R of 92,650 remains uncollected a seventh consecutive month (U3).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-003",
+    "date": "2025-07-05",
+    "memo": "AWS 10,640.00 (vendor_bills.csv: 'Hosting & infrastructure'), paid 07/05 (bank ACH AWS). Five-month trend 10,160 -> 10,280 -> 10,400 -> 10,520 -> 10,640 (+120/month): variance noted, not adjusted; usage-based and agrees 1:1 to bill and bank.",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 10640.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 10640.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-004",
+    "date": "2025-07-06",
+    "memo": "WeWork rent 7,200.00 (vendor_bills.csv: 'Rent'), paid 07/06 (bank ACH WEWORK). Unchanged every month to date.",
+    "lines": [
+      {
+        "account": "6100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-005",
+    "date": "2025-07-07",
+    "memo": "Gusto payroll-platform fees 240.00 (vendor_bills.csv: 'G&A other'), paid 07/07 (bank ACH GUSTO FEES). Unchanged every month to date. Distinct from the 07/25 payroll debits.",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-006",
+    "date": "2025-07-08",
+    "memo": "Notion/Slack/GitHub 1,460.00 (vendor_bills.csv: 'Software & tools'), paid 07/08 (bank ACH NOTION/SLACK/GITHUB). Unchanged every month to date.",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-007",
+    "date": "2025-07-09",
+    "memo": "Google Ads 3,550.00 (vendor_bills.csv: 'Marketing'), paid 07/09 (bank ACH GOOGLE ADS). Five-month trend 3,350 -> 3,400 -> 3,450 -> 3,500 -> 3,550 (+50/month): variance noted, not adjusted; agrees 1:1 to bill and bank.",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 3550.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 3550.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-008",
+    "date": "2025-07-09",
+    "memo": "Payment of the five July vendor bills, total 23,090 (bank ACH debits 07/05-07/09; bank_reconciliation.md). No Harbor Law LLP bill in July - consistent with the quarterly cadence observed 03/09 -> 06/09, next expected September (observation in open_items.md; no accrual - no July bill received). 2000 opening A/P credit of 17,420 still unpaid a seventh consecutive month (U9): July payments settle only July bills.",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 23090.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 23090.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-009",
+    "date": "2025-07-25",
+    "memo": "July payroll per payroll_register.json: gross 54,404.00 (9 employees), net pay 48,200.00; employee withholding 6,204.00 derived as gross minus net (U7). Register identical for the seventh consecutive month (U11) - carried, not re-asked. Net pay agrees 1:1 with bank ACH GUSTO NET PAY 48,200.00 on 07/25 - exactly one net-pay debit this month.",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-010",
+    "date": "2025-07-25",
+    "memo": "Employer payroll taxes 5,076.00 per payroll_register.json (employer_taxes); identical seventh month (U11).",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-011",
+    "date": "2025-07-25",
+    "memo": "Payroll tax remittance; agrees 1:1 with bank ACH GUSTO TAX 11,280.00 on 07/25. Clears 2210 exactly: 6,204 + 5,076 = 11,280 (seventh consecutive month; cumulative 2210 debits = credits = 7 x 11,280 = 78,960).",
+    "lines": [
+      {
+        "account": "2210",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-PC01",
+    "date": "2025-07-02",
+    "memo": "PRIOR-PERIOD CORRECTION (ASC 250-10-45-23, 250-10-50-7). Pinecone Dental Group C-025: Amendment No. 1 (documents/month_07/order_form_amendment_C-025.md, signed by both parties, effective 2025-07-02) corrects a clerical error in the 2025-02-01 order form: the 36,000.00 fee is an annual platform subscription with a 12-month term 2025-02-01 through 2026-01-31, and there never were implementation services (consistent with the Feb client answer F2: 'nothing bespoke - they self-onboarded like everyone else'). The series of daily subscription services was being satisfied over time from 2025-02-01 (ASC 606-10-25-14(b), 25-27), so the prior position that no term was determinable (F1/F4, U10) no longer holds on the documented record: 36,000/12 = 3,000.00 was earned each month Feb-Jun 2025 but not recognized. Result: 4000 revenue understated and 2200 contract liability overstated by 5 months x 3,000.00 = 15,000.00 at 06/30/2025. Corrected in the July books as a separately identified prior-period entry; the monthly books are interim statements issued to the Board, so the ASC 250 disclosure is made in month_07/open_items.md and the correction is visible as its own journal entry rather than buried in July releases. Alternative characterization - a change in estimate when the term became determinable, recognized as a cumulative catch-up in the period of change - yields identical July amounts (this 15,000.00 catch-up plus the 3,000.00 July service month in JE-2507-013); July 4000 impact is 18,000.00 either way. Cash was collected in Feb 2025: no A/R or cash impact. U10 CLOSED by the documented amendment.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 15000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 15000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-012",
+    "date": "2025-07-31",
+    "memo": "Monthly depreciation per close checklist: 64,000.00 equipment / 36-month straight line = 1,777.78 (U5 assumption carried). 1510 accumulated reaches 33,777.46 = 31,999.68 at 06/30 + 1,777.78.",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "JE-2507-013",
+    "date": "2025-07-31",
+    "memo": "Scheduled July releases of contract liabilities on documented terms (policy #1; ASC 606-10-25-14(b), 25-27): Trestle renewal 2,000.00 (remaining 10,000.00 covers Aug-Dec 2025); Pinecone Dental Group C-025 3,000.00 = 36,000.00/12 for the July service month, first release on the term documented by Amendment No. 1 (remaining 18,000.00 covers Aug 2025-Jan 2026); Marigold Schools 1,500.00 (remaining 10,500.00 covers Aug 2025-Feb 2026); Quarry Analytics 2,500.00 (remaining 22,500.00 covers Aug 2025-Apr 2026); Saltline Hospitality 1,800.00 (remaining 18,000.00 covers Aug 2025-May 2026). Pinecone Feb-Jun under-recognition was corrected separately as prior-period entry JE-2507-PC01, not commingled here.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 10800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 10800.0
+      }
+    ]
+  }
+]

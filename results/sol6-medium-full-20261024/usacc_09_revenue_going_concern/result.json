@@ -1,0 +1,18 @@
+{
+  "case": "usacc_09_revenue_going_concern",
+  "status": "infrastructure_failed",
+  "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_09_revenue_going_concern/01-s1-work",
+  "elapsed_seconds": 1.4699864459980745,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 1.4664966689888388,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": 0.0
+}

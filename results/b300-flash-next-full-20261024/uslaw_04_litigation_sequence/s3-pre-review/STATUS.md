@@ -1,0 +1,15 @@
+# STATUS
+
+**Session 3 — COMPLETE WITH OPEN ITEMS** (Nov. 4, 2026).
+
+Delivered:
+- `deliverable/session3/advice.md` — answers the Oct. 6 client call note ("arbitration thing in the back, Exhibit something — does that matter?", "we never looked at the exhibits, our old lawyer drafted off a template", "can we at least make them pay our legal fees?", "hit them hard in court"). Verified Exhibit C.1–C.6 verbatim and §7 entire-agreement incorporation from the Agreement. Conclusions: C.1 makes AAA arbitration (Commercial Rules, single arbitrator, Capital City) the **exclusive** forum for every claim, and its "arbitrability of any claim" language delegates scope to the arbitrator (*Rent-A-Center*; *faa_2_4.md*); "never read it / template" is no defense (FAA §2 — only generally applicable revocation grounds, none in the file); suing in court is the one guaranteed money-loser (§3 stay / §4 compel + C.3 fee clause enforced as written per *Zuniga* — the library expressly notes a party filing suit "may owe the fees of the motion to compel"); C.6 small-claims carve-out unavailable (smallest invoice J-4571 $59,450 > $25,000 cap; none of the five qualify); "make them pay our legal fees" = **yes, via C.3, prevailing party, in the arbitration only** (mutual — caveat; "reasonable"/mixed-outcome allocation and AAA fee schedule **[not in library — unverified]**, to be pulled at filing for the Session 5 `fee_exposure_if_arbitrated` number); C.4 court-in-aid-of-arbitration injunction preserved as the lever against an eighth hire. Call note also corroborates the CEO had word of Halvorsen's Sept. 29 letter by Oct. 6 ("Hanna's lawyer hinted at it"); Q11–Q12 still open.
+
+Carried open items (unchanged from Session 2; none blocks the Nov. 16 plan):
+1. Q11–Q12: identity/date/copy of the pre-engagement demand letter (reply ¶1 has neutral bracketed fallback). The Oct. 6 call note corroborates the CEO possessed it but does not say who sent it. Please also confirm no complaint was ever filed.
+2. All Session 1 unknowns remain (actual comp per hire; post-CSV payments; termination-notice status; May 14 call content; prior fee demands).
+3. Counsel action: assemble AAA demand package in parallel so filing is immediate if Nov. 16 passes without payment/schedule; pull AAA Commercial fee schedule at filing (feeds Session 5 `fee_exposure_if_arbitrated`).
+
+Position of record (unchanged): demand $428,399.50 as of Nov. 2 (interest +$2,652.00/month on the $265,200 undisputed); immediate-payment core $276,699.50; J-4533 at $71,700 substantiate-or-pay by Nov. 16; conversion fees $80,000 (5 hires, true-up); no interference count, no Rosa/Tay fees, no court threat, ever again.
+
+Awaiting: client answer on the pre-engagement letter (Q11–Q12); Pinecrest's response to the Nov. 2 reply letter (payment, mediation, silence, or their own AAA filing) — next opposing papers expected in `documents/session4/`, which triggers `deliverable/session4/strategy_memo.md` (current position vs. Session 1, stated plainly: improved or worsened, and why).

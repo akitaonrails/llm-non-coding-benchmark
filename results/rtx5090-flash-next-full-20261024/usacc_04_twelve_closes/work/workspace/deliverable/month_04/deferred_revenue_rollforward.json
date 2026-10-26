@@ -1,0 +1,50 @@
+{
+  "as_of": "2025-04-30",
+  "currency": "USD",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) - prior annual subscription",
+      "term": "2024-06-01 to 2025-05-31",
+      "opening": "16400.00",
+      "billed": "0.00",
+      "recognized": "8200.00",
+      "closing": "8200.00",
+      "note": "8,200.00/month Jan-May 2025 (41,000.00 / 5 remaining months per client opening note). April is the 4th of 5 releases; ONE release remains - May 2025 (final 8,200.00), after which this contract is fully released. Cash was collected in 2024. NOTE: the February and March packages' remaining-release prose was wrong (Feb listed remaining as 'March and May', omitting April; March's note said '4th of 5, one release remains' when March was 3rd of 5 with April and May remaining). Full correction in open_items.md section 2; balances were never affected (Feb closing 24,600.00 = 3 x 8,200.00; Mar closing 16,400.00 = 2 x 8,200.00)."
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) - renewal (order form 2025-01-01, INV-2225)",
+      "term": "2025-01-01 to 2025-12-31",
+      "opening": "18000.00",
+      "billed": "0.00",
+      "recognized": "2000.00",
+      "closing": "16000.00",
+      "note": "24,000.00 / 12 = 2,000.00/month; April is month 4 of 12. Remaining releases May-Dec 2025 (8 x 2,000.00). Collected 2025-01 (bank wire)."
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025) - implementation & license (order form 2025-02-01, INV-2250)",
+      "term": "ASSUMED 2025-02-01 to 2026-01-31 (term not stated in the documents; client confirmed no further records exist - Q8. See open_items.md section 5)",
+      "opening": "30000.00",
+      "billed": "0.00",
+      "recognized": "3000.00",
+      "closing": "27000.00",
+      "note": "36,000.00 / 12 = 3,000.00/month under the ASSUMED 12-month term; April is month 3 of 12. Remaining releases May 2025 - Jan 2026 (9 x 3,000.00), all within 12 months of 2025-04-30. Under this assumption 24,000.00 releases May-Dec 2025 and only 3,000.00 (Jan 2026) falls in calendar 2026. Classification remains contingent on the assumption - actual term permanently unknown (Q8)."
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027) - annual subscription (order form C-027 2025-03-01, INV-2275)",
+      "term": "2025-03-01 to 2026-02-28 (term EXPLICITLY stated on order form: '12 months from service start, auto-renewing'; service start 2025-03-01)",
+      "opening": "16500.00",
+      "billed": "0.00",
+      "recognized": "1500.00",
+      "closing": "15000.00",
+      "note": "18,000.00 / 12 = 1,500.00/month; April is month 2 of 12. Remaining releases May 2025 - Feb 2026 (10 x 1,500.00), all within 12 months of 2025-04-30. Billed and collected in March; no April cash. Auto-renewal: no evidence of a renewal order received; will treat a renewal as a new contract when documented."
+    }
+  ],
+  "totals": {
+    "opening": "80900.00",
+    "billed": "0.00",
+    "recognized": "14700.00",
+    "closing": "66200.00"
+  },
+  "reconciliation_to_gl": "Closing 66,200.00 agrees exactly to account 2200 in trial_balance.json (80,900.00 opening - 8,200.00 JE-2025-043 - 2,000.00 JE-2025-044 - 3,000.00 JE-2025-045 - 1,500.00 JE-2025-046; no new billing in April).",
+  "presentation_note": "As of 2025-04-30 every component of the 2200 balance releases within 12 months of the reporting date - latest release date is 2026-02-28 (Marigold). Non-current portion: 0.00. Release schedule from 2025-05-01: Trestle prior 8,200.00 (May 2025 - FINAL release); Trestle renewal 16,000.00 (May-Dec 2025); Pinecone 27,000.00 under assumed term (May-Dec 2025: 24,000.00; Jan 2026: 3,000.00); Marigold 15,000.00 (May-Dec 2025: 12,000.00; Jan-Feb 2026: 3,000.00). Components sum: 8,200.00 + 16,000.00 + 27,000.00 + 15,000.00 = 66,200.00, tying to 2200. The February and March packages contained errors in remaining-release NARRATIVE for the Trestle prior contract (April omitted from a remaining-releases list; March mislabeled '4th of 5'); every roll-forward BALANCE and journal amount was always correct - see open_items.md section 2. Pinecone classification remains contingent on the assumed term (permanently unknown)."
+}

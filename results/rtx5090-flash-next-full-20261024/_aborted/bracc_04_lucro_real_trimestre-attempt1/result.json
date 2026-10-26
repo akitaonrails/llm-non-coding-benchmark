@@ -1,0 +1,23 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-full-20261024/bracc_04_lucro_real_trimestre/07-s3-work",
+  "elapsed_seconds": 1401.10989440899,
+  "controller_wait_seconds": 110.01002298900858,
+  "model_turn_seconds": 1290.7864560320158,
+  "turns": 7,
+  "released_facts": [
+    "brindes",
+    "papel"
+  ],
+  "usage": {
+    "input_tokens": 3852483,
+    "cached_input_tokens": 3570464,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 207418,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,454 @@
+[
+  {
+    "ref": "JE-2025-001",
+    "date": "2025-01-01",
+    "memo": "PRIOR-PERIOD ERROR CORRECTION (ASC 250 restatement of opening balances): reverse 2025 invoices/billing posted in error in Dec-2024. Evidence: opening 4000 = 30,450.00 equals Jan monthly invoices exactly; opening 2200 = 65,000.00 vs 41,000.00 per client opening note (excess 24,000.00 = Trestle renewal INV-2225); offset taken in A/R (92,650.00 - 54,450.00 = 38,200.00, assumption - see open_items.md).",
+    "lines": [
+      {
+        "account": "4000",
+        "debit": "30450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "2200",
+        "debit": "24000.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "0.00",
+        "credit": "54450.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-002",
+    "date": "2025-01-01",
+    "memo": "January 2025 monthly subscription invoices INV-2201..INV-2224 (24 invoices, 30,450.00): A/R and subscription revenue; services performed (period billed) in January 2025.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": "650.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "650.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "1200.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "650.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "4000",
+        "debit": "0.00",
+        "credit": "30450.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-003",
+    "date": "2025-01-01",
+    "memo": "Trestle Freight (C-026) renewal INV-2225 24,000.00, annual 12-month subscription billed upfront, service start 2025-01-01 (order form). Contract liability at billing per ASC 606-10-45-2 and Board policy 1 - not revenue.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": "24000.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "2200",
+        "debit": "0.00",
+        "credit": "24000.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-004",
+    "date": "2025-01-26",
+    "memo": "January cash receipts, 25 items totaling 54,450.00 (monthly invoices 30,450.00 + Trestle 24,000.00), applied INV-2201..INV-2225, receipt dates 2025-01-15..2025-01-26; each receipt traced to a bank credit. Posted at month-end for ledger brevity.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": "650.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "650.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1200.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "2400.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "650.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "900.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "450.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "1800.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "24000.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1100",
+        "debit": "0.00",
+        "credit": "54450.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-005",
+    "date": "2025-01-31",
+    "memo": "January vendor bills posted and paid in month per bank ACH: AWS 9,920.00; WeWork 7,200.00; Gusto fees 240.00; Notion/Slack/GitHub 1,460.00; Google Ads 3,250.00; total 22,070.00. No month-end AP left from these bills.",
+    "lines": [
+      {
+        "account": "5300",
+        "debit": "9920.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "5200",
+        "debit": "7200.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "5900",
+        "debit": "240.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "5400",
+        "debit": "1460.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "5100",
+        "debit": "3250.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "0.00",
+        "credit": "22070.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-006",
+    "date": "2025-01-25",
+    "memo": "Payroll 2025-01-25 per Gusto register (9 employees): gross 54,404.00; net paid 48,200.00; employee withholding 6,204.00 = 54,404.00 - 48,200.00 credited to 2100.",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": "54404.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "0.00",
+        "credit": "48200.00"
+      },
+      {
+        "account": "2100",
+        "debit": "0.00",
+        "credit": "6204.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-007",
+    "date": "2025-01-25",
+    "memo": "Employer payroll taxes & benefits 5,076.00 per register.",
+    "lines": [
+      {
+        "account": "5010",
+        "debit": "5076.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "2100",
+        "debit": "0.00",
+        "credit": "5076.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-008",
+    "date": "2025-01-25",
+    "memo": "Gusto tax remittance 11,280.00 = withholding 6,204.00 + employer taxes 5,076.00; clears 2100 to zero.",
+    "lines": [
+      {
+        "account": "2100",
+        "debit": "11280.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "1000",
+        "debit": "0.00",
+        "credit": "11280.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-009",
+    "date": "2025-01-31",
+    "memo": "Monthly depreciation per close checklist item 6: 1,777.78 (64,000.00 / 36 months = 1,777.78; consistent with opening 1510 of 21,333.00 = 12 x 1,777.78).",
+    "lines": [
+      {
+        "account": "5700",
+        "debit": "1777.78",
+        "credit": "0.00"
+      },
+      {
+        "account": "1510",
+        "debit": "0.00",
+        "credit": "1777.78"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-010",
+    "date": "2025-01-31",
+    "memo": "Release Trestle prior contract (Jun-2024-May-2025): 8,200.00/month Jan-May 2025 per client opening note (41,000.00 / 5 remaining months).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": "8200.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "4000",
+        "debit": "0.00",
+        "credit": "8200.00"
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-011",
+    "date": "2025-01-31",
+    "memo": "Release 1/12 of Trestle renewal: 24,000.00 / 12 = 2,000.00 (January of 2025-01..2025-12 term).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": "2000.00",
+        "credit": "0.00"
+      },
+      {
+        "account": "4000",
+        "debit": "0.00",
+        "credit": "2000.00"
+      }
+    ]
+  }
+]

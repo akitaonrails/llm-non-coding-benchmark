@@ -1,0 +1,25 @@
+{
+  "service_date": "2026-09-11",
+  "service_method": "Personal delivery of summons and complaint to Corporation Service Company (registered agent), 1209 Orange Street, Wilmington, DE, left with an intake specialist authorized to accept service, 2:40 p.m. Fri Sep 11, 2026",
+  "state_court_answer_due": "2026-10-01",
+  "removal_deadline": "2026-10-13",
+  "removal_available": false,
+  "removal_reason": "FINAL - confirmed by client response of Sep 28, 2026: Harbor Street Bakery LLC has exactly two members - Noor Haddad (65%, lives in Portland, OR) and Caleb Sorensen (35%, lives in Seattle (Ballard), WA). An LLC is a citizen of every state of which its members are citizens, NOT of its state of formation (Delaware) or principal place of business - Johnson v. Columbia Properties Anchorage, LP, 437 F.3d 894, 899 (9th Cir. 2006); Carden v. Arkoma Associates, 494 U.S. 185 (1990). Caleb Sorensen's Seattle citizenship makes the defendant a citizen of Washington, the same State as plaintiff Sound Cascade Foods, Inc. (a Washington corporation, PPB Kent, WA), destroying complete diversity under 28 U.S.C. 1332(a) and independently barring removal under the forum-defendant rule, 28 U.S.C. 1441(b)(2). The amount in controversy is satisfied (110,916.40 + 18,240.00 = 129,156.40 > 75,000, exclusive of interest and costs), but that is not enough. DO NOT REMOVE: 28 U.S.C. 1447(c) mandates remand for jurisdictional defects at any time and permits an award of just costs and fees, including attorney fees, against removing. The 'if_removed' block below is a purely hypothetical contingency and is now legally unavailable.",
+  "if_removed": {
+    "notice_filed_assumed": "2026-10-13",
+    "answer_due_after_removal": "2026-10-20",
+    "scheduling_order_due_by": "2026-12-10",
+    "rule_26f_conference_by": "2026-11-19"
+  },
+  "rules_relied_on": [
+    "Wash. Super. Ct. Civ. R. 4(a)(2), 6(a), 6(e), 12(a) (library: wa_cr_4_6_12.md)",
+    "RCW 1.16.050 - Washington legal holidays 2026 (library: rcw_1_16_050_wa_holidays.md)",
+    "28 U.S.C. 1332(a), 1332(c)(1), 1441(a)-(b), 1446(b)(1), 1446(c)(1), 1447(c) (library: 28usc_1332_1441_1446_1447.md)",
+    "Fed. R. Civ. P. 6(a)(1)(A)-(C), 6(a)(6), 6(d), 12(a)(1)(A) (library: frcp_4_5_6_12_excerpts.md)",
+    "Fed. R. Civ. P. 81(c)(2) (library: frcp_81c_removed_actions.md)",
+    "Fed. R. Civ. P. 16(b)(2), 26(f)(1) (library: frcp_16_26f.md)",
+    "Johnson v. Columbia Properties Anchorage, LP, 437 F.3d 894, 899 (9th Cir. 2006); Carden v. Arkoma Associates, 494 U.S. 185 (1990) (library: llc_citizenship_cases.md)",
+    "5 U.S.C. 6103 and W.D. Wash. General Order - federal court closures, incl. Columbus Day Mon Oct 12, 2026 (library: federal_holidays_2026.md)",
+    "Wash. Super. Ct. Civ. R. 55(a)(3) (library: wa_cr_55_default.md)"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "periodo": "2026-02",
+  "debito": 238650.00,
+  "creditos": 157509.00,
+  "estornos": 0.00,
+  "a_recolher": 81141.00,
+  "conferencia_aritmetica": "a_recolher = debito - creditos + estornos = 238.650,00 - 157.509,00 + 0,00 = 81.141,00 (verificado em Python). Creditos validos de compras de mercadorias para revenda em 15/02/2026: 9,25% x 1.702.800,00 = 157.509,00; conferido por Python na razao (ref COMPRA) e no balancete (1.1.04 = 155.067,00 jan + 157.509,00 fev + 11.100,00 indevido jan ainda sem ajuste = 323.676,00).",
+  "composicao_creditos": "157.509,00 — unico credito do mes, proveniente de comercial de mercadorias para revenda (uso de insumo, credito valido: library/pis_cofins_uso_consumo.md). Nenhum credito sobre material de uso e consumo em fev/2026.",
+  "retificacoes": "Duas vias independentes: (1) EFD-Contribuicoes 01/2026 — retificacao ja descrita em deliverable/mes_01/pis_cofins.json: excluir o credito indevido de R$ 11.100,00 da NF 8812 e recolher o complemento com acrescimos (data da transmissao original e indices de acrescimos nao informados; taxas nao constam da biblioteca — acrescimos nao calculados, nada forcado a fechar). (2) EFD-Contribuicoes 02/2026 — nao necessita retificacao: apuracao apresenta apenas creditos validos de revenda (157.509,00). NOTA: o complemento de R$ 11.100,00 pertence a apuracao de jan/2026 e NAO integra o a_recolher de fev/2026. Apos o lancamento contabil A-2026-02-01 (retificacao de janeiro em deliverable/mes_02/ajustes.json), o saldo de 1.1.04 no razao passa de 323.676,00 para 312.576,00 (= creditos validos jan+fev)."
+}

@@ -1,0 +1,9 @@
+{
+  "mes": "2026-03",
+  "status": "BLOQUEADO — sem registros de março/2026 na base documental; cliente confirmou não ter informação adicional (QUESTIONS.md, sessões 3 e 6). Campos null = NÃO APURÁVEL, e não zero: preencher com zero inventaria a apuração.",
+  "debito": null,
+  "creditos": null,
+  "estornos": null,
+  "a_recolher": null,
+  "retificacoes": "Impossível apurar PIS/COFINS de março/2026: não há razão, balancete nem documentos do mês em documents/. O que existe e está firme: (a) janeiro — débito 234.950,00, créditos válidos 155.067,00, estorno 11.100,00 (NF-e 8812, AJ-2601-01 — crédito indevido sobre uso e consumo administrativo, library/pis_cofins_uso_consumo.md), a recolher 79.883,00; (b) fevereiro — débito 238.650,00, créditos válidos 157.509,00, estornos 0,00 (NF-e 4410: crédito nunca tomado), a recolher 81.141,00; (c) AJ-2601-01 segue NÃO escriturada no razão do cliente (1.1.04 fev = 323.676,00 em vez de 312.576,00); (d) status de transmissão das EFD-Contribuições de jan e fev: DESCONHECIDO — o cliente não forneceu (pergunta encerrada sem resposta útil); se a EFD de janeiro foi transmitida com o crédito da NF 8812, transmitir EFD retificadora e recolher a diferença de 11.100,00 com acréscimos. DARFs de PIS/COFINS jan+fev não recolhidos (79.883,00 + 81.141,00); acréscimos de mora não calculáveis com a biblioteca autorizada. Checklist de fechamento de março pronto em ./ajustes.json."
+}

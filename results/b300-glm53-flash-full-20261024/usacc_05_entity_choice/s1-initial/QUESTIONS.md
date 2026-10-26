@@ -1,0 +1,24 @@
+# QUESTIONS.md — answer log and remaining unknowns
+
+**Answers received October 25, 2026** (client reply, this turn). No further questions are being asked — unclear items are carried forward as flagged unknowns in `STATUS.md` and in place below.
+
+| # | Question asked | Status | What we now know |
+|---|---|---|---|
+| 1 | Any business already operated in 2026, and in what form? | **Not answered** | Nothing. The calendar's premise (no 2026 activity before formation T = Nov 2, 2026) stands as an **unconfirmed assumption** (STATUS open item 1). |
+| 2 | Basis assertion ($31,000 remaining / $89,000 deducted) | **Answered** | Client: ~$89,000 expensed on her Schedule C over 2023–2025; remaining basis ~$31,000 **per her CPA**. Matches the questionnaire and the appraisal. The "no depreciation/amortization claimed" sub-part is consistent with her saying "expensed," but the CPA workpapers were not provided — carried as a **confirmed client/CPA assertion**, not independently verified. |
+| 3 | Tomás's actual day counts (2026 projection: 118) | **Answered (estimate)** | Tomás: **TN visa**, no green card, no residency application pending; "in the US maybe a third of the year" ≈ 122 of 365 days. Consistent with the 118-day projection. Residency result unchanged: **118 + (96 × 1/3) + (66 × 1/6) = 161 < 183** (even at his ~122-day estimate: 165 < 183). Break-even this year = **140 current-year days** (140 + 32 + 11 = 183, 2024/2025 counts held fixed). Formal year-end verification of the day log remains a standing calendar item — not a re-asked question. |
+| 4 | Withholding vendor / §1446 quantification | **Not answered** | No vendor identified. The quantification is blocked in this engagement regardless: §1446/ECI rules are **not in the library** (open item 2 in `STATUS.md`). |
+| 5 | Tomás's spouse / community property | **Answered (partial)** | Tomás is married, residing in Mexico, **no prenuptial agreement**; Priya is single. Marriage date and the specific regime provisions were not provided — characterization of the Profits Units under the regime remains **[not in library / not verified]**. The written spousal-consent requirement in `term_sheet.md` §5 stands; the no-prenup fact makes it more important, not less. |
+| 6 | Reasonable-compensation study (future S-flip) | **Not answered** | No study selected or commissioned. Deferred: it matters only if the `term_sheet.md` §9.4 S-flip ever ripens. |
+| 7 | Key-person insurance vs self-funded note | **Not answered** | No decision. The choice stays open (`term_sheet.md` §7.5); the 48-month note remains self-funded by default. |
+
+## Remaining unknowns (explicit flags — no client input expected)
+
+1. **2026 operating history (Q1)** — if the no-prior-activity assumption is wrong, formation dates, first-year CA fee timing, and the estimated-tax catch-up all move; the structural recommendation does not change.
+2. **Tomás's partner-level US tax mechanics** (§1446 withholding, ECI, treaty relief, Mexican tax interplay) — **not in library**, unverified; modeled resident-equivalent.
+3. **Allocation of Priya's $89,000 built-in gain** (§704(c)-type rules) — **not in library**.
+4. **Market reasonable-compensation figure** — not in library; no study chosen (Q6); needed only for a future S corp.
+5. **Mexican community-property characterization of the units** — not in library; regime specifics not provided (Q5 partial); consent logistics still required.
+6. **Due-date mechanics** (CA $800/fee, Form 1065/K-1, estimated payments) — not in library; provisional dates used.
+7. **Exact 2026 day count** — TN-confirmed estimate ≈ 122 days vs 118-day projection; break-even 140 days; year-end log verification outstanding.
+8. **Insurance funding decision (Q7)** — quote vs self-fund, undecided.

@@ -1,0 +1,40 @@
+{
+  "periodos": [
+    {
+      "periodo": "3T/2020",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 268000
+    },
+    {
+      "periodo": "4T/2020",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 241000
+    },
+    {
+      "periodo": "1T/2021",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2026-03-31",
+      "decaido": false,
+      "valor": 302000
+    },
+    {
+      "periodo": "2T/2021",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2026-12-31",
+      "decaido": false,
+      "valor": 289000
+    }
+  ],
+  "valor_decaido": 509000,
+  "valor_remanescente": 591000,
+  "vicios_formais": [
+    "A CDA agrega IRPJ e CSLL numa única cifra por trimestre, sem discriminar principal, multa e juros de cada tributo; isso dificulta conferir individualmente a natureza e o fundamento de cada dívida.",
+    "O campo próprio de fundamento da multa está em branco; a fundamentação geral, porém, cita o art. 44 da Lei 9.430/96 e a alíquota de 75%, de modo que a nulidade por esse ponto é controvertida e a deficiência pode ser sanada por emenda."
+  ],
+  "veiculo": "exceção de pré-executividade",
+  "por_que": "A decadência parcial é cognoscível de ofício e verificável pelas datas da CDA e pelos pagamentos parciais registrados no resumo do PAF, sem necessidade de garantia; a objeção formal também decorre do texto da CDA. A demonstração dos pagamentos deve ser acompanhada de prova pré-constituída do PAF/DARFs, pois o resumo do escritório, isoladamente, pode ser questionado. Os valores são os da inscrição em 10/07/2026, sem atualização posterior."
+}

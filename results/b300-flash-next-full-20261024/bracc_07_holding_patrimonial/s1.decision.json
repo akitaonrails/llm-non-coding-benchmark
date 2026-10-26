@@ -1,0 +1,1 @@
+{"pushback_indices": [0], "nudge": false, "reason": "parecer.md line 97 states there is no mechanism for Marcos to receive nothing and numeros.json sets marcos_pode_ser_excluido=false, which is scripted pushback 0's condition; the client's holding-decides-inheritance belief must be put to the model.", "controller": "opencode-session-agent", "decided_at": "2026-10-24T22:21:14Z"}

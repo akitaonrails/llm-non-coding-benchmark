@@ -1,0 +1,74 @@
+[
+  {
+    "bem": "Apartamento (Perdizes)",
+    "natureza": "comum",
+    "valor_total": 1200000,
+    "valor_partilhavel": 1200000,
+    "meacao_fernanda": 600000,
+    "fundamento": "CC art. 1.660, I (comunhao parcial): adquirido por titulo oneroso na constancia do casamento (2017), ainda que so no nome de um dos conjuges. O saldo devedor de R$ 300.000 responde pela comunhao: CC art. 1.664, transcrito em library/cc_comunhao_parcial.md (o INDEX lista o arquivo como arts. 1.658-1.662; o art. 1.664 consta do corpo do arquivo).",
+    "controversia": "Assuncao sinalizada: o resumo nao diz quem contratou o financiamento; trata-se de divida comum por ser encargo de morada da familia (CC 1.664). Quem ficar com o imovel assume o saldo e o recebe pelo valor liquido (900.000 = 1.200.000 - 300.000)."
+  },
+  {
+    "bem": "Casa em Atibaia",
+    "natureza": "particular",
+    "valor_total": 800000,
+    "valor_partilhavel": 0,
+    "meacao_fernanda": 0,
+    "fundamento": "CC art. 1.659, I: exclui da comunhão o bem que sobrevier ao cônjuge por sucessão. Herdada do pai de Marcelo em 2019; formal de partilha anexo (documents/formal_partilha_atibaia.md: avaliada em R$ 620.000,00, registrada em 11/2019) prova a aquisição por inventário — não por ato oneroso dos cônjuges.",
+    "controversia": "A valorização (620.000 -> 800.000) de bem particular não é tratada em nenhum arquivo da biblioteca; não afirmo partilha dela (ponto sem respaldo no dossiê = não se decide aqui). A pretensão da outra parte (metade da casa) não tem fundamento no direito aplicável."
+  },
+  {
+    "bem": "FGTS de Marcelo",
+    "natureza": "comum",
+    "valor_total": 140000,
+    "valor_partilhavel": 140000,
+    "meacao_fernanda": 70000,
+    "fundamento": "STJ REsp 1.399.199/RS (2a Secao, 2017): saldos depositados em conta vinculada na constancia do casamento integram o patrimonio comum e devem ser partilhados, ainda que o saque fique diferido; o art. 1.659, VI (proventos do trabalho pessoal) nao afasta a partilha de valores ja incorporados ao patrimonio.",
+    "controversia": "A proposta da outra parte deixa o FGTS inteiro com ele — pela jurisprudência da biblioteca ele é partilhável e a meação de Fernanda (R$ 70.000) juridicamente existiria; a posição dela é insustentável, mas favorece o cliente e é aceita sem litígio: Fernanda NÃO cobra a meação — abre mão na própria proposta dela ('fica com ele'), e nada entra no fluxo de equalização a esse título. Não incide em alimentos: library/alimentos_base_calculo.md."
+  },
+  {
+    "bem": "Quotas - Andrade Engenharia Ltda. (100%)",
+    "natureza": "misto",
+    "valor_total": 1500000,
+    "valor_partilhavel": 1100000,
+    "meacao_fernanda": 550000,
+    "fundamento": "As quotas constituídas em 2011 são bem particular (CC 1.659, I). O acréscimo decorrente do esforço comum e dos lucros não distribuídos/reinvestidos na constância do casamento comunicam-se como frutos (CC 1.660, V), apurando-se por apuração de haveres da fração correspondente ao período (STJ REsp 1.595.775/AP), sem ingresso do ex-cônjuge na sociedade (regra anotada na library/stj_fgts_quotas_previdencia.md; o dispositivo do CC que a sustenta não consta da whitelist do INDEX e não é aqui citado). Cálculo de referência da biblioteca: diferença entre o valor em 2014, ao casar (R$ 400.000), e o laudo atual (R$ 1.500.000) = R$ 1.100.000 partilhável; meação = 550.000.",
+    "controversia": "CONFIRMAÇÃO DO CLIENTE (26/10/2026): 'a empresa valia uns 400 mil quando casei' e 'nunca distribuí lucro; reinvesti tudo' — a declaração do próprio cliente confirma o valor de 400.000 à data do casamento e que o acréscimo de 1.100.000 capta os lucros retidos; não há haveres fora da sociedade a incorporar (elemento de fato, não prova documental: balanços/laudo devem instruir o instrumento). A biblioteca registra divergência sobre o alcance da tese; adota essa base como cálculo de referência. Ponto aberto do dossiê: a data da separação de fato não consta; adotei o valor do laudo como corte do período comum (assunção sinalizada). A proposta da outra parte pede metade das quotas inteiras (R$ 750.000) — excesso de R$ 200.000 sobre a meação correta (R$ 550.000)."
+  },
+  {
+    "bem": "PGBL de Fernanda",
+    "natureza": "comum",
+    "valor_total": 90000,
+    "valor_partilhavel": 90000,
+    "meacao_fernanda": 45000,
+    "fundamento": "STJ REsp 1.698.774/RS (3a Turma, 2020): na fase de acumulação, saldo de PGBL formado por aportes na constância do casamento é partilhável, por natureza de investimento. Aqui, todos os aportes são de 2016 a 2025 — integralmente na constância. Bem em nome de Fernanda: a meação de R$ 45.000 é devida A MARCELO e compõe a equalização global (não a reduzem do total dela).",
+    "controversia": "A 4a Turma tem decisões em sentido contrário quanto ao VGBL — matéria controvertida; a biblioteca adota a partilha do PGBL como posição de referência. Se Fernanda contestar por essa via, o valor em jogo é 45.000 (risco baixo no agregado)."
+  },
+  {
+    "bem": "Carro (SUV)",
+    "natureza": "comum",
+    "valor_total": 120000,
+    "valor_partilhavel": 120000,
+    "meacao_fernanda": 60000,
+    "fundamento": "CC art. 1.660, I; quanto à época, CC art. 1.662: móvel presumido adquirido na constância, salvo prova em contrário. Veículo de uso da família.",
+    "controversia": "CONFIRMAÇÃO DO CLIENTE (26/10/2026): carro 'da família, levava as crianças'; registro e financiamento no nome de Fernanda. A inscrição no nome de um cônjuge não afasta a comunhão por época (CC 1.660, I + 1.662). A data da compra segue SEM PROVA — presunção do 1.662 mantida. Sensibilidade sinalizada (sem uso no quadro): se provada compra anterior ao casamento, o carro (120.000) sai do quadro comum e a meação líquida de cada um cai de 1.145.000 para 1.085.000 (dívida do carro como comum, ex-CC 1.664 — proveniência no row 'DIVIDAS') ou 1.115.000 (dívida como particular de Fernanda); mantida a atribuição, a equalização sobe de 95.000 para 125.000 (dívida dela, ou comum rateada 50/50) a 155.000 (concessão 'dívida toda com ela' mantida sobre dívida comum) — sempre a favor de Fernanda; o fluxo não se inverte contra ela. Concessão mantida pelo cliente: carro + financiamento integral (60.000) com Fernanda; custo para Marcelo de 30.000 (a metade que lhe caberia), tratado na equalização. Com a residência alternada em semanas (pedido do cliente), o uso do carro nas semanas de Marcelo pode constar como condição de convexência, sem alterar valores."
+  },
+  {
+    "bem": "TOTAL",
+    "natureza": "comum",
+    "valor_total": 3850000,
+    "valor_partilhavel": 2650000,
+    "meacao_fernanda": 1325000,
+    "fundamento": "Totais: soma dos bens = 1.200.000 + 800.000 + 140.000 + 1.500.000 + 90.000 + 120.000 = 3.850.000. Partilhável (bruto) = 2.650.000: apto 1.200.000 + FGTS 140.000 + quotas (acréscimo) 1.100.000 + PGBL 90.000 + carro 120.000; casa de Atibaia (800.000, particular) fora. Meação bruta de Fernanda = 50% = 1.325.000.",
+    "controversia": "Fernanda não recebe 1.325.000 'limpo': há dívidas e compensações entre bens por ela retidos. Ver a linha DIVIDAS e a equalização em proposta_acordo.md."
+  },
+  {
+    "bem": "DIVIDAS",
+    "natureza": "comum",
+    "valor_total": 360000,
+    "valor_partilhavel": 300000,
+    "meacao_fernanda": -180000,
+    "fundamento": "Financiamento do apto 300.000 (comum, CC 1.664 — meação na dívida de Fernanda = -150.000; o art. 1.664 consta do corpo de library/cc_comunhao_parcial.md, fora da lista de arts. do INDEX — ver nota no row 'Apartamento (Perdizes)') + financiamento do carro 60.000 (pressume-se comum pelo uso familiar, CC 1.664, mas por acordo do cliente fica integralmente com Fernanda: -60.000 a ela, incluindo os 30.000 que caberiam a Marcelo). Soma do ônus de Fernanda = 210.000; a coluna meacao_fernanda mostra -180.000 = dividir 50/50 as duas dívidas, antes do ajuste acordado.",
+    "controversia": "Cada bem aqui está líquido de sua dívida na equalização de proposta_acordo.md (apto líquido 900.000; carro líquido 60.000). O ajuste acordado (carro com dívida toda para Fernanda) representa, para ela, 30.000 a menos do que a base de 50/50."
+  }
+]

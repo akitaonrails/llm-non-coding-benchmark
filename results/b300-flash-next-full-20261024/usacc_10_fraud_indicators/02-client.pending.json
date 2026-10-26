@@ -1,0 +1,48 @@
+{
+  "case": "usacc_10_fraud_indicators",
+  "questions": "# Remaining unknowns (updated 2026-10-25)\n\nClient response received 2026-10-25: staff confirmed Dr. Harlow set up the Summit vendor himself and directed \"just pay those when they come in,\" that no delivery from Summit was ever seen, and that no one has met T. Nguyen, whose checks are mailed to a P.O. box. **For all other items the client has no additional information.** Those items are therefore no longer questions to ask but **open unknowns on the record**, flagged in `STATUS.md` and the communication to the Finance Committee Chair:\n\n1. **ADP payroll-line composition — unknown.** No ADP billing statements exist in the client's possession, so the $133,257.02 Q1 difference between ADP PAYROLL debits ($526,713.92) and register gross ($393,456.90 = 65,576.15 × 6) remains unreconciled and its composition unexplained. (Could be obtained directly from ADP by the Committee.)\n2. **T. Nguyen identity and documentation — unknown.** No offer letter, I-9, time-clock record, or direct-deposit form held by client; who controls the PO Box and who cashed the paper checks is unknown; whether the $17,100.00 Q1 gross was funded through the ADP payroll lines or wrote outside them is unknown.\n3. **Summit Supply LLC substance — unknown.** No contract, deliverables, or W-9 held by client; the identity/control relationship between Summit, Kevin Marsh, and Dr. Harlow is not established from the file (address and relationship links are, per HR form and email signature).\n4. **Completeness of bank data — unconfirmed.** No confirmation that Capital City Bank 0441 is the only account; the P&L covers only this account.\n5. **Classification basis — no client preference given; assumptions retained:** cash basis (bank deposits as revenue), ADP TAX in `other`, Summit in a separate flagged pending-review category.\n\nCommittee-directed items (forensic review, documents from counsel's side) proceed outside this engagement's information requests; see Supplement No. 1 of `communication_to_dr_r_patel.md`.\n",
+  "facts": [
+    {
+      "id": "summit",
+      "trigger": [
+        "Summit Supply",
+        "V-017",
+        "Kevin Marsh",
+        "Ridgeway"
+      ],
+      "answer": "Carla: Dr. Harlow set that vendor up himself and said to just pay those when they come in. I've never seen a delivery from them. I'd rather not get in the middle of it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "nguyen",
+      "trigger": [
+        "Nguyen",
+        "E-22",
+        "regional coordinator",
+        "timeclock",
+        "paper check"
+      ],
+      "answer": "Carla: I've never met T. Nguyen. Dr. Harlow said they work from home on 'regional projects'. The checks get mailed to a P.O. box.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "who_to_tell",
+      "trigger": [
+        "finance committee",
+        "Dr. Patel",
+        "who should I",
+        "report"
+      ],
+      "answer": "Carla: Dr. Patel chairs the finance committee. Please don't put my name on anything.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "nguyen",
+    "summit"
+  ],
+  "literal_suggestions": [
+    "who_to_tell"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

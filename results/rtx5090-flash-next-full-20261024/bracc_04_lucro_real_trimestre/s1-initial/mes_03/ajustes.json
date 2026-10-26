@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "empresa": "Atlas Distribuidora S.A.",
+    "competencia": "2026-03",
+    "encerramento": "mes 3/3 do trimestre 1º trimestre de 2026 — mês em que se apura IRPJ/CSLL do trimestre (e-LALUR)",
+    "regime": "Lucro Real trimestral; PIS/COFINS não cumulativo (fatos geradores mensais)",
+    "moeda": "BRL",
+    "data_referencia_lancamentos": "2026-03-31",
+    "status": "BLOCKED_sem_dados_de_entrada",
+    "motivo_bloqueio": "Sem razão analítico e balancete de março (e de fevereiro), não há base para fechar o mês nem para apurar o trimestre. Rodada 3 (26/10/2026): o cliente informou não ter informação adicional. Valores aqui: null ou lista vazia — nada estimado.",
+    "arquivos_esperados": [
+      "documents/mes_03/razao.csv",
+      "documents/mes_03/balancete.csv"
+    ],
+    "fontes_consultadas": [
+      "documents/balancete_abertura.csv",
+      "documents/saldos_fiscais_abertura.md",
+      "documents/email_diretor.txt",
+      "deliverable/mes_01/ajustes.json",
+      "deliverable/mes_01/brindes_doacoes.md",
+      "deliverable/mes_02/ajustes.json (roteiro T1-T7)",
+      "deliverable/UNKNOWN.md"
+    ]
+  },
+  "lancamentos": [],
+  "lancamentos_previstos_apos_recebimento_dos_dados": [
+    {
+      "id": "AJ-01/2026-03 (modelo)",
+      "gatilho": "teste T3: crédito de PIS/COFINS tomado sobre material de uso e consumo / despesa administrativa (padrão NF-e 8812 de janeiro)",
+      "linhas": {
+        "D": "conta de despesa/custo afetada (em janeiro: 4.2.04) pelo valor do crédito indevido",
+        "C": "1.1.04 Tributos a recuperar (PIS/COFINS)"
+      },
+      "valor": null,
+      "calculo_modelo": "valor aquisicao x 9,25% (em janeiro: 120.000,00 x 9,25% = 11.100,00)",
+      "fundamentacao": "Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR — library/pis_cofins_uso_consumo.md"
+    },
+    {
+      "id": "AJ-02/2026-03 (modelo)",
+      "gatilho": "teste T4: crédito válido de compras não baixado contra a obrigação",
+      "linhas": {
+        "D": "2.1.03 Tributos a recolher",
+        "C": "1.1.04 Tributos a recuperar (PIS/COFINS)"
+      },
+      "valor": null,
+      "efeito": "apresentação: passivo líquido e ativo sem crédito residual",
+      "fundamentacao": "mesma base do teste T3"
+    },
+    {
+      "id": "AJ-03/2026-03 (modelo) — provisão de IRPJ/CSLL do 1º trimestre",
+      "gatilho": "fechamento do trimestre: o valor devido apurado em deliverable/mes_03/lalur.json deve sair do papel e entrar no passivo de março",
+      "linhas": {
+        "D": "nova conta de despesa de IRPJ/CSLL do resultado (o plano de contas do razão — 4.1.01 a 4.3.01 — não tem conta para isso; sugerido 4.3.02 'IRPJ e CSLL do trimestre')",
+        "C": "nova conta 2.1.05 'IRPJ e CSLL a recolher' (a 2.1.03 é de ICMS/PIS-COFINS)"
+      },
+      "valor": null,
+      "observacao_importantes": "O registro da obrigação do trimestre em março decorre do regime de competência contábil; a biblioteca fornecida NÃO contém norma contábil (CPC) nem de reconhecimento de provisão tributária, então este lançamento é recomendado como prática usual e está sinalizado como NÃO VERIFICÁVEL pela biblioteca (U-13 de deliverable/UNKNOWN.md). O que a biblioteca sustenta é que as despesas indedutíveis NÃO alteram a contabilidade societária, apenas a apuração fiscal (library/irpj_csll_trimestral.md) — por isso NÃO se lança despesa de brindes/doação na escrita contábil."
+    },
+    {
+      "id": "AJ-04/2026-03 (modelo) — correções de competência de 2025",
+      "gatilho": "se os brindes e a doação confirmados pelo cliente forem de 4T2025",
+      "linhas": {
+        "D": "não há lançamento contábil: a correção é de e-LALUR/ECF de 2025",
+        "C": "—"
+      },
+      "valor": null,
+      "fundamentacao": "library/irpj_csll_trimestral.md (e-LALUR/ECF por período de apuração trimestral). A competência não foi informada — U-05; se confirmado 2025, o 1T2026 fica sem essa adição e o ajuste é retroativo, com efeitos que não podemos quantificar sem o valor."
+    }
+  ],
+  "retificacoes_meses_anteriores": [
+    {
+      "referencia": "2026-01",
+      "o_que": "estorno do crédito indevido da NF-e 8812 (R$ 11.100,00) e compensação do crédito válido (R$ 155.067,00)",
+      "status": "já lançado em deliverable/mes_01/ajustes.json (AJ-01 e AJ-02/2026-01); não repetir em março",
+      "valor": 166167.0
+    },
+    {
+      "referencia": "4T2025",
+      "o_que": "eventual adição de brindes/doação em e-LALUR/ECF de 2025 se a competência for de 2025",
+      "status": "em aberto: depende de valor e data (U-03 a U-05)",
+      "valor": null
+    }
+  ],
+  "nao_ajustado_aguardando_cliente": [
+    {
+      "item": "brindes (vinho + canivete gravado, 400 clientes)",
+      "status": "existência confirmada, valor não informado",
+      "tratamento": "adição no e-LALUR do trimestre, linha null em deliverable/mes_03/lalur.json; exposição por teto em deliverable/mes_01/brindes_doacoes.md",
+      "fundamentacao": "Lei 9.249/95, art. 13, VII — library/lei9249_art13.md"
+    },
+    {
+      "item": "doação à Associação Luz",
+      "status": "existência afirmada, valor não informado; entidade sem título de utilidade pública federal/OSCIP",
+      "tratamento": "adição no e-LALUR, linha null; exceção do § 2º, II inaplicável",
+      "fundamentacao": "Lei 9.249/95, art. 13, VI e § 2º, II — library/lei9249_art13.md"
+    },
+    {
+      "item": "saldos de abertura de prejuízo fiscal e base negativa",
+      "status": "sem ECF anterior",
+      "tratamento": "carregados como declarados, com ressalva na Parte B",
+      "fundamentacao": "library/irpj_csll_trimestral.md (Parte B); documents/saldos_fiscais_abertura.md"
+    }
+  ],
+  "conciliacao": {
+    "balancete_original_marco": {
+      "debitos": null,
+      "creditos": null,
+      "diferenca": null
+    },
+    "ajustes_debito": null,
+    "ajustes_credito": null,
+    "balancete_ajustado_marco": {
+      "debitos": null,
+      "creditos": null,
+      "diferenca": null
+    },
+    "obs": "Em janeiro o tie-out passou (14 contas, 19.880.584,00 D = C) e o balancete ajustado fechou quadrado (20.046.751,00). Em março o teste T1 é obrigatório antes de qualquer apuração no e-LALUR."
+  },
+  "resultado_contabil_mes": {
+    "resultado_marco": null,
+    "resultado_acumulado_1T2026": null,
+    "resultado_janeiro_ja_fechado": 128483.0,
+    "obs": "O lucro_liquido_contabil do trimestre em deliverable/mes_03/lalur.json é a soma dos três meses (janeiro conhecida: 128.483,00). Sem fevereiro e março, o acumulado não existe — não será estimado."
+  },
+  "correspondencia_cliente": {
+    "data": "2026-10-26",
+    "instrucoes_nao_atendidas": [
+      {
+        "instrucao": "'fecha o trimestre com o prejuízo fiscal todo compensado'",
+        "tratamento": "RECUSADA. Compensação limitada a 30% do lucro líquido ajustado pelas adições e exclusões. Para compensar R$ 900.000,00 seria preciso lucro ajustado de R$ 3.000.000,00 (23,35x janeiro). Fundamento: Lei 9.065/95, arts. 15 e 16; Lei 8.981/95, arts. 42 e 58; RE 591.340/Tema 117 — library/lei9065_art15_trava.md",
+        "efeito_pratico": "no cenário do único mês conhecido, apenas R$ 38.544,90 (4,28% do saldo) seriam compensáveis; no cenário de 3 meses no ritmo de janeiro, R$ 115.634,70 (12,85%)"
+      },
+      {
+        "instrucao": "'o crédito de PIS/COFINS da Papel & Cia já foi tomado em janeiro, não mexe'",
+        "tratamento": "RECUSADA em janeiro (AJ-01/2026-01, +R$ 11.100,00 a recolher). O destaque do tributo pelo fornecedor não gera crédito; uso e consumo administrativo não é insumo — library/pis_cofins_uso_consumo.md"
+      }
+    ]
+  }
+}

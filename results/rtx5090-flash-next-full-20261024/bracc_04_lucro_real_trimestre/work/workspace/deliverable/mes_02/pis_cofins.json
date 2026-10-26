@@ -1,0 +1,32 @@
+{
+  "competencia": "2026-02",
+  "regime": "não cumulativo (PIS 1,65% + COFINS 7,60% = 9,25%)",
+  "status": "BLOCKED_sem_dados_de_entrada",
+  "apurado": false,
+  "debito": null,
+  "creditos": null,
+  "estornos": null,
+  "a_recolher": null,
+  "retificacoes": "Não apurado: o razão analítico e o balancete de fevereiro/2026 não foram entregues (documents/ contém apenas mes_01/, balancete_abertura.csv, saldos_fiscais_abertura.md e email_diretor.txt). Em 26/10/2026 (rodada 3) o cliente declarou não ter informação adicional. Sem base de receita e sem relação de créditos não é possível calcular débito, créditos, estornos nem valor a recolher, e não será preenchido com estimativa (CONTRACT.md: 'do not invent facts'; 'show the arithmetic'). Retificações em aberto, todas sem valor: (i) EFD-Contribuições de 01/2026 para excluir o crédito indevido de R$ 11.100,00 da NF-e 8812, já apurada em deliverable/mes_01/pis_cofins.json — a situação de transmissão/pagamento dessa competência continua desconhecida (U-06), o que impede afirmar se há acréscimos legais (U-07: não calculável, a biblioteca não contém a norma); (ii) se a mesma rotina de crédito sobre material de uso e consumo se repetir em fevereiro/março, estornar e retificar a EFD de cada competência (teste T3 de deliverable/mes_02/ajustes.json); (iii) eventual EFD/ECF de 4T2025 se brindes e doação forem de competência de 2025 (U-05).",
+  "calculo": "Não executável sem os dados de fevereiro. Roteiro que será aplicado (idêntico ao de janeiro, que fechou): débito = receita bruta tributável × 9,25%; créditos = apenas aquisições que sejam insumo da atividade (mercadorias para revenda), conferido item a item; estornos = créditos tomados sobre uso e consumo / despesa administrativa, vedados (Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR — library/pis_cofins_uso_consumo.md); a recolher = débito − créditos válidos + estornos.",
+  "conferencias_obrigatorias": {
+    "debito_deve_bater_com_conta": "3.1.02 (PIS/COFINS sobre vendas) × 9,25% da receita bruta tributável",
+    "creditos_devem_bater_com_conta": "1.1.04 (Tributos a recuperar), com classificação insumo × uso e consumo linha a linha",
+    "a_recolher_deve_bater_com_conta": "2.1.03 (Tributos a recolher) na parcela da competência",
+    "resultado_esperado_da_conciliacao": "razão × balancete quadrados; 1.1.04 sem saldo residual a menos que haja crédito efetivo a compensar"
+  },
+  "heranca_de_janeiro_para_fevereiro": {
+    "a_recolher_01_2026_corrigido": 79883.0,
+    "a_recolher_como_apurado_pelo_cliente_01_2026": 68783.0,
+    "diferenca_estornada": 11100.0,
+    "saldo_credito_pis_cofins_31_01_2026": 0.0,
+    "obs": "Valores de janeiro (já fechados, conferidos). Servem de abertura; não se transfere crédito algum para fevereiro porque o crédito válido de janeiro foi integralmente compensado com a obrigação do próprio mês (AJ-02/2026-01)."
+  },
+  "obrigacao_no_balancete_ajustado": {
+    "conta": "2.1.03",
+    "PIS_COFINS_02_2026": null,
+    "saldo_total_conta_ajustado": null,
+    "obs": "A conta 2.1.03 tinha saldo ajustado de R$ 997.683,00 C a 31/01/2026 (abertura 740.000,00 + ICMS jan 177.800,00 + PIS/COFINS jan 79.883,00); o movimento de fevereiro depende dos dados ausentes."
+  },
+  "pendencia_dirigente": "Persiste a instrução 'não mexer' no crédito de PIS/COFINS (documents/email_diretor.txt). Se fevereiro contiver crédito sobre material de uso e consumo, o estorno será feito igualmente: o destaque do tributo pelo fornecedor não gera direito a crédito; o que gera crédito é o bem ser insumo da produção/revenda (library/pis_cofins_uso_consumo.md). Ver deliverable/mes_01/ajustes.json (AJ-01/2026-01 e correspondencia_cliente)."
+}

@@ -1,0 +1,58 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "questions": "# QUESTIONS FOR THE CLIENT — Meridian / Zhao (§8 non-compete)\n\nAnswering these will not change the bottom line (do not file; do not assert §8), but each one moves a number in the exposure model or closes a gap I had to label as an assumption. Where I had to assume, I said so in `memo.md` §8.\n\n## A. Facts I assumed about Zhao\n\n1. **Did Zhao actually start at Kestrel Autonomy on or about 2026-10-13**, and is Kestrel in fact engaged in the design or sale of autonomous mobile robots for warehouse logistics? *(If he has not started, §8's operative period is still unused and the remediation calculus changes; if he started, the delay argument against emergency relief is already baked in.)*\n2. **Has any demand letter, cease-and-desist, stop-work letter, or email to Kestrel been sent** — by HR, a manager, or the firm — that mentions §8, §9, or \"the non-compete\"? If yes: date, sender, exact wording, and whether Kestrel or Zhao forwarded it to counsel. *(Under §16600.5(b) an \"attempt to enforce\" can be the violation itself; a letter already in the world means the exposure clock may already be running. This is the single most urgent answer.)*\n3. **Was Zhao ever a Meridian employee (or contractor) before 2024-02-14**, under any earlier agreement that §8 was added to by amendment or extension? *(This decides whether he was a \"current employee\" for the §16600.1(b) notice duty, and whether §14 was \"modified, or extended\" on or after 1/1/2017 under §925(f) — different analysis in both cases.)*\n4. **Is there any evidence Zhao removed data, code, models, or documents** — DLP alerts, access logs, device-return audit, USB/cloud egress? *(§10 confidentiality and any trade-secret theory is the only legitimate litigation asset here. Note that trade-secret law is not in my reference library, so a claim would need separate research before filing.)*\n5. **What specifically does Meridian believe it loses** if Zhao works at Kestrel — named customers, a roadmap, a cost model? Anything beyond \"he is a good engineer at a competitor\" is not a legally cognizable injury in California.\n\n## B. The form and the population (drives the real number)\n\n6. **How many California-resident engineers are on, or were hired onto, the standard form containing §8?** Break it out by hire date relative to **2024-02-14** (the §16600.1(b) notice deadline) and **2024-01-01** (the §16600.5 effective date and the \"employed after\" cut-off), and say how many have already left. *(My pattern-exposure table is linear in this headcount and currently illustrative only.)*\n7. **Is the §8 form still being used today** for California-resident hires, and for how long after 2024-01-01 was it used? *(Each California hire on the form is a fresh §16600.5(c) violation; if it is still in use, that is the first thing to stop.)*\n8. **Has any notice under §16600.1(b) been sent to anyone** — to Zhao, to other California engineers, or to a subset? Please give the LO-233 ticket text, its owner, and who decided to deprioritize it. *(The deprioritization record is the worst exhibit in the file and determines whether the notice exposure is a compliance gap or a documented knowing omission.)*\n9. **Do any other Meridian employees (any state) have §8 variants**, and does any of them have a *negotiated*, counsel-reviewed agreement? *(Determines whether this is a form defect across the board or whether some contracts are defensible.)*\n\n## C. The agreement as a whole (I only have an excerpt)\n\n10. **Is there a prevailing-party attorney's-fee clause anywhere in the full agreement?** Also please provide §§11–13 and 16–18 and any arbitration, class-waiver, PIIA, or severability provisions. *(My model assumes Meridian has NO contractual fee recovery while Zhao has two statutory fee bases. If there is a mutual fee clause, the asymmetry shrinks; if there is an arbitration clause, the whole forum analysis changes.)*\n11. **Does the agreement (or a separate PIIA/offer letter) contain a merger or \"entire agreement\" clause**, and does anything else in the offer package address California law, remote-work terms, or choice of law?\n12. **What specific confidential information did Meridian promise or actually give Zhao** under §10 (designs, source, training data, customer lists), and is that documented? *(This is what carries the \"ancillary\" element under Sheshunoff/Marsh in the Texas-law branch.)*\n\n## D. Prior matters and the firm's own memos\n\n13. **What is the status of the \"Alvarez matter\"** in which the 2024 memo recommended suing in Travis County? Was suit filed, in what court, on what form of agreement, and is the employee California-based? Was *Calderon* or *Westbrook* cited in a brief? *(If Meridian already sued on this form, the §16600.5 analysis may be live on an existing docket, and the fee exposure may already exist.)*\n14. **Is the Zhao file materially different from Alvarez** in any way other than the 2024 execution date?\n15. **Can you pull the current status of *Westbrook Systems, Inc. v. Ng* en banc and *Calderon v. Pacific Dynamics*?** Neither is in my library, and the 2025 memo records *Westbrook* as granted rehearing en banc (argued Jan. 2025) with no disposition in our file. Whoever has subscription access needs to confirm whether the extraterritoriality holding survived. *(This is the only authority in the firm's file that would help us, and it is currently unverifiable.)*\n\n## E. Decisions I need from you\n\n16. **Authorize an immediate form change**: drop §8/§9 for California-resident hires going forward. *(Every week of continued use adds violations.)*\n17. **Authorize voluntary §16600.1(b)-style notices** (individualized writing, mailing **and** email) to current California employees and qualifying former employees whose contracts contain §8 — or tell me you want that decision escalated. *(Cheap mitigation, versus memorializing that §8 is void in California. My recommendation is to send them.)*\n18. **Confirm a litigation hold** on LO-233, the DocuSign metadata, the form-template history, and the §15 recital's drafting history.\n19. **Budget/objective check**: if your real goal is deterrence (slowing the next three departures) rather than recovering against Zhao, tell me — the answer is still \"don't file,\" but I would write a different memo about §10 discipline, notice periods, and what to put in future Texas-based hires' agreements.\n20. **Confirm no confidential information is at risk** or, if it is, that you want a separate trade-secrets assessment (outside the scope of this library).\n",
+  "facts": [
+    {
+      "id": "austin_trips",
+      "trigger": [
+        "Texas",
+        "Austin",
+        "ever in Texas",
+        "physically"
+      ],
+      "answer": "Twice: onboarding week March 2024, and an offsite October 2025. Otherwise Oakland.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "counsel",
+      "trigger": [
+        "counsel",
+        "lawyer",
+        "negotiat",
+        "represented"
+      ],
+      "answer": "No. It's our standard form; engineers sign the same day. Nobody negotiates.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "notice_1076",
+      "trigger": [
+        "AB 1076",
+        "notice",
+        "February 14",
+        "16600.1"
+      ],
+      "answer": "Legal ops never sent the notices. The ticket was closed as 'won't do'. Please don't put that in writing if you can avoid it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trade_secrets",
+      "trigger": [
+        "trade secret",
+        "confidential",
+        "took",
+        "misappropriat"
+      ],
+      "answer": "No evidence he took anything. He said he wouldn't. It's the competing itself we object to.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "austin_trips",
+    "counsel",
+    "notice_1076",
+    "trade_secrets"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

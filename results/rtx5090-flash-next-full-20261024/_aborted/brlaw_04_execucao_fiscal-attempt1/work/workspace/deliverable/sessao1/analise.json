@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "sessao": 1,
+    "execucao": "5001234-56.2026.4.03.6182 (1ª Vara Federal de Execuções Fiscais/SP)",
+    "cda": "CDA 80.4.26.001234-55",
+    "executada": "Marmoraria Pedra Viva Ltda., CNPJ 12.345.678/0001-90",
+    "marcos": {
+      "auto_de_infracao_lavrado": "2026-02-03",
+      "ciencia_do_contribuinte": "2026-02-10",
+      "inscricao_em_divida_ativa": "2026-07-10",
+      "citacao_informada_pelo_contrato": "2026-09-14",
+      "mandado_devolvido_negativo": "2026-09-28"
+    },
+    "valores_cda": {
+      "principal": 572000,
+      "multa_oficio": 429000,
+      "juros_selic_ate_inscricao": 99000,
+      "total": 1100000,
+      "conferencia": "139.360+125.320+157.040+150.280 = 572.000 (principal); 104.520+93.990+117.780+112.710 = 429.000 (multa); 24.120+21.690+27.180+26.010 = 99.000 (juros); soma = 1.100.000. Bate com o total da CDA."
+    }
+  },
+  "periodos": [
+    {
+      "periodo": "3T/2020",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 268000,
+      "principal": 139360,
+      "multa": 104520,
+      "juros_na_inscricao": 24120,
+      "fundamento": "PAF: nenhum pagamento e DCTF zerada, ou seja, não houve declaração do débito. A regra é a do art. 173, I do CTN, na leitura da Súmula 555 do STJ (débito não declarado, tributo com pagamento antecipado sem exame prévio) e do Tema 163 (REsp 973.733/SC: sem pagamento, aplica-se o art. 173, I). Termo inicial em 2021-01-01 (primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado: o trimestre fechou em 30/09/2020 e a quota trimestral do lucro real venceu no exercício de 2020). Prazo completado em 31/12/2025; o auto de infração é de 03/02/2026, portanto 34 dias depois. Blindagem: se a Fazenda sustentasse que a DCTF zerada foi declaração do débito e invocasse o art. 150 §4º (FG em 30/09/2020), o limite seria 30/09/2025 e a decadência estaria igualmente consumada (126 dias)."
+    },
+    {
+      "periodo": "4T/2020",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 241000,
+      "principal": 125320,
+      "multa": 93990,
+      "juros_na_inscricao": 21690,
+      "fundamento": "PAF: pagamento antecipado parcial (DARF de R$ 61.000,00 em 29/01/2021), declarado a menor. Havendo pagamento antecipado parcial, aplica-se o art. 150 §4º e não o art. 173, I (Tema 163, REsp 973.733/SC). O prazo de 5 anos corre da ocorrência do fato gerador, aqui tomado como o último dia do 4º trimestre, 31/12/2020, completando-se em 31/12/2025; o lançamento em 03/02/2026 é tardio em 34 dias. A ressalva final do art. 150 §4º (dolo, fraude ou simulação) não foi ativada pela CDA, que aplicou multa de 75% (Lei 9.430/96, art. 44, I) e não a qualificada de 150% (art. 44, §1º) e não descreve conduta fraudulenta."
+    },
+    {
+      "periodo": "1T/2021",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2026-03-31",
+      "decaido": false,
+      "valor": 302000,
+      "principal": 157040,
+      "multa": 117780,
+      "juros_na_inscricao": 27180,
+      "fundamento": "PAF: pagamento antecipado parcial (DARF de R$ 84.000,00 em 30/04/2021), declarado a menor, portanto art. 150 §4º (Tema 163). FG em 31/03/2021 e prazo até 31/03/2026. O auto de infração de 03/02/2026 foi lavrado 56 dias antes do termo: não há decadência a arguir. Reconhecimento expresso na peça, com redução do débito exequendo."
+    },
+    {
+      "periodo": "2T/2021",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2026-12-31",
+      "decaido": false,
+      "valor": 289000,
+      "principal": 150280,
+      "multa": 112710,
+      "juros_na_inscricao": 26010,
+      "fundamento": "PAF: nenhum pagamento, DCTF zerada (omissão total), logo art. 173, I (Súmula 555). Termo inicial 2022-01-01 e limite 31/12/2026; lançado faltando 331 dias. Mesma conclusão se aplicado o art. 150 §4º a partir de 30/06/2021 (limite 30/06/2026). Não há decadência a arguir; defesa deste período só por vícios formais."
+    }
+  ],
+  "valor_decaido": 509000,
+  "valor_remanescente": 591000,
+  "aritmetica_das_parcelas": {
+    "decaido_3T2020_4T2020": "268.000 + 241.000 = 509.000 (principal 139.360+125.320 = 264.680; multa 104.520+93.990 = 198.510; juros 24.120+21.690 = 45.810; soma 509.000)",
+    "remanescente_1T2021_2T2021": "302.000 + 289.000 = 591.000 (principal 157.040+150.280 = 307.320; multa 117.780+112.710 = 230.490; juros 27.180+26.010 = 53.190; soma 591.000)",
+    "percentuais": "decaído 46,3% do débito inscrito; remanescente 53,7%. Sobre o remanescente continuam a incidir juros SELIC após 10/07/2026, de modo que o valor exequendo é superior a 591.000 na data da garantia/penhora."
+  },
+  "vicios_formais": [
+    "CDA inepta quanto à multa de ofício: o campo 'fundamento da multa' está em branco e o TVF aplicou 75% 'nos termos da legislação', sem indicar o dispositivo. O art. 2º, §5º, III da Lei 6.830/80 exige que o Termo de Inscrição indique origem, natureza e fundamento legal da dívida, e a multa responde por R$ 429.000,00 (39% do débito inscrito). Ressalva honesta: trata-se de vício formal sanável por emenda ou substituição da CDA até a decisão de 1º grau (LEF, art. 2º, §8º; Súmula 392 do STJ), com devolução do prazo de embargos; o percentual de 75% corresponde exatamente a 75% do principal de cada linha (conferido), isto é, ao art. 44, I da Lei 9.430/96, então o ataque é de fundamentação, não de cálculo.",
+    "Juros/SELIC sem memória de cálculo verificável: em todas as quatro linhas o 'juros SELIC até a inscrição' equivale a exatamente 9,00% do total da linha e a exatamente 17,3077% do principal, apesar de fatos geradores e vencimentos distintos e de tempos diferentes até a inscrição (10/07/2026). Alíquotas idênticas e redondas são incompatíveis com SELIC mensal composta contada de marcos distintos, o que impede a conferência do valor exequendo. O fundamento legal da atualização consta (Lei 9.430/96, art. 61, §3º, exigido pelo art. 2º, §5º, IV da LEF), mas a apuração não. Pedido subsidiário: intimação da exequente para a memória de cálculo e impugnação do que exceder.",
+    "Endereço desatualizado na CDA e contradiction de citação: a CDA indica a Rua das Pedras, 100, endereço do qual a empresa se mudou com alteração registrada na JUCESP em 12/03/2026 e atualizada na RFB em 20/03/2026, antes da inscrição (10/07/2026). O oficial de justiça devolveu mandado negativo em 28/09/2026, mas o cadastro do escritório registra citação em 14/09/2026. Não é causa de nulidade da CDA, mas precisa ser saneado (é o marco de prazo), e desde já afasta a presunção da Súmula 435 do STJ, que exige dissolução 'sem comunicação aos órgãos competentes' (a biblioteca consigna que a comunicação anterior à diligência afasta a presunção).",
+    "Mérito da presunção de omissão de receitas não defensável com a biblioteca disponível: a CDA apura 'depósitos bancários sem origem comprovada' e invoca a Lei 9.430/96, art. 42, dispositivo que não integra a biblioteca deste engajamento. Qualquer tese sobre a presunção dos depósitos é, aqui, não verificada; foi aberta pergunta ao cliente (extratos/escrituração) em vez de ser alegada.",
+    "Inconsistência documental a esclarecer: o DARF de 4T/2020 está registrado como pago em 29/01/2021. Se a quota do 4º trimestre do lucro real trimestral vence em abril do ano seguinte, o pagamento seria anterior ao vencimento; a data exata de vencimento de cada quota pesa no marco do art. 173, I e precisa ser conferida no PAF/DARF/DASN. Pergunta formulada ao cliente."
+  ],
+  "veiculo": "exceção de pré-executividade",
+  "por_que": "A decadência é matéria conhecida de ofício e, no caso, comprovável com prova pré-constituída: os períodos de apuração estão na própria CDA e os marcos de lançamento/inscrição também, de modo que não se exige dilação probatória - hipótese expressamente admitida pela Súmula 393 do STJ (exceção de pré-executividade para matérias conhecíveis de ofício que não demandem dilação probatória, citando decadência, prescrição e ilegitimidade manifesta). Os embargos à execução, ao contrário, são incabíveis sem garantia do juízo (LEF, art. 16 e §1º) e o prazo de 30 dias só corre da garantia: antecipar embargos significaria oferecer penhora, depósito, fiança bancária ou seguro-garantia (LEF, art. 9º) sobre valor que se pretende reduzir em 46,3%, quando a exceção dispensa garantia. Também não há prescrição a alegar: a constituição definitiva é de 03/02/2026 (ciência em 10/02/2026, sem impugnação) e o prazo do art. 174 do CTN corre até 03/02/2031. A peça argui a decadência de 3T/2020 e 4T/2020, reconhece a higidez de 1T/2021 e 2T/2021 (o que reduz a base de garantia e valoriza a credibilidade do pedido) e, no mesmo instrumento, impugna a fundamentação da multa e a memória de cálculo dos juros, com reserva expressa de embargos no prazo do art. 16 e da vedação da Súmula 392 (emenda da CDA não pode modificar o sujeito passivo), o que protege as sessões 3 e 4.",
+  "premissas_e_ressalvas": [
+    "Premissa central não verificável na biblioteca: a data do fato gerador do IRPJ/CSLL apurados pelo lucro real trimestral. Adotou-se o último dia de cada trimestre (30/09/2020, 31/12/2020, 31/03/2021, 30/06/2021) e, para o art. 173, I, que o lançamento poderia ter sido efetuado no exercício do vencimento da quota trimestral. A biblioteca não contém o Decreto 9.580/2018 (RIR, arts. 258-260), citado pela própria CDA, nem julgado sobre o FG trimestral; a tese é, portanto, rotulada como premissa do escritório e não como direito verificado.",
+    "Consequência da premissa: todo o resultado de R$ 509.000,00 depende de o fato gerador/marco ser o trimestre, e não o ajuste anual. Ver 'cenarios_alternativos'.",
+    "O PAF foi 'extraído pelo escritório' (resumo), e não documento oficial juntado; para que a exceção não enfrente alegação de dilação probatória (Súmula 393) é necessário instruir com cópia do TVF/auto de infração, do PAF e dos DARFs de 29/01/2021 e 30/04/2021.",
+    "Nada foi alegado sobre dolo, fraude ou simulação pela Fazenda; a conclusão de que a ressalva do art. 150 §4º não incide decorre do texto da CDA, e pode ser revista se a Fazenda emendar a CDA nesse sentido na Sessão 2.",
+    "Não se alegou ilegitimidade passiva, inexigibilidade por pagamento, nem o mérito da omissão de receitas: os documentos recebidos não sustentam essas teses e a base legal necessária não está na biblioteca."
+  ],
+  "cenarios_alternativos": [
+    {
+      "cenario": "S1 - tese primária (FG/vencimento por trimestre)",
+      "decaido": 509000,
+      "remanescente": 591000,
+      "obs": "3T/2020 e 4T/2020 decaídos; 1T/2021 e 2T/2021 vivos."
+    },
+    {
+      "cenario": "S2 - leitura da Fazenda provável (FG/lançamento somente após o ajuste anual de abril)",
+      "decaido": 0,
+      "remanescente": 1100000,
+      "obs": "3T/2020: art. 173, I contaria de 01/01/2022 (limite 31/12/2026); 4T/2020: art. 150 §4º contaria de 30/04/2021 (limite 30/04/2026). Nenhum período decaído. É o risco real da Sessão 2: a defesa precisa atacar o marco, e o fato de a Fazenda ter lançado 1T/2021 apenas 56 dias antes de 31/03/2026 sugere que ela própria adotou marco próximo do trimestre para 2021 - argumento indutivo a nosso favor."
+    },
+    {
+      "cenario": "S3 - Fazenda alega dolo/fraude/simulação (ressalva do art. 150 §4º)",
+      "decaido": 509000,
+      "remanescente": 591000,
+      "obs": "Mantido o marco trimestral e deslocada a regra para o art. 173, I, 3T/2020 (termo 01/01/2021) e 4T/2020 (termo 01/01/2021) continuam decaídos em 34 dias; 1T/2021 passaria a 31/12/2026 e continuaria vivo. Atenção: alegação de fraude também sustentaria multa de 150% (art. 44, §1º da Lei 9.430/96) e reabriria o quantum."
+    },
+    {
+      "cenario": "S4 - DCTF zerada tida como declaração do débito (art. 150 §4º para os omitidos)",
+      "decaido": 509000,
+      "remanescente": 591000,
+      "obs": "3T/2020 decaído ainda mais cedo (limite 30/09/2025); 2T/2021 vivo (limite 30/06/2026). Resultado financeiro idêntico ao S1."
+    }
+  ],
+  "prescricao": {
+    "regra": "CTN art. 174 - 5 anos da constituição definitiva",
+    "constituicao_definitiva": "2026-02-03 (auto de infração; ciência em 10/02/2026, sem impugnação)",
+    "limite": "2031-02-03",
+    "prescrito": false
+  },
+  "alertas_para_sessoes_futuras": [
+    "CDA sem corresponsável indicado na inscrição: eventual redirecionamento não pode ser feito por emenda da CDA, porque a Súmula 392 do STJ veda a modificação do sujeito passivo na substituição/correção da certidão.",
+    "Para o redirecionamento à ex-sócia (Sessões 3 e 4): a mudança de sede foi comunicada à JUCESP (12/03/2026) e à RFB (20/03/2026) antes da inscrição e antes da diligência de 28/09/2026, o que, pela própria biblioteca, afasta a presunção da Súmula 435; e a Súmula 435 pressupõe deixar de funcionar no domicílio fiscal sem comunicação.",
+    "Débito decaído não se transaciona: a transação por adesão implica confissão irrevogável e desistência de defesas, e os créditos decaídos devem ser excluídos antes (biblioteca, transacao_pgfn.md). Por isso a exceção de pré-executividade vem antes de qualquer negociação - e reduz a base de transação e de garantia.",
+    "Base de garantia futura cai para R$ 591.000,00 (mais SELIC), o que reduz em cerca de 46% o custo de seguro-garantia/fiança calculado sobre o valor atualizado acrescido de 30% (Portaria PGFN 164/2014)."
+  ]
+}

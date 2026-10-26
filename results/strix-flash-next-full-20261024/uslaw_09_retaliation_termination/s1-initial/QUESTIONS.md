@@ -1,0 +1,61 @@
+# Open items, assumptions, and information needed
+
+**Status of the questioning:** the client answered the four questions that drove the analysis (investigation status, decision-maker, FMLA request status, individual vs. group) and then stated: *"For questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."*
+
+Accordingly this file **does not repeat answered questions**. It records (A) what the client's answers established, (B) the unknowns that remain and are now flagged as assumptions, (C) the legal standards we could not verify inside the closed library, and (D) one authorization request. Questions are grouped, and each explains why it matters. Where a number appears in the deliverables as an assumption, it is listed here.
+
+---
+
+## A. Established by the client's answers (no longer open)
+
+| Established fact | Effect on the analysis |
+|---|---|
+| Nothing has been done on the 09/12 complaint: *"Honestly, nothing. Tom's been traveling. I was going to get to it."* | 24 days of admitted inaction; no remedial defense; inaction becomes retaliation evidence (`library/harassment_investigation_duty.md`) |
+| *"Tom wrote the PIP and Tom wants her out. I'm just processing it."* | Accused = author of the only performance document = decision-maker; no independent-decision-maker defense; PIP-as-adverse-action raised to **high** |
+| *"We haven't approved or denied it. Certification came in 10/3. Tom said to wait."* | Leave request stalled 6 days at the accused's direction; new claim flagged (FMLA interference by inaction), and the "not yet approved" argument is foreclosed (`library/fmla_2615.md`: reaches "requested" leave) |
+| *"Just her. No RIF."* | Individual termination → **21-day** OWBPA consideration period controls; the 45-day group-program alternative is removed from the analysis |
+
+## B. Unknowns that remain, and the assumption we are proceeding on
+
+For each: what is missing, and what the deliverables assume in the meantime.
+
+1. **Base salary / pay detail.** Assumption: exposure figures are expressed as ratios only (4 weeks = 4/52 = 7.7% of base; FMLA one-year doubled = 104 weeks = 26× the offered severance). No dollar figure is asserted anywhere.
+2. **The complete separation agreement.** Only clauses 3, 4, 7, 9, 11 were produced. Assumption: the written attorney advisory required by § 626(f)(1)(E) is **absent until the full form is produced**, and is treated as a defect, not as compliant.
+3. **Whether any part of the 4 weeks is already owed** under policy, plan, employment agreement, or Columbia final-pay rules. Assumption: unconfirmed; the § 626(f)(1)(D) consideration element is flagged as an open risk rather than satisfied.
+4. **Retention / auto-deletion settings** for Hale's and Ortiz's email, chat, text, mobile; device replacement cycles; whether Dana's CRM permissions or record ownership changed after 09/12. Assumption: unresolved — the hold must therefore issue in writing today and be confirmed by IT.
+5. **Any other complaints against Tom Hale** (any source, any date). Assumption: none known to us; if any exist, the harassment and retaliation claims strengthen materially.
+6. **CRM / pipeline-hygiene documentation predating 2026-09-16.** Assumption: **none exists** — the client has no additional information, and the personnel file summary lists no prior discipline or PIP. This is the single most consequential assumption in the file: a stated reason with no contemporaneous documents is what the library calls a "thin justification" (`library/title_vii_704a.md`).
+7. **CRM hygiene scores for the four comparators** (Brennan, Osei, Lind, Park) for the same period as Dana's. Assumption: not produced; the comparator comparison is therefore built on 2026 YTD attainment, the only common metric in the file.
+8. **The PIP's "100% of quarterly quota" definition** — quarter measured on what period, and whether the plan states any interim milestone. Assumption: 100% is 12 points above her 2026 YTD attainment (88%), 8 above 2025 (92%), and above every year since 2023; and the plan's 60-day period would have closed 2026-11-15.
+9. **FMLA eligibility mechanics:** her hours in the last 12 months, site headcount, and whether her worksite has 50+ employees within 75 miles. Assumption: eligibility is **not** assumed to be established — only the 12-month service requirement is satisfied on the face of the file (hired 2019-04-15 = 7.48 years at 10/06). The FMLA claims are rated on the statutory interference/retaliation standard, with eligibility flagged as unverified.
+10. **Whether the handbook promises progressive discipline**, and whether Columbia recognizes an implied-contract exception. Assumption: unknown; no implied-contract claim is asserted (see C).
+11. **Whether any agency charge (EEOC/state agency) has been filed**, and whether Dana has an attorney. Assumption: none known; the analysis assumes pre-suit, which is why the hold and the do-not-terminate advice are still available to protect the company.
+12. **Whether the VP's "this week" deadline is a business preference or a committed representation to anyone.** Assumption: preference. If it has been communicated to anyone outside the company, that is discoverable and should be preserved.
+13. **Whether Tom Hale has any documented performance concerns about Dana that pre-date 09/12** (manager notes, coaching, 1:1 records). Assumption: none, per item 6.
+14. **Dana's own account** — she has not been interviewed by us, and nothing in the file is from her. Assumption: the timeline's characterization of the complaint is accurate as recorded by HR.
+
+## C. Standards NOT in the closed library — deliberately not asserted
+
+Every citation in the deliverables is to a file listed in `library/INDEX.md`. The following were needed and are not there, so the deliverables flag them as **unverified** rather than citing anything:
+
+15. **Hostile-work-environment severity standard** — what conduct is "severe or pervasive." Consequence: we do not opine that Dana's underlying harassment claim succeeds; we opine only that the failure to investigate is conceded and is retaliation evidence.
+16. **Substantive ADEA standards** — protected-class definition, causation, burden-shifting. The library contains only the waiver provision, § 626(f)(1). Consequence: the age claim is described factually and rated medium; the OWBPA release defects are rated on solid library authority.
+17. **All FMLA process rules** — eligibility (12 months / 1,250 hours / 50 employees within 75 miles), "serious health condition," whether a parent is covered, designation and notice deadlines, the cure period for incomplete certification, recertification, and intermittent-leave scheduling. The library contains only § 2615(a) / § 825.220. Consequence: the "failure to decide the request" claim is rated **medium** and framed as negative-factor evidence, not as breach of a specific regulatory deadline.
+18. **Federal damages caps.** The library states FMLA remedies (lost wages, liquidated damages, fees, reinstatement) and that Columbia damages are uncapped, but it reproduces **no** federal cap provision of any kind. Consequence: total exposure is not quantified in dollars anywhere in the deliverables, and we say so; any cap figure someone gives the VP must come from outside this library and be checked there.
+19. **Columbia final-pay and limitations-period rules**, and whether Columbia has an implied-contract/handbook exception. The library gives only the at-will rule, the public-policy/statutory-rights exception, and "longer limitations period and uncapped compensatory damages." **The length of that period matters operationally:** it sets how long the litigation hold must remain in force, which is why the hold in `advice_to_hr.md` §6 is written as open-ended rather than tied to a federal timetable.
+20. **Non-disparagement / confidentiality / non-cooperation clause limits** — nothing in the library addresses clauses touching complaints or agency communications. Consequence: clause 9 is flagged for outside review, not blessed or condemned.
+21. **Whether a defective OWBPA waiver also degrades non-ADEA releases.** *Oubre* in the library speaks to ADEA claims only. Consequence: we do not assume the rest of the release survives, and we do not assume it fails.
+22. **Whether a PIP is a "materially adverse action."** The library supplies the Burlington Northern standard but does not apply it to performance plans. Consequence: rated as our judgment on the cited standard, with the reasoning shown.
+23. **Whether a biased subordinate's input can taint the decision of the person who formally acts.** No library authority addresses this. Consequence: we state the facts only — the accused wrote the PIP, the accused chose the outcome, HR says it is "just processing it" — without attaching a doctrinal label we cannot support from `library/INDEX.md`.
+24. **Employer liability standard for supervisor harassment** (the affirmative defense's two elements are only partially in the library via the investigation guidance). Consequence: the harassment claim is rated medium, not high.
+25. **Whether 09/12 complaint is protected if any part of it is later found not to be harassment** — good-faith-opposition standard is not spelled out in the library. Consequence: the retaliation claim rests on the library's express statement that an internal complaint of sexual harassment is protected opposition.
+26. **State-law leave analogs** (if Columbia has its own leave statute with different rules) — nothing in the library.
+
+## D. Authorization requested
+
+27. **Permission to go outside the closed library.** The engagement has been run on `library/INDEX.md` alone, which is why 12 of the 26 items above are flagged rather than answered. To close them we need, at minimum: the full 29 C.F.R. Part 825, the substantive ADEA and Title VII standards, the federal damages-cap provisions, and Columbia final-pay / limitations / implied-contract authority. **Please authorize, or instruct us to continue on the closed library only** (in which case items 15–26 stay flagged and any decision must be made on an admittedly incomplete legal record).
+28. **Whether you want us to prepare the corrective documents** — the litigation-hold notice, the written FMLA determination, the independent-investigation charter, and the removal of Tom Hale from all decisions about Dana. We have not drafted these; they are recommended in `advice_to_hr.md` items 0, 2, 3, 4 and each needs a signature and a date today or tomorrow.
+
+---
+
+*Nothing in the deliverables cites anything outside `library/INDEX.md`. Items 1–14 are factual gaps stated as assumptions; items 15–26 are legal standards we could not verify and therefore did not assert.*

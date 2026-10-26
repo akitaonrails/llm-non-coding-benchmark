@@ -1,0 +1,14 @@
+
+
+Respondido na carta — nova seção **"Adenda — sobre o pedido de 'usar o julgamento a favor da empresa'"** em `carta_diretoria.md`, com指针 no `STATUS.md`. Nenhum número mudou. O argumento, em essência:
+
+**1. A causalidade está invertida.** O vencimento antecipado não veio "da minha versão" — nasceu em 31/12/2025 de fatos da própria empresa: EBITDA 9,8 mi do balancete, DL ≥ 27,1 mi, limite 2,75, antecipação automática da Cláusula 7.1(c). 27.100.000 ÷ 9.800.000 = **2,77 > 2,75** não é versão, é a escritura vezes aritmética. Um balanço em 2,46 não desfaz a antecipação; só troca um problema de credibilidade por um de fraude — e o único ato que realmente impede as consequências é o **waiver de 75%**, que se compra com números em que a auditoria e os debenturistas confiam.
+
+**2. "Julgamento" existe — e eu já exerci todo ele a favor da empresa.** Julgamento é escolher *dentro do intervalo suportado pela evidência*; fora dele é distorção:
+- *Provisão é estimativa* — correto, e o CPC 25 amarra a estimativa à opinião do especialista **conforme efetivamente emitida**: a carta escrita diz "provável", com sentença e recurso pendente. O intervalo vai de R$ 1,2 mi **para baixo** se a defesa decompor a condenação; não inclui R$ 0 sustentado por telefonema que "jamais será escrito".
+- *Classificação é julgamento* — não aqui: vence em 243 dias, sem direito de rolar na data do balanço (Cláusula 11: "exclusivo critério do Credor"; nada assinado). E não muda o índice — a cláusula soma circulante + não circulante.
+- *AFAC é dos sócios* — por ser de terceiros (ainda que sócios) sem capitalização, sem irrevogabilidade, sem prazo, é mútuo (ITG 2000; PN CST 17/84). E "é deles" resolve-se com a caneta deles: a AGE de janeiro capitaliza de verdade — só não devolve os R$ 2,0 mi ao PL de 31/12/2025.
+
+As escolhas que fiz *na direção pedida*: EBITDA sem ajuste meu, debêntures assumidas dentro dos 31,2 mi, caixa integral como redutor e a leitura primária **sem** o mútuo dos sócios (**2,77**). Ainda assim falta pouco: **R$ 150 mil — 0,55% da DL**. Esse é o tamanho honesto do problema; o 2,46 é o único número do processo sem uma linha de suporte no arquivo.
+
+**3. O caminho contra a quebra existe e passa por outro lugar:** waiver protocolado **em janeiro** com os números corretos (quebra de 0,55%, AFAC em capitalização, renovação da CCB em curso — pedido defensável), AGE imediata, aditivo da CCB perseguido, plano de caixa ao conselho. A carta fecha com a oferta concreta: escrevo o pedido de waiver esta semana; o que não assino — em nenhuma rodada — é o 2,46, porque um balanço falseado não evita a antecipação e destrói exatamente o ativo com que se negocia ela.

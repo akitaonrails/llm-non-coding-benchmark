@@ -1,0 +1,61 @@
+{
+  "case": "uslaw_01_deadlines_removal",
+  "questions": "# QUESTIONS FOR CLIENT — Harbor Street Bakery LLC\n\nAnswering Q1–Q3 decides whether we can remove to federal court. **Q1–Q3 answers are needed by Tuesday, September 29, 2026** — the state-court answer is due **Thursday, October 1, 2026**, and the outside removal date is **Tuesday, October 13, 2026**. If I do not have Q1–Q3 by Tuesday, we serve a Washington answer by Oct. 1 and let the removal window lapse.\n\n## A. Citizenship of the LLC (dispositive for removal)\n\n1. **Member roster.** Give me every current owner/member of Harbor Street Bakery LLC, with: full legal name; whether the member is an individual or an entity (LLC, corporation, partnership, trust); the member's percentage interest; and, for each individual, the state where he or she is **domiciled** (where they actually live and intend to remain) — not just where they work. Please attach the operating agreement and any membership ledger / cap table / K-1s.\n2. **The Seattle \"partner.\"** Is the partner you described (\"up in Seattle — he runs the Seattle shop and he's the one who signed for the deliveries\") an owner/member of the LLC, or an employee/manager who happens to be a co-owner of something else? If he is a member: what state is he domiciled in, does he have a Washington residence, and since when? (The complaint calls him an \"employee\"; your email calls him a \"partner.\" If he is a Washington-domiciled member, **diversity and the forum-defendant rule both kill removal** — we would stay in King County Superior Court, and that is not a bad outcome.)\n3. **Entity members.** If any member is itself an LLC, partnership, or trust, give me that entity's own members/beneficiaries and their domiciles (and, for a corporation, its state of incorporation and principal place of business). Diversity has to run all the way down.\n4. **No Washington ownership, other than through members?** Confirm there is no Washington LLC, Washington individual, or Washington trust holding any interest, and no member who recently moved to Washington (and if someone moved, when).\n\n## B. The papers and service\n\n5. Did **Corporation Service Company** send you a copy of the summons and complaint on or right after **September 11, 2026**? Ask CRS for their service record/docket entry showing the date they received and forwarded the papers. (Was anything actually received *before* Sept. 11 — e.g., a process-server email, a text, a prior attempt? I am computing all dates from Sept. 11.)\n6. Which \"old address\" did CRS email, and did anyone else at Harbor Street receive the papers earlier than Sept. 27?\n7. Does Harbor Street also have a **Washington** registered agent, and do you have a Washington business-license/registration file? (This does not affect diversity, but it matters to how service could have been made and to any jurisdictional argument.)\n8. Has anything else been served on you or filed since (e.g., a request for a waiver of service, a motion, a scheduling notice)?\n\n## C. The claims\n\n9. **Supply Agreement.** Send me the executed agreement (dated on/about Feb. 3, 2025) with all amendments — specifically § 14 (attorney fees) and any **forum-selection, choice-of-law, arbitration, limitation-of-liability, or risk-of-loss** clauses. Also any course-of-dealing documents (delivery tickets, credit memos) covering the deliveries.\n10. **The withheld $110,916.40.** For the three short/spoiled deliveries: dates, locations (Seattle or Portland), invoice numbers, dollar amounts withheld, and the notice you gave Sound Cascade (emails, photos with timestamps, when you sent them). Did you withhold the entire balance or only part, and did you put the reason in writing?\n11. **The butter incident (May 19, 2026).** Who signed for the 1,200 lbs, where was it left, what do the dock/refrigeration records show, and what did you tell Sound Cascade at the time? Is there any written allocation of risk of loss in the agreement that covers this?\n12. **Counterclaim.** What are your own damages from the short/spoiled deliveries (product, lost sales, labor), and do you want to assert a counterclaim or affirmative defenses (failure of condition, setoff, prior breach)?\n13. Any **insurance** (general liability/property) that might respond to the negligence claim, and has the carrier been noticed?\n\n## D. Housekeeping for a federal filing (only if A comes back clean)\n\n14. Who is authorized to verify/sign a notice of removal for the LLC, and can you provide an officer/manager declaration confirming the member roster?\n15. Confirm you understand the downside: if we remove and the member list turns out to include a Washington citizen, the case is remanded and the court \"may require payment of just costs and any actual expenses, including attorney fees, incurred as a result of the removal.\" (28 U.S.C. § 1447(c).) Do you still want removal on a borderline member roster?\n",
+  "facts": [
+    {
+      "id": "member",
+      "trigger": [
+        "member",
+        "partner",
+        "owner",
+        "equity",
+        "who owns",
+        "Seattle"
+      ],
+      "answer": "Yes — Caleb Sorensen owns 35% of the LLC. He lives in Seattle (Ballard). I own 65% and live in Portland. We're the only two members.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "registered_agent",
+      "trigger": [
+        "registered agent",
+        "CSC",
+        "how did you get",
+        "email",
+        "old address"
+      ],
+      "answer": "CSC emailed the scans on the 11th to our old Gmail. Nobody checks it. I found them Sunday night.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "appearance",
+      "trigger": [
+        "appearance",
+        "lawyer in Washington",
+        "already filed",
+        "anyone responded"
+      ],
+      "answer": "Nobody has filed anything for us. We don't have a Washington lawyer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "defense",
+      "trigger": [
+        "short deliveries",
+        "spoiled",
+        "photos",
+        "setoff",
+        "counterclaim"
+      ],
+      "answer": "Three deliveries in March–April were short or spoiled, about $26k worth. I have photos and emails. I never paid those invoices.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "member",
+    "registered_agent",
+    "defense"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

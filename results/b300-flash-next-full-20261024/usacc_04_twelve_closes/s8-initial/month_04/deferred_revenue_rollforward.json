@@ -1,0 +1,57 @@
+{
+  "period": "2025-04",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 prior annual subscription",
+      "term": "2024-06-01 to 2025-05-31",
+      "source": "documents/note_opening_deferred.md \u2014 release 8,200.00/month Jan\u2013May 2025; fourth of five releases booked in April; final 8,200.00 releases May 2025",
+      "opening": 16400.0,
+      "billed": 0.0,
+      "recognized": 8200.0,
+      "closing": 8200.0
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 renewal, order form C-026",
+      "term": "2025-01-01 to 2025-12-31",
+      "source": "documents/month_01/order_form_C-026.md; 24,000.00 billed upfront Jan 2025; release 1/12 = 2,000.00/month (revenue_policy_memo #1), fourth release booked in April. Overlap with prior contract is an open item carried from January (exposure up to 10,000.00 through May if renewal term actually starts Jun 2025; 8,000.00 released to date)",
+      "opening": 18000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 16000.0
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025) \u2014 INV-2250 'Implementation & license \u2014 one-time'",
+      "term": "not documented (order form states no term)",
+      "source": "documents/month_02/order_form_C-025.md + client answer (QUESTIONS.md round 2): nothing bespoke, self-onboarded, 'license' label only. Deferred in full per revenue_policy_memo #2 and ASC 606-10-25-10 et seq.; $0 recognized; no release pattern computable without documented term/performance evidence. No April billing or performance evidence. See month_02/open_items.md item 1",
+      "opening": 36000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 36000.0
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027) \u2014 INV-2275 annual subscription, order form C-027",
+      "term": "2025-03-01 to 2026-02-28 (12 months from service start, auto-renewing)",
+      "source": "documents/month_03/order_form_C-027.md: 18,000.00 billed upfront Mar 2025, service start 2025-03-01; release 1/12 = 1,500.00/month per revenue_policy_memo #1; second of twelve releases booked in April; no April rebilling",
+      "opening": 16500.0,
+      "billed": 0.0,
+      "recognized": 1500.0,
+      "closing": 15000.0
+    },
+    {
+      "contract": "UNIDENTIFIED opening deferred revenue",
+      "term": "unknown",
+      "source": "opening_trial_balance.csv 2200 credit 65,000.00 vs note_opening_deferred.md explaining only 41,000.00; residual 24,000.00 has no contract documentation. Question to client answered 'no additional information'. STATED ASSUMPTION: genuine contract liability of unknown origin; no revenue recognized absent evidence of performance (ASC 606-10-45-2); flagged through year-end. See month_01/open_items.md item 1",
+      "opening": 24000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 24000.0
+    }
+  ],
+  "totals": {
+    "opening": 110900.0,
+    "billed": 0.0,
+    "recognized": 11700.0,
+    "closing": 99200.0
+  },
+  "tie_out": "Opening 110,900.00 (agrees with month_03 closing and trial_balance.json 2200) + billed 0.00 \u2212 recognized 11,700.00 = closing 99,200.00, agrees with trial_balance.json account 2200 credit balance 99,200.00. Line sums: opening 16,400+18,000+36,000+16,500+24,000 = 110,900.00; billed 0; recognized 8,200+2,000+0+1,500+0 = 11,700.00; closing 8,200+16,000+36,000+15,000+24,000 = 99,200.00"
+}

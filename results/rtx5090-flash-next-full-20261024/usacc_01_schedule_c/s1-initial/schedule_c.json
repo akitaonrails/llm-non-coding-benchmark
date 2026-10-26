@@ -1,0 +1,69 @@
+{
+  "tax_year": 2025,
+  "lines": {
+    "1": 50750.00,
+    "9": 194.60,
+    "10": 1199.15,
+    "15": 480.00,
+    "20b": 2800.00,
+    "24a": 1030.00,
+    "24b": 32.00,
+    "25": 1116.00,
+    "27a": 4058.88,
+    "27b": 4058.88,
+    "28": 39839.37,
+    "31": 0.00
+  },
+  "schedule_se": {
+    "net_earnings": 36791.66,
+    "se_tax": 5629.12,
+    "deductible_half": 2814.56
+  },
+  "not_on_schedule_c": [
+    {
+      "item": "Tessaro Studios invoice 1041 (ACH received 2024-12-27)",
+      "amount": 3000.00,
+      "where": "prior year - cash-method income of 2024, report on the 2024 return, not 2025"
+    },
+    {
+      "item": "Blue Cross Blue Shield TX health insurance premiums (May-Dec 2025, 8 x 380.00)",
+      "amount": 3040.00,
+      "where": "Schedule 1 line 17 - self-employed health insurance deduction (not Schedule C line 15); client confirmed this is her own individual plan, not employer coverage; eligibility/deduction-limit rules are not in the library - flagged unverified for preparer verification"
+    },
+    {
+      "item": "Federal estimated tax payments (Q1 1,500.00 + Q2 2,500.00 + Q3 2,500.00)",
+      "amount": 6500.00,
+      "where": "personal - federal income tax payments are not deductible"
+    },
+    {
+      "item": "Larkspur Interactive net payroll deposits (8 pay periods)",
+      "amount": 19502.80,
+      "where": "Form 1040 line 1a wages - reported as 24,800.00 from the W-2, not from the bank deposits; also 2025 W-2 income, not prior year and not Schedule C"
+    },
+    {
+      "item": "One-half of self-employment tax",
+      "amount": 2814.56,
+      "where": "Schedule 1 line 15"
+    },
+    {
+      "item": "Southwest AUS-DEN flight 2025-06-13",
+      "amount": 389.00,
+      "where": "personal - CLIENT CONFIRMED it was for a cousin's wedding (IRC 262); not deductible"
+    },
+    {
+      "item": "Tartine Manufactory 2025-10-08 (no business purpose available from client)",
+      "amount": 126.00,
+      "where": "personal as filed (IRC 262); client has no substantiation - if records later surface, 50% = 63.00 to line 24b"
+    },
+    {
+      "item": "T-Mobile wireless 2025 (12 x 85.00 = 1,020.00) and Spectrum internet 2025 (12 x 70.00 = 840.00): personal 40% portion",
+      "amount": 744.00,
+      "where": "personal portion (40%) of mixed-use phone/internet per client-stated 60% business use; business 60% portion (1,116.00) claimed on Schedule C line 25"
+    },
+    {
+      "item": "Client dinner - Beacon, 2025-10-20 (export shows 0.00 amount, no matching charge; client has no further info)",
+      "amount": 0.00,
+      "where": "excluded - amount unverifiable; if a record later surfaces and the meal is substantiated, 50% of it belongs on line 24b"
+    }
+  ]
+}

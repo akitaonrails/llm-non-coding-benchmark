@@ -1,0 +1,30 @@
+{
+  "report": "UST Form 11-MOR, Monthly Operating Report — period 4/1/2026 through 4/30/2026 (due by 5/21 per Dkt. 61 ¶4)",
+  "case": "In re Redwood Fabrication, Inc., Case No. 26-11842-TBM (Bankr. D. Colo.)",
+  "data_status": "PARTIAL — THE CLIENT FILE CONTAINS NO APRIL ACTIVITY RECORDS (no April receipts, disbursements, or account balances; the pre-petition swept-cash amount also remains unknown). Fields that cannot be computed are null and flagged rather than estimated or zero-filled. See deliverable/QUESTIONS.md.",
+  "part1": {
+    "receipts": null,
+    "disbursements": {
+      "holland_and_pierce_interim_payment_under_4_14_order_IF_PAID_IN_APRIL_assumed_112000": null
+    },
+    "ending_cash": null,
+    "part1_note": "Carry-forward from March (understated as noted there): ending cash 3/31 = $1,771,630.00 assuming beginning cash of $0; true figure is understated by the unquantified 3/10 swept pre-petition balance (client has no further information — permanent open item). April receipts = March ending + April receipts − April disbursements; both April legs are unknown. If the 4/14 interim comp order was funded in April, the assumed H&P payment (Part 5 note) of $112,000 is the only expected disbursement — unconfirmed. Not forced to balance."
+  },
+  "part2": {
+    "post_petition_payables": null,
+    "pre_petition_liabilities_subject_to_compromise": null,
+    "part2_note": "Cannot be rolled forward without April activity. Known starting posture at 3/31: post-petition payables $207,826.16 (Mesa 3/18 $18,900; H&P $140,000; Corbin $45,000; UST accrual $3,926.16 — client confirmed no additional information on UST basis, so the 0.8% estimate stands as an estimate); LSTC known-from-file $74,110.00 (Mesa 2/2 $62,400; Front Range 3/5 $7,400; Grainger 2/11 $4,310); full scheduled LSTC remains an open unknown (plan term sheet implies $8.4M allowed GUC pool at the effective date). Mesa pre-petition coil receivable ~$11,000 (client estimate) stays an un-netted pre-petition receivable."
+  },
+  "part5": {
+    "professional_fees_approved": 140000.00,
+    "paid": 112000.00,
+    "holdback": 28000.00,
+    "assumption_flag": "PROMINENT ASSUMPTION: the 4/14/2026 interim compensation order for Holland & Pierce is assumed to have awarded the full invoiced $140,000 and to follow the noted '80%/100% holdback' structure — 80% paid now, 100% of the award subject to holdback pending final review. Arithmetic: 140,000 × 80% = 112,000 paid; reported holdback (approved not yet paid) = 140,000 − 112,000 = 28,000; the full 140,000 remains subject to disgorgement risk at final fee review. If the order awarded a different amount or payment was not made in April, these figures change — copy of the order requested in QUESTIONS.md.",
+    "corbin_advisors": "approved 0; paid 0; holdback 0 — $45,000 invoiced 3/31; fee application required under 11 U.S.C. §330(a); no award known in April (bc_330_331.md)."
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "UNCONFIRMED — April activity file not provided. No authorized pre-petition payment is known for April (no new Dkt. 48 additions; wage payments were the 3/13 payroll under Dkt. 9). Mesa February ($62,400) and the proposed netting ($51,400 wire = $62,400 − $11,000 coil credit) were refused per Dkt. 61 ¶2-¶3 and 11 U.S.C. §549(a); must confirm no payment occurred outside the controller's file before this report is signed under penalty of perjury.",
+    "payments_outside_ordinary_course_without_approval": "UNCONFIRMED — pending April activity. The H&P interim payment, if made, is under court order (Dkt. 4/14 interim comp order) and not an ordinary-course item, so it must be reported but is authorized."
+  },
+  "authority": "UST Form 11-MOR (2021) per library/ust_mor_instructions.md; 11 U.S.C. §§330(a), 331 (bc_330_331.md); §§362(a), 363(b)-(c), 503(b), 549(a) (bc_362_363_503_549.md); case orders Dkt. 48, 61 (documents/)."
+}

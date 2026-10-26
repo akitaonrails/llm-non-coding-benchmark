@@ -1,0 +1,13 @@
+{
+  "limite_presumido_liquido_teorico": 1494400,
+  "lucro_contabil_2025": -310000,
+  "prejuizos_acumulados": 1120000,
+  "lucro_distribuivel": 0,
+  "distribuicao_recomendada": 0,
+  "irrf_10pct_se_distribuir_800k": 80000,
+  "multa_art32_risco": 800000,
+  "mutuo": {
+    "recomendado": false,
+    "condicoes": "Nao recomendado: mutuo a socio com a PJ em prejuizo e com debito fiscal nao garantido e sinal de retirada disfarcada (DL 1.598/77 art. 60; RIR/2018 arts. 528-532). A presuncao especifica do art. 60, V nao incide (a empresa nao tem lucros acumulados/reservas), mas isso nao segura o negocio. Se os socios insistirem: contrato escrito com finalidade de credito, juros de mercado efetivamente pagos, prazo com amortizacao real, garantias do socio, capacidade de pagamento comprovada e recolhimento de IOF-credito (Decreto 6.306/2007 art. 13: 0,0082%/dia + 0,38% adicional; ~R$ 13.328 para 400k em 360 dias). Risco remanescente alto de recaracterizacao como rendimento tributavel do socio (Lei 9.430/96)."
+  }
+}

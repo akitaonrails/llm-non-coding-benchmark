@@ -1,0 +1,42 @@
+{
+  "periodos": [
+    {
+      "periodo": "3T/2020",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 268000
+    },
+    {
+      "periodo": "4T/2020",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 241000
+    },
+    {
+      "periodo": "1T/2021",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2026-03-31",
+      "decaido": false,
+      "valor": 302000
+    },
+    {
+      "periodo": "2T/2021",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2026-12-31",
+      "decaido": false,
+      "valor": 289000
+    }
+  ],
+  "valor_decaido": 509000,
+  "valor_remanescente": 591000,
+  "vicios_formais": [
+    "CDA sem fundamento legal específico da multa de ofício (campo em branco; TVF aplica 75% genericamente 'nos termos da legislação') — exigência de origem, natureza e fundamento legal do crédito, LEF art. 2º §5º III; fica indeterminado se a multa é do art. 44, I (75%) ou do art. 44 §1º (150%) da Lei 9.430/96 — relevante inclusive para a exceção de dolo/fraude/simulação do CTN art. 150 §4º. Correção parcial admitível por emenda/substituição da CDA (LEF art. 2º §8º; Súmula 392 STJ), sem efeito sobre os períodos decaídos.",
+    "Inscrição sem indicação de corresponsáveis — qualquer futuro redirecionamento a sócios não pode se dar por simples emenda/substituição da CDA (vedada a modificação do sujeito passivo, Súmula 392 STJ), exigindo observância do CTN art. 135 III, Súmulas 430/435 STJ e Temas 962/981 STJ (item de atenção para as sessões seguintes).",
+    "Mandado de citação (diligência de 14/09/2026, certidão negativa de 28/09/2026) frustrado no endereço da CDA (Rua das Pedras, 100) — a empresa mudou a sede e comunicou os órgãos competentes antes da diligência (alteração registrada na JUCESP em 12/03/2026; CNPJ atualizado na RFB em 20/03/2026; novo endereço: Av. Industrial, 2.500, Galpão 7, Cotia/SP). Cita-se a empresa no endereço atualizado; a presunção de dissolução irregular da Súmula 435 STJ fica afastada pela comunicação prévia (nota do arquivo da biblioteca).",
+    "Motivação genérica da multa de ofício no processo administrativo (TVF: 'nos termos da legislação'), sem descrição da conduta nem dispositivo — vício de fundamentação da penalidade, ligado ao item do art. 2º §5º III da LEF; não atinge a decadência, que é anterior e autônoma."
+  ],
+  "veiculo": "exceção de pré-executividade",
+  "por_que": "A decadência dos períodos 3T/2020 e 4T/2020 é matéria de ordem pública, conhecível de ofício e demonstrável apenas com datas dos próprios documentos (CDA, PAF), sem dilação probatória — hipótese típica de exceção de pré-executividade (Súmula 393 STJ, que exemplifica a própria decadência). Ela é imediata e independe de garantia do juízo, reduzindo desde logo a execução de R$ 1.100.000,00 para R$ 591.000,00 (excluídos R$ 509.000,00), sem o custo de garantia de 130% do débito (seguro-garantia/fiança +30%, Portaria PGFN 164/2014; LEF art. 9º). Os embargos à execução (30 dias da garantia, LEF art. 16 e §1º) ficam preservados para as matérias que dependem de prova (elisão da presunção de omissão de receitas dos períodos 1T/2021 e 2T/2021, memórias de cálculo), após a garantia."
+}

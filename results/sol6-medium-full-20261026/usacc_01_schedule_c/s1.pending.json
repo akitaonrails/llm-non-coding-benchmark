@@ -1,0 +1,6 @@
+{
+  "case": "usacc_01_schedule_c",
+  "session": 1,
+  "pushbacks": [],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

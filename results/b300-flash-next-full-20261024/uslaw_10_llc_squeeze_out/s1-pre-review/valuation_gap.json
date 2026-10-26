@@ -1,0 +1,66 @@
+{
+  "book_value_offer": 189100,
+  "independent_indication_18pct": 1764000,
+  "independent_indication_6_1pct": 597800,
+  "dilution_valid": false,
+  "why": "See the arithmetic and the reconciliation failures left open below. Short version: the 6.1% recomputation cannot be reproduced from the Manager's own stated $7.2M fair value under any credit convention I can construct — his own number supports about 14.9%, not 6.1% — and the notice that was supposed to trigger the dilution did not comply with Section 6.3's delivery mechanics, so on the library's reading of Zimmerman v. Crothall the dilution was never triggered at all. Client confirmation of 2026-10-08 narrows the delivery defense further: she received only a text message with a PDF on 2026-08-20, no certified letter was ever received, and the email address on file has been dead since 2019 — so the sole channel used was the one the agreement does not authorize. On the valuation gap: the buyout is Section 9.2 Book Value, 6.1% x $3,100,000 = $189,100. Against the independent broker indication (equity value $9,800,000) the gap is $1,574,900 if Imani keeps 18% (0.18 x 9,800,000 = 1,764,000, less 189,100) and $408,700 even if the dilution is good and she only keeps 6.1% (0.061 x 9,800,000 = 597,800, less 189,100). The offer is therefore worth about 10.7% of the 18% indication and about 31.6% of the 6.1% indication — and it is within $100 of Imani's own 18% indirect share of the $1,050,000 of undisclosed affiliate fees (0.18 x 1,050,000 = 189,000), i.e., as offered, Bram proposes to buy her out for about what her share of the fee recovery would be. Treat the 18% figure as the ceiling of the claim, not a guaranteed value: all three headline numbers rest on the same broker letter, which is Imani's own evidence and has not been tested by Bram.",
+
+  "arithmetic": {
+    "offer_per_section_9_2": "0.061 x 3,100,000 = 189,100",
+    "18pct_at_broker_equity": "0.18 x 9,800,000 = 1,764,000",
+    "6_1pct_at_broker_equity": "0.061 x 9,800,000 = 597,800",
+    "18pct_at_manager_fair_value": "0.18 x 7,200,000 = 1,296,000",
+    "6_1pct_at_manager_fair_value": "0.061 x 7,200,000 = 439,200",
+    "18pct_at_book_equity": "0.18 x 3,100,000 = 558,000",
+    "gap_18pct": "1,764,000 - 189,100 = 1,574,900",
+    "gap_6_1pct": "597,800 - 189,100 = 408,700",
+    "offer_as_share_of_18pct_indication": "189,100 / 1,764,000 = 10.7%",
+    "offer_as_share_of_6_1pct_indication": "189,100 / 597,800 = 31.6%",
+    "pro_rata_shares_of_the_call": "0.18 x 1,500,000 = 270,000 (Imani); 0.82 x 1,500,000 = 1,230,000 (Bram); sum 1,500,000, which matches the notice",
+    "imani_share_of_the_offer_vs_fee_recovery": "0.18 x 1,050,000 = 189,000, versus the 189,100 offer — a $100 difference; at a surviving 6.1% her indirect fee share would be 0.061 x 1,050,000 = 64,050",
+    "undisclosed_affiliate_fees_2022_to_2026": "180,000 + 195,000 + 210,000 + 225,000 + 240,000 = 1,050,000",
+    "fees_primary_position_tolled": "1,050,000 — on the client-confirmed facts (affiliate fees first seen only in the 2026 books-and-records production; before that one-page summaries labeled 'management expenses' that named no payee), the concealment tolling theory runs the three years of 10 Del. C. §8106 from that 2026 discovery, so all five payments are live",
+    "fees_risk_scenario_untolled": "If the court holds the 'management expenses' summaries disclosed the nature of the injury, the window from 2026-10-08 reaches back only to 2023-10-08: 2024 + 2025 + 2026 payments = 210,000 + 225,000 + 240,000 = 675,000 survive and 2022 + 2023 = 180,000 + 195,000 = 375,000 are barred",
+    "disclosure_trigger_rent_threshold": "50,000 / 0.06 = 833,333 of annualized gross rents — above that, the monthly 6% property-management fee alone exceeds Section 5.4's $50,000/yr disclosure threshold; for a property supporting a $14,500,000 enterprise value this is near certain, but see the next line",
+    "gross_rent_management_fee": "NOT QUANTIFIABLE from the file: the fee schedule says 6% of gross rents, but no rent roll was produced and the 2026 bank-statement production did not quantify the monthly draws. Probably the larger part of the derivative claim; its dollar amount remains an explicit open item."
+  },
+
+  "reconciliation_failures_left_open": {
+    "1_the_6_1_percent_is_not_reproducible": "Section 6.3 dilutes a non-funding Member 'based on the fair value of the Company as determined by the Manager in good faith.' Taking the Manager's own 2026-09-25 number of $7,200,000 pre-money and crediting the funding member with his $1,500,000, Imani is (0.18 x 7,200,000) / (7,200,000 + 1,500,000) = 1,296,000 / 8,700,000 = 14.90%. With only Bram's 1,230,000 in and no credit to Imani: 1,296,000 / 8,430,000 = 15.37%. At the broker's $9,800,000: 1,764,000 / 11,300,000 = 15.61%. No convention reaches 6.1% at the Manager's stated value, and no positive fair value at all produces 6.1% if Bram is treated as having funded and credited Imani's 270,000. Left open: how Bram actually got 6.1%.",
+    "2_what_value_would_have_to_be_true": "Reverse-solving (0.18F + cI)/(F + cB + cI) = 0.061: if Bram put in only his own 1,230,000 and got no credit to Imani, the implied pre-money fair value is F = (0.061 x 1,230,000 - 0) / (0.18 - 0.061) = 75,030 / 0.119 = 630,504. If instead he put in the full 1,500,000 and treated Imani's 270,000 as a loan to her rather than a credited contribution, F = (0.061 x 1,500,000) / 0.119 = 91,500 / 0.119 = 768,908. Either way the value implicit in the 6.1% is $630,504 to $768,908 — an 89% to 91% discount to the Manager's own contemporaneous 'fair value' of $7,200,000 and a 92% to 94% discount to the broker's $9,800,000 equity value. A number that far below the Manager's own valuation is the strongest available arbitrary-and-bad-faith fact in the file. Whether Bram recorded a loan to Imani, a contribution on her behalf, or simply took the interest remains an explicit unknown — the client has no additional information on his arithmetic.",
+    "3_the_escalator_does_not_match_the_resolution": "The 2022-08-15 resolution sets the asset management fee at $180,000/yr 'escalating 8%/yr'. 8% compounding gives 180,000 / 194,400 / 209,952 / 226,748 / 244,888. The bank file shows 180,000 / 195,000 / 210,000 / 225,000 / 240,000, i.e. actual growth of 8.33%, 7.69%, 7.14%, 6.67% — a flat plus $15,000/yr, which by 2026 is $4,888 less than the authorized escalator. Small in dollars, so its value is evidentiary, not financial: the paid schedule was not administered per the authorizing resolution. Flagged, not forced to balance.",
+    "4_book_equity_versus_enterprise_value": "The gap between $3,100,000 of members' equity per the most recent year-end balance sheet and a $14,500,000 enterprise value / $9,800,000 equity value from a broker is large. Some of it is ordinary for real estate held at depreciated cost, and the broker spread implies roughly $4,700,000 of net debt (14,500,000 - 9,800,000) that the file does not confirm. Section 9.2 explicitly says Book Value per the most recent year-end balance sheet, so this gap is a negotiating point about the fairness of the price, not by itself a legal defect in the price — unless there is an appraisal or floor provision in the unproduced portions of the LLC agreement. The complete LLC agreement, the underlying balance sheets, and the debt detail remain explicit unknowns."
+  },
+
+  "authority": [
+    "6 Del. C. §18-1101(c), (e) — library/del_llc_act_18_1101.md",
+    "Zimmerman v. Crothall, 62 A.3d 676 (Del. Ch. 2013) — library/capital_call_notice_cases.md",
+    "Dieckman v. Regency GP LP, 155 A.3d 358 (Del. 2017) — library/implied_covenant_cases.md",
+    "Nemec v. Shrader, 991 A.2d 1120 (Del. 2010); Gerber v. Enterprise Products Holdings, 67 A.3d 400 (Del. 2013) — library/implied_covenant_cases.md",
+    "Tooley v. Donaldson, Lufkin & Jenrette, 845 A.2d 1031 (Del. 2004) — library/tooley_direct_derivative.md",
+    "10 Del. C. §8106; Wal-Mart v. AIG Life, 860 A.2d 312 (Del. 2004) — library/del_limitations_tolling.md"
+  ],
+
+  "client_confirmed_2026_10_08": [
+    "Notice: text message with PDF only, 2026-08-20; no certified letter ever received; email address on file dates from 2019 and is dead. Imani read the text but assumed it was not formal notice.",
+    "Fees: affiliate payments first seen in 2026, when a books-and-records demand finally produced bank statements; before that she received only one-page summaries labeled 'management expenses' naming no payee. This converts the concealment-tolling position from assumption to client-confirmed primary position for all five fee years.",
+    "Funding: Imani cannot raise the $270,000 call amount; roughly $60,000 is the realistic litigation budget.",
+    "Deadline: the $189,100 offer expires 2026-10-31 (23 days from the client's answer on 2026-10-08)."
+  ],
+
+  "facts_assumed_not_in_file": [
+    "$3,100,000 members' equity is the most recent year-end balance sheet figure, and no later balance sheet exists (the offer letter asserts it; we have not seen the balance sheet).",
+    "$7,200,000 is pre-money, before the $1,500,000 of new capital. If the Manager meant $7,200,000 post-money, the dilution math changes and Imani's recomputed interest gets worse, not better; the file does not say which he meant.",
+    "The broker letter of 2026-10-05 is a genuine independent opinion and not advocacy; it has not been tested by the other side.",
+    "The 2026 books-and-records production consisted of bank statements showing the annual affiliate payments; we infer it did not separately quantify the monthly 6% draws because no such amounts appear in the produced material the client has described."
+  ],
+
+  "remaining_unknowns": [
+    "Exact date in 2026 of the bank-statement production (affects diligence framing, not the tolled window itself).",
+    "Dollar amount of the monthly 6%-of-gross-rents fee (largest unquantified item; needs rent rolls or full bank detail).",
+    "Bram's derivation of 6.1% and his treatment of Imani's $270,000 (loan, credited contribution, or taken interest).",
+    "The complete LLC agreement — whether any appraisal right, fair-value floor, or notice-cure clause exists in the unproduced portions.",
+    "The balance sheets behind the $3,100,000 book equity and the Company's actual debt (broker spread implies ~$4,700,000).",
+    "Third-party benchmark for affiliate asset-management fees (sets the damages measure on the §5.4 counts)."
+  ]
+}

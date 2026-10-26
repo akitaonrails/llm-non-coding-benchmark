@@ -1,0 +1,1 @@
+Infrastructure preflight only: run shell checks proving /mnt/data and /home/akitaonrails are absent; attempt Python socket connections to example.com:443 and 1.1.1.1:443 and record exact failures; write probe.txt with the results. Do not do other work.

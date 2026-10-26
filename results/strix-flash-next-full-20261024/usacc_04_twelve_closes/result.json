@@ -1,0 +1,23 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/strix-flash-next-full-20261024/usacc_04_twelve_closes/13-s10-work",
+  "elapsed_seconds": 13445.267173965025,
+  "controller_wait_seconds": 281.0306738819636,
+  "model_turn_seconds": 13163.909052065981,
+  "turns": 13,
+  "released_facts": [
+    "gusto_dup",
+    "pinecone_onboarding"
+  ],
+  "usage": {
+    "input_tokens": 11667132,
+    "cached_input_tokens": 10858356,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 554051,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

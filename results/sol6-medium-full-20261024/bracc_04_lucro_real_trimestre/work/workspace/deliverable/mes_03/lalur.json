@@ -1,0 +1,47 @@
+{
+  "periodo": "1o trimestre de 2026",
+  "situacao": "provisorio — depende da conciliacao do total da NF 8812 de janeiro",
+  "premissa_contabil": "Considera-se valido o passivo de R$ 131.100,00 registrado para a NF 8812; o estorno do credito de PIS/COFINS de R$ 11.100,00 aumenta a despesa de material de uso e consumo em janeiro.",
+  "lucro_liquido_contabil": 604149.00,
+  "adicoes": {
+    "brindes_clientes_nf_4410": 48000.00,
+    "doacao_associacao_beneficente_luz": 30000.00
+  },
+  "exclusoes": {},
+  "lucro_antes_compensacao": 682149.00,
+  "compensacao_prejuizo": 204644.70,
+  "lucro_real": 477504.30,
+  "irpj_15": 71625.65,
+  "adicional_10": 41750.43,
+  "irpj_total": 113376.08,
+  "base_csll_antes_compensacao": 682149.00,
+  "compensacao_base_negativa_csll": 204644.70,
+  "base_csll_apos_compensacao": 477504.30,
+  "csll": 42975.39,
+  "parte_b": {
+    "prejuizo_fiscal_saldo_inicial": 900000.00,
+    "prejuizo_fiscal_utilizado": 204644.70,
+    "prejuizo_fiscal_saldo_final": 695355.30,
+    "base_negativa_csll_saldo_inicial": 900000.00,
+    "base_negativa_csll_utilizada": 204644.70,
+    "base_negativa_csll_saldo_final": 695355.30
+  },
+  "cenario_alternativo_nf_8812_total_120000": {
+    "descricao": "Se o valor devido ao fornecedor for R$ 120.000,00, o estorno do credito fiscal debita Fornecedores, sem elevar a despesa contabil.",
+    "lucro_liquido_contabil": 615249.00,
+    "adicoes_total": 78000.00,
+    "lucro_antes_compensacao": 693249.00,
+    "compensacao_prejuizo": 207974.70,
+    "lucro_real": 485274.30,
+    "irpj_15": 72791.15,
+    "adicional_10": 42527.43,
+    "irpj_total": 115318.58,
+    "compensacao_base_negativa_csll": 207974.70,
+    "base_csll_apos_compensacao": 485274.30,
+    "csll": 43674.69,
+    "parte_b": {
+      "prejuizo_fiscal_saldo_final": 692025.30,
+      "base_negativa_csll_saldo_final": 692025.30
+    }
+  }
+}

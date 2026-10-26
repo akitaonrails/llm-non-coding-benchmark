@@ -1,0 +1,242 @@
+{
+  "_read_this_first": {
+    "currency": "USD, nominal dollars, 2026 closing assumed (see assumptions.basis_of_computation)",
+    "headline_rule": "The five required fields for each deal are computed on the DEAL PRICE ONLY, excluding interest Buyer B would pay on its note. Interest is shown separately in stock_sale_buyer_b.note_interest and in sensitivity.sens_5_interest_and_time_value so that the three asset-sale columns and the stock sale stay comparable.",
+    "all_figures_computed": "every number below is derived in memo.md section 6 with the arithmetic shown; nothing is plugged or forced to balance."
+  },
+
+  "asset_sale_buyer_a_as_drafted": {
+    "ordinary_income": 1070000.00,
+    "capital_gain": 1450000.00,
+    "entity_level_tax": 237300.00,
+    "total_tax": 923200.00,
+    "net_after_tax": 2176800.00,
+
+    "price": 3100000.00,
+    "gross_gain": 2520000.00,
+    "character_by_class": [
+      {
+        "class": "III",
+        "asset": "receivables",
+        "allocated": 200000.00,
+        "adjusted_basis": 200000.00,
+        "gain": 0.00,
+        "ordinary_income": 0.00,
+        "capital_gain": 0.00,
+        "recognized_builtin_gain": 0.00,
+        "note": "gain assumed nil because buyer allocated face value; see sensitivity.sens_1_cash_method_receivables"
+      },
+      {
+        "class": "IV",
+        "asset": "inventory",
+        "allocated": 150000.00,
+        "adjusted_basis": 140000.00,
+        "gain": 10000.00,
+        "ordinary_income": 10000.00,
+        "capital_gain": 0.00,
+        "recognized_builtin_gain": 0.00,
+        "note": "ordinary in any allocation; built-in gain at 1/1/2023 shown as 0 in the appraisal ('Other ... 0')"
+      },
+      {
+        "class": "V",
+        "asset": "equipment & vehicles",
+        "allocated": 900000.00,
+        "adjusted_basis": 240000.00,
+        "gain": 660000.00,
+        "ordinary_income": 660000.00,
+        "capital_gain": 0.00,
+        "recognized_builtin_gain": 230000.00,
+        "note": "100% IRC 1245 ordinary: depreciation allowed 860,000 exceeds total gain; allocation exceeds the register FMV of 650,000. See sensitivity.sens_3_per_asset_recapture for the ~21,923 that could escape recapture if 900,000 were pro-rated asset by asset."
+      },
+      {
+        "class": "VI",
+        "asset": "non-competition covenant (5 yr)",
+        "allocated": 400000.00,
+        "adjusted_basis": 0.00,
+        "gain": 400000.00,
+        "ordinary_income": 400000.00,
+        "capital_gain": 0.00,
+        "recognized_builtin_gain": 0.00,
+        "note": "ordinary to the seller under Rev. Rul. 69-643; the covenant did not exist at 1/1/2023 so it carries no built-in gain"
+      },
+      {
+        "class": "VII",
+        "asset": "goodwill / going concern",
+        "allocated": 1450000.00,
+        "adjusted_basis": 0.00,
+        "gain": 1450000.00,
+        "ordinary_income": 0.00,
+        "capital_gain": 1450000.00,
+        "recognized_builtin_gain": 900000.00,
+        "note": "long-term capital gain at shareholder level, but IRC 1374 recognized built-in gain is capped at the 900,000 appraised at 1/1/2023"
+      }
+    ],
+    "tax_computation": {
+      "sec1374_recognized_builtin_gain_base": 1130000.00,
+      "entity_level_tax_21pct": 237300.00,
+      "ray_personal_on_ordinary_37pct": 395900.00,
+      "ray_personal_on_capital_20pct": 290000.00,
+      "ray_personal_total": 685900.00,
+      "sum": 923200.00
+    },
+    "sec1366f2_pass_through_not_credited": 87801.00
+  },
+
+  "stock_sale_buyer_b": {
+    "ordinary_income": 0.00,
+    "capital_gain": 2430000.00,
+    "entity_level_tax": 0.00,
+    "total_tax": 486000.00,
+    "net_after_tax": 2364000.00,
+
+    "price": 2850000.00,
+    "cash_at_closing": 2350000.00,
+    "seller_note": 500000.00,
+    "stock_basis": 420000.00,
+    "gross_gain": 2430000.00,
+    "character_of_gain": "entirely long-term capital gain; no IRC 1245 recapture and no IRC 1374 entity-level tax because the corporation disposes of no assets",
+    "note_interest": {
+      "rate": 0.06,
+      "interest_by_year": [30000.00, 24000.00, 18000.00, 12000.00, 6000.00],
+      "total_interest": 90000.00,
+      "character": "ordinary income to Ray (37%)",
+      "tax_on_interest": 33300.00,
+      "net_after_interest_and_tax": 2420700.00
+    },
+    "sec453_installment_deferral": {
+      "gross_profit_fraction": 0.852632,
+      "gain_in_year_of_closing_on_2350000_cash": 2003684.21,
+      "tax_in_year_of_closing": 400736.84,
+      "gain_per_note_year_on_100000_principal": 85263.16,
+      "tax_per_note_year": 17052.63,
+      "capital_gain_tax_deferred_out_of_year_1": 85263.16,
+      "irc_453i_recapture_acceleration": "does not apply - there is no IRC 1245 recapture in a stock sale, so the full deferral is available"
+    }
+  },
+
+  "asset_sale_counter_allocation": {
+    "ordinary_income": 520000.00,
+    "capital_gain": 2000000.00,
+    "entity_level_tax": 237300.00,
+    "total_tax": 829700.00,
+    "net_after_tax": 2270300.00,
+
+    "price": 3100000.00,
+    "proposed_allocation": {
+      "III_receivables": 200000.00,
+      "IV_inventory": 150000.00,
+      "V_equipment_and_vehicles": 650000.00,
+      "VI_non_compete_5yr": 100000.00,
+      "VII_goodwill": 2000000.00
+    },
+    "character_by_class": [
+      { "class": "III", "allocated": 200000.00, "adjusted_basis": 200000.00, "ordinary_income": 0.00, "capital_gain": 0.00, "recognized_builtin_gain": 0.00 },
+      { "class": "IV", "allocated": 150000.00, "adjusted_basis": 140000.00, "ordinary_income": 10000.00, "capital_gain": 0.00, "recognized_builtin_gain": 0.00 },
+      { "class": "V", "allocated": 650000.00, "adjusted_basis": 240000.00, "ordinary_income": 410000.00, "capital_gain": 0.00, "recognized_builtin_gain": 230000.00 },
+      { "class": "VI", "allocated": 100000.00, "adjusted_basis": 0.00, "ordinary_income": 100000.00, "capital_gain": 0.00, "recognized_builtin_gain": 0.00 },
+      { "class": "VII", "allocated": 2000000.00, "adjusted_basis": 0.00, "ordinary_income": 0.00, "capital_gain": 2000000.00, "recognized_builtin_gain": 900000.00 }
+    ],
+    "tax_computation": {
+      "sec1374_recognized_builtin_gain_base": 1130000.00,
+      "entity_level_tax_21pct": 237300.00,
+      "ray_personal_on_ordinary_37pct": 192400.00,
+      "ray_personal_on_capital_20pct": 400000.00,
+      "ray_personal_total": 592400.00,
+      "sum": 829700.00
+    },
+    "saving_vs_buyer_a_as_drafted": 93500.00,
+    "saving_arithmetic": "17% x (250,000 moved out of Class V + 300,000 moved out of Class VI) = 0.17 x 550,000 = 93,500"
+  },
+
+  "ray_naive_estimate": {
+    "net_after_tax": 2480000.00,
+    "arithmetic": "3,100,000 x (1 - 20%) = 2,480,000 ('about $2.5M')",
+    "error_vs_buyer_a_as_drafted": 303200.00,
+    "error_vs_counter_allocation": 209700.00,
+    "why_wrong": "treats all 3,100,000 as capital gain and ignores the 237,300 IRC 1374 entity-level tax. Real result on Buyer A's own paper: 1,070,000 ordinary + 1,450,000 capital + entity-level tax."
+  },
+
+  "recommendation": {
+    "ranking_nominal_price_only": [
+      { "rank": 1, "deal": "Buyer B stock sale, price only", "net_after_tax": 2364000.00 },
+      { "rank": 2, "deal": "Buyer A with counter allocation", "net_after_tax": 2270300.00 },
+      { "rank": 3, "deal": "Buyer A as drafted", "net_after_tax": 2176800.00 }
+    ],
+    "gap_B_minus_A_as_drafted": 187200.00,
+    "gap_B_minus_A_counter": 93700.00,
+    "gap_B_incl_interest_minus_A_as_drafted": 243900.00,
+    "gap_B_incl_interest_minus_A_counter": 150400.00,
+    "lone_star_price_needed_to_match_hensley": {
+      "with_current_exhibit_a": 3334000.00,
+      "with_counter_allocation": 3217125.00,
+      "with_counter_allocation_matching_hensley_incl_note_interest": 3288000.00,
+      "note": "the buyer's 500,000 note is unsecured; those three figures do not price credit risk. Add a risk premium or take the note secured, and the number Lone Star must beat rises."
+    }
+  },
+
+  "assumptions": {
+    "basis_of_computation": "nominal dollars, single 2026 closing, no state individual income tax (library: Texas has none); Texas franchise tax on the entity not computed - no rate in the library",
+    "rates": "37% ordinary, 20% long-term capital gain, 21% entity-level IRC 1374 - all from library/capital_gain_rates.md and library/irc_1374.md",
+    "irc_1411": "assumed not to apply - Ray materially participates in an active trade or business (library/capital_gain_rates.md). If he does not materially participate, 3.8% NIIT would add tax on the gain; not modeled.",
+    "receivables_basis": "assumed tax basis equals the 200,000 carrying value, so no gain on Class III. See sensitivity.sens_1.",
+    "equipment_basis_and_dep": "adjusted basis 240,000 and depreciation allowed 860,000 taken from documents/fixed_asset_register.csv",
+    "sec1374_scope": "recognized built-in gain limited to the 1/1/2023 appraisal: goodwill 900,000 + equipment 230,000 = 1,130,000. The library contains only 1374(a), (b), (d)(7); the (d) definitional rules for 'net recognized built-in gain' (and any inventory or taxable-income limitation) are NOT in the library, so the 237,300 is a library-limited estimate - flagged, not hidden.",
+    "sec1366f2": "the IRC 1374 tax is treated as an entity-level cost in the headline figures; the IRC 1366(f)(2) pass-through loss to Ray is NOT credited because its character is not addressed in the library. See sensitivity.sens_4.",
+    "liabilities": "trade payables, warranty/defect claims and other liabilities are NOT in the numbers for either deal because no amounts were provided - see QUESTIONS.md and sensitivity.sens_6.",
+    "winding_up": "the tax cost of liquidating Brightline Cabinetry LLC after an asset sale is NOT modeled - IRC 331/336 are not in the library."
+  },
+
+  "sensitivity": {
+    "sens_1_cash_method_receivables": {
+      "trigger": "Brightline reports on the cash method, so the 200,000 of receivables carry zero basis",
+      "added_ordinary_income": 200000.00,
+      "added_tax": 74000.00,
+      "affects": "both asset-sale columns only (Buyer B buys the interests, and the receivables stay in the company)"
+    },
+    "sens_2_escrow": {
+      "item": "Buyer B holds 100,000 of Ray's own money for 12 months, no interest stated",
+      "opportunity_cost_at_6pct": 6000.00,
+      "note": "plus an unresolved question of whether the escrow is a qualified escrow account for IRC 453 purposes - not in the library"
+    },
+    "sens_3_per_asset_recapture": {
+      "item": "IRC 1245 applies asset by asset. At the register FMV of 650,000, all 410,000 of equipment gain is ordinary. If the 900,000 were pro-rated across the six assets, about 21,923 would exceed per-asset depreciation and be capital.",
+      "tax_effect_at_17pct": 3727.00,
+      "conclusion": "immaterial, and it depends on defending an FMV that the client's own register contradicts"
+    },
+    "sens_4_sec1366f2_loss_credited": {
+      "item": "if the IRC 1366(f)(2) loss offsets Ray at his 37% ordinary rate, the 237,300 entity tax costs him 149,499 net",
+      "value": 87801.00,
+      "buyer_a_as_drafted_net": 2264601.00,
+      "buyer_a_counter_net": 2358101.00,
+      "effect": "Buyer A (counter allocation) closes to within about 5,900 of Buyer B on a nominal price-only basis, but not on a PV basis; character of that loss is not in the library and is therefore not taken in the headline"
+    },
+    "sens_5_interest_and_time_value": {
+      "item": "discounting all cash at 6% (the note rate) - an assumption, not a client-verified rate",
+      "buyer_a_as_drafted_pv": 2176800.00,
+      "buyer_a_counter_pv": 2270300.00,
+      "buyer_b_pv_incl_net_interest": 2348289.00,
+      "gap_B_pv_minus_A_counter_pv": 77989.00
+    },
+    "sens_6_liability_shift": {
+      "item": "Buyer B assumes all liabilities known and unknown; Buyer A assumes only scheduled trade payables and leaves the rest with Ray's corporation, including the 237,300 IRC 1374 tax",
+      "quantified": false,
+      "note": "cannot be quantified without the payables schedule and claims history; every dollar of retained liability reduces Buyer A's advantage"
+    },
+    "sens_7_post_recognition_period": {
+      "item": "IRC 1374(d)(7) recognition period = 1/1/2023 through 12/31/2027. An asset sale closing in 2028 carries no entity-level tax.",
+      "value": 237300.00,
+      "buyer_a_2028_net_at_current_paper": 2414100.00,
+      "buyer_a_2028_net_at_counter_allocation": 2507600.00
+    },
+    "sens_8_real_property_and_1250": {
+      "item": "if the spray booth or any other Class V item is real property, unrecaptured IRC 1250 gain treatment may apply",
+      "quantified": false,
+      "note": "IRC 1250 is NOT in the library - unverified, flagged only"
+    },
+    "sens_9_sec338h10_336e": {
+      "item": "Buyer B could elect IRC 338(h)(10) or 336(e), which converts the deal to a deemed asset sale; that would pull the whole IRC 1245 / IRC 1374 problem into the stock deal",
+      "quantified": false,
+      "note": "the mechanics and consequences are only summarized in library/stock_vs_asset_overview.md; do not let this election be made without recomputing - a 3,100,000-class asset-sale tax result inside a 2,850,000 stock deal would be the worst outcome in this file"
+    }
+  }
+}

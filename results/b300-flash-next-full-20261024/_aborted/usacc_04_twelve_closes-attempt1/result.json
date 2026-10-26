@@ -1,0 +1,22 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-flash-next-full-20261024/usacc_04_twelve_closes/05-s3-work",
+  "elapsed_seconds": 960.7070536290121,
+  "controller_wait_seconds": 69.00822395697469,
+  "model_turn_seconds": 891.6439214929705,
+  "turns": 5,
+  "released_facts": [
+    "pinecone_onboarding"
+  ],
+  "usage": {
+    "input_tokens": 2871482,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 128768,
+    "reasoning_output_tokens": 63140
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

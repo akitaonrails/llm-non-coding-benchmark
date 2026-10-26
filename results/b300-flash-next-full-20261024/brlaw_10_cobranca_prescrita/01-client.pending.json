@@ -1,0 +1,47 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "questions": "# PERGUNTAS AO CLIENTE (Técnica Forte) — perguntas que mudam números ou risco\n\nResponda na ordem. As perguntas 1, 3 e 4 são as que efetivamente alteram o trabalho: sem elas o valor do pedido fica sem correção monetária e dois enquadramentos ficam em aberto.\n\n**Q1 — IPCA (bloqueia o valor final do pedido).** A série de IPCA **não existe** em `workspace/` nem na biblioteca, e o contrato elegeu IPCA como índice de correção. Preciso de: (a) qual IPCA (IPCA/IBGE? outro?), (b) mês-base de referência e (c) os valores mensais de out/2020 até hoje, em planilha ou tabela autorizada pelo cliente. Sem isso, deixo R$ 194.390,00 **sem correção** — o valor do pedido será materialmente maior. Alternativa: o cliente manda a planilha de cálculo que já usa (e eu confiro a aritmética).\n\n**Q2 — Outros pagamentos.** Além do PIX de R$ 10.000,00 de 02/08/2023 (\"por conta da parcela 1\"), houve **algum** outro pagamento, parcial ou a título de encargos, em qualquer época? Existe recibo/nota/comprovante com destinação expressa? (Isso mexe no principal exigível e no quanto da negativação é indevido.)\n\n**Q3 — As 3 negativações anteriores da Boa Vista.** São de quais credores, com quais datas/valores? A Boa Vista **já pediu cancelamento ou impugnado** alguma delas? Há risco de serem consideradas irregulares? (A proteção da Súmula 385/STJ ao dano moral depende de as inscrições anteriores serem **legítimas**; se uma cair, o risco de dano moral volta.)\n\n**Q4 — Como foram assinados o contrato e os boletos.** Assinatura manuscrita simples? Houve alguma assinatura eletrônica com **certificado digital** (ICP-Brasil) ou plataforma de assinatura com certificação? (A biblioteca afasta a exceção do Tema 1.247/STJ \"não aplicável aqui\" — se houver certificação digital, a via processual pode voltar a ser **execução**, e o memorando muda.)\n\n**Q5 — Instrução do protesto.** Os boletos foram emitidos com registro/distribuição e há originais/carteiras disponíveis? Algum protesto já foi lavrado ou algum cartório foi consultado sobre quais documentos exige? (A biblioteca não trata da instrução do protesto — lacuna a suprir com o cartório.)\n\n**Q6 — Renegociação posterior a 15/09/2022.** Além dos dois e-mails do arquivo, existiu acordo, plano de parcelamento, novação, ata, carta ou mensagem em que a Boa Vista trate das **parcelas 5 e 6** (ou do contrato \"como um todo\")? (É a única via que poderia reabrir a discussão sobre as parcelas prescritas; ver §3.1 do memorando, upside estimado de R$ 102.320,00.)\n\n**Q7 — Prova do serviço de fev/mar/2021.** Existem relatórios, ordens de serviço, e-mails, diários de obra, notas fiscais ou fotos provando que o serviço das parcelas 5 e 6 foi **efetivamente** prestado apesar da greve? (Juridicamente elas estão prescritas, então isto serve apenas para a mesa de negociação.)\n\n**Q8 — Encargos e risco de revisão.** O contrato diz algo sobre **capitalização** de juros ou sobre limitação de encargos? O cliente aceita que os juros (R$ 81.990,00, 75% do principal) possam ser revistos em juízo? A biblioteca **não** contém regra de limitação de juros — não verifico essa questão aqui; se o cliente quiser, é nova frente de análise.\n\n**Q9 — Estado da devedora.** A Metalúrgica Boa Vista segue operando? Existe recuperação judicial, falência, outras ações/execuções ou bloqueios conhecidos? (Define se o acordo deve priorizar garantia real/fiança e se a execução futura teria ativos para atacar.)\n\n**Q10 — Ações em curso e endereço.** Já existe alguma ação de cobrança/monitória/execução ajuizada pela Técnica Forte contra a Boa Vista? Qual o endereço atual da sede (para citação) e a comarca em que a devedora pode alegar foro de domicílio? A cláusula de foro é Sorocaba/SP; a biblioteca não traz regra de foro de eleição (não verificado).\n\n---\n**O que NÃO preciso perguntar porque o arquivo já responde:** vencimentos e valores das 6 parcelas; ausência de testemunhas no contrato; reconhecimento das parcelas 1 a 4 em 15/09/2022; contestação expressa das parcelas 5 e 6; PIX de R$ 10.000,00 de 02/08/2023; negativação de R$ 180.000,00 em 12/08/2026; existência de 3 negativações anteriores não contestadas.\n\n# PERGUNTAS — mapa das lacunas (entregável opcional)\n\nPerguntas completas em `QUESTIONS.md`. Aqui, só o que cada uma destrava e o efeito no trabalho.\n\n| # | Pergunta (resumo) | Destrava | Efeito se o cliente responder |\n|---|---|---|---|\n| Q1 | Série de IPCA (índice, mês-base, valores out/2020→hoje) | Correção monetária do pedido, hoje **PENDENTE** | Fecha o valor real da causa (hoje R$ 194.390,00 **sem** IPCA) e da negativação retilificada |\n| Q2 | Outros pagamentos além do PIX de R$ 10.000,00 | Principal exigível e o corte da negativação | Se houver, R$ 110.000,00 cai e a parte indevida do registro cresce |\n| Q3 | Legitimidade das 3 negativações anteriores da ré | Aplicação da **Súmula 385/STJ** | Se alguma for irregular, o risco de **dano moral** sai de \"baixo\" para relevante |\n| Q4 | Tipo de assinatura do contrato (havia 2 testemunhas? certificação digital?) | **Via processual** | Com certificado digital, pode voltar a **execução** (Tema 1.247/STJ, cf. `library/cpc_titulo_executivo_monitoria.md`); sem isso, monitória |\n| Q5 | Originais/carteiras dos boletos e exigências do cartório | Viabilidade prática do **protesto** | Permite protocolar o protesto restrito a R$ 110.000,00 + encargos |\n| Q6 | Documentos posteriores a 15/09/2022 que mencionem as parcelas 5/6 | Único caminho para o \"upside\" de **R$ 102.320,00** | Se existir ato inequívoco quanto a 5/6, reabre-se a discussão (§3.1 do memorando) |\n| Q7 | Prova material do serviço de fev/mar/2021 | Só a mesa de acordo | Aumenta a força na negociação; não altera o pedido (parcelas prescritas) |\n| Q8 | Capitalização/limitação de encargos no contrato | Risco de revisão dos juros de R$ 81.990,00 | Ajusta a expectativa de caixa e o piso de acordo (não verificado na biblioteca) |\n| Q9 | Solvência da devedora (RJ/falência/outras ações) | Estrutura do acordo e execução futura | Define exigência de garantia real/fiança vs. simples confissão |\n| Q10 | Ações já ajuizadas e endereço da sede | Roteiro de ajuizamento e citação | Evita litispendência/erro de foro; confirma Sorocaba/SP |\n\n**Nenhuma resposta altera as conclusões centrais** já entregues: (i) contrato sem 2 testemunhas não é título executivo → monitória; (ii) parcelas 1–4 exigíveis até 15/09/2027 e 5–6 prescritas; (iii) negativação regular em R$ 110.000,00 e indevida em R$ 70.000,00; (iv) protesto só do valor exigível.\n",
+  "facts": [
+    {
+      "id": "testemunhas",
+      "trigger": [
+        "testemunha",
+        "assinatura",
+        "título executivo",
+        "quem assinou"
+      ],
+      "answer": "O contrato foi assinado só pelos dois representantes, sem testemunhas. Foi tudo meio informal.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pagamento",
+      "trigger": [
+        "pagamento parcial",
+        "10 mil",
+        "2023",
+        "PIX"
+      ],
+      "answer": "Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "greve",
+      "trigger": [
+        "greve",
+        "parcelas 5 e 6",
+        "serviço concluído",
+        "fevereiro",
+        "março"
+      ],
+      "answer": "Teve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "testemunhas",
+    "pagamento",
+    "greve"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

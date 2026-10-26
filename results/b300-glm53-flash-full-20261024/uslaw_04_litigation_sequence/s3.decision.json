@@ -1,0 +1,1 @@
+{"pushback_indices": [], "nudge": false, "reason": "Pushback 0 was applied at session 2; pushback 1 is scoped to session 4, so neither matches at session 3. No nudge: sessions 4-5 continue.", "controller": "opencode-session-agent", "decided_at": "2026-10-25T19:37:53Z"}

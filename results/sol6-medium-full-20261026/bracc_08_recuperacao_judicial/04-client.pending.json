@@ -1,0 +1,34 @@
+{
+  "case": "bracc_08_recuperacao_judicial",
+  "questions": "# Dados faltantes para concluir a sessão 2\n\n1. Qual é o saldo **utilizável** de prejuízo fiscal de IRPJ e de base negativa de CSLL na data prevista de reconhecimento do ganho, separadamente? Informe também a projeção da apuração tributável do período e as alíquotas aplicáveis para calcular IRPJ e CSLL.\n2. Banco Alfa, Fornecedor Norte ou Fornecedor Sul são **pessoas ligadas** à Atlas para fins da ressalva do art. 50-A? Se algum for, identifique o credor e o saldo da dívida abrangida.\n3. Para manter os **18 meses** da classe trabalhista, o plano oferecerá quais garantias, e a classe aprovou ou há previsão de obter sua aprovação para a extensão? Se não, a empresa aceita ajustar o prazo para até 12 meses?\n",
+  "facts": [
+    {
+      "id": "norte",
+      "trigger": [
+        "Norte",
+        "metade",
+        "por fora",
+        "fornecimento",
+        "parar"
+      ],
+      "answer": "O Norte aceita continuar fornecendo à vista a partir de agora, mas quer 'um sinal' sobre o atrasado. Se eu não pagar, eles param.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "beta",
+      "trigger": [
+        "Beta",
+        "fiduciária",
+        "máquinas",
+        "essenciais"
+      ],
+      "answer": "As máquinas do Beta são a linha de separação de pedidos; sem elas, não opera.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "norte"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

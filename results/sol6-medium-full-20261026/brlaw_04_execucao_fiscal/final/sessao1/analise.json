@@ -1,0 +1,40 @@
+{
+  "periodos": [
+    {
+      "periodo": "3T/2020",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 268000
+    },
+    {
+      "periodo": "4T/2020",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2025-12-31",
+      "decaido": true,
+      "valor": 241000
+    },
+    {
+      "periodo": "1T/2021",
+      "regra_decadencial": "CTN 150 §4º",
+      "limite": "2026-03-31",
+      "decaido": false,
+      "valor": 302000
+    },
+    {
+      "periodo": "2T/2021",
+      "regra_decadencial": "CTN 173 I",
+      "limite": "2026-12-31",
+      "decaido": false,
+      "valor": 289000
+    }
+  ],
+  "valor_decaido": 509000,
+  "valor_remanescente": 591000,
+  "vicios_formais": [
+    "A CDA agrega IRPJ e CSLL numa única cifra por trimestre, sem discriminar principal, multa e juros de cada tributo; isso dificulta conferir individualmente a natureza e o fundamento de cada dívida.",
+    "O campo próprio de fundamento da multa está em branco; a fundamentação geral, porém, cita o art. 44 da Lei 9.430/96 e a alíquota de 75%, de modo que a nulidade por esse ponto é controvertida e a deficiência pode ser sanada por emenda."
+  ],
+  "veiculo": "exceção de pré-executividade",
+  "por_que": "A decadência é cognoscível de ofício e dispensa garantia pela Súmula 393 (library/lef_e_sumulas_cda.md); a objeção formal também decorre da CDA. A exclusão de R$ 268.000,00 de 3T/2020 independe dos DARFs. A classificação de todo 4T/2020 como decaído e, portanto, os totais de R$ 509.000,00 decaídos e R$ 591.000,00 remanescentes pressupõem que o pagamento parcial registrado no resumo do PAF alcance IRPJ e CSLL; o resumo não identifica a imputação por tributo. A regra CTN 150 §4º indicada para 1T/2021 também pressupõe pagamento nos dois tributos, mas nenhum deles estaria decaído em 10/02/2026 mesmo sob CTN 173 I. Antes do protocolo, juntar os DARFs ou peças primárias do PAF como prova pré-constituída. Se o pagamento de 4T/2020 alcançar apenas um tributo, o valor decaído desse trimestre não pode ser apurado pela CDA agregada sem discriminação. Os valores são os da inscrição em 10/07/2026, sem atualização posterior. Fonte da regra decadencial: library/ctn_decadencia_prescricao.md."
+}

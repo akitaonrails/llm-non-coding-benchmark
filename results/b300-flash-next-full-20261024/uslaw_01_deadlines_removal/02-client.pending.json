@@ -1,0 +1,62 @@
+{
+  "case": "uslaw_01_deadlines_removal",
+  "questions": "# Open-items register — client Q&A received 2026-09-28; remaining unknowns flagged\n\nThe client answered the decisive questions on 9/28 and states **no additional information is available** for the rest. Per the engagement rules I do not invent facts: everything below is either (a) an answer now built into `memo.md` / `deadlines.json`, or (b) a **flagged unknown** with its consequence. Unknowns marked ⚠ have (or could have) deadline or money consequences; the rest are merits/record items.\n\n## A. Answered — incorporated into the deliverables\n\n| # | Client answer (2026-09-28) | Consequence |\n|---|---|---|\n| A1 | Harbor Street LLC has **exactly two members**: Noor Haddad — **65%** — lives **Portland, OR**; Caleb Sorensen — **35%** — lives **Seattle (Ballard), WA**. | LLC is a citizen of **WA and OR** (*Johnson*/*Carden*). Plaintiff is a WA citizen → **complete diversity fails**; Sorensen is a forum-state defendant → **§ 1441(b)(2) independently bars removal**. **No notice of removal. Case stays in King County.** |\n| A2 | CSA **emailed scans the same day (9/11)** to an old Gmail nobody monitors; client found them Sunday 9/27. | Confirms receipt \"through service\" on **2026-09-11**; the 9/27 discovery does not restart anything. Answer still due **2026-10-01**. |\n| A3 | **Nothing has been filed** for Harbor Street; **no Washington lawyer** engaged. | No prior appearance complicates anything; **retaining WA counsel is today's action item**. Only hard deadline: **Thu 10/1**. |\n| A4 | **Three short/spoiled deliveries, Mar–Apr 2026, ≈ $26,000**; photos + emails retained; those invoices never paid. | Core set-off/recoupment defense; pricing arithmetic $110,916.40 − ≈ $26,000 = ≈ $84,916.40. Pleads as set-off **and** (prudently) as counterclaim — see U7. |\n\n## B. Remaining unknowns — flagged explicitly (client has no further information)\n\n- **⚠ U1 — The Supply Agreement itself (most important missing paper).** Text unknown for: § 14 attorney-fees clause; any **forum-selection / consent-to-jurisdiction / venue / arbitration** clause; choice-of-law; **risk-of-loss / receiving-delivery terms** (the negligence claim turns on them and the complaint invokes them); the 12% interest provision; any set-off/withholding procedure for short or spoiled deliveries. *Consequence:* the butter claim's defense, the fee exposure, and the quality of the set-off defense cannot be evaluated. If a signed writing consents to King County or waives removal, that would have been a third independent bar — now belt-and-suspenders.\n- **⚠ U2 — Sorensen's domicile intent, and membership timing.** \"Lives in Seattle (Ballard)\" is reported; the library's test is **domicile** (residence + intent to remain), and the operating agreement / cap table are not produced, so membership on the 9/8 commencement date rests on the client's word. *Consequence:* none for the advice (no removal is the only signable position either way — see memo § 4.3), but get the documents for the file.\n- **⚠ U3 — Retention of a Washington lawyer and filing the answer by 10/1.** Counsel does not yet exist. *Consequence:* this is the **only hard deadline in the case**; failing it risks default, and the library lacks CR 6(b)/CR 55(c)/CR 60(b) text, so I cannot verify an extension or a clean fix after the fact.\n- **U4 — Both members' U.S. citizenship.** Neither confirmed. *Consequence:* moot for removal (barred regardless); noted because § 1332(a)(2)/(a)(3) is outside the library and would change the statutory analysis if it mattered. **[NOT IN LIBRARY]**\n- **U5 — CSA's 9/11 receipt records; which Gmail address; who can access it.** *Consequence:* does **not** move any date (in-hand service on the registered agent is documented by `documents/declaration_of_service.pdf`); matters only for the record and in case plaintiff's service is ever contested — and I could not verify that attack against authority anyway (CR 4 methods / RCW 4.28 not in library). **[NOT IN LIBRARY]**\n- **U6 — Insurance for the butter/negligence claim**: carrier, policy, limits, and **whether the claim has been noticed**. *Consequence:* late notice can forfeit coverage; this is a now-or-never item independent of the litigation calendar. Also unknown: whether the Seattle shop is a separate entity/DBA/franchise with any additional-insured or indemnity rights.\n- **U7 — Whether the Mar–Apr spoilage claims were raised in writing at the time, and which invoices/dates/dollar amounts make up the ≈ $26,000.** *Consequence:* quality of the set-off/counterclaim; the figure is currently an estimate not reconciled to invoices — left open deliberately. Whether the claim **must** be pleaded as a counterclaim now: no CR 13 analogue in the library — plead it to be safe. **[NOT IN LIBRARY]**\n- **U8 — Personal guarantees** on the Supply Agreement (client or Sorensen). *Consequence:* separate-suit / separate-exposure risk; affects settlement posture.\n- **U9 — Settlement authority, budget, objective** (pay less / supply continuity / exit the contract), and who can bind Harbor Street to settle. *Consequence:* no deadline depends on it, but the answer's tone and any early-peace overture depend on it.\n- **U10 — Communications hygiene confirmations.** Client says nothing has been filed and no lawyer is engaged; still confirm nothing has been emailed/texted to Sound Cascade or Pellegrino & Voss (e.g., the 9/27 reactions to the surprise of being served), and stop any further contact pending counsel.\n\n## C. Legal points the closed library cannot answer (flagged, none relied on for a date)\n\nWaiver of removal by state appearance (moot — no right to waive); FRCP 6(a) extending a statutory §1446(b) period (moot); § 1446(d) state-court notice mechanics (moot); CR 6(b) extensions; CR 12 motion effects on the answer date; CR 55 default mechanics and CR 55(c)/CR 60(b) relief; compulsory-counterclaim rule; counterclaim effect on amount in controversy; the \"not less than\" prayer's significance; validity of out-of-state service on a DE agent under CR 4 / RCW 4.28; all substantive contract, negligence, interest, fee-shifting (RCW 4.84.330), and set-off law. Each is labeled **[NOT IN LIBRARY — unverified]** wherever it appears in the memo.\n",
+  "facts": [
+    {
+      "id": "member",
+      "trigger": [
+        "member",
+        "partner",
+        "owner",
+        "equity",
+        "who owns",
+        "Seattle"
+      ],
+      "answer": "Yes — Caleb Sorensen owns 35% of the LLC. He lives in Seattle (Ballard). I own 65% and live in Portland. We're the only two members.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "registered_agent",
+      "trigger": [
+        "registered agent",
+        "CSC",
+        "how did you get",
+        "email",
+        "old address"
+      ],
+      "answer": "CSC emailed the scans on the 11th to our old Gmail. Nobody checks it. I found them Sunday night.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "appearance",
+      "trigger": [
+        "appearance",
+        "lawyer in Washington",
+        "already filed",
+        "anyone responded"
+      ],
+      "answer": "Nobody has filed anything for us. We don't have a Washington lawyer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "defense",
+      "trigger": [
+        "short deliveries",
+        "spoiled",
+        "photos",
+        "setoff",
+        "counterclaim"
+      ],
+      "answer": "Three deliveries in March–April were short or spoiled, about $26k worth. I have photos and emails. I never paid those invoices.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "appearance",
+    "defense",
+    "member",
+    "registered_agent"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

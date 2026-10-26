@@ -1,0 +1,58 @@
+{
+  "case": "uslaw_09_retaliation_termination",
+  "questions": "# QUESTIONS for the client\n**Date:** 2026-10-06 · **Revision 2 (after client's first response).** Questions answered in the client's reply (investigation status, decision-maker, FMLA handling) are not repeated here. Each remaining item is one on which the client reports having no further information; the items stay listed because they quantify exposure or enable execution.\n\n## Still open — client reports **no additional information** (flagged as explicit unknowns)\n1. **Base pay (UNKNOWN).** Dana's current base salary and commission/bonus accrual, and the dollar value of \"4 weeks' base pay\" in the draft form. Needed to quantify severance versus FMLA liquidated (double) damages (`fmla_2615.md`). All exposure analysis therefore remains in **multiples, not dollars**.\n2. **Severance-policy entitlement (UNKNOWN).** Whether company policy already grants any severance to departing employees — decides if the 4 weeks is valid additional consideration under §626(f)(1)(D) (`adea_owbpa_626f.md`).\n3. **Who can lawfully decide now (UNKNOWN).** Per the client's answer, Hale drives the termination and HR is \"just processing it.\" Authority above Hale (CEO, board, GC) has not been identified. Needed to reassign the decision and the 9/12 investigation away from Hale and from Ortiz as witness.\n4. **External investigator capacity (UNKNOWN).** No one has been identified to run the 9/12 investigation outside Hale's chain of command and outside Ortiz. If none exists internally, external counsel/investigator should be engaged; client has no further information.\n5. **Prior comparators (UNKNOWN).** Any Account Managers separated in 2024–2026 beyond the current five-person list in `comparator_data.csv`. Sharpening fact only; the current pattern stands regardless.\n6. **Litigation-hold confirmation (UNKNOWN).** Whether any hold notice or auto-delete suspension exists for Hale's, Ortiz's, IT's systems. None confirmed — treat as **not yet in force** until client confirms circulation in writing.\n7. **Nature of Hale's 'wait' instruction (UNKNOWN).** Verbal or written; date; seen by whom. Needed to define the preservation search terms for that instruction, which is now a key evidentiary item.\n\n## Confirmed by client (recorded here for the file, not re-asked)\n- **Harassment investigation:** zero work done; no investigator assigned (\"Honestly, nothing… I was going to get to it\").\n- **Decision-maker:** Hale wrote the PIP and drives the termination (\"Tom wrote the PIP and Tom wants her out. I'm just processing it\").\n- **FMLA:** no decision ever made; certification arrived 10/03; Hale instructed HR to wait (\"Tom said to wait\").\n",
+  "facts": [
+    {
+      "id": "investigation",
+      "trigger": [
+        "investigat",
+        "complaint",
+        "September 12",
+        "what happened with"
+      ],
+      "answer": "Honestly, nothing. Tom's been traveling. I was going to get to it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pip_author",
+      "trigger": [
+        "who wrote the PIP",
+        "Tom",
+        "decision-maker",
+        "who decided"
+      ],
+      "answer": "Tom wrote the PIP and Tom wants her out. I'm just processing it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "fmla_status",
+      "trigger": [
+        "FMLA",
+        "leave request",
+        "certification",
+        "approved"
+      ],
+      "answer": "We haven't approved or denied it. Certification came in 10/3. Tom said to wait.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "group",
+      "trigger": [
+        "others",
+        "group",
+        "RIF",
+        "program",
+        "anyone else"
+      ],
+      "answer": "Just her. No RIF.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "fmla_status",
+    "investigation",
+    "pip_author"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

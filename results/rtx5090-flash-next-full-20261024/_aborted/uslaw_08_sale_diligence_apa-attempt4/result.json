@@ -1,0 +1,23 @@
+{
+  "case": "uslaw_08_sale_diligence_apa",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 1444.035460420011,
+  "controller_wait_seconds": 48.004491188999964,
+  "model_turn_seconds": 1395.5954539780214,
+  "turns": 4,
+  "released_facts": [
+    "hensley_relationship",
+    "installers_hours"
+  ],
+  "usage": {
+    "input_tokens": 3760343,
+    "cached_input_tokens": 3396543,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 220773,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

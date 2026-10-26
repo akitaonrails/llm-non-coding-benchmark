@@ -1,0 +1,7 @@
+The client confirms bonuses recur, though the September pay stub still needs a line-by-line reconciliation. I’ll use the documented $45,000 target for a provisional support calculation and show the house result under explicit sale and tax assumptions. The refinance decision will remain open because the lender terms and carrying costs are unknown.
+
+The modeled split comes to $613,008 for Wife and $662,000 for Husband after assumed sale and withdrawal taxes, a $48,992 gap. Moving $24,496 of the existing cash allocation to Wife would equalize those modeled values if she keeps the house. I’ll document the assumptions and the sale fallback, since her ability to refinance is still unknown.
+
+The engagement is complete with open items. The proposed $770,000-per-side division yields an estimated **$613,008 for Wife and $662,000 for Husband after assumed sale and withdrawal taxes**. Moving $24,496 of the existing cash allocation to Wife would equalize those modeled values. Using Husband’s documented $45,000 target bonus, provisional child support is **$2,022.63 per month** during the proposed maintenance period.
+
+The calculations and recommendations are in [advice.md](/work/workspace/deliverable/advice.md), [division.json](/work/workspace/deliverable/division.json), and [child_support.json](/work/workspace/deliverable/child_support.json). [STATUS.md](/work/workspace/deliverable/STATUS.md) lists the remaining unknowns, including actual bonus payments and whether Wife can afford and obtain a refinance.

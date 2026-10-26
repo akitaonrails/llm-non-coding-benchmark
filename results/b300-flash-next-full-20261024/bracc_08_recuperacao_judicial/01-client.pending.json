@@ -1,0 +1,35 @@
+{
+  "case": "bracc_08_recuperacao_judicial",
+  "questions": "# Perguntas ao cliente\n\nRespostas necessárias para fechar itens deixados em aberto na Sessão 1 (o trabalho seguiu com as premissas declaradas nos entregáveis):\n\n1. **Data exata do protocolo do pedido** de recuperação judicial (não apenas o deferimento do processamento de 12/03/2026). Serve para fixar o corte temporal do art. 49.\n2. **Semanas 5 a 13 do fluxo de caixa** — o arquivo `fluxo_caixa_13_semanas.csv` contém apenas as semanas 1–4. Confirmar, ademais, que as 4 semanas informadas são de fato o período imediatamente posterior ao pedido.\n3. **Abertura dos R$ 5.750.000 de \"pagamentos_pos_pedido\"** (semanas 1–4) por natureza: fornecedores, folha, tributos (guias), despesas fixas, financeiras. Necessário para atestar perante o AJ que nada foi pago a credor concursal pré-pedido.\n4. **Composição do débito com a União (R$ 2,7 mi)** por tributo e por inscrição (DAS/DPJ x administrativo, com multa/juros), para modelar parcelamento e transação (Sessão 3): temos prejuízo fiscal/base negativa de CSLL disponível e de quanto? (Usado no art. 10-A, §1º-B da Lei 10.522 e na trava citada na Sessão 2.)\n5. **Credores pessoas ligadas** (sócio controlador, coligadas, garantidores): Banco Alfa, Banco Beta, Norte ou Sul têm relação societária com os controladores? (O art. 50-A não se aplica a dívidas com pessoas ligadas — impacta o cálculo da Sessão 2.)\n6. **Sul S.A. (EPP):** optante pelo Simples? (Enquadramento na Classe IV.) E os créditos trabalhistas individualizados: algum empregado com crédito acima do teto de 40 salários mínimos por empregado (que deslocaria o excedente para quirografário)? — regra de classificação não detalhada na biblioteca; precisamos da relação individual (art. 41 da LRF não consta da biblioteca, tratamos como não verificado).\n7. **Galpão/UPI (R$ 4,5 mi):** já há proposta/contrato? Está livre e desembaraçado ou onerado? A venda afetaria contrato de trabalho (transferência de empregados)?\n8. **Honorários** do administrador judicial e da assessoria contratada: valores/forma de cálculo, para a coluna de extraconcursais dos próximos demonstrativos.\n9. O **Fornecedor Norte** é, além do saldo de R$ 1,85 mi, credor de mais algum item pré-pedido (duplicatas em aberto além da relação)? E a essencialidade: há prazo contratual/factual para paralisação das entregas?\n",
+  "facts": [
+    {
+      "id": "norte",
+      "trigger": [
+        "Norte",
+        "metade",
+        "por fora",
+        "fornecimento",
+        "parar"
+      ],
+      "answer": "O Norte aceita continuar fornecendo à vista a partir de agora, mas quer 'um sinal' sobre o atrasado. Se eu não pagar, eles param.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "beta",
+      "trigger": [
+        "Beta",
+        "fiduciária",
+        "máquinas",
+        "essenciais"
+      ],
+      "answer": "As máquinas do Beta são a linha de separação de pedidos; sem elas, não opera.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "norte",
+    "beta"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,34 @@
+{
+  "contexts": [
+    {
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "approval_policy": "never",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      }
+    },
+    {
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "approval_policy": "never",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      }
+    }
+  ],
+  "cumulative_usage": {
+    "input_tokens": 192766,
+    "cached_input_tokens": 174080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 10639,
+    "reasoning_output_tokens": 2969,
+    "total_tokens": 203405
+  }
+}

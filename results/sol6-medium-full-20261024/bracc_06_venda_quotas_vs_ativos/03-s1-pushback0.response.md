@@ -1,0 +1,3 @@
+Sim, houve uma **opção legal de atualização de bens**, com pagamento de 4%, mas o prazo dela está encerrado. Ela não autoriza aumentar agora o custo das quotas pela valorização da empresa, nem atualizar “só uma parte” sem uma hipótese legal e documentação que a sustente. [Regra sobre custo de aquisição](</work/workspace/library/lei7713_art21_parcelado.md>).
+
+Os R$ 600 mil por sócio já refletem o capital informado e declarado. Para chegar aos R$ 2 milhões pretendidos, faltaria justificar **R$ 1,4 milhão de custo adicional por pessoa**. Sem prova de um fato que tenha aumentado esse custo, minha resposta continua sendo **não retificar a DIRPF**.

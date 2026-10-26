@@ -1,0 +1,33 @@
+{
+  "justa_causa_cabivel": false,
+  "motivos": [
+    "O post contém crítica genérica, sem ofensa pessoal ou imputação falsa de crime; o banco de horas registra 62 horas positivas de fins de semana, sem pagamento.",
+    "A gerente conhecia o post em 21/08/2026; pediu justa causa ao RH 47 dias depois, em 07/10/2026. Há alto risco de perdão tácito.",
+    "Não houve advertência ou suspensão, e a gravidade extrema necessária para dispensar gradação não está demonstrada.",
+    "Autoria e nexo estão indicados pelo print, sem punição anterior pelo mesmo fato; esses elementos não suprem os demais requisitos."
+  ],
+  "estabilidades": [
+    {
+      "tipo": "CIPA — suplente eleita representante dos empregados",
+      "fundamento": "ADCT art. 10, II, a; CLT art. 165; Súmula 339, I, TST (library/estabilidade_cipa.md)",
+      "ate": "2028-06-01 (mandato presumido de 02/06/2026 a 01/06/2027, mais um ano)"
+    },
+    {
+      "tipo": "Gestante",
+      "fundamento": "ADCT art. 10, II, b; Súmula 244, I-II, TST (library/estabilidade_gestante.md)",
+      "ate": "2027-09-23, estimativa: parto em 23/04/2027 a partir de nove semanas em 18/09/2026, mais cinco meses; depende da data real do parto"
+    }
+  ],
+  "exposicao_se_reverter": {
+    "verbas_rescisorias": 23616.67,
+    "indenizacao_estabilidade": 183993.33,
+    "dano_moral_estimado": 5000.00,
+    "total": 212610.00
+  },
+  "alternativas": [
+    "Não aplicar justa causa pelo post nem dispensar sem justa causa durante as garantias; manter Camila no emprego, apurar a jornada e o banco de horas e corrigir diferenças comprovadas.",
+    "Se ocorrer falta nova e distinta, apurá-la com prova e agir prontamente, aplicando proporcionalidade e gradação.",
+    "Se a justa causa já tiver sido efetivada, avaliar reintegração durante as garantias; se inviável, provisionar indenização substitutiva sem duplicar os períodos."
+  ],
+  "recomendacao": "Rejeitar o pedido de justa causa e não dispensar sem justa causa durante as garantias. Justa causa válida afastaria a estabilidade gestante, mas a reversão a restabelece; pagamento de verbas não substitui automaticamente a reintegração. R$ 212.610,00 é cenário indicativo de reversão de justa causa; a dispensa sem justa causa teria subtotal ilustrativo de R$ 207.610,00 antes do FGTS e itens abertos."
+}

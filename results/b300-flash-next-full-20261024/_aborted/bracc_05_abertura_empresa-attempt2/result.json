@@ -1,0 +1,25 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-flash-next-full-20261024/bracc_05_abertura_empresa/04-review",
+  "elapsed_seconds": 1559.9803233880084,
+  "controller_wait_seconds": 111.0108536570333,
+  "model_turn_seconds": 1448.6871842920664,
+  "turns": 4,
+  "released_facts": [
+    "aluguel_pct",
+    "luana_trabalho",
+    "marina_cargo",
+    "regime_bens"
+  ],
+  "usage": {
+    "input_tokens": 5040633,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 196115,
+    "reasoning_output_tokens": 99789
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,128 @@
+{
+  "asset_sale_buyer_a_as_drafted": {
+    "ordinary_income": 1070000.00,
+    "capital_gain": 1450000.00,
+    "entity_level_tax": 237300.00,
+    "shareholder_level_tax": 685900.00,
+    "total_tax": 923200.00,
+    "net_after_tax": 2176800.00,
+    "effective_rate_on_price": 0.2978,
+    "gain_components": {
+      "class_III_receivables": { "allocated": 200000.00, "basis": 200000.00, "gain": 0.00, "character": "no gain assumed (FMV taken as face value)" },
+      "class_IV_inventory": { "allocated": 150000.00, "basis": 140000.00, "gain": 10000.00, "character": "ordinary" },
+      "class_V_equipment_vehicles": { "allocated": 900000.00, "basis": 240000.00, "gain": 660000.00, "character": "ordinary in full - IRC 1245(a)(1): recapture ceiling 860,000 exceeds the 660,000 gain, so nothing escapes as capital gain" },
+      "class_VI_noncompete": { "allocated": 400000.00, "basis": 0.00, "gain": 400000.00, "character": "ordinary - Rev. Rul. 69-643; Muskat (1st Cir. 2009)" },
+      "class_VII_goodwill": { "allocated": 1450000.00, "basis": 0.00, "gain": 1450000.00, "character": "long-term capital gain" }
+    },
+    "build_in_gains_sec_1374": {
+      "recognition_period": "1/1/2023 - 12/31/2027 (5 years from first day of first S year); a 2026 closing is inside it",
+      "recognized_big_by_asset": { "goodwill_trade_name": 900000.00, "equipment_vehicles": 230000.00, "receivables_inventory_other": 0.00 },
+      "net_recognized_big": 1130000.00,
+      "rate": 0.21,
+      "entity_tax": 237300.00,
+      "note": "each asset's recognized built-in gain is capped at its built-in gain at the start of the recognition period. The cap binds under every allocation tested, so re-allocating price does NOT reduce this tax."
+    },
+    "sensitivities_not_in_headline": {
+      "sec_1366_f_2_passthrough_of_the_big_tax": { "benefit_range": [47460.00, 87801.00], "net_after_tax_range": [2224260.00, 2264601.00] },
+      "inside_vs_outside_basis_gap": { "inside_aggregate_asset_basis": 580000.00, "outside_stock_basis": 420000.00, "basis_destroyed": 160000.00, "extra_tax_if_all_cash_distributed_and_llc_liquidated": 32000.00 }
+    }
+  },
+  "stock_sale_buyer_b": {
+    "ordinary_income": 0.00,
+    "capital_gain": 2430000.00,
+    "entity_level_tax": 0.00,
+    "shareholder_level_tax": 486000.00,
+    "total_tax": 486000.00,
+    "net_after_tax": 2364000.00,
+    "effective_rate_on_price": 0.1705,
+    "gain_components": {
+      "sale_of_membership_interests": { "amount_realized": 2850000.00, "stock_basis": 420000.00, "gain": 2430000.00, "character": "long-term capital gain in full; no asset-by-asset computation, so no 1245 recapture and no covenant ordinary income" }
+    },
+    "build_in_gains_sec_1374": { "entity_tax": 0.00, "reason": "the corporation disposes of no assets, so it has no net recognized built-in gain; the 1374 exposure stays inside the company with the buyer. This reverses if the buyer asks for a 338(h)(10) or 336(e) election." },
+    "sec_453_installment": {
+      "gross_profit_ratio": 0.8526315789,
+      "gain_recognized_at_closing": 2003684.21,
+      "gain_recognized_each_year_years_1_to_5": 85263.16,
+      "capital_gain_tax_at_closing": 400736.84,
+      "capital_gain_tax_deferred_out_of_the_closing_year": 85263.16,
+      "interest_income_total": 90000.00,
+      "interest_income_character": "ordinary income at 37% as received (not capital gain)",
+      "interest_tax_total": 33300.00,
+      "net_after_tax_of_note_interest": 56700.00,
+      "nominal_net_after_tax_including_note_interest": 2420700.00
+    },
+    "sensitivities_not_in_headline": {
+      "unsecured_note_pv_haircut_vs_face": { "at_8pct": 25182.25, "at_10pct": 48368.53, "at_12pct": 69761.19, "at_15pct": 98870.69 },
+      "escrow_at_risk_for_12_months": 100000.00,
+      "indemnity_cap_10pct_of_price": 285000.00
+    }
+  },
+  "asset_sale_counter_allocation": {
+    "ordinary_income": 510000.00,
+    "capital_gain": 2010000.00,
+    "entity_level_tax": 237300.00,
+    "shareholder_level_tax": 590700.00,
+    "total_tax": 828000.00,
+    "net_after_tax": 2272000.00,
+    "effective_rate_on_price": 0.2671,
+    "gain_components": {
+      "class_III_receivables": { "allocated": 200000.00, "basis": 200000.00, "gain": 0.00, "character": "no gain" },
+      "class_IV_inventory": { "allocated": 140000.00, "basis": 140000.00, "gain": 0.00, "character": "no gain" },
+      "class_V_equipment_vehicles": { "allocated": 650000.00, "basis": 240000.00, "gain": 410000.00, "character": "ordinary in full - IRC 1245(a)(1)" },
+      "class_VI_noncompete": { "allocated": 100000.00, "basis": 0.00, "gain": 100000.00, "character": "ordinary" },
+      "class_VII_goodwill": { "allocated": 2010000.00, "basis": 0.00, "gain": 2010000.00, "character": "long-term capital gain" }
+    },
+    "build_in_gains_sec_1374": { "net_recognized_big": 1130000.00, "entity_tax": 237300.00, "note": "identical to the drafted allocation - the asset-level caps bind in both cases" },
+    "value_of_the_allocation_fix_vs_exhibit_a_as_drafted": 95200.00,
+    "price_increase_that_makes_ray_whole_if_lone_star_keeps_exhibit_a": 119000.00
+  },
+  "ray_naive_estimate": {
+    "net_after_tax": 2480000.00,
+    "arithmetic": "3,100,000 x (1 - 0.20). Ray's stated assumption: the entire price is long-term capital gain taxed at 20%.",
+    "overstated_by_vs_his_own_offer_as_drafted": 303200.00,
+    "alternative_reading_20pct_on_gain_not_price": 2596000.00
+  },
+  "ranking_and_recommendation": {
+    "nominal_net_after_tax_on_deal_consideration_only": {
+      "buyer_a_as_drafted": 2176800.00,
+      "buyer_a_counter_allocation": 2272000.00,
+      "buyer_a_best_defensible_covenant_at_zero": 2289000.00,
+      "buyer_b_stock": 2364000.00
+    },
+    "winner": "Buyer B (Hensley) nets more even though its price is 250,000 lower",
+    "margin_over_a_as_drafted": 187200.00,
+    "margin_over_a_counter_allocation": 92000.00,
+    "price_lone_star_must_reach_for_parity": { "as_drafted": 3334000.00, "counter_allocation": 3215000.00, "covenant_at_zero": 3193750.00 },
+    "deemed_asset_sale_at_hensley_price_if_a_338_election_is_made": {
+      "note": "Hensley's LOI reserves the right to elect. Neither LOI states a deemed-sale allocation, so two bounding cases are computed at the same 2,850,000 price. sec. 1374 tax is 237,300 in BOTH because the 1/1/2023 built-in-gain caps (equipment 230,000 + goodwill 900,000) are fully absorbed once the deemed gain exceeds them. Headline definitions apply; no sec. 1366(f)(2) credit.",
+      "d1_proper_residual_equipment_at_fmv_covenant_zero": { "allocation": "receivables 200,000 / inventory 150,000 / equipment 650,000 / covenant 0 / goodwill 1,850,000", "ordinary_income": 420000.00, "capital_gain": 1850000.00, "entity_level_tax": 237300.00, "shareholder_level_tax": 525400.00, "total_tax": 762700.00, "net_after_tax": 2087300.00, "cost_to_ray_vs_clean_stock_sale": 276700.00, "price_holding_ray_whole_vs_stock_sale_incl_note_interest": 3266750.00 },
+      "d2_lone_star_exhibit_a_dollars_scaled_to_2850000": { "allocation": "receivables 200,000 / inventory 150,000 / equipment 900,000 / covenant 400,000 / goodwill 1,200,000", "ordinary_income": 1070000.00, "capital_gain": 1200000.00, "entity_level_tax": 237300.00, "shareholder_level_tax": 635900.00, "total_tax": 873200.00, "net_after_tax": 1976800.00, "cost_to_ray_vs_clean_stock_sale": 387200.00, "price_holding_ray_whole_vs_stock_sale_incl_note_interest": 3404875.00 },
+      "make_whole_mechanics": "hold-harmless prices solve against the stock-sale net including note interest (2,420,700); incremental price dollars fall into the goodwill residual (20%) and trigger no further sec. 1374 because the BIG caps are already fully absorbed, so each extra dollar nets 0.80",
+      "negotiating_stance": "consent to any 338(h)(10)/336(e) election is a priced item - open at +400,000, floor at the measured damage of 276,700"
+    },
+    "timing_lever_asset_sale_closing_after_12_31_2027": { "sec_1374_tax": 0.00, "net_after_tax_under_counter_allocation": 2509300.00, "caveat": "commercially unrealistic with these buyers; shown to price the lever" },
+    "recommendation": "Do not sign Buyer A's LOI as drafted. Use it to raise Buyer B."
+  },
+  "assumptions_and_method": {
+    "rates": { "ordinary": 0.37, "long_term_capital_gain": 0.20, "corporate_sec_1374": 0.21, "net_investment_income_tax": 0.00, "texas_individual": 0.00, "source": "library/capital_gain_rates.md and library/irc_1374.md" },
+    "definitions": "total_tax = shareholder-level tax + entity-level sec. 1374 tax. net_after_tax = deal consideration minus total_tax, nominal and undiscounted, EXCLUDING interest accruing on Buyer B's note (a return on the note, reported separately) and EXCLUDING entity-level liabilities, escrow and indemnity (amounts unknown - see QUESTIONS.md).",
+    "key_assumptions": [
+      "receivables: FMV equals face and tax basis equals face, so no gain. If the company keeps its books on the cash method, the 200,000 is ordinary income when collected instead - see QUESTIONS.md",
+      "equipment and vehicles: FMV 650,000 per the fixed asset register; adjusted basis 240,000; accumulated depreciation 860,000 is the sec. 1245 recapture ceiling",
+      "Class VII residual goodwill modeled with zero tax basis (conservative): the conversion schedule shows 100,000 of goodwill/trade-name adjusted basis at 1/1/2023 and the file has no post-2023 amortization history; each remaining dollar of basis is worth 0.20 to the seller (at most 20,000) - see QUESTIONS.md",
+      "Ray materially participates in an active trade or business, so the 3.8% net investment income tax does not apply (stated in library/capital_gain_rates.md)",
+      "Ray's stock basis remains 420,000 through the closing date (the file gives it as of 12/31/2025)",
+      "a 2026 closing, all in one tax year; no Texas individual income tax; Texas franchise tax not quantified because the library has no authority for it",
+      "the entity-level 1374 tax is treated as a straight cash cost, with no credit for its sec. 1366(f)(2) pass-through; that pass-through is quantified only as a labelled sensitivity",
+      "no real property is involved, so there is no sec. 1250 analysis; all equipment is sec. 1245 property",
+      "Buyer B makes no sec. 338(h)(10) or sec. 336(e) election, consistent with its statement that the S election stays in place through closing; if it does, see ranking_and_recommendation.deemed_asset_sale_at_hensley_price_if_a_338_election_is_made for the two bounding computations",
+      "the deemed-sale bounding cases at Hensley's price use inventory at 150,000 (the Exhibit A figure) because neither Hensley LOI states an allocation; equipment basis 240,000 and the 1245 ceiling 860,000 carry over unchanged",
+      "Ray is treated as a 100% owner (the file names no other shareholders); if the LLC has more than one member, the 338 analysis and the distribution analysis both change - see QUESTIONS.md"
+    ],
+    "things_that_do_not_reconcile": [
+      "Buyer A's 45-day exclusivity ran from 3/30/2026 and appears to have expired around 5/14/2026, yet Ray wants to sign on 'Friday'; both LOIs also predate the 12/31/2025 basis date. Unresolved - see QUESTIONS.md.",
+      "inside aggregate asset basis (580,000) exceeds Ray's outside stock basis (420,000) by 160,000. In an asset sale that 160,000 of basis is destroyed; if all cash is distributed and the LLC is liquidated it costs a further ~32,000. Left out of the headline figures because liabilities and distribution mechanics are unknown.",
+      "Buyer A's Exhibit A allocates 900,000 to Class V against a documented FMV of 650,000, which is inconsistent with the residual method rule that each class is filled only up to FMV. The exhibit therefore cannot be reconciled to sec. 1060 as the library states it."
+    ]
+  }
+}

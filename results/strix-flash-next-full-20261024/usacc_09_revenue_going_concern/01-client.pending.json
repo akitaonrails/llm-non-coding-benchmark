@@ -1,0 +1,46 @@
+{
+  "case": "usacc_09_revenue_going_concern",
+  "questions": "# Questions for client — outstanding inputs\n\nNone of these change the revenue or going-concern conclusions; they finalize the Ironvale lease measurement and balance-sheet classification. Answers will be incorporated on the next turn.\n\n1. **Discount rate for the Ironvale lease.** What is Northwind's incremental borrowing rate (or the rate implicit in the Ironvale contract, if known) at commencement, 2025-10-01? The library requires the lease liability at the *present value* of payments but does not supply a rate; my draft uses 0% (undiscounted, $594,000 at 12/31/2025) as a clearly labeled upper bound.\n2. **Lease vs. non-lease allocation.** Ironvale's $18,000/month includes power, cooling, and network (non-lease components per the library). Are there standalone prices or any allocation schedule in the full contract (Schedule B or similar)? Absent one, I assumed the entire $18,000 is the lease component; with an allocation the lease liability and ROU asset will decrease.\n3. **Saltline receivable/cash.** Has Saltline paid the $210,000 invoice dated 2025-12-28? If paid, it is a refund liability/customer advance on the balance sheet; if unpaid, whether a receivable should be shown (vs. no entry) needs a collection assessment. Either way, Q4 revenue is $0.\n4. **Costs tied to the reversed revenue.** The drafted P&L has no cost-of-sales line. Did Q4 records include hardware cost for the 120 Saltline kits or any incremental costs for Halvorsen that would need reversal/reclassification alongside the revenue adjustments? (Adjusted net loss shown as −$234,000 assumes none.)\n5. **Confirmations.** Confirm there are no amendments, side agreements, or definitive agreements after the file dates for Halvorsen (LOI 12/19), Saltline (order 12/22, side letter 12/23), or Ironvale (agreement effective 10/1/2025).\n",
+  "facts": [
+    {
+      "id": "side_letter_signed",
+      "trigger": [
+        "side letter",
+        "countersigned",
+        "return right",
+        "refund"
+      ],
+      "answer": "Yes, Alvarado countersigned it. Saltline insisted. It's just a comfort letter.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "kits_tagged",
+      "trigger": [
+        "segregated",
+        "tagged",
+        "identified",
+        "which kits",
+        "general stock"
+      ],
+      "answer": "They're on the shelf with everything else. Same SKU, no point tagging.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "halvorsen_status",
+      "trigger": [
+        "Halvorsen",
+        "definitive",
+        "MSA signed",
+        "procurement committee"
+      ],
+      "answer": "Procurement meets Jan 20. Security review is 'in progress'. They're committed, trust me.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "side_letter_signed",
+    "halvorsen_status"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,1 @@
+{"fact_ids": ["norte"], "reason": "Q3 asks directly whether the Fornecedor Norte delivery was paid and what balance remains open: release norte. No question mentions Beta, the fiduciary machines or essential assets, so beta stays withheld. Q1, Q2, Q4 have no scripted fact.", "controller": "claude-fable-5.1-session-agent", "decided_at": "2026-10-26T14:17:47Z"}

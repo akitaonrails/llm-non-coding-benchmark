@@ -1,0 +1,49 @@
+# Brightline Cabinetry: offer comparison and negotiating position
+
+**Recommendation.** Do not sign Lone Star's allocation as drafted. On the assumptions below, Hensley's $2.85 million stock offer nets about **$2,364,000**, versus **$2,264,601** for Lone Star as drafted. A provisional Lone Star counter allocation at the same price narrows that gap to **$4,199** ($2,359,801 versus $2,364,000). That narrow difference does not resolve Hensley's unsecured note risk, escrow, company liabilities, or Lone Star's unpriced consulting obligation. Negotiate both offers and recalculate before signing.
+
+## Assumptions and unresolved facts
+
+`comparison.json` is an **illustrative model, not a final tax return or confirmed closing statement**. It assumes: $3,100,000 is all Lone Star consideration despite its assumption of an unknown amount of trade payables; receivables have $200,000 tax basis; inventory has $140,000 basis; equipment basis remains $240,000; goodwill basis is zero; Ray's stock basis remains $420,000 at closing; Ray materially participates; no transaction costs, 2026 basis changes, other tax attributes, interest income, Texas franchise tax, escrow timing difference, or separate consulting earnings; and Hensley's note principal is paid in full. The client's willingness to sign a five-year covenant while retiring does not establish its fair market value. The client disclosed a **$9,800 Hardaway dispute** and routine warranties, but no payable amount or warranty valuation. All these items remain open.
+
+Individual rates are 37% for ordinary income and 20% for long-term capital gain, with no 3.8% net investment income tax under the active participation assumption ([2026 individual rates](../library/capital_gain_rates.md)). Long-term treatment for the membership interest and goodwill is assumed. The library's [stock and asset overview](../library/stock_vs_asset_overview.md) supports stock-sale capital gain generally, but lacks detailed holding-period and goodwill-character rules; those details are **unverified in the closed library**.
+
+The model treats the $237,300 built-in-gains tax as an S corporation loss that reduces **ordinary** pass-through income in the same year. Thus `ordinary_income` in JSON means gross ordinary gain **before** that loss. The [§1374 source](../library/irc_1374.md) says the tax is treated as a loss, but the library does **not** establish its character or timing at shareholder level. The ordinary offset is a material **unverified modeling assumption**. Without a current owner tax benefit from that loss, Lone Star total tax/net would be **$923,200/$2,176,800** as drafted and **$828,000/$2,272,000** under the counter. Confirm this treatment with the return preparer.
+
+## Tax arithmetic and gain character
+
+| Item | Lone Star draft | Lone Star counter | Hensley stock |
+|---|---:|---:|---:|
+| Stated price | $3,100,000 | $3,100,000 | $2,850,000 |
+| Receivables less assumed basis | $200,000 − $200,000 = $0 | same | — |
+| Inventory gain, modeled ordinary | $150,000 − $140,000 = $10,000 | $140,000 − $140,000 = $0 | — |
+| Equipment gain, modeled §1245 recapture | $900,000 − $240,000 = $660,000 | $650,000 − $240,000 = $410,000 | — |
+| Covenant/consulting amount, modeled ordinary | $400,000 | $100,000 covenant | — |
+| **Gross ordinary gain** | **$1,070,000** | **$510,000** | **$0** |
+| Goodwill/residual, modeled capital gain | $1,450,000 | $2,010,000 | — |
+| Stock gain | — | — | $2,850,000 − $420,000 = $2,430,000 |
+| §1374 entity tax | $237,300 | $237,300 | $0 |
+| Individual ordinary tax after assumed entity-tax loss | ($1,070,000 − $237,300) × 37% = $308,099 | ($510,000 − $237,300) × 37% = $100,899 | $0 |
+| Individual capital-gain tax | $1,450,000 × 20% = $290,000 | $2,010,000 × 20% = $402,000 | $2,430,000 × 20% = $486,000 |
+| **Total modeled tax** | **$835,399** | **$740,199** | **$486,000** |
+| **Stated price less modeled tax** | **$2,264,601** | **$2,359,801** | **$2,364,000** |
+
+The $660,000 draft equipment gain is treated as recapture for illustration. [§1245](../library/irc_1245.md) applies **asset by asset** up to depreciation, and the LOI gives no item-level prices. Its $900,000 class V amount also exceeds the register's $650,000 total estimated fair value. The draft's exact recapture and other-gain split cannot be verified. Under the counter's register values, the six item gains are $230,000 + $71,000 + $48,000 + $30,000 + $31,000 + $0 = **$410,000**; each fits within that item's depreciation, so all are recapture. Inventory gain is modeled ordinary; its statutory character is **not covered in the library**. A non-compete payment is ordinary to Ray and must reflect economic reality ([§197 and non-compete](../library/irc_197_and_noncompete.md)). The draft's $400,000 also covers unspecified consulting. We model it all as ordinary and paid at closing, although service split, recipient, and timing are unknown.
+
+Ray's rough **$2,480,000** estimate is $3,100,000 × (1 − 20%). Actual taxable gain depends on basis, and this asset deal has ordinary recapture and covenant income plus entity tax. The draft modeled net is **$215,399 below** his estimate.
+
+## Built-in gains and installment note
+
+Brightline elected S status January 1, 2023 after C corporation taxation. A 2026 asset sale is within the five-year recognition period. The conversion appraisal showed $900,000 built-in goodwill gain and $230,000 equipment gain; both modeled asset allocations recognize at least those amounts. Entity tax is ($900,000 + $230,000) × 21% = **$237,300** ([§1374](../library/irc_1374.md)). A straight stock sale does not itself dispose of company assets. A buyer-requested §338(h)(10) or §336(e) election would make it a deemed asset sale with asset-sale consequences; it needs separate pricing ([stock and asset overview](../library/stock_vs_asset_overview.md)).
+
+For Hensley, gross profit is $2,430,000 and the installment ratio is $2,430,000 ÷ $2,850,000 = **85.2631579%**. Under the library's [§453 installment rules](../library/irc_453_installment.md), $2,350,000 cash carries about **$2,003,684 gain/$400,737 tax**; $500,000 note principal carries about **$426,316 gain/$85,263 tax** as received. If principal is five equal $100,000 annual payments, each carries about $85,263 gain/$17,053 tax. The note's 6% interest is additional to stated principal and excluded from the comparison; its income tax treatment is **unverified in the library**. Escrow release terms may change payment and tax timing. An asset-deal note would not defer §1245 recapture, which is recognized in the sale year, or inventory gain under [§453](../library/irc_453_installment.md).
+
+## Liability terms and negotiation
+
+Lone Star offers all cash and assumes only trade payables on a closing schedule. The payable amount and treatment of the Hardaway dispute and warranties are missing. Hensley buys the company with known and unknown liabilities but has a 12-month indemnity capped at 10% of price (**$285,000**) and a **$100,000 escrow**. If the escrow comes from the $2,350,000 cash component, Ray initially receives **$2,250,000 before tax and costs**, plus an unsecured $500,000 five-year buyer note. The note creates real payment risk. The asset structure may leave other company liabilities with the seller entity; the stock structure leaves them inside the acquired company, subject to indemnity. These general consequences are described in the [stock and asset overview](../library/stock_vs_asset_overview.md); signed terms control the exact exposure.
+
+1. Give Lone Star the [counter allocation](form_8594_counter.md): class V at the register's $650,000 estimated value, inventory provisionally $140,000, and a **provisional** $100,000 covenant. Obtain support for the covenant value and define any actual consulting services before finalizing. Both parties must report consistently under [§1060 and Form 8594](../library/irc_1060_form_8594.md). Require support for Lone Star's $900,000 class V value if it insists on it.
+2. The counter trails Hensley by $4,199 in this model. At a modeled 20% marginal tax on additional goodwill, about **$5,249** more Lone Star cash would bridge that mathematical gap ($4,199 ÷ 0.8), but the open tax and liability issues warrant a larger margin or stronger assumption/indemnity protection. Recalculate any price change.
+3. Ask Hensley for security or a guarantee on the $500,000 note, clear escrow release rules, and narrower indemnity or explicit treatment of Hardaway and warranties. Confirm there is no deemed-asset election. Price the note's interest and credit risk separately.
+
+**Open closing items:** assumed payables and liability schedule; receivables accounting method and basis; updated stock and asset bases; item-level equipment prices; inventory and covenant valuations; consulting scope and payment recipient; escrow terms; Texas franchise tax; and the §1374 tax-loss treatment. The client has no further information now.

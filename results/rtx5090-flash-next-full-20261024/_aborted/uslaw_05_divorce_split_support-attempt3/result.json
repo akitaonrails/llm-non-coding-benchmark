@@ -1,0 +1,20 @@
+{
+  "case": "uslaw_05_divorce_split_support",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-full-20261024/uslaw_05_divorce_split_support/01-s1-work",
+  "elapsed_seconds": 84.4160242920043,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 83.97938632499427,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

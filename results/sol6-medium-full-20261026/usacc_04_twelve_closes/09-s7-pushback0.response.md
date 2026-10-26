@@ -1,0 +1,3 @@
+No. The July amendment confirms the original Pinecone contract was a 12-month subscription beginning in February. Under [ASC 250](/work/workspace/library/asc250_excerpts.md), an error in previously issued periods must be corrected by restating those periods and disclosing the effects. Booking the full $15,000 as July revenue would misstate July and leave February–June wrong.
+
+The [July package](/work/workspace/deliverable/month_07/restatement.md) preserves the original files and provides reissued February–June balances with a clear reconciliation. The July ledger entry aligns the books with those restated balances; it is explicitly excluded from July revenue. The Board and bank should receive the corrected periods and the explanation.

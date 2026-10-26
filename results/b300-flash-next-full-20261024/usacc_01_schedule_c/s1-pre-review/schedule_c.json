@@ -1,0 +1,39 @@
+{
+  "tax_year": 2025,
+  "lines": {
+    "1": 50750.00,
+    "7": 50750.00,
+    "9": 194.60,
+    "10": 1199.15,
+    "15": 480.00,
+    "20b": 2800.00,
+    "24a": 1030.00,
+    "24b": 95.00,
+    "25": 1116.00,
+    "27a": 4058.88,
+    "28": 10973.63,
+    "29": 39776.37,
+    "30": 0.00,
+    "31": 39776.37
+  },
+  "schedule_se": {
+    "net_earnings": 36733.48,
+    "se_tax": 5620.22,
+    "deductible_half": 2810.11
+  },
+  "not_on_schedule_c": [
+    {"item": "Beacon Fintech 1099-NEC box 1", "amount": 18500.00, "where": "included once on Schedule C line 1 within 1099-K gross (duplicate info-return reporting per line 1 instructions) - NOT additional income; client confirmed Beacon pays through PayHub"},
+    {"item": "Orchard Health PBC 1099-NEC box 1", "amount": 12200.00, "where": "included once on Schedule C line 1 within 1099-K gross (duplicate info-return reporting per line 1 instructions) - NOT additional income; client confirmed Orchard pays through PayHub"},
+    {"item": "Blue Cross Blue Shield TX health premiums (May-Dec, 8 x $380)", "amount": 3040.00, "where": "Schedule 1 line 17 (self-employed health insurance deduction); client confirmed own individual plan with no employer coverage after leaving Larkspur in April; form-level SE-income limit is not in the library - unverified, carried at full amount pending form application"},
+    {"item": "One-half of self-employment tax", "amount": 2810.11, "where": "Schedule 1 line 15"},
+    {"item": "Federal estimated tax payments Q1-Q3 (1,500+2,500+2,500)", "amount": 6500.00, "where": "Form 1040 payments line - not deductible"},
+    {"item": "Larkspur Interactive W-2 wages (box 1)", "amount": 24800.00, "where": "Form 1040 line 1 wages"},
+    {"item": "Tessaro Studios invoice 1041 received 2024-12-27", "amount": 3000.00, "where": "prior year - 2024 return (cash method); OPEN: client could not confirm it was reported on the 2024 return"},
+    {"item": "Southwest Airlines AUS-DEN flight 2025-06-13", "amount": 389.00, "where": "personal - CONFIRMED by client (cousin's wedding, nothing work-related)"},
+    {"item": "Apartment rent (Zelle M. Okafor, 12 x $1,650)", "amount": 19800.00, "where": "personal (IRC 262) - no qualifying home office; client provided no facts establishing regular-and-exclusive business use"},
+    {"item": "H-E-B groceries 2025 (12 debits)", "amount": 2102.95, "where": "personal (IRC 262)"},
+    {"item": "Netflix (12 x $15.49)", "amount": 185.88, "where": "personal (IRC 262)"},
+    {"item": "OrangeTheory Fitness (12 x $49)", "amount": 588.00, "where": "personal (IRC 262)"},
+    {"item": "Venmo wedding gift Kat & Jules", "amount": 200.00, "where": "personal gift (IRC 262)"}
+  ]
+}

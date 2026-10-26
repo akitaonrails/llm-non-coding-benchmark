@@ -1,0 +1,1 @@
+Halvorsen (call, 2026-10-20): Pinecrest will pay the four undisputed invoices ($265,200) over 6 months, $0 on J-4533, $0 conversion fees, mutual release, each side bears its own fees. 'If you push the interference claim in arbitration we'll seek fees under C.3.'

@@ -1,0 +1,103 @@
+{
+  "titulo": "Sessão 3 — Lançamentos da novação na homologação do plano e ganho do deságio",
+  "devedor": "Atlas Distribuidora S.A. (em recuperação judicial)",
+  "data_referencia": {
+    "marco": "D_HOM — data da homologação do plano",
+    "rotulo": "data não informada (QUESTIONS.md item 14, sem resposta — levado como placeholder, jamais re-perguntado). Os lançamentos são datados em D_HOM; os valores, conferidos abaixo, independem da data."
+  },
+  "base_valores": {
+    "convencao": "NOMINAL — taxa de desconto não informada (QUESTIONS.md item 13). Taxa nula adotada: valor presente = valor nominal. O ganho de 3.882.000 é o PISO; com taxa positiva, o PV do novo passivo cai e o ganho contábil cresce.",
+    "teste_de_novacao": "teste dos 10% do CPC 48 (IFRS 9) SUPERADO COM FOLGA — deságio de 60% nas classes III/IV; termos substancialmente diferentes (cpc_contabil_rj.md). Passivo original baixado; novo passivo reconhecido a valor justo (PV); diferença = ganho, em rubrica própria, separadamente divulgado."
+  },
+  "credito_baixado": {
+    "fonte": "sessao1/classificacao_creditos.json (7 créditos, 13.540.000) — concursais sujeitos ao plano",
+    "por_credor": [
+      { "credor": "Créditos trabalhistas (classe I)", "original": 960000, "pago_no_plano": 960000, "desagio": 0 },
+      { "credor": "Alfaparts (classe III)", "original": 4200000, "pago_no_plano": 1680000, "desagio": 2520000 },
+      { "credor": "Fornecedor Norte (classe III)", "original": 1850000, "pago_no_plano": 740000, "desagio": 1110000 },
+      { "credor": "Fornecedora Sul (classe IV)", "original": 420000, "pago_no_plano": 168000, "desagio": 252000 }
+    ],
+    "totais": { "baixado": 7430000, "novo_passivo": 3548000, "ganho": 3882000 },
+    "conferencia_python": "6.470.000 × 40% = 2.588.000; 960.000 + 2.588.000 = 3.548.000; 7.430.000 − 3.548.000 = 3.882.000; deságios 2.520.000 + 1.110.000 + 252.000 = 3.882.000; Dr 7.430.000 = Cr 3.548.000 + 3.882.000 (todas as asserções OK)"
+  },
+  "lancamento_1_novacao": {
+    "data": "D_HOM",
+    "evento": "homologação do plano — novação com baixa do passivo concursal e reconhecimento do novo passivo do plano",
+    "partidas_dobradas": [
+      { "sentido": "Dr", "conta": "Passivo — créditos trabalhistas em recuperação judicial (rubrica própria)", "valor": 960000 },
+      { "sentido": "Dr", "conta": "Passivo — quirografários/ME-EPP em recuperação judicial (rubrica própria)", "valor": 6470000 },
+      { "sentido": "Cr", "conta": "Passivo — obrigações assumidas no plano homologado (novo passivo)", "valor": 3548000 },
+      { "sentido": "Cr", "conta": "Receita de renegociação de dívidas em recuperação judicial (ganho — rubrica própria do resultado)", "valor": 3882000 }
+    ],
+    "confere": "Dr 7.430.000 = Cr 3.548.000 + Cr 3.882.000 = 7.430.000 ✓ (verificado em Python)"
+  },
+  "novo_passivo_detalhe": {
+    "trabalhistas": {
+      "total": 960000,
+      "forma": "pagamento integral — 12 parcelas mensais de 80.000 (prazo ≤ 12 meses conforme recomendação da Sessão 2, analise_plano.md §1; a minuta original de 18 meses é CONDICIONAL e não é a base destes lançamentos)",
+      "ganho_de_renegociacao": 0,
+      "nota": "sem redução — o efeito é apenas de prazo/alocação"
+    },
+    "quirografarios_me_epp": {
+      "total": 2588000,
+      "forma": "120 parcelas mensais após carência de 24 meses, a contar da D_HOM",
+      "parcela_media_calculada": 21566.67,
+      "nota": "parcela média = 2.588.000/120 — a minuta NÃO fixa valor por parcela (omissão registrada em analise_plano.md §6); arredondamento das parcelas finais a fixar no cronograma"
+    },
+    "valor_presente": {
+      "base": "taxa nula (= nominal) — ASSUNÇÃO destacada (item 13)",
+      "formula_condicional": "com taxa positiva r: PV = Σ (t = 25 a 144) 21.566,67 / (1+r)^t < 2.588.000 ⇒ ganho contábil > 3.882.000 (piso nominal mantido no lançamento até taxa informada)",
+      "rotulo_convencao": "composição mensal dada apenas como ilustração da fórmula — convenção de capitalização/juros não consta da biblioteca (NAO_VERIFICADO)"
+    }
+  },
+  "lancamentos_nao_efetuados_justificados": [
+    {
+      "item": "União — R$ 2.700.000",
+      "motivo": "crédito tributário NÃO se sujeita ao plano (CTN 187 — ctn_187_191a.md; art. 68 — lei11101_excertos.md): nenhum lançamento na novação. Após adesão à Lei 10.522 (rótulo/disclosure 'Passivo tributário — parcelamento/transação (Lei 10.522)'), ver passivo_fiscal_solucao.md — rota recomendada C (transação), decisões pendentes registradas no STATUS.md.",
+      "nao_reconhecer_ganho_de_transacao": "o tratamento tributário/contábil do desconto da transação NÃO consta da biblioteca (NAO_VERIFICADO) — nenhum ganho é lançado antecipadamente"
+    },
+    {
+      "item": "Banco Beta — R$ 3.100.000",
+      "motivo": "art. 49, §3º — propriedade fiduciária prevalece — fora do plano (Sessão 2, analise_plano.md §3): sem baixa, sem novação, sem deságio"
+    },
+    {
+      "item": "Obrigações pós-pedido — R$ 310.000",
+      "motivo": "art. 67 — extraconcursal, apresentação separada (cpc_contabil_rj.md): não transitam pela novação; seguem baixadas por pagamento normal (à vista, pós-pedido)"
+    },
+    {
+      "item": "Venda do galpão (fonte do plano — UPI) — R$ 4.500.000",
+      "motivo": "valor contábil do imóvel não informado (QUESTIONS.md item 8): lançamento deixado CONDICIONAL, a completar na alienação"
+    }
+  ],
+  "lancamento_condicional_upi": {
+    "gatilho": "alienação do galpão — RESTRIÇÃO: via JUDICIAL (art. 6º-B afasta a trava de 30% do ganho de capital); se privada, o afastamento NAO_VERIFICADO",
+    "partidas_dobradas": [
+      { "sentido": "Dr", "conta": "Caixa/bancos", "valor": 4500000 },
+      { "sentido": "Cr", "conta": "Imobilizado — galpão (valor contábil)", "valor": null, "rotulo": "NAO_INFORMADO (item 8)" },
+      { "sentido": "Cr", "conta": "Ganho de capital na alienação", "valor": null, "rotulo": "NAO_CALCULAVEL = 4.500.000 − valor contábil; trava de 30% afastada se alienação judicial (art. 6º-B)" }
+    ],
+    "custeio_do_plano": "4.500.000 ≥ 3.548.000 → folga nominal 952.000 sobre o plano; com a rota C da União (transação até 70%: custo 810.000), folga líquida 142.000 (matriz completa em passivo_fiscal_solucao.md)"
+  },
+  "efeito_tributario_ligado": {
+    "fonte": "sessao2/efeito_tributario_desagio.json (base completa)",
+    "pis_cofins_sobre_ganho": { "valor": 0, "base_legal": "art. 50-A, I" },
+    "irpj_csll": "NAO_CALCULAVEL — alíquotas não constam da biblioteca (NÃO VERIFICADO); o ganho integra a apuração (art. 50-A, II afeta apenas o limite da trava de compensação, não isenta)",
+    "trava_30_sobre_ganho": false,
+    "despesas_do_plano": "dedutíveis (art. 50-A, III) — 3.548.000 comprometidos",
+    "pessoas_ligadas": "reserva do parágrafo único (NAO_VERIFICADO): se houver dívida com pessoa ligada, os efeitos do art. 50-A não a alcançam"
+  },
+  "estado_dados_assuncoes": [
+    { "dado": "QUESTIONS.md item 13 — taxa de desconto", "tratamento": "taxa nula ⇒ base nominal; ganho = piso" },
+    { "dado": "QUESTIONS.md item 14 — data da homologação", "tratamento": "placeholder D_HOM; valores independem" },
+    { "dado": "QUESTIONS.md item 8 — valor contábil do galpão", "tratamento": "partidas da UPI condicionais (null + rótulo)" },
+    { "dado": "QUESTIONS.md item 3 — prejuízo fiscal/regime", "tratamento": "IRPJ/CSLL e compensação permanecem indecidíveis na biblioteca" },
+    { "dado": "QUESTIONS.md itens 11–12 — via da União / via judicial do galpão", "tratamento": "lançamentos neutros às duas rotas; recomendações em passivo_fiscal_solucao.md e no STATUS.md" }
+  ],
+  "fontes_citadas": [
+    "library/lei11101_excertos.md — arts. 50-A (I, II, III, p.ú.), 6º-B, 67, 68; conclusão ao final",
+    "library/ctn_187_191a.md — art. 187",
+    "library/cpc_contabil_rj.md — novação, teste dos 10%, PV, ganho em rubrica própria, separação pós-pedido",
+    "library/lei10522_parcelamento_rj.md — regimes da União (contexto da solução fiscal)"
+  ],
+  "garantia_metodo": "valores e balanços verificados em Python neste engajamento; nada fora de library/INDEX.md é citado como fundamento; lacunas rotuladas, nunca preenchidas com invenção"
+}

@@ -1,0 +1,20 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 314.38323121500434,
+  "controller_wait_seconds": 26.00264319201233,
+  "model_turn_seconds": 288.3654966009781,
+  "turns": 3,
+  "released_facts": [
+    "prolabore_abril"
+  ],
+  "usage": {
+    "input_tokens": 472121,
+    "cached_input_tokens": 437888,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 15425,
+    "reasoning_output_tokens": 4675
+  },
+  "api_equivalent_usd": 0.3102936
+}

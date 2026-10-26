@@ -1,0 +1,46 @@
+{
+  "entidade": "Atlas Distribuidora S.A.",
+  "periodo": "2026-03",
+  "moeda": "BRL",
+  "nota_estrutura": "Estrutura identica a deliverable/mes_02/ajustes.json, com duas diferencas: (1) a partida de estorno segue NAO postada pelo cliente (terceira conferencia aritmetica consecutiva) e e repetida como A-2026-03-01, com advertencia de postagem unica; (2) a chave 'adicoes_parte_a_futuras' de fevereiro nao se repete porque o trimestre se encerra: os fatos F-2026-02-01 (brindes 48.000,00) e F-2026-02-02 (doacao 30.000,00) foram formalizados como adicoes da Parte A em deliverable/mes_03/lalur.json.",
+  "ajustes": [
+    {
+      "id": "A-2026-03-01",
+      "data": "2026-03-31",
+      "tipo": "retificacao_de_lancamentos_anteriores_estorno_credito_piscofins",
+      "origem": "NF-e 8812 (Papel & Cia Suprimentos Ltda, 09/01/2026) - credito PIS/COFINS indevido de 11.100,00 (9,25% x 120.000,00 de material de uso e consumo administrativo, CFOP 1556). Ajuste original: deliverable/mes_01/ajustes.json A-2026-01-01; repeticao: deliverable/mes_02/ajustes.json A-2026-02-01.",
+      "motivo": "O balancete de mar/2026 entregue pelo cliente mostra 1.1.04 = 483.627,00 = 155.067,00 (creditos validos de jan) + 11.100,00 (credito indevido NF 8812, ainda embutido) + 157.509,00 (creditos validos de fev) + 159.951,00 (creditos validos de mar) - terceira prova aritmetica consecutiva de que a partida de estorno NAO foi postada nos livros entre os fechamentos. A pergunta de processo sobre isso (deliverable/QUESTIONS.md) segue sem resposta do cliente desde a rodada 1. A biblioteca determina o estorno (credito depende do uso do bem); o lancamento e repetido pela terceira vez, sem alteracao de conteudo.",
+      "ADVERTENCIA_DE_POSTAGEM_UNICA": "Esta mesma partida ja foi entregue tres vezes: A-2026-01-01 (jan), A-2026-02-01 (fev) e A-2026-03-01 (mar). O cliente deve postar UMA UNICA VEZ e ignorar as copias restantes. Estados possiveis de conferencia antes de transmitir qualquer declaracao: (i) apos UMA postagem (estado esperado): 1.1.04 = 472.527,00; lucro liquido cumulativo = 604.149,00; (ii) SEM postagem (estado atual dos livros entregues): 1.1.04 = 483.627,00; lucro liquido = 615.249,00; (iii) DUPLA postagem (divergencia a corrigir, NAO esperada): 1.1.04 = 461.427,00; lucro liquido = 593.049,00. Todos os numeros deste fechamento trimestral pressupoem exatamente uma postagem.",
+      "fundamento_citacoes": [
+        "library/pis_cofins_uso_consumo.md - Lei 10.637/2002, art. 3o; Lei 10.833/2003, art. 3o; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR ('Credito tomado indevidamente deve ser estornado, com retificacao da EFD-Contribuicoes do periodo e recolhimento da diferenca com acrescimos')"
+      ],
+      "fontes": [
+        "documents/mes_03/balancete.csv (1.1.04 = 483.627,00)",
+        "documents/mes_03/razao.csv (data 2026-03-15, COMPRA: credito 159.951,00)",
+        "documents/mes_01/nf_8812_papel_cia.md"
+      ],
+      "calculo": "1.1.04: 483.627,00 - 11.100,00 = 472.527,00 pos-ajuste (= 155.067,00 validos jan + 157.509,00 validos fev + 159.951,00 validos mar); lucro liquido: 615.249,00 - 11.100,00 = 604.149,00; conferido em Python.",
+      "partidas": [
+        {
+          "conta": "3.1.02",
+          "nome": "(-) PIS/COFINS sobre vendas",
+          "debito": 11100.00,
+          "credito": 0,
+          "historico": "Retificacao dos lancamentos de jan/2026 - estorno do credito PIS/COFINS tomado indevidamente na NF 8812 (material de uso e consumo administrativo); partida entregue tres vezes (A-2026-01-01, A-2026-02-01, A-2026-03-01) e ainda NAO postada pelo cliente; postar UMA UNICA VEZ"
+        },
+        {
+          "conta": "1.1.04",
+          "nome": "Tributos a recuperar (PIS/COFINS)",
+          "debito": 0,
+          "credito": 11100.00,
+          "historico": "Retificacao dos lancamentos de jan/2026 - baixa do credito indevido NF 8812; saldo 1.1.04 passa de 483.627,00 para 472.527,00, correspondente aos creditos validos do trimestre"
+        }
+      ],
+      "efeito": "Lucro liquido contabil cumulativo jan+fev+mar: dos livros 615.249,00 para 604.149,00 (base do e-LALUR entregue em deliverable/mes_03/lalur.json); tributos a recuperar (1.1.04): de 483.627,00 para 472.527,00. O resultado isolado de mar/2026 (LL 282.583,00) nao e alterado por este lancamento: o credito indevido pertence a janeiro.",
+      "observacao": "A divergencia com o diretor financeiro permanece registrada (documents/email_diretor.txt: instrucao de 'nao mexer no credito jan'; instrucao NAO seguida por contrariar a biblioteca - deliverable/mes_01/pendencias.md item 1). O ajuste fiscal e independente do lancamento contabil: retificacao da EFD-Contribuicoes 01/2026 com recolhimento de 11.100,00 mais acrescimos (acrescimos incalculaveis ate agora por falta da data de transmissao original e dos indices; ver deliverable/mes_03/pis_cofins.json)."
+    }
+  ],
+  "fatos_fiscais_sem_lancamento_contabil": "Varredura completa do razao de mar/2026 (13 pares de lancamentos; refs VENDAS, TRIB, CMV, COMPRA, FOLHA, ADM, DEPR, FIN, RECEB, PGTO, COM): nenhum fato NOVO - nenhuma compra de material de uso e consumo, nenhuma despesa com brindes, nenhuma doacao, nenhum fato de exclusao. Os unicos fatos do trimestre com efeito na Parte A seguem sendo os de fev/2026 (F-2026-02-01 brindes 48.000,00; F-2026-02-02 doacao 30.000,00), formalizados agora como adicoes em deliverable/mes_03/lalur.json, conforme prometido no fechamento de fevereiro. Fundamento de manter a contabilidade societaria inalterada: library/irpj_csll_trimestral.md ('Despesas indedutiveis sao adicoes na Parte A; nao se altera a contabilidade societaria (CPC), apenas a apuracao fiscal'). Juros de 28.000,00/mes (4.3.01) sao despesa financeira regular e dedutivel; a biblioteca nao traz limite que os exclua.",
+  "total_partidas_debito": 11100.00,
+  "total_partidas_credito": 11100.00
+}

@@ -1,0 +1,58 @@
+{
+  "case": "brlaw_05_divorcio_partilha",
+  "questions": "# Perguntas ao cliente (Marcelo)\n\nRespostas afetam **números**; o acordo acima já foi desenhado com as assunções indicadas.\n\n1. **Data da separação de fato** (mês/ano em que vocês deixaram de viver juntos)? Define o período de apuração da valorização das quotas (base pode ser menor que R$ 1.100.000).\n2. **Pró-labore de Marcelo**: valor mensal? É pago toda mês ou esporádico? O \"salário líquido R$ 24.000\" já inclui o pró-labore ou é separado?\n3. A Andrade Engenharia **distribui lucros** a Marcelo? Com que frequência e valor (últimos 3 anos)? Há **PLR/bônus**? (afeta a base de alimentos e a prova de \"lucros reinvestidos\" das quotas)\n4. O **sinal do apartamento (2017)** saiu de dinheiro de herança/venda de bem particular, ou de renda do casamento? (se herança, entra sub-rogação e a meação diminui)\n5. A **casa de Atibaia** foi alugada na constância? Houve reforma/pintura paga com dinheiro do casal? (frutos percebidos no casamento comunicam — CC 1.660, V)\n6. **Valores declarados no IR** dos bens (apartamento, quotas, carro)? Precisamos para atribuir bens pelo valor de declaração e evitar ganho de capital.\n7. O **saldo de FGTS de R$ 140.000** é o valor depositado até a separação, e há saldo do Marcelo anterior ao casamento?\n8. **Financiamento do carro**: quem contraiu e quando? Está em nome de quem? (para a cessão do saldo a Fernanda)\n9. O banco já foi consultado sobre **transferir o financiamento do apartamento** só para o Marcelo? (condição prática do quadro)\n10. Fernanda **trabalha** com renda de R$ 9.000 estável? Pretende pedir alimentos para ela (pensão entre cônjuges)? A biblioteca não trata de alimentos entre ex-cônjuges — se ela pedir, é tema não verificado aqui.\n",
+  "facts": [
+    {
+      "id": "carro_uso",
+      "trigger": [
+        "carro",
+        "dívida do carro",
+        "financiamento do carro",
+        "uso",
+        "família"
+      ],
+      "answer": "O carro era da família, levava as crianças. Está no nome dela e o financiamento também.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "lucros_reinvestidos",
+      "trigger": [
+        "lucros",
+        "reinvest",
+        "distribuiu",
+        "pró-labore",
+        "empresa valoriz"
+      ],
+      "answer": "Nunca distribuí lucro; reinvesti tudo. A empresa valia uns 400 mil quando casei e hoje 1,5 mi. Meu pró-labore é 15 mil, fora o salário de 24 mil de um emprego CLT.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "atibaia_reforma",
+      "trigger": [
+        "Atibaia",
+        "reforma",
+        "benfeitoria",
+        "dinheiro do casal"
+      ],
+      "answer": "Reformei a casa de Atibaia em 2021 com uns 120 mil do nosso dinheiro.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "guarda",
+      "trigger": [
+        "guarda",
+        "convivência",
+        "compartilhada"
+      ],
+      "answer": "Quero compartilhada, com as crianças morando com ela e comigo em semanas alternadas se der.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "carro_uso",
+    "lucros_reinvestidos",
+    "atibaia_reforma"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,7 @@
+The client confirmed the 15% works share and 18% margin, which match the amounts already provided. I’ll complete a planning comparison using explicit assumptions for the remaining gaps, and mark the Anexo IV rate as unverified because its table is absent from the closed library.
+
+The three totals are calculated, and the comparison favors Simples under the stated assumptions. I’m doing a final consistency check and clearing the earlier question file now that the client has said no further information is available; the unresolved items are documented in the memorandum and status file.
+
+Concluí o comparativo de planejamento: **Simples R$ 975.600**, **Lucro Presumido R$ 1.111.120** e **Lucro Real R$ 1.112.290**. Sob as premissas adotadas, recomendo manter o Simples. Não é possível mudar de regime apenas para dezembro; para uma exclusão voluntária com efeitos em 2027, o prazo indicado é **29/01/2027**.
+
+Os cálculos e as fontes estão em [memorando.md](/work/workspace/deliverable/memorando.md), com os valores estruturados em [comparativo.json](/work/workspace/deliverable/comparativo.json). O [STATUS.md](/work/workspace/deliverable/STATUS.md) registra os pontos ainda abertos, sobretudo a tabela do Anexo IV ausente da biblioteca e a base exata do INSS. Por isso, os totais são estimativas para decisão, não valores definitivos para recolhimento.

@@ -1,0 +1,22 @@
+{
+  "case": "bracc_02_escolha_regime",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 641.325824272004,
+  "controller_wait_seconds": 61.007540833059466,
+  "model_turn_seconds": 579.8660161979496,
+  "turns": 5,
+  "released_facts": [
+    "obra_pct"
+  ],
+  "usage": {
+    "input_tokens": 1479608,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 88834,
+    "reasoning_output_tokens": 53135
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

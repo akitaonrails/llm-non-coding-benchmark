@@ -1,0 +1,18 @@
+{
+  "case": "uslaw_08_sale_diligence_apa",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 449.2792423350038,
+  "controller_wait_seconds": 34.00347406300716,
+  "model_turn_seconds": 415.2702790009789,
+  "turns": 3,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 573031,
+    "cached_input_tokens": 521600,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 21007,
+    "reasoning_output_tokens": 5330
+  },
+  "api_equivalent_usd": 0.417252
+}

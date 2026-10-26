@@ -1,0 +1,3 @@
+COMPLETE WITH OPEN ITEMS
+
+December 2025 monthly close and year-end financial statements are in `month_12/`. All six required files are present. The bank reconciles to $0.00 and the closing trial balance balances. The bank overdraft is $73,020 and total equity is negative $33,856.36. Significant unresolved items: $30,450 opening revenue credit lacks period designation; $24,000 opening deferred revenue is unidentified; Trestle's overlapping historical terms remain unexplained; opening A/R, A/P and prepaids lack support; overdraft terms and funding are unknown; and delivery of prior Alder credit memos is not evidenced. See `month_12/open_items.md` and `month_12/financial_statements.md`.

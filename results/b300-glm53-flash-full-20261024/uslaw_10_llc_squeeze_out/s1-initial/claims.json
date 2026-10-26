@@ -1,0 +1,80 @@
+[
+  {
+    "claim": "Invalid capital call under OA §6.3 — notice not delivered by certified mail (sent by text only; email bounced), and the stated purpose ('working capital and opportunities') may not be the bona fide Company purpose set forth in the notice — so no Dilution Event occurred and Imani's interest must be restored to 18%",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct (wrongful dilution of her own percentage — direct under Tooley/file: 'wrongful dilution of the member's own interest')",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "Call 2026-08-20; dilution notice 2026-09-25. Well within the 3-year period (10 Del. C. §8106; laches applies the statute by analogy in Chancery). No barred portion.",
+      "barred_portion": 0,
+      "tolling_argument": "None needed — timely."
+    },
+    "strength": "high, with material caveat (facts updated 2026-10-XX): the call went by texted PDF only; no certified mail was ever attempted (undisputed on the Manager's own production); the email address on file has been dead since 2019 and the client never updated it. Under Zimmerman v. Crothall the specified delivery method (certified mail AND email) must be strictly complied with; a call that fails it does not trigger dilution. Caveat: the client received actual notice — she saw the texted PDF with the full 30-day window — and defendants will argue the delivery defect caused no prejudice (she could not have funded $270,000 regardless). Actual notice may therefore dilute the practical force of the delivery challenge; the arithmetic/fair-value ground (next claim) is now the lead theory. UNKNOWN: whether the full operating agreement (excerpts are partial) imposes a member duty to keep contact information current — affects the email prong only, since certified mail was never attempted.",
+    "remedy": "Declaratory judgment that the call is ineffective under Zimmerman v. Crothall (strict compliance with the specified delivery method; a call that fails it does not trigger dilution); rescission of the Dilution Event; restoration of the 18% interest; unwind of Bram's $270,000 purchase of her stake (treated as a loan to the Company or returned to him). Pleaded together with the fair-value count so the rescission doesn't stand or fall on delivery mechanics alone."
+  },
+  {
+    "claim": "Implied covenant — the Manager's §6.3 'fair value ... determined by the Manager in good faith' determination was exercised in bad faith/arbitrarily: (a) the recomputed 6.1% cannot be reconciled with the Manager's own stated $7.2M fair value under any standard pro-rata dilution model — it implies a post-money value of ≈$2.27M (pre-money ≈$0.77M); (b) $7.2M is 27% below the contemporaneous independent broker indication ($14.5M enterprise / $9.8M equity)",
+    "theory": "implied_covenant",
+    "direct_or_derivative": "direct (value of her own interest)",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "Dilution notice 2026-09-25; timely under 10 Del. C. §8106 / laches by analogy.",
+      "barred_portion": 0,
+      "tolling_argument": "None needed — timely."
+    },
+    "strength": "high",
+    "remedy": "Same rescissory relief as the express claim (declaration of no Dilution Event, restore 18%); alternatively, recomputation of her diluted percentage at the Manager's own $7.2M fair value (14.25%–14.9%) with a court-determined fair value. Arithmetical background: at the Manager's own $7.2M, proper pro-rata dilution yields 0.18 × 7.2/8.7 = 14.90% (pre-money pricing) or 0.18 × 5.7/7.2 = 14.25% (post-money); the notice's 6.1% back-solves to post-money ≈$2.2689M ($1.5M raise buying 66.1% of the post-money company), i.e., the company was worth ≈$2.27M post / $0.77M pre — contradicted by the Manager's own $7.2M figure and by the broker's $14.5M/$9.8M. Under Dieckman, discretion (e.g., a good-faith fair-value determination) must be exercised honestly, not arbitrarily or in bad faith to deprive the counterparty of the bargain's fruits; the implied covenant survives §7.3 (it is expressly preserved there) and liability for its bad-faith violation cannot be eliminated under §18-1101(e)."
+  },
+  {
+    "claim": "Implied covenant — bad-faith squeeze-out orchestration: a cash-constrained 18% member is handed a 30-day call she cannot fund, diluted to 6.1%, then offered a book-value buyout at $189,100 — 31.6% of her diluted stake at market ($597,800) and 10.7% of her restored stake at market ($1,764,000)",
+    "theory": "implied_covenant",
+    "direct_or_derivative": "direct",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "Offer letter 2026-10-01; timely.",
+      "barred_portion": 0,
+      "tolling_argument": "None needed — timely. Caution: §9.2's Book Value purchase price is an express term and cannot be overridden by the implied covenant (Nemec: the covenant is a gap-filler and cannot override express terms); the squeeze-out attack must go to the validity of the Dilution Event trigger, not the §9.2 price mechanics. Strength depends on proving pretext (use of proceeds, timing)."
+    },
+    "strength": "medium",
+    "remedy": "Rescission of the Dilution Event (restoring 18%); alternatively damages measured by the difference between the value received and her preserved interests. Plead alongside, not instead of, the express §6.3 claim."
+  },
+  {
+    "claim": "Breach of express covenant OA §5.4 — affiliate engagement of Castellan Asset Services LLC (wholly owned by the Manager) at 6% of gross rents + $180,000/yr asset-management fee escalating ~8%/yr was never disclosed in writing to all Members within 30 days (no written disclosure found in the Manager's own production; Imani learned of it in 2026) — condition (b) of §5.4 was breached, and condition (a) (arm's-length terms) is unverified",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct as to the disclosure right (breach of a contractual right personal to the member — Tooley/file example); see next claim for the fee-recovery remedy, which is derivative",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "Conservatively, disclosure was due within 30 days of the 2022-08-15 resolution (i.e., 2022-09-14); alternatively each annual fee payment is a fresh transaction requiring fresh analysis — but the conservative accrual date of 2022-09-14 is outside the 3-year window from 2026-10-08 (10 Del. C. §8106; laches by analogy in Chancery).",
+      "barred_portion": 0,
+      "tolling_argument": "Fraudulent concealment / inherently unknowable injury: the filing records show affirmative failure to make the §5.4-mandated written disclosure, and the file's own note is 'No written disclosure to Members found'; per the limitations file, a breached contractual duty to disclose (§5.4's 30-day written notice) supports concealment-based tolling as to the undisclosed fees. Imani states she learned of the engagement only in 2026. Tolling is contested — it can be defeated by evidence she received books/records or statements showing the fees (open question to client), and concealment doctrine generally requires affirmative acts, not mere nondisclosure."
+    },
+    "strength": "high (liability on the disclosure prong rests on the Manager's own file); note the contested remedial consequence (see next claim)",
+    "remedy": "Declaratory relief that the affiliate engagement was never authorized under §5.4; whether that yields disgorgement of all fees or only damages for the excess over arm's-length terms is a contested point of law not resolved by this library (flagged as unverified below)."
+  },
+  {
+    "claim": "Recovery of affiliate fees paid to Castellan Asset Services LLC under the undisclosed transaction — asset-management fees $180,000/$195,000/$210,000/$225,000/$240,000 (2022–2026) plus monthly property-management fee of 6% of gross rents (gross rents not in the file)",
+    "theory": "express_contract",
+    "direct_or_derivative": "derivative (the Company paid the fees; the Company receives the recovery — Tooley/file: 'excessive fees paid to an affiliate' is the paradigm derivative claim); demand on Bram is futile because the sole Manager is the interested party (Zuckerberg futility per the Tooley file), so no demand is required",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "Each fee payment accrues when paid: 2022-09-01, 2023-09-01 (both > 3 years before 2026-10-08), 2024-09-01, 2025-09-01, 2026-09-01 (all within 3 years). Arithmetic: within-limitations asset-management fees = $210,000 + $225,000 + $240,000 = $675,000; presumptively barred = $180,000 + $195,000 = $375,000.",
+      "barred_portion": 375000,
+      "tolling_argument": "Same concealment tolling as the §5.4 disclosure claim; if tolling holds, the entire 2022–2026 asset-management stream ($1,050,000) plus the monthly 6%-of-gross-rents fees is claimable; if tolling fails, only $675,000 (plus monthly PM fees paid after 2023-10-08) survives. STRENGTHENED BY CLIENT'S 2026-10 ANSWERS: until 2026 the client received only one-page summaries carrying a generic 'management expenses' line — the counterparty (the Manager's wholly-owned affiliate) was masked in what she was given; the affiliate identity and fee stream surfaced only in 2026 when a books-and-records demand produced bank statements. That bears directly on inherent-unknowability/inquiry-notice: she had no documents that revealed this was the Manager's affiliate, and she exercised diligence (formal demand) to find out. Residual risks remain: (i) whether the summaries gave her enough to trigger a duty to inquire earlier (the payee name itself would have connected to Bram had she ever seen bank records before 2026); (ii) concealment doctrine generally requires affirmative acts — here the theory rests on the breached §5.4 contractual disclosure duty per the limitations file, which is the stronger footing. Exact date of the books-and-records demand/response in 2026 is unknown (open item — sets the likely limitations start point for the older payments)."
+    },
+    "strength": "medium-high on liability (undisclosed affiliate transaction on the manager's own file); medium on quantum (no evidence in the file whether 6% of gross rents + $180–240k/yr is above or below market — a market benchmark is needed; nothing in the library supplies one)",
+    "remedy": "Derivative recovery to the Company of fees paid (at minimum the $675,000 within-limitations asset-management fees; up to the full $1,050,000 AM stream if tolling holds, plus the unidentified monthly property-management fees); alternatively damages equal to the excess over arm's-length fees once a market benchmark is obtained. Caveat stated plainly: a derivative recovery goes to the Company — Imani captures it only pro rata in her restored percentage (18% × $675,000 = $121,500; 18% × $1,050,000 = $189,000) unless the dispute is resolved by a buyout at fair value that internalizes it. Her head-line economic claim is the direct dilution claim, worth $1,166,200 of value at broker equity if she is restored to 18%."
+  },
+  {
+    "claim": "Breach of fiduciary duty (duty of loyalty; self-dealing affiliate fees; looting) — as pleaded as a fiduciary claim",
+    "theory": "fiduciary",
+    "direct_or_derivative": "derivative (as framed)",
+    "survives_waiver": false,
+    "limitations": {
+      "accrual": "N/A — do not plead. OA §7.3 eliminates the Manager's fiduciary duties 'to the fullest extent permitted by the Delaware LLC Act,' and §18-1101(c) confirms such elimination is permissible; the same §7.3 proviso and §18-1101(c) preserve the implied covenant, and §18-1101(e) preserves liability for bad-faith violations of the implied covenant.",
+      "barred_portion": 0,
+      "tolling_argument": "N/A — the claim is waived, not timed. The correct move is to recast every fiduciary-duty grievance as the express-contract claims (§5.4, §6.3) and implied-covenant claims above, which the operating agreement expressly leaves standing."
+    },
+    "strength": "low (as a fiduciary claim — waived)",
+    "remedy": "None as such. Client answer to 'can she sue for breach of fiduciary duty for self-dealing?': yes in substance, no in form — she sues on the surviving contract and implied-covenant theories, which reach the same conduct (undisclosed affiliate dealing, dishonest exercise of §6.3 discretion)."
+    }
+]

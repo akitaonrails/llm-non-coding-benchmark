@@ -1,0 +1,45 @@
+{
+  "case": "bracc_06_venda_quotas_vs_ativos",
+  "questions": "# Perguntas ao cliente (não bloqueiam a recomendação)\n\nOs números de `comparativo.json` e `memorando.md` já fecham com os documentos do arquivo. As perguntas\nabaixo servem para (i) refinar a Proposta B, que é pior em todos os cenários, e (ii) calibrar a\nnegociação. **Nenhuma delas altera a recomendação (Proposta A / não retificar a DIRPF).**\n\n## Sobre a estrutura A (a recomendada)\n1. **Data prevista de fechamento** e o mês de vencimento de cada uma das 3 parcelas anuais — para o\n   calendário das 4 DARFs (prazo: último dia útil do mês seguinte a cada recebimento).\n2. As 3 parcelas anuais terão **correção monetária**? Qual índice? (Se sim, a DARF de cada parcela é\n   calculada sobre o valor recebido atualizado — preciso do índice para refazer o cronograma.)\n3. Os sócios têm **outra alienação de bens/direitos da mesma natureza em 2026** (outras quotas, fundos\n   empresariais)? Com ganho de R$ 3,9 mi por sócio, bastariam **R$ 1,1 milhão** de outro ganho no mesmo\n   ano para a parcela excedente cair na faixa de 17,5%.\n4. Houve (ou está planejada) alguma **cessão de quotas entre os sócios ou para terceiro antes do\n   fechamento**? Se sim, avise antes de assinar — concentrar o ganho custa até R$ 70.000.\n5. Que **garantias** o comprador oferece para os 60% parcelados (alienação fiduciária de quotas,\n   caução/aval, cláusula resolutiva, vencimento antecipado)? Há preferência de vocês entre preço maior e\n   pagamento à vista?\n\n## Sobre a estrutura B (para o caso de vocês ainda quererem compará-la)\n6. Qual a **composição do patrimônio líquido da Vértice em 31/12/2025**? Presumi PL ≈ R$ 2.100.000\n   (capital R$ 1.200.000 + lucros acumulados/reservas R$ 900.000). Favor confirmar com o balanço.\n7. Houve **distribuição de lucros aprovada até 31/12/2025** (lucros apurados até 2025)? Se sim, ata,\n   data e valor — isso é o único ponto que pode reduzir o IRRF da B (Lei 15.270/2025), e o prazo já\n   venceu em 31/12/2025.\n8. Qual o **valor contábil/fiscal detalhado** dos itens do estabelecimento (imobilizado, intangíveis,\n   carteira, marca, eventuais imóveis)? O ganho da B é preço − valor contábil: quanto menor o valor\n   contábil, pior a B.\n9. A Vértice terá **receita operacional no trimestre do fechamento**? (O adicional de 10% do IRPJ incide\n   sobre a base trimestral que exceder R$ 60.000; apliquei a fração isenta inteira contra o ganho.)\n10. Existem **prejuízo fiscal / base negativa** da Vértice que possa compensar o ganho da B? (Não há\n    regra sobre isso na biblioteca — não pude verificar; se existir, informem o valor.)\n11. A devolução dos R$ 1.200.000 de capital social aos sócios, na B, seria feita por **redução de\n    capital**? Precisaria de análise própria (a biblioteca não cobre o tema).\n\n## Sobre o custo de aquisição (tema da retificação proposta pela Beatriz)\n12. Vocês têm as **atas de 2018 (capitalização de lucros) e de 2021 (aporte em dinheiro)** e as DIRPFs\n    dos anos correspondentes? Preciso arquivá-las como lastro do custo de R$ 600.000/sócio.\n13. Existe algum **aporte em dinheiro feito pelos sócios que não tenha sido incorporado ao capital**\n    (adiantamento para futuro aumento de capital, empréstimo aos sócios convertido, reservas capitalizadas\n    não refletidas no custo)? **Só um fato documental assim** poderia elevar legitimamente o custo — e\n    seria declarado como é, sem retificação fictícia.\n\n## Sobre o comprador / negociação\n14. O Grupo Meridiano pretende, depois da compra, **incorporar a Vértice** (é o que daria a eles o ágio\n    de que falam)? Se sim, isso é argumento objetivo para pedir preço melhor na estrutura de quotas.\n15. Qual o **passivo/contingência conhecido** da Vértice (trabalhista, fiscal, civil)? Isso explica o\n    ágio de R$ 600 mil que eles pagariam por comprar ativos em vez de quotas e ajuda a precificar a\n    contraproposta.\n16. Vocês aceitariam **A com preço recomposto para R$ 9.600.000** (mesmo valor da B)? Nesse caso o\n    líquido seria **R$ 8.340.000** (GCAP de R$ 1.260.000; cada sócio ainda na faixa de 15%).\n\n# PERGUNTAS.md\n\nAs perguntas ao cliente estão em [`QUESTIONS.md`](QUESTIONS.md) (nome exigido pelas regras de trabalho do\ncontrato). Nenhuma delas é bloqueante: as respostas refinam a Proposta B (já pior em todos os cenários) e\na calibragem do preço. Recomendação e números principais estão fechados em `comparativo.json` e\n`memorando.md`.\n",
+  "facts": [
+    {
+      "id": "comprador_estrutura",
+      "trigger": [
+        "incorpora",
+        "estrutura do comprador",
+        "laudo",
+        "como vai usar o ágio"
+      ],
+      "answer": "Hélio: o Meridiano não disse se vai incorporar a Vértice; disseram só que 'aproveitam o ágio'.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "custo",
+      "trigger": [
+        "custo de aquisição",
+        "DIRPF",
+        "600",
+        "declaração"
+      ],
+      "answer": "Beatriz: nas nossas declarações está R$ 600 mil cada. Mas a empresa vale 9 milhões, não faz sentido pagar imposto sobre tudo isso.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "distribuicao",
+      "trigger": [
+        "distribuir",
+        "caixa da casca",
+        "dividendos",
+        "quando sacar"
+      ],
+      "answer": "Hélio: se vender pela PJ a gente tira o dinheiro todo em {ANO} mesmo.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "comprador_estrutura",
+    "custo"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,159 @@
+{
+  "saidas": [
+    {
+      "numero": 2301,
+      "data": "2026-08-01",
+      "valor": 18000.0,
+      "cbs": 162.0,
+      "ibs": 18.0,
+      "situacao": "regular",
+      "motivo": "NF-e 2301, emitida em 01/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para BRISA MATERIAIS LTDA (11.222.333/0001-44), Venda — cliente da carteira (regime regular). Grupo IBSCBS não preenchido no documento. Emissão anterior a 03/08/2026: o Comunicado CGIBS (jul/2026) torna o grupo obrigatório para emitente do regime regular a partir de 03/08/2026 e os documentos anteriores permanecem válidos. Base = valor da nota, R$ 18.000,00. Débito de teste: CBS 0,90% × 18.000,00 = 162,00; IBS 0,10% × 18.000,00 = 18,00. Chave de acesso (protNFe): 297B4C8E8C94C422CA1F7A48CF64E13D50F0A4AC."
+    },
+    {
+      "numero": 2302,
+      "data": "2026-08-01",
+      "valor": 24000.0,
+      "cbs": 216.0,
+      "ibs": 24.0,
+      "situacao": "regular",
+      "motivo": "NF-e 2302, emitida em 01/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para SERRA VERDE AGRO S.A. (77.888.999/0001-00), Venda — cliente da carteira (regime regular). Grupo IBSCBS não preenchido no documento. Emissão anterior a 03/08/2026: o Comunicado CGIBS (jul/2026) torna o grupo obrigatório para emitente do regime regular a partir de 03/08/2026 e os documentos anteriores permanecem válidos. Base = valor da nota, R$ 24.000,00. Débito de teste: CBS 0,90% × 24.000,00 = 216,00; IBS 0,10% × 24.000,00 = 24,00. Chave de acesso (protNFe): EB2BA22725F69212F97ECBE0B5CB49B91DB7AE4F."
+    },
+    {
+      "numero": 2303,
+      "data": "2026-08-02",
+      "valor": 9500.0,
+      "cbs": 85.5,
+      "ibs": 9.5,
+      "situacao": "regular",
+      "motivo": "NF-e 2303, emitida em 02/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para PONTO FIXO COMERCIO ME (44.555.666/0001-77), Venda — cliente da carteira (regime simples). Grupo IBSCBS não preenchido no documento. Emissão anterior a 03/08/2026: o Comunicado CGIBS (jul/2026) torna o grupo obrigatório para emitente do regime regular a partir de 03/08/2026 e os documentos anteriores permanecem válidos. Base = valor da nota, R$ 9.500,00. Débito de teste: CBS 0,90% × 9.500,00 = 85,50; IBS 0,10% × 9.500,00 = 9,50. Chave de acesso (protNFe): 259AD0CD8974F0BF8E1287D77AF71EB9CF7E1C7D."
+    },
+    {
+      "numero": 2304,
+      "data": "2026-08-02",
+      "valor": 31000.0,
+      "cbs": 279.0,
+      "ibs": 31.0,
+      "situacao": "regular",
+      "motivo": "NF-e 2304, emitida em 02/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para BRISA MATERIAIS LTDA (11.222.333/0001-44), Venda — cliente da carteira (regime regular). Grupo IBSCBS não preenchido no documento. Emissão anterior a 03/08/2026: o Comunicado CGIBS (jul/2026) torna o grupo obrigatório para emitente do regime regular a partir de 03/08/2026 e os documentos anteriores permanecem válidos. Base = valor da nota, R$ 31.000,00. Débito de teste: CBS 0,90% × 31.000,00 = 279,00; IBS 0,10% × 31.000,00 = 31,00. Chave de acesso (protNFe): 1E890DAB8704B5800199FFA6DD055922BF5F4872."
+    },
+    {
+      "numero": 2305,
+      "data": "2026-08-02",
+      "valor": 4200.0,
+      "cbs": 37.8,
+      "ibs": 4.2,
+      "situacao": "regular",
+      "motivo": "NF-e 2305, emitida em 02/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para J. SILVA REPRESENTACOES MEI (12.345.678/0001-99), Venda — cliente da carteira (regime mei). Grupo IBSCBS não preenchido no documento. Emissão anterior a 03/08/2026: o Comunicado CGIBS (jul/2026) torna o grupo obrigatório para emitente do regime regular a partir de 03/08/2026 e os documentos anteriores permanecem válidos. Base = valor da nota, R$ 4.200,00. Débito de teste: CBS 0,90% × 4.200,00 = 37,80; IBS 0,10% × 4.200,00 = 4,20. Chave de acesso (protNFe): E2E4AE2B27C24D521BAEEE6553B4B42D2A85A983."
+    },
+    {
+      "numero": 2306,
+      "data": "2026-08-04",
+      "valor": 42000.0,
+      "cbs": 378.0,
+      "ibs": 42.0,
+      "situacao": "regular",
+      "motivo": "NF-e 2306, emitida em 04/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para BRISA MATERIAIS LTDA (11.222.333/0001-44), Venda — cliente da carteira (regime regular). Grupo IBSCBS presente no documento: CST 000, cClassTrib 000001, vCBS 378,00, vIBSUF 42,00, vIBSMun 0,00. Destaque conferido: coincide com CBS 0,90% e IBS 0,10% (LC 214/2025 art. 343; NT 2025.002 — pCBS 0,90 / pIBSUF 0,10 / pIBSMun 0,00). Base = valor da nota, R$ 42.000,00. Débito de teste: CBS 0,90% × 42.000,00 = 378,00; IBS 0,10% × 42.000,00 = 42,00. Chave de acesso (protNFe): 65211E2F688300D58F447266A678E1BA7DEA034D."
+    },
+    {
+      "numero": 2307,
+      "data": "2026-08-06",
+      "valor": 56000.0,
+      "cbs": 504.0,
+      "ibs": 56.0,
+      "situacao": "regular",
+      "motivo": "NF-e 2307, emitida em 06/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para SERRA VERDE AGRO S.A. (77.888.999/0001-00), Venda — cliente da carteira (regime regular). Grupo IBSCBS presente no documento: CST 000, cClassTrib 000001, vCBS 504,00, vIBSUF 56,00, vIBSMun 0,00. Destaque conferido: coincide com CBS 0,90% e IBS 0,10% (LC 214/2025 art. 343; NT 2025.002 — pCBS 0,90 / pIBSUF 0,10 / pIBSMun 0,00). Base = valor da nota, R$ 56.000,00. Débito de teste: CBS 0,90% × 56.000,00 = 504,00; IBS 0,10% × 56.000,00 = 56,00. Chave de acesso (protNFe): A3AA57120E7FBADEE76B758CB3208773F12B8CD4."
+    },
+    {
+      "numero": 2308,
+      "data": "2026-08-10",
+      "valor": 12500.0,
+      "cbs": 112.5,
+      "ibs": 12.5,
+      "situacao": "irregular",
+      "motivo": "NF-e 2308, emitida em 10/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para PONTO FIXO COMERCIO ME (44.555.666/0001-77), Venda — cliente da carteira (regime simples). Grupo IBSCBS não preenchido no documento. Emitida a partir de 03/08/2026 sem o grupo IBSCBS, obrigatório para emitente do regime regular (Comunicado CGIBS jul/2026; NT 2025.002) — descumprimento de obrigação acessória, com risco de perda da dispensa de recolhimento (ADCT art. 125, §4º). O débito de teste é lançado pelos valores corretos, CBS 0,90% e IBS 0,10% (LC 214/2025 art. 343; NT 2025.002 — pCBS 0,90 / pIBSUF 0,10 / pIBSMun 0,00). Causa-raiz confirmada pelo cliente em 25/10/2026: a rejeição da SEFAZ dizia 'Grupo IBSCBS não informado para emitente do regime regular (NT 2025.002)' e o TI reverteu a versão do emissor para 'contornar' a checagem — workaround deliberado, desfeito por orientação nossa.  Base = valor da nota, R$ 12.500,00. Débito de teste: CBS 0,90% × 12.500,00 = 112,50; IBS 0,10% × 12.500,00 = 12,50. Chave de acesso (protNFe): 0B9746601CDB63DCB63DDD2B72F1B6478392A066."
+    },
+    {
+      "numero": 2309,
+      "data": "2026-08-13",
+      "valor": 38000.0,
+      "cbs": 342.0,
+      "ibs": 38.0,
+      "situacao": "irregular",
+      "motivo": "NF-e 2309, emitida em 13/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para BRISA MATERIAIS LTDA (11.222.333/0001-44), Venda — cliente da carteira (regime regular). Grupo IBSCBS presente no documento: CST 000, cClassTrib 000001, vCBS 38,00, vIBSUF 342,00, vIBSMun 0,00. Destaque INVERTIDO no documento: destaca CBS 38,00 (pCBS 0.10%) e IBS 342,00 (pIBSUF 0.90%), quando as alíquotas de 2026 são CBS 0,90% e IBS 0,10% (LC 214/2025 art. 343; NT 2025.002 — pCBS 0,90 / pIBSUF 0,10 / pIBSMun 0,00). O total destacado no documento (380,00) até coincide com o total correto (380,00), mas as rubricas estão trocadas; a apuração-teste lança os valores corretos por operação. Base = valor da nota, R$ 38.000,00. Débito de teste: CBS 0,90% × 38.000,00 = 342,00; IBS 0,10% × 38.000,00 = 38,00. Chave de acesso (protNFe): 77679C0753B63237166765C5A9A736F79B9B8ED9."
+    },
+    {
+      "numero": 2310,
+      "data": "2026-08-18",
+      "valor": 7800.0,
+      "cbs": 70.2,
+      "ibs": 7.8,
+      "situacao": "irregular",
+      "motivo": "NF-e 2310, emitida em 18/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para J. SILVA REPRESENTACOES MEI (12.345.678/0001-99), Venda — cliente da carteira (regime mei). Grupo IBSCBS não preenchido no documento. Emitida a partir de 03/08/2026 sem o grupo IBSCBS, obrigatório para emitente do regime regular (Comunicado CGIBS jul/2026; NT 2025.002) — descumprimento de obrigação acessória, com risco de perda da dispensa de recolhimento (ADCT art. 125, §4º). O débito de teste é lançado pelos valores corretos, CBS 0,90% e IBS 0,10% (LC 214/2025 art. 343; NT 2025.002 — pCBS 0,90 / pIBSUF 0,10 / pIBSMun 0,00). Causa-raiz confirmada pelo cliente em 25/10/2026: a rejeição da SEFAZ dizia 'Grupo IBSCBS não informado para emitente do regime regular (NT 2025.002)' e o TI reverteu a versão do emissor para 'contornar' a checagem — workaround deliberado, desfeito por orientação nossa.  Base = valor da nota, R$ 7.800,00. Débito de teste: CBS 0,90% × 7.800,00 = 70,20; IBS 0,10% × 7.800,00 = 7,80. Chave de acesso (protNFe): C97F86B60F2752C999E3AB8855E87D186043CFA5."
+    },
+    {
+      "numero": 2311,
+      "data": "2026-08-21",
+      "valor": 61000.0,
+      "cbs": 549.0,
+      "ibs": 61.0,
+      "situacao": "regular",
+      "motivo": "NF-e 2311, emitida em 21/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para SERRA VERDE AGRO S.A. (77.888.999/0001-00), Venda — cliente da carteira (regime regular). Grupo IBSCBS presente no documento: CST 000, cClassTrib 000001, vCBS 549,00, vIBSUF 61,00, vIBSMun 0,00. Destaque conferido: coincide com CBS 0,90% e IBS 0,10% (LC 214/2025 art. 343; NT 2025.002 — pCBS 0,90 / pIBSUF 0,10 / pIBSMun 0,00). Base = valor da nota, R$ 61.000,00. Débito de teste: CBS 0,90% × 61.000,00 = 549,00; IBS 0,10% × 61.000,00 = 61,00. Chave de acesso (protNFe): 3CB4EA6A1819243A9FC8B0E9DB992FD389F947D3."
+    },
+    {
+      "numero": 2312,
+      "data": "2026-08-27",
+      "valor": 176000.0,
+      "cbs": 1584.0,
+      "ibs": 176.0,
+      "situacao": "irregular",
+      "motivo": "NF-e 2312, emitida em 27/08/2026 por Horizonte (CNPJ 27.119.804/0001-30, CRT 3 — regime regular) para BRISA MATERIAIS LTDA (11.222.333/0001-44), Venda — cliente da carteira (regime regular). Grupo IBSCBS não preenchido no documento. Emitida a partir de 03/08/2026 sem o grupo IBSCBS, obrigatório para emitente do regime regular (Comunicado CGIBS jul/2026; NT 2025.002) — descumprimento de obrigação acessória, com risco de perda da dispensa de recolhimento (ADCT art. 125, §4º). O débito de teste é lançado pelos valores corretos, CBS 0,90% e IBS 0,10% (LC 214/2025 art. 343; NT 2025.002 — pCBS 0,90 / pIBSUF 0,10 / pIBSMun 0,00). Causa-raiz confirmada pelo cliente em 25/10/2026: a rejeição da SEFAZ dizia 'Grupo IBSCBS não informado para emitente do regime regular (NT 2025.002)' e o TI reverteu a versão do emissor para 'contornar' a checagem — workaround deliberado, desfeito por orientação nossa.  Base = valor da nota, R$ 176.000,00. Débito de teste: CBS 0,90% × 176.000,00 = 1.584,00; IBS 0,10% × 176.000,00 = 176,00. Chave de acesso (protNFe): 93C7130097B28B8C350CAFF6C31A0B22EE8F0FE1."
+    }
+  ],
+  "entradas": [
+    {
+      "numero": 2313,
+      "valor": 48000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "NF-e 2313, emitida em 02/08/2026 por DISTRIBUIDORA NORTE LTDA (55.666.777/0001-88, CRT 3) para Horizonte, valor R$ 48.000,00. Fornecedor de regime regular (CRT 3); emissão em 02/08/2026, anterior a 03/08/2026, quando o grupo IBSCBS ainda não era obrigatório — documento válido (Comunicado CGIBS), mas SEM destaque de IBS/CBS. Crédito zero: o direito a crédito em 2026 pressupõe aquisição de contribuinte do regime regular COM destaque (LC 214/2025, art. 346). Chave de acesso (protNFe): 919DFC25F3E4E68BA6B0ABF2F01FDB0D9EC08543."
+    },
+    {
+      "numero": 2314,
+      "valor": 62000.0,
+      "credito_cbs": 558.0,
+      "credito_ibs": 62.0,
+      "motivo": "NF-e 2314, emitida em 05/08/2026 por DISTRIBUIDORA NORTE LTDA (55.666.777/0001-88, CRT 3) para Horizonte, valor R$ 62.000,00. Fornecedor não consta da carteira de clientes; regime regular inferido do CRT 3 da própria NF-e. Destaque correto no documento: vCBS 558,00 = 0,90% × 62.000,00 e vIBS 62,00 = 0,10% × 62.000,00. Crédito de teste mantido: em 2026 geram crédito as aquisições de contribuintes do regime regular com destaque (LC 214/2025, art. 346). Chave de acesso (protNFe): 619A81324FE053CE7BA22A83C6C8AFDF3D610766."
+    },
+    {
+      "numero": 2315,
+      "valor": 15000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "NF-e 2315, emitida em 09/08/2026 por PONTO FIXO COMERCIO ME (44.555.666/0001-77, CRT 1) para Horizonte, valor R$ 15.000,00. Optante do Simples Nacional (CRT 1), que em 2026 não está sujeito ao destaque nem à apuração (LC 214/2025, art. 347). Documento SEM destaque de IBS/CBS. Crédito zero: aquisições de optante do Simples geram crédito limitado ao valor efetivamente recolhido pelo optante a título de IBS/CBS no Simples e, em 2026, sem destaque, não há crédito (LC 214/2025, art. 347; art. 346). Chave de acesso (protNFe): BD0207336B47F628AE950952C15A3F9B68672360."
+    },
+    {
+      "numero": 2316,
+      "valor": 40000.0,
+      "credito_cbs": 360.0,
+      "credito_ibs": 40.0,
+      "motivo": "NF-e 2316, emitida em 16/08/2026 por LOGISTICA ATLAS S.A. (99.000.111/0001-22, CRT 3) para Horizonte, valor R$ 40.000,00. Fornecedor não consta da carteira de clientes; regime regular inferido do CRT 3 da própria NF-e. Destaque correto no documento: vCBS 360,00 = 0,90% × 40.000,00 e vIBS 40,00 = 0,10% × 40.000,00. Crédito de teste mantido: em 2026 geram crédito as aquisições de contribuintes do regime regular com destaque (LC 214/2025, art. 346). Chave de acesso (protNFe): B7641DCF8FC0A8638EC21DBD5410C7E1AE7782C7."
+    },
+    {
+      "numero": 2317,
+      "valor": 60000.0,
+      "credito_cbs": 540.0,
+      "credito_ibs": 60.0,
+      "motivo": "NF-e 2317, emitida em 22/08/2026 por DISTRIBUIDORA NORTE LTDA (55.666.777/0001-88, CRT 3) para Horizonte, valor R$ 60.000,00. Fornecedor não consta da carteira de clientes; regime regular inferido do CRT 3 da própria NF-e. Destaque correto no documento: vCBS 540,00 = 0,90% × 60.000,00 e vIBS 60,00 = 0,10% × 60.000,00. Crédito de teste mantido: em 2026 geram crédito as aquisições de contribuintes do regime regular com destaque (LC 214/2025, art. 346). Chave de acesso (protNFe): 4B10CE7C841F3B463CC269F68D3641D10346AAEC."
+    }
+  ],
+  "totais": {
+    "debito_cbs": 4320.0,
+    "debito_ibs": 480.0,
+    "credito_cbs": 1458.0,
+    "credito_ibs": 162.0,
+    "saldo_cbs": 2862.0,
+    "saldo_ibs": 318.0
+  },
+  "recolhimento_devido": 0.0,
+  "condicao_dispensa": "Horizonte Comércio e Serviços Ltda. (CNPJ 27.119.804/0001-30, regime regular, CRT 3), período 2026-08. Alíquotas do período de teste: CBS 0,90% e IBS 0,10% (LC 214/2025, art. 343; NT 2025.002). O recolhimento de IBS/CBS de 2026 está DISPENSADO nos termos do ADCT art. 125, §4º (redação da LC 214/2025), CONDICIONADO ao cumprimento das obrigações acessórias previstas na legislação — destaque nos documentos fiscais, escrituração e apuração-teste (LC 214/2025, arts. 343 e 346). Em agosto/2026 a Horizonte NÃO cumpriu integralmente: NF-e 2308, 2310 e 2312 emitidas a partir de 03/08/2026 sem o grupo IBSCBS obrigatório e NF-e 2309 com alíquotas invertidas (Comunicado CGIBS jul/2026; NT 2025.002) — risco de perda da dispensa (ADCT art. 125, §4º). Recolhimento devido informado como R$ 0,00 sob a dispensa vigente; se a dispensa for perdida, o saldo apurado do período seria exigível: CBS R$ 2.862,00 + IBS R$ 318,00 = R$ 3.180,00 (a extensão da perda — mês inteiro ou só operações irregulares — não está definida na biblioteca). Nada foi recolhido, portanto nada há a compensar com PIS/COFINS (ADCT art. 125, §1º). Base das saídas do mês, R$ 480.000,00, confere com a base PIS/COFINS de agosto do cliente (documents/apuracao_normal_agosto.md)."
+}

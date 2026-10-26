@@ -1,0 +1,23 @@
+{
+  "case": "uslaw_04_litigation_sequence",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 4116.866095205012,
+  "controller_wait_seconds": 648.0647587350104,
+  "model_turn_seconds": 3468.625679197954,
+  "turns": 9,
+  "released_facts": [
+    "feb11",
+    "padded"
+  ],
+  "usage": {
+    "input_tokens": 3509422,
+    "cached_input_tokens": 3348016,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 140426,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

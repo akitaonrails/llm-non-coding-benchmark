@@ -1,0 +1,119 @@
+[
+  {
+    "claim": "Bram's alleged fiduciary self-dealing in affiliate fees",
+    "theory": "fiduciary",
+    "direct_or_derivative": "derivative; the Company paid the fees and would receive any recovery",
+    "survives_waiver": false,
+    "limitations": {
+      "accrual": "Affiliate engagement on 2022-08-15 and each allegedly excessive payment from 2022-09-01 onward; waived regardless of timeliness.",
+      "barred_portion": 375000,
+      "tolling_argument": "The $375,000 is the identified 2022 and 2023 fixed payments outside a three-year lookback from 2026-10-08, absent tolling; 6% rent fees cannot be quantified. First discovery in 2026 after a books-and-records demand supports tolling, but the eliminated fiduciary duty weakens fiduciary-based tolling."
+    },
+    "strength": "low",
+    "remedy": "None on this waived theory; pursue express contract instead."
+  },
+  {
+    "claim": "Bram's alleged fiduciary misconduct in the capital call, dilution, and buyout",
+    "theory": "fiduciary",
+    "direct_or_derivative": "direct as to loss of Imani's percentage interest; any company loss from misuse of capital would be derivative",
+    "survives_waiver": false,
+    "limitations": {
+      "accrual": "2026-08-20 call, 2026-09-25 dilution, and 2026-10-01 offer.",
+      "barred_portion": 0,
+      "tolling_argument": "Unnecessary for the 2026 events."
+    },
+    "strength": "low",
+    "remedy": "None on this waived theory; seek contractual declaration and relief."
+  },
+  {
+    "claim": "Affiliate arrangement on terms less favorable than an arm's-length transaction, violating Section 5.4",
+    "theory": "express_contract",
+    "direct_or_derivative": "derivative; the Company bears any excessive cost and receives monetary recovery",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "At the 2022-08-15 arrangement and, subject to proof of separately actionable breaches, each excessive fee payment.",
+      "barred_portion": 375000,
+      "tolling_argument": "On a 2026-10-08 filing assumption, the 2022 and 2023 fixed payments total $180,000 + $195,000 = $375,000 and are presumptively outside three years. Tolling is arguable because the affiliate's identity and fee amounts emerged only from 2026 bank statements; generic summaries disclosed only 'management expenses.' Whether those summaries triggered inquiry notice is unresolved. The 6% rent fees and actual excess over market terms are unknown."
+    },
+    "strength": "medium",
+    "remedy": "Company recovery of proved excess over arm's-length terms, potentially with accounting and prospective compliance; no basis to recover all fees without proof."
+  },
+  {
+    "claim": "Failure to disclose the affiliate transaction in writing to all Members within 30 days, violating Section 5.4",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct as to Imani's personal contractual notice right; any recovery of excessive Company payments belongs to the Company",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "Approximately 2022-09-14, 30 days after the 2022-08-15 engagement; later material amendments or separate qualifying transactions, if any, have not been established.",
+      "barred_portion": 0,
+      "tolling_argument": "The original disclosure breach is presumptively barred in full absent tolling, but no damages are quantified, so barred_portion records $0 of identified monetary recovery rather than a claim fraction. Imani says she first learned the affiliate identity and fee amounts in 2026 after a books-and-records demand; generic management-expense summaries support a discovery-based argument. An affirmative act needed for fraudulent-concealment tolling has not been shown."
+    },
+    "strength": "medium",
+    "remedy": "Declaration and appropriate disclosure/accounting relief; damages require proof of a distinct loss caused by late notice."
+  },
+  {
+    "claim": "Capital call failed Section 6.3's certified-mail-and-email delivery requirements, so it did not trigger dilution",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct; Imani's own percentage interest was reduced",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-09-25 dilution following the 2026-08-20 notice and 2026-09-20 funding deadline.",
+      "barred_portion": 0,
+      "tolling_argument": "Unnecessary."
+    },
+    "strength": "high",
+    "remedy": "Declaration that the call did not produce a Dilution Event, restoration of the 18% interest, and injunction against a buyout premised on this event."
+  },
+  {
+    "claim": "Capital call may not have stated or served the bona fide Company purpose required by Section 6.3",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct as to dilution; any diversion of Company funds would be derivative",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-09-25 dilution; the challenged notice is dated 2026-08-20.",
+      "barred_portion": 0,
+      "tolling_argument": "Unnecessary."
+    },
+    "strength": "low",
+    "remedy": "Declaration and restoration of interest if evidence shows the stated purpose was insufficient or pretextual; the generic notice alone does not establish this."
+  },
+  {
+    "claim": "Manager failed Section 6.3's good-faith fair-value requirement or calculated 6.1% without a contractually supportable method",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct; Imani personally lost percentage interest",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-09-25 dilution notice.",
+      "barred_portion": 0,
+      "tolling_argument": "Unnecessary."
+    },
+    "strength": "medium",
+    "remedy": "Declaration invalidating or correcting dilution, accounting of the calculation, and valuation evidence."
+  },
+  {
+    "claim": "Alternative implied-covenant challenge to arbitrary use of valuation or capital-call discretion where Section 6.3 leaves a gap",
+    "theory": "implied_covenant",
+    "direct_or_derivative": "direct as to Imani's dilution injury",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-09-25 dilution notice.",
+      "barred_portion": 0,
+      "tolling_argument": "Unnecessary."
+    },
+    "strength": "medium",
+    "remedy": "Declaration or damages for proven bad-faith deprivation of Imani's contractual bargain; plead only as an alternative for a genuine contractual gap."
+  },
+  {
+    "claim": "Company lacks a Section 9.2 buyout right if there was no valid Dilution Event and Imani did not withdraw",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct; the proposed purchase concerns Imani's own interest",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-10-01 offer; a completed forced purchase has not been shown.",
+      "barred_portion": 0,
+      "tolling_argument": "Unnecessary."
+    },
+    "strength": "medium",
+    "remedy": "Declaration and, if needed, injunction preventing a purchase based on an invalid event; no standalone right to market value if Section 9.2 validly applies."
+  }
+]

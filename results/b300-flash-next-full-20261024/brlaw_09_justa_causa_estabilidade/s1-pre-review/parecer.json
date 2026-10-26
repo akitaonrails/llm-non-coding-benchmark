@@ -1,0 +1,36 @@
+{
+  "justa_causa_cabivel": false,
+  "motivos": [
+    "Fato não se enquadra na alínea 'k' do art. 482 da CLT: o post é crítica genérica às condições de trabalho (horas de fim de semana sem pagamento), sem ofensa pessoal a superior e sem imputação de crime; conforme a biblioteca (clt_482_493_proporcionalidade.md), isso tende a ser tratado como liberdade de expressão/manifestação de insatisfação — e o fato narrado é VERDADEIRO: o prontuário registra saldo positivo de 62h no banco de horas (jul–ago/2026) e o cliente confirmou expressamente que as horas de fim de semana nunca foram pagas.",
+    "Perda da imediatidade / perdão tácito: a gerente Renata (preposto — o conhecimento do preposto é conhecimento do empregador, clt_482_493_proporcionalidade.md) conheceu o post em 21/08/2026 (e-mail 'Viu o post dela ontem?' de 21/08/2026 08:51), mas só pediu a justa causa em 07/10/2026, alegando ter sabido 'essa semana' — lapso de ~47 dias e versão contradita pelo próprio e-mail dela.",
+    "Proporcionalidade/gradação ausente: nenhuma advertência ou suspensão no prontuário (avaliações 'bom'/'muito bom' 2022–2025); falta de baixa gravidade exige gradação pedagógica antes da dispensa, salvo gravidade extrema, que não existe aqui (clt_482_493_proporcionalidade.md).",
+    "Gravidade insuficiente para ruptura da fidúcia: post com 41 reações e 6 comentários, conteúdo verificado nos autos, sem dano demonstrado à honra objetiva ou a superiores.",
+    "Empecilhos de estabilidade independentes do mérito: empregada gestante (atestado de 18/09/2026 registrado no ambulatório da empresa; ADCT art. 10, II, b e Súmula 244 TST — o desconhecimento pelo empregador não afasta a indenização) e suplente eleita da CIPA (Súmula 339, I TST; ADCT art. 10, II, a; CLT art. 165 — a despedida de cipeiro exige motivo disciplinar/técnico/econômico/financeiro comprovável pelo empregador, o que esta justa causa não fornece)."
+  ],
+  "estabilidades": [
+    {
+      "tipo": "Gestante",
+      "fundamento": "ADCT art. 10, II, b; TST Súmula 244, I–III; Lei 9.029/95 (library/estabilidade_gestante.md). Gestação confirmada por atestado de obstetra (9 semanas) registrado no ambulatório da empresa em 18/09/2026 — ciência imputável ao empregador; e o desconhecimento pela gerência (confirmado pelo cliente) é juridicamente irrelevante: Súmula 244, I — 'o desconhecimento do estado gravídico pelo empregador não afasta o direito'.",
+      "ate": "~2027-09-23 (5 meses após o parto; termo estimado 2027-04-23 = 18/09/2026 + 31 semanas; data a confirmar com pré-natal — estimativa)"
+    },
+    {
+      "tipo": "CIPA (suplente eleita — representante dos empregados)",
+      "fundamento": "ADCT art. 10, II, a; CLT art. 165 e parágrafo único; TST Súmula 339, I (suplente tem estabilidade) (library/estabilidade_cipa.md). Eleição 12/05/2026, posse 02/06/2026, mandato de 1 ano; estabilidade desde o registro da candidatura até 1 ano após o final do mandato.",
+      "ate": "~2028-06-01 (1 ano após o fim do mandato, estimado em 2027-06-01 = posse + 1 ano; se o mandato correr da eleição, ~2028-05-11 — confirmar data de registro da candidatura e término do mandato)"
+    }
+  ],
+  "exposicao_se_reverter": {
+    "verbas_rescisorias": 42506.53,
+    "indenizacao_estabilidade": 186022.78,
+    "dano_moral_estimado": 15000.0,
+    "total": 243529.31
+  },
+  "alternativas": [
+    "Não aplicar a dispensa por justa causa. Corrigir a causa material do conflito: pagar/compensar as 62h do banco de horas (jul–ago/2026) e tratar o tema jornada internamente — o post é factualmente verdadeiro e sua remoção/punião agrava o risco.",
+    "Encerrar o caso disciplinar com feedback documentado, sem penalidade: advertência pelo post agora (47 dias depois, sem gradação e contra gestante/Suplente de CIPA) teria cara de retaliação e pouca sustentação.",
+    "Se a empresa quiser a saída: negociar acordo com a empregada, precificando até o teto da exposição estimada (~R$ 243,5 mil, podendo chegar a ~R$ 351,3 mil no cenário de cumulação das estabilidades); atenção: acordo firmado sob pressão durante estabilidades é anulável — conduzir com advogado e contrapartida real.",
+    "Demissão sem justa causa unilateral NÃO é a saída 'pago e acabo' que a gerência sugere: é exatamente a modalidade que a Constituição veda — ADCT art. 10, II, 'a' e 'b' proíbem a dispensa sem justa causa da gestante e do cipeiro (suplente incluído, Súmula 339, I). Pagar não quita a estabilidade: a Súmula 244, II autoriza reintegração enquanto estiver no período (gestante até ≈ 09/2027; CIPA até ≈ 06/2028) — ou seja, ela pode VOLTAR a trabalhar; fora do período (ou como alternativa), indenização de todos os salários e direitos do período: R$ 228.529,31 no cenário mediano (verbas 42.506,53 + estabilidade 186.022,78), teto de R$ 336.292,09 na cumulação — além da dívida das 62h e dos itens não quantificados. 'Acabou' não existe nesse caminho.",
+    "Se no futuro surgir falta disciplinar real e documentada, a CLT art. 165 admite despedida de cipeiro por motivo disciplinar, mas o ônus da prova é do empregador (parágrafo único) e a punição deve ser imediata à ciência da falta."
+  ],
+  "recomendacao": "Arquivar o pedido de justa causa (resposta à pergunta do cliente: o desconhecimento da gestação pela Renata NÃO muda nada — a ciência do ambulatório já é imputável à empresa e, de todo modo, a Súmula 244, I dispensa a ciência patronal). O pedido não se sustenta (fato atípico, VERDADEIRO — o cliente confirmou que as horas nunca foram pagas — e de baixa gravidade; perdão tácito desde 21/08/2026; nenhuma gradação disciplinar) e a empregada tem duas estabilidades vigentes (gestante e CIPA suplente). Aplicar a dispensa é apostar contra uma reversão de alta probabilidade, com exposição estimada de R$ 243,5 mil (até ~R$ 351,3 mil se cumuladas as estabilidades), além de reintegração, FGTS/seguro-desemprego e custas — e ainda exporia em juízo a dívida das 62h, que existe com ou sem litígio. Prioridades: (1) comunicar ao RH que a justa causa não será emitida, exibindo o e-mail de 21/08/2026 como marco de ciência do post; (2) quitar/compensar as 62h do banco de horas; (3) se desejada a separação, acordo negociado abaixo da exposição estimada."
+}

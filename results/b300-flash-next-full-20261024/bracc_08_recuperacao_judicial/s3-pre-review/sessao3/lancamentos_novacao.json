@@ -1,0 +1,76 @@
+{
+  "evento": "Novação pela homologação do plano (LRF art. 59, via CPC 48) — valores nominais; ver 'premissas'",
+  "premissas": [
+    "Valores em R$, base NOMINAL. Pelo CPC 48 (IFRS 9) o novo passivo deveria ser mensurado a valor presente (PV das parcelas, 120x com carência de 24m); a taxa de desconto do plano não foi informada (desconhecida), então o PV é tratado como igual ao nominal até que a taxa chegue — quando vier, o novo passivo cai e o ganho aumenta na diferença.",
+    "Trabalhistas (960.000) e fiel: novação sem deságio ⇒ reclassificação sem ganho nominal; com taxa, surgiria ajuste a PV.",
+    "A União NÃO novae pelo plano (CTN 187; LRF art. 68) — o lançamento do parcelamento é reclassificação por adesão legal, não novação de plano.",
+    "Débitos com pessoas ligadas não teriam o benefício do art. 50-A (parágrafo único); relação dos credores com controladores é desconhecida.",
+    "IRPJ/CSLL diferidos sobre o ganho (CPC 32) não são lançados aqui: norma não consta da biblioteca — tratar com a auditoria."
+  ],
+  "lancamentos": [
+    {
+      "id": 1,
+      "data_evento": "data da homologação do plano",
+      "descricao": "Baixa do passivo concursal original das classes III (quirografários: Banco Alfa + Fornecedor Norte pré-pedido) e reconhecimento do novo passivo do plano a valor presente; diferença = ganho com redução da dívida.",
+      "debito":   [{"conta": "Passivo — Fornecedores/empréstimos em recuperação (Classe III — Alfa 4.200.000 + Norte 1.850.000)", "valor": 6050000}],
+      "credito":  [
+        {"conta": "Passivo — Novo passivo plano RJ Classe III (PV; premissa = nominal pós-deságio 40% x 6.050.000)", "valor": 2420000},
+        {"conta": "Resultado — Receita de renegociação de dívidas em RJ (divulgação separada, CPC 48)", "valor": 3630000}
+      ],
+      "valor_total": 6050000,
+      "fundamento": "CPC 48/IFRS 9 (baixa de passivo financeiro; teste dos 10% atendido: termos substancialmente diferentes — deságio 60%) — library/cpc_contabil_rj.md; novação: LRF art. 59 (verbete CPC 48)."
+    },
+    {
+      "id": 2,
+      "data_evento": "data da homologação do plano",
+      "descricao": "Mesma mecânica para a Classe IV (ME/EPP — Fornecedor Sul).",
+      "debito":   [{"conta": "Passivo — Fornecedores em recuperação (Classe IV — Sul EPP)", "valor": 420000}],
+      "credito":  [
+        {"conta": "Passivo — Novo passivo plano RJ Classe IV (PV; premissa = nominal pós-deságio: 40% x 420.000)", "valor": 168000},
+        {"conta": "Resultado — Receita de renegociação de dívidas em RJ", "valor": 252000}
+      ],
+      "valor_total": 420000,
+      "fundamento": "CPC 48/IFRS 9 — library/cpc_contabil_rj.md."
+    },
+    {
+      "id": 3,
+      "data_evento": "data da homologação do plano",
+      "descricao": "Trabalhistas (Classe I): novação sem deságio (minuta prevê integral) — reclassificação da provisão/passivo para o passivo do plano; sem ganho nominal. Com taxa de desconto informada, refazer a PV.",
+      "debito":   [{"conta": "Passivo — Obrigações trabalhistas em recuperação (Classe I)", "valor": 960000}],
+      "credito":  [{"conta": "Passivo — Novo passivo plano RJ Classe I (PV; premissa = nominal)", "valor": 960000}],
+      "valor_total": 960000,
+      "fundamento": "CPC 48/IFRS 9; apresentação em rubrica própria durante a RJ — library/cpc_contabil_rj.md."
+    },
+    {
+      "id": 4,
+      "data_evento": "adesão ao parcelamento/transação (Lei 10.522, arts. 10-A a 10-C) — NÃO é novação do plano",
+      "descricao": "Reclassificação do passivo tributário federal (União, valor principal atual) para 'passivo de parcelamento especial', em curto e longo prazo, na data da adesão. Atualizações futuras só no reconhecimento (regime de competência). Em transação com desconto (Portaria PGFN 2.382/2021): no DESPACHO DE HOMOLOGAÇÃO, baixa-se a parte perdoada — cenários no arquivo da Sessão 3.",
+      "debito":   [{"conta": "Passivo — Tributos federais a recolher (União: IRPJ/CSLL/PIS/COFINS, principal)", "valor": 2700000}],
+      "credito":  [{"conta": "Passivo — Parcelamento federal especial (art. 10-A; cur/longo prazo)", "valor": 2700000}],
+      "valor_total": 2700000,
+      "fundamento": "CTN art. 187 (não sujeito ao plano); Lei 10.522/2002 arts. 10-A a 10-C — library/ctn_187_191a.md e library/lei10522_parcelamento_rj.md."
+    },
+    {
+      "id": 5,
+      "data_evento": "alienação do galpão (UPI) — condicional",
+      "descricao": "AO RECEBER o valor da venda (R$ 4,5 mi pretendidos): baixa do ativo pelo VALOR CONTÁBIL (desconhecido) e reconhecimento do ganho/perda. Trava de 30% NÃO se aplica a ganho de capital em alienação judicial de bens em RJ. Valor contábil e regime da UPI pendentes — lançamento só com números.",
+      "debito":   [
+        {"conta": "Banco — Disponível", "valor": 4500000},
+        {"conta": "Perda/ganho na alienação (ajuste pelo valor contábil — DESCONHECIDO)", "valor": null}
+      ],
+      "credito":  [{"conta": "Ativo imobilizado — Galpão (UPI), pelo valor contábil líquido", "valor": null}],
+      "valor_total": null,
+      "fundamento": "Art. 6º-B da LRF (trava não aplicável) — library/lei11101_excertos.md. Regime da UPI (art. 60-A) NÃO verificado (fora da biblioteca)."
+    }
+  ],
+  "fechamento": {
+    "ganho_total_renegociacao_homologacao": 3882000,
+    "conferencia": "3.630.000 (id 1) + 252.000 (id 2) = 3.882.000 = ganho_desagio de efeito_tributario_desagio.json ✔",
+    "passivo_pos_homologacao_nominal": {
+      "plano": "2.420.000 + 168.000 + 960.000 = 3.548.000",
+      "parcelamento_federal": 2700000,
+      "fiduciario_Banco_Beta_fora_do_plano": 3100000,
+      "total": "3.548.000 + 2.700.000 + 3.100.000 = 9.348.000 (vs. 13.540.000 pré-plano; redução nominal de 4.192.000 = 3.882.000 de deságio + 310.000 do pós-pedido que sai do passivo de longo prazo ao ser pago)"
+    }
+  }
+}

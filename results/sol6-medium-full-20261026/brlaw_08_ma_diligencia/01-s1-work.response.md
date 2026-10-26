@@ -1,0 +1,5 @@
+I’ll read the contract and workspace files, then complete the deliverables using only the supplied materials. If a necessary client fact is missing, I’ll put specific questions in `deliverable/QUESTIONS.md`.
+
+The files show a private customer consent requirement, a disclosed PJ employment risk, and a positive federal tax certificate. The draft gives those two disclosed risks broad seller indemnity. I also found no purchase price in the supplied files, which is needed to express the caps and escrow in reais, so I’ll ask the client for the missing transaction facts before finalizing the documents.
+
+Registrei as informações necessárias em [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). Aguardo a resposta do cliente para concluir a análise, a redação proposta das cláusulas e os demais entregáveis.

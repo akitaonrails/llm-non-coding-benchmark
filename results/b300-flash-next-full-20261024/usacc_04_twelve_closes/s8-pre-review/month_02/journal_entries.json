@@ -1,0 +1,97 @@
+[
+  {
+    "ref": "JE-2025-02-01",
+    "date": "2025-02-01",
+    "memo": "February monthly subscription invoices INV-2226..INV-2249 (same 24 customers C-001..C-024 as January, same amounts - verified identical per customer). Service delivered in February; recognized ratably as earned (library/asc606_excerpts.md; library/revenue_policy_memo.md #1). Sum: 650+2400+2400+1800+900+2400+450+650+1800+1800+2400+1800+450+900+450+450+1200+900+2400+650+900+450+450+1800 = 30,450.00",
+    "lines": [
+      {"account": "1100", "debit": 30450.00, "credit": 0},
+      {"account": "4000", "debit": 0, "credit": 30450.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-02-02",
+    "date": "2025-02-01",
+    "memo": "INV-2250 Pinecone Dental Group (C-025) order form 2025-02-01: 'Implementation & license - one-time' 36,000.00, due on signature, service start 2025-02-01, scope platform deployment + user onboarding up to 40 seats. RECOGNIZED $0 AS REVENUE IN FEBRUARY: revenue follows the library, not the invoice description. (a) revenue_policy_memo #2 - implementation recognized when performed ONLY IF a separately priced, distinct service is actually delivered; here implementation and license are one bundled unseparated line, not separately priced, and no delivery/performance evidence is in the file; (b) ASC 606-10-25-17 - deployment/setup and onboarding activities that do not transfer a service to the customer are not performance obligations; (c) ASC 606-10-45-2 - amounts billed before performance are a contract liability. Billed in full to deferred revenue 2200 pending delivery evidence and term/allocation documentation (see open_items.md and QUESTIONS.md round 2). POST-CLOSE UPDATE: client answered QUESTIONS.md #9-12 - no bespoke work, customer self-onboarded (policy #2 expressly: self-serve onboarding is not an implementation service), 'license' is a label procurement wanted, not substance (ASC 606-10-25-10 et seq.). Deferral confirmed; no amounts changed; no term exists so no release pattern is computable - full amount stays deferred (month_02/open_items.md item 1).",
+    "lines": [
+      {"account": "1100", "debit": 36000.00, "credit": 0},
+      {"account": "2200", "debit": 0, "credit": 36000.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-02-03",
+    "date": "2025-02-28",
+    "memo": "Deferred revenue release - Trestle prior annual contract (Jun 2024-May 2025), second of five monthly releases per documents/note_opening_deferred.md: 8,200.00/month Jan-May 2025. February release. Opening 41,000.00 - Jan 8,200.00 - Feb 8,200.00 = 24,600.00 remaining.",
+    "lines": [
+      {"account": "2200", "debit": 8200.00, "credit": 0},
+      {"account": "4000", "debit": 0, "credit": 8200.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-02-04",
+    "date": "2025-02-28",
+    "memo": "Deferred revenue release - Trestle renewal (term 2025-01-01..2025-12-31): 1/12 of 24,000.00 = 2,000.00 for February (revenue_policy_memo #1; ASC 606-10-25-14(b), 25-27). Overlap assumption from January unchanged - see open_items.md.",
+    "lines": [
+      {"account": "2200", "debit": 2000.00, "credit": 0},
+      {"account": "4000", "debit": 0, "credit": 2000.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-02-05",
+    "date": "2025-02-15",
+    "memo": "Wire-in Pinecone Dental Group 36,000.00 on bank statement 02/15 = payment of INV-2250 per cash_receipts.csv (applied_to INV-2250, date 2025-02-15). Collection of a contract liability - cash in, A/R down; no revenue (ASC 606-10-45-2).",
+    "lines": [
+      {"account": "1000", "debit": 36000.00, "credit": 0},
+      {"account": "1100", "debit": 0, "credit": 36000.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-02-06",
+    "date": "2025-02-26",
+    "memo": "February recurring ACH receipts 02/20-02/26 per documents/month_02/cash_receipts.csv: 24 deposits totaling 30,450.00, every one matched to its February invoice INV-2226..INV-2249 by customer, amount and date, and to the bank statement line-by-line. All February subscription invoices fully collected in-month.",
+    "lines": [
+      {"account": "1000", "debit": 30450.00, "credit": 0},
+      {"account": "1100", "debit": 0, "credit": 30450.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-02-07",
+    "date": "2025-02-09",
+    "memo": "Vendor bills per documents/month_02/vendor_bills.csv: AWS 10,040.00 (hosting 5000), WeWork 7,200.00 (rent 5100), Gusto fees 240.00 (G&A other 5400), Notion/Slack/GitHub 1,460.00 (software 5200), Google Ads 3,300.00 (marketing 5300). Total 22,240.00. Codes per controller-assigned scheme (January open_items.md).",
+    "lines": [
+      {"account": "5000", "debit": 10040.00, "credit": 0},
+      {"account": "5100", "debit": 7200.00, "credit": 0},
+      {"account": "5200", "debit": 1460.00, "credit": 0},
+      {"account": "5300", "debit": 3300.00, "credit": 0},
+      {"account": "5400", "debit": 240.00, "credit": 0},
+      {"account": "2000", "debit": 0, "credit": 22240.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-02-08",
+    "date": "2025-02-09",
+    "memo": "Payment of February vendor bills by ACH per bank statement 02/05-02/09 (AWS 10,040 + WeWork 7,200 + Gusto fees 240 + Notion/Slack/GitHub 1,460 + Google Ads 3,300 = 22,240.00). No payment against the opening A/P of 17,420.00 this month - it remains open (open_items.md).",
+    "lines": [
+      {"account": "2000", "debit": 22240.00, "credit": 0},
+      {"account": "1000", "debit": 0, "credit": 22240.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-02-09",
+    "date": "2025-02-25",
+    "memo": "February payroll per documents/month_02/payroll_register.json (9 employees, pay date 2025-02-25): gross 54,404.00 + employer taxes/benefits 5,076.00 = cost 59,480.00. Bank agrees to register: net pay ACH 48,200.00 (02/25) and tax remittance ACH 11,280.00 (02/25), total cash out 59,480.00. Withheld 54,404.00 - 48,200.00 = 6,204.00; remitted 6,204.00 + 5,076.00 = 11,280.00. Agrees to register AND bank, nothing forced; liability nets to zero within the month as in January.",
+    "lines": [
+      {"account": "6000", "debit": 54404.00, "credit": 0},
+      {"account": "6100", "debit": 5076.00, "credit": 0},
+      {"account": "1000", "debit": 0, "credit": 59480.00}
+    ]
+  },
+  {
+    "ref": "JE-2025-02-10",
+    "date": "2025-02-28",
+    "memo": "Monthly depreciation 1,777.78 per library/close_checklist.md item 6. No new fixed assets in February documents. Accumulated depreciation after February: 23,110.78 + 1,777.78 = 24,888.56.",
+    "lines": [
+      {"account": "6200", "debit": 1777.78, "credit": 0},
+      {"account": "1510", "debit": 0, "credit": 1777.78}
+    ]
+  }
+]

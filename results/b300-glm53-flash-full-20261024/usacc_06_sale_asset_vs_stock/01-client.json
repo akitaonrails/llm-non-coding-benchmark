@@ -1,0 +1,7 @@
+{
+  "questions": "# Questions for the client (Ray Brightline)\n\n1. **Covenant / consulting payment:** Buyer A's Exhibit A says \"$400,000 of the price is allocated\"\nto a 5-year non-competition **and consulting** agreement. Is the consulting piece genuinely\nperformed post-closing (services), or is it all restraint-of-trade money? Payments for services are\ncompensation; restraint payments are covenant income — both ordinary, but the tax returns differ.\nIf it is all covenant, our counter assumes 5 years, fixed dollar amount, cash at closing.\n\n2. **Equipment / FMV support:** The counter allocation prices Class V at 650,000 per your fixed\nasset register's \"fmv_estimate\" column. Is 650,000 a current, supportable value (who prepared it,\nas of what date)? If Buyer A contests it we need an appraisal before signing, because the\nresidual method's FMV ceiling is the argument that breaks Exhibit A.\n\n3. *(Optional)* **Receivables:** confirm the 200,000 of receivables has no added-back bad-debt\ndeductions or reserve in any prior year (the file says \"no reserve\"). If any existed, the Class III\nsale could produce ordinary gain.\n",
+  "released_fact_ids": [
+    "noncompete_term"
+  ],
+  "answer": "I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

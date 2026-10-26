@@ -1,0 +1,42 @@
+[
+  {
+    "contract": "Trestle Freight LLC — prior annual subscription (Jun 2024–May 2025)",
+    "opening": 32800.0,
+    "billed": 0.0,
+    "recognized": 8200.0,
+    "closing": 24600.0,
+    "basis": "Jan closing 32,800.00; 8,200.00/mo Feb is month 2 of 5 (Feb-May 2025) per note_opening_deferred.md; 32,800 - 8,200 = 24,600.00; balance before June close still needs the opening-composition confirmation (open item 1)."
+  },
+  {
+    "contract": "Trestle Freight LLC — renewal annual subscription (Jan–Dec 2025), INV-2225",
+    "opening": 22000.0,
+    "billed": 0.0,
+    "recognized": 2000.0,
+    "closing": 20000.0,
+    "basis": "24,000.00/12 = 2,000.00/mo, month 2 of 12; 22,000.00 - 2,000.00 = 20,000.00. ASC 606-10-25-14(b)/25-27, policy #1."
+  },
+  {
+    "contract": "Unsupported opening deferred balance (no contract in client file)",
+    "opening": 24000.0,
+    "billed": 0.0,
+    "recognized": 0.0,
+    "closing": 24000.0,
+    "basis": "Composition unknown (month_01 open item 1; client has no additional information). Not released; carried until evidence identifies the contract or ASC 250 disposes of it at the December close."
+  },
+  {
+    "contract": "Pinecone Dental Group (C-025) — INV-2250, \"Implementation & license — one-time\", billed 2025-02-01, collected 2025-02-15",
+    "opening": 0.0,
+    "billed": 36000.0,
+    "recognized": 0.0,
+    "closing": 36000.0,
+    "basis": "Billed in advance of performance = contract liability (ASC 606-10-45-2). Order-form scope \"platform deployment and user onboarding for up to 40 seats\" is set-up activity that does not transfer a service and is not a performance obligation (ASC 606-10-25-17); revenue policy #2 permits recognition only for a separately priced distinct implementation actually delivered, and nothing in the file evidences delivery. The consideration is therefore allocated to platform access — but the access term is not stated (MSA v3.2 not in the file), so no February release is computed; if a term is confirmed (e.g. 12 months from 2025-02-01), monthly release = 36,000.00/12 = 3,000.00 and catch-up will be computed then. QUESTIONS.md Q8."
+  },
+  {
+    "contract": "TOTAL",
+    "opening": 78800.0,
+    "billed": 36000.0,
+    "recognized": 10200.0,
+    "closing": 104600.0,
+    "basis": "Agrees to trial balance account 2200: 20,400.00 cumulative debits - 125,000.00 credits = 104,600.00 credit."
+  }
+]

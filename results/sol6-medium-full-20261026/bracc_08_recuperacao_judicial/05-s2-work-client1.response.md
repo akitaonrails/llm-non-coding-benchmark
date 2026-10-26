@@ -1,0 +1,5 @@
+O cliente não tem os dados adicionais para esta sessão. Vou encerrar a análise como condicional, listar as lacunas na própria entrega e retirar o arquivo de perguntas pendentes, sem repetir solicitações já respondidas.
+
+Fechei a [análise da sessão 2](/work/workspace/deliverable/sessao2/analise_plano.md) com as lacunas explícitas e atualizei o [STATUS](/work/workspace/deliverable/STATUS.md). Não há mais perguntas pendentes ao cliente.
+
+No [JSON tributário](/work/workspace/deliverable/sessao2/efeito_tributario_desagio.json), o deságio de R$ 3.882.000 é **nominal**. PIS/COFINS igual a zero e trava de 30% inaplicável são conclusões **condicionadas** a os credores não serem pessoas ligadas, fato não confirmado. A compensação e o IRPJ/CSLL continuam indetermináveis; seus campos permanecem `null`.

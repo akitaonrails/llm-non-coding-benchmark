@@ -1,0 +1,16 @@
+[
+  {
+    "label": "s1-work",
+    "seconds": 30.504963226005202,
+    "returncode": 0,
+    "complete": false,
+    "usage": {
+      "input_tokens": 25033,
+      "cached_input_tokens": 21650,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 555,
+      "reasoning_output_tokens": 0
+    },
+    "thread_id": "ses_e8c2a6a91ffeuSw9MKfqHUyyle"
+  }
+]

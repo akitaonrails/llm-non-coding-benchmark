@@ -1,0 +1,47 @@
+{
+  "case": "brlaw_03_pejotizacao",
+  "questions": "# PERGUNTAS.md — Solicitações ao cliente (Solaris Tecnologia)\n\n> Perguntas que materialmente movem os números do parecer. Enquanto não respondidas,\n> os itens seguem como premissas conservadoras/piores-caso sinalizadas em\n> `parecer.md` §11 e em `open_items` do `parecer.json`. Prazo/ordem de prioridade indicada.\n\n## Atualização — 2ª rodada (26/10/2026)\n\n- ✅ **P1 respondida** pelo diretor: *\"Os 18 mil eram 'cheios' justamente porque ele era PJ. Um CLT equivalente ganharia uns 12 mil.\"* — leitura completa no item P1, abaixo; incorporada ao parecer (§7.5, §8, §11) e ao `parecer.json` (`cenario_base_cliente`).\n- **P2–P7:** o cliente informou **não ter informações adicionais**. Permanecem como itens abertos/premissas rotuladas em `parecer.md` §11 e em `open_items`.\n- **Nenhuma pergunta nova foi aberta:** não se repetem pedidos já respondidos por \"sem informação adicional\"; os passos que restam são instrutórios/documentais e seguem listados nos itens abertos.\n\n---\n\n## P1 — ✅ RESPONDIDA (26/10/2026) — Composição do valor da nota fiscal (R$ 18.000/mês)\n\nO valor mensal faturado pela PJ do Sr. Rafael **inclui** tributos e custos da PJ\n(ISS, PIS/COFINS, IRPJ, pró-labore, contabilidade, encargos SOC/contador)?\n\n- **Por que importa:** a remuneração-base trabalhista do acervo é \"o valor pago à PJ\".\n  Se R$ 18.000 embutisse custo não remuneratório, o salário-de-função seria menor e\n  **todas** as verbas (13º, férias+1/3, FGTS+40%, INSS patronal, HE) cairiam\n  proporcionalmente — é o principal argumento de defesa quantificável.\n\n**Resposta recebida (diretor, 26/10/2026, verbatim):** *\"Os 18 mil eram 'cheios'\njustamente porque ele era PJ. Um CLT equivalente ganharia uns 12 mil.\"*\n\nLeitura para o parecer:\n1. **Sem decomposição em tributos/custos** — a única hipótese de redução de base\n   prevista no acervo (`verbas_e_calculo.md`: \"salvo prova de que embutia\n   tributos/custos\") **não foi corroborada** ⇒ base central **permanece R$ 18.000**.\n2. A cifra \"12 mil\" é **estimativa verbal, sem base documental e sem amparo no\n   acervo** ⇒ entra apenas como **sensibilidade defensiva** (`parecer.md` §7.5):\n   todas as verbas × 2/3 ⇒ **~R$ 598.181,64** com imputação; **~R$ 1.306.181,64**\n   sem imputação (+708.000 de salários; o excesso recebido de 354.000 fica sem\n   tratamento no acervo — item aberto).\n3. **Efeito adverso à tese de autonomia:** admitir que existia sobrepreço de ~50%\n   \"justamente porque ele era PJ\" é coerente com a compra da condição de PJ\n   (evidência para a fraude — art. 9º), não com preço de mercado de serviço autônomo.\n- **Desdobramento numérico:** provisão permanece **R$ 897.272,45**; faixa de acordo\n  **R$ 450.000–600.000** mantida — o topo do envelope coincide com a sensibilidade\n  defensiva (~598.181,64); ver `parecer.md` §8.\n\n## P2 — Planilhas completas de horas extras · alta prioridade\n\nA prova de HE disponível cobre **apenas jan–jun/2025** (135 h no semestre; média\n22,5 h/mês). Precisamos de:\n\n1. Registros/prints/planilha de horas **out/2021–dez/2024**;\n2. **jul–dez/2025** e **jan–out/2026**;\n3. Qualquer política de compensação ou banco de horas vigente no período.\n\n- **Por que importa:** a estimativa central (R$ 162.920,45) usa 22,5 h/mês como\n  proxy para os 59 meses exigíveis. Se a média real for menor/maior, o item mais\n  sensível do parecer muda na mesma proporção (cada ±5 h/mês ≈ ±R$ 36.000 no total\n  de HE sobre a base 122,73/h).\n- **Cenário atual:** proxy 22,5 h/mês declarado como estimativa, não como prova.\n\n## P3 — Intervalo intrajornada (refeição) · alta prioridade\n\nHavia pausa de refeição na rotina do Sr. Rafael? Qual duração típica (1h? mais?)\ne há controle ou prova disso?\n\n- **Por que importa:** decide o divisor da hora-extra na estimativa:\n  **220h** (jornada 9h–18h com 1h de intervalo) vs **198h** (sem intervalo ou\n  intervalo totalmente eliminado — pior caso). Cenário alternativo já calculado:\n  R$ 181.022,73 vs R$ 162.920,45 (diferença ~R$ 18.102). O acervo não traz a regra\n  aplicável — premissa **[não verificada no acervo]**.\n- **Cenário atual:** divisor 220 (divisor mais defensável, mas rotulado).\n\n## P4 — Natureza do \"saldo de 20 dias\" (e-mail do RH de 20/08/2025) · média prioridade\n\nO RH mencionou \"saldo de 20 dias\" no e-mail de 20/08/2025. O que é exatamente?\n\n- Banco de horas? Abono? Fruição de \"férias\" via NF? Licença remunerada?\n- Houve **faturamento via NF** correspondente a esses 20 dias?\n- **Por que importa:** pode alterar contas de férias (simples vs dobradas) e de\n  FGTS sobre o período, e serve de prova adicional de subordinação/pagamento\n  condicionado. Também alimenta a tese de fraude (art. 9º).\n\n## P5 — Quadro de empregados da Solaris · média prioridade\n\nA Solaris tem **mais de 20 empregados** registrados no período (2019–2026)?\n\n- **Por que importa:** é a premissa da **Súmula 338** (presunção de controle de\n  jornada relativo/onus da empresa que mantém 20+ empregados) e sustenta parte da\n  prova de HE. Não muda o centro do parecer, mas muda a faculdade de instrução.\n\n## P6 — Prática de imputação contábil · média prioridade\n\nInternamente, os valores pagos via NF foram tratados como custo de serviço\nPJ **ou** como remuneração imputável ao prestador?\n\n- **Por que importa:** o cenário central (R$ 897.272,45) assume imputação dos\n  R$ 1.062.000 pagos; sem imputação, a exposição vai a **R$ 1.959.272,45**.\n  A imputação é prática usual, mas **não está no acervo** — preciso saber como a\n  Solaris contabilizou, para orientar a defesa.\n\n## P7 — Provisionamento (CPC 25) · baixa prioridade\n\nO cliente referiu CPC 25 como framework de provisionamento. Confirma que a\nprovisão deve ser registrada como **\"provável\" pelo valor central\nR$ 897.272,45**, com nota aberta da variação? (Framework não está no acervo —\naplico sigla informada pelo cliente e sinalizo.)\n\n---\n\n## Registro de respostas\n\n| # | Data | Resposta | Impacto nos números |\n|---|------|----------|---------------------|\n| P1 | 2026-10-26 | Diretor: 18 mil \"cheios\" \"porque ele era PJ\"; \"um CLT equivalente ganharia uns 12 mil\" (estimativa verbal, sem base documental) | Base central mantida em R$ 18.000; nova sensibilidade ~R$ 598.181,64 (com imputação) / ~R$ 1.306.181,64 (sem); provisão e faixa de acordo inalteradas |\n| P2–P7 | 2026-10-26 | Sem informação adicional do cliente | Itens permanecem abertos, com as premissas pior-caso mantidas (`parecer.md` §11 / `open_items`) |\n",
+  "facts": [
+    {
+      "id": "outros_clientes",
+      "trigger": [
+        "outros clientes",
+        "exclusiv",
+        "prestava para terceiros"
+      ],
+      "answer": "Carla: Não. Ele era dedicado a nós, 7 anos. A PJ dele só tinha a gente.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "quem_decidia",
+      "trigger": [
+        "quem decidia",
+        "férias",
+        "horário",
+        "aprovava",
+        "subordina"
+      ],
+      "answer": "Carla: Eu. Aprovava férias, cobrava horário, dava feedback. Igual aos CLTs.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "valor_embutia",
+      "trigger": [
+        "embutia",
+        "tributos",
+        "custo",
+        "valor da nota",
+        "remuneração-base"
+      ],
+      "answer": "Diretor: Os 18 mil eram 'cheios' justamente porque ele era PJ. Um CLT equivalente ganharia uns 12 mil.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "valor_embutia"
+  ],
+  "literal_suggestions": [
+    "quem_decidia"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

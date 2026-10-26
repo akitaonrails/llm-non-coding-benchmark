@@ -1,0 +1,705 @@
+{
+  "wall_seconds": 503.0157538120111,
+  "cases": [
+    {
+      "case": "bracc_03_cbs_ibs_ano_teste",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 191.44598737100023,
+      "controller_wait_seconds": 19.00143957900582,
+      "model_turn_seconds": 172.43154659701395,
+      "turns": 3,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 621748,
+        "cached_input_tokens": 569984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12361,
+        "reasoning_output_tokens": 2723
+      },
+      "api_equivalent_usd": 0.3411348
+    },
+    {
+      "case": "bracc_01_das_fator_r",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 217.08295804299996,
+      "controller_wait_seconds": 23.00232663299539,
+      "model_turn_seconds": 194.06784771502134,
+      "turns": 3,
+      "released_facts": [
+        "prolabore_abril"
+      ],
+      "usage": {
+        "input_tokens": 523029,
+        "cached_input_tokens": 468992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13784,
+        "reasoning_output_tokens": 4095
+      },
+      "api_equivalent_usd": 0.3397124
+    },
+    {
+      "case": "bracc_02_escolha_regime",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 311.3449328679999,
+      "controller_wait_seconds": 31.00323918799404,
+      "model_turn_seconds": 280.3289134039951,
+      "turns": 4,
+      "released_facts": [
+        "creditos",
+        "lucro",
+        "obra_pct"
+      ],
+      "usage": {
+        "input_tokens": 535278,
+        "cached_input_tokens": 488320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18875,
+        "reasoning_output_tokens": 7077
+      },
+      "api_equivalent_usd": 0.38033
+    },
+    {
+      "case": "bracc_06_venda_quotas_vs_ativos",
+      "status": "completed_ungraded",
+      "error": null,
+      "elapsed_seconds": 228.12021728800028,
+      "controller_wait_seconds": 44.00534697098192,
+      "model_turn_seconds": 184.10874275901006,
+      "turns": 4,
+      "released_facts": [
+        "distribuicao"
+      ],
+      "usage": {
+        "input_tokens": 403513,
+        "cached_input_tokens": 375552,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13164,
+        "reasoning_output_tokens": 4168
+      },
+      "api_equivalent_usd": 0.26267240000000003
+    },
+    {
+      "case": "bracc_04_lucro_real_trimestre",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_04_lucro_real_trimestre/06-review",
+      "elapsed_seconds": 461.612777117989,
+      "controller_wait_seconds": 95.01085989398416,
+      "model_turn_seconds": 366.583404066012,
+      "turns": 6,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 1017057,
+        "cached_input_tokens": 966784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26136,
+        "reasoning_output_tokens": 9463
+      },
+      "api_equivalent_usd": 0.5552628000000001
+    },
+    {
+      "case": "bracc_09_distribuicao_lucros",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_09_distribuicao_lucros/01-s1-work",
+      "elapsed_seconds": 1.319437120022485,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.3166070499864873,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "bracc_10_provisoes_covenant",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_10_provisoes_covenant/01-s1-work",
+      "elapsed_seconds": 1.4217247719934676,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.4172022059792653,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "brlaw_01_prazos_processuais",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/brlaw_01_prazos_processuais/01-s1-work",
+      "elapsed_seconds": 1.4210331659996882,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.4173847139754798,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "brlaw_02_contrato_lgpd",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/brlaw_02_contrato_lgpd/01-s1-work",
+      "elapsed_seconds": 1.8714010510011576,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.8672387689875904,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "brlaw_03_pejotizacao",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/brlaw_03_pejotizacao/01-s1-work",
+      "elapsed_seconds": 1.4716989589796867,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.46794263299671,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "brlaw_04_execucao_fiscal",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/brlaw_04_execucao_fiscal/01-s1-work",
+      "elapsed_seconds": 1.3196518099866807,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.3161483030125964,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "brlaw_05_divorcio_partilha",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/brlaw_05_divorcio_partilha/01-s1-work",
+      "elapsed_seconds": 1.519946118001826,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.5167948750022333,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "bracc_08_recuperacao_judicial",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_08_recuperacao_judicial/01-s1-work",
+      "elapsed_seconds": 26.910604970005807,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 26.907180816982873,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 49454,
+        "cached_input_tokens": 45184,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1569,
+        "reasoning_output_tokens": 918
+      },
+      "api_equivalent_usd": 0.033266800000000006
+    },
+    {
+      "case": "brlaw_07_credor_rj",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/brlaw_07_credor_rj/01-s1-work",
+      "elapsed_seconds": 1.1694512629765086,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.1662139469990507,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "brlaw_08_ma_diligencia",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/brlaw_08_ma_diligencia/01-s1-work",
+      "elapsed_seconds": 1.4198206200089771,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.4166721479850821,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "brlaw_09_justa_causa_estabilidade",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/brlaw_09_justa_causa_estabilidade/01-s1-work",
+      "elapsed_seconds": 1.4206192110141274,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.4165805340162478,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "brlaw_10_cobranca_prescrita",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/brlaw_10_cobranca_prescrita/01-s1-work",
+      "elapsed_seconds": 1.3199030909745488,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.3168100490001962,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_01_schedule_c",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_01_schedule_c/01-s1-work",
+      "elapsed_seconds": 1.3205596659972798,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.3164822779945098,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_02_close_gap",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_02_close_gap/01-s1-work",
+      "elapsed_seconds": 1.6204198909981642,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.617100211995421,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_03_household_1040",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_03_household_1040/01-s1-work",
+      "elapsed_seconds": 1.5212843519984744,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.5165273059974425,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_04_twelve_closes",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_04_twelve_closes/01-s1-work",
+      "elapsed_seconds": 1.5221615260234103,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.5168664210068528,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_05_entity_choice",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_05_entity_choice/01-s1-work",
+      "elapsed_seconds": 1.2703108509886079,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.2663932479918003,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_06_sale_asset_vs_stock",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_06_sale_asset_vs_stock/01-s1-work",
+      "elapsed_seconds": 1.3201358310179785,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.3168834639945999,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_07_holding_qsbs",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_07_holding_qsbs/01-s1-work",
+      "elapsed_seconds": 1.2206104860233609,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.2173574089829344,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_08_chapter11_debtor",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_08_chapter11_debtor/01-s1-work",
+      "elapsed_seconds": 1.420762528985506,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.417075985984411,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_09_revenue_going_concern",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_09_revenue_going_concern/01-s1-work",
+      "elapsed_seconds": 1.4699864459980745,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.4664966689888388,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "usacc_10_fraud_indicators",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_10_fraud_indicators/01-s1-work",
+      "elapsed_seconds": 1.2699930689996108,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.2663875379948877,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "uslaw_01_deadlines_removal",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_01_deadlines_removal/01-s1-work",
+      "elapsed_seconds": 1.3196159709768835,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.3159882089821622,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "uslaw_03_noncompete_memo",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_03_noncompete_memo/01-s1-work",
+      "elapsed_seconds": 1.3211074499995448,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.3162947420205455,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "uslaw_02_msa_playbook",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_02_msa_playbook/01-s1-work",
+      "elapsed_seconds": 2.071365120995324,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 2.067921446985565,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "uslaw_04_litigation_sequence",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_04_litigation_sequence/01-s1-work",
+      "elapsed_seconds": 1.2703515329922084,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.2665765959827695,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "uslaw_05_divorce_split_support",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_05_divorce_split_support/01-s1-work",
+      "elapsed_seconds": 1.3202007439977024,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.3168447540083434,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "uslaw_07_chapter11_creditor",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_07_chapter11_creditor/01-s1-work",
+      "elapsed_seconds": 1.2711836349917576,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.2674040489946492,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "uslaw_08_sale_diligence_apa",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_08_sale_diligence_apa/01-s1-work",
+      "elapsed_seconds": 1.4213102310022805,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 1.4174734219850507,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "uslaw_09_retaliation_termination",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_09_retaliation_termination/01-s1-work",
+      "elapsed_seconds": 8.630192058015382,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 8.626725722977426,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "uslaw_10_llc_squeeze_out",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/uslaw_10_llc_squeeze_out/01-s1-work",
+      "elapsed_seconds": 8.535155668010702,
+      "controller_wait_seconds": 0,
+      "model_turn_seconds": 8.530955053982325,
+      "turns": 1,
+      "released_facts": [],
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "api_equivalent_usd": 0.0
+    },
+    {
+      "case": "bracc_07_holding_patrimonial",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_07_holding_patrimonial/02-s1-work-client1",
+      "elapsed_seconds": 184.3578021050198,
+      "controller_wait_seconds": 23.002620458981255,
+      "model_turn_seconds": 161.35102016397286,
+      "turns": 2,
+      "released_facts": [
+        "deducoes",
+        "marcos"
+      ],
+      "usage": {
+        "input_tokens": 159259,
+        "cached_input_tokens": 145024,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11015,
+        "reasoning_output_tokens": 4401
+      },
+      "api_equivalent_usd": 0.1676248
+    },
+    {
+      "case": "bracc_05_abertura_empresa",
+      "status": "infrastructure_failed",
+      "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_05_abertura_empresa/03-review",
+      "elapsed_seconds": 311.5617090680171,
+      "controller_wait_seconds": 90.0103549559717,
+      "model_turn_seconds": 221.54460607899819,
+      "turns": 3,
+      "released_facts": [
+        "aluguel_pct",
+        "luana_trabalho",
+        "marina_cargo"
+      ],
+      "usage": {
+        "input_tokens": 251243,
+        "cached_input_tokens": 226304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14643,
+        "reasoning_output_tokens": 4544
+      },
+      "api_equivalent_usd": 0.2415688
+    }
+  ],
+  "api_equivalent_usd": 2.3215728
+}

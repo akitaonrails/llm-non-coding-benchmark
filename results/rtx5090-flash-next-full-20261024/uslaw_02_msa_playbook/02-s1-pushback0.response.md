@@ -1,0 +1,10 @@
+Fair challenge — but it isn't on the list. Let me point to exactly where each document handles it, then tighten one field that could read ambiguously.
+
+Priya — the gross-negligence carve-out is **not** an issue on my list. All six issues are the five hard-rule breaks (A1–A5) plus the B5 SLA gap. Where §9.3 appears is as the **venue for the #1 fix (A1)**, not as a flagged clause:
+
+- §10.1 says the IP indemnity is "uncapped," but §9.1 caps all liability at ~$222,000 "notwithstanding anything to the contrary," and the library's interpretive authority is explicit that an "uncapped" statement elsewhere doesn't beat such a cap **unless the cap clause itself carves the obligation out**. §9.3 — the cap clause's own carve-out sentence — lists gross negligence, willful misconduct, and fraud but omits Section 10. So the carve-out sentence is the problem only by *omission*, and it's also the only place the fix legally works.
+- The redline keeps your B1 carve-out **verbatim** and adds a single new item: "(c) Provider's indemnification obligations under Section 10.1." That sentence is flagged as B1-compliant and deliberately retained in `redlines.md` (line after the redline), in the COO one-pager ("no fight needed there"), and in `STATUS.md` ("negligence carve-outs per B1 — deliberately not flagged").
+
+If the §9.3 entry in the `clause` field of rank 1 read as a complaint about the carve-out itself, that's on me — I've added an explicit line to the rank-1 entry in `issues.json`: *"§9.3's existing gross-negligence/willful-misconduct/fraud carve-out is itself our B1 preferred position and is kept verbatim; the only defect is that the same sentence omits Section 10."* JSON re-validated after the edit.
+
+So yes — read the playbook, and applied it: we're *defending* the B1 carve-out, not asking for it.

@@ -1,0 +1,18 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "status": "infrastructure_failed",
+  "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/usacc_04_twelve_closes/01-s1-work",
+  "elapsed_seconds": 1.5221615260234103,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 1.5168664210068528,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": 0.0
+}

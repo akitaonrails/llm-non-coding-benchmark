@@ -1,0 +1,18 @@
+{
+  "case": "brlaw_09_justa_causa_estabilidade",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 421.0990218250081,
+  "controller_wait_seconds": 48.00454037298914,
+  "model_turn_seconds": 373.08823970798403,
+  "turns": 4,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 502199,
+    "cached_input_tokens": 468864,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 19402,
+    "reasoning_output_tokens": 5922
+  },
+  "api_equivalent_usd": 0.35446279999999997
+}

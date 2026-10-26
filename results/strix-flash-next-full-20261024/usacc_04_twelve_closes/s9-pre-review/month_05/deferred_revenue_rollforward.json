@@ -1,0 +1,63 @@
+{
+  "as_of": "2025-05-31",
+  "contracts": [
+    {
+      "contract": "Trestle prior contract (C-026, corrected opening)",
+      "opening": 8200.0,
+      "billed": 0.0,
+      "recognized": 8200.0,
+      "closing": 0.0,
+      "note": "May 2025 was the final documented service month (period ends 05/31/2025). Full release; this liability line is closed and will not appear in later roll-forwards."
+    },
+    {
+      "contract": "Trestle renewal (C-026)",
+      "opening": 16000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 14000.0,
+      "note": "After May, 14,000.00 covers Jun-Dec 2025 at 2,000.00/month."
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025 / INV-2250)",
+      "opening": 36000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 36000.0,
+      "note": "Fully deferred, 0.00 recognized - term unknown, no computable release (U10). No new Pinecone documents in May."
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027 / INV-2275)",
+      "opening": 15000.0,
+      "billed": 0.0,
+      "recognized": 1500.0,
+      "closing": 13500.0,
+      "note": "Policy #1 release 1,500.00 for May; 13,500.00 covers Jun-2025 through Feb-2026."
+    },
+    {
+      "contract": "Quarry Analytics Co (C-028 / INV-2324)",
+      "opening": 0.0,
+      "billed": 30000.0,
+      "recognized": 2500.0,
+      "closing": 27500.0,
+      "note": "New annual contract signed 05/01/2025: 30,000.00 billed upfront for 12 months, service start 05/01/2025 (order_form_C-028.md). Term is fully documented, so unlike Pinecone the release is computable: 30,000/12 = 2,500.00/month starting May. Billed via JE-2505-002, collected by wire 05/15 (JE-2505-004); 27,500.00 covers Jun-2025 through Apr-2026."
+    }
+  ],
+  "total": {
+    "opening": 75200.0,
+    "billed": 30000.0,
+    "recognized": 14200.0,
+    "closing": 91000.0
+  },
+  "reconciliation_to_trial_balance": {
+    "2200 per trial balance (04/30/2025)": 75200.0,
+    "plus billed (JE-2505-002)": 30000.0,
+    "less recognized (JE-2505-016)": -14200.0,
+    "2200 per trial balance (05/31/2025)": 91000.0
+  },
+  "notes": [
+    "Monthly subscription customers (INV-2300..INV-2323) are billed and earned in the same month; no contract liability remains at month end, so they do not appear in this roll-forward.",
+    "Trestle prior-contract line is CLOSED (0.00) - documented service period ended 05/31/2025; the ASC 250 correction made in January is fully consumed.",
+    "Pinecone C-025: release 0.00 - no stated term (U10); cannot be classified current vs non-current (U6).",
+    "Closing 91,000.00 equals account 2200 net in month_05/trial_balance.json (credits 173,000.00 less debits 82,000.00)."
+  ]
+}

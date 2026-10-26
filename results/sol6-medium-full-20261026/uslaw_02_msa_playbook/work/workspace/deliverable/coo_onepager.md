@@ -1,0 +1,15 @@
+# RouteWise: signature decision for the COO
+
+**Deal.** RouteWise will provide routing and fleet optimization for up to 350 vehicles. The first subscription runs 36 months from provisioning. Base fees are $18,500 per month, billed annually in advance, plus a $25,000 one-time implementation fee. Arithmetic: $18,500 × 12 = $222,000 a year; $222,000 × 3 = $666,000 for 36 months; $666,000 + $25,000 = **$691,000** before taxes and any permitted fee changes. The service target is 99.5% monthly availability, with capped service credits.
+
+## Five playbook blockers for signing
+
+1. **Attach and sign a complete data processing addendum.** Exhibit C is blank, while EU driver data will run through the platform. The reference library says a binding processor contract with required terms must be in place from the first day of processing ([GDPR Article 28 excerpt](../library/gdpr_art28.md)). Do not start EU or UK personal-data processing before the completed DPA is effective.
+2. **Make the vendor's IP indemnity genuinely uncapped.** The indemnity says “uncapped,” but the liability cap starts “notwithstanding anything to the contrary” and can override it ([interpretation authority](../library/contract_interpretation_notwithstanding.md)). The cap must expressly exempt the IP indemnity; its protection must survive termination.
+3. **Fix pricing.** The order form allows one increase during the initial 36 months on 60 days' notice, by up to the greater of 8% or CPI-U, and leaves renewal increases uncapped. Remove the initial-term increase. Cap each renewal increase at the lower of 5% or CPI-U, with 90 days' notice. For scale, 8% of $18,500 is $1,480 more each month, or $17,760 for a full year at that rate. Actual exposure depends on CPI-U and when the increase begins.
+4. **Shorten auto-renewal.** Current language rolls the subscription into another 24 months unless Cobalt gives notice 90 days in advance. Limit renewals to 12 months and require no more than 30 days' notice to opt out.
+5. **Include the two named affiliates at no extra fee.** The current license expressly excludes affiliates and charges more to add them. Cover Cobalt Freight Europe B.V. and Cobalt Brokerage LLC, including their employees and contractors, under the existing order.
+
+**Negotiable improvement.** The SLA gives credits as the sole remedy for downtime. Ask for an express right to terminate if availability misses the target in three months of any six; the general breach clause does not clearly provide that exit. This is a preferred playbook position, subject to Legal approval to concede.
+
+**Decision.** Resolve these five hard-rule issues in the signed agreement or obtain the GC's express approval to waive a playbook requirement. A playbook waiver cannot substitute for the processor contract required before EU personal-data processing under the [library's Article 28 excerpt](../library/gdpr_art28.md). The missing, executed Exhibit C remains a signing deliverable. Replacement language for all five issues is in `redlines.md`.

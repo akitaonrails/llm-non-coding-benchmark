@@ -1,0 +1,23 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 698.0373917490069,
+  "controller_wait_seconds": 51.004839111992624,
+  "model_turn_seconds": 646.5236039019946,
+  "turns": 4,
+  "released_facts": [
+    "critical_vendor",
+    "terms"
+  ],
+  "usage": {
+    "input_tokens": 2766726,
+    "cached_input_tokens": 2646150,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 104585,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

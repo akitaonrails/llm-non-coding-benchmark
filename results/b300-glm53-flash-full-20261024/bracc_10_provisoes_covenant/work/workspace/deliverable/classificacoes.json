@@ -1,0 +1,25 @@
+{
+  "provisao_trabalhista": {
+    "decisao": "manter",
+    "valor": 1200000,
+    "fundamento": "Prognóstico aplicável é o da carta do advogado de 18/12/2025 (não a caracterização do e-mail da diretoria): sentença de procedência parcial em 1ª instância (02/09/2025) condenando em R$ 1.180.000, recurso ordinário pendente no TRT-2, reforma parcial (horas extras) 'possível' e manutenção da condenação por equiparação 'provável', exposição se perda R$ 1,2 mi. CPC 25 (library/cpc25.md), itens 14-16, 23, 36 e 59: provisão exigível quando obrigação presente + saída provável + estimativa confiável; sentença condenatória em 1ª instância é forte indicador de probabilidade (item 59: reverter só se deixar de ser provável). Exposição R$ 1.200.000 = provisão registrada. Não reverter; não há base para aumentar."
+  },
+  "ccb_horizonte": {
+    "classificacao": "circulante",
+    "fundamento": "Vencimento 31/08/2026 = 8 meses após 31/12/2025 (< 12 meses) e a CCB nº 8812 (documents/contrato_ccb_excerto.md) não dá direito incondicional de adiar: Cláusula 11 permite repactuação apenas 'a exclusivo critério do Credor', sem prorrogação automática nem compromisso do banco. CPC 26 (library/cpc26_classificacao.md), itens 69-76: o direito de diferir deve existir na data do balanço e ter substância; intenção/expectativa de refinanciar não basta (item 73). Reclassificar R$ 6.500.000 do não circulante para o circulante. Eventual aditivo assinado APÓS o balanço é evento subsequente não ajustável (library/cpc24_eventos_subsequentes.md)."
+  },
+  "afac": {
+    "classificacao": "passivo",
+    "fundamento": "R$ 2.000.000 recebidos em mar/2022, sem deliberação de aumento de capital até 31/12/2025 (~3 anos e 9 meses). library/afac_itg_rfb.md (Resolução CFC 1.159/2009 - ITG 2000; PN CST 17/1984; SC COSIT 20/2010): só no PL se irrevogável/irretratável com capitalização em prazo determinado (primeira AGE/alteração contratual após o recebimento ou até 120 dias do encerramento do exercício); AFAC por prazo indeterminado sem deliberação é tratado como mútuo e reclassificado para o passivo. Manter no PL é inadequado e improcedente à luz da norma.",
+    "efeitos_fiscais": "Reclassificado como mútuo, o valor sujeita-se a IOF-crédito (operação de crédito entre pessoas físicas/jurídicas e PJ) e a eventuais juros presumidos (library/afac_itg_rfb.md: PN CST 17/1984; SC COSIT 20/2010; Decreto 6.306/2007, IOF, art. 3º, §3º). A biblioteca não traz alíquotas nem a data de início da incidência — valor do IOF/juros presumidos NÃO quantificado; item aberto para o fiscal/tributarista."
+  },
+  "covenant": {
+    "ebitda": 9800000,
+    "divida_liquida_com_ajustes_da_diretoria": 27100000,
+    "indice_com_ajustes_da_diretoria": 2.46,
+    "divida_liquida_correta": 27100000,
+    "indice_correto": 2.77,
+    "limite": 2.75,
+    "cumprido": false
+  }
+}

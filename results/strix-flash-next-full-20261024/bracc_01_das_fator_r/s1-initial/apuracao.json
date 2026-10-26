@@ -1,0 +1,27 @@
+{
+  "rbt12": 1020000,
+  "folha_12m": 284600,
+  "fator_r": 0.279,
+  "anexo": "V",
+  "faixa": 4,
+  "aliquota_nominal": 0.205,
+  "parcela_deduzir": 17100,
+  "aliquota_efetiva": 0.188235,
+  "receitas": {
+    "servicos": 78000,
+    "locacao": 6000
+  },
+  "das": {
+    "servicos": 14682.35,
+    "locacao": 506.49,
+    "total": 15188.84
+  },
+  "reparticao": {
+    "IRPJ": 20.26,
+    "CSLL": 17.73,
+    "COFINS": 71.16,
+    "PIS": 15.45,
+    "CPP": 216.52,
+    "ISS": 164.61
+  }
+}

@@ -1,0 +1,5 @@
+I’ll read the contract and workspace files, then build the requested deliverables. If the files leave a material client fact unanswered, I’ll put specific questions in `QUESTIONS.md` as instructed.
+
+The agreement eliminates fiduciary duties but preserves express contract rights and the implied covenant. The record also shows a likely notice defect in the capital call. I need a few facts to assess the affiliate fees, the stated reason for the call, and the proposed buyout value, so I’m recording targeted questions for the client.
+
+I’ve put five specific questions in [QUESTIONS.md](/work/workspace/deliverable/QUESTIONS.md). The answers are needed to assess the affiliate fees, test the dilution calculation, and confirm whether the proposed buyout was triggered. I’ll complete the claims analysis and recommendation when the client replies.

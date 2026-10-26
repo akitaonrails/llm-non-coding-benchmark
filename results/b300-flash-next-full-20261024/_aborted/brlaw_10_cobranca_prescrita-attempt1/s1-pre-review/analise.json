@@ -1,0 +1,22 @@
+{
+  "via_processual": "monitoria",
+  "por_que": "O contrato foi assinado apenas pelos representantes das partes, SEM 2 testemunhas, e boletos não são título executivo (CPC art. 784 III; REsp 1.438.263 — library/cpc_titulo_executivo_monitoria.md). Logo, a EXECUÇÃO de título extrajudicial pretendida pelo cliente é incabível. Contrato + relatórios de serviço assinados + e-mails de reconhecimento constituem prova escrita sem eficácia de título executivo, base da ação monitória (CPC art. 700). Alternativa: ação de cobrança pelo procedimento comum (prevista no mesmo arquivo). Prazo monitório quinquenal por analogia às Súmulas 299/503 do STJ (aplicadas literalmente a cheque; extrapoladas aqui — ver memorando).",
+  "prescricao": [
+    {"parcela": 1, "vencimento": "2020-10-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 2, "vencimento": "2020-11-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 3, "vencimento": "2020-12-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 4, "vencimento": "2021-01-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 5, "vencimento": "2021-02-10", "interrompida_em": null, "novo_termo": null, "prescrita": true},
+    {"parcela": 6, "vencimento": "2021-03-10", "interrompida_em": null, "novo_termo": null, "prescrita": true}
+  ],
+  "valor_principal_exigivel": 110000,
+  "valor_prescrito": 60000,
+  "negativacao": {
+    "regular_quanto_a": 110000,
+    "indevida_quanto_a": 70000,
+    "risco_dano_moral": "R$ 70.000: parcelas 5 e 6 (R$ 60.000) estão prescritas e a inscrição de dívida prescrita em cadastro é INDEVIDA, ensejando exclusão e, em tese, dano moral (STJ Tema 1.264; REsp 1.792.700; CDC art. 43 §5º por analogia). Os R$ 10.000 pagos via PIX também não deveriam constar. Os R$ 110.000 restantes (parcelas 1-4, líquidas do PIX) são exigíveis e a negativação é REGULAR quanto a eles, inclusive quanto ao valor (multa+juros elevariam o total, de modo que R$ 110.000 é conservador). A Boa Vista pode invocar a Súmula 385/STJ (anotação irregular não gera dano moral quando preexistente legítima inscrição — 3 negativações de 2024-2025, não contestadas); o texto da súmula não restringe a credor, mas a aplicação a inscrições legítimas de TERCEIROS é discussão não resolvida na biblioteca — risco de dano moral classificado como BAIXO-MODERADO a MODERADO, com direito ao cancelamento da parcela indevida assegurado.",
+    "acao": "Retificar a negativação de R$ 180.000 para R$ 110.000 (ou R$ 110.000 + encargos, se suportar documentalmente), cancelando a inscrição quanto às parcelas 5-6 (prescritas) e os R$ 10.000 já pagos; notificar a Boa Vista da retificação. Manter a inscrição quanto às parcelas 1-4, que não prescreveram (novo termo 15/09/2027)."
+  },
+  "protesto": "nao",
+  "recomendacao": "1) Retificar imediatamente a negativação para o valor exigível (R$ 110.000) e cancelar a parte prescrita/paga — reduz risco de dano moral. 2) NÃO ajuizar execução (contrato sem 2 testemunhas não é título executivo — CPC art. 784 III; boletos idem). 3) NÃO protestar as parcelas 5-6: protesto de dívida prescrita é igualmente indevido e gera responsabilidade (Lei 9.492/97; Tema 1.264/STJ). Protesto de documento de dívida das parcelas 1-4 é admitido (art. 1º), mas é redundante diante da negativação já vigente; opção estratégica secundária. 4) Ajuizar AÇÃO MONITÓRIA (CPC art. 700) no foro de Sorocaba/SP, a tempo de ser DISTRIBUTADA ATÉ 15/09/2027 (prazo fatal das parcelas 1-4), instruindo com contrato, relatórios de serviço e e-mails de 15/09/2022 e 02/08/2023. 5) Valor da causa ≈ R$ 194.390,00 + IPCA (principal R$ 110.000 + multa R$ 2.400 + juros até 12/10/2026 ≈ R$ 81.990, antes da correção IPCA). 6) Acordo: banda negociável entre ~R$ 110.000 (principal líquido, piso) e ~R$ 194.000 + IPCA (teto estimado); proposta de ~R$ 130-150 mil com desistência da negativação das 5-6 é ponto de partida razoável. 7) A causa de pedir deve restringir-se às parcelas 1-4; não mencionar 5-6 (prescritas) para não atrair condenação e prova contra si."
+}

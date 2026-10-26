@@ -1,0 +1,48 @@
+{
+  "report": "UST Form 11-MOR, Monthly Operating Report — period 3/10/2026 (petition) through 3/31/2026",
+  "case": "In re Redwood Fabrication, Inc., Case No. 26-11842-TBM (Bankr. D. Colo.)",
+  "part1": {
+    "receipts": 2262400.00,
+    "receipts_detail": {
+      "customer_collections_on_pre_petition_receivables_3_10_3_31": 1212400.00,
+      "dip_draws_prairie_capital_dkt61": 1050000.00,
+      "dip_draws_detail": {"2026-03-12": 600000.00, "2026-03-26": 450000.00}
+    },
+    "disbursements": {
+      "payroll_3_13_straddling_petition_Dkt9_wage_motion": 412000.00,
+      "post_petition_vendor_invoices_ordinary_course": 19570.00,
+      "pre_petition_critical_vendor_apex_paid_3_24_Dkt48": 31200.00,
+      "utilities_deposit_Dkt31": 28000.00
+    },
+    "total_disbursements": 490770.00,
+    "ending_cash": 1771630.00,
+    "ending_cash_note": "Computed as beginning cash of $0.00 + receipts $2,262,400.00 - disbursements $490,770.00 = $1,771,630.00. ASSUMPTION, PROMINENTLY FLAGGED: the pre-petition bank balance swept to the DIP account on 3/10/2026 is NOT stated in the client file; ending cash is understated by that unknown amount. See deliverable/QUESTIONS.md Q1. Both the sweep and the DIP account are estate accounts (Part 1 covers all estate accounts), so the sweep is an internal transfer, not a receipt."
+  },
+  "part2": {
+    "post_petition_payables": 207826.16,
+    "post_petition_payables_aging_detail": {
+      "mesa_steel_post_petition_invoice_2026_03_18_unpaid_current": 18900.00,
+      "holland_and_pierce_debtor_counsel_invoice_2026_03_31_pending_330_331": 140000.00,
+      "corbin_advisors_financial_advisor_invoice_2026_03_31_fee_application_required": 45000.00,
+      "ust_quarterly_fee_accrual_estimated_0_8pct_of_disbursements": 3926.16
+    },
+    "pre_petition_liabilities_subject_to_compromise": 74110.00,
+    "pre_petition_lstc_detail": {
+      "mesa_steel_invoice_2026_02_02": 62400.00,
+      "front_range_electric_invoice_2026_03_05": 7400.00,
+      "grainger_invoice_2026_02_11": 4310.00
+    },
+    "part2_note": "LSTC excludes Apex pre-petition $31,200 (paid 3/24 under Dkt. 48) and pre-petition wages within the §507(a)(4) cap (paid 3/13 under Dkt. 9). These $74,110 are the unpaid pre-petition trade claims KNOWN FROM THE MARCH VENDOR FILE ONLY; total scheduled LSTC is larger (the plan term sheet implies an allowed GUC pool of $8.4M at the effective date) and cannot be stated from this file — client has confirmed no schedules are available, so this remains an OPEN UNKNOWN. Pre-petition liabilities are not netted against post-petition assets (ASC 852-10-45-4 to 45-6, library: asc852_fresh_start.md). CLIENT ANSWER LOG: Mesa coil credit quantified at ~$11,000 (January return) — booked as a pre-petition account receivable from Mesa, NOT netted against the $62,400 LSTC and not netted against DIP proceeds (Dkt. 61 ¶3); netting was declined (would wire $51,400 of DIP proceeds on a pre-petition claim)."
+  },
+  "part5": {
+    "professional_fees_approved": 0.00,
+    "paid": 0.00,
+    "holdback": 0.00,
+    "part5_note": "As of the 3/31/2026 cutoff no fee application had been filed or awarded, so $0 approved, $0 paid, $0 held back, notwithstanding invoiced post-petition fees of Holland & Pierce $140,000 and Corbin Advisors $45,000 awaiting §§330/331 procedures (library: bc_330_331.md). The H&P interim compensation order (80% pay / 100% holdback) was entered 4/14/2026 — next reporting period; it will drive April MOR Part 5."
+  },
+  "part7": {
+    "payments_on_prepetition_debt": "Yes. (1) Apex Coatings, Inc. pre-petition claim $31,200.00 paid 3/24/2026 under the critical-vendor order, Dkt. 48 (Schedule 1; aggregate cap $35,000, satisfied). (2) Pre-petition portion of the straddling 2/28-3/13 payroll paid 3/13/2026 under the wage-motion order, Dkt. 9, within the §507(a)(4) cap of $17,150 per employee (no employee exceeded the cap); dollar split of pre- vs post-petition wages not quantified in the file — see QUESTIONS.md Q2. No other pre-petition debt was paid: Mesa Steel Feb invoice ($62,400), Front Range pre-petition ($7,400) and Grainger pre-petition ($4,310) remain unpaid as liabilities subject to compromise.",
+    "payments_outside_ordinary_course_without_approval": "No. Every non-ordinary-course item was court-ordered before payment: critical-vendor payment (Dkt. 48), wage payment (Dkt. 9), utilities deposit (Dkt. 31), DIP draws (Dkt. 61). The only other disbursements — payroll and $19,570 of post-petition trade invoices — are ordinary-course (§503(b)(1); §363(c)(1)). The requested Mesa February payment and requested netting/setoff (Dkt. 61 ¶3) were NOT made."
+  },
+  "authority": "Prepared on UST Form 11-MOR (2021) per library/ust_mor_instructions.md; due by the 21st of each month per Dkt. 61 ¶4. Statutory authority per library/INDEX.md: 11 U.S.C. §§362(a), 363(b)-(c), 503(b), 549(a) (bc_362_363_503_549.md); §§330(a), 331 (bc_330_331.md); §507(a)(4) (bc_507a4_wages.md); ASC 852-10 (asc852_fresh_start.md). Signed under penalty of perjury upon filer certification."
+}

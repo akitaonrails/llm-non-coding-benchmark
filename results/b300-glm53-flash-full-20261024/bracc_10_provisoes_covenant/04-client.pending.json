@@ -1,0 +1,62 @@
+{
+  "case": "bracc_10_provisoes_covenant",
+  "questions": "# PERGUNTAS ao cliente — Vetor Alimentos S.A. (fechamento 31/12/2025)\n\n## Respondidas pela diretoria (incorporadas à nota e à carta)\n1. **CCB/aditivo:** nada assinado; banco \"só assina perto do vencimento\"; promessa do gerente é informal. → Circulante em 31/12/2025, firme.\n2. **AFAC/AGE:** os sócios nunca formalizaram o aumento; eventual AGE só em jan/2026 (fora dos prazos de capitalização e após o balanço). → Passivo (mútuo) em 31/12/2025, firme.\n3. **Waiver:** nenhum contato com debenturistas até a data de resposta; pedido, se houver, só em fev/2026. → Sem waiver até 31/12/2025: debêntures aceleradas + CCB no circulante (demais empréstimos conforme vencimentos — sem cross-default no excerto); waiver futuro = evento subsequente.\n\n## Sem resposta — desconhecidos remanescentes (\"o cliente não tem informação adicional\")\n4. **Escritura — inclusão de mútuos de acionista na \"Dívida Líquida\" da Cláusula 7.1(c):** sem resposta; mantida como item interpretativo aberto com sensibilidade (27,1/29,1 mi; índice 2,77/2,97 — quebra nas duas leituras).\n5. **Quadro dos R$ 24.700.000 de demais empréstimos** (credores, vencimentos, garantias) e valor individualizado das debêntures da 1ª emissão (a linha de R$ 31,2 mi é agregada; só a CCB está destacada): sem resposta — disclosure de prazos genérico e composição do circulante pós-aceleração parcialmente indeterminada.\n6. **AFAC:** data exata do aporte (balancete diz apenas \"mar/2022\") e existência de instrumento/deliberação — sem resposta adicional.\n7. **Fiscal:** datas de início e alíquotas para IOF-crédito/juros presumidos do mútuo ex-AFAC e eventual regularização pela AGE de jan/2026 — sem resposta; quantificação **não efetuada**.\n8. **EBITDA auditado:** composição do R$ 9.800.000 (lucro operacional + D&A; confirmação de que a despesa da provisão está deduzida) — sem resposta; balancete pré-fechamento é a única base.\n9. **Composição do processo trabalhista por rubrica** (horas extras/equiparação/danos morais) e natureza fiscal da despesa — sem resposta.\n",
+  "facts": [
+    {
+      "id": "advogado_remoto",
+      "trigger": [
+        "remoto",
+        "advogado disse",
+        "carta",
+        "prognóstico",
+        "Pinheiro"
+      ],
+      "answer": "CEO: ele me disse por telefone que agora acha remoto. A carta formal é a que vocês têm — ele não vai colocar 'remoto' por escrito, advogado é assim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "renovacao",
+      "trigger": [
+        "renov",
+        "aditivo",
+        "banco confirmou",
+        "Horizonte",
+        "compromisso"
+      ],
+      "answer": "CEO: o gerente do banco disse informalmente que renova. Não tem nada assinado; eles só assinam perto do vencimento.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "afac_delib",
+      "trigger": [
+        "AFAC",
+        "aumento de capital",
+        "AGE",
+        "deliberação",
+        "capitalizar"
+      ],
+      "answer": "CEO: os sócios nunca formalizaram o aumento. Podemos fazer a AGE agora em janeiro, se ajudar.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "waiver",
+      "trigger": [
+        "waiver",
+        "debenturistas",
+        "assembleia",
+        "perdão"
+      ],
+      "answer": "CEO: ainda não falamos com os debenturistas. Se precisar, pedimos waiver em fevereiro.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "afac_delib",
+    "renovacao",
+    "waiver"
+  ],
+  "literal_suggestions": [
+    "advogado_remoto"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

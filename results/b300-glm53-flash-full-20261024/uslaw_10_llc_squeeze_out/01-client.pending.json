@@ -1,0 +1,60 @@
+{
+  "case": "uslaw_10_llc_squeeze_out",
+  "questions": "# QUESTIONS.md — information needed from Imani Reyes-Okafor (2026-10-08)\n\nThese answers refine quantum and collateral facts. None of them blocks the recommended course (reject the offer; demand rescission; prepare the Chancery claim). Each is tied to why it matters.\n\n1. **Your contact information on file (affects risk #2).** Did you ever notify the Company (or Bram) of a current email address or change of address after the address on file went stale? Do you know what the operating agreement says (or does not say) about member duties to keep contact information updated?\n2. **Prior years' statements/K-1s (affects tolling of the fee claims).** Did you receive annual tax returns, K-1s, financial statements, or member account statements for 2022–2025? Did any of them show a \"management fee\" or \"asset management fee\" expense line, and did you review them? You say you learned of the Castellan Asset Services engagement in 2026 — **what exactly did you see and when in 2026?**\n3. **Company finances (sizes the fee claim and validates the valuation).** What are the approximate annual gross rents for 2022–2026 (so we can size the 6% property-management fee)? Does the Company carry any debt (mortgages/loans)? The gap between book equity ($3.1M) and broker equity ($9.8M) needs a confirmed explanation.\n4. **Use of the $1.5M (pretext/bona fide purpose challenge).** What has the Company actually done with the $1,500,000 since 2026-09-20? Have there been any acquisitions, capital expenditures, or operating needs that would corroborate \"working capital and opportunities\"?\n5. **How other members got the call.** Do you know whether Bram received or funded the call via a different medium (certified mail to himself, formal email)? Did any member other than you and Bram exist or vote on the 2022-08-15 affiliate-management resolution?\n6. **Your objective (shapes the negotiated ask).** If the dilution is rescinded, do you want to (a) remain an 18% member, (b) sell your entire interest at fair value, or (c) sell a partial interest? And do you have a settlement number below which litigation is preferable?\n7. **Distributions and documents.** Have you received any cash distributions from the Company since 2022, and in what amounts?\n",
+  "facts": [
+    {
+      "id": "notice",
+      "trigger": [
+        "certified mail",
+        "how did you receive",
+        "notice",
+        "text",
+        "email address"
+      ],
+      "answer": "He texted me a PDF on August 20. No letter. My email on file is from 2019 and dead. I saw the text but assumed it wasn't real notice.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "knowledge_fees",
+      "trigger": [
+        "when did you learn",
+        "fees",
+        "asset management",
+        "disclosed",
+        "financials"
+      ],
+      "answer": "I only saw the affiliate fees in 2026 when I finally got the bank statements through a books-and-records demand. Before that I got one-page summaries with 'management expenses'.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "fund",
+      "trigger": [
+        "fund",
+        "$270",
+        "raise the money",
+        "loan"
+      ],
+      "answer": "I can't raise $270k. Maybe $60k.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "offer_timing",
+      "trigger": [
+        "offer",
+        "30 days",
+        "deadline",
+        "expire"
+      ],
+      "answer": "The $189,100 offer expires October 31.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "notice",
+    "knowledge_fees",
+    "fund",
+    "offer_timing"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

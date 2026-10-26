@@ -1,0 +1,28 @@
+{
+  "itbi": {
+    "devido": true,
+    "estimativa": 339900.00,
+    "fundamento": "Estimativa parcial e condicional para 8 imóveis locados no Município de São Paulo: R$ 11.330.000 de valor de mercado (proxy de base) x 3% = R$ 339.900. Holding com receita exclusivamente de aluguéis seria preponderantemente locadora, sujeita à exceção da imunidade. O ITBI do galpão de Guarulhos e as bases municipais efetivas são desconhecidos; não há total dos 9 imóveis. Fonte: library/cf156_ctn37_tema796.md."
+  },
+  "aluguel_anual": 1018800.00,
+  "pf": {
+    "ir_anual": 257756.40
+  },
+  "pj_presumido": {
+    "irpj_csll_pis_cofins": 124031.64,
+    "irrf_distribuicao_2026": 81326.44,
+    "total": 205358.08
+  },
+  "integralizacao": {
+    "valor_recomendado": 4220000.00,
+    "gcap_evitado": 1531500.00
+  },
+  "itcmd_doacao_quotas": {
+    "estimativa": 577200.00,
+    "base": "Hipótese de titularidade integral de Helena, transferência dos 9 imóveis locados a holding sem dívidas e doação de todas as quotas: R$ 14.430.000 de valor de mercado/proxy de valor patrimonial atualizado x 4% = R$ 577.200. Não usar R$ 4.220.000 de valor declarado como base automática. Fonte: library/itcmd_sp_lei10705.md."
+  },
+  "legitima": {
+    "parcela_indisponivel_pct": 50,
+    "marcos_pode_ser_excluido": false
+  }
+}

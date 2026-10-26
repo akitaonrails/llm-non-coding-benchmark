@@ -1,0 +1,20 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 577.1968692379887,
+  "controller_wait_seconds": 46.00456105690682,
+  "model_turn_seconds": 531.1692238600226,
+  "turns": 6,
+  "released_facts": [
+    "papel"
+  ],
+  "usage": {
+    "input_tokens": 1015732,
+    "cached_input_tokens": 965632,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 30633,
+    "reasoning_output_tokens": 10571
+  },
+  "api_equivalent_usd": 0.5996564
+}

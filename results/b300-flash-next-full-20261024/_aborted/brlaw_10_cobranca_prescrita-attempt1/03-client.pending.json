@@ -1,0 +1,46 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "questions": "# QUESTIONS — Técnica Forte × Boa Vista\n\n## Respondidas pelo cliente (12/10/2026) — não reapresentar\n- ~~Q1 série IPCA~~ → cliente **não dispõe** da série; correção fica como incógnita documentada (memorando §7.1).\n- ~~Q2 outros atos escritos após ago/2023~~ → **não houve** (\"depois sumiram\"); termo fatal 15/09/2027 definitivo.\n- ~~Q4 imputação do PIX~~ → confirmado: **por conta da parcela 1** (premissa de cálculo mantida).\n- ~~Q5 relatórios assinados~~ → **confirmados** (assinados pelo encarregado da Boa Vista).\n- Fato novo útil: fev–mar/2021 serviço **parcial** (\"fez o que deu\") → reforça abandono total das parcelas 5–6.\n\n## Pendentes — sem fonte disponível (flag explícito, não repetidas ao cliente)\n1. **Série IPCA out/2020→hoje**: não existe no arquivo nem com o cliente → total ≈ R$ 194.390 é **sem correção** (subestimado); pedido judicial deve levar cláusula contratual de IPCA e cálculo quando houver índice.\n2. **Regime dos juros** (simples × capitalizado): biblioteca não define; assumido simples — se o contrato ou prática forense local exigir outro regime, os juros (≈ R$ 81.990) sobem.\n3. **Autenticidade/metadados dos e-mails** de 15/09/2022 e 02/08/2023: não verificada no arquivo; recomendada certificação antes da distribuição.\n4. **Registro dos boletos**: irrelevante — recomendação é não protestar.\n\nNenhuma pergunta pende de resposta do cliente para a conclusão do trabalho.\n",
+  "facts": [
+    {
+      "id": "testemunhas",
+      "trigger": [
+        "testemunha",
+        "assinatura",
+        "título executivo",
+        "quem assinou"
+      ],
+      "answer": "O contrato foi assinado só pelos dois representantes, sem testemunhas. Foi tudo meio informal.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pagamento",
+      "trigger": [
+        "pagamento parcial",
+        "10 mil",
+        "2023",
+        "PIX"
+      ],
+      "answer": "Pagaram R$ 10 mil em agosto de 2023 por conta da primeira parcela. Depois sumiram.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "greve",
+      "trigger": [
+        "greve",
+        "parcelas 5 e 6",
+        "serviço concluído",
+        "fevereiro",
+        "março"
+      ],
+      "answer": "Teve uma greve lá em fev/2021, mas nosso pessoal fez o que deu. Temos relatórios assinados pelo encarregado deles.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "greve",
+    "pagamento"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

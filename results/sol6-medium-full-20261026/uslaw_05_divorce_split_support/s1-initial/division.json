@@ -1,0 +1,41 @@
+{
+  "proposal_nominal": {
+    "wife": 770000,
+    "husband": 770000
+  },
+  "proposal_after_tax": {
+    "wife": 613008,
+    "husband": 662000,
+    "assumptions": "Illustrative liquidation at scheduled values, not tax due on divorce. Wife sells the $1,100,000 house alone, pays 6% ($66,000) selling costs, qualifies for a $250,000 section 121 exclusion, and pays 15% capital-gains tax plus 3.8% NIIT on $484,000 taxable gain: ($1,100,000-$66,000-$300,000-$250,000)*18.8%=$90,992. House after-tax equity=$1,100,000-$66,000-$400,000-$90,992=$543,008; plus $50,000 cash and $20,000 car=$613,008. Husband's $400,000 pretax 401(k) is valued at $304,000 after assumed 24% future withdrawal tax; brokerage is $288,000 after 15% of its $80,000 gain; plus $50,000 cash and $20,000 car=$662,000. Assumes all brokerage gain is long-term, no brokerage NIIT, unchanged values/basis, no other taxes or sale costs. Residence eligibility, future sale price, actual tax rates and brokerage lots are unverified. Authorities: library/irc_1041_121_71.md; library/tax_rates_assumed.md."
+  },
+  "undisclosed_income": {
+    "found": true,
+    "amount": 45000,
+    "source": "The 2026-03-02 employer letter in documents/husband_paystubs_and_bonus_letter.md sets a $45,000 target bonus (50% planned for September, 50% for February) and reports 112% of plan; Wife reports recurring bonuses and about $40,000 last year. The 2026-09-15 pay stub shows $146,212 YTD gross against approximately $119,000 prorated salary, an approximately $27,212 unreconciled difference. The $45,000 is expected annual target compensation, not a verified amount paid; do not add the $27,212 to it without payroll detail. The affidavit's 'none expected' statement conflicts with this evidence. Disclosure authority: library/columbia_equitable_distribution.md."
+  },
+  "alternatives": [
+    {
+      "name": "Keep house if affordable; give Wife $24,496 more of existing cash",
+      "wife_after_tax": 637504,
+      "husband_after_tax": 637504,
+      "instruments": [
+        "property settlement and decree assigning the residence and its debt to Wife, conditioned on a feasible refinance and release of Husband from joint liability",
+        "cash allocation: Wife $74,496; Husband $25,504",
+        "brokerage lot and tax-basis disclosure",
+        "fallback sale and proceeds provision if refinance fails"
+      ]
+    },
+    {
+      "name": "Keep house if affordable; transfer brokerage in kind to Wife",
+      "wife_after_tax": 637504,
+      "husband_after_tax": 637504,
+      "instruments": [
+        "property settlement and decree transferring $25,516.67 of brokerage with proportionate $18,712.22 basis to Wife; select and document actual lots",
+        "section 1041 in-kind transfer and basis records",
+        "residence refinance and fallback sale provisions"
+      ]
+    }
+  ],
+  "maintenance_tax_treatment": "For a post-2018 divorce instrument, $2,000 per month for 36 months is neither deductible by Husband nor taxable to Wife; strike the contrary proposal language. Total nominal maintenance is $72,000. It remains an income adjustment on the Columbia child-support worksheet. Authority: library/irc_1041_121_71.md; library/columbia_child_support_guidelines.md.",
+  "dependents_and_filing_status": "Filing status depends on marital status on December 31. If the decree is final by then, each files single unless eligible for head of household; Wife may qualify for head of household if the children live with her more than half the year and she pays more than half the cost of the home. With approximately 70% of overnights, Wife is the custodial parent for the dependency rule. Husband may take a child tax credit in an alternating year only if Wife signs Form 8332 for that child/year; that release does not transfer head-of-household status, EITC, or dependent-care credit. The decree date, household-cost payer, and any Form 8332 agreement remain unknown. Authority: library/filing_status_dependents.md."
+}

@@ -1,0 +1,45 @@
+{
+  "case": "brlaw_02_contrato_lgpd",
+  "questions": "# PERGUNTAS (opcionais — não bloqueiam o parecer)\n\nNenhuma resposta era necessária para concluir a análise; as redações propostas já cobrem os dois cenários. As respostas, porém, afinam a negociação.\n\n1. **Localização das 3 unidades** (cidade/UF)? Só importa se a senhora quiser negociar o foro (preferência comercial; juridicamente o foro de Florianópolis é válido).\n2. A NEXA já informa **onde hospeda os dados hoje** (Brasil ou exterior) e **quais subcontratados** usa? Pedir na due diligence; a Cláusula 5 nova exige lista e autorização prévia em qualquer caso.\n3. A Aurora tem interesse real em **usar dados agregados para pesquisa própria**? Se sim, desenhamos base e política específicas (a cláusula veda apenas o uso pela NEXA em benefício próprio).\n4. Houve **incidente de segurança** com prontuário nos últimos 12 meses? (Relevante para o tom da cláusula de incidentes e para obrigações perante a ANPD.)\n5. A clínica pretende **trocar de sistema** em algum cenário (ex.: plano da NEXA de adquirir concorrente)? Afeta o peso dado à cláusula de saída e à renovação.\n",
+  "facts": [
+    {
+      "id": "operadoras",
+      "trigger": [
+        "operadora",
+        "Unimed",
+        "Bradesco",
+        "TISS",
+        "compartilh"
+      ],
+      "answer": "Sim, o sistema vai enviar guias e dados de atendimento para as operadoras para faturamento. É essencial.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "exterior",
+      "trigger": [
+        "exterior",
+        "servidor",
+        "nuvem",
+        "onde ficam"
+      ],
+      "answer": "A Nexa disse que usa AWS, 'provavelmente' nos EUA.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "investimento",
+      "trigger": [
+        "implantação",
+        "investimento",
+        "migração",
+        "quanto custa sair"
+      ],
+      "answer": "Migrar 22 mil prontuários é um projeto de meses. Sair no meio seria caótico.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "exterior"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

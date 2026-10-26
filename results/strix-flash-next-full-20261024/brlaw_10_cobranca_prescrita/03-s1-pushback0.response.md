@@ -1,0 +1,14 @@
+Dúvida do Sérgio merece tréplica fundamentada na library. Vou verificar um ponto fático que pode importar (data dos relatórios) e atualizar os entregáveis.
+
+Tréplica registrada no memorando (§8) — a resposta ao Sérgio, na library:
+
+**1. «Pagamento interrompe a prescrição, qualquer um sabe» — sim, mas a interrupção só pode ocorrer UMA vez.**
+- O CC art. 202 caput diz literalmente: «A interrupção da prescrição, **que somente poderá ocorrer uma vez**…». Quanto às parcelas 1–4, ela **já aconteceu no e-mail de 15/09/2022** (reconhecimento). O PIX de 2023 é novo reconhecimento, mas a própria library anota: «pagamento parcial posterior é novo reconhecimento, mas **não interrompe novamente**». O PIX vale como **dinheiro** (−R$ 10.000), não como prazo.
+- Se as parcelas 1–4 ainda estão cobráveis, é **graças ao e-mail de 2022** (prazo reiniciado: 15/09/2022 → 15/09/2027), não ao PIX. A intuição dele acertou nas parcelas certas.
+- Quanto a P5–P6: foi o **próprio e-mail de 2022 que as contestou** («não reconhecemos»). Reconhecimento parcial interrompe só as parcelas reconhecidas. E o PIX foi «**por conta da parcela 1**» — pagamento imputado expressamente a outra parcela não é ato **inequívoco** de reconhecimento de P5/P6. Elas correram os 5 anos cheios: prescritas em 10/02/2026 e 10/03/2026.
+
+**2. «Tenho relatório assinado das P5 e P6».**
+- O relatório é ótima **prova de que o serviço foi feito** — venceria a tese da greve no mérito, **se** a dívida estivesse viva. Mas interrupção exige ato do devedor que importe **reconhecimento do crédito em mora** (art. 202 VI). Comprovante de serviço assinado pelo encarregado na época do serviço (fev/mar/2021) prova prestação, não reconhecimento de dívida vencida — e antes do vencimento a prescrição nem tinha começado.
+- **Abertura única**: se um dos relatórios tiver assinatura da Boa Vista **datada depois de 10/02/2021 / 10/03/2021** e texto que reconheça a **obrigação de pagar** (não só «serviço executado»), haveria a primeira e única interrupção dessas parcelas. Fiz a **pergunta nova e única** em `QUESTIONS.md` (item 7): mandar os dois relatórios com data aposta e texto integral. Sem isso, não reabro a questão — e recomendo não montar a estratégia sobre os R$ 60 mil: a ação se sustenta com R$ 110 mil + encargos (≈ R$ 194.390), e cobrar parcelas mortas é justamente o que contamina a negativação (R$ 70 mil indevidos) e o protesto.
+
+Entregáveis atualizados: `memorando.md` (§8 impugnação, §9 numerário, §10 ressalva), `QUESTIONS.md` (pergunta 7), `STATUS.md` (COMPLETE WITH OPEN ITEMS). Encerro o aguardando os relatórios de fev/mar/2021 com as datas — as demais conclusões não dependem deles.

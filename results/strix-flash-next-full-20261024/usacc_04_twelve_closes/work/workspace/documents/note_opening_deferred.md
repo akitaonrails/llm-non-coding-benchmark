@@ -1,0 +1,1 @@
+Opening deferred revenue $41,000 = unamortized balance of Trestle Freight's prior annual contract (Jun 2024–May 2025); release $8,200/month Jan–May 2025. Trestle renewed effective Jan 1 (new order form in month_01).

@@ -1,0 +1,107 @@
+[
+  {
+    "clausula": "1",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Objeto usual de licença SaaS B2B (prontuário, agenda, faturamento TISS) entre sociedades empresárias presumidas paritárias (CC art. 421-A — library/cc_contratos_empresariais.md). Não há ponto que exija alteração.",
+    "redacao_proposta": "(sem alteração)"
+  },
+  {
+    "clausula": "2",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "Reajuste 'pelo IGP-M ou outro índice a critério da NEXA' confere à licenciante poder unilateral de escolher o índice todo ano — assimetria incompatível com a paridade presumida (CC art. 421-A — library/cc_contratos_empresariais.md). O índice deve ser fixado e objetivo. A CONTRATANTE não indicou índice preferido; mantém-se o IGP-M da própria minuta como linha de base (a troca por IPCA/INPC é ajuste comercial, não jurídico).",
+    "redacao_proposta": "\"Cláusula 2 — Preço. Implantação R$ 48.000,00; mensalidade R$ 6.900,00 por unidade, reajustada anualmente pelo IGP-M ou, em caso de extinção do índice, pelo IPCA — vedada a troca ou a escolha unilateral do índice por qualquer das partes.\""
+  },
+  {
+    "clausula": "3",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "O problema não é a renovação automática em si (válida entre paritárias), mas o efeito combinado com a cláusula 10: renovação de 3 em 3 anos com denúncia só 180 dias antes, sob pena de multa de 100% das vincendas, cria efeito de tranca (em risco se a janela de 180 dias passar em branco). Reduzir o ciclo a 12 meses e a antecedência a 90 dias, com dever de aviso da NEXA, equilibra o prazo com o vulto dos investimentos de implantação (CC art. 473, parágrafo único — library/cc_contratos_empresariais.md).",
+    "redacao_proposta": "\"Cláusula 3 — Vigência. 36 (trinta e seis) meses, renovando-se automaticamente por períodos de 12 (doze) meses, salvo denúncia unilateral com antecedência mínima de 90 (noventa) dias do fim do período em curso. A NEXA notificará formalmente a CONTRATANTE, por escrito, com no mínimo 30 (trinta) dias de antecedência, sobre o termo final e a data-limite para denúncia.\""
+  },
+  {
+    "clausula": "4",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Obrigações da contratante usuais (dados corretos, equipe treinada, pagamento). As contrapartidas da NEXA constam das cláusulas 1 e 6. Sem ponto a alterar.",
+    "redacao_proposta": "(sem alteração)"
+  },
+  {
+    "clausula": "5",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Substituição integral necessária. (i) A 'anonimização ou agregação' para 'pesquisa e desenvolvimento de produtos': o excerto da biblioteca adverte que dados de saúde 'agregados' de ~22 mil pacientes raramente são irreversivelmente anonimizados (library/lgpd_excertos.md, nota ao art. 12) — seria tratamento pelo operador para finalidade própria, fora das instruções do controlador (LGPD art. 39) e sem base legal própria para dado sensível (LGPD art. 11); vedá-lo ou condicioná-lo a anonimização irreversível comprovada. (ii) Servidores 'no Brasil ou no exterior, de escolha da NEXA': transferência internacional exige base no art. 33 (país adequado/cláusulas-padrão) e decisão documentada do controlador — não discricionariedade da operadora. (iii) Faltam: papéis controlador/operador (art. 5º, VI-VII), instruções, segurança (arts. 46-47), incidentes (arts. 46-48), suboperadores, término/portabilidade e auditoria. Faturamento junto a operadoras é permitido pelo art. 11, §4º, e deve ficar previsto expressamente. Novidade factual (resposta da cliente): hospedagem indicada como AWS 'provavelmente' nos EUA — a transferência internacional passa a ser fato em risco, e a cláusula substitutiva exige declaração escrita da região/serviços e prova das salvaguardas do art. 33 (clausula_dados.md, §5º). Texto completo: deliverable/clausula_dados.md.",
+    "redacao_proposta": "Substituir integralmente a cláusula 5 pela 'Cláusula de Proteção de Dados' constante de deliverable/clausula_dados.md (papéis, base legal para dado de saúde, instruções, subcontratação, transferência internacional, segurança, incidentes, auditoria, término/portabilidade)."
+  },
+  {
+    "clausula": "6",
+    "avaliacao": "alterar",
+    "gravidade": "media",
+    "fundamento": "Tecnicamente lícito entre empresas, mas insuficiente para serviço que sustenta atendimento: 99% equivale a ~7,2 h/mês de indisponibilidade (aritmética: 30 d × 24 h × 1% = 7,2 h) num prontuário usado em horário de clínica; a compensação máxima de 10% (R$ 2.070/mês sobre mensalidade total de R$ 20.700) é ínfima diante do prejuízo operacional e não induz a NEXA a investir em continuidade. Propostas: meta de 99,5%, janela de manutenção previamente agendada e direito de denúncia sem multa em caso de descumprimento reiterado. Backup e restauração ficam na cláusula de dados (library/lgpd_excertos.md, arts. 46-47).",
+    "redacao_proposta": "\"Cláusula 6 — Suporte e SLA. Disponibilidade mensal mínima de 99,5%, medida com exclusão de janelas de manutenção previamente agendadas e comunicadas com 5 dias de antecedência (no máx. 1 janela/mês, até 4 h, em horário de menor uso). Créditos de 5% da mensalidade por ponto percentual abaixo da meta, sem teto, cumuláveis com denúncia sem multa se a meta for descumprida em 3 meses (continuativos ou alternados dentro de 6). Suporte em horário comercial ampliado até 20h em dias úteis e plantão para indisponibilidade total.\""
+  },
+  {
+    "clausula": "7",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "A disponibilização de CSV por apenas 30 dias conflita com o dever de guarda do prontuário por no mínimo 20 anos, com acesso e portabilidade pelo estabelecimento (Resolução CFM 1.821/2007, Resolução CFM 2.299/2021 e Lei 13.787/2018 — library/cfm_prontuario.md). Exigir exportação completa e estruturada e período de transição dimensionado pelo fato informado pela CONTRATANTE: a migração de ~22 mil prontuários para o sistema da NEXA é um projeto de meses — a migração de saída não cabe em 30 dias (por isso acesso de leitura mínimo de 180 dias, prorrogável); titularidade dos dados já está correta.",
+    "redacao_proposta": "\"Cláusula 7 — Propriedade Intelectual. O software e suas evoluções pertencem à NEXA. Os dados inseridos, inclusive prontuários, pertencem à CONTRATANTE, que responde pela guarda em favor dos titulares. À escolha da CONTRATANTE, ao término: (i) devolução/exportação integral em formato estruturado, completo e não proprietário, incluindo metadados, em até 15 dias; e (ii) período de transição com acesso pleno de leitura para migração de no mínimo 180 dias, prorrogável até a migração ser confirmada por escrito, sem custo adicional. Encerrada a migração assim confirmada, a NEXA elimina suas cópias e emite declaração de eliminação. A devolução não é condicionada à quitação de valores em discussão.\""
+  },
+  {
+    "clausula": "8",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "O teto em si (= R$ 62.100, aritmética: 3 × R$ 20.700) é admitido entre empresas, mas é incoerente com o risco central do contrato — violação de dados de saúde de ~22 mil pacientes. A LGPD impõe reparação ao controlador e ao operador que causar dano por violação (art. 42), com resposta solidária do operador que descumprir a lei ou as instruções lícitas do controlador (art. 42, §1º, I — library/lgpd_excertos.md); essa responsabilidade legal não pode ser esvaziada por teto contratual frente aos titulares. Excluir do teto as hipóteses de violação de dados e de segurança.",
+    "redacao_proposta": "\"Cláusula 8 — Limitação de Responsabilidade. A responsabilidade da NEXA, nas hipóteses culposas ordinárias de funcionalidade do software, limita-se a 3 (três) mensalidades vigentes. O teto NÃO se aplica a: dolo ou culpa grave; violação da cláusula de Proteção de Dados; violação da LGPD (Lei 13.709/2018, art. 42); incidente de segurança; descumprimento das obrigações das cláusulas 7 e 12.\""
+  },
+  {
+    "clausula": "9",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Confidencialidade mútua por 5 anos é padrão razoável em B2B e não conflita com deveres legais de comunicação (autoridades sanitárias e ANPD). Sem alteração obrigatória.",
+    "redacao_proposta": "(sem alteração)"
+  },
+  {
+    "clausula": "10",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Multa de 100% das mensalidades vincendas por rescisão imotivada da CONTRATANTE equivale, na assinatura, a R$ 745.200 (aritmética: 3 unidades × R$ 6.900 = R$ 20.700/mês × 36 meses = R$ 745.200) — 15,5× o custo de implantação (R$ 745.200 / R$ 48.000 = 15,525) e 8,1% do faturamento anual da clínica (R$ 745.200 / R$ 9.200.000 = 8,1%). Penalidade manifestamente excessiva, reduzível equitativamente pelo juiz (CC art. 413 — library/cc_contratos_empresariais.md), mas convém negociar de partida. É também unilateral: nada prevê multa para rescisão imotivada da NEXA, afetando a paridade presumida (CC art. 421-A). Reforço factual (resposta da cliente): sair no meio seria caótico (migração de ~22 mil prontuários leva meses) — com essa captura real, a multa de 100% dá à NEXA seguro de acomodação, e a redução já no contrato assinado é ainda mais importante.",
+    "redacao_proposta": "\"Cláusula 10 — Rescisão. Por inadimplemento não sanado em 30 dias da notificação. Rescisão imotivada antes do fim da vigência: multa de até 10% (dez por cento) do valor das mensalidades vincendas, reduzida equitativamente conforme o art. 413 do CC e o período cumprido, sem prejuízo da devolução integral dos dados na forma da cláusula 7. Aplica-se a mesma regra, simetricamente, à rescisão imotivada pela NEXA. A denúncia na forma da cláusula 3 não gera multa.\""
+  },
+  {
+    "clausula": "11",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Encargos moratórios usuais em contratos empresariais (2% + juros 1% a.m. + correção); o CC art. 413 (library/cc_contratos_empresariais.md) permite revisão judicial se o montante for manifestamente excessivo, o que aqui não se vislumbra. Sem alteração necessária.",
+    "redacao_proposta": "(sem alteração)"
+  },
+  {
+    "clausula": "12",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "'Hospedagem, suporte e processamento ... sem necessidade de comunicação' é incompatível com tratamento de dados de saúde: o operador trata sob instruções do controlador (LGPD art. 39) e responde solidariamente se não as seguir ou descumprir a lei (art. 42, §1º, I — library/lgpd_excertos.md); suboperadores precisam ser conhecidos, autorizados e vinculados aos mesmos deveres, sobretudo com hospedagem potencialmente no exterior (art. 33). Fato novo (resposta da cliente): hospedagem AWS 'provavelmente' nos EUA — a lista de suboperadores com país de hospedagem passa a ser peça central da contraproposta.",
+    "redacao_proposta": "\"Cláusula 12 — Subcontratação. A NEXA poderá subcontratar hospedagem, suporte e processamento somente com comunicação prévia e autorização documentada da CONTRATANTE, mediante lista atualizada dos prestadores (nome, atividade e país de hospedagem), com fluxo integral das obrigações da cláusula de Proteção de Dados. A NEXA responde pelos atos de seus subcontratados (LGPD art. 42, §1º, I). Alterações na lista serão comunicadas com 15 dias de antecedência; autorização não será negada sem justificativa documentada.\""
+  },
+  {
+    "clausula": "13",
+    "avaliacao": "alterar",
+    "gravidade": "alta",
+    "fundamento": "Suprimir. Não concorrência só se sustenta limitada no tempo, no espaço e no objeto e justificada por interesse legítimo, com prazo razoável de até 2 anos (STJ, REsp 1.203.109/MG (2015); REsp 680.815/PR — library/stj_nao_concorrencia.md). Aqui são 5 anos, território nacional e objeto que inclui o simples USO de software concorrente — o que impede a clínica de exercer sua atividade — e que inverte a lógica: em licença de software, o licenciado não detém know-how do licenciante, e cláusula que veda o uso de tecnologia concorrente após o término é tida por abusiva/sem causa, na mesma linha da biblioteca. R$ 500.000 de multa = 2,01× o custo anual do contrato (aritmética: R$ 500.000 / R$ 248.400 = 2,01) e 5,43% do faturamento anual (R$ 500.000 / R$ 9.200.000). Proteção de know-how já está a cargo da confidencialidade (cláusula 9).",
+    "redacao_proposta": "Suprimir integralmente a cláusula 13 (não concorrência). A proteção dos interesses legítimos da NEXA permanece assegurada pela confidencialidade mútua da cláusula 9."
+  },
+  {
+    "clausula": "14",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Foro eleito na sede da NEXA é VÁLIDO neste contrato, embora a colega da sócia pense o contrário. O CDC (arts. 2º, 3º e 51 — library/cdc_art51_distrator.md) protege o destinatário final do produto/serviço; a Aurora contrata o NexaClin como insumo de sua atividade empresarial (prontuário/faturamento), logo não é consumidora segundo a teoria finalista do STJ, e a mitigação da teoria exige vulnerabilidade técnica, jurídica ou econômica demonstrada — não presumida. Entre empresas presumidas paritárias (CC art. 421-A), a eleição de foro com instrumento escrito aludindo ao negócio produz efeitos (CPC art. 63, §1º e §3º; STJ, REsp 1.707.855/SP — library/cc_contratos_empresariais.md). Nota de gestão: como a contraproposta já exige mudanças em 9 cláusulas, é razoável pedir, por acordo comercial (não por abusividade), a troca do foro para a comarca da sede da CONTRATANTE; se a NEXA recusar, a cláusula continua válida e o custo de litigar em Florianópolis deve ser pesado antes de assinar.",
+    "redacao_proposta": "(sem alteração; opcional, por acordo: \"... elege-se o foro da comarca do domicílio da CONTRATANTE\" — redação genérica adotada, pois a cidade-sede da CONTRATANTE não foi informada)"
+  },
+  {
+    "clausula": "15",
+    "avaliacao": "aceitavel",
+    "gravidade": "baixa",
+    "fundamento": "Declaração de leitura e compreensão é corrente entre empresas paritárias e reforça a validade das cláusulas eleitas (coerente com CC art. 421-A — library/cc_contratos_empresariais.md). Sem ponto a alterar.",
+    "redacao_proposta": "(sem alteração)"
+  }
+]

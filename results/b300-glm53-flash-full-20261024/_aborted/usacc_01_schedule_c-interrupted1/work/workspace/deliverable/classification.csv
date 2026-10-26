@@ -1,0 +1,150 @@
+date,description,amount,classification,schedule_c_line,note
+2024-12-27,ACH CREDIT TESSARO STUDIOS INV 1041,3000.00,prior_year,,"Received 12/27/2024 (INV 1041) — belongs on the 2024 return per the cash-method rule in the Schedule C instructions excerpt; not part of 2025 line 1 (Tessaro 1099-NEC $9,400 = the four 2025 receipts only)."
+2024-12-30,DEBIT CARD H-E-B #412 AUSTIN TX,-84.12,prior_year,,December 2024 personal spending — outside tax year 2025.
+2025-01-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-01-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-01-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-01-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-01-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-01-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-01-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-01-12,DEBIT CARD H-E-B #412 AUSTIN TX,-209.59,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-01-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wage deposit (Larkspur Interactive); wages $24,800 go on Form 1040, not Schedule C."
+2025-01-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wage deposit (Larkspur Interactive); wages $24,800 go on Form 1040, not Schedule C."
+2025-02-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-02-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-02-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-02-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-02-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-02-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-02-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,1812.55,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-02-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-02-12,DEBIT CARD H-E-B #412 AUSTIN TX,-165.22,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-02-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wage deposit (Larkspur Interactive); wages $24,800 go on Form 1040, not Schedule C."
+2025-02-20,HISCOX PROFESSIONAL LIABILITY,-480.00,business_expense,15,Professional liability insurance — line 15 (insurance other than health).
+2025-02-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wage deposit (Larkspur Interactive); wages $24,800 go on Form 1040, not Schedule C."
+2025-03-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-03-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-03-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-03-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-03-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-03-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-03-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,2503.10,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-03-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-03-12,DEBIT CARD H-E-B #412 AUSTIN TX,-151.03,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-03-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wage deposit (Larkspur Interactive); wages $24,800 go on Form 1040, not Schedule C."
+2025-03-19,ACH CREDIT TESSARO STUDIOS,2400.00,business_income,1,"Direct client ACH receipt, substantiated in bank; ties to Tessaro 1099-NEC ($9,400 total for 2025)."
+2025-03-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wage deposit (Larkspur Interactive); wages $24,800 go on Form 1040, not Schedule C."
+2025-04-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-04-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-04-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-04-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-04-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-04-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-04-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-04-08,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3109.40,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-04-12,DEBIT CARD H-E-B #412 AUSTIN TX,-143.16,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-04-15,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wage deposit (Larkspur Interactive); wages $24,800 go on Form 1040, not Schedule C."
+2025-04-15,IRS USATAXPYMT ES 2025 Q1,-1500.00,tax_payment,,"2025 federal estimated tax payment QQ1; reported as tax payments on the individual return, not a business expense."
+2025-04-28,DIRECT DEP LARKSPUR INTERACTIVE PAYROLL,2437.85,other_schedule,,"W-2 wage deposit (Larkspur Interactive); wages $24,800 go on Form 1040, not Schedule C."
+2025-05-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-05-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-05-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-05-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-05-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-05-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-05-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3880.20,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-05-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-05-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking rent, line 20b per Schedule C instructions excerpt. Routine trips here are commuting (nondeductible) on the mileage side."
+2025-05-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Health insurance premium — NOT deductible on Schedule C; Schedule 1 line 17 (SE health insurance), per Schedule C instructions excerpt. Eligibility open item."
+2025-05-12,DEBIT CARD H-E-B #412 AUSTIN TX,-225.36,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-06-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-06-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-06-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-06-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-06-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-06-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-06-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4015.75,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-06-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-06-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking rent, line 20b per Schedule C instructions excerpt. Routine trips here are commuting (nondeductible) on the mileage side."
+2025-06-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Health insurance premium — NOT deductible on Schedule C; Schedule 1 line 17 (SE health insurance), per Schedule C instructions excerpt. Eligibility open item."
+2025-06-12,DEBIT CARD H-E-B #412 AUSTIN TX,-157.97,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-06-13,SOUTHWEST AIR 118 AUS-DEN,-389.00,personal,,Austin–Denver flight 6/13/2025: no business purpose documented anywhere in the file; deducted nowhere pending client explanation (open item).
+2025-06-14,VENMO: WEDDING GIFT KAT&JULES,-200.00,personal,,Wedding gift — personal expense (IRC §262(a)).
+2025-06-16,IRS USATAXPYMT ES 2025 Q2,-2500.00,tax_payment,,"2025 federal estimated tax payment QQ2; reported as tax payments on the individual return, not a business expense."
+2025-06-19,ACH CREDIT TESSARO STUDIOS,3100.00,business_income,1,"Direct client ACH receipt, substantiated in bank; ties to Tessaro 1099-NEC ($9,400 total for 2025)."
+2025-07-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-07-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-07-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-07-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-07-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-07-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-07-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-07-08,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3650.00,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-07-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking rent, line 20b per Schedule C instructions excerpt. Routine trips here are commuting (nondeductible) on the mileage side."
+2025-07-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Health insurance premium — NOT deductible on Schedule C; Schedule 1 line 17 (SE health insurance), per Schedule C instructions excerpt. Eligibility open item."
+2025-07-12,DEBIT CARD H-E-B #412 AUSTIN TX,-178.90,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-08-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-08-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-08-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-08-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-08-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-08-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-08-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4420.90,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-08-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-08-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking rent, line 20b per Schedule C instructions excerpt. Routine trips here are commuting (nondeductible) on the mileage side."
+2025-08-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Health insurance premium — NOT deductible on Schedule C; Schedule 1 line 17 (SE health insurance), per Schedule C instructions excerpt. Eligibility open item."
+2025-08-12,DEBIT CARD H-E-B #412 AUSTIN TX,-154.21,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-09-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-09-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-09-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-09-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-09-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-09-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-09-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4172.35,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-09-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-09-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking rent, line 20b per Schedule C instructions excerpt. Routine trips here are commuting (nondeductible) on the mileage side."
+2025-09-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Health insurance premium — NOT deductible on Schedule C; Schedule 1 line 17 (SE health insurance), per Schedule C instructions excerpt. Eligibility open item."
+2025-09-12,DEBIT CARD H-E-B #412 AUSTIN TX,-195.36,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-09-14,APPLE.COM/BILL MACBOOK PRO 14,-2149.00,business_expense,27a,"ASSUMPTION: 100% business use; de minimis safe harbor election ($2,149 ≤ $2,500 per Schedule C instructions excerpt line 13); election statement required."
+2025-09-15,IRS USATAXPYMT ES 2025 Q3,-2500.00,tax_payment,,"2025 federal estimated tax payment QQ3; reported as tax payments on the individual return, not a business expense."
+2025-09-19,ACH CREDIT TESSARO STUDIOS,2150.00,business_income,1,"Direct client ACH receipt, substantiated in bank; ties to Tessaro 1099-NEC ($9,400 total for 2025)."
+2025-10-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-10-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-10-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-10-02,SOUTHWEST AIR 526 AUS-SFO,-412.00,business_expense,24a,ASSUMPTION: primarily business travel to DESIGNWEEK SF; Pub 463 denies primarily-personal travel.
+2025-10-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-10-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-10-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-10-06,HOTEL ZEPHYR SAN FRANCISCO,-618.00,business_expense,24a,ASSUMPTION: primarily business travel to DESIGNWEEK SF; Pub 463 denies primarily-personal travel.
+2025-10-06,DESIGNWEEK SF CONFERENCE REG,-650.00,business_expense,27a,Professional development (conference registration) — line 27a per Schedule C instructions excerpt.
+2025-10-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-10-07,SQ *MARINA DELI SAN FRANCISCO,-64.00,business_expense,24b,ASSUMPTION: business meal while traveling away from home; only 50% deductible (Pub 463 / Schedule C line 24b).
+2025-10-08,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4511.60,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-10-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking rent, line 20b per Schedule C instructions excerpt. Routine trips here are commuting (nondeductible) on the mileage side."
+2025-10-08,TARTINE MANUFACTORY,-126.00,business_expense,24b,ASSUMPTION: business meal while traveling away from home; only 50% deductible (Pub 463 / Schedule C line 24b).
+2025-10-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Health insurance premium — NOT deductible on Schedule C; Schedule 1 line 17 (SE health insurance), per Schedule C instructions excerpt. Eligibility open item."
+2025-10-12,DEBIT CARD H-E-B #412 AUSTIN TX,-181.27,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-11-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-11-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-11-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-11-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-11-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-11-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-11-06,PAYHUB PAYOUT *DANA OKAFOR DESIGN,4102.00,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-11-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-11-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking rent, line 20b per Schedule C instructions excerpt. Routine trips here are commuting (nondeductible) on the mileage side."
+2025-11-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Health insurance premium — NOT deductible on Schedule C; Schedule 1 line 17 (SE health insurance), per Schedule C instructions excerpt. Eligibility open item."
+2025-11-12,DEBIT CARD H-E-B #412 AUSTIN TX,-141.56,personal,,"Groceries — personal, nondeductible (IRC §262(a))."
+2025-11-19,ACH CREDIT TESSARO STUDIOS,1750.00,business_income,1,"Direct client ACH receipt, substantiated in bank; ties to Tessaro 1099-NEC ($9,400 total for 2025)."
+2025-12-01,T-MOBILE WIRELESS,-85.00,business_expense,25,"ASSUMPTION: 50% business use (unsupported in file); $1,020/yr × 50% = $510 on line 25."
+2025-12-01,ZELLE TO: M. OKAFOR RENT,-1650.00,personal,,Personal rent to family member; nondeductible (IRC §262(a)); no home office claimed.
+2025-12-02,SPECTRUM INTERNET,-70.00,business_expense,25,ASSUMPTION: 50% business use (unsupported in file); $840/yr × 50% = $420 on line 25.
+2025-12-03,FIGMA INC SUBSCRIPTION,-45.00,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $540/yr in line 27a total.
+2025-12-04,ADOBE *CREATIVE CLOUD,-59.99,business_expense,27a,Software subscription; ASSUMPTION: 100% business (design tool); $719.88/yr in line 27a total.
+2025-12-05,NETFLIX.COM,-15.49,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-12-07,PAYHUB PAYOUT *DANA OKAFOR DESIGN,3973.00,business_income,1,"PayHub payout; 1099-K gross $41,350 reported at gross on line 1, processor fees $1,199.15 to line 10."
+2025-12-07,ORANGETHEORY FITNESS AUSTIN,-49.00,personal,,Personal subscription/gym — nondeductible (IRC §262(a)).
+2025-12-08,CAPITAL FACTORY COWORKING,-350.00,business_expense,20b,"Coworking rent, line 20b per Schedule C instructions excerpt. Routine trips here are commuting (nondeductible) on the mileage side."
+2025-12-09,BLUE CROSS BLUE SHIELD TX PREMIUM,-380.00,other_schedule,,"Health insurance premium — NOT deductible on Schedule C; Schedule 1 line 17 (SE health insurance), per Schedule C instructions excerpt. Eligibility open item."
+2025-12-12,DEBIT CARD H-E-B #412 AUSTIN TX,-199.32,personal,,"Groceries — personal, nondeductible (IRC §262(a))."

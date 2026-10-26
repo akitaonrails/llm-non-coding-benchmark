@@ -1,0 +1,47 @@
+{
+  "case": "bracc_09_distribuicao_lucros",
+  "questions": "# Perguntas à Nexo Logística Ltda.\n\n1. Para calcular o **limite líquido teórico do lucro presumido de 2025**, informe o valor de todos os impostos e contribuições a que a empresa esteve sujeita em 2025, com discriminação por tributo (ou forneça a apuração anual completa). O saldo de “tributos a recolher” de R$ 610.000 no balanço é apenas um saldo em 31/12/2025 ou representa o total desses tributos no ano?\n\n2. Confirme ou corrija o balanço/ECD de 31/12/2025: o ativo informado soma R$ 9.850.000, mas passivo e patrimônio líquido, somados item a item, resultam em R$ 10.610.000, diferença de R$ 760.000. Qual linha ou valor está incorreto? Confirme também se os prejuízos acumulados de R$ 1.120.000 já incluem o prejuízo de R$ 310.000 de 2025.\n\n3. Existia algum lucro acumulado ou reserva de lucros disponível para distribuição em 31/12/2025 que não apareça nesse balanço? Em caso afirmativo, envie o valor e a reconciliação com os prejuízos acumulados. Houve deliberação de distribuição de lucros apurados até 2025 aprovada até 31/12/2025? Em caso afirmativo, informe data, valor, sócios beneficiários e documentação.\n\n",
+  "facts": [
+    {
+      "id": "auto",
+      "trigger": [
+        "auto de infração",
+        "impugnação",
+        "garantia",
+        "depósito",
+        "1.480"
+      ],
+      "answer": "Sócio B: impugnamos em 2024, está na DRJ. Não depositamos nem demos garantia — o advogado disse que não precisava.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deliberacao_2025",
+      "trigger": [
+        "ata",
+        "deliberação",
+        "aprovou",
+        "31/12",
+        "transição"
+      ],
+      "answer": "Sócio A: não fizemos ata nenhuma em dezembro. A gente distribui quando dá.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "mutuo",
+      "trigger": [
+        "mútuo",
+        "contrato",
+        "juros",
+        "prazo",
+        "pagar de volta"
+      ],
+      "answer": "Sócio A: mútuo sem juros, pago quando a empresa melhorar. Sem papelada.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "deliberacao_2025"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

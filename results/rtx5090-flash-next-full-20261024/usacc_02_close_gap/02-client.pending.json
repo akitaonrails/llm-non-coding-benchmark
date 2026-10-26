@@ -1,0 +1,72 @@
+{
+  "case": "usacc_02_close_gap",
+  "questions": "# Questions for the client — March 2026 close (updated after your responses)\n\n## Answers received — no further action needed from you\n- **$1,500.00 transfer from *4420 (03/14):** answered — your personal money covering payroll.\n  Recorded as owner contribution (3100), removed from Sales. Nothing further needed.\n- **Cascade CH-7731:** answered — one invoice, paid once. Duplicate reversed. Nothing further.\n- **Uchi $212.00:** answered — personal anniversary dinner. Recorded in Owner's draws. Nothing\n  further.\n- **Hardaway INV-1167 $9,800:** answered — dispute continues, no write-off. Nothing recorded; the\n  full amount stays in A/R. Just tell us the day a credit memo or settlement is signed.\n\n## Still open — needed to close these out (you indicated no further information is available,\n## so each is flagged as an assumption/unknown in the books and to the lender)\n1. **Mobile deposit $4,312.00 (bank 03/21)** — stays in suspense 2100 (the policy-prescribed\n   parking spot; not revenue). No question to you since you and Carla don't know the payer:\n   **I suggest requesting the mobile-deposit image/deposit slip from the bank** — you or Carla\n   just need to authorize that with Hill Country Community Bank.\n2. **February A/R aging (as of 02/28/2026)** or any invoice-level detail behind the $107,668.00 —\n   still the single biggest open item (**$59,188.00 gap** between GL 1100 and the 3/31 aging).\n   The prior bookkeeper should have the 2/28 aging; a copy to us closes this. Until then the A/R\n   balance is reported as unconfirmed and the lender is told so.\n3. **Prepaid expenses $2,400.00 on the 2/28 trial balance** — carried unchanged, unsupported;\n   flagged to the lender as unverified. Any old policy/invoice (even a photo) would let us verify\n   or amortize it.\n4. **Allied Insurance \"Q2 GL\" $1,150** — assumed April–June 2026 coverage (nothing amortized in\n   March). If Allied's bill ever turns up, send it; otherwise the assumption stands and is\n   disclosed.\n5. **Payroll (Gusto reports / 941s)** — not available, so payroll is verified only to cash\n   ($7,100.00 net + $653.20 tax per period cleared the bank). Gross/deduction detail remains\n   unverified and is disclosed as such.\n",
+  "facts": [
+    {
+      "id": "xfer_1500",
+      "trigger": [
+        "1,500",
+        "1500",
+        "transfer from *4420",
+        "4420",
+        "online transfer"
+      ],
+      "answer": "That's from my personal checking, I moved money over to cover payroll. It's my money, not a sale.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "mobile_4312",
+      "trigger": [
+        "4,312",
+        "4312",
+        "mobile deposit",
+        "March 21",
+        "3/21"
+      ],
+      "answer": "Huh. I don't remember depositing anything that day. Maybe Carla (office) did? Let me ask her... (later) she doesn't know either. Can you just park it somewhere for now?",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "cascade_dup",
+      "trigger": [
+        "Cascade",
+        "CH-7731",
+        "duplicate",
+        "twice",
+        "same invoice"
+      ],
+      "answer": "Cascade emails invoices and then mails a paper copy a couple of weeks later. Same invoice. We paid it once.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uchi",
+      "trigger": [
+        "Uchi",
+        "dinner",
+        "212"
+      ],
+      "answer": "Uchi was my anniversary dinner, I grabbed the wrong card. Put it on me.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "hardaway",
+      "trigger": [
+        "Hardaway",
+        "9,800",
+        "dispute",
+        "warped"
+      ],
+      "answer": "Still arguing with them. Don't write it off yet.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "cascade_dup",
+    "hardaway",
+    "mobile_4312",
+    "uchi",
+    "xfer_1500"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,31 @@
+{
+  "service_date": "2026-09-11",
+  "service_method": "Personal service on the LLC's registered agent (Corporation Service Company, 1209 Orange Street, Wilmington, DE) - process server left copies with Dana Whitlock, Intake Specialist, on Friday, September 11, 2026 at 2:40 p.m.; CSC emailed scans the same day to the client's old Gmail address. Personal delivery, not mail: no 3-day mail extension under Wash. Super. Ct. Civ. R. 6(e) or Fed. R. Civ. P. 6(d). Client confirms nothing reached her until Sun. Sept 27, but receipt through service (and 'otherwise' via the CSC email) was Sept 11, so all clocks run from Sept 11.",
+  "state_court_answer_due": "2026-10-01",
+  "removal_deadline": "2026-10-13",
+  "removal_available": false,
+  "removal_reason": "REMOVAL IS NOT AVAILABLE - now confirmed by the client's answers, not merely suspected. Harbor Street Bakery LLC has exactly two members: Noor Haddad (65%, domiciled in Portland, Oregon) and Caleb Sorensen (35%, living in Seattle - Ballard). An LLC is a citizen of every state of which its owners/members are citizens; the 28 U.S.C. 1332(c)(1) corporation test (Delaware organization, Oregon principal place of business) does not apply. Johnson v. Columbia Properties Anchorage, LP, 437 F.3d 894, 899 (9th Cir. 2006); Carden v. Arkoma Associates, 494 U.S. 185 (1990). Defendant LLC = citizen of Washington AND Oregon. Plaintiff Sound Cascade Foods, Inc. is a citizen of Washington (incorporated there, principal place of business Kent - 28 U.S.C. 1332(c)(1)). Two grounds, each independently fatal: (1) no complete diversity under 28 U.S.C. 1332(a)(1) - a Washington citizen is on both sides, and a single non-diverse member destroys complete diversity; (2) the forum-defendant rule, 28 U.S.C. 1441(b)(2) - the action was brought in Washington and the sole defendant, taking its member Caleb's citizenship, is a citizen of Washington. Amount in controversy would have been satisfied ($129,156.40 exclusive of interest and costs), but that is the only element met. The advice to remove because it is a 'Delaware company vs. Washington company' case is wrong on the law, and a removal would have gone to W.D. Wash. under 28 U.S.C. 1441(a), with remand plus costs and attorney fees exposure under 28 U.S.C. 1447(c). DO NOT FILE A NOTICE OF REMOVAL. The Oct 13 date is calendared only so the docket is complete; it is a dead end, not an option. The 'if_removed' block below is retained for completeness (computed from an assumed Sept 30 filing under Fed. R. Civ. P. 81(c)(2), 16(b)(2), 26(f)(1)) and is NOT operative.",
+  "if_removed": {
+    "notice_filed_assumed": "2026-09-30",
+    "answer_due_after_removal": "2026-10-07",
+    "scheduling_order_due_by": "2026-11-30",
+    "rule_26f_conference_by": "2026-11-09"
+  },
+  "rules_relied_on": [
+    "documents/declaration_of_service.pdf (service on registered agent, Fri. Sept. 11, 2026)",
+    "documents/summons.pdf (Wash. Super. Ct. Civ. R. 4 '20 days' summons)",
+    "documents/complaint.pdf (parties, damages, King County Superior Court, filed 09/08/2026)",
+    "documents/email_from_client.txt (27 Sept 2026) and client's 28 Sept 2026 answers (LLC membership and domiciles; CSC scan email of Sept 11; ~$26,000 of short/spoiled deliveries in March-April 2026)",
+    "Wash. Super. Ct. Civ. R. 4(a)(2), 6(a), 6(e), 12(a) - library/wa_cr_4_6_12.md",
+    "RCW 1.16.050 - library/rcw_1_16_050_wa_holidays.md",
+    "28 U.S.C. 1446(b)(1) - library/28usc_1332_1441_1446_1447.md",
+    "Fed. R. Civ. P. 6(a)(1), 6(a)(6), 6(d), 12(a)(1)(A) - library/frcp_4_5_6_12_excerpts.md",
+    "Fed. R. Civ. P. 4(h), 5(b)(2) - library/frcp_4_5_6_12_excerpts.md",
+    "28 U.S.C. 1332(a), 1332(c)(1), 1441(a), 1441(b)(2), 1446(c)(1), 1447(c) - library/28usc_1332_1441_1446_1447.md",
+    "Johnson v. Columbia Properties Anchorage, LP, 437 F.3d 894, 899 (9th Cir. 2006); Carden v. Arkoma Associates, 494 U.S. 185 (1990) - library/llc_citizenship_cases.md",
+    "Fed. R. Civ. P. 81(c)(2) - library/frcp_81c_removed_actions.md",
+    "Fed. R. Civ. P. 16(b)(2), 26(f)(1) - library/frcp_16_26f.md",
+    "5 U.S.C. 6103 and W.D. Wash. General Order (Columbus Day, Mon. Oct. 12, 2026 closure) - library/federal_holidays_2026.md",
+    "Wash. Super. Ct. Civ. R. 55(a)(3) - library/wa_cr_55_default.md"
+  ]
+}

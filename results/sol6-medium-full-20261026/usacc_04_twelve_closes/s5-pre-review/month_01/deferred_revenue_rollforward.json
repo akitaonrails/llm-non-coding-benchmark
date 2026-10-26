@@ -1,0 +1,28 @@
+{
+  "contracts": {
+    "Trestle Freight LLC \u2014 Jun 2024\u2013May 2025": {
+      "opening": 41000,
+      "billed": 0,
+      "recognized": 8200,
+      "closing": 32800
+    },
+    "Trestle Freight LLC \u2014 Jan\u2013Dec 2025": {
+      "opening": 0,
+      "billed": 24000,
+      "recognized": 2000,
+      "closing": 22000
+    }
+  },
+  "unallocated_opening_deferred_revenue": {
+    "opening": 24000,
+    "billed": 0,
+    "recognized": 0,
+    "closing": 24000
+  },
+  "total": {
+    "opening": 65000,
+    "billed": 24000,
+    "recognized": 10200,
+    "closing": 78800
+  }
+}

@@ -1,0 +1,5 @@
+O cliente confirmou que não dispõe dos dados para medir o valor presente, conciliar os passivos na homologação ou atualizar a dívida federal. Vou encerrar a sessão com os lançamentos condicionais e as estimativas nominais claramente identificados, sem atribuir valores definitivos a essas contas.
+
+Encerrei a sessão 3 com os [lançamentos da novação](/work/workspace/deliverable/sessao3/lancamentos_novacao.json) e a [proposta para o passivo fiscal](/work/workspace/deliverable/sessao3/passivo_fiscal_solucao.md). Os arquivos distinguem os valores nominais conhecidos dos valores que ainda não podem ser contabilizados definitivamente.
+
+**Permanecem desconhecidos**, conforme a resposta do cliente: taxa e cronograma necessários ao valor presente, saldos contábeis na homologação, dívida federal atualizada, situação de cobrança e eventual certidão. Por isso, o ganho contábil final e as parcelas fiscais efetivas não foram presumidos. Registrei o resultado como [COMPLETE WITH OPEN ITEMS](/work/workspace/deliverable/STATUS.md), sem repetir as perguntas.

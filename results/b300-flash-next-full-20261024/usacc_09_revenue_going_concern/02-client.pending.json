@@ -1,0 +1,46 @@
+{
+  "case": "usacc_09_revenue_going_concern",
+  "questions": "# Questions for the client (Northwind Analytics Inc.)\n\nPrepared by the Controller, Q4 2025 close. The engagement is otherwise complete; these items\naffect only the Ironvale lease **measurement** (not the revenue or going-concern conclusions).\nAnswers will be incorporated and `q4_pl_adjusted.json` finalized.\n\n> ## Client responses received — disposition (2025-12-31)\n> The client replied: *\"They're on the shelf with everything else. Same SKU, no point tagging. Procurement meets Jan 20. Security review is 'in progress'. They're committed, trust me.\"* and *\"For questions not answered above, the client has no additional information. Flag remaining unknowns explicitly.\"*\n>\n> - **Q1 (discount rate): unobtainable.** Client has no rate. Finalized under a prominently stated illustrative 9% assumption with a 6%–12% sensitivity band ($503,814–$546,327 at 12/31/2025) and the undiscounted $594,000. Flagged as a measurement unknown in `revenue_memo.md` and `STATUS.md`; ASC 842 rate-selection guidance is outside the library (unverified).\n> - **Q2 (lease/non-lease price split): unobtainable.** No pricing exhibit exists. Finalized with the 100%-lease assumption, flagged, with the direction of potential overstatement noted.\n> - **Q3 (payment timing): no additional information.** Month-end assumption retained and flagged; effect noted as small.\n> - **Q4 (written confirmations): effectively ANSWERED.** \"On the shelf with everything else\" confirms no kits were segregated or transferred to Saltline before 12/31/2025; \"Procurement meets Jan 20 … security review 'in progress'\" confirms none of the LOI conditions was met at the reporting date. These client statements are recorded in `revenue_memo.md` (Client follow-up section) as file documentation — and they document the failed criteria in management's own words.\n>\n> No further questions will be asked; remaining unknowns are flagged as assumptions, not resolved as facts.\n\n---\n\n1. **Discount rate for the Ironvale lease.** The reference library requires the lease liability at\n   the present value of lease payments, but the client file contains no discount rate. What is\n   Northwind's incremental borrowing rate for a 36-month collateralized borrowing? (Until answered,\n   I have illustrated at 9% annual; see the sensitivity table in `revenue_memo.md`: 6% → $546,327;\n   9% → $524,468; 12% → $503,814, liability at 12/31/2025.) If a rate implicit in the contract is\n   readily determinable, provide it instead.\n\n2. **Lease vs. non-lease price split.** Does Ironvale's Schedule A or any pricing exhibit allocate\n   the $18,000 monthly fee between the dedicated equipment (lease component) and the power/cooling/\n   network services (non-lease components)? If no split exists, confirm in writing so I can document\n   the 100%-lease assumption.\n\n3. **Payment timing.** \"Payable in arrears\" — are payments made at each month-end for that month\n   (first payment 2025-10-31, so three payments were made by 12/31/2025), or at the beginning of each\n   month? Confirm the actual payment dates in Oct–Dec 2025.\n\n4. **Confirmation, for the file:** (a) no Master Subscription Agreement with Halvorsen has been\n   executed and no Procurement Committee approval or completed security review existed as of\n   12/31/2025; and (b) no edge kits were physically transferred to Saltline before 12/31/2025. The\n   client file already indicates \"yes\" to both; I need written confirmation for the documentation\n   the 2024 management letter asked us to maintain.\n",
+  "facts": [
+    {
+      "id": "side_letter_signed",
+      "trigger": [
+        "side letter",
+        "countersigned",
+        "return right",
+        "refund"
+      ],
+      "answer": "Yes, Alvarado countersigned it. Saltline insisted. It's just a comfort letter.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "kits_tagged",
+      "trigger": [
+        "segregated",
+        "tagged",
+        "identified",
+        "which kits",
+        "general stock"
+      ],
+      "answer": "They're on the shelf with everything else. Same SKU, no point tagging.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "halvorsen_status",
+      "trigger": [
+        "Halvorsen",
+        "definitive",
+        "MSA signed",
+        "procurement committee"
+      ],
+      "answer": "Procurement meets Jan 20. Security review is 'in progress'. They're committed, trust me.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "halvorsen_status",
+    "kits_tagged"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

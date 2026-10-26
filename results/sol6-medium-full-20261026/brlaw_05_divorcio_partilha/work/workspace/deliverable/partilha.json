@@ -1,0 +1,74 @@
+[
+  {
+    "bem": "Apartamento em Perdizes",
+    "natureza": "comum",
+    "valor_total": 1200000,
+    "valor_partilhavel": 1200000,
+    "meacao_fernanda": 600000,
+    "fundamento": "Adquirido onerosamente em 2017, durante o casamento; CC arts. 1.658 e 1.660, I (library/cc_comunhao_parcial.md). O financiamento de R$ 300.000 consta separadamente em DIVIDAS.",
+    "controversia": "Valor e saldo devedor sem data-base confirmada; titularidade do financiamento e eventual aporte particular não comprovados."
+  },
+  {
+    "bem": "Casa em Atibaia",
+    "natureza": "particular",
+    "valor_total": 800000,
+    "valor_partilhavel": 0,
+    "meacao_fernanda": 0,
+    "fundamento": "Bem recebido por Marcelo em sucessão em 2019; CC art. 1.659, I (library/cc_comunhao_parcial.md). O valor de R$ 620.000 no formal de partilha é histórico; foi usado o valor atual informado de R$ 800.000.",
+    "controversia": "Não há avaliação atual datada nem informação sobre frutos da casa ou benfeitorias pagas com recursos comuns."
+  },
+  {
+    "bem": "FGTS de Marcelo formado durante o casamento",
+    "natureza": "comum",
+    "valor_total": 140000,
+    "valor_partilhavel": 140000,
+    "meacao_fernanda": 70000,
+    "fundamento": "Depósitos efetuados integralmente durante o casamento são partilháveis, com saque eventualmente diferido; STJ REsp 1.399.199/RS (library/stj_fgts_quotas_previdencia.md).",
+    "controversia": "Saldo e data-base dependem de extrato; a disponibilidade para compensação em dinheiro pode ser diferida."
+  },
+  {
+    "bem": "Quotas da Andrade Engenharia Ltda.",
+    "natureza": "misto",
+    "valor_total": 1500000,
+    "valor_partilhavel": 1100000,
+    "meacao_fernanda": 550000,
+    "fundamento": "Quotas constituídas em 2011 são particulares; como referência, comunica-se a diferença R$ 1.500.000 - R$ 400.000 = R$ 1.100.000 entre o valor atual e o valor ao casar, diante de lucros integralmente reinvestidos; CC arts. 1.659, I, e 1.660, V (library/cc_comunhao_parcial.md); STJ REsp 1.595.775/AP e orientação descrita em library/stj_fgts_quotas_previdencia.md. Fernanda recebe crédito econômico, sem ingresso societário.",
+    "controversia": "O valor de R$ 400.000 é estimativo, a data da separação de fato é desconhecida e o laudo não discrimina esforço/lucros reinvestidos de valorização externa. A extensão da valorização comunicável é controvertida; R$ 1.100.000 é base de negociação sujeita a apuração de haveres."
+  },
+  {
+    "bem": "PGBL de Fernanda em acumulação",
+    "natureza": "comum",
+    "valor_total": 90000,
+    "valor_partilhavel": 90000,
+    "meacao_fernanda": 45000,
+    "fundamento": "Aportes informados de 2016 a 2025; o saldo integral é tratado provisoriamente como formado na constância do casamento e partilhável na posição de referência; STJ REsp 1.698.774/RS (library/stj_fgts_quotas_previdencia.md).",
+    "controversia": "A jurisprudência descrita na biblioteca é divergente quanto à previdência privada aberta. Sem data da separação de fato e extrato, não se sabe se todos os aportes e rendimentos até 2025 integram o período comum."
+  },
+  {
+    "bem": "SUV utilizada pela família",
+    "natureza": "comum",
+    "valor_total": 120000,
+    "valor_partilhavel": 120000,
+    "meacao_fernanda": 60000,
+    "fundamento": "Bem móvel presumido adquirido durante o casamento e, assim, comum; CC arts. 1.660, I, e 1.662 (library/cc_comunhao_parcial.md). O financiamento de R$ 60.000 consta em DIVIDAS.",
+    "controversia": "Data de aquisição não informada; classificação supõe aquisição durante o casamento. Valor e saldo devedor sem data-base confirmada."
+  },
+  {
+    "bem": "DIVIDAS",
+    "natureza": "comum",
+    "valor_total": 360000,
+    "valor_partilhavel": -360000,
+    "meacao_fernanda": -180000,
+    "fundamento": "Financiamento do apartamento R$ 300.000 + financiamento do carro familiar R$ 60.000 = R$ 360.000. Ambos são tratados como encargos comuns para a proposta; obrigação para encargos da família segundo art. 1.664, como transcrito em library/cc_comunhao_parcial.md.",
+    "controversia": "Responsabilidade perante os credores e saldos na data de corte exigem contratos/extratos. O efeito da atribuição interna das dívidas perante os bancos não é tratado na biblioteca e deve ser verificado nos contratos."
+  },
+  {
+    "bem": "TOTAL",
+    "natureza": "misto",
+    "valor_total": 3850000,
+    "valor_partilhavel": 2290000,
+    "meacao_fernanda": 1145000,
+    "fundamento": "Ativos totais R$ 1.200.000 + 800.000 + 140.000 + 1.500.000 + 90.000 + 120.000 = R$ 3.850.000. Ativos comuns ou fração comunicável R$ 1.200.000 + 140.000 + 1.100.000 + 90.000 + 120.000 = R$ 2.650.000; menos dívidas comuns R$ 360.000 = R$ 2.290.000 líquidos; meação R$ 2.290.000 / 2 = R$ 1.145.000. Referências jurídicas nas linhas anteriores.",
+    "controversia": "Total líquido provisório, condicionado à data-base e comprovação dos valores, especialmente das quotas, do PGBL e das dívidas."
+  }
+]

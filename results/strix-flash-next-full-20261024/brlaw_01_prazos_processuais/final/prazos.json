@@ -1,0 +1,26 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "Publicação no DJe = primeiro dia útil seguinte à disponibilização (Lei 11.419/2006 art. 4º §3º; CPC art. 224 §2º): 19/11/2026 (qui) → 20/11/2026 é feriado (Dia de Zumbi/Consciência Negra, Lei 14.759/2023, calendário de Campinas) e 21–22/11 é fim de semana, logo publicação = 23/11/2026 (seg). Início da contagem = primeiro dia útil seguinte à publicação (Lei 11.419/2006 art. 4º §4º; CPC art. 224 §3º; dia do começo = data de publicação, CPC art. 231 VII) = 24/11/2026. Contestação: 15 dias em dias úteis (CPC art. 335 c/c art. 219), excluindo o dia do começo e incluindo o do vencimento (CPC art. 224 caput), pulando o feriado municipal de Campinas 08/12/2026 (N. Sra. da Conceição) → vencimento 15/12/2026. SEM prazo em dobro: CPC art. 229 §2º não aplica a contagem em dobro de litisconsortes com procuradores de escritórios distintos a processos em autos eletrônicos, e o feito é processo digital (e-SAJ, cabeçalho da intimação). Subsidiariamente, cessaria a dobro mesmo em autos físicos se, havendo apenas 2 réus, somente um oferecesse defesa (CPC art. 229 §1º). Citações: cpc_prazos.md, cpc_prazos_recursais.md, lei11419_art4.md, calendario_forense_campinas.md."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "2026-12-20 a 2027-01-20 — suspensão do curso do prazo processual (CPC art. 220; calendário: recesso 20/12/2026–20/01/2027, inclusive) — 32 dias corridos dentro do prazo de apelação; contagem retomada em 2027-01-21",
+      "2026-12-24 — sem expediente forense (calendário; dentro do período suspenso)",
+      "2026-12-25 — Natal (calendário; dentro do período suspenso)",
+      "2026-12-31 — sem expediente forense (calendário; dentro do período suspenso)",
+      "2027-01-01 — Confraternização Universal (calendário; dentro do período suspenso)",
+      "2027-01-25 — Aniversário de São Paulo: feriado apenas na Capital, NÃO em Campinas (calendário) → contado como dia útil",
+      "Fins de semana excluídos por serem dias não úteis (CPC art. 219)"
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "as_of": "2026-03-31",
+  "accounts": {
+    "1000": {
+      "debit": 10318.3,
+      "credit": 0.0
+    },
+    "1100": {
+      "debit": 115288.0,
+      "credit": 0.0
+    },
+    "1200": {
+      "debit": 21400.0,
+      "credit": 0.0
+    },
+    "1300": {
+      "debit": 4738.0,
+      "credit": 0.0
+    },
+    "1500": {
+      "debit": 148000.0,
+      "credit": 0.0
+    },
+    "1510": {
+      "debit": 0.0,
+      "credit": 61250.0
+    },
+    "2000": {
+      "debit": 0.0,
+      "credit": 29505.4
+    },
+    "2050": {
+      "debit": 0.0,
+      "credit": 2306.12
+    },
+    "2100": {
+      "debit": 0.0,
+      "credit": 4312.0
+    },
+    "2200": {
+      "debit": 0.0,
+      "credit": 45000.0
+    },
+    "2300": {
+      "debit": 0.0,
+      "credit": 4121.55
+    },
+    "3000": {
+      "debit": 0.0,
+      "credit": 60000.0
+    },
+    "3100": {
+      "debit": 0.0,
+      "credit": 1500.0
+    },
+    "3200": {
+      "debit": 212.0,
+      "credit": 0.0
+    },
+    "3900": {
+      "debit": 0.0,
+      "credit": 62017.0
+    },
+    "4000": {
+      "debit": 0.0,
+      "credit": 138720.0
+    },
+    "4100": {
+      "debit": 0.0,
+      "credit": 16200.0
+    },
+    "5000": {
+      "debit": 41800.9,
+      "credit": 0.0
+    },
+    "5100": {
+      "debit": 15400.0,
+      "credit": 0.0
+    },
+    "6000": {
+      "debit": 42600.0,
+      "credit": 0.0
+    },
+    "6050": {
+      "debit": 3919.2,
+      "credit": 0.0
+    },
+    "6100": {
+      "debit": 13500.0,
+      "credit": 0.0
+    },
+    "6200": {
+      "debit": 2452.4,
+      "credit": 0.0
+    },
+    "6300": {
+      "debit": 1150.0,
+      "credit": 0.0
+    },
+    "6400": {
+      "debit": 396.0,
+      "credit": 0.0
+    },
+    "6500": {
+      "debit": 35.0,
+      "credit": 0.0
+    },
+    "6600": {
+      "debit": 1772.25,
+      "credit": 0.0
+    },
+    "6800": {
+      "debit": 931.25,
+      "credit": 0.0
+    },
+    "6900": {
+      "debit": 1018.77,
+      "credit": 0.0
+    }
+  },
+  "totals": {
+    "debit": 424932.07,
+    "credit": 424932.07
+  },
+  "basis": "February 2026 trial balance + March-dated general ledger activity + adjusting entries AJE-1..AJE-7 (AJE-3 reflects the client's confirmation that the *4420 transfer is an owner contribution, credited to 3100). The single 2026-02-26 GL row (Cascade CH-7731 email copy) is excluded as prior-period activity assumed already inside the February TB."
+}

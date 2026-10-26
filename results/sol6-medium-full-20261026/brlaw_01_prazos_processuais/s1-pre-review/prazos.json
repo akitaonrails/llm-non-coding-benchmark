@@ -1,0 +1,51 @@
+{
+  "citacao": {
+    "disponibilizacao": "2026-11-19",
+    "publicacao": "2026-11-23",
+    "inicio_contagem": "2026-11-24",
+    "contestacao_vencimento": "2026-12-15",
+    "prazo_em_dobro": false,
+    "fundamento": "CPC arts. 335, III, e 231, VII: 15 dias; arts. 219 e 224: dias uteis, publicacao e inicio; art. 229, §2º: prazo em dobro inaplicavel a autos eletronicos, embora os procuradores sejam de escritorios distintos. Fontes: library/cpc_prazos.md; library/cpc_prazos_recursais.md; library/lei11419_art4.md; library/calendario_forense_campinas.md."
+  },
+  "sentenca": {
+    "disponibilizacao": "2026-12-10",
+    "publicacao": "2026-12-11",
+    "inicio_contagem": "2026-12-14",
+    "embargos_vencimento": "2026-12-18",
+    "apelacao_vencimento": "2027-02-03",
+    "dias_suspensos_ou_feriados_considerados": [
+      "2026-12-20",
+      "2026-12-21",
+      "2026-12-22",
+      "2026-12-23",
+      "2026-12-24",
+      "2026-12-25",
+      "2026-12-26",
+      "2026-12-27",
+      "2026-12-28",
+      "2026-12-29",
+      "2026-12-30",
+      "2026-12-31",
+      "2027-01-01",
+      "2027-01-02",
+      "2027-01-03",
+      "2027-01-04",
+      "2027-01-05",
+      "2027-01-06",
+      "2027-01-07",
+      "2027-01-08",
+      "2027-01-09",
+      "2027-01-10",
+      "2027-01-11",
+      "2027-01-12",
+      "2027-01-13",
+      "2027-01-14",
+      "2027-01-15",
+      "2027-01-16",
+      "2027-01-17",
+      "2027-01-18",
+      "2027-01-19",
+      "2027-01-20"
+    ]
+  }
+}

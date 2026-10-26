@@ -1,0 +1,61 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "questions": "# PERGUNTAS AO CLIENTE (QUESTIONS) — Aurora Estética LTDA\n\nResponder a estas perguntas permite fechar os `[ ]` de `contrato_social_ajustado.md` e refinar `numeros.json`. Sem as respostas, o parecer segue com as **premissas** da §9 de `parecer.md`.\n\n1. **Cenário do imóvel (decisivo):** manter a integralização do imóvel na PJ (→ Lucro Presumido, porque o aluguel de 40% veda o Simples) ou **imóvel fora da PJ** com a clínica locando a sala (→ Simples Anexo III, sem ITBI/ganho)? Recomendamos o segundo.\n2. **Aluguel real dos 40%:** valor mensal esperado do aluguel a terceiros (o parecer presumiu R$ 2.880/mês). Serve para o teste de preponderância do art. 37 do CTN.\n3. **Marina:** confirmando a vedação de administração (Lei 8.112, art. 117, X), o desenho **Felipe sócio+administrador / Marina fora do quadro** é aceitável? Cogitam algum dia alterar o regime de bens para viabilizar Marina sócia isolada?\n4. **Luana — aporte:** quanto ela pode integralizar **em dinheiro**? Parecer presume R$ 142.500 (Cenário A, 20%) ou R$ 37.500 (Cenário B). Se o aporte for menor, qual percentual aceitam (ex.: R$ 10.000 → 1,72%)? Aceitariam complementar por doação de quotas (com custo fiscal próprio)?\n5. **Pró-labore de mercado:** quanto pagariam de mercado (a) a um administrador de clínica (dedicado, não proprietário) e (b) a uma biomédica esteta contratada? Usamos R$ 5.000 como piso defensivo.\n6. **Retiradas:** aceitam o teto realista — casal ≈ **R$ 25.000/mês** (5.000 pró-labore + 20.000 lucros) e Luana ≈ R$ 10.000/mês — ou haverá aporte/revisão do faturamento para sustentar os R$ 50.000/mês?\n7. **Município de instalação** (ITBI, alvará, ISS) e UF da Junta Comercial.\n8. **Sócios em outras empresas:** Marina, Felipe ou Luana participam de **outra empresa optante pelo Simples**? (vedação do art. 17 da LC 123, conforme `library/lc123_vedacoes.md`).\n9. **Dra. Luana:** registro profissional/conselho da biomédica esteta e capacidade técnica instalada (equipamentos, protocolos) — para o CNAE 9602-5/02 e licenças.\n10. **Marina — sanidade do cargo:** o cargo de analista do Ministério da Saúde admite a condição de cotista (sem gestão)? Há regulamentação interna/declaração de conflito de interesses a observar? **[fora da biblioteca — verificação do cliente]**.\n11. **Não concorrência:** prazo/território que Luana aceita (proposta: 2 anos, Município-sede + limítrofes) e eventual contraprestação.\n\n# PERGUNTAS.md (entregável opcional)\n\nAs perguntas ao cliente estão consolidadas em **`QUESTIONS.md`** (nome exigido pelas regras de trabalho do `CONTRACT.md`). Este arquivo é um ponteiro e não duplica conteúdo.\n",
+  "facts": [
+    {
+      "id": "aluguel_pct",
+      "trigger": [
+        "alugar",
+        "locação",
+        "40%",
+        "terceiros",
+        "receita de aluguel"
+      ],
+      "answer": "Felipe: uns 40% da sala ficam vagos; vamos alugar para um dentista. Deve dar uns R$ 8 mil/mês.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "regime_bens",
+      "trigger": [
+        "regime de bens",
+        "comunhão",
+        "casados",
+        "pacto"
+      ],
+      "answer": "Marina: comunhão universal, casamos em 2010, sem pacto.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "luana_trabalho",
+      "trigger": [
+        "Luana",
+        "serviços",
+        "trabalho",
+        "integraliz",
+        "quotas por trabalho"
+      ],
+      "answer": "Luana: eu não tenho dinheiro pra aportar; a ideia é que meu trabalho vale 20%.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "marina_cargo",
+      "trigger": [
+        "servidora",
+        "administrar",
+        "Lei 8.112",
+        "cargo público",
+        "dedicação"
+      ],
+      "answer": "Marina: sou analista federal, 40h. Posso ser sócia, né? Administrar eu faria fora do expediente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "aluguel_pct",
+    "regime_bens",
+    "luana_trabalho",
+    "marina_cargo"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,21 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "status": "infrastructure_failed",
+  "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_07_holding_patrimonial/02-s1-work-client1",
+  "elapsed_seconds": 184.3578021050198,
+  "controller_wait_seconds": 23.002620458981255,
+  "model_turn_seconds": 161.35102016397286,
+  "turns": 2,
+  "released_facts": [
+    "deducoes",
+    "marcos"
+  ],
+  "usage": {
+    "input_tokens": 159259,
+    "cached_input_tokens": 145024,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 11015,
+    "reasoning_output_tokens": 4401
+  },
+  "api_equivalent_usd": 0.1676248
+}

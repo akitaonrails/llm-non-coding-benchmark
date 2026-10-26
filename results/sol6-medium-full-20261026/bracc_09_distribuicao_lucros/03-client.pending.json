@@ -1,0 +1,47 @@
+{
+  "case": "bracc_09_distribuicao_lucros",
+  "questions": "# Respostas do cliente e lacunas remanescentes\n\n- **Respondido:** não houve ata nem outra deliberação de distribuição até 31/12/2025; os sócios costumam distribuir quando há recursos.\n- **Relato posterior:** o sócio diz que a antiga contadora fazia distribuições semelhantes anualmente e propõe chamar os R$ 800.000 de “antecipação de lucros futuros”. Não foram fornecidos valores ou registros dessas operações anteriores; a proposta foi analisada no parecer sem presumir fatos adicionais.\n- **Sem informação adicional disponível:** montante dos impostos e contribuições incidentes sobre a apuração de 2025. O saldo de R$ 610.000 de tributos a recolher não foi identificado como despesa tributária anual.\n- **Sem informação adicional disponível:** origem da diferença de R$ 760.000 entre o ativo e a soma das linhas do passivo e patrimônio líquido do balanço; também não foi confirmado se o prejuízo de 2025 já integra os prejuízos acumulados.\n- **Sem informação adicional disponível:** existência de lucro acumulado ou reserva de lucros disponível que não conste do balanço, com a respectiva reconciliação.\n\nEssas lacunas estão refletidas no parecer e no `STATUS.md`. Não se presumiram respostas.\n\n",
+  "facts": [
+    {
+      "id": "auto",
+      "trigger": [
+        "auto de infração",
+        "impugnação",
+        "garantia",
+        "depósito",
+        "1.480"
+      ],
+      "answer": "Sócio B: impugnamos em 2024, está na DRJ. Não depositamos nem demos garantia — o advogado disse que não precisava.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deliberacao_2025",
+      "trigger": [
+        "ata",
+        "deliberação",
+        "aprovou",
+        "31/12",
+        "transição"
+      ],
+      "answer": "Sócio A: não fizemos ata nenhuma em dezembro. A gente distribui quando dá.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "mutuo",
+      "trigger": [
+        "mútuo",
+        "contrato",
+        "juros",
+        "prazo",
+        "pagar de volta"
+      ],
+      "answer": "Sócio A: mútuo sem juros, pago quando a empresa melhorar. Sem papelada.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "deliberacao_2025"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,47 @@
+{
+  "case": "uslaw_05_divorce_split_support",
+  "questions": "# Client question log (round 1 asked / round 2 answered)\n\nRound 1 asked 9 questions. The client answered two of them (below, \"ANSWERED\") and states she has\n**no additional information** on the rest. Per her instruction, answered questions are **not re-asked**;\nthe unanswered items are recorded here as **open unknowns**, each converted into a discovery/research\ntask rather than a question back to the client. They are also flagged in `advice.md` §10 and\n`STATUS.md`. None of them changes the direction of the advice.\n\n---\n\n## ANSWERED in round 2 (incorporated into the deliverables)\n\n- **Bonus history (round-1 Q4) — ANSWERED.** \"He always gets a bonus\"; 2025 was ≈ $40,000; his\n  affidavit's \"none expected\" is false.\n  *Incorporated:* `advice.md` §7 (bonus sensitivity $2,004.29 / $2,022.63 / $2,041.74 — same $3,050\n  bracket throughout), §8 (pattern, not one-off; strengthens Rule 16.2(e) leverage and the\n  expected-or-recurring-bonus test under *Col. Rev. Stat. §14-10-115*); `child_support.json` notes;\n  `division.json` `undisclosed_income` source.\n  *Still open inside this answer:* the ~$4,712 residual of the $27,212 YTD excess on the 2026-09-15\n  pay stub (see open unknown 4), and the fact that the $40,000 figure is **client-reported** — it must\n  be corroborated with his 2024–2025 W-2s to become employer evidence.\n\n- **Home preference / refinance feasibility (round-1 Q7, first half) — ANSWERED.** Wants to stay\n  3–6 years; does not know that she can refinance a $400,000 mortgage on $72,000 income; \"if I can't,\n  I'd have to sell.\"\n  *Incorporated:* `advice.md` §3 decision tree — keeping the house **solo** is off the table (P&I alone\n  is 44.1% of her gross); **Option C needs no refinance from her at all** because he stays on the\n  existing loan as co-obligor, so the exit trigger must be the **sale**, not her refinance; **Option B\n  (sell now) is the fallback**. Same caveats recorded in `division.json` alternatives B and C.\n\n---\n\n## OPEN UNKNOWNs — client has no further information (not re-asked; converted to tasks)\n\n1. **House running costs** (property tax, insurance, HOA, utilities, maintenance) for 48 Larkspur Ln.\n   Needed for the HOH \"more than half the cost of the home\" test (*IRC §2(b)*) and full carrying cost.\n   *Task:* county tax assessor statement + insurance declarations + 12 months of statements, via\n   discovery/disclosure (*Col. R. Fam. P. 16.2* financial disclosures).\n2. **Wife's marginal federal rate / last return.** The library fixes only Husband's 24% convention;\n   her rate prices her 401(k) share and any Form 8332 release. *Task:* her 2025 return; interim\n   handling = labeled 24% proxy in `division.json`.\n3. **Ages, specifically either party under 59½.** Drives the value of the *IRC §72(t)(2)(C)* QDRO\n   penalty exception and how hard to discount the 401(k)s. *Task:* confirmed from the parties'\n   pleadings; treat as unknown until then.\n4. **Source of the residual ~$4,712** of Husband's $27,212 YTD gross excess (2026-09-15 stub) beyond\n   the ≥$22,500 September bonus installment — commissions, an advance, or other income?\n   *Task:* interrogatory on the $27,212 + full 2025–2026 pay history and any commission plan documents.\n5. **Decree timing** relative to 12/31/2026 — flips 2026 filing status (*IRC §7703(a)*) and interacts\n   with §121 timing if a sale is scheduled pre-decree. *Task:* calendar/docket check with counsel.\n6. **Child-support termination terms** (age 18 / 19 / high-school graduation; support for a child still\n   in high school). Not in the library excerpt — flagged unverified, never assumed. Also affects the\n   length of the ~$2,023/mo stream and its total value.\n   *Task:* obtain the full guidelines text; flagged in `child_support.json`.\n7. **Whether Husband will cooperate with Option C** (remain on title and on the loan to ~2032 with an\n   indemnity package). This is the largest open variable: if he refuses, Option B (sell now) is the\n   plan, because solo retention is off the table per the round-2 answer.\n   *Task:* early written proposal with indemnity, escrow, insurance and life/disability protection\n   terms to test his position.\n8. **Children's add-on expenses** — who pays health-insurance premiums, and whether there are\n   work-related childcare/after-school costs. The worksheet excerpt we have contains no add-ons\n   section. *Task:* premium notices and childcare receipts; add-on support request if the full\n   guidelines authorize it.\n9. **What Husband offers for alternating dependent years.** No concrete offer is documented in the\n   file. *Task:* any such offer must be priced against the CTC only — HOH status, EITC and the\n   dependent-care credit stay with Wife (*library/filing_status_dependents.md*).\n",
+  "facts": [
+    {
+      "id": "house_plan",
+      "trigger": [
+        "sell",
+        "refinance",
+        "afford",
+        "how long",
+        "stay in the house"
+      ],
+      "answer": "I'd like to stay 3–6 years but I honestly don't know if I can refinance a $400k mortgage on $72k. If I can't, I'd have to sell.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "overnights",
+      "trigger": [
+        "overnights",
+        "parenting time",
+        "custody",
+        "70/30",
+        "nights"
+      ],
+      "answer": "Kids are with me about 255 nights a year.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "bonus_knowledge",
+      "trigger": [
+        "bonus",
+        "did you know",
+        "September paycheck",
+        "Granite Peak"
+      ],
+      "answer": "He always gets a bonus. He told me last year's was around $40k. His affidavit says none expected — that's not true.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "bonus_knowledge",
+    "house_plan"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

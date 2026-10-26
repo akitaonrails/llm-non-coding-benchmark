@@ -1,0 +1,28 @@
+{
+  "mes": "2026-03",
+  "lancamentos": [],
+  "retificacoes_meses_anteriores": [
+    {
+      "mes_origem": "2026-01",
+      "referencia": "AJ-01-2026-001 — NF 8812 Papel & Cia",
+      "valor": 11100.00,
+      "situacao": "O balancete acumulado de março ainda contém o crédito fiscal indevido de janeiro. Incorporar uma única vez o ajuste de janeiro descrito em mes_01/ajustes.json; não reconhecer nova despesa em março. A contrapartida contábil continua provisória, aguardando confirmação do total da NF 8812."
+    }
+  ],
+  "ajustes_fiscais_para_apuracao_trimestral": [
+    {
+      "mes_origem": "2026-02",
+      "referencia": "NF 4410 Brindes Prime",
+      "natureza": "adicao na Parte A do e-LALUR e na base de CSLL",
+      "valor": 48000.00,
+      "sem_lancamento_contabil": true
+    },
+    {
+      "mes_origem": "2026-02",
+      "referencia": "Recibo Associação Beneficente Luz",
+      "natureza": "adicao na Parte A do e-LALUR e na base de CSLL",
+      "valor": 30000.00,
+      "sem_lancamento_contabil": true
+    }
+  ]
+}

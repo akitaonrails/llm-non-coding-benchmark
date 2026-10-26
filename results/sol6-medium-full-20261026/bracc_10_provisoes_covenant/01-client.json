@@ -1,0 +1,7 @@
+{
+  "questions": "# Informações necessárias para fechar 31/12/2025\n\n1. Qual era, em 31/12/2025, o saldo contábil total das debêntures da 1ª emissão (principal e encargos incluídos na definição contratual de Dívida Líquida)? Esse saldo já está incluído nos R$ 31.200.000 de “Empréstimos e financiamentos — total” do balancete? Se estiver incluído apenas em parte, informe a parcela incluída e a parcela adicional.\n\n2. Os debenturistas que representam pelo menos 75% aprovaram algum *waiver* da cláusula 7.1(c)? Em caso afirmativo, informe a data em que a aprovação se tornou válida e seus termos, especialmente se já existia em 31/12/2025.\n\nEsses dados determinam os valores finais do índice e a classificação dos passivos sujeitos ao vencimento antecipado. Com os saldos conhecidos, antes de adicionar eventual valor de debêntures fora dos R$ 31,2 milhões, o índice corrigido já é (31,2 + 2,0 − 4,1) / 9,8 = 2,9694, acima do limite de 2,75.\n",
+  "released_fact_ids": [
+    "waiver"
+  ],
+  "answer": "CEO: ainda não falamos com os debenturistas. Se precisar, pedimos waiver em fevereiro.\nFor questions not answered above, the client has no additional information. Flag remaining unknowns explicitly."
+}

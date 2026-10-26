@@ -1,0 +1,5 @@
+The client confirmed the mortgage is nonrecourse, the 1% owner would be Nadia’s revocable trust, and the transfers have no loan paperwork. I’ll finish the opinion with the unresolved balance-sheet and loan facts stated explicitly, and show conditional figures where the files support them.
+
+The engagement is **complete with open items**. I recommend against the proposed holding company transaction, especially contributing Nadia’s Helio shares. At the supplied $9.4 million value, that contribution puts an illustrative **$9,388,000 QSBS exclusion** at risk.
+
+The deliverables are [opinion.md](/work/workspace/deliverable/opinion.md), [numbers.json](/work/workspace/deliverable/numbers.json), [agreements_required.md](/work/workspace/deliverable/agreements_required.md), and [STATUS.md](/work/workspace/deliverable/STATUS.md). The opinion shows the calculations and flags the unresolved $1,760,000 Properties balance-sheet discrepancy; the client has no further records to resolve it.

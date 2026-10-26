@@ -1,0 +1,5 @@
+Vou conferir esse ponto na orientação: `cStat=100` mostra autorização no ambiente indicado pelo XML, mas preciso separar isso do cumprimento das exigências de IBS/CBS em agosto.
+
+**Não necessariamente, Paulo.** A autorização mostra que a SEFAZ aceitou a nota no ambiente em que ela foi enviada. Ela não comprova, por si só, que a Horizonte cumpriu o destaque de CBS/IBS, a escrituração e a apuração exigidos para manter a dispensa do recolhimento em 2026. A volta à versão antiga do emissor não resolve a falta desses dados. [LC 214/2025](</work/workspace/library/lc214_2025_transicao.md>).
+
+Também não estou dizendo que uma nota autorizada perdeu sua autorização. A classificação “irregular” na [orientação atualizada](/work/workspace/deliverable/orientacao.md) se refere às exigências de IBS/CBS. Os XMLs que recebi mostram `cStat=100`, mas são de **homologação** (`tpAmb=2`). Precisamos dos XMLs e protocolos de produção para conferir as autorizações relatadas e entender por que notas sem o grupo passaram após 03/08, quando o [comunicado do CGIBS](/work/workspace/library/cgibs_comunicado_03_08_2026.md) prevê rejeição.

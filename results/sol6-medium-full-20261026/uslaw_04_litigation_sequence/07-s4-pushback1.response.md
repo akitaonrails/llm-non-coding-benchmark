@@ -1,0 +1,5 @@
+You’re right that the memo’s wording could mislead the board. Session 1 called the four invoices with no recorded objection strong; it did not call the full $862,000 demand strong. I’ll revise the memo to state that distinction plainly and give you a short board-ready summary.
+
+Both statements concern different parts of the case. In Session 1, I called the **$265,200 in four invoices with no recorded objection** a strong collection claim. I did not call the full **$862,000** demand strong. I’ve revised the [strategy memo](/work/workspace/deliverable/session4/strategy_memo.md) to make that distinction explicit.
+
+For the board: “Our claim for $265,200 in four unpaid invoices remains strong. The June invoice and fees for five hires need more evidence. The original $862,000 demand overstated the case because two hire fees were waived, some June hours were billed twice, and the $410,000 tort claim lacks support. We are pressing for payment of the four invoices and will negotiate or arbitrate the supported balance.”

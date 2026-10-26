@@ -1,0 +1,55 @@
+{
+  "as_of": "2025-03-31",
+  "contracts": [
+    {
+      "contract": "Trestle prior contract (C-026, corrected opening)",
+      "opening": 24600.0,
+      "billed": 0.0,
+      "recognized": 8200.0,
+      "closing": 16400.0,
+      "note": "Jan-2025 ASC 250 correction balance; service period Mar-May 2025; after March, 16,400 covers Apr-May 2025."
+    },
+    {
+      "contract": "Trestle renewal (C-026)",
+      "opening": 20000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 18000.0,
+      "note": "Mar-Dec 2025 at 2,000/month; after March, 18,000 covers Apr-Dec 2025."
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025 / INV-2250)",
+      "opening": 36000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 36000.0,
+      "note": "Fully deferred, $0.00 recognized - term unknown, no computable release (U10). No new Pinecone documents in March."
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027 / INV-2275)",
+      "opening": 0.0,
+      "billed": 18000.0,
+      "recognized": 1500.0,
+      "closing": 16500.0,
+      "note": "NEW March contract: annual upfront 12-month term stated on the order form; policy #1 release 18,000/12 = 1,500 for March; 16,500 covers Apr-2025 through Feb-2026."
+    }
+  ],
+  "total": {
+    "opening": 80600.0,
+    "billed": 18000.0,
+    "recognized": 11700.0,
+    "closing": 86900.0
+  },
+  "reconciliation_to_trial_balance": {
+    "2200 per trial balance (02/28/2025)": 80600.0,
+    "plus billed INV-2275 Marigold (JE-2503-002)": 18000.0,
+    "less recognized (JE-2503-015)": -11700.0,
+    "2200 per trial balance (03/31/2025)": 86900.0
+  },
+  "notes": [
+    "Monthly subscription customers (INV-2251..INV-2274) are billed and earned in the same month; no contract liability remains at month end, so they do not appear in this roll-forward.",
+    "Marigold Schools (C-027 / INV-2275): advance billed to 2200; term stated on the order form (12 months from 2025-03-01), release 18,000/12 = 1,500.00/month per board revenue policy #1.",
+    "Pinecone C-025: release 0.00 \u2014 no stated term (U10); cannot be classified current vs non-current (U6).",
+    "Closing 86,900.00 equals account 2200 net in month_03/trial_balance.json."
+  ]
+}

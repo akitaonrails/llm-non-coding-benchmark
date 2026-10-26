@@ -1,0 +1,27 @@
+# PERGUNTAS AO CLIENTE — CBS/IBS agosto/2026 — status após 1ª resposta
+
+## 1. Resposta recebida do cliente (out/2026) — registrada e incorporada
+
+> *"A rejeição dizia: 'Rejeição: Grupo IBSCBS não informado para emitente do regime regular (NT 2025.002)'. O TI 'contornou' voltando a versão do emissor."*
+
+- **Fecha:** Q3 (causa da autorização pós-03/08 sem o grupo) e parte da Q1 (a mensagem de rejeição foi identificada — provando que a validação da NT 2025.002 estava ativa e funcionando).
+- **Incorporado em:** `apuracao_teste.json` (motivos das NF 2308, 2309, 2310, 2312) e `orientacao.md` §4/§8: **reverter o rollback do emissor**, parametrizar por upgrade, tratar a inversão de alíquotas da NF 2309 como defeito à parte.
+- **Não se repete esta pergunta.**
+
+## 2. Demais tópicos: cliente **sem informação adicional** — explicitados como desconhecidos
+
+Não há novas perguntas: conforme informado, o cliente não tem mais dados. Os itens abaixo permanecem **desconhecidos abertos**, com o tratamento que lhes foi dado na apuração — todos explicitados também em `STATUS.md`, seção "Open items".
+
+| # | Desconhecido | Origem | Tratamento adotado |
+|---|---|---|---|
+| D1 | **Quais documentos** sofreram as 2 rejeições e se foram reemitidos dentro da série 2301–2312 | ex-Q1 (só a mensagem ficou respondida) | População = 12 saídas + 5 entradas fornecidas; base 480.000,00 reconcilia com a base PIS/COFINS da apuração normal (**premissa: nada falta**). Doc. adicional, se surgir, reabre a apuração |
+| D2 | Existência de **NFS-e (serviços)** ou outros documentos do mês além dos 17 fornecidos | ex-Q2 | Mesma premissa de população completa (D1) |
+| D3 | **Tratamento das 4 notas irregulares** (2308, 2309, 2310, 2312): cancelar/reemitir ou manter? | ex-Q4a | Sem direção da empresa; mecanismo de regularização **não consta na biblioteca** **[não verificado]** — decisão interna pendente |
+| D4 | BRISA e SERRA VERDE **já usaram** os créditos de 2312 (sem destaque) e 2309 (troca IBS/CBS)? | ex-Q4b | Impacto quantificado (2312: crédito perdido de 1.584,00 + 176,00; 2309: destaque sem lastro); comunicação aos clientes recomendada |
+| D5 | Decisão sobre o **crédito perdido de 480,00** da NF 2313 (48.000,00 × 1%) | ex-Q5 | Registrado como custo do mês (art. 346: sem destaque, sem crédito); sem mecanismo retroativo na biblioteca **[não verificado]** |
+| D6 | **Versão/data do rollback** do emissor e desde quando emissões saem sem grupo | derivado da resposta | Não informado; enquanto não revertido, cada nova emissão repete o erro — risco às competências seguintes |
+
+## 3. Consequência para o engajamento
+
+- A apuração e a orientação ficam **fechadas com a população fornecida**; os D1–D6 permanecem como **open items** em `STATUS.md` (status **COMPLETE WITH OPEN ITEMS**).
+- Se a empresa fornecer documentos adicionais (D1/D2), a apuração será refeita sob a mesma metodologia.

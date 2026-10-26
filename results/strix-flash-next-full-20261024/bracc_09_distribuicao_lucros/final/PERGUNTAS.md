@@ -1,0 +1,3 @@
+# PERGUNTAS
+
+Rodada 1 **encerrada** (cliente respondeu parcialmente e declarou não ter mais informações — respostas incorporadas ao parecer). Rodada 2 **aberta** com três perguntas novas: **Q7** (histórico de lucros distribuídos escriturados × resultado de cada exercício anterior) e **Q8** (projeção de lucro 2026), decorrentes do pedido do Sócio A de registrar os 800 mil como "antecipação de lucros futuros"; e **Q9** (conciliação do balanço recebido — Passivo + PL somam 10.610.000 contra total declarado de 9.850.000; achado da nossa revisão pré-entrega). Registro completo em `deliverable/QUESTIONS.md`; desconhecidos sinalizados U1–U9 no §7 de `parecer.md`. As conclusões não dependem das respostas: a "antecipação" é rejeitada no §6 do parecer independentemente delas.

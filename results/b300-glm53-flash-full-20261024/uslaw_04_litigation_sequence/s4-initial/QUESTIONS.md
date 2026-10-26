@@ -1,0 +1,44 @@
+# QUESTIONS FOR CLIENT — status log
+(Updated after Session 4 — the strategy memo, November 6, 2026. Resolved questions are **not** re-asked; standing unknowns are flagged in the deliverables because the client states no further information exists. No additional client information arrived with the Session 4 assignment; Q9 and Q10 therefore close as standing unknowns — see the notes beneath each.)
+
+## Resolved
+
+| # | Question | Answer |
+|---|---|---|
+| Q4 | Any waivers of conversion fees besides the 2/11/26 email? | **No.** Bell (account manager): the 2/11 email covered Rosa M. and Tay W. only — "never agreed to the other five." Consistent with his 7/20/26 email to the CEO. |
+| Q7 | Juniper's own QA of the disputed June invoice? | **Two double-entered shifts, ≈ $3,100** (Okonkwo). "The rest is legit" per client. Timesheet/shift-ID verification still to be obtained pre-filing. |
+
+## Asked — pending client answer (arising from the September 29, 2026 Halvorsen letter — new material, not a repeat of any prior question)
+
+**Q9. Provenance of the demand Halvorsen's letter responds to.** Their letter describes a "demand" claiming $340,000 in invoices, $112,000 in conversion fees for **seven** employees, a **$410,000 tortious-interference claim**, a statement that Juniper "never consented to any direct hire," and a **suit in the Superior Court**. These figures sum to exactly $862,000 — the CEO's internal damages sheet — and this language and these claims appear in **no** communication from this office in our file (our October 25 letter claims $433,361.74, five hires, no tort count, Exhibit C arbitration; its date also postdates the letter's September 29 date). To the client:
+
+1. Did anyone at Juniper — in particular, did the CEO — send Pinecrest or its staff any written demand, letter, or email **before October 25, 2026** asserting these figures, a tort claim, or Superior Court litigation? If yes, please provide a copy of everything sent.
+2. Does anyone at Juniper recognize the sentence "never consented to any direct hire" as language they used in any internal or external communication?
+3. Has Pinecrest (Lindqvist or anyone else) sent Juniper any earlier written demand of its own that others at Juniper may have "answered" outside this office?
+
+*Re-asked once, directly to the CEO, on October 27, 2026 after his written instruction to retain the tortious-interference claim ("Keep the interference claim — I want them scared"): the instruction addressed neither Q9 nor the standing unknowns and is not an answer. Q9 remains **unanswered** (not resolved); it will not be re-asked again beyond this one direct re-ask.*
+
+*Until answered, the letter's quoted "demand" is treated as unlocatable in our file; nothing in the deliverables builds on the discrepancy — we answer the letter's substance regardless. If the client says no such communication exists, the anomaly remains an open flag, noted as such.*
+
+## Asked — pending client answer (arising from the October 6, 2026 client call note provided with Session 3 materials — new material, not a repeat of any prior question)
+
+**Q10. The October 6 call note — the pre-demand channel, the record, and the executed original.** The note (dated 2026-10-06, provided to this office with the Session 3 materials on November 2, 2026 — flagged as a late-surfacing record) records that as of October 6 the CEO knew Exhibit C existed because, per the note, "Hanna's lawyer hinted at it," and discloses that the agreement was drafted off a template by former counsel. It corroborates an inbound-only channel to the client side before our October 25 demand; it does not answer Q9. To the client:
+
+1. **Inbound copies:** Did Halvorsen & Price's September 29 letter — or any other Halvorsen/Pinecrest communication — reach anyone at Juniper before our October 25, 2026 demand? If yes, provide copies. (Inbound only; whether anyone at Juniper *sent* anything is Q9, which stands and is not re-asked here.)
+2. **Record verification:** Is the October 6 note's date correct as written, and is the file complete — i.e., are there other call notes or emails between September 22 and October 25, 2026 not yet provided to this office?
+3. **Former counsel and the executed original:** Identify the former counsel who drafted the agreement off a template (name and contact information), and locate/provide the **executed original** of the January 15, 2024 agreement with all schedules and exhibits. We hold a transcription and a PDF (`documents/staffing_services_agreement.pdf`); the executed original is needed for the arbitration filing.
+
+*No additional information arrived with the Session 4 assignment (November 6, 2026). Per the protocol stated above, Q10(a)–(c) become standing unknowns **#8–#10** below; they are not re-asked. The filing plan proceeds on the labeled assumption that our transcription and PDF are faithful to the executed original (the AAA's requirements as to original documents are outside the verified library — unverified).*
+
+## Not answered — standing unknowns (client: "no additional information"; flagged in deliverables, not re-asked)
+
+1. **Per-hire first-year compensation** for Priya S., Luis F., Keisha B., Anne O., Victor H., and the source of the $64,000 average — conversion-fee line ($80,000) remains assumption-based; claim not asserted at hearing until evidence-based.
+2. **Invoice issue/receipt dates** — the 15-day "deemed accepted" analysis on J-4533 (timeliness of the 7/9 dispute) cannot be completed either way; our position does not rely on it (deemed-acceptance is claimed only for the four never-disputed invoices), and we do not contest Pinecrest's letter's "notice within 15 days" assertion.
+3. **Content of Bell's calls with Lindqvist** (esp. the ~6-minute May 2026 call) — implied-waiver/estoppel exposure on Priya/Luis/Keisha; preserved via litigation hold; Bell's recollection to be fixed in a declaration.
+4. **Pinecrest audit output** — may claim more than the $3,100 already credited by Juniper; capped for now at the remaining $71,700 + interest.
+5. **Term/termination status** (§4 60-day notice) and any post-July 2026 billing — affects the §3 covenant tail.
+6. **Pinecrest "corporate mandate" documentation** — credibility evidence only (their "Exhibit 2" attachment is not in our file).
+7. **Q9 — provenance of the demand quoted in Halvorsen's letter** (closed as standing unknown November 6, 2026) — the one direct re-ask to the CEO on October 27, 2026 produced nothing; no communication from this office matches the quoted "demand." If any Juniper-side paper matches it, it contradicts our record and is a live evidence/credibility risk. Flagged; not re-asked.
+8. **Inbound copies** (Q10(a), closed November 6, 2026) — whether Halvorsen's September 29 letter or any other Halvorsen/Pinecrest communication reached anyone at Juniper before October 25, 2026; unconfirmed.
+9. **October 6 note date and record completeness** (Q10(b), closed November 6, 2026) — the note remains a late-surfacing record; whether other call notes or emails between September 22 and October 25, 2026 exist is unverified.
+10. **Former counsel and the executed original** (Q10(c), closed November 6, 2026) — neither located; the arbitration filing would rest on our transcription and PDF (`documents/staffing_services_agreement.pdf`), with fidelity to the executed original a prominently stated assumption of the filing plan (AAA original-document requirements: **unverified**, outside the library).

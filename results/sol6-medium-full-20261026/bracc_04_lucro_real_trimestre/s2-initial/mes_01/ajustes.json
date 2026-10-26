@@ -1,0 +1,16 @@
+[
+  {
+    "data": "2026-01-31",
+    "ref": "AJ01-NF8812",
+    "historico": "Estorno do crédito de PIS/COFINS da NF 8812, referente a material de uso e consumo administrativo. Premissa: o valor devido ao fornecedor é R$ 120.000,00, igual ao único valor exibido na NF recebida; confirmar total da nota.",
+    "debito": {"conta": "2.1.01", "nome": "Fornecedores", "valor": 11100.00},
+    "credito": {"conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "valor": 11100.00}
+  },
+  {
+    "data": "2026-01-31",
+    "ref": "AJ02-PISCOFINS",
+    "historico": "Compensação do crédito elegível de PIS/COFINS sobre compras de mercadorias contra o débito das vendas de janeiro.",
+    "debito": {"conta": "2.1.03", "nome": "Tributos a recolher", "valor": 155067.00},
+    "credito": {"conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "valor": 155067.00}
+  }
+]

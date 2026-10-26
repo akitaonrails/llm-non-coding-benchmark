@@ -1,0 +1,56 @@
+[
+  {
+    "rank": 1,
+    "clause": "§9.1/§10.1",
+    "playbook_rule": "A1",
+    "severity": "hard",
+    "issue": "§10.1 promises RouteWise's IP-infringement indemnity is 'uncapped', but §9.1 caps each party's aggregate liability at 12 months' fees and opens 'NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS AGREEMENT', and §9.3's carve-outs (gross negligence, willful misconduct, fraud, Customer's payment obligations) do not include §10.1. Per the library (Restatement (Second) of Contracts §203; Delaware 'notwithstanding anything to the contrary' authority), the cap controls over §10.1's contrary statement because the cap clause itself does not carve the indemnity out. Net effect: the IP indemnity is capped at roughly $222,000 (12 x $18,500; about $239,760 if the 8% uplift applies), and §12.3 keeps the capped §9/§10 alive after termination.",
+    "why": "Playbook hard rule A1 requires an uncapped vendor IP indemnity that is not cut back through the limitation-of-liability clause. Playbook drafting note C2 warns about exactly this 'notwithstanding' pattern. Any IP judgment plus the duty to pay 'all damages, costs and attorneys' fees' (§10.1) would come out of the $222,000 cap first, leaving Cobalt to fund the overage on a tool it licenses from RouteWise. Redline at redlines.md RL-1. (Do NOT otherwise disturb §9: playbook B1 accepts a mutual 12-24 month cap with gross-negligence/willful-misconduct/fraud carve-outs, which §9.1/§9.3 give us.)",
+    "redline": "§9.1 becomes: 'EXCEPT AS PROVIDED IN SECTION 9.3, IN NO EVENT SHALL EITHER PARTY'S AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT EXCEED THE FEES PAID OR PAYABLE BY CUSTOMER IN THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM.' §9.3 becomes: 'The exclusions and limitations in this Section 9 shall not apply to: (a) a party's liability for its gross negligence, willful misconduct, or fraud; (b) a party's obligations under Section 10 (Indemnification), Provider's obligations under Section 10.1 being uncapped; or (c) Customer's obligation to pay fees due under this Agreement.' §10.1 unchanged."
+  },
+  {
+    "rank": 2,
+    "clause": "§5.3/Exhibit C",
+    "playbook_rule": "A2",
+    "severity": "hard",
+    "issue": "Exhibit C (Data Processing Addendum) reads '[To be attached.]'; §5.3 only promises the parties 'shall enter into' a DPA later. The GC has confirmed Cobalt will run EU driver data through RouteWise, so Exhibit C must be attached and executed at signing.",
+    "why": "Playbook hard rule A2: a DPA executed at signing is mandatory whenever EU/UK personal data is processed, and \"'To be attached' is not acceptable.\" The library (Regulation (EU) 2016/679, Art. 28(3)) requires a binding contract stipulating items (a)-(h) (documented instructions, confidentiality, security, sub-processor conditions, controller assistance, deletion/return, audit); it states that 'absent such a contract, the controller is in breach of Art. 28 from the first day of processing' - and Cobalt is the controller of its driver/customer data. Signing without the DPA puts Cobalt in immediate statutory breach. (Penalty levels for Art. 28 breaches are outside this closed library and are treated as unverified; the breach itself is supported by the library.) Redline at redlines.md RL-2.",
+    "redline": "§5.3 replaced (full text at redlines.md RL-2): 'The parties execute and attach as Exhibit C the Data Processing Addendum, which is incorporated into this Agreement and binds Provider with regard to all processing of personal data subject to the GDPR or UK GDPR performed by Provider on Customer's behalf... Provider shall not process any personal data of EU or UK residents until Exhibit C has been executed. Exhibit C stipulates, at minimum, that Provider: (a) processes personal data only on Customer's documented instructions; (b) ensures confidentiality of authorized personnel; (c) takes the security measures required by Article 28(3)(c); (d) respects the sub-processor conditions of Article 28(3)(d); (e)-(f) assists Customer as required by Article 28(3)(e)-(f); (g) deletes or returns Customer Data as required by Article 28(3)(g); and (h) makes available all information and permits audits as required by Article 28(3)(h).' Exhibit C placeholder '[To be attached.]' replaced with the executed DPA itself (Cobalt template to be attached - open action)."
+  },
+  {
+    "rank": 3,
+    "clause": "Exhibit A (Order Form) pricing-adjustments ¶; §4.4/§14.1",
+    "playbook_rule": "A3",
+    "severity": "hard",
+    "issue": "Order Form ¶4 lets Provider raise fees (i) once during the Initial Subscription Term on 60 days' notice and (ii) for any renewal term, each by up to 'the greater of 8% or the change in the CPI-U'. §14.1 makes the Order Form control over the MSA on its subject matter, so this clause wins any conflict with the MSA - the fix must be made in the Order Form.",
+    "why": "Playbook hard rule A3: no unilateral increases during an initial term; renewal increases capped at the LOWER of 5% or CPI, with 90 days' notice. This clause violates all three elements. Arithmetic: 8% of $18,500 = +$1,480/month, i.e. $19,980/month = $239,760/year. If used at month 18, it adds 18 x $1,480 = $26,640 over the remaining initial term; the same 8% on renewal adds $17,760/year over current fees ($239,760 - $222,000) for 24 months. A compliant 5% cap would be 0.05 x $222,000 = $11,100/year, a $6,660/year swing at renewal. Redline at redlines.md RL-3.",
+    "redline": "Order Form ¶4 replaced: '4. Pricing adjustments. The fees for the Initial Subscription Term are fixed and shall not be increased. Fees for any renewal term shall not increase by more than the lesser of (a) five percent (5%) and (b) the increase in CPI-U (All Items, U.S. City Average) over the twelve (12) months preceding the start of the renewal term. Provider shall give Customer written notice of any renewal-term fee increase at least ninety (90) days before the start of that renewal term.'"
+  },
+  {
+    "rank": 4,
+    "clause": "§3.3",
+    "playbook_rule": "A4",
+    "severity": "hard",
+    "issue": "Each Subscription Term auto-renews for successive 24-month terms unless notice of non-renewal is given at least 90 days before term end.",
+    "why": "Playbook hard rule A4: auto-renewal terms no longer than 12 months, with non-renewal notice of 30 days or less. As written, a missed calendar date at month 33 (90 days before the 36-month end) locks Cobalt into 24 more months: at increased fees, 24 x $19,980 = $479,520 of committed spend (24 x $18,500 = $444,000 at current fees), versus a maximum playbook-style exposure of 12 x $19,425 = $233,100 per renewal cycle at the 5% cap. Redline at redlines.md RL-4.",
+    "redline": "§3.3 replaced: 'Each Subscription Term shall automatically renew for successive renewal terms of twelve (12) months unless either party gives written notice of non-renewal at least thirty (30) days before the end of the then-current term.'"
+  },
+  {
+    "rank": 5,
+    "clause": "§2.2/Order Form",
+    "playbook_rule": "A5",
+    "severity": "hard",
+    "issue": "§2.2 licenses 'Customer only' and expressly excludes Affiliates 'unless named on an Order Form at additional fees'. Exhibit A names only Cobalt Logistics Holdings LLC; no affiliate is named.",
+    "why": "Playbook hard rule A5 requires Cobalt Freight Europe B.V. and Cobalt Brokerage LLC to be covered at no additional fee, or Holdings must sign on behalf of the affiliates. Assumption (stated, not verified with client): the EU entities - the ones running Rotterdam/Hamburg operations and the source of the EU driver data - will use the platform; if they do, §2.2 as written either bars their use or triggers extra fees. Stated alternative fix: signature by Holdings on behalf of the named affiliates. Redline at redlines.md RL-5. Commercial note (not a rule violation): confirm the 350-vehicle cap covers all entities' combined fleets.",
+    "redline": "§2.2 replaced: 'The license granted hereunder extends to Customer and Customer's Affiliates, including Cobalt Freight Europe B.V. and Cobalt Brokerage LLC, at no additional fees and without the need for a separate Order Form, with Users of such Affiliates counting as Customer's Users under this Agreement, subject in each case to the vehicle and usage limits stated in the applicable Order Form.' (Alternative per A5: Holdings signs on behalf of the named affiliates.)"
+  },
+  {
+    "rank": 6,
+    "clause": "Exhibit B (SLA)",
+    "playbook_rule": "B5",
+    "severity": "preferred",
+    "issue": "Service credits are the sole remedy for availability failures, but the SLA contains no termination right for chronic failure.",
+    "why": "Playbook B5 accepts 99.5% with credits and accepts credits-as-sole-remedy only if a termination right exists for chronic failure (3 months in any 6). That termination right is missing. The sole remedy is small: max credit 25% x $18,500 = $4,625 per month, whatever the outage costs the business. Not a hard rule - negotiate; concession requires Legal approval. Proposed language at redlines.md RL-6.",
+    "redline": "Add to Exhibit B: 'If actual availability falls below the target in any three (3) calendar months within any consecutive six (6) month period, Customer may terminate the affected Order Form on thirty (30) days' notice without penalty and receive a pro-rata refund of prepaid unused fees.'"
+  }
+]

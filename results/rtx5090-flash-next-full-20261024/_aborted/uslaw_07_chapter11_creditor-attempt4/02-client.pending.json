@@ -1,0 +1,47 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "questions": "# Remaining unknowns — flagged, not re-asked\n\nThe client answered what it could on 2026-03-19 (terms change and oldest-first shipping\ncondition; the Feb 27 wire demand; the \"pay first\" answer to debtor's counsel) and states it\nhas **no additional information** on the rest. This file therefore does not repeat answered\nquestions. It lists every material fact still unknown, the assumption we are proceeding under,\nand where each item actually gets resolved (docket, claims agent, debtor's counsel, or Mesa's\nown records).\n\n**Resolved since the last round (no client input needed):**\n\n- **$210,000 vs $125,000** — pure arithmetic: the Mar 12 letter quoted the **gross** of the six\n  ledger invoices (48,200 + 62,400 + 41,300 + 6,900 + 36,800 + 14,400 = 210,000) with no credit\n  for the **$85,000 already paid** in February (MS-7701 $48,200 in full on Feb 10; MS-7740\n  $36,800 partial on Feb 27). 210,000 − 85,000 = **125,000**. Claim confirmed at $125,000; see\n  `proof_of_claim_draft.md` §5.\n- **Terms-change and wire-demand facts** — now client-admitted; folded into the preference\n  analysis (`claim_analysis.json` preference; `advice_to_ceo.md` §2).\n\n---\n\n**U1 — §503(b)(9) procedure under the bar-date order.** The bar-date order itself is not in the\nfile, and the notice does not say whether a separate §503(b)(9) motion or pleading is required.\n*Assumption:* asserting §503(b)(9) priority on the Form 410 filed by the bar date preserves the\npriority (the library covers claim filing, not 503(b)(9) motion practice). *Resolution:* pull\nthe docket via the claims agent at filing; ask debtor's counsel before the Apr 2 hearing.\n\n**U2 — DIP blanket lien scope.** The library note on reclamation assumes blanket liens defeat\nreclamation; the actual DIP/cash-collateral order is not in the file. *Assumption:* reclamation\nis preserved but economically hollow. *Resolution:* docket pull.\n\n**U3 — Scheduling and service.** The §341/bar-date notice in the file suggests Mesa was a\nnoticed creditor, but the schedules are not in the file (amount scheduled, any objection).\n*Assumption:* Mesa is scheduled; no amendment needed if we file by the bar date. *Resolution:*\nclaims agent / schedules on the docket.\n\n**U4 — Notice date anomaly.** The notice recites \"Notice dated: April 2, 2026,\" a date *after*\ntoday (2026-03-19). Client cannot resolve it. *Assumption:* the recited bar date **June 11,\n2026, 5:00 p.m. MT** is operative; we calendar it and file well before. *Resolution:* confirm\nthe operative order on the docket; if an earlier bar date surfaces, the early filing already\nprotects us.\n\n**U5 — Reclamation facts (traceability, insolvency at receipt).** Whether the MS-7740/7788/7815\nsteel remains identifiable and unprocessed at Redwood's yard, and Redwood's insolvency at\nreceipt, are unknown. *Assumption/plan:* serve the written §546(c)(1) demand by **March 30,\n2026** regardless — it is cheap and preserves leverage (see `advice_to_ceo.md` §3).\n*Resolution:* debtor's inventory records / site inquiry post-service.\n\n**U6 — Date of Frank's \"pay first\" call to Redwood's counsel.** The only undated incident; it\nsits on the stay-violation timeline (first documented Mesa knowledge of the case: the Mar 15\ncall) and it frames the critical-vendor problem. *Assumption:* it occurred post-petition (the\nsupply-on-normal-terms offer concerns the Chapter 11 supply relationship) — date unknown,\nflagged. *Resolution:* Mesa's own phone records/calendars — pull **now**, this is a records\ntask, not a court question.\n\n**U7 — Whether the \"hold all future shipments\" threat was carried out.** Affects stay-violation\ndamages exposure and the critical-vendor narrative. *Assumption:* no post-petition shipment\nhold has been executed; all shipping continues only on ordinary case terms. *Resolution:*\nMesa's shipping records for Mar 18 → present.\n\n**U8 — Master supply agreement / late-payment interest terms.** The only terms document in the\nfile is the unilateral 2026-01-20 e-mail; no signed master agreement or interest clause is in\nthe file. *Assumption:* no enforceable contractual late interest; the claim asserts **no**\ninterest (Form 410 Item 5) and can be amended before the bar date if terms surface.\n*Resolution:* Mesa's contract files (records task).\n\n**U9 — Guaranties, UCC filings, judgments, other outside-the-estate avenues.** Nothing in the\nfile; client has no additional information. *Assumption:* none exist; we pursue nothing outside\nthe estate. *Resolution:* Mesa's contract/collection files (records task). Any such avenue\nwould need separate analysis — the library does not cover guaranty or co-debtor treatment, so\nno position is taken here.\n\n**U10 — Completeness of the payment ledger for the preference window.**\n*Assumption:* `payment_history_12m.csv` is complete for Dec 10, 2025 – Mar 10, 2026 —\n`transfers_in_90_days: 180,000` rests on it. *Resolution:* reconcile against Mesa's bank\nstatements before any preference negotiation (records task).\n",
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "critical_vendor",
+    "terms"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,26 @@
+data,ref,conta,nome,historico,debito,credito
+2026-03-28,VENDAS,1.1.02,Clientes,Vendas 03/2026,2620000.00,
+2026-03-28,VENDAS,3.1.01,Receita bruta de vendas,Vendas 03/2026,,2620000.00
+2026-03-28,TRIB,3.1.02,(-) PIS/COFINS sobre vendas,"PIS/COFINS s/ vendas 9,25%",242350.00,
+2026-03-28,TRIB,2.1.03,Tributos a recolher,"PIS/COFINS s/ vendas 9,25%",,242350.00
+2026-03-28,TRIB,3.1.03,(-) ICMS sobre vendas,ICMS s/ vendas (líquido de créditos) 7%,183400.00,
+2026-03-28,TRIB,2.1.03,Tributos a recolher,ICMS s/ vendas (líquido de créditos) 7%,,183400.00
+2026-03-28,CMV,4.1.01,CMV,CMV,1441000.00,
+2026-03-28,CMV,1.1.03,Estoques,CMV,,1441000.00
+2026-03-15,COMPRA,1.1.03,Estoques,Compras de mercadorias (com crédito PIS/COFINS),1729200.00,
+2026-03-15,COMPRA,1.1.04,Tributos a recuperar (PIS/COFINS),Compras de mercadorias (com crédito PIS/COFINS),159951.00,
+2026-03-15,COMPRA,2.1.01,Fornecedores,Compras de mercadorias (com crédito PIS/COFINS),,1889151.00
+2026-03-25,FOLHA,4.2.01,Despesas com pessoal,Folha e encargos,210000.00,
+2026-03-25,FOLHA,2.1.02,Obrigações trabalhistas,Folha e encargos,,210000.00
+2026-03-20,ADM,4.2.03,Despesas administrativas,Despesas administrativas,96000.00,
+2026-03-20,ADM,1.1.01,Caixa e bancos,Despesas administrativas,,96000.00
+2026-03-28,DEPR,4.2.05,Depreciação,Depreciação,51667.00,
+2026-03-28,DEPR,1.2.02,(-) Depreciação acumulada,Depreciação,,51667.00
+2026-03-28,FIN,4.3.01,Despesas financeiras,Juros empréstimo,28000.00,
+2026-03-28,FIN,1.1.01,Caixa e bancos,Juros empréstimo,,28000.00
+2026-03-27,RECEB,1.1.01,Caixa e bancos,Recebimentos de clientes,2620000.00,
+2026-03-27,RECEB,1.1.02,Clientes,Recebimentos de clientes,,2620000.00
+2026-03-27,PGTO,2.1.01,Fornecedores,Pagamentos a fornecedores,1729200.00,
+2026-03-27,PGTO,1.1.01,Caixa e bancos,Pagamentos a fornecedores,,1729200.00
+2026-03-20,COM,4.2.02,Despesas comerciais,Despesas comerciais ordinárias,85000.00,
+2026-03-20,COM,1.1.01,Caixa e bancos,Despesas comerciais ordinárias,,85000.00

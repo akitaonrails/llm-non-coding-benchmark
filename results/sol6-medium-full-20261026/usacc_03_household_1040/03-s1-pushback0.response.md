@@ -1,0 +1,3 @@
+Marcus’s $28,000 K-1 loss is limited to his **$11,500 stock basis**. He reports no direct loan to the company, so he has no debt basis. That leaves **$16,500 suspended** to carry forward until basis is restored. [Form 7203 instructions](/work/workspace/library/form7203_instructions_excerpt.md).
+
+Pike’s guarantee of the company’s bank line does not count as a loan from Marcus. Under the supplied instructions, even a shareholder’s guarantee alone does not create debt basis; a direct shareholder loan does. Your buddy’s basis or loan facts may be different.

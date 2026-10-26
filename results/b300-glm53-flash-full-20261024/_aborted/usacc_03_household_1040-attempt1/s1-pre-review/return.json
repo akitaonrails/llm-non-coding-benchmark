@@ -1,0 +1,45 @@
+{
+  "form1040": {
+    "1a_wages": 122000,
+    "2b_interest": 400,
+    "8_other_income_sch1": 0,
+    "11_agi": 118350,
+    "12_deduction": 31500,
+    "15_taxable_income": 86850,
+    "16_tax": 9945,
+    "19_ctc": 2200,
+    "17_sch2_excess_aptc": 3150,
+    "24_total_tax": 13095,
+    "25d_withholding": 8730,
+    "34_refund_or_37_owed": 4365
+  },
+  "form7203": {
+    "stock_basis_begin": 11500,
+    "loss_allowed": 11500,
+    "loss_suspended": 16500
+  },
+  "form8582": {
+    "rental_loss": 21018,
+    "magi": 128900,
+    "special_allowance": 10550,
+    "loss_allowed": 10550,
+    "carryforward": 10468
+  },
+  "form8962": {
+    "household_income": 118350,
+    "fpl_pct": 379.3,
+    "applicable_figure_pct": 7.983,
+    "annual_ptc": 5416,
+    "aptc": 9900,
+    "excess": 4484,
+    "repayment_limitation": 3150,
+    "repayment": 3150
+  },
+  "dependents": ["Sofia Reyes (15) - daughter; CTC applies"],
+  "ny": {
+    "resident_days": 181,
+    "marcus_ny_wages": 68000,
+    "elena_ny_wages": 54000,
+    "method": "All 2025 wages are NY source: wages earned while NY resident (Jan 1-Jun 30) plus, for Jul-Dec, wages paid by NY employers for remote work from Florida for the employees' own convenience under the convenience-of-the-employer rule (IT-203-I)"
+  }
+}

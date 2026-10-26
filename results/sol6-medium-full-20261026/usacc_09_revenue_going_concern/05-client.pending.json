@@ -1,0 +1,43 @@
+{
+  "case": "usacc_09_revenue_going_concern",
+  "questions": "# Client information needed to complete the Q4 2025 close\n\n**Client response:** No additional information is available for the questions below. They are recorded as open items, not pending requests.\n\n1. For the Ironvale agreement, what amount of the $18,000 monthly fee is allocated to the dedicated servers and storage, and what amount to power, cooling, and network? Please provide the standalone prices or other basis used for the allocation. If no allocation has been prepared, please say so.\n2. What supported discount rate should be used to measure the Ironvale lease liability at its October 1, 2025 commencement? Please provide the rate and basis.\n3. Besides the non-binding Crestline term sheet, does management have any documented financing or other cash plan that can be effectively implemented and is probable to cover the projected cash deficit beginning February 20, 2026? If so, provide the amount, committed status, conditions, expected funding date, and supporting documents.\n\nThe first two answers are needed to calculate the right-of-use asset and lease liability. The third could change the going-concern plan assessment.\n",
+  "facts": [
+    {
+      "id": "side_letter_signed",
+      "trigger": [
+        "side letter",
+        "countersigned",
+        "return right",
+        "refund"
+      ],
+      "answer": "Yes, Alvarado countersigned it. Saltline insisted. It's just a comfort letter.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "kits_tagged",
+      "trigger": [
+        "segregated",
+        "tagged",
+        "identified",
+        "which kits",
+        "general stock"
+      ],
+      "answer": "They're on the shelf with everything else. Same SKU, no point tagging.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "halvorsen_status",
+      "trigger": [
+        "Halvorsen",
+        "definitive",
+        "MSA signed",
+        "procurement committee"
+      ],
+      "answer": "Procurement meets Jan 20. Security review is 'in progress'. They're committed, trust me.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

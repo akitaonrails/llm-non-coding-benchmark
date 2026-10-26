@@ -1,0 +1,23 @@
+conta,nome,debito,credito
+1.1.01,Caixa e bancos,2504600.0,0.0
+1.1.02,Clientes,3920000.0,0.0
+1.1.03,Estoques,4689400.0,0.0
+1.1.04,Tributos a recuperar (PIS/COFINS),166167.0,166167.0
+1.2.01,Imobilizado,6200000.0,0.0
+1.2.02,(-) Depreciação acumulada,0.0,2531667.0
+2.1.01,Fornecedores,0.0,3436167.0
+2.1.02,Obrigações trabalhistas,0.0,820000.0
+2.1.03,Tributos a recolher,155067.0,1152750.0
+2.1.04,Empréstimos,0.0,2400000.0
+2.3.01,Capital social,0.0,5000000.0
+2.3.02,Reservas / lucros acumulados,0.0,2000000.0
+3.1.01,Receita bruta de vendas,0.0,2540000.0
+3.1.02,(-) PIS/COFINS sobre vendas,234950.0,0.0
+3.1.03,(-) ICMS sobre vendas,177800.0,0.0
+4.1.01,CMV,1397000.0,0.0
+4.2.01,Despesas com pessoal,210000.0,0.0
+4.2.02,Despesas comerciais,85000.0,0.0
+4.2.03,Despesas administrativas,96000.0,0.0
+4.2.04,Material de uso e consumo,131100.0,0.0
+4.2.05,Depreciação,51667.0,0.0
+4.3.01,Despesas financeiras,28000.0,0.0

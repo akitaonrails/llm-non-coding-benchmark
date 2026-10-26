@@ -1,0 +1,22 @@
+{
+  "case": "bracc_02_escolha_regime",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-glm53-flash-full-20261024/bracc_02_escolha_regime/02-s1-work-client1",
+  "elapsed_seconds": 724.1497211999958,
+  "controller_wait_seconds": 13.001127911004005,
+  "model_turn_seconds": 710.7701207210193,
+  "turns": 2,
+  "released_facts": [
+    "obra_pct"
+  ],
+  "usage": {
+    "input_tokens": 1113913,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 89000,
+    "reasoning_output_tokens": 66667
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,85 @@
+{
+  "case": "usacc_01_schedule_c",
+  "questions": "# QUESTIONS.md — Remaining unknowns for Dana Okafor (2025 Schedule C / SE)\n\nAnswered and closed: commuting miles ✓, Denver trip ✓, PayHub routing of Beacon/Orchard ✓,\nphone/internet split (60% estimate — applied, see below) ✓, health plan ✓. Only the items below\nremain. Each is already reflected in the return as stated; nothing here blocks filing, but items\n1–2 could change numbers if facts surface.\n\n## Could still change numbers\n\n**R1. Mileage log page 2 (affects Line 9).** Your log's 1,150 \"other client errands\" miles point\nto a detail page you can no longer provide. Without dates, destinations and business purpose per\ntrip, Pub. 463 recordkeeping isn't met, so Line 9 now claims only the 278 itemized client-trip\nmiles ($194.60). **If page 2 ever turns out, tell us — Line 9 would rise by $805.00**\n(1,150 × $0.70) and the return can be amended.\n\n**R2. Cash-billed expenses.** Camera rental (Aug 21) and print shop (Mar 3) — amounts and payment\nmethod. Not in the bank export, so not claimed. Any receipt or amount lets us add them\n(Lines 21/27a).\n\n**R3. Bank export ends Dec 12.** No activity appears after Dec 12 even though the file is\nlabelled through January. If that's a statement gap, December 13–31 transactions (income or\ndeductions) are missing from the return. A full December statement from the bank would close\nthis.\n\n## Confirmations we're proceeding on (answer only if wrong)\n\n**R4. Phone/internet 60%.** We applied your \"maybe 60%\" estimate: ($1,020 + $840) × 60% =\n$1,116.00 on Line 25. Flagged as an unverified client estimate — in an exam the burden is on you;\nif the true split is lower, the difference plus interest is owed.\n\n**R5. Coworking driving stays excluded.** You called the coworking trips \"client stuff,\" but the\nlog shows them as the same 3×/week round trips to Capital Factory — travel from home to your\nregular main work location is commuting under Pub. 463, whatever the reason for the day. Only\nthe trips to client sites (already counted) qualify. This is a rule, not a question — noted so\nthe $1,562 of mileage deductions you expected isn't a surprise.\n\n**R6. MacBook Pro $2,149 (Nov 2).** Proceeding with 100% business use, expensed now under the\nde minimis safe harbor, election statement attached. Tell us if you use it personally at all.\n\n**R7. Home office / storage unit $95/mo.** No facts provided establishing regular-and-exclusive\nbusiness use, so it stays personal. Say so if there is a dedicated room you work in.\n\n**R8. Tessaro $3,000 check received 12/27/2024.** We can't verify whether your 2024 return\nincluded it. It is a 2024 item on the cash method regardless — if it was missed, that's a 2024\namendment question, not a 2025 one.\n",
+  "facts": [
+    {
+      "id": "commute",
+      "trigger": [
+        "commute",
+        "Larkspur office",
+        "drive to work",
+        "1,200",
+        "daily"
+      ],
+      "answer": "Oh — yes, the ~1,200 miles Jan–April were me driving to the Larkspur office every day. I guess that's commuting? The rest is client stuff and the coworking space.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "payhub_fees",
+      "trigger": [
+        "PayHub fee",
+        "net of fees",
+        "gross vs",
+        "payout",
+        "2.9",
+        "difference between 1099-K and deposits"
+      ],
+      "answer": "PayHub takes 2.9% off the top before paying out. The 1099-K number is before their cut.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "phone_pct",
+      "trigger": [
+        "phone",
+        "internet",
+        "business use percentage",
+        "T-Mobile",
+        "Spectrum"
+      ],
+      "answer": "Phone and internet are maybe 60% work? I don't have a separate line.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "denver",
+      "trigger": [
+        "Denver",
+        "June flight",
+        "AUS-DEN",
+        "Southwest 118"
+      ],
+      "answer": "Denver was my cousin's wedding, nothing work-related.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "overlap",
+      "trigger": [
+        "Beacon",
+        "Orchard",
+        "paid through PayHub",
+        "which clients use PayHub",
+        "double"
+      ],
+      "answer": "Beacon and Orchard both pay me through PayHub. Tessaro pays by bank transfer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "health",
+      "trigger": [
+        "health insurance",
+        "Blue Cross",
+        "BCBS"
+      ],
+      "answer": "That's my own health plan after I left Larkspur. Not through any employer.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "commute",
+    "denver",
+    "health",
+    "overlap",
+    "phone_pct"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

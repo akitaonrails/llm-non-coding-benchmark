@@ -1,0 +1,21 @@
+{
+  "base_mensal_liquida": 39000,
+  "incide_sobre": [
+    "salário CLT líquido: R$ 24.000/mês (após descontos legais de IR e INSS)",
+    "pró-labore habitual: R$ 15.000/mês (cliente, 2º turno — assume-se líquido, ver controvérsia)",
+    "13º salário líquido: R$ 24.000/ano (STJ REsp 1.332.808 — library: alimentos_base_calculo.md)",
+    "férias líquidas: R$ 32.000/ano (fonte: resumo_patrimonio.md — o resumo não discrimina o terço; a library manda incluir férias E terço constitucional na base — STJ REsp 1.332.808)",
+    "lucros distribuídos, SE e quando passarem a ser habituais — o cliente declara nunca ter distribuído (tudo reinvestido), então hoje não há essa rubrica na base",
+    "PLR, quando habitual — controvertido; histórico não informado (ver QUESTÕES)"
+  ],
+  "nao_incide_sobre": [
+    "FGTS — depósitos mensais (R$ 2.400) e saque (library: alimentos_base_calculo.md; coerente com a partilha do FGTS, que não é base de alimentos)",
+    "verbas rescisórias de natureza indenizatória (aviso-prévio indenizado, multa de 40%, férias indenizadas)",
+    "auxílios e diárias"
+  ],
+  "percentual_sugerido": 25,
+  "valor_mensal_estimado": 10916.67,
+  "guarda": "compartilhada",
+  "fundamento": "Binômio necessidade–possibilidade e proporcionalidade (CC 1.694 §1º, 1.695, 1.699; library: alimentos_base_calculo.md): sem percentual legal; prática judicial de 15% a 30% dos rendimentos LÍQUIDOS. Renda líquida conhecida de Marcelo após respostas do cliente: 24.000 (CLT) + 15.000 (pró-labore habitual) = 39.000/mês; base anual = 39.000×12 + 24.000 (13º) + 32.000 (férias) = 524.000 → média mensal 43.666,67. Fernanda aufere 9.000 líquidos. Proposta: 25% sobre cada rubrica da base líquida = R$ 9.750,00/mês recorrentes + 25% do 13º (6.000/ano) + 25% das férias (8.000/ano); equivalência mensal = 25% × 43.666,67 = 10.916,67 (valor_mensal_estimado). Guarda compartilhada pretendida pelo cliente, com residência de referência materna e convivência em semanas alternadas 'se der': a library confirma que a guarda compartilhada NÃO afasta os alimentos pagos pelo genitor sem a residência de referência (CC 1.584 §2º; CC 1.583 — guarda_compartilhada.md); eventual redução do percentual pela convivência estendida é argumento de negociação, sem regra na library (não verificado). A proposta adversa (30% sobre o BRUTO, incluindo FGTS e verbas rescisórias) segue recusada: base líquida; FGTS e verbas indenizatórias fora da base.",
+  "controversia": "Pró-labore informado como '15 mil' sem dizer se bruto ou líquido — base pode cair se for bruto (descontos de IR/INSS). PLR não informada. Despesas das crianças não documentadas: o percentual de 25% é posição de negociação dentro da banda da library (15%–30%), não cálculo fechado de necessidade."
+}

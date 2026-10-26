@@ -1,0 +1,1 @@
+{"fact_ids": ["mesa_returns"], "reason": "Q4(a) asks the exact amount Mesa owes on the returned coils, which the mesa_returns fact answers (about 11,000 for coils returned in January, and his instinct was to net it). Q1-Q3, Q4(b)/(c), Q5-Q9 have no scripted fact, and counsel_told was not asked about.", "controller": "opencode-session-agent", "decided_at": "2026-10-25T03:01:20Z"}

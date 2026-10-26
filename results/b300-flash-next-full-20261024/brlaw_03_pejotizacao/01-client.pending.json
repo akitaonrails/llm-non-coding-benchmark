@@ -1,0 +1,46 @@
+{
+  "case": "brlaw_03_pejotizacao",
+  "questions": "# PERGUNTAS AO CLIENTE (QUESTIONS.md)\n\nRespostas permitem refinar números; as conclusões do parecer **não** dependem delas (premissas estão sinalizadas em `parecer.md`). (Este arquivo cumpre o papel do opcional `PERGUNTAS.md` previsto no contrato.)\n\n1. **Nº de empregados da Solaris** em dez/2021–set/2026 era >20? (Define a presunção de jornada da Súmula 338/TST sobre planilhas.)\n2. **Férias**: Rafael efetivamente gozou e foi remunerado pelos \"20 dias\" anuais (cláusula 6 / e-mail RH de 20/08/2025)? Há registros dos períodos gozados em cada ano? (Pode reduzir até R$ 116 mil.)\n3. **Jornada**: a coluna \"horas_medias_dia\" da planilha inclui as horas extras lançadas e/ou o intervalo de 1h? Há cartões-ponto/registros antes de jan/2025? (A planilha sugere ~18% de sobrejornada não lançada: 160 h vs 135 h em jan–jun/25.)\n4. **Encerramento**: a decisão de encerrar veio da Solaris ou do Rafael (a notificação é dele)? Houve pagamento de qualquer valor na transição? (Impacta aviso-prévio + multa de 40%, ≈ R$ 70,5 mil.)\n5. **Havia prestação anterior a 01/10/2019** (ex.: Rafael trabalhou como CLT ou sem contrato antes)? (Amplia o tempo de serviço p/ aviso-prévio e período aquisitivo.)\n6. **Conteúdo do R$ 18.000**: a PJ tinha custos relevantes comprováveis (equipamentos, tributos, outros profissionais) ou era remuneração pessoal em sua quase totalidade? (Tese de redução da base.)\n7. **Política de PJs**: quantos outros \"PJs\" estão no mesmo padrão (horário, ponto, RH, avaliação)? (Dimensiona risco replicado: ≈ R$ 11 mil/mês de novos reflexos por contrato nesse padrão.)\n8. **Contabilidade**: política atual de provisões e materialidade definida? Há outros passivos contingenciais trabalhistas já classificados? (Ajusta a provisão recomendada de R$ 682.152 ao contexto do CPC 25.)\n9. A empresa deseja **contraproposta antes do protocolo (16/11/2026)**? A faixa recomendada é R$ 500–700 mil.\n",
+  "facts": [
+    {
+      "id": "outros_clientes",
+      "trigger": [
+        "outros clientes",
+        "exclusiv",
+        "prestava para terceiros"
+      ],
+      "answer": "Carla: Não. Ele era dedicado a nós, 7 anos. A PJ dele só tinha a gente.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "quem_decidia",
+      "trigger": [
+        "quem decidia",
+        "férias",
+        "horário",
+        "aprovava",
+        "subordina"
+      ],
+      "answer": "Carla: Eu. Aprovava férias, cobrava horário, dava feedback. Igual aos CLTs.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "valor_embutia",
+      "trigger": [
+        "embutia",
+        "tributos",
+        "custo",
+        "valor da nota",
+        "remuneração-base"
+      ],
+      "answer": "Diretor: Os 18 mil eram 'cheios' justamente porque ele era PJ. Um CLT equivalente ganharia uns 12 mil.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "quem_decidia",
+    "valor_embutia"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

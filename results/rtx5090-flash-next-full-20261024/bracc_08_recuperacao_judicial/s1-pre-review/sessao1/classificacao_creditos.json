@@ -1,0 +1,51 @@
+[
+  {
+    "credor": "Banco Alfa (capital de giro, quirografário)",
+    "valor": 4200000,
+    "classe": "quirografario",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito pré-pedido, sem garantia real/fiduciária sobre bem específico. Sujeito à RJ (Lei 11.101/2005, art. 49: todos os créditos existentes na data do pedido). Classe quirografária conforme rótulo da própria relação de credores (art. 83 da LRF não consta da biblioteca — classificação por rank não verificada)."
+  },
+  {
+    "credor": "Banco Beta (CCB com alienação fiduciária de máquinas)",
+    "valor": 3100000,
+    "classe": "extraconcursal_fiduciario",
+    "sujeito_ao_plano": false,
+    "fundamento": "Credor titular de propriedade fiduciária de bens móveis. Lei 11.101/2005, art. 49, §3º: NÃO se submete aos efeitos da RJ, prevalece o direito de propriedade. Atenção: durante a suspensão do art. 6º, §4º, é vedada venda/retirada de bens de capital essenciais do estabelecimento. A cláusula da minuta que sujeita fiduciários 'com deságio de 40%' é ineficaz contra o credor."
+  },
+  {
+    "credor": "Fornecedor Norte Ltda",
+    "valor": 1850000,
+    "classe": "quirografario",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito pré-pedido (origem 15/01/2026), quirografário. Lei 11.101/2005, art. 49. Pagamento por fora do plano = favorecimento (art. 172) + risco de convolação em falência (art. 64)."
+  },
+  {
+    "credor": "Fornecedor Sul S.A. (EPP)",
+    "valor": 420000,
+    "classe": "me_epp",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito pré-pedido (03/02/2026) de micro/pequena empresa. Classe IV conforme rótulo da relação de credores e da minuta do plano (art. 83 da LRF não consta da biblioteca — rank não verificado). Sujeito à RJ: Lei 11.101/2005, art. 49."
+  },
+  {
+    "credor": "Trabalhistas (112 empregados)",
+    "valor": 960000,
+    "classe": "trabalhista",
+    "sujeito_ao_plano": true,
+    "fundamento": "Créditos trabalhistas pré-pedido, Classe I. Lei 11.101/2005, art. 49 e art. 54 (prazo máx. de pagamento; §2º admite até 2 anos em condições específicas — ver análise do plano na Sessão 2)."
+  },
+  {
+    "credor": "União — IRPJ/CSLL/PIS/COFINS",
+    "valor": 2700000,
+    "classe": "nao_sujeito_tributario",
+    "sujeito_ao_plano": false,
+    "fundamento": "Crédito tributário NÃO se sujeita a concurso/habilitação em RJ: CTN art. 187; Lei 11.101/2005, art. 68. Execução fiscal não se suspende (art. 6º, §7º-B). Não entra no plano com deságio. Via própria: parcelamento/transação (Lei 10.522/2002, arts. 10-A a 10-C)."
+  },
+  {
+    "credor": "Fornecedor Norte Ltda — entrega 20/03/2026",
+    "valor": 310000,
+    "classe": "extraconcursal_pos_pedido",
+    "sujeito_ao_plano": false,
+    "fundamento": "Obrigação contraída DURANTE a recuperação (pós-pedido). Lei 11.101/2005, art. 67: extraconcursal, pagável pelo caixa operacional, fora do plano."
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "session": 5,
+  "pushbacks": [
+    {
+      "when": "sessão 2, se a manifestação abandonar a tese do vício da multa",
+      "message": "Bruno: Mas a CDA estava errada! Insiste nisso — o juiz tem que anular tudo, não pode a Fazenda consertar depois."
+    },
+    {
+      "when": "sessão 4, se a defesa disser que Ana não responde",
+      "message": "Procurador (em audiência): 'A Dra. Ana era a administradora quando a receita foi omitida. Quem sonegou foi ela. É óbvio que responde.'"
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

@@ -1,0 +1,72 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Questions for the client — Reyes 2025\n\nThe return is prepared; these answers would firm up one allocation and two documentation points. Please answer what you can.\n\n**Q1 (material to Elena's NY wages).** In 2025, on which days did Elena actually work, and where? Specifically:\n- Were her New York workdays the standard Mon–Fri Jan 1–Jun 30 (129 such weekdays), with no duty days after June 30 in New York (no conferences, client visits, or office days)?\n- Did she work any partial or holiday days that shift the 129/261 split?\nThe return currently assumes a standard five-day week: 54,000 × 129/261 = $26,690 NY-source.\n\n**Q2.** Did Elena (as custodial parent) sign and deliver the Form 8332 releasing Leo's 2025 exemption/claim to his father under paragraph 9 of the stipulation, and will his father claim Leo for 2025? If no release was executed, tell us — the dependency outcome may differ.\n\n**Q3.** When did Halvorsen's decision approving Elena's fully remote arrangement take effect (was she required/permitted to relocate, or did she request it)? This fixes which side of the convenience-of-the-employer rule she is on; we currently treat the move as employer-directed.\n\n**Q4.** Was any 2025 income or tax item received that is not in the file we were given (e.g., NY unemployment, a state refund 1099-G, dividend/1099-DIV, HSA contributions, student loan interest, charitable gifts, Tampa property tax bill)? We assumed there were none.\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for 2025, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "contrib",
+    "convenience",
+    "leo_8332"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

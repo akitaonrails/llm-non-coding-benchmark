@@ -1,0 +1,45 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "questions": "# QUESTIONS — for the client\n\n## January 2025 close — CLOSED, answers received\n\nClient response: *\"For questions not answered above, the client has no additional information.\"* Q1–Q7\nbelow are therefore closed as unanswerable and **will not be re-asked**; the related balances stay\nrecorded as-is with disclosure, carried per ASC 250 to the December close. Numbering matches the\n`month_01/open_items.md` references.\n\n1. **Opening deferred revenue.** Account 2200 opened at **65,000.00**, but `note_opening_deferred.md` says opening deferred revenue is **41,000.00** (Trestle prior contract). What is the source of the extra **24,000.00**? Is it (a) the Trestle renewal already booked to deferred before 1/1/2025 (i.e., INV-2225 is a *second* recording and I should not re-book it), or (b) some other contract — if so, which, over what service period?\n\n2. **Opening revenue / retained earnings.** Account 4000 opened with a **30,450.00 credit** and 3900 with a **205,953.00 debit**. Is the 30,450.00 prior-year revenue that was never closed? If so, may I make the opening reclassification **Dr 4000 30,450.00 / Cr 3900 30,450.00** (retained-earnings deficit to 175,503.00), disclosed per ASC 250? Please also confirm 205,953.00 is a cumulative deficit.\n\n3. **A/R aging.** Provide the customer-level detail / aging for the **92,650.00** opening accounts receivable (which customers, which invoice dates). None was collected in January; is any of it disputed or uncollectible?\n\n4. **Prepaid expenses.** Provide the schedule behind the **9,600.00** opening prepaids (what was prepaid, service period, monthly amount) so I can book the correct amortization. I booked none for January pending this.\n\n5. **Accounts payable.** Provide vendor-level detail for the **17,420.00** opening A/P and confirm none of it was paid in January (no bank debit matched it).\n\n6. **Fixed assets.** Confirm the **64,000.00** equipment is in service since ~Jan 2024 over a **36-month** life (implied by the checklist's 1,777.78/mo and the 21,333.00 accumulated figure), and note any additions/disposals in January.\n\n7. **Stray file.** `documents/bank_statement.csv` shows only **December 2025** transactions on a negative balance — not this account's January 2025 activity. Please confirm it is not part of the January record (I did not use it; I reconciled to `month_01/bank_statement.pdf`).\n\n## February 2025 close — OPEN (new questions only; Q1–Q7 will not be repeated)\n\nBoth questions concern `month_02/open_items.md` item 6 — Pinecone Dental Group (C-025), INV-2250,\n**36,000.00** billed 2025-02-01 as \"Implementation & license — one-time\", collected 2025-02-15, currently\n**100% deferred with zero revenue recognized**. I am not able to compute any release without these answers,\nand I will not guess a term.\n\n8. **Pinecone contract term.** What is the access/subscription term the 36,000.00 buys, and when does it\n   run? Specifically: (a) please provide **Master Subscription Agreement v3.2** referenced on the order form\n   (it is not in the file); (b) if the MSA is unavailable, state the agreed access term in writing (e.g., 12\n   months from the 2025-02-01 service-start date); (c) confirm Pinecone has had continuous platform access\n   since 2025-02-01. Until answered, no revenue is recognized; if a 12-month term is confirmed, the release\n   is 36,000.00 ÷ 12 = **3,000.00/month** from February, and I will record the February catch-up then.\n\n9. **Pinecone implementation element.** Was a **distinct, separately priced** implementation service\n   actually delivered — anything beyond platform deployment and user onboarding set-up (e.g., a statement of\n   work, delivery/acceptance evidence, or a price allocation between \"implementation\" and \"license\")? Under\n   the Board's revenue policy (#2) and ASC 606-10-25-17, set-up and onboarding activities are not revenue until\n   (and unless) a distinct service transfers to the customer; the single unallocated invoice line and the\n   \"one-time\" wording do not change that. If paid implementation was truly delivered as a distinct service,\n   tell me when it completed and at what price, and the allocation and recognition pattern will change.\n\n",
+  "facts": [
+    {
+      "id": "pinecone_onboarding",
+      "trigger": [
+        "Pinecone",
+        "implementation",
+        "onboarding",
+        "C-025",
+        "what was delivered"
+      ],
+      "answer": "Alvarado: Honestly nothing bespoke — they self-onboarded like everyone else. Procurement just wanted it called a license.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "gusto_dup",
+      "trigger": [
+        "duplicate",
+        "two net pay",
+        "Gusto",
+        "second debit"
+      ],
+      "answer": "Office manager: Gusto admitted the double debit; refund posted May 9.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "c012",
+      "trigger": [
+        "C-012",
+        "cancel",
+        "credit memo",
+        "stop invoicing"
+      ],
+      "answer": "Alvarado: yeah they cancelled. Billing didn't get turned off. Credit them.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "pinecone_onboarding"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

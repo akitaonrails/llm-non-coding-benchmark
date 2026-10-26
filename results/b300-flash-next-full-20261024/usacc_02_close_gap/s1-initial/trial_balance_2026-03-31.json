@@ -1,0 +1,158 @@
+{
+  "as_of": "2026-03-31",
+  "accounts": {
+    "1000": {
+      "name": "Cash \u2014 Operating (HCCB ...2210)",
+      "debit": 10318.3,
+      "credit": 0
+    },
+    "1100": {
+      "name": "Accounts receivable",
+      "debit": 115288.0,
+      "credit": 0
+    },
+    "1200": {
+      "name": "Inventory \u2014 materials",
+      "debit": 21400.0,
+      "credit": 0
+    },
+    "1300": {
+      "name": "Prepaid expenses",
+      "debit": 4738.0,
+      "credit": 0
+    },
+    "1500": {
+      "name": "Equipment",
+      "debit": 148000.0,
+      "credit": 0
+    },
+    "1510": {
+      "name": "Accumulated depreciation",
+      "debit": 0,
+      "credit": 61250.0
+    },
+    "2000": {
+      "name": "Accounts payable",
+      "debit": 0,
+      "credit": 34365.4
+    },
+    "2050": {
+      "name": "Credit card payable \u2014 Summit Visa",
+      "debit": 0,
+      "credit": 2306.12
+    },
+    "2100": {
+      "name": "Unidentified receipts / suspense",
+      "debit": 0,
+      "credit": 4312.0
+    },
+    "2200": {
+      "name": "Line of credit \u2014 HCCB",
+      "debit": 0,
+      "credit": 45000.0
+    },
+    "2300": {
+      "name": "Sales tax payable",
+      "debit": 0,
+      "credit": 4121.55
+    },
+    "3000": {
+      "name": "Owner's capital",
+      "debit": 0,
+      "credit": 60000.0
+    },
+    "3100": {
+      "name": "Owner's contributions",
+      "debit": 0,
+      "credit": 1500.0
+    },
+    "3200": {
+      "name": "Owner's draws",
+      "debit": 212.0,
+      "credit": 0
+    },
+    "3900": {
+      "name": "Retained earnings",
+      "debit": 0,
+      "credit": 62017.0
+    },
+    "4000": {
+      "name": "Sales \u2014 custom cabinetry",
+      "debit": 0,
+      "credit": 138720.0
+    },
+    "4100": {
+      "name": "Sales \u2014 installation",
+      "debit": 0,
+      "credit": 16200.0
+    },
+    "5000": {
+      "name": "Materials \u2014 COGS",
+      "debit": 46660.9,
+      "credit": 0
+    },
+    "5100": {
+      "name": "Subcontract labor",
+      "debit": 15400.0,
+      "credit": 0
+    },
+    "6000": {
+      "name": "Wages",
+      "debit": 42600.0,
+      "credit": 0
+    },
+    "6050": {
+      "name": "Payroll taxes",
+      "debit": 3919.2,
+      "credit": 0
+    },
+    "6100": {
+      "name": "Rent \u2014 shop",
+      "debit": 13500.0,
+      "credit": 0
+    },
+    "6200": {
+      "name": "Utilities",
+      "debit": 2452.4,
+      "credit": 0
+    },
+    "6300": {
+      "name": "Insurance",
+      "debit": 1150.0,
+      "credit": 0
+    },
+    "6400": {
+      "name": "Software & subscriptions",
+      "debit": 396.0,
+      "credit": 0
+    },
+    "6500": {
+      "name": "Meals",
+      "debit": 0.0,
+      "credit": 0.0
+    },
+    "6600": {
+      "name": "Vehicle & fuel",
+      "debit": 1772.25,
+      "credit": 0
+    },
+    "6700": {
+      "name": "Bank charges",
+      "debit": 35.0,
+      "credit": 0
+    },
+    "6800": {
+      "name": "Interest expense",
+      "debit": 931.25,
+      "credit": 0
+    },
+    "6900": {
+      "name": "Office & misc",
+      "debit": 1018.77,
+      "credit": 0
+    }
+  },
+  "total_debit": 429792.07,
+  "total_credit": 429792.07,
+  "balanced": true
+}

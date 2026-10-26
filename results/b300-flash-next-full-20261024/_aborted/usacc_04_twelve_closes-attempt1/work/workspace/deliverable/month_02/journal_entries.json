@@ -1,0 +1,163 @@
+[
+  {
+    "ref": "JE-2025-02-01",
+    "date": "2025-02-01",
+    "memo": "Invoice monthly subscriptions for February 2025, INV-2226..INV-2249 (24 customers) [revenue recognized in period of service]",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-02-02",
+    "date": "2025-02-01",
+    "memo": "Bill Pinecone Dental Group INV-2250 36,000.00 \"Implementation & license - one-time\" due on signature, service start 2025-02-01: recorded 100% to deferred revenue. Billed in advance of performance = contract liability (ASC 606-10-45-2); scope \"platform deployment and user onboarding\" = set-up activities that do not transfer a service, not a performance obligation (ASC 606-10-25-17); no separately priced distinct implementation service evidenced as delivered (revenue policy #2). No February release: contract term of platform access is not in the file (QUESTIONS.md Q8). Invoice wording \"one-time\" does not drive the treatment.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 36000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2200",
+        "debit": 0.0,
+        "credit": 36000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-02-03",
+    "date": "2025-02-26",
+    "memo": "Customer collections 2025-02-15..2025-02-26 per cash_receipts.csv (25 receipts, incl. Pinecone wire 36,000.00 on 02-15); all agree to bank statement credits same day",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 66450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 66450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-02-04",
+    "date": "2025-02-09",
+    "memo": "February vendor bills recorded per vendor_bills.csv (AWS 10,040 / WeWork 7,200 / Gusto fees 240 / Notion-Slack-GitHub 1,460 / Google Ads 3,300); total 22,240.00",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 10040.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5200",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5400",
+        "debit": 3300.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5900",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 22240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-02-05",
+    "date": "2025-02-09",
+    "memo": "Payment of February vendor bills 2025-02-05..2025-02-09; ACH debits on bank statement agree to bills line-for-line; total 22,240.00",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 22240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 22240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-02-06",
+    "date": "2025-02-25",
+    "memo": "February payroll per register: gross 54,404.00 + employer taxes/benefits 5,076.00; net pay 48,200.00 and taxes remitted 11,280.00 per bank 02/25 (withheld 6,204.00 + employer 5,076.00 = remitted 11,280.00)",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5110",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 59480.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-02-07",
+    "date": "2025-02-28",
+    "memo": "Deferred revenue release February: Trestle prior annual contract 8,200.00 (month 2 of 5, Jan-May 2025) + Trestle renewal 24,000.00/12 = 2,000.00 (month 2 of 12); ASC 606-10-25-14(b)/25-27, policy #1. No release of the unsupported 24,000.00 opening line or of Pinecone INV-2250.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 10200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 10200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-02-08",
+    "date": "2025-02-28",
+    "memo": "Monthly depreciation per close-checklist item 6 (64,000 equipment / 36 months = 1,777.78)",
+    "lines": [
+      {
+        "account": "5500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  }
+]

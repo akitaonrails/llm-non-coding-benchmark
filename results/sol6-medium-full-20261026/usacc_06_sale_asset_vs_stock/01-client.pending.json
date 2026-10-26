@@ -1,0 +1,47 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "questions": "# Information needed to compare the offers\n\n1. **Liabilities and price:** What is the dollar amount of trade payables Lone Star would assume at closing? Please provide the latest balance sheet or closing estimate showing all company liabilities, including debt, unpaid taxes, accrued expenses, and any contingent claims. Is Lone Star's $3,100,000 cash **in addition to** its assumption of trade payables, as the LOI appears to say?\n2. **Receivables:** Does Brightline use the cash or accrual method for federal income tax? What is the adjusted tax basis of the $200,000 receivables to be sold? Have they already been included in taxable income?\n3. **2026 changes:** What will Ray's adjusted stock basis be immediately before the Hensley closing? If it is not yet known, please provide 2026 income, loss, contributions, distributions, and any other stock-basis changes since the stated $420,000 at December 31, 2025. Also confirm any 2026 changes to the listed asset tax bases or goodwill basis.\n4. **Lone Star's services and covenant:** How much of the proposed $400,000 is for consulting services, what services and payment period are proposed, and does either party have a supportable valuation for the separate five-year non-compete? Is Ray willing to provide consulting services if this allocation changes?\n5. **Asset values:** Are the fixed asset register's $650,000 equipment and vehicle value and the $140,000 inventory carrying value current estimates of fair market value at closing? If not, what current valuations support the amounts? Please also provide any valuation of the trade name separate from goodwill.\n\nPlease give estimates where final closing figures are not yet available and identify them as estimates.\n",
+  "facts": [
+    {
+      "id": "noncompete_term",
+      "trigger": [
+        "non-compete",
+        "noncompete",
+        "longer term",
+        "consult",
+        "stay on"
+      ],
+      "answer": "I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "note_security",
+      "trigger": [
+        "note",
+        "secured",
+        "collateral",
+        "Hensley credit"
+      ],
+      "answer": "The $500k note is unsecured. Hensley's a family office, seems solid, but I don't know their balance sheet.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "liabilities",
+      "trigger": [
+        "liabilities",
+        "warranty",
+        "claims",
+        "lawsuit",
+        "Hardaway"
+      ],
+      "answer": "There's the Hardaway dispute ($9,800) and the usual warranty stuff. Nothing big that I know of.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "noncompete_term",
+    "liabilities"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

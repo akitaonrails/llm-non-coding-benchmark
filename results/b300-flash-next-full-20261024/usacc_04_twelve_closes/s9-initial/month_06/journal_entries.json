@@ -1,0 +1,214 @@
+[
+  {
+    "ref": "JE-2025-06-01",
+    "date": "2025-06-01",
+    "memo": "June monthly subscription invoices INV-2325..INV-2348 (same 24 recurring customers C-001..C-024, amounts identical to May per-customer), total 30,450.00 per documents/month_06/invoices.csv",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-02",
+    "date": "2025-06-01",
+    "memo": "Saltline Hospitality (C-029) INV-2349: 21,600.00 annual subscription billed upfront on signature per order form C-029; service start 2025-06-01, 12-month auto-renewing term. No performance yet at billing \u2014 recorded in full as contract liability (ASC 606-10-45-2; revenue_policy_memo #1). MSA v3.2 referenced on order form is not in the file \u2014 same documentation gap as Marigold C-027 (item 1) and Quarry C-028 (item 13); now the third occurrence (open item 14)",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 21600.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2200",
+        "debit": 0.0,
+        "credit": 21600.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-03",
+    "date": "2025-06-30",
+    "memo": "Deferred revenue release \u2014 Trestle renewal, order form C-026: 24,000.00 billed upfront Jan 2025, stated term 2025-01-01..2025-12-31; release 1/12 = 2,000.00/month (revenue_policy_memo #1), sixth of twelve. Cumulative overlap exposure remains frozen at its cap of 10,000.00 (open item 3)",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-04",
+    "date": "2025-06-30",
+    "memo": "Deferred revenue release \u2014 Marigold Schools Inc (C-027) INV-2275: order form term 2025-03-01..2026-02-28; release 1/12 = 1,500.00/month, fourth of twelve",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 1500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-05",
+    "date": "2025-06-30",
+    "memo": "Deferred revenue release \u2014 Quarry Analytics Co (C-028) INV-2324: service start 2025-05-01; second of twelve monthly releases = 30,000.00/12 = 2,500.00 (revenue_policy_memo #1; ASC 606-10-55-51 time-based series). Deferred balance after release 25,000.00",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 2500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 2500.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-06",
+    "date": "2025-06-30",
+    "memo": "Deferred revenue release \u2014 Saltline Hospitality (C-029) INV-2349: service start 2025-06-01; first of twelve monthly releases = 21,600.00/12 = 1,800.00 (revenue_policy_memo #1; ASC 606-10-55-51 time-based series). Deferred balance after release 19,800.00",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-07",
+    "date": "2025-06-26",
+    "memo": "June cash receipts 52,050.00: all 24 recurring invoices collected in-month (30,450.00, ACH wires 06/20\u201306/26) plus Saltline 21,600.00 wire 06/15 per documents/month_06/cash_receipts.csv and bank statement, matched 1:1 by date+name+amount. No opening A/R collected (open item 7)",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 52050.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 52050.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-08",
+    "date": "2025-06-10",
+    "memo": "June vendor bills per documents/month_06/vendor_bills.csv: AWS 10,520.00 (hosting 5000; +120.00 vs May \u2014 usage variance), WeWork 7,200.00 (rent 5100), Notion/Slack/GitHub 1,460.00 (software 5200), Google Ads 3,500.00 (marketing 5300; +50.00 vs May \u2014 usage variance), Gusto fees 240.00 and Harbor Law LLP 2,500.00 professional fees (both G&A other 5400; second Harbor Law bill \u2014 no longer one-time, no dedicated professional-fees account, open item 2); total 25,420.00",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 10520.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5200",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5300",
+        "debit": 3500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5400",
+        "debit": 2740.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 25420.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-09",
+    "date": "2025-06-10",
+    "memo": "June vendor bills paid by ACH 06/05\u201306/10 per bank statement; all June bills settled in-month",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 25420.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 25420.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-10",
+    "date": "2025-06-25",
+    "memo": "June payroll per documents/month_06/payroll_register.json: gross 54,404.00 + employer taxes/benefits 5,076.00 (identical to May); bank shows ACH GUSTO NET PAY 48,200.00 and ACH GUSTO TAX 11,280.00 on 06/25 \u2014 register and bank agree (identity 54,404+5,076 = 48,200+11,280 = 59,480.00), single net-pay debit. Single-entry convention per prior months; 9 employees",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 59480.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-06-11",
+    "date": "2025-06-30",
+    "memo": "Monthly straight-line depreciation: computer equipment 64,000.00 over 36 months, 64,000/36 = 1,777.78 (rounding to cents; full-life total ties to cost)",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  }
+]

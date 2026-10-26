@@ -1,0 +1,22 @@
+{
+  "debt_discharged": 5460000.0,
+  "cod_income": 5460000.0,
+  "excluded_under_108a": 5460000.0,
+  "attribute_reduction": {
+    "nol_before": 6100000.0,
+    "nol_reduction": 5460000.0,
+    "nol_after": 640000.0,
+    "other": "No reduction reaches attribute (B) general business credits or (E) basis of property under the default order, because the NOL pool (6,100,000.00) exceeds the excluded amount (5,460,000.00). Tax basis in fixed assets stays 3,200,000.00 (no election assumed). The library excerpt (library/irc_108.md) states the excluded amount 'shall be applied to reduce the tax attributes' in the (A)-(G) order but does not state the reduction fractions, so a dollar-for-dollar NOL reduction is applied; the 108(b)(4) fraction detail is [unverified - not in library]."
+  },
+  "election_108b5": "NO (default attribute order) - reasoning: (1) the NOL pool absorbs the entire reduction with 640,000.00 left over, so no excluded income is 'wasted' against a depleted attribute; (2) declining the election preserves the full 3,200,000.00 depreciable tax basis (ongoing depreciation deductions) while the surviving 640,000.00 NOL still offsets future income; (3) the library states reductions are made AFTER the tax for the year of discharge is determined (irc_108.md (b)(1)) - no discharge-year effect either way. Full-election alternative shown for comparison: apply 3,200,000.00 to basis first (basis -> 0) and 2,260,000.00 to NOL -> NOL after = 3,840,000.00; that trades 3,200,000.00 of depreciation basis for 3,200,000.00 of extra NOL. Circumstances that would flip this to a YES election, none verifiable from this file: NOLs expiring or utilization-limited, or a 11 U.S.C. / IRC 382 ownership-change limitation from the 40% equity issuance to the DIP lender - 382 is NOT in library/INDEX.md, so that analysis is [unverified] and must be done by tax counsel with the tax rate and NOL vintage data (not in the file).",
+  "_notes": [
+    "PROVISIONAL - prepared from documents/plan_term_sheet.md because the client has no further information; must be re-run at the effective date with final claim pool, payment schedule, and plan discount rate.",
+    "Debt discharged arithmetic: allowed general unsecured claims 8,400,000.00; plan pays 35% cash over 24 months = 8,400,000.00 x 0.35 = 2,940,000.00 not discharged; 'balance discharged on the effective date' = 8,400,000.00 - 2,940,000.00 = 5,460,000.00. DIP facility is NOT discharged - repaid in full from exit financing (no COD from it).",
+    "COD income = 5,460,000.00: amount includible 'by reason of the discharge of indebtedness' before 108(a) (library/irc_108.md). Taxable COD after exclusion = 5,460,000.00 - 5,460,000.00 = 0.00.",
+    "Excluded under 108(a)(1)(A): discharge occurs in a title 11 case (chapter 11, Case No. 26-11842-TBM), so the entire 5,460,000.00 is excluded from gross income.",
+    "Attribute reduction arithmetic: NOL before 6,100,000.00 - excluded amount 5,460,000.00 = 640,000.00 NOL after. Assumes the 6,100,000.00 petition-date federal NOL carryforward is still intact at the discharge year; no post-petition NOL generation data in the file, so a post-petition NOL would increase 'nol_before' at discharge.",
+    "Assumption: the unpaid pre-petition vendor claims (Mesa 62,400.00 + Front Range 7,400.00 + Grainger 4,310.00 = 74,110.00 documented at 3/31/2026) sit INSIDE the 8,400,000.00 allowed GUC pool; the 8,325,890.00 gap between the two has never been reconciled (session1 workpaper) and is left open.",
+    "Book gain under ASC 852 is NOT this number: without fresh-start reporting, the book gain is carrying amount minus PRESENT VALUE of plan payments (see session3/emergence_balance_sheet.md); the 5,460,000.00 here is the tax COD/attribute figure.",
+    "No state income tax analysis (not in library); reduction applies to federal attributes per term sheet."
+  ]
+}

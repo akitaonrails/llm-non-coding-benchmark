@@ -1,0 +1,36 @@
+{
+  "as_of": "2025-03-31",
+  "basis": "cumulative",
+  "accounts": {
+    "1000": { "debit": "333690.00", "credit": "0.00" },
+    "1100": { "debit": "38200.00", "credit": "0.00" },
+    "1300": { "debit": "9600.00", "credit": "0.00" },
+    "1500": { "debit": "64000.00", "credit": "0.00" },
+    "1510": { "debit": "0.00", "credit": "26666.34" },
+    "2000": { "debit": "0.00", "credit": "17420.00" },
+    "2100": { "debit": "0.00", "credit": "0.00" },
+    "2200": { "debit": "0.00", "credit": "80900.00" },
+    "3000": { "debit": "0.00", "credit": "650000.00" },
+    "3900": { "debit": "205953.00", "credit": "0.00" },
+    "4000": { "debit": "0.00", "credit": "129450.00" },
+    "5000": { "debit": "163212.00", "credit": "0.00" },
+    "5010": { "debit": "15228.00", "credit": "0.00" },
+    "5100": { "debit": "9900.00", "credit": "0.00" },
+    "5200": { "debit": "21600.00", "credit": "0.00" },
+    "5300": { "debit": "30120.00", "credit": "0.00" },
+    "5400": { "debit": "4380.00", "credit": "0.00" },
+    "5600": { "debit": "2500.00", "credit": "0.00" },
+    "5700": { "debit": "5333.34", "credit": "0.00" },
+    "5900": { "debit": "720.00", "credit": "0.00" }
+  },
+  "totals": { "debit": "904436.34", "credit": "904436.34" },
+  "notes": [
+    "Cumulative through 2025-03-31; reproduces exactly from month_02 trial balance plus journal_entries.json JE-2025-023..034 (see validation in this package's open_items.md section 6).",
+    "1100 unchanged at 38,200.00: all March billings (48,450.00) collected in March; this is the 2024-vintage balance, now 3+ months outstanding with no bank activity - escalated in open_items.md section 5.",
+    "2200 80,900.00 agrees to deferred_revenue_rollforward.json: Trestle prior 16,400.00 + Trestle renewal 18,000.00 + Pinecone 30,000.00 (ASSUMED term - permanently unknown) + Marigold 16,500.00 (documented term). Classification: under the assumed Pinecone term, ALL of the 2200 balance releases within 12 months of 2025-03-31 (latest release 2026-02-28); non-current portion 0.00. NOTE: the February package's presentation notes misstated the Pinecone 2026 release amount as 24,000.00 - corrected in open_items.md section 0; balances and journal amounts were never affected.",
+    "2000 17,420.00: opening A/P, now unpaid for three months with no bank payment activity - escalated in open_items.md section 5.",
+    "1300 9,600.00: opening prepaid, no supporting documentation received; no amortization recorded (flag carried).",
+    "5600 Professional fees: new account opened this month for Harbor Law LLP 2,500.00 - opening chart of accounts had no professional-fee account; controller judgment, disclosed in open_items.md section 3.",
+    "Prior-period error (Dec-2024 billing omission) remains restated via JE-2025-001 (see month_01 package); 3900 205,953.00 is the opening retained deficit per opening trial balance - 2024 income statement not provided, comparatives still unavailable."
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "_nota": "Apuração-teste CBS/IBS — agosto/2026 — Horizonte Comércio e Serviços Ltda. (CNPJ 27.119.804/0001-30, regime regular, Lucro Presumido). População: 12 NF-e de saída (nº 2301-2312) e 5 NF-e de entrada (nº 2313-2317) fornecidas em documents/. Base de débitos das saídas = R$ 480.000,00, que bate exatamente com a base de PIS/COFINS da apuração normal do mês (documents/apuracao_normal_agosto.md). Em 2026: pCBS = 0,9% e pIBS = 0,1% (LC 214/2025, art. 343 - library/lc214_2025_transicao.md; NT 2025.002 - library/nt_nfe_grupo_ibscbs.md). Valores informativos; recolhimento dispensado sob condição (ADCT art. 125, §4º). Campos cbs/ibs das saídas = valor devido pela apuração-teste (na NF 2309 o destaque saiu com alíquotas invertidas; a apuração registra as valores corretos).",
+  "saidas": [
+    {
+      "numero": 2301,
+      "data": "2026-08-01",
+      "valor": 18000.0,
+      "cbs": 162.0,
+      "ibs": 18.0,
+      "situacao": "regular",
+      "motivo": "Emitida em 01/08/2026, antes do corte de 03/08, sem grupo IBSCBS — documento permanece válido conforme comunicado CGIBS (library/cgibs_comunicado_03_08_2026.md). CBS/IBS = apuração-teste do regime regular (LC 214/2025 art. 343): 18.000 x 0,9% = 162,00; 18.000 x 0,1% = 18,00. Sem destaque, o cliente BRISA não gera crédito desses valores (art. 346: crédito exige aquisição com destaque)."
+    },
+    {
+      "numero": 2302,
+      "data": "2026-08-01",
+      "valor": 24000.0,
+      "cbs": 216.0,
+      "ibs": 24.0,
+      "situacao": "regular",
+      "motivo": "Emitida em 01/08/2026, antes do corte de 03/08, sem grupo IBSCBS — válida conforme comunicado CGIBS. Apuração-teste: 24.000 x 0,9% = 216,00; 24.000 x 0,1% = 24,00. Cliente SERRA VERDE não recebe crédito por falta de destaque (art. 346)."
+    },
+    {
+      "numero": 2303,
+      "data": "2026-08-02",
+      "valor": 9500.0,
+      "cbs": 85.5,
+      "ibs": 9.5,
+      "situacao": "regular",
+      "motivo": "Emitida em 02/08/2026, antes do corte de 03/08, sem grupo IBSCBS — válida conforme comunicado CGIBS. Apuração-teste: 9.500 x 0,9% = 85,50; 9.500 x 0,1% = 9,50. Venda a cliente optante do Simples (PONTO FIXO): o regime do cliente NÃO exclui o débito do vendedor do regime regular (art. 343); o Simples simplesmente não apura crédito próprio (art. 347). A partir de 03/08 o destaque é obrigatório também nessa situação (CGIBS/NT 2025.002)."
+    },
+    {
+      "numero": 2304,
+      "data": "2026-08-02",
+      "valor": 31000.0,
+      "cbs": 279.0,
+      "ibs": 31.0,
+      "situacao": "regular",
+      "motivo": "Emitida em 02/08/2026, antes do corte de 03/08, sem grupo IBSCBS — válida conforme comunicado CGIBS. Apuração-teste: 31.000 x 0,9% = 279,00; 31.000 x 0,1% = 31,00. Cliente BRISA não gera crédito por falta de destaque (art. 346)."
+    },
+    {
+      "numero": 2305,
+      "data": "2026-08-02",
+      "valor": 4200.0,
+      "cbs": 37.8,
+      "ibs": 4.2,
+      "situacao": "regular",
+      "motivo": "Emitida em 02/08/2026, antes do corte de 03/08, sem grupo IBSCBS — válida conforme comunicado CGIBS. Apuração-teste: 4.200 x 0,9% = 37,80; 4.200 x 0,1% = 4,20. Venda a MEI (J. SILVA): nada na biblioteca isenta a venda de quem está no regime regular; o débito subsiste (art. 343); o MEI não apura (art. 347). Do dia 03/08 em diante, destaque obrigatório também em vendas a Simples/MEI (CGIBS/NT 2025.002)."
+    },
+    {
+      "numero": 2306,
+      "data": "2026-08-04",
+      "valor": 42000.0,
+      "cbs": 378.0,
+      "ibs": 42.0,
+      "situacao": "regular",
+      "motivo": "Grupo IBSCBS preenchido (CST 000, cClassTrib 000001), emitida após 03/08 conforme comunicado CGIBS/NT 2025.002 (pIBSUF 0,10; pIBSMun 0,00; pCBS 0,90). Conferência: 42.000 x 0,1% = 42,00 (IBS); 42.000 x 0,9% = 378,00 (CBS) — destaque confere com a apuração-teste."
+    },
+    {
+      "numero": 2307,
+      "data": "2026-08-06",
+      "valor": 56000.0,
+      "cbs": 504.0,
+      "ibs": 56.0,
+      "situacao": "regular",
+      "motivo": "Grupo IBSCBS preenchido, emitida após 03/08. Conferência: 56.000 x 0,1% = 56,00; 56.000 x 0,9% = 504,00 — destaque confere (NT 2025.002)."
+    },
+    {
+      "numero": 2308,
+      "data": "2026-08-10",
+      "valor": 12500.0,
+      "cbs": 112.5,
+      "ibs": 12.5,
+      "situacao": "irregular",
+      "motivo": "Emitida em 10/08/2026 (APÓS 03/08) SEM grupo IBSCBS: a emissão de NF-e por contribuinte do regime regular sem o grupo não é permitida desde 03/08 e o documento deve ser rejeitado (CGIBS/NT 2025.002). No arquivo consta cStat 100 (autorizada) — causa confirmada PELO CLIENTE: a SEFAZ rejeitou notas com a mensagem 'Rejeição: Grupo IBSCBS não informado para emitente do regime regular (NT 2025.002)' e o TI 'contornou' o problema voltando a versão do emissor, que passou a autorizar sem o grupo. Não destacar = descumprimento de obrigação acessória, com risco de perda da dispensa de recolhimento (ADCT art. 125, §4º - library/lc214_2025_transicao.md). O adquirente PONTO FIXO não leva crédito por falta de destaque (art. 346). Valores da apuração-teste: 12.500 x 0,9% = 112,50; x 0,1% = 12,50. Ação: REVERTER o rollback do emissor, parametrizar por upgrade e decidir tratamento do documento (ver orientacao.md §4)."
+    },
+    {
+      "numero": 2309,
+      "data": "2026-08-13",
+      "valor": 38000.0,
+      "cbs": 342.0,
+      "ibs": 38.0,
+      "situacao": "irregular",
+      "motivo": "Grupo IBSCBS presente, porém com ALÍQUOTAS INVERTIDAS: pIBSUF 0,90 e pCBS 0,10 (NT 2025.002 prescreve pIBSUF = 0,10 e pCBS = 0,90). Destacou IBS = 342,00 e CBS = 38,00 — exatamente o oposto. Correto: IBS 38.000 x 0,1% = 38,00; CBS 38.000 x 0,9% = 342,00. O destinatário SERRA VERDE receberia destaque sem lastro normativo (crédito trocado). A apuração-teste registra os valores CORRETOS (IBS 38,00 / CBS 342,00). Corrigir parametrização do ERP/equipamento (defeito próprio — o rollback do emissor confirmado pelo cliente NÃO resolve a inversão) e verificar uso do crédito pelo cliente."
+    },
+    {
+      "numero": 2310,
+      "data": "2026-08-18",
+      "valor": 7800.0,
+      "cbs": 70.2,
+      "ibs": 7.8,
+      "situacao": "irregular",
+      "motivo": "Emitida em 18/08/2026 (APÓS 03/08) SEM grupo IBSCBS — não permitida desde 03/08 (CGIBS/NT 2025.002), sujeita a rejeição; no arquivo consta cStat 100. Venda a cliente MEI (J. SILVA): o regime do cliente não dispensa o destaque de quem está no regime regular. Risco à dispensa (ADCT art. 125, §4º). Apuração-teste: 7.800 x 0,9% = 70,20; x 0,1% = 7,80. Autorização sem grupo (cStat 100) explicada pelo rollback do emissor confirmado pelo cliente (ver NF 2308 / orientacao.md §4)."
+    },
+    {
+      "numero": 2311,
+      "data": "2026-08-21",
+      "valor": 61000.0,
+      "cbs": 549.0,
+      "ibs": 61.0,
+      "situacao": "regular",
+      "motivo": "Grupo IBSCBS preenchido, emitida após 03/08. Conferência: 61.000 x 0,1% = 61,00; 61.000 x 0,9% = 549,00 — destaque confere (NT 2025.002)."
+    },
+    {
+      "numero": 2312,
+      "data": "2026-08-27",
+      "valor": 176000.0,
+      "cbs": 1584.0,
+      "ibs": 176.0,
+      "situacao": "irregular",
+      "motivo": "Emitida em 27/08/2026 (APÓS 03/08) SEM grupo IBSCBS — não permitida desde 03/08 (CGIBS/NT 2025.002), sujeita a rejeição; no arquivo consta cStat 100 (autorizada). Maior impacto do mês para o cliente: BRISA não poderá tomar crédito de 1.584,00/176,00 por falta de destaque (art. 346). Risco à dispensa (ADCT art. 125, §4º). Apuração-teste: 176.000 x 0,9% = 1.584,00; x 0,1% = 176,00. Autorização sem grupo (cStat 100) explicada pelo rollback do emissor confirmado pelo cliente (ver NF 2308 / orientacao.md §4)."
+    }
+  ],
+  "entradas": [
+    {
+      "numero": 2313,
+      "valor": 48000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "Fornecedor DISTRIBUIDORA NORTE LTDA (CRT 3 — regime regular), emitida 02/08/2026 sem grupo IBSCBS (antes do corte de 03/08 — documento válido, comunicado CGIBS). Art. 346 condiciona o crédito à aquisição de contribuinte do regime regular COM destaque: sem destaque não surge crédito para a Horizonte. Crédito potencial não aproveitado: 48.000 x 1% = 480,00 (a biblioteca não prevê mecanismo de crédito retroativo sem destaque)."
+    },
+    {
+      "numero": 2314,
+      "valor": 62000.0,
+      "credito_cbs": 558.0,
+      "credito_ibs": 62.0,
+      "motivo": "Fornecedor regime regular (CRT 3) com grupo IBSCBS preenchido e conferido: 62.000 x 0,1% = 62,00 (IBS); 62.000 x 0,9% = 558,00 (CBS). Crédito integral: CBS 558,00 e IBS 62,00 (art. 346)."
+    },
+    {
+      "numero": 2315,
+      "valor": 15000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "Fornecedor PONTO FIXO COMERCIO ME — optante do Simples Nacional (CRT 1), sem grupo IBSCBS. Art. 347 (LC 214/2025): em 2026 o optante do Simples não está sujeito ao destaque; aquisição de optante do Simples gera crédito limitado ao valor efetivamente recolhido pelo optante — sem destaque, NÃO há crédito. Resposta ao gerente: NÃO creditar IBS/CBS da nota de entrada do Ponto Fixo."
+    },
+    {
+      "numero": 2316,
+      "valor": 40000.0,
+      "credito_cbs": 360.0,
+      "credito_ibs": 40.0,
+      "motivo": "Fornecedor LOGISTICA ATLAS S.A. (CRT 3 — regime regular) com grupo IBSCBS conferido: 40.000 x 0,1% = 40,00 (IBS); 40.000 x 0,9% = 360,00 (CBS). Crédito integral: CBS 360,00 e IBS 40,00 (art. 346)."
+    },
+    {
+      "numero": 2317,
+      "valor": 60000.0,
+      "credito_cbs": 540.0,
+      "credito_ibs": 60.0,
+      "motivo": "Fornecedor regime regular (CRT 3) com grupo IBSCBS conferido: 60.000 x 0,1% = 60,00 (IBS); 60.000 x 0,9% = 540,00 (CBS). Crédito integral: CBS 540,00 e IBS 60,00 (art. 346)."
+    }
+  ],
+  "totais": {
+    "debito_cbs": 4320.0,
+    "debito_ibs": 480.0,
+    "credito_cbs": 1458.0,
+    "credito_ibs": 162.0,
+    "saldo_cbs": 2862.0,
+    "saldo_ibs": 318.0
+  },
+  "recolhimento_devido": 0.0,
+  "condicao_dispensa": "Recolhimento DISPENSADO em 2026 para o contribuinte que cumprir as obrigações acessórias (destaque do grupo IBSCBS nos documentos fiscais eletrônicos, escrituração e apuração-teste) — ADCT art. 125, §4º (LC 214/2025 - library/lc214_2025_transicao.md). RISCO: 4 das 12 NF-e de saída de agosto saíram irregulares (2308, 2310 e 2312 sem grupo após 03/08; 2309 com alíquotas invertidas). Se as irregularidades não forem tratadas e o destaque não ficar assegurado, a dispensa PODE ser perdida — nesse caso o recolhimento devido seria o próprio saldo apurado: CBS 2.862,00 + IBS 318,00 = R$ 3.180,00, compensável com PIS/COFINS do mesmo período (PIS 3.120,00 + COFINS 14.400,00 = 17.520,00 > 3.180,00; ADCT art. 125, §1º - library/lei_pis_cofins_compensacao.md)."
+}

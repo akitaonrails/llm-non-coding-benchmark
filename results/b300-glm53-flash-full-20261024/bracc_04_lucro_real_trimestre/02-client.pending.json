@@ -1,0 +1,46 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "questions": "# QUESTIONS.md — Atlas Distribuidora S.A. (rodada 2)\n\nPerguntas respondidas na rodada 1 **não são repetidas**: natureza dos brindes (cestas de vinho +\ncanivete gravado, 400 melhores clientes, contabilizadas como comercial) e justificativa do crédito da\nNF 8812 (destaque do fornecedor). Efeitos registrados em `deliverable/mes_01/pendencias.md` §5.\n\n## Pedido de documentos (necessário para desbloquear a sessão 2)\n1. Enviar os documentos do fechamento de **fevereiro/2026**, no padrão de janeiro: balancete de fev/2026,\n   razão de fev/2026 e documentos do mês (notas, contratos ou detalhamentos específicos).\n2. Se existir, o **detalhamento/demonstrativo das despesas comerciais que contenham os brindes**\n   (vinho e canivete gravado dos 400 melhores clientes), com valores e mês de registro — sem valor,\n   a adição do art. 13, VII (Lei 9.249/95) no e-LALUR do trimestre segue incalculável.\n\n## Incógnitas sem resposta do cliente (registradas explicitamente; permanecem abertas)\n- **Valor (e mês de registro) dos brindes jan–mar/2026:** não informado. Sem isso, a adição fiscal\n  (Lei 9.249/95, art. 13, VII — `library/lei9249_art13.md`) não pode ser quantificada.\n- **Data de transmissão da EFD-Contribuições original de 01/2026:** não informada. Combinado com a\n  ausência de índices de acréscimos na biblioteca, os acréscimos do complemento de **R$ 11.100,00**\n  permanecem não calculáveis (`library/pis_cofins_uso_consumo.md` só exige que sejam devidos).\n- **Parcelamento do prejuízo fiscal de R$ 900.000,00 (parcelas pós-1995?):** não informado.\n  **Suposição adotada e destacada:** todas as parcelas apuradas a partir de 1º/01/1995 → trava de 30%\n  aplicável à integralidade (`library/lei9065_art15_trava.md`).\n- **Quitação do complemento PIS/COFINS:** quem recolhe e quando não foi confirmado; tratamos os\n  11.100,00 (+ acréscimos) como obrigação da Atlas a quitar.\n",
+  "facts": [
+    {
+      "id": "luz",
+      "trigger": [
+        "Luz",
+        "OSCIP",
+        "utilidade pública",
+        "qualificação",
+        "doação"
+      ],
+      "answer": "A Associação Luz é uma ONG do bairro, não tem título nenhum. O presidente conhece o dono.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "brindes",
+      "trigger": [
+        "brindes",
+        "kits",
+        "4410",
+        "campanha"
+      ],
+      "answer": "Vinho e canivete gravado pros 400 melhores clientes. Marketing, ora.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "papel",
+      "trigger": [
+        "8812",
+        "Papel",
+        "uso e consumo",
+        "crédito"
+      ],
+      "answer": "É papel e toner da sede. O fornecedor destacou PIS/COFINS, então creditamos.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "brindes",
+    "papel"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

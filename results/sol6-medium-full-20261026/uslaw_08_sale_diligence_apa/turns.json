@@ -1,0 +1,44 @@
+[
+  {
+    "label": "s1-work",
+    "seconds": 236.28994555596728,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 224738,
+      "cached_input_tokens": 193280,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 11245,
+      "reasoning_output_tokens": 2515
+    },
+    "thread_id": "01a178bf-7302-7eb0-ae35-0f29aa63bcf2"
+  },
+  {
+    "label": "s1-pushback0",
+    "seconds": 53.14385743701132,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 147305,
+      "cached_input_tokens": 141696,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2685,
+      "reasoning_output_tokens": 377
+    },
+    "thread_id": "01a178bf-7302-7eb0-ae35-0f29aa63bcf2"
+  },
+  {
+    "label": "review",
+    "seconds": 125.83647600800032,
+    "returncode": 0,
+    "complete": true,
+    "usage": {
+      "input_tokens": 200988,
+      "cached_input_tokens": 186624,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7077,
+      "reasoning_output_tokens": 2438
+    },
+    "thread_id": "01a178bf-7302-7eb0-ae35-0f29aa63bcf2"
+  }
+]

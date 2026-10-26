@@ -1,0 +1,3 @@
+Sim, **com base nos documentos deste processo e na biblioteca fornecida**. O advogado citou a regra geral do art. 229, mas o **§ 2º do mesmo artigo** diz expressamente que o prazo em dobro não se aplica a processos em autos eletrônicos. As duas intimações identificam o processo como eletrônico (e-SAJ). Veja [cpc_prazos.md](/work/workspace/library/cpc_prazos.md).
+
+Para evitar perda de prazo, use a data **sem dobra: 15/12/2026 para a contestação**. Protocolar até essa data atende também à hipótese defendida pelo outro advogado, caso ela venha a ser aceita. A [memória de cálculo](/work/workspace/deliverable/memoria.md) mostra a contagem.

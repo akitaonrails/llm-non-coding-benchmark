@@ -1,0 +1,49 @@
+{
+  "form1040": {
+    "1a_wages": 122000,
+    "2b_interest": 400,
+    "8_other_income_sch1": -31050,
+    "11_agi": 91350,
+    "12_deduction": 31500,
+    "15_taxable_income": 59850,
+    "16_tax": 6708,
+    "19_ctc": 2200,
+    "17_sch2_excess_aptc": 1900,
+    "24_total_tax": 6408,
+    "25d_withholding": 8730,
+    "34_refund_or_37_owed": 2322
+  },
+  "form7203": {
+    "stock_basis_begin": 11500,
+    "loss_allowed": 11500,
+    "loss_suspended": 16500
+  },
+  "form8582": {
+    "rental_loss": 21018,
+    "magi": 110900,
+    "special_allowance": 19550,
+    "loss_allowed": 19550,
+    "carryforward": 1468
+  },
+  "form8962": {
+    "household_income": 91350,
+    "fpl_pct": 292.8,
+    "applicable_figure_pct": 5.7115,
+    "annual_ptc": 7531,
+    "aptc": 9900,
+    "excess": 2369,
+    "repayment_limitation": 1900,
+    "repayment": 1900
+  },
+  "dependents": ["Sofia Reyes (15)"],
+  "ny": {
+    "resident_days": 181,
+    "marcus_ny_wages": 68000,
+    "elena_ny_wages": 54000,
+    "method": "IT-203 part-year, two-column: resident period Jan 1-Jun 30 (181 days); during the nonresident period only NY-source income counts. Client confirmed BOTH relocations were employee-requested and merely employer-approved, so under the convenience-of-the-employer rule BOTH spouses' full-year wages are New York source: Marcus 68,000 (NYC S corp employer; he asked to move) and Elena 54,000 (Halvorsen approved her request to go fully remote and has no Tampa office, but did not direct the relocation). No workday allocation is needed."
+  },
+  "_notes": {
+    "sign_convention": "line 8 is negative (a net additional-loss amount); line 34 is a refund of 2,322",
+    "ptc_rounding": "annual PTC shown rounded from 7,531.25; excess from 2,368.75"
+  }
+}

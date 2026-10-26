@@ -1,0 +1,28 @@
+{
+  "itbi": {
+    "devido": true,
+    "estimativa": 432900.0,
+    "fundamento": "CF art. 156, §2º, I c/c CTN art. 37 (library cf156_ctn37_tema796.md): a imunidade na integralizacao NAO se aplica quando preponderante a locacao de imoveis; em empresa nova a preponderancia e aferida nos 3 anos seguintes - numa holding de aluguel a locacao sera ~100% da receita, logo a excecao incide e o ITBI e devido. Cenario central de planejamento: integralizar os 9 imoveis locados com base no valor de mercado (14.430.000) x 3% (alicota de Sao Paulo capital, unica listada na library) = 432.900. Se a integralizacao for feita pelo valor de declaracao (capital de 4.220.000), o municipio tende a lancar os mesmos 432.900 sobre o mercado e o Tema 796 (RE 796.376) serve de TETO: base nao pode exceder o valor da operacao, ou seja 3% x 4.220.000 = 126.600; a diferenca de 306.300 ficaria em discussao administrativa/judicial (Tema 1.348 / RE 1.495.108 pendente, nota do bibliotecario). Se o Galpao (Guarulhos) sofrer aliquota de 11% como alega a palestra, o total sobe para ate 680.900 - a aliquota de 11% NAO esta na library (nao verificada), assim como as de Campos do Jordao e Cotia; ver QUESTIONS.md."
+  },
+  "aluguel_anual": 1018800.0,
+  "pf": {
+    "ir_anual": 257756.4
+  },
+  "pj_presumido": {
+    "irpj_csll_pis_cofins": 124031.64,
+    "irrf_distribuicao_2026": 21326.44,
+    "total": 145358.08
+  },
+  "integralizacao": {
+    "valor_recomendado": 4220000.0,
+    "gcap_evitado": 2297250.0
+  },
+  "itcmd_doacao_quotas": {
+    "estimativa": 577200.0,
+    "base": "4% (aliquota SP, Lei 10.705/2000 - library itcmd_sp_lei10705.md) sobre o valor patrimonial atualizado / valor de mercado dos bens da PJ, NAO o contabil historico (Decreto 46.655/2002 art. 14 par. 4o e TJSP, conforme a library). Cenario da palestra 'doar todas as quotas' (base 14.430.000): 4% = 577.200; com reserva de usufruto a library descreve 2/3 na doacao da nua-propriedade (384.800) e 1/3 na extincao do usufruto (192.400) (regra marcada 'verificar' na propria library). Se a doacao se limitar ao disponivel (9.265.000 = 64,2% das quotas, sobre a base de 14.430.000): 370.600 - cenario alternativo, que deixaria 5.165.000 de quotas no inventario (Marcos herdaria parte delas e entraria na sociedade). A expectativa da palestra ('4% sobre o valor contabil' = 4% x 4.220.000 = 168.800) nao se sustenta. EC 132/2023 tornou obrigatoria a progressividade, pendente de lei estadual: risco de aliquota futura maior."
+  },
+  "legitima": {
+    "parcela_indisponivel_pct": 50.0,
+    "marcos_pode_ser_excluido": false
+  }
+}

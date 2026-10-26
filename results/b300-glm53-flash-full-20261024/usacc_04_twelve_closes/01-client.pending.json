@@ -1,0 +1,43 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "questions": "# Questions to the client — from the January 2025 close\nPrepared by the Controller. These concern prior-period balances for which no supporting detail exists in the client file (see `deliverable/month_01/open_items.md`).\n\n1. **Deferred revenue (account 2200):** The opening trial balance shows $65,000.00. `note_opening_deferred.md` explains $41,000.00 (Trestle Freight prior annual contract, Jun 2024–May 2025, released at $8,200.00/month). What does the remaining **$24,000.00** represent? Please provide the customer, contract/order form, billing date, service term, and monthly release schedule, so it can be amortized correctly from February (it is held unreleased pending your answer).\n2. **Accounts receivable (account 1100):** Opening balance $92,650.00. Please provide the aging/customer/invoice detail underlying this balance so collectability can be assessed.\n3. **Prepaid expenses (account 1300):** Opening balance $9,600.00. What vendor and period does it cover, and what is the monthly amortization? (No amortization was recorded in January pending your answer.)\n4. **Accounts payable (account 2000):** Opening balance $17,420.00. Please provide the vendor/invoice detail so the accrual can be vouched.\n5. **Depreciation:** The close checklist requires $1,777.78/month. Please provide the fixed-asset schedule (equipment cost $64,000.00 per the opening TB, plus accumulated depreciation $21,333.00) showing the basis, remaining life, and expected depreciation for the remaining months of 2025 (to be validated against 12 × $1,777.78 = $21,333.36).\n6. **Close convention:** The opening trial balance carries 2024-period income statement accounts open (subscription revenue $30,450.00 in account 4000) and retained earnings shows a debit balance of $205,953.00. Please confirm whether year-end closing entries were intentionally not made, and how the Board wants the 2025 income statement presented (January-only vs. the cumulative account balances) — this affects the 2025 financial statements to be issued with the December close.\n",
+  "facts": [
+    {
+      "id": "pinecone_onboarding",
+      "trigger": [
+        "Pinecone",
+        "implementation",
+        "onboarding",
+        "C-025",
+        "what was delivered"
+      ],
+      "answer": "Alvarado: Honestly nothing bespoke — they self-onboarded like everyone else. Procurement just wanted it called a license.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "gusto_dup",
+      "trigger": [
+        "duplicate",
+        "two net pay",
+        "Gusto",
+        "second debit"
+      ],
+      "answer": "Office manager: Gusto admitted the double debit; refund posted May 9.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "c012",
+      "trigger": [
+        "C-012",
+        "cancel",
+        "credit memo",
+        "stop invoicing"
+      ],
+      "answer": "Alvarado: yeah they cancelled. Billing didn't get turned off. Credit them.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

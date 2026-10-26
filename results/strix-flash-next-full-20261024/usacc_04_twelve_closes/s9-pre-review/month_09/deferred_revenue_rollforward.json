@@ -1,0 +1,71 @@
+{
+  "as_of": "2025-09-30",
+  "contracts": [
+    {
+      "contract": "Trestle renewal (C-026)",
+      "opening": 8000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 6000.0,
+      "note": "September release 2,000.00 (JE-2509-015). Closing 6,000.00 covers Oct-Dec 2025 @ 2,000/month - fully current. Annual renewal billing expected January 2026."
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025 / INV-2250)",
+      "opening": 15000.0,
+      "billed": 0.0,
+      "recognized": 3000.0,
+      "closing": 12000.0,
+      "note": "Documented 12-month term 2025-02-01 to 2026-01-31 (Amendment No. 1, see month_07). September release 3,000.00 (JE-2509-015). Closing 12,000.00 covers Oct 2025-Jan 2026 @ 3,000/month - fully current; final release due January 2026."
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027 / INV-2275)",
+      "opening": 9000.0,
+      "billed": 0.0,
+      "recognized": 1500.0,
+      "closing": 7500.0,
+      "note": "12-month term from service start 2025-03-01 (order_form_C-027.md). September release 1,500.00 (JE-2509-015). Closing 7,500.00 covers Oct 2025-Feb 2026 @ 1,500/month - fully current."
+    },
+    {
+      "contract": "Quarry Analytics Co (C-028 / INV-2324)",
+      "opening": 20000.0,
+      "billed": 0.0,
+      "recognized": 2500.0,
+      "closing": 17500.0,
+      "note": "12-month term from service start 2025-05-01 (order_form_C-028.md). September release 2,500.00 (JE-2509-015). Closing 17,500.00 covers Oct 2025-Apr 2026 @ 2,500/month - fully current."
+    },
+    {
+      "contract": "Saltline Hospitality (C-029 / INV-2349)",
+      "opening": 16200.0,
+      "billed": 0.0,
+      "recognized": 1800.0,
+      "closing": 14400.0,
+      "note": "12-month term from service start 2025-06-01, auto-renewing (order_form_C-029.md). September release 1,800.00 (JE-2509-015). Closing 14,400.00 covers Oct 2025-May 2026 @ 1,800/month - fully current."
+    },
+    {
+      "contract": "Vireo Clinics PBC (C-030 / INV-2422)",
+      "opening": 0.0,
+      "billed": 27000.0,
+      "recognized": 2250.0,
+      "closing": 24750.0,
+      "note": "New contract: order_form_C-030.md dated 2025-09-01 - annual subscription 27,000.00 billed upfront, service start 2025-09-01, 12-month term to 2026-08-31, auto-renewing; billed 09/01 (INV-2422, JE-2509-001) and collected by wire 09/15. September release 2,250.00 = 27,000.00 / 12 (JE-2509-015). Closing 24,750.00 covers Oct 2025-Aug 2026 @ 2,250/month - fully current (11 remaining months)."
+    }
+  ],
+  "total": {
+    "opening": 68200.0,
+    "billed": 27000.0,
+    "recognized": 13050.0,
+    "closing": 82150.0
+  },
+  "reconciliation_to_trial_balance": {
+    "2200 per trial balance (08/31/2025)": 68200.0,
+    "plus billed (INV-2422, JE-2509-001)": 27000.0,
+    "less recognized (JE-2509-015)": -13050.0,
+    "2200 per trial balance (09/30/2025)": 82150.0
+  },
+  "notes": [
+    "September advance billing: only INV-2422 (Vireo Clinics PBC, 27,000.00). The other 24 invoices in invoices.csv are monthly subscriptions; INV-2409 (C-012, 1,800.00) was voided by credit memo JE-2509-002 the same month, so September monthly revenue is 23 subscribers / 28,650.00 and C-012 has no contract liability at any point.",
+    "Opening 68,200.00 equals the August roll-forward closing and account 2200 net at 08/31/2025. Closing 82,150.00 equals account 2200 net in month_09/trial_balance.json (credits 221,600.00 less debits 139,450.00).",
+    "No prior-period correction entries in September. The INV-2409 void is a same-period correction: the August books were correct (August service delivered and collected), the erroneous invoice was issued, recorded and reversed within September - no ASC 250 restatement of any closed period (open_items.md item 1).",
+    "All six balances remain fully current as of 2025-09-30 (every remaining service month falls within 12 months; the longest tail is Vireo to 2026-08-31, 11 months). The U6 chart-of-accounts gap (no non-current contract-liability account) stays moot."
+  ]
+}

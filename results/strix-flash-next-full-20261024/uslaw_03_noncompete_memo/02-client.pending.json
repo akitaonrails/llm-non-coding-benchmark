@@ -1,0 +1,57 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "questions": "# QUESTIONS for Meridian\n\nUpdated Oct. 25, 2026 after client responses. Answered items are closed and not re-asked; remaining unknowns are flagged because the client reports no additional information on them.\n\n## Closed by client responses (Oct. 25, 2026)\n\n- **Austin onsite time (prior Q8):** Confirmed — two trips only (onboarding week March 2024; offsite Oct. 2025); everything else Oakland. Effect: §925 \"primarily resides and works in California\" is now a confirmed fact, and the *Michiana* minimum-contacts description matches Zhao's footprint exactly.\n- **AB 1076 notices / LO-233 (prior Q3, part):** Confirmed — legal ops never sent notices; ticket closed **\"won't do.\"** Effect: company-wide §16600.1(b)/(c) exposure is a documented, deliberate non-compliance. (The client asked that this not be put in writing further; our answer is in memo §6 item 8 — the fact is load-bearing, already in the client's own records, and cannot be omitted from our advice; the cure is the notices, not quiet.)\n- **Confidentiality evidence (prior Q5):** Confirmed — no evidence Zhao took anything; the objection is \"the competing itself.\" Effect: no §10/trade-secret case on this record; reinforces do-not-sue.\n\n## Remaining unknowns — client has no additional information; flagged explicitly\n\n1. **Condition of employment (prior Q1).** Still unstated. §925(a)'s \"as a condition of employment\" element is analyzed as a well-supported assumption (offer, then agreement sent; \"standard form for all engineers\"), not as a fact.\n2. **Full executed agreement (prior Q2).** Client has no further documents. Assumed no fee-shifting, severability, equity, or scope-definition terms; all fee math in memo §4.8 is illustrative on assumed rates.\n3. **AB 1076 population (prior Q3, remainder).** Headcount of current employees and post-Jan. 1, 2022 former employees with §8-style clauses working in California is unknown. Company-wide exposure is therefore stated qualitatively, never forced to a number. Memo recommendation #3 (inventory, then notice) stands as step one.\n4. **Other California hires on the §8 form since Jan. 1, 2024 (prior Q6).** Unknown. Each is a potential §16600.5(c) violation; stop-use recommendation stands regardless of count.\n5. **Prior firm advice (prior Q7).** No information on the *Alvarez* outcome or full texts of *Calderon* / *Westbrook* en banc. Prior advice remains unverifiable on this library and is not relied upon.\n6. **Kestrel role/scope specifics (prior Q4).** No additional detail; immaterial unless the recommendation changes, which the confirmed facts do not suggest.\n\n## Open legal questions the library cannot settle (unchanged)\n\n- Whether §16600.1(b)'s fixed Feb. 14, 2024 notice duty reaches employees hired after the deadline (Zhao).\n- Whether a Texas court would give effect to Cal. Lab. Code §925.\n- Scope of §16600.5 private remedies against an out-of-state employer, absent verifiable case law (the firm memos' *Westbrook* theory is unverifiable and was under en banc rehearing per the 2025 update).\n",
+  "facts": [
+    {
+      "id": "austin_trips",
+      "trigger": [
+        "Texas",
+        "Austin",
+        "ever in Texas",
+        "physically"
+      ],
+      "answer": "Twice: onboarding week March 2024, and an offsite October 2025. Otherwise Oakland.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "counsel",
+      "trigger": [
+        "counsel",
+        "lawyer",
+        "negotiat",
+        "represented"
+      ],
+      "answer": "No. It's our standard form; engineers sign the same day. Nobody negotiates.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "notice_1076",
+      "trigger": [
+        "AB 1076",
+        "notice",
+        "February 14",
+        "16600.1"
+      ],
+      "answer": "Legal ops never sent the notices. The ticket was closed as 'won't do'. Please don't put that in writing if you can avoid it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trade_secrets",
+      "trigger": [
+        "trade secret",
+        "confidential",
+        "took",
+        "misappropriat"
+      ],
+      "answer": "No evidence he took anything. He said he wouldn't. It's the competing itself we object to.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "austin_trips",
+    "notice_1076",
+    "trade_secrets"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

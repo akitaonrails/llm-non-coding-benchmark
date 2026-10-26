@@ -1,0 +1,24 @@
+{
+  "case": "brlaw_08_ma_diligencia",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 1759.8194736700098,
+  "controller_wait_seconds": 61.00583441302297,
+  "model_turn_seconds": 1698.4142174860172,
+  "turns": 4,
+  "released_facts": [
+    "cnd",
+    "horizonte",
+    "pjs"
+  ],
+  "usage": {
+    "input_tokens": 5533586,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 225070,
+    "reasoning_output_tokens": 134165
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

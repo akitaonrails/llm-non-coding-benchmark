@@ -1,0 +1,46 @@
+{
+  "case": "usacc_09_revenue_going_concern",
+  "questions": "# Open items and questions for management\n\nQuestions affect presentation amounts but not the revenue conclusions or the going-concern conclusion. The engagement is delivered on stated, prominently flagged assumptions; if you answer, I will update the deliverables.\n\n1. **Ironvale discount rate (material to the lease amounts).** What is the Company's incremental borrowing rate at the lease commencement date (10/1/2025), or the rate implicit in the lease if readily determinable? I used an assumed **8.0% annual (0.6667%/month)** — unverified, not from the library. ROU asset / lease liability: $591,678 at 6%, **$574,413 at 8% (assumed)**, $557,842 at 10%.\n2. **Subscription revenue.** Please confirm the drafted $850,000 of subscription revenue arises from contracts meeting all five ASC 606-10-25-1 criteria (committed parties, enforceable rights, identifiable terms, commercial substance, collection probable). I have found no contrary facts in the file but no signed contract documents for the subscriptions were provided either.\n3. **Saltline.** For the Q1 2026 delivery (and refund-liability estimate under ASC 606-10-55-22): is there a firm delivery date, will kits be tagged/segregated before delivery, and what is the expected likelihood of Tampa rollout cancellation or reduction? Any history with Saltline returns?\n4. **Going concern — management plans.** Besides the Crestline term sheet (which the library criteria treat as not probable), what plans exist that you consider probable of implementation and of mitigating the shortfall shown in the 13-week projection (e.g., expense reductions, deferred hiring, factoring receivables, other investors)? Which week's projected balances does the Company challenge, if any? Also confirm the expected issuance date of the FY2025 financial statements (the 205-40 window runs one year from issuance).\n5. **Ironvale commencement.** Confirm commencement (10/1/2025) equals the contract signing date, and state any prepaid or initial direct costs to include in the ROU asset, plus the exact monthly billing date.\n6. **Lease classification guidance gap.** The library covers identification and initial recognition only; it does not state the classification test or subsequent amortization pattern for lessees. I assumed straight-line Q4 expense of $54,000 (no net-income change versus expensing). Please confirm with the auditors whether an operating-lease-style or front-loaded pattern applies — the alternative makes Q4 expense $59,071 (net loss $(239,071)).\n7. **Escalation.** Does the Company have a board (or audit committee) in place, as the AICPA Code's escalation path under ET §2.130.020 would require if the accounting disagreement with the CEO is not resolved?\n\n— Controller, 12/31/2025\n",
+  "facts": [
+    {
+      "id": "side_letter_signed",
+      "trigger": [
+        "side letter",
+        "countersigned",
+        "return right",
+        "refund"
+      ],
+      "answer": "Yes, Alvarado countersigned it. Saltline insisted. It's just a comfort letter.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "kits_tagged",
+      "trigger": [
+        "segregated",
+        "tagged",
+        "identified",
+        "which kits",
+        "general stock"
+      ],
+      "answer": "They're on the shelf with everything else. Same SKU, no point tagging.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "halvorsen_status",
+      "trigger": [
+        "Halvorsen",
+        "definitive",
+        "MSA signed",
+        "procurement committee"
+      ],
+      "answer": "Procurement meets Jan 20. Security review is 'in progress'. They're committed, trust me.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "side_letter_signed",
+    "kits_tagged"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

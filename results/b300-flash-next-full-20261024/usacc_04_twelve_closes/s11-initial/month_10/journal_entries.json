@@ -1,0 +1,163 @@
+[
+  {
+    "ref": "JE-2025-10-01",
+    "date": "2025-10-01",
+    "memo": "October monthly subscription invoices INV-2423..INV-2446 (24 lines, 30,450.00) as issued by the billing system. Includes INV-2434 1,800.00 to Alder Studios LLC (C-012) \u2014 SECOND CONSECUTIVE MONTH this churned account was billed despite its 2025-08-31 cancellation (open items 16/17); credited in full by JE-2025-10-02 upon the customer's 10/06 written dispute. C-018 Alder Studios Inc (900.00) is a different, continuing customer and stays billed (revenue_policy_memo #3).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-10-02",
+    "date": "2025-10-06",
+    "memo": "Credit memo \u2014 INV-2434 (1,800.00) issued 10/01 to Alder Studios LLC (C-012), cancelled effective 2025-08-31. Customer's 10/06 email (documents/month_10/email_dispute_C-012.txt) restates the cancellation, refuses payment and requests credit. No contract exists for October and no performance occurred, so the invoice alone is not revenue (revenue_policy_memo #3; ASC 606-10-25-1). Error arose and was corrected entirely within October \u2014 not an ASC 250 prior-period correction; the recurring billing-suppression failure is escalated under open item 17.",
+    "lines": [
+      {
+        "account": "4000",
+        "debit": 1800.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 1800.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-10-03",
+    "date": "2025-10-31",
+    "memo": "October deferred-revenue releases 13,050.00: Trestle renewal 2,000.00 (10 of 12) + Pinecone 3,000.00 (9 of 12, ASC 250 restated schedule, item 15) + Marigold 1,500.00 (8 of 12) + Quarry 2,500.00 (6 of 12) + Saltline 1,800.00 (5 of 12) + Vireo 2,250.00 (2 of 12) (ASC 606 excerpts; revenue_policy_memo; order forms on file). Identical release set to September \u2014 no new annual prepay and no expirations in October.",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 13050.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 13050.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-10-04",
+    "date": "2025-10-26",
+    "memo": "October cash receipts 28,650.00 (documents/month_10/cash_receipts.csv, 23 receipts, applied 1:1 to INV-2423..INV-2446 of the 23 continuing customers; last deposit 10/26). None applied to INV-2434 \u2014 the disputed invoice was not paid (bank verified: no ALDER STUDIOS LLC deposit on the statement).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 28650.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 28650.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-10-05",
+    "date": "2025-10-09",
+    "memo": "October vendor bills per documents/month_10/vendor_bills.csv: AWS 11,000.00 (5000), WeWork 7,200.00 (5100), Notion/Slack/GitHub 1,460.00 (5200), Google Ads 3,700.00 (5300), Gusto fees 240.00 (5400) \u2014 23,600.00 total. Codes per the controller-assigned mapping (open item 11). AWS +120 and Ads +50 versus September continue the monthly steps observed since April \u2014 usage variance against billed amounts, item 11. No Harbor Law LLP bill, consistent with the quarterly cycle that closed item 2 (bills 03/09, 06/09, 09/09; next expected 12/09).",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 11000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5200",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5300",
+        "debit": 3700.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5400",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 23600.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-10-06",
+    "date": "2025-10-09",
+    "memo": "October vendor bills paid by ACH 10/05\u201310/09 \u2014 all five transactions appear on the bank statement for exactly the billed amounts (verified in bank_reconciliation.md).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 23600.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 23600.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-10-07",
+    "date": "2025-10-25",
+    "memo": "October payroll per documents/month_10/payroll_register.json: gross 54,404.00 (6000) + employer taxes/benefits 5,076.00 (6100) = 59,480.00 cost; net pay 48,200.00 and tax remittance 11,280.00 (withheld 6,204.00 + employer 5,076.00) both paid in-month and on the statement 10/25 (GUSTO NET PAY, GUSTO TAX) \u2014 register AND bank agree to the penny on both legs. Register identical to May/June/July/August/September for the sixth month running \u2014 observation recorded in open_items.md.",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 59480.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2025-10-08",
+    "date": "2025-10-31",
+    "memo": "Monthly depreciation: computer equipment 64,000.00 / 36-month life = 1,777.78 (straight-line; opening-balance-derived policy carried since January, open item 6).",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  }
+]

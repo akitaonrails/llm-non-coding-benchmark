@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "engagement": "Brightline Cabinetry LLC — Buyer A / Lone Star ($3,100,000 asset sale) vs Buyer B / Hensley ($2,850,000 stock sale)",
+    "prepared": "2026-10-25",
+    "close_assumed": "late 2026 — inside the IRC 1374 recognition period (1/1/2023-12/31/2027)",
+    "rates": { "ordinary": 0.37, "long_term_capital_gain": 0.20, "corporate_1374": 0.21, "source": "library/capital_gain_rates.md; library/irc_1374.md" },
+    "headline": "At a 2026 close, Buyer B's stock sale nets MORE than Buyer A even after the best counter-allocation. Buyer A wins only if closing slips past 12/31/2027 (entity-level BIG tax disappears) or the price is renegotiated to ~$3.16M+ on corrected classes. Timing and allocation are the levers; the $250,000 headline gap is illusory.",
+    "key_assumptions": {
+      "ar_basis": "FALLBACK (client could not answer, Q1): cash-method taxpayer, $0 basis in the $200,000 receivables -> full $200,000 ordinary in the A scenarios. Accrual variant: sale-year tax drops $74,000 per A scenario (that income was taxed when earned in earlier years); see sensitivities.",
+      "assumed_liabilities": "FALLBACK (Q2 partially answered): no payables schedule in the file, so $0 assumed liabilities modeled. Known contingencies: Hardaway dispute $9,800 plus unquantified warranty items. Buyer A retains them (assumes only scheduled payables): after-tax ~$6,174 on Hardaway. Buyer B assumes all known/unknown liabilities: ~$0 if disclosed on schedules; worst case ~$8,129 after-tax if repriced at PSA.",
+      "closing_date": "FALLBACK (Q3 unanswered, client has no information): 2026 close, inside recognition period. THE decisive variable — see post_2027_close sensitivity.",
+      "material_participation": "FALLBACK (Q4 unanswered, client has no information): Ray materially participates (owner-operator), so no NIIT per library/capital_gain_rates.md. NIIT at 3.8% is NOT a library rate; if it applied it would add ~$103,360 to each A scenario vs ~$95,760 to B.",
+      "big_at_conversion": "Per tax_history_and_conversion.md 1/1/2023 appraisal: goodwill/trade name $900,000; equipment & vehicles $230,000; other assets $0. Used as-is. Tension flagged: 'other $0' fits an accrual AR (basis = face); under the cash-method fallback AR would nominally carry $200,000 of BIG — if the CPA confirms that contrary-to-appraisal position, entity tax rises to $279,300 and each A net drops $26,460.",
+      "loss_ordering_convention": "1374 entity tax passes through as an S-corp loss (library/irc_1374.md citing 1366(f)(2)) and is modeled as offsetting ordinary income first. Ordinary income exceeds the entity tax in every scenario by >= $372,700, so the ordering never touches capital gain; the ordering rule itself is a labeled convention, not library text.",
+      "discount_rate": "6% per-year PV for B's note, and escrow timing. 6% is a stated assumption, not a library fact; PVs at 8/10/12/15% shown in memo. Taxes modeled as paid in the year income is received (conservative convention).",
+      "niit_and_tx": "No NIIT (above). Texas franchise-tax consequences of either structure not analyzed — not in the library."
+    }
+  },
+  "asset_sale_buyer_a_as_drafted": {
+    "allocation_exhibit_a": { "class_iii_receivables": 200000, "class_iv_inventory": 150000, "class_v_equipment_vehicles": 900000, "class_vi_noncompete_5yr": 400000, "class_vii_goodwill": 1450000, "total": 3100000 },
+    "ordinary_income": 1270000,
+    "ordinary_income_detail": "receivables 200,000 (cash-method basis 0) + inventory 150,000-140,000 = 10,000 + equipment 900,000-240,000 = 660,000 all 1245 ordinary (accumulated depreciation 860,000 exceeds the gain) + noncompete 400,000 (library/irc_197_and_noncompete.md: seller covenant payments are ordinary)",
+    "capital_gain": 1450000,
+    "capital_gain_detail": "Class VII goodwill (self-created) 1,450,000",
+    "entity_level_tax": 237300,
+    "entity_level_tax_detail": "1374 recognized BIG = equipment min(660,000 gain, 230,000 BIG) = 230,000 + goodwill min(1,450,000, 900,000) = 900,000 -> 1,130,000 x 21% = 237,300; treated as an S-corp loss to Ray (1366(f)(2), per library/irc_1374.md)",
+    "total_tax": 909399,
+    "total_tax_detail": "entity 237,300 + individual [0.37 x (1,270,000 - 237,300) = 382,099] + [0.20 x 1,450,000 = 290,000]",
+    "net_after_tax": 2190601
+  },
+  "asset_sale_counter_allocation": {
+    "allocation_proposed": { "class_iii_receivables": 200000, "class_iv_inventory": 140000, "class_v_equipment_vehicles": 650000, "class_vi_noncompete_5yr": 100000, "class_vii_goodwill": 2010000, "total": 3100000 },
+    "rationale": "Class placement in Exhibit A matches the library's class list (library/irc_1060_form_8594.md: III mark-to-market & receivables, IV inventory, V other/equipment, VI 197-intangibles incl. noncompete, VII goodwill), so the counter moves AMOUNTS, not classes: Class V down to fixed-asset-register FMV 650,000; inventory down to carrying 140,000; noncompete cut 400,000 -> 100,000 (target 0; Buyer B got a 3-year covenant for $0); all cuts land in Class VII.",
+    "ordinary_income": 710000,
+    "ordinary_income_detail": "receivables 200,000 + inventory 0 + equipment 650,000-240,000 = 410,000 all 1245 (register: every per-asset gain <= its depreciation) + noncompete 100,000",
+    "capital_gain": 2010000,
+    "capital_gain_detail": "Class VII goodwill 2,010,000",
+    "entity_level_tax": 237300,
+    "entity_level_tax_detail": "recognized BIG unchanged: equipment min(410,000, 230,000) = 230,000 + goodwill min(2,010,000, 900,000) = 900,000 = 1,130,000 x 21% = 237,300. Both BIG caps are already binding, so the counter does not change entity tax — every shifted dollar saves exactly 37% - 20% = 17 cents.",
+    "total_tax": 814199,
+    "total_tax_detail": "entity 237,300 + individual [0.37 x (710,000 - 237,300) = 174,899] + [0.20 x 2,010,000 = 402,000]",
+    "net_after_tax": 2285801,
+    "gain_vs_as_drafted": 95200,
+    "best_case_class_vi_zero": { "ordinary_income": 610000, "capital_gain": 2110000, "entity_level_tax": 237300, "total_tax": 797199, "net_after_tax": 2302801, "gain_vs_as_drafted": 112200 }
+  },
+  "stock_sale_buyer_b": {
+    "structure": "2,350,000 cash at closing + 500,000 seller note, 5 years, 6%, annual interest with level 100,000 principal; buyer assumes ALL liabilities known and unknown; 12-month indemnity capped at 10% of price; 100,000 escrow; 3-year noncompete for no separate consideration.",
+    "ordinary_income": 90000,
+    "ordinary_income_detail": "note interest 30,000+24,000+18,000+12,000+6,000 = 90,000 (ordinary; interest on seller financing)",
+    "capital_gain": 2430000,
+    "capital_gain_detail": "2,850,000 price - 420,000 stock basis; no 1245 or 1374 at the entity level in a stock sale (library/stock_vs_asset_overview.md; 1374 applies to asset sales by the S corp). Installment method applies (library/irc_453_installment.md; 453(i) recapture-acceleration rule does not bite — no asset recapture in a stock sale): gross profit ratio 2,430,000/2,850,000 = 85.2632%; closing payment recognizes 2,350,000 x 85.2632% = 2,003,684 gain, each 100,000 principal installment 85,263 gain.",
+    "entity_level_tax": 0,
+    "total_tax": 519300,
+    "total_tax_detail": "capital 2,430,000 x 20% = 486,000 + interest 90,000 x 37% = 33,300",
+    "net_after_tax": 2420700,
+    "net_after_tax_convention": "price 2,850,000 + 90,000 interest received - 519,300 total tax = 2,420,700 nominal, spread over 6 years (2,350,000 of it at closing). The A figures above are single-date 2026 numbers.",
+    "net_present_value_at_6pct": 2348288.73,
+    "net_present_value_at_6pct_with_100k_escrow_held_12mo": 2342628.35,
+    "annual_flows_after_tax": [1949263.16, 101847.37, 98067.37, 94287.37, 90507.37, 86727.37],
+    "risks": "500,000 seller-note credit risk sits with Ray (unsecured in the LOI); 100,000 escrow vs only ~9,800 of known disputes; the 0-dollar covenant could invite an IRS reallocation argument (library/irc_197_and_noncompete.md economic-reality language cuts both ways) — low-probability, labeled."
+  },
+  "ray_naive_estimate": {
+    "statement": "Ray's assumption: business sales are capital gains, so $3,100,000 x (1 - 20%) = ~$2,480,000 from the bigger offer.",
+    "ordinary_income": 0,
+    "capital_gain": 3100000,
+    "entity_level_tax": 0,
+    "total_tax": 620000,
+    "net_after_tax": 2480000,
+    "error": "Overstates Buyer A's real net by $289,399 (naive 2,480,000 vs drafted 2,190,601): ignores 1245 recapture on 660,000 of equipment gain, 200,000 of cash-method receivables, the 400,000 ordinary noncompete, and the 237,300 entity-level 1374 tax. Buyer B is the deal that actually approximates Ray's assumption (its gain really is capital)."
+  },
+  "comparison": {
+    "at_2026_close_pv_basis": {
+      "buyer_b_pv_at_6pct": 2348288.73,
+      "buyer_a_drafted": 2190601, "b_minus_a_drafted": 157688,
+      "buyer_a_counter": 2285801, "b_minus_a_counter": 62488,
+      "buyer_a_counter_vi_0": 2302801, "b_minus_a_best": 45488,
+      "verdict": "At a 2026 close B wins even against the best corrected allocation. A is inferior by ~$45k-$158k."
+    },
+    "post_2027_close": {
+      "trigger": "closing after 12/31/2027 ends the 1374 recognition period (library/irc_1374.md (d)(7): 5 years from 1/1/2023), so the 237,300 entity tax disappears; its after-tax pass-through cost was 237,300 x (1 - 37%) = 149,499 in every A scenario.",
+      "buyer_a_drafted_net": 2340100, "buyer_a_counter_net": 2435300, "buyer_a_counter_vi_0_net": 2452300,
+      "verdict": "A counter at 3,100,000 then beats B's PV by ~87,000 (best case ~104,000); drafted A is still ~8,200 behind B. Deferring the asset-sale close out of the window is worth 149,499 — the single biggest lever on the table. (If both closings defer a year, both sides discount ~5.7% at 6% and the ranking is unchanged.)"
+    },
+    "price_breakevens_vs_b_pv_at_6pct": {
+      "drafted_pattern_plus_dollars_go_to_class_v_all_ordinary": 3350298,
+      "corrected_allocation_marginal_dollar_to_class_vii_net_0.80": 3178110,
+      "corrected_allocation_vi_zero": 3156860,
+      "reading": "to make Buyer A worth B's PV at a 2026 close, price must rise to ~3.16M-3.18M with a corrected allocation (or ~3.35M if Lone Star keeps the drafted class pattern). Below those numbers, B is the better offer even after fixing the classes."
+    },
+    "hardaway_9800_and_warranty": "A: seller retains (buyer assumes only scheduled payables) — final-year LLC deduction at 37% -> ~$6,174 net cost per $9,800 (each $1 of warranty retained costs Ray $0.63). B: buyer assumes known AND unknown liabilities — $0 to Ray if Hardaway is disclosed on the schedules; if not disclosed, escrow claw-back (within the 100,000 escrow / 285,000 cap); if instead repriced at PSA, worst case $9,800 x (1 - 85.2632% x 20%) = $8,129 after-tax. Neither changes the ranking. Warranty exposure unquantified by client — flagged, not modeled.",
+    "escrow_and_protections": "B's drafted 100,000 escrow (~10x known disputes) held 12 months: PV cost only ~$5,660 — worth conceding; ask to cap the indemnity carve-outs and specifically exclude the disclosed Hardaway matter. A's LOI has NO escrow — expect one at the PSA; negotiate <= 2.5% of price, 12 months, Hardaway carved out. B's note: seek security interest or acceleration; 8% discount view of the note is 2,328,042 vs B's 2,348,289 headline PV."
+  },
+  "sensitivities": {
+    "accrual_method_ar_basis_200000": "A sale-year tax drops 74,000 per scenario (receivables gain vanishes; that income was taxed at 37% in prior years, so lifetime tax is similar). Nets: drafted 2,264,601 / counter 2,359,801 / VI=0 2,376,801. At a 2026 close this flips counter (~+11,512) and VI=0 (~+28,512) past B's PV 2,348,289 — resolve Q1 with the CPA; it is now outcome-relevant.",
+    "closing_after_2027": "see comparison.post_2027_close — biggest lever, worth 149,499 on the A side",
+    "niit_if_not_materially_participating": "+3.8% x 2,720,000 gain = +103,360 each A scenario vs +3.8% x (2,430,000 + 90,000) = +95,760 for B — net effect ~7,600 against A. 3.8% rate not in library; labeled unverified.",
+    "ar_built_in_gain_beyond_appraisal": "if cash-method AR carries 200,000 BIG contrary to the appraisal's 'other 0': entity tax 279,300, each A net -26,460 (widens B's 2026 lead)",
+    "b_discount_rate": "PV of B flows: 6% 2,348,289 / 8% 2,328,042 / 10% 2,309,407 / 12% 2,292,219 / 15% 2,268,841 — B stays above drafted and counter A through ~10%; counter+VI=0 overtakes B near 12-15% (credit-risk pricing)",
+    "b_escrow_pv": "100,000 carved from closing cash, released month 12: PV -5,660; ignores claim risk, assumed ~0 with Hardaway disclosed",
+    "assumed_liabilities_fallback": "if Lone Star's closing schedule lists payables, each assumed dollar is extra A consideration allocated under the residual method (library/irc_1060_form_8594.md) — taxed at the marginal class rate; B's price is already all-liability-assumed"
+  }
+}

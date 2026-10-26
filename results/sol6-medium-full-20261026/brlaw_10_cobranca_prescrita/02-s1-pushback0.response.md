@@ -1,0 +1,5 @@
+Vou conferir os dois pontos nos documentos e na biblioteca: o alcance do pagamento de 2023 e o efeito dos relatórios assinados sobre a prescrição das parcelas 5 e 6.
+
+O pagamento de 2023 conta, mas o comprovante diz expressamente que os **R$ 10.000,00 são por conta da parcela 1**. Além disso, o e-mail de 2022 já havia interrompido a prescrição das parcelas 1 a 4; pela regra da biblioteca, a interrupção só pode ocorrer **uma vez** para cada parcela. O pagamento não reinicia esse prazo nem alcança as parcelas 5 e 6. [CC arts. 202 e 206 §5º I](/work/workspace/library/cc_prescricao_202_206.md).
+
+Os relatórios assinados das parcelas 5 e 6 são prova importante dos serviços, mas os documentos recebidos não mostram neles um reconhecimento da **dívida** nem informam quando foram assinados. Já o e-mail de 2022 contesta expressamente essas duas parcelas. Sem interrupção identificada, os cinco anos contados dos vencimentos terminaram em **10/02/2026** e **10/03/2026**. Acrescentei essa distinção ao [memorando](/work/workspace/deliverable/memorando.md).

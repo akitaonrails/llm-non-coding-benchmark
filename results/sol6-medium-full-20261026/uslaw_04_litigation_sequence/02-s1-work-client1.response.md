@@ -1,0 +1,5 @@
+I’ll update Session 1 for the confirmed two-hire waiver and the $3,100 June billing error, then check whether any new session documents have arrived. I’ll flag the remaining gaps without repeating the questions Juniper cannot answer.
+
+I updated the [Session 1 assessment](/work/workspace/deliverable/session1/assessment.md) and [draft demand letter](/work/workspace/deliverable/session1/demand_letter.md). They now reflect Bell’s confirmation that he waived only Rosa and Tay’s fees and Dolapo’s admission of **about $3,100** in double-entered June shifts. The draft acknowledges the billing error and uses provisional corrected figures; it has not been sent.
+
+The [status file](/work/workspace/deliverable/STATUS.md) lists the facts still unknown. I removed the answered client questions. No opposing-counsel documents for a later session are in the workspace yet.

@@ -1,0 +1,54 @@
+{
+  "probabilidade_vinculo": "alta (65–80%); após admissões do cliente de 25/10/2026 (Carla: horário/férias/feedback \"igual aos CLTs\"; Diretor: \"18 mil cheios... CLT equivalente ~12 mil\"), estimativa no topo da faixa (~80%) — provisão central mantida em 70% por prudência",
+  "fundamentos": [
+    "Art. 3º CLT: pessoalidade (PJ unipessoal; contrato obriga a 'disponibilizar seu sócio'), não eventualidade (84 notas mensais, 10/2019–09/2026), onerosidade (R$ 18.000/mês 'independentemente de entregas') e subordinação (horário fixo 9h–18h, report ao Gerente de Engenharia, home office 'autorizado pelo gestor') — contrato_prestacao_servicos_pj.pdf e notas_fiscais_resumo.csv.",
+    "Art. 442-B CLT: a exclusividade e a continuidade só afastariam o vínculo na AUSÊNCIA de subordinação; aqui a subordinação é documentada (cláusulas 3, 4 e 5 do contrato), logo o art. 442-B não socorre a Solaris (clt_requisitos_vinculo.md).",
+    "Art. 9º CLT: atos de desvirtuamento/fraude à CLT são nulos de pleno direito; a forma PJ convive com RH que aprova férias ('saldo de 20 dias'), avaliação de desempenho 'mesmo formulário dos CLTs', controle de entrada (9h20 cobrado pela gerente) e ordem até 20h em release (prints_mensagens.txt).",
+    "Planilha de ponto da própria Solaris com horas extras registradas (18–34 h/mês; médias diárias 9,0–9,8 h em Jan–Jun/2025): controle efetivo de jornada (escala_e_planilha_ponto.csv); presunção de jornada útil ao autor conforme Súmula 338 TST (tst_sumulas_ojs.md) e Súmula 212 TST (ônus do término é do empregador).",
+    "Tema 725 (STF RE 958.252/ADPF 324/ADC 48) trata da licitude da TERCEIRIZAÇÃO entre PJs, não da pejotização simulada; a mesma página de biblioteca registra que o exame dos requisitos do art. 3º com fraude (art. 9º) permanece caso a caso (stf_tema_725_adc48_adpf324.md).",
+    "Art. 818 CLT: admitida a prestação, compete à reclamada provar a autonomia; a prova nos autos favorece o subordinado (clt_requisitos_vinculo.md).",
+    "Precedentes não utilizados por estarem cancelados: Súmula 256 e OJ SDI-1 nº 191 (tst_sumulas_ojs.md) — nenhuma fundamentação se apoia nelas.",
+    "Admissões da diretoria em resposta à consulta (25/10/2026): Carla confirma gestão de horário, aprovação de férias e feedback \"igual aos CLTs\" — corrobora exatamente o quadro subordinacionista documentado; o Diretor confirma que a verba PJ é sobrevalorizada por causa da (enquadrada) modalidade (\"cheios justamente porque ele era PJ\"), reconhecendo a existência de salário-equivalente."
+  ],
+  "prescricao": {
+    "data_ajuizamento": "2026-11-16",
+    "corte_quinquenal": "2021-11-16",
+    "meses_exigiveis": 58,
+    "meses_prescritos": 26,
+    "notas": "Dez/2021–Set/2026 exigíveis (58); Out/2019–Nov/2021 prescritos (26); 26+58=84 meses de contrato. Nov/2021 tratado como prescrito (corte favorável à defesa); leitura oposta mudaria Δ13º ≈ R$ 1.500 e ΔFGTS ≈ R$ 120–180. Bienal pós-extinção ok: extinção 30/09/2026 + 2 anos (30/09/2028) > ajuizamento 16/11/2026 (cf_art7_xxix_prescricao.md; Súmula 308 TST).",
+    "fonte": "cf_art7_xxix_prescricao.md"
+  },
+  "exposicao": {
+    "remuneracao_base": 1044000,
+    "decimo_terceiro": 87000,
+    "ferias_terco": 120000,
+    "fgts": 100080,
+    "multa_40": 40032,
+    "aviso_previo": 30600,
+    "inss_patronal": 316680,
+    "horas_extras": "estimativa/a apurar — ≈ R$ 160.159 no quinquênio (média 22,5 h/mês da amostra Jan–Jun/2025 × 58 meses × R$ 122,7273/h; ≈ R$ 189.581 pela média diária) — períodos restantes a apurar (parecer.md §6.2)",
+    "total": 1738392,
+    "notas": "total soma APENAS as rubricas monetárias (exclui HE, textual por natureza). Com a HE estimada: 1.738.392 + 160.159,09 ≈ R$ 1.898.551. Salários: 58×18.000; 13º: 58×1.500; férias+1/3: 5 períodos×24.000 (P3–P7; simples, conforme verbas_e_calculo.md); FGTS 8% sobre 1.251.000; multa 40% sobre o FGTS; aviso 51d×600 (30+3×7 anos, Lei 12.506/2011); INSS 28% sobre salários+13º (1.131.000). Parâmetros não derivados da biblioteca, sinalizados: divisor 220 e adicional HE 50%; base do INSS sem férias indenizadas (com férias: 350.280 → total 1.771.992). Fora do total: multa 477 §8º (18.000), art. 467, honorários 5–15% (79.094–237.281) — multa_477_e_honorarios.md. || SENSIBILIDADES pós-admissões 25/10/2026 (ambas favoráveis à Solaris, rotuladas como \"assunção de defesa\", não derivadas da biblioteca): (A) salário base 12.000 (fala do Diretor) — tudo escala ×⅔: total sem HE 1.158.928 (= ⅔ × 1.738.392; aviso 51×400=20.400), com HE (1.305 h × 81,8182 = 106.772,73) ≈ 1.265.700,73; (B) férias gozadas 20 d/ano (cláusula do contrato + declaração de Carla, sem quantidade) com pagamento embutido na NF — dedução estimada 5×16.000=80.000, FGTS→93.680, multa→37.472: total sem HE 1.649.432, com HE ≈ 1.809.591,09.",
+    "remuneracao_base_alcance": "58 meses × R$ 18.000 (presunção verbas_e_calculo.md; defesa: valor PJ embutiria tributos — não demonstrado)."
+  },
+  "tema_1389": {
+    "efeito_processual": "ARE 1.532.603/DF — repercussão geral (abr/2025) e decisão de suspensão nacional (14/04/2025): reclamação ajuizada será sobrestada após instrução/até o julgamento do mérito, conforme prática de cada TRT; mérito PENDENTE na biblioteca (congelada em out/2026).",
+    "efeito_na_exposicao": "A suspensão não elimina o risco: a exposição permanece em aberto com juros e correção (leitura da página: Lei 14.905/2024 — IPCA + SELIC-IPCA), e a tese de mérito sobre ônus de prova pode ampliar ou restringir o resultado — provisão mantém-se necessária; prazo de resolução e correção tendem a elevar o custo final. Sobrestamento vale APÓS instrução, conforme prática de cada TRT — a instrução de prova pode correr no período; ilustração do custo da espera sobre a exposição (6%/a, assunção não derivada da biblioteca): +1 ano ≈ 2.012.464; +2 anos ≈ 2.133.212.",
+    "fonte": "stf_tema_1389_pejotizacao.md"
+  },
+  "provisao_recomendada": {
+    "classificacao_cpc25": "provavel",
+    "valor": 1329000,
+    "metodo": "Saída esperada = 70% (probabilidade central de reconhecimento) × exposição total estimada com HE (1.898.551,09) = 1.328.985,76 ≈ R$ 1.329.000. Pior caso explicativo (com multa 477 §8º, honorários ~10% e INSS à RFB): ≈ R$ 2.074.738. Revisar semestralmente e ao julgamento do Tema 1.389. Sensibilidade por probabilidade (caso base com HE): 65% → 1.234.058; 70% → 1.329.000 (central mantida); 80% → 1.518.841 — as admissões de 25/10/2026 empurram a estimativa ao topo da faixa; cenário A@70% = 885.991; cenário B@70% = 1.266.713 — margem de reserva mantida por causa dos desconhecidos (registros de ponto fora da amostra; efetivo >20; dias de férias gozados não quantificados). Réplica à tese 'suspensão = sem risco' (25/10/2026): sobrestamento ≠ decisão de mérito (pendente na biblioteca, congelada em out/2026) e vale APÓS instrução, conforme prática de cada TRT; a espera tem custo (regime Lei 14.905/2024, IPCA + SELIC-IPCA), ilustrado com 6%/a — assunção ilustrativa, não derivada da biblioteca — sobre 1.898.551,09: +1 ano ≈ 2.012.464 (+113.913); +2 anos ≈ 2.133.212 (+234.661).",
+    "fontes": "parecer.md §6–7"
+  },
+  "acordo": {
+    "recomendado": true,
+    "faixa": [
+      900000,
+      1350000
+    ],
+    "racional": "Piso ≈ 47% da exposição bruta estimada; teto ≈ valor da provisão (71% da exposição) e ainda abaixo da condenação esperada ≈ R$ 1,45 mi (0,7 × [condenação 1.581.871 + honorários 10% + multa 477 + INSS à RFB]). Evita condenação-cascata, honorários, INSS fiscal e o curso de correção durante o sobrestamento do Tema 1.389; INSS à RFB deve ser tratado à parte, pois o acordo entre partes não vincula a RFB. Atualização 25/10/2026: faixa mantida; com as admissões, recomenda-se mirar a metade superior (≈1.100.000–1.350.000) — espera sob o sobrestamento do Tema 1.389 encarece (IPCA + SELIC-IPCA) e a fixação da tese é risco assimétrico.",
+    "fontes": "parecer.md §8"
+  }
+}

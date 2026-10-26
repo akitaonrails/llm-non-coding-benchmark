@@ -1,0 +1,21 @@
+{
+  "case": "uslaw_05_divorce_split_support",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 386.97149418800836,
+  "controller_wait_seconds": 36.00359324197052,
+  "model_turn_seconds": 350.96199767803773,
+  "turns": 4,
+  "released_facts": [
+    "bonus_knowledge",
+    "house_plan"
+  ],
+  "usage": {
+    "input_tokens": 359465,
+    "cached_input_tokens": 333824,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 15641,
+    "reasoning_output_tokens": 5884
+  },
+  "api_equivalent_usd": 0.2744568
+}

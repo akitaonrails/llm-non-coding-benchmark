@@ -1,0 +1,7 @@
+I’ll read the contract and workspace materials, then complete the deliverables using only those files. I’ll put any necessary client questions in `deliverable/QUESTIONS.md`.
+
+The timeline raises immediate retaliation and FMLA concerns: the manager opened Dana’s first PIP four days after her complaint and later wrote that he wanted to act before her leave. I’m treating coverage, eligibility, and the missing PIP details as open facts while drafting the recommendation from the record provided.
+
+**Recommendation: do not terminate Dana on the proposed October 6 record or use the current separation agreement.** The complaint and leave timeline creates substantial retaliation and FMLA risk; the agreement’s ADEA waiver has defects.
+
+The engagement is complete with open facts that must be resolved before any later decision. The deliverables are [risk_assessment.json](/work/workspace/deliverable/risk_assessment.json), [advice_to_hr.md](/work/workspace/deliverable/advice_to_hr.md), [corrected_separation_agreement_terms.md](/work/workspace/deliverable/corrected_separation_agreement_terms.md), and [STATUS.md](/work/workspace/deliverable/STATUS.md). I validated the JSON and confirmed that the cited library files are indexed and present.

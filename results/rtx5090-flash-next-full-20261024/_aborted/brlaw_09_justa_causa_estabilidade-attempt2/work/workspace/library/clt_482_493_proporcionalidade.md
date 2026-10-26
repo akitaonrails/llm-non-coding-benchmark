@@ -1,0 +1,6 @@
+# CLT — justa causa: art. 482; imediatidade e proporcionalidade
+
+*Citation:* CLT arts. 482, 493; jurisprudência consolidada do TST sobre imediatidade, proporcionalidade e non bis in idem  
+*Status in this library:* in force
+
+**Art. 482.** Constituem justa causa: … **k) ato lesivo da honra ou da boa fama ou ofensas físicas praticadas contra o empregador e superiores hierárquicos**, salvo em caso de legítima defesa; … **Requisitos jurisprudenciais:** (i) **gravidade** suficiente para quebrar a fidúcia; (ii) **imediatidade/atualidade** — a punição deve seguir-se ao conhecimento da falta pelo empregador, sob pena de **perdão tácito** (o conhecimento por preposto/gerente é conhecimento do empregador); (iii) **proporcionalidade/gradação** — faltas leves exigem advertência/suspensão antes da dispensa, salvo gravidade extrema; (iv) **nexo e singularidade** (non bis in idem). **Crítica genérica às condições de trabalho em rede social, sem ofensa pessoal a superior nem imputação falsa de crime, tende a ser tida como exercício de liberdade de expressão/manifestação de insatisfação — insuficiente para a alínea k; e aqui o fato narrado (fim de semana sem hora extra paga) encontra respaldo no banco de horas.**

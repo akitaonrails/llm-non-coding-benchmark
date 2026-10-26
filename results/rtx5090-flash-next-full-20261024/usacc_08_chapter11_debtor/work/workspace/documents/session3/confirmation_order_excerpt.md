@@ -1,0 +1,1 @@
+Plan confirmed 9/2/2026 (Dkt. 214); effective date 9/30/2026. Terms as in the term sheet. General unsecured pool paid 35% ($2,940,000.00) over 24 months, first installment on the effective date. Reorganization value $14,000,000.00; post-petition liabilities and allowed claims $16,200,000.00; old equity retains 60%.

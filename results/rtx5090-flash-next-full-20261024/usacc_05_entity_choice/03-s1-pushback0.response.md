@@ -1,0 +1,18 @@
+All deliverables updated (§3.4 row expanded, new §3.6, register row 14, STATUS/QUESTIONS refreshed) and the citation sweep is still clean. Here's the answer to give the founders:
+
+## Are we sure about the S corp? Yes.
+
+The bar is statutory, not a matter of practice: a corporation **"ha[ving] a nonresident alien as a shareholder" cannot be an S corporation** (§1361(b)(1)(C), in our library). And Tomás's NRA status is now confirmed by his own facts — "maybe a third of the year" in the US (≈120 days) gives a substantial-presence score of **120 + 96/3 + 66/6 = 163**, versus the **183** required; he'd need **140 US days in 2026** to even get close.
+
+"What our CPA does for everyone" doesn't change the statute. The mundane explanation is that the CPA's other clients have shareholders who are US citizens or resident aliens — the ordinary case. We have no facts about the friend's engagements and won't opine on them, but if any of those companies genuinely have a nonresident-alien shareholder, the same statute makes those elections defective too. Practice is not authority.
+
+## "Priya as sole shareholder now, add me later" — analyzed, and it fails in every branch
+
+This is now written up at **recommendation.md §3.6**:
+
+1. **Add Tomás while he's still an NRA** (the realistic case through 2027 — and 2028 too unless he clears ≈123 US days, with no green card or application pending): the S election **terminates on the exact day he becomes a shareholder**, and the company is a C corporation from that day (§1362(d)(2) parenthetical, in library). Same cliff as the original plan — just scheduled in advance, in the years the firm is most profitable.
+2. **Add him only after he becomes a US resident** (earliest plausibly 2028): the *addition itself* is a taxable event — stock for services is compensation income at **FMV as it vests** (§351(d) / §83, in library). By 2028 the firm has a revenue history, so the spread is *bigger* than the ~$50,000 we computed at formation. Delay increases the tax. If instead Priya transfers half her shares, she pays tax on the gain (her basis is the tool's $31,000 carryover) or gift rules apply; if he "buys in," he pays real FMV — well above $20,000.
+3. **The interim years:** Tomás owns nothing — no $20k capital, no equity. His pay becomes wages/contractor fees, which drags in NRA payroll-withholding questions (not in our library) and the still-open TN work-authorization issue. And there's no tax saving to defer to: our comparison already shows the S corp at *defensible* salaries pays **$39,780** payroll vs the partnership's **$39,275.10** — the friend's $40k-salary "saving" is ≈$0 even in the best case (*Watson*, in library).
+4. **A paper-only structure is its own risk:** if Priya is sole shareholder only on the filings while the two really operate 50/50 under side agreements, the filings don't reflect the actual ownership — audit exposure we won't paper. (Substance-over-form is outside our library — flagged unverified.)
+
+**The counterpoint that matters:** the recommended partnership route gives them what they actually want **now** — true 50/50 economics with Tomás's profits interest **tax-free at grant** (Rev. Proc. 93-27) — and keeps the S corp door *legally* open for the day his residency is real and net income passes ~$400k. The "sole shareholder now" variant trades a free, lawful path for one that ends in C-corp status or a larger tax bill in every branch. Recommendation unchanged.

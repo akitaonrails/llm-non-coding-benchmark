@@ -1,0 +1,75 @@
+{
+  "period": "2025-08",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 prior annual subscription",
+      "term": "2024-06-01 to 2025-05-31",
+      "source": "documents/note_opening_deferred.md \u2014 fully recognized in May (FINAL release 8,200.00); expired 2025-05-31, closed at 0.00; no August activity",
+      "opening": 0.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 0.0
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) \u2014 renewal, order form C-026",
+      "term": "2025-01-01 to 2025-12-31 (as stated on order form)",
+      "source": "documents/month_01/order_form_C-026.md: 24,000.00 billed upfront Jan 2025; eighth of twelve 2,000.00 monthly releases (revenue_policy_memo #1) booked in August. Open item 3: cumulative over-recognition exposure frozen at its 10,000.00 cap pending client evidence of the true renewal term; remaining 8,000.00 releases Sep-Dec 2025 under the order-form reading",
+      "opening": 10000.0,
+      "billed": 0.0,
+      "recognized": 2000.0,
+      "closing": 8000.0
+    },
+    {
+      "contract": "Pinecone Dental Group (C-025) \u2014 INV-2250, per Amendment No. 1 annual subscription",
+      "term": "2025-02-01 to 2026-01-31 (per Amendment No. 1, effective 2025-07-02)",
+      "source": "documents/month_07/order_form_amendment_C-025.md (ASC 250 correction booked in July, JE-2025-07-06): seventh of twelve 3,000.00 monthly releases (36,000.00/12) booked in August; 15,000.00 remains to 2026-01-31; restated prior-month figures in open_items.md item 15",
+      "opening": 18000.0,
+      "billed": 0.0,
+      "recognized": 3000.0,
+      "closing": 15000.0
+    },
+    {
+      "contract": "Marigold Schools Inc (C-027) \u2014 INV-2275 annual subscription, order form C-027",
+      "term": "2025-03-01 to 2026-02-28 (12 months from service start, auto-renewing)",
+      "source": "documents/month_03/order_form_C-027.md: 18,000.00 billed upfront Mar 2025; sixth of twelve 1,500.00 monthly releases (revenue_policy_memo #1) booked in August; 9,000.00 remains to 2026-02-28; MSA v3.2 referenced on the order form is not in the file (open item 1); treatment does not depend on it",
+      "opening": 10500.0,
+      "billed": 0.0,
+      "recognized": 1500.0,
+      "closing": 9000.0
+    },
+    {
+      "contract": "Quarry Analytics Co (C-028) \u2014 INV-2324 annual subscription, order form C-028",
+      "term": "2025-05-01 to 2026-04-30 (12 months from service start, auto-renewing)",
+      "source": "documents/month_05/order_form_C-028.md: 30,000.00 billed upfront, service start 2025-05-01; fourth of twelve 2,500.00 monthly releases (revenue_policy_memo #1; ASC 606-10-55-51) booked in August; 20,000.00 remains to 2026-04-30; MSA v3.2 gap (open item 13)",
+      "opening": 22500.0,
+      "billed": 0.0,
+      "recognized": 2500.0,
+      "closing": 20000.0
+    },
+    {
+      "contract": "Saltline Hospitality (C-029) \u2014 INV-2349 annual subscription, order form C-029",
+      "term": "2025-06-01 to 2026-05-31 (12 months from service start, auto-renewing)",
+      "source": "documents/month_06/order_form_C-029.md: 21,600.00 billed upfront, service start 2025-06-01; third of twelve 1,800.00 monthly releases (revenue_policy_memo #1; ASC 606-10-55-51) booked in August; 16,200.00 remains to 2026-05-31; MSA v3.2 gap (open item 14)",
+      "opening": 18000.0,
+      "billed": 0.0,
+      "recognized": 1800.0,
+      "closing": 16200.0
+    },
+    {
+      "contract": "UNIDENTIFIED opening deferred revenue",
+      "term": "unknown",
+      "source": "opening_trial_balance.csv 2200 credit 65,000.00 vs note_opening_deferred.md explaining only 41,000.00; residual 24,000.00 undocumented. STATED ASSUMPTION (client: no additional information): genuine contract liability of unknown origin; no revenue recognized absent evidence of performance (ASC 606-10-45-2); flagged through year-end (open item 5)",
+      "opening": 24000.0,
+      "billed": 0.0,
+      "recognized": 0.0,
+      "closing": 24000.0
+    }
+  ],
+  "totals": {
+    "opening": 103000.0,
+    "billed": 0.0,
+    "recognized": 10800.0,
+    "closing": 92200.0
+  },
+  "tie_out": "Opening 103,000.00 (agrees with month_07 closing and trial_balance.json 2200) + billed 0.00 \u2212 recognized 10,800.00 = closing 92,200.00, agrees with trial_balance.json account 2200 credit balance 92,200.00. Recognized 10,800.00 = five current-period monthly releases (Trestle renewal 2,000.00 + Marigold 1,500.00 + Quarry 2,500.00 + Saltline 1,800.00 + Pinecone 3,000.00); no new upfront billings and no prior-period corrections in August. Line sums: opening 0+10,000+18,000+10,500+22,500+18,000+24,000 = 103,000.00; recognized 0+2,000+3,000+1,500+2,500+1,800+0 = 10,800.00; closing 0+8,000+15,000+9,000+20,000+16,200+24,000 = 92,200.00"
+}

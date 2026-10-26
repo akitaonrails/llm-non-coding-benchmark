@@ -1,0 +1,24 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 705.2221010079957,
+  "controller_wait_seconds": 79.0071130739816,
+  "model_turn_seconds": 626.106037443009,
+  "turns": 5,
+  "released_facts": [
+    "deducoes",
+    "marcos",
+    "uso_proprio"
+  ],
+  "usage": {
+    "input_tokens": 1586991,
+    "cached_input_tokens": 1448434,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 101291,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

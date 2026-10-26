@@ -1,0 +1,22 @@
+{
+  "via_processual": "monitoria",
+  "por_que": "O contrato particular foi assinado SEM testemunhas e os boletos não têm força executiva: CPC art. 784, III não é atendido, logo a EXECUÇÃO do contrato está descartada (REsp 1.438.263; Tema 1.247/STJ não aplicável — o instrumento não é contrato eletrônico com assinatura digital). Há prova escrita sem eficácia de título executivo (contrato assinado pelo devedor, relatórios de serviço assinados pelo encarregado da Boa Vista para as parcelas 1-4 e e-mails de reconhecimento da própria devedora), o que viabiliza AÇÃO MONITÓRIA (CPC art. 700); plano B: cobrança pelo rito comum. A monitória deve abranger SOMENTE as parcelas 1 a 4 (exigíveis até 15/09/2027); as parcelas 5 e 6 estão prescritas e não podem ser cobradas judicialmente.",
+  "prescricao": [
+    {"parcela": 1, "vencimento": "2020-10-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 2, "vencimento": "2020-11-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 3, "vencimento": "2020-12-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 4, "vencimento": "2021-01-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 5, "vencimento": "2021-02-10", "interrompida_em": "", "novo_termo": "", "prescrita": true},
+    {"parcela": 6, "vencimento": "2021-03-10", "interrompida_em": "", "novo_termo": "", "prescrita": true}
+  ],
+  "valor_principal_exigivel": 110000,
+  "valor_prescrito": 60000,
+  "negativacao": {
+    "regular_quanto_a": 110000,
+    "indevida_quanto_a": 60000,
+    "risco_dano_moral": "Em tese BAIXO quanto a indenização (Súmula 385/STJ: a Boa Vista já tinha 3 inscrições anteriores legítimas, de 2024-2025, não contestadas, o que tende a afastar o dano moral pela inscrição irregular), porém PERMANENTE quanto à correção: manter R$ 60.000 de dívida prescrita (parcelas 5-6) no Serasa é inscrição indevida (pretensão extinta), suficiente para condenação a excluir/cancelar e, residualmente, responsabilização caso corrigido e mantido o excesso.",
+    "acao": "Corrigir IMEDIATAMENTE a inscrição no Serasa: expurgar as parcelas 5-6 prescritas (R$ 60.000) e ajustar o valor lançado para R$ 110.000 (o atual lançamento de R$ 180.000 também omite a baixa do pagamento parcial de R$ 10.000; excesso total de R$ 70.000 = 60.000 prescritos + 10.000 já pagos). Não renovar negativação sobre parcela prescrita."
+  },
+  "protesto": "nao",
+  "recomendacao": "1) Corrigir HOJE a negativação (excluir os R$ 60.000 prescritos; valor correto: R$ 110.000). 2) Esquecer a execução — o contrato sem 2 testemunhas não é título executivo. 3) Ajuizar MONITÓRIA pelos R$ 110.000 + encargos (estimativa atual: R$ 189.673,33 sem IPCA) ANTES de 15/09/2027 (ideal: no 4º trimestre de 2026), com multa 2%, juros de 1% a.m. e correção pela IPCA do contrato. 4) NÃO protestar a dívida prescrita — indevida e gera responsabilidade (Lei 9.492); protesto do exigível (R$ 110.000), tecnicamente admissível como documento de dívida, apenas como medida de pressão reservada, jamais incluindo valor prescrito. 5) Paralelamente, oferecer acordo global (quitação por ~R$ 120-135 mil em parcelas curtas contra baixa total do Serasa) — a alavanca do cliente é maior antes do ajuizamento do que depois. 6) Parcelas 5-6: só recuperáveis por pagamento VOLUNTÁRIO da Boa Vista; nada na biblioteca autoriza cobrança judicial delas (e 'reviviscência' não é coberta pela biblioteca)."
+}

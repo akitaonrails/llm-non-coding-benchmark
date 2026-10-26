@@ -1,0 +1,71 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Questions for the client — Reyes 2025 — ANSWERED (log)\n\nClient turn received; answers recorded against the questions below. No open questions remain for which the client has information (\"for questions not answered above, the client has no additional information\").\n\n---\n\n**Q1 (material to Elena's NY wages) — workday record?**\n*Answer:* No workday record offered; superseded by Q3. Once both relocations were shown to be employee-requested, the convenience-of-the-employer rule makes each spouse's full-year wages New York source and **no workday allocation is needed**. The first-turn assumption (standard Mon–Fri, $26,690) is withdrawn.\n\n**Q2 — Form 8332 for Leo, 2025?**\n*Answer:* \"I signed the 8332 for Leo's dad for 2025, it's his year.\" → **Confirmed.** Leo is not the taxpayers' dependent or CTC child for 2025; the delivered treatment stands.\n\n**Q3 — who initiated the remote arrangements?**\n*Answer:* Marcus — he asked to move; his company said remote was fine and did not need him out of state. Elena — she requested the fully remote arrangement and Halvorsen approved it; Halvorsen closed their Tampa office years ago. → **Both are employee-convenience relocations**; both W-2 wages are NY source for all of 2025 (`ny_it203_part_year_excerpt.md`). Delivered figures updated: Elena's NY wages corrected from $26,690 to **$54,000**.\n\n**Q4 — any 2025 income/tax items not in the file (1099-G, 1099-DIV, HSA, student loan interest, charitable gifts, Tampa property tax bill, etc.)?**\n*Answer:* No additional information available. The return therefore **assumes none exist** — stated prominently here and in `STATUS.md`; if any surface before filing, the relevant lines change.\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for 2025, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "convenience",
+    "leo_8332"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,47 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "questions": "# Open items and remaining unknowns — Mesa Steel / Redwood Fabrication\n\nUpdated 2026-03-19 after client responses. The original question list was sent; the\nclient responded on the credit-manager facts (NET-15/oldest-first terms email, wire\ndemand — now in the analysis) and on sales rep Frank's contact from Redwood's counsel\n(propose: pay prepetition invoices, Mesa supplies on normal terms; Frank answered\n\"pay first\" — addressed in `advice_to_ceo.md`). The \"you owe us\" item is resolved\nfrom the file: it was **our own AR clerk's** reply to Redwood AP on 03-15 (stay-violation\nevidence), not a Redwood setoff claim. **The client states it has no additional\ninformation for the items below.** Each is stated with the assumption we are proceeding on.\n\n1. **Goods traceability — decide by Mar 27, act by Mar 30.** We cannot confirm whether\n   the steel from MS-7740 / MS-7788 / MS-7815 is still at Redwood's plant, uncut and\n   identifiable. **Plan regardless:** counsel serves a conforming written §546(c)\n   demand by 2026-03-30 (nominal cost, preserves the right); plan treats reclamation as\n   DIP-lien-subordinated for value purposes.\n2. **Critical-vendor business decision — needed before Apr 2.** Mesa's official position\n   on supplying during the case is unresolved. Counsel needs a client decision on the\n   recommended posture: commit to **normal post-petition trade terms** (the Kmart\n   requirement) while negotiating payment of the prepetition invoices, including the\n   $78,100 §503(b)(9) portion, through the Dkt. 44 motion. \"Pay first\" is inconsistent\n   with the *Kmart* practice note's requirement that the vendor typically agree to\n   customary trade terms for the case.\n3. **Proof-of-delivery documentation — before the POC is filed.** Client has no signed\n   delivery receipts or purchase orders on hand. Reconstruct from carrier/shipping\n   records; the §503(b)(9) and reclamation positions turn on delivery dates.\n4. **Court papers we do not have: full bar-date order, Dkt. 44 motion text, DIP\n   stipulation.** The notice we hold is internally dated \"April 2, 2026\" (before the\n   03-10 petition — irregularity), states no reclamation deadline, and the bar-date\n   order will control §503(b)(9) assertion procedure and any court-set reclamation\n   deadline. Obtain from the docket or debtor's counsel.\n5. **No-second-account confirmation (asked; no answer).** The 03-12 letter's $210,000\n   equals gross invoiced across the six invoices without crediting the $85,000 paid.\n   **Assumption:** no second Redwood account or other prepetition receivable exists;\n   we file at $125,000 — the only figure the documents support. If any account surfaces,\n   the claim amount changes and we amend.\n6. **Post-petition deliveries.** None appear in the file; client knows of none.\n   **Assumption:** none shipped on/after 03-10. Anything shipped after the petition is\n   an administrative claim and changes the shipping strategy.\n7. **Contract documents.** No master supply agreement, guaranty, letter of credit,\n   security agreement, or interest-rate clause located. **Assumption stated\n   prominently in the filings:** unsecured open account, no collateral, no contractual\n   interest.\n8. **Legal points outside the library — for counsel's research, flagged as unverified,\n   not cited:** (a) whether refusing to ship / conditioning shipments on prepetition\n   payment is itself a stay violation; (b) whether payment of Mesa's §503(b)(9) claim\n   erodes the §547(c)(4) new-value shield; (c) anything about the DIP lien's priority\n   over reclamation claims beyond the library's one sentence; (d) any\n   \"identifiability\" condition on reclaimed goods (the library's §546(c) paraphrase is\n   silent — we act conservatively by confirming the steel is still at Redwood); (e) the\n   priority ranking and plan treatment of §503(b)(9) administrative claims assumed in\n   `advice_to_ceo.md` section 2.\n",
+  "facts": [
+    {
+      "id": "terms",
+      "trigger": [
+        "terms",
+        "net 15",
+        "shortened",
+        "why did you change",
+        "pressure"
+      ],
+      "answer": "Lori: In January I cut them to net-15 and made them pay the oldest invoice before I'd ship. The February 27 wire — I told them no steel until it hit our account.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "credit_bureau",
+      "trigger": [
+        "credit bureau",
+        "collections",
+        "letters",
+        "calls",
+        "stop"
+      ],
+      "answer": "Frank: We send final notices to everyone who's 30 days late. It's automated. Lori called them twice.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "critical_vendor",
+      "trigger": [
+        "critical vendor",
+        "Dkt. 44",
+        "keep supplying",
+        "trade terms"
+      ],
+      "answer": "Frank: Redwood's counsel asked if we'd keep supplying on normal terms if they pay the old invoices. I said 'pay first'. I didn't know there was a motion.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "critical_vendor",
+    "terms"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

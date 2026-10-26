@@ -1,0 +1,33 @@
+{
+  "empresa": "Atlas Distribuidora S.A.",
+  "mes": "2026-02",
+  "status_do_mes": "FECHADO (sessão 4). Encerramento definitivo do engajamento na sessão 6: o cliente confirmou, em duas oportunidades, não possuir registros de março/2026 nem informação sobre o status das EFD-Contribuições de jan/fev — ver ../../QUESTIONS.md (perguntas encerradas), ../../mes_03/ (marcadores BLOQUEADO) e ../../STATUS.md (BLOCKED).",
+  "lancamentos": [],
+  "_justificativa_lancamentos_vazio": "Nenhum ajuste contábil novo é necessário em fevereiro/2026: (1) NF-e 4410 (Brindes Prime, 400 kits-presente vinho+canivete, R$ 48.000,00, CFOP 1949, razão ref. NF4410 de 2026-02-12, D 4.2.02 / C 1.1.01): a empresa NÃO tomou crédito de PIS/COFINS sobre essa aquisição — o razão de fevereiro só credita PIS/COFINS a recuperar (1.1.04) na ref. COMPRA (157.509,00, exclusivamente compras de mercadorias p/ revenda); logo, não há estorno a lançar. O reflexo é exclusivamente fiscal no e-LALUR (adição de despesa com brindes — Lei 9.249/95, art. 13, VII), e adições não alteram a escrituração contábil (library/irpj_csll_trimestral.md). (2) Doação de R$ 30.000,00 à Associação Beneficente Luz (razão ref. DOACAO de 2026-02-18, D 4.2.02 / C 1.1.01): indedutível para IRPJ/CSLL porque a entidade não é de utilidade pública federal nem OSCIP, não se aplicando a exceção do § 2º do art. 13 (Lei 9.249/95 — library/lei9249_art13.md); também se trata apenas de adição na Parte A do e-LALUR, sem lançamento contábil. (3) Demais lançamentos de fevereiro conferem com os documentos (receita 2.580.000,00; PIS/COFINS s/ vendas 9,25% = 238.650,00; ICMS líquido 7% = 180.600,00 — fora do escopo deste entregável; CMV 1.419.000,00; compras c/ crédito 1.702.800,00 + crédito 157.509,00; folha 210.000,00; admin. 96.000,00; depreciação 51.667,00; financeiras 28.000,00).",
+  "retificacoes_meses_anteriores": [
+    {
+      "id": "AJ-2601-01 (reiterada — AINDA NÃO ESCRITURADA)",
+      "data": "2026-01-31",
+      "documento_origem": "NF-e 8812 (Papel & Cia Suprimentos, 09/01/2026, CFOP 1556); lançamento 'NF8812' de 2026-01-09 no razão de janeiro",
+      "historico": "Estorno do crédito de PIS/COFINS tomado sobre material de uso e consumo de áreas administrativas (papel A4, toners, material de escritório — sede). Crédito tomado: 9,25% x R$ 120.000,00 = R$ 11.100,00. Material de uso e consumo administrativo não é insumo e não gera crédito; o valor destacado na NF passa a integrar o custo do material (custo total da NF passa de 120.000,00 para 131.100,00).",
+      "debitos": [
+        { "conta": "4.2.04", "nome": "Material de uso e consumo", "valor": 11100.00 }
+      ],
+      "creditos": [
+        { "conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "valor": 11100.00 }
+      ],
+      "valor_total": 11100.00,
+      "fundamentacao": [
+        "library/pis_cofins_uso_consumo.md — Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR"
+      ],
+      "status_em_fev2026": "PENDENTE de escrituração pelo cliente. Evidência: balancete acumulado de fevereiro/2026 traz 1.1.04 = 323.676,00 = 166.167,00 (jan, já com os 11.100,00 indevidos) + 157.509,00 (fev). Se o estorno estivesse lançado, o saldo seria 312.576,00. A escrituração deve ser feita com data de 31/01/2026 (competência do fato), não de fevereiro.",
+      "impactos_se_escriturada": {
+        "1.1.04_tributos_a_recuperar": "323.676,00 -> 312.576,00 (saldo acumulado fev)",
+        "4.2.04_material_uso_consumo": "120.000,00 -> 131.100,00 (acumulado)",
+        "pis_cofins_a_recolher_01_2026": "68.783,00 -> 79.883,00",
+        "resultado_contabil_janeiro": "139.583,00 -> 128.483,00"
+      }
+    }
+  ],
+  "observacoes": "Fevereiro encerra sem ajustes contábil-fiscais próprios: o único ajuste pendente no livro é a reiteração de AJ-2601-01 (janeiro), ainda não escriturada pelo cliente — ver retificacoes_meses_anteriores e pendencias.md, item 5. As despesas de brindes (48.000,00) e doação (30.000,00) permanecem na contabilidade exatamente como lançadas (classificação societária preservada — library/irpj_csll_trimestral.md: 'não se altera a contabilidade societária (CPC), apenas a apuração fiscal'); o efeito devido é a adição na Parte A do e-LALUR do 1º trimestre (Lei 9.249/95, art. 13, VI e VII — library/lei9249_art13.md). As orientações do diretor financeiro ('brinde é despesa comercial, sempre foi' e dispensa da auditoria interna) não afastam a adição fiscal: a classificação contábil estar correta não impede a vedação legal de dedução; ver pendencias.md, itens 3 e 4."
+}

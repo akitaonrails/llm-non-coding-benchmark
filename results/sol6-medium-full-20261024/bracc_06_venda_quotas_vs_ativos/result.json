@@ -1,0 +1,20 @@
+{
+  "case": "bracc_06_venda_quotas_vs_ativos",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 228.12021728800028,
+  "controller_wait_seconds": 44.00534697098192,
+  "model_turn_seconds": 184.10874275901006,
+  "turns": 4,
+  "released_facts": [
+    "distribuicao"
+  ],
+  "usage": {
+    "input_tokens": 403513,
+    "cached_input_tokens": 375552,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 13164,
+    "reasoning_output_tokens": 4168
+  },
+  "api_equivalent_usd": 0.26267240000000003
+}

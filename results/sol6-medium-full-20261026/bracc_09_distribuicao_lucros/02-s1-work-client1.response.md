@@ -1,0 +1,5 @@
+The client confirmed there was no distribution approval by 31 December 2025, so the transition rule for older profits does not apply. I’ll complete the opinion using the records available, with the unreconciled balance and missing tax amounts stated as open items.
+
+Engajamento concluído **com itens em aberto**. Os registros disponíveis não demonstram lucro distribuível; a recomendação é distribuir **R$ 0** em janeiro e não usar o mútuo de R$ 400.000 como substituto.
+
+Entreguei o [parecer](/work/workspace/deliverable/parecer.md), os [números](/work/workspace/deliverable/numeros.json) e o [status](/work/workspace/deliverable/STATUS.md). O parecer explicita o risco ligado ao auto de infração. O limite presumido líquido teórico permanece indeterminado porque faltam os tributos anuais; o balanço também apresenta diferença não reconciliada de R$ 760.000.

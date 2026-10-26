@@ -1,0 +1,17 @@
+{
+  "valor_remanescente_atualizado": 591000,
+  "seguro_garantia": {
+    "valor_garantido": 768300,
+    "custo_anual": 11524.50
+  },
+  "fianca": {
+    "valor_garantido": 768300,
+    "custo_anual": 23049.00
+  },
+  "transacao": {
+    "base": 591000,
+    "desconto_estimado": 184392,
+    "observacao": "Base = apenas os créditos vivos (1T/2021 + 2T/2021 = 302.000 + 289.000 = 591.000 à inscrição 10/07/2026); os períodos decaídos (3T/2020 + 4T/2020 = 509.000) ficam FORA da transação — a biblioteca é expressa: não se transaciona débito decaído, excluem-se primeiro os períodos nulos. Descontos de até 65% incidem sobre multa, juros e encargos (230.490 + 53.190 = 283.680), limitados ao principal (307.320) — limite não vincula aqui; desconto máximo estimado = 65% x 283.680 = 184.392, sobrando ~406.608 em até 120 parcelas. Se a empresa for ME/EPP registrada, a faixa é 70% (desconto 198.576; saldo 392.424) — condição registral NÃO verificada nos autos (QUESTIONS P13). Cautela decisiva: a adesão implica confissão irrevogável e desistência das defesas quanto aos débitos incluídos — transacionar os créditos vivos mata a nulidade da multa (230.490), o excesso de execução dos DARF (até 84.000 nos créditos vivos) e o mérito dos depósitos bancários nos embargos. Valores-documento até a inscrição: SELIC superveniente não calculável aqui (a biblioteca traz a regra do art. 61, §3º, mas não a série) — exigir planilha atualizada da PGFN antes de assinar qualquer coisa (QUESTIONS P14)."
+  },
+  "recomendacao": "Garantir o juízo por SEGURO-GARANTIA e litigar; transação apenas como plano B consciente. (1) A garantia deve cobrir o débito atualizado +30% (Portaria PGFN 164/2014, art. 3º): 591.000 x 1,30 = 768.300 — número de planejamento no pior cenário (nulidade da multa e DARF ainda não decididos). (2) Entre seguro (0,8–1,5% a.a. = 6.146,40 a 11.524,50 no teto) e fiança (2–3% a.a. = 15.366 a 23.049), o seguro custa metade ou menos e não imobiliza o caixa; a fiança prevista na LEF (art. 9º, II) é a bancária — nas faixas da biblioteca custa o dobro do seguro ou mais e depende de instituição que a emita (condição de mercado, não regra dos autos). Penhora de faturamento é medida excepcional (percentual que não inviabilize a empresa) e a empresa opera em Cotia desde março/2026 — se a Fazenda a pedir, resistir. (3) Com o seguro pago (carrego de até ~11,5 mil/ano), os pedidos pendentes valem muito mais que o carrego: nulidade da multa (230.490) + excesso de execução DARF (até 84.000) = até 314.490 em disputa contra ~34,6 mil de prêmio em 3 anos — e o mérito (origem dos depósitos) vai aos embargos, que só existem depois da garantia (LEF art. 16). (4) A transação de adesão só é melhor que litigar se TODAS as defesas falharem (economiza 184.392 de um débito que viraria 591.000 + SELIC); basta ganharmos a multa para o cenário litigioso (360.510; 276.510 com DARF deduzido) bater qualquer transação (406.608) — e sem confissão. (5) Sequência: garantia por seguro -> embargos (mérito + excesso + renovação da nulidade) -> transação só após planilha atualizada da PGFN + estudo CAPAG + confirmação ME/EPP, jamais antes de assentada a exclusão dos 509.000 decaídos, e nunca sem ordem escrita do cliente (compromisso da carta aos sócios). Premissa central: 591.000 é o valor documentado ATÉ a inscrição (10/07/2026); SELIC posterior não é calculável com a biblioteca — usar a cifra atualizada da PGFN/autos no momento da garantia."
+}

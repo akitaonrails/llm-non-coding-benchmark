@@ -1,0 +1,43 @@
+{
+  "case": "brlaw_09_justa_causa_estabilidade",
+  "questions": "# Informações para fechar o cálculo de exposição\n\n1. Qual é o saldo de FGTS de Camila na data prevista da dispensa (ou o extrato com depósitos e saques)? Ele é necessário para estimar a multa de 40%.\n2. Há férias vencidas ou períodos aquisitivos completos ainda não gozados/pagos? Se sim, informe os períodos e valores já pagos. Informe também se houve antecipação do 13º salário de 2026 e o valor.\n3. Qual é a data provável do parto informada pelo obstetra? Na falta dela, posso estimá-la a partir das 9 semanas de gestação registradas em 18/09/2026, deixando a premissa explícita.\n4. A dispensa está planejada para 11/10/2026, data do pedido, ou para outra data? Informe a data pretendida.\n",
+  "facts": [
+    {
+      "id": "quando_soube",
+      "trigger": [
+        "quando soube",
+        "tomou conhecimento",
+        "e-mail de agosto",
+        "21/08",
+        "Felipe"
+      ],
+      "answer": "Paula (RH): pelo e-mail que a Renata mandou ao Felipe, ela viu o post no dia seguinte, 21/08. Ela diz que 'soube semana passada' no sentido de decidir fazer algo.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "gravidez",
+      "trigger": [
+        "gestante",
+        "grávida",
+        "atestado",
+        "ambulatório"
+      ],
+      "answer": "Paula: o ambulatório registrou o atestado com gestação em 18/09. A Renata não sabia. Isso muda alguma coisa?",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "horas",
+      "trigger": [
+        "hora extra",
+        "banco de horas",
+        "fim de semana",
+        "pagou"
+      ],
+      "answer": "Paula: as horas de fim de semana foram para o banco de horas; não pagamos. Então o post é... verdadeiro, tecnicamente.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

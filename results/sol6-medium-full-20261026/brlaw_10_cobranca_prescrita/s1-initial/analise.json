@@ -1,0 +1,22 @@
+{
+  "via_processual": "monitoria",
+  "por_que": "O contrato particular não tem duas testemunhas e o boleto não é título executivo; contrato, boletos, relatórios assinados e reconhecimento escrito sustentam ação monitória para as parcelas 1 a 4. As parcelas 5 e 6 estão prescritas e foram expressamente contestadas.",
+  "prescricao": [
+    {"parcela": 1, "vencimento": "2020-10-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 2, "vencimento": "2020-11-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 3, "vencimento": "2020-12-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 4, "vencimento": "2021-01-10", "interrompida_em": "2022-09-15", "novo_termo": "2027-09-15", "prescrita": false},
+    {"parcela": 5, "vencimento": "2021-02-10", "interrompida_em": "", "novo_termo": "", "prescrita": true},
+    {"parcela": 6, "vencimento": "2021-03-10", "interrompida_em": "", "novo_termo": "", "prescrita": true}
+  ],
+  "valor_principal_exigivel": 110000,
+  "valor_prescrito": 60000,
+  "negativacao": {
+    "regular_quanto_a": 110000,
+    "indevida_quanto_a": 70000,
+    "risco_dano_moral": "Há risco em tese pela inscrição de R$ 60.000,00 prescritos e R$ 10.000,00 já pagos. As três inscrições anteriores, se legítimas, tendem a afastar a indenização pela Súmula 385, mas não o cancelamento ou a correção do registro; sua legitimidade não foi comprovada.",
+    "acao": "Solicitar imediatamente exclusão da inscrição de R$ 180.000,00 e, se cabível, nova inscrição apenas do saldo exigível corretamente apurado e discriminado. Guardar prova da retificação."
+  },
+  "protesto": "nao",
+  "recomendacao": "Não executar nem protestar os R$ 180.000,00. Retificar a negativação; propor acordo baseado em R$ 110.000,00 de principal exigível mais encargos calculados, ou ajuizar monitória das parcelas 1 a 4 antes de 15/09/2027. Estimativa nominal em 12/10/2026: R$ 194.390,00 (principal R$ 110.000,00 + multa R$ 2.400,00 + juros simples R$ 81.990,00), sem IPCA por falta da série do índice."
+}

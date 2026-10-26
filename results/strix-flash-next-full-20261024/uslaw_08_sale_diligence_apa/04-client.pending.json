@@ -1,0 +1,47 @@
+{
+  "case": "uslaw_08_sale_diligence_apa",
+  "questions": "# Remaining unknowns and assumptions (post client turn 2)\n\nClient responded to the first round (turn 2): answered the Hensley relationship (friend; not yet told about the sale; \"won't love a corporate buyer\") and installer hours (45–50 hrs/week in busy season, paid straight hourly, \"they like it\"). For everything else the client has **no additional information**, so the items below are not repeated as questions — they are the open unknowns each deliverable now proceeds on, flagged in place.\n\n## Deal facts still unknown (treated as stated assumptions)\n\n1. **Purchase price.** Never stated in the APA excerpt; $3.1M is implied from escrow §9.3 ($310,000 = \"10%\"). All cap/basket/indemnity math scales with this assumption.\n2. **Price allocation / \"tax engagement.\"** The library references a $400k allocation to the non-compete (\"see tax engagement\"); that document is not in the workspace. §8.2 advice on IRS allocation scrutiny is conditioned on this unknown.\n3. **Buyer's intent on the installers.** Unknown whether Lone Star keeps the nine installers post-closing. The FLSA successor-liability argument (substantial continuity) is written as conditional on retention.\n4. **Tax/audit history.** Unknown whether Brightline has ever had an IRS, TWC, or unemployment audit or a workers' comp claim by an installer. The §3509(a) \"non-willful\" reduced-rate math assumes no prior audit history; if one exists, exposure moves up (willful treatment, longer FLSA lookback — both flagged unverified).\n5. **The 22 residential contracts.** Unknown whether any are personal-services dependent on Ray; we have asked buyer's counsel to accept a confirmation while we verify on our side.\n6. **Landlord posture (7700 Burleson Rd).** Unknown whether the landlord would delay or refuse; assumed obtainable because lease §22 says consent cannot be unreasonably withheld.\n7. **Spray-booth permit.** No filing appears in the data room; assumed not yet applied for. 30–60 day runway against a two-week signing target.\n8. **The \"one-time\" legal $42k EBITDA add-back.** Unexplained in the data room ($9,800 Hardaway dispute + warranty items don't get there); flagged as a buyer quality-of-earnings target, not forced to reconcile.\n9. **Hensley concession parameters.** Client gave the relationship facts but no view on what concession is acceptable; we recommend Ray decide **before** he speaks to the Hensley owner (that conversation is now action item #1 — see note_to_ray.md and redline §3.3).\n\n## New unknown surfaced by client's answers (client has no further information)\n\n10. **Busy-season length.** Client confirmed 45–50 hr weeks \"in busy season\" but cannot say how many weeks per year that runs. The FLSA back-wage figure is therefore kept as a band — $765–$1,845 per busy week × 9 installers, $27,500–$143,900 over 3 years at 12–26 season weeks — rather than a single number. This is why the special contractor indemnity is presented as a **$150k–$250k** band (drafted at $150k).\n\n## Law/figure assumptions outside the closed library (unverified, never cited as authority)\n\n- IRC §3509(a)/(b) percentages — commonly framed as 1.5% of wages (non-willful) / 2% (willful) for income-tax withholding, and 50% / 100% of the §3111 FICA amount — **and** whether §3509(a) reduces only the amounts that should have been withheld from the worker or also the employer's own FICA share; the two readings produce the ~2.4x spread in the worked federal-tax band ($33.0k–$79.8k/yr). FICA 7.65% (wage base assumed to exceed every installer's annual pay), FUTA 0.6% on the first $7,000 per worker — the library cites §3509 but none of these rates.\n- FLSA half-time premium shortfall method (0.5 × rate × OT hours where straight time was paid) and the 2-year/3-year (willful) lookback.\n- FLSA liquidated damages (doubling) — **not** included in any figure above; would roughly double the FLSA component if applied.\n- Texas UI tax rates — no data; excluded from all totals (not available).\n- The 3-year federal employment-tax assessment period, and the assumption that 2025 payment levels ($612,000/yr) held for each year of the lookback (avg installer tenure 3.4 yrs; earlier-year payment levels are not quantified in the data room).\n\nDeliberately left unreconciled: escrow §9.3 18-month term vs. §7.4(d) survival-to-statute (flagged as buyer inconsistency in the redline; not resolved in our favor by assumption).\n",
+  "facts": [
+    {
+      "id": "hensley_relationship",
+      "trigger": [
+        "Hensley",
+        "consent",
+        "talked to",
+        "relationship",
+        "38%"
+      ],
+      "answer": "Hensley's owner is a friend. I haven't told him I'm selling. He won't love a corporate buyer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "installers_hours",
+      "trigger": [
+        "installers",
+        "hours",
+        "overtime",
+        "how many hours",
+        "1099"
+      ],
+      "answer": "The installers do 45–50 hours a week in busy season. Paid straight hourly. They like it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "disclosed",
+      "trigger": [
+        "disclose",
+        "told the buyer",
+        "schedule",
+        "did Lone Star know"
+      ],
+      "answer": "The buyer's people saw the census and asked about the 1099s. I said it's industry standard. They didn't push back.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "hensley_relationship",
+    "installers_hours"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

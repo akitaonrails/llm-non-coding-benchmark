@@ -1,0 +1,6 @@
+# LEF (Lei 6.830/80) arts. 2º §§5º-8º, 3º, 9º, 16; Súmulas 392 e 393 STJ
+
+*Citation:* Lei 6.830/80; STJ Súmulas 392, 393  
+*Status in this library:* in force
+
+**Art. 2º §5º.** O Termo de Inscrição de Dívida Ativa deverá conter: … III – a origem, a natureza e **o fundamento legal ou contratual da dívida**; IV – a indicação de estar a dívida sujeita à atualização monetária e o respectivo fundamento; … **§8º.** Até a decisão de primeira instância, a CDA poderá ser **emendada ou substituída**, assegurada ao executado a devolução do prazo para embargos. **Súmula 392 STJ:** A Fazenda pode substituir a CDA até a prolação da sentença de embargos, quando se tratar de **correção de erro material ou formal, vedada a modificação do sujeito passivo**. **Súmula 393 STJ:** A exceção de pré-executividade é admissível na execução fiscal relativamente às **matérias conhecíveis de ofício que não demandem dilação probatória** (ex.: decadência, prescrição, ilegitimidade manifesta). **Art. 9º.** Em garantia da execução, o executado poderá: I – depósito; **II – oferecer fiança bancária ou seguro garantia**; III – nomear bens à penhora. **Art. 16.** Embargos em 30 dias contados da garantia; não são admissíveis sem garantia (§1º).

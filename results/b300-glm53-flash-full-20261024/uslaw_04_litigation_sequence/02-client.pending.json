@@ -1,0 +1,47 @@
+{
+  "case": "uslaw_04_litigation_sequence",
+  "questions": "# QUESTIONS FOR CLIENT — status log\n(Updated after the Session 2 client response. Resolved questions are **not** re-asked; remaining items are flagged as unknowns in the session deliverables because the client states no further information exists.)\n\n## Resolved\n\n| # | Question | Answer |\n|---|---|---|\n| Q4 | Any waivers of conversion fees besides the 2/11/26 email? | **No.** Bell (account manager): the 2/11 email covered Rosa M. and Tay W. only — \"never agreed to the other five.\" Consistent with his 7/20/26 email to the CEO. |\n| Q7 | Juniper's own QA of the disputed June invoice? | **Two double-entered shifts, ≈ $3,100** (Okonkwo). \"The rest is legit\" per client. Timesheet/shift-ID verification still to be obtained pre-filing. |\n\n## Not answered — standing unknowns (client: \"no additional information\"; flagged in deliverables, not re-asked)\n\n1. **Per-hire first-year compensation** for Priya S., Luis F., Keisha B., Anne O., Victor H., and the source of the $64,000 average — conversion-fee line ($80,000) remains assumption-based; claim not asserted at hearing until evidence-based.\n2. **Invoice issue/receipt dates** — the 15-day \"deemed accepted\" analysis on J-4533 (timeliness of the 7/9 dispute) cannot be completed either way.\n3. **Content of Bell's calls with Lindqvist** (esp. the ~6-minute May 2026 call) — implied-waiver/estoppel exposure on Priya/Luis/Keisha; preserved via litigation hold; Bell's recollection to be fixed in a declaration.\n4. **Pinecrest audit output** — may claim more than the $3,100 already conceded; capped for now at the remaining $71,700 + interest.\n5. **Term/termination status** (§4 60-day notice) and any post-July 2026 billing — affects the §3 covenant tail.\n6. **Pinecrest \"corporate mandate\" documentation** — credibility evidence only.\n",
+  "facts": [
+    {
+      "id": "feb11",
+      "trigger": [
+        "February 11",
+        "waived",
+        "one-off",
+        "Rosa",
+        "Tay",
+        "did anyone consent"
+      ],
+      "answer": "Marcus: Yeah… I waived the fee for Rosa and Tay in February. Just those two. I didn't think it was a big deal. I never agreed to the other five.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "exhibit_c",
+      "trigger": [
+        "Exhibit C",
+        "arbitration",
+        "dispute resolution",
+        "AAA"
+      ],
+      "answer": "Dolapo: There's an arbitration exhibit? Our old lawyer used a template. Nobody read it. Does that kill us?",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "padded",
+      "trigger": [
+        "padded",
+        "J-4533",
+        "audit",
+        "hours"
+      ],
+      "answer": "Dolapo: Two shifts were double-entered in June, about $3,100. The rest is legit.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "feb11",
+    "padded"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

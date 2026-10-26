@@ -1,0 +1,26 @@
+account,name,debit,credit
+1000,Cash — Operating (HCCB ...2210),,7013.13
+1100,Accounts receivable,107668.00,
+1200,Inventory — materials,21400.00,
+1300,Prepaid expenses,2400.00,
+1500,Equipment,148000.00,
+1510,Accumulated depreciation,,61250.00
+2000,Accounts payable,,27615.40
+2050,Credit card payable — Summit Visa,,3188.22
+2200,Line of credit — HCCB,,45000.00
+2300,Sales tax payable,,4121.55
+3000,Owner's capital,,60000.00
+3900,Retained earnings,,62017.00
+4000,Sales — custom cabinetry,,84200.00
+4100,Sales — installation,,12300.00
+5000,Materials — COGS,31200.00,
+5100,Subcontract labor,9800.00,
+6000,Wages,28400.00,
+6050,Payroll taxes,2612.80,
+6100,Rent — shop,9000.00,
+6200,Utilities,1840.00,
+6300,Insurance,1150.00,
+6400,Software & subscriptions,396.00,
+6600,Vehicle & fuel,1422.00,
+6800,Interest expense,612.50,
+6900,Office & misc,804.00,

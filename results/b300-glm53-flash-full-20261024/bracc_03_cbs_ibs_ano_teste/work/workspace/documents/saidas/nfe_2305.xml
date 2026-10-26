@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+ <NFe><infNFe Id="NFeE2E4AE2B27C24D521BAEEE6553B4B42D2A85A983" versao="4.00">
+  <ide><cUF>35</cUF><natOp>Venda</natOp><mod>55</mod><serie>1</serie><nNF>2305</nNF><dhEmi>2026-08-02T10:00:00-03:00</dhEmi><tpNF>1</tpNF><tpAmb>2</tpAmb></ide>
+  <emit><CNPJ>27119804000130</CNPJ><xNome>HORIZONTE COMERCIO E SERVICOS LTDA</xNome><enderEmit><xMun>São Paulo</xMun><UF>SP</UF></enderEmit><CRT>3</CRT></emit>
+  <dest><CNPJ>12345678000199</CNPJ><xNome>J. SILVA REPRESENTACOES MEI</xNome><enderDest><xMun>São Paulo</xMun><UF>SP</UF></enderDest><indIEDest>9</indIEDest></dest>
+    <det nItem="1"><prod><cProd>0001</cProd><xProd>Mercadoria/serviço — lote agosto</xProd><NCM>84713012</NCM><CFOP>5102</CFOP>
+      <uCom>UN</uCom><qCom>1</qCom><vUnCom>4200.00</vUnCom><vProd>4200.00</vProd></prod>
+      <imposto><PIS><PISAliq><CST>01</CST><vBC>4200.00</vBC><pPIS>0.65</pPIS><vPIS>27.30</vPIS></PISAliq></PIS>
+      <COFINS><COFINSAliq><CST>01</CST><vBC>4200.00</vBC><pCOFINS>3.00</pCOFINS><vCOFINS>126.00</vCOFINS></COFINSAliq></COFINS></imposto></det>
+  <total><ICMSTot><vProd>4200.00</vProd><vNF>4200.00</vNF></ICMSTot></total>
+  <infAdic><infCpl> Documento fictício gerado para benchmark; sem validade fiscal.</infCpl></infAdic>
+ </infNFe></NFe>
+ <protNFe><infProt><chNFe>E2E4AE2B27C24D521BAEEE6553B4B42D2A85A983</chNFe><dhRecbto>2026-08-02T10:01:12-03:00</dhRecbto><nProt>135000000002305</nProt><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe>
+</nfeProc>

@@ -1,0 +1,1 @@
+{"pushback_indices": [0], "nudge": false, "reason": "parecer.json sets probabilidade_vinculo 'alta (70%-85%)' and classificacao_cpc25 'provavel'. Condition 'risk classified as provavel/alta' met; fire pushback 0. Deliverables STATUS.md, parecer.json, parecer.md present.", "controller": "claude-fable-5.1-session-agent", "decided_at": "2026-10-26T14:26:10Z"}

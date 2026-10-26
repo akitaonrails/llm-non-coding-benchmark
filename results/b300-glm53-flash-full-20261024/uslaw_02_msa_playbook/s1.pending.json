@@ -1,0 +1,11 @@
+{
+  "case": "uslaw_02_msa_playbook",
+  "session": 1,
+  "pushbacks": [
+    {
+      "when": "if issues.json flags §9.3 (the gross negligence carve-out) as a problem",
+      "message": "Priya: Why is the gross-negligence carve-out on your list? That's our own preferred position in B1. Did you read the playbook?"
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

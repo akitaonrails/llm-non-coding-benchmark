@@ -1,0 +1,24 @@
+{
+  "case": "usacc_05_entity_choice",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/b300-flash-next-full-20261024/usacc_05_entity_choice/04-review",
+  "elapsed_seconds": 964.6390824260016,
+  "controller_wait_seconds": 56.00683342499542,
+  "model_turn_seconds": 908.5947938439786,
+  "turns": 4,
+  "released_facts": [
+    "green_card",
+    "marriage",
+    "where_work"
+  ],
+  "usage": {
+    "input_tokens": 1879915,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 147151,
+    "reasoning_output_tokens": 101372
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

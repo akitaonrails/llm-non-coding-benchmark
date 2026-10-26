@@ -1,0 +1,61 @@
+{
+  "case": "uslaw_01_deadlines_removal",
+  "questions": "# Questions for the client — answered on the next turn\n\nDeadline reality: your state-court **answer is due Thursday, October 1, 2026**, and the removal decision must be made **before** it. Please answer Q1–Q4 first; they decide whether removal is even possible. Dates below are 2026.\n\n## Q1 — Membership of Harbor Street Bakery LLC (the one that decides everything)\nAn LLC's citizenship for federal diversity purposes is the citizenship of **every one of its members** — not Delaware, not Portland. For **each member** of Harbor Street Bakery LLC as of September 8, 2026 (and today):\n1. Name, and whether the member is a natural person, another LLC/partnership, a trust, or an estate.\n2. If a person: **state where he or she lives and intends to remain** (domicile) — not where the business is, and not where the person was born. How long there? Do they keep a Washington driver's license, voter registration, home purchase, kids in school?\n3. If an entity: its own members, all the way down to natural persons (same questions).\n4. Please send the **operating agreement, member/cap table, and the Delaware certificate of formation** (and any amendments or admission/withdrawal documents).\n*Why it matters:* if **any** member is a Washington citizen, there is no diversity **and** the forum-defendant rule bars removal, so we stay in King County and answer by 10/1.\n\n## Q2 — The Seattle partner\nYour email says a partner \"runs the Seattle shop\" and \"signed for the deliveries.\"\n1. Is he a **member** of the LLC (on the cap table / operating agreement), or an employee/manager only?\n2. Where does he live — Seattle? Portland? Both? Which does he treat as home? Since when?\n3. Any other owner/operator living in Washington, including a spouse who owns part of the company?\n\n## Q3 — Foreign citizenship\nIs any member (or any owner of a member entity) **not a U.S. citizen** — e.g., a Canadian or other foreign national, or an entity organized abroad? If so, where do they live? (Different statutory track; the library I may rely on does not cover it, so I need to know early.)\n\n## Q4 — Service and what the agent actually did\n1. Send Corporation Service Company's receipt/records for the 9/11/2026 delivery, and the email or scan they sent and to **which** address (the \"old address\" you mentioned — what was it, and who can access it?).\n2. Is CSA still your registered agent of record in Delaware, and did anyone else at Harbor Street receive the summons or complaint earlier?\n3. Do you have any other Washington registered agent or office address?\n\n## Q5 — The Supply Agreement (and related papers)\n1. Send the **February 3, 2025 Supply Agreement** and any amendments/POs/terms. I specifically need: **§ 14 (attorney fees)**, any **forum-selection, consent-to-jurisdiction, venue, or arbitration clause**, any **choice-of-law** clause, the **risk-of-loss / receiving-inbound-deliveries** terms for the butter, the **12% interest** provision, and any excuse/withholding or set-off procedure for short or spoiled deliveries.\n2. Any signed writing in which Harbor Street agreed to litigate in King County or waived removal.\n\n## Q6 — The dispute itself (for the defense, not the deadlines)\n1. The short/spoiled deliveries: which dates, which invoices, dollar amounts withheld on each? Are the photos date-stamped, and where are they? Are the delivery tickets/receipts (including the ones your Seattle partner signed) retained?\n2. The butter (5/19/2026): who left it on the dock, where was it supposed to go, what do the receiving terms say, and what did you do when told?\n3. The **$31,400** already paid: dates, which invoices it was applied to, and how you applied it.\n4. Any prior demand letters, and any promise or writing about paying the balance.\n5. Anything suggesting Sound Cascade's deliveries were late/incomplete in a way you raised at the time.\n\n## Q7 — Insurance and other parties\n1. Do you carry general liability or cargo/transit coverage that could respond to the butter claim? If so, carrier, policy number, limits, and **whether you have noticed this claim** (late notice can forfeit coverage).\n2. Does the Seattle shop operate as a separate legal entity, DBA, franchise, or under a lease/management contract that names you as an additional insured or indemnitee?\n3. Is Sound Cascade's claim affected by any bankruptcy, receivership, or assignment?\n\n## Q8 — Business and practical constraints\n1. Is Harbor Street **registered to do business in Washington** (your Seattle store), and under what name? Any WA business license, UBI number, or WA sales-tax filings? (Relevant to defenses you may or may not have; not to removal.)\n2. Any real exposure in Seattle — lease, personal guarantees on the Supply Agreement, or a partner's guarantee? (Personal guarantees would be a separate lawsuit risk.)\n3. Do you want the case in federal court if it is legally available, knowing it likely means (a) faster deadlines (answer 10/7, scheduling order by 11/30, conference by 11/9), (b) a remand fight in which Sound Cascade can ask the court to make us pay its fees if we are wrong, and (c) no practical change in the substantive contract law?\n4. Who has authority to settle, and what is your budget/objective (pay less, get supply continuity, exit the contract)?\n\n## Q9 — Confirmations\n1. No one has filed, answered, appeared, or emailed plaintiff's counsel (Pellegrino & Voss, Amara Voss) about this case other than internally — correct? Anything you have already sent or said should reach me today; a prior filing could change the removal analysis.\n2. Confirm no one in the business has texted or emailed anyone at Sound Cascade about the deliveries or the dispute since 9/8/2026.\n",
+  "facts": [
+    {
+      "id": "member",
+      "trigger": [
+        "member",
+        "partner",
+        "owner",
+        "equity",
+        "who owns",
+        "Seattle"
+      ],
+      "answer": "Yes — Caleb Sorensen owns 35% of the LLC. He lives in Seattle (Ballard). I own 65% and live in Portland. We're the only two members.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "registered_agent",
+      "trigger": [
+        "registered agent",
+        "CSC",
+        "how did you get",
+        "email",
+        "old address"
+      ],
+      "answer": "CSC emailed the scans on the 11th to our old Gmail. Nobody checks it. I found them Sunday night.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "appearance",
+      "trigger": [
+        "appearance",
+        "lawyer in Washington",
+        "already filed",
+        "anyone responded"
+      ],
+      "answer": "Nobody has filed anything for us. We don't have a Washington lawyer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "defense",
+      "trigger": [
+        "short deliveries",
+        "spoiled",
+        "photos",
+        "setoff",
+        "counterclaim"
+      ],
+      "answer": "Three deliveries in March–April were short or spoiled, about $26k worth. I have photos and emails. I never paid those invoices.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "member",
+    "registered_agent",
+    "defense"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

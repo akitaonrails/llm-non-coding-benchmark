@@ -1,0 +1,2 @@
+# União (PGFN) — manifestação
+A exceção de pré-executividade não merece acolhida. Quanto à alegada ausência de fundamento legal da multa, **requer-se a substituição da CDA** (LEF art. 2º §8º; Súmula 392 STJ) para constar: 'multa de ofício de 75% — Lei 9.430/96, art. 44, I'. Quanto à decadência, sustenta a Fazenda que se aplica o art. 173, I, do CTN a **todos** os períodos, pois houve 'omissão de receitas', e que o prazo para o 4T/2020 e 1T/2021 só se encerraria em 31/12/2026, sendo tempestivo o lançamento. Junta CDA substitutiva.

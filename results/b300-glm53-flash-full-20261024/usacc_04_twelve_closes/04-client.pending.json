@@ -1,0 +1,45 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "questions": "# Questions to the client — from the January 2025 close\nPrepared by the Controller. These concern prior-period balances for which no supporting detail exists in the client file (see `deliverable/month_01/open_items.md`).\n\n**Client response (received after the January close):** \"For questions not answered above, the client has no additional information.\" — i.e., **none of the six questions below produced new evidence.** They are closed as questions; each unknown is flagged explicitly in `deliverable/month_01/open_items.md` and will only be revisited in another month's close on the basis of *new* documents, not by re-asking.\n\n| # | Subject | Client's information received? | Status |\n|---|---|---|---|\n| 1 | Identity/term/release schedule of the $24,000.00 opening deferred revenue not explained by `note_opening_deferred.md` | No | Unknown — held unreleased (see open_items §1) |\n| 2 | Aging/customer/invoice detail for opening A/R $92,650.00 | No | Unknown — collectability unassessed (open_items §2) |\n| 3 | What opening prepaid $9,600.00 covers and its amortization | No | Unknown — not amortized (open_items §3) |\n| 4 | Vendor/invoice detail for opening A/P $17,420.00 | No | Unknown — unvouched (open_items §4) |\n| 5 | Fixed-asset schedule behind the $1,777.78/month depreciation | No | Unknown — checklist amount applied as directed (open_items §6d) |\n| 6 | Year-close convention for the unclosed 2024 income-statement accounts | No | Controller decision documented (open_items §5) |\n\n---\n\n# Question from the February 2025 close — answered; treatment confirmed\n\nThe six questions above are closed on the client's instruction and are **not repeated**. February's documents raised one genuinely new item — reported in `deliverable/month_02/open_items.md` §1 and carried in the roll-forward as a contract liability. It does not re-open any January question.\n\n**Client response (received after the February close):**\n> Alvarado: *Honestly nothing bespoke — they self-onboarded like everyone else. Procurement just wanted it called a license.*\n>\n> For questions not answered above, the client has no additional information. Flag remaining unknowns explicitly.\n\n| # | Subject | Client's information received? | Status |\n|---|---|---|---|\n| 7 | Pinecone Dental Group INV-2250 (\"Implementation & license — one-time\", $36,000.00, order form C-025, due on signature): (a) evidence that the implementation/deployment was performed and accepted — and when; (b) the license term or access period the fee covers (the form says only \"one-time\"); (c) whether C-025 is the complete pricing, i.e., any allocation of the combined price the parties intended | Partially — (a) answered by the client; (b) and (c): no additional information | **Answered — February treatment confirmed.** No implementation service exists (\"self-onboarded like everyone else\"), which policy memo §2 states outright: \"self-serve onboarding is not an implementation service\" — so no part of the $36,000.00 is implementation revenue at any date. The \"license\" label is a procurement naming choice with no stated term — non-substantive — and per 606-10-25-10 et seq. a description-only correction does not change the accounting; the transaction stands on its substance: billed before evidenced performance, a contract liability (606-10-45-2). The fee **remains held in deferred revenue at $36,000.00** exactly as issued in February (month_02 open_items §1; JE-2025-015/JE-2025-016). |\n\n## Remaining unknowns — flagged per the client's instruction (not questions; nothing to re-ask)\n\nThese are unknowns the client cannot resolve (\"no additional information\"). They stay on the record each month and are watched against future documents; none is re-asked.\n\n1. **Pinecone $36,000.00 — the access period the one-time fee covers.** Unstated on C-025 and not answered above. Without a stated period there is no term to release over (policy §1) and no rate at which to convert the fee into monthly amounts — any schedule would be invented. Held in deferred (account 2200). Monitored for: any document stating the covered period; Pinecone's appearance in the monthly invoicing cycle; any contract modification adding a term.\n2. **Unidentified opening deferred $24,000.00** — no client information; held unreleased in account 2200 (month_01 open_items §2; carried in both roll-forwards).\n3. **Opening A/R $92,650.00** — no aging detail; no basis for an allowance (month_01 open_items §2).\n4. **Opening prepaid $9,600.00** — no schedule; not amortized (month_01 open_items §2).\n5. **Opening A/P $17,420.00** — no vendor detail (month_01 open_items §2).\n6. **Depreciation $1,777.78/month** — no underlying asset schedule; the rate is taken as given, not verified (month_01 open_items §2).\n\n(The year-close convention for unclosed 2024 accounts is not a remaining unknown — it is a documented Controller decision, `month_01/open_items.md` §5.)\n",
+  "facts": [
+    {
+      "id": "pinecone_onboarding",
+      "trigger": [
+        "Pinecone",
+        "implementation",
+        "onboarding",
+        "C-025",
+        "what was delivered"
+      ],
+      "answer": "Alvarado: Honestly nothing bespoke — they self-onboarded like everyone else. Procurement just wanted it called a license.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "gusto_dup",
+      "trigger": [
+        "duplicate",
+        "two net pay",
+        "Gusto",
+        "second debit"
+      ],
+      "answer": "Office manager: Gusto admitted the double debit; refund posted May 9.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "c012",
+      "trigger": [
+        "C-012",
+        "cancel",
+        "credit memo",
+        "stop invoicing"
+      ],
+      "answer": "Alvarado: yeah they cancelled. Billing didn't get turned off. Credit them.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "pinecone_onboarding"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

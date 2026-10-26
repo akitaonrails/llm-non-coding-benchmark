@@ -1,0 +1,40 @@
+data,ref,conta,nome,historico,debito,credito
+2026-01-01,ABERT,1.1.01,Caixa e bancos,Saldos de abertura,1850000.00,
+2026-01-01,ABERT,1.1.02,Clientes,Saldos de abertura,3920000.00,
+2026-01-01,ABERT,1.1.03,Estoques,Saldos de abertura,4410000.00,
+2026-01-01,ABERT,1.2.01,Imobilizado,Saldos de abertura,6200000.00,
+2026-01-01,ABERT,1.2.02,(-) Depreciação acumulada,Saldos de abertura,,2480000.00
+2026-01-01,ABERT,2.1.01,Fornecedores,Saldos de abertura,,3150000.00
+2026-01-01,ABERT,2.1.02,Obrigações trabalhistas,Saldos de abertura,,610000.00
+2026-01-01,ABERT,2.1.03,Tributos a recolher,Saldos de abertura,,740000.00
+2026-01-01,ABERT,2.1.04,Empréstimos,Saldos de abertura,,2400000.00
+2026-01-01,ABERT,2.3.01,Capital social,Saldos de abertura,,5000000.00
+2026-01-01,ABERT,2.3.02,Reservas / lucros acumulados,Saldos de abertura,,2000000.00
+2026-01-28,VENDAS,1.1.02,Clientes,Vendas 01/2026,2540000.00,
+2026-01-28,VENDAS,3.1.01,Receita bruta de vendas,Vendas 01/2026,,2540000.00
+2026-01-28,TRIB,3.1.02,(-) PIS/COFINS sobre vendas,"PIS/COFINS s/ vendas 9,25%",234950.00,
+2026-01-28,TRIB,2.1.03,Tributos a recolher,"PIS/COFINS s/ vendas 9,25%",,234950.00
+2026-01-28,TRIB,3.1.03,(-) ICMS sobre vendas,ICMS s/ vendas (líquido de créditos) 7%,177800.00,
+2026-01-28,TRIB,2.1.03,Tributos a recolher,ICMS s/ vendas (líquido de créditos) 7%,,177800.00
+2026-01-28,CMV,4.1.01,CMV,CMV,1397000.00,
+2026-01-28,CMV,1.1.03,Estoques,CMV,,1397000.00
+2026-01-15,COMPRA,1.1.03,Estoques,Compras de mercadorias (com crédito PIS/COFINS),1676400.00,
+2026-01-15,COMPRA,1.1.04,Tributos a recuperar (PIS/COFINS),Compras de mercadorias (com crédito PIS/COFINS),155067.00,
+2026-01-15,COMPRA,2.1.01,Fornecedores,Compras de mercadorias (com crédito PIS/COFINS),,1831467.00
+2026-01-25,FOLHA,4.2.01,Despesas com pessoal,Folha e encargos,210000.00,
+2026-01-25,FOLHA,2.1.02,Obrigações trabalhistas,Folha e encargos,,210000.00
+2026-01-20,ADM,4.2.03,Despesas administrativas,Despesas administrativas,96000.00,
+2026-01-20,ADM,1.1.01,Caixa e bancos,Despesas administrativas,,96000.00
+2026-01-28,DEPR,4.2.05,Depreciação,Depreciação,51667.00,
+2026-01-28,DEPR,1.2.02,(-) Depreciação acumulada,Depreciação,,51667.00
+2026-01-28,FIN,4.3.01,Despesas financeiras,Juros empréstimo,28000.00,
+2026-01-28,FIN,1.1.01,Caixa e bancos,Juros empréstimo,,28000.00
+2026-01-27,RECEB,1.1.01,Caixa e bancos,Recebimentos de clientes,2540000.00,
+2026-01-27,RECEB,1.1.02,Clientes,Recebimentos de clientes,,2540000.00
+2026-01-27,PGTO,2.1.01,Fornecedores,Pagamentos a fornecedores,1676400.00,
+2026-01-27,PGTO,1.1.01,Caixa e bancos,Pagamentos a fornecedores,,1676400.00
+2026-01-09,NF8812,4.2.04,Material de uso e consumo,Material de uso e consumo administrativo (NF 8812 Papel & Cia) — crédito PIS/COFINS tomado,120000.00,
+2026-01-09,NF8812,1.1.04,Tributos a recuperar (PIS/COFINS),Material de uso e consumo administrativo (NF 8812 Papel & Cia) — crédito PIS/COFINS tomado,11100.00,
+2026-01-09,NF8812,2.1.01,Fornecedores,Material de uso e consumo administrativo (NF 8812 Papel & Cia) — crédito PIS/COFINS tomado,,131100.00
+2026-01-20,COM,4.2.02,Despesas comerciais,Despesas comerciais ordinárias,85000.00,
+2026-01-20,COM,1.1.01,Caixa e bancos,Despesas comerciais ordinárias,,85000.00

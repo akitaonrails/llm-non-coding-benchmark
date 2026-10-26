@@ -1,0 +1,138 @@
+[
+  {
+    "ref": "AJE-1",
+    "date": "2026-03-31",
+    "memo": "Reverse duplicate posting of Cascade Hardwoods invoice CH-7731. Same invoice (dated 02/24/2026, total 4,860.00) posted twice: 2026-02-26 from the emailed copy and again 2026-03-09 from the mailed copy. Removed the March duplicate; the invoice remains recorded once (Feb posting) and was paid in full by check #2040 (cleared 03/22). Per policy, vendor bills are recorded once, keyed by vendor invoice number.",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 4860.0,
+        "credit": 0.0
+      },
+      {
+        "account": "5000",
+        "debit": 0.0,
+        "credit": 4860.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-2",
+    "date": "2026-03-31",
+    "memo": "Reclassify online transfer in of 1,500.00 from checking *4420 (03/14, bank statement line) out of Sales 4000, where it was posted in error. The source of the funds cannot be identified from any document in the file; per policy, unidentified receipts are recorded to 2100 suspense until matched. Completed by AJE-6 when the owner confirmed the funds are his.",
+    "lines": [
+      {
+        "account": "4000",
+        "debit": 1500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2100",
+        "debit": 0.0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-3",
+    "date": "2026-03-31",
+    "memo": "Record mobile deposit of 4,312.00 received 03/21 per bank statement; not recorded in the books. Payor unidentified from the documents; recorded to 2100 suspense per policy until matched to an invoice or customer. Not revenue. Owner and office manager could not identify the payor either (owner replies on file); remains in suspense.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 4312.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2100",
+        "debit": 0.0,
+        "credit": 4312.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-4",
+    "date": "2026-03-31",
+    "memo": "Record HCCB monthly service fee 35.00 charged 03/31/2026 per bank statement; not recorded in the books.",
+    "lines": [
+      {
+        "account": "6700",
+        "debit": 35.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 35.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-5",
+    "date": "2026-03-31",
+    "memo": "Capitalize CabinetVision annual license 1,188.00 charged to the Summit card 03/11 and posted to Software & subscriptions. Card statement states coverage 04/2026-03/2027, so nothing is consumed at 03/31; per policy amounts covering more than one month are prepaid to 1300. Amortization 99.00/month begins April 2026.",
+    "lines": [
+      {
+        "account": "1300",
+        "debit": 1188.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6400",
+        "debit": 0.0,
+        "credit": 1188.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-6",
+    "date": "2026-03-31",
+    "memo": "Owner confirmed the 1,500.00 transfer in from checking *4420 (03/14, bank statement line) is his own personal money moved into the business to fund payroll ('It's my money, not a sale'). Per close_policy.md owner personal funds through business accounts go to 3100 Owner's contributions, never revenue. Completes the reclassification started by AJE-2: 2100 suspense to 3100.",
+    "lines": [
+      {
+        "account": "2100",
+        "debit": 1500.0,
+        "credit": 0.0
+      },
+      {
+        "account": "3100",
+        "debit": 0.0,
+        "credit": 1500.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-7",
+    "date": "2026-03-31",
+    "memo": "Owner confirmed the Uchi dinner 212.00 (03/15, Summit card ending 0917, 4 guests) was his personal anniversary dinner charged to the wrong card. Per close_policy.md owner personal charges through business accounts are recorded to 3200 Owner's draws. Reclass from 6500 Meals. Card liability (2050) unchanged.",
+    "lines": [
+      {
+        "account": "3200",
+        "debit": 212.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6500",
+        "debit": 0.0,
+        "credit": 212.0
+      }
+    ]
+  },
+  {
+    "ref": "AJE-8",
+    "date": "2026-03-31",
+    "memo": "Allied Insurance 1,150.00 keyed to A/P 03/20; the bill itself is not in the file. The only coverage wording anywhere in the file is the GL memo 'Allied Insurance \u2014 Q2 GL' (documents/general_ledger_2026-03.csv). We read 'GL' as general-liability coverage for Q2 2026 (the quarter runs 04/01-06/30) - our reading, to be confirmed against the policy declarations page. On any quarterly reading nothing is consumed at 03/31; per close_policy.md amounts covering more than one month are capitalized to 1300 prepaid. Treatment consistent with the CabinetVision license (AJE-5), whose coverage period is printed on its source document. Amortization 383.33/month from April 2026, pending the declarations page to confirm coverage type and exact dates. Liability (2000) unchanged; bill remains unpaid.",
+    "lines": [
+      {
+        "account": "1300",
+        "debit": 1150.0,
+        "credit": 0.0
+      },
+      {
+        "account": "6300",
+        "debit": 0.0,
+        "credit": 1150.0
+      }
+    ]
+  }
+]

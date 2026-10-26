@@ -1,0 +1,22 @@
+# October 2025 close — Board open items and judgments
+
+## October results and posting basis
+
+- Gross October invoices total **$30,450** for 24 monthly subscriptions. Alder Studios LLC's $1,800 invoice (INV-2434) was issued after its August 31 cancellation and has been fully credited by `CM-INV-2434`. Net valid billings and applied receipts are each **$28,650** for 23 active monthly customers. Accounts receivable remains **$92,650**: $92,650 opening + $30,450 gross billed − $1,800 credit − $28,650 collected.
+- The Alder credit reverses the October invoice's revenue and receivable; no post-cancellation revenue remains. This follows the cancelled-contract rule in the [Board revenue policy](../../library/revenue_policy_memo.md). The separate Alder Studios Inc (C-018) $900 invoice remains valid and was paid.
+- October subscription revenue posted is **$41,700**: valid monthly subscriptions $28,650 + Trestle $2,000 + Pinecone $3,000 + Marigold $1,500 + Quarry $2,500 + Saltline $1,800 + Vireo $2,250. Deferred revenue is **$93,100**: $106,150 opening − $13,050 annual releases. Ratable releases follow [ASC 606 excerpts](../../library/asc606_excerpts.md) and the [Board revenue policy](../../library/revenue_policy_memo.md).
+- October vendor costs total **$23,600** and were paid. Opening accounts payable $17,420 remains. Payroll cost is **$59,480** ($54,404 wages + $5,076 employer taxes and benefits), agreeing with the bank. Depreciation is **$1,777.78** per the [monthly close checklist](../../library/close_checklist.md). No prepaid amortization was recorded because coverage dates remain unavailable.
+- The cumulative subscription revenue account closes at **$459,850**: $418,150 September 30 balance + $41,700 October postings. The October postings include the $1,800 invoice credit; the opening balance includes the previously disclosed Pinecone restatement and unexplained $30,450 opening credit.
+
+## Prior-period corrections
+
+None recorded in October. The Alder invoice was issued and credited in October, so it is a current-month billing error. The February–June Pinecone correction remains disclosed in the July package, consistent with [ASC 250 excerpts](../../library/asc250_excerpts.md).
+
+## Open items
+
+1. **Repeated Alder billing and credit communication.** C-012 was invoiced in both September and October after cancellation. Both $1,800 invoices are fully credited in the ledger, including October `credit_memo_INV-2434.md`; customer delivery of either credit memo is not evidenced. Disable C-012 in the recurring billing process and deliver both credits. No receivable remains from the two invoices. The [Board revenue policy](../../library/revenue_policy_memo.md) requires erroneous post-cancellation invoices to be credited.
+2. **Liquidity.** October closes with **$38,850 cash**, which is **$20,630 less** than October's single supported payroll disbursement of $59,480 ($59,480 − $38,850). This comparison does not forecast next month's receipts or obligations, but warrants management review of cash availability before the next payroll and vendor cycle.
+3. **Unallocated opening deferred revenue — $24,000.** No customer, contract, or service dates are available for this portion of the opening liability. It remains unrecognized. October ending deferred revenue is Trestle $4,000 + Pinecone $9,000 + Marigold $6,000 + Quarry $15,000 + Saltline $12,600 + Vireo $22,500 + unallocated $24,000 = **$93,100**.
+4. **Trestle's historical overlapping terms.** The supplied old-contract schedule resulted in $8,200 monthly releases January–May while a new January–December 2025 term also ran. The client could not establish whether the new form added service or replaced old rights. The **$41,000 recognized January–May** under the old schedule remains subject to that interpretation. Its scheduled liability is now zero. No cancellation, credit, or refund was documented. Actual promised service governs under [ASC 606 excerpts](../../library/asc606_excerpts.md).
+5. **Opening balances lacking support.** The client has no further aging for opening receivables $92,650, vendor detail for payables $17,420, or coverage schedule for prepaids $9,600. These balances were carried forward; recoverability, completeness, and amortization remain unverified.
+6. **Opening revenue credit — $30,450.** No period designation was supplied. It remains in the cumulative trial balance. Whether it should have been closed to retained earnings for a prior fiscal year remains unresolved.

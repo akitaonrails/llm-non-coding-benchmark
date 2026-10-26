@@ -1,0 +1,159 @@
+{
+  "saidas": [
+    {
+      "numero": 2301,
+      "data": "2026-08-01",
+      "valor": 18000.0,
+      "cbs": 162.0,
+      "ibs": 18.0,
+      "situacao": "regular",
+      "motivo": "Venda a BRISA MATERIAIS LTDA (11.222.333/0001-44, regime regular — carteira de clientes). Emitida em 01/08/2026, ANTES de 03/08/2026, sem o grupo IBSCBS: permanece válida (Comunicado CGIBS jul/2026: documentos emitidos antes dessa data sem os grupos permanecem válidos). Débito apurado sobre o valor integral pelas alíquotas de 2026 (LC 214/2025, arts. 343 e 346; NT 2025.002): CBS 18.000,00 × 0,90% = 162,00; IBS 18.000,00 × 0,10% = 18,00 (pIBSMun = 0,00)."
+    },
+    {
+      "numero": 2302,
+      "data": "2026-08-01",
+      "valor": 24000.0,
+      "cbs": 216.0,
+      "ibs": 24.0,
+      "situacao": "regular",
+      "motivo": "Venda a SERRA VERDE AGRO S.A. (77.888.999/0001-00, regime regular). Emitida em 01/08/2026, antes de 03/08/2026, sem o grupo IBSCBS: permanece válida (Comunicado CGIBS). Débito: CBS 24.000,00 × 0,90% = 216,00; IBS × 0,10% = 24,00 (LC 214/2025, arts. 343/346; NT 2025.002)."
+    },
+    {
+      "numero": 2303,
+      "data": "2026-08-02",
+      "valor": 9500.0,
+      "cbs": 85.5,
+      "ibs": 9.5,
+      "situacao": "regular",
+      "motivo": "Venda a PONTO FIXO COMERCIO ME (44.555.666/0001-77, Simples Nacional) em 02/08/2026, antes de 03/08/2026, sem o grupo IBSCBS: documento válido (Comunicado CGIBS). Débito integral de Horizonte (regime regular): o art. 347 dispensa apenas o EMITENTE Simples/MEI, não o emitente regular que vende a favorecido não optante. CBS 9.500,00 × 0,90% = 85,50; IBS × 0,10% = 9,50."
+    },
+    {
+      "numero": 2304,
+      "data": "2026-08-02",
+      "valor": 31000.0,
+      "cbs": 279.0,
+      "ibs": 31.0,
+      "situacao": "regular",
+      "motivo": "Venda a BRISA MATERIAIS LTDA (regime regular) em 02/08/2026, antes de 03/08/2026, sem o grupo IBSCBS: permanece válida (Comunicado CGIBS). Débito: CBS 31.000,00 × 0,90% = 279,00; IBS × 0,10% = 31,00 (LC 214/2025, arts. 343/346)."
+    },
+    {
+      "numero": 2305,
+      "data": "2026-08-02",
+      "valor": 4200.0,
+      "cbs": 37.8,
+      "ibs": 4.2,
+      "situacao": "regular",
+      "motivo": "Venda a J. SILVA REPRESENTACOES MEI (12.345.678/0001-99, MEI) em 02/08/2026, antes de 03/08/2026, sem o grupo IBSCBS: documento válido (Comunicado CGIBS). Débito integral de Horizonte (o art. 347 não dispensa o emitente do regime regular): CBS 4.200,00 × 0,90% = 37,80; IBS × 0,10% = 4,20."
+    },
+    {
+      "numero": 2306,
+      "data": "2026-08-04",
+      "valor": 42000.0,
+      "cbs": 378.0,
+      "ibs": 42.0,
+      "situacao": "regular",
+      "motivo": "Venda a BRISA MATERIAIS LTDA (regime regular) em 04/08/2026 (depois de 03/08) COM o grupo IBSCBS preenchido corretamente: XML vBC 42.000,00, pCBS 0,90/vCBS 378,00, pIBSUF 0,10/vIBSUF 42,00, pIBSMun 0,00 — confere com a NT 2025.002 e com o cálculo próprio (42.000,00 × 0,90% = 378,00; × 0,10% = 42,00). Documento em ordem; destaque apto a gerar crédito ao destinatário (art. 346)."
+    },
+    {
+      "numero": 2307,
+      "data": "2026-08-06",
+      "valor": 56000.0,
+      "cbs": 504.0,
+      "ibs": 56.0,
+      "situacao": "regular",
+      "motivo": "Venda a SERRA VERDE AGRO S.A. (regime regular) em 06/08/2026, após 03/08, COM o grupo IBSCBS correto: XML vCBS 504,00 / vIBSUF 56,00 sobre vBC 56.000,00 (56.000,00 × 0,90% / × 0,10%). Documento em ordem (art. 346; Comunicado CGIBS; NT 2025.002)."
+    },
+    {
+      "numero": 2308,
+      "data": "2026-08-10",
+      "valor": 12500.0,
+      "cbs": 112.5,
+      "ibs": 12.5,
+      "situacao": "irregular",
+      "motivo": "Venda a PONTO FIXO COMERCIO ME (Simples Nacional) em 10/08/2026, DEPOIS de 03/08/2026, SEM o grupo IBSCBS: emissão não permitida a contribuinte do regime regular, documento sujeito a rejeição (Comunicado CGIBS). O regime do destinatário NÃO dispensa o destaque de Horizonte: a dispensa do art. 347 alcança apenas o emitente Simples/MEI; a obrigação de destacar é de quem emite sob regime regular (art. 346). Consta autorizada (cStat 100) nos arquivos — divergência a verificar (QUESTIONS.md). Débito apurado pelo valor integral e alíquotas corretas: CBS 12.500,00 × 0,90% = 112,50; IBS × 0,10% = 12,50. Corrigir (cancelar e reemitir com o grupo) para não pôr em risco a dispensa do recolhimento (ADCT art. 125, §4º)."
+    },
+    {
+      "numero": 2309,
+      "data": "2026-08-13",
+      "valor": 38000.0,
+      "cbs": 342.0,
+      "ibs": 38.0,
+      "situacao": "irregular",
+      "motivo": "Venda a BRISA MATERIAIS LTDA (regime regular) em 13/08/2026. O grupo IBSCBS foi preenchido com as ALÍQUOTAS TROCADAS: o XML destaca pCBS 0,10/vCBS 38,00 e pIBSUF 0,90/vIBSUF 342,00. Correto para 2026 (NT 2025.002): pCBS 0,90, pIBSUF 0,10, pIBSMun 0,00 — ou seja, CBS 342,00 (38.000,00 × 0,90%) e IBS 38,00 (× 0,10%). A apuração-teste usa os valores corretos da operação (342,00/38,00), sem reproduzir o destaque invertido. Documento irregular: destaque incorreto não é obrigação acessória cumprida (art. 346; ADCT art. 125, §4º) e o destinatário do regime regular não pode creditar-se de destaque errado. Cancelar e reemitir com as alíquotas certas."
+    },
+    {
+      "numero": 2310,
+      "data": "2026-08-18",
+      "valor": 7800.0,
+      "cbs": 70.2,
+      "ibs": 7.8,
+      "situacao": "irregular",
+      "motivo": "Venda a J. SILVA REPRESENTACOES MEI em 18/08/2026, DEPOIS de 03/08/2026, SEM o grupo IBSCBS: vedada ao emitente do regime regular (Comunicado CGIBS); o art. 347 não dispensa Horizonte por ser o comprador MEI (a dispensa vale para documentos emitidos pelo próprio Simples/MEI). Débito integral de Horizonte: CBS 7.800,00 × 0,90% = 70,20; IBS × 0,10% = 7,80. Cancelar e reemitir com o grupo preenchido."
+    },
+    {
+      "numero": 2311,
+      "data": "2026-08-21",
+      "valor": 61000.0,
+      "cbs": 549.0,
+      "ibs": 61.0,
+      "situacao": "regular",
+      "motivo": "Venda a SERRA VERDE AGRO S.A. (regime regular) em 21/08/2026, após 03/08, COM o grupo IBSCBS correto: XML vCBS 549,00 / vIBSUF 61,00 sobre vBC 61.000,00 (× 0,90% / × 0,10% — NT 2025.002). Documento em ordem (art. 346)."
+    },
+    {
+      "numero": 2312,
+      "data": "2026-08-27",
+      "valor": 176000.0,
+      "cbs": 1584.0,
+      "ibs": 176.0,
+      "situacao": "irregular",
+      "motivo": "Venda a BRISA MATERIAIS LTDA (regime regular) em 27/08/2026, DEPOIS de 03/08/2026, SEM o grupo IBSCBS: emissão vedada e documento sujeito a rejeição (Comunicado CGIBS); o dever de destacar é de Horizonte, emitente do regime regular (art. 346). Maior exposição do mês. Débito integral pelas alíquotas corretas: CBS 176.000,00 × 0,90% = 1.584,00; IBS × 0,10% = 176,00. Cancelar e reemitir com o grupo; a Brisa (regime regular) depende do destaque para creditar-se."
+    }
+  ],
+  "entradas": [
+    {
+      "numero": 2313,
+      "valor": 48000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "DISTRIBUIDORA NORTE LTDA (55.666.777/0001-88, CRT 3 — regime regular), emitida em 02/08/2026, antes de 03/08/2026: documento válido sem o grupo (Comunicado CGIBS), MAS o XML não contém o grupo IBSCBS (sem destaque) — não há crédito. Só geram crédito aquisições de contribuintes do regime regular COM destaque (LC 214/2025, art. 346)."
+    },
+    {
+      "numero": 2314,
+      "valor": 62000.0,
+      "credito_cbs": 558.0,
+      "credito_ibs": 62.0,
+      "motivo": "DISTRIBUIDORA NORTE LTDA (regime regular, CRT 3), emitida em 05/08/2026, após 03/08, com destaque correto: XML vBC 62.000,00, vCBS 558,00 (× 0,90%), vIBSUF 62,00 (× 0,10%), vIBSMun 0,00 (NT 2025.002). Crédito integral aproveitado (art. 346: créditos de aquisições de contribuintes do regime regular com destaque)."
+    },
+    {
+      "numero": 2315,
+      "valor": 15000.0,
+      "credito_cbs": 0.0,
+      "credito_ibs": 0.0,
+      "motivo": "PONTO FIXO COMERCIO ME (44.555.666/0001-77), emitente do SIMPLES NACIONAL (CRT 1), emitida em 09/08/2026. O XML NÃO contém o grupo IBSCBS (nenhum destaque de CBS/IBS). Sem crédito: aquisições de optantes do Simples geram crédito ao adquirente do regime regular limitado ao valor efetivamente recolhido pelo optante a título de IBS/CBS no Simples — e em 2026, sem destaque, não há crédito (LC 214/2025, art. 347). Resposta direta ao gerente: NÃO é possível creditar-se."
+    },
+    {
+      "numero": 2316,
+      "valor": 40000.0,
+      "credito_cbs": 360.0,
+      "credito_ibs": 40.0,
+      "motivo": "LOGISTICA ATLAS S.A. (99.000.111/0001-22), emitida em 16/08/2026 com destaque correto: XML vBC 40.000,00, vCBS 360,00 (× 0,90%), vIBSUF 40,00 (× 0,10%). O XML traz CRT 3 do emitente (regime regular). PREMISSA DESTACADA: o fornecedor não consta da carteira de clientes; assumimos regime regular (coerente com CRT 3 e com o destaque correto) e aproveitamos o crédito (art. 346). Confirmar o regime do fornecedor (QUESTIONS.md); se for Simples/MEI, estornar 360,00/40,00."
+    },
+    {
+      "numero": 2317,
+      "valor": 60000.0,
+      "credito_cbs": 540.0,
+      "credito_ibs": 60.0,
+      "motivo": "DISTRIBUIDORA NORTE LTDA (regime regular, CRT 3), emitida em 22/08/2026, com destaque correto: XML vBC 60.000,00, vCBS 540,00 (× 0,90%), vIBSUF 60,00 (× 0,10%). Crédito integral aproveitado (art. 346)."
+    }
+  ],
+  "totais": {
+    "debito_cbs": 4320.0,
+    "debito_ibs": 480.0,
+    "credito_cbs": 1458.0,
+    "credito_ibs": 162.0,
+    "saldo_cbs": 2862.0,
+    "saldo_ibs": 318.0
+  },
+  "recolhimento_devido": 0.0,
+  "condicao_dispensa": "O recolhimento de 2026 fica DISPENSADO ao contribuinte que cumprir as obrigações acessórias — destaque nos documentos fiscais, escrituração e apuração-teste (ADCT art. 125, §4º, redação da LC 214/2025). Condição para 'recolhimento_devido = 0': regularizar as 4 saídas irregulares de agosto — NF-e 2308, 2310 e 2312 (emitidas depois de 03/08/2026 sem o grupo IBSCBS obrigatório — Comunicado CGIBS) e NF-e 2309 (grupo preenchido com alíquotas trocadas — NT 2025.002) — cancelando e reemitindo com o grupo correto — e manter escrituração e apuração-teste mensais. Essas 4 notas cobrem base de 234.300,00 (débitos: CBS 2.108,70 + IBS 234,30). Se a dispensa for perdida por descumprimento das acessórias, o saldo apurado do mês passa a ser exigível: 2.862,00 (CBS) + 318,00 (IBS) = 3.180,00 — compensável com o PIS (3.120,00) e a COFINS (14.400,00) de agosto, que somam 17.520,00 e o absorvem integralmente (ADCT art. 125, §1º; library/lei_pis_cofins_compensacao.md; IN RFB a editar). Penalidades: não há multas pelo não preenchimento em 2026 (caráter educativo), sem prejuízo da perda da dispensa (Comunicado CGIBS)."
+}

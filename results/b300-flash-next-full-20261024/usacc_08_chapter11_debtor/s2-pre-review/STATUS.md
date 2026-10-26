@@ -1,0 +1,28 @@
+# STATUS — Redwood Fabrication engagement (all three sessions)
+
+**COMPLETE WITH OPEN ITEMS**
+
+## Session 1 — petition month (complete; `deliverable/session1/`)
+
+- `response_to_cfo.md` — Mesa Feb $62,400.00 payment refused (Dkt. 61 ¶¶ 2–3; Dkt. 48 excludes Mesa; § 549(a)); netting refused, incl. supplement on the client-confirmed ~$11,000.00 pre-petition coil receivable (paying $51,400.00 net is still a barred pre-petition transfer AND gives away an estate asset; ASC 852-10-45-9); H&P $140,000.00 payable only via §§ 330/331 (the 4/14 interim-order estimate of "max 112,000.00" there is **superseded** by the actual Dkt. 77 terms — see session2/professional_fees.md); lawful Mesa path (noticed motion; post-petition terms per § 503(b)(1)/§ 363(c)(1)). **Outcome: Mesa shipped under Dkt. 83 post-petition trade agreement; Feb claim unpaid — the lawful path was used.**
+- `march_mor.json` — receipts 2,262,400.00; disbursements 490,770.00; ending cash 1,771,630.00 (assumes $0 swept balance — flagged); Part 2 207,826.16 / 74,110.00; Part 5 0 / 0 / 185,000.00; Part 7 yes (Dkt. 48, Dkt. 9) / no. Arithmetic in `march_mor_notes.md`.
+- `segregation.csv` — 10 invoices classified with payability and authority.
+
+## Session 2 — April (complete with flags; `deliverable/session2/`)
+
+- `april_mor.json` + `april_mor_notes.md` — **final on the April facts provided** (placeholder superseded by `documents/session2/april_activity.md`). Receipts 1,480,300.00 (customer 980,300.00 + DIP draw 4/9 500,000.00; cumulative draws 1,550,000.00 ≤ 2,500,000.00 Dkt. 61); disbursements 1,010,600.00 (payroll 796,000.00 — both cycles assumed entirely post-petition work, flagged; post-petition vendors 214,600.00); ending cash 2,241,330.00 (carries the $0-swept-balance flag). Part 2: post-petition payables 220,110.96 (H&P 144,200.00 + Corbin 45,000.00 + Mesa 3/18 18,900.00 assumed unpaid — 201,210.96 if inside the 214,600.00 — + UST accrual 12,010.96 est.; understated by unitemized/unaccrued April items, flagged); LSTC 74,110.00 unchanged (no pre-petition payments; register-incompleteness flag carried). Part 5: approved 116,200.00 / paid 0.00 / holdback 73,000.00. Part 7: **no / no** (Dkt. 83 confirms Mesa Feb invoice unpaid; Dkt. 61/77 references noted).
+- `professional_fees.md` — **rewritten to the actual Dkt. 77** (entered 4/14: absent 14-day objection, pay 80% of fees + **100% of expenses**; 20% holdback until Court approval of an interim/final application; no payment for pre-retention periods). H&P: interim **116,200.00** ripened 4/29 (statement served 4/15, no objection), unpaid at 4/30 → effectively a May payment; holdback 28,000.00 payable only on § 330/§ 331 approval. Corbin $45,000 statement **not payable as served** (retention effective 3/20; ~20,454.55 pre-retention slice has no Dkt. 77 payment path — Court direction needed; max interim on a flagged 12/22 time-proration estimate is 19,636.36 and only after objection period resolves). §§ 330/331 disgorgement warning + Dkt. 61 ¶ 2 DIP-proceeds restriction throughout.
+- `response_to_cfo_followup.md` — CFO directive "find a way — call it a deposit on the Q2 order": relabeling the Mesa Feb claim payment as a deposit **refused** (Dkt. 61 ¶¶ 2–3; § 549(a) recovery from recipient; MOR Part 7 under penalty of perjury). Lawful routes offered — the client's April file shows Mesa ultimately shipped under the court-recognized post-petition trade agreement (**Dkt. 83**) with the Feb claim untouched; the shortcut was never used. Premise corrected: Denver Water is the customer contract, not a vendor.
+
+## Session 3 (`deliverable/session3/`) — complete
+
+- `cod_schedule.json` — discharged 5,460,000.00 (GUC 8,400,000.00 × 65%); COD income excluded in full under § 108(a)(1)(A) → taxable inclusion 0.00; § 108(b) NOL reduction 6,100,000.00 → 640,000.00; **no § 108(b)(5) election** (reasoning in file; NOL-expiry question labeled unverified — library holds only § 108).
+- `fresh_start.md` — **fresh-start reporting does NOT apply**: condition (a) met (reorg value 14,000,000.00 < liabilities/allowed claims 16,200,000.00) but condition (b) FAILED (old equity retains 60% ≥ 50% voting; ASC 852-10-45-19 requires both).
+- `emergence_balance_sheet.md` — compromised liability removed from LSTC and restated at PV of the 2,940,000.00 stream (≤ 2,940,000.00); gain 5,460,000.00 undiscounted reported as a **reorganization item** (not equity credit; no push-down of reorganization value; no retained-earnings reset).
+
+## Open items
+
+1. **Session 2 detail items** (QUESTIONS.md § Open items — Session 2): itemization of the 214,600.00 vendor payments (incl. whether Mesa's 3/18 18,900.00 was paid → 201,210.96 Part 2 alternative); Dkt. 83 Q2 invoices open at 4/30 (Part 2 understated to an unknown extent); date H&P's 116,200.00 actually paid (May MOR); Corbin objection outcome / amended statement / disposition of the ~20,454.55 pre-retention slice; § 327 retention orders; April payroll-period confirmation; Q1 UST payment date; other April accruals.
+2. March ending cash understated by any swept pre-petition balance (April roll-forward inherits the flag); Part 2 LSTC incomplete pending full claims register; wage split, UST accruals, and coil amount are estimates — all flagged in deliverables (client: no additional information).
+3. Emergence TBDs: PV discount rate / GUC payment schedule; voting-share confirmation of the 60/40 split (could flip the fresh-start conclusion); DIP fee vs. new-money split of the 40% equity; exit financing terms; composition of the 7,800,000.00 non-GUC claims; NOL attributes detail.
+4. Unverified-law disclosures maintained: § 553 setoff, pre-retention professional-compensability, and NOL expiry/limits are NOT in the library and are not relied upon.

@@ -1,0 +1,6 @@
+# Cal. Labor Code §925
+
+*Citation:* Cal. Lab. Code §925  
+*Status in this library:* in force
+
+(a) An employer shall not require an employee who primarily resides and works in California, as a condition of employment, to agree to a provision that would do either of the following: (1) Require the employee to adjudicate outside of California a claim arising in California. (2) Deprive the employee of the substantive protection of California law with respect to a controversy arising in California. (b) Any provision of a contract that violates subdivision (a) is **voidable by the employee**, and if a provision is rendered void at the request of the employee, the matter shall be adjudicated in California and California law shall govern the dispute. (c) In addition to injunctive relief and any other remedies available, a court may award an employee who is enforcing his or her rights under this section reasonable attorney's fees. (e) This section shall not apply to a contract with an employee who is **in fact individually represented by legal counsel** in negotiating the terms of an agreement to designate either the venue or forum in which a controversy arising from the employment contract may be adjudicated or the choice of law to be applied. (f) This section shall apply to a contract entered into, modified, or extended on or after January 1, 2017.

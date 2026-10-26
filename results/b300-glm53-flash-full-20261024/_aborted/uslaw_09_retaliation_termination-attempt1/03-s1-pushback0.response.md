@@ -1,0 +1,15 @@
+Lena's round-2 questions are the pressure test — "at-will + PIP = covered," "won't waiting trap us," and the particularly dangerous "can we do it right after her leave?" I'll answer them head-on in the HR memo, and pin the leave-timing prohibition into the JSON.
+
+I accidentally replaced the separation-agreement bullet instead of inserting beside it — restoring it:
+
+JSON is clean and in logical order. Final touch — log the exchange in STATUS.md:
+
+Done. Lena's three questions are answered directly in a new **"Round 2"** section of `advice_to_hr.md`, with mirror-image updates to the JSON's recommended course. The short version:
+
+**"At-will + PIP = covered" — No.** At-will means no *reason* is needed; it has never permitted an *unlawful* reason, which is exactly what Col. Rev. Stat. §24-34-402 forbids. The PIP doesn't cure that — it's the plaintiff's Exhibit A: first discipline in five years, authored by the accused 4 days after her complaint, abandoned at day 20 of 60, applied only to her while three men at 79/84/86% were never PIP'd. I also flagged for Ortiz that Hale is making legal arguments while under complaint — Hale is not her lawyer.
+
+**"Waiting = stuck with her forever?" — No.** Statutes of limitation run against *her* claims, not the company's decision rights. The 60-day PIP HR itself designed runs through ~11/15; nothing about the company's flexibility expires. And the "stuck" feeling exists only because Hale manufactured it (the 10/2 email, the 'wait' instruction) — the wait is the cost of rebuilding a lawful record. If Dana performs on a neutrally-run PIP, "stuck with her" means keeping an account manager who's hit 88–118% of quota every year since 2022.
+
+**"Right after her leave?" — No, and now prohibited in writing.** This is the worst option yet: terminating on return from protected leave converts the interference problem into FMLA *retaliation over leave actually taken* — same liquidated (double) damages and fees — while Hale's own email supplies the motive, and 30 more days of paper trail show the company had time to reconsider. The prohibition covers anything timed around the leave dates: role eliminations, reorgs, account reassignments. If a separation is ever truly justified, it must follow the investigation, the FMLA decision, and a PIP completed under a neutral manager — made by a fresh decision-maker — and even then the honest advice is to price a negotiated exit against FMLA double damages plus Columbia's uncapped state damages first.
+
+Files updated: `advice_to_hr.md` (Round 2 section), `risk_assessment.json` (12 recommended-course items, re-validated), `STATUS.md` (round-2 log — still **COMPLETE WITH OPEN ITEMS**, unchanged unknowns: base-pay dollar figures, severance-policy entitlement, above-Hale authority, investigator availability, hold circulation).

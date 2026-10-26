@@ -1,0 +1,18 @@
+{
+  "case": "bracc_03_cbs_ibs_ano_teste",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 191.44598737100023,
+  "controller_wait_seconds": 19.00143957900582,
+  "model_turn_seconds": 172.43154659701395,
+  "turns": 3,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 621748,
+    "cached_input_tokens": 569984,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 12361,
+    "reasoning_output_tokens": 2723
+  },
+  "api_equivalent_usd": 0.3411348
+}

@@ -1,0 +1,72 @@
+{
+  "case": "usacc_02_close_gap",
+  "questions": "# Questions log — Brightline Cabinetry LLC, March 2026 close\n\nUpdated 2026-10-25 after the client's reply. Answered items record the\nanswer and what it changed in the books; none is re-asked. Items marked\nNO ADDITIONAL INFORMATION are remaining unknowns, flagged in\nopen_items.md and STATUS.md — please send the document whenever it turns up;\neach converts to a small follow-up entry, not a re-close.\n\n1. **Unidentified mobile deposit, $4,312.00 (3/21) — OPEN, client could not\n   answer.** Owner does not recall depositing anything that day; office\n   manager Carla does not know either. Per the client we \"park it somewhere\n   for now\": account 2100 (AJE-2) is exactly where policy parks it, so it\n   sits there, disclosed. Policy bars leaving it in suspense past the April\n   month-end. One new, concrete step (not a re-ask): ask HCCB for the\n   mobile-deposit **image** — the memo the payer typed usually names them.\n   If it identifies a customer, we apply it and clear 2100; if the owner's\n   money or a loan, it gets its own account. A booked classification without\n   identification needs a written owner instruction stating what it is.\n\n2. **$1,500.00 transfer in on 3/14 from \"*4420\" — ANSWERED.** Owner: money\n   moved from his personal checking to cover the 3/13 payroll — \"my money,\n   not a sale.\" Action booked: AJE-4 had already removed it from Sales;\n   **AJE-8** now moves it from suspense to 3100 Owner's contributions, per\n   policy (owner money in/out goes to 3200/3100, never revenue or expense).\n   Closed.\n\n3. **Uchi restaurant, $212.00, 3/15 — ANSWERED.** Owner: personal\n   anniversary dinner, wrong card — \"put it on me.\" AJE-7 (draw 3200) is\n   final; 6500 Meals is 0.00 for the item. Closed.\n\n4. **Cascade CH-7731 duplicate — ANSWERED.** Owner confirms the pattern:\n   email first, paper copy in the mail a couple of weeks later, same\n   invoice, paid once. AJE-1's single reversal is complete. The residual\n   \"was the email copy also inside the closed February A/P?\" question is\n   answered by the ledger itself: the 2/26-dated row sits in the **March**\n   posting journal, appended at its end (rows 72–73 of\n   `general_ledger_2026-03.csv`) — keyed during March, after February\n   closed. No second reversal. Closed (open_items.md §5).\n\n5. **Accounts receivable detail ($59,188.00 gap) — NO ADDITIONAL\n   INFORMATION (2026-10-25).** Remaining unknown, carried forward; the\n   $115,288.00 book balance stands with this gap disclosed\n   (open_items.md §3). A customer-level listing reconciling to the GL is\n   still the thing that closes it.\n\n6. **Accounts payable detail ($27,615.40 carryforward; Rivera and Allied\n   invoices) — NO ADDITIONAL INFORMATION (2026-10-25).** Remaining unknown,\n   carried forward (open_items.md §4). Send a vendor-level A/P listing at\n   3/31 plus the Rivera $5,600.00 and Allied $1,150.00 invoices when\n   available.\n\n7. **Hardaway INV-1167, $9,800.00 — ANSWERED (instruction, not documents).**\n   Owner: \"Still arguing with them. Don't write it off yet.\" Treatment\n   unchanged: full amount stays in A/R, nothing booked. We will act when the\n   dispute settles — a signed credit memo or written customer agreement, and\n   it is a one-day entry then. Open until then, per the owner's instruction.\n\n8. **Prepaid insurance schedule ($2,400.00 opening) — NO ADDITIONAL\n   INFORMATION (2026-10-25).** Remaining unknown; nothing amortized on it\n   (open_items.md §6). Allied's Q2 coverage dates are likewise unconfirmed;\n   AJE-6's Apr–Jun assumption stands.\n\n9. **Fixed assets / depreciation — NO ADDITIONAL INFORMATION\n   (2026-10-25).** No schedule or asset list exists on the client's side.\n   No March depreciation recorded; the $148,000.00 equipment and\n   $61,250.00 accumulated depreciation are presented as-is\n   (open_items.md §7). This is a known, disclosed incompleteness in the\n   balance sheet, not a tied figure.\n\n10. **Sales tax — NO ADDITIONAL INFORMATION (2026-10-25).** States, filings\n    and taxable-sales detail unknown; no March accrual; $4,121.55 liability\n    carried untouched (open_items.md §8). If the business is registered\n    anywhere, the next filing may already be due — please chase outside\n    this close.\n\n11. **Shop lease — NO ADDITIONAL INFORMATION (2026-10-25).** March rent was\n    billed, paid, and cleared, so the month ties; run-rate and term stay\n    unvalidated (open_items.md §9).\n\n12. **Cash presentation and overdrafts — NO ADDITIONAL INFORMATION\n    (2026-10-25).** Preferred label for the negative balance not given (we\n    present it as a credit/overdrawn balance and say so), and we still do\n    not know whether any overdraft fee hit a second account or the card —\n    none appears in the documents we hold.\n\n13. **Duplicate-purchase controls — no decision given (2026-10-25).** The\n    offer to add the vendor + invoice-number check at data entry stands for\n    the April close.\n",
+  "facts": [
+    {
+      "id": "xfer_1500",
+      "trigger": [
+        "1,500",
+        "1500",
+        "transfer from *4420",
+        "4420",
+        "online transfer"
+      ],
+      "answer": "That's from my personal checking, I moved money over to cover payroll. It's my money, not a sale.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "mobile_4312",
+      "trigger": [
+        "4,312",
+        "4312",
+        "mobile deposit",
+        "March 21",
+        "3/21"
+      ],
+      "answer": "Huh. I don't remember depositing anything that day. Maybe Carla (office) did? Let me ask her... (later) she doesn't know either. Can you just park it somewhere for now?",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "cascade_dup",
+      "trigger": [
+        "Cascade",
+        "CH-7731",
+        "duplicate",
+        "twice",
+        "same invoice"
+      ],
+      "answer": "Cascade emails invoices and then mails a paper copy a couple of weeks later. Same invoice. We paid it once.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uchi",
+      "trigger": [
+        "Uchi",
+        "dinner",
+        "212"
+      ],
+      "answer": "Uchi was my anniversary dinner, I grabbed the wrong card. Put it on me.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "hardaway",
+      "trigger": [
+        "Hardaway",
+        "9,800",
+        "dispute",
+        "warped"
+      ],
+      "answer": "Still arguing with them. Don't write it off yet.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "cascade_dup",
+    "hardaway",
+    "mobile_4312",
+    "uchi",
+    "xfer_1500"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

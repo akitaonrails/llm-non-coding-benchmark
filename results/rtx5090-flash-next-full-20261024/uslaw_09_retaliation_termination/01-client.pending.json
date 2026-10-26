@@ -1,0 +1,59 @@
+{
+  "case": "uslaw_09_retaliation_termination",
+  "questions": "# Questions for the client\n\nThese facts are missing from the file. None changes the core advice (**do not terminate\ntoday; issue the hold; investigate; answer the FMLA request**), but each affects exposure\nor the fine points. We proceeded using the stated assumptions below.\n\n1. **FMLA eligibility.** How many employees work within 75 miles of Dana's worksite, and\n   did she work ≥ 1,250 hours in the 12 months before 2026-09-30? (The library contains no\n   FMLA eligibility rules — we flag eligibility as UNVERIFIED/assumed.)\n2. **Salary.** Dana's base salary and target commission/bonus (to quantify the 4-week\n   severance vs. double-damages exposure and to sanity-check the comparator percentages —\n   is 88% of quota her actual attainment or a run-rate projection?).\n3. **Group or individual?** Is this termination part of any broader reduction, restructure,\n   or exit-incentive program? (If yes, the OWBPA consideration period is **45 days**, not 21 —\n   `adea_owbpa_626f.md`.)\n4. **The complaint's full text.** We have a summary. Please produce Dana's 2026-09-12\n   written complaint verbatim and any HR notes — do the comments include anything sexual,\n   or repeated conduct beyond appearance/\"distracted at home\"? Affects the hostile-environment\n   rating (currently medium).\n5. **Prior informal counseling.** Were there any verbal warnings, negative review comments,\n   or manager memos about quota/CRM hygiene before 2026-09-16? The file says no prior written\n   discipline; we need confirmation there is no undocumented history.\n6. **Decision chain.** Who exactly decided on termination — Hale, Ortiz, the business VP?\n   Who authored/approved the PIP, and were other managers consulted? Direct-evidence strength\n   depends on decision-maker identity.\n7. **Hale's history.** Any prior complaints about Tom Hale (any employee)? Bears on the\n   harassment claim and on the investigator selection.\n8. **PIP targets benchmark.** How were the PIP targets (100% quota; CRM within 24h) set, and\n   what PIPs (if any) exist for Brennan, Osei, Park, or other Account Managers under 100%?\n   Comparator_data.csv shows none as of 2026-10-06.\n9. **Leave operations.** Was Dana's intermittent leave schedule (if approved) already\n   coordinated, and has anyone used the phrase \"FMLA\" or leave status in any other email,\n   Slack, or text? (Relevant to hold scope and evidence risk.)\n\n## Assumptions we made in the deliverables\n\n- Dana meets FMLA eligibility requirements (unverified — see Q1).\n- The 88%/79%/84%/86%/103% figures are comparable attainment metrics for the same period and\n  book of business scale.\n- This is an individual termination, so the 21-day (not 45-day) OWBPA period applies\n  (see Q3).\n- The company is a private employer covered by Title VII/ADEA/FMLA; we were not asked to\n  verify coverage thresholds, and the library does not address them (UNVERIFIED).\n",
+  "facts": [
+    {
+      "id": "investigation",
+      "trigger": [
+        "investigat",
+        "complaint",
+        "September 12",
+        "what happened with"
+      ],
+      "answer": "Honestly, nothing. Tom's been traveling. I was going to get to it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "pip_author",
+      "trigger": [
+        "who wrote the PIP",
+        "Tom",
+        "decision-maker",
+        "who decided"
+      ],
+      "answer": "Tom wrote the PIP and Tom wants her out. I'm just processing it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "fmla_status",
+      "trigger": [
+        "FMLA",
+        "leave request",
+        "certification",
+        "approved"
+      ],
+      "answer": "We haven't approved or denied it. Certification came in 10/3. Tom said to wait.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "group",
+      "trigger": [
+        "others",
+        "group",
+        "RIF",
+        "program",
+        "anyone else"
+      ],
+      "answer": "Just her. No RIF.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "investigation",
+    "pip_author",
+    "fmla_status",
+    "group"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,6 @@
+# CTN — arts. 150 §4º, 173, 174; Súmula 555 STJ
+
+*Citation:* CTN arts. 150 §4º, 173, I, 174; STJ Súmula 555; REsp 973.733/SC (Tema 163)  
+*Status in this library:* in force
+
+**Art. 150 §4º.** Se a lei não fixar prazo à homologação, será ele de **cinco anos, a contar da ocorrência do fato gerador**; expirado esse prazo sem que a Fazenda se tenha pronunciado, considera-se homologado o lançamento e definitivamente extinto o crédito, salvo se comprovada a ocorrência de dolo, fraude ou simulação. **Art. 173.** O direito de a Fazenda constituir o crédito tributário extingue-se após 5 (cinco) anos, contados: **I – do primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado**. **Súmula 555 STJ:** 'Quando não houver declaração do débito, o prazo decadencial quinquenal para o Fisco constituir o crédito tributário conta-se exclusivamente na forma do art. 173, I, do CTN, nos casos em que a legislação atribui ao sujeito passivo o dever de antecipar o pagamento sem prévio exame da autoridade administrativa.' **Tema 163 (REsp 973.733):** havendo **pagamento antecipado parcial**, aplica-se o art. 150 §4º (5 anos do fato gerador); **sem pagamento**, aplica-se o art. 173, I. **Art. 174.** A ação para cobrança prescreve em cinco anos da constituição definitiva.

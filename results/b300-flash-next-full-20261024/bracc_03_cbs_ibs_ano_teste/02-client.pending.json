@@ -1,0 +1,36 @@
+{
+  "case": "bracc_03_cbs_ibs_ano_teste",
+  "questions": "# PERGUNTAS E IGNORADOS DECLARADOS — apuração-teste CBS/IBS agosto/2026\n\n> Atualizado em 25/10/2026, após resposta do cliente. As perguntas feitas em 24/10/2026\n> foram respondidas (ou o cliente declarou não ter a informação). Nada será re-perguntado;\n> os pontos sem resposta ficam aqui como **ignorados declarados**, com seu efeito.\n> Nenhum deles altera os números de teste do `apuracao_teste.json`.\n\n## Resposta recebida do gerente fiscal (registro)\n\n- **P2 respondida:** a rejeição da SEFAZ dizia *\"Rejeição: Grupo IBSCBS não informado para\n  emitente do regime regular (NT 2025.002)\"* — exatamente o bloqueio previsto no Comunicado\n  CGIBS de 03/08/2026. O TI da Horizonte **\"contornou\" voltando a versão do emissor**, o que\n  explica as NF-e 2308, 2310 e 2312 emitidas sem o grupo IBSCBS após 03/08 (a 2309 é defeito\n  distinto: alíquotas invertidas no cadastro). Causa-raiz confirmada; orientação de reversão\n  do rollback e regularização dada em `orientacao.md`, seções 3 e 4.\n\n## Ignorados declarados (cliente não dispõe da informação)\n\nCada item é um **desconhecido explícito** — não verificado na biblioteca de referência e\nsem fonte no cliente. Se qualquer um se resolver de forma contrária à premissa adotada,\nrefaça a apuração.\n\n1. **Integralidade dos arquivos.** Os 17 XMLs são ambiente de homologação (tpAmb=2, com\n   anotação \"Documento fictício\" no infCpl). Assunção adotada: representam as operações\n   reais de agosto. Se houver notas de agosto fora desta pasta (ou estas não corresponderem\n   a operações reais), os totais mudam.\n2. **Circulação das notas irregulares.** Não se sabe quais NUMs foram efetivamente\n   rejeitados antes do rollback do TI nem se as 2308/2310/2312 **circularam** com os\n   clientes. A apuração-teste as considera válidas e irregulares quanto ao destaque\n   (débito pelos valores corretos); se alguma não circulou, ela deve ser baixada e os\n   totais reduzidos.\n3. **Regime dos fornecedores.** Distribuidora Norte e Logística Atlas não estão na\n   carteira de clientes. Assunção: regime regular (CRT 3 das notas que emitiram), o que\n   garante o crédito de 2314 e 2317 (R$ 1.080,00 CBS + R$ 120,00 IBS). Se alguma for\n   Simples/MEI, o crédito correspondente deve ser estornado (arts. 346/347 da LC 214/2025).\n4. **Procedimento de correção das notas irregulares em 2026 e extensão da perda da\n   dispensa.** A biblioteca não trata de como sanar NF-e de agosto emitidas sem o grupo\n   IBSCBS nem se a perda da dispensa do art. 125, §4º do ADCT atingiria só as operações\n   irregulares ou o mês inteiro. **Exposição máxima estimada: R$ 3.180,00**\n   (CBS 2.862,00 + IBS 318,00). A consulta formal ao Fisco permanece em aberto — e a\n   causa-raiz confirmada (rollback deliberado do emissor pelo TI, em vez de adequação à\n   NT 2025.002) torna essa consulta ainda mais urgente.\n",
+  "facts": [
+    {
+      "id": "rejeicao",
+      "trigger": [
+        "rejeição",
+        "rejeitou",
+        "SEFAZ",
+        "cStat",
+        "mensagem"
+      ],
+      "answer": "A rejeição dizia: 'Rejeição: Grupo IBSCBS não informado para emitente do regime regular (NT 2025.002)'. O TI 'contornou' voltando a versão do emissor.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "ponto_fixo",
+      "trigger": [
+        "Ponto Fixo",
+        "Simples",
+        "crédito de entrada",
+        "fornecedor do Simples"
+      ],
+      "answer": "O Ponto Fixo é do Simples, a nota deles veio sem nada de IBS/CBS.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "rejeicao"
+  ],
+  "literal_suggestions": [
+    "ponto_fixo"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

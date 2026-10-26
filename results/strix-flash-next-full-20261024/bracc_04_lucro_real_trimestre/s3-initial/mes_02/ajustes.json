@@ -1,0 +1,38 @@
+{
+  "empresa": "Atlas Distribuidora S.A.",
+  "periodo": "2026-02",
+  "regime": "Lucro Real trimestral; PIS/COFINS não cumulativo",
+  "moeda": "BRL",
+  "lancamentos": [
+    {
+      "id": "AJ-2026-02-001",
+      "data": "2026-02-28",
+      "referencia": "Retificação de 01/2026 - NF-e 8812 Papel & Cia (carregada do mês anterior)",
+      "tipo": "retificação de mês anterior - o estorno AJ-2026-01-001 NÃO foi espelhado no sistema contábil",
+      "descricao": "O balancete acumulado de fevereiro ainda traz o crédito indevido de PIS/COFINS de janeiro: 1.1.04 = R$ 323.676,00 = 155.067,00 (jan corrigido) + 157.509,00 (fev) + 11.100,00 (crédito NF 8812 que deveria ter sido estornado). Sem este lançamento, o ativo 1.1.04 fica inflado e a despesa 4.2.04 subavaliada. Efeito após lançamento: 1.1.04 = R$ 312.576,00 e 4.2.04 = R$ 131.100,00.",
+      "fundamento": "library/pis_cofins_uso_consumo.md - Lei 10.637/2002, art. 3o; Lei 10.833/2003, art. 3o; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR",
+      "linhas": [
+        { "conta": "4.2.04", "nome": "Material de uso e consumo", "debito": 11100.00, "credito": 0.00 },
+        { "conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "debito": 0.00, "credito": 11100.00 }
+      ]
+    }
+  ],
+  "sem_lancamento_contabil_efetuado": [
+    {
+      "item": "Brindes a clientes - NF-e 4410 (Brindes Prime, 12/02/2026, CFOP 1949), R$ 48.000,00 em 4.2.02",
+      "tratamento": "Adição no e-LALUR do 1o trimestre (mes_03), não lançamento contábil: despesas com brindes têm dedução vedada para IRPJ/CSLL mas a contabilidade societária não se altera (Lei 9.249/95, art. 13, VII - library/lei9249_art13.md; library/irpj_csll_trimestral.md). Esta NF-e é exatamente o fato descrito pelo cliente ('vinho e canivete gravado pros 400 melhores clientes'), confirmando que os brindes são de FEVEREIRO - a premissa de teto de R$ 85.000,00 sobre a conta 4.2.02 de JANEIRO fica SUPERSEDADA (janeiro: sem brindes)."
+    },
+    {
+      "item": "Doação Associação Beneficente Luz - R$ 30.000,00 em 4.2.02 (18/02/2026)",
+      "tratamento": "Adição no e-LALUR do 1o trimestre: doação a entidade SEM título de OSCIP e SEM certificação de utilidade pública federal (recibo/carimbo da própria entidade) não se enquadra na exceção do art. 13, §2o, II - dedução vedada (Lei 9.249/95, art. 13, VI e §2o - library/lei9249_art13.md). Ainda que a entidade fosse qualificada, haveria limite de 2% do lucro operacional, não testado por falta da qualificação.",
+      "confirmado_pelo_cliente": "Sessao 3: 'A Associacao Luz e uma ONG do bairro, nao tem titulo nenhum.' - indedutibilidade fechada em R$ 30.000,00; o vinculo pessoal ('o presidente conhece o dono') nao altera a conclusao."
+    }
+  ],
+  "observacoes": [
+    "Fevereiro em si não tem crédito indevido de PIS/COFINS: única compra com crédito foi mercadoria para revenda (1.702.800,00 x 9,25% = 157.509,00 - crédito permitido). O AJ-2026-02-001 existe apenas porque a retificação de janeiro não foi espelhada no sistema (balancete acumulado confere com o razão Jan+Fev conta a conta; verificado em Python).",
+    "PIS/COFINS sobre vendas de fevereiro (2.580.000,00 x 9,25% = 238.650,00) já está registrado (ref. TRIB); não há ajuste a lançar.",
+    "Reclassificação dentro de 4.2.02 (desdobrar brindes 48.000,00 e doação 30.000,00 de 'despesas comerciais ordinárias') é RECOMENDAÇÃO de controle para alimentar o e-LALUR; não lançada para não inventar plano de contas - os valores estão identificados nas refs NF4410 e DOACAO do razão.",
+    "Resultado líquido contábil de fevereiro (antes de ajustes de meses anteriores): R$ 193.083,00 = receita 2.580.000,00 - PIS/COFINS 238.650,00 - ICMS 180.600,00 - CMV 1.419.000,00 - pessoal 210.000,00 - comerciais 163.000,00 - administrativas 96.000,00 - depreciação 51.667,00 - financeiras 28.000,00.",
+    "Cumulado Q1 após correções (jan ajustado 128.483,00 + fev 193.083,00) = R$ 321.566,00 de lucro líquido contábil; adições identificadas até fevereiro = R$ 78.000,00 (brindes 48.000 + doação 30.000)."
+  ]
+}

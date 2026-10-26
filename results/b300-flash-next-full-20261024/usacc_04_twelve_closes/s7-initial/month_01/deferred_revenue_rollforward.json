@@ -1,0 +1,39 @@
+{
+  "period": "2025-01",
+  "contracts": [
+    {
+      "contract": "Trestle Freight LLC (C-026) — prior annual subscription",
+      "term": "2024-06-01 to 2025-05-31",
+      "source": "documents/note_opening_deferred.md — unamortized opening balance 41,000.00; release 8,200.00/month Jan–May 2025",
+      "opening": 41000.00,
+      "billed": 0.00,
+      "recognized": 8200.00,
+      "closing": 32800.00
+    },
+    {
+      "contract": "Trestle Freight LLC (C-026) — renewal, order form C-026",
+      "term": "2025-01-01 to 2025-12-31",
+      "source": "documents/month_01/order_form_C-026.md; INV-2225 billed upfront 24,000.00; release 24,000/12 = 2,000.00/month (revenue_policy_memo #1)",
+      "opening": 0.00,
+      "billed": 24000.00,
+      "recognized": 2000.00,
+      "closing": 22000.00
+    },
+    {
+      "contract": "UNIDENTIFIED — opening deferred revenue not explained by documents",
+      "term": "unknown",
+      "source": "Opening trial balance 2200 = 65,000.00 vs note_opening_deferred.md explaining only 41,000.00; residual 65,000.00 − 41,000.00 = 24,000.00 has no contract documentation. Question to client answered 'no additional information'. STATED ASSUMPTION: genuine contract liability of unknown origin; no revenue recognized absent evidence of performance (ASC 606-10-45-2); flagged through year-end. See open_items.md item 1.",
+      "opening": 24000.00,
+      "billed": 0.00,
+      "recognized": 0.00,
+      "closing": 24000.00
+    }
+  ],
+  "totals": {
+    "opening": 65000.00,
+    "billed": 24000.00,
+    "recognized": 10200.00,
+    "closing": 78800.00
+  },
+  "tie_out": "Closing 65,000 + 24,000 − 8,200 − 2,000 = 78,800.00, agrees with trial_balance.json account 2200 credit balance 78,800.00"
+}

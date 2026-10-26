@@ -1,0 +1,30 @@
+{
+  "status": "PRELIMINAR / INCOMPLETO — apuração do 1º trimestre com base APENAS em 01/2026. Razão/balancete de fev/2026 e mar/2026 não existem no arquivo do cliente e o cliente declarou não ter informação adicional. Valores preenchidos = piso defensível com a documentação existente; null = dado pendente, NÃO zero. Não usar para recolhimento definitivo. Fundamentos e aritmética em memoria.md.",
+  "lucro_liquido_contabil": 128483.00,
+  "adicoes": {
+    "brindes_jan2026 (Lei 9.249/95, art. 13, VII; premissa proeminente: 100% da conta 4.2.02)": 85000.00,
+    "brindes_doacoes_fev_mar2026 (sem documentos — desconhecido, não é zero)": null
+  },
+  "exclusoes": {},
+  "lucro_antes_compensacao": 213483.00,
+  "compensacao_prejuizo": 64044.90,
+  "lucro_real": 149438.10,
+  "irpj_15": 22415.72,
+  "adicional_10": 8943.81,
+  "csll": 13449.43,
+  "parte_b": {
+    "prejuizo_fiscal_saldo_final": 835955.10,
+    "base_negativa_csll_saldo_final": 835955.10
+  },
+  "_notas_calculo": [
+    "lucro_liquido_contabil = somente jan/2026: 139.583,00 (antes de ajustes) - 11.100,00 (estorno AJ-2601-01) = 128.483,00. Fev/mar desconhecidos (sem registros).",
+    "lucro_antes_compensacao = 128.483,00 + 85.000,00 (adição brindes) = 213.483,00 (janeiro apenas).",
+    "compensacao_prejuizo = trava de 30% do lucro líquido ajustado por adições/exclusões: 30% x 213.483,00 = 64.044,90, limitada ao saldo disponível de 900.000,00 (Lei 9.065/95, arts. 15 e 16; Lei 8.981/95, arts. 42 e 58; RE 591.340 — library/lei9065_art15_trava.md). O pedido do diretor de compensar os 900.000,00 integrais é vedado.",
+    "lucro_real = 213.483,00 - 64.044,90 = 149.438,10.",
+    "irpj_15 = 15% x 149.438,10 = 22.415,715 -> 22.415,72.",
+    "adicional_10 = 10% x (149.438,10 - 60.000,00 = 89.438,10) = 8.943,81 (excedente trimestral — Lei 9.430/96, arts. 1º-2º; library/irpj_csll_trimestral.md).",
+    "csll = 9% x 149.438,10 = 13.449,429 -> 13.449,43; mesma trava de 30% sobre a base ajustada (Lei 9.065/95, art. 16) => compensação idêntica de 64.044,90; não há adições/exclusões específicas de CSLL nos documentos.",
+    "parte_b: abertura 900.000,00 e 900.000,00 (documents/saldos_fiscais_abertura.md) - 64.044,90 = 835.955,10 (saldo final PRELIMINAR).",
+    "Estorno PIS/COFINS da NF-e 8812 (AJ-2601-01, 11.100,00) NÃO figura como adição: é ajuste contábil já refletido no lucro líquido societário e dedutível fiscalmente (library/pis_cofins_uso_consumo.md)."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "titulo": "Efeito tributário do deságio do plano — ganho, PIS/COFINS, trava de 30% e compensação",
+  "devedor": "Atlas Distribuidora S.A. (em recuperação judicial)",
+  "momento_de_reconhecimento": "homologação do plano (novação — CPC 48/IFRS 9, teste dos 10%)",
+  "fontes": [
+    "library/lei11101_excertos.md — art. 50-A (I, II, III e parágrafo único); art. 6º-B",
+    "library/ctn_187_191a.md — não sujeição do crédito tributário",
+    "library/cpc_contabil_rj.md — novação, teste dos 10%, ganho em rubrica própria",
+    "library/lei10522_parcelamento_rj.md — regimes da União (contexto Sessão 3)"
+  ],
+  "hipotese_legal": {
+    "artigo": "Lei 11.101/2005, art. 50-A",
+    "condicao": "renegociação de dívidas no âmbito de processo de recuperação judicial — PRESENTE (plano em análise)",
+    "paragrafo_unico": "não se aplica a dívidas com pessoas ligadas",
+    "pessoas_ligadas": {
+      "status": "NAO_VERIFICADO",
+      "nota": "existência/valor de dívidas com pessoas ligadas não informada pelo cliente (QUESTIONS.md). Se qualquer parte do deságio tiver origem em dívida com pessoa ligada, os efeitos abaixo não se aplicam a essa parte."
+    }
+  },
+  "calculo_ganho": {
+    "metodo": "nominal — sem taxa de desconto informada (QUESTIONS.md item 13); fluxos tomados a valor nominal = valor presente com taxa nula. PISO do ganho: com taxa positiva, o valor presente das 120 parcelas cai e o ganho contábil tende a crescer.",
+    "por_credor_classes_III_IV": [
+      { "credor": "Alfaparts", "classe": "III", "original": 4200000, "pago_no_plano": 1680000, "desagio": 2520000 },
+      { "credor": "Fornecedor Norte", "classe": "III", "original": 1850000, "pago_no_plano": 740000, "desagio": 1110000 },
+      { "credor": "Fornecedora Sul", "classe": "IV", "original": 420000, "pago_no_plano": 168000, "desagio": 252000 }
+    ],
+    "trabalhistas_classe_I": { "original": 960000, "pago_no_plano": 960000, "ganho": 0, "nota": "pagamento integral — sem ganho de renegociação (prazo da cláusula em ajuste: ≤ 12m recomendado, ver analise_plano.md §1)" },
+    "totais": { "concursais_sujeitos": 7430000, "a_pagar_pelo_plano": 3548000, "ganho_nominal_desagio": 3882000 },
+    "conferencia": "6.470.000 × 40% = 2.588.000; 7.430.000 − 3.548.000 = 3.882.000; deságios 2.520.000 + 1.110.000 + 252.000 = 3.882.000 (verificado em Python)"
+  },
+  "ganho_desagio": 3882000,
+  "ganho_rotulo": "nominal — piso (assunção destacada: taxa de desconto nula por falta de informação)",
+  "pis_cofins_sobre_ganho": {
+    "valor": 0,
+    "base_legal": "art. 50-A, I — a receita obtida pelo devedor não é computada na base de cálculo do PIS e da COFINS",
+    "observacao": "efeito vale pelo texto da biblioteca; a biblioteca não traz a alíquota padrão nem define o espectro de 'receita obtida' além do ganho em tela (NÃO VERIFICADO)"
+  },
+  "irpj_csll": {
+    "valor_devido": null,
+    "rotulo": "NAO_CALCULAVEL — alíquotas, adicional e formas de diferimento do IRPJ/CSLL não constam da biblioteca (NÃO VERIFICADO); qualquer percentual aqui seria invenção",
+    "base": {
+      "valor": null,
+      "valor_minimo_nominal": 3882000,
+      "nota": "o ganho integra a apuração do IRPJ/CSLL: o art. 50-A, II trata apenas do LIMITE da trava de compensação, não isenta o ganho do tributo. Demais adições/exclusões do período não informadas."
+    }
+  },
+  "trava_30": {
+    "aplicavel_ao_ganho": false,
+    "base_legal": "art. 50-A, II — o ganho com redução da dívida não se sujeita ao limite percentual dos arts. 42 e 58 da Lei 8.981/95 e 15 e 16 da Lei 9.065/95 na apuração do IRPJ e da CSLL",
+    "resumo": "a trava de 30% NÃO contém o ganho do deságio; o limite apenas não se aplica ao ganho. O ganho segue tributável no IRPJ/CSLL (v. irpj_csll.base)"
+  },
+  "compensacao": {
+    "prejuizo_fiscal_acumulado_irpj": null,
+    "prejuizo_csll": null,
+    "rotulo": "NAO_INFORMADO — QUESTIONS.md item 3; cliente declarou não haver dados adicionais. Marcado como ABERTO.",
+    "formula_condicional": {
+      "expressao": "SE saldo_prejuizo_admitivel > 0 E lucro_do_periodo > 0: limite_compensacao = 0,30 × (lucro_do_periodo − ganho_desagio); compensavel = min(saldo_prejuizo_admitivel, limite_compensacao)",
+      "base_da_regra": "interpretação do art. 50-A, II: o ganho do deságio NÃO entra na base do limite de 30%; a biblioteca não traz o texto integral dos arts. 42/58 (Lei 8.981/95) e 15/16 (Lei 9.065/95) — parte NÃO VERIFICADO",
+      "aplicavel_hoje": false,
+      "motivo": "sem saldo de prejuízo informado, não há valores a compensar; a trava de 30% ao ganho não se aplica (v. trava_30)"
+    }
+  },
+  "despesas_obrigacoes_assumidas_plano": {
+    "artigo": "art. 50-A, III — despesas correspondentes às obrigações assumidas no plano são dedutíveis",
+    "valor_comprometido": 3548000,
+    "forma": "960.000 trabalhistas integral + 2.588.000 (120 parcelas pós-carência de 24m)",
+    "observacao": "regime de reconhecimento (competência × caixa) e calendário efetivo de pagamentos não informados — NÃO VERIFICADO"
+  },
+  "upi_galpao_ganho_capital": {
+    "valor": null,
+    "rotulo": "NAO_CALCULAVEL — valor contábil do galpão não informado (QUESTIONS.md item 8)",
+    "trava": "afastada SOMENTE se alienação judicial (art. 6º-B) — recomendação em analise_plano.md §5; decisão pendente (QUESTIONS.md item 12)"
+  },
+  "estado_dados": [
+    { "dado": "saldo de prejuízo fiscal / lucro real / regime de tributação", "status": "NAO_INFORMADO", "efeito": "compensacao = null; IRPJ/CSLL ficam NAO_CALCULAVEL" },
+    { "dado": "taxa de desconto", "status": "NAO_INFORMADO", "efeito": "ganho em piso nominal; lançamentos da Sessão 3 em valores nominais com assunção destacada" },
+    { "dado": "dívidas com pessoas ligadas", "status": "NAO_VERIFICADO", "efeito": "se existirem, art. 50-A não as alcança (parágrafo único)" },
+    { "dado": "valor contábil do galpão", "status": "NAO_INFORMADO", "efeito": "ganho de capital da UPI não quantificado" },
+    { "dado": "alíquotas de IRPJ/CSLL", "status": "NAO_VERIFICADO", "efeito": "não foram aplicadas em momento algum (sem invenção de taxa)" }
+  ],
+  "fontes_citadas": "somente arquivos listados em library/INDEX.md; nada fora da biblioteca é citado como fundamento"
+}

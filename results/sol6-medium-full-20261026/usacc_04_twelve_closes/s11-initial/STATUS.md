@@ -1,0 +1,3 @@
+COMPLETE WITH OPEN ITEMS
+
+November 2025 required files are in `month_11/`. The bank reconciles to $0.00 and the closing trial balance balances. The operating bank position is negative $15,750, presented as a bank overdraft liability. Alder Studios LLC's erroneous $1,800 November invoice was fully credited, but recurring billing has failed three times and customer delivery of the credit memos is not evidenced. Other open items remain $24,000 unidentified opening deferred revenue, Trestle's historical overlapping terms, unsupported opening A/R, A/P and prepaids, and the $30,450 opening revenue credit. See `month_11/open_items.md`.

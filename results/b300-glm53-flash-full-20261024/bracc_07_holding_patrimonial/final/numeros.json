@@ -1,0 +1,28 @@
+{
+  "itbi": {
+    "devido": true,
+    "estimativa": 492900,
+    "fundamento": "Exce\u00e7\u00e3o do CTN art. 37, \u00a7\u00a71\u00ba-2\u00ba: a holding prevista ter\u00e1 loca\u00e7\u00e3o de im\u00f3veis como atividade preponderante (9 de 11 im\u00f3veis locados; 100% da receita), o que afasta a imunidade do art. 156, \u00a72\u00ba, I, da CF. Al\u00edquota de S\u00e3o Paulo 3% sobre os 11 im\u00f3veis \u2014 base estimada pelo valor de mercado (R$ 16.430.000 \u00d7 3%; a base legal do ITBI n\u00e3o est\u00e1 reproduzida na biblioteca \u2014 n\u00e3o verific\u00e1vel). Decomposi\u00e7\u00e3o Tema 796 (STF RE 796.376): 3% \u00d7 R$ 4.720.000 (dentro do capital integralizado) = R$ 141.600 'evit\u00e1vel' + 3% \u00d7 R$ 11.710.000 (excedente ao capital) = R$ 351.300 devido; total R$ 492.900. Se a base real do ITBI for inferior ao valor de mercado, a estimativa cai na mesma propor\u00e7\u00e3o."
+  },
+  "aluguel_anual": 1018800,
+  "pf": {
+    "ir_anual": 257756
+  },
+  "pj_presumido": {
+    "irpj_csll_pis_cofins": 124032,
+    "irrf_distribuicao_2026": 21326,
+    "total": 145358
+  },
+  "integralizacao": {
+    "valor_recomendado": 4720000,
+    "gcap_evitado": 1756500
+  },
+  "itcmd_doacao_quotas": {
+    "estimativa": 328600,
+    "base": "Plano recomendado p\u00f3s-respostas da cliente: doa\u00e7\u00e3o da nua-propriedade de 50% das quotas com reserva de usufruto vital\u00edcio (50% \u00d7 R$ 16.430.000 = R$ 8.215.000, dentro do teto dispon\u00edvel de R$ 9.265.000), em partes iguais a Ricardo e Paula: 4% \u00d7 R$ 8.215.000 = R$ 328.600, sendo 2/3 (R$ 219.066,67) no ato da doa\u00e7\u00e3o e 1/3 (R$ 109.533,33) na extin\u00e7\u00e3o do usufruto (art. 9\u00ba da Lei 10.705/2000 marcado 'verificar' na biblioteca; o total n\u00e3o muda, s\u00f3 o timing). Base = valor de mercado das quotas, n\u00e3o o cont\u00e1bil hist\u00f3rico (R$ 4.720.000 \u00d7 4% = R$ 188.800 \u00e9 a promessa da palestra, n\u00e3o sobrevive \u00e0 SEFAZ/SP: Decreto 46.655/2002, art. 14, \u00a74\u00ba; TJSP). Doa\u00e7\u00e3o de 100% das quotas seria R$ 657.200, mas excede o teto dispon\u00edvel e \u00e9 inoficiosa no excesso. O ITCMD total do plano (doa\u00e7\u00e3o R$ 328.600 + invent\u00e1rio sobre R$ 10.315.000 = R$ 412.600) soma R$ 741.200 = 4% \u00d7 R$ 18.530.000 \u2014 igual ao de um \u00fanico invent\u00e1rio; a estrutura muda timing e pagador, n\u00e3o o total."
+  },
+  "legitima": {
+    "parcela_indisponivel_pct": 50,
+    "marcos_pode_ser_excluido": false
+  }
+}

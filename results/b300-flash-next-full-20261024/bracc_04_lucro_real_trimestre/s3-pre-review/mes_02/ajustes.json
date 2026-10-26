@@ -1,0 +1,74 @@
+{
+  "mes": "2026-02",
+  "empresa": "Atlas Distribuidora S.A.",
+  "regime": "Lucro Real trimestral; PIS/COFINS não cumulativos",
+  "contexto": "Balancete de fev/2026 é acumulado do ano (D = C = 23.299.010,00, quadra OK). O razão de fevereiro contém apenas os movimentos do mês. As 22 contas articulam exatamente com o balancete de janeiro + movimentos de fevereiro (0 divergências). Constatado: os livros do cliente NÃO registraram o ajuste AJ-01-001 de janeiro (1.1.04 segue em 323.676 = 166.167 + 157.509; 4.2.04 segue em 120.000).",
+  "ajustes": [
+    {
+      "id": "AJ-02-001",
+      "tipo": "retificacao_mes_anterior",
+      "data": "2026-02-28",
+      "referencia": "AJ-01-001 (mes_01/ajustes.json) — NF-e 8812, Papel & Cia, CFOP 1556",
+      "descricao": "Execução contábil do estorno do crédito indevido de PIS/COFINS sobre uso e consumo administrativo (papel/toner da sede), não registrado nos livros do cliente até 28/02. O fato gerador do estorno é de janeiro/2026 (competência da despesa e da EFD-Contribuições a retificar); o lançamento é aqui reproduzido porque o balancete de fevereiro ainda carrega o crédito indevido no ativo.",
+      "lancamentos": [
+        { "conta": "4.2.04", "nome": "Material de uso e consumo", "debito": 11100.00, "credito": 0.00 },
+        { "conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "debito": 0.00, "credito": 11100.00 }
+      ],
+      "valor": 11100.00,
+      "fundamento": "Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR — library/pis_cofins_uso_consumo.md",
+      "impacto_lucro_liquido": -11100.00,
+      "observacao": "Competência econômica: janeiro (já absorvido no LL ajustado de mes_01, 128.483). Aqui o efeito é de escrita: após este lançamento, 1.1.04 passa a 312.576 e 4.2.04 a 131.100 no balancete de fevereiro."
+    }
+  ],
+  "registros_fiscais_sem_lancamento_contabil": [
+    {
+      "id": "AF-02-001",
+      "data": "2026-02-28",
+      "tipo": "adição ao lucro real e à base de cálculo da CSLL (e-LALUR Parte A)",
+      "conta_referencia": "4.2.02 Despesas comerciais",
+      "valor": 48000.00,
+      "descricao": "Despesas com brindes — NF-e 4410 (BRINDES PRIME LTDA, 12/02/2026, CFOP 1949): 400 kits-presente (vinho + canivete gravado) para clientes, campanha 'Parceiros Atlas'. Dedução vedada para lucro real e CSLL. Sem lançamento contábil (despesa válida na escrituração societária; efeito exclusivamente fiscal).",
+      "fundamento": "Lei 9.249/95, art. 13, VII — library/lei9249_art13.md; adição na Parte A do e-LALUR sem alteração da contabilidade societária — library/irpj_csll_trimestral.md",
+      "verificacao_pis_cofins": "No razão (ref. NF4410), a compra foi liquidada integralmente em caixa (D 4.2.02 48.000 / C 1.1.01 48.000), sem crédito de PIS/COFINS tomado — nada a estornar.",
+      "reflexo": "Levar para lalur.json (mes_03)."
+    },
+    {
+      "id": "AF-02-002",
+      "data": "2026-02-28",
+      "tipo": "adição ao lucro real e à base de cálculo da CSLL (e-LALUR Parte A)",
+      "conta_referencia": "4.2.02 Despesas comerciais",
+      "valor": 30000.00,
+      "descricao": "Doação em dinheiro à Associação Beneficente Luz (recibo de 18/02/2026). Dedução vedada: doações são indedutíveis salvo as exceções do §2º, e a entidade NÃO atende nenhuma delas — não é projeto cultural (Lei 8.313/91); não é entidade sem fins lucrativos reconhecida como de utilidade pública federal nem qualificada como OSCIP (informação do próprio recibo: 'associação civil sem fins lucrativos registrada em cartório', sem título); não é instituição de ensino e pesquisa. O limite de 2% do lucro operacional nem chega a ser aplicável, porque pressupõe doação qualificada.",
+      "fundamento": "Lei 9.249/95, art. 13, VI e §2º, I a III — library/lei9249_art13.md",
+      "verificacao_pis_cofins": "Pago integralmente em caixa (D 4.2.02 30.000 / C 1.1.01 30.000), sem crédito tomado — nada a estornar.",
+      "reflexo": "Levar para lalur.json (mes_03)."
+    }
+  ],
+  "adicoes_acumuladas_para_lalur_1t2026": {
+    "brindes_janeiro_AF_01_001": 85000.00,
+    "brindes_fevereiro_AF_02_001": 48000.00,
+    "doacao_fevereiro_AF_02_002": 30000.00,
+    "total": 163000.00,
+    "alerta": "O valor de janeiro (85.000) repousa sobre premissa (100% da conta 4.2.02 tratada como brinde, sem memória de cálculo) e há conflito documentado com o relatório de auditoria de fevereiro — ver pendencias.md item 4. O cliente foi perguntado sobre os R$ 85.000 recorrentes e declarou não ter mais informação: a premissa é agora final (round 10/2026). Sensibilidade: desfazida a premissa de janeiro, adições acumuladas caem para 78.000; se os 85.000 de fevereiro também forem brindes, sobem para 248.000."
+  },
+  "efeito_resumo": {
+    "lucro_liquido_fevereiro_livros": 193083.00,
+    "aritmética_fevereiro": "2.580.000 (receita) - 238.650 (PIS/COFINS s/ vendas) - 180.600 (ICMS s/ vendas) - 1.419.000 (CMV) - 210.000 (pessoal) - 163.000 (comerciais: 48.000 brindes + 30.000 doação + 85.000 ordinárias) - 96.000 (administrativas) - 51.667 (depreciação) - 28.000 (financeiras) = 193.083",
+    "lucro_liquido_acumulado_livros_fev": 332666.00,
+    "lucro_liquido_acumulado_pos_ajustes": 321566.00,
+    "conciliacao": "332.666 - 11.100 (AJ-02-001) = 321.566 = 128.483 (jan ajustado) + 193.083 (fev)",
+    "contas_pos_ajuste_no_balancete_fev": {
+      "1.1.04": 312576.00,
+      "4.2.04": 131100.00
+    }
+  },
+  "retificacoes_meses_anteriores": [
+    "AJ-01-001 (estorno 11.100): reproduzido neste mês como AJ-02-001 porque os livros não o registraram até 28/02. A EFD-Contribuições de 01/2026 continua a retificar (mes_01/pis_cofins.json)."
+  ],
+  "verificacoes": {
+    "balancete_quadra": "Débitos = Créditos = 23.299.010,00 (OK)",
+    "balancete_fev_vs_jan_mais_movimentos": "22/22 contas articulam exatamente (balancete fev = balancete jan + razão fev, 0 divergências); razão de fev fecha em D = C",
+    "tributacao": "PIS/COFINS s/ vendas 9,25% x 2.580.000 = 238.650 (OK); ICMS 7% x 2.580.000 = 180.600 (OK); crédito compra revenda 9,25% x 1.702.800 = 157.509 (OK, mantido — premissa de revenda)",
+    "saldos_cheave": "Estoques 4.973.200 = 4.689.400 + 1.702.800 - 1.419.000 (OK); Caixa 3.094.800 (OK); Fornecedores 3.593.676 (OK); 2.1.03 1.572.000 = 1.152.750 + 419.250 — nenhum recolhimento de PIS/COFINS/ICMS lançado até fev"
+  }
+}

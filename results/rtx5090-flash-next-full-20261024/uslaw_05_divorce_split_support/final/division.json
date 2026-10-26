@@ -1,0 +1,41 @@
+{
+  "proposal_nominal": {
+    "wife": 770000,
+    "husband": 770000
+  },
+  "proposal_after_tax": {
+    "wife": 613008,
+    "husband": 658960,
+    "assumptions": "Each side liquidates what it keeps, at schedule values. Wife = house equity 700,000 minus 6% selling costs (66,000) minus tax on eventual solo sale (gain at today's value 1,100,000 - 66,000 - 300,000 = 734,000; less her 250,000 sec.121 exclusion -> 484,000 x 15% LTCG = 72,600, + 3.8% NIIT = 18,392 per the engagement's conservative NIIT assumption; NIIT likely would NOT apply since her MAGI < 200,000 single -> without NIIT wife = 631,400), + cash 50,000 + Volvo 20,000. Husband = pre-tax 401(k) 400,000 x (1 - 0.24) = 304,000 (24% stated engagement assumption; sensitivity: at 12% husband = 706,960, gap 93,952; at 32% husband = 626,960, gap 13,952), + brokerage 300,000 - 15% x 80,000 embedded gain (12,000) - 3.8% NIIT on the gain (3,040; assumption - his 213,000 gross implies MAGI > 200,000 single; the library's stated NIIT convention expressly addresses only the wife's house gain, so NIIT on his brokerage gain is our conservative extension of IRC 1411 per library/tax_rates_assumed.md) = 284,960, + cash 50,000 + Tacoma 20,000. Result: 613,008 (48.2%) vs 658,960 (51.8%) of combined after-tax 1,271,968; gap 45,952. Basis carryover per 26 U.S.C. 1041 (library/irc_1041_121_71.md); tax consequences are a factor in Columbia division (library/columbia_equitable_distribution.md). Nominal 'equal halves' is NOT equal after tax."
+  },
+  "undisclosed_income": {
+    "found": true,
+    "amount": 45000,
+    "source": "Granite Peak HR letter 2026-03-02: 2026 target bonus 45,000 (50% Sept / 50% Feb; he was at 112% of plan, so actual could be 50,400). Pay stub 2026-09-15 shows YTD gross 146,212 vs 119,000 pro-rated salary = 27,212 unexplained (consistent with the >=22,500 September installment; ~4,712 residual still unexplained). This contradicts his 2026-08-30 sworn affidavit ('bonus: discretionary; none expected for 2026') and violates full-disclosure duties for bonuses/expected compensation (Col. R. Fam. P. 16.2; Col. Rev. Stat. 14-10-115 includes expected bonuses in gross income). Client (2nd round) confirms the bonus is RECURRING: 'always gets a bonus', 2025 approx. 40,000 (client-reported; corroborate via 2024-2025 W-2s in discovery) - so the misstatement is a pattern, and the guideline expected-bonus inclusion is doubly supported (employer letter + history). Remedies: reopening, sanctions, unequal division (Rule 16.2(e))."
+  },
+  "alternatives": [
+    {
+      "name": "A - Proposal kept, equalized after-tax with cash",
+      "wife_after_tax": 635984,
+      "husband_after_tax": 635984,
+      "instruments": ["cash transfer only (Wife cash 72,976 / Husband cash 27,024)", "no QDRO needed (Husband keeps entire plan)"],
+      "notes": "Shifts 22,976 (half the 45,952 gap) in cash to Wife. At 401(k) rate 12% the required shift is 46,976; at 32%, 6,976."
+    },
+    {
+      "name": "B - Sell residence now, split everything 50/50 after tax",
+      "wife_after_tax": 661707,
+      "husband_after_tax": 661707,
+      "instruments": ["sale of residence while both still meet sec.121 ownership/use (two 250,000 exclusions)", "QDRO 401(k) 200,000 to Wife (26 U.S.C. 414(p))", "equal split brokerage and cash"],
+      "notes": "Sale net = 1,100,000 - 66,000 costs - 400,000 mortgage = 634,000; tax on 734,000 gain sheltered by the two 250,000 sec.121 exclusions (500,000) -> 234,000 taxable, 117,000 each: H 117,000 x (15%+3.8% NIIT) = 21,996, W 117,000 x 15% = 17,550 -> home yields 594,454, each 297,227. Each side = 297,227 + 152,000 (half 401(k) after 24%) + 142,480 (half brokerage) + 50,000 cash + 20,000 car = 661,707. ~48,699 better for Wife than the proposal (at 24%); largest combined-tax saving (~51,446 vs Wife keeping and selling solo later). FALLBACK if Husband refuses Option C: client (2nd round) says she cannot refinance 400,000 on 72,000 income, so keeping the house solo is off the table - sell now rather than keep-and-strangle."
+    },
+    {
+      "name": "C - Wife stays in house until kids finish middle school, then joint sale (recommended)",
+      "wife_after_tax": 661707,
+      "husband_after_tax": 661707,
+      "instruments": ["deferred sale with BOTH spouses remaining on title (sec.121(d)(3)(A)-(B) preserves Husband's 250,000 exclusion during Wife's occupancy)", "Wife exclusive possession + indemnity on mortgage", "QDRO 401(k) 200,000 to Wife (also gives penalty-free access under 26 U.S.C. 72(t)(2)(C) if she needs cash before 59.5)", "equal split brokerage and cash", "life estate/escrow or refinanced buyout at sale"],
+      "notes": "At today's value each half-of-home is worth the same 297,227 as in B because both 250,000 exclusions survive the deferral ONLY if Husband stays on title; if he is quitclaimed out now, Wife faces the 90,992 solo-sale tax later instead. Same 661,707 per side; Wife gets stability for the kids AND ~48,699 more than the proposal. Client (2nd round) confirms she cannot qualify to refinance 400,000 on 72,000 income - this makes C the fit: NO refinance is needed during occupancy because he remains the obligor on the existing loan; the exit trigger must be the SALE (or his refinance/buyout), not her refinance. Requires his cooperation (unresolved unknown). Practical obstacle: expect resistance; Wife indemnifies, add escrow/insurance/life-secure terms."
+    }
+  ],
+  "maintenance_tax_treatment": "Husband's proposed term 'deductible to Husband and taxable to Wife' is legally wrong for this decree: for divorce or separation instruments executed after Dec 31, 2018, alimony is NEITHER deductible by the payor NOR includible by the recipient (TCJA sec.11051, P.L. 115-97; library/irc_1041_121_71.md). So $2,000/mo x 36 = 72,000 costs Husband 72,000 after tax (he loses the ~17,280 deduction at 24%) and Wife keeps all 72,000 tax-free at the federal level (vs ~17,280 she would have owed under his mislabeled term). Child support is never deductible or includible. Note: for the CHILD SUPPORT worksheet only, maintenance is still added to the recipient's and subtracted from the payor's income (Col. guidelines).",
+  "dependents_and_filing_status": "Marital status fixed on Dec 31 (IRC 7703(a)); if the decree is final on/before 12/31/2026, Wife files Head of Household (IRC 2(b)) provided a qualifying child lives with her more than half the year (her ~70% overnights satisfy this) and she pays >half the cost of maintaining the home - she must keep records for this. With ~70% overnights Wife is the custodial parent and claims both children (IRC 152(e)); Husband's 'alternating years' plan requires Wife to sign Form 8332 each year, which moves only the child tax credit - head-of-household status, EITC and the dependent-care credit stay with Wife. Recommendation: do not agree to blanket releases; the dollar value of a release cannot be computed from this library (CTC amount not in library - unverified), so trade any release explicitly (e.g., price it against the cash transfer). If Wife later sells the house alone, she gets only one 250,000 sec.121 exclusion - see alternatives."
+}

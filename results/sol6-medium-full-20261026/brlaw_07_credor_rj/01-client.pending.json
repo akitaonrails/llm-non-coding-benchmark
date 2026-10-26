@@ -1,0 +1,47 @@
+{
+  "case": "brlaw_07_credor_rj",
+  "questions": "# Dados necessários para finalizar a divergência ao administrador judicial\n\nO prazo calculado a partir do edital de 10/04/2026 é **27/04/2026**: 15 dias corridos levam a 25/04 (sábado), com vencimento no primeiro dia útil seguinte. Favor responder com prioridade:\n\n1. Qual é o **endereço completo da Fornecedor Sul S.A.** (e, se disponível, CNPJ e nome/cargo de quem assinará a divergência)? O art. 9º exige identificação e endereço do credor.\n2. Em que **data a Atlas pediu a recuperação judicial**? Os créditos da divergência precisam ser atualizados até essa data.\n3. Os R$ 900.000,00 do contrato fiduciário e R$ 1.200.000,00 das duplicatas são saldos **nessa data**? Se não, informe para cada título o principal, vencimento, pagamentos, encargos contratuais e valor atualizado até a data do pedido, com memória de cálculo.\n4. Envie os **documentos comprobatórios**: contrato e registro da alienação fiduciária, identificação das duas empilhadeiras e do sistema de separação, duplicatas, comprovantes de entrega e demonstrativo dos saldos. Os bens estão atualmente em poder da Atlas?\n5. Qual é o **número do processo** e qual e-mail ou portal o edital completo indica para enviar a divergência à AJ Reorganiza Ltda.? O extrato fornecido afirma que esses dados estão indicados, mas não os reproduz.\n\nFontes: [library/divergencia_habilitacao_forma.md](../library/divergencia_habilitacao_forma.md) (LRF art. 9º); [library/lrf_habilitacao_prazos.md](../library/lrf_habilitacao_prazos.md) (LRF arts. 7º, §1º, e 189, §1º).\n",
+  "facts": [
+    {
+      "id": "essencial",
+      "trigger": [
+        "essenciais",
+        "empilhadeira",
+        "operação da Atlas",
+        "retirar",
+        "retomar"
+      ],
+      "answer": "As empilhadeiras e o sistema de separação são o coração do galpão deles. Sem isso a Atlas para.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "epp",
+      "trigger": [
+        "EPP",
+        "porte",
+        "faturamento",
+        "Simples",
+        "classe IV"
+      ],
+      "answer": "Somos EPP, faturamos uns R$ 3,9 mi. Estamos no Lucro Presumido, não no Simples.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "banco",
+      "trigger": [
+        "banco",
+        "Horizonte",
+        "fiança",
+        "anuiu",
+        "aprovou"
+      ],
+      "answer": "O banco não concordou com nada; já me mandou notificação como fiador.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "essencial"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

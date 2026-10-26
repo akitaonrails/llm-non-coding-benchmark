@@ -1,0 +1,3 @@
+Vou ler o contrato e os arquivos da pasta de trabalho para identificar os créditos, calcular os valores do mês e preparar a resposta ao diretor financeiro e o primeiro demonstrativo ao AJ.
+
+Os documentos permitem classificar os sete créditos e responder ao pedido de pagamento ao Norte. Para fechar o demonstrativo mensal, preciso confirmar se as quatro semanas do fluxo são realizadas ou projetadas e a que período pertencem; também faltam o saldo das obrigações pós-pedido e a situação da UPI. Vou registrar essas perguntas no arquivo previsto pelo contrato e deixar os dados já apurados organizados.

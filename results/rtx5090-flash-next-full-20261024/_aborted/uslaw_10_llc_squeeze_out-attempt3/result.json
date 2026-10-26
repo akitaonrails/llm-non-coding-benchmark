@@ -1,0 +1,20 @@
+{
+  "case": "uslaw_10_llc_squeeze_out",
+  "status": "infrastructure_failed",
+  "error": "Incomplete local turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-full-20261024/uslaw_10_llc_squeeze_out/01-s1-work",
+  "elapsed_seconds": 86.20153211301658,
+  "controller_wait_seconds": 0,
+  "model_turn_seconds": 85.78089615199133,
+  "turns": 1,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

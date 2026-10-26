@@ -1,0 +1,46 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "questions": "# Rodada de perguntas — encerrada; incógnitas remanescentes sinalizadas\n\nO cliente respondeu à rodada anterior e declarou **não ter informação adicional** para o que\nrestou. As perguntas já respondidas não são repetidas; o que permanece em aberto está sinalizado\nabaixo como premissa/incógnita (detalhes aritméticos em `memoria.md`, situação em `STATUS.md`).\n\n## Respondidas pelo cliente (rodada 2)\n\n- **Pró‑labore de abril/2026:** pago em **30/04/2026** (2 × R$ 1.600,00); o resumo o mostrava\n  \"em aberto\" porque o PIX foi lançado no sistema só em maio → entra na janela de pagamentos do\n  Fator R. Consequência: Fator R = 284.600/1.020.000 = **27,90% < 28% → Anexo V** (com a data\n  antiga do e‑mail, 06/05, seriam 27,59% — Anexo V de qualquer forma, DAS inalterado).\n  ⚠ O **comprovante de 30/04 foi prometido mas não chegou** ao acervo; o extrato de maio não\n  alcança abril. Adotamos a declaração do cliente.\n- **NF‑e 000.512 (locação):** locação \"não é NFS‑e\" — coerente com a biblioteca (locação de bens\n  móveis não é serviço de ISS; SV 31). Cliente confirmou a prática de emissão e o histórico da\n  locação dos 20 notebooks à Orla (\"por uns meses\").\n\n## Incógnitas remanescentes (cliente sem informação adicional — NÃO re-perguntadas)\n\n1. **CRÍTICO — pró‑labore da competência 2026‑03 zerado no resumo:** sem explicação. Como a\n   folha paga está a apenas **R$ 1.000,00** do limite de 28% (285.600,00), qualquer folha paga\n   não contabilizada ≥ 1.000,00 dentro da janela inverteria o enquadramento para **Anexo III**\n   (DAS total cairia de 15.188,84 para 10.261,08). Calculamos com os dados do acervo e\n   mantemos o item aberto.\n2. **Percentuais de repartição do Anexo V (4ª faixa):** usados IRPJ 14%, CSLL 9%, COFINS 20%,\n   PIS 4%, CPP 37%, ISS 16% — **não constam da biblioteca**; suposição não verificada.\n   Recomendamos conferir a repartição exibida na guia de pagamento do Simples ao pagar.\n3. **Gap da tabela do Anexo III (biblioteca):** a repartição da 4ª faixa soma 99,85%; a parte da\n   locação fecha em 505,36 vs 506,49 apurados — **diferença de R$ 1,13 deixada aberta**, não\n   forçamos o fechamento.\n4. **Classificação de \"Consultoria de arquitetura\" (1183) e \"Treinamento equipe\" (1186):**\n   tratados como atividade‑fim de TI (Anexo V), mas a biblioteca só exemplifica as atividades de\n   TI e não permite concluir com segurança; CNAEs da empresa não informados.\n5. **Segregação histórica do faturamento:** assumimos que `faturamento_12_meses.csv` é a receita\n   bruta total (serviços + locações anteriores, se houver). O histórico de locação \"por uns\n   meses\" citado pelo cliente é compatível com a suposição, mas não há detalhe por atividade mês\n   a mês — RBT12 e faixas dependem dessa premissa.\n",
+  "facts": [
+    {
+      "id": "prolabore_abril",
+      "trigger": [
+        "pró-labore de abril",
+        "pro-labore abr",
+        "abril",
+        "em aberto",
+        "3.200",
+        "3200"
+      ],
+      "answer": "O pró-labore de abril (R$ 1.600 cada sócio, R$ 3.200) foi pago em 30 de abril, mas a contabilidade tirou o resumo com ele 'em aberto' porque eu lancei o PIX no sistema só em maio. Te mando o comprovante de 30/04.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "estorno",
+      "trigger": [
+        "estorno",
+        "1188",
+        "glosa",
+        "cancelamento"
+      ],
+      "answer": "O cliente contestou parte do escopo da 1184; a gente emitiu a 1188 estornando R$ 4.000 e devolveu via PIX.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "locacao",
+      "trigger": [
+        "locação",
+        "notebooks",
+        "512"
+      ],
+      "answer": "Alugamos 20 notebooks pra Orla por uns meses. Emiti NF-e porque me disseram que locação não é NFS-e.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "locacao",
+    "prolabore_abril"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

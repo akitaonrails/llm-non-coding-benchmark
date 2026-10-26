@@ -1,0 +1,76 @@
+{
+  "mes": "2026-03",
+  "empresa": "Atlas Distribuidora S.A.",
+  "regime": "Lucro Real trimestral; PIS/COFINS não cumulativos",
+  "contexto": "Balancete de mar/2026 é acumulado do ano (D = C = 26.766.378,00, quadra OK). O razão de março contém apenas os movimentos do mês (D = C = 11.195.768,00). As 22 contas articulam exatamente com o balancete de fevereiro + movimentos de março (0 divergências). Constatado: os livros do cliente CONTINUAM sem registrar o estorno da NF 8812 (1.1.04 = 483.627, quando o lícito é 472.527; 4.2.04 = 120.000, quando o correto é 131.100) — terceira reprodução do mesmo ajuste. Nenhum recolhimento de tributos lançado no trimestre: 2.1.03 = 1.997.750 = saldo de abertura 740.000 (12/2025) + PIS/COFINS s/ vendas 715.950 + ICMS 541.800, sem baixa de pagamento.",
+  "ajustes": [
+    {
+      "id": "AJ-03-001",
+      "tipo": "retificacao_mes_anterior",
+      "data": "2026-03-31",
+      "referencia": "AJ-01-001 (mes_01) e AJ-02-001 (mes_02) — NF-e 8812, Papel & Cia, CFOP 1556",
+      "descricao": "Terceira reprodução do estorno do crédito indevido de PIS/COFINS sobre material de uso e consumo administrativo (papel/toner da sede). O balancete de março ainda carrega o crédito no ativo (1.1.04 = 483.627) e a despesa a menor (4.2.04 = 120.000). O lançamento AJ-02-001 foi novamente ignorado pela contabilidade do cliente. Competência econômica: janeiro/2026 (não repete o efeito no resultado do trimestre — o LL ajustado do trimestre já absorve os 11.100 uma única vez).",
+      "lancamentos": [
+        { "conta": "4.2.04", "nome": "Material de uso e consumo", "debito": 11100.00, "credito": 0.00 },
+        { "conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "debito": 0.00, "credito": 11100.00 }
+      ],
+      "valor": 11100.00,
+      "fundamento": "Lei 10.637/2002, art. 3º; Lei 10.833/2003, art. 3º; IN RFB 2.121/2022, art. 176; REsp 1.221.170/PR — library/pis_cofins_uso_consumo.md",
+      "impacto_lucro_liquido": 0.00,
+      "impacto_lucro_liquido_obs": "0,00 neste mês: o efeito de -11.100 no resultado é de competência de janeiro (LL jan ajustado 128.483, já considerado na apuração do 1T). Aqui o efeito é puramente de escrita.",
+      "observacao": "ESCALADA: três meses consecutivos sem registrar. Após este lançamento, 1.1.04 = 472.527 (= 155.067 + 157.509 + 159.951, todos créditos lícitos de mercadorias para revenda sob a premissa vigente) e 4.2.04 = 131.100. A EFD-Contribuições de 01/2026 continua por retificar e a ECF do 1T/2026 não deve ser entregue com o crédito indevido no ativo — ver pendencias.md itens 1 e 2."
+    },
+    {
+      "id": "AJ-03-002",
+      "tipo": "provisao_trimestral_irpj_csll",
+      "data": "2026-03-31",
+      "referencia": "Apuração trimestral do 1T/2026 — lalur.json e memoria.md deste mês",
+      "descricao": "Provisão do IRPJ e da CSLL do 1º trimestre/2026, apurados pelo Lucro Real trimestral em 31/03/2026: IRPJ 128.251,08 (15% de 80.550,65 + adicional 10% de 47.700,43) + CSLL 48.330,39 = 176.581,47. Cálculo completo em lalur.json (lucro real 537.004,30, após compensação limitada pela trava de 30%).",
+      "lancamentos": [
+        { "conta": "4.3.02", "nome": "Provisão para IRPJ e CSLL (NOVA — proposta)", "debito": 176581.47, "credito": 0.00 },
+        { "conta": "2.1.05", "nome": "IRPJ/CSLL a recolher (NOVA — proposta)", "debito": 0.00, "credito": 176581.47 }
+      ],
+      "valor": 176581.47,
+      "fundamento": "Apuração trimestral do Lucro Real com adicional de 10% sobre o que exceder R$ 60.000 no trimestre e CSLL 9% — library/irpj_csll_trimestral.md; compensação limitada a 30% do lucro líquido ajustado — library/lei9065_art15_trava.md",
+      "impacto_lucro_liquido": -176581.47,
+      "observacao": "PLANO DE CONTAS: o balancete do cliente tem apenas 22 contas e NÃO contém conta de despesa nem de passivo de IRPJ/CSLL. Os códigos 4.3.02 e 2.1.05 são PROPOSTOS por nós e exigem aprovação do cliente; não inventamos saldo em conta existente. A provisão é o lançamento de encerramento natural do trimestre (a despesa do tributo sobre o lucro do 1T pertence ao 1T). IMPORTANTE para a apuração: o e-LALUR parte do lucro líquido ANTES desta provisão (604.149,00) — a provisão do próprio tributo apurado não altera a base da apuração que a gera; sem isso haveria circularidade. O tratamento fiscal da provisão na apuração do 2T/2026 (dedutibilidade quando accrual no período) NÃO consta da biblioteca citável — marcado como não verificado e como pendência do 2º trimestre; não cito fundamento que não tenho."
+    }
+  ],
+  "verificacao_marco_sem_novas_adicoes": {
+    "conclusao": "Nenhuma adição fiscal nova em março: adições acumuladas do 1T permanecem 163.000,00.",
+    "base": "O razão de março não traz brindes, doações nem aquisições de uso e consumo com crédito. Os únicos itens de risco são: (i) os R$ 85.000,00 'comerciais ordinários' de 20/03 — terceiro mês consecutivo com valor idêntico pagos em caixa, tratados como despesa normal e dedutível pela premissa final declarada (consistente com a posição da auditoria interna) — sensibilidade em adicoes_acumuladas_para_lalur_1t2026.alerta; (ii) compras de 15/03 com crédito de PIS/COFINS de 159.951,00, tratadas como mercadoria para revenda (premissa mantida, mesmo padrão de jan/fev)."
+  },
+  "adicoes_acumuladas_para_lalur_1t2026": {
+    "brindes_janeiro_AF_01_001": 85000.00,
+    "brindes_fevereiro_AF_02_001": 48000.00,
+    "doacao_fevereiro_AF_02_002": 30000.00,
+    "marco": 0.00,
+    "total": 163000.00,
+    "alerta": "A premissa dos R$ 85.000,00/mês é final (cliente sem mais informação). Cenários no fechamento do trimestre: A (vigente, adições 163.000) → lucro antes da compensação 767.149, trava 230.144,70, IRPJ+CSLL 176.581,47; B (85.000 de jan NÃO são brinde, adições 78.000) → 682.149, trava 204.644,70, IRPJ+CSLL 156.351,46; C (85.000 de fev ou mar também são brinde, adições 248.000) → 852.149, trava 255.644,70, IRPJ+CSLL 196.811,46. Diferença B→C ≈ R$ 40.460 de tributo."
+  },
+  "efeito_resumo": {
+    "lucro_liquido_marco_livros": 282583.00,
+    "aritmética_marco": "2.620.000 (receita) - 242.350 (PIS/COFINS s/ vendas) - 183.400 (ICMS s/ vendas) - 1.441.000 (CMV) - 210.000 (pessoal) - 85.000 (comerciais) - 96.000 (administrativas) - 51.667 (depreciação) - 28.000 (financeiras) = 282.583",
+    "lucro_liquido_acumulado_livros_mar": 615249.00,
+    "lucro_liquido_acumulado_pos_AJ_03_001": 604149.00,
+    "conciliacao": "615.249 - 11.100 = 604.149 = 128.483 (jan ajustado) + 193.083 (fev) + 282.583 (mar) — ponto de partida do e-LALUR",
+    "lucro_liquido_acumulado_pos_AJ_03_002": 427567.53,
+    "aritmética_pos_provisao": "604.149,00 - 176.581,47 = 427.567,53",
+    "contas_pos_ajuste_no_balancete_mar": {
+      "1.1.04": 472527.00,
+      "4.2.04": 131100.00,
+      "4.3.02_nova_proposta": 176581.47,
+      "2.1.05_nova_proposta": 176581.47
+    }
+  },
+  "retificacoes_meses_anteriores": [
+    "AJ-01-001/AJ-02-001 (estorno 11.100): reproduzido como AJ-03-001 porque os livros seguem sem registrá-lo (3ª vez). A EFD-Contribuições de 01/2026 continua a retificar (mes_01/pis_cofins.json)."
+  ],
+  "verificacoes": {
+    "balancete_quadra": "Débitos = Créditos = 26.766.378,00 (OK)",
+    "balancete_mar_vs_fev_mais_movimentos": "22/22 contas articulam exatamente (0 divergências); razão de mar fecha em D = C = 11.195.768,00",
+    "tributacao": "PIS/COFINS s/ vendas 9,25% x 2.620.000 = 242.350 (OK); ICMS 7% x 2.620.000 = 183.400 (OK); crédito compra revenda 9,25% x 1.729.200 = 159.951 (OK, mantido — premissa de revenda)",
+    "tributos_a_recolher": "2.1.03 = 1.997.750 = abertura 740.000 + 412.750 (jan) + 419.250 (fev) + 425.750 (mar): nenhum recolhimento lançado no trimestre",
+    "resultados_mensais": "LL 139.583 (jan) + 193.083 (fev) + 282.583 (mar) = 615.249 (livros) — confere com o balancete acumulado (7.740.000 - 715.950 - 541.800 - 5.867.001)"
+  }
+}

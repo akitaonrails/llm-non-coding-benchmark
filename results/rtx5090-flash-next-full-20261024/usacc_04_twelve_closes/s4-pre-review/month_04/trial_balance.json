@@ -1,0 +1,43 @@
+{
+  "as_of": "2025-04-30",
+  "basis": "cumulative",
+  "accounts": {
+    "1000": { "debit": "233880.00", "credit": "0.00" },
+    "1100": { "debit": "38200.00", "credit": "0.00" },
+    "1200": { "debit": "48200.00", "credit": "0.00" },
+    "1300": { "debit": "9600.00", "credit": "0.00" },
+    "1500": { "debit": "64000.00", "credit": "0.00" },
+    "1510": { "debit": "0.00", "credit": "28444.12" },
+    "2000": { "debit": "0.00", "credit": "17420.00" },
+    "2100": { "debit": "0.00", "credit": "0.00" },
+    "2200": { "debit": "0.00", "credit": "66200.00" },
+    "3000": { "debit": "0.00", "credit": "650000.00" },
+    "3900": { "debit": "205953.00", "credit": "0.00" },
+    "4000": { "debit": "0.00", "credit": "174600.00" },
+    "5000": { "debit": "217616.00", "credit": "0.00" },
+    "5010": { "debit": "20304.00", "credit": "0.00" },
+    "5100": { "debit": "13300.00", "credit": "0.00" },
+    "5200": { "debit": "28800.00", "credit": "0.00" },
+    "5300": { "debit": "40400.00", "credit": "0.00" },
+    "5400": { "debit": "5840.00", "credit": "0.00" },
+    "5600": { "debit": "2500.00", "credit": "0.00" },
+    "5700": { "debit": "7111.12", "credit": "0.00" },
+    "5900": { "debit": "960.00", "credit": "0.00" }
+  },
+  "totals": {
+    "debit": "936664.12",
+    "credit": "936664.12"
+  },
+  "notes": [
+    "Cumulative through 2025-04-30; reproduces exactly from the month_03 trial balance plus journal_entries.json JE-2025-035..046 (machine validation in this package's open_items.md section 6).",
+    "1000 233,880.00 equals the bank statement ending balance exactly (see bank_reconciliation.md). It includes the effect of recording the disputed duplicate GUSTO NET PAY debit of 48,200.00 (JE-2025-041). Ledger-supported cash before that debit was 282,080.00, matching the statement running balance immediately before it.",
+    "1200 (NEW account, controller-created) 48,200.00: claim against Gusto/Pacific Summit Bank for the duplicate net-pay debit. Recoverability NOT confirmed - no library guidance exists on cash-claim treatment, so classification is unverified controller judgment; full disclosure and rejected alternatives in open_items.md section 1. If the claim is denied, write off to expense in the month of denial with disclosure.",
+    "1100 unchanged at 38,200.00: all April billings (30,450.00) collected in-month; this is the 2024-vintage balance, now in its FOURTH month of the engagement with no bank activity - escalated in open_items.md section 5.",
+    "2200 66,200.00 agrees to deferred_revenue_rollforward.json: Trestle prior 8,200.00 (final release May 2025) + Trestle renewal 16,000.00 + Pinecone 27,000.00 (ASSUMED term - permanently unknown) + Marigold 15,000.00 (documented term). All releases fall within 12 months of 2025-04-30 (latest 2026-02-28); non-current portion 0.00. NOTE: remaining-release prose in the February and March packages was wrong (omitted April 2025 / mis-ordinals); balances were never wrong - correction in open_items.md section 2.",
+    "2000 17,420.00: opening A/P, now unpaid for four months with no bank payment activity - escalated in open_items.md section 5.",
+    "1300 9,600.00: opening prepaid, no supporting documentation received; no amortization recorded (flag carried).",
+    "1510 28,444.12 = opening 21,333.00 (per client opening trial balance, 2024 charges) + 4 x 1,777.78 booked Jan-Apr 2025 per checklist item 6; policy basis still not further documented.",
+    "5600 2,500.00 unchanged: no Harbor Law LLP bill in April.",
+    "3900 205,953.00 is the opening accumulated deficit carried forward unchanged; current-year results sit in the 4000/5xxx accounts until closing. YTD net loss through 2025-04-30: 174,600.00 - 336,831.12 = (162,231.12). The disputed 48,200.00 duplicate debit is NOT in expenses."
+  ]
+}

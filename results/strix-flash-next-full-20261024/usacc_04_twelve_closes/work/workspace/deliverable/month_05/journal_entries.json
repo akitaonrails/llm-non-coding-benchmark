@@ -1,0 +1,279 @@
+[
+  {
+    "ref": "JE-2505-001",
+    "date": "2025-05-01",
+    "memo": "May 2025 monthly subscription invoices INV-2300..INV-2323, 24 customers, total 30,450 (invoices.csv). Same cohort as Jan-Apr. SaaS access over time (ASC 606-10-25-14(b), 25-27; policy #1). Billed and earned in the same month.",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-002",
+    "date": "2025-05-01",
+    "memo": "New annual contract C-028 Quarry Analytics Co, INV-2324 30,000 billed upfront for 12 months (invoices.csv; order_form_C-028.md: order 2025-05-01, service start 2025-05-01, term 12 months from service start, signed). Contract liability per policy #1 and ASC 606-10-25-27; monthly release 30,000/12 = 2,500 begins in May (JE-2505-012).",
+    "lines": [
+      {
+        "account": "1100",
+        "debit": 30000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2200",
+        "debit": 0.0,
+        "credit": 30000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-003",
+    "date": "2025-05-26",
+    "memo": "May customer receipts, 24 items (cash_receipts.csv; bank_statement.pdf ACH credits 05/20-05/26): all 24 monthly ACH collections totaling 30,450, tying INV-2300..INV-2323 in full (ACH payee names differ slightly from customer names; matched by date+amount, as prior months). Nothing applied to the opening A/R 92,650 (fifth month; U3).",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 30450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-004",
+    "date": "2025-05-15",
+    "memo": "Quarry Analytics Co payment for INV-2324: wire in 30,000 on 05/15 (bank_statement.pdf; cash_receipts.csv applied to INV-2324). Clears the annual-contract receivable; the liability stays in 2200 until earned.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 30000.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1100",
+        "debit": 0.0,
+        "credit": 30000.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-005",
+    "date": "2025-05-09",
+    "memo": "Gusto refund of duplicate net-pay debit: ACH CREDIT GUSTO REFUND 48,200 on 05/09 (bank_statement.pdf) - returns the duplicate 04/26 debit booked as claim 1200 in April (JE-2504-012; Gusto ticket GS-44812). Cash verified on the May statement; claim cleared, 1200 goes to zero. U12 resolved.",
+    "lines": [
+      {
+        "account": "1000",
+        "debit": 48200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1200",
+        "debit": 0.0,
+        "credit": 48200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-006",
+    "date": "2025-05-05",
+    "memo": "Vendor bill AWS 10,400, 05/05 (vendor_bills.csv, hosting & infrastructure). April was 10,280; usage varies.",
+    "lines": [
+      {
+        "account": "6000",
+        "debit": 10400.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 10400.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-007",
+    "date": "2025-05-06",
+    "memo": "Vendor bill WeWork 7,200, 05/06 (vendor_bills.csv, rent).",
+    "lines": [
+      {
+        "account": "6100",
+        "debit": 7200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 7200.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-008",
+    "date": "2025-05-07",
+    "memo": "Vendor bill Gusto fees 240, 05/07 (vendor_bills.csv, G&A other).",
+    "lines": [
+      {
+        "account": "6200",
+        "debit": 240.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 240.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-009",
+    "date": "2025-05-08",
+    "memo": "Vendor bill Notion/Slack/GitHub 1,460, 05/08 (vendor_bills.csv, software & tools).",
+    "lines": [
+      {
+        "account": "6300",
+        "debit": 1460.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 1460.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-010",
+    "date": "2025-05-09",
+    "memo": "Vendor bill Google Ads 3,450, 05/09 (vendor_bills.csv, marketing). April was 3,400; spend varies.",
+    "lines": [
+      {
+        "account": "6400",
+        "debit": 3450.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2000",
+        "debit": 0.0,
+        "credit": 3450.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-011",
+    "date": "2025-05-09",
+    "memo": "Vendor ACH payments, 5 bills paid in-month per bank 05/05-05/09 (AWS 10,400 + WeWork 7,200 + Gusto fees 240 + software 1,460 + Google Ads 3,450 = 22,750). No payment against opening AP 17,420 for the fifth consecutive month (U9 observation).",
+    "lines": [
+      {
+        "account": "2000",
+        "debit": 22750.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 22750.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-012",
+    "date": "2025-05-25",
+    "memo": "May payroll per payroll_register.json (pay date 05/25): gross 54,404, net 48,200, employer taxes 5,076, remitted 11,280, 9 employees. Register identical to Jan/Feb/Mar/Apr for the FIFTH consecutive month (U11 - flagged, not re-asked). Withholding derived: 54,404 - 48,200 = 6,204 (U7). Bank shows exactly ONE GUSTO NET PAY debit (05/25) - no duplicate this month.",
+    "lines": [
+      {
+        "account": "5000",
+        "debit": 54404.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 48200.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 6204.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-013",
+    "date": "2025-05-25",
+    "memo": "Employer payroll taxes & benefits per register, 5,076 (05/25).",
+    "lines": [
+      {
+        "account": "5100",
+        "debit": 5076.0,
+        "credit": 0.0
+      },
+      {
+        "account": "2210",
+        "debit": 0.0,
+        "credit": 5076.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-014",
+    "date": "2025-05-25",
+    "memo": "Payroll tax remittance per register and bank GUSTO TAX 05/25, 11,280 = withholding 6,204 + employer 5,076. 2210 clears to zero for the month.",
+    "lines": [
+      {
+        "account": "2210",
+        "debit": 11280.0,
+        "credit": 0.0
+      },
+      {
+        "account": "1000",
+        "debit": 0.0,
+        "credit": 11280.0
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-015",
+    "date": "2025-05-31",
+    "memo": "Depreciation 1,777.78 = 64,000 straight-line over 36 months per close checklist item 6 (U5 assumption carried).",
+    "lines": [
+      {
+        "account": "6500",
+        "debit": 1777.78,
+        "credit": 0.0
+      },
+      {
+        "account": "1510",
+        "debit": 0.0,
+        "credit": 1777.78
+      }
+    ]
+  },
+  {
+    "ref": "JE-2505-016",
+    "date": "2025-05-31",
+    "memo": "May deferred-revenue release, 14,200 (policy #1; ASC 606-10-25-27): Trestle prior contract 8,200 = FINAL service month, documented period ends 05/31/2025, liability line closes to zero + Trestle renewal 2,000 + Marigold C-027 1,500 + Quarry C-028 2,500 (30,000/12, first month of documented 12-month term). Pinecone C-025 release 0.00 - term still unknown (U10).",
+    "lines": [
+      {
+        "account": "2200",
+        "debit": 14200.0,
+        "credit": 0.0
+      },
+      {
+        "account": "4000",
+        "debit": 0.0,
+        "credit": 14200.0
+      }
+    ]
+  }
+]

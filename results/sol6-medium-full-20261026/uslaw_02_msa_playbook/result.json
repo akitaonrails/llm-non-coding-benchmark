@@ -1,0 +1,18 @@
+{
+  "case": "uslaw_02_msa_playbook",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 242.28389084304217,
+  "controller_wait_seconds": 23.002212118997704,
+  "model_turn_seconds": 219.27729948604247,
+  "turns": 2,
+  "released_facts": [],
+  "usage": {
+    "input_tokens": 334382,
+    "cached_input_tokens": 310656,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 10928,
+    "reasoning_output_tokens": 4557
+  },
+  "api_equivalent_usd": 0.2188632
+}

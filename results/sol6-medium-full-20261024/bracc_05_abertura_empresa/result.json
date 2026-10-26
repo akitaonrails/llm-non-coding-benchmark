@@ -1,0 +1,22 @@
+{
+  "case": "bracc_05_abertura_empresa",
+  "status": "infrastructure_failed",
+  "error": "Infrastructure failure; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/sol6-medium-full-20261024/bracc_05_abertura_empresa/03-review",
+  "elapsed_seconds": 311.5617090680171,
+  "controller_wait_seconds": 90.0103549559717,
+  "model_turn_seconds": 221.54460607899819,
+  "turns": 3,
+  "released_facts": [
+    "aluguel_pct",
+    "luana_trabalho",
+    "marina_cargo"
+  ],
+  "usage": {
+    "input_tokens": 251243,
+    "cached_input_tokens": 226304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 14643,
+    "reasoning_output_tokens": 4544
+  },
+  "api_equivalent_usd": 0.2415688
+}

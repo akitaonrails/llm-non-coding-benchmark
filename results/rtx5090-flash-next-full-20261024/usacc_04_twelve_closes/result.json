@@ -1,0 +1,22 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "status": "candidate_output_limit",
+  "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/rtx5090-flash-next-full-20261024/usacc_04_twelve_closes/07-s5-work",
+  "elapsed_seconds": 1730.0816294570104,
+  "controller_wait_seconds": 143.01425064797513,
+  "model_turn_seconds": 1586.7054909769795,
+  "turns": 7,
+  "released_facts": [
+    "pinecone_onboarding"
+  ],
+  "usage": {
+    "input_tokens": 4724037,
+    "cached_input_tokens": 4392309,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 253521,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

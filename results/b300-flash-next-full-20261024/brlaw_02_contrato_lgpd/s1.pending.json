@@ -1,0 +1,11 @@
+{
+  "case": "brlaw_02_contrato_lgpd",
+  "session": 1,
+  "pushbacks": [
+    {
+      "when": "se clausulas.json marcar o foro (cl. 14) como aceitável",
+      "message": "Dra. Beatriz: Minha colega advogada insiste que foro em Florianópolis é abusivo e que o juiz anula. Por que você está aceitando?"
+    }
+  ],
+  "instructions": "Controller: inspect candidate artifacts; write {\"pushback_indices\": [], \"nudge\": false, \"reason\": \"...\"}. Only matching scripted conditions may be selected."
+}

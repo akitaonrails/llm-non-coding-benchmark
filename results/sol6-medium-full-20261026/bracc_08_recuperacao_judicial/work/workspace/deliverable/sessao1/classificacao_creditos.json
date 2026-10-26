@@ -1,0 +1,51 @@
+[
+  {
+    "credor": "Banco Alfa (capital de giro, quirografário)",
+    "valor": 4200000,
+    "classe": "quirografario",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito originado em 10/11/2025, anterior ao pedido conforme premissa temporal. Lei 11.101/2005, art. 49 (library/lei11101_excertos.md)."
+  },
+  {
+    "credor": "Banco Beta (CCB com alienação fiduciária de máquinas)",
+    "valor": 3100000,
+    "classe": "extraconcursal_fiduciario",
+    "sujeito_ao_plano": false,
+    "fundamento": "Titular de propriedade fiduciária não se submete aos efeitos da RJ; eventual essencialidade das máquinas depende de confirmação. Lei 11.101/2005, art. 49, §3º (library/lei11101_excertos.md)."
+  },
+  {
+    "credor": "Fornecedor Norte Ltda",
+    "valor": 1850000,
+    "classe": "quirografario",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito de 15/01/2026, anterior ao pedido conforme premissa temporal; separado da entrega de 20/03/2026. Lei 11.101/2005, art. 49 (library/lei11101_excertos.md)."
+  },
+  {
+    "credor": "Fornecedor Sul S.A. (EPP)",
+    "valor": 420000,
+    "classe": "me_epp",
+    "sujeito_ao_plano": true,
+    "fundamento": "Crédito de EPP de 03/02/2026, anterior ao pedido conforme premissa temporal; classe IV informada na relação. Lei 11.101/2005, art. 49 (library/lei11101_excertos.md)."
+  },
+  {
+    "credor": "Trabalhistas (112 empregados)",
+    "valor": 960000,
+    "classe": "trabalhista",
+    "sujeito_ao_plano": true,
+    "fundamento": "Créditos trabalhistas classificados na relação como anteriores ao pedido; datas individuais e composição pendentes de confirmação. Lei 11.101/2005, arts. 49 e 54 (library/lei11101_excertos.md)."
+  },
+  {
+    "credor": "União — IRPJ/CSLL/PIS/COFINS",
+    "valor": 2700000,
+    "classe": "nao_sujeito_tributario",
+    "sujeito_ao_plano": false,
+    "fundamento": "Crédito tributário não se sujeita ao concurso nem à cláusula de deságio do plano. CTN, art. 187 (library/ctn_187_191a.md); Lei 11.101/2005, art. 68 (library/lei11101_excertos.md)."
+  },
+  {
+    "credor": "Fornecedor Norte Ltda — entrega 20/03/2026",
+    "valor": 310000,
+    "classe": "extraconcursal_pos_pedido",
+    "sujeito_ao_plano": false,
+    "fundamento": "Entrega identificada como pós-pedido na relação; obrigação segregada do saldo concursal do mesmo fornecedor. Lei 11.101/2005, art. 67 (library/lei11101_excertos.md)."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "mes": "2026-01",
+  "criterio_provisorio": "Para encerrar janeiro, considera-se provisoriamente válido o saldo de R$ 131.100,00 registrado em Fornecedores para a NF 8812. O cliente não confirmou se o total da nota é R$ 120.000,00 ou R$ 131.100,00. Se o total devido for R$ 120.000,00, substituir a conta debitada neste lançamento por Fornecedores (2.1.01), sem alterar o estorno do crédito fiscal.",
+  "lancamentos": [
+    {
+      "id": "AJ-01-2026-001",
+      "data": "2026-01-31",
+      "referencia": "NF 8812 — Papel & Cia",
+      "historico": "Estorno do crédito indevido de PIS/COFINS sobre material de uso e consumo administrativo, sob o critério provisório indicado.",
+      "debitos": [
+        {"conta": "4.2.04", "nome": "Material de uso e consumo", "valor": 11100.00}
+      ],
+      "creditos": [
+        {"conta": "1.1.04", "nome": "Tributos a recuperar (PIS/COFINS)", "valor": 11100.00}
+      ],
+      "valor": 11100.00,
+      "situacao": "provisorio — contrapartida contabil depende da confirmacao do total da NF 8812"
+    }
+  ],
+  "retificacoes_meses_anteriores": []
+}

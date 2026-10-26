@@ -1,0 +1,74 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Questions for the client — round 2 (round-1 questions are not repeated; all were answered)\n\nNothing in this round changes any figure. Items 1–2 are the only genuinely open unknowns left;\nif the client cannot answer them either, the return stands as filed with the assumptions noted\nin `STATUS.md`.\n\n1. **Form 8332 year.** The reply said the release was signed \"for {TY}.\" Please confirm the\n   executed Form 8332 for Leo names **tax year 2025** specifically (the father's year under the\n   order). *(No dollar effect if correct; if it covers the wrong year, the Leo analysis reopens:\n   +$2,200 CTC.)*\n\n2. **Father's marketplace credit for Leo (Jan–Jun).** Did the father claim or receive any\n   premium tax credit that includes Leo on his own return? We only need this if he has his\n   2025 return or an IRS notice available — otherwise the family-size-4 treatment below stands.\n   *(Affects: Form 8962 only; if a 3-person allocation applied, repayment ≈ $2,985 and refund\n   ≈ $1,237.)*\n\n## Resolved by the client's responses (recorded, not repeated)\n\n- **Leo 2025 claim** — Elena signed the Form 8332; it is the father's year. Leo not claimed. ✔\n- **NY remote facts** — both moves at the employees' request, employers did not need them out of\n  state ⇒ convenience-of-the-employer sourcing confirmed for both spouses' full-year wages;\n  post-move NY workdays are now immaterial. ✔\n- **Condo tenant** — stranger (broker-sourced nurse, 2019), rent never raised ⇒ library's\n  below-market carve-out applies; rental loss allowed. ✔\n- **Basis completeness** — no contributions since 2021, no shareholder loans, Pike guarantees the\n  bank line ⇒ $11,500 opening basis and zero debt basis confirmed. ✔\n- **Coverage continuity** — Halvorsen coverage from Jul 1 confirms the marketplace policy ran\n  Jan–Jun only. ✔\n\n## No further information available — treated as assumptions (flagged in STATUS.md)\n\n- 8962 family size 4 (only FPL figure in the library; no allocation rule or data exists).\n- No other income, estimated payments, retirement contributions, HSA, or gifts beyond the\n  documents provided.\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for {TY}, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "contrib",
+    "convenience",
+    "employer_coverage",
+    "fmv_rent",
+    "leo_8332"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

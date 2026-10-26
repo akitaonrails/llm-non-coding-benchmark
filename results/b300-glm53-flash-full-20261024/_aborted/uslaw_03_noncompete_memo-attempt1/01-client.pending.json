@@ -1,0 +1,57 @@
+{
+  "case": "uslaw_03_noncompete_memo",
+  "questions": "# QUESTIONS FOR THE CLIENT — Meridian Robotics / Wei-Lin Zhao\n\nWe completed the memo without needing answers to these; the memo states each related assumption prominently. Answers would let us firm up numbers and next steps.\n\n1. **California population (AB 1076 / §16600.1 exposure sizing).** How many *current* California employees hold agreements containing §8-type non-compete clauses, and how many *former* California employees employed after January 1, 2022 do? The HR timeline says notices were never sent (\"company-wide\"), but not how many people are affected.\n2. **Zhao's consideration under Texas law.** Did Meridian actually provide Zhao confidential information in the ordinary course (design documents, datasets, customer/roadmap materials), specialized or paid training, or any equity (options/RSUs)? This determines the §15.50(a) ancillary-restraint showing if Texas law ever applied (memo Assumption A3), and informs trade-secret diligence.\n3. **Access logs / device return.** Do you have Zhao's final-90-day access logs and confirmation of device/credential return? Nothing suggests misuse (he denies it), but the confidentiality-first strategy needs a records baseline (memo Assumption A4).\n4. **Written assurances.** Has Zhao or Kestrel provided any written side letter, clean-team protocol, or confidentiality reaffirmation? His resignation email says he will honor §10 — is there anything in writing?\n5. **California business presence.** Does Meridian sell, deploy, or solicit AMR customers in California, or maintain any facility there? This affects the goodwill-scope arguments and the California-interest analysis.\n6. **Corporate form and other signed documents.** Is Meridian incorporated in Texas? Are there any other signed Zhao documents beyond the excerpt (e.g., a standalone confidentiality/IP agreement, bonus or equity agreements with their own restrictive terms or fee clauses)? Memo Assumption A6 flags this.\n7. **State of the *Westbrook* en banc ruling.** If your records show the Ninth Circuit has ruled on the en banc rehearing of a case the firm's 2024 memo relied on, please share — we treat that authority as unverified and will keep it that way unless you supply the decision.\n",
+  "facts": [
+    {
+      "id": "austin_trips",
+      "trigger": [
+        "Texas",
+        "Austin",
+        "ever in Texas",
+        "physically"
+      ],
+      "answer": "Twice: onboarding week March 2024, and an offsite October 2025. Otherwise Oakland.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "counsel",
+      "trigger": [
+        "counsel",
+        "lawyer",
+        "negotiat",
+        "represented"
+      ],
+      "answer": "No. It's our standard form; engineers sign the same day. Nobody negotiates.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "notice_1076",
+      "trigger": [
+        "AB 1076",
+        "notice",
+        "February 14",
+        "16600.1"
+      ],
+      "answer": "Legal ops never sent the notices. The ticket was closed as 'won't do'. Please don't put that in writing if you can avoid it.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "trade_secrets",
+      "trigger": [
+        "trade secret",
+        "confidential",
+        "took",
+        "misappropriat"
+      ],
+      "answer": "No evidence he took anything. He said he wouldn't. It's the competing itself we object to.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "austin_trips",
+    "notice_1076",
+    "trade_secrets"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

@@ -1,0 +1,19 @@
+{
+  "pf_quotas": {
+    "ganho_por_socio": 3900000,
+    "gcap_por_socio": 585000,
+    "gcap_total": 1170000,
+    "cronograma_darf": [234000, 117000, 117000, 117000],
+    "liquido_socios": 7830000
+  },
+  "pj_estabelecimento": {
+    "ganho_pj": 7500000,
+    "irpj": 1869000,
+    "csll": 675000,
+    "tributo_pj": 2544000,
+    "irrf_distribuicao_2026": 695600,
+    "liquido_socios": 6360400
+  },
+  "recomendacao": "pf",
+  "retificar_custo_dirpf": "nao"
+}

@@ -1,0 +1,5 @@
+The client has no further April records, so I’ll mark balances and payment answers that cannot be verified as unknown. From the supplied activity, receipts total $1,480,300 and listed disbursements total $1,010,600, before any unreported payments.
+
+The [April MOR](/work/workspace/deliverable/session2/april_mor.json) and [professional fee schedule](/work/workspace/deliverable/session2/professional_fees.md) are prepared.
+
+Listed April activity shows a **$469,700 cash increase**, but the MOR remains a draft because opening cash and complete payment and liability records are unavailable. Holland & Pierce may receive **at most $116,200 from April 30**, subject to verifying the work dates and DIP budget. Corbin has **no April payment established**: its statement includes work before its retention date, and its objection period runs through April 30. The [workpaper](/work/workspace/deliverable/session2/april_mor_workpaper.md) identifies the remaining unknowns.

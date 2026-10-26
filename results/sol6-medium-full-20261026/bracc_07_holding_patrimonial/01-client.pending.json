@@ -1,0 +1,47 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "questions": "# Informações necessárias — Dona Helena Furtado\n\n1. **Titularidade após o falecimento em 2019:** o inventário do marido foi concluído? Para cada um dos 11 imóveis e para as aplicações, informe a fração atualmente registrada em nome de Helena, a fração dos filhos ou do espólio e se há algum bem particular dela. Se tiver, envie a relação do formal de partilha ou das matrículas. Isso determina quais bens ela pode integralizar ou doar e qual patrimônio compõe sua legítima.\n2. **Aluguéis na pessoa física:** em 2026, quanto Helena paga por mês de IPTU, condomínio e administração dos imóveis locados que pode deduzir do carnê-leão? Informe também se há outras deduções relevantes na declaração anual e se todos os R$ 84.900 mensais são recebidos de pessoas físicas. Isso permite apurar o IR da PF além da estimativa sem deduções.\n3. **Projeto da holding:** pretende transferir todos os 11 imóveis ou apenas os locados? A receita prevista da empresa virá só desses aluguéis? Pretende distribuir todo o lucro mensal a Helena, retê-lo na empresa ou dividir distribuições entre sócios? Isso determina a base da estimativa de ITBI e o IRRF sobre lucros em 2026.\n4. **ITBI fora da capital:** dispõe das alíquotas, bases de cálculo ou guias municipais para os imóveis em Guarulhos, Cotia e Campos do Jordão? A biblioteca fornecida só informa a alíquota de 3% para o Município de São Paulo; sem esses dados não é possível calcular o ITBI total dos 11 imóveis com suporte documental.\n\nPode responder em valores aproximados quando não tiver os documentos; identificaremos essas respostas como premissas.\n",
+  "facts": [
+    {
+      "id": "marcos",
+      "trigger": [
+        "Marcos",
+        "excluir",
+        "deserdar",
+        "legítima",
+        "terceiro filho"
+      ],
+      "answer": "Ele não fala comigo há seis anos. Não quero que receba nada. Se a lei obriga, quero o mínimo possível e com as cláusulas de proteção.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "uso_proprio",
+      "trigger": [
+        "Campos do Jordão",
+        "Cotia",
+        "uso próprio",
+        "moradia"
+      ],
+      "answer": "A casa de Campos é da família, ninguém aluga. O terreno de Cotia é para os netos um dia. Eu moro no Jardins — ah não, o Jardins está alugado; moro em Higienópolis, que é alugado por mim.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "deducoes",
+      "trigger": [
+        "IPTU",
+        "condomínio",
+        "administradora",
+        "despesas dos imóveis"
+      ],
+      "answer": "A administradora cobra 8%; IPTU e condomínio dos vagos eu pago.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "marcos",
+    "uso_proprio",
+    "deducoes"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

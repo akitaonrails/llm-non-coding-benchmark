@@ -1,0 +1,7 @@
+The client confirmed that the tenant is unrelated, Marcus’s Florida work was by choice, and Leo’s father has the signed 2025 release. I’ll complete the schedules using explicit assumptions for the unanswered move and Marketplace details, and mark the figures those assumptions affect.
+
+The federal schedules and New York wage allocation are drafted. The rental loss is capped by basis and passive-loss rules; the remaining federal refund figure depends on the unverified Marketplace family-size and policy-allocation assumptions. I’m recording those limits in the judgment log and status file, then I’ll check the arithmetic and JSON.
+
+The engagement is **complete with open items**. I prepared [return.json](/work/workspace/deliverable/return.json), the calculations and library authority in [return.md](/work/workspace/deliverable/return.md), the alternatives in [judgment_calls.md](/work/workspace/deliverable/judgment_calls.md), and [STATUS.md](/work/workspace/deliverable/STATUS.md).
+
+The **$2,322 federal refund is conditional**, not a verified filing amount. It assumes the existing lease rent was fair, uses the library’s family-of-four poverty line as a proxy despite Leo being claimed by his father, and assigns all Marketplace policy amounts to this return. The exact New York residency end date also remains unknown. JSON validity, arithmetic, and library links were checked.

@@ -1,0 +1,2 @@
+# Para a sessão 5
+O juízo intimou a executada a garantir o juízo (LEF art. 9º) sobre o valor remanescente atualizado, para oposição de embargos, ou a comprovar adesão a transação/parcelamento. Cotações: **seguro-garantia** (prêmio 1,2% a.a. sobre o valor garantido + 30%); **fiança bancária** (2,5% a.a. + 30%); penhora de faturamento (5%). SELIC acumulada de 10/07/2026 a 30/11/2026: 3,9%. Edital PGFN de transação por adesão vigente: desconto de até 65% em multa/juros para débitos de difícil recuperação, 120 meses.

@@ -1,0 +1,58 @@
+{
+  "case": "brlaw_05_divorcio_partilha",
+  "questions": "# Perguntas ao cliente (Marcelo) — registro das três rodadas (a 3ª é objeção, não pergunta)\n\nRodada 1 (abaixo, Q1–Q10) e rodada 2 de follow-up foram respondidas em parte. O cliente declarou que **não tem mais informação** além do que respondeu. Nenhuma pergunta é repetida; o que restou sem resposta virou **incógnita com premissa expressa** no §8 de `proposta_acordo.md` (não há pergunta pendente a fazer).\n\n## Rodada 1 — perguntas e desfecho\n\n| # | Pergunta | Desfecho |\n|---|---|---|\n| 1 | Data da separação de fato | **Sem resposta** → premissa: valorização ≈ data do laudo (1.100.000). Incógnita §8.1 |\n| 2 | Pró-labore: valor, habitualidade, separado do CLT? | **Respondido (rodada 2):** 15.000/mês, separado do salário CLT de 24.000 → incluído na base de alimentos (presunção: líquido) |\n| 3 | Distribuição de lucros / PLR | **Respondido (rodada 2):** nunca distribuiu lucro, tudo reinvestido → nada de lucros na base de alimentos; reforça a partilha da valorização (550.000). PLR: **sem resposta** → não incluída (incógnita §8.4) |\n| 4 | Origem do sinal do apartamento (2017) | **Sem resposta** → premissa: recursos comuns (CC 1.660, I). Incógnita §8.5 |\n| 5 | Atibaia: alugada? reforma com dinheiro do casal? | **Parcial (rodada 2):** reforma em 2021 com ~120.000 do casal → crédito da massa (meação 60.000 no caixa). Aluguel: **sem resposta** → premissa: nenhuma renda (incógnita §8.6) |\n| 6 | Valores declarados no IR dos bens | **Sem resposta** → neutral tributário só pode ser desenhado no instrumento; risco sinalizado. Incógnita §8.7 |\n| 7 | FGTS: 140.000 até a separação? havia saldo pré-casamento? | **Sem resposta** → premissa: 140.000 são depósitos da constância — o resumo de documentos registra \"saldo integral depositado **durante o casamento**\". Se houver saldo anterior não documentado, a meação cai |\n| 8 | Financiamento do carro: quem contraiu, em nome de quem? | **Respondido (rodada 2):** carro da família (levava as crianças), carro e financiamento no nome de Fernanda → comum (CC 1.662/1.664), fica com ela e com o saldo devedor |\n| 9 | Banco consultado sobre transferência do financiamento do apto? | **Sem resposta** → mantida como condição prática do instrumento (procedimento não verificado na biblioteca) |\n| 10 | Fernanda trabalha (9.000 estáveis)? Pediria pensão para ela? | **Sem resposta** → 9.000 do resumo adotados; alimentos entre ex-cônjuges não são tratados na biblioteca (tema não verificado) se ela levantar |\n\n## Rodada 2 — respostas registradas (já embutidas nos números)\n\n- Carro da família; financiamento no nome de Fernanda.\n- Empresa: nunca distribuiu lucro; reinvestiu tudo; valia \"uns 400 mil\" no casamento, hoje 1,5 mi (estimativa verbal, sem laudo de 2014).\n- Pró-labore 15.000/mês, fora do salário CLT (24.000 líquidos).\n- Reforma de Atibaia em 2021 com ~120.000 do dinheiro do casal.\n- Demais itens: o cliente não tem mais informação.\n\n## Rodada 3 — objeção recebida (não é fato novo; nenhuma pergunta nova)\n\nMarcelo questionou: \"FGTS é meu salário\" e \"a empresa é de antes do casamento — bem particular, ponto final\" (primo advogado). Nada nos números mudou; a resposta jurídica completa está na `proposta_acordo.md` §9. Em resumo: o primo acerta nas **quotas em si** (particulares — por isso os 400.000 de 2014 já estão fora da partilha e a empresa fica 100% com ele) e erra no \"ponto final\": FGTS depositado na constância **se partilha** (REsp 1.399.199, 2ª Seção — a CC 1.659 VI não afasta, registrado na biblioteca) e a valorização/lucros reinvestidos **se comunicam** (CC 1.660 V; REsp 1.595.775/AP), hipótese agravada pela admissão \"reinvesti tudo\". A opinião do primo não está na biblioteca — **não verificada**.\n\n## Efeito líquido nas respostas\n\nBase de alimentos subiu para **43.666,67/mês** (524.000/ano) → pensão ancorada em 20% (8.733,33) com teto de 25% (10.916,67). Massa partilhável subiu para **2.770.000 bruto / 2.410.000 líquido** → meação de cada **1.205.000**, caixa equalizador **985.000** (+70.000 de FGTS). A admissão \"reinvesti tudo\" praticamente congela o número das quotas (550.000) — a antiga alavanca de desconto de Marcelo desapareceu.\n",
+  "facts": [
+    {
+      "id": "carro_uso",
+      "trigger": [
+        "carro",
+        "dívida do carro",
+        "financiamento do carro",
+        "uso",
+        "família"
+      ],
+      "answer": "O carro era da família, levava as crianças. Está no nome dela e o financiamento também.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "lucros_reinvestidos",
+      "trigger": [
+        "lucros",
+        "reinvest",
+        "distribuiu",
+        "pró-labore",
+        "empresa valoriz"
+      ],
+      "answer": "Nunca distribuí lucro; reinvesti tudo. A empresa valia uns 400 mil quando casei e hoje 1,5 mi. Meu pró-labore é 15 mil, fora o salário de 24 mil de um emprego CLT.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "atibaia_reforma",
+      "trigger": [
+        "Atibaia",
+        "reforma",
+        "benfeitoria",
+        "dinheiro do casal"
+      ],
+      "answer": "Reformei a casa de Atibaia em 2021 com uns 120 mil do nosso dinheiro.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "guarda",
+      "trigger": [
+        "guarda",
+        "convivência",
+        "compartilhada"
+      ],
+      "answer": "Quero compartilhada, com as crianças morando com ela e comigo em semanas alternadas se der.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "atibaia_reforma",
+    "carro_uso",
+    "lucros_reinvestidos"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

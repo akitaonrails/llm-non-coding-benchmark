@@ -1,0 +1,6 @@
+invoice,period,amount,due,status,dispute_notice_received
+J-4411,2026-03,68400.00,2026-04-30,unpaid,no
+J-4452,2026-04,71250.00,2026-05-31,unpaid,no
+J-4490,2026-05,66100.00,2026-06-30,unpaid,no
+J-4533,2026-06,74800.00,2026-07-31,unpaid,"yes — email 2026-07-09 'hours padded, auditing'"
+J-4571,2026-07,59450.00,2026-08-31,unpaid,no

@@ -1,0 +1,47 @@
+{
+  "case": "brlaw_03_pejotizacao",
+  "questions": "# QUESTIONS — informações necessárias ao fechamento do cálculo\n\nRespostas permitem refinar (não refazer) o parecer. Cada pergunta indica o impacto no número.\n\n1. **Modalidade de extinção (impacto ≈ R$ 70.848):** a notificação de 30/09/2026 diz \"encerramento da prestação\". Foi (a) dispensa sem justa causa pela Solaris, (b) pedido de demissão/renúncia do Rafael, ou (c) distrato? Há comunicação escrita/e-mail definindo isso e o motivo? *(Se (b), caem aviso-prévio R$ 30.600 e multa 40% R$ 40.248 → total ≈ R$ 674.108.)*\n2. **Data exata do fim da prestação:** o contrato exige aviso de 30 dias — a prestação cessou em 30/09/2026 (última NF) ou houve projeção do aviso até ~30/10/2026? Isso desloca ~1 mês para o período exigível: +13º (1.500) + férias c/ 1/3 (2.000) + FGTS 8% × 21.500 (1.720) + 40% (688) + INSS 28% × 21.500 (6.020) ≈ **+R$ 11.900** (a base de 18 mil já é paga à PJ de todo modo).\n3. **Nº de empregados da Solaris (Súmula 338/TST):** a empresa tinha/tém mais de 20 empregados? *(Se sim e sem cartões de ponto do período, vale presunção da jornada alegada — o item \"horas extras a apurar\" pode crescer até ~R$ 145 mil.)*\n4. **Cartões de ponto / controles:** existem registros de jornada além da planilha jan–jun/2025 (ex.: logs, crachá, VPN — o Slack cita \"logou 9h20\")? Em quantos meses do período exigível (16/11/2021–30/09/2026)?\n5. **Composição dos R$ 18.000:** a PJ tinha custos/tributos relevantes custeados dentro do valor (pró-labore, contador, machines, outros profissionais)? *(Fundamento da tese de redução da base remuneratória — hoje sem prova no arquivo.)*\n6. **Remuneração dos engenheiros CLT equivalentes (OJ 383 SDI-1):** piso/salário de quem faz a mesma função internamente — para medir eventual pedido de isonomia salarial.\n7. **Outros PJs no mesmo modelo:** quantos prestadores PF/PJ com cláusulas de exclusividade + horário fixo + reporte a gestor a Solaris mantém, e desde quando? *(Escala do risco e prioridade de regularização.)*\n8. **Benefícios já pagos a Rafael:** houve pagamento de VR/VA/plano de saúde/PLR? Valores, para eventual compensação em acordo/liquidação.\n9. **Política contábil:** a empresa usa CPC 25 com provisão para quais outras contingências trabalhistas, e há parecer anterior sobre este caso que precise ser retratado (o e-mail da diretoria nega até a discussão)?\n10. **Paramento do acordo:** há limite de alçada do jurídico/negociação e interesse em recontratação (CLT/CLT intermitente/PJ autônomo real) do Rafael no desenho do acordo?\n\n# PERGUNTAS\n\nVersão em português das perguntas ao cliente: ver **[QUESTIONS.md](QUESTIONS.md)** (mesmo conteúdo, numerado 1–10).\n\nResumo dos pontos que podem mover o número do parecer:\n\n1. Modalidade de extinção (dispensa × renúncia × distrato) — impacto ≈ R$ 70,8 mil (aviso + multa 40%).\n2. Data exata de fim da prestação (última NF set/26 × projeção do aviso de 30 dias) — impacto ≈ R$ 11,9 mil.\n3. Número de empregados da Solaris (Súmula 338/TST) — habilita presunção de jornada; impacto potencial ≈ +R$ 145 mil em HE.\n4. Existência de controles de ponto além da planilha jan–jun/2025.\n5. Composição dos R$ 18.000 mensais (custos/tributos da PJ) — tese de redução da base.\n6. Salários dos CLT da mesma função (isonomia, OJ 383 SDI-1).\n7. Outros PJs com o mesmo modelo (exclusividade + horário + reporte) — escala do risco.\n8. Benefícios pagos a Rafael (compensáveis).\n9. Contexto contábil (CPC 25) e pareceres anteriores a retratar.\n10. Alçada para acordo e interesse de recontratação.\n",
+  "facts": [
+    {
+      "id": "outros_clientes",
+      "trigger": [
+        "outros clientes",
+        "exclusiv",
+        "prestava para terceiros"
+      ],
+      "answer": "Carla: Não. Ele era dedicado a nós, 7 anos. A PJ dele só tinha a gente.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "quem_decidia",
+      "trigger": [
+        "quem decidia",
+        "férias",
+        "horário",
+        "aprovava",
+        "subordina"
+      ],
+      "answer": "Carla: Eu. Aprovava férias, cobrava horário, dava feedback. Igual aos CLTs.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "valor_embutia",
+      "trigger": [
+        "embutia",
+        "tributos",
+        "custo",
+        "valor da nota",
+        "remuneração-base"
+      ],
+      "answer": "Diretor: Os 18 mil eram 'cheios' justamente porque ele era PJ. Um CLT equivalente ganharia uns 12 mil.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "outros_clientes",
+    "quem_decidia",
+    "valor_embutia"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

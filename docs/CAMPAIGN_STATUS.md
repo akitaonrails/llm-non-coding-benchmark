@@ -1,5 +1,9 @@
 # Campaign status
 
+**Superseded by the active full-suite campaign:** see [FULL_SUITE_CAMPAIGN.md](FULL_SUITE_CAMPAIGN.md)
+and [live coverage](../results/full-suite-coverage-20261024.json). The snapshot
+below records the earlier pilots only.
+
 Snapshot: 2026-10-24 15:50 UTC. Execution coverage is separate from correctness.
 The live Strix queue state is `results/strix-legal-queue-20261024/status.json`;
 this document is a snapshot, not a heartbeat.

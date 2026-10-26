@@ -1,0 +1,19 @@
+{
+  "revenue_as_drafted": 1540000,
+  "adjustments": {
+    "halvorsen_loi": -480000,
+    "saltline_kits": -210000,
+    "ironvale_hosting_revenue": 0
+  },
+  "revenue_corrected": 850000,
+  "hosting": {
+    "treatment": "Embedded equipment lease plus separate power, cooling, and network services. Q4 draft expensed $54,000 (3 x $18,000). Lease and service payment allocation and discount rate were not supplied, so the right-of-use asset, lease liability, and corrected Q4 expenses cannot be quantified. Null means unknown, not zero.",
+    "rou_asset": null,
+    "lease_liability": null
+  },
+  "going_concern": {
+    "substantial_doubt": true,
+    "plans_probable": false,
+    "disclosure": "Assuming issuance before the February 20, 2026 projected cash shortfall, disclose substantial doubt about continuing as a going concern within one year after issuance. The forecast falls from $612,000 beginning cash to negative $105,000 on February 20 and negative $509,000 on March 27 without the bridge. The $3,000,000 Crestline term sheet is non-binding and conditional on at least $1,500,000 of reviewed or audited Q4 revenue; corrected reviewed revenue is $850,000. No other probable funding plan was supplied. Reassess using the actual issuance date and updated forecast."
+  }
+}

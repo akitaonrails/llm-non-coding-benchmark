@@ -1,0 +1,48 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "questions": "# Questions register — Ray Brightline / Brightline Cabinetry LLC\n\nStatus as of 2026-10-25: all four questions were put to the client. The client answered Q2 and states that\nfor the remaining questions **he has no additional information** — so the fallbacks below are stated\nprominently in every deliverable, and each remaining unknown is flagged with who can resolve it and why it\nmatters. Do not re-ask the client what he has already answered.\n\n---\n\n## Q1 — Accounting method / tax basis in the $200,000 receivables — **UNANSWERED (client has no info)**\n\n*Asked:* Is Brightline Cabinetry a cash- or accrual-method taxpayer, and what is the tax basis of the\n$200,000 accounts receivable? (Last filed Form 1120-S answers this.)\n\n*Fallback used:* **Cash method, $0 basis** — the $200,000 is ordinary income in every Buyer A scenario\n($74,000 of sale-year tax at 37%). Conservative for the sale-year estimate.\n\n*Why it is now outcome-relevant, not a footnote:* if the CPA confirms **accrual with basis = face**, each\nA scenario's sale-year tax drops **$74,000** (that income was taxed when earned in prior years; lifetime\ntax is similar), and at a 2026 close the **counter-allocation flips past Buyer B's PV by ≈ $11,512**\n(best-case VI = 0: ≈ $28,512). The deal recommendation can change on a one-phone-call fact — **Ray's CPA\nshould confirm the method before Friday.**\n\n*Related tension flagged:* the 1/1/2023 conversion appraisal lists built-in gain \"other assets: $0,\" which\nfits an accrual AR (basis = face). Under the cash-method fallback, the receivables would nominally carry\n$200,000 of conversion BIG; if that contrary-to-appraisal reading is ever asserted, entity §1374 tax rises\nto $279,300 and each A net falls $26,460. The primary model uses the appraisal as written.\n\n**Resolve by:** CPA, from the last filed Form 1120-S.\n\n## Q2 — Liabilities assumed / retained — **PARTIALLY ANSWERED**\n\n*Asked:* What payables will Lone Star actually schedule at closing, and what contingencies (lawsuits,\nwarranty, tax disputes) exist?\n\n*Client answer (2026-10):* \"There's the Hardaway dispute ($9,800) and the usual warranty stuff. Nothing\nbig that I know of.\"\n\n*What that resolves:* the known contingency pool is ≈ **$9,800 + unquantified warranty**. Modeled in full:\n- **Deal A (Lone Star assumes only scheduled payables):** Hardaway and warranty stay with the seller —\n  after-tax ≈ **$6,174** on Hardaway (37% pass-through deduction), $0.63 per $1 of warranty claims.\n- **Deal B (Hensley assumes all liabilities, known and unknown):** **$0** to Ray if Hardaway is disclosed\n  on the schedules; worst case **$8,129** after tax if repriced at the PSA. Neither moves the ranking\n  (≈ 1% of the gap). Warranty exposure is **unquantified — flagged, not modeled.**\n\n*What remains open:* the **dollar amount of trade payables** Lone Star will assume is still unknown (no\npayables schedule in the file). **Fallback: $0 assumed liabilities.** Each assumed payable is extra\nconsideration added under the §1060 residual method (`library/irc_1060_form_8594.md`) — the effect is\ntaxed at the marginal class rate and slightly favors A; it cannot plausibly close a $45k–$158k gap.\n\n**Resolve by:** PSA payables schedule (both deals); warranty loss history via the CPA/insurer.\n\n## Q3 — Target closing date — **UNANSWERED (client has no info)**\n\n*Asked:* When do you expect/ want to close, and is the buyer flexible on date?\n\n*Fallback used:* **2026 close** — inside the §1374 recognition period (1/1/2023–12/31/2027 per\n`library/irc_1374.md` (d)(7)), so the $237,300 entity-level BIG tax applies in every A scenario.\n\n*Why it matters:* this is **the single biggest lever in the engagement — worth $149,499 after tax.** A\nclose after 12/31/2027 zeroes the entity tax: A-counter nets $2,435,300 and **beats B's PV by ≈ $87,000**\n(best case ≈ $104,000); even drafted A closes to within ≈ $8,200 of B. At a 2026 close, B wins on PV in\nevery allocation. The whole negotiation strategy (§7 of the memo) is built on this: sign with A now,\nclose January 2028, or extract ~$150k of price to compensate.\n\n**Resolve by:** Ray's decision + buyer flexibility; it is a deal term, not a fact to look up.\n\n## Q4 — Material participation / NIIT — **UNANSWERED (client has no info)**\n\n*Asked:* Do you materially participate in the business (you work in it daily)?\n\n*Fallback used:* **Material participation** — owner-operator selling his own shop; per\n`library/capital_gain_rates.md` the net investment income tax does not apply to active business gains,\nso no NIIT is modeled.\n\n*Sensitivity if wrong:* +3.8% × $2,720,000 gain = **+103,360** on every A scenario vs.\n+3.8% × ($2,430,000 + $90,000 interest) = **+95,760** on B — a further ≈ $7,600 against A. **The 3.8%\nrate is not in the library [unverified]**; the direction (it hits both, more of A's gain) follows from\nthe library's NIIT description.\n\n**Resolve by:** CPA (participation records are Ray's own, but the NIIT interaction needs a preparer).\n\n---\n\n*Nothing else in the deliverables depends on client-only facts. All other open flags (BIG-loss ordering\nconvention, note credit-risk discounting, Texas franchise tax, B's post-closing S-election termination,\nB's $0-covenant reallocation risk) are labeled in the memo and comparison.json as conventions or\noutside-library items.*\n",
+  "facts": [
+    {
+      "id": "noncompete_term",
+      "trigger": [
+        "non-compete",
+        "noncompete",
+        "longer term",
+        "consult",
+        "stay on"
+      ],
+      "answer": "I'd sign 5 years, I'm retiring. I don't care what they call the payment as long as the total is the same.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "note_security",
+      "trigger": [
+        "note",
+        "secured",
+        "collateral",
+        "Hensley credit"
+      ],
+      "answer": "The $500k note is unsecured. Hensley's a family office, seems solid, but I don't know their balance sheet.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "liabilities",
+      "trigger": [
+        "liabilities",
+        "warranty",
+        "claims",
+        "lawsuit",
+        "Hardaway"
+      ],
+      "answer": "There's the Hardaway dispute ($9,800) and the usual warranty stuff. Nothing big that I know of.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "liabilities"
+  ],
+  "literal_suggestions": [
+    "note_security"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

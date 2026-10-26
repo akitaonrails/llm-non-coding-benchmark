@@ -1,0 +1,16 @@
+# PERGUNTAS — registro de respostas e desconhecidos restantes
+
+**Rodada 1 → resposta do cliente (rodada 2):** Beatriz confirmou o item 3 (DIRPF: R$ 600 mil de quotas por sócio) e contestou a base de cálculo (respondida com números no memorando, item 4.1). Para as demais, **o cliente informou não ter mais informação** — elas permanecem como **desconhecidos explícitos**, tratados como premissas declaradas no memorando. Nenhuma delas altera a recomendação (PF) nas ordens de grandeza envolvidas.
+
+| # | Pergunta | Estado |
+|---|---|---|
+| 1 | Fechamento em 2026? Parcelas em 2027/2028/2029? Distribuição do caixa da PJ em 2026? | **SEM RESPOSTA — premissa declarada (fechamento 2026; parcelas 2027-29; distribuição 2026).** Se o calendário mudar, os DARFs deslocam de mês, mas o total não muda (tributação proporcional ao recebido). |
+| 2 | Juros/atualização e garantias sobre as 3 parcelas da Proposta A? | **SEM RESPOSTA — premissa: sem juros informados.** Desconhecido material para risco de crédito e valor presente; não altera o comparativo nominal. |
+| 3 | Custo nas DIRPFs = R$ 600 mil cada? Capitalização de 2018 era de lucros tributados ou isentos na PF? | **PARCIALMENTE RESPONDIDO:** custo de R$ 600 mil/sócio **confirmado**. Natureza dos lucros de 2018 segue sem resposta — item em aberto (moot para o custo declarado; ver memorando §4). |
+| 4 | Distribuição da PJ (se B): tudo em um mês ou ao longo de meses? | **SEM RESPOSTA — premissa: tudo em 2026.** Impacto ≤ R$ 10.000 no IRRF (ambiguidade da base na biblioteca). |
+| 5 | Passivos que ficariam na "casca" e custo de encerramento (Proposta B)? | **SEM RESPOSTA — não quantificado.** Risco assimétrico contra a Proposta B. |
+| 6 | Orientação sobre PIS/COFINS na alienação de estabelecimento (Presumido)? | **SEM RESPOSTA e sem material na biblioteca — não verificável.** Pode piorar a Proposta B; nunca a A. |
+| 7 | *(Nova, rodada 3)* O "outro contador" citou alguma lei de atualização de custo além da Lei 14.973/2024 (prazo encerrado)? Pedir a indicação exata (lei/artigo). | **ABERTA.** Fora da biblioteca, qualquer outra hipótese é **não verificada** (memorando §4.2, item 4). Sem o texto, nada além do que está na biblioteca pode ser afirmado. |
+| 8 | *(Rodada de revisão)* Existem lucros/reservas pré-2025 com distribuição **aprovada até 31/12/2025** na Vértice? | **SEM RESPOSTA — a cliente não tem mais informação.** Flag aberto, mas **sem efeito no ranking**: se aprovadas, são crédito dos sócios nas duas propostas (na A acompanham ou são liquidados junto com as quotas) e se cancelam no comparativo; se não aprovadas até 31/12/2025, o prazo da isenção antiga está encerrado e o pagamento em 2026 sofreria o IRRF novo (memorando §3, "Robustez"). |
+
+Nenhum desconhecido favorece a Proposta B: os que têm direção (2, 5, 6) apontam contra ela; o único candidato teórico a favorecê-la (item 8, lucros pré-2025) ou se cancela nas duas propostas (distribuição aprovada até 31/12/2025 = crédito dos sócios em A e em B) ou perde a isenção pelo prazo (memorando §3, Robustez).

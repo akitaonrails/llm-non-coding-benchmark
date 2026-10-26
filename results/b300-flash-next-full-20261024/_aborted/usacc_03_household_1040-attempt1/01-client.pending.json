@@ -1,0 +1,73 @@
+{
+  "case": "usacc_03_household_1040",
+  "questions": "# Questions for the client (answers may change figures as noted)\n\n1. **Leo — 2025 claim.** Has the father actually claimed Leo for 2025 under the alternating\n   custody order (odd years = father), and will you sign the Form 8332 for him? If instead the\n   father is letting you claim Leo this year (in writing), we add a second CTC (+$2,200 refund)\n   and revisit the Form 8962 family size. *(Affects: dependents, line 19, refund.)*\n\n2. **NY workdays & necessity.** Between July 3 and December 31, 2025, did either of you set foot\n   in New York for work at all (even a few days)? And for Elena: was the fully-remote arrangement\n   ever *required* by Halvorsen (e.g., no desk/office available for her in NY), or was it at her\n   request with the company's permission? For Marcus: any documented business-necessity reason he\n   had to work from Florida? *(Affects: NY IT-203 allocation only; federal return unchanged.)*\n\n3. **Brooklyn condo rent.** Confirm the tenant is unrelated to either of you and that the $1,500\n   rent reflects a long-standing lease that was simply never raised (no side payments, no family\n   relationship, no option to buy). If any of that is wrong, the below-market rule may reclassify\n   the whole year as personal use and the entire rental loss (+$19,550 of AGI) disappears.\n   *(Affects: Schedule E, Form 8582, AGI, tax, Form 8962.)*\n\n4. **Marketplace policy and Leo.** Elena's W-2 shows Halvorsen coverage starting in July (box\n   DD), consistent with the marketplace policy covering Jan–Jun. Confirm you (not the father)\n   enrolled and paid for all four of you, with Leo on the policy, and that the father claimed or\n   received no premium credit for Leo. We sized the poverty line at a family of 4 because that is\n   the only FPL figure the reference library provides; if Leo must instead be excluded from your\n   8962 family size, we need his individual SLCSP amount from the NY marketplace to allocate the\n   premium. *(Affects: Form 8962 only.)*\n\n5. **Completeness.** Any other income, estimated payments, retirement contributions, HSA,\n   charitable gifts, or a second 1099-INT/1099-DIV we should have? Confirm no other shareholders'\n   loans or capital contributions to Reyes & Pike beyond the note you gave us. *(Affects: AGI /\n   Form 7203 basis.)*\n",
+  "facts": [
+    {
+      "id": "fmv_rent",
+      "trigger": [
+        "fair market",
+        "below market",
+        "related",
+        "relative",
+        "tenant",
+        "who is the tenant"
+      ],
+      "answer": "Elena: the tenant is a stranger, a nurse we found through a broker in 2019. We just never raised the rent.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "contrib",
+      "trigger": [
+        "contribut",
+        "put money in",
+        "loan to the company",
+        "basis"
+      ],
+      "answer": "Marcus: no, I haven't put anything in since 2021 and I never lent it money. Pike guarantees the bank line.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "convenience",
+      "trigger": [
+        "convenience",
+        "employer's necessity",
+        "required to work remote",
+        "office in New York",
+        "why remote"
+      ],
+      "answer": "Marcus: the company said remote was fine when I asked to move; they didn't need me out of state. Elena: Halvorsen closed their Tampa office years ago; they approved my request.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "leo_8332",
+      "trigger": [
+        "8332",
+        "Leo",
+        "custody",
+        "odd year",
+        "claim"
+      ],
+      "answer": "Elena: I signed the 8332 for Leo's dad for {TY}, it's his year.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "employer_coverage",
+      "trigger": [
+        "employer coverage",
+        "why only six months",
+        "July",
+        "1095"
+      ],
+      "answer": "Elena: I got on Halvorsen's plan July 1 when we moved, so we dropped the marketplace plan.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "fmv_rent",
+    "contrib",
+    "leo_8332",
+    "employer_coverage"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

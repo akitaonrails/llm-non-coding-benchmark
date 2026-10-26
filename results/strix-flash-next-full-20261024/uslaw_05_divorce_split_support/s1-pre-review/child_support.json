@@ -1,0 +1,8 @@
+{
+  "husband_gross_used": 213000,
+  "wife_gross_used": 72000,
+  "combined_monthly_net": 18525,
+  "basic_obligation": 3050,
+  "husband_share_monthly": 2023,
+  "notes": "Columbia Worksheet A (library/columbia_child_support_guidelines.md). Gross must include bonuses expected and evidenced by employer documents: Husband 168,000 salary + 45,000 documented target bonus = 213,000, NOT the 168,000 salary his proposal uses. Maintenance adjustment: 2,000/mo moved from payor to recipient before the worksheet. Arithmetic: Husband (213,000/12 = 17,750 - 2,000) x 0.78 = 12,285 net/mo; Wife (6,000 + 2,000) x 0.78 = 6,240; combined 18,525 -> basic obligation 3,050 (<=20,000 bracket); Husband share = 3,050 x 12,285/18,525 = 2,022.63 -> ~$2,023/mo. His proposal's salary-only basis yields 3,050 x 9,360/15,600 = 1,830/mo: understated by ~192.63/mo (~2,312/yr; ~13,870 over 6 years, more while the 9-year-old is still a minor). Bonus sensitivity band (client confirms bonuses recur; prior year ~40,000 client-reported, request 2024-2026 W-2/bonus records in discovery): 40,000 -> 3,050 x 12,045/18,285 = 2,004.29; 45,000 -> 2,022.63; 50,400 (112% of plan) -> 3,050 x 12,636/18,876 = 2,041.74. The decree should state bonuses as income and provide for recalculation/review when the February 2027 half is paid. Wife is the residential parent (70% >= 65% overnights); Husband's ~30% overnights are below the 35% shared-parenting threshold, so no adjustment. Total monthly transfer under Scenario A: 2,000 maintenance + ~2,023 support = ~4,023."
+}

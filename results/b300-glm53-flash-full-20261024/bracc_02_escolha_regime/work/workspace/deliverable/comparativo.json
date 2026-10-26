@@ -1,0 +1,39 @@
+{
+  "base": {
+    "ano_comparado": 2026,
+    "receita_bruta": 4200000.0,
+    "obras_com_materiais": 630000.0,
+    "servicos_consultiva": 3570000.0,
+    "folha_12m": 1300000.0,
+    "lucro_contabil_antes_irpj_csll_regime_real": 756000.0
+  },
+  "simples": {
+    "das": 738000.0,
+    "iss_fora": 210000.0,
+    "inss_patronal": 0.0,
+    "total": 948000.0,
+    "nota": "Anexo III, 6ª faixa (Fator R 30,95% <= 40%): aliquota efetiva = (RBT12 x 33% - 648.000)/RBT12 = 17,5714% sobre a receita do ano. CPP inclusa no DAS (inss_patronal fora = 0). Acima do sublimite de R$ 3,6 mi o ISS sai do DAS (reparticao ISS 0% na 6ª faixa) e e pago ao municipio: 5% x 4.200.000."
+  },
+  "presumido": {
+    "irpj": 274200.0,
+    "csll": 109620.0,
+    "pis_cofins": 153300.0,
+    "iss": 210000.0,
+    "inss_patronal": 364000.0,
+    "total": 1111120.0,
+    "nota": "IRPJ: 15% x (630.000 x 8% + 3.570.000 x 32%) + adicional anual 10% x (1.192.800 - 240.000) = 178.920 + 95.280. CSLL: 9% x (630.000 x 12% + 3.570.000 x 32%). PIS/COFINS cumulativos 3,65% x receita. INSS patronal ~28% x folha."
+  },
+  "real": {
+    "irpj": 113400.0,
+    "csll": 68040.0,
+    "pis_cofins_debito": 388500.0,
+    "creditos": 83250.0,
+    "iss": 210000.0,
+    "inss_patronal": 364000.0,
+    "total": 1060690.0,
+    "nota": "total = irpj + csll + pis_cofins_debito - creditos + iss + inss_patronal = 113.400 + 68.040 + 388.500 - 83.250 + 210.000 + 364.000. Creditos apenas sobre 900.000 de insumos aplicados em obra/servico (9,25%); 500.000 de uso e consumo/ativo administrativo nao geram credito. Apuracao anual: sem adicional (ver memorando, item 9)."
+  },
+  "recomendacao": "simples",
+  "mudanca_em_dezembro": "impossivel",
+  "prazo_opcao": "2026-01-30"
+}

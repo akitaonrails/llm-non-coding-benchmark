@@ -1,0 +1,60 @@
+{
+  "case": "uslaw_10_llc_squeeze_out",
+  "questions": "# QUESTIONS — updated after client's answers (2nd turn)\n\nThe client has answered everything she can and has **no additional information**. No further questions are posed to her. The remaining unknowns are **not obtainable from the client** — they must be obtained from the Company/Bram (pre-suit demand, or discovery once filed). Flagged explicitly:\n\n## Unknowns that materially affect the analysis\n\n1. **The Manager's 6.1% arithmetic.** Nothing in the file reproduces 6.1% from the stated inputs (FV $7.2M; $1.5M funded → 14.9%–15.4% by standard pro-rata formulas). **Get:** the Manager's computation and the full OA (we hold excerpts only — the full agreement may contain the dilution formula, address/notice provisions, drag/put rights, fee-shifting). *If a formula in the full OA does produce 6.1%, the valuation-dispute picture changes; left open, not forced.*\n2. **The \"6% of gross rents\" stream — dollars.** The CSV shows the fee but no amounts; the Company's produced minutes don't quantify it. **Get:** rent rolls and the Castellan management agreement. *Short-cut:* Imani already holds the **2026 bank statements from her books-and-records demand** — tabulate the monthly Castellan payments from those; they likely quantify years of the stream.\n3. **Market rate for property + asset management services.** Without comparables, the §5.4 arm's-length proviso claim is medium-strength speculation. **Get:** quotes/comparable engagements from unaffiliated managers (we or a broker can source; not available from the client).\n4. **Booking treatment of Bram's payment of Imani's $270,000 share** — loan to the Company or additional capital contribution credited to Bram? Affects any re-computation of percentages and the 6.1% story. **Get:** Company financials / capital-account records.\n5. **The $3.1M 2025 year-end equity** and the $7.2M \"fair value\" workpapers — whether any contemporaneous valuation supported $7.2M (a document showing the Manager knew of a higher value is gold on the implied-covenant claim).\n6. **Broker opinion workpapers** — $14.5M EV / $9.8M equity: informal letter or supported opinion; would the broker stand behind it under examination? Not in the client's file beyond the stated figures.\n7. **When the Company learned the 2019 email was dead** (bounce notices are automatic; the Company's records show the address it kept) — small but sharpens the \"not delivered by email\" point.\n\n## Facts now established (no longer questions)\n\n- Notice: texted PDF only, 2026-08-20; no letter/certified mail ever; email on file stale since 2019; client read the text, assumed not valid notice.\n- Fees first seen by client in 2026 via books-and-records demand; prior summaries showed only \"management expenses.\"\n- Funding capacity ~$60,000; cannot fund the $270,000 call.\n- Offer deadline 2026-10-31.\n",
+  "facts": [
+    {
+      "id": "notice",
+      "trigger": [
+        "certified mail",
+        "how did you receive",
+        "notice",
+        "text",
+        "email address"
+      ],
+      "answer": "He texted me a PDF on August 20. No letter. My email on file is from 2019 and dead. I saw the text but assumed it wasn't real notice.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "knowledge_fees",
+      "trigger": [
+        "when did you learn",
+        "fees",
+        "asset management",
+        "disclosed",
+        "financials"
+      ],
+      "answer": "I only saw the affiliate fees in 2026 when I finally got the bank statements through a books-and-records demand. Before that I got one-page summaries with 'management expenses'.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "fund",
+      "trigger": [
+        "fund",
+        "$270",
+        "raise the money",
+        "loan"
+      ],
+      "answer": "I can't raise $270k. Maybe $60k.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "offer_timing",
+      "trigger": [
+        "offer",
+        "30 days",
+        "deadline",
+        "expire"
+      ],
+      "answer": "The $189,100 offer expires October 31.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "fund",
+    "knowledge_fees",
+    "notice",
+    "offer_timing"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

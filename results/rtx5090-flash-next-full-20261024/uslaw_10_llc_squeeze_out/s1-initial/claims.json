@@ -1,0 +1,81 @@
+[
+  {
+    "claim": "Capital call of 2026-08-20 and resulting Dilution Event invalid — Manager failed §6.3's express notice mechanics (notice required by certified mail AND email, at least 30 days before due date; delivered only by text message, email bounced to an address on file since 2019 that was dead, no certified mail ever sent) and the stated purpose ('working capital and opportunities') is not the 'bona fide Company purpose set forth in the call notice' the section requires. Under Zimmerman v. Crothall, dilution provisions are enforced as written but the caller must strictly comply with notice mechanics and purpose requirements; a non-compliant call does not trigger dilution. Client confirms: texted a PDF on 2026-08-20, no letter ever, email on file stale since 2019. Counter-risk: she read the text, so the Company will argue actual notice / substantial compliance — answer is that §6.3's delivery method is express and the Company itself kept the stale address on file. Consequence: Imani remains at 18% and the §9.2 buyout election premised on a 'Dilution Event' fails for want of a trigger.",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct (wrongful dilution of the member's own interest — Tooley)",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-09-25 (notice of Dilution Event); buyout election 2026-10-01",
+      "barred_portion": 0,
+      "tolling_argument": "none needed — events are weeks old"
+    },
+    "strength": "high",
+    "remedy": "Declaratory judgment that the Dilution Event is invalid and Imani holds 18%; injunction barring the §9.2 buyout at Book Value; restoration of percentage interest in company records"
+  },
+  {
+    "claim": "Implied covenant — bad faith/arbitrary exercise of the §6.3 'fair value … determined by the Manager in good faith' discretion. The Manager's $7.2M valuation is ~26% below a contemporaneous independent broker indication (~$9.8M equity), and the recomputed 6.1% cannot be reproduced from any standard pro-rata formula using the Manager's own inputs (18% x 7.2M/(7.2M+1.5M funded) = 14.9%; 14.1M of new capital or a 0.77M fair value would be needed to reach 6.1%). Zimmerman holds a manager's 'good faith' fair-value determination is reviewable for arbitrariness/bad faith where it is far below a contemporaneous independent indication; Dieckman holds discretion exercised through a misleading process violates the covenant despite exculpation.",
+    "theory": "implied_covenant",
+    "direct_or_derivative": "direct (deprivation of the member's own interest)",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-09-25",
+      "barred_portion": 0,
+      "tolling_argument": "none needed"
+    },
+    "strength": "high",
+    "remedy": "Invalidation of the dilution recomputation; alternatively damages measured by the value of the wrongfully diluted interest; §18-1101(e) bars exculpation for a bad-faith covenant violation and §7.3's proviso preserves the covenant"
+  },
+  {
+    "claim": "Implied covenant — using an invalidly triggered buyout at 'Book Value' ($3.1M year-end members' equity x 6.1% = $189,100, ~10.7% of the broker-indicated value of her 18%) to expropriate the member's interest, where the same Manager set both the dilution trigger and the valuation inputs. Dieckman: process used to deprive a party of the fruits of the bargain violates the covenant even under exculpation. Risk: Nemec — the covenant cannot override express terms, so if the Dilution Event stands, the Book-Value price is an express term and this claim stands or falls with claims 1-2.",
+    "theory": "implied_covenant",
+    "direct_or_derivative": "direct",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "2026-10-01 (offer letter); offer open 30 days (expires ~2026-10-31)",
+      "barred_portion": 0,
+      "tolling_argument": "none needed"
+    },
+    "strength": "medium",
+    "remedy": "Enjoin/rescind the buyout election; if buyout proceeds, price at fair value rather than Book Value"
+  },
+  {
+    "claim": "Breach of §5.4's express written-disclosure covenant — affiliate transactions with Castellan Asset Services LLC (Bram's wholly-owned entity) paying an asset-management fee rising $180,000-$240,000/yr plus 6% of gross rents all exceed $50,000/yr and required written disclosure to all Members within 30 days; the Manager's own produced minutes contain no written disclosure and Imani says she learned of the arrangement only in 2026. This is a personal right running 'to all Members,' hence direct under Tooley, and it is an express contractual duty, wholly outside §7.3's fiduciary-duty elimination.",
+    "theory": "express_contract",
+    "direct_or_derivative": "direct",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "30 days after each annual payment: ~2022-10-01, 2023-10-01, 2024-10-01, 2025-10-01, 2026-10-01; on a discovery/concealment theory, accrual as to Imani is 2026, when the documents finally reached her",
+      "barred_portion": 0,
+      "tolling_argument": "Expected outcome now 0 barred: the fees were masked as undifferentiated 'management expenses' in the one-page summaries the Company circulated, the §5.4 written-disclosure duty was breached, and Imani obtained the actual bank statements only in 2026 through a books-and-records demand — squarely the concealment-based tolling the library supports for the undisclosed fees, and 'inherently unknowable' on these facts. Fallback if tolling fails and suit is filed ~Nov 2026: the 2022 and 2023 fee years (180,000 + 195,000 = 375,000 of the 1,050,000, 35.7%) fall outside 10 Del. C. §8106's 3-year period. Chancery applies §8106 by analogy via laches, so cutoffs are elastic. The 6%-of-gross-rents stream remains unquantified in the file — the bank statements Imani obtained via her demand should contain the figures and must be produced."
+    },
+    "strength": "high on liability (no disclosure found in the produced file), medium on remedy (damages per se are elusive; the claim mainly unlocks tolling and evidences the scheme)"
+  ,
+    "remedy": "Damages (likely tied to the fee overcharge disgorgement claim), plus it anchors concealment tolling for the derivative fee claims; possible entry to books-and-records-style discovery of the fee agreements"
+  },
+  {
+    "claim": "Derivative breach of §5.4's express arm's-length pricing proviso — the Manager caused the Company to pay Castellan (wholly owned by the Manager) asset-management fees totaling 1,050,000 (2022-2026) plus 6% of gross rents; §5.4 permits affiliate transactions only 'on terms no less favorable to the Company than would be obtained in an arm's-length transaction with an unaffiliated third party.' A breach is breach of an express contract term, not a fiduciary duty, so §7.3 does not reach it. Demand on the Manager would be futile — he is the sole manager and the interested counterparty (6 Del. C. §18-1001; Zuckerberg; library: futility readily pleaded where the sole manager is the interested party).",
+    "theory": "express_contract",
+    "direct_or_derivative": "derivative (the Company paid the fees and would receive the recovery — Tooley, per library example)",
+    "survives_waiver": true,
+    "limitations": {
+      "accrual": "each payment date: 2022-09-01 … 2026-09-01 (annual asset-management fee); monthly for the 6% rent fee",
+      "barred_portion": 375000,
+      "tolling_argument": "Same as claim 4, now materially stronger on the client's answers: the Company circulated one-page summaries labeling the payments generically as 'management expenses' (an affirmative act of concealment, not merely silence), the §5.4 disclosure duty was breached, and the true payee/amounts surfaced only in 2026 when Imani obtained bank statements via a books-and-records demand. Under 10 Del. C. §8106 with the library's tolling doctrines, accrual should run from that 2026 discovery, so expected barred portion is now 0. Fallback if a court finds earlier constructive knowledge and suit is filed ~Nov 2026: the 2022-09-01 and 2023-09-01 payments (375,000 of 1,050,000) are outside 3 years. Whether the fees actually exceed arm's-length market terms remains UNVERIFIED on the current file — market comparables and gross-rent figures needed; strength turns on that evidence."
+    },
+    "strength": "medium",
+    "remedy": "Disgorgement/compensation payable by Bram to the Company of the above-market portion of fees (up to 1,050,000 plus the 6% rent stream, less any market-rate portion). Caution: recovery flows to the Company, 82% of the benefit returns to Bram — her economic stake in this claim depends on first resolving her percentage interest and exit price."
+  },
+  {
+    "claim": "Breach of fiduciary duty (duty of loyalty — self-dealing) — the theory the client wants. It is eliminated: §7.3 negates all fiduciary duties 'to the fullest extent permitted by the Delaware Limited Liability Company Act,' and §18-1101(c) expressly permits elimination of manager duties. What survives is (a) the express §5.4 contractual duties and (b) the implied covenant, which §18-1101(c)-(e) and §7.3's proviso preserve and which cannot be exculpated for bad-faith violations.",
+    "theory": "fiduciary",
+    "direct_or_derivative": "derivative (if pursued)",
+    "survives_waiver": false,
+    "limitations": {
+      "accrual": "would have been each fee payment (2022-09-01 … 2026-09-01)",
+      "barred_portion": 0,
+      "tolling_argument": "moot — the claim fails at the threshold; also note the library warns equitable tolling on the fiduciary rationale is weaker where duties are contractually eliminated"
+    },
+    "strength": "low",
+    "remedy": "none — do not lead with this claim; plead it only as fallback and expect it to be dismissed on §7.3/§18-1101(c)"
+  }
+]

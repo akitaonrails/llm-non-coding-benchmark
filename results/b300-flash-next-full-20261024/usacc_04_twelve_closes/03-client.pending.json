@@ -1,0 +1,45 @@
+{
+  "case": "usacc_04_twelve_closes",
+  "questions": "# Questions to the client — log\n\n## Round 1 (January 2025 close) — 8 questions filed\n\n**Client response (turn 2): \"the client has no additional information\" for the questions above.** No answer was received to any of the eight items (opening deferred-revenue 24,000; Trestle renewal term; opening 4000 balance 30,450; opening A/R 92,650 aging; prepaid 9,600 schedule; opening A/P 17,420 detail; chart of accounts; misfiled Dec-2025 bank_statement.csv).\n\n**Disposition:** per the engagement working rules, these unknowns are no longer re-asked. Each is now converted into a prominently stated assumption in `month_01/open_items.md` and carried on the open-items list through year-end, where it will be disclosed in the financial-statement notes. Adopted treatments are the conservative ones (no revenue on undocumented deferred revenue, no prepaid amortization, no allowance, no self-initiated correction of opening balances).\n\nNo new questions at that time — month_01 documentation is otherwise complete and internally consistent.\n\n## Round 2 (February 2025 close) — 4 new questions, all about INV-2250 / order form C-025\n\nThe round-1 items are **not re-asked**. These concern only the new $36,000 one-time item; the treatment is not blocked on the answers — the full amount is held in deferred revenue with $0 recognized (stated assumption, month_02/open_items.md item 1).\n\n9. **Delivery evidence:** Was any implementation service for Pinecone Dental Group (C-025) actually performed/delivered in February 2025 (statement of work, hours, milestone acceptance)? Policy #2 recognizes implementation only when a separately priced, distinct service is actually delivered.\n10. **\"License\" term:** Does the $36,000 include platform access, and if so over what period? The order form states a service start (2025-02-01) but no term. If access is term-based, the amount releases ratably over that term (ASC 606-10-25-14(b)/45-2).\n11. **Allocation:** Should the $36,000 be split between implementation and license components, and at what standalone prices? The order form shows one bundled line.\n12. **Subscription:** Will C-025 receive monthly subscription invoices from February onward (no recurring invoice exists for C-025)?\n\n",
+  "facts": [
+    {
+      "id": "pinecone_onboarding",
+      "trigger": [
+        "Pinecone",
+        "implementation",
+        "onboarding",
+        "C-025",
+        "what was delivered"
+      ],
+      "answer": "Alvarado: Honestly nothing bespoke — they self-onboarded like everyone else. Procurement just wanted it called a license.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "gusto_dup",
+      "trigger": [
+        "duplicate",
+        "two net pay",
+        "Gusto",
+        "second debit"
+      ],
+      "answer": "Office manager: Gusto admitted the double debit; refund posted May 9.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "c012",
+      "trigger": [
+        "C-012",
+        "cancel",
+        "credit memo",
+        "stop invoicing"
+      ],
+      "answer": "Alvarado: yeah they cancelled. Billing didn't get turned off. Credit them.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "pinecone_onboarding"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

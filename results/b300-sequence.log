@@ -1,0 +1,6 @@
+{"time": "2026-10-24T19:45:52Z", "event": "sequence_start", "waiting_for": "b300-flash-next-full-20261024", "next_model": "glm-5.3-flash"}
+{"time": "2026-10-25T07:50:30Z", "event": "sequence_start", "waiting_for": "b300-flash-next-full-20261024", "next_model": "glm-5.3-flash"}
+{"time": "2026-10-25T07:50:30Z", "event": "previous_lane_finished", "summary": 1}
+{"time": "2026-10-25T07:50:33Z", "event": "evidence_exported", "model": "qwen3.8-flash-next", "files": 5}
+{"time": "2026-10-25T07:50:33Z", "event": "stopping_server", "model": "qwen3.8-flash-next"}
+{"time": "2026-10-25T07:50:54Z", "event": "starting_server", "model": "glm-5.3-flash"}

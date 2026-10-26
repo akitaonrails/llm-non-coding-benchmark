@@ -8,6 +8,13 @@ Status: **v1 — 38 case packs structurally validated (2026-10-22). Sol 6 medium
 [`llm-coding-benchmark`](../llm-coding-benchmark), from which it inherits the harness, isolation,
 nudge and scoring discipline.
 
+A new **full-suite campaign is now running**: Sol 6 medium and four hardware/model
+configurations, each with all 38 cases / 63 sessions. See
+[full scope, estimates, and exclusion rationale](docs/FULL_SUITE_CAMPAIGN.md) and
+[live coverage](results/full-suite-coverage-20261024.json), and the
+[controller audit and re-run registry](docs/CONTROLLER_AUDIT_20261026.md). The completed pilots
+below are historical coverage, not completion of this new campaign.
+
 The October 24 pilot execution is complete: single B300 **11/12 engagements
 completed**, guarded RTX 5090 **3/3**, and Strix **8/11 across nine configurations**
 (three turn timeouts). These are execution outcomes, not correctness scores.
