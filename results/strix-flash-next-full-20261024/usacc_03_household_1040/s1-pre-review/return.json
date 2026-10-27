@@ -1,0 +1,158 @@
+{
+  "filing_status": "married_filing_jointly",
+  "tax_year": 2025,
+  "taxpayers": [
+    "Marcus Reyes",
+    "Elena Reyes"
+  ],
+  "dependents_claimed": [
+    "Sofia Reyes (15)"
+  ],
+  "dependents_not_claimed": [
+    "Leo Castellano (9) - claimed by father for 2025 (odd year) under the custody decree; Form 8332 release SIGNED and delivered by Elena for 2025 (client-confirmed Oct 2026)"
+  ],
+  "gross_income": 122400,
+  "income_detail": {
+    "wages_marcus": 68000,
+    "wages_elena": 54000,
+    "wages_total_line_1a": 122000,
+    "taxable_interest_line_2b": 400,
+    "dividends": 0,
+    "capital_gains": 0,
+    "social_security": 0,
+    "total_income_line_9": 122400
+  },
+  "adjustments": -31050,
+  "adjustments_detail": {
+    "schedule1_above_the_line_adjustments": 0,
+    "pass_through_losses_via_schedule_e": -31050,
+    "detail": "S-corp loss allowed under basis limits (11,500) + rental loss allowed under 469(i) special allowance (19,550). On a 2025 Form 1040 both reach Schedule 1 through Schedule E (S-corp Part II, rental Part I); the template's Schedule-1 slot carries the total.",
+    "s_corp_loss_allowed": -11500,
+    "s_corp_loss_suspended_carryforward": -16500,
+    "rental_loss_allowed": -19550,
+    "rental_loss_carryforward": -1468
+  },
+  "agi": 91350,
+  "deduction": {
+    "method": "standard",
+    "amount": 31500,
+    "mfj_standard_deduction_2025": 31500,
+    "itemized_alternative_considered": 13232,
+    "itemized_note": "Tampa mortgage interest 6,480 (1098, acquired 7/3/2025) + NY withholding 6,752; S-corp and rental expenses already netted in Schedule E; no state income tax paid on federal return; well below the standard deduction."
+  },
+  "qbi_deduction": 0,
+  "taxable_income": 59850,
+  "tax_liability_fed": 6708,
+  "method_tax": "Tax Table (taxable income under 100,000 requires the Tax Table; the rate schedules in the library excerpt are marked 'reference only - not to be used under $100,000')",
+  "tax_table_mfj_row": "at least 59,850 but less than 59,900 -> 6,708",
+  "section55_minimum_tax_comparison": "28% x 59,850 = 55,250 (50% limitation); minimum tax = max(0, 55,250 - 6,708) = 0; the 55,250 is NOT a deduction or credit",
+  "other_taxes": {
+    "excess_advance_premium_tax_credit_repayment": 1900,
+    "self_employment_tax": 0,
+    "total_line_23_incl_sch2": 1900
+  },
+  "credits": 2200,
+  "credits_detail": {
+    "child_tax_credit": 2200,
+    "qualifying_children": 1,
+    "note": "Sofia only (2,200 x 1). Fully absorbed by the 8,608 subtotal; refundable-portion analysis not needed and refundable CTC rules are not in the library."
+  },
+  "total_tax": 6408,
+  "total_tax_arithmetic": "6,708 + 1,900 - 2,200 = 6,408",
+  "payments": 8730,
+  "payments_detail": {
+    "fed_withholding_marcus": 5120,
+    "fed_withholding_elena": 3610,
+    "estimated_payments": 0
+  },
+  "refund_due": 2322,
+  "refund_or_owed": "refund",
+  "fed_status": "Federal complete: MFJ AGI 91,350 (wages 122,000 + interest 400 - 11,500 S-corp loss allowed on basis limits - 19,550 rental loss under 469(i)); standard deduction 31,500; taxable income 59,850; tax 6,708 per Tax Table (section 55 comparison adds 0); plus 1,900 Form 8962 excess-APTC repayment (capped); less 2,200 CTC (Sofia only); total tax 6,408 vs withholding 8,730 = refund 2,322. Open items: see STATUS.md.",
+  "ny_wages": 122000,
+  "ny_wages_note": "Both spouses' full-year wages are NY source under the convenience-of-the-employer rule (both employers are NY employers). CLIENT-CONFIRMED (Oct 2026): Marcus asked to move and was told remote was fine - the company did not need him out of state; Elena requested remote after Halvorsen closed its Tampa office years ago. Both arrangements were employee-convenience, not employer necessity. Rejected day-ratio alternative (now foreclosed on confirmed facts): Marcus 33,720.55, Elena 26,778.08.",
+  "ny_allocable_income": 122000,
+  "ny_allocable_income_note": "Wages 122,000 (100% NY source all year, client-confirmed convenience of the employer). The Brooklyn condo rental (gross 18,000; net (21,018) as booked) is NY-source real property income sitting in the IT-203 base for both periods. Interest sourcing during the nonresident period is not addressed in the library excerpt - left unallocated. S-corp passthrough NY sourcing is indeterminate from the library excerpt (K-1 carries no NY allocation data) - open item.",
+  "ny_status": "not-computed",
+  "ny_tax_est": null,
+  "ny_refund_est": null,
+  "ny_explanation": "Part-year residents (IT-203): resident period 1/1/2025-6/30/2025 (181 days, stated assumption - client offered no further information on the date) taxed on all income during that period; nonresident period 7/1-12/31 (184 days) only NY-source income. Wages 100% NY source all year (convenience of the employer). NY tax due/refund cannot be computed: the library excerpt defines the IT-203 framework and source rules but contains no NY tax rates, standard deduction, or subtraction modifications. NY withholding of 6,752 (3,842 + 2,910) was withheld for the full year and the library states over-withheld tax is refunded on IT-203 - the direction (refund) is likely given only 6 months of NY-taxed wage exposure, but the amount is not computable from the library and was NOT estimated from outside sources.",
+  "form1040_line_map": {
+    "1a_wages": 122000,
+    "2b_interest": 400,
+    "8_other_income_sch1": -31050,
+    "9_total_income": 122400,
+    "10_adjustments": 0,
+    "11_agi": 91350,
+    "12_deduction": 31500,
+    "13_qbi": 0,
+    "15_taxable_income": 59850,
+    "16_tax": 6708,
+    "17_sch2_excess_aptc": 1900,
+    "18_subtotal": 8608,
+    "19_ctc": 2200,
+    "22_other_taxes": 0,
+    "23_total_other_taxes": 1900,
+    "24_total_tax": 6408,
+    "25d_withholding": 8730,
+    "33_total_payments": 8730,
+    "34_refund": 2322,
+    "37_amount_owed": 0
+  },
+  "form7203": {
+    "beginning_stock_basis_2025": 11500,
+    "basis_rollforward": "2023: 10,000 - 2,100 loss = 7,900 | 2024: +6,400 = 14,300; -12,000 distribution = 12,100 | 2025: +4,600 - 5,200 distributions = 11,500 before loss",
+    "loss_2025": -28000,
+    "loss_allowed": 11500,
+    "loss_suspended": 16500,
+    "ending_basis": 0,
+    "debt_basis": 0,
+    "note": "Pike's personal guarantee of the corporate bank line creates no debt basis (guarantor of S-corp debt gets none)."
+  },
+  "form8582": {
+    "rental_net_loss": -21018,
+    "magi_469": 110900,
+    "special_allowance": 19550,
+    "allowance_arithmetic": "25,000 - 0.5 x (110,900 - 100,000) = 19,550",
+    "loss_allowed": 19550,
+    "carryforward": 1468
+  },
+  "form8962": {
+    "household_size": 4,
+    "fpl_family_of_4": 31200,
+    "household_income_magi": 91350,
+    "fpl_pct": 292.79,
+    "covered_months": 6,
+    "slcsp_annual": 10140,
+    "enrollment_premium_annual": 10320,
+    "aptc_advance": 9900,
+    "applicable_figure_pct": 5.7115,
+    "contribution_annual": 5217.49,
+    "contribution_monthly": 434.79,
+    "monthly_ptc": 1255.21,
+    "annual_ptc": 7531.26,
+    "excess_aptc": 2368.74,
+    "repayment_limitation_mfj_200_300pct": 1900,
+    "repayment": 1900,
+    "covered_months_note": "Jan-Jun only (6 months), client-confirmed: Elena enrolled on Halvorsen's employer plan July 1, 2025 and the marketplace plan was dropped then. The stray '21-26' on the 1095-A is a printing artifact, not extra covered months.",
+    "household_size_note": "4-person household (1095-A lists four covered individuals; Leo resides primarily with Elena). Client had no additional information on this point - stated assumption; library supplies only the family-of-4 FPL."
+  },
+  "open_items": [
+    "NY IT-203 tax due/refund NOT COMPUTABLE from the library (no rates/deductions/subtraction modifications); NY withholding 6,752 credits on IT-203; S-corp passthrough NY sourcing also indeterminate from the library excerpt (K-1 has no NY allocation data)",
+    "Brooklyn lease DOCUMENT not in the file - underlying facts are now client-confirmed (stranger tenant via broker 2019, rent never raised), so the allowed-loss position stands on client testimony; documentary risk only (judgment call 5)",
+    "Form 8962 household size (4 vs 3): client had no additional information - 4-person household remains a stated assumption (FPL 31,200 is the only library figure; a 3-person variant is not computable, cap would rise to 3,150)",
+    "NY residency end date 6/30 vs 7/3: client offered no further information - 6/30 (181 days) remains a stated assumption; impact limited to day-counted items",
+    "Assumed no additional Forms 1099, no 2025 estimated payments, no IRA/HSA/child-care/student-loan items, and no condo depreciation/placed-in-service documentation beyond the summary - client had no additional information; flagged, not verified",
+    "S-corp reasonable-compensation check (Q10) unanswered - no effect on return figures, flagged for the file"
+  ],
+  "client_confirmation_oct2026": {
+    "date": "2026-10",
+    "items": [
+      "Rental tenant is a stranger (a nurse found through a broker in 2019); rent was never raised - every factual condition of the library's below-market-rent carve-out is client-confirmed; lease document itself still not in the file",
+      "Marcus has made no capital contributions and no loans to the S-corp since the $10,000 at 2021 formation - matches the basis note; bank line is personally guaranteed by Pike (co-shareholder), so no debt basis",
+      "Remote work was employee convenience at both jobs (Marcus: told remote was fine, company did not need him out of state; Elena: requested it after Halvorsen closed its Tampa office years ago) - convenience-of-the-employer wage sourcing confirmed",
+      "Elena signed the Form 8332 release for Leo for 2025 - father claims Leo; CTC stays 2,200, the 4,522 refund variant is off the table",
+      "Elena joined Halvorsen's employer plan July 1, 2025 and the marketplace plan was dropped then - Form 8962 covered months locked at 6 (Jan-Jun)"
+    ],
+    "effect_on_figures": "None - every answer confirms a position already taken; all federal figures unchanged."
+  }
+}

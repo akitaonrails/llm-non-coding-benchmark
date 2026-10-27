@@ -1,0 +1,60 @@
+{
+  "case": "brlaw_05_divorcio_partilha",
+  "questions": "# Perguntas ao cliente (Marcelo) — respostas necessárias para fechar os números\n\nAs entregas já foram feitas com premissas destacadas (ver `proposta_acordo.md` §7). As respostas abaixo refinam os valores; nenhuma delas bloqueia a estratégia.\n\n**Já respondidas (não re-perguntadas):** pró-labore (15.000/mês); nunca distribuiu lucros (tudo reinvestido); quotas valem ~400.000 no casamento e 1.500.000 hoje; reforma de Atibaia em 2021 com ~120.000 de dinheiro comum; preferência por guarda compartilhada com semanas alternadas.\n\n1. **Separação de fato** — em que mês/ano o casal se separou de fato? (A base de partilha da valorização das quotas é a diferença entre o casamento (2014: R$ 400.000) e a separação de fato; usamos o laudo atual de R$ 1.500.000. Se a empresa valia menos na separação, o partilhável cai.)\n2. **PLR** — Marcelo recebe PLR? Valores dos últimos 3 anos e periodicidade? (PLR habitual tende a entrar na base dos alimentos; a proposta de Fernanda quer incluir \"eventual PLR\".)\n3. **Valores de declaração de IR** — quais os valores declarados no IR 2024/2025 para: apartamento de Perdizes, quotas da Andrade Engenharia, carro e PGBL? (Definem se a partilha corre sem ganho de capital — IN RFB 84/2001 — e a real exposição a ITBI/ITCMD.)\n4. **Apartamento de Perdizes** — Marcelo quer ficar no imóvel (pagando a equalização) ou vender e dividir o líquido? Fernanda e as crianças continuam morando lá? Existe contrato de financiamento que permite cessão?\n5. **Capacidade de pagamento** — de onde sairão os ~R$ 505.000 em dinheiro na assinatura (meação do apto + FGTS + reforma, líquidas das retenções do carro e do PGBL) e a apuração de haveres de R$ 550.000 (sugerido parcelar em 24–36×)? Há reserva/liquidez na empresa?\n6. **FGTS** — o saldo de R$ 140.000 está bloqueado/indisponível? A compensação dos R$ 70.000 da meação de Fernanda pode ser em dinheiro (sugerido) ou ela aceitará receber só quando houver saque?\n7. **Reforma de Atibaia (prova)** — a reforma de 2021 (~120.000 de dinheiro comum) está documentada (notas fiscais, recibos, transferências)? A avaliação atual de R$ 800.000 já reflete a reforma? (Se não refletir, o crédito comum pode ser maior.)\n8. **Guarda** — Fernanda declara não desejar a guarda? (Se não — e não há alegação de inaptidão — a compartilhada é a regra legal, CC 1.584 §2º.) Com qual genitor as crianças residem hoje?\n9. **Outros bens/renda** — há outros bens (poupanças, investimentos, imóveis, aluguéis) ou dívidas não listados no resumo? A renda de R$ 9.000 líquidos/mês de Fernanda é permanente?\n\n# PERGUNTAS (entrega opcional)\n\nVersão condensada das perguntas ao cliente; a versão completa com a justificativa de cada pergunta está em `QUESTIONS.md`. Perguntas já respondidas (pró-labore, lucros, valor das quotas, existência da reforma de Atibaia) não são repetidas.\n\n1. Data exata da **separação de fato** (base da apuração de haveres das quotas).\n2. **PLR**: recebe? valores dos últimos 3 anos? (entraria na base só se habitual).\n3. **Valores de declaração de IR** de apartamento, quotas, carro e PGBL (ganho de capital / ITBI / ITCMD).\n4. **Apartamento de Perdizes**: ficar com ele (pagar equalização) ou vender? Quem reside hoje?\n5. **Liquidez** para pagar ~R$ 505.000 na assinatura (apto + FGTS + reforma − retenções) + R$ 550.000 (haveres, sugere-se parcelar).\n6. **FGTS**: compensação dos R$ 70.000 em dinheiro desde já, ou condicionada ao saque?\n7. **Atibaia**: prova documental da reforma de 2021 (~120.000) e confirmação se a avaliação de 800.000 já a reflete.\n8. **Guarda**: Fernanda aceita compartilhada / declara não querer a guarda? Residência atual das crianças?\n9. Há **outros bens, rendas ou dívidas** não listados no resumo de patrimônio?\n",
+  "facts": [
+    {
+      "id": "carro_uso",
+      "trigger": [
+        "carro",
+        "dívida do carro",
+        "financiamento do carro",
+        "uso",
+        "família"
+      ],
+      "answer": "O carro era da família, levava as crianças. Está no nome dela e o financiamento também.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "lucros_reinvestidos",
+      "trigger": [
+        "lucros",
+        "reinvest",
+        "distribuiu",
+        "pró-labore",
+        "empresa valoriz"
+      ],
+      "answer": "Nunca distribuí lucro; reinvesti tudo. A empresa valia uns 400 mil quando casei e hoje 1,5 mi. Meu pró-labore é 15 mil, fora o salário de 24 mil de um emprego CLT.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "atibaia_reforma",
+      "trigger": [
+        "Atibaia",
+        "reforma",
+        "benfeitoria",
+        "dinheiro do casal"
+      ],
+      "answer": "Reformei a casa de Atibaia em 2021 com uns 120 mil do nosso dinheiro.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "guarda",
+      "trigger": [
+        "guarda",
+        "convivência",
+        "compartilhada"
+      ],
+      "answer": "Quero compartilhada, com as crianças morando com ela e comigo em semanas alternadas se der.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "atibaia_reforma",
+    "guarda",
+    "lucros_reinvestidos"
+  ],
+  "literal_suggestions": [
+    "carro_uso"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

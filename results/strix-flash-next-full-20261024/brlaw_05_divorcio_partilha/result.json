@@ -1,0 +1,24 @@
+{
+  "case": "brlaw_05_divorcio_partilha",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 2409.508925297996,
+  "controller_wait_seconds": 53.005520570033696,
+  "model_turn_seconds": 2356.124019687006,
+  "turns": 5,
+  "released_facts": [
+    "atibaia_reforma",
+    "guarda",
+    "lucros_reinvestidos"
+  ],
+  "usage": {
+    "input_tokens": 1816807,
+    "cached_input_tokens": 1708926,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 92865,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}

@@ -1,0 +1,14 @@
+{"event": "quarantined", "case": "brlaw_10_cobranca_prescrita", "preserved": "_aborted/brlaw_10_cobranca_prescrita-attempt1"}
+{"event": "quarantined", "case": "brlaw_03_pejotizacao", "preserved": "_aborted/brlaw_03_pejotizacao-attempt1"}
+{"event": "quarantined", "case": "bracc_05_abertura_empresa", "preserved": "_aborted/bracc_05_abertura_empresa-attempt1"}
+{"event": "quarantined", "case": "usacc_06_sale_asset_vs_stock", "preserved": "_aborted/usacc_06_sale_asset_vs_stock-attempt1"}
+{"event": "quarantined", "case": "brlaw_08_ma_diligencia", "preserved": "_aborted/brlaw_08_ma_diligencia-attempt1"}
+{"event": "quarantined", "case": "brlaw_02_contrato_lgpd", "preserved": "_aborted/brlaw_02_contrato_lgpd-attempt1"}
+{"event": "quarantined", "case": "bracc_06_venda_quotas_vs_ativos", "preserved": "_aborted/bracc_06_venda_quotas_vs_ativos-attempt1"}
+{"event": "quarantined", "case": "usacc_03_household_1040", "preserved": "_aborted/usacc_03_household_1040-attempt1"}
+{"time": "2026-10-26T02:20:00Z", "event": "lane_start", "cases": 8, "model": "qwen3.8-flash-next", "ssh_host": "b300-noncoding"}
+{"time": "2026-10-26T02:20:00Z", "event": "harness_start", "remaining": 8, "restarts": 0, "first": "brlaw_10_cobranca_prescrita", "last": "usacc_03_household_1040"}
+{"time": "2026-10-26T04:39:30Z", "event": "harness_exit", "returncode": 0, "stall_kill": false, "statuses": {"brlaw_10_cobranca_prescrita": ["completed_ungraded", 2], "brlaw_03_pejotizacao": ["completed_ungraded", 2], "bracc_05_abertura_empresa": ["infrastructure_failed", 2], "usacc_06_sale_asset_vs_stock": ["candidate_output_limit", 2], "brlaw_08_ma_diligencia": ["completed_ungraded", 2], "brlaw_02_contrato_lgpd": ["completed_ungraded", 2], "bracc_06_venda_quotas_vs_ativos": ["completed_ungraded", 2], "usacc_03_household_1040": ["completed_ungraded", 2]}}
+{"time": "2026-10-26T04:41:30Z", "event": "harness_start", "remaining": 1, "restarts": 1, "first": "bracc_05_abertura_empresa", "last": "bracc_05_abertura_empresa"}
+{"time": "2026-10-26T05:08:00Z", "event": "harness_exit", "returncode": 0, "stall_kill": false, "statuses": {"bracc_05_abertura_empresa": ["completed_ungraded", 3]}}
+{"time": "2026-10-26T05:10:00Z", "event": "lane_end", "completed": 8, "of": 8}

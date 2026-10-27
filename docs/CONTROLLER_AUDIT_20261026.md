@@ -82,10 +82,10 @@ they are an inconsistency the harness default should fix going forward.
 | RTX 5090 | usacc_03_household_1040 | over-release `employer_coverage` (LOW); `{TY}`; pack v1.1 | re-run completed_ungraded (14 min), pack v1.1; `employer_coverage` withheld |
 | RTX 5090 | uslaw_08_sale_diligence_apa | over-release `hensley_relationship` (LOW) | re-run completed_ungraded (18 min); `hensley_relationship` released on an explicit ask this time |
 | RTX 5090 | usacc_07_holding_qsbs | under-release `loans_terms` (LOW) | re-run completed_ungraded (10 min); `loans_terms` released on an explicit ask |
-| Strix | brlaw_07_credor_rj | over-release `essencial` (HIGH) | machine released 19:20 UTC 2026-10-26; re-run started 19:22 UTC (original preserved as `_aborted/<case>-attempt1`) |
-| Strix | brlaw_05_divorcio_partilha | over-release `atibaia_reforma` (LOW) | machine released 19:20 UTC 2026-10-26; re-run started 19:22 UTC (original preserved as `_aborted/<case>-attempt1`) |
-| Strix | usacc_01_schedule_c | over-release `commute`, late `payhub_fees` (LOW) | machine released 19:20 UTC 2026-10-26; re-run started 19:22 UTC (original preserved as `_aborted/<case>-attempt1`) |
-| Strix | usacc_03_household_1040 | `{TY}` placeholder leaked; pack v1.1 | machine released 19:20 UTC 2026-10-26; re-run started 19:22 UTC (original preserved as `_aborted/<case>-attempt1`) |
+| Strix | brlaw_07_credor_rj | over-release `essencial` (HIGH) | re-run completed 2026-10-26 (attempt 3; original `_aborted/brlaw_07_credor_rj-attempt1`, controller-error attempt `-attempt2`): `essencial` withheld in both client rounds (never asked), `epp`/`banco` released on explicit asks, stay pushback fired |
+| Strix | brlaw_05_divorcio_partilha | over-release `atibaia_reforma` (LOW) | re-run completed 2026-10-26: `atibaia_reforma` released because Q8 asked it explicitly this time; `carro_uso` withheld; FGTS/quotas pushback fired |
+| Strix | usacc_01_schedule_c | over-release `commute`, late `payhub_fees` (LOW) | re-run completed 2026-10-26: `commute` released on an explicit Q6 ask; `payhub_fees` withheld (never asked); no scripted pushback |
+| Strix | usacc_03_household_1040 | `{TY}` placeholder leaked; pack v1.1 | re-run completed 2026-10-26 on pack v1.1: all five facts released on explicit asks, answer verified placeholder-free; basis pushback fired |
 | Strix | uslaw_05 … uslaw_10 | adjudicated live by Claude Fable 5.1 from 2026-10-26 02:25 UTC (uslaw_05 round 1 and session-1 pushback were DeepSeek's, reviewed and judged correct); lane finished 07:12 UTC with 38/38 retained (34 completed, 4 output-limit) | no re-run needed |
 
 ## Infrastructure events recorded by the audit
@@ -205,3 +205,35 @@ same_session true). The four original attempts were quarantined under
 `_aborted/<case>-attempt1` with the audit reason in `retries.jsonl`, and
 `scripts/run_lane.py --max-attempts 6` supervises the re-runs with
 Claude Fable 5.1 adjudicating every controller decision.
+
+Controller error during the Strix re-run, 19:43 UTC: on brlaw_07 round 1 the
+intended release was `epp` and `banco`, but `controller.py decide` takes a
+comma-separated `--facts` list and the option was given twice, so only `banco`
+was written and the harness consumed the decision within a second. Rather than
+let the re-run carry a new under-release, the harness was interrupted at 19:44
+UTC; `run_lane.py` preserved that attempt as
+`_aborted/brlaw_07_credor_rj-attempt2` (reason also appended to
+`retries.jsonl`) and restarted the case at 19:46 UTC. The withheld
+`essencial` reasoning for that round stands: the model stated essentiality as an
+assumption and asked only where the goods were and whether still in use.
+
+## Strix re-run phase completed — 2026-10-27 00:14 UTC
+
+All four Strix re-runs hold retained `completed_ungraded` results
+(brlaw_07 on its third attempt, the others on their second). 14 decisions, all
+`claude-fable-5.1-session-agent`: 10 client rounds (4 with facts released, 1
+plain no-information reply for a new question without a fact, 5 archived
+re-saves/status tables with no response) and 4 session decisions (3 pushbacks
+fired on verified conditions: brlaw_07 stay, brlaw_05 FGTS/quota appreciation,
+usacc_03 basis limit; usacc_01 has no scripted pushback). Facts the audit had
+flagged as over-released (`essencial`, `carro_uso`, `payhub_fees`) were never
+asked and stayed withheld; `atibaia_reforma` and `commute` were released this
+time because the models asked for them explicitly. The lane summary was rebuilt
+(38/38 retained) and coverage regenerated. Infrastructure: one deliberate
+interruption (controller CLI error, above); a transient `/tmp` quota exhaustion
+on the desktop at ~22:40 UTC briefly blocked the controller console but not the
+harness, whose outputs live under `results/`. The Strix Strata server
+(pid 22744, session scope) was stopped after the lane finished. Supervisor logs
+for every re-run lane are preserved in `results/rerun-supervisor-logs-20261026/`.
+
+With this, every re-run in the registry is complete.

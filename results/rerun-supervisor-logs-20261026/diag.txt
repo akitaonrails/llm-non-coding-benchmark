@@ -1,0 +1,20 @@
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs            46G   37G  9.2G  80% /tmp
+131M	/tmp/claude-1026
+111M	/tmp/claude-1026/bash-edit-diff/537424071659318441-15582538489759315899-3f56f444f9b5a113/objects
+7.9M	/tmp/claude-1026/-mnt-data-Projects-llm-opensource-benchmark/7e84ed7c-2109-47dc-87db-f7c6013e24f2/scratchpad
+6.0M	/tmp/claude-1026/-mnt-data-Projects-llm-non-coding-benchmark/47dc1c0c-79e0-4b28-87eb-f287b9b7e721/scratchpad
+4.9M	/tmp/claude-1026/bash-edit-diff/537424071659318441-15582538489759315899-3f56f444f9b5a113/index
+180K	/tmp/claude-1026/-mnt-data-Projects-llm-non-coding-benchmark/47dc1c0c-79e0-4b28-87eb-f287b9b7e721/tasks
+144K	/tmp/claude-1026/bash-edit-diff/17426137337696560488-16214003716948691216-9fa7980c4f42c11c/objects
+140K	/tmp/claude-1026/bash-edit-diff/17426137337696560488-16214003716948691216-9bf2593ca7ee14d0/objects
+104K	/tmp/claude-1026/bash-edit-diff/17426137337696560488-16214003716948691216-c7be37cb7c98f979/objects
+Permissions Size User         Date Modified Name
+drwxr-xr-x     - akitaonrails 25 Oct 22:53  audit
+drwxr-xr-x     - akitaonrails 26 Oct 11:04  sol-probe-110452
+.rw-r--r--  2.2k akitaonrails 26 Oct 02:10  rerun-b300-fn.log
+.rw-r--r--   555 akitaonrails 26 Oct 04:45  rerun-b300-glm-uslaw09.log
+.rw-r--r--  1.6k akitaonrails 26 Oct 04:28  rerun-b300-glm.log
+.rw-r--r--   724 akitaonrails 26 Oct 16:46  rerun-strix.log
+.rwxr-xr-x  1.7k akitaonrails 26 Oct 12:15  rtx5090_rerun_watchdog.sh
+1336766 python3 -u scripts/run_lane.py --run-dir results/str

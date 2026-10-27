@@ -1,0 +1,22 @@
+{
+  "base_mensal_liquida": 43666.67,
+  "incide_sobre": [
+    "salário CLT líquido (R$ 24.000/mês — já após descontos de IR e INSS)",
+    "pró-labore habitual (R$ 15.000/mês — informado pelo cliente; presumido líquido recebido; se for bruto, a base líquida é menor — sem tabela na biblioteca para recalcular)",
+    "13º salário líquido (R$ 24.000/ano = R$ 2.000/mês) — STJ REsp 1.332.808",
+    "férias + terço constitucional líquidos (R$ 32.000/ano = R$ 2.666,67/mês) — STJ REsp 1.332.808",
+    "horas extras habituais (se houver — não informado)",
+    "PLR: controvérsia, com tendência de incidência quando habitual — cliente não informou PLR; se a outra parte provar habitualidade, integra a base"
+  ],
+  "nao_incide_sobre": [
+    "FGTS — depósitos mensais (R$ 2.400) e saque (library/alimentos_base_calculo.md)",
+    "verbas rescisórias de natureza indenizatória (aviso-prévio indenizado, multa de 40%, férias indenizadas) — STJ AgInt no AREsp",
+    "auxílios e diárias",
+    "lucros distribuídos — inexistentes: cliente confirma que nunca distribuiu lucro (tudo reinvestido); se passarem a ser distribuídos habitualmente, passam a integrar (biblioteca)",
+    "PLR eventual/não habitual (sem informação nos autos)"
+  ],
+  "percentual_sugerido": 25,
+  "valor_mensal_estimado": 10916.67,
+  "guarda": "compartilhada",
+  "fundamento": "Binômio necessidade–possibilidade e proporcionalidade (CC 1.694 §1º; 1.695; 1.699); biblioteca: sem percentual legal fixo, prática judicial de 15% a 30% dos rendimentos LÍQUIDOS (library/alimentos_base_calculo.md). Base anual líquida = 24.000×12 (CLT) + 15.000×12 (pró-labore habitual — biblioteca: pró-labore integra quando habitual) + 24.000 (13º) + 32.000 (férias, presumido já com terço e líquido) = 524.000 → mensal = 43.666,67. FGTS de 2.400 fora da base (não incidência). 25% → 10.916,67/mês (~131.000/ano; ~5.458/filho), dentro da faixa. Ancoragens: 20% = 8.733,33; 30% = 13.100,00. A renda líquida dele (~43,7k) é ≈ 4,9× a dela (9.000) — proporcionalidade favorece patamar entre 25% e 30% (escolha de 25% é juízo de proporcionalidade, não comando legal). Guarda compartilhada (regra legal — CC 1.584 §2º) não afasta alimentos do genitor sem a residência de referência (biblioteca); no regime de semanas alternadas pretendido pelo cliente, a desproporção de renda (4,9×) ainda justifica a pensão paga por ele; o efeito de custeio 50/50 rigoroso sobre o quantum NÃO ESTÁ VERIFICADO na biblioteca — risco de a outra parte pedir redução, ou o juiz fixar base maior (30%) dado o aumento da renda comprovada. Da proposta de Fernanda (30% do BRUTO incl. FGTS/rescisórias/PLR) rejeitam-se a base bruta e as parcelas não tributáveis; a inclusão do pró-labore, porém, procede — a base correta subiu de 28.666,67 para 43.666,67 com a informação nova."
+}

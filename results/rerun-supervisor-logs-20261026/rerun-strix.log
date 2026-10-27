@@ -1,0 +1,5 @@
+{"time": "2026-10-26T19:22:46Z", "event": "lane_start", "cases": 4, "model": "qwen3.8-flash-next-iq3_s", "ssh_host": "192.168.0.90"}
+{"time": "2026-10-26T19:22:46Z", "event": "harness_start", "remaining": 4, "restarts": 0, "first": "brlaw_07_credor_rj", "last": "usacc_03_household_1040"}
+{"time": "2026-10-26T19:44:46Z", "event": "harness_exit", "returncode": -15, "stall_kill": false, "statuses": {"brlaw_07_credor_rj": ["interrupted", 2], "brlaw_05_divorcio_partilha": ["absent", 1], "usacc_01_schedule_c": ["absent", 1], "usacc_03_household_1040": ["absent", 1]}}
+{"time": "2026-10-26T19:46:46Z", "event": "harness_start", "remaining": 4, "restarts": 1, "first": "brlaw_07_credor_rj", "last": "usacc_03_household_1040"}
+{"time": "2026-10-27T00:14:16Z", "event": "harness_exit", "returncode": 0, "stall_kill": false, "statuses": {"brlaw_07_credor_rj": ["completed_ungraded", 3], "brlaw_05_divorcio_partilha": ["completed_ungraded", 2], "usacc_01_schedule_c": ["completed_ungraded", 2], "usacc_03_household_1040": ["completed_ungraded", 2]}}

@@ -1,45 +1,21 @@
 [
   {
-    "case": "brlaw_04_execucao_fiscal",
+    "case": "brlaw_07_credor_rj",
     "status": "completed_ungraded",
     "error": null,
-    "elapsed_seconds": 5256.1666266540415,
-    "controller_wait_seconds": 203.02011696610134,
-    "model_turn_seconds": 5052.908622366085,
-    "turns": 9,
-    "released_facts": [
-      "ana_saida",
-      "opera"
-    ],
-    "usage": {
-      "input_tokens": 3936129,
-      "cached_input_tokens": 3670085,
-      "cache_write_input_tokens": 0,
-      "output_tokens": 194127,
-      "reasoning_output_tokens": 0
-    },
-    "api_equivalent_usd": null,
-    "api_charge_usd": 0,
-    "electricity_cost_usd": null
-  },
-  {
-    "case": "usacc_05_entity_choice",
-    "status": "completed_ungraded",
-    "error": null,
-    "elapsed_seconds": 2460.49685814901,
-    "controller_wait_seconds": 56.00545851304196,
-    "model_turn_seconds": 2404.111973227875,
+    "elapsed_seconds": 2119.7809003489674,
+    "controller_wait_seconds": 53.00635451008566,
+    "model_turn_seconds": 2066.3585304240696,
     "turns": 4,
     "released_facts": [
-      "green_card",
-      "marriage",
-      "where_work"
+      "banco",
+      "epp"
     ],
     "usage": {
-      "input_tokens": 1789480,
-      "cached_input_tokens": 1689690,
+      "input_tokens": 2016689,
+      "cached_input_tokens": 1900601,
       "cache_write_input_tokens": 0,
-      "output_tokens": 97462,
+      "output_tokens": 77678,
       "reasoning_output_tokens": 0
     },
     "api_equivalent_usd": null,
@@ -47,42 +23,23 @@
     "electricity_cost_usd": null
   },
   {
-    "case": "usacc_06_sale_asset_vs_stock",
-    "status": "candidate_output_limit",
-    "error": "Output limit reached without a completed turn; inspect /mnt/data/Projects/llm-non-coding-benchmark/results/strix-flash-next-full-20261024/usacc_06_sale_asset_vs_stock/01-s1-work",
-    "elapsed_seconds": 3850.877807818004,
-    "controller_wait_seconds": 0,
-    "model_turn_seconds": 3850.7214225550415,
-    "turns": 1,
-    "released_facts": [],
-    "usage": {
-      "input_tokens": 1231384,
-      "cached_input_tokens": 1130015,
-      "cache_write_input_tokens": 0,
-      "output_tokens": 171612,
-      "reasoning_output_tokens": 0
-    },
-    "api_equivalent_usd": null,
-    "api_charge_usd": 0,
-    "electricity_cost_usd": null
-  },
-  {
-    "case": "uslaw_04_litigation_sequence",
+    "case": "brlaw_05_divorcio_partilha",
     "status": "completed_ungraded",
     "error": null,
-    "elapsed_seconds": 4116.866095205012,
-    "controller_wait_seconds": 648.0647587350104,
-    "model_turn_seconds": 3468.625679197954,
-    "turns": 9,
+    "elapsed_seconds": 2409.508925297996,
+    "controller_wait_seconds": 53.005520570033696,
+    "model_turn_seconds": 2356.124019687006,
+    "turns": 5,
     "released_facts": [
-      "feb11",
-      "padded"
+      "atibaia_reforma",
+      "guarda",
+      "lucros_reinvestidos"
     ],
     "usage": {
-      "input_tokens": 3509422,
-      "cached_input_tokens": 3348016,
+      "input_tokens": 1816807,
+      "cached_input_tokens": 1708926,
       "cache_write_input_tokens": 0,
-      "output_tokens": 140426,
+      "output_tokens": 92865,
       "reasoning_output_tokens": 0
     },
     "api_equivalent_usd": null,
@@ -90,119 +47,51 @@
     "electricity_cost_usd": null
   },
   {
-    "case": "uslaw_05_divorce_split_support",
+    "case": "usacc_01_schedule_c",
     "status": "completed_ungraded",
     "error": null,
-    "elapsed_seconds": 2888.1236018440104,
-    "controller_wait_seconds": 44.004503698961344,
-    "model_turn_seconds": 2844.051804310002,
+    "elapsed_seconds": 7767.435516372032,
+    "controller_wait_seconds": 82.0079676900059,
+    "model_turn_seconds": 7685.021231472027,
+    "turns": 3,
+    "released_facts": [
+      "commute",
+      "denver",
+      "health",
+      "overlap",
+      "phone_pct"
+    ],
+    "usage": {
+      "input_tokens": 5181916,
+      "cached_input_tokens": 4862524,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 321982,
+      "reasoning_output_tokens": 0
+    },
+    "api_equivalent_usd": null,
+    "api_charge_usd": 0,
+    "electricity_cost_usd": null
+  },
+  {
+    "case": "usacc_03_household_1040",
+    "status": "completed_ungraded",
+    "error": null,
+    "elapsed_seconds": 3724.066655682982,
+    "controller_wait_seconds": 38.00338429200929,
+    "model_turn_seconds": 3685.701449729968,
     "turns": 4,
     "released_facts": [
-      "bonus_knowledge",
-      "house_plan"
+      "contrib",
+      "convenience",
+      "employer_coverage",
+      "fmv_rent",
+      "leo_8332"
     ],
     "usage": {
-      "input_tokens": 1841377,
-      "cached_input_tokens": 1716347,
+      "input_tokens": 3153418,
+      "cached_input_tokens": 2940605,
       "cache_write_input_tokens": 0,
-      "output_tokens": 115630,
-      "reasoning_output_tokens": 0
-    },
-    "api_equivalent_usd": null,
-    "api_charge_usd": 0,
-    "electricity_cost_usd": null
-  },
-  {
-    "case": "uslaw_07_chapter11_creditor",
-    "status": "completed_ungraded",
-    "error": null,
-    "elapsed_seconds": 4706.401973233034,
-    "controller_wait_seconds": 99.00978786201449,
-    "model_turn_seconds": 4606.971418604953,
-    "turns": 4,
-    "released_facts": [
-      "credit_bureau",
-      "critical_vendor",
-      "terms"
-    ],
-    "usage": {
-      "input_tokens": 3857465,
-      "cached_input_tokens": 3615408,
-      "cache_write_input_tokens": 0,
-      "output_tokens": 189502,
-      "reasoning_output_tokens": 0
-    },
-    "api_equivalent_usd": null,
-    "api_charge_usd": 0,
-    "electricity_cost_usd": null
-  },
-  {
-    "case": "uslaw_08_sale_diligence_apa",
-    "status": "completed_ungraded",
-    "error": null,
-    "elapsed_seconds": 3129.4924625709536,
-    "controller_wait_seconds": 103.0099502139492,
-    "model_turn_seconds": 3026.1030857348815,
-    "turns": 4,
-    "released_facts": [
-      "hensley_relationship",
-      "installers_hours"
-    ],
-    "usage": {
-      "input_tokens": 2838550,
-      "cached_input_tokens": 2656279,
-      "cache_write_input_tokens": 0,
-      "output_tokens": 120458,
-      "reasoning_output_tokens": 0
-    },
-    "api_equivalent_usd": null,
-    "api_charge_usd": 0,
-    "electricity_cost_usd": null
-  },
-  {
-    "case": "uslaw_09_retaliation_termination",
-    "status": "completed_ungraded",
-    "error": null,
-    "elapsed_seconds": 5430.050433901022,
-    "controller_wait_seconds": 181.01856000395492,
-    "model_turn_seconds": 5248.831024050887,
-    "turns": 6,
-    "released_facts": [
-      "fmla_status",
-      "group",
-      "investigation",
-      "pip_author"
-    ],
-    "usage": {
-      "input_tokens": 8650407,
-      "cached_input_tokens": 8317667,
-      "cache_write_input_tokens": 0,
-      "output_tokens": 199401,
-      "reasoning_output_tokens": 0
-    },
-    "api_equivalent_usd": null,
-    "api_charge_usd": 0,
-    "electricity_cost_usd": null
-  },
-  {
-    "case": "uslaw_10_llc_squeeze_out",
-    "status": "completed_ungraded",
-    "error": null,
-    "elapsed_seconds": 2872.754679452977,
-    "controller_wait_seconds": 104.01016018202063,
-    "model_turn_seconds": 2768.324340632069,
-    "turns": 4,
-    "released_facts": [
-      "fund",
-      "knowledge_fees",
-      "notice",
-      "offer_timing"
-    ],
-    "usage": {
-      "input_tokens": 2049120,
-      "cached_input_tokens": 1910154,
-      "cache_write_input_tokens": 0,
-      "output_tokens": 110163,
+      "output_tokens": 151863,
       "reasoning_output_tokens": 0
     },
     "api_equivalent_usd": null,

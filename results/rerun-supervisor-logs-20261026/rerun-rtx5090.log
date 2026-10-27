@@ -1,0 +1,17 @@
+{"event": "quarantined", "case": "brlaw_03_pejotizacao", "preserved": "_aborted/brlaw_03_pejotizacao-attempt1"}
+{"event": "quarantined", "case": "uslaw_07_chapter11_creditor", "preserved": "_aborted/uslaw_07_chapter11_creditor-attempt4"}
+{"event": "quarantined", "case": "bracc_04_lucro_real_trimestre", "preserved": "_aborted/bracc_04_lucro_real_trimestre-attempt1"}
+{"event": "quarantined", "case": "brlaw_04_execucao_fiscal", "preserved": "_aborted/brlaw_04_execucao_fiscal-attempt5"}
+{"event": "quarantined", "case": "brlaw_07_credor_rj", "preserved": "_aborted/brlaw_07_credor_rj-attempt4"}
+{"event": "quarantined", "case": "brlaw_08_ma_diligencia", "preserved": "_aborted/brlaw_08_ma_diligencia-attempt4"}
+{"event": "quarantined", "case": "usacc_03_household_1040", "preserved": "_aborted/usacc_03_household_1040-attempt4"}
+{"event": "quarantined", "case": "uslaw_08_sale_diligence_apa", "preserved": "_aborted/uslaw_08_sale_diligence_apa-attempt4"}
+{"event": "quarantined", "case": "usacc_07_holding_qsbs", "preserved": "_aborted/usacc_07_holding_qsbs-attempt4"}
+{"time": "2026-10-26T15:09:12Z", "event": "lane_start", "cases": 9, "model": "qwen3.8-flash-next-iq3_s", "ssh_host": null}
+{"time": "2026-10-26T15:09:12Z", "event": "harness_start", "remaining": 2, "restarts": 0, "first": "brlaw_03_pejotizacao", "last": "bracc_04_lucro_real_trimestre"}
+{"time": "2026-10-26T15:10:01Z", "event": "lane_start", "cases": 9, "model": "qwen3.8-flash-next-iq3_s", "ssh_host": null}
+{"time": "2026-10-26T15:10:01Z", "event": "harness_start", "remaining": 9, "restarts": 0, "first": "brlaw_03_pejotizacao", "last": "usacc_07_holding_qsbs"}
+{"time": "2026-10-26T17:28:07Z", "event": "harness_exit", "returncode": 0, "stall_kill": false, "statuses": {"brlaw_03_pejotizacao": ["infrastructure_failed", 3], "uslaw_07_chapter11_creditor": ["completed_ungraded", 5], "bracc_04_lucro_real_trimestre": ["candidate_output_limit", 2], "brlaw_04_execucao_fiscal": ["completed_ungraded", 6], "brlaw_07_credor_rj": ["completed_ungraded", 5], "brlaw_08_ma_diligencia": ["completed_ungraded", 5], "usacc_03_household_1040": ["completed_ungraded", 5], "uslaw_08_sale_diligence_apa": ["completed_ungraded", 5], "usacc_07_holding_qsbs": ["completed_ungraded", 5]}}
+{"time": "2026-10-26T17:30:07Z", "event": "harness_start", "remaining": 1, "restarts": 1, "first": "brlaw_03_pejotizacao", "last": "brlaw_03_pejotizacao"}
+{"time": "2026-10-26T17:44:08Z", "event": "harness_exit", "returncode": 0, "stall_kill": false, "statuses": {"brlaw_03_pejotizacao": ["completed_ungraded", 4]}}
+{"time": "2026-10-26T17:46:08Z", "event": "lane_end", "completed": 9, "of": 9}

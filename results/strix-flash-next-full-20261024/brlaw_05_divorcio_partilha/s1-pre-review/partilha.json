@@ -1,0 +1,83 @@
+[
+  {
+    "bem": "Apartamento (Perdizes)",
+    "natureza": "comum",
+    "valor_total": 1200000,
+    "valor_partilhavel": 900000,
+    "meacao_fernanda": 450000,
+    "fundamento": "Adquirido em 2017, na constância do casamento, por título oneroso — CC art. 1.660, I (library/cc_comunhao_parcial.md). Valor partilhável líquido do saldo devedor do financiamento (R$ 300.000), dívida contraída para os encargos da família — art. 1.664 (library/cc_comunhao_parcial.md).",
+    "controversia": "Nenhuma quanto à natureza. Em aberto: quem fica com o imóvel (manter com compensação em dinheiro ou alienar a terceiro) e o valor de declaração para fins de ganho de capital (pendente — cliente não tem mais informação; ver STATUS.md)."
+  },
+  {
+    "bem": "Casa em Atibaia",
+    "natureza": "particular",
+    "valor_total": 800000,
+    "valor_partilhavel": 0,
+    "meacao_fernanda": 0,
+    "fundamento": "Bem recebido por sucessão na constância do casamento — excluído da comunhão (CC art. 1.659, I — library/cc_comunhao_parcial.md). Formal de partilha do inventário de João Andrade (2019) atribui o imóvel exclusivamente a Marcelo, registrado na matrícula em 11/2019 (documents/formal_partilha_atibaia.md). A pretensão de Fernanda à metade é infundada.",
+    "controversia": "A reforma de 2021 foi paga com ~R$ 120.000 de recursos comuns (info do cliente) — tratada na linha própria 'Benfeitorias em Atibaia'. A valorização residual do imóvel (avaliada em 620.000 em 2019; hoje 800.000, valor que presumivelmente já reflete a reforma) é tida como natural e não comunicável — NÃO VERIFICADO na biblioteca (esta só comunica frutos, CC 1.660, V). Risco negociado: Fernanda pode alegar meação sobre a valorização total (R$ 180.000 → 90.000) com base no dispêndio comum."
+  },
+  {
+    "bem": "Benfeitorias/reforma em Atibaia (2021, com recursos comuns)",
+    "natureza": "comum",
+    "valor_total": 0,
+    "valor_partilhavel": 120000,
+    "meacao_fernanda": 60000,
+    "fundamento": "R$ 120.000 aplicados na reforma da casa particular de Marcelo em 2021 com dinheiro do casal (confirmação do cliente). Recursos da comunhão aplicados em bem particular geram crédito partilhável do casal — fundamentos de apoio na biblioteca: CC 1.658 (comuniam-se os bens que sobrevierem na constância) e CC 1.659, I (só o bem recebido por sucessão e os sub-rogados em seu lugar são excluídos; o que foi comprado com dinheiro comum não é sub-rogado em bem particular). NÃO VERIFICADO na biblioteca: regra específica sobre benfeitorias/comunhão de investimento em bem particular — tratado como crédito comum de R$ 120.000, meação R$ 60.000, pago por Marcelo junto com a equalização (a casa fica integralmente com ele). valor_total lançado como 0: os 120.000 aplicados estão embutidos na avaliação atual da casa (800.000); o crédito entra apenas no valor_partilhavel, evitando dupla contagem no bruto.",
+    "controversia": "Qualificação jurídica não coberta pela biblioteca (alternativa: 'sub-rogação' de 120.000 do imóvel na comunhão — mesmo efeito econômico de 60.000 cada). Depende de prova documental (notas/recibos da reforma) e de saber se a avaliação atual de 800.000 já reflete a reforma — se não refletir, o crédito pode ser maior. Não somado ao bruto do TOTAL para não dupla contagem com a avaliação do imóvel."
+  },
+  {
+    "bem": "FGTS — Marcelo (saldo integral depositado na constância)",
+    "natureza": "comum",
+    "valor_total": 140000,
+    "valor_partilhavel": 140000,
+    "meacao_fernanda": 70000,
+    "fundamento": "Valores depositados em conta vinculada durante o casamento integram o patrimônio comum e são partilháveis, ainda que o saque seja diferido — STJ REsp 1.399.199/RS (2ª Seção, 2017); o art. 1.659, VI não afasta a partilha do que já se incorporou ao patrimônio (library/stj_fgts_quotas_previdencia.md).",
+    "controversia": "Nenhuma (posição firmada). A proposta de Fernanda de deixar o FGTS 'porque é dele' é concessionária e contrária à orientação do próprio STJ — na equalização, a meação de R$ 70.000 entra no cálculo; o saldo permanece em conta de Marcelo, que compensa em dinheiro."
+  },
+  {
+    "bem": "Quotas — Andrade Engenharia Ltda. (100%)",
+    "natureza": "misto",
+    "valor_total": 1500000,
+    "valor_partilhavel": 1100000,
+    "meacao_fernanda": 550000,
+    "fundamento": "Quotas: bem particular (sociedade constituída em 2011, antes do casamento — CC art. 1.659, I). Comunicam-se a valorização decorrente de esforço comum e os lucros não distribuídos/reinvestidos na constância (frutos — CC art. 1.660, V), apurados por apuração de haveres da fração do período, sem ingresso do ex-cônjuge na sociedade (STJ REsp 1.595.775/AP; CC 1.027, citados em library/stj_fgts_quotas_previdencia.md). Cálculo de referência da biblioteca: diferença entre o casamento e a separação de fato — R$ 1.500.000 (laudo) − R$ 400.000 (valor no casamento, confirmado pelo cliente) = R$ 1.100.000; meação = R$ 550.000. Cliente confirma nunca ter distribuído lucros (tudo reinvestido), o que encaixa exatamente na fórmula de comunicação da biblioteca.",
+    "controversia": "Há divergência reconhecida na biblioteca sobre o alcance da comunicação (esforço comum; período exato). A base usa a diferença até a separação de fato — data não informada (cliente não tem mais informação); assumiu-se o laudo atual (1.500.000). Se a separação de fato for anterior e a empresa valia menos, a base cai. Valor do laudo vs. valor de declaração (tributos) pendente."
+  },
+  {
+    "bem": "PGBL — Fernanda (aportes 2016–2025, na constância)",
+    "natureza": "comum",
+    "valor_total": 90000,
+    "valor_partilhavel": 90000,
+    "meacao_fernanda": 45000,
+    "fundamento": "Previdência privada aberta (PGBL) em fase de acumulação: saldo formado por aportes na constância é partilhável, por sua natureza de investimento — STJ REsp 1.698.774/RS (3ª Turma, 2020), adotado como posição de referência pela biblioteca (library/stj_fgts_quotas_previdencia.md). O saldo fica com Fernanda; ela compensa Marcelo com R$ 45.000. A proposta de Fernanda omite este bem — não há 'metade só do que está no nome do Marcelo'.",
+    "controversia": "Matéria controvertida: a 4ª Turma tem decisões em sentido contrário quanto ao VGBL; a biblioteca adota a partilha do PGBL como posição de referência e manda registrar a controvérsia."
+  },
+  {
+    "bem": "Carro (SUV)",
+    "natureza": "comum",
+    "valor_total": 120000,
+    "valor_partilhavel": 60000,
+    "meacao_fernanda": 30000,
+    "fundamento": "Bem móvel usado pela família, presumido adquirido na constância (CC art. 1.662) e adquirido por título oneroso (CC art. 1.660, I). Líquido do saldo devedor de R$ 60.000 (art. 1.664). Acordo de atribuição integral a Fernanda, que assume a dívida remanescente — alinhado à vontade do cliente (documents/email_cliente.txt).",
+    "controversia": "Nenhuma (atribuição acordada entre as partes)."
+  },
+  {
+    "bem": "TOTAL",
+    "natureza": "",
+    "valor_total": 3850000,
+    "valor_partilhavel": 2410000,
+    "meacao_fernanda": 1205000,
+    "fundamento": "valor_total = soma dos valores brutos dos bens (1.200.000 + 800.000 + 140.000 + 1.500.000 + 90.000 + 120.000 = 3.850.000; a linha de benfeitorias tem valor_total 0 porque os 120.000 já estão embutidos na avaliação da casa, evitando dupla contagem). valor_partilhavel = 900.000 + 0 + 120.000 + 140.000 + 1.100.000 + 90.000 + 60.000 = 2.410.000 (dívidas de 300.000 + 60.000 já deduzidas do apto e do carro). Meação de cada cônjuge = 2.410.000 ÷ 2 = 1.205.000.",
+    "controversia": "Sujeito às controvérsias das linhas Quotas, Benfeitorias e PGBL e aos pendentes listados em STATUS.md."
+  },
+  {
+    "bem": "DIVIDAS",
+    "natureza": "comum",
+    "valor_total": 360000,
+    "valor_partilhavel": 360000,
+    "meacao_fernanda": 180000,
+    "fundamento": "Financiamento do apartamento R$ 300.000 + financiamento do carro R$ 60.000; bens da comunhão respondem por obrigações contraídas para os encargos da família (art. 1.664, library/cc_comunhao_parcial.md). Meação ideal de cada um = R$ 180.000; na equalização, Marcelo assume os R$ 300.000 (fica com o apartamento) e Fernanda os R$ 60.000 (fica com o carro) — a diferença já está refletida no cálculo em valores líquidos, em que o total partilhável de 2.410.000 equivale aos brutos partilháveis (2.770.000) menos as dívidas (360.000).",
+    "controversia": "Nenhuma quanto à existência; quitação/assunção das dívidas perante os credores (cessão de financiamento) exige anuência dos bancos — item prático."
+  }
+]

@@ -1,0 +1,11 @@
+{"event": "quarantined", "case": "brlaw_03_pejotizacao", "preserved": "_aborted/brlaw_03_pejotizacao-attempt1"}
+{"event": "quarantined", "case": "uslaw_03_noncompete_memo", "preserved": "_aborted/uslaw_03_noncompete_memo-attempt1"}
+{"event": "quarantined", "case": "uslaw_09_retaliation_termination", "preserved": "_aborted/uslaw_09_retaliation_termination-attempt2"}
+{"event": "quarantined", "case": "brlaw_05_divorcio_partilha", "preserved": "_aborted/brlaw_05_divorcio_partilha-attempt1"}
+{"event": "quarantined", "case": "brlaw_08_ma_diligencia", "preserved": "_aborted/brlaw_08_ma_diligencia-attempt1"}
+{"event": "quarantined", "case": "uslaw_02_msa_playbook", "preserved": "_aborted/uslaw_02_msa_playbook-attempt1"}
+{"event": "quarantined", "case": "usacc_03_household_1040", "preserved": "_aborted/usacc_03_household_1040-attempt1"}
+{"time": "2026-10-26T05:21:57Z", "event": "lane_start", "cases": 7, "model": "glm-5.3-flash", "ssh_host": "b300-noncoding"}
+{"time": "2026-10-26T05:21:57Z", "event": "harness_start", "remaining": 6, "restarts": 0, "first": "brlaw_03_pejotizacao", "last": "usacc_03_household_1040"}
+{"time": "2026-10-26T07:26:58Z", "event": "harness_exit", "returncode": 0, "stall_kill": false, "statuses": {"brlaw_03_pejotizacao": ["completed_ungraded", 2], "uslaw_03_noncompete_memo": ["completed_ungraded", 2], "brlaw_05_divorcio_partilha": ["completed_ungraded", 2], "brlaw_08_ma_diligencia": ["completed_ungraded", 2], "uslaw_02_msa_playbook": ["completed_ungraded", 2], "usacc_03_household_1040": ["completed_ungraded", 2]}}
+{"time": "2026-10-26T07:28:58Z", "event": "lane_end", "completed": 6, "of": 7}

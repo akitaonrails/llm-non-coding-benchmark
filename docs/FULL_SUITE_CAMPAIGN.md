@@ -9,10 +9,10 @@ models share a sequential lane.
 | Configuration | Required coverage | State |
 |---|---|---|
 | Sol 6 medium / Codex, four workers | 38 cases / 63 sessions | Completed 2026-10-26 15:16 UTC: results/sol6-medium-full-20261026, 38/38 completed (fresh run after the usage limit lifted early; results/sol6-medium-full-20261024 retains the quota-failed attempt: 4 completed, 34 explicit infrastructure failures) |
-| Flash-Next NVFP4 / single B300 | 38 cases / 63 sessions | Running: results/b300-flash-next-full-20261024 |
-| GLM 5.3 Flash NVFP4 / same B300 | 38 cases / 63 sessions | Automated handoff queued behind Flash-Next (scripts/b300_sequence.py) → results/b300-glm53-flash-full-20261024 |
-| Flash-Next IQ3_S / RTX 5090 | 38 cases / 63 sessions | Running: results/rtx5090-flash-next-full-20261024 (reinstated 19:57 UTC; guarded server, 4 GiB reserve) |
-| Flash-Next IQ3_S / Strix Halo | 38 cases / 63 sessions | Running: results/strix-flash-next-full-20261024 |
+| Flash-Next NVFP4 / single B300 | 38 cases / 63 sessions | Completed (33 completed, 5 output-limit); audit re-runs completed 2026-10-26 |
+| GLM 5.3 Flash NVFP4 / same B300 | 38 cases / 63 sessions | Completed (31 completed, 7 output-limit); audit re-runs completed 2026-10-26; pod powered off 2026-10-26 19:18 UTC |
+| Flash-Next IQ3_S / RTX 5090 | 38 cases / 63 sessions | Completed (35 completed, 3 output-limit); nine audit re-runs completed 2026-10-26 17:46 UTC |
+| Flash-Next IQ3_S / Strix Halo | 38 cases / 63 sessions | Completed 2026-10-26 07:12 UTC (34 completed, 4 output-limit); four audit re-runs completed 2026-10-27 00:14 UTC |
 
 Machine-readable scope: config/suite_full_20261024.json. Runners must receive
 all 38 explicit case arguments; their core-only defaults are not the full suite.
@@ -163,3 +163,7 @@ Strix re-runs started 19:22 UTC against the lane's still-resident Strata server
 (`results/preflight-strix-rerun-20261026` admission passed, artifact 391).
 Details and the infrastructure events are in
 [CONTROLLER_AUDIT_20261026.md](CONTROLLER_AUDIT_20261026.md).
+The four Strix re-runs then ran 19:22 UTC to 00:14 UTC (2026-10-27) on the
+lane's resident server, which was stopped afterwards; all four hold completed
+results. Every re-run in the audit registry is now complete, and coverage in
+`results/full-suite-coverage-20261024.json` reflects the final state.

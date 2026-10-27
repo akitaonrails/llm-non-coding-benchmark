@@ -1,0 +1,85 @@
+{
+  "case": "usacc_01_schedule_c",
+  "questions": "# Questions & Flags — Dana Okafor 2025 Schedule C\n\nThe client answered our follow-up questions and then confirmed she has **no additional\ninformation** for anything else. Per her instruction, answered questions are not asked\nagain; the remaining unknowns are flagged once, here and in the workpapers, with the\ntreatment used.\n\n## Part A — Resolved by client answers (applied)\n\n- **Q1. Did Beacon and Orchard pay through PayHub, or outside it?** Answer: Beacon and\n  Orchard paid **through PayHub**; Tessaro paid by **direct bank transfer**. Applied:\n  line 1 = PayHub 1099-K box 1a gross $41,350.00 + Tessaro direct ACH $9,400.00 =\n  $50,750.00. The Beacon NEC ($18,500.00) and Orchard NEC ($12,200.00) sit inside the\n  1099-K gross and are not added again; the Tessaro NEC ($9,400.00) matches the four\n  bank ACH credits exactly. Her \"just add up the 1099s\" idea ($81,450.00) would\n  double-count and was rejected.\n- **Q2. What was the June 13 AUS-DEN flight for?** Answer: her **cousin's wedding**.\n  Applied: $389.00 is personal (IRC 262), not line 24a.\n- **Q5. Business-use percentage for phone and internet?** Answer: **60%**. Applied:\n  line 25 = ($1,020.00 + $840.00) × 60% = $1,116.00 (previously an assumed 80%).\n- **Q9a. Is the BCBS premium her own policy?** Answer: **yes — her own plan, started\n  after leaving Larkspur**. Applied: 8 × $380.00 = $3,040.00 to Form 1040 Schedule 1\n  line 17 (library Schedule C instructions, line 15 note), not Schedule C. Documents\n  corroborate: payroll credits end 2025-04-28, premiums start 2025-05-09, W-2 box 12\n  code DD $1,960.00 shows employer coverage Jan–Apr.\n\n## Part B — Remaining unknowns (client has no additional information; NOT re-asked; flagged in place)\n\n- **U1 (was Q4) — MacBook Pro 14, $2,149.00 (2025-09-14): business-use percentage\n  unknown.** Treatment: expensed on line 27a under the de minimis safe harbor\n  (Reg. 1.263(a)-1(f), library excerpt) with **100% business use assumed**. If a mixed\n  use later emerges, line 27a and net profit change.\n- **U2 (was Q6) — mileage log page 2 never provided.** Page 1 shows 1,150 miles marked\n  \"misc…see page 2.\" Treatment: **included** in line 9 (1,428 × $0.70 = $999.60) but\n  flagged as facially unsubstantiated; if page 2 is produced and shows personal miles,\n  line 9 shrinks.\n- **U3 (was Q7) — home-office status unknown.** Treatment: the 2,232 Capital Factory\n  coworking miles (May–Dec) are treated as **nondeductible commuting** (Pub 463,\n  library excerpt) and excluded from line 9, even though the space rent itself is a\n  deductible line 20b expense. A qualifying home office could make those miles\n  deductible (~$1,562 additional).\n- **U4 (was Q8) — $1,090.00 Larkspur wage gap.** W-2 box 1 $24,800.00 less FICA\n  ($1,537.60 + $359.60) implies take-home $20,592.80, but payroll credits to this\n  account total $19,502.80. Flagged for the 1040-side reconciliation (possible\n  benefit/pre-tax deductions); does not affect Schedule C or Schedule SE.\n\n## Part C — Questions mooted by the final document set\n\n- **Q3 (March hometown meals)**: the final account export contains **no March\n  restaurant-type debits** (only H-E-B groceries, personal). The SF conference-trip\n  meals ($64 + $126) are substantiated by the trip documents (flight, hotel, DESIGNWEEK\n  registration) and sit on line 24b at 50% ($95.00). Nothing outstanding.\n- **Hiscox premium split**: the account shows a single $480.00 premium payment\n  (2025-02-20); line 15 = $480.00. Nothing outstanding.\n- **1099-NEC vs 1099-K gross-up (Tessaro)**: the Tessaro NEC ($9,400.00) ties to the\n  bank credits exactly. No outstanding item.\n",
+  "facts": [
+    {
+      "id": "commute",
+      "trigger": [
+        "commute",
+        "Larkspur office",
+        "drive to work",
+        "1,200",
+        "daily"
+      ],
+      "answer": "Oh — yes, the ~1,200 miles Jan–April were me driving to the Larkspur office every day. I guess that's commuting? The rest is client stuff and the coworking space.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "payhub_fees",
+      "trigger": [
+        "PayHub fee",
+        "net of fees",
+        "gross vs",
+        "payout",
+        "2.9",
+        "difference between 1099-K and deposits"
+      ],
+      "answer": "PayHub takes 2.9% off the top before paying out. The 1099-K number is before their cut.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "phone_pct",
+      "trigger": [
+        "phone",
+        "internet",
+        "business use percentage",
+        "T-Mobile",
+        "Spectrum"
+      ],
+      "answer": "Phone and internet are maybe 60% work? I don't have a separate line.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "denver",
+      "trigger": [
+        "Denver",
+        "June flight",
+        "AUS-DEN",
+        "Southwest 118"
+      ],
+      "answer": "Denver was my cousin's wedding, nothing work-related.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "overlap",
+      "trigger": [
+        "Beacon",
+        "Orchard",
+        "paid through PayHub",
+        "which clients use PayHub",
+        "double"
+      ],
+      "answer": "Beacon and Orchard both pay me through PayHub. Tessaro pays by bank transfer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "health",
+      "trigger": [
+        "health insurance",
+        "Blue Cross",
+        "BCBS"
+      ],
+      "answer": "That's my own health plan after I left Larkspur. Not through any employer.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [
+    "commute",
+    "denver",
+    "health",
+    "overlap",
+    "phone_pct"
+  ],
+  "literal_suggestions": [],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

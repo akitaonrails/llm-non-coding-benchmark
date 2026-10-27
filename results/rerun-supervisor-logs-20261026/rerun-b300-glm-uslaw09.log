@@ -1,0 +1,4 @@
+{"time": "2026-10-26T07:29:19Z", "event": "lane_start", "cases": 1, "model": "glm-5.3-flash", "ssh_host": "b300-noncoding"}
+{"time": "2026-10-26T07:29:19Z", "event": "harness_start", "remaining": 1, "restarts": 0, "first": "uslaw_09_retaliation_termination", "last": "uslaw_09_retaliation_termination"}
+{"time": "2026-10-26T07:43:49Z", "event": "harness_exit", "returncode": 0, "stall_kill": false, "statuses": {"uslaw_09_retaliation_termination": ["completed_ungraded", 4]}}
+{"time": "2026-10-26T07:45:49Z", "event": "lane_end", "completed": 1, "of": 1}

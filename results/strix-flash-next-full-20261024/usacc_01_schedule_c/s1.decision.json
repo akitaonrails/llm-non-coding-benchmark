@@ -1,0 +1,1 @@
+{"pushback_indices": [], "nudge": false, "reason": "Case script defines no session-1 pushbacks for usacc_01; nothing to select. Artifacts inspected (schedule_c.json, schedule_c.md): commute miles excluded from line 9, PayHub gross used on line 1.", "controller": "claude-fable-5.1-session-agent", "decided_at": "2026-10-26T22:52:00Z"}

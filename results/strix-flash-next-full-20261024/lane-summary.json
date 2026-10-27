@@ -1,5 +1,5 @@
 {
-  "rebuilt_at": "2026-10-26T07:48:24Z",
+  "rebuilt_at": "2026-10-27T00:17:05Z",
   "model": "qwen3.8-flash-next-iq3_s",
   "hardware": "Strix Halo; IQ3_S; Strata 0.1.45.3 resident experts",
   "cases": {
@@ -61,11 +61,11 @@
     },
     "brlaw_05_divorcio_partilha": {
       "status": "completed_ungraded",
-      "attempts": 1
+      "attempts": 2
     },
     "brlaw_07_credor_rj": {
       "status": "completed_ungraded",
-      "attempts": 1
+      "attempts": 3
     },
     "brlaw_08_ma_diligencia": {
       "status": "completed_ungraded",
@@ -81,7 +81,7 @@
     },
     "usacc_01_schedule_c": {
       "status": "completed_ungraded",
-      "attempts": 1
+      "attempts": 2
     },
     "usacc_02_close_gap": {
       "status": "completed_ungraded",
@@ -89,7 +89,7 @@
     },
     "usacc_03_household_1040": {
       "status": "completed_ungraded",
-      "attempts": 1
+      "attempts": 2
     },
     "usacc_04_twelve_closes": {
       "status": "candidate_output_limit",

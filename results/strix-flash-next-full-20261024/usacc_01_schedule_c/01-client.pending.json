@@ -1,0 +1,86 @@
+{
+  "case": "usacc_01_schedule_c",
+  "questions": "# Questions for Dana Okafor — 2025 Schedule C / SE prep\n\nThese are the points the documents genuinely leave open. Each shows the effect on the\nreturn, using figures from `schedule_c.json`. Answer by line number in your reply.\n\n**Q1 — Do the Beacon ($9,200) and Orchard ($12,200) 1099-NEC totals represent payments\nthat reached you through PayHub?** Your PayHub 1099-K gross ($41,350 for 61\ntransactions) is the only source of those clients' income in the bank data — there are\nno separate Beacon or Orchard deposits. If any part of those NEC totals was paid to\nyou outside PayHub (check, another account, cash), Schedule C line 1 must increase by\nthat amount — all income you actually received must be reported. Right now I report\nline 1 = $41,350 (PayHub gross) + $9,400 (Tessaro direct ACH) = $50,750, and I assume\nBeacon's $9,200 and Orchard's $12,200 are already inside the $41,350. The Tessaro 1099-NEC\n($18,500) vs. the $9,400 of direct deposits is the same issue: was the $9,100\ndifference routed through PayHub?\n\n**Q2 — Was the June 13 Denver flight (Southwest $389.00) personal?** The bank shows\nDenver spending that month for REI, House of Blues, the Denver Palace Hotel, and a\n\"VENMO: DENVER TRIP SPLIT\" between personal contacts, so I classified the flight as\npersonal. If it was a business trip, tell me the business purpose and it moves to\ntravel (line 24a, +$389.00).\n\n**Q3 — Were any of your March meals business-related?** I claimed only the two San\nFrancisco meals on the confirmed October client trip ($64.00 + $126.00, 50% limit →\nline 24b = $95.00). The four March Austin debits — Picklor ($52.00, 3rd), Bar Bar\nBlackboard ($132.00, 17th), Life is Beautiful Fest ($78.00, 21st), Hardy's ($74.00,\n22nd) — are personal absent a business purpose. Your email says \"meals are business,\"\nbut Pub. 463 (library) requires substantiation. Each documented business meal adds 50%\nof its cost to line 24b; all four business → line 24b rises to $95.00 + $168.00 =\n$263.00.\n\n**Q4 — Was the MacBook Pro 14 ($2,149.00, charged to your personal Apple Care on\n2025-09-14) used 100% for business?** You wrote it became your main work machine, so I\nexpensed it (de minimis, under $2,500). If you also used it personally, tell me the\nbusiness percentage — line 27a falls by 2,149.00 × (personal %). Also: your email says\n\"that July MacBook\" but the charge date is September 14 — if there was a *second*\nApple purchase in July I need the receipt.\n\n**Q5 — What percentage of your phone ($1,020/yr T-Mobile) and internet ($840/yr\nSpectrum) use is business?** You did not give a percentage. I applied **80% as an\nassumption** (line 25 = $1,488.00). The library's Schedule C instructions require a\ndocumented business-use percentage. At 100% line 25 = $1,860.00; at 50% = $930.00; at\n0% = $0.\n\n**Q6 — Where is page 2 of the mileage notebook, and are the 1,150 \"misc client\nerrands\" miles 2025 business miles?** Page 1 references it; it was not photographed.\nIt supports 1,150 of the 1,428 miles I deducted ($805.00 of line 9). Also, the header\n(4,860 total, 1,200 Larkspur commute) and the itemized trips don't fully tie — please\nconfirm 4,860 is your 2025 total and that the 1,200 Larkspur figure is the commute.\n\n**Q7 — Do you regularly use part of your home as your principal place of business?**\nIf yes, Pub. 463 can make the 2,232 miles driving between home and the Capital Factory\ncoworking space deductible business travel rather than commuting, which would increase\nline 9 by up to 2,232 × $0.70 = $1,562.40. If no, those miles stay nondeductible\ncommuting.\n\n**Q8 — Larkspur payroll reconciliation.** Your W-2 box 1 is $24,800 and withholding was\n$4,207.20 (fed $2,310.00, SS $1,537.60, Medicare $359.60), implying $20,592.80\ntake-home, but only $19,502.80 of Larkspur deposits hit this account — a $1,090.00\ndifference. Any final check stub, payout to another account, or deduction to explain\nit? (This affects the Form 1040 wage side only, not Schedule C.)\n\n**Q9 — Missing insurance premiums: where were they paid?** Two gaps in this account:\n(a) BCBS shows eight $380.00 premiums (May–Dec) but you said $380/month all year —\nwere January–April ($1,520) paid from another account or employer withholding? Only\npremiums you actually paid can go on Schedule 1 line 17. (b) Hiscox billed quarterly\n(Jan/Apr/Jul $160.00) — was the expected Oct 20 installment paid elsewhere or not paid\nat all? If paid from another account, line 15 (and Schedule 1) increase.\n",
+  "facts": [
+    {
+      "id": "commute",
+      "trigger": [
+        "commute",
+        "Larkspur office",
+        "drive to work",
+        "1,200",
+        "daily"
+      ],
+      "answer": "Oh — yes, the ~1,200 miles Jan–April were me driving to the Larkspur office every day. I guess that's commuting? The rest is client stuff and the coworking space.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "payhub_fees",
+      "trigger": [
+        "PayHub fee",
+        "net of fees",
+        "gross vs",
+        "payout",
+        "2.9",
+        "difference between 1099-K and deposits"
+      ],
+      "answer": "PayHub takes 2.9% off the top before paying out. The 1099-K number is before their cut.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "phone_pct",
+      "trigger": [
+        "phone",
+        "internet",
+        "business use percentage",
+        "T-Mobile",
+        "Spectrum"
+      ],
+      "answer": "Phone and internet are maybe 60% work? I don't have a separate line.",
+      "if_not_asked": "must_flag"
+    },
+    {
+      "id": "denver",
+      "trigger": [
+        "Denver",
+        "June flight",
+        "AUS-DEN",
+        "Southwest 118"
+      ],
+      "answer": "Denver was my cousin's wedding, nothing work-related.",
+      "if_not_asked": "penalize"
+    },
+    {
+      "id": "overlap",
+      "trigger": [
+        "Beacon",
+        "Orchard",
+        "paid through PayHub",
+        "which clients use PayHub",
+        "double"
+      ],
+      "answer": "Beacon and Orchard both pay me through PayHub. Tessaro pays by bank transfer.",
+      "if_not_asked": "none"
+    },
+    {
+      "id": "health",
+      "trigger": [
+        "health insurance",
+        "Blue Cross",
+        "BCBS"
+      ],
+      "answer": "That's my own health plan after I left Larkspur. Not through any employer.",
+      "if_not_asked": "none"
+    }
+  ],
+  "previously_released": [],
+  "literal_suggestions": [
+    "commute",
+    "payhub_fees",
+    "phone_pct",
+    "denver",
+    "overlap",
+    "health"
+  ],
+  "instructions": "Select only facts actually asked about, by keyword OR clear paraphrase. Write {\"fact_ids\": [...], \"reason\": \"...\"}. Answers are sent verbatim; no custom answer text allowed. Select [] if this is only a revised archive with no new question."
+}

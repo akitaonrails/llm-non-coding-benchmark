@@ -1,0 +1,23 @@
+{
+  "case": "brlaw_07_credor_rj",
+  "status": "completed_ungraded",
+  "error": null,
+  "elapsed_seconds": 2119.7809003489674,
+  "controller_wait_seconds": 53.00635451008566,
+  "model_turn_seconds": 2066.3585304240696,
+  "turns": 4,
+  "released_facts": [
+    "banco",
+    "epp"
+  ],
+  "usage": {
+    "input_tokens": 2016689,
+    "cached_input_tokens": 1900601,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 77678,
+    "reasoning_output_tokens": 0
+  },
+  "api_equivalent_usd": null,
+  "api_charge_usd": 0,
+  "electricity_cost_usd": null
+}
