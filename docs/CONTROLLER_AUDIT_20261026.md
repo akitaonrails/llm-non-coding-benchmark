@@ -237,3 +237,28 @@ harness, whose outputs live under `results/`. The Strix Strata server
 for every re-run lane are preserved in `results/rerun-supervisor-logs-20261026/`.
 
 With this, every re-run in the registry is complete.
+
+## Post-campaign verification — 2026-10-27
+
+`scripts/verify_full_suite.py` was run over the five completed lanes after the
+last re-run. Hard checks all pass: manifests equal the suite, 38 results per
+lane, every completed case has all sessions and its review turn complete,
+provenance names the lane's model on every turn, released fact ids are valid,
+no controller round is undecided, every quarantined attempt is listed in
+`retries.jsonl`, and each local lane ran one harness configuration. Pack hashes
+drift from `tasks/` only for the two v1.1 client scripts. Three small findings,
+none affecting a retained result:
+
+- `bracc_01_das_fator_r/01-client.decision.json` in the B300 Flash-Next, RTX
+  5090 and Strix lanes predates the `controller` field (reason present,
+  releases match the literal suggestions; reviewed in the audit).
+- Two review turns (B300 Flash-Next `brlaw_03`, RTX 5090 `brlaw_04`) logged one
+  HTTP error each among ~28 requests; both turns completed.
+- The superseded pilot directories (`sol6-medium-core-20261022-r2`,
+  `rtx5090-flash-next-reserved-subset-20261024`,
+  `strix-flash-next-iq3s-numeric-20261022`) and the quota-failed
+  `sol6-medium-full-20261024` still carry the pre-v1.1 placeholder leak; they
+  are not part of the full-suite coverage and were not re-run.
+
+Execution-level numbers are in
+[FULL_SUITE_EXECUTION_SUMMARY.md](FULL_SUITE_EXECUTION_SUMMARY.md).
