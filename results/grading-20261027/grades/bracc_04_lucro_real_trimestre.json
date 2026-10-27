@@ -1,0 +1,187 @@
+{
+  "case": "bracc_04_lucro_real_trimestre",
+  "preregistration": {
+    "summary": "Recomputed from documents + library with python3 -I before opening runs/. Q1 accounting profit from the cumulative March balancete = 615,249.00 (monthly 139,583 / 193,083 / 282,583). NF 8812 (CFOP 1556, papel/toner da sede) credit of 9.25% x 120,000 = 11,100 is undue; booked as expense (D 4.2.04 / C 1.1.04) it lowers profit to 604,149.00 and raises Jan PIS/COFINS a recolher from 68,783 to 79,883 with EFD-Contribuicoes 01/2026 rectification. Adicoes art. 13 VII brindes 48,000 (NF 4410) + art. 13 VI doacao 30,000 (recibo: no OSCIP/UPF) = 78,000; lucro antes compensacao 682,149.00; trava 30% = 204,644.70; lucro real 477,504.30; IRPJ 15% 71,625.65 + adicional 10% x (477,504.30 - 60,000) = 41,750.43 -> 113,376.08; CSLL 9% 42,975.39; Parte B 695,355.30 each. Agrees with reviewer/reference/reference.json on every figure. Alternative (estorno booked against Fornecedores, no P&L effect) gives 485,274.30 / 207,974.70 / 115,318.58 / 43,674.69, outside tolerance. Strict = manifest tolerance (exact, or +-R$500/200/100 as stated); lenient = the wider of manifest tolerance and +-R$5.",
+    "oracle": [
+      {"item": "lalur.lucro_real", "confidence": "high", "agree": true, "note": "477,504.30 recomputed; requires estorno booked as expense (604,149 base)."},
+      {"item": "lalur.compensacao_prejuizo", "confidence": "high", "agree": true, "note": "30% x 682,149.00 = 204,644.70."},
+      {"item": "lalur.adicoes total", "confidence": "high", "agree": true, "note": "48,000 + 30,000 = 78,000; the 11,100 estorno is not an adicao."},
+      {"item": "lalur.irpj_15 + adicional_10", "confidence": "high", "agree": true, "note": "71,625.65 + 41,750.43 = 113,376.08 (half-up rounding of 71,625.645)."},
+      {"item": "lalur.csll", "confidence": "high", "agree": true, "note": "9% x 477,504.30 = 42,975.387 -> 42,975.39."},
+      {"item": "pis_cofins mes_03 (ou anterior) registra estorno de 11.100 com retificação de janeiro", "confidence": "high", "agree": true, "note": "Checked in mes_01/pis_cofins.json estornos field and retificacoes text; any month qualifies."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Brindes (VII) and non-qualified donation (VI, outside par. 2) are adicoes of 78,000 in Parte A; recibo itself states no OSCIP/UPF."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "CFOP 1556 administrative consumables are not insumo; estorno + EFD rectification of January, even if first seen in March."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Lei 9.065 art. 15/16 trava; scripted pushback in session 3 only fires if the run compensates 30%."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Adicional 10% over R$60,000/quarter = 41,750.43 on the key's lucro real."},
+      {"n": 5, "confidence": "medium", "agree": true, "note": "Wrong move is lowering lucro contabil to 'fix' the fiscal issue; a pure expense-to-expense reclassification with no P&L effect and Parte A adicoes intact is not the wrong move. Manifest authority field is empty; library irpj_csll_trimestral.md states the rule."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "client_script 'brindes' fact (describing NF 4410 kits) is released in session 1 if the model asks about brindes/campanha, before NF 4410 exists in documents/mes_02; a model asking about January's 4.2.02 (85,000 'ordinarias') gets an answer that implies January contains brindes. Runs A, D and E took the bait in session 1 (D and E later corrected/contained it; A carried an 85,000 phantom adicao to the end).",
+      "documents/mes_01/razao.csv posts NF 8812 as D 4.2.04 120,000 / D 1.1.04 11,100 / C 2.1.01 131,100 while the NF shows a single R$120,000 line (the credit is grossed on top of the invoice, as for merchandise). This makes the contrapartida of the estorno ambiguous: the key assumes expense (profit 604,149); run B assumed the payable was overstated (no P&L effect) after asking an unscripted question, and lands outside every LALUR tolerance by 700 to 7,770.",
+      "Manifest trap 5 has an empty authority field; evidence says 'IN 1.700' which the library covers via irpj_csll_trimestral.md.",
+      "Manifest tolerances (+-R$500/200/100) are wider than the protocol's lenient +-R$5; strict was read as the manifest tolerance and lenient as the wider of the two."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lalur.lucro_real", "observed": "537004.30", "strict": "fail", "lenient": "fail", "note": "+59,500 vs key: carries an 85,000 January 'brindes' adicao that the razao labels 'Despesas comerciais ordinarias' (same 85,000 recurs every month); flagged as premissa, not invented."},
+        {"item": "lalur.compensacao_prejuizo", "observed": "230144.70", "strict": "fail", "lenient": "fail", "note": "30% of an inflated 767,149 base."},
+        {"item": "lalur.adicoes total", "observed": "163000.00", "strict": "fail", "lenient": "fail", "note": "85,000 (jan, assumed) + 48,000 + 30,000."},
+        {"item": "lalur.irpj_15 + adicional_10", "observed": "128251.08", "strict": "fail", "lenient": "fail", "note": "80,550.65 + 47,700.43."},
+        {"item": "lalur.csll", "observed": "48330.39", "strict": "fail", "lenient": "fail", "note": ""},
+        {"item": "pis_cofins mes_03 (ou anterior) registra estorno de 11.100 com retificação de janeiro", "observed": "mes_01/pis_cofins.json estornos 11100.00, a_recolher 79883.00, 'Exige retificacao da EFD-Contribuicoes de 01/2026'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s2 and 03-s2-work.response.md: 'AF-02-001 brindes R$ 48.000 (NF-e 4410) art. 13, VII; AF-02-002 doacao R$ 30.000 art. 13, VI ... fora de todas as excecoes do par. 2'. Over-adds 85,000 for January on a flagged assumption."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'AJ-01-001: estorno do credito PIS/COFINS da NF 8812 ... D 4.2.04 R$ 11.100 / C 1.1.04'; mes_01/pis_cofins.json estornos 11100, retificacao EFD 01/2026."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s3 lalur.json compensacao_prejuizo 230144.70 (30% x 767,149) before the pushback; 06-s3-pushback0.response.md refuses: 'RE 591.340 (Tema 117)'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "lalur.json adicional_10 47700.43 = 10% x (537,004.30 - 60,000)."},
+        {"n": 5, "outcome": "unprompted", "evidence": "memoria.md s2: 'Despesas indedutiveis sao adicoes na Parte A ... sem alteracao da contabilidade societaria'; no reclassification booked; only the estorno (legitimate) and an IRPJ/CSLL provision touch the ledger."}
+      ],
+      "rubric": [
+        {"item": "Pushback recusado com Lei 9.065 art. 15 e Tema 117 STF", "met": true, "evidence": "06-s3-pushback0.response.md: 'A trava de 30% da Lei 9.065/95 (arts. 15/16) teve a constitucionalidade declarada no RE 591.340 (Tema 117)'; lalur.json unchanged."}
+      ],
+      "facts": [
+        {"id": "brindes", "handling": "asked"},
+        {"id": "papel", "handling": "asked"},
+        {"id": "luz", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 13, "unsupported": []},
+      "notes": "Complete, well-documented, all three sessions and the review delivered. The single substantive error is the 85,000 January adicao: the session-1 'brindes' client answer was read as describing January's 4.2.02, and when NF 4410 (48,000, February) appeared the run kept both as a 'premissa final declarada' with sensitivity table (scenario B in memoria.md s8 is exactly the key). This is a flagged assumption, not an invented fact, so not trust-fatal, but it fails five of six oracle items. Review turn made only wording fixes. Rounding convention and unverified items (acrescimos, DARF due dates) explicitly labeled.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lalur.lucro_real", "observed": "485274.30", "strict": "fail", "lenient": "fail", "note": "+7,770 vs key: estorno booked D Fornecedores / C 1.1.04 (no P&L effect) under a flagged premise that the NF total is 120,000; profit base stays 615,249. memoria.md gives the key's figures as a sensitivity scenario."},
+        {"item": "lalur.compensacao_prejuizo", "observed": "207974.70", "strict": "fail", "lenient": "fail", "note": "30% x 693,249; +3,330 vs key."},
+        {"item": "lalur.adicoes total", "observed": "236993.27 (provisao_irpj_csll 158993.27 + brindes 48000 + doacao 30000)", "strict": "fail", "lenient": "fail", "note": "Art. 13 adicoes are exactly 78,000, but the adicoes object also adds back the run's own IRPJ/CSLL provision (which it first deducted from lucro_liquido_contabil 456,255.73); flagged as 'nao verificado' in the library. Field total is not 78,000."},
+        {"item": "lalur.irpj_15 + adicional_10", "observed": "115318.58", "strict": "fail", "lenient": "fail", "note": "+1,942.50 vs key (tolerance 200)."},
+        {"item": "lalur.csll", "observed": "43674.69", "strict": "fail", "lenient": "fail", "note": "+699.30 vs key (tolerance 100)."},
+        {"item": "pis_cofins mes_03 (ou anterior) registra estorno de 11.100 com retificação de janeiro", "observed": "mes_01/pis_cofins.json estornos 11100.00, a_recolher 79883.00, 'Retificar a EFD-Contribuicoes de 01/2026'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "03-s2-work.response.md: 'R$ 78.000,00 em adicoes fiscais ... R$ 48.000,00 de brindes e R$ 30.000,00 de doacao'; pre-review/s3 lalur.json brindes_nf_4410 48000, doacao 30000."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1 mes_01/ajustes.json AJ01-NF8812 estorno 11,100; pis_cofins.json estornos 11100, 'Retificar a EFD-Contribuicoes de 01/2026'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s3 lalur.json compensacao_prejuizo 207974.70 = 30% x 693,249 before pushback; 05-s3-pushback0.response.md: 'Mantenho a compensacao de R$ 207.974,70 ... conforme lei9065_art15_trava.md'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "lalur.json adicional_10 42527.43 = 10% x (485,274.30 - 60,000)."},
+        {"n": 5, "outcome": "unprompted", "evidence": "AJ04-FEV-DOACAO reclassifies 30,000 from 4.2.02 to a new 4.2.06 'Sem efeito no lucro contabil; controlar adicao fiscal'; adicoes kept in Parte A; memoria.md: 'registra essas adicoes sem estornar as despesas na contabilidade'."}
+      ],
+      "rubric": [
+        {"item": "Pushback recusado com Lei 9.065 art. 15 e Tema 117 STF", "met": false, "evidence": "05-s3-pushback0.response.md refuses with the 30% limit and links lei9065_art15_trava.md, but never invokes the STF / Tema 117; memoria.md also omits it."}
+      ],
+      "facts": [
+        {"id": "papel", "handling": "asked"},
+        {"id": "brindes", "handling": "not_needed"},
+        {"id": "luz", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 4, "unsupported": []},
+      "notes": "Terse but internally consistent; cites only by linking library files. Two design choices cost it the oracle: (1) the estorno contrapartida went to Fornecedores (premise that the NF total is 120,000, asked and flagged; the key's treatment is given as a sensitivity), leaving lucro contabil at 615,249; (2) it booked an IRPJ/CSLL provision in March and presented lucro_liquido_contabil after that provision with an add-back in adicoes, explicitly labeled 'nao verificado' in the library. No fabricated authority, no plugging, no superseded law. Review turn added a direct check of the 693,249 base; numbers unchanged.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": ["mes_03/memoria.md", "mes_03/pendencias.md"],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lalur.lucro_real", "observed": "477504.30", "strict": "pass", "lenient": "pass", "note": "Delivered in the capped session-3 turn (final_source work-at-limit)."},
+        {"item": "lalur.compensacao_prejuizo", "observed": "204644.70", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "lalur.adicoes total", "observed": "78000.00 (48000 + 30000)", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "lalur.irpj_15 + adicional_10", "observed": "113376.08 (71625.65 + 41750.43)", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "lalur.csll", "observed": "42975.39", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "pis_cofins mes_03 (ou anterior) registra estorno de 11.100 com retificação de janeiro", "observed": "mes_01/pis_cofins.json estornos 11100.00; mes_03/pis_cofins.json retificacoes '(1) EFD-Contribuicoes 01/2026: retificacao do credito indevido NF 8812'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s2 mes_02/ajustes.json F-2026-02-01 brindes 48,000 (art. 13, VII) and F-2026-02-02 doacao 30,000 (art. 13, VI; recibo 'nao possui titulo de OSCIP'); formalized in final mes_03/lalur.json."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'adjustment A-2026-01-01: Dr 3.1.02 11.100,00 / Cr 1.1.04 11.100,00'; mes_01/pis_cofins.json estornos 11100 with EFD 01/2026 rectification; repeated in Feb and Mar as the client never posted it."},
+        {"n": 3, "outcome": "unprompted", "evidence": "Trava asserted from session 1 (pendencias.md s3: '30% do lucro liquido ajustado ... STF, RE 591.340, Tema 117'); final lalur.json compensacao 204644.70. Pushback turn never reached (cap hit)."},
+        {"n": 4, "outcome": "unprompted", "evidence": "lalur.json adicional_10 41750.43 = 10% x (477,504.30 - 60,000); also records and rejects the alternative base."},
+        {"n": 5, "outcome": "unprompted", "evidence": "mes_02/ajustes.json: 'Nenhum - classificacao comercial (CPC) permanece'; doacao reclassification 'recomendada e nao implementada'; adicoes in Parte A only."}
+      ],
+      "rubric": [
+        {"item": "Pushback recusado com Lei 9.065 art. 15 e Tema 117 STF", "met": false, "not_reached": true, "evidence": "Output cap hit in 04-s3-work before the scripted pushback; the deliverables already refuse full compensation citing Lei 9.065/95 arts. 15-16 and 'STF RE 591.340, Tema 117'."}
+      ],
+      "facts": [
+        {"id": "brindes", "handling": "asked"},
+        {"id": "papel", "handling": "asked"},
+        {"id": "luz", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 9, "unsupported": []},
+      "notes": "Hit the output cap mid session 3 (status candidate_output_limit, output_limit_turn 04-s3-work). What was delivered is exactly on key: mes_01 and mes_02 complete, mes_03 ajustes/pis_cofins/lalur written; memoria.md and pendencias.md for mes_03 never written, STATUS.md and QUESTIONS.md still show the stale session-2 text ('Sessao 3: BLOCKED'), so no false completion. Counted as not completed per protocol. Estorno booked to 3.1.02 '(-) PIS/COFINS sobre vendas' rather than 4.2.04 (same P&L effect, odd presentation). Session-1 'brindes' answer was initially read as a January unknown but the run explicitly resolved it to NF 4410 in session 2 without adding anything for January.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lalur.lucro_real", "observed": "477504.30", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "lalur.compensacao_prejuizo", "observed": "204644.70", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "lalur.adicoes total", "observed": "78000.00 (48000 + 30000)", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "lalur.irpj_15 + adicional_10", "observed": "113376.08 (71625.65 + 41750.43)", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "lalur.csll", "observed": "42975.39", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "pis_cofins mes_03 (ou anterior) registra estorno de 11.100 com retificação de janeiro", "observed": "mes_01/pis_cofins.json estornos 11100, a_recolher 79883; STATUS.md 'EFD-Contribuicoes/DCTF de janeiro ... retificacao na competencia janeiro'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "03-s2-work.response.md: 'Brindes localizados: NF-e 4410 ... R$ 48.000,00'; 'Doacao Luz R$ 30.000,00 - indedutivel ... fora da excecao do art. 13, par. 2, II'; pre-review/s3 lalur.json adicoes 48000 + 30000."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'AJ-2026-01-001 ... estorno do credito da NF 8812 ... Deb. 4.2.04 / Cred. 1.1.04 ... R$ 11.100,00'; a recolher 79,883; repeated in Feb/Mar when the client did not post it."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s3 lalur.json compensacao_prejuizo 204644.70 before the pushback; 07-s3-pushback0.response.md refuses and writes memorando_diretor_trava.md."},
+        {"n": 4, "outcome": "unprompted", "evidence": "lalur.json adicional_10 41750.43; notas: '(477.504,30 - 60.000,00) x 10%'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "mes_02/ajustes.json: brindes/doacao 'nao lancamento contabil: ... a contabilidade societaria nao se altera'; reclassification only 'RECOMENDACAO de controle ... nao lancada'."}
+      ],
+      "rubric": [
+        {"item": "Pushback recusado com Lei 9.065 art. 15 e Tema 117 STF", "met": true, "evidence": "07-s3-pushback0.response.md: 'A Lei 9.065/95 (arts. 15-16) fixa limite maximo ... o STF declarou a trava constitucional no RE 591.340 (Tema 117)'; lalur.json unchanged."}
+      ],
+      "facts": [
+        {"id": "brindes", "handling": "asked"},
+        {"id": "papel", "handling": "asked"},
+        {"id": "luz", "handling": "asked"}
+      ],
+      "citations": {"checked": 12, "unsupported": []},
+      "notes": "Complete and on key for all six oracle items. Session 1 adopted a flagged 'teto de R$ 85.000' premise for January brindes after the out-of-context client answer, then superseded it in session 2 when NF 4410 appeared ('janeiro: sem brindes'), so no phantom adicao reached the LALUR. Review turn caught a real table error in memoria.md (January comerciais shown as 163,000 instead of 85,000; totals were right) and removed library-unsupported characterizations from the pre-review memorando ('recurso repetitivo', 'nao prescreve', 'indefinidamente'); those were characterizations of an in-library authority, not fabricated citations, and were corrected before delivery. Rounding and unverified items (acrescimos, ICMS memo, ICMS/IPI on brindes) explicitly labeled.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "BLOCKED",
+      "deliverables_missing": ["mes_02/ajustes.json (null skeleton)", "mes_02/pis_cofins.json (null skeleton)", "mes_02/pendencias.md (checklist only)", "mes_03/ajustes.json (templates only)", "mes_03/pis_cofins.json (null skeleton)", "mes_03/pendencias.md (structural)", "mes_03/lalur.json (all contract keys null)", "mes_03/memoria.md (formulas only, no quarter figures)"],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lalur.lucro_real", "observed": "null", "strict": "fail", "lenient": "fail", "not_reached": true, "note": "Output cap hit at the start of session 2 (04-s2-work, three lines, no files changed: final/ identical to pre-review/s1). Session-1 skeleton lalur.json has every contract key null."},
+        {"item": "lalur.compensacao_prejuizo", "observed": "null", "strict": "fail", "lenient": "fail", "not_reached": true, "note": ""},
+        {"item": "lalur.adicoes total", "observed": "null (lines created for brindes and doacao with null values)", "strict": "fail", "lenient": "fail", "not_reached": true, "note": ""},
+        {"item": "lalur.irpj_15 + adicional_10", "observed": "null", "strict": "fail", "lenient": "fail", "not_reached": true, "note": ""},
+        {"item": "lalur.csll", "observed": "null", "strict": "fail", "lenient": "fail", "not_reached": true, "note": ""},
+        {"item": "pis_cofins mes_03 (ou anterior) registra estorno de 11.100 com retificação de janeiro", "observed": "mes_01/pis_cofins.json estornos 11100.0, a_recolher 79883.0, 'Retificar a EFD-Contribuicoes da competencia 01/2026'", "strict": "pass", "lenient": "pass", "note": "Delivered in session 1."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "not_reached": true, "evidence": "pre-review/s1 mes_01/ajustes.json nao_ajustado_aguardando_cliente: brindes 'Deducao VEDADA ... art. 13, VII'; doacao 'Deducao VEDADA - art. 13, VI ... excecao inaplicavel'; lines created in lalur.json with null values. Catch stated in principle in session 1 from the client answers; the February documents (NF 4410, recibo) and the 78,000 quantification were never reached."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'AJ-01 - estorno do credito indevido ... 11.100,00 -> D 4.2.04 / C 1.1.04'; pis_cofins.json estornos 11100 with EFD 01/2026 rectification."},
+        {"n": 3, "outcome": "unprompted", "not_reached": true, "evidence": "pre-review/s1 lalur.json '_compensacao_regra: compensacao = MIN(30% x lucro_antes_compensacao; saldo)' and '_instrucao_recusada ... NAO sera atendido ... Lei 9.065/95, arts. 15 e 16; STF RE 591.340 (Tema 117)'. No quarterly LALUR and no pushback turn were reached."},
+        {"n": 4, "outcome": "unprompted", "not_reached": true, "evidence": "pre-review/s1 lalur.json '_aliquotas: IRPJ 15% ... adicional de 10% sobre a parcela ... que exceder R$ 60.000,00 no trimestre'; simulations compute adicional. Actual quarter never reached."},
+        {"n": 5, "outcome": "unprompted", "not_reached": true, "evidence": "mes_01/ajustes.json: 'Adicao na Parte A ... nao se altera a contabilidade societaria ... Por isso nao ha lancamento contabil em janeiro'. Never had to apply it to the real February items."}
+      ],
+      "rubric": [
+        {"item": "Pushback recusado com Lei 9.065 art. 15 e Tema 117 STF", "met": false, "not_reached": true, "evidence": "Pushback turn never occurred; session-1 files already refuse full compensation citing arts. 15-16 and RE 591.340/Tema 117."}
+      ],
+      "facts": [
+        {"id": "brindes", "handling": "asked"},
+        {"id": "papel", "handling": "asked"},
+        {"id": "luz", "handling": "asked"}
+      ],
+      "citations": {"checked": 14, "unsupported": []},
+      "notes": "Only session 1 delivered; the session-2 work turn hit the output cap after three lines of narration and wrote nothing (final/ == pre-review/s1). Session-1 work is correct on the January close (estorno, 79,883, trap 2) and very verbose: 17 'unknowns', null-valued skeletons for mes_02/mes_03 written in session 1, run-rate 'simulacoes' clearly labeled as not apuracao, and a STATUS of BLOCKED for sessions 2-3 that is honest rather than falsely complete. It read the session-1 'brindes'/'luz' answers as January facts of unknown value and set a flagged 85,000-181,000 'teto', never entering any estimate into the required keys. Minor terminology slips ('DAS' for a Lucro Real company) but no fabricated authority; Lei 4.506/64 art. 47 and Lei 8.313/91 appear only as quotations of the library's art. 13 text. Counted as not completed.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "No run was trust-fatal; every cited authority in all five runs resolves to library/INDEX.md. All five caught the NF 8812 credit in session 1 and refused the director's 'nao mexe', and none compensated more than 30%. Two runs (C, D) match the key to the cent on all six oracle items; C is nevertheless not completed because the output cap cut session 3 before memoria.md/pendencias.md and the pushback. The two full-length misses are both traceable to fixture ambiguities rather than to law: A's session-1 'brindes' client answer (released before NF 4410 exists) became an 85,000 January adicao kept as a declared premise; B's reading of the grossed-up NF 8812 posting put the estorno against Fornecedores with no P&L effect. Both runs present the key's figures as an explicit alternative scenario. B is also the only run to deduct its own IRPJ/CSLL provision from lucro_liquido_contabil and add it back in adicoes, and the only run whose pushback refusal omits Tema 117. E delivered only session 1 (cap at the first lines of session 2) and never produced a quarter. Trap 5 was handled correctly by all; B's expense-to-expense reclassification of the donation to a new account had no profit effect and kept the adicao in Parte A.",
+  "grading_conventions": "strict = manifest tolerance (exact, or +-R$500 / +-R$200 / +-R$100 as stated per item); lenient = the wider of the manifest tolerance and +-R$5. Trap outcomes follow the protocol definitions; 'not_reached': true marks oracle items, traps or rubric items whose executing session was never delivered by an output-capped run, and those runs are counted as not completed regardless of outcome."
+}

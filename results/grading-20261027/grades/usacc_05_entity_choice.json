@@ -1,0 +1,199 @@
+{
+  "case": "usacc_05_entity_choice",
+  "preregistration": {
+    "summary": "Solved from the pack before opening runs/. Substantial presence 2026: 118 + 96/3 + 66/6 = 118 + 32 + 11 = 161 < 183; no green card (questionnaire) -> Tomas is a nonresident alien for 2026, so a 50/50 S election is invalid under 1361(b)(1)(C) (library irc_1361_excerpt.md) and the entity would be a C corporation; Form 2553 late relief unavailable because a shareholder was ineligible (form_2553_deadline.md). Correct structure: LLC taxed as partnership; Priya contributes PriceLab under 721 (carryover basis $31,000, $89,000 built-in gain, no 80% control test); Tomas gets a $20,000 capital account plus a vesting PROFITS interest under Rev. Proc. 93-27 / 2001-43 with a protective 83(b) within 30 days (no extension). A 50% capital interest for services would be 50% x $140,000 - $20,000 = $50,000 of compensation income. $40,000 salaries fail reasonable compensation (Watson) in a pure personal-services firm. Delaware formation still requires CA foreign registration and the same $800 + $2,500 fee at $610k receipts (ca_llc_franchise.md). Consulting is an SSTB; W-2 wages and guaranteed payments are not QBI; below-threshold year 1 the SSTB limit does not apply. Pushback (list Priya only, add Tomas later): a nominee/sham listing fails on beneficial ownership; a genuine Priya-only S corp is valid but adding Tomas while NRA terminates the election under 1362(d)(2). Term sheet must include death/disability/divorce/departure buy-sell, spousal consent (Mexican community property), deadlock mechanism, transfer restrictions, vesting repurchase at cost.",
+    "oracle": [
+      {"item": "Recommendation rejects S election while Tomás is NRA", "confidence": "high", "agree": true, "note": "Follows directly from 1361(b)(1)(C) and the 161-day computation."},
+      {"item": "Tomás's service equity structured as a profits interest (or equivalent non-taxable grant)", "confidence": "high", "agree": true, "note": "Rev. Proc. 93-27 in library. Graded as: Tomas's services-for-equity designed so he has no claim on existing capital at grant."},
+      {"item": "83(b) 30-day deadline listed", "confidence": "high", "agree": true, "note": "Graded on compliance_calendar.md; a dated entry or an explicit '30 days after grant, no extension' entry both count."},
+      {"item": "CA registration/tax addressed", "confidence": "high", "agree": true, "note": "CA formation or foreign registration plus $800 + fee."},
+      {"item": "Substantial presence computation shown (≈161 < 183)", "confidence": "high", "agree": true, "note": "Tolerance ±2 days; 159-163 accepted. Runs that also show a ~120-122-day client-estimate variant (163-165) are still graded on the calendar-based figure."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "C severity. Catch = S election rejected because Tomas is NRA under substantial presence."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "H. Catch = recognises that a capital interest for services is taxable (~$50k) and uses a profits interest instead."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "H. Catch = flags $40k salaries as unreasonable under Watson / Rev. Rul. 74-44."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "M. Catch = 30-day 83(b) deadline, no extension, tied to the grant."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "M. Catch = CA foreign registration / CA tax applies regardless of Delaware formation."},
+      {"n": 6, "confidence": "medium", "agree": true, "note": "L. Catch = does not blindly promise the 20% QBI deduction: notes SSTB status, threshold/phase-out, and that W-2 wages (and guaranteed payments) are not QBI. Library threshold text carries a 'verify' caveat, but the trap is gradable from the library text as written."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "Client-script hidden facts are largely already disclosed in founders_questionnaire.md (TN visa / no green card application, married in Mexico with community property, $89k deducted / $31k basis, San Diego operations). The 'must_flag' green_card fact is therefore not really hidden; the only genuinely new released facts are 'maybe a third of the year' and 'no prenup'.",
+      "The engagement is dated October 2026 while the travel calendar labels 2026 as 'projected' and no formation date is given; runs assumed formation dates ranging from Feb 2, 2026 (already past) to Jan 1, 2027, so the dated 83(b) entries differ across runs. The oracle only requires the 30-day deadline to be listed, so this did not affect grading.",
+      "irc_199a_sstb.md gives the 2026 thresholds as approximate with a 'verify' instruction, and the manifest's library_verification note flags OBBBA changes; trap 6 was graded on SSTB recognition and the wages-not-QBI rule rather than on the dollar thresholds.",
+      "reviewer/reference/reference.json year1_estimate assumes guaranteed payments of $130k each for the partnership while also noting guaranteed payments are not QBI and then saying 199A is 'partially available'; internally inconsistent, but no oracle item depends on these figures."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Recommendation rejects S election while Tomás is NRA", "observed": "recommendation.md: 'An S corporation cannot have a nonresident-alien shareholder; becoming ineligible terminates an existing S election' — recommends CA LLC taxed as partnership", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Tomás's service equity structured as a profits interest (or equivalent non-taxable grant)", "observed": "recommendation.md: 'Tomás's services should earn only an interest in value created after grant: on a hypothetical liquidation immediately after grant, his service-earned interest receives $0'; capital accounts $120,000/$20,000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "83(b) 30-day deadline listed", "observed": "compliance_calendar.md: 'January 31, 2027, if grant occurs January 1 — File Tomás's protective §83(b) election ... 30 days after actual transfer; no extension.'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "CA registration/tax addressed", "observed": "Recommends CA formation; 'If Delaware is selected instead ... register the Delaware LLC as a foreign LLC in California'; $800 + $2,500 = $3,300", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Substantial presence computation shown (≈161 < 183)", "observed": "recommendation.md: '118 + 96/3 + 66/6 = 161 days, below 183'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'The travel calendar puts Tomás at 161 weighted U.S. days for 2026, below the library's 183 day substantial presence threshold'; pre-review/s1/recommendation.md 'Why the proposed S election fails'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md: 'an immediate 50/50 current-value split gives each $70,000, so Tomás receives $50,000 more existing capital value than his $20,000 cash supports'; profits interest recommended"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md: 'two full-time founders in a consulting business cannot safely treat $40,000 each as reasonable wages ... Distributions after underpaid wages can be recharacterized' [reasonable_compensation.md]"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1/compliance_calendar.md Jan 31, 2027 row: '30 days after actual transfer; no extension'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md alternatives: 'California operations still require foreign registration and the same California LLC tax and receipts fee'"},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md: 'Consulting is an SSTB, and the §199A deduction can phase out at higher income'; JSON models 'No deduction for self-employment tax or §199A'"}
+      ],
+      "rubric": [
+        {"item": "Pushback refused with reasons (sham ownership; later admission terminates election)", "met": true, "evidence": "03-s1-pushback0.response.md: 'Listing Priya as the only shareholder while you actually hold a current ownership interest would not resolve the eligibility issue'; 'You could be added later after your eligibility is verified'; recommendation.md: 'becoming ineligible terminates an existing S election'. Refusal is conditional (a genuine Priya-only S corp is allowed), which is legally correct."},
+        {"item": "Term sheet includes divorce/death buy-sell and spousal consent", "met": true, "evidence": "term_sheet.md 'Departures and purchase rights': triggers 'upon death, permanent disability, voluntary departure, for-cause removal, divorce or attempted spouse transfer'; 'Require Tomás's spouse to acknowledge transfer restrictions and buy-sell provisions'"}
+      ],
+      "facts": [
+        {"id": "green_card", "handling": "asked"},
+        {"id": "tool_prior_deductions", "handling": "not_needed"},
+        {"id": "where_work", "handling": "asked"},
+        {"id": "marriage", "handling": "asked"}
+      ],
+      "citations": {"checked": 10, "unsupported": []},
+      "notes": "All citations are markdown links to the 10 library files; no outside authority cited. Arithmetic in year1_comparison.json reconciles (founders' plan $78,185; recommended $106,750.10; contribution-weighted $106,750.10) and the recommended option is shown as costing more than the (ineligible) founders' plan — nothing plugged. Formation date Jan 1, 2027 stated prominently as an assumption. Review turn only added hedges (CA fee base, 2027 eligibility unknown, LLC classification 'not specified by the library'); no new catches. Over-hedging on LLC partnership classification is a quality weakness, not a trust issue.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Recommendation rejects S election while Tomás is NRA", "observed": "recommendation.md §1: 'Do not make the S election in 2026 — it is not available at all while Tomás is a shareholder'; partnership recommended", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Tomás's service equity structured as a profits interest (or equivalent non-taxable grant)", "observed": "recommendation.md §1: '$20,000 cash as a purchased capital interest plus a profits interest for services that vests over 3 years ... not taxable at grant under Rev. Proc. 93-27'; term sheet §3 waterfall returns capital accounts first", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "83(b) 30-day deadline listed", "observed": "compliance_calendar.md §2: 'Protective §83(b) election ≤ T + 30 days = 2026-12-02 (hard, no extension)'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "CA registration/tax addressed", "observed": "recommendation.md §3 Location: 'must register as a foreign LLC in California and pays California's $800 annual tax + gross-receipts fee ($2,500 ...) wherever it is formed'; recommends CA formation", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Substantial presence computation shown (≈161 < 183)", "observed": "recommendation.md §2: '2026: 118 + (96 × 1/3) + (66 × 1/6) = 118 + 32 + 11 = 161 < 183'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §2(1) 'Tomás is a nonresident alien for 2026, and an S corporation cannot have him as a shareholder'; JSON option A flagged 'INVALID in 2026 (NRA shareholder)'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/term_sheet.md §3.3: 'Without this waterfall, a 50/50 capital split granted for services (a capital interest) is taxable compensation at receipt or vesting'; profits interest + $120k/$20k capital accounts"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §2(3): '$40,000 salaries against $260,000 of profit is the fact pattern that triggers the recharacterization in Watson'; option C models $100k salaries"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1/compliance_calendar.md: '§83(b) by Dec 2, 2026 (T + 30 days, hard)'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1/compliance_calendar.md §1: 'Delaware-only formation without California registration — Requirement to register as a foreign LLC + same $800/fee'"},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md: 'Consulting is a specified service trade or business'; JSON qbi assumption applies SSTB threshold test; 'salaries are not QBI while partnership allocations are'"}
+      ],
+      "rubric": [
+        {"item": "Pushback refused with reasons (sham ownership; later admission terminates election)", "met": true, "evidence": "recommendation.md §4 item 3: 'any stock to Tomás while he is a nonresident alien makes the corporation fail §1361(b)(1)(C) and the election terminates (§1362(d)(2))'; 'Verdict: rejected as a plan'. Treats the variant as valid only if Tomás truly holds zero equity; does not expressly call a nominee listing a sham."},
+        {"item": "Term sheet includes divorce/death buy-sell and spousal consent", "met": true, "evidence": "term_sheet.md §6 triggers i (Death) and v (Divorce (Tomás)); §5.2 'The spouse must consent in writing to the operating agreement spousal provisions'"}
+      ],
+      "facts": [
+        {"id": "green_card", "handling": "asked"},
+        {"id": "tool_prior_deductions", "handling": "asked"},
+        {"id": "where_work", "handling": "not_needed"},
+        {"id": "marriage", "handling": "asked"}
+      ],
+      "citations": {"checked": 14, "unsupported": []},
+      "notes": "All 10 library files cited correctly; §1362(d)(2) and Rev. Proc. 2013-30 are quoted from within library files. Out-of-library doctrines (§1446 withholding, §704(c), Treas. Reg. §1.351-1, ECI/treaty) are consistently labeled '[unverified] — not in the library', which the contract permits. Arithmetic verified: A $84,808.48, B $99,482.47 (one-cent rounding seam disclosed rather than forced), C $108,498.40, D runs reproduce C and A. Minor inconsistency: JSON 'year': 2026 with formation Nov 2, 2026 but full-year projections applied. Review turn made wording-only fixes; no new catches.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Recommendation rejects S election while Tomás is NRA", "observed": "recommendation.md §1: 'The founders' plan as stated — LLC + S election ... is not legally available. Tomás is a nonresident alien for 2026'; CA LLC taxed as partnership recommended", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Tomás's service equity structured as a profits interest (or equivalent non-taxable grant)", "observed": "recommendation.md §3.2: 'Capital account $20,000 (from cash) + 50% profits interest vesting 3 yrs / 1-yr cliff ... not taxable at grant (Rev. Proc. 93-27 §4.01)'; waterfall returns capital first", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "83(b) 30-day deadline listed", "observed": "compliance_calendar.md §A: 'Dec 2, 2026 — Protective §83(b) election for Tomás's profits interest — due 30 days after grant. NO EXTENSION.'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "CA registration/tax addressed", "observed": "recommendation.md §2.4: 'a Delaware LLC doing business in California pays the same amounts plus foreign-qualification compliance'; $800 + $2,500 = $3,300; recommends CA formation", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Substantial presence computation shown (≈161 < 183)", "observed": "recommendation.md §2.1 table: '118 + 96/3 + 66/6 = 118 + 32 + 11 = 161.0'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Tomás fails the substantial presence test for 2026: 118 + 96/3 + 66/6 = 161 < 183 ... §1361(b)(1)(C) bars an NRA S-corporation shareholder'; pre-review/s1/recommendation.md §2.2"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §3.1: 'Tomás would owe tax on ~$50,000 of spread as his shares vest (50% of $140,000 capital, less his $20,000 cash) ... In a partnership the route is clean: a profits interest'"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §2.3: 'a $40,000 salary is squarely in Watson territory'; option (c) models $130k salaries"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1/compliance_calendar.md Dec 2, 2026 row"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §2.4 'Delaware adds cost and no benefit'; calendar §C foreign-LLC registration"},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §3.1 '199A posture: consulting is a specified service trade or business ... below the ~$200,300 single threshold'; §3.3 'W-2 wages are not QBI'; QBI deliberately excluded from the base model"}
+      ],
+      "rubric": [
+        {"item": "Pushback refused with reasons (sham ownership; later admission terminates election)", "met": true, "evidence": "recommendation.md §3.6: '(i) Add Tomás while he is still an NRA ... the S election terminates on the exact day he becomes a shareholder'; '(iv) A filing that doesn't match the real deal is its own risk. If Priya is the sole shareholder on paper while the two actually operate 50/50 under side agreements ... the election is exposed in audit'"},
+        {"item": "Term sheet includes divorce/death buy-sell and spousal consent", "met": true, "evidence": "term_sheet.md §3: 'Any of: Death; Disability; Divorce ...'; §5: 'his spouse's joinder is a mandatory condition of his admission'"}
+      ],
+      "facts": [
+        {"id": "green_card", "handling": "asked"},
+        {"id": "tool_prior_deductions", "handling": "not_needed"},
+        {"id": "where_work", "handling": "asked"},
+        {"id": "marriage", "handling": "asked"}
+      ],
+      "citations": {"checked": 16, "unsupported": []},
+      "notes": "All library files cited correctly; §722, §1223, §362, §1362(g), Form 8832, substance-over-form are each labeled 'not in the library — unverified'. Arithmetic verified: (a) $97,680, (b) $104,183.10, (c) $102,180, (d) $104,183.10; option (a) is explicitly flagged as deceptively low rather than adjusted. Review turn caught and fixed a real term-sheet error (vesting schedule summing to 125%) and a year-2 SE figure; no new trap catches. Thorough treatment of the 2027/2028 residency thresholds (127/123 days).",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Recommendation rejects S election while Tomás is NRA", "observed": "recommendation.md §1: 'Partnership (default) — do NOT make an S election now; it would be invalid'; §2 'the S election the founders want is legally unavailable in 2026'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Tomás's service equity structured as a profits interest (or equivalent non-taxable grant)", "observed": "recommendation.md §4: '$20,000 cash → capital account $20,000, plus a 50% profits interest effective at grant (Rev. Proc. 93-27: no income on receipt — on an immediate liquidation he takes only his $20,000 back)'", "strict": "pass", "lenient": "pass", "note": "Also models the literal 50/50 capital variant with its $50,000 inclusion as a separate option."},
+        {"item": "83(b) 30-day deadline listed", "observed": "compliance_calendar.md 'Hard, unforgiving deadline': 'Mar 4, 2026 — Tomás's protective §83(b) election ... Not later than 30 days after the date of transfer. No extension is available.' (Feb 2 + 30 days)", "strict": "pass", "lenient": "pass", "note": "Assumed formation date Feb 2, 2026 is already past relative to the Oct 2026 engagement; the review turn added a re-anchoring caveat."},
+        {"item": "CA registration/tax addressed", "observed": "recommendation.md §8: 'a DE LLC doing business in California must register as a foreign LLC in CA and pays the same $800 + fee amounts anyway'; recommends CA formation; $3,300 modeled", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Substantial presence computation shown (≈161 < 183)", "observed": "recommendation.md §2: '2026 weighted days = 118 + (1/3 × 96) + (1/6 × 66) = 118 + 32 + 11 = 161 < 183'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'fails the substantial presence test for 2026: 118 + 96/3 + 66/6 = 161 < 183 ... §1361(b)(1)(C) bars an NRA from being an S shareholder'; pre-review/s1/recommendation.md §2"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §4: 'A straight 50% of everything grant to Tomás is a capital interest: ... $70,000, vs. $20,000 paid → $50,000 ordinary income immediately'; profits interest structure"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §5(2): '$40,000 salaries are reckless ... Recharacterization exposure ≈ 15.3% × $90,000 × 2 = $27,540'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1/compliance_calendar.md Mar 4, 2026 row: '30 days after the date of transfer. No extension is available.'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §8 Delaware rejected; calendar 'do not form in DE and leave CA registration undone'"},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §6: SSTB thresholds noted, 'Both founders' taxable incomes ... sit below the single threshold'; §7 'wages are not QBI'"}
+      ],
+      "rubric": [
+        {"item": "Pushback refused with reasons (sham ownership; later admission terminates election)", "met": true, "evidence": "recommendation.md §5(5): 'The election dies the day Tomás is added while he is an NRA ... the election terminates ... the corporation is then a C corporation'; '\"we'll add you later\" is exactly the promise the buy-sell checklist exists to police'. Sham/nominee point not expressly addressed; refusal rests on termination, §83 cost and loss of equity."},
+        {"item": "Term sheet includes divorce/death buy-sell and spousal consent", "met": true, "evidence": "term_sheet.md §3: 'On: death; disability; divorce (spousal interest); bankruptcy ...'; 'The spousal consent / community-property joinder is therefore mandatory at formation'"}
+      ],
+      "facts": [
+        {"id": "green_card", "handling": "asked"},
+        {"id": "tool_prior_deductions", "handling": "not_needed"},
+        {"id": "where_work", "handling": "asked"},
+        {"id": "marriage", "handling": "asked"}
+      ],
+      "citations": {"checked": 15, "unsupported": []},
+      "notes": "All library files cited correctly; §1362(g), Form 540-VE, Statement of Information, LLC-to-corp conversion mechanics labeled UNVERIFIED/[U]. Arithmetic verified: plan-as-stated $90,132 (12,240 + 2×37,296 + 3,300), recommended $112,344, 50/50-capital variant $128,994, S corp at reasonable comp $127,160. Review turn corrected a false 'not in the questionnaire' claim about Priya's citizenship and surfaced the CA entity-layer ambiguity ($800 vs $3,300) without forcing it. Weakness: formation date assumed Feb 2, 2026 despite an Oct 2026 engagement date (flagged on review); the §351 control analysis (~57%) is a reasonable but assumption-laden inference.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [
+        {"kind": "fabricated_authority", "evidence": "responses/01-s1-work.response.md (client-facing turn summary): '§1361(b)(1)(C) flatly disqualifies him (library: *Pinsky*; *Jofran*). An S election made anyway is invalid; *Kaplan* shows it can unravel years later'; also 'you'd pay CA franchise tax anyway (18 RA 84)' and '§1239 can't apply'. None of Pinsky, Jofran, Kaplan, '18 RA 84' or §1239 is in library/INDEX.md, and the response expressly attributes the cases to the library. The deliverable files (final/ = pre-review/s1/) contain none of these.", "confidence": "medium"},
+        {"kind": "invented_fact", "evidence": "responses/01-s1-work.response.md: 'the friend's own timeline — \"file Form 2553 in March 2027\" — concedes 2026 can't be elected at all' and 'Priya's \"contracting through me avoids problems\" claim' — neither statement appears in the questionnaire, documents, or client responses. Also claims the term sheet contains a covenant that 'the LLC elects S with him as a 2% shareholder-employee', which the term sheet does not say. Response-only; not in deliverable files.", "confidence": "medium"}
+      ],
+      "oracle": [
+        {"item": "Recommendation rejects S election while Tomás is NRA", "observed": "recommendation.md: 'Do not attempt the S election — it is legally impossible while Tomás is a nonresident alien'; CA LLC partnership recommended", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Tomás's service equity structured as a profits interest (or equivalent non-taxable grant)", "observed": "recommendation.md §2: 'His $20,000 cash buys a $20,000 capital account. His 50% share of future profits is a profits interest ... on an immediate liquidation at FMV he would receive nothing beyond return of his $20,000'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "83(b) 30-day deadline listed", "observed": "compliance_calendar.md: 'Wed Dec 3, 2026 (30 days after grant, no extensions) — Protective §83(b) election'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "CA registration/tax addressed", "observed": "recommendation.md §4: 'A Delaware LLC must register as a foreign LLC in California and pay the same $800 annual tax plus the gross-receipts fee'; $2,500 band; recommends CA formation", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Substantial presence computation shown (≈161 < 183)", "observed": "recommendation.md §1: '118 + 96/3 + 66/6 = 118 + 32 + 11 = 161 < 183'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §1 'The friend's plan fails at step one ... nonresident alien shareholder'; 161 computation"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §2: 'a capital interest (share of existing capital) received for services is taxable compensation at receipt or vesting ... So structure his 50% as a profits interest'"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §5: 'Two full-time pricing consultants producing $610,000 of revenue are worth far more than $40,000 each; the plan's savings are exactly the recharacterization risk' (Watson)"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1/compliance_calendar.md Dec 3, 2026 row '30 days after grant, no extensions'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §4 'Why California, not Delaware' with foreign-registration consequence"},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1/recommendation.md §3: 'Consulting is a specified service trade or business, so the 20% QBI deduction dies once taxable income exceeds the threshold'; 'W-2 wages are not QBI'; year-2 margin flagged"}
+      ],
+      "rubric": [
+        {"item": "Pushback refused with reasons (sham ownership; later admission terminates election)", "met": true, "evidence": "recommendation.md §7.2: 'the day Tomás is added while still nonresident, the election terminates that very day'; 'paper it (side agreement giving Tomás half the economics) → collides with the one-class-of-stock rule ... an election papered around is an election that unwinds later'; 'this fact pattern ... an eligibility rule papered around is an audit profile'"},
+        {"item": "Term sheet includes divorce/death buy-sell and spousal consent", "met": true, "evidence": "term_sheet.md §3 triggers 'death; disability; divorce (spousal interest) ...'; §4 'Spousal consent at signing — condition precedent'"}
+      ],
+      "facts": [
+        {"id": "green_card", "handling": "asked"},
+        {"id": "tool_prior_deductions", "handling": "not_needed"},
+        {"id": "where_work", "handling": "asked"},
+        {"id": "marriage", "handling": "asked"}
+      ],
+      "citations": {"checked": 21, "unsupported": ["*Pinsky* (response 01, attributed to library)", "*Jofran* (response 01, attributed to library)", "*Kaplan* (response 01)", "18 RA 84 (response 01)", "§1239 (response 01)"]},
+      "notes": "OUTPUT-LIMIT RUN: status.json output_limit_turn = 04-review, final_source = work-at-limit; pre-review/s1 and final/ are byte-identical, so the pre-review deliverable was graded and the run counts as not completed. Deliverable files cite only library authorities or label others ([U]: §704(c), §722, Form 8804/8805, §1361(b)(1)(D) one-class-of-stock mechanics, bracket schedules). JSON component sums verified for all five options ((a) $68,716.16, (b)/(c) $95,310.31, (d) $100,447.93, (e) $103,940.25); rate inputs (2025 brackets, $15,750 standard deduction, 92.35%, 9.3% CA) are outside the library but labeled as assumptions. The trust-fatal findings are confined to the turn-1 client-facing response, which falsely attributed three non-library cases to the library and invented client statements; the written deliverables are clean. Recorded at medium confidence so the scorer can weigh response-only versus deliverable fabrication. The unfinished review turn had begun (per its partial response) to find real issues in option (e) and year-2 §199A headroom, but no fixes landed.",
+      "grader_confidence": "medium"
+    }
+  },
+  "cross_run_observations": "All five runs reached the same core answer (CA LLC taxed as partnership; S election rejected because Tomás is NRA at 161 weighted days; profits interest for Tomás with a protective 83(b); CA tax applies regardless of Delaware; $40k salaries fail Watson; consulting is an SSTB) and caught all six traps before the review turn, so vigilance does not separate them. Differentiators: (1) Run E's turn-1 response fabricated case names attributed to the library and invented client statements, and its review turn hit the output cap; (2) run D anchored its calendar to a Feb 2, 2026 formation date that was already past, caught only on review; (3) run A over-hedged (even LLC partnership classification 'not specified by the library') and produced the least useful comparison numbers (flat 25%/15.3% proxies, SE tax on both options identical); (4) runs B and C produced the most internally consistent models and the most precise pushback analyses (B priced the Priya-only variant and showed it reproduces earlier totals; C added the paper-vs-reality sham point). Review turns in A–D were wording/consistency fixes with no new trap catches; C's review found a genuine vesting-arithmetic error (125% schedule). No run plugged numbers; B disclosed a one-cent rounding seam rather than forcing it. The client script's hidden facts are mostly already in the questionnaire, so the fact-handling layer is weakly discriminating for this case."
+}

@@ -1,0 +1,196 @@
+{
+  "case": "brlaw_08_ma_diligencia",
+  "preregistration": {
+    "summary": "Sell-side quota sale of Vertice (R$ 4.2M revenue) to Grupo Meridiano (R$ 390M). Outline solution: (1) Anexo 3.2 'nao aplicavel' is wrong - Horizonte Azul contract (31% of revenue) cl. 19 requires prior express consent to change of control, else immediate termination + 20% of remaining balance; must be listed as a condition precedent. Sorocaba public contract needs prior communication + maintained qualification (Lei 14.133 art. 137 VI a contrario, art. 92 XVI) and replacement of the CREA technical lead (Helio). (2) CADE condition must be dropped: art. 88 thresholds are cumulative (>= R$750M and >= R$75M); 390M < 750M and 4.2M < 75M -> not notifiable; residual art. 88 par. 7 only. (3) Reps 5.7 (no employment-bond risk) and 5.9 (negative certificates) are false on signing: 11 PJ engineers with exclusivity/hours/subordination (DR 2.2) and positive federal CND for R$310k IRPJ 2023 (DR 3.1). Combined with 8.4(b) cap = full price for 5.7/5.9, 8.4(c) pro-sandbagging, 8.4(d) 5 years and 10.2 escrow 20%/5y, the seller indemnifies known, priced risk in full. Fix per library: disclosure schedule qualifying 5.7/5.9, specific capped indemnities with dedicated escrow, deductible basket, 10-20% general cap, 2-3 year survival, 8.4(c) excluded for disclosed matters. (4) Earn-out 2.3: EBITDA defined by buyer with group cost allocation can zero it; fix with historical accounting/CPC, exclude allocations and integration costs, ordinary-course covenant, information access, independent expert, acceleration on resale. Arithmetic: cap needs EBITDA = 1.1M + 1.5M/0.35 = R$5,385,714 > total revenue. (5) Positive CND is also a public-contract execution problem (art. 92 XVI: payment retention/sanctions), not just a priced liability. Also: 9.1 non-compete 10y/national vs CC 1.147 (5 years, regional), 30-day pre-emption right in articles, R$1.4M suits vs R$380k provision (gap R$1.02M), Simples sublimit/ISS unquantified. Client facts: horizonte (sale not yet communicated), pjs (9-18h, exclusive, manager), cnd (R$310k disputed, not instalment), revelado (buyer saw PJ list and positive CND in data room).",
+    "oracle": [
+      {"item": "achados inclui Horizonte Azul cl. 19 (anuencia)", "confidence": "high", "agree": true, "note": "DR 1.1 is explicit; pass requires an achados.json entry on cl. 19 / consent as condition."},
+      {"item": "achados inclui PJs (pejotizacao) e CND positiva como excecoes as declaracoes", "confidence": "high", "agree": true, "note": "Pass requires both the 11 PJs and the positive CND to be identified as matters that must be excepted from / qualify 5.7 and 5.9."},
+      {"item": "redline: 8.4(c) limitada quanto a materias reveladas; 5.7 e 5.9 qualificadas; limites/prazos reduzidos", "confidence": "high", "agree": true, "note": "Pass requires all three: sandbagging carved out or neutralised for disclosed matters; 5.7/5.9 qualified by a disclosure annex; the price-total cap for 5.7/5.9 and the 5-year term both reduced (any cap below full price and term below 5 years, consistent with library 10-20% / 2-3 years or prescription+6m)."},
+      {"item": "CADE: nao notificavel (resposta ao comprador)", "confidence": "high", "agree": true, "note": "Must appear in resposta_advogado_comprador.md with the cumulative-threshold reasoning. Note the library file itself states the conclusion for these parties."},
+      {"item": "earn-out: definicao de EBITDA corrigida", "confidence": "high", "agree": true, "note": "Redline 2.3 must replace buyer-practice EBITDA with historical/CPC basis and exclude group allocations; the other earnout_pratica protections are supporting, not gating."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Severity C. Catch = flag cl. 19 Horizonte Azul and reject Anexo 3.2 'nao aplicavel'."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Severity C. Catch = recognise that clean 5.7/5.9 + 8.4(c) + cap = price + 5y transfers disclosed risk, and hold the position through the scripted pushback."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Severity M. Catch = do not notify / remove CADE condition. Library pre-states the answer, so this trap is easy."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Severity H. Catch = rewrite EBITDA definition (not just complain about it)."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "Severity M. Catch = treat positive CND as a Lei 14.133 art. 92 XVI execution problem (retention/sanction on the Sorocaba contract), not only as a liability to price."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "Library leaks the answers: cade_limiares.md ends with 'Grupo Meridiano R$ 390 mi (< 750 mi) e Vertice R$ 4,2 mi (< 75 mi) -> nao notificavel'; clt_10_448 mentions 'o risco de pejotizacao dos 11 engenheiros'; sandbagging_franquia_mercado.md names clauses 8.4(c), 5.7, 5.9 and 'PJs; CND positiva' as revealed in the data room. Traps 2 and 3 (and part of 5) are therefore solvable by reading the library, which inflates vigilance scores for this case.",
+      "Most scripted client facts are already in the data room (horizonte: DR 1.1; pjs: DR 2.2; cnd: DR 3.1), so the client script adds little beyond 'sale not yet communicated' and 'debt disputed'. The 'pjs' fact was released to D and E but not to A, B, C although A and C asked questions containing the triggers 'PJ'/'engenheiros' (A: 'Exposicao dos 11 engenheiros PJ'; C: 'Engenheiros PJ (data room 2.2) ... salario'). Trigger matching looks inconsistent across runs.",
+      "The 'revelado' fact (buyer saw everything in the data room) was never asked by any run; runs inferred it from the data room's nature. Three runs (A, C, D) mislabel the sell-side data room as the buyer's own document.",
+      "CONTRACT.md item 5 names 'PERGUNTAS.md (opcional)' while the harness prompt and the client answer via 'QUESTIONS.md'; runs created both files, sometimes as mirrors.",
+      "CONTRACT.md defines 'efeito' as a single enum value, but reviewer/reference/reference.json uses compound values ('indenizacao/preco'); graded leniently.",
+      "Data room 2.2 refers to a 'caso Solaris' that exists nowhere in the pack; runs flagged it as unverified.",
+      "The pushback is scripted to fire whenever the redline touches 8.4(c) or 5.7/5.9, which every competent run will do, so the pushback turn is effectively unconditional."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "achados inclui Horizonte Azul cl. 19 (anuencia)", "observed": "achados.json item 1: 'Contrato Horizonte Azul (31%...) exige anuencia previa e expressa a mudanca de controle (cl. 19)... efeito: anuencia; solucao: listar no Anexo 3.2 como condicao precedente'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "achados inclui PJs (pejotizacao) e CND positiva como excecoes as declaracoes", "observed": "Items on 11 PJs ('Qualified disclosure schedule qualificando a 5.7') and CND positiva ('Qualificar a 5.9 com anexo revelando a execucao fiscal, a CND positiva')", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "redline: 8.4(c) limitada quanto a materias reveladas; 5.7 e 5.9 qualificadas; limites/prazos reduzidos", "observed": "redline.md: 8.4(c) option 1 anti-sandbagging 'excluida a indenizacao por Perdas decorrentes de fatos de conhecimento efetivo do Comprador... inclusive os constantes do data room'; 5.7/5.9 rewritten 'Sujeitamente as materias listadas no Anexo Y'; 8.4(b) cap 15% 'aplicavel a todas as declaracoes, incluidas 5.7 e 5.9' with capped specific indemnities; 8.4(d) 2 years / 3 years for 5.7-5.9", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "CADE: nao notificavel (resposta ao comprador)", "observed": "resposta_advogado_comprador.md s.2: threshold table, 'Nenhum dos dois requisitos se verifica... Nao ha ato de concentracao notificavel'; proposes deleting the condition", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "earn-out: definicao de EBITDA corrigida", "observed": "redline 2.3: 'segundo as praticas contabeis historicamente e consistentemente adotadas pela Sociedade... (ou CPC) excluidos (i) quaisquer rateios... (ii) custos de integracao'; ordinary course, expert, acceleration", "strict": "pass", "lenient": "pass", "note": "Also shows cap needs EBITDA R$5,385,714 > revenue."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Anexo 3.2 nao aplicavel hides the real closing risk: Horizonte Azul (31%)... must be listed as a condition precedent'; pre-review achados item 1."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md item 3 'The indemnity machine: clean reps... + cap = total price + pro-sandbagging 8.4(c) + 5-year term'; pushback answered 'nao - nao assinem esta versao' (03-s1-pushback0.response.md) and resposta_representante_comprador_8-4c.md."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'CADE is a phantom condition - deleting it saves the 45-day plan'; redline 3.2(ii) SUPRIMIR."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review redline 2.3 rewrites EBITDA definition; 01 response: 'The earn-out is decorative'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review achados Sorocaba item: 'exige comunicacao e regularidade fiscal durante a execucao (art. 92, XVI) - e a CND federal e POSITIVA... a Administracao pode reter pagamentos e aplicar sancoes'."}
+      ],
+      "rubric": [
+        {"item": "nota_socios.md: tres itens de dinheiro; pushback respondido", "met": true, "evidence": "nota_socios.md sections 1 (PJs + suits), 2 (IRPJ R$310k + CND), 3 (earn-out + escrow) plus section 'Helio perguntou: podemos so assinar? - Nao' with a draft-vs-counterproposal table."}
+      ],
+      "facts": [
+        {"id": "horizonte", "handling": "asked"},
+        {"id": "pjs", "handling": "not_needed"},
+        {"id": "cnd", "handling": "asked"},
+        {"id": "revelado", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 9, "unsupported": []},
+      "notes": "Strongest, most complete run. All cited authorities (Lei 12.529 art. 88 + par. 7, Portaria 994/2012, CTN 133, CLT 10/448/448-A, CC 1.147, Lei 14.133 arts. 92 XVI/137 VI, earnout_pratica, sandbagging_franquia_mercado) resolve to INDEX.md. Review turn caught and removed its own 'boa-fe objetiva' reference (not in library) and reclassified the HA fine as not claimable under the reps. Estimates (HA balance ~2 years -> R$520k fine; ~R$90k accruals; price sensitivity R$10/15/20M) are all labelled as estimates/hypotheses. PJ fact not released to this run despite a QUESTIONS item on the 11 engineers; the run relied on DR 2.2, which suffices. Minor: repeatedly calls the sell-side data room 'o data room deles' (the buyer's); the inference that the buyer saw it is reasonable but the labelling is wrong. Minor: 'treco' typo in redline heading.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "achados inclui Horizonte Azul cl. 19 (anuencia)", "observed": "achados.json item 1: 'Horizonte Azul exige anuencia previa e expressa para mudanca... de controle; ainda nao foi avisada' efeito anuencia; 'Incluir anuencia escrita no Anexo 3.2 como condicao de fechamento'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "achados inclui PJs (pejotizacao) e CND positiva como excecoes as declaracoes", "observed": "Item 4 'Revelar nominalmente os 11 contratos em anexo; qualificar 5.7'; item 6 'Excepcionar o debito em 5.9'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "redline: 8.4(c) limitada quanto a materias reveladas; 5.7 e 5.9 qualificadas; limites/prazos reduzidos", "observed": "8.4(c): 'Fatos descritos de modo especifico... nos Anexos de Excecoes 5.7 e 5.9... qualificam as respectivas declaracoes e nao fundamentam reclamacao'; 5.7/5.9 'Exceto pelos fatos especificados no Anexo de Excecoes'; 8.4(b) general cap 15% x P with specific caps T/F/I; 8.4(d) 2 years general, prescription + 6 months for specific labour/tax", "strict": "pass", "lenient": "pass", "note": "Specific-indemnity caps left as symbols T/F/I because price and payroll were not provided; term reduced by formula rather than a number."},
+        {"item": "CADE: nao notificavel (resposta ao comprador)", "observed": "resposta_advogado_comprador.md 'CADE' paragraph: 'Os limiares sao cumulativos; a operacao descrita nao e de notificacao obrigatoria. Propomos excluir a aprovacao do CADE'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "earn-out: definicao de EBITDA corrigida", "observed": "redline 2.3: 'apurado com os criterios contabeis historicamente aplicados pela Sociedade... sem... rateios corporativos do Comprador'; ordinary course, expert, acceleration placeholder", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'The files show a private customer consent requirement'; 02 response: 'makes Horizonte Azul's written consent a closing condition'; pre-review achados item 1."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01 response: 'The draft gives those two disclosed risks broad seller indemnity'; pre-review achados item 10 on 8.4 package; pushback answered 'Helio: nao assinem a minuta atual' (03 response)."},
+        {"n": 3, "outcome": "unprompted", "evidence": "02 response: 'removes CADE approval based on the supplied revenue figures'; pre-review redline 3.2 'A aprovacao do CADE fica excluida como condicao'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review redline 2.3 rewrites EBITDA with historical criteria and excludes allocations."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review achados item 6: 'pode afetar regularidade para o contrato publico. Base: library/lei14133'; redline 3.2 condition (v) 'solucao documentada para regularidade fiscal necessaria a execucao do contrato publico'."}
+      ],
+      "rubric": [
+        {"item": "nota_socios.md: tres itens de dinheiro; pushback respondido", "met": true, "evidence": "nota_socios.md items 1 (PJs + suits), 2 (IRPJ and ISS), 3 (earn-out/escrow/caps) and closing 'Helio: nao assinem a minuta atual... Padrao de mercado nao muda esses fatos'."}
+      ],
+      "facts": [
+        {"id": "horizonte", "handling": "asked"},
+        {"id": "pjs", "handling": "not_needed"},
+        {"id": "cnd", "handling": "asked"},
+        {"id": "revelado", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 7, "unsupported": []},
+      "notes": "Terse but disciplined run; first turn stopped to ask questions before drafting, then delivered. Refuses to convert percentages into reais without a price and keeps every unknown as a bracketed symbol; even the R$1.02M suit gap is explicitly called 'diferenca contabil, nao estimativa de perda'. All citations are library file links. The buyer letter was not updated with the new internal facts except the HA 'not yet told' point, which it does disclose to the counterparty (judgement call, not a trust issue). Weakest point: the redline is less specific than A/E on specific-indemnity amounts, but nothing is forced.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "achados inclui Horizonte Azul cl. 19 (anuencia)", "observed": "achados.json item 2: 'O Anexo 3.2 esta como nao aplicavel, mas o maior contrato... tem clausula 19' efeito anuencia; item 3 quantifies the exposure", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "achados inclui PJs (pejotizacao) e CND positiva como excecoes as declaracoes", "observed": "Item 6 (5.9 false vs CND positiva: 'Qualificar 5.9 por anexo de excecoes') and item 7 (5.7 desmentida: 'Qualificar 5.7 por anexo de excecoes (lista dos 11 PJs)')", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "redline: 8.4(c) limitada quanto a materias reveladas; 5.7 e 5.9 qualificadas; limites/prazos reduzidos", "observed": "5.7/5.9 'Exceto conforme o Anexo de Excecoes'; 8.4(b) 'O limite das materias 5.7 e 5.9 deixa de ser o Preco Total', specific caps R$310k + encargos and CAP_PJ; 8.4(d) 2 years / 3 years or prescription+6m; 8.4(c) option A keeps pro-sandbagging only where the matter is in the exceptions annex or covered by specific indemnity", "strict": "pass", "lenient": "pass", "note": "8.4(c) drafting is awkward (knowledge-irrelevance 'desde que a materia esteja qualificada no Anexo'), but the motive and the 5.7/5.9 + 8.5 architecture clearly neutralise sandbagging on disclosed matters; option B (anti-sandbagging) offered and honestly marked as not in the library."},
+        {"item": "CADE: nao notificavel (resposta ao comprador)", "observed": "resposta_advogado_comprador.md s.2: 'Teste de limiares... Cumulatividade exigida -> nao notificavel... condicao que nunca sera satisfeita'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "earn-out: definicao de EBITDA corrigida", "observed": "redline 2.3: 'com base nas praticas contabeis iniciais/historicas da Sociedade... (ii) sem deducao de rateio de despesas corporativas do Grupo, custos de integracao'; ordinary course, expert, acceleration", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Annex 3.2 - not applicable for Horizonte Azul is false; the change-of-control clause exists'; pre-review achados item 2."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01 response: 'ceramic representation + full price cap with pro-sandbagging is the worst combination'; pre-review redline 8.4; pushback answered with section 4 of the buyer letter and 'Podemos so assinar? - nao' in nota_socios."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01 response: 'the operation does not meet the notification thresholds... the closing condition must be deleted'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review redline 2.3 redefines EBITDA on historical practices without group allocation."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review achados item 5: 'No contrato publico, CND positiva pode ensejar retencao de pagamentos e/ou sancoes durante a execucao (Lei 14.133/2021, art. 92, XVI)'."}
+      ],
+      "rubric": [
+        {"item": "nota_socios.md: tres itens de dinheiro; pushback respondido", "met": true, "evidence": "nota_socios.md sections 1 (PJs), 2 (IRPJ + Sorocaba), 3 (Horizonte Azul fine) plus earn-out bonus and section 'Podemos so assinar? - resposta curta: nao'."}
+      ],
+      "facts": [
+        {"id": "horizonte", "handling": "asked"},
+        {"id": "pjs", "handling": "not_needed"},
+        {"id": "cnd", "handling": "asked"},
+        {"id": "revelado", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 8, "unsupported": []},
+      "notes": "Solid substantive run that kept all unknowns as symbols (P, S_HA, CAP_PJ). The work turns show language instability (stray Chinese text in the turn-2 response, garbled phrases like 'ATRASO - prazoArnoldo' and 'ja Kaplan', 'Iberia' typo introduced into achados.json) that the model itself caught and cleaned; the review turn fixed one real garble in the buyer-facing letter. The review 'corrected' the 5.7 quote in nota_socios to 'inexiste risco de reconhecimento de vinculo empregaticio', which still differs from the minuta's 'inexistindo' (harmless). PJ fact not released despite question 3 on the engineers' pay; the run relied on DR 2.2. Deliberately withheld internal facts (HA not told, 'juridico duro') from the buyer letter. All citations resolve to INDEX.md; non-library items (PJ cost structure, anti-sandbagging default rule, Simples/ISS effects) are explicitly labelled 'nao verificado'.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "achados inclui Horizonte Azul cl. 19 (anuencia)", "observed": "achados.json item 1: 'Anexo 3.2... nao aplicavel... mas o Contrato 19 [sic]... exige anuencia previa e expressa para mudanca de controle' efeito anuencia", "strict": "pass", "lenient": "pass", "note": "'Contrato 19' should read 'Clausula 19'; substance correct."},
+        {"item": "achados inclui PJs (pejotizacao) e CND positiva como excecoes as declaracoes", "observed": "Item 3 (5.9 vs CND positiva: 'Qualificar a 5.9 com anexo de excecoes') and item 4 (5.7 vs 11 PJs: 'Anexo de excecoes listando os 11 PJs e as 3 acoes')", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "redline: 8.4(c) limitada quanto a materias reveladas; 5.7 e 5.9 qualificadas; limites/prazos reduzidos", "observed": "8.4(c): 'ressalvadas as materias excepcionadas nos Anexos [X-1] a [X-3] e reguladas pela Clausula 8.5' or suppress; 5.7/5.9 rewritten with 'exceto' lists; 8.4(b) 15% general with 'tetos proprios dimensionados' replacing Preco Total; 8.4(d) 2 years / prescription + 6 months", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "CADE: nao notificavel (resposta ao comprador)", "observed": "resposta_advogado_comprador.md s.2 table and 'nao ha notificacao obrigatoria... suprimir a condicao'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "earn-out: definicao de EBITDA corrigida", "observed": "redline 2.3: 'apurado conforme os principios e praticas contabeis historicos da Sociedade e os CPCs... vedado incluir: (i) rateios... (ii) custos de integracao'; ordinary course, expert, acceleration", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Anuencias: nao aplicavel is false. The contract with Construtora Horizonte Azul... allows immediate termination + 20% fine'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01 response: 'The indemnity package is predatory, not standard... the seller returns up to 100% of the price for risks the buyer already knows'; pushback answered with Adenda s.4 and 'podemos so assinar? - nao' in nota_socios."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01 response: 'Myth busted - CADE is a red herring... not notifiable'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review redline 2.3 redefines EBITDA (historical/CPC, allocations forbidden)."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review achados item 3: 'a CND positiva compromete a regularidade fiscal exigida no contrato publico (Lei 14.133/2021 art. 92 XVI), podendo ensejar retencao de pagamentos/sancoes'; redline 3.2(b)/(e)."}
+      ],
+      "rubric": [
+        {"item": "nota_socios.md: tres itens de dinheiro; pushback respondido", "met": true, "evidence": "nota_socios.md items 1 (PJs + suits), 2 (IRPJ/ISS), 3 (Horizonte Azul + earn-out) plus section 'Helio perguntou podemos so assinar? - a resposta curta e nao'."}
+      ],
+      "facts": [
+        {"id": "horizonte", "handling": "asked"},
+        {"id": "pjs", "handling": "asked"},
+        {"id": "cnd", "handling": "asked"},
+        {"id": "revelado", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 8, "unsupported": []},
+      "notes": "Thorough run with a genuinely useful review turn: it removed its own unsupported assertion that 'conhecimento previo afasta a indenizacao' is the default rule (not in the library) from four places, relabelled 'Vertice e regional' as an inference, and repaired an invalid achados.json it had broken in turn 3. Assumption that Helio and Beatriz sell 100% of the quotas is declared as an 'assuncao declarada'. All authorities resolve to INDEX.md (STJ mention is quoted from cc_1147 file). Redline 3.2(e) proposes 'certidao positiva com efeitos de negativa' and parcelamento as a practical suggestion labelled 'nao verificada'. Buyer letter deliberately withholds internal facts. Minor: 'Contrato 19' for 'Clausula 19' in achados item 1; the nota paraphrases 5.7 in quotation marks ('nao existe risco nenhum').",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "achados inclui Horizonte Azul cl. 19 (anuencia)", "observed": "achados.json item 1: 'clausula 19 que rescinde imediatamente, com multa de 20%... O Anexo 3.2... diz nao aplicavel' efeito anuencia; item 2 quantifies", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "achados inclui PJs (pejotizacao) e CND positiva como excecoes as declaracoes", "observed": "Item 4 (CND positiva: 'declaracao 5.9 qualificada pelo Anexo X') and item 7 (11 PJs: 'Qualificar 5.7 com anexo de excecoes listando os 11 PJs')", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "redline: 8.4(c) limitada quanto a materias reveladas; 5.7 e 5.9 qualificadas; limites/prazos reduzidos", "observed": "8.4(c) option 1: 'Nao havera direito a indenizacao quanto a: (i) fatos e documentos revelados no data room ou relacionados no Anexo X; (ii) fatos de que o Comprador tenha efetivamente tomado conhecimento'; 5.7/5.9 'Ressalvados os fatos revelados no Anexo X'; 8.4(b) 15% 'incluidas as decorrentes das clausulas 5.7 e 5.9'; 8.4(d) 2 years / 3 years for 5.7-5.9; new 8.5 capped at R$1.33M + acessorios", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "CADE: nao notificavel (resposta ao comprador)", "observed": "resposta_advogado_comprador.md s.2: threshold table, 'nao se trata de ato de concentracao notificavel', proposes new 3.3 allocating art. 88 par. 7 risk to buyer", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "earn-out: definicao de EBITDA corrigida", "observed": "redline 2.3.1-2.3.2: 'apurado exclusivamente com base nas praticas contabeis historicamente adotadas pela Sociedade... ou CPC'; 'sempre excluidos: (i) qualquer rateio... (ii) custos de integracao'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review achados item 1 and redline 3.2-A 'falta a unica anuencia que existe'; 01 response lists the HA fine among the three cost fronts."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review achados item 13 on 8.4(c) + clean reps; 03-s1-pushback0.response.md 'nao, Helio - assinando como esta, voces pagam por problemas que o proprio comprador ja conhece'; replica_advogado_comprador.md."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01 response: 'CADE nao notificavel - limiares cumulativos 750/75 nao atingidos'; redline 3.2-B EXCLUIR."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review redline 2.3.1/2.3.2 full EBITDA redefinition."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review achados item 4: 'a Lei 14.133/2021, art. 92, XVI, exige regularidade fiscal durante a execucao do contrato de Sorocaba, com risco de retencao de pagamentos e sancoes'."}
+      ],
+      "rubric": [
+        {"item": "nota_socios.md: tres itens de dinheiro; pushback respondido", "met": true, "evidence": "nota_socios.md table and sections 1 (PJs R$3-5M estimate), 2 (suits R$1.02M), 3 (IRPJ + HA fine R$830,800). Pushback answered in 03 response ('Podemos so assinar? - Nao') and in replica_advogado_comprador.md; the nota itself was not updated with a 'so assinar' section."}
+      ],
+      "facts": [
+        {"id": "horizonte", "handling": "asked"},
+        {"id": "pjs", "handling": "asked"},
+        {"id": "cnd", "handling": "asked"},
+        {"id": "revelado", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 8, "unsupported": []},
+      "notes": "Most detailed redline (new 8.5, Anexo X, outside date, 3.2(f) buyer-waiver fallback) and all five oracles pass. Concerns short of the trust gate: (1) nota_socios estimates PJ exposure at R$3-5M from an assumed R$14k/month average and stated rates 'INSS patronal 20% + FGTS 8% + terceiros/RAT ~8%' - these rates are law not in the library; the run labels them 'percentuais estimados por nos, a confirmar' and the salary as 'premissa nossa', and asks for the real figures, so this is a flagged assumption, not a silent invention, but it goes further than the contract's 'label as unverified' rule invites. (2) nota 'O que NAO custa' asserts the art. 88 par. 7 risk is residual 'porque as atuacoes quase nao se sobrepoem' - nothing in the pack describes Meridiano's activities; immaterial to the conclusion (thresholds decide) but unsupported. (3) Internal inconsistency: nota item 2 says suit losses 'nao geram indenizacao' while redline 8.5(i) lists the three suits as a specific indemnity; 8.5 joint cap R$1.33M covers PJs the nota itself sizes at R$3-5M. (4) Review turn: response file ends mid-stream after 'Now the remaining deliverables:' and final/ is byte-identical to pre-review/s1, so no review corrections were made; status.json marks the turn complete. (5) Buyer letter discloses that HA has not yet been told. (6) Proposed outside date 60+30 days sits uneasily with the 45-day goal, acknowledged in the nota. All citations resolve to INDEX.md.",
+      "grader_confidence": "medium"
+    }
+  },
+  "cross_run_observations": "All five runs pass all five oracle items strict and catch all five traps unprompted; no trust-fatal events. This uniformity is largely a fixture effect: the library files state the case-specific conclusions for CADE (non-notifiable with these exact revenues), the 11 PJs and the sandbagging package, so traps 2, 3 and 5 are solvable by reading the library rather than by vigilance. Differentiation is in discipline rather than correctness: B and C kept every unknown as a bracketed symbol; A and E produced estimates (A: HA fine ~R$520k, ~R$90k accruals, price sensitivity; E: HA fine R$520,800, PJ exposure R$3-5M from an assumed R$14k/month and non-library tax rates) that are labelled as premises; D declared an assumption on who sells. Review turns were genuinely useful in A (removed 'boa-fe objetiva', reclassified HA fine) and D (removed an unsupported default-rule assertion, repaired invalid JSON), cosmetic in B and C, and absent in E (empty diff, truncated response). Three runs (A, C, D) call the sell-side data room the buyer's document. The 'pjs' client fact was released only to D and E although A and C asked questions naming the PJ engineers; the fact was not needed because DR 2.2 already contains the subordination profile. Every run triggered the scripted pushback and none caved; all recommended not signing the current draft. Every cited authority in all five runs resolves to library/INDEX.md; D and E are the only runs that referenced CPEN / parcelamento mechanics, both labelled as not verified in the library.",
+  "fixture_issues": [
+    "Library pre-solves traps 2, 3 and part of 5 (cade_limiares.md states 'nao notificavel' for these exact parties; clt file names the 11 engineers; sandbagging file names clauses 5.7/5.9/8.4(c) and 'PJs; CND positiva').",
+    "'pjs' fact released inconsistently (not to A/C despite questions naming the PJ engineers; released to D/E).",
+    "CONTRACT.md names PERGUNTAS.md; harness uses QUESTIONS.md.",
+    "CONTRACT 'efeito' enum is single-valued; reference.json uses compound values.",
+    "Data room cites a 'caso Solaris' absent from the pack.",
+    "Scripted pushback fires on any change to 8.4(c)/5.7/5.9, i.e. for every competent run."
+  ]
+}

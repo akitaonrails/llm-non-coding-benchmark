@@ -1,0 +1,49 @@
+{
+  "uslaw_02_msa_playbook": {
+    "C": {
+      "traps_outcome": "review_only",
+      "reason": "The s1-work turn ended after 26 output tokens with no response and an empty deliverable (turn 2.6 s, returncode 0); the whole engagement was then performed under the review-before-delivery instruction. Catches are therefore review-only by construction; the output-limit/completion status is unchanged. Letter C is the Strix Halo lane per the mapping."
+    }
+  },
+  "bracc_01_das_fator_r": {
+    "*": {
+      "diagnostic_oracle": [
+        "das.total",
+        "anexo",
+        "aliquota_efetiva"
+      ],
+      "diagnostic_traps": [
+        2
+      ],
+      "reason": "Pilot-documented fixture defects (OBSERVATIONS.md, 2026-10-22): the April payroll row already carries the R$3,200 the scripted answer adds, the partner email dates the payment 06/05 against the scripted 30/04, and the Anexo III band sums to 99.85%. All five runs converged on the same Anexo V answer and left the discrepancy open; the grader pre-registered these items at medium confidence."
+    }
+  },
+  "usacc_01_schedule_c": {
+    "*": {
+      "diagnostic_oracle": [
+        "Schedule C line 31 (net profit)",
+        "SE tax"
+      ],
+      "diagnostic_traps": [],
+      "reason": "The reference line 9 counts 1,150 miles supported only by a notebook page 2 that is not in the pack; every run failed line 31 and SE tax by exactly that component while passing line 1 and every classification item."
+    }
+  },
+  "brlaw_10_cobranca_prescrita": {
+    "*": {
+      "diagnostic_oracle": [
+        "negativacao.indevida_quanto_a"
+      ],
+      "diagnostic_traps": [],
+      "reason": "The key says 60,000 but its own totals (regular 110,000 + indevida 60,000 = 170,000 against 180,000 listed) do not reconcile; all five runs answered 70,000 (prescribed 60,000 plus 10,000 already paid) with the same reasoning."
+    }
+  },
+  "bracc_02_escolha_regime": {
+    "*": {
+      "diagnostic_oracle": [
+        "prazo_opcao"
+      ],
+      "diagnostic_traps": [],
+      "reason": "The pack frames the choice as the 2026 regime (balancete out/2025) but gives no engagement date; the run environment clock read 24/10/2026, so three runs answered the January 2027 option deadline. Clock/framing ambiguity, not a legal error."
+    }
+  }
+}

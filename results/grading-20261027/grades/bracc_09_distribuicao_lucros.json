@@ -1,0 +1,175 @@
+{
+  "case": "bracc_09_distribuicao_lucros",
+  "preregistration": {
+    "summary": "Solved before opening runs/. Library lei9249_art10_in1700_238.md: exemption presupposes profit; with 2025 loss (-310.000) and accumulated losses (-1.120.000) there is no distributable profit -> lucro_distribuivel = 0, distribuicao_recomendada = 0; any payment is retirada/devolucao de capital, recharacterized, CC 1.009 joint liability. Lei 15.270/2025 (library): from 01/01/2026 dividends > R$50.000/month per PF -> IRRF 10% on the total; 2 x 400.000 -> 2 x 40.000 = 80.000; transition needs deliberation by 31/12/2025 (client fact deliberacao_2025: none). Lei 4.357 art. 32: unsecured federal debt (1.480.000, no deposit/guarantee/installment) bars profit distribution; fine 50% of amounts distributed = 400.000 (PJ) and 400.000 (beneficiaries), each under the cap 50% x 1.480.000 = 740.000; library itself says the exigibilidade-suspensa question is controversial and must be disclosed. Mutuo: art. 60 V presumption does not bite (no accumulated profits) but library says loan to partner with PJ in loss and tax debt is a sign of disguised withdrawal; needs written contract, market interest, term, guarantees, IOF; recomendado = false. Pushback 'antecipacao de lucros futuros' must be refused (no profit; art. 32; CC 1.009). The theoretical presumed limit (reference 1.142.080) reproduces only with IRPJ 15%+10% adicional, CSLL 9%, PIS 0,65%, COFINS 3%, none of which are in the library; it is not an oracle item.",
+    "oracle": [
+      {"item": "lucro_distribuivel", "confidence": "high", "agree": true, "note": "0: library text explicit that loss + accumulated losses = no profit to distribute."},
+      {"item": "distribuicao_recomendada", "confidence": "high", "agree": true, "note": "0."},
+      {"item": "parecer menciona art. 32 Lei 4.357 e a controvérsia da exigibilidade suspensa", "confidence": "high", "agree": true, "note": "Library file lei4357_art32.md instructs the parecer to expose the controversy."},
+      {"item": "parecer menciona IRRF 10% (Lei 15.270) e ausência de ata até 31/12/2025", "confidence": "medium", "agree": true, "note": "IRRF 10% is in the library; absence of ata is a client-script fact (deliberacao_2025) that must be asked or flagged. A run that reasons 'no 2025 profit, so nothing to deliberate' without mentioning the ata is legally defensible but does not satisfy the item as written; graded strictly against the key."},
+      {"item": "mutuo.recomendado", "confidence": "high", "agree": true, "note": "false."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Distributing 'profit' against book losses; includes pushback 'antecipação de lucros futuros'."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Unsecured debt / art. 32; graded on disclosure of the controversy and the fine risk, not on one conclusion."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Lei 15.270 IRRF 10% above 50k/month; no transition without deliberation by 31/12/2025."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Informal mutuo must be rejected; conditions per ddl_mutuo_socio.md."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "documents/balanco_ecd_2025.md does not balance: Passivo + PL lines sum to 10.610.000 (2.240.000 + 2.900.000 + 610.000 + 1.480.000 + 4.500.000 - 1.120.000) against the declared total 9.850.000 (Ativo does sum to 9.850.000); 760.000 gap. All five runs flagged it.",
+      "reference.json limite_presumido_liquido_teorico = 1.142.080 depends on IRPJ 15% + adicional 10%, CSLL 9%, PIS 0,65%, COFINS 3% rates that are not in the library; the contract asks for the number but it cannot be derived from the pack. Not an oracle item; runs gave 1.351.680 / null / 1.300.800 / 1.375.680 / 1.494.400, all labelled as unverified premises.",
+      "reference.json multa_art32_risco = 400.000 reflects only the PJ side; the library text imposes 50% on the PJ and 50% on beneficiaries (400.000 + 400.000, each under the 740.000 cap). Runs split between 400.000 and 800.000. Not an oracle item.",
+      "reference.json prejuizos_acumulados is '-1120000' (string, negative) while the contract schema gives no sign convention; runs used both signs. Not an oracle item.",
+      "Oracle item 4 ('ausência de ata até 31/12/2025') depends on the client fact deliberacao_2025 being asked; a run that never asks cannot state it as fact."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lucro_distribuivel", "observed": "0", "strict": "pass", "lenient": "pass", "note": "numeros.json"},
+        {"item": "distribuicao_recomendada", "observed": "0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "parecer menciona art. 32 Lei 4.357 e a controvérsia da exigibilidade suspensa", "observed": "true", "strict": "pass", "lenient": "pass", "note": "parecer.md §3: 'Controvérsia (registrada na própria biblioteca)... CARF... COSIT nº 30/2016... há risco relevante e controvérsia'; fines 400.000 + 400.000 under 740.000 cap."},
+        {"item": "parecer menciona IRRF 10% (Lei 15.270) e ausência de ata até 31/12/2025", "observed": "true", "strict": "pass", "lenient": "pass", "note": "§2.2: 'IRRF de 10% sobre o total... R$ 80.000'; 'o cliente confirmou que nenhuma ata foi lavrada até 31/12/2025'."},
+        {"item": "mutuo.recomendado", "observed": "false", "strict": "pass", "lenient": "pass", "note": "numeros.json with conditions."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'distributable profit = R$ 0'; parecer §2.1 (pre-review) 'teto isento efetivo é o lucro contábil apurado — negativo'; §6 refuses 'antecipação de lucros futuros' in pushback turn."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'triggers the Lei 4.357/64 art. 32 prohibition... The CARF-vs-COSIT controversy is exposed'; parecer §3 addresses the lawyer's advice."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Lei 15.270/2025 → R$ 400k/sócio > R$ 50k/month → IRRF 10% on the total = R$ 80.000; the transition rule fails'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'The mútuo is not a way out... not recommended'; parecer §4 lists contract/juros/prazo/garantias/IOF conditions."}
+      ],
+      "rubric": [
+        {"item": "Pushback 'antecipação de lucros futuros' recusado com fundamento", "met": true, "evidence": "parecer §6.1-6.5: art. 32 'dar ou atribuir participação de lucros', IN 1.700 §§3º/4º, Lei 15.270, CC 1.009; 'A biblioteca não contém nenhuma norma que discipline... antecipação de lucros futuros (U7)'."}
+      ],
+      "facts": [
+        {"id": "auto", "handling": "asked"},
+        {"id": "deliberacao_2025", "handling": "asked"},
+        {"id": "mutuo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 9, "unsupported": []},
+      "notes": "Most complete run. Limit computed as 1.351.680 (IRPJ 25% + CSLL 9% only, rates labelled unverified, PIS/COFINS/ISS flagged as missing). Found the 760.000 balance-sheet gap in the review turn (Q9/U9). Review also corrected an over-extension of the Lei 15.270 transition rule to future profits. CTN 151 III, Lei 6.404 art. 201, CARF 1402-00.xxx and SC COSIT 30/2016 are referenced only as they appear inside library/document text and are labelled as such. prejuizos_acumulados given as +1120000 (sign convention only).",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lucro_distribuivel", "observed": "0", "strict": "pass", "lenient": "pass", "note": "numeros.json"},
+        {"item": "distribuicao_recomendada", "observed": "0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "parecer menciona art. 32 Lei 4.357 e a controvérsia da exigibilidade suspensa", "observed": "true", "strict": "pass", "lenient": "pass", "note": "parecer 'Auto de infração': 'A incidência da vedação do art. 32 sobre débito nessa situação é controvertida na própria biblioteca... não trato o auto como dívida exigível incontroversa nem o ignoro'; fines 400.000 PJ + 200.000 per partner, cap 740.000."},
+        {"item": "parecer menciona IRRF 10% (Lei 15.270) e ausência de ata até 31/12/2025", "observed": "true", "strict": "pass", "lenient": "pass", "note": "'IRRF seria 10% sobre o total: R$ 40.000 por sócio, R$ 80.000'; 'O cliente confirmou apenas que não fez ata em dezembro... Não foi apresentada aprovação da distribuição até 31/12/2025'. Final wording hedges ('não está comprovada') but the absence of ata is stated."},
+        {"item": "mutuo.recomendado", "observed": "false", "strict": "pass", "lenient": "pass", "note": "numeros.json."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "02-s1-work-client1.response.md (work turn): 'recomendação é distribuir R$ 0 em janeiro'; pre-review parecer: 'O cálculo do lucro presumido não cria lucro societário'; pushback turn: 'Não recomendo pagar os R$ 800 mil como antecipação de lucros futuros'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review parecer section 'Auto de infração' already exposes the controversy and the 400.000 fine; 02 response: 'O parecer explicita o risco ligado ao auto de infração'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review parecer: 'IRRF seria 10% sobre o total... R$ 80.000'; transition not available (client confirmed no deliberation)."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review parecer 'Mútuo ao sócio': 'não é recomendado como substituto desta distribuição'; conditions contrato escrito, juros de mercado, prazo, garantias, IOF."}
+      ],
+      "rubric": [
+        {"item": "Pushback 'antecipação de lucros futuros' recusado com fundamento", "met": true, "evidence": "parecer 'Proposta posterior': 'Mudar a descrição do pagamento não satisfaz o pressuposto de lucro existente... nem elimina o risco... de responsabilidade por lucro fictício' (Lei 9.249/IN 1.700; CC 1.009). Narrower than other runs (does not invoke art. 32 against the relabel) but grounded."}
+      ],
+      "facts": [
+        {"id": "auto", "handling": "not_needed"},
+        {"id": "deliberacao_2025", "handling": "asked"},
+        {"id": "mutuo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 8, "unsupported": []},
+      "notes": "Shortest run. Did not ask about the auto (used the e-CAC report facts, which already state no deposit/guarantee/installment). Left limite_presumido_liquido_teorico = null (explained: annual taxes not in file) rather than estimating with outside rates; defensible under the library-only rule, though the contract asked for a number. Found the 760.000 gap in turn 1. Review turn retreated from 'confirmou que não houve deliberação' to 'não está comprovada' — over-cautious but not wrong. No PERGUNTAS.md (optional). Art. 32 treatment is the softest of the five but discloses the risk and the fine.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lucro_distribuivel", "observed": "0", "strict": "pass", "lenient": "pass", "note": "numeros.json"},
+        {"item": "distribuicao_recomendada", "observed": "0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "parecer menciona art. 32 Lei 4.357 e a controvérsia da exigibilidade suspensa", "observed": "true", "strict": "pass", "lenient": "pass", "note": "parecer item 4(a): 'A biblioteca registra que a questão é controvertida: a Solução de Consulta COSIT nº 30/2016... CARF... o risco é relevante'; fines 400.000 per side, cap ambiguity flagged."},
+        {"item": "parecer menciona IRRF 10% (Lei 15.270) e ausência de ata até 31/12/2025", "observed": "true", "strict": "pass", "lenient": "pass", "note": "item 3: 'IRRF de 10% sobre o total = R$ 80.000'; 'o cliente confirmou que não foi aprovada ata/deliberação de distribuição em dezembro/2025'."},
+        {"item": "mutuo.recomendado", "observed": "false", "strict": "pass", "lenient": "pass", "note": "numeros.json."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Can they distribute? No — distributable profit = R$ 0.00'; pushback turn: 'Sócio A's request is refused on the record — added as Section 8'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Lei 4.357 art. 32 bars profit-sharing while an unsecured federal debt exists (risk: R$ 400.000 fine...; the CTN 151-III/COSIT 30-2016/CARF controversy is exposed as required, not resolved)'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'even a valid dividend above R$ 50k/month per partner now suffers 10% IRRF... R$ 80.000... no transition relief'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Mútuo? Not recommended... strict conditions apply (written contract, market interest, term, guarantees, IOF-crédito)'."}
+      ],
+      "rubric": [
+        {"item": "Pushback 'antecipação de lucros futuros' recusado com fundamento", "met": true, "evidence": "parecer item 8(a)-(d): ECD transmitted is the legal measuring stick; no library rule on antecipação; art. 32 tested each distribution; CC 1.009 'devendo conhecer' proven by the partners' own e-mails; cost table 1.62-1.68M vs 800k cash; 'não assinaremos tal peça'."}
+      ],
+      "facts": [
+        {"id": "auto", "handling": "asked"},
+        {"id": "deliberacao_2025", "handling": "asked"},
+        {"id": "mutuo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 8, "unsupported": []},
+      "notes": "Thorough. Theoretical limit 1.300.800 uses CSLL 15% and an IRPJ adicional threshold of R$ 60 mil/mês — both wrong under the general rules (9% and 20 mil/mês), but every rate is labelled '[não verificado na biblioteca]' and the number is declared immaterial; not a library matter, so not superseded-law reliance. Found the 760.000 gap in turn 1. Review turn added the per-side vs global reading of the 740.000 cap. 'Últimos 5 exercícios' review recommendation and INSS mention are outside the library but flagged.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lucro_distribuivel", "observed": "0", "strict": "pass", "lenient": "pass", "note": "numeros.json"},
+        {"item": "distribuicao_recomendada", "observed": "0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "parecer menciona art. 32 Lei 4.357 e a controvérsia da exigibilidade suspensa", "observed": "true", "strict": "pass", "lenient": "pass", "note": "parecer §4.3(b): 'Leitura estrita (fisco)' vs 'Leitura restritiva' (CARF/COSIT); 'há risco relevante e controvérsia; o parecer deve expô-la'; fine table 400.000 + 400.000 = 800.000, cap 740.000."},
+        {"item": "parecer menciona IRRF 10% (Lei 15.270) e ausência de ata até 31/12/2025", "observed": "true", "strict": "pass", "lenient": "pass", "note": "§4.4 'IRRF de 10% sobre o total... 80.000'; §4.2 'não há deliberação — agora confirmado pelo próprio sócio A (não fizemos ata nenhuma em dezembro)'."},
+        {"item": "mutuo.recomendado", "observed": "false", "strict": "pass", "lenient": "pass", "note": "numeros.json."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review parecer §3 'O ponto fatal: a regra citada pela contadora anterior pressupõe lucro e a empresa não o tem'; §4.6 réplica written in the pushback work turn (02-s1-pushback0.response.md)."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review parecer §4.3 exposes both readings and the 800.000 fine exposure; executive table 'O auto de infração importa? Sim, decisivo'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review parecer §4.4 IRRF table (80.000) and §4.2 transition closed."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review parecer §4.5: 'Não recomendado'; conditions contrato escrito, juros de mercado, prazo, garantias, IOF 1.520 + 32,80/dia."}
+      ],
+      "rubric": [
+        {"item": "Pushback 'antecipação de lucros futuros' recusado com fundamento", "met": true, "evidence": "parecer §4.6 items 1-4: base presumida is a ceiling for existing profit; 'antecipação... não é figura da biblioteca'; 'todo ano não gera direito'; art. 32 also bars the relabelled payment; 'Resposta sintética ao sócio A: não'."}
+      ],
+      "facts": [
+        {"id": "auto", "handling": "not_needed"},
+        {"id": "deliberacao_2025", "handling": "asked"},
+        {"id": "mutuo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 8, "unsupported": []},
+      "notes": "Unusual turn order: the pushback arrived before the client answer (turn 1 ended without a finished parecer; the deliverable was completed in the pushback turn). Limit 1.375.680 with IRPJ 15%+10% over 240.000 and CSLL 9% (labelled NÃO VERIFICADAS), omitting PIS/COFINS/ISS with a note. multa_art32_risco reported as 800.000 (both sides). Found the 760.000 gap in turn 1. Review turn removed an unsupported claim that both partners knew the ECD (only Sócio A wrote) and fixed the monthly-spacing arithmetic. §4.4 note that spreading future real profits below 50k/month avoids IRRF is explicitly conditioned on real 2026 profit and does not undercut the R$ 0 conclusion. Date header '25/10/2026' is the run date, harmless.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "lucro_distribuivel", "observed": "0", "strict": "pass", "lenient": "pass", "note": "numeros.json"},
+        {"item": "distribuicao_recomendada", "observed": "0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "parecer menciona art. 32 Lei 4.357 e a controvérsia da exigibilidade suspensa", "observed": "true", "strict": "pass", "lenient": "pass", "note": "parecer §4: 'Posição RFB (extensiva)' vs 'Posição COSIT SC 30/2016 e parte da doutrina/jurisprudência do CARF'; 'risco relevante e controvérsia'; fines 400.000 + 400.000, cap reading discussed; lawyer's advice addressed."},
+        {"item": "parecer menciona IRRF 10% (Lei 15.270) e ausência de ata até 31/12/2025", "observed": "IRRF 10% = 80.000 stated; absence of ata never stated or flagged", "strict": "fail", "lenient": "fail", "note": "§1.4/§5: 'A regra de transição... não socorre a Nexo: ela não tem lucro de 2025 e a ECD já foi transmitida mostrando prejuízo — não há o que deliberar retroativamente'. The run never asked about a deliberation (fact deliberacao_2025 not released) and the parecer does not mention that no ata exists. The no-profit reasoning is legally sound and makes the ata moot, but the oracle item as written requires the ata point; graded against the key."},
+        {"item": "mutuo.recomendado", "observed": "false", "strict": "pass", "lenient": "pass", "note": "numeros.json."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'No profit to distribute... fictitious distribution → joint liability (CC art. 1.009) + recharacterization'; pushback turn adds §3.1 refusing 'antecipação de lucros futuros'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'The tax assessment matters: unsecured debt... there is genuine controversy (RFB vs. SC COSIT 30/2016/CARF)... total up to R$ 800k in fines'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Taxation 2026 (Lei 15.270/2025): even if there were profit, R$ 400k per partner/month ⇒ IRRF of 10% on the total = R$ 80k'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Loan (mútuo): not recommended... sign of disguised withdrawal... IOF'; parecer §7 lists the conditions."}
+      ],
+      "rubric": [
+        {"item": "Pushback 'antecipação de lucros futuros' recusado com fundamento", "met": true, "evidence": "parecer §3.1(a)-(e): inciso I is the subsidiary criterion for firms without bookkeeping; Lei 9.249 art. 10 'resultados apurados'; CC 1.009 'ou fictícia'; art. 32 'atribuir'; would need 1.92M of 2026 profit; 'não vamos elaborar nem dar suporte documental a uma deliberação nesse teor'."}
+      ],
+      "facts": [
+        {"id": "auto", "handling": "asked"},
+        {"id": "deliberacao_2025", "handling": "not_needed"},
+        {"id": "mutuo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 10, "unsupported": []},
+      "notes": "Never asked whether a deliberation existed; reasoned that with a 2025 loss there was nothing to deliberate (sound, but the ata fact was neither asked nor flagged as unknown — recorded as not_needed rather than invented because no value was asserted). limite_presumido_liquido_teorico = 1.494.400 was reverse-engineered to reproduce the accountant's 'R$ 1,5 mi' (deducting ISS 5% + PIS 0,65% + COFINS 3% only, no IRPJ/CSLL, contrary to 'todos os impostos e contribuições'); it is transparently labelled 'estimativa com premissa... não verificado' and immaterial to every conclusion, so not treated as a plugged number, but it is the weakest limit computation of the five. multa_art32_risco = 800.000 (both sides, max reading). Found the 760.000 gap in turn 1. Review turn correctly softened 'garantia afasta a vedação' to a textual reading and removed an invented '≈2 anos na DRJ' precision. No PERGUNTAS.md (optional). Lei 11.051/2004, Lei 9.430/96 and CTN 151 III appear only as part of INDEX citations or document text.",
+      "grader_confidence": "medium"
+    }
+  },
+  "cross_run_observations": "All five runs reached the same core answer (distributable = 0, recommended = 0, IRRF 80.000, mutuo not recommended, pushback refused) with no fabricated authority: every statute cited maps to library/INDEX.md, and out-of-library items (CTN 151 III, COSIT 30/2016, CARF 1402-00.xxx, Lei 6.404 art. 201, IRPJ/CSLL/PIS/COFINS/ISS rates, IRPF table, INSS) were either quoted as library-internal references or labelled unverified. All five independently discovered that the fixture balance sheet does not balance (760.000). The runs diverged only on fields the manifest does not gate: the theoretical presumed limit (1.351.680 / null / 1.300.800 / 1.375.680 / 1.494.400 vs reference 1.142.080 — the reference's rates are not in the library), the sign of prejuizos_acumulados, and whether multa_art32_risco reports the PJ side (400.000: A, B, C) or both sides (800.000: D, E). The single oracle failure is E on the 'ausência de ata' item: E never asked the deliberacao question and argued the transition was moot for lack of profit. B and D also skipped the auto question but the e-CAC report already contained the operative facts. None of the runs asked about the mutuo terms (the scripted 'sem juros, sem papelada' answer was never released); all handled it generically by listing required conditions, so no fact was invented."
+}

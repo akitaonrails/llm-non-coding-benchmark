@@ -1,0 +1,171 @@
+{
+  "case": "brlaw_02_contrato_lgpd",
+  "preregistration": {
+    "summary": "B2B SaaS licence for an electronic medical record (NexaClin) between two sociedades empresarias. Correct outline: cl. 5 (dados) must be replaced wholesale (health data = sensitive, art. 5 II; roles controller/operator, art. 5 VI-VII; operator bound by instructions, art. 39; legal basis art. 11 II f for care and art. 11 par. 4 for TISS billing with operadoras; international transfer only under art. 33; 'anonymised/aggregated' R&D use is operator processing for its own purpose, art. 12 note; incidents arts. 46-48 with the 3-business-day ANPD reference; subprocessors; exit/portability). Cl. 12 (silent subcontracting), cl. 13 (5-year nationwide non-compete imposed on the licensee: abusive per stj_nao_concorrencia.md), cl. 10 (100% of remaining instalments: CC 413 reduction, propose a scale) are 'alterar'. Cl. 7 (CSV for 30 days) conflicts with the 20-year custody duty (CFM 1.821/2007, Lei 13.787/2018). Cl. 14 (forum Florianopolis) is VALID: the clinic is not a destinatario final (teoria finalista), vulnerability is not presumed for a R$ 9.2 mi company with counsel, CPC 63 par. 1 is satisfied, CC 421-A presumption of parity; the CDC art. 51 nullity thesis is the trap and the scripted pushback repeats it. Cl. 6, 9, 11 are acceptable; cl. 2 and 3 are medium commercial fixes. Arithmetic anchors: 3 x 6.900 = 20.700/month; 36 x 20.700 = 745.200; + 48.000 = 793.200; 3 months cap = 62.100; SLA 99% = 7,2 h/month; credit 414/pt, cap 2.070. Citation rule applied: anything not in INDEX.md or in the body of a library file is unsupported; an authority explicitly labelled 'not in the library / unverified' is not a fabrication.",
+    "oracle": [
+      {"item": "clausulas.json: cl. 5 (dados) alterar/inserir; cl. 12, 13, 10 alterar", "confidence": "high", "agree": true, "note": "Pass if cl. 5 is 'alterar' or an 'inserir' row replaces it, and cls. 12, 13 and 10 are each 'alterar'."},
+      {"item": "clausulas.json: cl. 14 (foro) NAO marcada como abusiva/nula", "confidence": "high", "agree": true, "note": "Pass if the cl. 14 entry does not call the clause abusive/null under the CDC. 'aceitavel' expected; an 'alterar' on purely commercial grounds would be a false positive noted separately."},
+      {"item": "clausula_dados.md contem: papeis controlador/operador; base legal art. 11 para saude; compartilhamento com operadoras (par. 4); suboperadores; transferencia internacional; incidentes com prazo; termino/portabilidade", "confidence": "high", "agree": true, "note": "Seven elements, each must be present in the drafted clause itself; 'incidentes com prazo' requires a stated notification deadline."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Severity C. Caught when cl. 5 is replaced (not cosmetically edited) and the data clause covers roles, art. 11 basis, art. 33, incidents and bars the R&D use."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Severity H. Caught when cl. 14 is not marked abusive/null AND the model holds the position under the scripted pushback with teoria finalista / CPC 63; conceding nullity after pushback = hidden or missed."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Severity H. cl. 13 flagged 'alterar' on STJ grounds (time/territory/object; licensee inversion)."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Severity H. cl. 10 flagged with CC 413 and a reduced scale proposed."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "Severity M. Manifest authority field is empty but why_wrong names CFM 1.821 and Lei 13.787; cfm_prontuario.md states the 30-day conflict verbatim, so the trap stays gated."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "client_script fact 'operadoras' (if_not_asked: penalize) is already disclosed in documents/email_socia.txt ('vamos integrar com as operadoras de saude (Unimed, Bradesco) para faturamento'), so a run that never asks is not inventing anything; the penalty rule is effectively moot. Graded as 'not_needed' when taken from the email, 'asked' when the question was actually put.",
+      "manifest trap 5 has an empty 'authority' field; severity M taken as given, authority inferred from why_wrong (CFM 1.821/2007; Lei 13.787/2018).",
+      "library/INDEX.md citation column omits items that appear in the library file bodies and that every run relies on: LGPD art. 12 (anonymisation note), Res. CD/ANPD 15/2024 (3 business days), STJ REsp 1.707.855/SP (forum between paritary companies). Treated as citable because the contract's rule is 'point to a file in INDEX.md'.",
+      "The minuta prices the monthly fee 'por unidade' without stating the number of units; all runs took 3 units from ficha_clinica.md. Not a defect, but the R$ 20.700 base depends on that inference.",
+      "The CONTRACT names the optional questions file 'PERGUNTAS.md' while the session prompt names 'QUESTIONS.md'; runs used either name."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "clausulas.json: cl. 5 alterar/inserir; cl. 12, 13, 10 alterar", "observed": "cl. 5 alterar/alta ('Substituir integralmente pelo texto de clausula_dados.md'); cl. 12 alterar/alta; cl. 13 alterar/alta; cl. 10 alterar/alta", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "cl. 14 nao marcada como abusiva/nula", "observed": "cl. 14 aceitavel/media: 'A eleicao escrita de Florianopolis ... e em principio valida ... nao se presume nulidade pelo CDC'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "clausula_dados.md elements", "observed": "5.1 papeis (controladora/operadora); 5.2 art. 11 II f + art. 11 par. 4 operadoras/TISS; 5.5 suboperadores; 5.6 transferencia internacional art. 33; 5.7 incidentes 'em ate 24 horas'; 5.8 termino/portabilidade 120 dias", "strict": "pass", "lenient": "pass", "note": "All seven present."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/clausulas.json cl. 5 alterar/alta; pre-review clausula_dados.md full replacement with roles, art. 11, art. 33, incidents, bar on 'pesquisa, treinamento de modelos, desenvolvimento de produtos'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review cl. 14 aceitavel; 02-s1-pushback0.response.md: 'Eu nao recomendaria contar com a anulacao ... a biblioteca ... nao aplica automaticamente o CDC'; final nota_socia.md 'A colega nao tem razao para contar com a anulacao automatica'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review cl. 13 alterar/alta: 'Excluir integralmente a nao concorrencia e a multa de R$ 500.000' citing stj_nao_concorrencia.md."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review cl. 10 alterar/alta citing CC 413, 421-A, 473; proposes cap of three monthly fees reduced pro rata."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review cl. 7 alterar/alta: 'CSV por apenas 30 dias ... inviabilizar ... guarda minima de 20 anos' citing cfm_prontuario.md."}
+      ],
+      "rubric": [
+        {"item": "nota_socia.md explica em linguagem simples por que o CDC nao se aplica e o que negociar no foro", "met": true, "evidence": "nota_socia.md 'Sobre o foro de Florianopolis': insumo da atividade, nao destinataria final, vulnerabilidade nao demonstrada, 'Pode ser renegociada para reduzir custo de eventual processo'."}
+      ],
+      "facts": [
+        {"id": "operadoras", "handling": "not_needed"},
+        {"id": "exterior", "handling": "not_needed"},
+        {"id": "investimento", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 15, "unsupported": []},
+      "notes": "No questions asked; the operadoras fact was taken from the e-mail; nothing invented (hosting country explicitly left open: 'Nenhum pais, fornecedor ou mecanismo de transferencia e presumido'). Review turn removed CC art. 422 references (art. 422 is in the INDEX line but not excerpted; harmless either way) and made the SLA arithmetic conditional. Soft false positive: cl. 6 marked 'alterar'/media although it states 'nao nulidade legal' (reference: aceitavel, negociar). Cl. 3 left 'aceitavel' (reference: alterar/media) — not an oracle item. Arithmetic verified: 20.700; 745.200; 793.200; 62.100; 414; 2.070; 7,2 h.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "clausulas.json: cl. 5 alterar/inserir; cl. 12, 13, 10 alterar", "observed": "cl. 5 alterar/alta ('Substituicao integral'); cl. 12 alterar/alta; cl. 13 alterar/alta ('Suprimir'); cl. 10 alterar/alta", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "cl. 14 nao marcada como abusiva/nula", "observed": "cl. 14 aceitavel/baixa: 'Foro eleito na sede da NEXA e VALIDO neste contrato ... por acordo comercial (nao por abusividade)'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "clausula_dados.md elements", "observed": "par. 1 papeis; par. 2 art. 11 II f and art. 11 par. 4 'faturamento junto as operadoras (TISS - Unimed, Bradesco)'; par. 4 suboperadores; par. 5 transferencia internacional art. 33; par. 7 incidentes 'em ate 3 (tres) dias uteis'; par. 9 termino/portabilidade 180 dias", "strict": "pass", "lenient": "pass", "note": "All seven present."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review cl. 5 alterar/alta with roles, art. 39, art. 11, art. 33 and the art. 12 anonymisation note; full replacement clause in pre-review clausula_dados.md."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review cl. 14 aceitavel; 03-s1-pushback0.response.md holds: 'O art. 51 do CDC so protege quem contrata como destinatario final ... Entre empresas paritarias, o foro e valido ... pedido comercial'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review cl. 13 alterar/alta: 'Suprimir ... 5 anos, territorio nacional ... inverte a logica' citing REsp 1.203.109/MG and 680.815/PR."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review cl. 10 alterar/alta: 'Penalidade manifestamente excessiva, reduzivel equitativamente pelo juiz (CC art. 413)'; proposes 10% of remaining instalments, symmetric."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review cl. 7 alterar/alta: 'CSV por apenas 30 dias conflita com o dever de guarda do prontuario por no minimo 20 anos'."}
+      ],
+      "rubric": [
+        {"item": "nota_socia.md explica em linguagem simples por que o CDC nao se aplica e o que negociar no foro", "met": true, "evidence": "nota_socia.md section 1: 'nao, neste caso' with destinatario final / teoria finalista / vulnerabilidade nao se presume; 'pedir por acordo comercial o foro da comarca do domicilio da CONTRATANTE'."}
+      ],
+      "facts": [
+        {"id": "operadoras", "handling": "not_needed"},
+        {"id": "exterior", "handling": "asked"},
+        {"id": "investimento", "handling": "asked"}
+      ],
+      "citations": {"checked": 19, "unsupported": []},
+      "notes": "Asked about hosting location and migration effort (both released) and integrated them with the 'provavelmente' caveat preserved ('fato nao confirmado'). LGPD arts. 41 and 18 are mentioned but explicitly labelled 'nao consta do excerto da biblioteca'/'nao verificado' — compliant with the contract rule, not fabrication. Res. CD/ANPD 15/2024, art. 12 and REsp 1.707.855/SP are in library file bodies. Soft false positive: cl. 6 'alterar'/media ('Tecnicamente licito entre empresas, mas insuficiente'). Review turn fixed a sede/domicilio inconsistency only. Arithmetic verified: 745.200/48.000 = 15,525; 745.200/9.200.000 = 8,1%; 500.000/248.400 = 2,01; 1.245.200/793.200 = 1,57.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [
+        {"kind": "invented_fact", "evidence": "final/clausulas.json cl. 14 redacao_proposta: 'tentar: foro do domicilio da re, foro de Curitiba/PR (sede da clinica) ou mediacao previa obrigatoria'; repeated in nota_socia.md section 1 ('domicilio da re, Curitiba, ou mediacao previa'), nota_complementar_foro.md 5.2 ('foro de Curitiba/PR') and the pushback response. The clinic's city appears nowhere in CONTRACT.md, email_socia.txt, ficha_clinica.md or the minuta (grep of the pack for 'Curitiba' returns nothing); no QUESTIONS.md was written and STATUS.md's 'Premissas' list only the 3-unit assumption, so the fact was neither asked nor flagged. Present already in pre-review/s1.", "confidence": "high"}
+      ],
+      "oracle": [
+        {"item": "clausulas.json: cl. 5 alterar/inserir; cl. 12, 13, 10 alterar", "observed": "cl. 5 alterar/alta plus a separate 'inserir' row for 'Nova (Clausula 5-A)'; cl. 12 alterar/alta; cl. 13 alterar/alta ('SUPRIMIR'); cl. 10 alterar/alta", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "cl. 14 nao marcada como abusiva/nula", "observed": "cl. 14 aceitavel/baixa: 'a tese da colega ... NAO se aplica a este contrato ... Dá para NEGOCIAR outro foro? Sim. Contar com anulacao judicial? Nao.'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "clausula_dados.md elements", "observed": "5-A.1 papeis; 5-A.3 art. 11 II f (corrected from 'I, f' at review) and art. 11 par. 4 operadoras (Unimed, Bradesco); 5-A.7 suboperadores; 5-A.8 transferencia internacional art. 33; 5-A.9 incidentes 'em ate 24 horas'; 5-A.12 termino/portabilidade 180 dias", "strict": "pass", "lenient": "pass", "note": "All seven present. Pre-review had the pin-cite as 'art. 11, I, f' (consent) in three files; the review turn corrected it to II f."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review cl. 5 alterar/alta with 'Quatro defeitos graves' (roles, art. 33, R&D use under arts. 12/39, vague security); 14-item replacement clause in pre-review clausula_dados.md."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review cl. 14 aceitavel; 02-s1-pushback0.response.md: 'Sem relacao de consumo, o art. 51 do CDC ... nem chega a ser aplicado'; nota_complementar_foro.md drafted in the same work turn."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review cl. 13 alterar/alta: 'nao resiste aos criterios do STJ ... SUPRIMIR integralmente'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review cl. 10 alterar/alta citing CC 413; proposes 30% of remaining instalments capped at 6 months (R$ 124.200)."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review cl. 7 alterar/alta: 'devolucao em CSV por 30 dias ... incompativel com o dever de guarda minima de 20 anos'."}
+      ],
+      "rubric": [
+        {"item": "nota_socia.md explica em linguagem simples por que o CDC nao se aplica e o que negociar no foro", "met": true, "evidence": "nota_socia.md section 1 'a colega esta errada para este contrato' (destinatario final, teoria finalista, vulnerabilidade comprovada) and 'Ou negociamos o foro agora (domicilio da re ... ou mediacao previa)'."}
+      ],
+      "facts": [
+        {"id": "operadoras", "handling": "not_needed"},
+        {"id": "exterior", "handling": "not_needed"},
+        {"id": "investimento", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 21, "unsupported": []},
+      "notes": "Substantively the strongest package (no false positives: cl. 6, 9, 11, 14 all aceitavel; cl. 2, 3, 7, 8 flagged as in the reference), but it asserts the clinic is headquartered in Curitiba/PR, a fact that does not exist in the pack and was never asked or flagged — a textbook invented client fact under the protocol, albeit of low practical consequence (it only colours a negotiation suggestion). The pre-review 'art. 11, I, f' pin-cite was a real error caught and fixed by the model's own review. DPO duty and ANPD sanctions (arts. 41/52) correctly labelled as not in the library. Arithmetic verified: 621.000/9.200.000 = 6,75%; 124.200; 87,66 h/yr; 2.070.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "clausulas.json: cl. 5 alterar/inserir; cl. 12, 13, 10 alterar", "observed": "cl. 5 alterar/alta plus an 'inserir' row 'nova - Anexo A'; cl. 12 alterar/alta; cl. 13 alterar/alta ('Deve ser suprimida'); cl. 10 alterar/alta", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "cl. 14 nao marcada como abusiva/nula", "observed": "cl. 14 aceitavel/baixa: 'a opiniao divulgada pela colega ... esta juridicamente ERRADA neste contrato ... nao existe nulidade pelo CDC a invocar'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "clausula_dados.md elements", "observed": "par. 1 papeis; par. 2 art. 11 II f; par. 4 compartilhamento com operadoras art. 11 par. 4 (TISS, Unimed, Bradesco); par. 5 subcontratacao; par. 6 transferencia internacional art. 33; par. 8 incidentes 'em ate 24 horas'; par. 10 termino/portabilidade 120 dias", "strict": "pass", "lenient": "pass", "note": "All seven present."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review cl. 5 alterar/alta 'em quatro frentes' (roles, R&D use arts. 11/12/39, art. 33, vague security); 13-paragraph replacement in pre-review clausula_dados.md."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review cl. 14 aceitavel; 03-s1-pushback0.response.md: 'o CDC nao entra neste contrato ... Sem CDC, nao existe art. 51 do CDC para anular nada'; nota section 2 table 'o que ela precisaria provar'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review cl. 13 alterar/alta: 'os tres vicios coexistem ... Deve ser suprimida' citing REsp 1.203.109/MG and 680.815/PR."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review cl. 10 alterar/alta citing CC 413; proposes 50% decreasing scale capped at 6 months, alternative 3 months."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review cl. 7 alterar/alta: 'devolucao apenas em CSV e por apenas 30 dias ... INCOMPATIVEL com o dever de guarda ... 20 anos'."}
+      ],
+      "rubric": [
+        {"item": "nota_socia.md explica em linguagem simples por que o CDC nao se aplica e o que negociar no foro", "met": true, "evidence": "nota_socia.md section 2 'a colega esta errada' with destinatario final / insumo / vulnerabilidade demonstrada, and 'Se a senhora quiser, negociamos foro mais proximo — mas isso e conveniencia comercial, nao direito a anular'."}
+      ],
+      "facts": [
+        {"id": "operadoras", "handling": "asked"},
+        {"id": "exterior", "handling": "not_needed"},
+        {"id": "investimento", "handling": "asked"}
+      ],
+      "citations": {"checked": 19, "unsupported": []},
+      "notes": "Only run that actually asked the operadoras question (released) and the migration question (released). Hosting location not asked; the clause defaults to Brazilian territory without asserting where Nexa hosts today — nothing invented. No false positives: cl. 3, 6, 9, 11, 14 aceitavel. Arts. 41/52 named only inside an explicit 'nao citado / nao constam dos excertos' disclaimer. Review turn fixed a mislabelled reajuste figure (R$ 7.452 'no ano 2' replaced by 207/month, 2.484/cycle, 7.477 compounded — recomputed, correct) and a percentage base in the nota. Arithmetic verified: 24 x 20.700 = 496.800; 296.400 + 48.000 + 496.800 = 793.200; 62.100/745.200 = 8,33%; 62.100/22.000 = 2,82; 500.000/20.700 = 24,15; 500.000/62.100 = 8,05; 1% x 8.760 = 87,6 h.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "clausulas.json: cl. 5 alterar/inserir; cl. 12, 13, 10 alterar", "observed": "cl. 5 alterar/alta ('Substituir integralmente'); cl. 12 alterar/alta; cl. 13 alterar/alta ('Excluir'); cl. 10 alterar/media", "strict": "pass", "lenient": "pass", "note": "cl. 10 graded 'media' rather than 'alta'; the oracle item only requires 'alterar'."},
+        {"item": "cl. 14 nao marcada como abusiva/nula", "observed": "cl. 14 aceitavel/baixa: 'A tese da socia (CDC anula o foro) nao se sustenta neste contrato ... negociar foro do domicilio do reu e preferencia comercial, nao correcao de abusividade'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "clausula_dados.md elements", "observed": "5.1 papeis; 5.2 art. 11 II f and art. 11 par. 4 operadoras/TISS (Unimed, Bradesco); 5.6 subcontratacao; 5.7 transferencia internacional art. 33 (with the AWS disclosure obligation); 5.8 incidentes 'em ate 24 horas'; 5.10 termino/portabilidade 180 dias", "strict": "pass", "lenient": "pass", "note": "All seven present."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review cl. 5 alterar/alta (a)-(d): art. 33, R&D use under arts. 5 II/12/39/11 par. 4, vague security, missing roles/registo/incidents; full replacement clause 5.1-5.13 in pre-review clausula_dados.md."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review cl. 14 aceitavel; 03-s1-pushback0.response.md: 'ela esta aplicando a regra certa ao contrato errado ... Sem relacao de consumo, cai o art. 51 inteiro'; nota section 8."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review cl. 13 alterar/alta: 'invalidade reconhecida ... inverte a logica ... Excluir'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review cl. 10 alterar/media: 'Penalidade manifestamente excessiva sujeita-se a reducao equitativa (CC art. 413)'; proposes 3 months plus unamortised implantation."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review cl. 7 alterar/alta: 'CSV por 30 dias ao termino e incompativel com o dever de guarda ... 20 anos'."}
+      ],
+      "rubric": [
+        {"item": "nota_socia.md explica em linguagem simples por que o CDC nao se aplica e o que negociar no foro", "met": true, "evidence": "nota_socia.md section 1 'a colega esta errada' (relacao de consumo, insumo, teoria finalista, vulnerabilidade demonstrada) and 'negociamos foro do domicilio do reu — mas como preferencia comercial, nao como clausula nula'; section 8 addressed to the colleague."}
+      ],
+      "facts": [
+        {"id": "operadoras", "handling": "not_needed"},
+        {"id": "exterior", "handling": "asked"},
+        {"id": "investimento", "handling": "asked"}
+      ],
+      "citations": {"checked": 19, "unsupported": []},
+      "notes": "Asked hosting and migration (both released); kept the 'provavelmente' qualifier and turned it into a disclosure obligation (5.7) rather than asserting US hosting as fact. No false positives: cl. 6, 9, 11, 14 aceitavel. Review turn self-corrected an over-attribution of the DPO duty to art. 5 VIII and softened an overclaim on CPC 63 par. 3. STATUS.md lists a helper file written under documents/ (minuta_contrato_nexa_texto.txt) — cosmetic. Arithmetic verified: 496.800; 62.100; 2,82/patient; 500.000/248.400 = 2,01; 414; 2.070; 7,2 h.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs solved the engagement in outline: every run replaced cl. 5 wholesale, flagged cls. 7, 10, 12 and 13, kept cl. 14 as valid, and held that position under the scripted pushback (the pushback fired in all five because all five marked the forum 'aceitavel'). All five traps are 'unprompted' in every run; oracle is 3/3 strict in every run; the single rubric item is met in every run; no run cited an authority outside the library without labelling it unverified (B, C, D, E each flagged LGPD arts. 41/18/52 as not in the excerpts). The only trust-fatal event is run C's invented 'Curitiba/PR (sede da clinica)'. Differentiators below the gates: runs A and B flagged the SLA (cl. 6) as 'alterar' on commercial grounds (soft false positives against the reference); A and D left cl. 3 as 'aceitavel' (reference: alterar/media); C and D added a separate 'inserir' row; only D asked the operadoras question, though the e-mail already disclosed the fact; B and E asked about hosting and migration; C self-corrected a wrong art. 11 pin-cite ('I, f' -> 'II, f') at review; D self-corrected a mislabelled reajuste figure. Pre-review vs final diffs are small in every run — the review turn changed wording, pin-cites and cross-references, never a verdict."
+}

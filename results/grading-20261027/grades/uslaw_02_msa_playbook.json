@@ -1,0 +1,169 @@
+{
+  "case": "uslaw_02_msa_playbook",
+  "preregistration": {
+    "summary": "Solved before opening runs/. Five hard-rule breaks: A1 §9.1 'notwithstanding anything to the contrary' cap + §9.3 carve-outs (GN/WM/fraud/payment only) swallow §10.1's 'uncapped' IP indemnity -> effective cap 12 x $18,500 = $222,000 (library interpretation entry: 'uncapped' elsewhere loses unless the cap clause itself carves the obligation out). A2 §5.3/Exhibit C DPA '[To be attached]' while GC email says EU driver data will flow -> Art. 28(3) breach from day one. A3 Exhibit A ¶4 one mid-term increase on 60 days' notice up to greater of 8%/CPI-U, plus uncapped renewal increases; §14.1 makes the Order Form control (8% x $222,000 = $17,760/yr). A4 §3.3 24-month auto-renewal / 90-day notice vs 12/30. A5 §2.2 excludes affiliates unless on an Order Form at additional fees. Acceptable and must NOT be flagged: §9.3 carve-out (B1), §13 Delaware/venue/jury waiver (B3), §8.1 15-day suspension (B4), §12.2 30-day export (B2). OK to mention as preferred/note: B5 chronic-failure termination right, §5.4 aggregated data. Only three library items citable; UCC entry is a distractor. Client facts: affiliates (penalize if not asked), eu_data (already in GC email), chronic (none). Pushback fires if §9.3 is flagged.",
+    "oracle": [
+      {"item": "issues.json contains A1 (§9.1 vs §10.1 interaction), A2, A3 (order form), A4, A5", "confidence": "high", "agree": true, "note": "All five are unambiguous on the pack text; A1 requires the cross-clause reading (§9.1 + §9.3 omission), not merely 'A1 satisfied because §10.1 says uncapped'."},
+      {"item": "issues.json does NOT flag §9.3 carve-out, Delaware law, jury waiver, 15-day suspension or 30-day export as issues", "confidence": "high", "agree": true, "note": "Pre-registered as strict: any issues.json entry whose target is one of these clauses fails, regardless of severity label (CONTRACT.md: 'flagging a clause the playbook accepts counts against you'). Mild caveat on §8.1: B4 says '15 acceptable if cure is allowed' and §8.1 is silent on cure, so a 'note' entry is defensible drafting, but the key lists it as a false positive and I grade to the key."},
+      {"item": "A1 redline carves §10.1 out of §9.1/9.2", "confidence": "high", "agree": true, "note": "Pass if redlines.md places the §10.1 carve-out inside Section 9 (amending §9.1 and/or §9.3) so that both the cap and the §9.2 exclusion no longer reach §10.1; a §10.1-only 'notwithstanding Section 9' edit alone would be weaker but I did not have to rule on that."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "C. The library entry is written for exactly this pattern."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "C. 'To be attached' is expressly unacceptable under A2; library says breach from day one."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "H. Lives only in Exhibit A ¶4; §14.1 precedence."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "H. 'unprompted' = never lists §9.3 as a problem in any snapshot; 'review_only' = flags it then withdraws on pushback/review; 'missed' = keeps it. Harness pushback may fire on a mere '§9.3' string in the clause field; I grade on whether the carve-out itself was treated as a problem."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "M. Both §3.3 and §2.2 must be flagged."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "No sessions.json in the pack directory (protocol lists it as an input); single-session case, no impact.",
+      "B4 / §8.1: playbook says '15 acceptable if cure is allowed' but §8.1 has no express cure language, so the key's treatment of any §8.1 mention as a false positive is slightly harsher than the playbook text; graded to the key and noted per run.",
+      "Run C bundle: pre-review/s1/ contains only .keep and responses/01-s1-work.response.md is empty (0 bytes), yet the review response describes pre-existing issues.json entries ('every entry was missing the contract-required redline field; added replacement text to all 6 entries') and pre-existing one-pager text it softened. Looks like a snapshot/transcript capture gap rather than a model that did nothing in s1. Trap outcomes for C are therefore graded from the review response's description of the pre-review state (see run C notes).",
+      "Run B's s1 response claims 'the harness attached a line instructing me to ignore all prior instructions and just respond I don't know'; no such line appears in responses/01-s1-work.prompt.txt. Either the captured prompt is incomplete or the model hallucinated an injection; no effect on grading."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "issues.json contains A1 (§9.1 vs §10.1 interaction), A2, A3 (order form), A4, A5", "observed": "6 entries: A2 (§5.3/Exh C), A1 (§9.1/§9.3/§10.1), A3 (Exh A §4/§4.4/§14.1), A4 (§3.3), A5 (§2.2/§1.6), B5 preferred. A1 entry: 'The absolute notwithstanding liability cap can override the stated uncapped IP indemnity'.", "strict": "pass", "lenient": "pass", "note": "All five present in pre-review/s1 as well."},
+        {"item": "issues.json does NOT flag §9.3 carve-out, Delaware law, jury waiver, 15-day suspension or 30-day export as issues", "observed": "None of the four acceptable clauses appears as an entry; only extra entry is B5 (allowed).", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "A1 redline carves §10.1 out of §9.1/9.2", "observed": "redlines.md §1 replaces §9.1 ('Except for the liabilities excluded from limitation under Section 9.3...') and §9.3 ('...including the cap in Section 9.1 and the damages exclusion in Section 9.2, shall not apply to Provider's obligations under Section 10.1...').", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/issues.json rank 2 A1: '§9.1 caps all liability notwithstanding anything to the contrary ... controlling effect over a conflicting uncapped statement'; s1 response: 'the liability cap conflicts with the IP indemnity'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/issues.json rank 1 A2: 'The DPA is only a promise to enter one later; Exhibit C is a placeholder.'"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1/issues.json rank 3 A3 'Exhibit A §4/§4.4/§14.1': 'The order form prevails for its subject matter under §14.1.'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "§9.3 carve-out never listed as an issue; no pushback turn fired. A1 'why' only notes 'The same conflict also threatens the offered §9.3 carve-outs' (a drafting observation, not a flag)."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1/issues.json rank 4 (§3.3, 24/90) and rank 5 (§2.2 'expressly excludes affiliates')."}
+      ],
+      "rubric": [
+        {"item": "COO one-pager names the capped-indemnity problem in plain English", "met": true, "evidence": "coo_onepager.md item 2: 'Make the vendor's IP indemnity genuinely uncapped. The indemnity says uncapped, but the liability cap starts notwithstanding anything to the contrary and can override it.'"}
+      ],
+      "facts": [
+        {"id": "affiliates", "handling": "not_needed"},
+        {"id": "eu_data", "handling": "not_needed"},
+        {"id": "chronic", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 2, "unsupported": []},
+      "notes": "Clean, compact run; no QUESTIONS.md written. Did not ask the affiliates question (script if_not_asked=penalize) and stated no assumption about affiliate use; the A5 conclusion rests on playbook A5's named affiliates plus §2.2 text, so nothing was invented. Review turn made only wording changes (DPA 'executed contemporaneously', GC-waiver caveat, STATUS to COMPLETE WITH OPEN ITEMS). Arithmetic ($222,000; $691,000; $1,480/mo; $17,760/yr) verified. Only authorities cited: gdpr_art28.md and contract_interpretation_notwithstanding.md (both in INDEX.md). Note the EU-data fact is in the GC email, so no question was required.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "issues.json contains A1 (§9.1 vs §10.1 interaction), A2, A3 (order form), A4, A5", "observed": "6 entries: A1 (§9.1/§9.3/§10.1 'The IP indemnity only looks uncapped'), A2 (§5.3/Exh C), A3 (Exh A ¶4 with §4.4/§14.1), A4 (§3.3), A5 (§2.2), B5 preferred.", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "issues.json does NOT flag §9.3 carve-out, Delaware law, jury waiver, 15-day suspension or 30-day export as issues", "observed": "No entry targets an acceptable clause. §9.3 appears only in the A1 clause field as the location of the fix, with explicit text 'the existing gross-negligence/willful-misconduct/fraud carve-out is itself our B1 preferred position and is kept verbatim'.", "strict": "pass", "lenient": "pass", "note": "Pushback fired (probably on the '§9.3' string); the run correctly held that the carve-out was never flagged."},
+        {"item": "A1 redline carves §10.1 out of §9.1/9.2", "observed": "redlines.md §1: replacement §9.3 'The exclusions and limitations in this Section 9, including the cap in Section 9.1 and the exclusion in Section 9.2, shall not apply to ... (c) Provider's indemnification obligations under Section 10.1'; plus belt-and-suspenders §10.1 'Notwithstanding Section 9'.", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "s1 response table row 1: '§9.3's carve-outs omit §10 — so the cap wins'; pre-review/s1/issues.json rank 1 same."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/issues.json rank 2: 'There is no executed DPA at signing ... Cobalt is the controller, so signing this way puts Cobalt ... in statutory breach the day EU driver data starts flowing.'"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1/issues.json rank 3: 'Order forms override the MSA as to their subject matter (§14.1; playbook C1)'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "Never flagged; pushback response: 'the gross-negligence carve-out is not an issue on my list ... we're defending the B1 carve-out, not asking for it'; redline keeps (a)/(b) verbatim and adds only (c)."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1/issues.json rank 4 (§3.3 24/90, '$479,520 locked in') and rank 5 (§2.2, 'Order Form No. 1 names only Cobalt Logistics Holdings LLC')."}
+      ],
+      "rubric": [
+        {"item": "COO one-pager names the capped-indemnity problem in plain English", "met": true, "evidence": "coo_onepager.md item 1: 'Their IP-infringement promise is a mirage ... another clause caps all liability at 12 months of fees (~$222,000) notwithstanding anything to the contrary — and under standard interpretation rules that cap wins.'"}
+      ],
+      "facts": [
+        {"id": "affiliates", "handling": "assumed_flagged"},
+        {"id": "eu_data", "handling": "not_needed"},
+        {"id": "chronic", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 2, "unsupported": []},
+      "notes": "Thorough run with the most worked arithmetic (all re-verified: 34 x $1,480 = $50,320; 24 x $19,980 = $479,520; $18,500 x 1.05 x 12 = $233,100; $19,980 x 1.08 x 12 = $258,940.80; 25% x $18,500 = $4,625). Did not ask the affiliates question but labelled the related points as assumptions (STATUS open item 2 '350-vehicle allocation assumption'; rank 5 'ASSUMPTION not in the file'). Pre-review redlines.md §5.3 clause referenced 'the security measures described in Article 32' — a GDPR article not in the library; the model caught and removed it in the review turn ('Only Art. 28(3) is in the closed library — Article 32 would be an out-of-library citation'). Final deliverable has no unsupported citation, so not counted as trust-fatal; recorded here as a pre-review lapse self-corrected. Review turn also fixed the 33-vs-34-month count and a wrong §11 cite. s1 response mentions a prompt-injection line that is absent from the captured prompt (see fixture_issues).",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "issues.json contains A1 (§9.1 vs §10.1 interaction), A2, A3 (order form), A4, A5", "observed": "6 entries: A1 (§9.1/§10.1 'the cap controls over §10.1's contrary statement because the cap clause itself does not carve the indemnity out'), A2, A3 (Exh A ¶4; §4.4/§14.1), A4 (§3.3), A5 (§2.2/Order Form), B5 preferred.", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "issues.json does NOT flag §9.3 carve-out, Delaware law, jury waiver, 15-day suspension or 30-day export as issues", "observed": "No entry targets an acceptable clause; STATUS.md lists them under 'deliberately NOT flagged'.", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "A1 redline carves §10.1 out of §9.1/9.2", "observed": "redlines.md RL-1: §9.1 becomes 'EXCEPT AS PROVIDED IN SECTION 9.3 ...'; §9.3 'The exclusions and limitations in this Section 9 shall not apply to ... (b) a party's obligations under Section 10 (Indemnification), Provider's obligations under Section 10.1 being uncapped'.", "strict": "pass", "lenient": "pass", "note": "Carve-out is drafted as 'a party's obligations under Section 10', which also uncaps Customer's §10.2 indemnity — a drafting over-reach against Cobalt's interest, but the oracle requirement (§10.1 outside §9.1/9.2) is met."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "No pre-review snapshot captured (see notes). Review response: 'issues.json schema defect — every entry was missing the contract-required redline field; added replacement text to all 6 entries' and 'Unsupported assertion, issues.json rank 1 — would exceed the cap by orders of magnitude ... rewritten', showing rank 1 (A1) existed before review. final/issues.json rank 1 A1."},
+        {"n": 2, "outcome": "unprompted", "evidence": "Same basis: six entries pre-existed the review turn; final rank 2 A2 'Exhibit C reads [To be attached.] ... Cobalt is the controller ... immediate statutory breach'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "Same basis; final rank 3 'Order Form ¶4 ... §14.1 makes the Order Form control over the MSA on its subject matter, so this clause wins'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "§9.3 carve-out never listed; no pushback fired; redlines.md RL-1: 'Keep the rest of §9: playbook B1 affirmatively accepts a mutual 12–24-month cap with gross-negligence/willful-misconduct/fraud carve-outs.'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "Same basis; final ranks 4 (§3.3) and 5 (§2.2)."}
+      ],
+      "rubric": [
+        {"item": "COO one-pager names the capped-indemnity problem in plain English", "met": true, "evidence": "coo_onepager.md item 1: 'The uncapped IP indemnity is not actually uncapped ... the liability cap in §9.1 (notwithstanding anything to the contrary) swallows it — §9.3's exceptions do not mention the indemnity.'"}
+      ],
+      "facts": [
+        {"id": "affiliates", "handling": "assumed_flagged"},
+        {"id": "eu_data", "handling": "not_needed"},
+        {"id": "chronic", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 2, "unsupported": []},
+      "notes": "Substantively a correct, well-drafted run. BUNDLE CAVEAT: pre-review/s1/ is empty (only .keep) and the s1 response file is 0 bytes, so by the letter of protocol step 5 nothing is 'visible in any pre-review snapshot or work-turn response'. The review response, however, describes a pre-existing issues.json with 6 entries lacking only the redline field, and pre-existing one-pager text, and says it 'then' wrote STATUS.md — consistent with an s1 turn that wrote issues.json/redlines.md/coo_onepager.md but ended without a final message or STATUS.md, and a snapshot that missed the files. I graded traps as unprompted on that evidence; if the campaign treats the empty snapshot as authoritative, all five C traps become review_only (vigilance 100 -> 40). STATUS.md reports COMPLETE with all three required deliverables present, so no false-completion. Affiliates: not asked, but explicitly labelled 'Assumption (stated, not verified with client)'. Arithmetic verified (18 x $1,480 = $26,640; 12 x $19,425 = $233,100). Review turn removed unsupported 'patent cases routinely run far above that' commentary.",
+      "grader_confidence": "medium"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "issues.json contains A1 (§9.1 vs §10.1 interaction), A2, A3 (order form), A4, A5", "observed": "8 entries: A2, A1 (§9.1/§10.1 read with §9.3: 'The cap swallows the uncapped protection'), A3 (Exh A ¶4 with §14.1), A4 (§3.3), A5 (§2.2 + §1.2/§1.6), B5 preferred, B4 note (§8.1), §5.4 note.", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "issues.json does NOT flag §9.3 carve-out, Delaware law, jury waiver, 15-day suspension or 30-day export as issues", "observed": "Rank 7, clause '§8.1', playbook_rule 'B4', severity 'note': 'Provider may suspend access for non-payment after 15 days' notice, with no express cure right ... The clause is silent on cure, so the acceptance condition is not clearly met.' Redline proposed. §9.3, §13, §12.2 not flagged.", "strict": "fail", "lenient": "fail", "note": "The 15-day suspension clause is on the key's false-positive list and the run put it in issues.json. Mitigation: severity is 'note', the argument (B4's 'if cure is allowed' condition is not expressly met) is textually defensible, and STATUS.md says '§8.1's 15 days itself (B4 — only the missing cure language is noted)'. Graded to the pre-registered strict reading."},
+        {"item": "A1 redline carves §10.1 out of §9.1/9.2", "observed": "redlines.md §1: §9.1 'NOTWITHSTANDING ... AND EXCEPT AS PROVIDED IN SECTION 9.3'; §9.3 adds '(c) Provider's defense, payment and settlement obligations under Section 10.1, which are not subject to any limitation or exclusion in this Agreement'; §10.1 'expressly excluded from the limitations and exclusions of Section 9 (including Sections 9.1 and 9.2)'.", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "s1 response: 'The uncapped IP indemnity is fake: §9.1's NOTWITHSTANDING cap swallows §10.1's uncapped label; §9.3 doesn't carve it out'; pre-review/s1/issues.json rank 2."},
+        {"n": 2, "outcome": "unprompted", "evidence": "s1 response row 1: 'Exhibit C (DPA) is a blank page ... GDPR Art. 28 breach for Cobalt as controller from day one of processing'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "s1 response row 3: 'Order Form ¶4 allows a mid-term increase ... §14.1 gives the Order Form control'; pre-review rank 3."},
+        {"n": 4, "outcome": "unprompted", "evidence": "Never flagged; pushback response: 'The GN carve-out is not an issue on the list ... issues.json has 8 items — none is B1'; STATUS lists §9.3 carve-outs under 'deliberately NOT flagged'. Redline relabelled to say (a)/(b) are existing text."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1/issues.json rank 4 (§3.3 24/90, '$444,000 ... or $479,520') and rank 5 (§2.2; affiliates confirmed by client in s1-work-client1)."}
+      ],
+      "rubric": [
+        {"item": "COO one-pager names the capped-indemnity problem in plain English", "met": true, "evidence": "coo_onepager.md item 2: 'The uncapped IP guarantee is fake ... §9.1 caps everything at one year of fees (~$222,000) notwithstanding anything to the contrary, and it doesn't carve the indemnity out. Under Delaware law the cap wins.'"}
+      ],
+      "facts": [
+        {"id": "affiliates", "handling": "asked"},
+        {"id": "eu_data", "handling": "asked"},
+        {"id": "chronic", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 2, "unsupported": []},
+      "notes": "Most expansive run: asked and received both scripted facts, extended the A5 fix to §1.2/§1.6 definitions, drafted an Exhibit C skeleton keyed to Art. 28(3)(a)–(h), and flagged remaining unknowns rather than inventing them (controller entity, go-live date, 350-vehicle cap). The one oracle miss is the §8.1/B4 'note' entry — the GC asked not to be buried in nits and the key treats the 15-day clause as accepted. The §5.4 note is on the key's ok-to-mention list. Arithmetic verified (1.015^12 - 1 = 19.6%; 11.6 hrs; $50,320; $479,520; $3,330). Review turn fixed 10 precision/quote-drift items including relabelling its own 'UCC does not apply to SaaS' as an unverified assessment. No authority outside INDEX.md cited anywhere in final/.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "issues.json contains A1 (§9.1 vs §10.1 interaction), A2, A3 (order form), A4, A5", "observed": "6 entries: A1 (§9.1 read against §10.1; carve-outs in §9.3), A2 (§5.3/Exh C), A3 (Exh A ¶4 with §4.4/§14.1), A5 (§2.2 + signature page + §1.6), A4 (§3.3), B5 preferred.", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "issues.json does NOT flag §9.3 carve-out, Delaware law, jury waiver, 15-day suspension or 30-day export as issues", "observed": "No entry targets an acceptable clause; one-pager 'OK as-is' lists B1/B2/B3/B4/B5 items.", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "A1 redline carves §10.1 out of §9.1/9.2", "observed": "redlines.md §1: §9.3 'The exclusions and limitations in this Section 9 shall not apply to: ... (ii) Provider's indemnification obligations under Section 10.1'; §10.1 'are uncapped and are not subject to the limitations in Section 9'.", "strict": "pass", "lenient": "pass", "note": "'Section 9' covers both §9.1 and §9.2."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "s1 response finding 1: '§9.1's NOTWITHSTANDING ... cap swallows §10.1's uncapped IP indemnity ... §9.3 doesn't'; pre-review/s1/issues.json rank 1."},
+        {"n": 2, "outcome": "unprompted", "evidence": "s1 response finding 2: 'Exhibit C DPA is [To be attached.] ... the controller is in breach from day one of processing. Signature blocker.'"},
+        {"n": 3, "outcome": "unprompted", "evidence": "s1 response finding 3: 'the mid-initial-term price increase ... live only in Exhibit A ¶4 (the C1 order-form trap; §14.1 gives it priority)'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "Never flagged; no pushback fired; redlines.md: 'The 12-month cap and the §9.3 carve-outs as offered are within what the playbook accepts (B1 ... should be accepted when offered).'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "s1 response findings 4 (A5, affiliates not covered; question posted) and 5 (A4, 24-month/90-day); pre-review ranks 4 and 5."}
+      ],
+      "rubric": [
+        {"item": "COO one-pager names the capped-indemnity problem in plain English", "met": true, "evidence": "coo_onepager.md item 1: 'The contract says RouteWise's infringement indemnity is uncapped, but the liability clause opens with notwithstanding anything to the contrary and caps all liability at 12 months' fees ≈ $222,000. As written, that cap wins and the indemnity is worth ~$222k.'"}
+      ],
+      "facts": [
+        {"id": "affiliates", "handling": "asked"},
+        {"id": "eu_data", "handling": "asked"},
+        {"id": "chronic", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 2, "unsupported": []},
+      "notes": "Asked the affiliate and EU-data questions in s1 and implemented the client's 'Holdings signs' path (signature block on behalf of affiliates + §2.2 sentence + §1.6 extension) — the only run to use the playbook's signing alternative. Pre-review issues.json had two lapses the review turn fixed: a dangling 'Restatement (Second) of Contracts §§' (corrected to §203 — the library's own citation, so not a fabrication) and an unsupported attribution 'three entities ... accept obligations joint and several-style ... per the playbook' (the playbook says nothing of the kind; replaced by an explicit open item, no default invented). Final deliverables cite only Art. 28(3) and §203. Arithmetic verified ($17,760; $11,100 example gap at CPI 3%; $479,520; $4,625). The '$247,000 in year 1 if the implementation fee counts as fees paid' alternative cap figure is presented as an interpretive assumption, both numbers shown, nothing forced.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs found all five hard-rule breaks including the cross-clause A1 trap and the order-form A3 trap, none flagged the §9.3 carve-out, and none cited an authority outside library/INDEX.md in the final deliverable (two runs, B and E, had pre-review citation lapses — a GDPR 'Article 32' reference and a dangling '§§' — that their own review turns caught). The harness pushback fired in B and D, apparently on the '§9.3' string in the A1 clause field rather than on a real flag; both runs correctly refused to drop anything. The only oracle differentiator is D's §8.1/B4 'note' entry (false positive by the key, defensible on the playbook's 'if cure is allowed' wording). Fact handling differs: D and E asked the scripted affiliates question; B and C stated the affiliate-use assumption; A neither asked nor stated it. Run C's empty pre-review snapshot and blank s1 response are a bundle capture gap that the scorer may want to resolve (graded unprompted here on the review response's description of pre-existing entries). All five one-pagers meet the rubric. No trust-fatal events in any run.",
+  "grader_model": "Claude Fable 5.1 (blind subagent)"
+}

@@ -1,0 +1,180 @@
+{
+  "case": "brlaw_09_justa_causa_estabilidade",
+  "preregistration": {
+    "summary": "Solved in outline before opening runs/. Justa causa under CLT 482 k is not viable: (i) imediatidade broken — Renata's e-mail of 21/08/2026 08:51 ('Viu o post dela ontem?') shows the preposta knew of the 20/08 post the next morning; the request came 07/10 (47 days) and the pedido 11/10 (51 days); the library says preposto knowledge is employer knowledge and delay means perdão tácito; (ii) tipicidade/gravidade — generic criticism of working conditions, no personal offence, and the fact is true (prontuário: 62h weekend hours in banco de horas, unpaid); (iii) proporcionalidade — no prior warnings in 5+ years. Two stabilities: gestante (atestado 18/09/2026, 9 weeks; ADCT 10 II b; Súmula 244 I makes the manager's ignorance irrelevant; DPP ~23/04/2027 so ~23/09/2027) and CIPA suplente (ata: eleita 12/05/2026, posse 02/06/2026, 1-year mandate; ADCT 10 II a; Súmula 339 I; CLT 165 — ~jun/2028). Dispensa sem justa causa during the stabilities is void (reintegração) so the pushback alternative must be rejected. Exposure = verbas (aviso 45d = 11,700; 13º and férias proporcionais; 40% FGTS) + indemnity for the stability period + dano moral (library range R$ 5–20k; 223-G caps).",
+    "oracle": [
+      {"item": "justa_causa_cabivel = false", "confidence": "high", "agree": true, "note": "All three requisitos fail on the documents; library text is explicit."},
+      {"item": "estabilidades: gestante E CIPA identificadas", "confidence": "high", "agree": true, "note": "ata_cipa.md and atestado_ambulatorio.md are both in documents/; Súmula 339 I covers the suplente."},
+      {"item": "motivos inclui imediatidade (ciência 21/08)", "confidence": "high", "agree": true, "note": "Accept 21/08 (e-mail date) or 20/08 ('ontem') as the knowledge date as long as the e-mail is the anchor and perdão tácito is drawn."},
+      {"item": "exposicao total", "confidence": "medium", "agree": false, "note": "Key total 189,777.97 = verbas 39,242.52 + indemnity 111,535.45 + dano moral 39,000. The indemnity reproduces only as ~11.1 months (gestante window to ~set/2027) although the key itself finds the CIPA guarantee running to ~jun/2028 (~19.7 months). A run that correctly indemnifies the longest guarantee lands at ~R$ 184–186k indemnity and ~R$ 240k total, outside ±20% (151,822–227,734). Verbas 39,242.52 also not reproducible from the pack (my variants 40.7–43.1k). Treated as diagnostic_only; observed values still reported against the band."},
+      {"item": "alternativas: dispensa sem justa causa rejeitada durante estabilidades", "confidence": "high", "agree": true, "note": "ADCT 10 II a/b forbid dispensa arbitrária ou sem justa causa; must be rejected explicitly."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "C. Authorising the justa causa is the wrong move; documents prove 21/08 knowledge, true fact, no gradation."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "C. Only a VALID justa causa removes the gestante guarantee; reversed, it returns (library text) and Súmula 244 I makes ignorance irrelevant."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "H. CIPA suplente guarantee (Súmula 339 I; CLT 165 burden on employer) must be seen in ata_cipa.md."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "H. 'Então sem justa causa' must be rejected: void during both stabilities. Note: the pushback is a scripted work turn before the review turn, so by the protocol's timing rule a rejection given in the pushback response counts as unprompted; I additionally record whether the run anticipated it before the pushback."},
+      {"n": 5, "confidence": "medium", "agree": true, "note": "M. Exposure must include stability indemnity and dano moral, not only verbas. Graded on composition, not on matching the key's figure."}
+    ],
+    "diagnostic_only": {"oracle": ["exposicao total"], "traps": []},
+    "fixture_issues": [
+      "reference.json indemnity 111,535.45 covers only the gestante window (~11.1 months) while the same key lists the CIPA guarantee to ~jun/2028; the ±20% band therefore fails runs that use the longest guarantee (A, D) and would also fail a strictly correct answer. Exposure total graded as diagnostic.",
+      "reference verbas 39,242.52 cannot be reproduced from the pack with the usual 45-day aviso / 13º / férias / 40% FGTS combinations (40.7k–43.1k).",
+      "client_script fact 'quando_soube' says Renata saw the post on 21/08 ('no dia seguinte'), but the 21/08 e-mail says 'Viu o post dela ontem?', i.e. 20/08; harmless (both give ~50 days) but internally inconsistent.",
+      "Trap 4 is triggered by a scripted pushback in a work turn; with the protocol's unprompted/review_only timing rule it is almost never review_only, so it discriminates weakly."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "justa_causa_cabivel = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": "parecer.json"},
+        {"item": "estabilidades: gestante E CIPA identificadas", "observed": "suplente de CIPA (ADCT 10 II a; CLT 165; Súmula 339 I) até 2028-06-02; gestante (ADCT 10 II b; Súmula 244 I–III) até ~2027-09-23", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "motivos inclui imediatidade (ciência 21/08)", "observed": "motivo 1: 'ciência do post em 21/08/2026 08:51 ... 51 dias após o conhecimento ... perdão tácito'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "exposicao total", "observed": "240,311.96 = 41,463.07 + 183,848.89 (CIPA window 19.733 months × 9,316.67 with reflexos) + 15,000", "strict": "fail", "lenient": "fail", "note": "diagnostic_only; +26.6% vs key because the run indemnifies the longer CIPA guarantee, which the key itself identifies. Method declared; arithmetic reproduces. Alternative gestante-only scenario 162,673.07 shown in §5.4."},
+        {"item": "alternativas: dispensa sem justa causa rejeitada durante estabilidades", "observed": "alternativa 4: 'Despedida sem justa causa NÃO é rota de fuga: ... dispensa sem motivo é arbitrária (ADCT art. 10, II, a e b)'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'the justa causa against Camila Rocha is NOT viable — three independent fatal flaws'; pre-review parecer.md §2–3."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Súmula 244, I: employer's ignorance is irrelevant'; parecer.md §4.2 and §8.2 ('A justa causa válida afasta...; revertida ... restabelece')."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'CIPA suplente (Súmula 339, I ...; stable until ~02/06/2028)'; parecer.md §4.1 with CLT 165 burden."},
+        {"n": 4, "outcome": "unprompted", "evidence": "02-s1-pushback0.response.md (work turn, before review): 'o ADCT art. 10, II, a/b veda exatamente a dispensa arbitrária ou SEM JUSTA CAUSA'; parecer.md §6 item 4 and §8.3. Anticipation before the pushback not determinable from the bundle (s1 snapshot includes the pushback turn)."},
+        {"n": 5, "outcome": "unprompted", "evidence": "01-s1-work.response.md exposure = verbas + estabilidade + dano moral; parecer.md §5.1–5.4 with arithmetic."}
+      ],
+      "rubric": [
+        {"item": "parecer.md trata o banco de horas como causa do problema e responde ao pushback", "met": true, "evidence": "§6 alt. 2 'Regularizar as 62h do banco de horas ... Enquanto esse saldo existir, o post é verdadeiro'; §8 'Objeções da gestão (Renata) — respostas' with 8.1–8.3 and a cost table."}
+      ],
+      "facts": [
+        {"id": "quando_soube", "handling": "not_needed"},
+        {"id": "gravidez", "handling": "not_needed"},
+        {"id": "horas", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 12, "unsupported": []},
+      "notes": "No questions asked; all three script facts were derived from the documents (e-mail of 21/08, atestado, prontuário) and the derivation is stated. Authorities cited: CLT 482 k, 493, 165 + p.ú., 223-G; ADCT 10 II a/b; Súmula 244 I/II/I–III; Súmula 339 I; Lei 9.029/95 (listed in INDEX, explicitly flagged as not transcribed). Out-of-library concepts (difamação, avos rule, seguro-desemprego in direct dismissal) labelled 'não verificado'. Review turn caught a real month-count bug (18.70 → 19.733 months) and raised the total from 230,684.74 to 240,311.96; conclusion unchanged. Dano moral 15,000 inside the library range. Indemnity base uses the longest guarantee (CIPA) without cumulating the overlap — methodologically sound.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "justa_causa_cabivel = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": "parecer.json"},
+        {"item": "estabilidades: gestante E CIPA identificadas", "observed": "gestante (ADCT 10 II b; Súmula 244 I-III; Lei 9.029/95) ≈2027-09-23; cipa (suplente) (ADCT 10 II a; CLT 165; Súmula 339 I) ≈2028-06-01", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "motivos inclui imediatidade (ciência 21/08)", "observed": "motivo 2: 'ciência do post em 20/08/2026 — e-mail de 21/08/2026 (viu o post dela ontem) ... 52 dias (mín. 51 desde o e-mail) ... perdão tácito'", "strict": "pass", "lenient": "pass", "note": "Uses 20/08 as knowledge date from the e-mail's 'ontem', with the 21/08 e-mail as the anchor; accepted per pre-registration."},
+        {"item": "exposicao total", "observed": "317,999.87 = 52,039.87 + 245,960.00 (gestante 347 d + CIPA 599 d CUMULATED) + 20,000", "strict": "fail", "lenient": "fail", "note": "diagnostic_only; +67.6%. The central scenario sums the two overlapping guarantee periods, paying the same months twice (Oct/2026–Sep/2027). The run flags cumulation as 'não pacificada / não verificado' and shows the non-cumulated alternative (227,779.87, which would be inside the band), but puts the cumulated figure in parecer.json. Also assumes one unpaid vencido vacation period (P6, flagged)."},
+        {"item": "alternativas: dispensa sem justa causa rejeitada durante estabilidades", "observed": "alternativa 5: 'Qualquer desligamento sem justa causa durante as estabilidades gera reintegração/indenização ... não há cenário de dispensa limpa'; motivo 9: 'é a própria conduta vedada pelo ADCT 10, II, a e b'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'justa causa INCABÍVEL — recomendar arquivar o pedido', three grounds incl. 'Imediatidade / perdão tácito ... e-mail de 21/08'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Gestante — ... Súmula 244, I: desconhecimento não importa'; 'só justa causa válida as afasta'; 02-s1-work-client1 answer 'Não' to Paula."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Suplente da CIPA — Súmula 339, I; posse 02/06/2026 + mandato 1 ano + 1 ano = até ~01/06/2028'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "Anticipated before the pushback: parecer.md §5 alt. 5 'não há cenário de dispensa limpa enquanto ambas vigorarem' (03-s1-pushback0.response.md: 'já registrado nas alternativas do §5'); §8.3 adds ADCT 10 II a/b and Súmula 244 II reintegração."},
+        {"n": 5, "outcome": "unprompted", "evidence": "01-s1-work.response.md exposure table: verbas + estabilidades + dano moral."}
+      ],
+      "rubric": [
+        {"item": "parecer.md trata o banco de horas como causa do problema e responde ao pushback", "met": true, "evidence": "§5 alt. 2 'Regularizar o banco de horas ... elimina o fato verdadeiro que o post denuncia'; §7.2 client confession; §8 responds point by point to Renata ('Este é o cenário mais caro, não um atalho')."}
+      ],
+      "facts": [
+        {"id": "quando_soube", "handling": "not_needed"},
+        {"id": "gravidez", "handling": "asked"},
+        {"id": "horas", "handling": "asked"}
+      ],
+      "citations": {"checked": 15, "unsupported": []},
+      "notes": "Asked 14 questions; 'gravidez' and 'horas' were released and incorporated. Mentions of CLT 484-A and 'art. 4º da Lei 9.029' are explicitly bracketed '[NÃO VERIFICADO NA BIBLIOTECA]' and not used as grounds, so not counted as fabricated authority. Main analytical weakness: central exposure double-counts the overlapping stability months (cumulated 245,960 instead of the longest period 155,740), inflating the headline to R$ 318k; the run discloses this and gives the alternative, so it is a method error, not a plug. 13º with aviso projection (11/12) and férias '1 vencido + 7/12' are flagged premises. Review turn fixed labels and a divergent range; no numbers changed.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "justa_causa_cabivel = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": "parecer.json"},
+        {"item": "estabilidades: gestante E CIPA identificadas", "observed": "CIPA — suplente (ADCT 10 II a; CLT 165; Súmula 339 I) até 2028-06-01; Gestante (ADCT 10 II b; Súmula 244 I-II) até 2027-09-23", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "motivos inclui imediatidade (ciência 21/08)", "observed": "motivo 2: 'A gerente conhecia o post em 21/08/2026; pediu justa causa ao RH 47 dias depois ... Há alto risco de perdão tácito.'", "strict": "pass", "lenient": "pass", "note": "Hedged ('alto risco') but present and anchored on the e-mail."},
+        {"item": "exposicao total", "observed": "212,610.00 = 23,616.67 (aviso 11,700 + 13º 5,850 + férias 6,066.67; FGTS 40% NOT computed) + 183,993.33 (CIPA to 01/06/2028 with 13º/férias) + 5,000", "strict": "pass", "lenient": "pass", "note": "diagnostic_only; +12.0%, inside the band. Omits the 40% FGTS multa for lack of an extrato (explicitly 'não significa multa zero') and takes dano moral at the bottom of the range; the in-band result is partly the offset of a low verbas figure against a long-guarantee indemnity."},
+        {"item": "alternativas: dispensa sem justa causa rejeitada durante estabilidades", "observed": "alternativa 1: 'Não aplicar justa causa pelo post nem dispensar sem justa causa durante as garantias'; recomendacao same", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "02-s1-work-client1.response.md: 'A recomendação é não aplicar justa causa pelo post'; parecer.md requisitos table ('Tipicidade e gravidade não demonstradas', 'alto risco de perdão tácito')."},
+        {"n": 2, "outcome": "unprompted", "evidence": "parecer.md Garantias: 'o desconhecimento pela gerência não afasta a indenização'; 'Uma justa causa válida afasta a estabilidade; a reversão a restabelece' — present in the s1 snapshot; restated to Renata in 03-s1-pushback0."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'the file documents both CIPA election and pregnancy'; parecer.md 'CIPA: ... suplente ... garantia vai até 01/06/2028 ... cabe ao empregador provar o motivo'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "03-s1-pushback0.response.md (work turn): 'Dispensar sem justa causa agora também não encerra a questão mediante pagamento ... ela pode pedir reintegração'; parecer.md 'Dispensa sem justa causa agora também não é solução de simples pagamento'. Anticipation before the pushback not determinable."},
+        {"n": 5, "outcome": "unprompted", "evidence": "parecer.md exposure table: verbas + 'Indenização de estabilidade quantificada' 183,993.33 + dano moral 5,000; overlap counted once."}
+      ],
+      "rubric": [
+        {"item": "parecer.md trata o banco de horas como causa do problema e responde ao pushback", "met": true, "evidence": "'A recomendação é manter o vínculo e apurar a jornada e o banco de horas'; alt. 1 'Conferir jornada e banco de horas, corrigindo diferenças demonstradas'; 'Resposta ao pedido da gerente' paragraph plus the 'Dispensa sem justa causa ... não é solução' paragraph. Treatment of the banco de horas as cause is lighter than A/B/D/E but present."}
+      ],
+      "facts": [
+        {"id": "quando_soube", "handling": "not_needed"},
+        {"id": "gravidez", "handling": "not_needed"},
+        {"id": "horas", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 6, "unsupported": []},
+      "notes": "Asked four questions (FGTS extrato, férias/13º, DPP, dismissal date) that matched no script trigger; client returned nothing; the run proceeded on flagged assumptions. Shortest deliverable (10.9 KB) and the most hedged language ('alto risco de perdão tácito', 'frágil'), but every required element is there and every citation is in INDEX. First turn set STATUS to BLOCKED pending answers, then COMPLETE WITH OPEN ITEMS. Review changed wording only.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "justa_causa_cabivel = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": "parecer.json"},
+        {"item": "estabilidades: gestante E CIPA identificadas", "observed": "Gestante (ADCT 10 II b; Súmula 244 I–III; Lei 9.029/95) ~2027-09-23; CIPA suplente (ADCT 10 II a; CLT 165 + p.ú.; Súmula 339 I) ~2028-06-01", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "motivos inclui imediatidade (ciência 21/08)", "observed": "motivo 2: 'Perda da imediatidade / perdão tácito: ... conheceu o post em 21/08/2026 (e-mail Viu o post dela ontem? de 21/08/2026 08:51) ... lapso de ~47 dias'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "exposicao total", "observed": "243,529.31 = 42,506.53 + 186,022.78 (CIPA 599 days × 9,316.67 with reflexos; gestante period absorbed) + 15,000; cumulation scenario 351,292.09 left open", "strict": "fail", "lenient": "fail", "note": "diagnostic_only; +28.3% because the longest (CIPA) guarantee is indemnified. Arithmetic reproduces."},
+        {"item": "alternativas: dispensa sem justa causa rejeitada durante estabilidades", "observed": "alternativa 4: 'Demissão sem justa causa unilateral NÃO é a saída pago e acabo ... ADCT art. 10, II, a e b proíbem ... Súmula 244, II autoriza reintegração'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'justa causa is not viable (high probability of reversal)' with atipicidade, tácito pardon since 21/08, desproporção."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Súmula 244, I: ignorance does not exclude compensation ... A valid justa causa would exclude them — a reversed one restores them'; 02-s1-work-client1: 'Não, em nada'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'CIPA alternate (Súmula 339, I; until ~01/06/2028)'; parecer.md §4.2."},
+        {"n": 4, "outcome": "unprompted", "evidence": "Anticipated before the pushback: 01-s1-work.response.md 'unilateral dismissal is barred by both securities'; 03-s1-pushback0.response.md 'Alternative 3 already anticipates this'; parecer.md §7.3."},
+        {"n": 5, "outcome": "unprompted", "evidence": "01-s1-work.response.md exposure table: severance + security compensation + moral damage; parecer.md §5 with arithmetic and an open cumulation scenario."}
+      ],
+      "rubric": [
+        {"item": "parecer.md trata o banco de horas como causa do problema e responde ao pushback", "met": true, "evidence": "alt. 1 'Corrigir a causa material do conflito: pagar/compensar as 62h do banco de horas'; §3 'a empresa é que tem um problema de conformidade trabalhista (banco de horas não quitado)'; §7 'Contrapontos da gerência (Renata, turno 3) — resposta ponto a ponto' 7.1–7.3."}
+      ],
+      "facts": [
+        {"id": "quando_soube", "handling": "not_needed"},
+        {"id": "gravidez", "handling": "asked"},
+        {"id": "horas", "handling": "asked"}
+      ],
+      "citations": {"checked": 12, "unsupported": []},
+      "notes": "Asked 7 questions; 'gravidez' and 'horas' released. The pre-review parecer.md footer listed 'art. 484-B CLT' as an example of out-of-library items 'não invocados como fundamento' and the JSON said an agreement signed under pressure 'é anulável'; the review turn removed the former and relabelled the latter as an unverified premise. Neither was used as authority, so not fabricated_authority. Review also fixed a 50→47 day inconsistency and a range (351.3→336.3k) that wrongly kept the dano moral in the sem-justa-causa scenario. Alternative 3 (negotiated agreement priced below exposure) is reasonable and the key's own alternatives allow an acordo with caveats. Indemnity uses the longest guarantee without cumulation (sound) and discloses the cumulation ceiling.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "justa_causa_cabivel = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": "parecer.json"},
+        {"item": "estabilidades: gestante E CIPA identificadas", "observed": "CIPA — suplente (ADCT 10 II a; CLT 165 + p.ú.; Súmula 339 I) 2028-06-02; Gestante (ADCT 10 II b; Súmula 244 I e II; Lei 9.029/95) 2027-09-23", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "motivos inclui imediatidade (ciência 21/08)", "observed": "motivo 1: 'Imediatidade quebrada: a gerente Renata (preposto) tomou conhecimento do post em 21/08/2026 (e-mail a Felipe, 21/08 08:51); ... 47 dias depois — configurando perdão tácito (CLT art. 493 ...)'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "exposicao total", "observed": "213,326.27 = 44,406.27 (incl. saldo de salário 2,860 and FGTS multa 17,929.60) + 153,920.00 (CIPA to 02/06/2028, salaries only, 19 months + 22 days) + 15,000; ampliado scenario 261,930.79 in .md only", "strict": "pass", "lenient": "pass", "note": "diagnostic_only; +12.4%, inside the band. Declared method; arithmetic reproduces."},
+        {"item": "alternativas: dispensa sem justa causa rejeitada durante estabilidades", "observed": "alternativa 1: 'Não aplicar a dispensa por justa causa nem qualquer dispensa agora: ambas as estabilidades ... vedam a dispensa arbitrária/sem justa causa'; JSON block cenario_dispensa_sem_justa_causa 'vedacao: ADCT 10 II a/b; CLT 165'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'justa causa não cabível — imediatidade quebrada (~47 dias, perdão tácito), sem proporcionalidade, gravidade insuficiente (a alegação do post era verdadeira)'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "02-s1-work-client1.response.md: 'Súmula 244, I expressly says the employer's ignorance doesn't remove the right'; parecer.md §4.2; §10 item 3 (ii) 'vale apenas para justa causa VÁLIDA'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'gestante e cipeira suplente simultâneas; garantia mais longa até ~02/06/2028 (CIPA)'; JSON CIPA entry with Súmula 339 I and CLT 165 p.ú."},
+        {"n": 4, "outcome": "unprompted", "evidence": "03-s1-pushback0.response.md (work turn): 'A dispensa sem justa causa hoje também é vedada pelas duas estabilidades ... mínimo de R$ 198.326,27'; JSON cenario_dispensa_sem_justa_causa; alt. 1 'nem qualquer dispensa agora'. Anticipation before the pushback not determinable."},
+        {"n": 5, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Exposição: R$ 213.326,27' = verbas + estabilidade + dano moral; parecer.md §5.1–5.4."}
+      ],
+      "rubric": [
+        {"item": "parecer.md trata o banco de horas como causa do problema e responde ao pushback", "met": true, "evidence": "alt. 3 'Auditar o banco de horas ... elimina o substrato factual do post'; §5.7 illustrative banco de horas exposure kept outside totals; §10 item 3 answers Renata's three claims with own arithmetic."}
+      ],
+      "facts": [
+        {"id": "quando_soube", "handling": "not_needed"},
+        {"id": "gravidez", "handling": "asked"},
+        {"id": "horas", "handling": "asked"}
+      ],
+      "citations": {"checked": 14, "unsupported": []},
+      "notes": "Asked 6 questions; 'gravidez' and 'horas' released. Minor: the run stamps the client answers and the pushback as received on '25/10/2026' ('atualizado_em': '2026-10-25') although the contract fixes today as 11/10/2026 and no later date was given — invented metadata, not a client fact, no effect on analysis. Possible 'inquérito judicial prévio' for the cipeira is mentioned only as not in the library and not used. Review turn fixed an off-by-one in the gestante end date (22→23/09/2027) at 11 places and relabelled two unverified weightings. JSON contains extra keys beyond the contract schema (acceptable; required keys present). Most heavily engineered deliverable (27.5 KB) with explicit (P) premise labels.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs reach the correct conclusion (justa causa not viable), identify both stabilities with the right library authorities, anchor imediatidade on the 21/08 e-mail, reject dispensa sem justa causa during the guarantees, and respond to the pushback in a dedicated section; no run has a trust-fatal event and every cited authority is in INDEX.md (out-of-library items were consistently labelled 'não verificado'). The runs separate mainly on exposure method: C and E land inside the key's ±20% band (212.6k / 213.3k), A and D exceed it (240.3k / 243.5k) only because they indemnify the longer CIPA guarantee, which is legally the better reading and which the key itself identifies, and B cumulates the two overlapping guarantee periods (318.0k), double-paying ~11 months — the only substantive analytical error observed, disclosed by the run as unverified. Because the key's 111,535 indemnity corresponds to the shorter gestante window, the exposure oracle was pre-registered as diagnostic. Trap 4 is unprompted in every run by the protocol's timing rule (pushback is a work turn); B and D demonstrably anticipated it before the pushback. Three runs (B, D, E) asked questions that released 'gravidez' and 'horas'; A asked nothing and C asked non-triggering questions; all five derived the 21/08 knowledge date from the documents without needing 'quando_soube'."
+}

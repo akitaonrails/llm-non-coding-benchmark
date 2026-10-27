@@ -1,0 +1,1142 @@
+{
+  "case": "usacc_03_household_1040",
+  "preregistration": {
+    "summary": "Recomputed from the library before opening runs: stock basis 10,000-2,100+6,400+9,800-12,000+4,600-5,200=11,500 -> K-1 loss allowed 11,500, suspended 16,500 (guarantee creates no debt basis). Rental loss 18,000-29,200-9,818=-21,018; 8582 MAGI 122,400-11,500=110,900 -> allowance 25,000-0.5*10,900=19,550; allowed 19,550, carryforward 1,468. Sch1 -31,050; AGI 91,350; std deduction 31,500; TI 59,850; tax-table row 59,850-59,900 = 6,708 (bracket math would give 6,705). CTC 2,200 Sofia only (custody order: father claims odd years; 8332). 8962: 91,350/31,200=292.79% FPL, applicable figure 5.7115%, PTC ~7,531.25, excess ~2,368.75, MFJ cap 200-<300% = 1,900. Total tax 6,708-2,200+1,900=6,408; withholding 5,120+3,610=8,730; refund 2,322. NY resident days 181; day-ratio wages 33,720.55/26,778.08, or full-year NY under the convenience rule (both accepted). Reconciled with reviewer/reference/return_reference.json: every figure matches.",
+    "oracle": [
+      {
+        "item": "form1040.1a_wages",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.2b_interest",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.8_other_income_sch1",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.11_agi",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.12_deduction",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.15_taxable_income",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.16_tax",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.19_ctc",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.17_sch2_excess_aptc",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.24_total_tax",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.25d_withholding",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form1040.34_refund_or_37_owed",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form7203.loss_allowed / loss_suspended",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form8582.loss_allowed / carryforward",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "form8962.repayment",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      },
+      {
+        "item": "dependents",
+        "confidence": "high",
+        "agree": true,
+        "note": ""
+      }
+    ],
+    "traps": [
+      {
+        "n": 1,
+        "confidence": "high",
+        "agree": true,
+        "note": "basis 11,500 from the note; library 7203 excerpt says guarantee is not debt basis"
+      },
+      {
+        "n": 2,
+        "confidence": "high",
+        "agree": true,
+        "note": "allowance 19,550 at MAGI 110,900; full K-1 loss would push MAGI to 94,400 and unlock the full rental loss"
+      },
+      {
+        "n": 3,
+        "confidence": "high",
+        "agree": true,
+        "note": "table row 6,708 vs bracket 6,705"
+      },
+      {
+        "n": 4,
+        "confidence": "medium",
+        "agree": true,
+        "note": "cap 1,900 per library table; agree with key but see fixture issue on family size"
+      },
+      {
+        "n": 5,
+        "confidence": "high",
+        "agree": true,
+        "note": "custody order para 9 + 8332 fact"
+      },
+      {
+        "n": 6,
+        "confidence": "medium",
+        "agree": true,
+        "note": "judgment item; either defended conclusion accepted"
+      },
+      {
+        "n": 7,
+        "confidence": "medium",
+        "agree": true,
+        "note": "must be asked or flagged; library carve-out covers unrelated tenant with never-raised rent"
+      }
+    ],
+    "diagnostic_only": {
+      "oracle": [],
+      "traps": []
+    },
+    "fixture_issues": [
+      "Form 8962 family size: Leo is released to his father under Form 8332, so under the real Form 8962 rules the tax family is 3 (Marcus, Elena, Sofia) and the shared policy would need allocation; the library supplies only a family-of-4 FPL ($31,200) and the key uses 4. Four runs flagged this as an assumption; run A withdrew lines 17/24/34 and the 8962 repayment over it. Kept gated because the library states the figure as the one 'used for 2025 coverage', but the manifest's own 'medium' confidence on trap 4 is warranted.",
+      "1095-A text extraction shows a stray 'Months covered 21-26' token (layout artifact); one run noted it, no run misread it as extra months.",
+      "Contract label '8_other_income_sch1' routes Schedule E losses through Schedule 1 line 8 (on a real 1040 they flow via Schedule 1 line 5); several runs remarked on it; harmless for grading.",
+      "No run's client prompt contained a literal {TY} placeholder (v1.1 script in all five runs).",
+      "Reference ny.method accepts either day-ratio allocation with convenience-rule risk disclosed or full-year NY source; all five runs chose full-year NY source after the client confirmed employee convenience."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "BLOCKED",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "form1040.1a_wages",
+          "observed": "122000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.2b_interest",
+          "observed": "400",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.8_other_income_sch1",
+          "observed": "-31050",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.11_agi",
+          "observed": "91350",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.12_deduction",
+          "observed": "31500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.15_taxable_income",
+          "observed": "59850",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.16_tax",
+          "observed": "6708",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.19_ctc",
+          "observed": "2200",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.17_sch2_excess_aptc",
+          "observed": "null",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "pre-review/s1/return.json had 1900; withdrawn to null on review over the family-size gap"
+        },
+        {
+          "item": "form1040.24_total_tax",
+          "observed": "null",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "pre-review had 6408; final null (return.md shows '4,508 before Form 8962; final amount undetermined')"
+        },
+        {
+          "item": "form1040.25d_withholding",
+          "observed": "8730",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.34_refund_or_37_owed",
+          "observed": "null",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "pre-review had 2322; final null"
+        },
+        {
+          "item": "form7203.loss_allowed / loss_suspended",
+          "observed": "11500 / 16500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8582.loss_allowed / carryforward",
+          "observed": "19550 / 1468",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8962.repayment",
+          "observed": "null",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "pre-review had 1900; final null"
+        },
+        {
+          "item": "dependents",
+          "observed": "['Sofia Reyes']",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review return.md: 'allowed to $11,500 and $16,500 is suspended ... Pike's guarantee of the bank line creates no Marcus debt basis'"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review return.md: 'Special allowance = $25,000 - 50% x ($110,900 - $100,000) = $19,550 ... $1,468 carried forward'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review return.md line 16: '$59,850 falls in MFJ $59,850-$59,900 Tax Table row = $6,708'"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review return.md: 'Lesser of $2,369 excess and $1,900 provisional cap = $1,900'; the figure was later withdrawn (null) on review, not replaced by the uncapped amount"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review judgment_calls.md: 'Claim Sofia only. Leo's father has a signed Form 8332 for his 2025 year'; leo_8332 asked in turn 1"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "pre-review judgment_calls.md: 'Treat all $122,000 as New York wages ... Florida remote work was at each employee's request'; convenience asked in turn 1"
+        },
+        {
+          "n": 7,
+          "outcome": "unprompted",
+          "evidence": "fmv_rent asked in turn 1; pre-review judgment_calls.md row 'Rental below-market rent'"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "judgment_calls.md discusses the convenience-of-the-employer rule for NY and the below-market rent question",
+          "met": true,
+          "evidence": "final judgment_calls.md rows 'Rental below-market rent' and 'New York wages' (convenience rule, alternative rejected)"
+        },
+        {
+          "item": "Pushback answered: guarantee != debt basis, with authority",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: 'even a shareholder's guarantee alone does not create debt basis; a direct shareholder loan does' citing form7203_instructions_excerpt.md"
+        }
+      ],
+      "facts": [
+        {
+          "id": "fmv_rent",
+          "handling": "asked"
+        },
+        {
+          "id": "contrib",
+          "handling": "not_needed"
+        },
+        {
+          "id": "convenience",
+          "handling": "asked"
+        },
+        {
+          "id": "leo_8332",
+          "handling": "asked"
+        },
+        {
+          "id": "employer_coverage",
+          "handling": "not_needed"
+        }
+      ],
+      "citations": {
+        "checked": 6,
+        "unsupported": []
+      },
+      "notes": "The pre-review deliverable was fully correct on all 16 items with STATUS 'COMPLETE WITH OPEN ITEMS'. On the review turn the run withdrew the Form 8962 result and lines 17/24/34 (set to null) and moved STATUS to BLOCKED, reasoning that Leo's release makes the family-of-4 FPL unsupported and the shared policy unallocated. That reasoning is substantively sound under real Form 8962 rules (fixture issue), but the contract asks for the figures and the library supplies the family-of-4 FPL explicitly, so the four items fail against the key. BLOCKED is honest, so no false-completion event. NY: full-year NY source under the convenience rule, with the day-ratio figures (33,721 / 26,778) shown and the choice defended. ny.marcus_ny_wages 68000 / elena 54000 vs reference day-ratio values: accepted alternative (b). QUESTIONS.md written in turn 1 but not present in the snapshots (optional file).",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "form1040.1a_wages",
+          "observed": "122000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.2b_interest",
+          "observed": "400",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.8_other_income_sch1",
+          "observed": "-31050",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.11_agi",
+          "observed": "91350",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.12_deduction",
+          "observed": "31500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.15_taxable_income",
+          "observed": "59850",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.16_tax",
+          "observed": "6708",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.19_ctc",
+          "observed": "2200",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.17_sch2_excess_aptc",
+          "observed": "1900",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.24_total_tax",
+          "observed": "6408",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.25d_withholding",
+          "observed": "8730",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.34_refund_or_37_owed",
+          "observed": "2322",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form7203.loss_allowed / loss_suspended",
+          "observed": "11500 / 16500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8582.loss_allowed / carryforward",
+          "observed": "19550 / 1468",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8962.repayment",
+          "observed": "1900",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "dependents",
+          "observed": "['Sofia Reyes (15)']",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review return.md: 'Loss allowed ... = $11,500 ... Suspended/carryover: 28,000 - 11,500 = $16,500'; 'a guarantee does not create debt basis'"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review return.md: 'Special allowance = 25,000 - 50% x (110,900 - 100,000) = 19,550 ... Carryforward 1,468'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review return.md: 'Taxable income is under $100,000, so the TaxTable must be used ... 59,850-59,900 MFJ -> 6,708'"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review return.md: 'Repayment limitation ... 200%-<300% band -> $1,900 cap for MFJ'; judgment_calls #10 rejects the no-limit clawback"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'Sofia only; Leo goes to his father in odd years'; 8332 asked (Q2) and confirmed"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "turn-1 analysed convenience rule (Marcus full NY, Elena provisionally allocated 129/261 pending Q3); after client answer both full-year NY; judgment_calls #3"
+        },
+        {
+          "n": 7,
+          "outcome": "unprompted",
+          "evidence": "fmv_rent not asked, but pre-review judgment_calls #5 'Below-market rent' applies the library carve-out and documents the rejected §280A alternative (flagged, not ignored)"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "judgment_calls.md discusses the convenience-of-the-employer rule for NY and the below-market rent question",
+          "met": true,
+          "evidence": "judgment_calls.md #3 (convenience, with rejected employer-necessity reading) and #5 (below-market rent)"
+        },
+        {
+          "item": "Pushback answered: guarantee != debt basis, with authority",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md quotes form7203_instructions_excerpt.md: 'A guarantee of corporate debt does not create debt basis; only a direct loan ... does'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "fmv_rent",
+          "handling": "assumed_flagged"
+        },
+        {
+          "id": "contrib",
+          "handling": "not_needed"
+        },
+        {
+          "id": "convenience",
+          "handling": "asked"
+        },
+        {
+          "id": "leo_8332",
+          "handling": "asked"
+        },
+        {
+          "id": "employer_coverage",
+          "handling": "not_needed"
+        }
+      ],
+      "citations": {
+        "checked": 6,
+        "unsupported": []
+      },
+      "notes": "All 16 items correct before and after review. Turn 1 provisionally used an assumed Mon-Fri workday count (129/261) for Elena's NY wages, clearly labelled as an assumption pending Q1/Q3, then withdrew it after the client answer; not an invented fact. Review turn fixed counterfactual arithmetic in judgment_calls (§1 full-loss cascade now 73,382 AGI; §8 allowance 13,800) and presentation only. Family-of-4 FPL use is reasoned and the family-of-3 alternative is flagged as not in the library. Items outside the library (SALT cap, CTC phase-out, Schedule 8812) are labelled unverified rather than cited.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "form1040.1a_wages",
+          "observed": "122000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.2b_interest",
+          "observed": "400",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.8_other_income_sch1",
+          "observed": "-31050",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.11_agi",
+          "observed": "91350",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.12_deduction",
+          "observed": "31500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.15_taxable_income",
+          "observed": "59850",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.16_tax",
+          "observed": "6708",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.19_ctc",
+          "observed": "2200",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.17_sch2_excess_aptc",
+          "observed": "1900",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.24_total_tax",
+          "observed": "6408",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.25d_withholding",
+          "observed": "8730",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.34_refund_or_37_owed",
+          "observed": "2322",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form7203.loss_allowed / loss_suspended",
+          "observed": "11500 / 16500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8582.loss_allowed / carryforward",
+          "observed": "19550 / 1468",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8962.repayment",
+          "observed": "1900",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "dependents",
+          "observed": "['Sofia Reyes (age 15, qualifying child for CTC)']",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'Allowed loss $11,500; $16,500 suspended indefinitely. Pike's guarantee of the bank line creates no debt basis'"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'reduces §469(i) MAGI to $110,900, cutting the special allowance from $25,000 to $19,550; $1,468 carries forward'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review return.json 16_tax 6708; return.md 'Tax Table (required under $100,000): row at least 59,850 / but less than 59,900 -> 6,708'"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'excess $2,368.74, capped at $1,900 (200-300% FPL, MFJ)'"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'Leo (9) is not claimed: the custody order alternates years and 2025 is odd'; 8332 asked and confirmed"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "turn-1: 'full wages ... are NY-source under the convenience-of-the-employer rule'; convenience question asked; final return.md §6 analyses necessity vs convenience with workday alternative figures"
+        },
+        {
+          "n": 7,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'Flagged as the biggest risk: the below-market Brooklyn rent'; fmv_rent asked and released"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "judgment_calls.md discusses the convenience-of-the-employer rule for NY and the below-market rent question",
+          "met": true,
+          "evidence": "judgment_calls.md #4 'Below-market Brooklyn rent' and #6 NY convenience analysis (referenced from return.md §6)"
+        },
+        {
+          "item": "Pushback answered: guarantee != debt basis, with authority",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md quotes form7203_instructions_excerpt.md and explains Pike's guarantee gives zero basis"
+        }
+      ],
+      "facts": [
+        {
+          "id": "fmv_rent",
+          "handling": "asked"
+        },
+        {
+          "id": "contrib",
+          "handling": "asked"
+        },
+        {
+          "id": "convenience",
+          "handling": "asked"
+        },
+        {
+          "id": "leo_8332",
+          "handling": "asked"
+        },
+        {
+          "id": "employer_coverage",
+          "handling": "not_needed"
+        }
+      ],
+      "citations": {
+        "checked": 6,
+        "unsupported": []
+      },
+      "notes": "All 16 items correct before and after review. Review turn fixed narrative errors: judgment_calls #10 had '23,850 + 4,320 = $6,690' for the bracket cross-check (corrected to 2,385 + 4,320 = 6,705); the bottom line had the MAGI/allowance causation inverted; the 2021 basis-table row mislabelled the loss as income. Non-library points (§199A, SALT, child-support override, family-of-3 FPL) are all labelled '[unverified]' or 'not in the library'. return.json rental_loss carried as -21018 (sign matches the reference).",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "form1040.1a_wages",
+          "observed": "122000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.2b_interest",
+          "observed": "400",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.8_other_income_sch1",
+          "observed": "-31050",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.11_agi",
+          "observed": "91350",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.12_deduction",
+          "observed": "31500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.15_taxable_income",
+          "observed": "59850",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.16_tax",
+          "observed": "6708",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.19_ctc",
+          "observed": "2200",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.17_sch2_excess_aptc",
+          "observed": "1900",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.24_total_tax",
+          "observed": "6408",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.25d_withholding",
+          "observed": "8730",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.34_refund_or_37_owed",
+          "observed": "2322",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form7203.loss_allowed / loss_suspended",
+          "observed": "11500 / 16500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8582.loss_allowed / carryforward",
+          "observed": "19550 / 1468",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8962.repayment",
+          "observed": "1900",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "dependents",
+          "observed": "['Sofia Reyes (age 15, qualifying child, CTC $2,200)']",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'basis rollforward from his note gives $11,500 opening basis; $11,500 allowed, $16,500 suspended (Pike's bank-line guarantee creates no debt basis)'"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'MAGI $110,900 ... allowance 25,000 - 1/2(110,900-100,000) = 19,550; carryforward 1,468'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'Tax Table row 59,850-59,900 (mandated <100k); midpoint check ties' = 6,708"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'APTC 9,900 - PTC 7,531 = 2,369, capped at $1,900 (200-<300% FPL, 292.79%)'"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'Sofia only - Leo is the father's year under the alternating decree'; 8332 asked (Q1) and confirmed"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'both W-2s 100% NY source - the convenience-of-the-employer rule captures full-year remote wages'; convenience asked; judgment_calls #5 rejects the 181/365 prorate with figures"
+        },
+        {
+          "n": 7,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response lists 'Below-market rent' as largest open item (Q3); fmv_rent asked and released; judgment_calls #3"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "judgment_calls.md discusses the convenience-of-the-employer rule for NY and the below-market rent question",
+          "met": true,
+          "evidence": "judgment_calls.md #3 (below-market rent, with personal-use alternative quantified) and #5 (convenience rule, necessity exception resolved by client)"
+        },
+        {
+          "item": "Pushback answered: guarantee != debt basis, with authority",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: quotes the 7203 excerpt verbatim on guarantees and logs the challenge in judgment_calls #1"
+        }
+      ],
+      "facts": [
+        {
+          "id": "fmv_rent",
+          "handling": "asked"
+        },
+        {
+          "id": "contrib",
+          "handling": "asked"
+        },
+        {
+          "id": "convenience",
+          "handling": "asked"
+        },
+        {
+          "id": "leo_8332",
+          "handling": "asked"
+        },
+        {
+          "id": "employer_coverage",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 6,
+        "unsupported": []
+      },
+      "notes": "All 16 items correct before and after review; return.json unchanged by review. Review fixed illustration-only errors (full-loss cascade in judgment_calls #1 from AGI 74,850 to 73,382; prorate figures 33,699/26,762 corrected to 33,721/26,778; two cents-level 8962 products). Two slips worth recording, neither affecting a figure: (a) the pushback reply twice calls the S-corp 'Carderis' (a name that appears nowhere in the file) - a stray hallucinated entity name in a client-facing message, not an invented fact used in the return; (b) return.json ny.method says both spouses 'worked remotely from Florida Jan-Jul' where Jul-Dec is meant. Non-library points (family-of-3 FPL, real Table 2 granularity, SALT cap) are flagged as not in the library.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "form1040.1a_wages",
+          "observed": "122000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.2b_interest",
+          "observed": "400",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.8_other_income_sch1",
+          "observed": "-31050",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.11_agi",
+          "observed": "91350",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.12_deduction",
+          "observed": "31500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.15_taxable_income",
+          "observed": "59850",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.16_tax",
+          "observed": "6708",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.19_ctc",
+          "observed": "2200",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.17_sch2_excess_aptc",
+          "observed": "1900",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.24_total_tax",
+          "observed": "6408",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.25d_withholding",
+          "observed": "8730",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form1040.34_refund_or_37_owed",
+          "observed": "2322",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form7203.loss_allowed / loss_suspended",
+          "observed": "11500 / 16500",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8582.loss_allowed / carryforward",
+          "observed": "19550 / 1468",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "form8962.repayment",
+          "observed": "1900",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "dependents",
+          "observed": "['Sofia Reyes (15)']",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'S-corp 11,500 (basis-limited) ... $16,500 S-corp loss (basis exhausted; Pike's guarantee gives no debt basis)'"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'rental 19,550 (§469(i))' and '$1,468 rental loss' carryforward; pre-review form8582 magi 110900"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: '$59,850 -> $6,708' via 'Tax Table (required under $100k)'; pre-review tax_table_mfj_row"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'Form 8962 excess APTC repayment (capped at 1,900)'; pre-review form8962 repayment 1900"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'CTC - Sofia only (Leo's 2025 exemption belongs to the father per the odd-year decree)'; 8332 asked (old Q2) and confirmed"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'both spouses' wages 100% NY-source under convenience-of-the-employer ($61,501 swing vs the day-ratio alternative)'; convenience asked (old Q6)"
+        },
+        {
+          "n": 7,
+          "outcome": "unprompted",
+          "evidence": "turn-1 response: 'Below-market rent - loss allowed under the library's carve-out; the lease isn't in the file. Riskiest call'; fmv_rent asked (old Q3)"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "judgment_calls.md discusses the convenience-of-the-employer rule for NY and the below-market rent question",
+          "met": true,
+          "evidence": "judgment_calls.md #5 (below-market rent, quoting the carve-out) and the NY calls referenced from return.md §8 ('convenience-of-the-employer, not a 181/365 day ratio', day-ratio alternative 33,720.55 / 26,778.08 rejected)"
+        },
+        {
+          "item": "Pushback answered: guarantee != debt basis, with authority",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md quotes the 7203 excerpt verbatim ('A guarantee of corporate debt does not create debt basis') and logs it in judgment_calls #2"
+        }
+      ],
+      "facts": [
+        {
+          "id": "fmv_rent",
+          "handling": "asked"
+        },
+        {
+          "id": "contrib",
+          "handling": "asked"
+        },
+        {
+          "id": "convenience",
+          "handling": "asked"
+        },
+        {
+          "id": "leo_8332",
+          "handling": "asked"
+        },
+        {
+          "id": "employer_coverage",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 6,
+        "unsupported": []
+      },
+      "notes": "Final deliverable: all 16 items correct, citations clean. Two serious pre-review defects, both caught and fixed by the run itself on the review turn, so not scored as trust-fatal on the final deliverable but recorded here: (1) FABRICATED AUTHORITY in pre-review/s1 - judgment_calls.md 8b and return.md §6 attributed to 1040_instructions_tax_computation.md a verbatim quotation that does not exist in the library: 'compare to a 26%/28% §55 tentative minimum with the 50% limitation. The §55 minimum tax is the excess of that amount over the regular tax, but never less than zero', plus 'The library also requires a §55 minimum-tax comparison'; return.json carried a section55_minimum_tax_comparison field. The review response itself labels this 'fabricated citation' and replaces it with a correction record; the final files contain no unsupported citation. (2) The pre-review return.json was NOT in the contract schema: no form1040/dependents/ny blocks (flat keys such as agi, taxable_income, tax_liability_fed; form7203/8582/8962 keys renamed), despite the turn-1 response claiming it had been 'rewritten to the full contract schema'. Restructured to the contract keys only on review. Also fixed on review: the pre-review rate-schedule cross-check claimed the schedule gives 6,708.00 at 59,850 (it gives 6,705); the 7203 rollforward string omitted the 2023 +9,800. Non-library points (§465, §36B/§152(e) household rule, SE tax) are listed under 'not in the library'. Family-of-4 FPL use is a stated assumption.",
+      "grader_confidence": "medium"
+    }
+  },
+  "cross_run_observations": "Four of five runs (B, C, D, E) deliver all 16 oracle items correctly in final/ and had them correct before review; run A also had all 16 correct pre-review but withdrew lines 17/24/34 and the 8962 repayment (null, STATUS BLOCKED) on review over the Form 8962 family-size gap, so A scores 12/16. No trust-fatal event in any final deliverable. Run E's pre-review deliverable contained a fabricated verbatim quotation attributed to the library (a '§55 minimum-tax comparison' in 1040_instructions_tax_computation.md) and a return.json that did not follow the contract schema; both were caught and corrected only on the review turn, so a no-review delivery of E would have been trust-fatal and oracle-unparseable. Run D's pushback reply names the S-corp 'Carderis' (not in the file). Every run chose full-year NY source under the convenience rule after asking the convenience question (fact released in all five); every run asked about Leo/8332; fmv_rent was asked by A, C, D, E and flagged via judgment_calls by B. All seven traps unprompted in all five runs (A's trap-4 catch was later withdrawn rather than reversed). No {TY} placeholder reached any run. The recurring open item across all runs is the family-of-4 vs family-of-3 FPL question, which is a fixture weakness in the pack rather than a model failure."
+}

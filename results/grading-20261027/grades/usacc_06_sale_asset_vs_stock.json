@@ -1,0 +1,596 @@
+{
+  "case": "usacc_06_sale_asset_vs_stock",
+  "preregistration": {
+    "summary": "Solved before opening runs/. A as drafted: ordinary 1,070,000 (§1245 recapture 900k-240k=660k, inventory 10k, covenant 400k); §1374 BIG = (900k+230k)×21% = 237,300 (S election 1/1/2023 → recognition period through 12/31/2027); capital 1,450,000 less §1366(f)(2) loss 237,300 = 1,212,700; total tax 875,740; net 2,224,260. B: 2,850,000-420,000 = 2,430,000 LTCG, tax 486,000, net 2,364,000 (§453 defers the note portion; unsecured note; 10% indemnity cap). Counter: V 650k (register FMV) / VI 50k / VII 2,050k → ordinary 470k, net 2,326,260. Naive 20%×3.1M = 2,480,000 (reference's 2,564,000 applies 20% to price less stock basis). Break-even A price ≈3,147k with counter, ≈3,275k as drafted (any correct computation ±25k accepted). Oracle convention used: strict = within the manifest tolerance for the item (exact for non-numeric); lenient = manifest tolerance + $5 rounding slack. Raw observed values and diffs are recorded in every note so the scorer can re-cut.",
+    "oracle": [
+      {
+        "item": "asset_sale_buyer_a_as_drafted.net_after_tax",
+        "confidence": "high",
+        "agree": true,
+        "note": "Re-derived 2,224,260 exactly. Caveat: the figure depends on netting the §1366(f)(2) loss against capital gain; the library mentions the loss in one clause with no character rule, and the ±25k tolerance is narrower than the ±47,460 swing between ignoring the loss (2,176,800), netting it against ordinary (2,264,601) and the statutory pro-rata split (2,232,471). Kept gated per key; see fixture_issues."
+      },
+      {
+        "item": "stock_sale_buyer_b.net_after_tax",
+        "confidence": "high",
+        "agree": true,
+        "note": "2,850,000-420,000=2,430,000 ×20% = 486,000; net 2,364,000."
+      },
+      {
+        "item": "entity_level_tax (BIG) present and ≈",
+        "confidence": "high",
+        "agree": true,
+        "note": "1,130,000 × 21% = 237,300; caps bind under any allocation."
+      },
+      {
+        "item": "ordinary income in A includes recapture + non-compete",
+        "confidence": "high",
+        "agree": true,
+        "note": "660,000 + 400,000 + 10,000 inventory = 1,070,000."
+      },
+      {
+        "item": "Recommendation: do not sign A as drafted; counter on allocation/price or take B",
+        "confidence": "high",
+        "agree": true,
+        "note": "memo.md"
+      }
+    ],
+    "traps": [
+      {
+        "n": 1,
+        "confidence": "high",
+        "agree": true,
+        "note": "Recapture and covenant are ordinary; A as drafted nets less than B."
+      },
+      {
+        "n": 2,
+        "confidence": "high",
+        "agree": true,
+        "note": "S election 1/1/2023; 2026 close inside the 5-year period; 237,300."
+      },
+      {
+        "n": 3,
+        "confidence": "high",
+        "agree": true,
+        "note": "Exhibit A puts 900k on equipment with FMV 650k and 400k on a covenant; counter shifts to goodwill."
+      },
+      {
+        "n": 4,
+        "confidence": "high",
+        "agree": true,
+        "note": "$500k unsecured note: §453 deferral, credit risk, interest. 'Recapture not deferrable' is moot in a stock sale; accept a §453 deferral/credit-risk discussion."
+      },
+      {
+        "n": 5,
+        "confidence": "high",
+        "agree": true,
+        "note": "A assumes only listed trade payables; B takes all liabilities with 10% cap/escrow; part of the price gap is rational."
+      }
+    ],
+    "diagnostic_only": {
+      "oracle": [],
+      "traps": []
+    },
+    "fixture_issues": [
+      "Oracle item 1 tolerance (±25k) is narrower than the effect of the §1366(f)(2) treatment choice (up to ±47,460). The library states only that the §1374 tax is 'treated as a loss sustained by the S corporation'; the reference nets it fully against capital gain (2,224,260). Runs that showed it as a flagged sensitivity (A, C, E: 2,176,800), netted it against ordinary (B: 2,264,601) or allocated it pro rata by BIG source as §1366(f)(2) itself does (D: 2,232,471) all land outside or near the edge of the tolerance. Four of five runs fail this item for that reason alone while agreeing on every component.",
+      "Inside asset basis (240k+140k+200k = 580k) exceeds Ray's stock basis (420k) by 160k; after an asset sale a liquidating distribution would produce a further ~160k gain (~32k tax) that the reference ignores. Runs C and E flagged it; graded per key.",
+      "reference.json ray_naive_estimate = 2,564,000 (20% on price less stock basis); every run used 3,100,000 × 80% = 2,480,000, which matches Ray's email ('about $2.5M'). Not an oracle item.",
+      "Client-script fact note_security is redundant with LOI B ¶2, which already says the note is unsecured; no run needed to ask.",
+      "The LOI A covenant payment is made to Ray personally while the reference pools it with corporate proceeds into one net; no run was penalised for pooling."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "asset_sale_buyer_a_as_drafted.net_after_tax",
+          "observed": "2,176,800.00",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "expected 2,224,260.00, diff 47,460.00, manifest tol ±25,000; run treats the §1374 tax as a straight cost and shows the §1366(f)(2) offset only as a flagged sensitivity (memo §3: 'I show the full $237,300 in the headline figures as the conservative view and flag the offset')"
+        },
+        {
+          "item": "stock_sale_buyer_b.net_after_tax",
+          "observed": "2,364,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 2,364,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "entity_level_tax (BIG) present and ≈",
+          "observed": "237,300.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 237,300.00, diff 0.00, manifest tol ±15,000"
+        },
+        {
+          "item": "ordinary income in A includes recapture + non-compete",
+          "observed": "1,070,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 1,070,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "Recommendation: do not sign A as drafted; counter on allocation/price or take B",
+          "observed": "memo.md §1: 'Do not sign Buyer A's LOI on Friday as drafted.' §7: 'Sign Hensley (Buyer B), not Lone Star as drafted.'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo §2: '$900,000 − $240,000 = $660,000.00 ordinary' (§1245); 'Allocating $400,000 of purchase price to the covenant costs $400,000.00 of ordinary income'; §1 'Hensley … nets about $187,200 more'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo §3: recognition period '1/1/2023 through 12/31/2027 … $1,130,000 × 21% = $237,300.00'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo §4: 'It violates §1060's FMV discipline … register puts equipment & vehicles FMV at $650,000; Exhibit A allocates $900,000'; form_8594_counter.md moves 650k to goodwill; 'This \"standard\" allocation is standard for buyers.'"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo §5: §453 gross profit ratio 0.85263158, $2,003,684.21 at closing, $85,263.16/yr; 'the note is unsecured (get security and a guaranty)'; 6% interest $90,000."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo §6: 'Buyer A assumes \"only trade payables listed on a closing schedule\" … Buyer B takes the company \"with all its liabilities, known and unknown\"'; Hardaway $9,800 priced against A."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback answered with a plain-language walk-through and a break-even number",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: 'every $100 from Hensley → you keep $80. Every $100 of Lone Star's paper → you keep about $70'; break-even table $3,334,000 as drafted / $3,195,875 with counter; also memo §1b."
+        }
+      ],
+      "facts": [
+        {
+          "id": "noncompete_term",
+          "handling": "asked"
+        },
+        {
+          "id": "note_security",
+          "handling": "not_needed"
+        },
+        {
+          "id": "liabilities",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 13,
+        "unsupported": []
+      },
+      "notes": "Thorough and internally consistent; review turn made 7 substantive corrections (e.g. §1 bullet 3 logic, MACRS flagged [unverified]). Counter uses Class VI $0 (defended on economic reality; retiring seller). Minor: memo §1a/§7 attribute the retirement fact to documents/email_ray.txt when it came from the client turn. Unverified points (inventory character, goodwill basis, S flow-through, MACRS) correctly labelled. §1366(f)(2) offset quantified ($87,801 at 37%) but not taken, which is why oracle item 1 misses the key by $47,460.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "asset_sale_buyer_a_as_drafted.net_after_tax",
+          "observed": "2,264,601.00",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "expected 2,224,260.00, diff 40,341.00, manifest tol ±25,000; run nets the §1366(f)(2) loss against ordinary income ('($1,070,000 − $237,300) × 37% = $308,099'), flagged as 'a material unverified modeling assumption'; the no-offset figure $2,176,800 is also shown"
+        },
+        {
+          "item": "stock_sale_buyer_b.net_after_tax",
+          "observed": "2,364,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 2,364,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "entity_level_tax (BIG) present and ≈",
+          "observed": "237,300.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 237,300.00, diff 0.00, manifest tol ±15,000"
+        },
+        {
+          "item": "ordinary income in A includes recapture + non-compete",
+          "observed": "1,070,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 1,070,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "Recommendation: do not sign A as drafted; counter on allocation/price or take B",
+          "observed": "memo.md: 'Do not sign Lone Star's allocation as drafted … Negotiate both offers and recalculate before signing.'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo table: 'Equipment gain, modeled §1245 recapture … $660,000'; 'Covenant/consulting amount, modeled ordinary $400,000'; Hensley nets $2,364,000 vs $2,264,601 as drafted."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo: 'A 2026 asset sale is within the five-year recognition period … Entity tax is ($900,000 + $230,000) × 21% = $237,300'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo: 'Its $900,000 class V amount also exceeds the register's $650,000 total estimated fair value'; counter V 650,000 / VI 100,000 provisional / VII 2,010,000. Review turn added the explicit §1060 FMV-cap conflict language."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo: installment ratio 85.2631579%, '$500,000 note principal carries about $426,316 gain/$85,263 tax as received'; 'The note creates real payment risk'; asks for security or guarantee."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo 'Liability terms and negotiation': 'Lone Star … assumes only trade payables on a closing schedule … Hensley buys the company with known and unknown liabilities but has a 12-month indemnity capped at 10% of price ($285,000) and a $100,000 escrow'."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback answered with a plain-language walk-through and a break-even number",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: 'Lone Star offers $250,000 more, but under its draft allocation the modeled tax is $349,399 more'; break-evens $3,224,249 (draft) / $3,105,249 (counter), 'not safe signing targets'. Walk-through is brief but plain."
+        }
+      ],
+      "facts": [
+        {
+          "id": "noncompete_term",
+          "handling": "asked"
+        },
+        {
+          "id": "note_security",
+          "handling": "not_needed"
+        },
+        {
+          "id": "liabilities",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 8,
+        "unsupported": []
+      },
+      "notes": "Terse, heavily hedged deliverable; turn 1 only wrote QUESTIONS.md and a BLOCKED status, full analysis arrived in the client turn (still pre-review). Counter uses inventory at 140k and a 'provisional' 100k covenant; counter net $2,359,801 (its §1366 ordinary offset makes the counter nearly tie B, $4,199 gap). Note interest excluded with its taxation marked 'unverified in the library' (over-cautious). No fabricated authority; all cites link to library files.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "missing",
+      "deliverables_missing": [
+        "STATUS.md",
+        "memo.md sections after §6.4 (file ends at '<!--APPEND-MARKER-->'; installment-note, liability and recommendation sections not written; recommendation exists only in §1.3)"
+      ],
+      "trust_fatal": [
+        {
+          "kind": "invented_fact",
+          "evidence": "QUESTIONS.md #1: 'The fixed asset register says the receivables \"are collected on the cash method and have zero basis in the company\"'; form_8594_counter.md §3.1: 'the fixed asset register states \"AR method in tax basis: cash method, so basis = 0\"'. The register (fixed_asset_register.csv) is a six-row equipment table with no receivables line and no such text.",
+          "confidence": "high"
+        },
+        {
+          "kind": "invented_fact",
+          "evidence": "form_8594_counter.md §3.2 and QUESTIONS.md #5: 'The conversion schedule does show $100,000 of adjusted basis in \"goodwill and trade name\" at 1/1/2023'. tax_history_and_conversion.md shows goodwill basis 0.",
+          "confidence": "high"
+        },
+        {
+          "kind": "invented_fact",
+          "evidence": "QUESTIONS.md #2/#9: LOI A 'financing section says the price is \"adjusted for cash\" (§§2, 8)'; #3: Lone Star 'requires \"no other debt or tax\" (§2)'; comparison.json: 'Hensley's LOI reserves the right to elect [§338]'. LOI A has five paragraphs and no such terms; LOI B says only that the S election remains in place.",
+          "confidence": "high"
+        },
+        {
+          "kind": "fabricated_authority",
+          "evidence": "form_8594_counter.md quotes the library for text it does not contain: '\"FMV assets (Class V, VII) absorb FMV minus Classes I–IV, VI\" (library: irc_1060_form_8594)'; 'the buyer does not even get amortization on it, because §197(d)(1)(E) excludes payments for a covenant' (the library says the opposite: a covenant 'is a section 197 intangible amortizable by the buyer over 15 years'); 'recite that the covenant is ancillary and subordinate to the sale of the goodwill (library: irc_197_and_noncompete identifies this as the substance test)'; and cites 'library: irc_1366', which is not in INDEX.md.",
+          "confidence": "high"
+        }
+      ],
+      "oracle": [
+        {
+          "item": "asset_sale_buyer_a_as_drafted.net_after_tax",
+          "observed": "2,176,800.00",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "expected 2,224,260.00, diff 47,460.00, manifest tol ±25,000; §1366(f)(2) credit shown as a sensitivity range (2,224,260–2,264,601) but kept out of the headline"
+        },
+        {
+          "item": "stock_sale_buyer_b.net_after_tax",
+          "observed": "2,364,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 2,364,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "entity_level_tax (BIG) present and ≈",
+          "observed": "237,300.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 237,300.00, diff 0.00, manifest tol ±15,000"
+        },
+        {
+          "item": "ordinary income in A includes recapture + non-compete",
+          "observed": "1,070,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 1,070,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "Recommendation: do not sign A as drafted; counter on allocation/price or take B",
+          "observed": "memo.md §1.3: 'Do not sign the Lone Star LOI as drafted'; comparison.json recommendation: 'Do not sign Buyer A's LOI as drafted. Use it to raise Buyer B.'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "memo §3.3 'Ordinary income = $900,000 − $240,000 = $660,000 — the entire gain'; §3.4 covenant '$400,000 × 37%'; §1 'Hensley pays $250,000 less and leaves you $187,200 more'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "memo §4: 'Recognition period = January 1, 2023 through December 31, 2027 … Entity tax = $1,130,000 × 21% = $237,300.'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "memo §3.6: 'Exhibit A, as drafted, cannot be filed — it violates the residual method … Class V is filled above FMV'; counter V 650k / VI 100k / VII 2,010k."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "comparison.json stock_sale_buyer_b.sec_453_installment (gross profit ratio 0.8526, $85,263.16/yr deferred) and unsecured-note PV haircuts at 8–15%; QUESTIONS #10 'the note is unsecured'."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "memo §1.2 and QUESTIONS #3: 'Lone Star assumes only scheduled trade payables … Hensley assumes everything, known and unknown, subject to a 12-month / $285,000 indemnity'; comparison.json excludes liabilities explicitly."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback answered with a plain-language walk-through and a break-even number",
+          "met": false,
+          "evidence": "Run hit the output cap in the first work turn; no pushback turn occurred. (memo §6.4 does contain parity prices $3,334,000 / $3,215,000 / $3,193,750.)"
+        }
+      ],
+      "facts": [
+        {
+          "id": "noncompete_term",
+          "handling": "assumed_flagged"
+        },
+        {
+          "id": "note_security",
+          "handling": "not_needed"
+        },
+        {
+          "id": "liabilities",
+          "handling": "assumed_flagged"
+        }
+      ],
+      "citations": {
+        "checked": 14,
+        "unsupported": [
+          "irc_1366 (not in INDEX.md)",
+          "quoted §1060 text 'FMV assets (Class V, VII) absorb FMV minus Classes I–IV, VI' (not in library)",
+          "§197(d)(1)(E) stated as excluding covenants from amortization (contradicts library)",
+          "'ancillary and subordinate to the sale of the goodwill' substance test attributed to irc_197_and_noncompete (not in library)",
+          "'$0-allocated covenant … invites recharacterization' attributed to library (not in library)"
+        ]
+      },
+      "notes": "The arithmetic and the core analysis are correct and the memo's rewritten sections quote the library verbatim, but the run's own work-turn log admits 'Six quoted phrases in my deliverables are fabrications' and that 'the counter and QUESTIONS files are stale versions' — it hit the output cap mid-repair, so the delivered form_8594_counter.md, QUESTIONS.md and comparison.json still carry invented document facts and fabricated library quotes. Also QUESTIONS #7 asserts exclusivity expired and 'today is 10/26/2026' while LOI dates are 2026 — a reasonable observation. Graded on what exists: trust-fatal, not completed.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "asset_sale_buyer_a_as_drafted.net_after_tax",
+          "observed": "2,232,471.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 2,224,260.00, diff 8,211.00, manifest tol ±25,000; run allocates the §1366(f)(2) loss pro rata by BIG source (189,000 capital / 48,300 ordinary), the statute's own rule; memo §9 also reports the key's all-capital figure 2,224,260 as an alternative"
+        },
+        {
+          "item": "stock_sale_buyer_b.net_after_tax",
+          "observed": "2,364,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 2,364,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "entity_level_tax (BIG) present and ≈",
+          "observed": "237,300.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 237,300.00, diff 0.00, manifest tol ±15,000"
+        },
+        {
+          "item": "ordinary income in A includes recapture + non-compete",
+          "observed": "1,070,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 1,070,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "Recommendation: do not sign A as drafted; counter on allocation/price or take B",
+          "observed": "memo.md §1: 'Recommendation: do not sign Buyer A as drafted. Either (a) sign Buyer A only with the counter allocation … or (b) take Buyer B'; §10 'Don't sign Friday.'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo §3(c) '900,000 − 240,000 = 660,000 ordinary'; §3(d) covenant 'ordinary income, never capital gain'; §1 'Buyer B's \"smaller\" $2.85M offer beats Buyer A's drafted asset deal by 131,529.00'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo §4: 'recognition period runs 1/1/2023 through 12/31/2027 … Entity-level tax = 21% × 1,130,000 = 237,300.00'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "form_8594_counter.md: 'Exhibit A allocates 900,000 against equipment with a verified FMV of 650,000 — a 250,000 over-allocation the residual method cannot support'; counter V 650k / VI 100k / VII 2,010k; QUESTIONS flags that the register FMV is unsupported by an appraisal."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo §6: §453 table (2,003,684.21 at closing, 85,263.16/yr), 'it is unsecured — Ray bears Hensley Family Partners LP's credit risk for five years', PV timing benefit ≈$34,000 at an assumed 5%."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review memo §7: 'Buyer A (asset): assumes only scheduled trade payables … Buyer B (stock): buyer inherits all liabilities, known and unknown, with only a 12-month indemnity capped at 10% … which is precisely why the stock price can be lower.'"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback answered with a plain-language walk-through and a break-even number",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: 'Hensley's deal = one toll booth … Lone Star's deal = three toll booths'; tie prices 3,145,411 (counter) / 3,264,411–3,308,776 (as drafted); also added to memo §8(4) and §10."
+        }
+      ],
+      "facts": [
+        {
+          "id": "noncompete_term",
+          "handling": "asked"
+        },
+        {
+          "id": "note_security",
+          "handling": "not_needed"
+        },
+        {
+          "id": "liabilities",
+          "handling": "not_needed"
+        }
+      ],
+      "citations": {
+        "checked": 11,
+        "unsupported": []
+      },
+      "notes": "Output cap hit on the review turn after two lines of narration; final/ is byte-identical to pre-review/s1, so the review made no changes. Memo over-reads the client's answer: §3(d) and QUESTIONS.md state 'The client has confirmed the 400,000 is entirely the 5-year restraint payment — no services component', whereas Ray said only 'I'd sign 5 years, I'm retiring. I don't care what they call the payment'. Retirement makes the inference reasonable and the tax result is unchanged (ordinary either way), so recorded here rather than as a trust-fatal invented fact (medium confidence). Liabilities were never asked, but the liability difference is analysed from the LOIs without inventing amounts. Out-of-library points (§453A/B, §1221/1231/1253, SE tax) correctly flagged unverified. Not completed (output-limit run).",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "missing",
+      "deliverables_missing": [
+        "STATUS.md"
+      ],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "asset_sale_buyer_a_as_drafted.net_after_tax",
+          "observed": "2,176,800.00",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "expected 2,224,260.00, diff 47,460.00, manifest tol ±25,000; §1366(f)(2) loss 'NOT credited because its character is not addressed in the library' (comparison.json assumptions); sensitivity sens_4 shows 2,264,601 if credited at 37%"
+        },
+        {
+          "item": "stock_sale_buyer_b.net_after_tax",
+          "observed": "2,364,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 2,364,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "entity_level_tax (BIG) present and ≈",
+          "observed": "237,300.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 237,300.00, diff 0.00, manifest tol ±15,000"
+        },
+        {
+          "item": "ordinary income in A includes recapture + non-compete",
+          "observed": "1,070,000.00",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "expected 1,070,000.00, diff 0.00, manifest tol ±10,000"
+        },
+        {
+          "item": "Recommendation: do not sign A as drafted; counter on allocation/price or take B",
+          "observed": "memo.md §1: 'Do not sign the LOI Friday with Exhibit A as written'; §8 'Do not sign Buyer A's LOI on Friday … Hensley at $2,850,000 pays you more, cleaner, and with less residual risk'.",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "memo §3 Class V 'Ordinary income: 900,000 − 240,000 = $660,000 at 37%'; Class VI 'ordinary income … $68,000 difference'; §1 'The $2.85M offer nets you $187,200 more than the $3.1M offer as drafted'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "memo §4: '§1374 recognition period runs 1/1/2023 through 12/31/2027 … Entity-level tax: 1,130,000 × 21% = $237,300.00'; memo §1 lists it as reason #1."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "memo §3: 'Exhibit A's $900,000 exceeds fair market value … $900,000 is not defensible'; form_8594_counter.md V 650k / VI 100k / VII 2,000k with per-asset §1245 table."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "memo §5: §453 gross profit fraction 85.2632%, $85,263.16 deferred per year, interest schedule $90,000/$56,700 net, 'credit risk on $500,000 of unsecured paper, which is 17.5% of the price'; recommends securing the note."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "memo §7 table: 'only trade payables listed on a closing schedule' vs 'all its liabilities, known and unknown'; §2 quotes the practice aid: 'Price differences … reflect the buyer's step-up value and assumed liabilities'."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback answered with a plain-language walk-through and a break-even number",
+          "met": false,
+          "evidence": "Run hit the output cap in the first work turn; no pushback turn occurred. (memo §6 already has a break-even table: $3,334,000 as drafted / $3,217,125 counter / $3,288,000 incl. interest.)"
+        }
+      ],
+      "facts": [
+        {
+          "id": "noncompete_term",
+          "handling": "assumed_flagged"
+        },
+        {
+          "id": "note_security",
+          "handling": "not_needed"
+        },
+        {
+          "id": "liabilities",
+          "handling": "assumed_flagged"
+        }
+      ],
+      "citations": {
+        "checked": 12,
+        "unsupported": []
+      },
+      "notes": "Substantively the most complete single-turn deliverable: all four content files written, arithmetic ties, every out-of-library point (§1250, §§331/336, §1362, §1375, §453(d) escrow, §338 mechanics, §1366 character) labelled [unverified]; QUESTIONS.md asks about liabilities, note security and the non-compete but the turn never completed so no facts were released. Buyer step-up estimate ($529,000 at 21%) is labelled an estimate. Counter keeps inventory at 150k (ordinary 520k; counter net 2,270,300). STATUS.md missing; not completed (output-limit run).",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs independently agree on the components the key tests: ordinary income 1,070,000 (660k recapture + 400k covenant + 10k inventory), §1374 tax 237,300 with the per-asset caps binding under every allocation, Buyer B net 2,364,000 with §453 deferral on the unsecured note, and a do-not-sign-A-as-drafted recommendation; every run also caught all five traps before the review turn. The only oracle divergence is item 1, and it is entirely a §1366(f)(2) presentation choice: A, C and E keep the full 237,300 as a cost and show the pass-through as a flagged sensitivity (2,176,800); B nets it against ordinary (2,264,601); D splits it pro rata by BIG source (2,232,471, the only one inside the ±25k tolerance). The reference's all-against-capital figure (2,224,260) was computed by nobody as a headline, though A, C, D and E all mention it. Counter allocations differ on Class VI (A: $0; B/C/D/E: $100,000) and inventory (B/C/D: 140k; A/E: 150k); all put equipment at the register's 650k. Run C is the outlier on trust: its arithmetic matches the others but its stale counter/QUESTIONS/comparison files carry invented document facts and fabricated library quotes that the model itself had detected and was repairing when the output cap hit. Run D's review turn was capped before any change; run A's review made real corrections; run B's review added hedging and break-evens."
+}

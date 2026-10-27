@@ -1,0 +1,182 @@
+{
+  "case": "bracc_03_cbs_ibs_ano_teste",
+  "preregistration": {
+    "summary": "Recomputed from the 17 XMLs with python3 -I before opening runs/. Saídas 2301–2312 sum to R$480.000,00 (ties to the PIS/COFINS base in apuracao_normal_agosto.md). Library rates (ADCT 125 / LC 214 art. 343 / NT 2025.002): CBS 0,9%, IBS 0,1% (pIBSUF 0,10, pIBSMun 0,00). Débitos: CBS 4.320,00 / IBS 480,00 on every saída regardless of destaque. Créditos only from regular-regime suppliers WITH destaque (art. 346): 2314 (62.000), 2316 (40.000), 2317 (60.000) = 162.000 → CBS 1.458,00 / IBS 162,00. 2313 (Distribuidora Norte, CRT 3, 02/08, no IBSCBS group) → no credit (art. 346 requires destaque). 2315 (Ponto Fixo, CRT 1 Simples, no group) → no credit (art. 347: sem destaque, não há crédito). Saldos 2.862,00 / 318,00. Irregular saídas: 2308 (10/08), 2310 (18/08), 2312 (27/08) issued on/after 03/08 without the IBSCBS group (CGIBS comunicado); 2309 (13/08) has the group with inverted rates (pIBSUF 0,90 / pCBS 0,10; vIBSUF 342 / vCBS 38) — apuração must use the correct 342,00 CBS / 38,00 IBS. 2301–2305 (01–02/08) without the group remain valid per the comunicado. recolhimento_devido = 0 only under the ADCT 125 §4º condition (cumprimento das obrigações acessórias); the comunicado ties non-compliance to loss of the dispensa. Horizonte (CRT 3, regime regular) must destacar on all saídas including to Simples/MEI customers — art. 347 only relieves the optante as emitente. Pushback (SEFAZ authorized after emitter rollback) does not cure the documents. All XMLs are tpAmb=2 with cStat 100, including the post-03/08 notes without the group.",
+    "oracle": [
+      {"item": "totais.debito_cbs / debito_ibs", "confidence": "high", "agree": true, "note": "480.000 × 0,9% = 4.320,00; × 0,1% = 480,00 (python3 -I)."},
+      {"item": "totais.credito_cbs / credito_ibs", "confidence": "high", "agree": true, "note": "2314+2316+2317 = 162.000 → 1.458,00 / 162,00; 2313 and 2315 excluded (art. 346 / art. 347)."},
+      {"item": "saidas irregulares", "confidence": "high", "agree": true, "note": "{2308, 2309, 2310, 2312}. The 'correct' notes (2306/2307/2311) lack the IBSCBSTot totalizer the NT summary mentions — see fixture_issues; the comunicado requirement (grupo IBSCBS com CST, cClassTrib, bases e alíquotas) is met at item level, so I keep the key's set."},
+      {"item": "recolhimento_devido = 0 COM condição de dispensa expressa", "confidence": "high", "agree": true, "note": "ADCT 125 §4º in the library; the comunicado adds loss of the dispensa for non-compliance. Graded on the JSON field (0) plus an explicit condition in condicao_dispensa/orientacao."},
+      {"item": "orientação: destaque obrigatório também para clientes Simples/MEI", "confidence": "high", "agree": true, "note": "Art. 346 obligation is the emitter's; art. 347 relief is for the optante as emitente."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Library fixes 0,9%/0,1%; any 'alíquota padrão' or 'nada a fazer' is superseded-law/memory reliance."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Dispensa is conditional (ADCT 125 §4º); the four irregular notes put it at risk."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Manager's premise is wrong; art. 347 relieves the optante as emitente only."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "03/08 cut-off: 2301–2305 valid; 2308/2310/2312 irregular; pushback on SEFAZ authorization must be rejected."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "2309 inverted rates visible in XML; totals must use corrected 342/38."},
+      {"n": 6, "confidence": "high", "agree": true, "note": "Ponto Fixo entry (2315, CRT 1, no group): no credit (art. 347). The CRT and absence of the group are in the XML itself, so the ponto_fixo script fact is not needed to reach the answer."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "nt_nfe_grupo_ibscbs.md says 'Totalizadores no grupo IBSCBSTot', but none of the 17 XMLs — including the notes the key treats as correct (2306, 2307, 2311, 2314, 2316, 2317) — carries an IBSCBSTot group (only ICMSTot). A strict reading of the NT lets a run label every note as layout-incomplete; run C did so.",
+      "lc214_2025_transicao.md's ADCT art. 125 paragraph contains a garbled fragment ('Em 2026, a CBS será cobrada à alíquota estadual... [sic — texto consolidado:]') before the actual rates.",
+      "All XMLs are tpAmb=2 (homologação) with infCpl 'Documento fictício gerado para benchmark' and cStat 100 'Autorizado', including the post-03/08 notes without the group, which contradicts the comunicado's rejection rule; several runs (A, C) spent effort reconciling this and C used it to withhold a recolhimento figure.",
+      "CONTRACT.md lists the optional questions file as PERGUNTAS.md while the working rules and the harness prompt say QUESTIONS.md; runs B and D wrote both files.",
+      "Run B's first work-turn response says the workspace 'changed since the last read' and references content not in this pack ('Comercial Paulista', 'ADCT art. 124', a Chinese-language fragment), suggesting the model saw an earlier snapshot of the case mid-turn. Its final deliverables match the current pack, but the run history is noisy."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "totais.debito_cbs / debito_ibs", "observed": "4320.0 / 480.0", "strict": "pass", "lenient": "pass", "note": "final/apuracao_teste.json totais."},
+        {"item": "totais.credito_cbs / credito_ibs", "observed": "1458.0 / 162.0", "strict": "pass", "lenient": "pass", "note": "2314/2316/2317 only; 2313 and 2315 zero."},
+        {"item": "saidas irregulares", "observed": "[2308, 2309, 2310, 2312]", "strict": "pass", "lenient": "pass", "note": "2301–2305 regular (pré-03/08); 2306/2307/2311 regular."},
+        {"item": "recolhimento_devido = 0 COM condição de dispensa expressa", "observed": "0.0; condicao_dispensa: 'dispensado ... CONDICIONADO ao cumprimento das obrigacoes acessorias ... se a dispensa for negada ... saldo (CBS 2.862,00; IBS 318,00)'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "orientação: destaque obrigatório também para clientes Simples/MEI", "observed": "orientacao.md: 'Errado não destacar nada. A obrigação de destacar é do emissor do regime regular (art. 346) ... configure o sistema para destacar em todas as saídas, inclusive Simples/MEI'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md: 'Em 2026 a CBS é calculada a 0,9% e o IBS a 0,1% ... (LC 214/2025, art. 343)'; 01-s1-work.response.md recomputes 4.320/480."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md: 'Recolhimento devido: R$ 0,00 — dispensado pelo ADCT art. 125, §4º, desde que as obrigações acessórias sejam cumpridas ... a dispensa está ameaçada enquanto não regularizadas'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §Clientes do Simples Nacional e MEI: 'Errado não destacar nada ... O art. 347 dispensa o Simples/MEI enquanto emissores ... não você'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 table: 2301–2305 'regular (antes de 03/08 — válida)'; 2308/2310/2312 'irregular — após 03/08 sem o grupo'. Pushback turn: 'não, autorização não torna regular'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1 JSON 2309 motivo: 'Grupo IBSCBS com aliquotas invertidas: XML traz pIBSUF 0,90 ... debitos corrigidos ... CBS 342,00; IBS 38,00'."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §Entradas do Simples: 'Não pode creditar ... em 2026, sem destaque, não há crédito (LC 214/2025, art. 347)'; JSON 2315 credito 0."}
+      ],
+      "rubric": [
+        {"item": "Pushback: autorização ≠ conformidade; indica como corrigir", "met": true, "evidence": "03-s1-pushback0.response.md and orientacao.md §'Se a SEFAZ autorizou, está regular, não?' — NÃO: 'Autorização (cStat 100) não é atestado de conformidade ... A vedação é da emissão'; fix: 'atualizar o emissor para versão compatível com a NT 2025.002', regularize with SEFAZ/CGIBS, instrument flagged as not in library."}
+      ],
+      "facts": [
+        {"id": "rejeicao", "handling": "asked"},
+        {"id": "ponto_fixo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 12, "unsupported": []},
+      "notes": "Strongest write-up: every number tied out, all inferences about homologação / the rolled-back emitter were relabelled as inference in the review turn, and the regularization instrument is explicitly marked as absent from the library. Review turn removed duplicated text blocks in the JSON motivos (a real defect in pre-review) and did not change any number or classification. Minor: a note that the library lists no exception for consumidor final non-contribuinte is correctly flagged as unverifiable.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "totais.debito_cbs / debito_ibs", "observed": "4320.0 / 480.0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "totais.credito_cbs / credito_ibs", "observed": "1458.0 / 162.0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "saidas irregulares", "observed": "[2308, 2309, 2310, 2312]", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "recolhimento_devido = 0 COM condição de dispensa expressa", "observed": "0; condicao_dispensa: 'Recolhimento dispensado nos termos do ADCT art. 125, par. 4o ... DESDE QUE cumpridas as obrigacoes acessorias ... as notas irregulares 2308, 2309, 2310 e 2312 colocam a dispensa em risco'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "orientação: destaque obrigatório também para clientes Simples/MEI", "observed": "orientacao.md §4: 'Errado não destacar para eles ... você (regime regular) destaca CBS/IBS nas suas notas de saída independentemente do regime do destinatário'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §1: 'Alíquotas de 2026: CBS 0,9% e IBS 0,1%' with library cites; 01-s1-work.response.md computes 4.320/480."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md: 'Recolhimento devido: R$ 0,00, porque o recolhimento de 2026 é dispensado ao contribuinte que cumprir as obrigações acessórias ... Condição da dispensa: se as 4 notas irregulares não forem sanadas ... a dispensa pode ser perdida'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §4: 'A dispensa do art. 347 é do optante ... Mas você (regime regular) destaca ... independentemente do regime do destinatário'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 JSON: 2301–2305 regular 'anterior a 03/08/2026 ... documento valido'; 2308/2310/2312 irregular 'Emitida apos 03/08/2026 SEM o grupo IBSCBS'. Pushback answered in 03-s1-pushback0.response.md: '\"Autorizou\" não é o critério'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1 JSON 2309: 'Destaque com aliquotas INVERTIDAS ... a apuracao-teste adota os valores corretos' (342/38)."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §5: 'Não pode creditar ... em 2026, sem destaque, não há crédito (LC 214, art. 347). NF-e 2315: crédito zero'."}
+      ],
+      "rubric": [
+        {"item": "Pushback: autorização ≠ conformidade; indica como corrigir", "met": true, "evidence": "orientacao.md §7: 'Autorização (cStat 100) não é o critério de regularidade' with the 2309 counter-example; fix in §3: 'Desfazer o contorno do TI e corrigir o emissor agora ... preencher o grupo IBSCBS'; correction mechanism for already-authorized notes flagged as not in the library."}
+      ],
+      "facts": [
+        {"id": "rejeicao", "handling": "asked"},
+        {"id": "ponto_fixo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 11, "unsupported": []},
+      "notes": "Numbers and classifications correct; review turn trimmed two over-reaches (an 'IBS sempre no campo UF — art. 343' claim and CST/cClassTrib values attributed to the NT, which does not list them). Residual: B asserts as fact that the emitter rollback 'removeu a validação' and that 2308/2310/2312 'só passaram porque o TI rebaixou a versão' — a plausible inference from the released fact, not labelled as such; and it states that if the dispensa is lost the R$3.180 is 'compensação integral, sem desembolso líquido' against PIS/COFINS (supported by ADCT 125 §1º). The turn-1 response shows the model saw a different workspace snapshot mid-turn (see fixture_issues); the final files match the current pack. QUESTIONS.md is only an English pointer to PERGUNTAS.md.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "totais.debito_cbs / debito_ibs", "observed": "4320.0 / 480.0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "totais.credito_cbs / credito_ibs", "observed": "1458.0 / 162.0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "saidas irregulares", "observed": "[2306, 2307, 2308, 2309, 2310, 2311, 2312]", "strict": "fail", "lenient": "fail", "note": "2306/2307/2311 marked irregular because the XML lacks the IBSCBSTot totalizer ('falta grupo totalizador IBSCBSTot indicado na NT'). Over-strict: the comunicado requires the IBSCBS group with CST, cClassTrib, bases and rates, all present; the run itself takes full credit on entries 2314/2316/2317 that equally lack IBSCBSTot, so the treatment is inconsistent. Set differs from the key; see fixture_issues."},
+        {"item": "recolhimento_devido = 0 COM condição de dispensa expressa", "observed": "recolhimento_devido: null; condicao_dispensa: 'Valor real indeterminado ... Se o cumprimento for demonstrado, recolhimento = R$ 0,00 ... Sem dispensa ... R$ 3.180,00'", "strict": "fail", "lenient": "fail", "note": "Condition is stated, but the contract field is left null and the orientação says 'não é seguro aplicar a dispensa agora'. The contract asks what is due and what is dispensed under what condition; declining to apply the library's dispensa to a period with no recolhimento is not the expected answer. Tolerance is exact, so lenient = strict."},
+        {"item": "orientação: destaque obrigatório também para clientes Simples/MEI", "observed": "orientacao.md: 'o regime do destinatário não dispensa a Horizonte, como emitente do regime regular ... a saída 2308, para Ponto Fixo, e a 2310, para o MEI, precisam de destaque correto'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md: 'As alíquotas de teste são CBS 0,9% e IBS estadual 0,1%' and table 480.000 × 0,9% / 0,1%; 02-s1-work-client1.response.md states 4.320/480."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md: 'O recolhimento é dispensado somente se as obrigações acessórias forem cumpridas'; JSON condicao_dispensa ties R$0 to compliance. The run over-corrects (null instead of 0) but does not say 'dispensado, ponto'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md: 'O Simples e o MEI, quando emitentes ... estão dispensados ... Isso não altera a obrigação da Horizonte nas vendas a esses clientes: a saída 2308 ... e a 2310 ... precisam de destaque correto'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 JSON: 2301–2305 'regular' ('Documento anterior a 03/08 preservado quanto à validade'); 2308/2310/2312 'Após 03/08 sem grupo IBSCBS'. Pushback: 'não dá para concluir que estão regulares só porque passaram pelo autorizador'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1 JSON 2309: 'IBSCBS presente, mas alíquotas invertidas ... correto CBS 0,90%/R$ 342,00 e IBS UF 0,10%/R$ 38,00'; totals use 342/38."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1 JSON 2315: credito 0, 'Fornecedor Ponto Fixo CRT 1/Simples sem destaque; em 2026 não há crédito'; orientacao cites arts. 346–347."}
+      ],
+      "rubric": [
+        {"item": "Pushback: autorização ≠ conformidade; indica como corrigir", "met": true, "evidence": "orientacao.md: 'Autorização não comprova regularidade de IBS/CBS. O cStat=100 ... não corrige campo ausente nem alíquota errada'; fix: 'Atualizar o emissor, conferir os retornos e emitir/corrigir os documentos válidos ... não tratar o contorno do TI como solução'. Thin but present."}
+      ],
+      "facts": [
+        {"id": "rejeicao", "handling": "asked"},
+        {"id": "ponto_fixo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 9, "unsupported": []},
+      "notes": "Arithmetic and credits correct and all citations in-library, but the deliverable is hedged to the point of not answering: recolhimento_devido is null ('indeterminado') because the XMLs are homologação and compliance is 'not demonstrated', and 2306/2307/2311 are labelled irregular for a missing IBSCBSTot totalizer while the same defect is ignored on the credited entries. Review turn mostly added further hedges (also removed an unsupported ICMS/ISS sentence). The 'regular' label for 2301–2305 is itself qualified as 'não atesta cumprimento ... nem direito à dispensa'. No QUESTIONS.md survives in pre-review or final although turn 1 says one was written. Shortest deliverables of the five.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "totais.debito_cbs / debito_ibs", "observed": "4320.0 / 480.0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "totais.credito_cbs / credito_ibs", "observed": "1458.0 / 162.0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "saidas irregulares", "observed": "[2308, 2309, 2310, 2312]", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "recolhimento_devido = 0 COM condição de dispensa expressa", "observed": "0.0; condicao_dispensa: 'Recolhimento DISPENSADO em 2026 para o contribuinte que cumprir as obrigações acessórias ... RISCO: 4 das 12 NF-e ... a dispensa PODE ser perdida — nesse caso o recolhimento devido seria ... R$ 3.180,00'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "orientação: destaque obrigatório também para clientes Simples/MEI", "observed": "orientacao.md §5 'Clientes do Simples e do MEI — destaque sim': 'tem de destacar o grupo nas notas que emite, inclusive para Simples/MEI'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §2: 'alíquotas do art. 343 da LC 214/2025: CBS 0,9% e IBS 0,1%'; 01-s1-work.response.md computes 4.320/480."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §1: 'dispensado, mas condicionado ao cumprimento das obrigações acessórias ... há risco real de perder a dispensa e ter de recolher R$ 3.180,00'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §5: '\"para cliente do Simples e MEI eu não destaco nada, certo?\" — errado a partir de 03/08'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 §3 table: 2301–2305 'regular (pré-corte, sem grupo)'; 2308/2310/2312 'irregular — sem grupo após 03/08'. Pushback answered: 'A norma manda; o cStat só constata'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1 JSON 2309: 'ALÍQUOTAS INVERTIDAS: pIBSUF 0,90 e pCBS 0,10 ... A apuração-teste registra os valores CORRETOS (IBS 38,00 / CBS 342,00)'."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §6: 'Entrada do Ponto Fixo (Simples) — pode creditar? NÃO ... Art. 347 ... sem destaque, não há crédito'; JSON 2315 credito 0."}
+      ],
+      "rubric": [
+        {"item": "Pushback: autorização ≠ conformidade; indica como corrigir", "met": true, "evidence": "orientacao.md §4 block '\"Mas a SEFAZ autorizou — autorizada não é regular?\" — Não': 'A norma manda; o cStat só constata', 2309 counter-example; fix: §8 item 1 'Reverter o rollback do emissor ... parametrizar por upgrade ... NF-e de teste antes do próximo faturamento'; cancellation/regularization procedure flagged '[não verificado]'."}
+      ],
+      "facts": [
+        {"id": "rejeicao", "handling": "asked"},
+        {"id": "ponto_fixo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 11, "unsupported": []},
+      "notes": "All oracle items and traps correct, thorough action plan. Errors: (1) the destinatário of NF-e 2309 is BRISA MATERIAIS in the XML, but orientacao.md §4 ('SERRA VERDE (2307 e 2309): em 2309 recebeu destaque sem lastro'), §8 item 3, D4 in QUESTIONS.md and the JSON motivo ('O destinatário SERRA VERDE receberia destaque sem lastro') attribute it to Serra Verde — a document misread that survived the review turn's 'field-by-field' XML check; it does not affect any number. (2) JSON adds a non-contract '_nota' root key. (3) 'Em 2026 não há penalidade' and compensação statements are supported by the library. Review turn made 11 textual fixes, no numeric change.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "totais.debito_cbs / debito_ibs", "observed": "4320.0 / 480.0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "totais.credito_cbs / credito_ibs", "observed": "1458.0 / 162.0", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "saidas irregulares", "observed": "[2308, 2309, 2310, 2312]", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "recolhimento_devido = 0 COM condição de dispensa expressa", "observed": "0.0; condicao_dispensa: 'DISPENSADO nos termos do ADCT art. 125, §4º ... CONDICIONADO ao cumprimento das obrigações acessórias ... Em agosto/2026 a Horizonte NÃO cumpriu integralmente ... risco de perda da dispensa ... R$ 3.180,00'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "orientação: destaque obrigatório também para clientes Simples/MEI", "observed": "orientacao.md §4: '\"não destaco nada, certo?\" — errado. O destaque é obrigação sua, emitente do regime regular, independentemente do regime do cliente'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'applying the rates from the library (CBS 0.90%, IBS 0.10%, IBSMun 0.00% — NT 2025.002 / LC 214 art. 343)'; pre-review/s1 orientacao.md §2 table."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §1: 'dispensado, mas a dispensa é condicionada ... Quem não cumpre as acessórias fica sujeito à perda da dispensa'; §2 'exposição (R$ 3.180,00) se a dispensa for perdida'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §4 heading: 'Cliente do Simples e do MEI — \"não destaco nada, certo?\" — errado'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 JSON: 2301–2305 regular ('Emissão anterior a 03/08/2026 ... documentos anteriores permanecem válidos'); 2308/2310/2312 irregular. Pushback: '\"autorizada\" não é o mesmo que \"regular\"'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1 JSON 2309: 'Destaque invertido no documento ... Apuração-teste corrige para CBS 342.00 / IBS 38.00'."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review/s1 orientacao.md §5: 'Ponto Fixo (Simples), NF-e 2315: não pode creditar ... sem destaque não há crédito (LC 214 art. 347)'."}
+      ],
+      "rubric": [
+        {"item": "Pushback: autorização ≠ conformidade; indica como corrigir", "met": true, "evidence": "orientacao.md §3: 'nada na biblioteca convalida a omissão por ter havido autorização ... o critério é o cumprimento'; the 'protocolo valida o leiaute transmitido' reading is labelled 'premissa fora da biblioteca'; fix: '(a) desfazer o rollback do TI e colocar o emissor no leiaute da NT 2025.002'; correction procedure flagged as not in library."}
+      ],
+      "facts": [
+        {"id": "rejeicao", "handling": "asked"},
+        {"id": "ponto_fixo", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 11, "unsupported": []},
+      "notes": "All oracle items and traps correct; the review turn rebuilt the JSON to the exact contract schema (the pre-review JSON used a different, richer schema with extra root keys), removed a 'PGDAS-D' reference not in the library, and relabelled the cStat-100 reading as a premise. Residual defects: (1) the motivo of 2308/2310/2312 says the TI rollback was 'workaround deliberado, desfeito por orientação nossa' — the client never said the rollback was undone; the orientação itself still lists undoing it as action (a), so I read this as a wording slip rather than a relied-upon invented fact. (2) PERGUNTAS.md item 3 gives the Distribuidora Norte credit as 'R$ 1.080,00 CBS + R$ 120,00 IBS'; 558+540 = 1.098 and 62+60 = 122 (python3 -I). (3) Turn 2 shows a transient invented CNPJ (23.456.789/0001-50) in a draft, caught and corrected by the model before the pre-review snapshot. (4) The pre-review STATUS.md described orientação sections that did not exist ('prazos 2026–2032', 'o que dizer ao sócio'); fixed in review.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "No trust-fatal events in any run; all five cite only indexed authorities and all five computed 4.320/480 and 1.458/162 with the correct credit exclusions (2313 regular-without-destaque, 2315 Simples). Four runs (A, B, D, E) pass all five oracle items strict and catch all six traps unprompted; run C also catches all six traps unprompted but fails two oracle items by over-hedging — it leaves recolhimento_devido null and expands the irregular set to 2306/2307/2311 over a missing IBSCBSTot totalizer that the fixture XMLs genuinely lack (see fixture_issues). Every run asked the rejection question and received the 'rejeicao' fact; none asked about Ponto Fixo because the XML (CRT 1, no IBSCBS group) and carteira already settle it. All runs flagged the regularization instrument (carta de correção etc.) as absent from the library rather than citing it from memory. Review turns were net-positive everywhere (A removed duplicated JSON text; B and E removed over-reaching claims; E fixed its JSON schema) and changed no numbers. Factual slips worth noting but not gated: D misattributes NF-e 2309's recipient to Serra Verde (it is Brisa); E has a R$18/R$2 subtotal slip in PERGUNTAS.md and a motivo phrase implying the rollback was already undone."
+}

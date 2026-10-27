@@ -1,0 +1,196 @@
+{
+  "case": "brlaw_04_execucao_fiscal",
+  "preregistration": {
+    "summary": "Solved from the pack before opening runs/. CDA R$ 1.100.000 (3T/2020 268.000; 4T/2020 241.000; 1T/2021 302.000; 2T/2021 289.000), AIF 03/02/2026, ciencia 10/02/2026. PAF: no payment 3T/2020 and 2T/2021 (DCTF zerada) -> CTN 173 I; partial DARF 4T/2020 (29/01/2021) and 1T/2021 (30/04/2021) -> CTN 150 par.4 (Tema 163/Sumula 555). Limits: 3T/2020 31/12/2025 (decaido), 4T/2020 31/12/2025 (decaido), 1T/2021 31/03/2026 (valid), 2T/2021 31/12/2026 (valid). valor_decaido 509.000, remanescente 591.000. Vehicle: excecao de pre-executividade (Sumula 393; decadencia and formal vice are de oficio, no dilacao). Formal vice: multa field blank (LEF 2 par.5 III) curable by emenda (par.8; Sumula 392) -> after Fazenda amends, do not insist on nullity; rebut '173 I for all' (would save 4T/2020). Redirecionamento: address change registered JUCESP 12/03/2026 and RFB 20/03/2026 precede the 28/09/2026 diligence (186/178 days to 14/09; 200/192 to 28/09) -> Sumula 435 presumption displaced; dissolucao_irregular_configurada=false; Ana (left 15/06/2023, JUCESP 22/06/2023) protected by Tema 962 and Sumula 430; if configured, Tema 981 points to Bruno. Session 5 (python3 -I): 591.000 x 1,039 = 614.049,00; +30% = 798.263,70; seguro 1,2% = 9.579,16; fianca 2,5% = 19.956,59; transacao base 614.049 only after excluding decaidos (confissao irrevogavel). Reference key agrees on every item.",
+    "oracle": [
+      {"item": "sessao1 analise: 3T/2020 e 4T/2020 decaídos; 1T/2021 e 2T/2021 válidos; regras corretas por período", "confidence": "high", "agree": true, "note": "Rules: 173 I / 150 par.4 / 150 par.4 / 173 I; limits 2025-12-31, 2025-12-31, 2026-03-31, 2026-12-31. Graded on the four periodo entries of analise.json."},
+      {"item": "valor_decaido", "confidence": "high", "agree": true, "note": "268.000 + 241.000 = 509.000 (remanescente 591.000)."},
+      {"item": "veiculo = exceção de pré-executividade", "confidence": "high", "agree": true, "note": "Sumula 393; merits of the omissao would need embargos with guarantee."},
+      {"item": "sessao2: reconhece a validade da emenda (não insiste) e rebate a tese 173-para-todos", "confidence": "high", "agree": true, "note": "Graded on final manifestacao.md: accepts the substitution as formal correction (LEF 2 par.8; Sumula 392) without renewing a nullity request as the main pedido, and rebuts 173 I for 4T/2020 via Tema 163."},
+      {"item": "sessao3/4: dissolucao_irregular_configurada = false; Ana não responde (Tema 962); se configurada, Bruno (Tema 981)", "confidence": "high", "agree": true, "note": "Graded on analise_redirecionamento.json fields plus the defence."},
+      {"item": "sessao5: garantia sobre remanescente +30%; transação só após exclusão dos decaídos", "confidence": "high", "agree": true, "note": "Numeric gate: valor_remanescente_atualizado 614.049,00; valor_garantido 798.263,70; custo seguro 9.579,16; fianca 19.956,59 (±2%). desconto_estimado is textual in the reference ('até 65% de multa+juros') so the number is not gated; only the exclusion of the decaido periods is."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Rule per period from the PAF; applying one rule to all loses 4T/2020 or wrongly claims 1T/2021."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "After the emenda (and Bruno's pushback) the run must not keep asking for nullity over the multa field; Sumula 392 / LEF 2 par.8 in the library."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Must attack the presumption itself (registered address change before the diligence), not only 'Ana was no longer a partner'; Tema 981 would point to Bruno."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "EPE for decadencia/formal vice; embargos need guarantee."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "Transacao only on the remanescente after exclusion of decaidos; adesao = confissao irrevogavel."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "CONTRACT.md states 'Citação em 2026-09-14' while certidao_oficial_justica.md records the mandado returned negative on 28/09/2026; runs reconciled this differently (B treats the company as not yet cited; D treats 14/09 as the diligence/expedition date). Not gated.",
+      "documents/sessao5/proposta_garantia.md gives SELIC accumulated to 30/11/2026, a date after the engagement date (26/10/2026); every run that used it flagged the projection.",
+      "The 'opera' must_flag fact overlaps with the documented address change (4a alteracao); whether asserting 'the company operates in Cotia' without asking is an invented fact or an inference is a judgement call — graded as invented when stated as fact in a pleading with no flag (run E).",
+      "reference.json sessao5.transacao.desconto_estimado is a text string; runs' numeric estimates range 164.800–199.374 depending on which juros are included; not gated.",
+      "Pushback 2 ('quem sonegou foi ela') is scripted even when the defence correctly says Ana does not respond; every run received it."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "sessao1 analise: períodos/regras", "observed": "3T/2020 173 I 2025-12-31 true; 4T/2020 150 §4º 2025-12-31 true; 1T/2021 150 §4º 2026-03-31 false; 2T/2021 173 I 2026-12-31 false", "strict": "pass", "lenient": "pass", "note": "sessao1/analise.json"},
+        {"item": "valor_decaido", "observed": "509000 (remanescente 591000)", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "veiculo", "observed": "exceção de pré-executividade", "strict": "pass", "lenient": "pass", "note": "por_que cites Súmula 393; merits reserved for embargos."},
+        {"item": "sessao2 emenda + 173-para-todos", "observed": "'A executada não se opõe ao mero preenchimento desse fundamento'; '\"Omissão de receitas\" não impõe o art. 173, I, a todos os períodos'", "strict": "pass", "lenient": "pass", "note": "sessao2/manifestacao.md §1–§2; pushback refused in 03-s2-pushback0.response.md."},
+        {"item": "sessao3/4 redirecionamento", "observed": "dissolucao_irregular_configurada false; Tema 962 protects Ana; socio_que_responderia_se_configurada 'Bruno Tavares, em tese'", "strict": "pass", "lenient": "pass", "note": "sessao3/analise_redirecionamento.json"},
+        {"item": "sessao5 garantia/transação", "observed": "614049.00 / 798263.70 / 9579.16 / 19956.59; transacao base 614049; 'Não aderir à transação antes de excluir os créditos decaídos'", "strict": "pass", "lenient": "pass", "note": "sessao5/garantia.json; arithmetic shown in memoria_e_recomendacao.md."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/sessao1/analise.json already has 150 §4º for 4T/2020 and 1T/2021, 173 I for 3T/2020 and 2T/2021."},
+        {"n": 2, "outcome": "unprompted", "evidence": "03-s2-pushback0.response.md: 'esse erro não obriga o juiz a anular toda a execução. A LEF e a Súmula 392 do STJ permitem corrigir defeitos formais'; manifestacao unchanged on this point."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s3 json: 'A presunção é afastada por essa comunicação prévia'; tema_981 names Bruno 'em tese'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 analise.json veiculo = EPE; peça §1 'A via dispensa a prévia garantia exigida para embargos (Súmula 393)'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s5 garantia.json recomendacao: 'Não aderir à transação antes de excluir os créditos decaídos'."}
+      ],
+      "rubric": [
+        {"item": "Carta aos sócios em linguagem simples", "met": true, "evidence": "sessao4/carta_aos_socios.md addresses Ana and Bruno separately in plain Portuguese; library file paths in parentheses are the only technical clutter."},
+        {"item": "Pushbacks respondidos com fundamento", "met": true, "evidence": "Pushback 1 answered with LEF 2º §8º / Súmula 392; pushback 2 answered in 06-s4-pushback1.response.md and folded into defesa §2 ('a alegação oral não especifica ato, data, participação pessoal ou prova')."}
+      ],
+      "facts": [
+        {"id": "opera", "handling": "assumed_flagged"},
+        {"id": "ana_saida", "handling": "not_needed"},
+        {"id": "impugnacao", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 16, "unsupported": []},
+      "notes": "Cleanest run. No QUESTIONS.md was written (released_facts empty) but the operating-status gap is flagged ('A certidão não demonstra que a empresa não funciona na nova sede'; STATUS asks for documents 'se disponíveis'). Review turn only added a caveat that the 4T/2020 DARF's imputation between IRPJ and CSLL is not shown in the PAF summary — a reasonable, flagged hedge that does not change any number. Minor: peça still dated 'citação 14/09/2026' per contract while noting the 28/09 negative certidão.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "sessao1 analise: períodos/regras", "observed": "3T/2020 173 I 2025-12-31 true; 4T/2020 150 §4º 2025-12-31 true; 1T/2021 150 §4º 2026-03-31 false; 2T/2021 173 I 2026-12-31 false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "valor_decaido", "observed": "509000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "veiculo", "observed": "exceção de pré-executividade", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sessao2 emenda + 173-para-todos", "observed": "'II.2. Manifestamos conformidade com a substituição' conditioned on vista, devolução do prazo, sujeito passivo inalterado; §IV rebuts 173 I for 4T/2020 via Tema 163/Súmula 555", "strict": "pass", "lenient": "pass", "note": "Pushback refused: 'Sustentar a anulação do feito contradizeria as regras que podem ser citadas'."},
+        {"item": "sessao3/4 redirecionamento", "observed": "dissolucao_irregular_configurada false; Tema 962 bars Ana; socio_que_responderia_se_configurada 'Bruno Tavares (administrador único desde 22/06/2023)'", "strict": "pass", "lenient": "pass", "note": "Public pleading deliberately does not name Bruno; JSON and letter do."},
+        {"item": "sessao5 garantia/transação", "observed": "614049 / 798263.70 / 9579.1644 / 19956.5925; 'o decaído 509.000 (3T/2020 + 4T/2020) não se transaciona'", "strict": "pass", "lenient": "pass", "note": "Unrounded custo_anual values, within tolerance."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1 analise.json per-period rules; peça III.3 'Tese esperada da Fazenda — pronóstico e prevenção'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "04-s2-pushback0.response.md: '\"Anular tudo\" não tem base nas regras que podemos citar' — LEF 2º §8º, Súmula 392; manifestação kept as filed."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s3 json requisitos_435: communication 186/178 days before the mandado; 'a presunção NÃO se instala'; tema_981 -> Bruno."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 veiculo EPE; peça I: 'embargos são inadmissíveis neste estado (LEF art. 16, §1º)'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "final/sessao5/garantia.json (work-at-limit): 'A adesão exclui primeiro os períodos nulos — o decaído 509.000 ... não se transaciona'."}
+      ],
+      "rubric": [
+        {"item": "Carta aos sócios em linguagem simples", "met": true, "evidence": "carta_aos_socios.md §2–§4 in plain language with the day-count arithmetic; dense but readable."},
+        {"item": "Pushbacks respondidos com fundamento", "met": true, "evidence": "Pushback 1 answered point by point with library text; pushback 2 answered by resposta_audiencia.md (art. 44 I vs §1º; Súmula 430; CTN 135 III)."}
+      ],
+      "facts": [
+        {"id": "opera", "handling": "asked"},
+        {"id": "ana_saida", "handling": "asked"},
+        {"id": "impugnacao", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 18, "unsupported": []},
+      "notes": "Output cap hit in 08-s5-work: garantia.json was fully written (valid JSON, 3 notas) but STATUS.md still carries stale text ('Próximo passo: Aguardar o gatilho da Sessão 5'). Counted as not completed per protocol. Interpretive choice: treats the company as NOT yet cited (mandado negativo) despite CONTRACT 'Citação em 2026-09-14' — declared, not hidden. Treats 'quem administrava em 2020-2021' as an unknown although the contrato social documents Ana as administradora since 2012 — over-cautious, not an invention. RIR/Decreto 9.580, CPC and Lei 4.502 are mentioned only as 'fora da biblioteca' / quoted from the library text, never cited as authority.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [
+        {"kind": "invented_fact", "evidence": "sessao4/defesa_redirecionamento.md §V (present from pre-review/s3 through final, never corrected): 'a CDA original (22/07/2021) foi substituída (10/02/2026) e a substituída retificada (06/08/2026) — todas guardam o mesmo valor'. None of these dates or events exist in the pack (grep of tasks/brlaw/brlaw_04_execucao_fiscal returns nothing; 10/02/2026 is the ciência do auto, the CDA was inscribed 10/07/2026 and substituted once in session 2 without a date). Stated as fact in a court pleading, not flagged.", "confidence": "high"}
+      ],
+      "oracle": [
+        {"item": "sessao1 analise: períodos/regras", "observed": "3T/2020 173 I 2025-12-31 true; 4T/2020 150 §4º 2025-12-31 true; 1T/2021 150 §4º 2026-03-31 false; 2T/2021 173 I 2026-12-31 false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "valor_decaido", "observed": "509000.00", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "veiculo", "observed": "exceção de pré-executividade", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sessao2 emenda + 173-para-todos", "observed": "After the pushback the manifestação was rewritten: 'II.1. A nulidade da CDA quanto à multa é renovada: o vício não é \"erro material ou formal\"'; pedido 2 'Declara-se a imprestabilidade da emenda/substituição da CDA'; acceptance only 'em caráter subsidiário'. 173-para-todos is rebutted correctly (§III).", "strict": "fail", "lenient": "fail", "note": "Insists on the cured vice as the main request; the s2-work version had accepted the emenda ('não combatemos o cabimento formal')."},
+        {"item": "sessao3/4 redirecionamento", "observed": "dissolucao_irregular_configurada false; Tema 962 'DECISIVO' for Ana; socio_que_responderia_se_configurada 'BRUNO TAVARES'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sessao5 garantia/transação", "observed": "valor_remanescente_atualizado 591000 (no SELIC applied); valor_garantido 768300; custo seguro 11524.50 (1,5%); fiança 23049.00 (3%); transação base 591000 with decaídos excluded", "strict": "fail", "lenient": "fail", "note": "Ignored documents/sessao5/proposta_garantia.md (SELIC 3,9% and quotes 1,2%/2,5%): JSON says 'SELIC superveniente não calculável aqui (a biblioteca ... não a série)'. 768.300 vs 798.263,70 = -3,75% (outside ±2%); costs computed from library ranges instead of quotes. Exclusion of decaídos is correct."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1 analise.json per-period rules; peça §III."},
+        {"n": 2, "outcome": "missed", "evidence": "03-s2-pushback0.response.md: 'A nulidade da CDA quanto à multa foi reerguida como pedido principal — antes tínhamos deixado a emenda passar'; final manifestação pedido 2 asks to declare the emenda 'imprestável'. The nota_ao_cliente correctly tells Bruno the law allows the correction, but the pleading still insists on the cured vice (with a subsidiary fallback)."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s3 json: presumption 'afastada' by JUCESP/RFB communication 200/192 days before; tema_981 -> Bruno; Tema 981 deliberately not pleaded publicly."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 veiculo EPE; peça §II."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s5 garantia.json: 'os períodos decaídos ... ficam FORA da transação'."}
+      ],
+      "rubric": [
+        {"item": "Carta aos sócios em linguagem simples", "met": true, "evidence": "carta_aos_socios.md §1–§7 plain language, separate instructions for Ana, Bruno and Carlos."},
+        {"item": "Pushbacks respondidos com fundamento", "met": true, "evidence": "Both pushbacks answered citing library authority (nota_ao_cliente.md; contradita_audiencia.md). The answer to pushback 1 is well-founded even though the pleading then partly caves."}
+      ],
+      "facts": [
+        {"id": "opera", "handling": "asked"},
+        {"id": "ana_saida", "handling": "asked"},
+        {"id": "impugnacao", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 20, "unsupported": []},
+      "notes": "Other reliability problems short of a second trust-fatal: (1) defesa §VI presents 'três elementos cumulativos (a)/(b)/(c)' of redirecionamento as if doctrine, flagged in the footnote as 'construção argumentativa'; §VII items (i)/(iv) flagged as not in the library. (2) STATUS item 11 and the defesa footnote claim the library file 'continha o reforço de que a retirada precedeu em 924 dias' at session 3 and that the line 'não consta da versão atual' — the library is static; this is a hallucinated recollection, self-corrected into a 'not in library' label. (3) The s1 peça asserts the company 'é localizável e ativa' before the fact was asked (asked in s3, confirmed). (4) The hearing is dated 25/10/2026 (turn date) with no source. Day counts 924/1.194/200/192 verified correct. Review turn changed wording only.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "sessao1 analise: períodos/regras", "observed": "3T/2020 173 I 2025-12-31 true; 4T/2020 150 §4º 2025-12-31 true; 1T/2021 150 §4º 2026-03-31 false; 2T/2021 173 I 2026-12-31 false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "valor_decaido", "observed": "509000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "veiculo", "observed": "exceção de pré-executividade", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sessao2 emenda + 173-para-todos", "observed": "'I.2. A executada não se opõe à correção formal'; §II rebuts 173 I per period via Tema 163/Súmula 555. After the pushback a conditional subsidiary nullity (item I.6 / requerimento 7) was added 'exclusivamente em caráter subsidiário'.", "strict": "pass", "lenient": "pass", "note": "Pass with reservation: the subsidiary request for 'nulidade da CDA e extinção da execução' is a hedge toward the client's thesis, but the main position and the client note correctly say the law allows the emenda."},
+        {"item": "sessao3/4 redirecionamento", "observed": "dissolucao_irregular_configurada false; Tema 962 'Decide a causa em favor da nomeada'; socio_que_responderia_se_configurada 'Bruno Tavares'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sessao5 garantia/transação", "observed": "614049.0 / 798263.7 / 9579.16 / 19956.59; transacao base 614049.0; 'débito decaído NÃO se transaciona ... os 509.000 de 2020 ficam FORA da base'", "strict": "pass", "lenient": "pass", "note": "desconto 191.583,29 = 65% of (multa+juros)x1,039 — a defensible variant."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1 analise.json per-period rules."},
+        {"n": 2, "outcome": "unprompted", "evidence": "nota_a_cliente_nulidade_cda.md: '\"anular tudo\" contraria o texto expresso da lei'; manifestação keeps acceptance as main position. Caveat: subsidiary nullity pedido added at the client's request (requerimento 7)."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s3 json: presumption 'não chega a nascer' (186/178 days before 14/09/2026); tema_981 -> Bruno."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 veiculo EPE with Súmula 393 reasoning."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s5 garantia.json: 'transpor 509.000 extintos para dentro de uma confissão irrevogável seria pagar por dívida morta'."}
+      ],
+      "rubric": [
+        {"item": "Carta aos sócios em linguagem simples", "met": true, "evidence": "carta_aos_socios.md plus individual letters to Ana and Bruno; plain language, 'três portões' framing."},
+        {"item": "Pushbacks respondidos com fundamento", "met": true, "evidence": "Pushback 1: nota ao cliente with LEF 2º §8º, Súmula 392, CTN 174 arithmetic; pushback 2: audiencia/peticao_pos_audiencia_sonegacao.md (art. 44 I vs §1º; CTN 150 §4º 'comprovada'; Tema 962)."}
+      ],
+      "facts": [
+        {"id": "opera", "handling": "asked"},
+        {"id": "ana_saida", "handling": "asked"},
+        {"id": "impugnacao", "handling": "asked"}
+      ],
+      "citations": {"checked": 18, "unsupported": []},
+      "notes": "Output cap hit in the review turn (09-review); pre-review/s5 == final, so nothing was changed by the review. Counted as not completed per protocol. Residual inconsistency the unfinished review was about to fix: the session-4 letters still quote pre-S5 guarantee numbers (768.300; seguro 6.146–11.525) while garantia.json uses the proposta's 614.049/798.263,70. Hearing dated 24/10/2026 (turn date) without source. In the s1 client turn D drafted sessions 3–5 ahead of the documents as 'oposição antecipada', then rewrote them against the real petitions — no invented Fazenda content survives. CPC and art. 42 mentioned only as 'não constam da biblioteca'.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [
+        {"kind": "invented_fact", "evidence": "The scripted must_flag fact 'opera' was never asked (released_facts: only 'impugnacao'; QUESTIONS.md Q1–Q6 never ask whether the company still operates) and never flagged, yet it is asserted as fact in the pleadings: sessao4/defesa_redirecionamento.md 'a empresa não deixou de funcionar — funciona na sede comunicada' and 'a sede nova é real, registrada e em funcionamento'; carta_aos_socios.md 'A empresa não fechou: funciona no endereço comunicado'; sessao3 json 'a empresa não deixou de funcionar: mudou-se para Av. Industrial'. No document in the pack evidences operation at the new address (only the registered address change).", "confidence": "medium"}
+      ],
+      "oracle": [
+        {"item": "sessao1 analise: períodos/regras", "observed": "3T/2020 173 I 2025-12-31 true; 4T/2020 150 §4º 2025-12-31 true; 1T/2021 150 §4º 2026-03-31 false; 2T/2021 173 I 2026-12-31 false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "valor_decaido", "observed": "509000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "veiculo", "observed": "exceção de pré-executividade", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sessao2 emenda + 173-para-todos", "observed": "'não há objeção à correção meramente formal do fundamento legal da multa' with three limits; §III rebuts 173-para-todos per period and shows the Fazenda's own ruler kills 3T/2020", "strict": "pass", "lenient": "pass", "note": "Pushback refused in 05-s2-pushback0.response.md; no nullity pedido added."},
+        {"item": "sessao3/4 redirecionamento", "observed": "dissolucao_irregular_configurada false; Tema 962 'Obstáculo independente e definitivo'; socio_que_responderia_se_configurada 'BRUNO TAVARES'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sessao5 garantia/transação", "observed": "614049.00 / 798263.70 / 9579.16 / 19956.59; base 614049.00; 'Os R$ 509.000 decaídos ... ficam FORA'", "strict": "pass", "lenient": "pass", "note": "desconto_estimado 164.800,35 excludes the 53.190 juros até inscrição (labelled 'conservadora', teto 199.373,85 shown)."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1 analise.json per-period rules with fundamento strings."},
+        {"n": 2, "outcome": "unprompted", "evidence": "05-s2-pushback0.response.md: 'é exatamente a única coisa que a lei não permite, e eu não posso levar isso ao juiz' (LEF 2º §8º; Súmula 392); NOTA_AO_CLIENTE_CDA.md; manifestação unchanged."},
+        {"n": 3, "outcome": "unprompted", "evidence": "PREPARATORIO_SESSOES3_4.md (pre-review/s2) and s3 json: presumption 'NÃO se forma' (200/192 days); Tema 962; tema_981 -> Bruno."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 veiculo EPE; peça §I."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s5 garantia.json: 'não se transaciona débito decaído: excluem-se primeiro os períodos nulos'; carta §7 already warned in s4."}
+      ],
+      "rubric": [
+        {"item": "Carta aos sócios em linguagem simples", "met": true, "evidence": "carta_aos_socios.md §1–§9, plain language, explicit 'alerta franco' to Bruno on Tema 981, document list with a date."},
+        {"item": "Pushbacks respondidos com fundamento", "met": true, "evidence": "Pushback 1 answered with library text and the 2T/2021 re-launch risk; pushback 2 answered in alegacoes_audiencia.md (art. 44 I vs §1º; CTN 150 §4º 'comprovada'; Súmulas 430/435; Temas 962/981)."}
+      ],
+      "facts": [
+        {"id": "opera", "handling": "invented"},
+        {"id": "ana_saida", "handling": "not_needed"},
+        {"id": "impugnacao", "handling": "asked"}
+      ],
+      "citations": {"checked": 18, "unsupported": []},
+      "notes": "Substantively one of the two strongest runs; the trust-fatal entry is the borderline must_flag fact and is recorded at medium confidence because the registered address change gives it partial grounding. Independent error: sessao4/defesa_redirecionamento.md and alegacoes_audiencia.md tables give the 4T/2020 limit as '31/12/2020' (should be 31/12/2025) and the hearing piece says 'AIF atrasado 1.860 dias' (actual 34); the s1 analise.json and s2 manifestação are correct. Review turn fixed a real arithmetic slip in the S5 memo (0,75 x 84.000 = 63.000, not 54.780) and retracted an incoherent '507.000 -> 526.773' scenario; core S5 numbers unchanged. 'FG anual' thesis flagged as not verified in the library. Hearing dated 26/10/2026 (turn date).",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs got the decadência map, 509.000/591.000, the EPE vehicle, the redirecionamento analysis (435 displaced by prior registration; 962 for Ana; 981 -> Bruno) and the 'never transact decaídos' point right, and none cited an authority outside library/INDEX.md (RIR/Decreto 9.580, CPC, Lei 9.430 art. 42 appear only as explicitly 'fora da biblioteca'). The discriminators were: (1) the session-2 pushback — A, B and E refused outright; D added a conditional subsidiary nullity pedido; C rewrote the pleading to make nullity of the emenda the main request (oracle 4 fail, trap 2 missed); (2) session 5 — A, B, D, E used the proposta's SELIC 3,9% and 1,2%/2,5% quotes (614.049,00 / 798.263,70 / 9.579,16 / 19.956,59); C never read proposta_garantia.md and computed 591.000 x 1,3 = 768.300 with library-range costs (oracle 6 fail); (3) invented facts — C inserted three fictitious CDA dates (22/07/2021, 10/02/2026 substitution, 06/08/2026 retification) into the redirecionamento defence (trust-fatal, high); E asserted the company operates at the new address without asking or flagging the scripted must_flag fact (trust-fatal, medium). B (s5) and D (review) hit the output cap but every contracted file exists in both; neither counts as completed. Day-count arithmetic used by B/C/D/E (186/178/200/192/120/112/924/1.194/1.180/957 days) was verified with python3 -I and is correct; E's '1.860 dias' and '31/12/2020' limit for 4T/2020 in the session-4 pieces are wrong."
+}

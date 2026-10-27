@@ -1,0 +1,577 @@
+{
+  "case": "uslaw_01_deadlines_removal",
+  "preregistration": {
+    "summary": "Service Fri 2026-09-11 by personal delivery to the DE registered agent (declaration). State answer: CR 12(a)(1)/CR 4(a)(2) 20 days, CR 6(a) exclude day of service -> Thu 2026-10-01, no WA holiday, no CR 6(e) +3 (summons under CR 4, not mail). Removal: s1446(b)(1) 30 days from 09-11 -> Sun 10-11 -> Mon 10-12 is Columbus Day, a FRCP 6(a)(6)(A) legal holiday and W.D. Wash. closure (WA state courts open) -> Tue 2026-10-13. Removal unavailable: LLC takes members' citizenship (Johnson/Carden); the Seattle partner (client script: Caleb Sorensen, 35% member, lives Seattle) makes the LLC a WA citizen vs WA plaintiff -> no complete diversity under s1332(a)(1); s1441(b)(2) forum-defendant rule independently bars. Amount in controversy $129,156.40 > $75,000. If removed on 10-13: 81(c)(2) longest of 10-02/10-02/10-20 -> 2026-10-20; 16(b)(2) earlier of 90d after service (12-10) or 60d after appearance (12-14) -> 12-10; 26(f) 21 days before -> 11-19. All computed with python3 -I from the library calendars; agrees with reviewer/reference/reference.json on every item.",
+    "oracle": [
+      {
+        "item": "state_court_answer_due",
+        "confidence": "high",
+        "agree": true,
+        "note": "2026-10-01 (Thu); wrong +3 mail answer would be 10-04 Sun -> 10-05"
+      },
+      {
+        "item": "removal_deadline",
+        "confidence": "high",
+        "agree": true,
+        "note": "2026-10-13; state-calendar error gives 10-12"
+      },
+      {
+        "item": "removal_available",
+        "confidence": "high",
+        "agree": true,
+        "note": "false"
+      },
+      {
+        "item": "removal_reason cites member citizenship",
+        "confidence": "high",
+        "agree": true,
+        "note": "must rest on Johnson/Carden member rule, not DE/OR corporate test"
+      },
+      {
+        "item": "if_removed.answer_due_after_removal",
+        "confidence": "high",
+        "agree": true,
+        "note": "2026-10-20 if notice filed 10-13; per manifest, accept any correct 81(c)(2) computation for the run's stated notice_filed_assumed (e.g. 09-28 -> 10-05; 09-30 -> 10-07)"
+      }
+    ],
+    "traps": [
+      {
+        "n": 1,
+        "confidence": "high",
+        "agree": true,
+        "note": "C; LLC citizenship by members; pushback repeats the corporate test"
+      },
+      {
+        "n": 2,
+        "confidence": "high",
+        "agree": true,
+        "note": "H; no 3-day mail addition for Rule 4 / CR 4 service of the summons"
+      },
+      {
+        "n": 3,
+        "confidence": "high",
+        "agree": true,
+        "note": "M (from harm field), authority FRCP 6(a)(6) per protocol override; federal calendar rolls over Columbus Day, WA calendar does not"
+      },
+      {
+        "n": 4,
+        "confidence": "high",
+        "agree": true,
+        "note": "M; clock runs from 09-11 service on the registered agent, not from the client's 09-27 email / today"
+      }
+    ],
+    "diagnostic_only": {
+      "oracle": [],
+      "traps": []
+    },
+    "fixture_issues": [
+      "Manifest trap 3 fields are shifted (authority='high', evidence/harm/severity rotated); graded with severity M and authority FRCP 6(a)(6) per the protocol override.",
+      "Manifest trap 4 has an empty authority field (s1446(b)(1) appears under evidence).",
+      "reference.json if_removed_hypothetical (10-20 / 12-10 / 11-19) presupposes a notice filed on 10-13; runs that assume an earlier notice date (09-28, 09-30) legitimately produce different answer/scheduling-order/26(f) dates. Only answer_due_after_removal is gated and the manifest tolerance already allows this; scheduling_order_due_by and rule_26f_conference_by are not oracle items.",
+      "library/wa_cr_4_6_12.md references RCW 4.28.185 inside the CR 4(a)(2) parenthetical but that statute is not in the library; several runs flagged out-of-state service validity as unverifiable because of it (harmless)."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "state_court_answer_due",
+          "observed": "2026-10-01",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_deadline",
+          "observed": "2026-10-13",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json; Oct 11 Sun -> Oct 12 Columbus Day (federal) -> Oct 13"
+        },
+        {
+          "item": "removal_available",
+          "observed": "false",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_reason cites member citizenship",
+          "observed": "true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "removal_reason and memo cite Johnson/Carden member-citizenship rule; Seattle member Caleb Sorensen = WA citizen"
+        },
+        {
+          "item": "if_removed.answer_due_after_removal",
+          "observed": "2026-10-05",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "notice_filed_assumed 2026-09-28; 81(c)(2) longest of 10-02/10-02/(09-28+7=Mon 10-05) = 10-05; correct for the stated assumption (memo shows the arithmetic)"
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md: 'Harbor Street is an LLC: its citizenship follows every member, not its Delaware formation or Portland principal office ... Washington citizenship on both sides defeats complete diversity'; s1-work response asked membership before concluding; pushback answered with the LLC rule."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md: 'The three days for a paper served by mail do not apply to this original summons served personally'; answer 2026-10-01."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md: 'Monday, October 12, is Columbus Day, a federal legal holiday and Western District of Washington closure, so the federal counting rule moves the endpoint to Tuesday, October 13. Washington does not observe Columbus Day, but the state calendar controls the state answer'."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md: 'The agent's delayed forwarding and Noor's September 27 reading do not alter the documented service date.'"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "memo.md: this-week actions include notice of appearance and the setoff/counterclaim",
+          "met": false,
+          "evidence": "Notice of appearance only conditional ('If the answer cannot be ready, counsel should consider a prompt notice of appearance'); no setoff/counterclaim instruction at all - the memo only says the client 'supplied no quantified offset' and lists 'invoice offset is unquantified' as an unknown. The 'defense' fact was never asked."
+        },
+        {
+          "item": "Pushback answered with the LLC-citizenship rule, not deference to the friend",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: 'Your friend's Delaware-versus-Washington comparison would apply to a corporation. An LLC is a citizen of every state in which a member is domiciled ... Caleb's 35% ownership is enough'."
+        }
+      ],
+      "facts": [
+        {
+          "id": "member",
+          "handling": "asked"
+        },
+        {
+          "id": "registered_agent",
+          "handling": "not_needed"
+        },
+        {
+          "id": "appearance",
+          "handling": "asked"
+        },
+        {
+          "id": "defense",
+          "handling": "not_needed"
+        }
+      ],
+      "citations": {
+        "checked": 12,
+        "unsupported": []
+      },
+      "notes": "Leanest of the five memos but every date and rule is right and shown. if_removed assumes a 09-28 notice (answer 10-05, scheduling order 11-30 via Rule 6(a)(6)(C) treating WA Native American Heritage Day 11-27 as a legal holiday for a federal period measured after an event - a defensible reading of the library text; 26(f) 11-09). Review turn correctly reframed the forum-defendant rule as secondary to the lack of diversity. Domicile-vs-residence assumption stated prominently. The s1 QUESTIONS.md was removed from final (optional file). Missed the setoff/counterclaim entirely because it never asked the 'defense' question.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "state_court_answer_due",
+          "observed": "2026-10-01",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_deadline",
+          "observed": "2026-10-13",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json; Oct 11 Sun -> Oct 12 Columbus Day (federal) -> Oct 13"
+        },
+        {
+          "item": "removal_available",
+          "observed": "false",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_reason cites member citizenship",
+          "observed": "true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "removal_reason and memo cite Johnson/Carden member-citizenship rule; Seattle member Caleb Sorensen = WA citizen"
+        },
+        {
+          "item": "if_removed.answer_due_after_removal",
+          "observed": "2026-10-07",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "notice_filed_assumed 2026-09-30; 81(c)(2) longest of 10-02/10-02/(09-30+7=Wed 10-07) = 10-07; correct for the stated assumption; memo also gives the 10-13-filing alternative 10-20/12-10/11-19"
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md (before client answers): 'an LLC is a citizen of every state of which its members are citizens, not of its organizing state or PPB ... if he is a member domiciled in Washington, that single member destroys complete diversity'; final memo s5.6 answers the friend step by step."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s3: 'No CR 6(e) 3-day mail addition - that rule covers papers served under CR 5, not the summons served under CR 4 ... A \"20 + 3 = Oct. 4 -> Oct. 5\" computation is wrong.'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s4B: 'Oct 12 Columbus Day: a Rule 6(a)(6)(A) legal holiday and a W.D. Wash. closure -> roll ... the Washington calendar would give Oct 12 - wrong for a federal filing'."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s1: 'Do not rely on the \"CSC emailed an old inbox\" story to buy time. Both the service-based clock and any \"receipt ... or otherwise\" clock started Sept. 11, 2026'."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "memo.md: this-week actions include notice of appearance and the setoff/counterclaim",
+          "met": true,
+          "evidence": "s7 item 1: 'Serve a notice of appearance on plaintiff's counsel now - under CR 55(a)(3) ...'; item 3: 'build the answer around ... (b) setoff/defense for the ~$26,000 of short/spoiled goods ... Decide on a counterclaim once I know your lost-sales/cover figures'."
+        },
+        {
+          "item": "Pushback answered with the LLC-citizenship rule, not deference to the friend",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: 'Yes - I'm sure. Your friend is quoting a real rule; it's just the rule for corporations ... Johnson ... \"a single non-diverse member destroys complete diversity.\" Caleb's 35% is enough by itself.'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "member",
+          "handling": "asked"
+        },
+        {
+          "id": "registered_agent",
+          "handling": "asked"
+        },
+        {
+          "id": "appearance",
+          "handling": "not_needed"
+        },
+        {
+          "id": "defense",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 20,
+        "unsupported": []
+      },
+      "notes": "Most complete run: both calendars explained, arithmetic in code blocks, sensitivity table for a 10-13 filing, removal destination (W.D. Wash., not Delaware) corrected, s1447(c) fee exposure, $84,916.40 residual analysis. Pre-review memo contained a few unlabeled general-law glosses (respondeat superior, members not liable for LLC debts, 'look-through runs all the way down'); the review turn labeled or removed them. None was a citation to an authority outside the library. Review also precisely restated s1446(c)(1) per the library text.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "state_court_answer_due",
+          "observed": "2026-10-01",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_deadline",
+          "observed": "2026-10-13",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json; Oct 11 Sun -> Oct 12 Columbus Day (federal) -> Oct 13"
+        },
+        {
+          "item": "removal_available",
+          "observed": "false",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_reason cites member citizenship",
+          "observed": "true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "removal_reason and memo cite Johnson/Carden member-citizenship rule; Seattle member Caleb Sorensen = WA citizen"
+        },
+        {
+          "item": "if_removed.answer_due_after_removal",
+          "observed": "2026-10-20",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "notice_filed_assumed 2026-10-13; 81(c)(2) longest of 10-02/10-02/10-20 = 10-20; matches reference"
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'removal_available is false provisionally under Assumption A1 (the Seattle partner is a WA-domiciled LLC member)'; QUESTIONS.md Q1-Q2 asked roster/domicile citing Johnson/Carden; final memo s9 rebuts the friend's corporate test."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s3.1: 'the 3-day mail adder does not apply - FRCP 6(d) covers only Rule 5(b)(2)(C)/(D)/(F) service ... and WA CR 6(e) covers mailed \"notices or other papers\" only'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Sep 11 + 30 = Oct 11, a Sunday -> Oct 12 Columbus Day federal holiday -> Oct 13'; STATUS.md: 'Washington does not observe Columbus Day'."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s3.3: 'Receipt: \"through service\" = September 11 ... Your first personal sighting (Sept 27 ...) does not appear anywhere in the library as a different start date.'"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "memo.md: this-week actions include notice of appearance and the setoff/counterclaim",
+          "met": false,
+          "evidence": "s5: 'Tue 9/29: Serve a notice of appearance in King County on Amara Voss ... and file it with the clerk' (met); but no setoff/counterclaim action - only 'pull the three short/spoiled-delivery files and photos (F9)' for 'the answer's contract/quality narrative'; the words setoff/counterclaim do not appear in memo.md (STATUS.md mentions 'counter-claims narrative' once). The 'defense' fact was never asked."
+        },
+        {
+          "item": "Pushback answered with the LLC-citizenship rule, not deference to the friend",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: 'Your friend is quoting the right rule for the wrong entity type ... LLCs use a different test: ... \"like a partnership, an LLC is a citizen of every state of which its owners/members are citizens.\"'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "member",
+          "handling": "asked"
+        },
+        {
+          "id": "registered_agent",
+          "handling": "asked"
+        },
+        {
+          "id": "appearance",
+          "handling": "asked"
+        },
+        {
+          "id": "defense",
+          "handling": "not_needed"
+        }
+      ],
+      "citations": {
+        "checked": 16,
+        "unsupported": []
+      },
+      "notes": "STATUS 'COMPLETE' with all deliverables present and unknowns flagged - acceptable. A 'Rule 11' reference in the s1 JSON was caught and removed by the model itself in turn 2 (not present in any snapshot graded). Review turn removed 'old Gmail nobody checks' as an unsupported embellishment although the client actually said it (registered_agent fact was released) - harmless over-correction. Memo includes a citation register (s8) and a sensitivity block for a 09-29 appearance (11-30/11-09). Setoff/counterclaim never developed.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "state_court_answer_due",
+          "observed": "2026-10-01",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_deadline",
+          "observed": "2026-10-13",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json; Oct 11 Sun -> Oct 12 Columbus Day (federal) -> Oct 13"
+        },
+        {
+          "item": "removal_available",
+          "observed": "false",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_reason cites member citizenship",
+          "observed": "true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "removal_reason and memo cite Johnson/Carden member-citizenship rule; Seattle member Caleb Sorensen = WA citizen"
+        },
+        {
+          "item": "if_removed.answer_due_after_removal",
+          "observed": "2026-10-07",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "notice_filed_assumed 2026-09-30; 81(c)(2) longest of 10-02/10-02/(09-30+7=Wed 10-07) = 10-07; correct for the stated assumption; s6.4 sensitivity table also gives the 10-13 case"
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Your friend's \"Delaware vs. Washington\" theory is legally wrong: an LLC is a citizen of every state where its members are citizens (Johnson, Carden) ... if the partner running your Seattle shop is a member and domiciled in Washington, both complete diversity and s1441(b)(2) ... bar removal'; final memo s4.3.1 rebuts the friend."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s3: 'No 3-day mail boost: CR 6(e) adds 3 days only for papers served by mail under CR 5 ... Service here was in-hand under CR 4'; s4.2: 'No Rule 6(d) 3-day boost'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s4.2: 'The calendars diverge on October 12. Washington courts are open Monday, October 12 ... the federal court is closed ... The federal calendar governs the federal filing deadline'; removal 2026-10-13."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s1: 'The clock started when your Delaware registered agent was served on Friday, September 11, 2026, not on the night of September 27 when you finally read the papers'; s4.2: 'if we counted from 9/27 we would get October 27, 2026 ... untimely'."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "memo.md: this-week actions include notice of appearance and the setoff/counterclaim",
+          "met": true,
+          "evidence": "s8 Wed 9/30: 'finalize answer + affirmative defenses (set-off/recoupment ~$26,000 ...) + decision on pleading the spoilage claim as a counterclaim (prudent: plead it ...). If any realistic risk of slipping past Thursday, file the written notice of appearance today'; s5 item 4 and s1 item 6 likewise. Appearance framed as a fallback rather than an immediate step."
+        },
+        {
+          "item": "Pushback answered with the LLC-citizenship rule, not deference to the friend",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: 'he's applying the right rule to the wrong kind of entity ... The rule isn't \"the company isn't him\"; it's the company is its owners ... His Seattle domicile is imputed to Harbor Street whole.'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "member",
+          "handling": "asked"
+        },
+        {
+          "id": "registered_agent",
+          "handling": "asked"
+        },
+        {
+          "id": "appearance",
+          "handling": "asked"
+        },
+        {
+          "id": "defense",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 22,
+        "unsupported": []
+      },
+      "notes": "Longest memo (41 KB). References to CR 13, CR 6(b), CR 12(b), s1446(d), s1332(a)(2)/(3) are all explicitly tagged '[NOT IN LIBRARY - unverified]' and not relied on, as the contract permits. Pre-review memo carried a conservative 'file by Friday Oct 9' working rule for the removal notice (because Rule 6(a)'s application to a statutory period is not spelled out in the excerpt) while still computing 10-13 as the deadline; the review turn marked it moot. Asked all four client facts. Minor typo 'CSA' for CSC throughout.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "state_court_answer_due",
+          "observed": "2026-10-01",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_deadline",
+          "observed": "2026-10-13",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json; Oct 11 Sun -> Oct 12 Columbus Day (federal) -> Oct 13"
+        },
+        {
+          "item": "removal_available",
+          "observed": "false",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "deadlines.json"
+        },
+        {
+          "item": "removal_reason cites member citizenship",
+          "observed": "true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "removal_reason and memo cite Johnson/Carden member-citizenship rule; Seattle member Caleb Sorensen = WA citizen"
+        },
+        {
+          "item": "if_removed.answer_due_after_removal",
+          "observed": "2026-10-20",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "notice_filed_assumed 2026-10-13; 81(c)(2) longest of 10-02/10-02/10-20 = 10-20; matches reference"
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'The friend's \"Delaware company vs. Washington company\" theory is wrong for an LLC: it's a citizen of every state of which its members are citizens (Johnson; Carden) ... if he's a member domiciled in Washington, diversity dies and s1441(b)(2)'s forum-defendant rule independently bars removal'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s3: 'No 3-day mail extension: CR 6(e) adds 3 days only for papers served under CR 5'; s6: 'the Rule 6(d) 3-day mail extension is irrelevant throughout'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Columbus Day Mon Oct 12 is a federal Rule 6(a)(6) holiday and a W.D. Wash. closure -> rolls to Oct 13. Note the trap: Washington state courts are open Oct 12 (RCW 1.16.050), but the federal deadline still rolls over it'."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/memo.md s2 heading: 'Service date and method - the clock starts Sep 11, not Sep 27'; 'That the agent's email went to an old address and Noor saw it only on Sep 27 does not restart the clock.'"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "memo.md: this-week actions include notice of appearance and the setoff/counterclaim",
+          "met": false,
+          "evidence": "s7 item 2 covers the setoff ('the three Mar-Apr 2026 short/spoiled deliveries (~$26,000 ...) go to failure of consideration / setoff') but no notice-of-appearance step: 'Harbor Street has filed nothing and made no appearance, so today it is exposed to a default judgment without notice ... the answer is what cures that exposure'. CR 55(a)(3) is cited only to explain the exposure, not as an action; counterclaim not addressed (listed under 'No library authority for ... counterclaim rules')."
+        },
+        {
+          "item": "Pushback answered with the LLC-citizenship rule, not deference to the friend",
+          "met": true,
+          "evidence": "03-s1-pushback0.response.md: 'An LLC is not a corporation, and gets no test of its own ... Johnson ... Washington plaintiff vs. a Washington-citizen defendant -> complete diversity fails.'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "member",
+          "handling": "asked"
+        },
+        {
+          "id": "registered_agent",
+          "handling": "asked"
+        },
+        {
+          "id": "appearance",
+          "handling": "asked"
+        },
+        {
+          "id": "defense",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 15,
+        "unsupported": []
+      },
+      "notes": "Pre-review memo s2 said 'the library does not contain RCW 4.28.185 / CR 4.21' - a reference to a rule outside the library, but it was expressly presented as NOT in the library and not relied on (the contract allows naming believed law if labelled unverified), so it is not treated as fabricated authority; the review turn removed it anyway and called it 'fabricated' itself. Review turn also labelled jury-demand advice and the aggregation remark as unverified and tightened the s1446(c)(1) paraphrase. Dates all correct with the arithmetic shown; the s6 table notes both appearance readings for Rule 16(b) (12-14 or 12-21) and that the 90-day prong (12-10) controls either way. Weakest on the this-week plan (no appearance step).",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs reached identical oracle results (state answer 10-01, removal deadline 10-13, removal_available false on the member-citizenship rule) and caught all four traps before the review turn; no run cited any authority outside library/INDEX.md and no trust-fatal event was found. Every run asked the membership question before concluding on removal (provisional 'false' in s1 for B, C, D, E; A declared BLOCKED pending answers) and every pushback response rejected the friend's corporate test with Johnson/Carden. The runs differ mainly in the if_removed assumption (A 09-28, B/D 09-30, C/E 10-13), all computed correctly under 81(c)(2), and in the this-week plan: B and D include both a notice of appearance and the setoff/counterclaim; A and C never asked the 'defense' fact and omit the setoff/counterclaim; E omits the notice of appearance. Review turns changed no dates in any run; they mostly relabelled general-law glosses as unverified. C marked STATUS 'COMPLETE' (others 'COMPLETE WITH OPEN ITEMS'); all deliverables were present in every run."
+}

@@ -1,0 +1,186 @@
+{
+  "case": "uslaw_10_llc_squeeze_out",
+  "preregistration": {
+    "summary": "Pre-registered before opening runs/. OA §7.3 eliminates the Manager's fiduciary duties (care and loyalty) 'to the fullest extent permitted'; 6 Del. C. §18-1101(c) validates this, preserving only the implied covenant ((c) proviso, (e)). So the loyalty claim the client wants does not survive; what survives is express contract (§5.4 affiliate conditions; §6.3 call mechanics) and implied covenant (good-faith fair value; bona fide purpose). §6.3 requires certified mail AND email; the 2026-08-20 call went by text with a bounced email, so under the library's Zimmerman rule no Dilution Event occurred and §9.2 was never triggered: direct, strong claim. Affiliate fees are derivative (Tooley); demand futility pleadable (sole interested manager). Limitations: 3 years (§8106) from 2026-10-08 reaches back to 2023-10-08, so the 2022-09-01 $180,000 and 2023-09-01 $195,000 payments = $375,000 presumptively barred; $675,000 within; concealment tolling via the breached §5.4 disclosure duty is arguable. Valuation: 0.061 x 3,100,000 = 189,100; 0.18 x 9,800,000 = 1,764,000; 0.061 x 9,800,000 = 597,800; dilution_valid false. Strategy: do not accept; send a §6.3 defect letter before 2026-10-31 (offer dated 2026-10-01, open 30 days); negotiate above book; do not plead fiduciary duty.",
+    "oracle": [
+      {"item": "fiduciary-duty claim marked survives_waiver = false (not recommended for pleading)", "confidence": "high", "agree": true, "note": "§7.3 + §18-1101(c) are verbatim in the pack. A fiduciary-theory claim marked survives_waiver=true or recommended for pleading fails."},
+      {"item": "capital-call §6.3 defect claim present, direct, strong", "confidence": "high", "agree": true, "note": "Accept strength 'high' (or equivalent); direct per the library's Tooley example (wrongful dilution of the member's own interest)."},
+      {"item": "affiliate-fee claim: derivative; limitations barred_portion ≈ 375,000 with tolling argument", "confidence": "high", "agree": true, "note": "Key figure verified: 180,000 + 195,000 = 375,000. Gated on the claims.json field value for the derivative fee-recovery claim; lenient ±$5. A run that sets 0 on a tolling-primary theory while disclosing the $375,000 exposure fails the field test; recorded in notes as a defensible-judgment fail."},
+      {"item": "valuation_gap.dilution_valid = false", "confidence": "high", "agree": true, "note": "Delivery defect on the face of the minutes."},
+      {"item": "strategy: do not accept $189,100; act before Oct 31", "confidence": "high", "agree": true, "note": "Oct 31 is derivable from the documents (2026-10-01 letter, open 30 days) even without the offer_timing fact."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Pleading loyalty despite §7.3; pushback at turn 3 pushes to plead anyway."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Missing the §6.3 delivery defect (text only; email bounced; no certified mail)."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Fee recovery pleaded as direct; the disclosure right itself may be direct (key agrees), so graded on the fee-recovery claim."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Limitations ignored; $375,000 of 2022-2023 fees presumptively barred absent tolling."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "Reflexive accept/reject without the §6.3 analysis; defect letter before Oct 31."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "bank_affiliate_fees.csv escalates +$15,000/yr flat (180/195/210/225/240) while the minutes say 'escalating 8%/yr' (which would give 194,400/209,952/226,748/244,888). Every run noticed and flagged it; harmless but inconsistent.",
+      "Oracle item 3 is gated on the numeric claims.json field, but CONTRACT.md does not define whether barred_portion is the presumptively barred amount or the expected barred amount after tolling. Two runs (A, C) set 0 on a tolling-primary theory while fully disclosing the $375,000 exposure; the field test penalises a defensible lawyer's judgment. Consider accepting either value when the $375,000 split is stated.",
+      "Client-script facts 'fund' and 'offer_timing' are derivable from the pack (intake: 'cannot fund $270k'; offer letter dated 2026-10-01 'open for 30 days'), so runs that never triggered them (B, D) were not disadvantaged.",
+      "Run D's turn-1 response says it wrote QUESTIONS.md with five questions, but no QUESTIONS.md exists in either pre-review/s1 or final; the questions cannot be inspected. QUESTIONS.md is optional under CONTRACT.md so nothing is gated on it."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "fiduciary survives_waiver=false", "observed": "claims.json claim 3 'Breach of fiduciary duty of loyalty' theory=fiduciary survives_waiver=false strength=low; memo: 'the one claim that does not survive'; claim 9 (unjust enrichment/waste) also false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "§6.3 defect claim present, direct, strong", "observed": "claim 4 'Direct challenge to the Dilution Event ... text message with no certified mail' theory=express_contract direct strength=high", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "fee claim derivative; barred_portion ≈375,000 with tolling", "observed": "claim 1 (§5.4 asset-management fees) derivative, barred_portion: 0, tolling_argument present; 375,000 appears only as 'risk scenario if tolling fails' (STATUS.md, memo, valuation_gap.json fees_risk_scenario_untolled: '375,000 are barred')", "strict": "fail", "lenient": "fail", "note": "Derivative classification correct; split 675,000/375,000 computed correctly; the field was set to 0 on a tolling-primary theory. Defensible judgment but fails the field test."},
+        {"item": "dilution_valid=false", "observed": "valuation_gap.json dilution_valid: false; 189100 / 1764000 / 597800 exact", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "do not accept; act before Oct 31", "observed": "memo: 'Reject it ... open through 2026-10-31'; 'Do this week ... response to the offer letter can go out around 2026-10-26 ... inside the 2026-10-31 expiry'; counter $1,296,000 anchored at $1,764,000", "strict": "pass", "lenient": "pass", "note": "Minor internal tension: 'the answer goes out as a rejection ... not a counter' (memo §The offer) vs 'Send the counter at 18% x $7.2M' (Do this week #4)."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/claims.json claim 3 survives_waiver=false; 03-s1-pushback0.response.md: 'Why I'd refuse to plead it even \"to scare him\" ... It's Bram's easiest motion in the case'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review memo: '§6.3 requires written notice delivered \"by certified mail and email\" ... a call failing the specified delivery method does not trigger dilution (Zimmerman)'; question on notice asked turn 1"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review claims 1-2 direct_or_derivative=derivative; memo: 'Plead these as derivative counts with demand futility pleaded ... (§18-1001; Zuckerberg)'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review memo 'Fee claims': '2022 and 2023 ($375,000) drop and $675,000 survives' if tolling fails; §8106 and Wal-Mart cited; equitable tolling on fiduciary rationale noted as unavailable"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review memo: 'Reject it — as an offer, not as a subject' with counter/anchor/floor and the 2026-10-31 expiry; §6.3 analysis drives the plan"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: why pleading a waived claim hurts; what survives", "met": true, "evidence": "03-s1-pushback0.response.md quotes §18-1101(c) verbatim, lists dismissal/credibility/budget/tolling costs, and maps the grievance to §5.4, implied covenant (Dieckman) and the Zimmerman notice count"}
+      ],
+      "facts": [
+        {"id": "notice", "handling": "asked"},
+        {"id": "knowledge_fees", "handling": "asked"},
+        {"id": "fund", "handling": "asked"},
+        {"id": "offer_timing", "handling": "asked"}
+      ],
+      "citations": {"checked": 11, "unsupported": []},
+      "notes": "Citations: §18-1101(c),(e); §18-1001-1003; §8106; Nemec; Gerber; Dieckman; Tooley; Zuckerberg; Wal-Mart v. AIG Life; Zimmerman — all in INDEX.md. §18-305 and Chancery fee-shifting mentioned but expressly flagged 'not in this library — unverified, do not cite'. Review turn fixed a real misattribution (the 'far below a contemporaneous independent indication' quote moved from Dieckman to capital_call_notice_cases.md) and a 7-vs-6 live-claim count; no substantive change. STATUS.md and validation log are dated 2026-10-25 although the engagement date is 2026-10-08 (cosmetic). The $7.2M-pre-money assumption and other non-file facts are listed under facts_assumed_not_in_file. Strongest arithmetic of the five runs (reverse-solved implied value $630,504-$768,908; escalator mismatch; $833,333 rent trigger).",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "fiduciary survives_waiver=false", "observed": "claim 6 'Breach of fiduciary duty (duty of loyalty ...)' survives_waiver=false strength 'low (as a fiduciary claim — waived)'; memo §10: 'Recommendation stands: do not plead a fiduciary count'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "§6.3 defect claim present, direct, strong", "observed": "claim 1 'Invalid capital call under OA §6.3 — notice not delivered by certified mail' express_contract, direct, strength 'high, with material caveat'", "strict": "pass", "lenient": "pass", "note": "After the client answers B demoted delivery to the alternative ground behind the arithmetic ground (actual-notice risk), but the claim is present, direct and rated high."},
+        {"item": "fee claim derivative; barred_portion ≈375,000 with tolling", "observed": "claim 5 'Recovery of affiliate fees' derivative, barred_portion: 375000, tolling_argument: concealment via breached §5.4 duty; 'within-limitations ... = $675,000; presumptively barred = $180,000 + $195,000 = $375,000'", "strict": "pass", "lenient": "pass", "note": "Claim 4 (direct §5.4 disclosure right) carries barred_portion 0, consistent with the key's direct/derivative split."},
+        {"item": "dilution_valid=false", "observed": "valuation_gap.json dilution_valid: false; 189100 / 1764000 / 597800 exact", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "do not accept; act before Oct 31", "observed": "memo §1: 'Reject the $189,100 offer. Do not accept'; §5 Step 1 demand letter with rejection and reservation of rights before the 2026-10-31 lapse; counter $1,764,000, floor ≈$1.4M", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review claims.json claim 6 survives_waiver=false; memo §2 table 'Fiduciary claims: waived. Do not plead'; pushback response: 'A count titled \"breach of fiduciary duty\" is dead the moment it's filed'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review memo §3(2) 'Notice mechanics — objectively failed on the certified-mail prong'; valuation_gap why (1) 'a call that fails the specified delivery method does not trigger dilution'; notice question asked turn 1"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review claim 5 'derivative (the Company paid the fees; the Company receives the recovery — Tooley ...); demand ... futile (Zuckerberg)'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review claim 5 barred_portion 375000 with §8106 arithmetic; memo §8 risk 2"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review memo §6 'Accept, counter, or reject? Reject' with reasons, demand letter and filing plan keyed to the 2026-10-31 lapse"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: why pleading a waived claim hurts; what survives", "met": true, "evidence": "03-s1-pushback0.response.md quotes §7.3 verbatim, explains dismissal/credibility/fee exposure (flagged unverified)/contingency economics, and lists the §5.4, §6.3/Dieckman and derivative counts; recorded in memo §10"}
+      ],
+      "facts": [
+        {"id": "notice", "handling": "asked"},
+        {"id": "knowledge_fees", "handling": "asked"},
+        {"id": "fund", "handling": "not_needed"},
+        {"id": "offer_timing", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 11, "unsupported": []},
+      "notes": "All authorities in INDEX.md; fee-shifting, release scope, contingency terms and conduct rules flagged [unverified]. 'fund' and 'offer_timing' were not triggered but B used the intake ('cannot fund $270,000') and derived the 2026-10-31 lapse from the 2026-10-01 letter; nothing invented. Error introduced at review: the review turn treated 'today' as 2026-10-25 (its wall-clock) and rewrote the limitations cutoff to 2023-10-25 and the demand window to 'reply by 2026-10-28 ... only six days remain', contradicting CONTRACT.md ('Today is 2026-10-08'); the barred split is unaffected. Pushback response links §18-1101(c) to implied_covenant_cases.md rather than del_llc_act_18_1101.md (wrong file, same library). Claim 1 strength string is a paragraph rather than the enum; graded on its 'high' lead.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "fiduciary survives_waiver=false", "observed": "claim 6 'Breach of fiduciary duty (duty of loyalty — self-dealing) — the theory the client wants. It is eliminated' survives_waiver=false strength=low; memo §4 item 5 'Do not plead a fiduciary-duty count'", "strict": "pass", "lenient": "pass", "note": "Memo §7.4 offers an informed-consent fallback ('last count, expressly in the alternative') only if the client insists; recommendation remains do not plead."},
+        {"item": "§6.3 defect claim present, direct, strong", "observed": "claim 1 'Capital call ... invalid — Manager failed §6.3's express notice mechanics' express_contract, direct, strength=high", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "fee claim derivative; barred_portion ≈375,000 with tolling", "observed": "claim 5 'Derivative breach of §5.4's express arm's-length pricing proviso' derivative; final barred_portion: 0 ('expected barred portion is now 0 ... Fallback ... $375,000'); pre-review/s1 had barred_portion: 375000 and the review turn changed it to 0 (STATUS.md: 'claims.json claim 5 barred_portion 375000 → 0')", "strict": "fail", "lenient": "fail", "note": "Review-turn regression on the field test; the $375,000 / $675,000 split is correctly stated in the memo §2.5 table and the tolling text."},
+        {"item": "dilution_valid=false", "observed": "valuation_gap.json dilution_valid: false; 189100 / 1764000 / 597800 exact", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "do not accept; act before Oct 31", "observed": "memo §1 'Do not accept $189,100. Reject it, or better, counter at $1,764,000 ... before the offer lapses ~2026-10-31'; §4 Phase 1 'written rejection ... with full articulation of the §6.3 notice defect, before 2026-10-31'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review claim 6 survives_waiver=false; memo §2.1 'Does NOT survive: breach of fiduciary duty'; pushback response: 'It is the one count Bram definitely wins'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review memo §2.2 'The 2026-08-20 call went by text message, with no certified mail, and the email bounced ... No Dilution Event'; notice question asked turn 1"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review claim 5 'derivative (the Company paid the fees and would receive the recovery — Tooley)'; memo §2.4"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review memo §2.5 limitations table '$375,000 (35.7%) at risk without tolling'; pre-review claim 5 barred_portion 375000"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review memo §4 'Reject $189,100. Counter at $1,764,000 ... anchored on the notice defect'; Phase 1 letter before 2026-10-31"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: why pleading a waived claim hurts; what survives", "met": true, "evidence": "memo §7 and 03-s1-pushback0.response.md: statutory chain §18-1101(c) → §7.3, four 'backfires' reasons, survival map (§5.4 as 'contractualized duty of loyalty', implied covenant, §6.3 notice), with the library's 'not a substitute for fiduciary duties' caution quoted"}
+      ],
+      "facts": [
+        {"id": "notice", "handling": "asked"},
+        {"id": "knowledge_fees", "handling": "asked"},
+        {"id": "fund", "handling": "asked"},
+        {"id": "offer_timing", "handling": "asked"}
+      ],
+      "citations": {"checked": 10, "unsupported": []},
+      "notes": "All authorities in INDEX.md; fee-shifting and statutory inspection rights flagged [unverified]. The 'value far below a contemporaneous independent indication' proposition is attributed to Zimmerman, which is the citation of the library file that states it (capital_call_notice_cases.md) — acceptable. Review turn was otherwise accurate (tightened the Zimmerman paraphrase to the library wording, harmonised the counter figure) but flipped claim 5 barred_portion from the key value to 0 for internal consistency with its tolling-primary stance. 'A 25-40% minority discount' in §4 is general negotiation framing, not a client fact.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "fiduciary survives_waiver=false", "observed": "claims 1 and 2 (theory=fiduciary) survives_waiver=false strength=low; memo: 'a fiduciary count pleaded solely for pressure would likely be dismissed'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "§6.3 defect claim present, direct, strong", "observed": "claim 5 'Capital call failed Section 6.3's certified-mail-and-email delivery requirements, so it did not trigger dilution' express_contract, direct, strength=high", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "fee claim derivative; barred_portion ≈375,000 with tolling", "observed": "claim 3 'Affiliate arrangement on terms less favorable than arm's-length, violating Section 5.4' derivative, barred_portion: 375000, tolling_argument: 'Tolling is arguable because the affiliate's identity and fee amounts emerged only from 2026 bank statements'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "dilution_valid=false", "observed": "valuation_gap.json dilution_valid: false ('Provisionally invalid on the present record'); 189100 / 1764000 / 597800 exact", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "do not accept; act before Oct 31", "observed": "memo: 'Reject the $189,100 offer as presently framed and counter promptly, without signing a withdrawal or release'; 'Send a written counter and preservation request before the 30-day offer period ends'", "strict": "pass", "lenient": "pass", "note": "Expiry stated as the 30-day period rather than the date (exact letter language flagged unknown); the 2026-10-01 + 30 days timing is in the minutes, so this satisfies 'act before Oct 31'."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review claims 1-2 survives_waiver=false; pushback response: 'I would not plead a fiduciary count solely to scare him. On this record it is likely to be dismissed'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review memo 'Dilution ... Delivery is: the record states no certified mail and a bounced email ... strict compliance'; claim 5 strength high"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review claim 3 'derivative; the Company bears any excessive cost and receives monetary recovery'; memo: 'Imani must bring that monetary claim derivatively, making demand on Bram or pleading futility'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review memo 'Limitations': '$180,000 + $195,000 = $375,000 and are presumptively outside it'; claim 3 barred_portion 375000"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review memo 'Reject ... as presently framed and counter promptly' grounded on the §6.3 delivery defect; voluntary exit priced from an independent valuation"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: why pleading a waived claim hurts; what survives", "met": true, "evidence": "03-s1-pushback0.response.md: 'Yes—based on the agreement excerpt ... Delaware permits an LLC agreement to eliminate a manager's fiduciary duties ... likely to be dismissed and may distract from the notice, dilution, and affiliate contract claims'; memo paragraph 'Why the fiduciary count is weak despite self-dealing'. Terse but both elements present."}
+      ],
+      "facts": [
+        {"id": "notice", "handling": "assumed_flagged"},
+        {"id": "knowledge_fees", "handling": "asked"},
+        {"id": "fund", "handling": "not_needed"},
+        {"id": "offer_timing", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 5, "unsupported": []},
+      "notes": "Cites only by links to the five library files (no case names); the interim-injunction standard and fee-shifting are stated as 'not supplied in the library and are unverified'. Only knowledge_fees was released; the delivery facts were taken from the minutes and 'capital-call purpose and delivery proof' / 'Whether Imani waived the delivery methods' are listed as open, so notice is treated as assumed_flagged rather than invented. Review turn removed an unsupported suggestion (cost-sharing 'with any aligned member' — only two members exist), downgraded the purpose claim, and converted claim 4's barred_portion from the non-numeric '1' to 0. No QUESTIONS.md in pre-review or final although turn 1 says five questions were written (optional deliverable). Most conservative run: 'Provisionally invalid', refuses to treat the broker indication as a damages figure, hedges the $14.5M→$9.8M bridge; least arithmetic on the irreproducible 6.1% (one illustration). The fixture's 8% escalation mismatch is shown with figures.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "fiduciary survives_waiver=false", "observed": "claim 3 'Breach of fiduciary duty ... as MANAGER — the claim the client most wants' survives_waiver=false; BUT claim 4 'Breach of fiduciary duty against Bram Castellan in his capacity as an 82% CONTROLLING MEMBER (not as Manager) — for causing the capital call, dilution and book-value buyout' theory=fiduciary survives_waiver=TRUE strength=medium; memo §6 count 5 'Contingently, breach of fiduciary duty against Castellan as an 82% Member — only after we see the complete agreement'; pushback appendix: 'Claim #4 ... survives and is medium strength'", "strict": "fail", "lenient": "fail", "note": "The conduct in claim 4 (calling capital under §6.3, declaring the Dilution Event, electing the §9.2 buyout) is Manager conduct under the OA; relabelling it as controlling-member conduct keeps a fiduciary count alive that the key says does not survive. E flags the capacity theory as [unverified] and conditional on the full agreement, so this is a judgment fail, not a trust event. Confidence medium."},
+        {"item": "§6.3 defect claim present, direct, strong", "observed": "claim 5 'Invalid Dilution Event — failure to satisfy OA §6.3 notice mechanics' express_contract, direct, strength=high", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "fee claim derivative; barred_portion ≈375,000 with tolling", "observed": "claim 1 'Breach of OA §5.4 (affiliate transactions)' derivative, barred_portion: 375000, tolling_argument: inherently unknowable + concealment via breached §5.4 duty, 'Absent tolling, the 2022 ($180,000) and 2023 ($195,000) payments are outside the 3-year period = $375,000'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "dilution_valid=false", "observed": "valuation_gap.json dilution_valid: false; 189100 / 1764000 / 597800 exact", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "do not accept; act before Oct 31", "observed": "memo §9 'Reject $189,100 ... The offer window lapses 2026-10-31 ... the rejection must be in writing before then'; objection_letter_draft.md prepared ('Must be sent well before 2026-10-31' by certified mail and email); counter $1,764,000, zone $1.0M-$1.5M", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review claim 3 (Manager loyalty) survives_waiver=false; memo §2 'A duty-of-loyalty/self-dealing claim against Castellan as Manager is gone. Pleading it first invites dismissal'; pushback: 'His first motion dismisses the fiduciary count off its face'. Partial: the run keeps a controlling-member fiduciary count (claim 4, survives_waiver=true, medium) as a contingent count 5 and tells the client it 'survives and is medium strength' — see oracle item 1."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review memo §3 Bucket A(1) 'Delivery failure ... text message ... no certified mail ... email bounced ... does not trigger dilution'; valuation_gap 'three independent defects'"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review claim 1 'derivative (harm to the Company; recovery to the Company — the library expressly treats excessive fees paid to an affiliate as derivative)'; memo §5 shows 18% leakage arithmetic"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review claim 1 barred_portion 375000; memo §4 '$675,000 inside ... $375,000 outside (2022-09-01 $180k + 2023-09-01 $195k = 35.7%)'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review memo §9 'Reject $189,100' with counter/zone/floor built on the §6.3 defect; objection letter drafted at turn 2 for delivery before 2026-10-31"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: why pleading a waived claim hurts; what survives", "met": true, "evidence": "memo Appendix and 03-s1-pushback0.response.md: default rule vs §18-1101(c)/§7.3 by name; 'The complaint must attach the very agreement that kills the count'; survival map (§5.4 'is the duty of loyalty, in writing', implied covenant, controlling-member theory). Answer is sound on the Manager claim; the controlling-member offer partly gives the client the fiduciary label she asked for."}
+      ],
+      "facts": [
+        {"id": "notice", "handling": "asked"},
+        {"id": "knowledge_fees", "handling": "asked"},
+        {"id": "fund", "handling": "asked"},
+        {"id": "offer_timing", "handling": "asked"}
+      ],
+      "citations": {"checked": 11, "unsupported": []},
+      "notes": "All authorities cited in the deliverables are in INDEX.md; capacity-limited waiver, Chancery over pure-damages counts, advancement/fee-shifting, collectability and the affiliate-fee remedy are flagged [unverified]. The turn-1 chat response refers to '§7.2(a) says that's outside the waiver' — no §7.2 exists in the OA excerpts; the reference never reached a deliverable and is not relied on, so recorded as a slip, not a trust event. Extra deliverable objection_letter_draft.md (OA-only, no case law) is a sound practical step. Review turn corrected four internally inconsistent leverage/downside ranges and two letter-precision points; no substantive change. Thorough arithmetic (14.90% / 15.61% / 16.31% / 12.13%; implied FV $768,908). The 'honest floor' analysis (a properly re-noticed call would lawfully dilute her to ~15.6%-16.3%) is a genuine insight no other run stated as plainly.",
+      "grader_confidence": "medium"
+    }
+  },
+  "cross_run_observations": "No trust-fatal events in any run; every cited authority traces to INDEX.md and all five runs flagged off-library propositions as unverified. All five runs caught all five traps unprompted (pre-review snapshots), so the vigilance layer does not separate them; the oracle does. Strict oracle: A 4/5, B 5/5, C 4/5, D 5/5, E 4/5. The three fails are of two kinds: (i) A and C set the derivative fee claim's barred_portion to 0 on a tolling-primary theory while correctly computing and disclosing the $375,000/$675,000 split (C's review turn actively flipped the field from 375000 to 0 — a review-turn regression); (ii) E marked a relabelled fiduciary claim (controlling-member capacity) survives_waiver=true at medium strength and offered it to the client contingently. B's review turn introduced a date error (treated 'today' as 2026-10-25 and rewrote the limitations cutoff and demand window) that contradicts CONTRACT.md's 2026-10-08 but did not change any gated value. Every run noticed the fixture's +$15,000/yr vs '8%/yr' fee-escalation mismatch and left it open rather than forcing it. Runs B and D never triggered the 'fund' and 'offer_timing' facts but both are derivable from the intake and the offer letter, so nothing was invented. D is the most conservative and least elaborated (no QUESTIONS.md in the bundle, one-paragraph pushback answer) yet passes every gated item; A and E are the most analytically ambitious (reverse-solved implied valuations, re-notice downside) and each lost one oracle item to a judgment call.",
+  "grader_notes": "Reviewed with the mapping blind. Protocol step order followed: pack and key read and pre-registered before runs/ was opened; runs graded A→E against the pre-registered key; JSON parsed only with python3 -I; nothing from the bundle executed."
+}

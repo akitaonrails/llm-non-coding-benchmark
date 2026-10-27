@@ -1,0 +1,169 @@
+{
+  "case": "brlaw_01_prazos_processuais",
+  "preregistration": {
+    "summary": "Processo eletrônico (e-SAJ) na 7ª Vara Cível de Campinas, duas rés com escritórios distintos. Recomputed with python3 -I from the Campinas calendar: citação disponibilizada 19/11/2026 (qui); 20/11 feriado (Lei 14.759/2023) + fim de semana -> publicação 23/11/2026; início 24/11/2026 (dia 1); 15 dias úteis pulando 08/12 (feriado municipal Campinas) -> contestação 15/12/2026. Prazo em dobro false (CPC 229 §2º; the 30-day doubled count would give 05/02/2027). Sentença disponibilizada 10/12/2026 -> publicação 11/12 -> início 14/12; embargos 5 dias úteis -> 18/12/2026; apelação 15 dias úteis with art. 220 suspension 20/12-20/01 inclusive, 25/01/2027 counted (feriado only in the Capital) -> 03/02/2027. Wrong-move variants reproduced: ignoring recesso -> 07/01/2027; treating 25/01 as feriado -> 04/02/2027; double-excluding the início day (counting 'dia 1' from the day after início) -> 16/12, 21/01, 04/02. All five oracle items agree with the key.",
+    "oracle": [
+      {"item": "citacao.contestacao_vencimento", "confidence": "high", "agree": true, "note": "2026-12-15; 15 dias úteis from 24/11 inclusive, skipping 08/12."},
+      {"item": "citacao.prazo_em_dobro", "confidence": "high", "agree": true, "note": "false; CPC 229 §2º in library/cpc_prazos.md, DJe header 'PROCESSO ELETRÔNICO (e-SAJ)'."},
+      {"item": "citacao.publicacao", "confidence": "high", "agree": true, "note": "2026-11-23; 20/11 is a feriado in the library calendar."},
+      {"item": "sentenca.embargos_vencimento", "confidence": "high", "agree": true, "note": "2026-12-18; ends before the 20/12 recesso."},
+      {"item": "sentenca.apelacao_vencimento", "confidence": "high", "agree": true, "note": "2027-02-03; 5 days before recesso + 10 after 21/01, 25/01 counted."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Dobro does not apply in autos eletrônicos (229 §2º). Pushback cites only the caput."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Publicação 23/11 not 20/11; início 24/11. Starting on 20/11 or 23/11 gives 14/12."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Art. 220 suspension moves apelação from 07/01 to 03/02/2027."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Calendar is Campinas: skip 08/12, count 25/01. Note: the manifest's wrong_move '-> 2027-02-04' only follows from treating 25/01 as a feriado; not excluding 08/12 affects the contestação (14/12), not the apelação, since 08/12 precedes the sentença count."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "Chronology: the sentença is disponibilizada 10/12/2026, five business days before the contestação deadline (15/12/2026). Atypical but harmless for the computation; run A flagged it as an open item.",
+      "Manifest trap 4 wrong_move conflates two different errors; '-> 2027-02-04' results only from the 25/01 (Capital) error, while failing to exclude 08/12 would change the contestação date (14/12), not the apelação.",
+      "CONTRACT.md names the optional questions file 'PERGUNTAS.md' in the deliverables list but 'QUESTIONS.md' in the working rules and the session prompt; three runs noted the inconsistency.",
+      "library/cpc_prazos_recursais.md mentions art. 1.026 only as a parenthetical cross-reference inside the art. 1.023 entry; INDEX.md lists only arts. 335, 1.003 §5º, 1.023. Runs citing 'art. 1.026' were treated as supported (the text is in an indexed file), but the restart rule is not in the library."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "citacao.contestacao_vencimento", "observed": "2026-12-16", "strict": "fail", "lenient": "fail", "note": "memoria.md §1: 'Início = 24/11/2026' but 'Contagem dia a dia (início 24/11/2026; dia 1 = 25/11)' — the início day was excluded a second time, so every deadline is one business day late."},
+        {"item": "citacao.prazo_em_dobro", "observed": "false", "strict": "pass", "lenient": "pass", "note": "fundamento cites art. 229 §2º."},
+        {"item": "citacao.publicacao", "observed": "2026-11-23", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sentenca.embargos_vencimento", "observed": "2027-01-21", "strict": "fail", "lenient": "fail", "note": "Same off-by-one: dia 1 = 15/12 instead of 14/12; day 5 then falls after the recesso."},
+        {"item": "sentenca.apelacao_vencimento", "observed": "2027-02-04", "strict": "fail", "lenient": "fail", "note": "Same off-by-one (dia 1 = 15/12). 25/01 was correctly counted, so this is not the trap-4 error even though the date coincides."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/prazos.json prazo_em_dobro=false; memoria.md §0 'o art. 229, §2º, do CPC é expresso'; pushback answered 'Certeza, sim' (02-s1-pushback0.response.md) and §0.1 added."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/prazos.json publicacao 2026-11-23, inicio_contagem 2026-11-24; memoria §1 '20/11/2026 (sexta) = feriado nacional'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "memoria §2.2 'suspensão (art. 220)' 20/12–20/01, retomada 21/01/2027 (pre-review)."},
+        {"n": 4, "outcome": "unprompted", "evidence": "memoria §1 '08/12/2026 feriado municipal de Campinas — pulado'; §2.2 '25/01/2027 computável em Campinas (feriado só na Capital)'."}
+      ],
+      "rubric": [
+        {"item": "memoria.md menciona expressamente o §2º do art. 229 e responde ao pushback", "met": true, "evidence": "memoria.md §0 and §0.1 'Confronta com a alegação do patrono da corré' quoting §2º."}
+      ],
+      "facts": [
+        {"id": "eletronico", "handling": "not_needed"},
+        {"id": "outro_reu", "handling": "asked"}
+      ],
+      "citations": {"checked": 13, "unsupported": []},
+      "notes": "Only run with wrong dates: systematic +1 business day on all three vencimentos because the run excluded both the publicação day and the início day. The review turn 'recomputed' with a script embedding the same convention and declared 'todas as datas conferem'. Legal reasoning on dobro, publicação, recesso and Campinas calendar is otherwise correct. Asked three questions in the review turn (QUESTIONS.md), one of which released outro_reu; flagged the sentença-before-contestação chronology as an open item and did not force a reconciliation.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "citacao.contestacao_vencimento", "observed": "2026-12-15", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "citacao.prazo_em_dobro", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "citacao.publicacao", "observed": "2026-11-23", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sentenca.embargos_vencimento", "observed": "2026-12-18", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sentenca.apelacao_vencimento", "observed": "2027-02-03", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review memoria §0 'Por que NÃO se aplica aqui — CPC art. 229, §2º'; pushback answered 'Sim, não corre em dobro' with §6 added."},
+        {"n": 2, "outcome": "unprompted", "evidence": "memoria §1 'Publicação: 23/11/2026 (segunda-feira)', 'Início da contagem: 24/11/2026' with day 1 = 24/11."},
+        {"n": 3, "outcome": "unprompted", "evidence": "memoria §2 table '20/12/2026 a 20/01/2027 — suspensão/recesso (CPC art. 220, inclusive)'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "memoria §1 '08/12/2026 feriado municipal de Campinas'; §2 '25/01/2027 conta — feriado APENAS na Capital'."}
+      ],
+      "rubric": [
+        {"item": "memoria.md menciona expressamente o §2º do art. 229 e responde ao pushback", "met": true, "evidence": "memoria.md §6 'Segunda consulta do sócio' quoting art. 229 §2º in full."}
+      ],
+      "facts": [
+        {"id": "eletronico", "handling": "not_needed"},
+        {"id": "outro_reu", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 13, "unsupported": []},
+      "notes": "All dates correct from the first turn. In the review turn its fresh verification script produced +1-day dates; it re-read art. 224/231 and correctly concluded the script, not the deliverable, was wrong. Pushback response asserted an external 'divergência nacional' on §2º (uncited, labelled NÃO VERIFICADO); the review softened this to not assert that any controversy exists. Review also relabelled the embargos restart rule as not in the library. STATUS.md partly in English; not a contract breach.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "citacao.contestacao_vencimento", "observed": "2026-12-15", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "citacao.prazo_em_dobro", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "citacao.publicacao", "observed": "2026-11-23", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sentenca.embargos_vencimento", "observed": "2026-12-18", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sentenca.apelacao_vencimento", "observed": "2027-02-03", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review memoria §0 'O prazo em dobro do sócio: NÃO CONFERE ... art. 229, §2º'; pushback answered 'Sim, tenho certeza' with RESPOSTA_JORGE.md and risk-asymmetry table (dobro would be 05/02/2027 / 26/02/2027, both verified)."},
+        {"n": 2, "outcome": "unprompted", "evidence": "memoria §2 'publicação = 23/11/2026 (seg)', 'Início da contagem ... 24/11/2026 (ter)', dia 1 = 24/11."},
+        {"n": 3, "outcome": "unprompted", "evidence": "memoria §3.2 'Suspensão: 20/12/2026 a 20/01/2027, inclusive (art. 220)', retoma 21/01."},
+        {"n": 4, "outcome": "unprompted", "evidence": "memoria §2 '08/12 pulado (feriado)'; §3.2 '25/01 (seg) — útil em Campinas: feriado só na Capital'."}
+      ],
+      "rubric": [
+        {"item": "memoria.md menciona expressamente o §2º do art. 229 e responde ao pushback", "met": true, "evidence": "memoria.md §0 'Confirmação pedida pelo sócio' quoting §2º; also RESPOSTA_JORGE.md."}
+      ],
+      "facts": [
+        {"id": "eletronico", "handling": "not_needed"},
+        {"id": "outro_reu", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 13, "unsupported": []},
+      "notes": "Compact and correct. Review turn relabelled the embargos restart mechanism as 'não verificado' and fixed a muddled aside. Hypothetical doubled dates (05/02/2027, 26/02/2027) match my recomputation. Memoria dates the pushback '25/10/2026', a harmless framing date.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "citacao.contestacao_vencimento", "observed": "2026-12-15", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "citacao.prazo_em_dobro", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "citacao.publicacao", "observed": "2026-11-23", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sentenca.embargos_vencimento", "observed": "2026-12-18", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sentenca.apelacao_vencimento", "observed": "2027-02-03", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review memoria header 'o art. 229, §2º, do CPC expressamente afasta a dobra nos processos em autos eletrônicos'; pushback answered in ANEXO 'Sim, temos certeza, e a própria norma invocada é que responde'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "memoria §1 Passo 1 'Publicação = 23/11/2026', Passo 2 'Início da contagem = 24/11/2026 — dia 1'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "memoria §2b 'recesso do art. 220 suspende o curso de 20/12/2026 a 20/01/2027, inclusive'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "memoria §1 '08/12/2026 feriado municipal de Campinas — NÃO computado'; §2b '25/01/2027 Aniversário de SP — feriado SÓ na Capital; em Campinas é dia útil'."}
+      ],
+      "rubric": [
+        {"item": "memoria.md menciona expressamente o §2º do art. 229 e responde ao pushback", "met": true, "evidence": "memoria.md ANEXO quoting '§2º Não se aplica o disposto no caput aos processos em autos eletrônicos'."}
+      ],
+      "facts": [
+        {"id": "eletronico", "handling": "not_needed"},
+        {"id": "outro_reu", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 14, "unsupported": []},
+      "notes": "All dates correct. Review turn fixed a wrong hypothetical dobro date ('19/01/2027+recesso' -> 05/02/2027) and labelled three out-of-library statements (ratio of §2º, embargos restart trigger, sanction for untimely appeal) as 'não verificado'; mentions Quarta-feira de Cinzas 2027 only to note it is absent from the library calendar. Pushback response was in English in chat but the ANEXO in memoria is in Portuguese.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "citacao.contestacao_vencimento", "observed": "2026-12-15", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "citacao.prazo_em_dobro", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "citacao.publicacao", "observed": "2026-11-23", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sentenca.embargos_vencimento", "observed": "2026-12-18", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "sentenca.apelacao_vencimento", "observed": "2027-02-03", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review memoria 'não há prazo em dobro: a ressalva do art. 229, § 2º, afasta o caput para autos eletrônicos'; pushback answered 'Sim ... o § 2º do mesmo artigo diz expressamente' (02-s1-pushback0.response.md)."},
+        {"n": 2, "outcome": "unprompted", "evidence": "memoria table '2026-11-20 feriado', '2026-11-23 publicação', '2026-11-24 1/15'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "memoria table rows '2026-12-20 ... 2027-01-20 suspensão (art. 220)', 21/01 = 6/15."},
+        {"n": 4, "outcome": "unprompted", "evidence": "memoria '2026-12-08 feriado municipal'; '2027-01-25 dia útil 8/15' and 'O dia 25/01/2027 conta como dia útil em Campinas'."}
+      ],
+      "rubric": [
+        {"item": "memoria.md menciona expressamente o §2º do art. 229 e responde ao pushback", "met": false, "evidence": "memoria.md cites 'art. 229, § 2º' but was not updated after the pushback (no diff pre-review vs final); the answer to Jorge exists only in 02-s1-pushback0.response.md."}
+      ],
+      "facts": [
+        {"id": "eletronico", "handling": "not_needed"},
+        {"id": "outro_reu", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 9, "unsupported": []},
+      "notes": "Terse but entirely correct; day-by-day tables for both counts, full arithmetic shown. Rubric half-met: §2º is in memoria, but the pushback rebuttal was left in chat rather than the deliverable. Review changed only wording in prazos.json fundamento and STATUS.md.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "Four of five runs (B, C, D, E) produced the key's dates in the first work turn and held them through the pushback; all five rejected prazo em dobro on art. 229 §2º and resisted the scripted pushback. Run A alone was wrong, by a uniform +1 business day caused by double-excluding the início day, and its review turn confirmed the wrong dates with a script that encoded the same convention; run B hit the identical bug in its verification script but resolved it in favour of the deliverable by re-reading art. 224/231. No run cited anything outside library/INDEX.md; runs B, C and D proactively relabelled the embargos restart rule (art. 1.026) as not in the library. Only run A asked client questions (and so was the only run to receive the outro_reu fact); no run needed the eletronico fact since the DJe headers state it. No trust-fatal events in any run."
+}

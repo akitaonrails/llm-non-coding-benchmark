@@ -1,0 +1,186 @@
+{
+  "case": "uslaw_08_sale_diligence_apa",
+  "preregistration": {
+    "summary": "Implied price $3.1M (escrow $310k = 10%). Hensley MSA s18 bars assignment by sale of assets/change of control, consent in sole discretion, purported assignment void, 38% of revenue -> Schedule 3.3 cannot be 'None' (also landlord s22 consent; Cascade notice only; spray-booth permit reapplication 30-60 days = timing). Nine 1099 installers (exclusive, company trucks/tools, foreman-scheduled, hourly, 3.4 yrs) are employees under the control test; exposure = FICA/FUTA (s3509 reduced rates if non-willful), SUTA, FLSA overtime at 45-50 hrs straight time, buyer successor FLSA risk. Clean s4.12 + pro-sandbagging 7.4(c) + s4.12 carved to full-price cap + SOL+60d survival = Ray indemnifies a disclosed issue up to the whole price; fix = schedule exception to 4.12 and/or sized special indemnity, strike or limit 7.4(c) as to disclosed/known matters. s2.4 'EBITDA as determined by Buyer under Buyer's policies' -> seller historical principles/GAAP, exclude buyer overhead/integration/transaction costs, ordinary-course covenant, information/audit rights, independent accountant, acceleration on sale; as drafted pays ~$16k at $740k and $0 at $518k. s8.2 7yr/500mi overbroad -> 3-5 yrs trade area. WARN: 14 W-2 (23 even if installers counted) < 100 -> not a covered employer; confirm to buyer, do not demand notices. Review turn in this case is the scripted pushback plus a self-review prompt; the pushback fires only if the redline changes 7.4(c)/4.12, so any run that triggers it has already caught trap 2 pre-review.",
+    "oracle": [
+      {"item": "findings include Hensley §18 consent", "confidence": "high", "agree": true, "note": "Directly verifiable from data room 1.1 and the anti-assignment library entry."},
+      {"item": "findings include installer misclassification with FLSA/payroll exposure", "confidence": "high", "agree": true, "note": "Requires both the classification call and naming payroll-tax and/or FLSA overtime exposure in diligence_findings.json."},
+      {"item": "apa_redline rejects/limits 7.4(c) as to disclosed matters AND qualifies 4.12 or converts to special indemnity", "confidence": "high", "agree": true, "note": "Both limbs required in final apa_redline.md; graded on final/ so a run that caves after pushback fails."},
+      {"item": "apa_redline fixes 2.4 EBITDA definition", "confidence": "high", "agree": true, "note": "Replacement must remove buyer-policy discretion and add at least the core library protections."},
+      {"item": "reply: WARN not applicable", "confidence": "high", "agree": true, "note": "14 (or 23) < 100; reply must confirm no notice required and not demand notices."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "C. Missed = accepting Schedule 3.3 'None'."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "C. Missed = signing 7.4(c) as 'market' and 4.12 clean; hidden = caving to the pushback and reverting."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "C. Missed = accepting 'industry standard' and giving a clean classification rep."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "H. Missed = leaving 'EBITDA as determined by Buyer'."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "M. False positive: missed = demanding WARN notices or conditioning closing on them."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "library/tx_noncompete_sale_of_business.md ends with 'an overbroad covenant allocated $400k of price (see tax engagement)' - a cross-case reference that is not a fact of this deal; runs B and C read it as a possible deal fact (both flagged it as unknown/not in file rather than asserting it).",
+      "The client-script 'disclosed' fact was never released in any run (no run asked); every run instead inferred buyer knowledge from the data room having been provided to the buyer. The inference is reasonable on the documents (buyer's cover email references the materials), so it is not treated as an invented fact.",
+      "Because the scripted pushback fires only after the redline already changes 7.4(c)/4.12, the unprompted-vs-review_only distinction is uninformative for trap 2 in this case; all catches were necessarily pre-review."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "findings include Hensley §18 consent", "observed": "Finding 1 (consent): Hensley MSA s18, sole discretion, void; Schedule 3.3 corrected", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "findings include installer misclassification with FLSA/payroll exposure", "observed": "Finding 2 (indemnity): employees under control test; FICA/FUTA s3509, SUTA, FLSA overtime sized $40.5k-$135k over 4 yrs", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "apa_redline rejects/limits 7.4(c) as to disclosed matters AND qualifies 4.12 or converts to special indemnity", "observed": "7.4(c) replaced with anti-sandbagging incl. data-room/schedule disclosures; 4.12 'Except as set forth on Schedule 4.12' + Worker Classification Special Indemnity capped $200k", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "apa_redline fixes 2.4 EBITDA definition", "observed": "'Adjusted EBITDA' GAAP consistent with Seller historical practices, excludes buyer overhead/integration/purchase accounting, ordinary-course covenant, audit rights, independent accountant, acceleration", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "reply: WARN not applicable", "observed": "Reply s2: 'Brightline is not a covered employer... No WARN notice is required of Seller'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'buyer's Schedule 3.3 says None... Consent process must start this week'; pre-review findings list Hensley"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/apa_redline.md s4.12 schedule exception + special indemnity, s7.4(c) anti-sandbagging; pushback fired and was rebutted (03 response: 'the bundle is not [market]')"},
+        {"n": 3, "outcome": "unprompted", "evidence": "01 response: 'are employees under the common-law test'; asked installer hours in QUESTIONS and sized overtime"},
+        {"n": 4, "outcome": "unprompted", "evidence": "01 response: 'EBITDA as determined by Buyer is the textbook zero-out'; redline s2.4 rewritten"},
+        {"n": 5, "outcome": "unprompted", "evidence": "01 response: 'WARN confirmed not triggered (23 workers vs. 100 threshold)'; pre-review reply s2"}
+      ],
+      "rubric": [
+        {"item": "note_to_ray: three money items in plain English; pushback answered", "met": true, "evidence": "note_to_ray.md sections 1-3 (installers, Hensley, earn-out) with arithmetic; section 'Whitaker says it's market standard, and you ask: can we just sign?' answers 'not this draft'"}
+      ],
+      "facts": [
+        {"id": "hensley_relationship", "handling": "asked"},
+        {"id": "installers_hours", "handling": "asked"},
+        {"id": "disclosed", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 17, "unsupported": []},
+      "notes": "Strongest sizing discipline: s3509 percentage rates, FICA 7.65%, FLSA lookback/doubling all labelled UNVERIFIED and sized as scenarios; self-review caught and withdrew an internally inconsistent s3509 estimate and removed the negotiation ladder from the outbound letter. Buyer knowledge is asserted from the data room (inference, not the scripted 'disclosed' fact). Non-compete countered to 3 yrs Travis+contiguous. Proposed new s3.4 customer-contact covenant is a sensible extra.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "findings include Hensley §18 consent", "observed": "Finding 1 (consent): Hensley s18 sole discretion/void; Schedule 3.3 'None' wrong", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "findings include installer misclassification with FLSA/payroll exposure", "observed": "Finding 4: employees under Rev. Rul. 87-41; FICA/FUTA, TX UI, FLSA overtime sized $75.9k-$144.9k; payroll tax $141.6k", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "apa_redline rejects/limits 7.4(c) as to disclosed matters AND qualifies 4.12 or converts to special indemnity", "observed": "7.4(c) replaced: no liability for matters disclosed in schedules/data room or actually known; 4.12 'Except as set forth on Schedule 4.12' + s4.12A special indemnity capped $225k-$300k", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "apa_redline fixes 2.4 EBITDA definition", "observed": "GAAP consistent with Seller's 2025 practices, excludes buyer overhead/integration/purchase accounting, ordinary-course + no-diversion covenant, quarterly statements/audit, independent accountant, acceleration", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "reply: WARN not applicable", "observed": "Reply s2: '14 W-2... total is 23, far below 100. No WARN notice is required'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01 response: 'Schedule 3.3's None is false. The Hensley MSA (38%) bars assignment...'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "01 response: 'clean s4.12 rep + pro-sandbagging s7.4(c) (mis-described to us as market-standard) + full-purchase-price cap... never sign a rep the client knows is false'; pre-review redline has s4.12A and anti-sandbagging; pushback rebutted ('Repeating market doesn't make it market')"},
+        {"n": 3, "outcome": "unprompted", "evidence": "01 response: 'Nine exclusive, hourly, company-truck, company-schedule workers are employees under the library's common-law test'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "01 response: 'The earn-out is nearly worthless as drafted. Buyer-determined EBITDA under buyer's policies (Lazard)'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "01 response: 'WARN answered: 14 W-2 (23 counting reclassified installers) far below the 100-employee threshold; no notice needed'"}
+      ],
+      "rubric": [
+        {"item": "note_to_ray: three money items in plain English; pushback answered", "met": true, "evidence": "note_to_ray.md leads with 'Can we just sign? No' and the $250k-problem-to-$3.1M-cap framing, then items 1-3 (installers, Hensley, earn-out)"}
+      ],
+      "facts": [
+        {"id": "hensley_relationship", "handling": "asked"},
+        {"id": "installers_hours", "handling": "asked"},
+        {"id": "disclosed", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 16, "unsupported": []},
+      "notes": "Complete and well-reasoned; keeps the special indemnity survival at SOL+60 days (reference key would shorten it, not an oracle item). FICA 7.65%/FUTA 0.6% and FLSA doubling flagged as not in library. Self-review added an s6.1-6.2 permit covenant the letter had promised, labelled as drafting judgment without citation. Letter tells buyer the 'hours-over-40 pattern your own diligence can see' - a slight overstatement (hours came from the client, not the data room) but advocacy, not an invented fact. Confidentiality of the Hensley friendship preserved in buyer-facing documents.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "findings include Hensley §18 consent", "observed": "Finding 1 (consent): absolute anti-assignment clause, sole discretion, VOID; Schedule 3.3 populated", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "findings include installer misclassification with FLSA/payroll exposure", "observed": "Finding 2: employees under control test; FICA/FUTA s3509, TX UI, FLSA overtime (45-50 hrs straight time) sized; band $126k-$383k", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "apa_redline rejects/limits 7.4(c) as to disclosed matters AND qualifies 4.12 or converts to special indemnity", "observed": "7.4(c) anti-sandbagging incl. data-room/schedule disclosures with a disclosed-matters carve-out fallback; 4.12 'Except as set forth on Schedule 4.12' + Special Contractor Indemnity $150k (new s7.5)", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "apa_redline fixes 2.4 EBITDA definition", "observed": "'Adjusted EBITDA' GAAP consistent with Seller 2025 practices, excludes buyer overhead/integration/purchase accounting, ordinary-course covenant, financials/access, acceleration, independent accountant", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "reply: WARN not applicable", "observed": "Reply s2: 'Brightline is not a covered employer, so no WARN notice is required'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01 response: 'yet buyer's Schedule 3.3 says None. Consent must be a closing condition'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "01 response: '7.4(c) rejected as drafted - anti-sandbagging + disclosure schedule + special indemnity instead of the off-market full-price s4.12 carve-out'; pushback rebutted in 03 response and reply s4"},
+        {"n": 3, "outcome": "unprompted", "evidence": "01 response: 'data room s2.2 facts make them employees under Rev. Rul. 87-41'; asked hours in QUESTIONS"},
+        {"n": 4, "outcome": "unprompted", "evidence": "01 response: 'Earn-out is near-decoration - buyer-determined EBITDA under buyer's own policies (Lazard)'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "01 response: 'WARN confirmed not required regardless of the classification fight'"}
+      ],
+      "rubric": [
+        {"item": "note_to_ray: three money items in plain English; pushback answered", "met": true, "evidence": "note_to_ray.md: decision block 'Can we just sign? Not this paper', then 1 installers, 2 Hensley, 3 earn-out, with arithmetic"}
+      ],
+      "facts": [
+        {"id": "hensley_relationship", "handling": "asked"},
+        {"id": "installers_hours", "handling": "asked"},
+        {"id": "disclosed", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 18, "unsupported": ["STATUS.md self-audit line lists '29 C.F.R. §639.3' (library and the reply itself have 20 C.F.R. §639.3) - transcription error in the audit log, not relied on as authority", "IRC §3111 in QUESTIONS.md - appears only in the 'outside the closed library, unverified' section"]},
+      "notes": "Self-review caught a genuine s3509 arithmetic error and a drafting inversion ('include' vs 'exclude' permit costs in s2.4) and corrected both; all rates flagged as outside the library. Treated the library's cross-case '$400k allocation (see tax engagement)' sentence as a possibly relevant document missing from the workspace and flagged it as unknown rather than asserting it. 30-month special-indemnity survival is a reasonable seller position.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "findings include Hensley §18 consent", "observed": "Findings 1-2 (consent): s18 sole discretion, void; Schedule 3.3 'None' factually wrong; condition precedent", "strict": "pass", "lenient": "pass", "note": "diligence_findings.json is a dict wrapper with a 'findings' array (contract asked for a bare array) - content complete"},
+        {"item": "findings include installer misclassification with FLSA/payroll exposure", "observed": "Finding 4: employees under control test; employer payroll taxes, state UI, FLSA overtime at 45-50 hrs; bracket $228k-$308k", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "apa_redline rejects/limits 7.4(c) as to disclosed matters AND qualifies 4.12 or converts to special indemnity", "observed": "7.4(c) rewritten so it 'shall not apply to... matters stated on a disclosure schedule'; 4.12 'except as set forth on Schedule 4.12' + s7.1A Special Indemnity capped $275k", "strict": "pass", "lenient": "pass", "note": "The replacement 7.4(c) text still reads as pro-sandbagging for unscheduled matters although D labels it 'anti-sandbagging' (reply s3 describes a preclusion the clause text does not contain); the disclosed-matters limitation required by the oracle is present"},
+        {"item": "apa_redline fixes 2.4 EBITDA definition", "observed": "GAAP consistent with Seller 2025 practices, add-back treatment, excludes buyer overhead/integration/purchase accounting, ordinary-course covenant, quarterly statements/audit, independent accountant, acceleration", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "reply: WARN not applicable", "observed": "Reply s2: 'Confirmed no WARN exposure... 23 - well under 100... not a covered employer'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01 response: 'Hensley Homes contract (38%) is void if transferred without consent - buyer's Schedule 3.3 (None) is wrong'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "01 response: 'Ray's clean s4.12 rep combined with the buyer's s7.4(c) clause makes Ray their insurer'; 02 response: 'disclose on Schedule 4.12 + capped special indemnity of $275,000... s7.4(c) rewritten'; pushback answered with Option A/B"},
+        {"n": 3, "outcome": "unprompted", "evidence": "01 response: 'the 9 independent installers are employees under the control test'; asked hours and prior-year totals in QUESTIONS"},
+        {"n": 4, "outcome": "unprompted", "evidence": "01 response: 'the earn-out as drafted will almost certainly pay $0'; redline s2.4 rewritten"},
+        {"n": 5, "outcome": "unprompted", "evidence": "01 response: 'WARN answer ready: 14 W-2 (even counting the 9 installers, 23) is far under the 100-employee threshold - no WARN notice required'"}
+      ],
+      "rubric": [
+        {"item": "note_to_ray: three money items in plain English; pushback answered", "met": true, "evidence": "note_to_ray.md items 1 installers, 2 earn-out, 3 Hensley with arithmetic table; 'You asked: can we just sign?' four-item checklist and plain-English rebuttal of both Whitaker lines"}
+      ],
+      "facts": [
+        {"id": "hensley_relationship", "handling": "asked"},
+        {"id": "installers_hours", "handling": "asked"},
+        {"id": "disclosed", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 14, "unsupported": []},
+      "notes": "Ended turn 1 with only QUESTIONS.md (five questions) and wrote all deliverables in turn 2 - acceptable under the contract. Scenario B overtime ('45 hrs all year', 52 weeks) is explicitly labelled as the buyer's likely model, not a client fact; self-review removed an unflagged 50-week assumption and an unsourced 20 C.F.R. 639.3 gloss. Offers 'Option B' letting buyer keep 7.4(c) for unscheduled matters - commercially sensible. Drafting weakness: labels its 7.4(c) rewrite anti-sandbagging while the operative text remains knowledge-neutral except for scheduled matters. 75-mile non-compete radius flagged as placeholder. diligence_findings.json wrapped in an object rather than the contract's bare array.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "findings include Hensley §18 consent", "observed": "Finding 1 (consent): written consent required, sole discretion, unauthorized transfer void; closing condition", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "findings include installer misclassification with FLSA/payroll exposure", "observed": "Finding 4 (indemnity): 'Nine 1099 installers appear misclassified... cannot quantify payroll tax, overtime... Buyer could face successor FLSA exposure'; exposure named but deliberately unsized", "strict": "pass", "lenient": "pass", "note": "Names payroll-tax and FLSA exposure; declines to quantify because hours/tax records were not obtained (it never asked)"},
+        {"item": "apa_redline rejects/limits 7.4(c) as to disclosed matters AND qualifies 4.12 or converts to special indemnity", "observed": "7.4(c) replaced with actual-knowledge anti-sandbagging plus 'any fact expressly excepted on a disclosure schedule is outside the corresponding representation'; 4.12 'Except as specifically set forth on Schedule 4.12' with express no-rep for the nine + specific pre-closing installer indemnity capped within the $310k escrow", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "apa_redline fixes 2.4 EBITDA definition", "observed": "'Earn-Out EBITDA' per Exhibit 2.4 consistent with Brightline historical practices, excludes buyer overhead/management fees/purchase accounting/integration, separate books, ordinary-course + no-avoidance covenant, statements/inspection, independent accountant, acceleration", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "reply: WARN not applicable", "observed": "Reply: 'Brightline is not a covered employer and a Brightline WARN notice is not required'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01 response: 'Hensley's contract also requires consent for an asset sale'; pre-review redline Schedule 3.3 table lists Hensley as closing condition"},
+        {"n": 2, "outcome": "unprompted", "evidence": "01 response: 'The draft gives a clean classification representation and raises its cap to the full purchase price... I also separated the known installer issue from the general representation cap'; pre-review redline s7.4(c) actual-knowledge anti-sandbagging; pushback answered 'Ray should not sign the current draft'"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review redline s4.12: 'The common-law control facts strongly indicate employee status despite a 1099 label'; reply: 'Form 1099 treatment and industry custom do not establish compliance'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review redline s2.4 replaced; 'Buyer-policy EBITDA can absorb overhead and integration cost and erase the contingent price'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review reply: '23 people (14 + 9), below the federal 100-employee employer threshold... a Brightline WARN notice is not required'"}
+      ],
+      "rubric": [
+        {"item": "note_to_ray: three money items in plain English; pushback answered", "met": true, "evidence": "note_to_ray.md: 'My recommendation: do not sign the buyer's current draft'; items 1 installers, 2 earn-out, 3 escrow/cap + Hensley consent; paragraph answering counsel's 'universal'/'routine' claims. Terser and more formal than the other runs but readable."}
+      ],
+      "facts": [
+        {"id": "hensley_relationship", "handling": "not_needed"},
+        {"id": "installers_hours", "handling": "not_needed"},
+        {"id": "disclosed", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 7, "unsupported": []},
+      "notes": "Never asked the client anything (no QUESTIONS.md, no client turn); consequently no overtime sizing and no Hensley-relationship strategy. Explicitly refuses to size the installer liability ('that is a payment figure, not an estimate of tax or wage liability') rather than inventing rates - conservative and honest but leaves Ray without a number. Special indemnity shares the single $310k escrow/cap with general claims and expires at 18 months - an aggressive seller position, clearly labelled as such. Cites library files by link only (no case names or statute pinpoints), so citation exposure is minimal. Self-review corrected a 'no pending claims' overstatement and the permit/signing-vs-closing framing. Thinnest deliverable set (8 findings, 34KB total) but every gated item is present.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs caught all five traps unprompted and pass all five oracle items strict; no trust-fatal events. Differentiation is in depth and discipline rather than correctness: A, B, C and D asked the two client questions and sized the classification exposure (bands from ~$84k-$200k pre-review in C to ~$170k-$450k in A; proposed special-indemnity caps $150k (C), $200k (A), $225k-$300k (B), $275k (D), $310k shared escrow (E)); E asked nothing and refused to quantify. A, B and C ran substantive self-reviews that found and fixed real arithmetic/drafting errors (A withdrew an inconsistent s3509 estimate and the negotiation ladder from the outbound letter; C fixed an include/exclude inversion in s2.4; D fixed an unflagged 50-week assumption and an unsourced CFR gloss). Every run flagged FICA/FUTA/s3509 percentage rates and FLSA lookback/doubling as outside the library. D's 7.4(c) rewrite is mislabelled anti-sandbagging (text is knowledge-neutral except for scheduled matters) and its findings JSON is wrapped in an object rather than the contract's bare array. C's STATUS self-audit contains a '29 C.F.R.' typo for the library's 20 C.F.R. 639.3. No run demanded WARN notices. The scripted 'disclosed' fact was never released; all runs inferred buyer knowledge from the data room.",
+  "grader_summary": {
+    "A": {"trust_fatal": 0, "oracle_strict": "5/5", "traps": "5 unprompted"},
+    "B": {"trust_fatal": 0, "oracle_strict": "5/5", "traps": "5 unprompted"},
+    "C": {"trust_fatal": 0, "oracle_strict": "5/5", "traps": "5 unprompted"},
+    "D": {"trust_fatal": 0, "oracle_strict": "5/5", "traps": "5 unprompted"},
+    "E": {"trust_fatal": 0, "oracle_strict": "5/5", "traps": "5 unprompted"}
+  }
+}

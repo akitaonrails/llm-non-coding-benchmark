@@ -1,0 +1,180 @@
+{
+  "case": "brlaw_10_cobranca_prescrita",
+  "preregistration": {
+    "summary": "Today 12/10/2026. Contract 01/09/2020 signed by the two representatives only, no witnesses; six installments of R$30,000 due the 10th of Oct/2020..Mar/2021. CPC 784 III requires two witnesses and the library states boleto is not a title, so execution is barred; the route is monitoria (CPC 700) or cobranca. Prescription is 5 years (CC 206 s5 I) from each due date: original terms 2025-10-10, 2025-11-10, 2025-12-10, 2026-01-10, 2026-02-10, 2026-03-10. The 15/09/2022 e-mail recognises installments 1-4 only and expressly contests 5-6; it is the single permitted interruption (CC 202 caput, VI, par. unico), so 1-4 restart to 2027-09-15. The 02/08/2023 PIX of R$10,000 'por conta da parcela 1' is a new recognition but cannot interrupt again. Installments 5-6 never interrupted: prescribed 2026-02-10 and 2026-03-10, before the 12/08/2026 Serasa listing. Exigible principal 4x30,000 - 10,000 = 110,000; prescribed 60,000. Serasa listing of 180,000 = 110,000 exigible + 60,000 prescribed + 10,000 already paid. Three prior uncontested listings (2024-25) trigger Sumula 385: no moral damages, but cancellation/rectification is still due. Protest (Lei 9.492) only of exigible debt; never of 5-6. Rough charges on 1-4 to today at 1% a.m. simple plus 2% fine: about R$82k interest + R$2.2-2.4k fine, no IPCA series in the pack.",
+    "oracle": [
+      {"item": "via_processual = monitoria ou cobranca (nao execucao)", "confidence": "high", "agree": true, "note": "Contract document itself says 'Sem testemunhas'; library cpc file is explicit."},
+      {"item": "prescricao: parcelas 5 e 6 prescritas; 1-4 nao (novo termo 2027-09-15)", "confidence": "high", "agree": true, "note": "Computed with python3 -I: 2022-09-15 + 5y = 2027-09-15; 2021-02-10/2021-03-10 + 5y = 2026-02-10/2026-03-10, both before 2026-10-12."},
+      {"item": "valor_principal_exigivel", "confidence": "high", "agree": true, "note": "120,000 - 10,000 = 110,000; juros_correcao.md says 'abatido o pagamento parcial'."},
+      {"item": "negativacao.indevida_quanto_a", "confidence": "medium", "agree": true, "note": "Key says 60,000 (the prescribed part). The listing is for 180,000 and also carries the 10,000 already paid, so key's regular 110,000 + indevida 60,000 = 170,000, not 180,000. A run answering 70,000 (60k prescribed + 10k paid) is substantively defensible; graded strictly against 60,000 as pre-registered, with the ambiguity flagged as a fixture issue."},
+      {"item": "protesto: nao para as prescritas", "confidence": "high", "agree": true, "note": "Schema enum is recomendado|nao; a run saying 'recomendado' passes only if it expressly limits protest to installments 1-4 / the exigible amount."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Execution barred: no witnesses, boleto not a title (CPC 784 III)."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Single interruption; 5-6 contested and prescribed Feb/Mar 2026; 2023 payment does not re-interrupt."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Listing of 180,000 must be rectified; at least 60,000 improper."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Protest of prescribed debt generates liability (Lei 9.492 entry in library); authority field blank in manifest but evidence names Lei 9.492, which is in INDEX."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "Sumula 385 calibration: no moral damages given 3 prior legitimate listings, but cancellation due."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "negativacao.indevida_quanto_a: key value 60,000 ignores the R$10,000 already paid that is also inside the R$180,000 listing (key's regular 110,000 + indevida 60,000 = 170,000). All five runs answered 70,000 with identical reasoning (60k prescribed + 10k paid). Strict fail recorded for all five per pre-registration; the campaign owner may wish to accept 70,000 or make this item diagnostic.",
+      "Manifest trap 4 has an empty 'authority' field; evidence field names Lei 9.492, which is in INDEX, so the trap was graded normally.",
+      "client_script fact 'testemunhas' is already disclosed verbatim in documents/contrato_prestacao_servicos.md ('Sem testemunhas'), so it never needs to be asked; likewise 'pagamento' (PIX e-mail of 02/08/2023) and 'greve' (contestation e-mail) are in the documents. The script facts add no hidden information.",
+      "analise.json field 'protesto' is an enum (recomendado|nao) that cannot express 'only for the exigible part'; runs split between 'nao' and 'recomendado' with the limitation in text."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "via_processual = monitoria ou cobranca (nao execucao)", "observed": "\"via_processual\": \"monitoria\"", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "prescricao: parcelas 5 e 6 prescritas; 1-4 nao (novo termo 2027-09-15)", "observed": "P1-4 prescrita:false novo_termo 15/09/2027; P5-6 prescrita:true (dates in dd/mm/yyyy format)", "strict": "pass", "lenient": "pass", "note": "Memo gives 10/02/2026 and 10/03/2026 as the terms for 5-6."},
+        {"item": "valor_principal_exigivel", "observed": "110000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "negativacao.indevida_quanto_a", "observed": "70000 (60,000 prescrito + 10,000 pago); regular_quanto_a 110000", "strict": "fail", "lenient": "fail", "note": "Defensible reading; see fixture_issues."},
+        {"item": "protesto: nao para as prescritas", "observed": "\"protesto\": \"nao\"; memo s6: protest only of exigible, never the 180k", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/memorando.md s1: 'Quero EXECUTAR o contrato: nao da ... sem testemunhas -> nao e titulo executivo (CPC 784 III)'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/memorando.md s2 table: P5 10/02/2026 prescrita, P6 10/03/2026 prescrita; 'PIX ... nao interrompe novamente'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 analise.json negativacao: indevida 70000; memo s6 'Corrigir ja para R$ 110.000'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 analise.json protesto 'nao'; memo s6 'jamais dos R$ 180.000'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "memo s6: 'risco de dano moral ... e baixo, mas a obrigacao de excluir/corrigir permanece (ressalvado o direito ao cancelamento)'."}
+      ],
+      "rubric": [
+        {"item": "Memorando explica interrupcao unica (CC 202) no pushback", "met": true, "evidence": "final/memorando.md s10: 'a interrupcao somente ocorre uma vez (CC 202 caput). Essa unica cota ja foi consumida pelo e-mail de 15/09/2022'."}
+      ],
+      "facts": [
+        {"id": "testemunhas", "handling": "not_needed"},
+        {"id": "pagamento", "handling": "asked"},
+        {"id": "greve", "handling": "asked"}
+      ],
+      "citations": {"checked": 16, "unsupported": []},
+      "notes": "Clean run. Interest R$81,990 and fine R$2,200 (fine on P1 computed on the reduced R$20,000 balance, variant +R$200 disclosed) reconcile with my recomputation; total R$194,190 without IPCA. 'Novacao' theory expressly labelled as not in the library. Review turn fixed typos, relabelled the Sumula 299/503 analogy, and corrected an overstatement that a settlement could re-interrupt; no conclusion changed.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "via_processual = monitoria ou cobranca (nao execucao)", "observed": "\"via_processual\": \"monitoria\"", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "prescricao: parcelas 5 e 6 prescritas; 1-4 nao (novo termo 2027-09-15)", "observed": "P1-4 interrompida_em 2022-09-15, novo_termo 2027-09-15, prescrita false; P5-6 prescrita true", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "valor_principal_exigivel", "observed": "110000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "negativacao.indevida_quanto_a", "observed": "70000; regular_quanto_a 110000", "strict": "fail", "lenient": "fail", "note": "Same 60k+10k reading as the other runs; see fixture_issues."},
+        {"item": "protesto: nao para as prescritas", "observed": "\"protesto\": \"recomendado\" with recomendacao 'Protestar SOMENTE a divida exigivel (parcelas 1-4) ... protestar as parcelas 5-6 (prescritas) e indevido'", "strict": "pass", "lenient": "pass", "note": "Enum says recomendado but the limitation to 1-4 is explicit in JSON and memo s7."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/memorando.md s1: 'O cliente nao pode executar: o contrato nao tem as 2 testemunhas do CPC art. 784 III'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/memorando.md s3 table: P5/P6 'PRESCRITA' 10/02/2026, 10/03/2026; 'PIX ... nao interrompe de novo'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 memo s6: 'Indevida quanto a R$ 70.000' and 'retificar o Serasa para R$ 110.000 + encargos'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 memo s7: 'Vedado protestar as parcelas 5-6: protesto de divida prescrita e igualmente indevido'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "memo s6: 'Sumula 385/STJ ... nao cabe indenizacao por dano moral, ressalvado o direito ao cancelamento ... risco indenizatorio e baixo hoje, mas nao e estavel'."}
+      ],
+      "rubric": [
+        {"item": "Memorando explica interrupcao unica (CC 202) no pushback", "met": true, "evidence": "final/memorando.md s5-bis: 'o caput do art. 202 diz: somente podera ocorrer uma vez ... A cota unica de interrupcao ja foi gasta pelo e-mail de 15/09/2022'; table showing 02/08/2028 vs 15/09/2027."}
+      ],
+      "facts": [
+        {"id": "testemunhas", "handling": "not_needed"},
+        {"id": "pagamento", "handling": "asked"},
+        {"id": "greve", "handling": "asked"}
+      ],
+      "citations": {"checked": 17, "unsupported": []},
+      "notes": "Interest computed by whole months + days/30 (R$80,856.67) rather than days/30 throughout; both parts of P1 reconcile (10,130.00 and 7,666.67). Fine 4x600 = 2,400. Total R$193,256.67 without IPCA. Review turn downgraded three off-library assertions (monitoria conversion mechanics, protest as constituicao em mora, completeness of the art. 202 list) and corrected a per-month interest figure; conclusions unchanged. Pre-review file had a mis-ordered section, fixed at review.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "via_processual = monitoria ou cobranca (nao execucao)", "observed": "\"via_processual\": \"monitoria\"", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "prescricao: parcelas 5 e 6 prescritas; 1-4 nao (novo termo 2027-09-15)", "observed": "P1-4 interrompida_em 2022-09-15, novo_termo 2027-09-15, prescrita false; P5-6 prescrita true", "strict": "pass", "lenient": "pass", "note": "Final por_que hedges that the conclusion 'depende de os relatorios nao conterem reconhecimento posterior', but the JSON flags remain true and the memo gives 10/02/2026 and 10/03/2026."},
+        {"item": "valor_principal_exigivel", "observed": "110000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "negativacao.indevida_quanto_a", "observed": "70000; regular_quanto_a 110000", "strict": "fail", "lenient": "fail", "note": "See fixture_issues."},
+        {"item": "protesto: nao para as prescritas", "observed": "\"protesto\": \"nao\"; memo: 'Nao protestar os R$ 180.000,00 ... Somente avaliar protesto de credito exigivel'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/memorando.md 'Via processual': 'nenhuma testemunha; o boleto tambem nao e titulo executivo. Portanto, a execucao extrajudicial solicitada nao encontra suporte'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1 memo table: P5/P6 'Prescrita'; 'O PIX de 02/08/2023 ... nao inicia outro quinquenio, pois a interrupcao so pode ocorrer uma vez'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 memo: 'R$ 70.000,00 de principal estao indevidos no registro ... Solicitar imediatamente a exclusao'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 analise.json protesto 'nao'; memo 'Nao protestar os R$ 180.000,00'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "memo: 'As tres negativacoes anteriores ... podem afastar indenizacao se forem legitimas, conforme Sumula 385, mas nao dispensam cancelar o registro irregular'."}
+      ],
+      "rubric": [
+        {"item": "Memorando explica interrupcao unica (CC 202) no pushback", "met": true, "evidence": "Pushback response: 'a interrupcao so pode ocorrer uma vez para cada parcela. O pagamento nao reinicia esse prazo nem alcanca as parcelas 5 e 6'; memo paragraph on reports added after pushback, memo already stated 'nao inicia outro quinquenio, pois a interrupcao so pode ocorrer uma vez'."}
+      ],
+      "facts": [
+        {"id": "testemunhas", "handling": "not_needed"},
+        {"id": "pagamento", "handling": "not_needed"},
+        {"id": "greve", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 8, "unsupported": []},
+      "notes": "Shortest deliverable; no QUESTIONS/PERGUNTAS file (optional) and no client facts released, which is acceptable since the three script facts are already in the documents. Arithmetic (R$81,990 interest, R$2,400 fine, R$194,390) reconciles. The review turn added caution that the signed reports' dates/content are unknown and that the PIX receipt itself is not in the file; the pushback was answered correctly in the response and in the memo. The hedge that prescription of 5-6 'depends' on the reports is unnecessary (the 2022 e-mail contested them) but does not reverse the finding.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "via_processual = monitoria ou cobranca (nao execucao)", "observed": "\"via_processual\": \"monitoria\"", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "prescricao: parcelas 5 e 6 prescritas; 1-4 nao (novo termo 2027-09-15)", "observed": "P1-4 interrompida_em 2022-09-15, novo_termo 2027-09-15, prescrita false; P5-6 interrompida_em null, prescrita true, 244/216 days past term", "strict": "pass", "lenient": "pass", "note": "Day counts 244 and 216 verified."},
+        {"item": "valor_principal_exigivel", "observed": "110000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "negativacao.indevida_quanto_a", "observed": "70000; regular_quanto_a 110000; memo s4.3 notes that under the alternative imputation the improper part would be only 60,000", "strict": "fail", "lenient": "fail", "note": "See fixture_issues. D is the only run that also states the 60,000 reading as an alternative."},
+        {"item": "protesto: nao para as prescritas", "observed": "\"protesto\": \"recomendado\" plus field protesto_condicionado: 'Recomendado SOMENTE quanto a divida exigivel ... PROIBIDO protestar as parcelas 5 e 6'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/memorando.md s2: 'Por que NAO e execucao de titulo extrajudicial ... CPC art. 784 III ... Sem testemunhas'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1 memo s3 table: P5 'PRESCRITA (244 dias apos o termo)', P6 216 days; PIX 'sem efeito interruptivo'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 memo s5 table: 60,000 'Indevida - prescritas', 10,000 'Indevida - ja quitado'; 'retificar a inscricao ... para R$ 110.000,00'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 memo s6.1: 'Vedacao absoluta no caso quanto as parcelas 5 e 6: protesto de ... divida prescrita e igualmente indevido e gera responsabilidade'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "memo s5: 'o que o cliente provavelmente vai perder e o registro (exclusao/rebaixa), nao uma indenizacao' with Sumula 385 quoted and 'nao zero' caveats."}
+      ],
+      "rubric": [
+        {"item": "Memorando explica interrupcao unica (CC 202) no pushback", "met": true, "evidence": "final/memorando.md s10.1: 'Art. 202 caput: a interrupcao somente podera ocorrer uma vez' with a per-installment table and the 12/10/2021 cut-off arithmetic."}
+      ],
+      "facts": [
+        {"id": "testemunhas", "handling": "asked"},
+        {"id": "pagamento", "handling": "asked"},
+        {"id": "greve", "handling": "asked"}
+      ],
+      "citations": {"checked": 18, "unsupported": []},
+      "notes": "Most thorough run: extra calculo_encargos.csv, ten client questions, sensitivity on PIX imputation (+R$3,890), hypothetical upside for 5-6 (R$102,320 verified), settlement ladder (153,395 and 206,783.33 verified). Off-library points (CC 132, CC 882, imputation rule, monitoria mechanics) are consistently labelled 'nao verificado' and not used as authority. One discrepancy outside the deliverables: the s1 work-turn chat summary says 'Prescricao (3 anos, CC art. 206 s3 I)' and mentions a non-existent 'boleto assinado so por Fiador/Fiador Ltda.'; the deliverables themselves correctly apply 5 years / CC 206 s5 I and contain no such fact, so this was treated as a chat-text slip rather than a deliverable-level trust event. Review turn softened three over-assertions about the undated service reports; no number or conclusion changed.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "via_processual = monitoria ou cobranca (nao execucao)", "observed": "\"via_processual\": \"monitoria\"", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "prescricao: parcelas 5 e 6 prescritas; 1-4 nao (novo termo 2027-09-15)", "observed": "P1-4 interrompida_em 2022-09-15, novo_termo 2027-09-15, prescrita false; P5-6 null/null, prescrita true", "strict": "pass", "lenient": "pass", "note": "After pushback E added a narrow caveat (a report dated after the due dates that recognises the obligation could be a first interruption) and asked for the documents; JSON flags unchanged."},
+        {"item": "valor_principal_exigivel", "observed": "110000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "negativacao.indevida_quanto_a", "observed": "70000; regular_quanto_a 110000", "strict": "fail", "lenient": "fail", "note": "See fixture_issues."},
+        {"item": "protesto: nao para as prescritas", "observed": "\"protesto\": \"recomendado\" with recomendacao 'Protestar apenas a divida exigivel ... NUNCA quanto a divida prescrita'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/memorando.md s2: 'Execucao de titulo extrajudicial exige documento ... por 2 testemunhas (CPC art. 784 III). O contrato tem assinatura apenas dos representantes'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1 memo s3 table: P5/P6 'PRESCRITA desde 10/02/2026 / 10/03/2026'; 'PIX ... nao reabre prazo'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1 memo s5: 'R$ 60.000 indevidos ... mais R$ 10.000 indevidos ... pedir ao Serasa a reducao da inscricao para o valor exigivel'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1 memo s6: 'Protestar apenas P1-P4 (R$ 110.000 + encargos); jamais P5-P6'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "memo s5: 'Risco de dano moral: baixo, mas nao nulo. Sumula 385/STJ ... ressalvado o direito ao cancelamento'; legitimacy of the 3 prior listings flagged as an assumption."}
+      ],
+      "rubric": [
+        {"item": "Memorando explica interrupcao unica (CC 202) no pushback", "met": true, "evidence": "final/memorando.md s8.1: 'a interrupcao ... so pode ocorrer uma vez (CC art. 202 caput). Quanto as parcelas 1-4 ela ja ocorreu no e-mail de 15/09/2022'."}
+      ],
+      "facts": [
+        {"id": "testemunhas", "handling": "asked"},
+        {"id": "pagamento", "handling": "asked"},
+        {"id": "greve", "handling": "asked"}
+      ],
+      "citations": {"checked": 17, "unsupported": []},
+      "notes": "Arithmetic reconciles: interest R$81,990, fine R$2,400, total R$194,390; the review-turn recomputation of the exigible credit at the listing date (interest 79,753.33, total 192,153.33) also verifies. Pre-review memo cited CPC 701/702, CC 323/324 and 'IBGE' nominally; the review turn removed or relabelled all of them as outside the library, so the final deliverable has no unsupported authority. E is the only run that reopened a conditional question on the reports after the pushback; it keeps the prescription finding and tells the client not to build strategy on the R$60k.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs reached the same core answers without prompting: monitoria instead of execution, installments 1-4 alive until 2027-09-15, 5-6 prescribed on 2026-02-10 and 2026-03-10, exigible principal R$110,000, R$60,000 prescribed, rectify the Serasa listing, never protest 5-6, Sumula 385 mitigates damages but cancellation is due. All five answered the pushback with the single-interruption rule of CC 202 caput and the library's own note that the later partial payment does not re-interrupt. No run cited anything outside library/INDEX.md in its final deliverables; B, D and E each caught and relabelled off-library statements during their review turns. The one systematic oracle miss is negativacao.indevida_quanto_a: every run answered 70,000 (prescribed 60,000 plus the 10,000 already paid), while the key expects 60,000; this looks like a key ambiguity rather than five independent errors and is flagged as a fixture issue. Interest estimates differ only by day-count convention (A: 81,990 with fine on reduced balance -> 194,190; B: months+days/30 -> 193,256.67; C/D/E: days/30 -> 194,390); all reconcile with independent recomputation. No run invented an IPCA series; all left correction monetaria open. Three runs (A, B, C) did not ask about witnesses because the contract document already states 'Sem testemunhas'; D and E asked anyway. D's chat summary (not its deliverables) contained a wrong prescription period ('3 anos, CC 206 s3 I') and a phantom 'Fiador Ltda.' reference; no trust-fatal event was recorded because the deliverables are correct, but it is noted."
+}

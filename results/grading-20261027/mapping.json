@@ -1,0 +1,268 @@
+{
+  "bracc_01_das_fator_r": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "strix-flash-next-full-20261024",
+    "C": "b300-flash-next-full-20261024",
+    "D": "b300-glm53-flash-full-20261024",
+    "E": "sol6-medium-full-20261026"
+  },
+  "bracc_02_escolha_regime": {
+    "A": "b300-flash-next-full-20261024",
+    "B": "rtx5090-flash-next-full-20261024",
+    "C": "sol6-medium-full-20261026",
+    "D": "b300-glm53-flash-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "bracc_03_cbs_ibs_ano_teste": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "strix-flash-next-full-20261024",
+    "C": "sol6-medium-full-20261026",
+    "D": "b300-glm53-flash-full-20261024",
+    "E": "b300-flash-next-full-20261024"
+  },
+  "bracc_04_lucro_real_trimestre": {
+    "A": "b300-flash-next-full-20261024",
+    "B": "sol6-medium-full-20261026",
+    "C": "b300-glm53-flash-full-20261024",
+    "D": "strix-flash-next-full-20261024",
+    "E": "rtx5090-flash-next-full-20261024"
+  },
+  "bracc_05_abertura_empresa": {
+    "A": "strix-flash-next-full-20261024",
+    "B": "b300-flash-next-full-20261024",
+    "C": "sol6-medium-full-20261026",
+    "D": "rtx5090-flash-next-full-20261024",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "bracc_06_venda_quotas_vs_ativos": {
+    "A": "b300-flash-next-full-20261024",
+    "B": "strix-flash-next-full-20261024",
+    "C": "rtx5090-flash-next-full-20261024",
+    "D": "sol6-medium-full-20261026",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "bracc_07_holding_patrimonial": {
+    "A": "sol6-medium-full-20261026",
+    "B": "strix-flash-next-full-20261024",
+    "C": "b300-flash-next-full-20261024",
+    "D": "rtx5090-flash-next-full-20261024",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "bracc_08_recuperacao_judicial": {
+    "A": "sol6-medium-full-20261026",
+    "B": "strix-flash-next-full-20261024",
+    "C": "rtx5090-flash-next-full-20261024",
+    "D": "b300-flash-next-full-20261024",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "bracc_09_distribuicao_lucros": {
+    "A": "strix-flash-next-full-20261024",
+    "B": "sol6-medium-full-20261026",
+    "C": "b300-flash-next-full-20261024",
+    "D": "b300-glm53-flash-full-20261024",
+    "E": "rtx5090-flash-next-full-20261024"
+  },
+  "bracc_10_provisoes_covenant": {
+    "A": "b300-flash-next-full-20261024",
+    "B": "sol6-medium-full-20261026",
+    "C": "strix-flash-next-full-20261024",
+    "D": "b300-glm53-flash-full-20261024",
+    "E": "rtx5090-flash-next-full-20261024"
+  },
+  "brlaw_01_prazos_processuais": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "b300-glm53-flash-full-20261024",
+    "C": "strix-flash-next-full-20261024",
+    "D": "b300-flash-next-full-20261024",
+    "E": "sol6-medium-full-20261026"
+  },
+  "brlaw_02_contrato_lgpd": {
+    "A": "sol6-medium-full-20261026",
+    "B": "b300-glm53-flash-full-20261024",
+    "C": "b300-flash-next-full-20261024",
+    "D": "rtx5090-flash-next-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "brlaw_03_pejotizacao": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "b300-glm53-flash-full-20261024",
+    "C": "b300-flash-next-full-20261024",
+    "D": "sol6-medium-full-20261026",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "brlaw_04_execucao_fiscal": {
+    "A": "sol6-medium-full-20261026",
+    "B": "b300-glm53-flash-full-20261024",
+    "C": "strix-flash-next-full-20261024",
+    "D": "b300-flash-next-full-20261024",
+    "E": "rtx5090-flash-next-full-20261024"
+  },
+  "brlaw_05_divorcio_partilha": {
+    "A": "b300-glm53-flash-full-20261024",
+    "B": "rtx5090-flash-next-full-20261024",
+    "C": "b300-flash-next-full-20261024",
+    "D": "sol6-medium-full-20261026",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "brlaw_07_credor_rj": {
+    "A": "b300-flash-next-full-20261024",
+    "B": "b300-glm53-flash-full-20261024",
+    "C": "rtx5090-flash-next-full-20261024",
+    "D": "strix-flash-next-full-20261024",
+    "E": "sol6-medium-full-20261026"
+  },
+  "brlaw_08_ma_diligencia": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "sol6-medium-full-20261026",
+    "C": "b300-glm53-flash-full-20261024",
+    "D": "b300-flash-next-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "brlaw_09_justa_causa_estabilidade": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "strix-flash-next-full-20261024",
+    "C": "sol6-medium-full-20261026",
+    "D": "b300-flash-next-full-20261024",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "brlaw_10_cobranca_prescrita": {
+    "A": "b300-glm53-flash-full-20261024",
+    "B": "rtx5090-flash-next-full-20261024",
+    "C": "sol6-medium-full-20261026",
+    "D": "b300-flash-next-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "usacc_01_schedule_c": {
+    "A": "b300-flash-next-full-20261024",
+    "B": "rtx5090-flash-next-full-20261024",
+    "C": "sol6-medium-full-20261026",
+    "D": "b300-glm53-flash-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "usacc_02_close_gap": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "b300-flash-next-full-20261024",
+    "C": "b300-glm53-flash-full-20261024",
+    "D": "strix-flash-next-full-20261024",
+    "E": "sol6-medium-full-20261026"
+  },
+  "usacc_03_household_1040": {
+    "A": "sol6-medium-full-20261026",
+    "B": "b300-glm53-flash-full-20261024",
+    "C": "rtx5090-flash-next-full-20261024",
+    "D": "b300-flash-next-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "usacc_04_twelve_closes": {
+    "A": "b300-flash-next-full-20261024",
+    "B": "sol6-medium-full-20261026",
+    "C": "rtx5090-flash-next-full-20261024",
+    "D": "strix-flash-next-full-20261024",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "usacc_05_entity_choice": {
+    "A": "sol6-medium-full-20261026",
+    "B": "b300-glm53-flash-full-20261024",
+    "C": "rtx5090-flash-next-full-20261024",
+    "D": "strix-flash-next-full-20261024",
+    "E": "b300-flash-next-full-20261024"
+  },
+  "usacc_06_sale_asset_vs_stock": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "sol6-medium-full-20261026",
+    "C": "b300-flash-next-full-20261024",
+    "D": "b300-glm53-flash-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "usacc_07_holding_qsbs": {
+    "A": "sol6-medium-full-20261026",
+    "B": "rtx5090-flash-next-full-20261024",
+    "C": "b300-glm53-flash-full-20261024",
+    "D": "b300-flash-next-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "usacc_08_chapter11_debtor": {
+    "A": "b300-glm53-flash-full-20261024",
+    "B": "sol6-medium-full-20261026",
+    "C": "strix-flash-next-full-20261024",
+    "D": "rtx5090-flash-next-full-20261024",
+    "E": "b300-flash-next-full-20261024"
+  },
+  "usacc_09_revenue_going_concern": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "b300-flash-next-full-20261024",
+    "C": "strix-flash-next-full-20261024",
+    "D": "sol6-medium-full-20261026",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "usacc_10_fraud_indicators": {
+    "A": "b300-glm53-flash-full-20261024",
+    "B": "strix-flash-next-full-20261024",
+    "C": "b300-flash-next-full-20261024",
+    "D": "sol6-medium-full-20261026",
+    "E": "rtx5090-flash-next-full-20261024"
+  },
+  "uslaw_01_deadlines_removal": {
+    "A": "sol6-medium-full-20261026",
+    "B": "strix-flash-next-full-20261024",
+    "C": "b300-glm53-flash-full-20261024",
+    "D": "b300-flash-next-full-20261024",
+    "E": "rtx5090-flash-next-full-20261024"
+  },
+  "uslaw_02_msa_playbook": {
+    "A": "sol6-medium-full-20261026",
+    "B": "rtx5090-flash-next-full-20261024",
+    "C": "strix-flash-next-full-20261024",
+    "D": "b300-flash-next-full-20261024",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "uslaw_03_noncompete_memo": {
+    "A": "b300-flash-next-full-20261024",
+    "B": "rtx5090-flash-next-full-20261024",
+    "C": "strix-flash-next-full-20261024",
+    "D": "sol6-medium-full-20261026",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "uslaw_04_litigation_sequence": {
+    "A": "b300-glm53-flash-full-20261024",
+    "B": "b300-flash-next-full-20261024",
+    "C": "rtx5090-flash-next-full-20261024",
+    "D": "sol6-medium-full-20261026",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "uslaw_05_divorce_split_support": {
+    "A": "b300-glm53-flash-full-20261024",
+    "B": "sol6-medium-full-20261026",
+    "C": "b300-flash-next-full-20261024",
+    "D": "rtx5090-flash-next-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "uslaw_07_chapter11_creditor": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "b300-flash-next-full-20261024",
+    "C": "sol6-medium-full-20261026",
+    "D": "b300-glm53-flash-full-20261024",
+    "E": "strix-flash-next-full-20261024"
+  },
+  "uslaw_08_sale_diligence_apa": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "b300-flash-next-full-20261024",
+    "C": "strix-flash-next-full-20261024",
+    "D": "b300-glm53-flash-full-20261024",
+    "E": "sol6-medium-full-20261026"
+  },
+  "uslaw_09_retaliation_termination": {
+    "A": "rtx5090-flash-next-full-20261024",
+    "B": "sol6-medium-full-20261026",
+    "C": "b300-flash-next-full-20261024",
+    "D": "strix-flash-next-full-20261024",
+    "E": "b300-glm53-flash-full-20261024"
+  },
+  "uslaw_10_llc_squeeze_out": {
+    "A": "b300-flash-next-full-20261024",
+    "B": "b300-glm53-flash-full-20261024",
+    "C": "rtx5090-flash-next-full-20261024",
+    "D": "sol6-medium-full-20261026",
+    "E": "strix-flash-next-full-20261024"
+  }
+}

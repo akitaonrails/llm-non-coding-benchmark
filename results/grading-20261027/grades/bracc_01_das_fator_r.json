@@ -1,0 +1,182 @@
+{
+  "case": "bracc_01_das_fator_r",
+  "preregistration": {
+    "summary": "Recomputed before opening runs/: RBT12 = 1.020.000 (faturamento_12_meses.csv, mai/25-abr/26). Folha per resumo = 284.600 (11 x 3.200 pro-labore; the 2026-03 row shows pro_labore 0 with obs 'pro-labore de abril: em aberto'). Scripted client answer: April pro-labore 3.200 paid 30/04 and the resumo was pulled with it 'em aberto' -> folha paga = 287.800 -> Fator R 28,2157% >= 28% -> Anexo III (vs 27,9020% -> V on the uncorrected resumo). Faixa 4 in both anexos. Efetiva III = (1.020.000 x 0,16 - 35.640)/1.020.000 = 12,505882%; efetiva V = 18,823529%. Servicos = 82.000 - 4.000 (NFS-e 1188 estorno) = 78.000 -> 9.754,59 under III (14.682,35 under V). Locacao 6.000 -> Anexo III less ISS share 32,50%: 6.000 x 12,505882% x 0,675 = 506,49. Total III = 10.261,08; wrong path all-V 84.000 x 18,8235% = 15.811,76; nominal 20,5% on 88.000 = 18.040. All reference.json figures reproduce, including reparticao (services x Anexo III % plus locacao share renormalised over 67,5%; reference reparticao sums to 10.245,31, not 10.261,08, because the library's 4th-band percentages sum to 99,85%). Key agreed on all oracle items; the trap-2 expected value depends on reading the scripted answer as 'the resumo does not count the April pro-labore' despite the April row showing 3.200, so trap 2 / anexo / das.total / aliquota_efetiva are gated but carry medium confidence.",
+    "oracle": [
+      {"item": "das.total", "confidence": "medium", "agree": true, "note": "10.261,08 reproduced. Strict = manifest tolerance (+-R$1), lenient +-R$5. Medium because the value hinges on adding the April pro-labore to a resumo whose April row already shows 3.200 (row-placement fixture caveat)."},
+      {"item": "anexo", "confidence": "medium", "agree": true, "note": "III only if folha = 287.800; 284.600 gives V. Same caveat."},
+      {"item": "aliquota_efetiva", "confidence": "medium", "agree": true, "note": "12,505882% under III. Strict +-0,01 p.p. per manifest."},
+      {"item": "receitas.servicos", "confidence": "high", "agree": true, "note": "82.000 gross - 4.000 estorno = 78.000. Note trap 3 text in manifest wrongly lists 78.000 as a wrong move and names 74.000; oracle/reference use 78.000, which is correct."},
+      {"item": "das.locacao", "confidence": "high", "agree": true, "note": "6.000 x 12,505882% x (1 - 0,325) = 506,49; independent of the Fator R outcome. Strict +-R$1."},
+      {"item": "Se o pró-labore não foi perguntado: PERGUNTAS.md ou premissa explícita", "confidence": "high", "agree": true, "note": "Pass if fact prolabore_abril was released (question asked) or an explicit assumption is stated."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Nominal 20,5%/16% vs efetiva; library art. 18 §1º-A is explicit."},
+      {"n": 2, "confidence": "medium", "agree": true, "note": "Expected catch: ask about the 'em aberto' pro-labore, apply the 30/04 answer by adding 3.200 to the resumo total -> 28,22% -> III. Caveat: the obs sits on the 2026-03 row (pro_labore 0) while 2026-04 shows 3.200, and email_socio.txt says it was paid 06/05 (outside the window), contradicting the scripted 30/04 answer. The scripted answer ('tirou o resumo com ele em aberto') supports adding it; gated with medium confidence."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Graded as: estorno deducted from May services (78.000). Manifest wrong_move/why_wrong text ('78.000 ou 82.000' wrong, '74.000' right) is itself wrong; 74.000 would double-deduct. Reference and oracle use 78.000."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Locacao segregated, Anexo III less ISS 32,50% share (SV 31 in library) -> 506,49."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "Anexo III 4th-band repartição in anexos_iii_v_tabelas.md sums to 99,85% (4,00+3,50+14,05+3,05+42,75+32,50); the reference reparticao therefore sums to 10.245,31 against das.total 10.261,08. reparticao is not an oracle item; every run left the R$1,13 gap open.",
+      "resumo_folha_12_meses.csv: the 'pró-labore de abril: em aberto' obs is on the 2026-03 row (pro_labore 0, total 20.900) while the 2026-04 row shows pro_labore 3.200. The scripted answer says the resumo was pulled with the April pro-labore 'em aberto' (-> add 3.200 -> 287.800), but a literal reader sees April already counted and treats March as the unexplained zero. All five runs took the literal reading (284.600 -> Anexo V) and flagged the R$1.000 margin / March zero as an open item.",
+      "email_socio.txt says the April pro-labore was paid late on 06/05 (outside the window), contradicting the scripted 30/04 answer; reference.json 'nota' is stale (says paid 06/05 and visible in the extrato; the extrato only shows 'PRO-LABORE MAI' on 16/05). Manifest notes say the design fix was applied in docs, but the email still carries 06/05.",
+      "comprovante_pix_prolabore_abril__released_on_request.txt is text only; the harness released the scripted sentence but no file reached documents/ in any run; all runs flagged the missing comprovante.",
+      "manifest trap 3 text: wrong_move lists 78.000 as wrong and why_wrong says 74.000; correct is 78.000 (= oracle receitas.servicos).",
+      "Anexo V repartição percentages are absent from the library although the contract schema requires a reparticao block; every run had to either leave it null/zero, fill only the locacao share, or (run A) label an unverified assumption."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "das.total", "observed": "15188.84", "strict": "fail", "lenient": "fail", "note": "Services on Anexo V (14.682,35) + locacao 506,49."},
+        {"item": "anexo", "observed": "V", "strict": "fail", "lenient": "fail", "note": "folha_12m 284.600, fator_r 0,2790."},
+        {"item": "aliquota_efetiva", "observed": "0.1882352941 (18,82%)", "strict": "fail", "lenient": "fail", "note": "Anexo V 4th band; effective (not nominal) formula correctly applied."},
+        {"item": "receitas.servicos", "observed": "78000", "strict": "pass", "lenient": "pass", "note": "82.000 - 4.000 estorno."},
+        {"item": "das.locacao", "observed": "506.49", "strict": "pass", "lenient": "pass", "note": "6.000 x 12,5059% x 0,675."},
+        {"item": "Se o pró-labore não foi perguntado: PERGUNTAS.md ou premissa explícita", "observed": "asked; fact prolabore_abril released (status.json)", "strict": "pass", "lenient": "pass", "note": "Also flagged the 30/04 vs 06/05 contradiction and the missing comprovante."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'alíquota da faixa (20,50%) is the nominal rate; the law (§1º-A) requires the effective rate (18,8235%)'; memoria.md §3 quantifies the 1.307,65 overpayment."},
+        {"n": 2, "outcome": "missed", "evidence": "Asked and received the 30/04 answer, but kept folha 284.600: memoria.md §2 'Fator R (base pagamentos): 284.600 / 1.020.000 = 27,90% < 28% -> ANEXO V'; apuracao.json anexo 'V'. It flagged the March zero row and the R$1.000 margin as 'CRÍTICO' with the 10.261,08 alternative, but did not add the April pro-labore the client said the resumo omitted."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review memoria.md §4: 'líquido = 82.000,00 − 4.000,00 = 78.000,00', reconciled with the 29/05 PIX refund."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review memoria.md §5: 'Anexo III, deduzida a parcela correspondente ao ISS ... 12,5059% × (1 − 0,325) = 8,4415% ... DAS locação = 506,49'."}
+      ],
+      "rubric": [
+        {"item": "memoria.md explica o Fator R com a folha corrigida e cita a Res. CGSN 140 art. 26", "met": false, "evidence": "Cites 'Res. CGSN 140, art. 26, §§1º-2º' and explains the paid-basis rule, but the folha used is 284.600 (uncorrected), not 287.800."}
+      ],
+      "facts": [
+        {"id": "prolabore_abril", "handling": "asked"},
+        {"id": "estorno", "handling": "not_needed"},
+        {"id": "locacao", "handling": "asked"}
+      ],
+      "citations": {"checked": 10, "unsupported": []},
+      "notes": "All authorities (LC 123 art. 18 §§1º, 1º-A, 4º, 5º-A, 5º-J/5º-M; Res. CGSN 140 arts. 25 §1º V and 26; SV 31; Anexos III/V tables) are in INDEX.md. Anexo V repartição percentages (IRPJ 14/CSLL 9/COFINS 20/PIS 4/CPP 37/ISS 16) are not in the library and are not the real LC 123 figures, but they are labelled 'suposição não verificada, sem fonte citável' in memoria §7, STATUS and the JSON _notes, so not a fabricated authority. Review turn removed the 'PGDAS-DAS' mention, added the April-DAS (10.480,22 ~ 12,05%) hint as an inconclusive signal, and added anexo_locacao/aliquota_efetiva_locacao fields; no numbers changed. The s1 first pass used 281.400 (excluding the 06/05 payment) and moved to 284.600 after the client answer. 99,85% gap left open (R$1,13).",
+      "grader_confidence": "medium"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "das.total", "observed": "15188.84", "strict": "fail", "lenient": "fail", "note": "Services Anexo V 14.682,35 + locacao 506,49."},
+        {"item": "anexo", "observed": "V", "strict": "fail", "lenient": "fail", "note": "folha_12m 284.600, fator_r 0,279."},
+        {"item": "aliquota_efetiva", "observed": "0.188235 (18,82%)", "strict": "fail", "lenient": "fail", "note": "Anexo V 4th band effective rate."},
+        {"item": "receitas.servicos", "observed": "78000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "das.locacao", "observed": "506.49", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Se o pró-labore não foi perguntado: PERGUNTAS.md ou premissa explícita", "observed": "asked; fact prolabore_abril released", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Effective, not nominal rate (the partner asked for a alíquota da faixa): (1.020.000 × 20,5% − 17.100) / 1.020.000 = 18,8235% (art. 18, §1º-A)'."},
+        {"n": 2, "outcome": "missed", "evidence": "memoria.md §6 after the client answer: 'A linha 2026-04 do resumo (pró-labore 3.200, total 24.600) reflete esse pagamento; a obs. em aberto ... explica o lançamento tardio na contabilidade, não o pagamento' -> folha 284.600, 27,90%, Anexo V; 'Limiar de 28% exigiria folha ≥ 285.600 — não plausível com os autos' (STATUS item 2). Margin and March zero flagged, catch not applied."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'services = 82.000 − 4.000 = R$ 78.000 (library rule: estorno reduces the month it occurs)'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'taxed at Anexo III 4ª faixa minus the ISS share (Súmula Vinculante 31): 12,5059% × 0,675 = 8,4415% on R$ 6.000'."}
+      ],
+      "rubric": [
+        {"item": "memoria.md explica o Fator R com a folha corrigida e cita a Res. CGSN 140 art. 26", "met": false, "evidence": "memoria §6 cites '[L1], Res. 140 art. 26 §§1º–2º' and the paid-basis rule; folha remains 284.600."}
+      ],
+      "facts": [
+        {"id": "prolabore_abril", "handling": "asked"},
+        {"id": "estorno", "handling": "not_needed"},
+        {"id": "locacao", "handling": "asked"}
+      ],
+      "citations": {"checked": 10, "unsupported": []},
+      "notes": "Citations tagged [L1]/[L2]/[L3] all map to INDEX.md entries. reparticao in apuracao.json holds only the locacao share (IRPJ 20,26 ... ISS 164,61, computed on 506,49) because the Anexo V table is absent; flagged in STATUS/QUESTIONS. 'PGDAS-D' appears only as the system the client would consult, not as an authority. Review turn: confirmed the PDF extrato matches the CSV, corrected a false claim about the April DAS not being reproducible, fixed cross-references, labelled the NF-e vs NFS-e issuance rule as unverified, created PERGUNTAS.md; numbers unchanged. Also flagged the fictitious-document footers. 99,85% gap left open.",
+      "grader_confidence": "medium"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "das.total", "observed": "15188.84", "strict": "fail", "lenient": "fail", "note": "Services Anexo V 14.682,35 + locacao 506,49."},
+        {"item": "anexo", "observed": "V", "strict": "fail", "lenient": "fail", "note": "folha_12m 284.600, fator_r 0,27902."},
+        {"item": "aliquota_efetiva", "observed": "0.1882352941 (18,82%)", "strict": "fail", "lenient": "fail", "note": ""},
+        {"item": "receitas.servicos", "observed": "78000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "das.locacao", "observed": "506.49", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Se o pró-labore não foi perguntado: PERGUNTAS.md ou premissa explícita", "observed": "asked; facts prolabore_abril, estorno, locacao released", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'the library requires the efetiva (§1º-A), not the nominal 20,50% (literal compliance would overpay services by R$ 1.307,65)'."},
+        {"n": 2, "outcome": "missed", "evidence": "02-s1-work-client1.response.md: 'Folha paga 12m R$ 284.600 (193.000 salários + 35.200 pró-labore, agora incluindo o de abril + 56.400 encargos) ... 27,90% < 28% → Anexo V'; QUESTIONS.md U1: 'Premissa adotada: não houve pró-labore em março/2026 ... se existir ... 287.800 → 28,22% → Anexo III'. First pass used 281.400 (06/05 reading)."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md table: 'Serviços: 82.000 − 4.000 estorno = 78.000 ... cancelamento reduz o mês em que ocorre'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Locação notebooks: 6.000, Anexo III sem ISS (6,000×12,5059%×67,5%) 506,49 ... §5º-A + SV 31'."}
+      ],
+      "rubric": [
+        {"item": "memoria.md explica o Fator R com a folha corrigida e cita a Res. CGSN 140 art. 26", "met": false, "evidence": "memoria §4 cites 'Res. CGSN 140, art. 26, §§1º–2º' and discusses caixa vs competência; folha used 284.600."}
+      ],
+      "facts": [
+        {"id": "prolabore_abril", "handling": "asked"},
+        {"id": "estorno", "handling": "asked"},
+        {"id": "locacao", "handling": "asked"}
+      ],
+      "citations": {"checked": 10, "unsupported": []},
+      "notes": "All cited provisions are in INDEX.md; memoria §7 lists what is not in the library as NÃO VERIFICADO and explicitly declines to invoke PGDAS-D. reparticao holds only the locacao share (ISS 0) with the services split refused; flagged U3. Two client rounds (second returned nothing). Review turn fixed a decimal-separator typo, rewrote the locacao multiplication as an exact fraction, and added the 'no FOLHA ABR / PRO-LABORE ABR debit in May' corroboration; numbers unchanged. Alternative ISS-deduction mechanics (438,35 / total 15.120,70) documented as U4. 99,85% gap left open.",
+      "grader_confidence": "medium"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "das.total", "observed": "15188.84", "strict": "fail", "lenient": "fail", "note": "Graded on pre-review/s1 (identical to final; review turn hit the output cap)."},
+        {"item": "anexo", "observed": "V", "strict": "fail", "lenient": "fail", "note": "folha_12m 284.600, fator_r 0,2790."},
+        {"item": "aliquota_efetiva", "observed": "18.8235 (stored as a percentage, schema asks for a fraction)", "strict": "fail", "lenient": "fail", "note": "aliquota_nominal also stored as 20.50 rather than 0.205."},
+        {"item": "receitas.servicos", "observed": "78000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "das.locacao", "observed": "506.49", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Se o pró-labore não foi perguntado: PERGUNTAS.md ou premissa explícita", "observed": "asked; fact prolabore_abril released", "strict": "pass", "lenient": "pass", "note": "Questions file is QUESTIONS.md (no PERGUNTAS.md; optional per contract)."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'LC 123/2006 art. 18 §1º-A requires the effective-rate formula → 18,8235% (averted overcharge of R$ 1.307,65 on services)'."},
+        {"n": 2, "outcome": "missed", "evidence": "memoria.md §2: 'Folha 12m (paga) = R$ 284.600,00 (resumo integral, sem exclusões) ... Fator R = 27,90% < 28% ⇒ Anexo V'; QUESTIONS.md item 4 notes the obs on the 2026-03 row 'não teve confirmação de deslocamento de linha. Efeito: nenhum'. First pass excluded the 3.200 (281.400, 27,59%) on the 06/05 email reading."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'the R$ 4.000 partial cancel of NFS-e 1184 reduces May services to 78.000'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Anexo III deduzido do ISS (32,50%), kept as a separate revenue and tax line' -> 506,49."}
+      ],
+      "rubric": [
+        {"item": "memoria.md explica o Fator R com a folha corrigida e cita a Res. CGSN 140 art. 26", "met": false, "evidence": "memoria §2 cites '[FATOR-R] Res. CGSN 140, art. 26' and §2º paid rule; folha 284.600."}
+      ],
+      "facts": [
+        {"id": "prolabore_abril", "handling": "asked"},
+        {"id": "estorno", "handling": "not_needed"},
+        {"id": "locacao", "handling": "asked"}
+      ],
+      "citations": {"checked": 9, "unsupported": []},
+      "notes": "Output cap hit on the review turn (status.json output_limit_turn '03-review', final_source 'work-at-limit'); pre-review/s1 and final are byte-identical, so graded on the pre-review state and counted as not completed. Citations [FATOR-R]/[TABELAS]/[LOCACAO] all in INDEX.md; 'PGDAS-D' appears only as an example of where the Anexo V split would come from. reparticao left all zeros and flagged 'não validado' in STATUS item 2. Reported the PDF extrato as illegible and used the CSV mirror (flagged). Sensitivity on prior-month locacao inside RBT12 (up to +R$49,40) documented.",
+      "grader_confidence": "medium"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "das.total", "observed": "15188.84", "strict": "fail", "lenient": "fail", "note": ""},
+        {"item": "anexo", "observed": "V", "strict": "fail", "lenient": "fail", "note": "folha_12m 284.600, fator_r 0,27902."},
+        {"item": "aliquota_efetiva", "observed": "0.18823529411764706 (18,82%)", "strict": "fail", "lenient": "fail", "note": ""},
+        {"item": "receitas.servicos", "observed": "78000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "das.locacao", "observed": "506.49", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Se o pró-labore não foi perguntado: PERGUNTAS.md ou premissa explícita", "observed": "asked in turn 1 (STATUS was BLOCKED pending the answer); fact prolabore_abril released", "strict": "pass", "lenient": "pass", "note": "QUESTIONS.md was removed from the deliverable after the answer; neither QUESTIONS.md nor PERGUNTAS.md is in final/ (optional per contract)."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review memoria.md: 'A alíquota aplicável é a efetiva, calculada com RBT12 e parcela a deduzir, e não simplesmente a nominal da faixa' -> 18,8235%."},
+        {"n": 2, "outcome": "missed", "evidence": "memoria.md: 'o valor informado na linha de abril integra os 12 meses anteriores ... Fator R = 284.600 / 1.020.000 = 27,90% ... Anexo V'. The review turn added the R$1.000 margin, the March-row note and the 10.261,08 alternative but kept 284.600 ('Não há suporte nos arquivos para acrescentar esse R$ 1.000,00')."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review memoria.md: 'serviços = 82.000 − 4.000 = R$ 78.000,00 ... A regra de cancelamentos está em lc123_art18_fator_r.md'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review memoria.md: 'locação ... tributada pelo Anexo III com exclusão da parcela de ISS ... ISS excluído = 750,35 × 32,50% = 243,86; saldo = 506,49'."}
+      ],
+      "rubric": [
+        {"item": "memoria.md explica o Fator R com a folha corrigida e cita a Res. CGSN 140 art. 26", "met": false, "evidence": "Cites 'Resolução CGSN 140/2018, art. 26, §§1º-2º' and the paid rule; folha 284.600."}
+      ],
+      "facts": [
+        {"id": "prolabore_abril", "handling": "asked"},
+        {"id": "estorno", "handling": "not_needed"},
+        {"id": "locacao", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 8, "unsupported": []},
+      "notes": "Shortest deliverable of the five; every citation is a link to a library file plus the INDEX citation string. reparticao left null and explained ('em vez de um zero inventado'); locacao-only split shown in memoria with the R$1,13 / 99,85% gap left open. Flagged training (NFS-e 1186) and 'consultoria de arquitetura' classification as assumptions with an alternative total (14.904,54). Noted the XML tpAmb=2 / fictitious footer. Did not ask about locacao or estorno (not required). Review turn added the Fator R sensitivity and classification caveats only.",
+      "grader_confidence": "medium"
+    }
+  },
+  "cross_run_observations": "All five runs converge on the same answer: RBT12 1.020.000, folha 284.600, Fator R 27,90%, Anexo V, DAS 15.188,84 (services 14.682,35 + locacao 506,49), and all five pass the same three oracle items (receitas.servicos, das.locacao, pro-labore asked) and fail the same three (das.total, anexo, aliquota_efetiva). Every run asked about the April pro-labore, received the scripted 30/04 answer, and then read the resumo's April row (3.200) as already containing it, treating the March zero as the unexplained anomaly; each flagged the R$1.000 margin to 28% and the 10.261,08 alternative. Four runs (A, B, C, D) initially excluded the 3.200 on the email's 06/05 date and moved to 284.600 only after the answer. Traps 1, 3 and 4 were caught unprompted by all five; trap 2 was missed by all five. No run cited anything outside INDEX.md and no run plugged the 99,85% gap. Run D hit the output cap on the review turn (deliverables unchanged) and is not completed. Given the unanimous convergence and the row-placement/email contradictions in the fixture, the campaign owner may want to treat das.total/anexo/aliquota_efetiva and trap 2 as diagnostic for this case or fix the fixture (zero the April pro_labore cell, align email_socio.txt with the 30/04 script); I kept them gated per the pre-registration."
+}

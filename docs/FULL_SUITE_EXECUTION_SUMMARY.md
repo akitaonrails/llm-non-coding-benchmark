@@ -146,5 +146,6 @@ rule deliberately did not re-run.
   re-run.
 - One run per configuration. No repetitions, so none of the timings carry an
   error bar.
-- Grading of the retained deliverables against the fixtures has not been done;
-  that is the remaining gate before any quality claim.
+- Grading of the retained deliverables was done on 2026-10-27; see
+  [`FULL_SUITE_GRADING_20261027.md`](FULL_SUITE_GRADING_20261027.md). Human
+  spot-check of the trust events and demotions is the remaining gate.

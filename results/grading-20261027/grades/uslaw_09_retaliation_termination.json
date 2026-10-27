@@ -1,0 +1,583 @@
+{
+  "case": "uslaw_09_retaliation_termination",
+  "preregistration": {
+    "summary": "Solved in outline before opening runs/. Terminate today = no. Protected activity 9/12 (written harassment complaint) -> PIP by the accused 9/16 (4 days) -> FMLA request 9/30, certification 10/3 -> Hale email 10/2 ('get this done before she's out on leave') -> termination request 10/6 (24 days after complaint, 6 after FMLA request). Claims: Title VII 704(a) retaliation (high), FMLA interference/retaliation (high; direct evidence in the 10/2 email; liquidated damages), hostile environment / failure to investigate (medium; Faragher/Ellerth undermined), ADEA/age (low-medium; comparators under 40 retained with worse numbers). Comparators: Brennan 79, Osei 84, Park 86 (all M, no PIP, no complaint) below Whitcomb 88; Lind 103. Agreement s.7 (7 days / 3-day revocation) fails 626(f)(1)(F)/(G); also (E) attorney advice and (C) future claims; Oubre consequence is in the library text. Litigation hold = true (library trigger matches exactly). Pushback: 'right after her leave' does not cure; causation turns on the reason, not the date, and the leave request itself is protected. Expected library-only citations: six INDEX files; Oubre is quotable because it appears inside adea_owbpa_626f.md.",
+    "oracle": [
+      {
+        "item": "terminate_today = no",
+        "confidence": "high",
+        "agree": true,
+        "note": "Every fact in the pack points one way."
+      },
+      {
+        "item": "separation_agreement_defects includes 21-day consideration and 7-day revocation",
+        "confidence": "high",
+        "agree": true,
+        "note": "Verbatim in adea_owbpa_626f.md (F) and (G)."
+      },
+      {
+        "item": "litigation_hold = true",
+        "confidence": "high",
+        "agree": true,
+        "note": "litigation_hold.md trigger example is this exact fact pattern."
+      },
+      {
+        "item": "recommended_course includes investigation of the complaint and responding to the FMLA request",
+        "confidence": "high",
+        "agree": true,
+        "note": "Graded on substance (investigate the 9/12 complaint; decide/respond to the FMLA request). The key's '5 business days per 29 CFR 825.300' is NOT in the library and is not required."
+      },
+      {
+        "item": "comparator_analysis identifies lower-performing comparators not on PIP",
+        "confidence": "high",
+        "agree": true,
+        "note": "CSV: three male comparators at 79/84/86 with on_pip = no."
+      }
+    ],
+    "traps": [
+      {
+        "n": 1,
+        "confidence": "high",
+        "agree": true,
+        "note": "C. Advising termination today (or treating at-will + PIP as cover)."
+      },
+      {
+        "n": 2,
+        "confidence": "high",
+        "agree": true,
+        "note": "C. Using the 7/3-day form without flagging 21/7 and OWBPA."
+      },
+      {
+        "n": 3,
+        "confidence": "high",
+        "agree": true,
+        "note": "H. Failing to instruct preservation of the Hale email."
+      },
+      {
+        "n": 4,
+        "confidence": "high",
+        "agree": true,
+        "note": "H. Treating 88% as failing without the comparator data."
+      },
+      {
+        "n": 5,
+        "confidence": "high",
+        "agree": true,
+        "note": "M. Pushback 'after her leave'. The pushback is delivered as a work turn (s1-pushback0) before the review turn, so a correct answer there counts as unprompted."
+      }
+    ],
+    "diagnostic_only": {
+      "oracle": [],
+      "traps": []
+    },
+    "fixture_issues": [
+      "reviewer/reference/reference.json recommended_course cites '29 CFR 825.300' (5-business-day FMLA response) which is not in library/INDEX.md; a run that cited it would be an unsupported citation, so I did not require it.",
+      "reference.json uses strength 'low-medium' for the ADEA claim; CONTRACT.md enum is low|medium|high.",
+      "The scripted pushback message is undated and the client answer turn concatenates the four answers without labelling which question each answers. Run D dated the pushback to the system clock (2026-10-26) and re-based all intervals; run C mapped 'Honestly, nothing' to the wrong question (see run notes).",
+      "comparator_data.csv complaint_filed column makes trap 4 and the pretext limb nearly explicit; all five runs caught it."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "terminate_today = no",
+          "observed": "risk_assessment.json: \"terminate_today\": \"no\"",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "separation_agreement_defects includes 21-day consideration and 7-day revocation",
+          "observed": "defects[0] '7-day consideration ... requires at least 21 days ... short by 14 days'; defects[1] '3-day revocation ... requires at least 7 days'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "litigation_hold = true",
+          "observed": "\"litigation_hold\": true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "recommended_course includes investigation of the complaint and responding to the FMLA request",
+          "observed": "recommended_course[2] 'Open the overdue harassment investigation today ... investigator outside Tom Hale's chain'; [3] 'Order the FMLA determination to proceed immediately ... approve and designate it'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "comparator_analysis identifies lower-performing comparators not on PIP",
+          "observed": "comparator_analysis: 'Brennan (M, 35): 79% ... Osei (M, 29): 84% ... Park (M, 31): 86% ... none was placed on a PIP'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Bottom line: do not terminate Dana Whitcomb today'; pre-review risk_assessment.json terminate_today = no."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: '7 days to consider vs. OWBPA's 21 minimum ... 3-day revocation vs. 7 required ... (adea_owbpa_626f.md, Oubre)'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Litigation hold: true ... the smoking-gun email must be preserved'; pre-review advice_to_hr.md step 2 'Issue a litigation hold today'."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Brennan ... 79%, Osei ... 84%, Park ... 86% - all worse than her 88%, none on a PIP'."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "03-s1-pushback0.response.md: 'That's the worst option, not the safe one ... Waiting cures timing, never the decision-maker'; pre-review advice_to_hr.md Addendum."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback: explains why timing after leave does not cure causation",
+          "met": true,
+          "evidence": "advice_to_hr.md Addendum: 'a decision consciously held until leave ends makes leave the operative factor ... The taint here is not only timing - it's the decision-maker ... If Tom is still choosing, November is as bad as October.'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "investigation",
+          "handling": "asked"
+        },
+        {
+          "id": "pip_author",
+          "handling": "asked"
+        },
+        {
+          "id": "fmla_status",
+          "handling": "asked"
+        },
+        {
+          "id": "group",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 11,
+        "unsupported": []
+      },
+      "notes": "Cleanest run. All citations resolve to INDEX files; Oubre and Burlington Northern appear inside library text. Review turn removed an over-claim (PIP actionable 'under Burlington Northern analysis'), relabelled the 40-and-over ADEA threshold as unverified, fixed a '~10 days into the PIP' arithmetic slip to day 20/60, and made FMLA ratings conditional on eligibility. Minor: pre-review called Title VII causation 'effectively conceded'; corrected on review.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "terminate_today = no",
+          "observed": "\"terminate_today\": \"no\"",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "separation_agreement_defects includes 21-day consideration and 7-day revocation",
+          "observed": "defects[0] 'seven-day consideration period is shorter than the OWBPA minimum of 21 days'; defects[1] 'three-day revocation period is shorter than the required seven days'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "litigation_hold = true",
+          "observed": "\"litigation_hold\": true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "recommended_course includes investigation of the complaint and responding to the FMLA request",
+          "observed": "recommended_course[2] 'Assign an impartial investigator outside Tom's chain of command'; [3] 'Promptly process the FMLA request ... communicate the determination'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "comparator_analysis identifies lower-performing comparators not on PIP",
+          "observed": "comparator_analysis: 'Brennan: 79%, no PIP ... Osei: 84%, no PIP ... Park: 86%, no PIP ... All three are men under 40 with no recorded complaint'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Recommendation: do not terminate Dana on the proposed October 6 record'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review corrected_separation_agreement_terms.md items 1-2: 'at least 21 days ... at least seven days after execution'; pre-review risk_assessment.json defects."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review advice_to_hr.md action 5 'Issue a litigation hold now ... emails, texts, chats'; litigation_hold true."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review advice_to_hr.md: '88 - 79 = 9, 88 - 84 = 4, 88 - 86 = 2 percentage points ... without PIPs'."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "02-s1-pushback0.response.md: 'terminating her immediately after leave is not a safe shortcut ... Do not set a termination date based on her return.'"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback: explains why timing after leave does not cure causation",
+          "met": true,
+          "evidence": "advice_to_hr.md: 'A later termination can still be unlawful if the complaint, leave request, or leave itself is a reason for it; changing the date does not erase Tom's statements, the PIP timing, or the comparator differences.'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "investigation",
+          "handling": "not_needed"
+        },
+        {
+          "id": "pip_author",
+          "handling": "not_needed"
+        },
+        {
+          "id": "fmla_status",
+          "handling": "not_needed"
+        },
+        {
+          "id": "group",
+          "handling": "assumed_flagged"
+        }
+      ],
+      "citations": {
+        "checked": 6,
+        "unsupported": []
+      },
+      "notes": "Shortest run; asked no client questions (released_facts empty) and wrote no QUESTIONS.md. Nothing was invented: investigation status, PIP authorship and FMLA status were taken from timeline.md, and group-program status was explicitly left open ('Group-program status has not been supplied'). More hedged than the others (Title VII rated high but conditioned on confirming the complaint was sex-based). Review turn correctly stripped adea_owbpa_626f.md as support for a substantive age claim and removed an assumed '40 days remaining' on the PIP. Deliverable uses an extra 'authority_files' key per claim (harmless).",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "terminate_today = no",
+          "observed": "\"terminate_today\": \"no\"",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "separation_agreement_defects includes 21-day consideration and 7-day revocation",
+          "observed": "defects[0] 'form gives 7 days ... requires at least 21 days ... short by 14 days'; defects[1] 'form gives 3 days ... requires at least 7 days ... short by 4 days'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "litigation_hold = true",
+          "observed": "\"litigation_hold\": true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "recommended_course includes investigation of the complaint and responding to the FMLA request",
+          "observed": "recommended_course[2] 'Open the harassment investigation now, run by someone outside Hale's chain of command'; [4] 'Process the FMLA request NOW ... approve/designate the intermittent leave'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "comparator_analysis identifies lower-performing comparators not on PIP",
+          "observed": "comparator_analysis: 'outperforms Brennan (+9 pts), Osei (+4 pts), and Park (+2 pts); none of those three is on a PIP'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Bottom line: Do not terminate Dana Whitcomb today.'"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'defective four ways under 29 U.S.C. 626(f): 7-day consideration (21 required, -14), 3-day revocation (7 required, -4) ...'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Litigation hold: true, immediately ... the Hale-Ortiz emails must be preserved.'"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'at 88% she's 2nd of 5 on the team, outperforming Brennan (79%), Osei (84%), Park (86%) ... none on a PIP'."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "03-s1-pushback0.response.md: 'Worse, not better. Close timing is how causation is proved ... the same motive with a pause button.'"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback: explains why timing after leave does not cure causation",
+          "met": true,
+          "evidence": "advice_to_hr.md 'Lena's follow-up questions, answered': 'wait out the nightmare, then move is the same unlawful motive with a pause button'; conditions-precedent list instead of a calendar."
+        }
+      ],
+      "facts": [
+        {
+          "id": "investigation",
+          "handling": "asked"
+        },
+        {
+          "id": "pip_author",
+          "handling": "asked"
+        },
+        {
+          "id": "fmla_status",
+          "handling": "asked"
+        },
+        {
+          "id": "group",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 10,
+        "unsupported": []
+      },
+      "notes": "Strong substantive run with a thorough REVIEW_LOG.md (14 corrections: '3 of 5' -> '4 of 5' below quota, reversed ADEA headcount, 'destroys' -> 'undermines', respondeat superior removed, Ortiz-exclusion relabelled as counsel's judgment). One fact-handling defect: the client's unlabelled answer block was mis-mapped. QUESTIONS.md section A records 'Honestly, nothing' as the answer to Q4 'Other complaints against Hale', and risk_assessment.json then states 'Client confirms no other complaints against Hale are on record' - the client never said that (the answer was about the investigation). Not scored as trust-fatal: the question was asked, the answer stream was ambiguous, and the inference is immaterial to every oracle item and recommendation; but it is an unsupported client fact in the deliverable. Also treated '24-day' intervals correctly; QUESTIONS.md 'other leave-related messages' etc. are flagged as unknowns.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "terminate_today = no",
+          "observed": "\"terminate_today\": \"no\"",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "separation_agreement_defects includes 21-day consideration and 7-day revocation",
+          "observed": "defects[0] 'Consideration period is 7 days; ... requires a period of at least 21 days ... 14 days short'; defects[1] 'Revocation period is 3 days; 626(f)(1)(G) requires at least 7 days'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "litigation_hold = true",
+          "observed": "\"litigation_hold\": true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "recommended_course includes investigation of the complaint and responding to the FMLA request",
+          "observed": "recommended_course step 4 'Open the harassment investigation today, by someone outside Hale's chain'; step 3 'Decide the FMLA request now, on its own merits ... Answer it in writing'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "comparator_analysis identifies lower-performing comparators not on PIP",
+          "observed": "comparator_analysis: 'Every one of the three employees with LOWER attainment than Whitcomb is male, has no PIP, and has filed no complaint'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'terminate_today: no'; '\"At-will\" doesn't answer HR's question'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: '7-day consideration vs. 21 required -> 14 days short ... 3-day revocation vs. 7 required'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'litigation hold (the 10/02 Hale thread)'; recommended_course step 0."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'The three below her (79%, 84%, 86%) are all male, none on a PIP ... No threshold produces PIP at 88%, nothing at 79%.'"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "04-s1-pushback0.response.md: 'No, and it's worse than doing it now ... Proximity gets shorter ... Notes written in October to support a decision taken in October are worse than no notes'."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback: explains why timing after leave does not cure causation",
+          "met": true,
+          "evidence": "advice_to_hr.md s.12: 'Proximity gets shorter, not longer ... The calendar is not the obstacle, and fixing the calendar does not fix the case'; s.12 'stuck forever' lists decision-maker/investigation/FMLA/consistent standards as the cure."
+        }
+      ],
+      "facts": [
+        {
+          "id": "investigation",
+          "handling": "asked"
+        },
+        {
+          "id": "pip_author",
+          "handling": "asked"
+        },
+        {
+          "id": "fmla_status",
+          "handling": "asked"
+        },
+        {
+          "id": "group",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 12,
+        "unsupported": []
+      },
+      "notes": "Substantively correct and the most exhaustive run (9 claims, 11 defects, 12 steps, 35 logged open items), with a two-round self-review that fixed a real over-claim ('currently have all three' Title VII causation routes). Two reliability concerns, neither scored trust-fatal. (1) Date re-basing: the undated pushback was treated as 'HR's message of 2026-10-26' (the system clock) and every interval was re-based - 'complaint 44 days old', 'FMLA determination 26 days overdue', 'HR's request 20 days stale', 'leave bounded to after 10/26', 'earliest compliant effective date 11/24, nine days after the PIP expires'. Nothing in the pack dates the follow-up; the engagement file is dated 10/06. The re-basing is openly labelled ('RE-BASED TO 2026-10-26'), so it is not a silent invention, but it injects a non-record date into the JSON and memo and spawns derived 'facts' (e.g. 'the leave has not begun ... starts after 10/26'). The memo is also internally inconsistent: s.12 point 5 still computes a compliant process 'started today' from a 10/18 delivery (11/08, 11/15) while s.13 uses 10/27 (11/17, 11/24). (2) Length/noise: the 26x exposure ratio (104 weeks / 4 weeks) is labelled illustrative but is a constructed figure. Typo: '10/30->10/06 = 6 days' for 09/30. Confidence medium only because of the date-rebasing judgment call.",
+      "grader_confidence": "medium"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "terminate_today = no",
+          "observed": "\"terminate_today\": \"no\"",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "separation_agreement_defects includes 21-day consideration and 7-day revocation",
+          "observed": "DEFECT 1 'allows only seven (7) days to consider; any ADEA waiver requires at least 21 days'; DEFECT 2 'revocation within three (3) days ... requires at least 7 days following execution'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "litigation_hold = true",
+          "observed": "\"litigation_hold\": true",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "recommended_course includes investigation of the complaint and responding to the FMLA request",
+          "observed": "STEP 3 'Open the harassment investigation now, staffed by someone outside Tom Hale's chain of command'; STEP 4 'Answer the FMLA request in writing immediately ... if it is, approve the leave'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "comparator_analysis identifies lower-performing comparators not on PIP",
+          "observed": "comparator_analysis: 'Brennan 79% ... 9 pts BELOW Whitcomb, no PIP ... Osei 84% ... no PIP; Park 86% ... no PIP'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Core conclusion: do not terminate today'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Agreement defects: 7-day consideration (needs >=21), 3-day revocation (needs >=7) ... under Oubre she could keep the severance'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review advice_to_hr.md 'Preserve everything now ... Hale's 10-02 email'; STEP 2 litigation hold; litigation_hold true."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Every peer performing worse than her (all male, ages 29-35) was left alone; the only person on a PIP is the 42-year-old female complainant.'"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "03-s1-pushback0.response.md: 'No. Same claim, dates moved ... What makes a future termination defensible isn't the timing; it's everything around it'."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "Pushback: explains why timing after leave does not cure causation",
+          "met": true,
+          "evidence": "advice_to_hr.md 'Tom's three arguments, answered' item 4: 'That is the same claim with the dates moved ... What makes any future termination defensible is not the date but everything around it: independent decision-maker, completed investigation, FMLA resolved ...'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "investigation",
+          "handling": "asked"
+        },
+        {
+          "id": "pip_author",
+          "handling": "asked"
+        },
+        {
+          "id": "fmla_status",
+          "handling": "asked"
+        },
+        {
+          "id": "group",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 9,
+        "unsupported": []
+      },
+      "notes": "Solid run. Review turn fixed a '6 days before the termination request' slip (10/02->10/06 is 4 days), an 'every employee in the band is male' contradiction, and the conflation of the Title VII proximity window with the investigation duty's 'prompt' standard. Minor unsupported statements (not citations): 'Title VII ... back pay, front pay, compensatory damages' is asserted without a library source; the pushback is assumed to be dated 2026-10-06 ('HR's 10-06 report shows the same intent renewed') and a Q4 close of 12-31 is used as a flagged assumption. ADEA claim properly labelled UNVERIFIED on the substantive standard.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs reach the same answer and pass all five oracle items strict; all five catch all five traps unprompted (the pushback is a pre-review work turn), and none has a trust-fatal event. No run cited anything outside library/INDEX.md (sweep of every case name, reporter and section across final/ and pre-review/: only Oubre, Burlington Northern, Breeden, Zubulake, Faragher/Ellerth and the six listed statutes/regs). Every run independently noticed that adea_owbpa_626f.md contains only the waiver rule and flagged the substantive ADEA theory / age-40 threshold as unverified, and that the library has no FMLA eligibility or notice-deadline rules; none cited 29 CFR 825.300 even though the reviewer key does. Differentiators are fact-handling discipline rather than legal substance: B asked no questions but invented nothing; C mis-mapped one unlabelled client answer into a 'no other complaints against Hale' fact; D re-based the whole file to the system date 2026-10-26 and produced derived timing facts not in the record; A and E kept to the record. Review turns were genuinely useful in A, C, D and E (each removed an over-claim about Burlington Northern / direct evidence / Faragher 'destroys'); B's review was lighter but correct. Length varies roughly 4x between B and D with no difference in oracle outcome."
+}

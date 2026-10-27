@@ -1,0 +1,192 @@
+{
+  "case": "brlaw_07_credor_rj",
+  "preregistration": {
+    "summary": "Edital art. 52 published Fri 10/04/2026; 15 dias corridos (art. 189 §1º I) -> day 15 = Sat 25/04 -> first business day Mon 27/04/2026 (CPC 224 §1º per library note). Wrong business-day count would give 04/05/2026. Fiduciary R$ 900k: outside the plan (49 §3º) but the forklifts/picking system are essential capital goods, so no removal during the stay (49 §3º in fine; 6º §§4º/7º-A; Tema 1.051). Unsecured R$ 1.2M: creditor is EPP -> classe IV (41 IV), vote per head (45). Divergência to the AJ (art. 9º): listed R$ 1.6M classe III vs correct R$ 2.1M = 900k not subject + 1.2M classe IV; the composition of the listed 1.6M does not reconcile with any component and must be left open. Fiança: Súmula 581, 49 §1º, 59/Tema 885 -> not extinguished by homologation; plan clause does not bind a non-consenting bank. Objection to plan: 30 days from publication of the AJ list (art. 55 c/c 7º §2º), not yet started; the 40% haircut on fiduciaries clause is illegal and must be objected to. Pre-registration written to scratchpad before opening runs/.",
+    "oracle": [
+      {"item": "prazo_habilitacao_divergencia", "confidence": "medium", "agree": true, "note": "Key: 2026-04-27 (day after publication = day 1, day 15 = Sat 25/04, rolled to Mon 27/04). A CPC 224 §§2-3 reading (publication deemed Mon 13/04, count from Tue 14/04) would give 28/04, but that rule is not in the library, and the library's own note supports the key's method. Gated."},
+      {"item": "contagem = corridos", "confidence": "high", "agree": true, "note": "Art. 189 §1º I in library."},
+      {"item": "credito_fiduciario: sujeito=false, retomada_agora=false", "confidence": "high", "agree": true, "note": "Art. 49 §3º in library, including the in fine prohibition; ficha states the goods are essential."},
+      {"item": "credito_quirografario.classe = IV", "confidence": "high", "agree": true, "note": "Ficha says EPP; art. 41 IV and the library note on split credits."},
+      {"item": "fianca_do_socio.extinta = false", "confidence": "high", "agree": true, "note": "Súmula 581, 49 §1º, 59, Tema 885 all in library."},
+      {"item": "habilitacao_divergencia.md: valor total 2,1 mi com split 900k não sujeito / 1,2 mi classe IV; endereçada ao AJ", "confidence": "high", "agree": true, "note": "Art. 9º file says the piece goes to the AJ, not the court. 900000+1200000=2100000 verified with python3 -I."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Must file divergência (value AND class) by 27/04; retardatário loses vote (art. 10 §1º). Severity C."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Dias corridos -> 27/04, not 04/05 (verified: 15 business days from 13/04 skipping 01/05 = 04/05). Severity C."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "No removal of essential goods during the stay; pushback 'a propriedade é minha' must be resisted. Severity C."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Classe IV, not III. Severity H."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "Homologation does not extinguish the fiança; clause does not bind non-consenting bank. Severity H."},
+      {"n": 6, "confidence": "high", "agree": true, "note": "Object (art. 55) to the 40% haircut on fiduciaries clause. Severity M."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "reviewer/reference/reference.json says the stay runs '180 dias de 12/03/2026'; no document in the candidate-visible pack gives the date of the deferimento/pedido, so runs cannot compute the stay end (all runs correctly left it open). Not oracle-gated.",
+      "CONTRACT schema field divergencia_de_valor.correto is ambiguous: reference.json uses 'correto_sujeito': 1200000 (the plan-subject slice) while the natural reading of 'correto' vs 'listado' is the total 2100000. Both readings accepted if the split is explained; not oracle-gated.",
+      "The library omits CPC 224 §§2-3 (publication deemed next business day; count starts the following business day), under which the deadline would be 28/04. The key's 27/04 is consistent with the library's own note, so it was gated, but confidence recorded as medium.",
+      "client_script fact 'essencial' and 'epp' duplicate information already in ficha_credor.md (bens essenciais; EPP), so a run that never asks them is not inventing anything."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "prazo_habilitacao_divergencia", "observed": "2026-04-27", "strict": "pass", "lenient": "pass", "note": "estrategia.json; arithmetic shown (dia 1 = 11/04, dia 15 = 25/04 sáb -> 27/04)."},
+        {"item": "contagem = corridos", "observed": "corridos", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_fiduciario: sujeito=false, retomada_agora=false", "observed": "valor 900000, sujeito_ao_plano false, retomada_dos_bens_agora false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_quirografario.classe = IV", "observed": "IV, valor 1200000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "fianca_do_socio.extinta = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "habilitacao_divergencia.md: valor total 2,1 mi com split 900k não sujeito / 1,2 mi classe IV; endereçada ao AJ", "observed": "'Ao Administrador Judicial — AJ Reorganiza Ltda.'; table R$ 900.000 'não sujeito aos efeitos da RJ (art. 49 §3º)' + R$ 1.200.000 'CLASSE IV' = R$ 2.100.000", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Fiduciary credit or not, the R$ 1.2 mi ... must be challenged now or the claim becomes retardatária (loses vote, art. 10 §1º)'; pre-review resposta_cliente.md §1 'Errado — e esse é o ponto mais perigoso agora'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review estrategia.json 'contagem': 'corridos', fundamento_prazo with 25/04 sáb -> 27/04; 'Tiradentes (21/04) não interrompe'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "03-s1-pushback0.response.md and pre-review resposta_cliente_3.md 'URGENTE — NÃO MANDE O CAMINHÃO ... a retirada é proibida justamente porque o bem é seu e é essencial' (art. 49 §3º; 6º §7º-A; Tema 1.051)."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review estrategia.json classe 'IV' with R$ 840k vs R$ 480k arithmetic; peça §III.3."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review resposta_cliente.md §3 'Não confere' (Súmula 581; 49 §1º; 59; Tema 885); asked the 'banco' fact and incorporated the notification."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review estrategia.json objecao_ao_plano_prazo: 'Fundamentos prováveis de objeção: cláusula que submete fiduciários ao plano com deságio de 40% (viola art. 49, §3º)'; peça §IV."}
+      ],
+      "rubric": [
+        {"item": "resposta_cliente.md responde às três perguntas e ao pushback sem jargão", "met": true, "evidence": "resposta_cliente.md answers Q1-Q3 with a money table; pushback answered in resposta_cliente_3.md ('você está meio certo ... a retirada é proibida justamente porque o bem é seu e é essencial'). Plain language, split across three files."}
+      ],
+      "facts": [
+        {"id": "essencial", "handling": "asked"},
+        {"id": "epp", "handling": "asked"},
+        {"id": "banco", "handling": "asked"}
+      ],
+      "citations": {"checked": 18, "unsupported": []},
+      "notes": "Strongest run. Every citation traces to INDEX.md; CPC 224 §1º is in the library note; LC 123/2006 and the fiador's regresso are mentioned only as explicitly unverified premises. Review turn fixed six genuine precision defects (art. 189 §1º I, Súmula 581 wording, a mislinked art. 10 §1º, stay start date) without changing conclusions. Minor: 'multas' / 'responder por dano e multa' consequences are asserted in the client letters beyond the library text (hedged as practical consequence after review). The 1.6M listing was explicitly left unreconciled.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "prazo_habilitacao_divergencia", "observed": "2026-04-27", "strict": "pass", "lenient": "pass", "note": "STATUS.md shows arithmetic incl. Python check."},
+        {"item": "contagem = corridos", "observed": "corridos", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_fiduciario: sujeito=false, retomada_agora=false", "observed": "900000 / false / false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_quirografario.classe = IV", "observed": "IV, 1200000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "fianca_do_socio.extinta = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "habilitacao_divergencia.md: valor total 2,1 mi com split 900k não sujeito / 1,2 mi classe IV; endereçada ao AJ", "observed": "'AO ADMINISTRADOR JUDICIAL ... AJ Reorganiza Ltda.'; I.1 table 900k fiduciária + 1.2M = 2.1M; V.2 asks classe IV for 1.2M and 900k 'não sujeita'.", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review resposta_cliente.md §1 'Não. Vocês precisam se manifestar até 27/04/2026'; 'perdem o direito de voto (art. 10, §1º)'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md '15 days from 10/04 (Friday) ends Saturday 25/04 → prorrogated to Monday 27/04/2026'; estrategia 'corridos'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review resposta_cliente.md §6 'Você tem razão sobre a propriedade — e está errado sobre o caminhão' quoting art. 49 §3º in fine; 03-s1-pushback0.response.md."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review estrategia.json classe 'IV' citing art. 41 IV and the library split-credit note."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review resposta_cliente.md §3 'Não confere. A fiança NÃO cai' (Súmula 581; 49 §1º; 59/Tema 885)."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review estrategia.json acoes_imediatas: 'Apresentar OBJEÇÃO ao plano ... impugnando a submissão dos credores fiduciários ao plano (fere art. 49 §3º)'."}
+      ],
+      "rubric": [
+        {"item": "resposta_cliente.md responde às três perguntas e ao pushback sem jargão", "met": true, "evidence": "§§1-3 answer the e-mail, §4 the value, §6 the pushback ('o caminhão de vocês pode sair do pátio, mas não entra no galpão da Atlas'). Readable, though inline 'library/...md' source tags add clutter."}
+      ],
+      "facts": [
+        {"id": "essencial", "handling": "asked"},
+        {"id": "epp", "handling": "not_needed"},
+        {"id": "banco", "handling": "invented"}
+      ],
+      "citations": {"checked": 16, "unsupported": []},
+      "notes": "All six oracle items and all six traps caught before review. Two weaknesses: (1) estrategia.json and resposta state as fact that 'o Banco Horizonte, que não anuiu' without having asked the 'banco' fact or flagging it as an assumption (recorded as 'invented' in facts; not treated as trust-fatal because it is the default state consistent with the documents, is immaterial to the conclusion, and was later confirmed by the script answer never released to this run). (2) The art. 55 objection deadline (11/05/2026) rests on the flagged premise that the AJ list was published with the 10/04 edital, which conflates the debtor's art. 51 list with the AJ's art. 7º §2º list; flagged as 'premissa destacada' so not fatal, but substantively doubtful. 'art. 51' (not in INDEX) is labelled unverified after review. Work-turn chat response contains a garbled token ('classe II的实力') but deliverables are clean.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "prazo_habilitacao_divergencia", "observed": "2026-04-27", "strict": "pass", "lenient": "pass", "note": "Also sets internal target 24/04 to hedge the 'conservative' count."},
+        {"item": "contagem = corridos", "observed": "corridos", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_fiduciario: sujeito=false, retomada_agora=false", "observed": "900000 / false / false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_quirografario.classe = IV", "observed": "IV, 1200000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "fianca_do_socio.extinta = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "habilitacao_divergencia.md: valor total 2,1 mi com split 900k não sujeito / 1,2 mi classe IV; endereçada ao AJ", "observed": "'Endereçado a: AJ Reorganiza Ltda. — Administrador Judicial ... não ao juízo'; quadro-resumo 900k 'Não (extraplano)' + 1.2M 'classe IV (EPP)' = 2.1M", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review resposta_cliente.md §1 'Errado. Precisamos agir, e rápido'; 'Quem perde o prazo vira credor retardatário e perde o direito de voto (art. 10 §1º)'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md 'corridos (art. 189 §1º I) → expires Sat 25/04 → extended to Mon 27/04'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "03-s1-pushback0.response.md and pre-review resposta_cliente.md 'Atualização — sobre o caminhão: não mande buscar' quoting art. 49 §3º in fine; Tema 1.051."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review estrategia.json classe 'IV' with 840k vs 480k arithmetic."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review resposta_cliente.md §3 'Não confere — e o banco já confirmou isso na prática' (Súmula 581; 49 §1º; 59/Tema 885)."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review estrategia.json objecao_ao_plano_prazo teses: '(i) cláusula que submete crédito fiduciário ao plano com deságio de 40% é ineficaz' and acoes_imediatas 'Oferecer objeção ao plano (art. 55) ... atacando as cláusulas de submissão do crédito fiduciário'."}
+      ],
+      "rubric": [
+        {"item": "resposta_cliente.md responde às três perguntas e ao pushback sem jargão", "met": true, "evidence": "§§1-3 answer the e-mail with arithmetic; 'Atualização — sobre o caminhão' answers the pushback ('o próprio artigo que diz que a coisa é sua proíbe, palavra por palavra, retirar bens essenciais'). Plain language."}
+      ],
+      "facts": [
+        {"id": "essencial", "handling": "not_needed"},
+        {"id": "epp", "handling": "asked"},
+        {"id": "banco", "handling": "asked"}
+      ],
+      "citations": {"checked": 17, "unsupported": []},
+      "notes": "Thorough run. Review turn removed an unsupported venue fact ('Comarca de São Paulo/SP' and 'São Paulo' signature place, not in any document) and relabelled the causal explanation of the 1.6M listing as inference; those were flagged and fixed before delivery, so no trust event. Minor slips: peça §IV calls the guarantee 'cessão fiduciária' (ficha says alienação fiduciária); STATUS cites 'LC 123/2004' (typo for 123/2006) but only as an unverified, uncited reference. The 'conservative count' (24/04, counting the publication day) is a hedge, not an error, and the oracle date is still 27/04.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "prazo_habilitacao_divergencia", "observed": "2026-04-27", "strict": "pass", "lenient": "pass", "note": "Shows two convergent counts (dia 1 = 13/04 -> 27/04; dia 1 = 11/04 -> 25/04 sáb -> 27/04)."},
+        {"item": "contagem = corridos", "observed": "corridos", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_fiduciario: sujeito=false, retomada_agora=false", "observed": "900000 / false / false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_quirografario.classe = IV", "observed": "IV, 1200000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "fianca_do_socio.extinta = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "habilitacao_divergencia.md: valor total 2,1 mi com split 900k não sujeito / 1,2 mi classe IV; endereçada ao AJ", "observed": "'Ao Administrador Judicial — AJ Reorganiza Ltda. ... não ao juízo'; table 900k 'não sujeita aos efeitos da RJ' + 1.2M 'classe IV (ME/EPP)' = 2.1M; requerimento 1-2.", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md 'O cliente precisa sim se manifestar: fiduciário também está sujeito ao prazo, e habilitação retardatária perde voto (art. 10 §1º)'; pre-review resposta §1 'Errado. Precisamos, e o prazo está correndo'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md 'Prazo: 27/04/2026, dias corridos (art. 189 §1º I). Edital 10/04 (sexta) + 15 dias → 25/04 (sábado) → prorroga'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "03-s1-pushback0.response.md; pre-review resposta_cliente.md banner 'pare, não mande' and §6 quoting art. 49 §3º in fine; 6º §7º-A; Tema 1.051."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review estrategia.json classe 'IV' (art. 41 IV); resposta §4 table 840k vs 480k."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review resposta_cliente.md §3 'Não cai. Não conte com isso' (Súmula 581; 49 §1º; 59; Tema 885); 'o titular dessa fiança é o banco, não a Fornecedor Sul'."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review estrategia.json objecao_ao_plano_prazo: 'A objeção deve atacar: (i) a submissão dos credores fiduciários ao plano com deságio de 40%, em confronto com o art. 49 §3º'; resposta §2 'vamos impugnar a cláusula do plano que submete credores fiduciários ao deságio'."}
+      ],
+      "rubric": [
+        {"item": "resposta_cliente.md responde às três perguntas e ao pushback sem jargão", "met": true, "evidence": "§§1-3 answer the e-mail; §6 'URGENTE — vou mandar o caminhão buscar: por favor, não mande' with a retirada-agora vs aguardar table. Plain language with numbers."}
+      ],
+      "facts": [
+        {"id": "essencial", "handling": "not_needed"},
+        {"id": "epp", "handling": "asked"},
+        {"id": "banco", "handling": "asked"}
+      ],
+      "citations": {"checked": 17, "unsupported": []},
+      "notes": "All oracle and trap items correct before review. Review turn removed an unsupported figure in the client letter ('receber 3,3 anos mais cedo', not derivable from the minuta) and relabelled the stay start as an unverified inference; both fixed before delivery. 'art. 51' corrected to a document reference in the client turn. LC 123 and the fiador's regresso are explicitly marked 'não verificado'. The peça names the court '2ª Vara de Falências e Recuperações Judiciais' (edital says 'Falências e RJ'); harmless expansion. Process note: the client-turn response says 'Não preciso do runtime — conheço o conteúdo' and the review turn then found the file differed from what it assumed; output was nonetheless consistent.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "prazo_habilitacao_divergencia", "observed": "2026-04-27", "strict": "pass", "lenient": "pass", "note": "Arithmetic in peça and resposta: 'publicação em 10/04, 15º dia em 25/04 (sábado), prorrogação para a segunda-feira'; caveat 'assumindo inexistência de feriado local'."},
+        {"item": "contagem = corridos", "observed": "corridos", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_fiduciario: sujeito=false, retomada_agora=false", "observed": "900000 / false / false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "credito_quirografario.classe = IV", "observed": "IV, 1200000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "fianca_do_socio.extinta = false", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "habilitacao_divergencia.md: valor total 2,1 mi com split 900k não sujeito / 1,2 mi classe IV; endereçada ao AJ", "observed": "'Ao administrador judicial AJ Reorganiza Ltda.'; table 900k 'não sujeito aos efeitos da RJ' + 1.2M 'classe IV' = R$ 2.100.000; pedido 1-3.", "strict": "pass", "lenient": "pass", "note": "Content present, but the piece is self-labelled 'minuta incompleta, não apta a protocolo' pending address, dates and documents that are genuinely absent from the pack."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review resposta_cliente.md §1 'as duplicatas ... são crédito sujeito à recuperação ... precisamos apresentar divergência ao administrador judicial até 27/04/2026 para corrigir valor e classificação'; 01-s1-work.response.md deadline 27/04."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review estrategia.json 'contagem': 'corridos'; QUESTIONS.md '15 dias corridos levam a 25/04 (sábado), com vencimento no primeiro dia útil seguinte'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "03-s1-pushback0.response.md 'Não mande o caminhão buscar as empilhadeiras agora'; pre-review resposta §2; estrategia retomada_dos_bens_agora false before the pushback (which is what triggered it)."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review estrategia.json classe 'IV' ('A credora é EPP, portanto ... classe IV'); resposta §1."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review resposta_cliente.md §3 'Não automaticamente ... Até prova dessa anuência, trate sua fiança como vigente' (Súmula 581; 49 §1º; 59)."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review estrategia.json objecao_ao_plano_prazo 'Observar a cláusula que submete fiduciários' and pre-review resposta 'objetar ao plano, inclusive às cláusulas sobre créditos fiduciários'; made explicit in final ('deságio de 40% ... pontos concretos para objeção')."}
+      ],
+      "rubric": [
+        {"item": "resposta_cliente.md responde às três perguntas e ao pushback sem jargão", "met": true, "evidence": "Three numbered answers; Q2 was rewritten to fold in the pushback ('A propriedade é minha e está registrada. Posso mandar o caminhão?' -> 'Não mande o caminhão'). Dense and citation-heavy ('Fonte: [library/...]') but readable; no quantification of the classe IV stakes."}
+      ],
+      "facts": [
+        {"id": "essencial", "handling": "not_needed"},
+        {"id": "epp", "handling": "not_needed"},
+        {"id": "banco", "handling": "assumed_flagged"}
+      ],
+      "citations": {"checked": 12, "unsupported": []},
+      "notes": "Minimal but correct. No released facts (its QUESTIONS.md asked only for address, petition date, documents, case number). Bank consent handled as a flagged assumption ('Não temos informação de que o banco tenha concordado'). Does not cite Tema 1.051 or Tema 885 and gives no money comparison for classe IV; the peça is thin (no art. 9º III document list beyond 'ausentes', no classe IV economics) and self-declared not filing-ready, which is honest rather than false completion since STATUS lists the gaps. Trap 6 catch in pre-review is weak ('Observar a cláusula') but present; strengthened in review. Deleted QUESTIONS.md in review.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs pass all six gated oracle items strict and catch all six traps before the review turn; no trust-fatal events. Differentiation is in depth and discipline rather than correctness: A, C and D produce filing-grade pieces with arithmetic (840k vs 480k; 540k vs 900k) and explicit unverified labels; B is comparable but asserts the bank's non-consent as fact without asking and builds an art. 55 deadline (11/05) on a flagged but doubtful premise that the AJ list was published with the art. 52 edital; E is correct but skeletal and labels its own peça as not filing-ready. Every run left the 1.6M listing unreconciled as the contract requires. Review turns in A, C and D removed small overreaches (art. 189 paragraph cite, invented comarca/signature place, an unsupported '3,3 anos' figure) that would otherwise have been minor precision defects, not trust events. Non-library references appear only as explicitly unverified mentions (LC 123, CPC 224 §§ beyond §1º, art. 51, fiador's regresso)."
+}

@@ -1,0 +1,620 @@
+{
+  "case": "brlaw_05_divorcio_partilha",
+  "preregistration": {
+    "summary": "Recomputed before opening runs/: apto 1.200.000-300.000=900.000 (meação 450.000); Atibaia particular (CC 1.659 I), only the R$120.000 of common-money works communicates (meação 60.000) and that fact is script-gated (trigger 'Atibaia'/'reforma'/'benfeitoria'); FGTS 140.000 comum (REsp 1.399.199) meação 70.000; quotas 1.500.000-400.000=1.100.000 via apuração de haveres (1.660 V; REsp 1.595.775) meação 550.000, controversy to be recorded; PGBL 90.000 comum (REsp 1.698.774, controverso) meação Marcelo 45.000; carro 120.000-60.000=60.000, dívida comum (1.664) meação 30.000. Total partilhável líquido 2.410.000 → 1.205.000 each; dívidas 360.000. Alimentos: base líquida 24.000 + pró-labore 15.000 (script-gated) = 39.000; 20-25% → 7.800-9.750; FGTS and verbas indenizatórias out; 13º/férias in; guarda compartilhada (1.584 §2). Tax: equalize to avoid excesso de meação (ITCMD 4%/ITBI 3% SP), attribute at declared values (IN 84/2001).",
+    "oracle": [
+      {
+        "item": "Atibaia: particular; partilhável apenas benfeitorias (120.000) se perguntado, senão PERGUNTAS.md",
+        "confidence": "high",
+        "agree": true,
+        "note": "Verified from formal de partilha + cc_comunhao_parcial.md; the 120.000 only exists via client_script 'atibaia_reforma' (must_flag), so a run that never asks must at least surface the question."
+      },
+      {
+        "item": "FGTS: comum, meação 70.000",
+        "confidence": "high",
+        "agree": true,
+        "note": "stj_fgts_quotas_previdencia.md; 140.000/2 = 70.000."
+      },
+      {
+        "item": "Quotas: valor_partilhavel = valorização (1.100.000) com método declarado e controvérsia registrada",
+        "confidence": "medium",
+        "agree": true,
+        "note": "Library gives the method (difference casamento→separação); 1.500.000-400.000=1.100.000. Controversy on scope must be recorded; ±10% tolerance per manifest."
+      },
+      {
+        "item": "Carro: dívida tratada como comum",
+        "confidence": "high",
+        "agree": true,
+        "note": "CC 1.664 text is in cc_comunhao_parcial.md body; script fact 'carro da família' confirms."
+      },
+      {
+        "item": "alimentos: base líquida; nao_incide_sobre inclui FGTS e verbas indenizatórias; guarda compartilhada",
+        "confidence": "high",
+        "agree": true,
+        "note": "alimentos_base_calculo.md + guarda_compartilhada.md. Numeric base depends on whether pró-labore was asked (39.000 with it; annualising 13º/férias into the base is also acceptable)."
+      }
+    ],
+    "traps": [
+      {
+        "n": 1,
+        "confidence": "high",
+        "agree": true,
+        "note": "Grading rule fixed in advance: 'unprompted' needs Atibaia classified particular AND the common-money works surfaced (asked or flagged) before review; particular-only with silence on benfeitorias = missed (harm 'Fernanda perde 60 mil' realised)."
+      },
+      {
+        "n": 2,
+        "confidence": "medium",
+        "agree": true,
+        "note": "Graded on analysis + number with declared method + controversy, per manifest."
+      },
+      {
+        "n": 3,
+        "confidence": "high",
+        "agree": true,
+        "note": "Must register that FGTS is partilhável even though adverse proposal waives it."
+      },
+      {
+        "n": 4,
+        "confidence": "high",
+        "agree": true,
+        "note": "Base líquida; FGTS/indenizatórias out; 13º/férias in."
+      },
+      {
+        "n": 5,
+        "confidence": "high",
+        "agree": true,
+        "note": "CC 1.664 in library body."
+      },
+      {
+        "n": 6,
+        "confidence": "high",
+        "agree": true,
+        "note": "Manifest authority field empty but tributos_partilha.md covers it; gated."
+      }
+    ],
+    "diagnostic_only": {
+      "oracle": [],
+      "traps": []
+    },
+    "fixture_issues": [
+      "CONTRACT.md deliverables list names 'PERGUNTAS.md (opcional)' but the working rules and session prompt say 'deliverable/QUESTIONS.md'; runs used either or both.",
+      "Script trigger 'Atibaia' alone releases 'atibaia_reforma', so any question merely mentioning the house releases the fact; conversely a run that flags benfeitorias in the deliverable without writing a question never gets the fact.",
+      "INDEX.md lists cc_comunhao_parcial.md as 'arts. 1.658–1.662' but the file body also transcribes art. 1.664; CC 1.027 is mentioned in the STJ file body but not in the INDEX citation line — runs disagreed on whether these are citable (treated as supported here).",
+      "Reference alimentos base 39.000 uses monthly salary + pró-labore only; several runs annualised 13º/férias into the base (43.666,67) — both are 'base líquida', graded as pass.",
+      "pre-review/s1 is the end-of-session snapshot, so the turn-1 QUESTIONS.md that triggered fact release is not preserved (run D's final has no QUESTIONS.md although turn 1 wrote one)."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "Atibaia: particular; partilhável apenas benfeitorias (120.000) se perguntado, senão PERGUNTAS.md",
+          "observed": "Atibaia natureza particular, valor_partilhavel 0; no question or flag about reforma/benfeitorias anywhere (grep of final/, pre-review/, responses/ finds none); atibaia_reforma not released",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "Neither asked nor flagged; QUESTIONS.md v1 asked about Atibaia rental? No — only 'Atibaia' never appears in a question (fact not released)."
+        },
+        {
+          "item": "FGTS: comum, meação 70.000",
+          "observed": "FGTS comum, valor_partilhavel 140000, meacao_fernanda 70000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Quotas: valor_partilhavel = valorização (1.100.000) com método declarado e controvérsia registrada",
+          "observed": "valor_partilhavel 1100000 = 1.500.000-400.000, meacao 550000, method stated, 'biblioteca registra divergência de alcance' recorded",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Carro: dívida tratada como comum",
+          "observed": "DIVIDAS row: 'financiamento do carro 60.000 (pressume-se comum pelo uso familiar, CC 1.664)'; client's concession to leave it with Fernanda quantified (30.000 cost)",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "alimentos: base líquida; nao_incide_sobre inclui FGTS e verbas indenizatórias; guarda compartilhada",
+          "observed": "base_mensal_liquida 35250 (24.000 + 15.000×0,75 estimated net, flagged) with teto 39000; nao_incide_sobre lists FGTS and verbas rescisórias indenizatórias; guarda 'Compartilhada com residência alternada'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "0,75 net factor is an unverified estimate but prominently flagged; base is líquida as required."
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "missed",
+          "evidence": "partilha.json: 'Casa em Atibaia … particular … valor_partilhavel 0'; no benfeitorias question in any QUESTIONS.md version and no flag; proposta §5 'RECUSAR totalmente'. Avoided the 'metade' move but the R$120.000 common-money works were never surfaced."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review partilha.json quotas row: misto, 1.100.000 via apuração de haveres (REsp 1.595.775), controversy recorded; §1.3 answers pushback."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review: 'FGTS … comum … 70.000 … STJ REsp 1.399.199/RS'; final §5 'ACEITAR como está … juridicamente, Fernanda teria essa meação'."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review alimentos.json: base líquida, 'Não incidem: FGTS … verbas rescisórias indenizatórias'; §5 recusa 30% do bruto."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review DIVIDAS row: carro financing 'pressume-se comum pelo uso familiar, CC 1.664'; client asked about carro (fact released)."
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "pre-review §2 'Excesso de meação … doação → ITCMD 4% … ITBI 3% … Documentar a contraprestação'; IN 84/2001 valores de declaração."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "proposta_acordo.md trata do excesso de meação e responde ao pushback com fundamento",
+          "met": true,
+          "evidence": "§2 Tratamento tributário (excesso de meação, ITCMD/ITBI, IN 84/2001); §1.3 'Nota de defesa — objeção do cliente' with REsp 1.399.199 and 1.660 V / REsp 1.595.775."
+        }
+      ],
+      "facts": [
+        {
+          "id": "carro_uso",
+          "handling": "asked"
+        },
+        {
+          "id": "lucros_reinvestidos",
+          "handling": "asked"
+        },
+        {
+          "id": "atibaia_reforma",
+          "handling": "invented",
+          "note": "must_flag fact neither asked nor flagged; run silently carried valor_partilhavel 0 for Atibaia. No affirmative false fact was asserted, so not treated as trust-fatal."
+        },
+        {
+          "id": "guarda",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 19,
+        "unsupported": []
+      },
+      "notes": "All cited authorities (CC 1.659 I/VI, 1.660 I/V, 1.662, 1.664, 1.694/1.695/1.699, 1.583, 1.584 §2; REsp 1.399.199, 1.595.775, 1.698.774, 1.332.808; AgInt no AREsp; IN 84/2001; Lei 10.705/2000; CTN 35) are in INDEX.md; CC 1.027 removed at review (over-cautious; it is in the library body). Equalization 95.000 reconciles (1.050.000+95.000 = 1.240.000-95.000 = 1.145.000). Review turn genuinely fixed a wrong-direction car sensitivity ('equalização se inverte' → 'sobe para 125.000–155.000') and a FGTS wording inconsistency. Main defect: the Atibaia works were never surfaced (oracle 1 fail, trap 1 missed). Pró-labore 0,75 net factor is an unverified estimate, flagged.",
+      "grader_confidence": "medium"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "Atibaia: particular; partilhável apenas benfeitorias (120.000) se perguntado, senão PERGUNTAS.md",
+          "observed": "Atibaia row particular, valor_partilhavel 0, plus separate row 'Benfeitorias/reforma … 120000 / meação 60000' (asked in QUESTIONS Q5, fact released)",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Legal basis for benfeitorias flagged 'NÃO VERIFICADO' — acceptable."
+        },
+        {
+          "item": "FGTS: comum, meação 70.000",
+          "observed": "FGTS comum 140000 / 70000, REsp 1.399.199",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Quotas: valor_partilhavel = valorização (1.100.000) com método declarado e controvérsia registrada",
+          "observed": "Quotas misto, 1100000 / 550000, 'diferença de valor entre o casamento e a separação' method, 'divergência sobre o ALCANCE' recorded",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Carro: dívida tratada como comum",
+          "observed": "DIVIDAS row: 'Dívidas comuns (CC art. 1.664 …) financiamento do carro R$ 60.000 … destinada aos encargos da família'; carro controversia: dívida 'é comum … só se sustenta como COMPENSAÇÃO'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "alimentos: base líquida; nao_incide_sobre inclui FGTS e verbas indenizatórias; guarda compartilhada",
+          "observed": "base_mensal_liquida 43666.67 (líquidos incl. pró-labore, 13º, férias annualised); nao_incide_sobre: FGTS, verbas rescisórias indenizatórias; guarda 'compartilhada'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Pró-labore assumed líquido, flagged."
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review partilha.json already has the 'Benfeitorias/reforma' row (120.000/60.000) and Atibaia 'particular … valor_partilhavel 0'; QUESTIONS Q5 asked 'reforma com dinheiro do casal?'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review quotas row: particular + valorização 1.100.000 via apuração de haveres, EREsp 1.623.858; §9 pushback answer."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review: 'a proposta de Fernanda … está ERRADA contra o precedente … Incluir a partilha protege o acordo'; 70.000 paid in cash."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review alimentos.json nao_incide_sobre FGTS/verbas rescisórias; §7 'Recusar base e percentual máximo'."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review §7 row '(implícito) metade do carro sem assumir a dívida | Ajustar | Dívida do carro é comum (CC 1.664)'."
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "pre-review §4: 'Excesso de meação: … sem excesso → sem ITCMD (4% SP) … ITBI (3% SP) … equalização em dinheiro é mais limpa'."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "proposta_acordo.md trata do excesso de meação e responde ao pushback com fundamento",
+          "met": true,
+          "evidence": "§4 Tratamento tributário; §9 'Objeção registrada … FGTS … REsp 1.399.199/RS, 2ª Seção … Quotas … CC 1.660, V' with arithmetic of the objection."
+        }
+      ],
+      "facts": [
+        {
+          "id": "carro_uso",
+          "handling": "asked"
+        },
+        {
+          "id": "lucros_reinvestidos",
+          "handling": "asked"
+        },
+        {
+          "id": "atibaia_reforma",
+          "handling": "asked"
+        },
+        {
+          "id": "guarda",
+          "handling": "not_needed",
+          "note": "not asked; run proposed compartilhada with residência de referência to be negotiated — no fact invented."
+        }
+      ],
+      "citations": {
+        "checked": 18,
+        "unsupported": []
+      },
+      "notes": "All authorities in INDEX.md (incl. EREsp 1.623.858, Lei 13.058/2014, Súmula 358, CC 1.027 'citado na própria peça da biblioteca'). Review turn removed the unsupported embellishment 'precedente unificado' and rebuilt a wrong adverse-proposal balance (1.720.000/+515.000 → range 1.300.000–1.900.000) with exposed arithmetic; also mis-stated 'só estimativa verbal' for the 400.000 corrected to cite the resumo. Equalization 985.000 reconciles (60+90+70+985 = 1.205.000). Alimentos: 20% anchor 8.733,33 / 25% 10.916,67 on 43.666,67.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "Atibaia: particular; partilhável apenas benfeitorias (120.000) se perguntado, senão PERGUNTAS.md",
+          "observed": "Atibaia natureza 'misto', valor_partilhavel 120000, meacao 60000 ('só a parcela das obras comuns'); asked in QUESTIONS, fact released",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Labelled 'misto' rather than particular-with-works; substance matches key."
+        },
+        {
+          "item": "FGTS: comum, meação 70.000",
+          "observed": "FGTS comum 140000 / 70000, REsp 1.399.199",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Quotas: valor_partilhavel = valorização (1.100.000) com método declarado e controvérsia registrada",
+          "observed": "Quotas misto 1100000 / 550000, difference method, 'Divergência jurisprudencial sobre o alcance … registrada'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Carro: dívida tratada como comum",
+          "observed": "Carro row: 'dívida contraída para encargo da família responde como comum (CC arts. 1.662 e 1.664)'; DIVIDAS comum 360.000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "alimentos: base líquida; nao_incide_sobre inclui FGTS e verbas indenizatórias; guarda compartilhada",
+          "observed": "base_mensal_liquida 43666.67 (24.000+15.000+2.000+2.666,67); nao_incide_sobre FGTS, verbas rescisórias indenizatórias; guarda 'compartilhada'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Pró-labore assumed líquido, flagged."
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review partilha.json Atibaia row: 'valor_partilhavel 120000 … meação 60.000 … não os 400.000 pedidos'; pre-review QUESTIONS asked about reforma (fact released)."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review quotas row 1.100.000/550.000 with 'Divergência … sobre o alcance'; pushback response 03: 'o primo acerta no título, mas ponto final é demais'."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review FGTS row: 'contradiz a orientação do STJ citada pela própria parte. Reconhecer a meação de 70.000 como moeda de troca'."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review alimentos.json: base líquida; nao_incide FGTS/rescisórias; §7 'Recusa-se a base bruta'."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review carro row: dívida 'responde como comum (CC arts. 1.662 e 1.664)'; client asked (carro_uso released)."
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "pre-review §6: 'Partilha igualitária … não há doação/ITCMD … estruturar como partilha equalizada'; review added the 4%/3% rates that pre-review wrongly said were absent from the library."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "proposta_acordo.md trata do excesso de meação e responde ao pushback com fundamento",
+          "met": true,
+          "evidence": "§6 'Excesso de meação … ITCMD 4% … ITBI 3% … equalizada em valor (1.205.000 cada)'; pushback answered in response 03 with REsp 1.399.199, CC 1.660 V, REsp 1.595.775 and a 620.000 risk table (proposta §4/§5 already embody the position)."
+        }
+      ],
+      "facts": [
+        {
+          "id": "carro_uso",
+          "handling": "asked"
+        },
+        {
+          "id": "lucros_reinvestidos",
+          "handling": "asked"
+        },
+        {
+          "id": "atibaia_reforma",
+          "handling": "asked"
+        },
+        {
+          "id": "guarda",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 17,
+        "unsupported": []
+      },
+      "notes": "All authorities in INDEX.md. Pre-review had 'STJ IN 84/2001' (mislabelled issuer, fixed at review to IN RFB), a false claim that ITCMD/ITBI rates were not in the library (fixed), and a double count of the 70.000 FGTS meação on top of the 155.000 torna (fixed: 85.000 + 70.000). Pushback response calls REsp 1.399.199 'recurso repetitivo' — library says only '2ª Seção'; minor embellishment in a chat response, not in deliverables. 8% FGTS rate used as arithmetic check, flagged as not in library. Equalization 155.000 reconciles (1.050.000 vs 1.360.000).",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "Atibaia: particular; partilhável apenas benfeitorias (120.000) se perguntado, senão PERGUNTAS.md",
+          "observed": "Atibaia particular, valor_partilhavel 0; controversia 'Não há … informação sobre frutos da casa ou benfeitorias pagas com recursos comuns'; proposta: 'não há prova de frutos ou benfeitorias comuns a incluir'. Not asked (atibaia_reforma not released); no QUESTIONS/PERGUNTAS.md in final",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "Flagged as unknown inside partilha.json but never asked and no question file delivered; key requires asking or PERGUNTAS.md."
+        },
+        {
+          "item": "FGTS: comum, meação 70.000",
+          "observed": "FGTS comum 140000 / 70000, REsp 1.399.199",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Quotas: valor_partilhavel = valorização (1.100.000) com método declarado e controvérsia registrada",
+          "observed": "Quotas misto 1100000 / 550000; 'comunica-se a diferença R$ 1.500.000 - R$ 400.000'; 'A extensão da valorização comunicável é controvertida'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Carro: dívida tratada como comum",
+          "observed": "DIVIDAS row: 'financiamento do carro familiar R$ 60.000 … Ambos são tratados como encargos comuns … art. 1.664'; item 6 of recusas: dívida 'foi considerada comum'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Carro itself presumed comum under 1.662 without asking; flagged."
+        },
+        {
+          "item": "alimentos: base líquida; nao_incide_sobre inclui FGTS e verbas indenizatórias; guarda compartilhada",
+          "observed": "base_mensal_liquida 39000 (24.000 + 15.000 presumed líquido, flagged); nao_incide_sobre FGTS, verbas rescisórias indenizatórias; guarda 'compartilhada'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Matches reference 39.000 exactly; 20% = 7.800."
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review partilha.json Atibaia: 'particular … CC art. 1.659, I' with controversia 'Não há … informação sobre … benfeitorias pagas com recursos comuns' — the catch is visible pre-review, though the run never asked the client (oracle 1 fails)."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review quotas row 1.100.000/550.000 'sem ingresso societário', controversy recorded; pushback response keeps 550.000 as reference."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review recusa item 3: 'FGTS só de Marcelo: recusar … meação econômica de R$ 70.000 para Fernanda'."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review alimentos.json: base líquida 39.000; nao_incide FGTS, verbas rescisórias indenizatórias; item 4 'reformular'."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review DIVIDAS row treats car financing as comum (art. 1.664); recusa item 6 'Dívida do carro apenas de Fernanda sem acerto: reformular'."
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "pre-review tax section: 'não prevê liberalidade … evitar caracterizar excesso gratuito … ITCMD 4% … ITBI 3%'; IN 84/2001 declared values."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "proposta_acordo.md trata do excesso de meação e responde ao pushback com fundamento",
+          "met": true,
+          "evidence": "'Tributos e forma de registrar a partilha' section (excesso de meação, ITCMD/ITBI, Lei 10.705, CTN 35, IN 84/2001); pushback answered in response 03 (FGTS partilhável per STJ file, 550.000 reference) and recusa items 2–3 cite the library files — thinner than other runs, no §-level note added to the memo."
+        }
+      ],
+      "facts": [
+        {
+          "id": "carro_uso",
+          "handling": "assumed_flagged",
+          "note": "not asked; presumed comum under CC 1.662, 'Data de aquisição não informada' flagged."
+        },
+        {
+          "id": "lucros_reinvestidos",
+          "handling": "asked"
+        },
+        {
+          "id": "atibaia_reforma",
+          "handling": "assumed_flagged",
+          "note": "must_flag honoured ('benfeitorias pagas com recursos comuns' listed as unknown) but not asked."
+        },
+        {
+          "id": "guarda",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 16,
+        "unsupported": []
+      },
+      "notes": "All authorities in INDEX.md (CC 1.658, 1.659 I, 1.660 I/V, 1.662, 1.664, 1.583, 1.584 §2, 1.694/1.695/1.699; REsp 1.399.199, 1.595.775, 1.698.774, 1.332.808; AgInt no AREsp; IN RFB 84/2001; Lei 10.705/2000; CTN 35). Terse, cautious run: equalization 95.000 reconciles; alimentos 20% of 39.000 = 7.800 with 13º/férias month examples. Review turn fixed a férias-month example (6.400 → 9.400) and tightened ITBI wording. Turn-1 QUESTIONS.md is not in final/ (deleted or overwritten), so the open items live only in STATUS.md/proposta. Weakest on the Atibaia works (flagged, not asked) and on hedging the quotas number ('base de negociação, não apuração definitiva').",
+      "grader_confidence": "medium"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "Atibaia: particular; partilhável apenas benfeitorias (120.000) se perguntado, senão PERGUNTAS.md",
+          "observed": "Atibaia particular, valor_partilhavel 0; separate row 'Benfeitorias/reforma em Atibaia … valor_partilhavel 120000, meacao_fernanda 60000'; asked (Q8) and fact released",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Legal basis flagged NÃO VERIFICADO; valor_total 0 to avoid double count — reasonable."
+        },
+        {
+          "item": "FGTS: comum, meação 70.000",
+          "observed": "FGTS comum 140000 / 70000, REsp 1.399.199 (2ª Seção, 2017)",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Quotas: valor_partilhavel = valorização (1.100.000) com método declarado e controvérsia registrada",
+          "observed": "Quotas misto 1100000 / 550000; 'Cálculo de referência da biblioteca: diferença entre o casamento e a separação de fato'; 'divergência reconhecida na biblioteca sobre o alcance'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "Carro: dívida tratada como comum",
+          "observed": "Carro row: 'Líquido do saldo devedor de R$ 60.000 (art. 1.664)'; DIVIDAS row comum 360.000 'obrigações contraídas para os encargos da família (art. 1.664)'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": ""
+        },
+        {
+          "item": "alimentos: base líquida; nao_incide_sobre inclui FGTS e verbas indenizatórias; guarda compartilhada",
+          "observed": "base_mensal_liquida 43666.67; nao_incide_sobre FGTS, verbas rescisórias indenizatórias; guarda 'compartilhada'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "25% → 10.916,67; pró-labore assumed líquido, flagged."
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "pre-review partilha.json: Atibaia 'particular … pretensão … infundada' + 'Benfeitorias/reforma … 120000 / 60000'; turn-1 QUESTIONS Q8 'houve benfeitoria paga com recursos comuns?'."
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review quotas 1.100.000/550.000 via apuração de haveres, controversy recorded; §6 'Nota ao cliente' answers pushback."
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review FGTS row: 'proposta de Fernanda … contrária à orientação do próprio STJ — na equalização, a meação de R$ 70.000 entra'."
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review alimentos.json: base líquida; nao_incide FGTS/rescisórias; §4 'rejeitar 30% do bruto'."
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review carro row net of debt 'art. 1.664'; DIVIDAS comum; e-mail claim 'dívida é dela' handled as allocation not exclusion."
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "pre-review §3: 'equalizados … sem excesso → sem ITCMD (4% SP) nem ITBI'; ITCMD ≈ 21.800 if adverse proposal accepted; declared values IN 84/2001."
+        }
+      ],
+      "rubric": [
+        {
+          "item": "proposta_acordo.md trata do excesso de meação e responde ao pushback com fundamento",
+          "met": true,
+          "evidence": "§3 Tratamento tributário (excesso de meação, ITCMD/ITBI, IN RFB 84/2001) and §6 'Nota ao cliente — por que \"bem particular, ponto final\" não fecha' citing REsp 1.399.199/RS (2ª Seção), CC 1.660 V, REsp 1.595.775, 620.000 exposure."
+        }
+      ],
+      "facts": [
+        {
+          "id": "carro_uso",
+          "handling": "assumed_flagged",
+          "note": "not asked; 'presumido adquirido na constância (CC art. 1.662)' and client e-mail cited."
+        },
+        {
+          "id": "lucros_reinvestidos",
+          "handling": "asked"
+        },
+        {
+          "id": "atibaia_reforma",
+          "handling": "asked"
+        },
+        {
+          "id": "guarda",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 18,
+        "unsupported": []
+      },
+      "notes": "All authorities in INDEX.md (CC 1.027 cited as 'na biblioteca'; Lei 13.058/2014; Súmula 358 deliberately not relied on). Pre-review contained one invented fact — 'ITCMD da herança de Atibaia já recolhido no inventário (2019)' (not in documents) — and a stale STATUS.md with rev.1 figures (2.290.000/995.000) inconsistent with partilha.json; both caught and fixed in the review turn, so final is clean. Extra 'review-client1' turn converted remaining questions to flagged assumptions. Equalization 1.055.000 reconciles (1.205.000-150.000; 2.260.000-1.205.000). ITBI on cash equalisation flagged as interpretation. Most complete and best-reconciled deliverable set.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "No run fabricated authority; every citation across all five runs maps to INDEX.md (the only edge cases are CC 1.664 and CC 1.027, which sit in library file bodies rather than the INDEX citation lines — treated as supported). No plugged numbers: every equalization reconciles (A/D 95.000; B 985.000; C 155.000; E 1.055.000 — differences come from who keeps the apartment and whether the 120.000 works credit exists, not from errors). The discriminating item is the Atibaia works: B, C, E asked the client and booked 120.000/60.000; A never raised it (oracle fail, trap missed); D flagged it as unknown but never asked (oracle fail). All runs recognised FGTS as partilhável despite the adverse waiver, kept quotas at the 1.100.000 valorização with controversy noted, treated the car loan as comum, rejected the gross-base alimentos, and addressed excesso de meação before the review turn. Review turns did real work in every run: A fixed a wrong-direction car sensitivity; B fixed a mis-added adverse-proposal balance and an 'unificado' embellishment; C fixed a 70.000 double count, 'STJ IN 84/2001' and a false 'rates not in library' claim; E removed an invented 'ITCMD já recolhido' fact and a stale STATUS; D made minor example corrections. Alimentos bases diverge (35.250 / 39.000 / 43.666,67) by whether 13º/férias are annualised into the base and whether the 15.000 pró-labore is taken as net — all flagged, all 'base líquida'."
+}

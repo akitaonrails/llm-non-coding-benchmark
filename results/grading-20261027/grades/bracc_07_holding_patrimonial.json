@@ -1,0 +1,191 @@
+{
+  "case": "bracc_07_holding_patrimonial",
+  "preregistration": {
+    "summary": "Recomputed before opening runs/. Rents 84.900/mes x 12 = 1.018.800. Market 16.430.000 (9 locados 14.430.000), declared 4.720.000 (9 locados 4.220.000). ITBI: holding de locacao = atividade preponderante (CTN 37), imunidade afastada; 3% x 16.430.000 = 492.900 (all 11) or 432.900 (9 locados). PJ presumido: base 326.016; IRPJ 48.902,40 + adicional 8.601,60 + CSLL 29.341,44 + PIS/COFINS 37.186,20 = 124.031,64 (12,17%); IRRF 10% on full distribution (1.018.800 - 124.031,64 = 894.768,36) = 89.476,84; total 213.508,48 (20,96%). Excess-only reading of 'acima de R$ 50 mil/mes' would give 29.476,84 / 153.508,48; netting the released 8% admin fee from distributable profit gives 813.264,36 -> 81.326,44 (full) or 21.326,44 (excess) -> 205.358,08 or 145.358,08. GCAP evitado (16.430.000 - 4.720.000) x 15% = 1.756.500. ITCMD 4% x 4.720.000 = 188.800 (palestra) vs 4% x 16.430.000 = 657.200 (market); 2/3-1/3 with usufruto. Legitima 50%; Marcos cannot be excluded (CC 1.845/1.846, 549, 544, 1.848); his individual floor = 1/6 of acervo (18.530.000/6 = 3.088.333). Agree with key on all qualitative items; two quantitative oracle items carry fixture tension (see fixture_issues).",
+    "oracle": [
+      {"item": "itbi.devido", "confidence": "high", "agree": true, "note": "All receipts are rent -> CTN 37 exception; devido = true. Gated."},
+      {"item": "legitima.marcos_pode_ser_excluido", "confidence": "high", "agree": true, "note": "false. Gated."},
+      {"item": "integralizacao.valor_recomendado", "confidence": "medium", "agree": true, "note": "Key 4.720.000 = declared value of all 11 properties. Trap 6 of the same manifest says keep Campos do Jordao and Cotia out, which yields 4.220.000. Pre-registered rule: strict pass for 4.720.000, or for 4.220.000 when the run explicitly excludes the two own-use properties (both equal 'valor da declaracao', which is the substance of trap 4). Gated under this rule."},
+      {"item": "pj_presumido.total inclui IRRF 2026 ~213.508,48 (+-3%)", "confidence": "medium", "agree": false, "note": "Arithmetic reproduces the key exactly, but the key (a) ignores the 8% administradora fee that the client script itself releases (every run that asks nets it from distributable profit: 813.264,36) and (b) reads 'acima de R$ 50 mil/mes' as taxing the whole distribution, while the library wording admits an excess-only reading. Plausible pack-consistent answers span 145.358 to 213.508 and the +-3% band (207.103-219.914) excludes all of them except the no-fee/full-base model. The expected value is not uniquely determinable from the pack -> diagnostic_only. Observed values and strict/lenient results against 213.508,48 are still reported per run."},
+      {"item": "Parecer classifica as 5 afirmacoes", "confidence": "high", "agree": true, "note": "Each of the 5 palestra claims must receive verdadeira/falsa/depende with fundamento. Gated."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Imunidade afastada por atividade preponderante de locacao; Tema 796 on excess over capital. C severity."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Legitima 50%, doacao inoficiosa nula no excesso, colacao, clausulas so com justa causa; pushback is the inoficiosa scenario. C severity."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "12,17% before distribution, higher with IRRF 10% 2026; PF has deductions; LC 214 in regime definitivo. H severity."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "Integralizar pelo valor da declaracao (Lei 9.249 art. 23) avoids GCAP ~1.756.500 (or 1.531.500 for the 9 locados). H severity."},
+      {"n": 5, "confidence": "medium", "agree": true, "note": "Base = valor de mercado/patrimonial atualizado per library; 2/3-1/3 usufruto flagged 'verificar' in the library itself; progressividade pending. M severity; grade on market-value base being caught."},
+      {"n": 6, "confidence": "medium", "agree": true, "note": "Keep Campos do Jordao and Cotia out of the holding. L severity. Conflicts numerically with oracle valor_recomendado (see fixture_issues)."}
+    ],
+    "diagnostic_only": {"oracle": ["pj_presumido.total inclui IRRF 2026 ~213.508,48"], "traps": []},
+    "fixture_issues": [
+      "Oracle integralizacao.valor_recomendado = 4.720.000 (all 11 properties) contradicts trap 6 (exclude Campos/Cotia -> 4.220.000). Grader accepted both when the exclusion is explicit.",
+      "Oracle pj_presumido.total = 213.508,48 ignores the 8% administradora fee released by the client script and applies IRRF 10% to the whole distribution although the library text ('acima de R$ 50 mil/mes') is ambiguous; +-3% cannot absorb either modeling choice. All five runs fail it for these reasons alone. Treated as diagnostic.",
+      "Reference itbi.estimativa 492.900 taxes all 11 properties at market value, again inconsistent with trap 6 (432.900 for the 9 locados). Not an oracle item.",
+      "Library locacao_pf_vs_pj.md gives '14,53% acima do limite do adicional' (marginal rate) without explaining it; three runs recorded it as an unreconciled divergence from their 12,17% effective rate.",
+      "Client fact 'deducoes' says 'IPTU e condominio dos vagos eu pago' but the CSV has no vacant property (only 2 own-use); runs interpreted 'vagos' differently (C flagged it as a new unknown, E mapped it to Campos/Cotia)."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "itbi.devido", "observed": "true", "strict": "pass", "lenient": "pass", "note": "numeros.json devido: true; estimativa 339.900 covers only the 8 SP-capital properties, Guarulhos left open (overly cautious but flagged)."},
+        {"item": "legitima.marcos_pode_ser_excluido", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "integralizacao.valor_recomendado", "observed": "4220000", "strict": "pass", "lenient": "pass", "note": "Explicitly the 9 locados at declared value; Campos/Cotia kept out (pre-registered acceptance)."},
+        {"item": "pj_presumido.total inclui IRRF 2026 ~213.508,48", "observed": "205358.08", "strict": "fail", "lenient": "fail", "note": "Diagnostic. 124.031,64 + IRRF 10% on full distribution net of 8% fee (813.264,36 -> 81.326,44). Closest run to the key; 3,8% below the band. Base ambiguity explicitly flagged in parecer and STATUS."},
+        {"item": "Parecer classifica as 5 afirmacoes", "observed": "1 falsa; 2 falsa; 3 parcialmente verdadeira; 4 falsa; 5 depende", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/parecer.md §1: 'falsa para o plano de locacao descrito ... 100% da receita operacional ... limite do Tema 796'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/parecer.md §4: 'Marcos e filho e herdeiro necessario. A legitima e 50% ... doacoes que invadam a parcela indisponivel sao redutiveis ... sujeito a colacao'; pushback response: 'nao garantir que Marcos receba zero'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review/s1/parecer.md §2: 'Total na PJ: R$ 124.031,64, ou 12,17% ... ja acima dos 11,33%'; IRRF 81.326,44 -> 20,16%; admin 8% deducted on PF side; LC 214 redutor 70% noted."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review/s1/parecer.md §3: 'integralizacao pela quantia declarada de R$ 4.220.000 evita ganho de capital ... R$ 1.531.500'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review/s1/parecer.md §3: '4% x R$ 14.430.000 = R$ 577.200 ... A conta pelo valor declarado ... nao deve ser tratada como imposto devido'; 2/3-1/3 noted as 'verificar'; progressividade mentioned."},
+        {"n": 6, "outcome": "unprompted", "evidence": "02-s1-work-client1.response.md: 'leaving Campos and Cotia outside the transfer estimate'; parecer §Estrutura item 2: 'manter Campos e Cotia fora'."}
+      ],
+      "rubric": [
+        {"item": "Pushback: explica doacao inoficiosa/colacao em linguagem simples", "met": true, "evidence": "03-s1-pushback0.response.md: 'A doacao que invadir a legitima pode ser reduzida; doar a outros filhos nao elimina esse direito ... parcela minima indicativa de Marcos ... R$ 3.088.333,33'. Plain language; the words inoficiosa/colacao appear only in the parecer, not in the reply."}
+      ],
+      "facts": [
+        {"id": "marcos", "handling": "not_needed"},
+        {"id": "uso_proprio", "handling": "asked"},
+        {"id": "deducoes", "handling": "asked"}
+      ],
+      "citations": {"checked": 5, "unsupported": []},
+      "notes": "Cautious, well-flagged run. Assumptions (SP-capital location of 8 properties, titularidade after 2019) are stated. Deleted QUESTIONS.md after answers (optional file). ITBI left partially open because the library only states the SP-capital rate. PF IR 257.756,40 labelled a ceiling. Review turn only tightened caveats and added a payback comparison.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "itbi.devido", "observed": "true", "strict": "pass", "lenient": "pass", "note": "estimativa 492.900 (adverse, all 11 at market) with 432.900 and 141.600 alternatives."},
+        {"item": "legitima.marcos_pode_ser_excluido", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "integralizacao.valor_recomendado", "observed": "4220000", "strict": "pass", "lenient": "pass", "note": "Explicitly 9 locados only; Campos/Cotia excluded (pre-registered acceptance)."},
+        {"item": "pj_presumido.total inclui IRRF 2026 ~213.508,48", "observed": "145358.08", "strict": "fail", "lenient": "fail", "note": "Diagnostic. 124.031,64 + 21.326,44 (IRRF on excess over 50k/mes, after 8% fee). Reading flagged '[NAO VERIFICADO NA BIBLIOTECA]'. Turn-1 value before the fee was 153.508,48."},
+        {"item": "Parecer classifica as 5 afirmacoes", "observed": "1 FALSA; 2 verdadeira no conceito, falsa no numero; 3 falsa na base; 4 FALSA; 5 DEPENDE", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Integralizar sem ITBI - FALSA ... ITBI ~ R$ 492.900'; parecer A1 with Tema 796 excess 351.300."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Legitima = 50% ... doacao so aos outros dois e inoficiosa (CC 549) e sujeita a colacao (CC 544)'; round-1 error (Marcos owed 50%) self-corrected to 1/6 in turn 2."},
+        {"n": 3, "outcome": "unprompted", "evidence": "parecer A2: 'carga efetiva 12,17% (nao 11,33%)'; IRRF 10% 2026; PF with 8% deduction; LC 214 IBS/CBS noted."},
+        {"n": 4, "outcome": "unprompted", "evidence": "parecer Passo 1: 'integralizando pelo VALOR DA DECLARACAO ... GCAP de R$ 1.531.500 a R$ 2.297.250 - a evitar'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "parecer A3: 'ITCMD ~ 4% x 16.430.000 = R$ 657.200 ... No contabil seria so R$ 188.800 - a economia prometida nao existe'; 2/3+1/3 and EC 132 progressividade noted."},
+        {"n": 6, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'so os 9 locados'; parecer Passo 1: 'os 2 de uso proprio/ferias (Campos, Cotia) so geram ITBI de entrada e nenhuma receita'."}
+      ],
+      "rubric": [
+        {"item": "Pushback: explica doacao inoficiosa/colacao em linguagem simples", "met": true, "evidence": "03-s1-pushback0.response.md: 'Doacao de mae para filho nao e presente definitivo: e adiantamento de heranca ... trazer as doacoes de volta para a contagem (chama-se colacao) ... reduz as doacoes feitas a Ricardo e Paula ate recompor essa fatia (CC art. 549 - doacao inoficiosa)'."}
+      ],
+      "facts": [
+        {"id": "marcos", "handling": "asked"},
+        {"id": "uso_proprio", "handling": "not_needed"},
+        {"id": "deducoes", "handling": "asked"}
+      ],
+      "citations": {"checked": 18, "unsupported": []},
+      "notes": "Thorough run. Every out-of-library proposition (parcela a deduzir 908,73, comunhao parcial/meacao, CC 1.911, fraude contra credores, rateio da legitima) is labelled [NAO VERIFICADO NA BIBLIOTECA]. Proposes paying Marcos his 1/6 now in quotas (21,4%) - a defensible structure. Recorded the library's 14,53% as unreconcilable rather than forcing it. Review turn added flags only, no number changes.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [
+        {"kind": "fabricated_authority", "evidence": "parecer.md §4: 'premissa: ... 3 filhos - Ricardo, Paula e Marcos, CC 1.829 cabecas' and 'indignidade (CC 1.814)' presented as 'O arquivo e explicito'; QUESTIONS.md Q2: 'filhos excluem netos, CC 1.829 na library'. Neither CC 1.814 nor CC 1.829 is in library/INDEX.md or in cc_legitima_doacao.md; the run asserts library support that does not exist. The articles are real and correctly applied, so the harm is false attribution rather than invented law.", "confidence": "medium"},
+        {"kind": "invented_fact", "evidence": "parecer.md §1: 'Se o Galpao (Guarulhos) sofrer aliquota de 11% como alega a palestra'; §6.2: 'a \"reducao\" citada na palestra nao esta na biblioteca'; QUESTIONS.md Q5: '\"Galpao tem isencao/reducao em Guarulhos\" - de onde vem?'. palestra_resumo.md contains no Guarulhos rate, no 11% ITBI and no galpao isencao. Residue of hallucinated quotes the model itself admitted in 01-s1-work.response.md ('several \"quotes\" I attributed to it aren't in the file'); used only as a sensitivity (680.900), rate labelled 'nao verificada' but the attribution to the palestra is not.", "confidence": "medium"}
+      ],
+      "oracle": [
+        {"item": "itbi.devido", "observed": "true", "strict": "pass", "lenient": "pass", "note": "estimativa 432.900 (9 locados at market). Misreads Tema 796 as a 'teto' capping the base at the capital (126.600), which inverts the thesis, but still budgets 432.900."},
+        {"item": "legitima.marcos_pode_ser_excluido", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "integralizacao.valor_recomendado", "observed": "4220000", "strict": "pass", "lenient": "pass", "note": "9 locados only, exclusion explicit (pre-registered acceptance)."},
+        {"item": "pj_presumido.total inclui IRRF 2026 ~213.508,48", "observed": "145358.08", "strict": "fail", "lenient": "fail", "note": "Diagnostic. Same model as B/D (excess-only IRRF after 8% fee); also notes 12,17% with >=2 recipient PFs."},
+        {"item": "Parecer classifica as 5 afirmacoes", "observed": "1 FALSA; 2 verdadeiro como modelo, falsa neste caso; 3 parcialmente verdadeiro; 4 FALSA; 5 DEPENDE", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "parecer §1 (turn 1): 'nao ha imunidade; o ITBI e devido ... 3% x 14.430.000 = R$ 432.900'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "parecer §4 (turn 1): 'legitima e 50% ... doacao que ultrapassa o disponivel e nula no excedente (art. 549)'; correct imputation analysis (donations to R&P impute first to their own legitimas, Marcos' 1/6 covered by assets outside the PJ)."},
+        {"n": 3, "outcome": "unprompted", "evidence": "parecer §2: '124.031,64 = 12,17% da receita' ... 'total 145.358,08 = 14,27%'; PF deductions; LC 214 redutor 70% noted."},
+        {"n": 4, "outcome": "unprompted", "evidence": "parecer §1: 'integralizar pelo valor de declaracao (R$ 4.220.000) zera o GCAP'; gcap_evitado 2.297.250 at the 22,5% top rate."},
+        {"n": 5, "outcome": "unprompted", "evidence": "parecer §3: 'a base e o valor patrimonial atualizado / valor de mercado ... 4% = 577.200'; 2/3-1/3 (384.800 + 192.400); EC 132 noted."},
+        {"n": 6, "outcome": "unprompted", "evidence": "parecer §6.1 (turn 1): 'integralizar SOMENTE os 9 locados ... os 2 proprios ... ficam na PF'."}
+      ],
+      "rubric": [
+        {"item": "Pushback: explica doacao inoficiosa/colacao em linguagem simples", "met": true, "evidence": "03-s1-pushback0.response.md: 'a holding decide quem e socio, nao quem herda ... Doacao que invade a legitima e nula no que excede o disponivel (CC art. 549)'; numbers table with Marcos' 3.088.333,33 covered outside the holding."}
+      ],
+      "facts": [
+        {"id": "marcos", "handling": "asked"},
+        {"id": "uso_proprio", "handling": "asked"},
+        {"id": "deducoes", "handling": "asked"}
+      ],
+      "citations": {"checked": 17, "unsupported": ["CC 1.829 (asserted as 'na library')", "CC 1.814 (asserted as explicit in the library file)"]},
+      "notes": "Substantively the strongest succession analysis (imputation of donations to the donatees' own legitimas is the correct CC reading, where D and E conservatively cap at the disponivel). But turn 1 shows the model hallucinated document contents (names 'Lucas/Joao', a 25% donation, palestra quotes) and had to restart; residue survived into the final (Guarulhos 11% / galpao isencao attributed to the palestra). Review turn response is empty and the final/ is byte-identical to pre-review/ - no self-review was performed. Tema 796 misread as a cap. Library's 14,53% recorded as 'divergencia interna' left open.",
+      "grader_confidence": "medium"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "itbi.devido", "observed": "true", "strict": "pass", "lenient": "pass", "note": "estimativa 432.900 (9 locados), scenarios 306.300 (Tema 796) and 126.600; Guarulhos 2-5% band."},
+        {"item": "legitima.marcos_pode_ser_excluido", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "integralizacao.valor_recomendado", "observed": "4220000", "strict": "pass", "lenient": "pass", "note": "9 locados; Campos/Cotia explicitly kept in the PF (pre-registered acceptance). Turn-1 value was 4.720.000 before the client answered."},
+        {"item": "pj_presumido.total inclui IRRF 2026 ~213.508,48", "observed": "145358.08", "strict": "fail", "lenient": "fail", "note": "Diagnostic. Excess-only IRRF after 8% fee. Turn 3 removed the 'verify' caveat on the base reading, asserting the library wording settles it (it does not); minor overreach."},
+        {"item": "Parecer classifica as 5 afirmacoes", "observed": "1 FALSA; 2 DEPENDE/enganosa; 3 base errada; 4 FALSA; 5 DEPENDE", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Integralizacao sem ITBI - FALSA ... Provisao: 3% x R$ 16,43 mi = R$ 492.900'; parecer §1 with Tema 796 scenario."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Legitima = 50% ... Marcos tem minimo de R$ 3.088.333 (1/6); doacao so a dois acima da parte disponivel e inoficiosa (CC 549) e sujeita a colacao'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: '12,17% (adicional ja entra) e, com IRRF 10% ... 16,3% all-in'; final 14,3% vs 24,2% PF with 8% deduction; LC 214 noted."},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Integralizar pelo valor de declaracao (Lei 9.249 art. 23) evita GCAP de R$ 1.756.500'; final 1.531.500 for the 9 locados."},
+        {"n": 5, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'SEFAZ/SP exige valor patrimonial atualizado -> 4% x mercado = R$ 657.200 (2/3 + 1/3 ...)'; EC 132 progressividade in parecer §4."},
+        {"n": 6, "outcome": "unprompted", "evidence": "Turn 1 asked about the own-use properties (fact released); 02-s1-work-client1.response.md: 'only the 9 rented properties enter the holding'; parecer §1: 'Campos do Jordao e Cotia ficam na pessoa fisica'."}
+      ],
+      "rubric": [
+        {"item": "Pushback: explica doacao inoficiosa/colacao em linguagem simples", "met": true, "evidence": "parecer §10 (added in pushback turn): 'Doacao inoficiosa (CC 549): a doacao e nula na parte que excede a disponivel ... Colacao: doacao de mae a filho e adiantamento da legitima ... a holding permite escolher quais bens ... nunca se ele recebe'. Overstates the reducible excess as 9.265.000 (R&P's own legitimas should be imputed first) but the explanation is clear."}
+      ],
+      "facts": [
+        {"id": "marcos", "handling": "asked"},
+        {"id": "uso_proprio", "handling": "asked"},
+        {"id": "deducoes", "handling": "asked"}
+      ],
+      "citations": {"checked": 15, "unsupported": []},
+      "notes": "Clean run with a genuine self-review: found and fixed a double-count (quotas remanescentes 7,17 mi -> 5.165.000) and a wrong break-even band, and added two [nao verificado] flags. Donation cap set at the disponivel (9.265.000, ITCMD 370.600) is legally over-conservative but safe. Parcela a deduzir 896,00 flagged as unverified. Converted unanswered questions into quantified sensitivities.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "itbi.devido", "observed": "true", "strict": "pass", "lenient": "pass", "note": "estimativa 492.900 (all 11 at market), Tema 796 decomposition 141.600 + 351.300."},
+        {"item": "legitima.marcos_pode_ser_excluido", "observed": "false", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "integralizacao.valor_recomendado", "observed": "4720000", "strict": "pass", "lenient": "pass", "note": "Matches the key literally - because the run integralizes all 11 properties (trap 6 missed)."},
+        {"item": "pj_presumido.total inclui IRRF 2026 ~213.508,48", "observed": "145358", "strict": "fail", "lenient": "fail", "note": "Diagnostic. Excess-only IRRF after 8% fee; the full-base alternative (205.358,08, 20,16%) is quantified in parecer §2 and QUESTIONS. Values rounded to integers in numeros.json."},
+        {"item": "Parecer classifica as 5 afirmacoes", "observed": "1 FALSA; 2 DEPENDENTE; 3 FALSA no essencial; 4 FALSA; 5 DEPENDENTE", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Falsa no plano descrito - ... CTN art. 37 locacao-preponderante exception applies; Tema 796 ... ITBI ~ R$ 492.900'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "01-s1-work.response.md: '50% indisponivel (legitima); doacao a so 2 filhos e inoficiosa (nulidade do excesso, CC 549) + colacao'; parecer §4 'piso invariante' 3.088.333."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'real PJ load is 12,17% pre-IRRF, 15,07% in 2026'; final 14,27% vs 25,3% PF net of the 8% commission; LC 214 listed in limits."},
+        {"n": 4, "outcome": "unprompted", "evidence": "parecer Estrutura 1: 'ao valor declarado no IR (R$ 4.720.000) ... GCAP evitado: 11.710.000 x 15% = R$ 1.756.500'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'SEFAZ/SP ... demands market value, not book value - R$ 657.200 (nao R$ 188.800)'; 2/3-1/3 noted; EC 132 progressividade not mentioned."},
+        {"n": 6, "outcome": "missed", "evidence": "parecer §3 and Estrutura 1: 'holding com os 11 imoveis' / 'capital integralizado pelos 11 imoveis'; numeros.json valor_recomendado 4.720.000. Never asked about Campos/Cotia (fact not released) and never weighed keeping the two own-use properties out, although the CSV marks them 'uso proprio/ferias' and the run itself notes '9 de 11 imoveis locados'."}
+      ],
+      "rubric": [
+        {"item": "Pushback: explica doacao inoficiosa/colacao em linguagem simples", "met": true, "evidence": "03-s1-pushback0.response.md: 'A doacao em vida a um filho nao e evasao da heranca - e adiantamento da heranca (art. 544, com colacao no art. 2.002) ... Doar o dobro deixa 9.265.000 nulos, e Marcos pode pedir a reducao'; comparison table doar tudo vs plano."}
+      ],
+      "facts": [
+        {"id": "marcos", "handling": "asked"},
+        {"id": "uso_proprio", "handling": "not_needed"},
+        {"id": "deducoes", "handling": "asked"}
+      ],
+      "citations": {"checked": 14, "unsupported": []},
+      "notes": "Careful citation hygiene: review turn removed 'valor venal municipal' as ITBI base (not in library), dropped art. 1.789 (text not reproduced), relabelled the 1.848-in-donations extension as inference. Useful ITCMD invariance observation (328.600 + 412.600 = 741.200 = 4% x 18.530.000). Mapped the client's 'vagos' to Campos/Cotia without flagging it as an interpretation. Only run to keep all 11 properties in the holding. Facts 'uso_proprio' marked not_needed because the run never asked; the own-use status was visible in the CSV and ignored.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs caught traps 1-5 unprompted and returned the correct qualitative oracle answers (itbi.devido true, marcos_pode_ser_excluido false, five verdicts). Four runs (A-D) excluded Campos/Cotia and reported 4.220.000; only E kept all 11 and thereby matched the literal key 4.720.000 - the oracle/trap-6 conflict in the manifest makes that item discriminate in the wrong direction unless both values are accepted, as pre-registered here. The pj_presumido.total key (213.508,48) was hit by no run: every run netted the released 8% fee from distributable profit, and B/C/D/E read the R$ 50k threshold as excess-only (145.358,08); A applied 10% to the whole distribution (205.358,08). All four alternative models were explicitly flagged as library-ambiguous; the item was treated as diagnostic. Only C raised trust concerns: false attribution of CC 1.814/1.829 to the library and a Guarulhos 11%/galpao-isencao claim attributed to the palestra that the document never makes, plus an empty review turn. B, D and E performed substantive self-reviews (B: flags; D: two arithmetic corrections; E: citation cleanup). Legal depth varied on the succession design: C applied the imputation rule correctly (donations impute first to the donatees' legitimas); D and E conservatively capped donations at the disponivel; B proposed paying Marcos his 1/6 in quotas now; A gave an indicative minimum without a structure.",
+  "grader_model_note": "Grader did not attempt to identify which model produced any run."
+}

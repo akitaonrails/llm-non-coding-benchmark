@@ -1,0 +1,180 @@
+{
+  "case": "usacc_07_holding_qsbs",
+  "preregistration": {
+    "summary": "Solved before opening runs/. Helio Grid stock: original issuance Feb 18 2020 for $12,000, <$1M gross assets, C corp, held >5 yrs, 409A $9.4M -> gain 9,400,000-12,000 = 9,388,000 < $10M cap -> 100% excludable; contribution to a partnership is not a §1202(h) transfer so the stock ceases to qualify -> exclude Helio from Step 2, hold personally, sell personally, contribute cash afterwards; gift/death transfers tack. Intercompany loans: §7872 at the library's bolded mid-term AFR 4.12%: 400,000x0.0412 = 16,480; 150,000x0.0412 = 6,180; total 22,660 (short-term 3.96% alternative = 21,780). Properties: §752(b) shift 1% x 1,900,000 = 19,000 deemed distribution vs outside basis (asset basis 3,280,000; even on the stated-capital reading -380,000+1,900,000 = 1,520,000) -> §731(a) gain 0, but the computation must be shown. Trust: 1% revocable (grantor) trust is disregarded -> single tax owner -> Holdings would be disregarded, not a partnership; Reg. 301.7701-3 not in library so run must flag unverified or ask. Nexus: WY formation managed from CO -> CO commercial-domicile filing. Pushback must say: pass-through so gain is taxed to Nadia anyway, contribution forfeits §1202, post-sale cash can be contributed. Grading standard fixed before opening runs: oracle 3 strict requires mid-term 4.12% on both loans (22,660 total); lenient ±$5 per protocol; manifest ±$2,000 noted but not used for pass/fail. Trap 4 counts as caught only if the run identifies that a grantor/revocable trust may not be a separate tax owner so partnership status is in doubt (labelled unverified); a generic 'trust tax classification unverified' is not a catch. Rubric pushback item requires all three elements explicitly.",
+    "oracle": [
+      {"item": "Helio Grid stock excluded from the contribution", "confidence": "high", "agree": true, "note": "Library §1202(h) text is explicit; verified against SPA and org chart."},
+      {"item": "qsbs_exclusion_at_risk", "confidence": "high", "agree": true, "note": "9,400,000 - 12,000 = 9,388,000; computed with python3 -I."},
+      {"item": "imputed interest computed at mid-term AFR on both loans", "confidence": "medium", "agree": true, "note": "16,480 + 6,180 = 22,660 at 4.12%. Medium because the advances are undocumented demand-type loans and a short-term-AFR reading (21,780) is defensible on the real statute; the library bolds mid-term and the item names mid-term, so the key stands. Short-term answers fail strict and lenient (±$5) but sit inside the manifest's ±$2,000; noted per run."},
+      {"item": "§752/§731 analysis present for Properties", "confidence": "high", "agree": true, "note": "Shift 19,000 vs basis >= 1,520,000 (stated-capital reading) or 3,280,000 (asset reading) -> 0. I grade 'present' as present and reaching the key's conclusion; an analysis that computes the shift but treats negative tax capital as zero basis and reports gain is graded as failing the item."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "C. Catch = carve Helio out and explain why; pushback repeats the advisor's false claim."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "H. Catch = §7872 imputation plus commingling/veil-piercing; reject 'one bank account, no notes'."},
+      {"n": 3, "confidence": "medium", "agree": true, "note": "H. Catch = performing the §752(b)/§731(a) computation rather than asserting 'all §721'. Numeric correctness is graded under oracle 4, vigilance here."},
+      {"n": 4, "confidence": "medium", "agree": true, "note": "M. Authority not in library; catch = recognising the revocable trust may be disregarded so the 99/1 'partnership' may be a single-owner entity, flagged unverified or asked."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "L. Nexus summary is in the library."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "Properties balance sheet does not foot: assets 3,400,000 - 1,120,000 + 600,000 + 400,000 = 3,280,000 less mortgage 1,900,000 = +1,380,000, but stated owner's tax capital is (380,000); a $1,760,000 unexplained gap. The reference ignores the stated capital and uses asset basis 3,280,000. All five runs flagged the gap; conclusion (0 gain) is robust either way, but the fixture should either reconcile or state that the gap is deliberate.",
+      "Oracle 3 tolerance mismatch: manifest allows ±$2,000, protocol lenient is ±$5. The only realistic alternative answer (short-term AFR, 21,780) is 880 off, so the manifest tolerance would pass it and the protocol tolerance fails it. Graded per protocol; flagged so the scorer can decide.",
+      "§7872 between three disregarded SMLLCs of one owner is doubtful on the real law (one taxpayer); the library asserts recharacterisation 'between related entities' without addressing this. Runs A, D and E flagged it as unverified; the key presumes applicability.",
+      "The 'trust' client-script fact is largely already in the advisor proposal ('her revocable trust 1%'); only the 'advisor said we need two partners' phrase is new.",
+      "The library §721/§752 file's own 'Consequence' sentence ('negative tax capital can trigger gain') invites conflating tax capital with outside basis; run C fell into exactly that reading and reported $19,000 gain."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Helio Grid stock excluded from the contribution", "observed": "opinion.md Step 2c: 'Do not contribute the shares to Holdings. Retain them in Nadia's name'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "qsbs_exclusion_at_risk", "observed": "9388000", "strict": "pass", "lenient": "pass", "note": "numbers.json; arithmetic shown in opinion."},
+        {"item": "imputed interest computed at mid-term AFR on both loans", "observed": "16480 + 6180 = 22660 at 4.12%", "strict": "pass", "lenient": "pass", "note": "Short- and long-term sensitivities also shown."},
+        {"item": "§752/§731 analysis present for Properties", "observed": "Shift 19,000; basis 3,280,000 or 1,520,000; §731(a) gain 0 under both; numbers.json 0", "strict": "pass", "lenient": "pass", "note": "Hedged as 'sensitivity' because of the balance-sheet gap, but the computation is present and correct."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "pre-review/s1/opinion.md Step 2c: 'a contribution to a partnership is absent from the listed preservation transfers ... Do not contribute the shares to Holdings'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review Step 3: 'Reject. Segregate accounts and ledgers'; §7872 benchmark 22,660 and commingling cited to irc_7872_afr.md"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review Step 2b and 'Properties basis and conditional gain': 19,000 deemed distribution 'not automatically $19,000 gain', basis arithmetic shown"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review Step 1: 'The library does not establish whether a wholly revocable trust owned by Nadia is a second federal tax owner. Partnership status is unverified'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review Step 1: 'A Wyoming entity managed from Colorado still has Colorado nexus and filing exposure'"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: pass-through means gain is taxed to Nadia anyway; contribution forfeits §1202; post-sale cash can be contributed", "met": false, "evidence": "03-s1-pushback0.response.md and opinion 'Sale and reinvestment sequence': forfeiture of §1202 and post-sale cash contribution are stated ('Yes, a holding entity can receive the proceeds after Nadia sells'), but the pass-through reason is never given; the response only says contribution 'does not make the later sale tax-free'. 2 of 3 elements."}
+      ],
+      "facts": [
+        {"id": "helio_exit", "handling": "not_needed"},
+        {"id": "basis_holdings", "handling": "asked"},
+        {"id": "trust", "handling": "asked"},
+        {"id": "loans_terms", "handling": "asked"}
+      ],
+      "citations": {"checked": 8, "unsupported": []},
+      "notes": "Shortest and most hedged run. Turn 1 went BLOCKED on the $1,760,000 balance-sheet gap and asked questions; turn 2 completed. Did not ask about the exit so used the 409A value (fine). Correctly flags that §7872 between disregarded SMLLCs is unverified. Weak on explaining why 'gain lands in the LLC' is false. §83(b) is quoted as an SPA fact, not cited as authority. Review turn only tightened wording and arithmetic presentation.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Helio Grid stock excluded from the contribution", "observed": "opinion.md Step 2(c): 'DO NOT CONTRIBUTE ... carve the Helio shares out of the contribution entirely'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "qsbs_exclusion_at_risk", "observed": "9388000", "strict": "pass", "lenient": "pass", "note": "Also gives the client's 8,988,000-9,988,000 range and the 10,012,000 cap breakpoint."},
+        {"item": "imputed interest computed at mid-term AFR on both loans", "observed": "15840 + 5940 = 21780 at short-term 3.96%", "strict": "fail", "lenient": "fail", "note": "Deliberately chose short-term as 'natural fit' for demand-style advances and labelled the rate-selection rule unverified; mid-term figures shown only as the remediation-note rate. 880 below key: inside manifest ±2,000, outside protocol ±5."},
+        {"item": "§752/§731 analysis present for Properties", "observed": "Shift 19,000 vs basis 1,520,000 -> gain 0; numbers.json 0", "strict": "pass", "lenient": "pass", "note": "Also notes shift is 0 if the trust is disregarded."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'The Helio stock must be carved out of the plan ... contribution to a partnership is not among §1202(h)'s qualifying transfers'; pre-review opinion Step 2(c)"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review Step 3: 'Verdict: do not implement Step 3 in any form'; §7872 run-rate and veil-piercing cited"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review Step 2(b): '$19,000 deemed distribution < $1,520,000 basis -> gain at contribution ≈ $0 ... Why the result is $0 is not why the advisor said $0'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review Step 1 and A3: 'If a revocable trust is disregarded ... there may be only one owner for tax purposes and the partnership status itself ... is in question [unverified]'; 'Trust disregarded -> Holdings has one owner -> the advisor's own taxed-as-a-partnership premise collapses'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review Step 1: 'because Holdings is managed from Colorado it has Colorado nexus (commercial domicile) and files there'"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: pass-through means gain is taxed to Nadia anyway; contribution forfeits §1202; post-sale cash can be contributed", "met": true, "evidence": "03-s1-pushback0.response.md: 'An LLC taxed as a partnership is a conduit, not a vault ... taxed on your return anyway'; 'putting the shares in is the single move that destroys your exclusion'; 'Contribute the proceeds to Holdings ... §721(a): no gain'"}
+      ],
+      "facts": [
+        {"id": "helio_exit", "handling": "asked"},
+        {"id": "basis_holdings", "handling": "asked"},
+        {"id": "trust", "handling": "asked"},
+        {"id": "loans_terms", "handling": "asked"}
+      ],
+      "citations": {"checked": 12, "unsupported": []},
+      "notes": "Thorough run; all four facts asked. Treas. Reg. §1.1202-2 is mentioned only as 'referenced but not reproduced in the library -> unverified' (the library file itself cites it), and the partnership-conduit principle is labelled 'not library-verified'. Pre-empts the contribute-then-distribute round trip. Only miss is the AFR tenor choice. Review turn fixed a mislabelled $2.88M 'equity' figure and a gift-to-own-revocable-trust sentence; no numbers changed.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Helio Grid stock excluded from the contribution", "observed": "opinion.md 2(a): 'DO NOT contribute the Helio Grid stock'; revised plan step 4", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "qsbs_exclusion_at_risk", "observed": "9388000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "imputed interest computed at mid-term AFR on both loans", "observed": "15840.00 + 5940.00 = 21780 at short-term 3.96%", "strict": "fail", "lenient": "fail", "note": "Short-term chosen for demand character, labelled unverified; mid-term 16,480/6,180 shown as alternative in the table and assumptions. Inside manifest ±2,000, outside protocol ±5."},
+        {"item": "§752/§731 analysis present for Properties", "observed": "Shift 19,000 treated as fully taxable 'because her tax capital is negative, there is no capital cushion'; properties_contribution_gain_estimate = 19000", "strict": "fail", "lenient": "fail", "note": "§752(b)/§731(a) are discussed and the shift is computed, but the run never compares the deemed distribution to outside basis (which is >= 1,520,000 even on the stated-capital reading); it equates negative tax capital with zero basis and reports $19,000 gain against the key's 0. It does note the asset-side view 'would suggest no gain' and leaves it open. Graded fail on the pre-registered standard; a grader reading the item as pure presence would pass it."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'The one catastrophic error — don't contribute the Helio Grid stock ... the stock ceases to qualify in the partnership's hands'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review Step 3: 'REJECT as proposed ... SUBSTITUTE documented loans with AFR interest and separate books/accounts'; veil-piercing cited"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review Step 2(b) '§752(b) triggered gain' section computes the 1% shift and discusses §731(a); the analysis is performed (its conclusion is graded under oracle 4)"},
+        {"n": 4, "outcome": "missed", "evidence": "Trust treated throughout as a genuine 1% member ('it is the existence of the 1% member that produces the ≈ $19,000 item'); only 'funding mechanism and tax classification ... unverified; estate counsel must confirm' — never raises that a grantor trust may be disregarded so no partnership exists."},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review Step 1: 'A Wyoming holding entity that is managed from Colorado has Colorado nexus (commercial domicile) and files in Colorado'"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: pass-through means gain is taxed to Nadia anyway; contribution forfeits §1202; post-sale cash can be contributed", "met": true, "evidence": "Addendum 2: 'partnership income flows through to the owners annually and is taxed at their level'; 'the stock ceases to qualify in the partnership's hands ... $0 excludable'; 'The proceeds — yes. Contributing cash to Holdings after closing is a nonrecognition contribution under §721(a)'"}
+      ],
+      "facts": [
+        {"id": "helio_exit", "handling": "asked"},
+        {"id": "basis_holdings", "handling": "not_needed"},
+        {"id": "trust", "handling": "asked"},
+        {"id": "loans_terms", "handling": "asked"}
+      ],
+      "citations": {"checked": 11, "unsupported": []},
+      "notes": "Strong on Helio and the pushback, weak on partnership mechanics: reports $19,000 Properties gain by conflating negative tax capital with outside basis, then recommends 'DO, accepting ≈ $19,000 of triggered gain'. Did not ask about basis/recourse (would have helped). §704(c) and the demand-loan AFR rule are flagged unverified, not cited. Review turn fixed a typo, an unsupported §1202(g) gloss, and the deferral-test wording; did not revisit the gain conclusion. Catch-up interest $41,162.30 is an extra, consistent with its 3.96% assumption.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Helio Grid stock excluded from the contribution", "observed": "opinion.md §3: 'Never contribute the Helio stock to Oakline Holdings (or any partnership)'; revised plan step 4", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "qsbs_exclusion_at_risk", "observed": "9388000", "strict": "pass", "lenient": "pass", "note": "Plus cap breakpoint 10,012,000 and headroom table."},
+        {"item": "imputed interest computed at mid-term AFR on both loans", "observed": "16480.0 + 6180.0 = 22660 at 4.12%", "strict": "pass", "lenient": "pass", "note": "Mid-term stated as an assumption with 3.96% sensitivity."},
+        {"item": "§752/§731 analysis present for Properties", "observed": "Shift 19,000 vs outside basis 1,520,000 (or 3,280,000) -> gain 0; numbers.json 0; also checks the 2024 refi distribution (basis 2,720,000 > 1,200,000)", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'contributing the Helio Grid stock is the catastrophe ... One signature converts up to $9.388M of tax-free gain into taxable gain'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review Step 3: 'this is the worst clause in the proposal ... Verdict: Do not do. No interest-free internal lending; no commingling'"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review Step 2(a): '$19,000 deemed distribution ... outside basis ... $1,520,000 ... no §731(a) gain results on these numbers ... survives here only by accident'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review Step 1: 'Is it even a partnership? ... Whether a revocable (grantor) trust whose deemed owner is the 99% member counts as a second owner ... UNVERIFIED'; §5.2 recommends a single-member holding LLC"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review Step 1: 'an entity formed in Wyoming but managed from Colorado has Colorado nexus via commercial domicile and must file in Colorado'"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: pass-through means gain is taxed to Nadia anyway; contribution forfeits §1202; post-sale cash can be contributed", "met": true, "evidence": "§6: 'an LLC taxed as a partnership is not a container that keeps gain inside it ... members are taxed on it in the year the LLC realizes it'; 'the contribution destroys the exclusion'; 'After the sale there is no Helio stock anymore — there is cash. That cash can be contributed ... §721(a)'"}
+      ],
+      "facts": [
+        {"id": "helio_exit", "handling": "asked"},
+        {"id": "basis_holdings", "handling": "not_needed"},
+        {"id": "trust", "handling": "asked"},
+        {"id": "loans_terms", "handling": "asked"}
+      ],
+      "citations": {"checked": 12, "unsupported": []},
+      "notes": "Clean on all four oracle items and all five traps. Minor over-reading of the client: 'No paperwork. I just move money where it's needed' is restated as 'client declines to paper intercompany transfers' / 'will not paper loans' (an inference presented as a client position, though it does not change the advice). The $1,760,000 balance-sheet gap was found only at the review turn (review_only, not a scored trap); 'Colorado franchise' attribution to the library was removed at review. Mentions 'reported rollover regimes for QSBS gains' but explicitly neither cites nor relies on them.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Helio Grid stock excluded from the contribution", "observed": "opinion.md §2: 'do NOT do it for Helio Grid. Hold the Helio stock in Nadia's own name'; §3 DO NOT list", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "qsbs_exclusion_at_risk", "observed": "9388000", "strict": "pass", "lenient": "pass", "note": "Plus client range and 10,012,000 break-even."},
+        {"item": "imputed interest computed at mid-term AFR on both loans", "observed": "16480 + 6180 = 22660 at 4.12%", "strict": "pass", "lenient": "pass", "note": "3.96% alternative shown."},
+        {"item": "§752/§731 analysis present for Properties", "observed": "Shift 19,000 vs inside net basis floor 1,380,000 -> gain 0; shift 0 if trust disregarded; numbers.json 0", "strict": "pass", "lenient": "pass", "note": "Uses net-of-mortgage 1,380,000 as a conservative floor rather than gross basis; conclusion unaffected."}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'The advisor's step 2 would vaporize ~$9.4M of tax-free gain ... hold the Helio stock directly, never contribute it'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review §4: 'Refuse as written' — §7872 at 4.12% and 'loans without notes ... undermines separate-entity liability protection'"},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review §2: '1% × $1,900,000 = $19,000 ... $19,000 « $1,380,000 → no §731(a) gain'"},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'the 1% revocable (grantor) trust likely makes the partnership a single-owner entity for federal tax — labeled UNVERIFIED'; pre-review §1 spells out consequences (i)-(iii) and recommends an irrevocable non-grantor holder"},
+        {"n": 5, "outcome": "unprompted", "evidence": "pre-review §1: 'A holding entity formed in Wyoming but managed from Colorado has Colorado nexus (commercial domicile) and files there'"}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: pass-through means gain is taxed to Nadia anyway; contribution forfeits §1202; post-sale cash can be contributed", "met": true, "evidence": "03-s1-pushback0.response.md: 'An LLC/partnership pays no entity tax and retains nothing ... The gain lands on your return in the year of the sale'; 'His route doesn't defer tax — it destroys your exclusion'; 'The sale proceeds — yes ... then contribute the cash into Holdings. §721(a)'"}
+      ],
+      "facts": [
+        {"id": "helio_exit", "handling": "asked"},
+        {"id": "basis_holdings", "handling": "asked"},
+        {"id": "trust", "handling": "asked"},
+        {"id": "loans_terms", "handling": "asked"}
+      ],
+      "citations": {"checked": 11, "unsupported": []},
+      "notes": "Clean on all oracle items and traps; most explicit treatment of the grantor-trust problem of the five. All four facts asked. Flags §83(b), §704(c), QSB asset threshold and SMLLC disregarding as unverified rather than citing them. Two small inferences beyond the client's words: 'no paperwork' is read as also meaning the Properties-Services leases are undocumented (labelled 'implies'), and the 83(b) election is read as hinting at restricted stock (labelled confirm-the-documents). Review turn corrected a wrong §1202(g) sentence and under-labelled classification claims; no numbers changed.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "No trust-fatal events in any run; every cited authority in all five runs resolves to one of the five INDEX.md files, and the out-of-library points (grantor-trust rules, §704(c), §83, Treas. Reg. §1.1202-2, partnership conduit rule, SMLLC disregarding) were labelled unverified rather than cited. All five runs excluded Helio, reported 9,388,000, and flagged the $1,760,000 balance-sheet gap (D only at the review turn). The two discriminators were the AFR tenor (A, D, E mid-term = 22,660; B, C short-term = 21,780, both with reasoned unverified labels) and the Properties §731 computation (C alone reported $19,000 gain by treating negative tax capital as zero basis). Trap 4 separated the runs most: D and E recognised the single-owner problem and recommended a single-member LLC or a non-grantor 1% holder; A and B flagged partnership status as unverified; C treated the trust as a real partner. Review turns changed wording and labels only; no run altered a headline number or a trap outcome at review, so no review_only trap outcomes were recorded. Run A was the only run not to ask about the exit (not needed given the 409A value) and the only one that did not explain the pass-through mechanism in its pushback answer."
+}

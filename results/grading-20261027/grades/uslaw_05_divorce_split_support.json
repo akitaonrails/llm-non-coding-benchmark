@@ -1,0 +1,592 @@
+{
+  "case": "uslaw_05_divorce_split_support",
+  "preregistration": {
+    "summary": "Recomputed from the pack before opening runs/. Child support (Worksheet A, two children): salary-only H net 10,920 + W net 4,680 = 15,600 -> basic 3,050 -> H share 2,135.00 (the proposal's basis); with the HR-letter bonus H gross 213,000 -> net 13,845, combined 18,525 -> 3,050 -> H share 2,279.47. If the guideline maintenance adjustment is applied (2,000/mo): gross-level method gives 2,022.63, net-level method gives 1,950.19; both are acceptable per the manifest if the method is stated. After-tax split: wife house = 1,100,000 - 66,000 costs - 400,000 mortgage - 18.8% x (734,000 - 250,000) = 543,008; plus 70,000 = 613,008. Husband = 400,000 x 0.76 + (300,000 - 15% x 80,000) + 70,000 = 662,000 (658,960 if NIIT is also applied to the brokerage gain). Wife < husband holds under every sensitivity (no-NIIT 631,400; 401(k) at 32% -> 630,000; joint 500k exclusion -> 660,008). Pre-decree joint sale saves 47,000 (90,992 -> 43,992). YTD stub excess = 146,212 - 119,000 = 27,212. Key agrees with my figures on every item.",
+    "oracle": [
+      {
+        "item": "undisclosed_income.found = true, amount ≈ 45,000",
+        "confidence": "high",
+        "agree": true,
+        "note": "HR letter: 45,000 target; at 112% of plan the expected payout is 50,400, which falls 400 outside the manifest's +/-5,000 band — see fixture_issues"
+      },
+      {
+        "item": "child_support.husband_share_monthly",
+        "confidence": "high",
+        "agree": true,
+        "note": "2,279.47 without maintenance adjustment; 2,022.63 (gross-level) or 1,950.19 (net-level) with it — manifest accepts a stated method"
+      },
+      {
+        "item": "proposal_after_tax.wife < proposal_after_tax.husband",
+        "confidence": "high",
+        "agree": true,
+        "note": "613,008 vs 662,000 (or 658,960 with brokerage NIIT); magnitude band +/-15% is wide"
+      },
+      {
+        "item": "maintenance_tax_treatment = not deductible / not taxable",
+        "confidence": "high",
+        "agree": true,
+        "note": "library irc_1041_121_71.md: post-2018 instruments neither deductible nor includible"
+      },
+      {
+        "item": "QDRO listed in instruments",
+        "confidence": "high",
+        "agree": true,
+        "note": "graded on division.json alternatives[].instruments; advice.md coverage noted separately"
+      }
+    ],
+    "traps": [
+      {
+        "n": 1,
+        "confidence": "high",
+        "agree": true,
+        "note": "nominal equality; after tax 613,008 vs 662,000 plus illiquidity/refinance risk"
+      },
+      {
+        "n": 2,
+        "confidence": "high",
+        "agree": true,
+        "note": "undisclosed 45,000 bonus; affidavit 'none expected' vs HR letter and stub"
+      },
+      {
+        "n": 3,
+        "confidence": "high",
+        "agree": true,
+        "note": "post-TCJA alimony neither deductible nor includible"
+      },
+      {
+        "n": 4,
+        "confidence": "high",
+        "agree": true,
+        "note": "401(k) division needs a QDRO; 72(t)(2)(C) exemption for alternate payee"
+      },
+      {
+        "n": 5,
+        "confidence": "high",
+        "agree": true,
+        "note": "custodial parent keeps HOH/EITC/care credit; only CTC moves via Form 8332"
+      },
+      {
+        "n": 6,
+        "confidence": "medium",
+        "agree": true,
+        "note": "pre-decree joint sale doubles the exclusion to 500,000 (saves 47,000); a deferred co-owned sale under 121(d)(3)(A) reaches the same result and is an acceptable way to show the catch"
+      }
+    ],
+    "diagnostic_only": {
+      "oracle": [],
+      "traps": []
+    },
+    "fixture_issues": [
+      "The HR letter says the husband is 'currently at 112% of plan'; a run that reports the expected bonus as 45,000 x 1.12 = 50,400 falls 400 outside the manifest's amount tolerance (40,000–50,000) even though the derivation is documented and 45,000 is stated as the floor. Two runs (A, C) fail the strict amount check on exactly this margin; flagged so the campaign owner can decide whether the band should be widened.",
+      "Client script fact 'overnights' (255 nights) is only released on a custody/overnights question; the asset schedule already gives ~70/30, so runs that never asked still reach the correct custodial-parent conclusion."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "undisclosed_income.found = true, amount ≈ 45,000",
+          "observed": "found=true, amount=50400",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "division.json: amount 50400 = 45,000 x 1.12; source text states 'Floor 45,000 (target) if 112%-of-plan performance is not accepted'. 400 outside the +/-5,000 band."
+        },
+        {
+          "item": "child_support.husband_share_monthly",
+          "observed": "2042 (bonus 50,400; maintenance adjustment at gross level)",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "child_support.json: H (218,400-24,000)x0.78/12 = 12,636; W 96,000x0.78/12 = 6,240; 18,876 -> 3,050 -> 2,042. Method stated; sensitivity table includes 2,294 (bonus, no maintenance) and 2,023 (45k bonus). Recomputed: 3050x12636/18876 = 2041.7. Accepted under the manifest's stated-method clause."
+        },
+        {
+          "item": "proposal_after_tax.wife < proposal_after_tax.husband",
+          "observed": "wife 613008 < husband 658960",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "husband 658,960 applies 18.8% to the brokerage gain (flagged as an extension of the convention); within +/-15% of 662,000."
+        },
+        {
+          "item": "maintenance_tax_treatment = not deductible / not taxable",
+          "observed": "'legally unavailable ... neither deductible by the payor nor includible by the recipient (post-TCJA)'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "division.json maintenance_tax_treatment states neither deductible nor includible post-2018, citing irc_1041_121_71.md"
+        },
+        {
+          "item": "QDRO listed in instruments",
+          "observed": "Alternative A instruments: 'Wife receives 23,000 from the 401(k) by QDRO'; advice.md section 3 'QDRO (qdro_72t.md): ... any division must be made by a qualified domestic relations order'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "QDRO appears in alternatives[0].instruments and as the first item of the instruments section of advice.md"
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Wife: 613,008 ... Husband: 658,960 ... Gap: 45,952 his favor'; pre-review/s1/advice.md section 1 table"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Concealed bonus: sworn affidavit says none expected but an HR letter ... $45,000 target bonus ... at 112% of plan'; Rule 16.2(e) leverage"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Wrong maintenance tax claim: ... unavailable post-2018'; pre-review division.json maintenance_tax_treatment"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/advice.md section 3: 'QDRO ... any division must be made by a qualified domestic relations order ... escape the §72(t) 10% penalty'"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Form 8332: recommend she sign no release ... head-of-household/EITC/care credits can't transfer'"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: '(B) sell pre-decree with the $500,000 joint §121 exclusion (saves 47,000)'; Alternative D (deferred co-owned sale, two exclusions) added in turn 02"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "advice.md addresses affordability/refinance and the pre-decree sale option",
+          "met": true,
+          "evidence": "advice.md section 2: 'Step 1 — Resolve the refinance question before signing ... 2,648/month ... 26% ... 44% of income'; 'Plan 3 — Sell now, before the decree, on a joint return (Alternative B; 659,484 each)'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "house_plan",
+          "handling": "asked"
+        },
+        {
+          "id": "overnights",
+          "handling": "not_needed"
+        },
+        {
+          "id": "bonus_knowledge",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 14,
+        "unsupported": []
+      },
+      "notes": "Citations checked: §1041, §121(b)(1), §121(d)(3)(A), §14-10-113(1)(d), Rule 16.2(e), §72(t)(2)(C), §408(d)(6) (in qdro_72t.md body), §152(e), §2(b), TCJA/§71, §414(p), Worksheet A, tax_rates_assumed.md conventions, filing_status_dependents.md — all resolve to INDEX.md files. Review turn found and fixed a real arithmetic error in Alternatives B/D (cash half entered as 10,000 instead of 50,000; 619,484 -> 659,484) and labelled the brokerage-NIIT extension as an assumption. The 121(d)(3)(A) two-exclusion reading for a deferred co-owned sale is presented as the run's own application of the library text and flagged as such. Pushback turn held the position with numbers. Only oracle miss is the 50,400 bonus amount (400 outside tolerance; floor of 45,000 is stated).",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "undisclosed_income.found = true, amount ≈ 45,000",
+          "observed": "found=true, amount=45000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "division.json: amount 45000, source cites HR letter, stub excess 27,212 and the affidavit contradiction."
+        },
+        {
+          "item": "child_support.husband_share_monthly",
+          "observed": "2022.63 (bonus 45,000; maintenance adjustment at gross level)",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "child_support.json: H 189,000x0.78/12 = 12,285; W 96,000x0.78/12 = 6,240; 18,525 -> 3,050 -> 2,022.63; also states 2,279.47 'after maintenance ends'. Matches my gross-level recomputation exactly."
+        },
+        {
+          "item": "proposal_after_tax.wife < proposal_after_tax.husband",
+          "observed": "wife 613008 < husband 662000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Matches reference exactly; sensitivities 658,960 (brokerage NIIT) and 631,400 (no house NIIT) shown."
+        },
+        {
+          "item": "maintenance_tax_treatment = not deductible / not taxable",
+          "observed": "'neither deductible by Husband nor taxable to Wife; strike the contrary proposal language'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "division.json maintenance_tax_treatment states neither deductible nor includible post-2018, citing irc_1041_121_71.md"
+        },
+        {
+          "item": "QDRO listed in instruments",
+          "observed": "alternatives[].instruments: cash reallocation / in-kind brokerage transfer only; advice.md: 'No QDRO is required for either illustrated equalization if the 401(k) remains entirely his' and 'If any of Husband's 401(k) is awarded to Wife, obtain a qualified domestic relations order'",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "QDRO is not listed in any division.json instruments array (both alternatives deliberately avoid the 401(k)); the QDRO requirement is explained in advice.md 'Instruments and open items', so trap 4 is caught but the oracle field as specified is not met."
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "02-s1-work-client1.response.md (work turn): '$613,008 for Wife and $662,000 for Husband ... a $48,992 gap'; pre-review/s1/advice.md table"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/advice.md: 'Do not accept salary-only child support ... employer's March 2026 letter sets a $45,000 target'; division.json undisclosed_income found=true"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/division.json: 'neither deductible by Husband nor taxable to Wife; strike the contrary proposal language'"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/advice.md: 'A payment out of Husband's 401(k) without a QDRO could instead tax him and expose him to the 10% penalty if under 59½'"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/advice.md: 'Such a release can move the child tax credit, but not head-of-household status, EITC, or the dependent-care credit'"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/advice.md: 'A joint-return $500,000 exclusion may be available if a qualifying joint sale occurs ... no $500,000 benefit is included in the numbers above' — noticed but not quantified or recommended (thin catch)"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "advice.md addresses affordability/refinance and the pre-decree sale option",
+          "met": true,
+          "evidence": "advice.md 'The house decision': '$2,648/month ... 44% of Wife's $6,000 monthly gross pay ... set a realistic refinance deadline ... provide for sale ... if refinancing fails'; pre-decree joint sale mentioned in one sentence without numbers"
+        }
+      ],
+      "facts": [
+        {
+          "id": "house_plan",
+          "handling": "asked"
+        },
+        {
+          "id": "overnights",
+          "handling": "not_needed"
+        },
+        {
+          "id": "bonus_knowledge",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 8,
+        "unsupported": []
+      },
+      "notes": "Citations are almost all by library file name (equitable distribution, divorce tax rules, rate assumptions, support guidelines, filing-status rules, QDRO rules) plus §1041, §121 and Form 8332 — all in INDEX.md. Turn 01 produced only questions (QUESTIONS.md, not retained in the snapshot); all substantive work arrived in turn 02. Review turn changed wording only (gap labelled an illustration; brokerage-NIIT sensitivity added). Pushback response held the after-tax conclusion but softened it ('an estimate, not a certain loss') and advised prioritising the refinance/sale fallback over the equalisation ask — not a reversal. Thinnest of the five on the §121 timing point and the only run with no QDRO in the JSON instruments.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "undisclosed_income.found = true, amount ≈ 45,000",
+          "observed": "found=true, amount=50400",
+          "strict": "fail",
+          "lenient": "fail",
+          "note": "division.json: amount 50400 = 45,000 x 1.12 with 'conservative floor: 45,000 target' stated in source. 400 outside the +/-5,000 band."
+        },
+        {
+          "item": "child_support.husband_share_monthly",
+          "observed": "2041.74 (bonus 50,400; maintenance adjustment at gross level)",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "child_support.json: H (218,400-24,000)x0.78/12 = 12,636; W 6,240; 18,876 -> 3,050 -> 2,041.74; comparison figures 1,830 (salary-only), 2,022.63 (45k), 2,293.80 (no maintenance). Method stated; accepted."
+        },
+        {
+          "item": "proposal_after_tax.wife < proposal_after_tax.husband",
+          "observed": "wife 613008 < husband 662000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Matches reference exactly; sensitivities shown."
+        },
+        {
+          "item": "maintenance_tax_treatment = not deductible / not taxable",
+          "observed": "'LEGALLY OBSOLETE and should be struck ... NEITHER deductible by the payor NOR includible by the recipient (TCJA sec. 11051)'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "division.json maintenance_tax_treatment states neither deductible nor includible post-2018, citing irc_1041_121_71.md"
+        },
+        {
+          "item": "QDRO listed in instruments",
+          "observed": "alternatives A/B/C instruments: 'QDRO (IRC 414(p)) for 32,232', 'QDRO (200,000)'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "QDRO listed in every alternative's instruments; advice.md section 6 explains what a QDRO is"
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'after-tax Wife ≈ $613,008 vs Husband ≈ $662,000 — a ~$49,000 gap against Wife'"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'his own HR letter ... documents a $45,000 target bonus at 112% of plan → $50,400 expected'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'His maintenance clause cites repealed law — post-TCJA ... neither deductible nor taxable'"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/advice.md section 6: 'QDRO ... the only way to split a 401(k) ... Without one, a payout to you is taxed to him and, if he's under 59½, hit with the extra 10% penalty'"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: '§152(e) gives Wife the claims unless she signs Form 8332 (which moves only the CTC — HoH/EITC/care credit stay with her)'"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: Alternative B sell now with joint $500k exclusion and 'Alternative C: ... keep Husband on title so the later sale uses two §121 $250k exclusions'"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "advice.md addresses affordability/refinance and the pre-decree sale option",
+          "met": true,
+          "evidence": "advice.md section 5: refinance table (58.7% / 43.8% / 35.1% housing ratios) and 'you both sell now, while still married, the joint return exclusion is $500,000 — saving ~$47,000'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "house_plan",
+          "handling": "asked"
+        },
+        {
+          "id": "overnights",
+          "handling": "asked"
+        },
+        {
+          "id": "bonus_knowledge",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 16,
+        "unsupported": []
+      },
+      "notes": "Citations checked: §1041, §121(b)(1), §121(d)(3)(A)/(B), §14-10-113(1)(d), Rule 16.2(e), §414(p), ERISA §206(d)(3), §72(t)(2)(C), §408(d)(6), §152(e), §2(b), TCJA §11051 / P.L. 115-97, Worksheet A thresholds, tax_rates_assumed.md — all in INDEX.md. Pre-review advice.md section 2A attributed 'the factors consider the children's custody and each party's needs' to columbia_equitable_distribution.md, which the library excerpt does not say; the review turn caught and corrected this itself and relabelled the 'no court evicts the kids' point as outside-library judgment. Also self-corrected an invented sale-trigger detail ('youngest completes 6th grade') and a $104 asymmetry in Alternative A. Because the final deliverable is clean and the run disclosed the fixes, this is not counted as trust-fatal, but it is the one run whose pre-review text contained an unsupported attribution. The refinance verdict ('fails underwriting in every scenario') rests on a $1,100/mo tax-and-insurance placeholder and 28–31% rule-of-thumb ratios, both labelled as assumptions outside the library. Only run that asked about overnights (255 nights released).",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "undisclosed_income.found = true, amount ≈ 45,000",
+          "observed": "found=true, amount=45000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "division.json: amount 45000 ('actual could be 50,400'); source cites HR letter, stub, affidavit, client corroboration."
+        },
+        {
+          "item": "child_support.husband_share_monthly",
+          "observed": "2022.63 (bonus 45,000; maintenance adjustment at gross level)",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "child_support.json: husband_gross_used 189,000 (213,000 - 24,000), wife 96,000; nets 12,285 / 6,240 = 18,525 -> 3,050 -> 2,022.63; also states 2,279.47 'if maintenance were NOT counted'. Matches my recomputation exactly."
+        },
+        {
+          "item": "proposal_after_tax.wife < proposal_after_tax.husband",
+          "observed": "wife 613008 < husband 658960",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Brokerage NIIT applied (labelled as a conservative extension after review); within +/-15% of 662,000."
+        },
+        {
+          "item": "maintenance_tax_treatment = not deductible / not taxable",
+          "observed": "'legally wrong for this decree ... NEITHER deductible by the payor NOR includible by the recipient (TCJA sec.11051)'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "division.json maintenance_tax_treatment states neither deductible nor includible post-2018, citing irc_1041_121_71.md"
+        },
+        {
+          "item": "QDRO listed in instruments",
+          "observed": "alternatives B and C instruments: 'QDRO 401(k) 200,000 to Wife (26 U.S.C. 414(p))'; alternative A: 'no QDRO needed (Husband keeps entire plan)'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "QDRO listed in the instruments of alternatives B and C"
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'after tax it's Wife $613,008 (48.2%) vs Husband $658,960 (51.8%) — a $45,952 gap'"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'His sworn affidavit (bonus: none expected) is contradicted by his own HR letter: a $45,000 target bonus'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'His maintenance clause is legally obsolete. Post-2018 decrees: alimony is neither deductible nor taxable (TCJA §11051)'"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/advice.md section 5: 'A 401(k) division must be done by a QDRO; without one, a payout to you is taxed to him and, if he's under 59½, hit with a 10% penalty'"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'his alternating-years plan needs her Form 8332, which moves only the CTC — HOH/EITC/care credit stay with her'"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/advice.md section 3: 'Sell now: two $250k exclusions apply ... $39,546 instead of $90,992' and Option C deferred joint sale preserving both exclusions"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "advice.md addresses affordability/refinance and the pre-decree sale option",
+          "met": true,
+          "evidence": "advice.md section 3: 'P&I ≈ $2,648/month ... 44.1% of your $6,000/month salary ... 26.4% ... 33.0%'; 'Sell now: two $250k exclusions ... Net from house $594,454'; Option B fallback"
+        }
+      ],
+      "facts": [
+        {
+          "id": "house_plan",
+          "handling": "asked"
+        },
+        {
+          "id": "overnights",
+          "handling": "not_needed"
+        },
+        {
+          "id": "bonus_knowledge",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 17,
+        "unsupported": []
+      },
+      "notes": "Citations checked: §1041, §121(b)(1), §121(d)(3)(A)-(B), §14-10-113(1)(d), §14-10-115, Rule 16.2 / 16.2(e), §414(p), ERISA §206(d)(3), §72(t)(2)(C), §408(d)(6) (run itself flags it is in the qdro_72t.md body but not the INDEX citation line), §152(e), §2(b), §7703(a), §1411, TCJA §11051 / P.L. 115-97, Form 8332 — all in INDEX.md. Trust concern, not counted as fatal: the client answered 'I honestly don't know if I can refinance'; division.json and STATUS.md restate this as 'client (2nd round) says she cannot refinance 400,000 on 72,000 income' / 'confirms she cannot qualify', and advice.md section 3 as 'you confirm you likely cannot qualify'. The fact was asked, the run's own P&I arithmetic (44.1% of gross) independently supports the conclusion, and underwriting is flagged as outside the library, so this is a mischaracterisation of an asked fact rather than an invented one — but it is stated as client confirmation when it was not. Review turn fixed a real numeric error (remaining interest 762,700 -> 362,700), a garbled shelter figure, and labelled the brokerage-NIIT extension. Option B taxes the husband's half at 18.8% but the wife's at 15% (consistent with its MAGI reasoning).",
+      "grader_confidence": "medium"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {
+          "item": "undisclosed_income.found = true, amount ≈ 45,000",
+          "observed": "found=true, amount=45000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "division.json: amount 45000 ('at 112% of plan the expected payout is $50,400'); source cites HR letter, stub, affidavit, client corroboration."
+        },
+        {
+          "item": "child_support.husband_share_monthly",
+          "observed": "2023 (2,022.63 rounded; bonus 45,000; maintenance adjustment at gross level)",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "child_support.json: H (17,750 - 2,000)x0.78 = 12,285; W (6,000+2,000)x0.78 = 6,240; 18,525 -> 3,050 -> 2,022.63 ≈ 2,023. Method stated; band 2,004.29 / 2,022.63 / 2,041.74. Within +/-50 of the stated-method figure."
+        },
+        {
+          "item": "proposal_after_tax.wife < proposal_after_tax.husband",
+          "observed": "wife 613008 < husband 662000",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "Matches reference exactly; sensitivities 710,000 / 630,000 and brokerage-NIIT +3,040 noted."
+        },
+        {
+          "item": "maintenance_tax_treatment = not deductible / not taxable",
+          "observed": "'legally wrong for any decree executed after Dec 31, 2018: alimony is neither deductible by the payor nor includible by the recipient (TCJA §11051)'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "division.json maintenance_tax_treatment states neither deductible nor includible post-2018, citing irc_1041_121_71.md"
+        },
+        {
+          "item": "QDRO listed in instruments",
+          "observed": "alternatives A2/B/A instruments: 'QDRO ~134,211 nominal to Wife', 'QDRO of ~$134,211', 'QDRO ~$32,232'",
+          "strict": "pass",
+          "lenient": "pass",
+          "note": "QDRO listed in the instruments of three alternatives; advice.md section 6 explains the QDRO and §72(t)(2)(C)"
+        }
+      ],
+      "traps": [
+        {
+          "n": 1,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'It's 50/50 is false after tax ... $662,000 ... $613,008 — a $48,992 gap'"
+        },
+        {
+          "n": 2,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Undisclosed bonus found. His affidavit said none expected; his employer's letter documents a $45,000 target bonus'"
+        },
+        {
+          "n": 3,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Maintenance language is wrong: post-TCJA it's neither deductible to him nor taxable to her'"
+        },
+        {
+          "n": 4,
+          "outcome": "unprompted",
+          "evidence": "pre-review/s1/advice.md section 6: 'QDRO for any split of the 401(k) — without one, a payoff to you is taxed to him and, if he is under 59½, hit with the 10% penalty'"
+        },
+        {
+          "n": 5,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'his alternating years requires her Form 8332, which moves only the child tax credit — head-of-household, EITC, and dependent-care credits stay with her'"
+        },
+        {
+          "n": 6,
+          "outcome": "unprompted",
+          "evidence": "01-s1-work.response.md: 'Selling before Dec 31 while the $500k joint §121 exclusion is available nets $590,008 — ~$47k more'; A2 deferred joint sale added in turn 02"
+        }
+      ],
+      "rubric": [
+        {
+          "item": "advice.md addresses affordability/refinance and the pre-decree sale option",
+          "met": true,
+          "evidence": "advice.md section 5(a): 'P&I ≈ $2,648/month ... 44.1% of gross ... Treat refinance as not available unless an underwriter proves otherwise'; 5(c)/8: 'Sell-now under the joint $500,000 exclusion (Scenario B) requires the sale and divorce year to line up (status fixed Dec 31)'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "house_plan",
+          "handling": "asked"
+        },
+        {
+          "id": "overnights",
+          "handling": "not_needed"
+        },
+        {
+          "id": "bonus_knowledge",
+          "handling": "asked"
+        }
+      ],
+      "citations": {
+        "checked": 15,
+        "unsupported": []
+      },
+      "notes": "Citations checked: §1041, §121(b)(1), §121(d)(3)(A), Rule 16.2(e), §414(p), ERISA §206(d)(3), §72(t)(2)(C), §152(e), §2(b), §7703(a), §1411 (explicitly flagged as mechanics not in the library), TCJA §11051, Form 8332, Worksheet A, tax_rates_assumed.md — all in INDEX.md; lender ratios (31%/43%) and a 22–24% rate for the wife are tagged [unverified]. Review turn fixed a wrong displayed fraction in child_support.json (dollar result was right), made the QDRO equalisation allocation explicit (134,211 if wife takes all cash; 200,000 if cash split), and downgraded the A2-vs-B tax edge to conditional under the library's blanket NIIT convention. Minor overstatement: QUESTIONS.md records the client as having 'no pre-approval', which she did not say (she said she does not know whether she can refinance); the refinance verdict itself is framed as the run's own arithmetic ('assume you cannot qualify'). Alternatives fold the after-tax bonus (34,200) into the estate, which is why A2/B totals (680,327 / 678,104) exceed the other runs' 659,484–661,707; the arithmetic reconciles.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "No trust-fatal events in any run; every cited authority in all five final deliverables resolves to a library/INDEX.md file. All five runs caught all six traps before the review turn (unprompted); B's §121-timing catch is a single unquantified sentence. Oracle: A and C report the undisclosed bonus as 50,400 (45,000 x 112% of plan) and fail the +/-5,000 amount check by 400 while stating 45,000 as the floor — a fixture-tolerance question rather than a substantive miss. B is the only run whose division.json instruments omit the QDRO (its alternatives avoid the 401(k); advice.md still explains the QDRO requirement). All five applied the guideline maintenance adjustment with a stated method (2,022.63 at the 45,000 bonus; 2,041.74–2,042 at 50,400), and B and D also report the 2,279.47 no-adjustment figure. Four runs (A, C, D, E) independently proposed a deferred co-owned sale using §121(d)(3)(A) to preserve two 250,000 exclusions without a joint return; the reference lists only the pre-decree joint sale, so this is an extension of the key that the library text supports. Review turns were genuinely useful in A (40,000-per-side cash error), C (unsupported custody-factor attribution and an invented trigger date), D (interest figure) and E (displayed fraction, conditional NIIT edge); B's review changed wording only. D is the only run that converted the client's 'I don't know if I can refinance' into 'client says she cannot refinance'; graded as a non-fatal mischaracterisation with medium confidence. Only C asked the overnights question; the other four relied on the schedule's ~70/30 and reached the same custodial-parent conclusion."
+}

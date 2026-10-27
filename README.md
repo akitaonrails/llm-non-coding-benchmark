@@ -13,7 +13,9 @@ configurations, each with all 38 cases / 63 sessions. See
 [full scope, estimates, and exclusion rationale](docs/FULL_SUITE_CAMPAIGN.md) and
 [live coverage](results/full-suite-coverage-20261024.json), and the
 [controller audit and re-run registry](docs/CONTROLLER_AUDIT_20261026.md), with execution-level results in the
-[full-suite execution summary](docs/FULL_SUITE_EXECUTION_SUMMARY.md). The completed pilots
+[full-suite execution summary](docs/FULL_SUITE_EXECUTION_SUMMARY.md) and the
+**correctness grading** in the [full-suite grading findings](docs/FULL_SUITE_GRADING_20261027.md)
+(blind AI grading per [the grading protocol](docs/GRADING_PROTOCOL_20261027.md); human spot-check pending). The completed pilots
 below are historical coverage, not completion of this new campaign.
 
 The October 24 pilot execution is complete: single B300 **11/12 engagements

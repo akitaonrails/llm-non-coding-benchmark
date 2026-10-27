@@ -1,0 +1,220 @@
+{
+  "case": "usacc_01_schedule_c",
+  "preregistration": {
+    "summary": "Solved from the pack before opening runs/. Line 1 = 1099-K gross 41,350 + Tessaro 2025 ACH 9,400 = 50,750 (Beacon/Orchard NECs sit inside the 1099-K: 11 PayHub payouts = 40,150.85 = 41,350 x 0.971, no separate Beacon/Orchard deposits; 2024-12-27 Tessaro 3,000 is prior year). Line 10 = 1,199.15 fees. Line 9 = (4,860 - 1,200 commute) x 0.70 = 2,562 per key. Line 15 = 480 Hiscox; 20b = 8 x 350 = 2,800; 24a = 412 + 618 = 1,030; 24b = (64+126) x 50% = 95; 25 = 1,860 x 60% = 1,116; 27a = 540 + 719.88 + 2,149 + 650 = 4,058.88; 28 = 13,341.03; 31 = 37,408.97; SE net 34,547.18, SE tax 5,285.72, half 2,642.86. BCBS 3,040 -> Schedule 1 line 17. All key arithmetic re-derived with python3 -I and matches. Tolerances applied: strict = manifest tolerance (exact / +-25 on line 31 / +-5 on SE tax); lenient = max(manifest, +-5).",
+    "oracle": [
+      {"item": "Schedule C line 1", "confidence": "high", "agree": true, "note": "50,750.00 verified from bank tie-out; naive sum 81,450 is the trap."},
+      {"item": "Schedule C line 31 (net profit)", "confidence": "medium", "agree": true, "note": "37,408.97 arithmetic verified, but it depends on line 9 = 2,562 which counts 1,150 'misc (see pg 2)' miles whose page 2 is not in the pack and treats home->coworking trips as business. Kept gated as pre-registered; see fixture_issues."},
+      {"item": "SE tax", "confidence": "medium", "agree": true, "note": "5,285.72 = 37,408.97 x 0.9235 x 0.153; same dependency on line 9 as line 31."},
+      {"item": "Line 9 car/truck", "confidence": "medium", "agree": true, "note": "2,562 = 3,660 x 0.70. Manifest conditional: exact only if commute was asked; otherwise commute must appear in QUESTIONS/assumptions. Value relies on the absent notebook page 2 (1,150 mi) and on coworking round trips being business rather than commuting under the Pub 463 excerpt."},
+      {"item": "Classification of Denver flight, Orangetheory, Netflix, rent, H-E-B", "confidence": "high", "agree": true, "note": "All personal (IRC 262); Denver confirmed by client script."},
+      {"item": "Classification of 2024-12-27 Tessaro deposit", "confidence": "high", "agree": true, "note": "prior_year under cash method (library Sch C excerpt)."},
+      {"item": "BCBS premiums", "confidence": "high", "agree": true, "note": "other_schedule / not_on_schedule_c -> Schedule 1 line 17 per library line 15 note."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Double count verifiable from bank deposits alone."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "Personal items; Denver needs the client answer or a flag."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Notebook uses 0.655 (2023 rate); library notice says 0.70."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "CSV date 2024-12-27."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "Notebook row 'Larkspur office, daily' 1,200 mi; must ask or flag."},
+      {"n": 6, "confidence": "high", "agree": true, "note": "Library line 15 text is explicit."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "Mileage notebook photo lists 1,150 'misc — other client errands (see pg 2)' miles but page 2 is not in the pack and the client script has no fact releasing it; the reference line 9 (2,562), line 31 and SE tax all count those miles as substantiated business miles. A preparer who excludes unsubstantiated miles cannot hit the key.",
+      "The reference also treats the 2,232 home->Capital Factory coworking round trips as business miles; the library Pub 463 excerpt ('driving between your home and your main or regular place of work' is commuting, deductible only if a qualifying home office exists) makes exclusion a defensible reading. Combined with the page-2 issue, the key's line 9/31/SE values are reachable only under the most aggressive defensible position. Recommend the campaign owner consider treating line 31 and SE tax as diagnostic for this case, or widening the line 31 tolerance.",
+      "Line 9 oracle conditional ('exact if commute asked; if not asked, must appear in QUESTIONS/assumptions') makes the item easier for runs that did not ask the commute question than for runs that did.",
+      "Bank export filename says 2024-12 to 2026-01 and the PDF header says period to January 31, 2026, but the last row is 2025-12-12; all five runs flagged this. Harmless but noisy.",
+      "A 2024-12-30 H-E-B row exists; the classification oracle expects 'personal' for H-E-B, but prior_year is also a reasonable label for a 2024 row. Graded as pass either way."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Schedule C line 1", "observed": "50750.00", "strict": "pass", "lenient": "pass", "note": "schedule_c.json lines.1"},
+        {"item": "Schedule C line 31 (net profit)", "observed": "39776.37", "strict": "fail", "lenient": "fail", "note": "Diff +2,367.40 vs key; driven by line 9 = 194.60 (excluded 1,150 pg-2 miles and 2,232 coworking miles). Everything else matches the key line by line."},
+        {"item": "SE tax", "observed": "5620.22", "strict": "fail", "lenient": "fail", "note": "Consistent with the run's own line 31 (39,776.37 x 0.9235 x 0.153 = 5,620.22)."},
+        {"item": "Line 9 car/truck", "observed": "194.60", "strict": "fail", "lenient": "fail", "note": "Commute was asked (released), so exact 2,562 required. Run claims only 278 itemized miles; commute correctly excluded."},
+        {"item": "Classification of Denver flight, Orangetheory, Netflix, rent, H-E-B", "observed": "all personal (Denver 1, OTF 12, Netflix 12, rent 12, H-E-B 13)", "strict": "pass", "lenient": "pass", "note": "classification.csv"},
+        {"item": "Classification of 2024-12-27 Tessaro deposit", "observed": "prior_year", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "BCBS premiums", "observed": "other_schedule x8; not_on_schedule_c -> 'Schedule 1 line 17'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Line 1 = $50,750.00 | 1099-K total 41,350 (includes Beacon+Orchard NEC) + Tessaro 2025 ACH 9,400'; '\"Just add up the 1099s\" would report $81,450 — $30,700 of false income.'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review/s1/classification.csv: OTF/Netflix/rent/H-E-B/Venmo gift 'personal'; Denver flight excluded from 24a in turn 1 and confirmed personal after client answer."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Her $3,200 mileage used the stale 65.5¢ rate'; '× $0.70 (Notice 2025-5)'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'the Tessaro total was including a $3,000 row from 2024. Correct 2025 Tessaro receipts = $9,400'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "Turn 1 excluded the 1,200 Larkspur miles and asked; commute fact released. final/schedule_c.md: 'deduct 1,200 daily Larkspur-office miles — confirmed by Dana as daily commuting'."},
+        {"n": 6, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'BCBS → Sch 1 l17'; final/schedule_c.md Line 15: 'BCBS premiums are excluded here per the instructions (Line 15...)'."}
+      ],
+      "rubric": [
+        {"item": "schedule_c.md shows arithmetic per line and states business-use % assumptions", "met": true, "evidence": "Every line shows the sum (e.g. '540.00 + 719.88 + 650.00 + 2,149.00 = $4,058.88'); Line 25 '$1,860.00 × 60% = $1,116.00 ... flagged as an unverified client estimate'; MacBook '100% business use' stated as assumption."},
+        {"item": "STATUS reflects whether questions are outstanding", "met": true, "evidence": "STATUS.md 'COMPLETE WITH OPEN ITEMS' with 10 enumerated open items cross-referenced to QUESTIONS R1-R8."}
+      ],
+      "facts": [
+        {"id": "commute", "handling": "asked"},
+        {"id": "payhub_fees", "handling": "assumed_flagged"},
+        {"id": "phone_pct", "handling": "asked"},
+        {"id": "denver", "handling": "asked"},
+        {"id": "overlap", "handling": "asked"},
+        {"id": "health", "handling": "asked"}
+      ],
+      "citations": {"checked": 6, "unsupported": []},
+      "notes": "Citations: Sch C instructions excerpt, Notice 2025-5 §3/§4, Pub 463, IRC §262, Sch SE excerpt, Reg §1.263(a)-1(f) (named inside the library's Line 13 text, cited 'per instructions (Line 13)'). All in INDEX. Pre-review deliverable contained an invented client fact — 'storage unit $95/mo' in STATUS item 6 and QUESTIONS R7 — with no source anywhere in the pack; the review turn found it ('zero $95.00 debits ... nothing sourced it') and removed it, so final is clean; recorded as a near-miss, not fatal. Review also fixed a wrong sensitivity SE figure, a wrong MacBook date, and relabelled a Pub 463 'substantiation' claim as unverified (the excerpt has no recordkeeping rule). Line 9 position (278 miles only) is conservative but internally reasoned: coworking trips treated as commuting under Pub 463, pg-2 miles unsubstantiated. Also flagged the $1,090 payroll net-pay gap and correctly identified W-2 code DD as employer health-coverage cost.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Schedule C line 1", "observed": "50750.00", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Schedule C line 31 (net profit)", "observed": "0.00 (lines.31); run's net profit 39,839.37 is placed on lines.28", "strict": "fail", "lenient": "fail", "note": "JSON mislabels lines: '28' carries net profit and '31' is 0.00 ('Carryforward of loss (Part III)'). Even reading 39,839.37 as line 31 it is +2,430.40 vs key (line 9 194.60, Tartine meal excluded)."},
+        {"item": "SE tax", "observed": "5629.12", "strict": "fail", "lenient": "fail", "note": "Consistent with the run's own net profit."},
+        {"item": "Line 9 car/truck", "observed": "194.60", "strict": "fail", "lenient": "fail", "note": "Commute asked; 278 miles only."},
+        {"item": "Classification of Denver flight, Orangetheory, Netflix, rent, H-E-B", "observed": "all personal", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Classification of 2024-12-27 Tessaro deposit", "observed": "prior_year", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "BCBS premiums", "observed": "other_schedule x8; not_on_schedule_c -> 'Schedule 1 line 17'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Beacon's and Orchard's 1099-NECs ... are inside the PayHub 1099-K — no separate deposits exist ... the naive $81,450 1099 sum is wrong; real 2025 receipts are $50,750.'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "Turn 1: Denver '$389 ... pending substantiation' kept off Schedule C; OTF/Netflix/rent/H-E-B personal in pre-review CSV; confirmed personal after answer."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: '278 client-site mi × $0.70 (Notice 2025-5; Dana used 2023's $0.655)'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'The Dec 27, 2024 Tessaro $3,000 deposit is prior-year (cash method).'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "Commute fact released in turn 1; final/schedule_c.md: '1,200 mi ... commuting to her W-2 job: not deductible'."},
+        {"n": 6, "outcome": "unprompted", "evidence": "01-s1-work.response.md: '$3,040 BCBS premiums (Schedule 1)' kept off Schedule C."}
+      ],
+      "rubric": [
+        {"item": "schedule_c.md shows arithmetic per line and states business-use % assumptions", "met": true, "evidence": "Per-line arithmetic shown; '1,020.00 × 60% = 612.00; 840.00 × 60% = 504.00'; MacBook '100% business use is applied as a stated assumption'. Note the md line table mislabels 28 as 'Net profit' and 31 as 'Carryforward of loss'."},
+        {"item": "STATUS reflects whether questions are outstanding", "met": false, "evidence": "STATUS.md 'Status: COMPLETE' while the same file lists 8 'Remaining unknowns' and schedule_c.md holds items 'at $0.00 ... flagged, not estimated'; contract requires COMPLETE WITH OPEN ITEMS in that case."}
+      ],
+      "facts": [
+        {"id": "commute", "handling": "asked"},
+        {"id": "payhub_fees", "handling": "assumed_flagged"},
+        {"id": "phone_pct", "handling": "asked"},
+        {"id": "denver", "handling": "asked"},
+        {"id": "overlap", "handling": "asked"},
+        {"id": "health", "handling": "asked"}
+      ],
+      "citations": {"checked": 6, "unsupported": []},
+      "notes": "Final citations all in INDEX (Sch C instr, Notice 2025-5, Pub 463, IRC 262, Sch SE, Reg 1.263(a)-1(f) as printed in the Line 13 excerpt). Serious near-misses before review: the pre-review deliverable attributed two quotes to Dana's email that do not exist ('for client work' for the conference, 'laptop for client design work') and used them to support line 24a/27a; and claimed a '$0.00 bank row' for the Oct 20 dinner. The review turn caught all three ('Two quotes attributed to Dana's email don't exist') and relabelled the treatments as preparer assumptions. The turn-1 work response also contains confabulated items that never reached the deliverable ('Line 15 Books/prints ... print-at-home book project, substantiated by 7 payments + author registration', 'hobby crafting $1,330', '$9,000 self-transfers', 'Austin flight', '~$377 return flight'). Structural error in final JSON: line 28 holds net profit and line 31 = 0.00, contrary to the contract's shape and the library line numbering. 24b excludes Tartine ($126) as personal for lack of purpose while accepting Marina Deli on the same trip — inconsistent. STATUS labelled COMPLETE despite listed unknowns.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Schedule C line 1", "observed": "50750.00", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Schedule C line 31 (net profit)", "observed": "41925.37", "strict": "fail", "lenient": "fail", "note": "+4,516.40 vs key: line 9 = 194.60 and the $2,149 MacBook excluded entirely ('no safe harbor election was established') although the library Line 13 text offers the election."},
+        {"item": "SE tax", "observed": "5923.87", "strict": "fail", "lenient": "fail", "note": "Consistent with the run's own net profit."},
+        {"item": "Line 9 car/truck", "observed": "194.60", "strict": "pass", "lenient": "pass", "note": "Commute NOT asked (released facts: denver, health, overlap, payhub_fees, phone_pct). Manifest conditional satisfied: schedule_c.md states 'The 1,200 Larkspur commute miles are personal' and STATUS/QUESTIONS flag the other mileage groups. Numeric value 194.60 != 2,562 because coworking and pg-2 miles were also excluded; passes only on the conditional as written."},
+        {"item": "Classification of Denver flight, Orangetheory, Netflix, rent, H-E-B", "observed": "personal (2024-12-30 H-E-B row labelled prior_year)", "strict": "pass", "lenient": "pass", "note": "12 of 13 H-E-B rows personal; the 2024 row as prior_year is not wrong."},
+        {"item": "Classification of 2024-12-27 Tessaro deposit", "observed": "prior_year", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "BCBS premiums", "observed": "other_schedule x8; not_on_schedule_c -> Schedule 1 line 17 (eligibility flagged)", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "Turn 1 asked specifically 'to avoid double counting PayHub income'; pre-review/s1 schedule_c.md: 'adding either again would double count ... $41,350 + $9,400 = $50,750'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "pre-review CSV: OTF/Netflix/rent/H-E-B personal; Denver asked in turn 1 and excluded as personal in pre-review."},
+        {"n": 3, "outcome": "unprompted", "evidence": "pre-review schedule_c.md: 'Dana's notebook used the obsolete $0.655 rate; the library specifies $0.70 for 2025'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review schedule_c.md: 'The separate $3,000 Tessaro deposit on December 27, 2024 is prior-year cash-method income.'"},
+        {"n": 5, "outcome": "unprompted", "evidence": "Not asked, but pre-review schedule_c.md: 'The 1,200 Larkspur commute miles are personal' (inferred from the notebook row and the W-2 employer)."},
+        {"n": 6, "outcome": "unprompted", "evidence": "pre-review schedule_c.md Line 15: 'The eight $380 Blue Cross health premiums are excluded from this line'; not_on_schedule_c -> Schedule 1 line 17."}
+      ],
+      "rubric": [
+        {"item": "schedule_c.md shows arithmetic per line and states business-use % assumptions", "met": true, "evidence": "'($1,020 + $840) × 60% = $1,116 ... This is an unverified estimate'; 'Full business use of the software is an assumption'; sums shown for each line."},
+        {"item": "STATUS reflects whether questions are outstanding", "met": true, "evidence": "'COMPLETE WITH OPEN ITEMS' with 8 enumerated open items."}
+      ],
+      "facts": [
+        {"id": "commute", "handling": "assumed_flagged"},
+        {"id": "payhub_fees", "handling": "asked"},
+        {"id": "phone_pct", "handling": "asked"},
+        {"id": "denver", "handling": "asked"},
+        {"id": "overlap", "handling": "asked"},
+        {"id": "health", "handling": "asked"}
+      ],
+      "citations": {"checked": 5, "unsupported": []},
+      "notes": "Cleanest trust profile of the five: every citation is a relative link to one of the five library files; no pre-review confabulations found; the review even withdrew Form 1040 line placements as 'unverified in this library'. The cost is over-conservatism: MacBook (2,149) dropped rather than expensed under the de minimis election the library describes, and only 278 miles claimed. Turn 1 ended BLOCKED pending questions (acceptable under the contract). Stated the 1,200 commute miles as a conclusion rather than asking; the inference is well supported by the notebook row and the W-2.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Schedule C line 1", "observed": "50750.00", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Schedule C line 31 (net profit)", "observed": "39787.57", "strict": "fail", "lenient": "fail", "note": "+2,378.60 vs key; line 9 = 183.40 (262 miles: also dropped the 16-mile Oct 20 client-dinner trip as 'unverified rule')."},
+        {"item": "SE tax", "observed": "5621.80", "strict": "fail", "lenient": "fail", "note": "Consistent with the run's own net profit."},
+        {"item": "Line 9 car/truck", "observed": "183.40", "strict": "fail", "lenient": "fail", "note": "Commute asked (released); 262 miles only."},
+        {"item": "Classification of Denver flight, Orangetheory, Netflix, rent, H-E-B", "observed": "all personal", "strict": "pass", "lenient": "pass", "note": "Note: T-Mobile/Spectrum rows are classified 'personal' with schedule_c_line 25 and a 60% note — a mixed-use row convention, not an oracle item."},
+        {"item": "Classification of 2024-12-27 Tessaro deposit", "observed": "prior_year", "strict": "pass", "lenient": "pass", "note": "Review turn blanked a misleading 'Schedule C line 1' in the schedule_c_line column."},
+        {"item": "BCBS premiums", "observed": "other_schedule x8; not_on_schedule_c -> 'Schedule 1 line 17'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'the Beacon ($18,500) and Orchard ($12,200) 1099-NECs have no matching deposits ... while the 1099-K's $41,350 gross ties out exactly to bank receipts + 2.9% PayHub fees ... Line 1 = $50,750'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "QUESTIONS Q8 asked Denver '(I have assumed it is [personal])'; pre-review CSV OTF/Netflix/rent/H-E-B personal."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'supported mileage = 262 mi × $0.70'; final md: 'the rate Dana's mileage notebook references (\"0.655\") is the 2023 rate'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "02 response: 'the 12/27/2024 Tessaro $3,000 excluded as a prior-year cash-method receipt'; pre-review CSV prior_year."},
+        {"n": 5, "outcome": "unprompted", "evidence": "Commute fact released in turn 1; turn-1 draft already excluded the 1,200 Larkspur miles (262 supported miles)."},
+        {"n": 6, "outcome": "unprompted", "evidence": "02 response: 'BCBS → Schedule 1 line 17'; final md Line 15: 'health insurance is not deducted here'."}
+      ],
+      "rubric": [
+        {"item": "schedule_c.md shows arithmetic per line and states business-use % assumptions", "met": true, "evidence": "Line-by-line tables and sums; 'Stated assumptions' section lists MacBook 100%, phone/internet 60%, Hiscox 100%; adds a two-way bank reconciliation."},
+        {"item": "STATUS reflects whether questions are outstanding", "met": true, "evidence": "'COMPLETE WITH OPEN ITEMS' with 9 open items and a review-corrections log."}
+      ],
+      "facts": [
+        {"id": "commute", "handling": "asked"},
+        {"id": "payhub_fees", "handling": "assumed_flagged"},
+        {"id": "phone_pct", "handling": "asked"},
+        {"id": "denver", "handling": "asked"},
+        {"id": "overlap", "handling": "asked"},
+        {"id": "health", "handling": "asked"}
+      ],
+      "citations": {"checked": 5, "unsupported": []},
+      "notes": "Authority citations (Sch C instr, Notice 2025-5, Pub 463, §262(a), Sch SE) all in INDEX; Form 1040/2441/8829 line placements are labelled 'not library-verified' rather than cited as authority. Factual error retained in final: W-2 box 12a code DD ($1,960) is described as 'dependent care benefits' routed to Form 2441 — code DD is the employer-sponsored health coverage cost (runs A and E read it correctly). It is labelled unverified and affects no number, so not gated as fatal. Pre-review deliverable carried three invented rationales ('Dana's sole work computer', Dec 3 supplies run 'same day as a Capital Factory coworking visit', a 'Zelle pattern change' explanation for the coworking start) and an out-of-library 'Schedule 1, line 3' placement; the review turn removed all of them and logged the corrections in STATUS. Excluded the Oct 20 client-dinner 16 miles as an 'unverified rule' — over-conservative, trips to client meetings are plainly business miles.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "Schedule C line 1", "observed": "50750.00", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Schedule C line 31 (net profit)", "observed": "38971.37", "strict": "fail", "lenient": "fail", "note": "+1,562.40 vs key = exactly the 2,232 coworking miles x 0.70 excluded as commuting; otherwise identical to the key line by line (includes the 1,150 pg-2 miles with a flag)."},
+        {"item": "SE tax", "observed": "5506.48", "strict": "fail", "lenient": "fail", "note": "Consistent with the run's own net profit; closest of the five to the key."},
+        {"item": "Line 9 car/truck", "observed": "999.60", "strict": "fail", "lenient": "fail", "note": "Commute asked; 1,428 miles (278 + 1,150), coworking excluded."},
+        {"item": "Classification of Denver flight, Orangetheory, Netflix, rent, H-E-B", "observed": "personal (2024-12-30 H-E-B row labelled prior_year)", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "Classification of 2024-12-27 Tessaro deposit", "observed": "prior_year", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "BCBS premiums", "observed": "other_schedule x8; not_on_schedule_c -> Schedule 1 line 17", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "01-s1-work.response.md: 'Beacon ($18,500) + Orchard ($12,200) NECs must have been paid through PayHub (they're inside the 1099-K gross; no other bank credits exist) → count once.'"},
+        {"n": 2, "outcome": "unprompted", "evidence": "Turn 1 asked about the Denver flight (Q2) and kept it off 24a; OTF/Netflix/rent/H-E-B personal in pre-review CSV."},
+        {"n": 3, "outcome": "unprompted", "evidence": "01-s1-work.response.md: '1,428 business mi × $0.70'; final md: 'Her own estimate ... uses the wrong rate (0.655 is not the 2025 rate per Notice 2025-5)'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "pre-review CSV: 2024-12-27 Tessaro prior_year; md 'is 2024 income under the cash method'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "01-s1-work.response.md: '4,860 total − 1,200 Larkspur commute'; commute fact released in turn 1."},
+        {"n": 6, "outcome": "unprompted", "evidence": "Turn 1 Q9 about BCBS; pre-review md: 'Self-employed health insurance $3,040.00 ... → Form 1040 Schedule 1 line 17'."}
+      ],
+      "rubric": [
+        {"item": "schedule_c.md shows arithmetic per line and states business-use % assumptions", "met": true, "evidence": "'Total $1,860.00 × 60% business use (client's answer, Q5) = $1,116.00'; MacBook 'FLAGGED: 100% business use is assumed'; sums per line."},
+        {"item": "STATUS reflects whether questions are outstanding", "met": false, "evidence": "STATUS.md 'State: complete.' (not one of the three contract tokens) while listing four 'Flagged unknowns' including 1,150 unsubstantiated miles that are claimed on line 9; contract requires COMPLETE WITH OPEN ITEMS."}
+      ],
+      "facts": [
+        {"id": "commute", "handling": "asked"},
+        {"id": "payhub_fees", "handling": "assumed_flagged"},
+        {"id": "phone_pct", "handling": "asked"},
+        {"id": "denver", "handling": "asked"},
+        {"id": "overlap", "handling": "asked"},
+        {"id": "health", "handling": "asked"}
+      ],
+      "citations": {"checked": 6, "unsupported": []},
+      "notes": "Final citations all in INDEX (Sch C instr, Notice 2025-5, Pub 463, IRC 262(a), Sch SE, Reg 1.263(a)-1(f) as printed in the Line 13 excerpt); the only remaining mentions of IRC 61(a)/162(a)/164(f) are in STATUS's own corrections log describing their removal. Pre-review deliverable cited IRC 61(a), IRC 162(a) x5 and IRC 164(f) x3 — none in the library — and asserted the fee 'matches 1099-K box 4 ($1,199.15)' when box 4 is $0.00; the review turn removed all nine citations and the box-4 claim and corrected four wrong Tessaro deposit dates. Had the review not run, this would have been a fabricated-authority failure. The turn-1 work response narrates repeated 'fixture rotations' and files 'reverting' that have no basis in the pack, and QUESTIONS.md Part C still carries mooted questions about non-existent items ('March hometown meals', a 'Hiscox premium split', a Tessaro 'gross-up'). Numerically the closest run: includes the pg-2 miles with a flag, differs from key only by the coworking-commute judgment.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "No run tripped the trust gate on its final deliverable, and all five caught all six traps unprompted (line 1 = 50,750 in every run; 0.70 rate; prior-year Tessaro; commute excluded; BCBS to Schedule 1; personal items off Schedule C). All five fail line 31 and SE tax for the same reason: none accepted both the 1,150 'see pg 2' miles and the home->coworking trips as business, which the key requires (A, B, C, D claim only 262-278 miles; E claims 1,428). The grade therefore separates runs mainly on secondary judgment (MacBook de minimis: C dropped it; Tartine meal: B dropped it) rather than on the traps. Four of five (A, B, D, E) wrote invented facts or out-of-library citations into the pre-review deliverable and then removed them in the review turn — storage unit (A), fabricated email quotes (B), invented rationales (D), IRC 61/162/164 citations and a false box-4 claim (E); C alone was clean throughout. The review turn is doing real work in this case; grading finals only masks that. B's JSON puts net profit on line 28 and 0.00 on line 31, so a mechanical reader of lines.31 gets 0. B and E labelled STATUS as COMPLETE despite listed unknowns. D mislabels W-2 code DD as dependent care. Recommend treating line 31/SE tax as diagnostic (or widening tolerance) for this case because the key depends on an absent notebook page.",
+  "grading_conventions": "Trust gate applied to final/ (pre-review near-misses recorded in notes). Strict tolerance = manifest tolerance; lenient = max(manifest, +-5). Line 9 graded per manifest conditional: exact 2,562 when the commute fact was released, otherwise pass if the commute was flagged in QUESTIONS/assumptions."
+}

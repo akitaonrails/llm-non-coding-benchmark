@@ -1,0 +1,187 @@
+{
+  "case": "uslaw_07_chapter11_creditor",
+  "preregistration": {
+    "summary": "Petition 2026-03-10. 20-day goods window opens 2026-02-18: MS-7788 (2/20, $41,300) + MS-7815 (3/4, $36,800) = $78,100 admin; MS-7802 freight and MS-7819 on-site cutting are not goods; MS-7740 received 2/4 is outside. Unpaid ledger = 25,600 + 41,300 + 6,900 + 36,800 + 14,400 = $125,000 (GUC $46,900); the $210,000 in the 3/12 dunning letter equals gross 2026 invoicing ignoring the $85,000 paid. Bar date 2026-06-11 5:00 p.m. MT. 90-day window opens 2025-12-10: 51,000 + 44,000 + 48,200 + 36,800 = $180,000; Dec 18 / Jan 22 (45, 43 days, ACH) match the 43-47 day ACH history -> $95,000 protected; Feb 10 (29 days, after the 1/20 NET-15 cut) and Feb 27 (25 days, wire on demand) -> $85,000 exposed; new value after Feb 10 = $99,400 (after Feb 27 = $51,200) so net exposure ~ $0; §502(d) disallowance risk. Stay violations: 3/12 letter, 3/15 call, 3/18 credit-bureau/shipment-hold email (§362(a)(6)). Legitimate 'paid first' route is the Dkt. 44 critical-vendor motion (hearing 4/2), which requires agreeing to customary terms. Reclamation: MS-7740/7788/7815 received within 45 days; written demand by 2026-03-30 (20 days post-petition since every 45-day period expires after commencement); subject to DIP blanket lien.",
+    "oracle": [
+      {"item": "admin_503b9.amount", "confidence": "high", "agree": true, "note": "41,300 + 36,800 = 78,100 from delivery dates on/after 2026-02-18."},
+      {"item": "admin_503b9 excludes MS-7802 and MS-7819", "confidence": "high", "agree": true, "note": "Library bc_503b9_546c.md: services, freight and handling are not goods."},
+      {"item": "bar_date", "confidence": "high", "agree": true, "note": "Notice PDF: June 11, 2026 5:00 p.m. MT."},
+      {"item": "preference.transfers_in_90_days", "confidence": "high", "agree": true, "note": "Window opens 2025-12-10; four payments sum to 180,000; the 2025-11-03 payment is outside."},
+      {"item": "ordinary_course exposed includes Feb 10 and Feb 27 payments", "confidence": "high", "agree": true, "note": "29 and 25 days vs 43-47 day ACH history, after the 1/20 NET-15 cut; Feb 27 wire on demand. Library bc_547.md names shortened terms, pressure, wire on demand as outside (c)(2)(A)."},
+      {"item": "stay_violations non-empty; immediate_actions includes stopping collection", "confidence": "high", "agree": true, "note": "Three logged post-petition acts to collect."}
+    ],
+    "traps": [
+      {"n": 1, "confidence": "high", "agree": true, "note": "Continuing collection is a §362(a)(6) violation; critical-vendor motion (Dkt. 44, 4/2) is the legitimate route and requires customary terms, which 'pay first' refuses."},
+      {"n": 2, "confidence": "high", "agree": true, "note": "$180,000 in the window; $85,000 exposed; new value largely offsets; §502(d)."},
+      {"n": 3, "confidence": "high", "agree": true, "note": "Freight and on-site services are not goods under §503(b)(9)."},
+      {"n": 4, "confidence": "high", "agree": true, "note": "2026-06-11; §503(b)(9) asserted separately per Rule 3003 note."},
+      {"n": 5, "confidence": "high", "agree": true, "note": "The 1/20 terms change and wire demand are Mesa's own conduct that defeats (c)(2)(A) for the February payments."}
+    ],
+    "diagnostic_only": {"oracle": [], "traps": []},
+    "fixture_issues": [
+      "reviewer/reference/reference.json total_prepetition_claim = 210000 is the gross 2026 invoicing (48,200+62,400+41,300+6,900+36,800+14,400) and ignores the $85,000 paid; the documents support $125,000. Its general_unsecured = 95100 (= 210,000 - 78,100 - 36,800) is inconsistent on any reading (file supports 46,900). Neither figure is an oracle item, so nothing was gated on it.",
+      "notice_of_commencement_and_bar_date.pdf is 'Notice dated: April 2, 2026', fourteen days after the engagement date (March 19); every run flagged it.",
+      "reference.json reclamation lists only MS-7788/7815, but MS-7740 (received 2026-02-04) is also within 45 days of the petition; all three demand windows end 2026-03-30. Not oracle-gated.",
+      "reference.json new_value_after_payments = 125000 includes the MS-7740 balance delivered 2/4, which predates the exposed Feb 10/27 payments; new value after Feb 10 is 99,400. Not oracle-gated.",
+      "library bc_362.md quotes §362(k) as protecting 'an individual' and notes §105 sanctions for corporate debtors; the manifest's trap-1 authority cites (k). Runs that routed exposure through §105 were treated as correct."
+    ]
+  },
+  "runs": {
+    "A": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "admin_503b9.amount", "observed": "78100", "strict": "pass", "lenient": "pass", "note": "claim_analysis.json"},
+        {"item": "admin_503b9 excludes MS-7802 and MS-7819", "observed": "invoices [MS-7788, MS-7815]; exclusions explained in proof_of_claim_draft.md", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "bar_date", "observed": "2026-06-11", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "preference.transfers_in_90_days", "observed": "180000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "ordinary_course exposed includes Feb 10 and Feb 27 payments", "observed": "exposed 85000 = 2/10 48,200 + 2/27 36,800; protected 95000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "stay_violations non-empty; immediate_actions includes stopping collection", "observed": "3 violations listed; first action 'TODAY: suspend the automated dunning program' and written stop-collection instruction", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "s1 advice_to_ceo.md §1 'Stop collecting today'; §3 'Filing a claim does not create priority'; Dkt. 44/Kmart path; after client answer: 'pay first' only works through the motion."},
+        {"n": 2, "outcome": "unprompted", "evidence": "s1 claim_analysis.json preference block: 180,000 / 95,000 / 85,000, new value, §502(d) trap; 01-s1-work.response.md."},
+        {"n": 3, "outcome": "unprompted", "evidence": "proof_of_claim_draft.md: 'Excluded from §503(b)(9) because freight/handling and services are not goods: MS-7802, MS-7819'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "bar date 2026-06-11 in JSON and claim draft; §503(b)(9) portion 'separately stated' section 4 of the draft."},
+        {"n": 5, "outcome": "unprompted", "evidence": "advice §2: 'The two payments at risk are the ones we made unusual... right after our credit dept rewrote terms to NET 15 on Jan 20'."}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: explains preference and new value in plain English; recommends cooperating on critical-vendor terms", "met": true, "evidence": "advice_to_ceo.md §2b items 1-7 ('Review ≠ clawback', new value 'knockout'); item 6 and §3: 'walk into the critical-vendor negotiation already owning a defensible position', counsel to commit to customary trade terms under Dkt. 44 before April 2."}
+      ],
+      "facts": [
+        {"id": "terms", "handling": "not_needed"},
+        {"id": "credit_bureau", "handling": "asked"},
+        {"id": "critical_vendor", "handling": "asked"}
+      ],
+      "citations": {"checked": 13, "unsupported": []},
+      "notes": "All headline numbers correct and reconciled; $210,000 treated as unverified and not claimed (did not spot that it equals gross invoicing, but left it open rather than forcing it). Review turn made real fixes: §362(k) individual-vs-corporate routing to §105, a $128,800 worst case corrected to $180,000, a $263,400 12-month total corrected to $427,300, reclamation windows converging on 3/30. Minor: 'Frank confirms Mesa has no data on industry terms' is an inference from 'no additional information', stated as a client confirmation. Reclamation 'available: false' is a judgment call (practically worthless) with the technical availability explained in 'why'.",
+      "grader_confidence": "high"
+    },
+    "B": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "admin_503b9.amount", "observed": "78100", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "admin_503b9 excludes MS-7802 and MS-7819", "observed": "invoices [MS-7788, MS-7815]; assumptions and claim draft state freight/services excluded", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "bar_date", "observed": "2026-06-11", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "preference.transfers_in_90_days", "observed": "180000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "ordinary_course exposed includes Feb 10 and Feb 27 payments", "observed": "EXPOSED 85,000 = 02-10 + 02-27; protected 95,000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "stay_violations non-empty; immediate_actions includes stopping collection", "observed": "4 entries (one flagged unverified); first action 'TODAY: written stand-down for AR/credit/collections'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "s1 advice §1 'Stop all collection activity'; §4 critical-vendor path 'the only honest paid first route'; §5 'pay first' must be reversed by counsel before Apr 2."},
+        {"n": 2, "outcome": "unprompted", "evidence": "s1 claim_analysis.json preference block and new_value_notes; advice §3(a)."},
+        {"n": 3, "outcome": "unprompted", "evidence": "claim draft Part 3.C: 'goods only — freight/handling and services excluded'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "Bar date 2026-06-11 5:00 p.m. MT; §503(b)(9) 'separately asserted' in Part 3.C."},
+        {"n": 5, "outcome": "unprompted", "evidence": "advice §5: Lori's terms cut and demanded wire 'are precisely the facts that put the two February payments outside the ordinary-course defense'."}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: explains preference and new value in plain English; recommends cooperating on critical-vendor terms", "met": true, "evidence": "advice §7 'But they owe us!' items 1-4 (preference as fairness rule, new value 'cancels the clawback dollar-for-dollar'); item 4 'reversing pay first through counsel before April 2'; 03-s1-pushback0.response.md."}
+      ],
+      "facts": [
+        {"id": "terms", "handling": "asked"},
+        {"id": "credit_bureau", "handling": "not_needed"},
+        {"id": "critical_vendor", "handling": "asked"}
+      ],
+      "citations": {"checked": 16, "unsupported": ["28 U.S.C. §1746 in the Form 410 signature block (not in INDEX; labelled 'signature-block language of the Official Form; verify current form text') — flagged, not relied on as authority, not gated", "§507(a)(7) mention retained as 'Official Form 410 boilerplate ... not cited as authority here'"]},
+      "notes": "Only run to reconcile the $210,000 demand exactly as gross invoicing less $85,000 paid. Review turn removed a fabricated '10:00' hearing time, softened 'must' to the library's 'typically', and flagged non-library points. Mislabels Frank as 'sales rep' throughout (the engagement names the CEO as the person asking; the client answers are prefixed 'Frank:'); not a material invented fact. Reclamation 'available: true' with the 3/30 deadline and DIP-lien caveat.",
+      "grader_confidence": "high"
+    },
+    "C": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "admin_503b9.amount", "observed": "78100", "strict": "pass", "lenient": "pass", "note": "invoices field holds objects rather than ID strings (schema deviation, content correct)."},
+        {"item": "admin_503b9 excludes MS-7802 and MS-7819", "observed": "only MS-7788/MS-7815 listed; 'Freight/handling and on-site cutting are services, not qualifying goods'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "bar_date", "observed": "2026-06-11", "strict": "pass", "lenient": "pass", "note": "with a bar_date_qualification about the mis-dated notice."},
+        {"item": "preference.transfers_in_90_days", "observed": "180000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "ordinary_course exposed includes Feb 10 and Feb 27 payments", "observed": "exposed 85000: 'Feb 10 took 29 days; Feb 27 took 25 days and was a wire demanded by Mesa'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "stay_violations non-empty; immediate_actions includes stopping collection", "observed": "3 violations; first action 'Stop all AR calls, letters, emails, credit-reporting threats...'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "s1 advice 'Stop collection activity today'; 'Critical vendor... propose customary trade terms... Critical-vendor status is no entitlement to be paid first'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "s1 'What Mesa may owe Redwood': $180,000, $95,000/$85,000, new value, §502(d)."},
+        {"n": 3, "outcome": "unprompted", "evidence": "claim draft schedule classifies MS-7802/MS-7819 as general unsecured; 'Freight/handling and cutting services do not qualify as goods'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "June 11 bar date; 'Separate §503(b)(9) request' section; 'not added to the total a second time'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "JSON reasoning: 'The Jan 20 terms change and pressure also weaken the defense'; advice: '$85,000 arrived in 29 and 25 days after Mesa shortened terms'."}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: explains preference and new value in plain English; recommends cooperating on critical-vendor terms", "met": false, "evidence": "03-s1-pushback0.response.md explains the claw-back and that 'later goods or services may offset the other $85,000' in plain English, but makes no critical-vendor recommendation; the advice memo's critical-vendor paragraph exists separately but was not tied to the objection. Partial."}
+      ],
+      "facts": [
+        {"id": "terms", "handling": "not_needed"},
+        {"id": "credit_bureau", "handling": "not_needed"},
+        {"id": "critical_vendor", "handling": "not_needed"}
+      ],
+      "citations": {"checked": 9, "unsupported": []},
+      "notes": "Terse but correct. Turn 1 produced only QUESTIONS.md and marked BLOCKED over the $210k variance and mis-dated notice; no scripted fact was triggered, so the run never learned of the automated dunning, second call, or the CEO's 'pay first' reply. Completed on the second turn with all numbers right. Heavily hedged ('potentially', 'conditional'); reclamation available=true with 3/30 deadline. Did not reconcile $210,000 to gross invoicing. QUESTIONS.md final is a one-paragraph note. Pre-review §507(a) form-field reference removed in review.",
+      "grader_confidence": "high"
+    },
+    "D": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "admin_503b9.amount", "observed": "78100", "strict": "pass", "lenient": "pass", "note": "invoices field holds objects (schema deviation, content correct); explicit 'excluded' list."},
+        {"item": "admin_503b9 excludes MS-7802 and MS-7819", "observed": "excluded list names MS-7802 (freight), MS-7819 (services), MS-7740 (outside window)", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "bar_date", "observed": "2026-06-11", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "preference.transfers_in_90_days", "observed": "180000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "ordinary_course exposed includes Feb 10 and Feb 27 payments", "observed": "exposed 85000; 'Feb 10 payment (29 days, ACH) and the Feb 27 payment (25 days, by WIRE)... fall outside (c)(2)(A)'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "stay_violations non-empty; immediate_actions includes stopping collection", "observed": "3 violations; first action 'TODAY: issue a written directive... to stop every demand, letter, call, credit-bureau report'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "s1 advice §1 'Stop all collection activity'; §4 'No filing gets you paid first... help get the critical vendor order entered on April 2'; Update: 'pay first' converted to a designation request."},
+        {"n": 2, "outcome": "unprompted", "evidence": "s1 advice §2 'this is the part nobody wants to hear': $180,000, $95,000/$85,000, new value, §502(d)."},
+        {"n": 3, "outcome": "unprompted", "evidence": "claim draft §2: 'Not included in the §503(b)(9) figure: MS-7802 freight & handling, MS-7819 cutting services'."},
+        {"n": 4, "outcome": "unprompted", "evidence": "bar date June 11, 2026 5:00 p.m. MT; '$78,100 is asserted as a §503(b)(9) administrative expense; the remaining $46,900... general unsecured'."},
+        {"n": 5, "outcome": "unprompted", "evidence": "JSON reasoning: 'Mesa itself unilaterally shortened terms to NET 15... Mesa built its own preference exposure'."}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: explains preference and new value in plain English; recommends cooperating on critical-vendor terms", "met": true, "evidence": "advice 'Update 2 — Do we owe THEM?' table and items 1-2 (timing rule, $95,000 kept, deliveries offset $85,000); closes with 'the reply to Redwood's counsel should be the written clarification — not another pay first' (customary terms through Dkt. 44)."}
+      ],
+      "facts": [
+        {"id": "terms", "handling": "not_needed"},
+        {"id": "credit_bureau", "handling": "not_needed"},
+        {"id": "critical_vendor", "handling": "asked"}
+      ],
+      "citations": {"checked": 14, "unsupported": []},
+      "notes": "Core numbers correct; reconciles $210,000 = gross invoicing less $85,000. Legal slip: treats the 20-day post-petition reclamation period as a cap ('earlier of ... capped at 20 days') and tells the client to demand by March 21 for MS-7740, when the library text extends the deadline to 2026-03-30 whenever the 45 days expire after commencement; conservative in effect but wrong. Pre-review cited §549 and §550 (not in INDEX, labelled unverified); both removed in the review turn, so final is clean. Review also fixed a POC table that did not foot ($161,800 rows vs $210,000 total) and a 'wire-week' misdescription of the Feb 10 ACH. Minor invented details: 'years-long pattern' (history is 12 months); 'Form 410's preference question' (no such item on the form). §362(k)/§105 routing handled.",
+      "grader_confidence": "high"
+    },
+    "E": {
+      "status_md": "COMPLETE WITH OPEN ITEMS",
+      "deliverables_missing": [],
+      "trust_fatal": [],
+      "oracle": [
+        {"item": "admin_503b9.amount", "observed": "78100", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "admin_503b9 excludes MS-7802 and MS-7819", "observed": "invoices [MS-7788, MS-7815]; workpapers table marks 7802/7819 'no' goods, 'excluded'", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "bar_date", "observed": "2026-06-11", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "preference.transfers_in_90_days", "observed": "180000", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "ordinary_course exposed includes Feb 10 and Feb 27 payments", "observed": "EXPOSED 85,000 = 48,200 + 36,800, corroborated by Lori's admissions", "strict": "pass", "lenient": "pass", "note": ""},
+        {"item": "stay_violations non-empty; immediate_actions includes stopping collection", "observed": "5 entries; first action 'TODAY: written stand-down to the whole AR/credit team'", "strict": "pass", "lenient": "pass", "note": ""}
+      ],
+      "traps": [
+        {"n": 1, "outcome": "unprompted", "evidence": "s1 advice §1 stop list (8 items) and §4 'the only legitimate way to get paid early'; after Round 1: 'pay first is the opposite of the customary-terms offer the court expects... Counsel must call their counsel before April 2'."},
+        {"n": 2, "outcome": "unprompted", "evidence": "s1 advice §3 'What Mesa may owe Redwood (yes, owe)'; workpapers §4 scenarios A-E; §502(d) 'shall disallow'."},
+        {"n": 3, "outcome": "unprompted", "evidence": "advice §2 table: 'Freight and services are not goods and cannot be dressed up as administrative'; §6 item 4."},
+        {"n": 4, "outcome": "unprompted", "evidence": "deadline table 2026-06-11 5:00 p.m. MT; '§503(b)(9) request for $78,100, asserted separately'; stand-alone motion planned."},
+        {"n": 5, "outcome": "unprompted", "evidence": "workpapers §4.2: 'Mesa's credit department imposed NET 15... paid 14 days faster than any payment in the prior year'; Lori's answer 'confirms this reading'."}
+      ],
+      "rubric": [
+        {"item": "Pushback answered: explains preference and new value in plain English; recommends cooperating on critical-vendor terms", "met": true, "evidence": "advice §3 opens with the verbatim objection and three corrections (balance is $125,000; claw-back is the estate's statutory remedy, not a debt or wrongdoing; new value $99,400 vs $85,000 -> about zero); 'expect the preference claim and the critical-vendor order to be negotiated together'; §4 'Offer what they need: normal trade terms'."}
+      ],
+      "facts": [
+        {"id": "terms", "handling": "asked"},
+        {"id": "credit_bureau", "handling": "asked"},
+        {"id": "critical_vendor", "handling": "asked"}
+      ],
+      "citations": {"checked": 17, "unsupported": []},
+      "notes": "Most thorough run: separate workpapers with every window computed, all three scripted facts elicited and logged verbatim, $210,000 reconciled to gross invoicing. Uses §105 for the corporate debtor and labels 'section 341' as a notice fact rather than a citation. Raised a defensible but speculative 'Scenario E' (February payments recharacterised as on account of later shipments) and labelled it unverified; reserve set at $85,000. Review turn corrected §502(d) from discretionary to 'shall disallow' in five places and removed an unsupported '40+ days late' assertion. Long deliverables (20 flagged unknowns) but nothing forced to balance.",
+      "grader_confidence": "high"
+    }
+  },
+  "cross_run_observations": "All five runs hit every oracle item strict and caught all five traps before the review turn; none has a trust-fatal event. All five computed the identical core set ($125,000 / $78,100 / $46,900 / $180,000 / $95,000 protected / $85,000 exposed / net ~$0 / bar date 2026-06-11) and all five flagged the future-dated notice. Differentiators: (1) reconciling the $210,000 demand — B, D, E identified it as gross invoicing less $85,000 paid; A and C left it as an unexplained variance; (2) fact elicitation — E asked all three scripted facts, A and B two, D one, C none; (3) the pushback — A, B, D, E tied the plain-English preference answer to cooperating on critical-vendor terms, C did not; (4) legal precision — D misstates the reclamation deadline for MS-7740 (March 21 instead of March 30); A and E correctly route corporate-debtor stay exposure to §105 given the library's 'individual' wording of §362(k). Review turns were substantive in A, B, D and E (real numeric and citation fixes, removal of non-library §549/§550 and §507 references) and cosmetic in C. The reviewer reference.json carries an internally inconsistent total_prepetition_claim (210,000) and general_unsecured (95,100); every run's $125,000 / $46,900 is what the documents support."
+}
